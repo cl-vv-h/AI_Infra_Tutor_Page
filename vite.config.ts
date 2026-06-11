@@ -8,6 +8,16 @@ export default defineConfig({
   base: '/AI_Infra_Tutor_Page/',
   build: {
     sourcemap: 'hidden',
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'sglang-content': [
+            './src/data/sglang-articles.ts',
+          ],
+        },
+      },
+    },
   },
   plugins: [
     react({

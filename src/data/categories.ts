@@ -117,11 +117,9 @@ export const categories: Category[] = [
     icon: 'Code2',
     color: '#8b5cf6',
     subcategories: [
-      { id: 'sub-8-1', categoryId: 'cat-8', name: '核心架构设计', slug: 'sglang-architecture', description: 'SGLang的整体架构与核心模块设计' },
-      { id: 'sub-8-2', categoryId: 'cat-8', name: '关键技术特性', slug: 'sglang-features', description: 'RadixAttention等SGLang的关键技术创新' },
-      { id: 'sub-8-3', categoryId: 'cat-8', name: '执行流程', slug: 'sglang-execution', description: '从请求接收到Token生成的完整执行流程' },
-      { id: 'sub-8-4', categoryId: 'cat-8', name: '性能优化', slug: 'sglang-optimization', description: 'SGLang的性能优化策略与调优方法' },
-      { id: 'sub-8-5', categoryId: 'cat-8', name: '源码解析', slug: 'sglang-source', description: 'SGLang源码的知识图谱与模块调用关系' },
+      { id: 'sub-8-1', categoryId: 'cat-8', name: '源码总览阅读路线', slug: 'sglang-source-reading', description: 'SGLang源码全景阅读路线，从特性地图到各核心模块深度解析' },
+      { id: 'sub-8-2', categoryId: 'cat-8', name: 'Scheduler架构解析', slug: 'scheduler-architecture', description: 'Scheduler架构、请求调度流程、流程图与带中文注释的代码导读' },
+      { id: 'sub-8-3', categoryId: 'cat-8', name: 'TP Worker与Model Runner', slug: 'tp-worker-model-runner', description: 'TpModelWorker与ModelRunner的架构、执行流程、函数定位和中文注释版源码' },
     ],
   },
   {

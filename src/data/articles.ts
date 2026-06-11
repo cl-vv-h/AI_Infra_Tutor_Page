@@ -1,4 +1,5 @@
 import type { Article } from '@/types'
+import { sglangArticles } from './sglang-articles'
 
 export const articles: Article[] = [
   {
@@ -316,6 +317,7 @@ SGLang的核心创新——基于基数树的KV Cache管理：
     prevArticleId: null,
     nextArticleId: null,
   },
+  ...sglangArticles,
 ]
 
 export function getArticleBySlug(slug: string): Article | undefined {
