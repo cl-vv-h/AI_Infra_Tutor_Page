@@ -1,15 +1,19 @@
-import { useState, useEffect, useRef, useCallback, type ReactNode } from 'react'
+import { useState, useEffect, useCallback, type ReactNode } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
-import rehypeHighlight from 'rehype-highlight'
 import rehypeSlug from 'rehype-slug'
-import { Copy, Check } from 'lucide-react'
+import { Copy, Check, AlertCircle } from 'lucide-react'
 
-let mermaidInitialized = false
+let mermaidInstance: ReturnType<typeof import('mermaid')['default']> | null = null
+let mermaidInitPromise: Promise<ReturnType<typeof import('mermaid')['default']>> | null = null
+
 async function getMermaid() {
-  const m = await import('mermaid')
-  if (!mermaidInitialized) {
+  if (mermaidInstance) return mermaidInstance
+  if (mermaidInitPromise) return mermaidInitPromise
+
+  mermaidInitPromise = (async () => {
+    const m = await import('mermaid')
     m.default.initialize({
       startOnLoad: false,
       theme: 'dark',
@@ -23,9 +27,11 @@ async function getMermaid() {
         fontFamily: '"Space Grotesk", "Noto Sans SC", sans-serif',
       },
     })
-    mermaidInitialized = true
-  }
-  return m.default
+    mermaidInstance = m.default
+    return mermaidInstance
+  })()
+
+  return mermaidInitPromise
 }
 
 interface MarkdownRendererProps {
@@ -33,46 +39,63 @@ interface MarkdownRendererProps {
 }
 
 function MermaidBlock({ code }: { code: string }) {
-  const containerRef = useRef<HTMLDivElement>(null)
   const [svg, setSvg] = useState<string>('')
   const [error, setError] = useState<string>('')
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     let cancelled = false
     const renderDiagram = async () => {
       try {
+        setLoading(true)
         const mermaid = await getMermaid()
         if (cancelled) return
         const id = `mermaid-${Math.random().toString(36).slice(2, 11)}`
-        const { svg: renderedSvg } = await mermaid.render(id, code)
+        const { svg: renderedSvg } = await mermaid.render(id, code.trim())
         if (!cancelled) {
           setSvg(renderedSvg)
           setError('')
+          setLoading(false)
         }
       } catch (err) {
-        if (!cancelled) setError(String(err))
+        if (!cancelled) {
+          setError(String(err))
+          setLoading(false)
+        }
       }
     }
     renderDiagram()
     return () => { cancelled = true }
   }, [code])
 
+  if (loading && !svg && !error) {
+    return (
+      <div className="my-4 overflow-x-auto rounded-lg border border-white/10 bg-[#0d1117] p-6">
+        <div className="flex items-center justify-center gap-2 py-8 text-gray-500">
+          <div className="h-4 w-4 animate-spin rounded-full border-2 border-gray-500 border-t-transparent" />
+          <span>图表渲染中...</span>
+        </div>
+      </div>
+    )
+  }
+
   if (error) {
     return (
       <div className="my-4 rounded-lg border border-red-500/20 bg-red-500/5 p-4">
-        <p className="mb-2 text-sm text-red-400">Mermaid 渲染失败</p>
-        <pre className="overflow-x-auto text-xs text-gray-400"><code>{code}</code></pre>
+        <div className="mb-2 flex items-center gap-2 text-sm text-red-400">
+          <AlertCircle className="h-4 w-4" />
+          <span>Mermaid 渲染失败</span>
+        </div>
+        <pre className="overflow-x-auto rounded bg-black/30 p-3 text-xs text-gray-400">
+          <code>{code}</code>
+        </pre>
       </div>
     )
   }
 
   return (
-    <div ref={containerRef} className="mermaid-diagram my-4 overflow-x-auto rounded-lg border border-white/10 bg-[#0d1117] p-6">
-      {svg ? (
-        <div dangerouslySetInnerHTML={{ __html: svg }} className="flex justify-center" />
-      ) : (
-        <div className="flex items-center justify-center py-8 text-gray-500">渲染中...</div>
-      )}
+    <div className="mermaid-diagram my-4 overflow-x-auto rounded-lg border border-white/10 bg-[#0d1117] p-6">
+      <div dangerouslySetInnerHTML={{ __html: svg }} className="flex justify-center [&>svg]:max-w-full [&>svg]:h-auto" />
     </div>
   )
 }
@@ -96,10 +119,11 @@ function CodeBlock({ className, children }: { className?: string; children?: Rea
   return (
     <div className="relative my-4 overflow-x-auto rounded-lg border border-white/10 bg-[#0d1117]">
       <div className="flex items-center justify-between border-b border-white/5 px-4 py-1.5">
-        {language && (
+        {language ? (
           <span className="text-xs text-gray-500">{language}</span>
+        ) : (
+          <span />
         )}
-        {!language && <span />}
         <button
           onClick={handleCopy}
           className="flex items-center gap-1 rounded px-2 py-0.5 text-xs text-gray-400 transition-colors hover:bg-white/5 hover:text-gray-200"
@@ -124,11 +148,20 @@ function CodeBlock({ className, children }: { className?: string; children?: Rea
   )
 }
 
+function extractTextFromChildren(children: ReactNode): string {
+  if (typeof children === 'string') return children
+  if (Array.isArray(children)) return children.map(extractTextFromChildren).join('')
+  if (children && typeof children === 'object' && 'props' in children) {
+    return extractTextFromChildren((children as { props: { children: ReactNode } }).props.children)
+  }
+  return ''
+}
+
 export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
   return (
     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
-      rehypePlugins={[rehypeRaw, rehypeHighlight, rehypeSlug]}
+      rehypePlugins={[rehypeRaw, rehypeSlug]}
       components={{
         h1: ({ children, ...props }) => (
           <h1 className="mb-4 mt-10 border-b border-white/10 pb-3 text-3xl font-bold text-white" {...props}>
@@ -209,10 +242,11 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
             </div>
           )
         },
-        code: ({ className, children, ...props }) => {
-          const isBlock = className?.startsWith('language-') || String(children).includes('\n')
+        code: ({ className, children, node, ...props }) => {
+          const isBlock = className?.startsWith('language-') || (node?.position && String(children).includes('\n'))
           if (isBlock) {
-            return <CodeBlock className={className}>{children}</CodeBlock>
+            const textContent = extractTextFromChildren(children)
+            return <CodeBlock className={className}>{textContent}</CodeBlock>
           }
           return (
             <code className="rounded bg-white/10 px-1.5 py-0.5 text-sm text-[#00d4ff]" {...props}>
