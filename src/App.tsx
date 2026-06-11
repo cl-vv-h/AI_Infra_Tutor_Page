@@ -4,6 +4,7 @@ import Home from '@/pages/Home'
 import CategoryPage from '@/pages/Category'
 import ArticlePage from '@/pages/Article'
 import About from '@/pages/About'
+import KnowledgeGraph from '@/pages/KnowledgeGraph'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/category/:slug" element={<CategoryPage />} />
           <Route path="/article/:slug" element={<ArticlePage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/knowledge-graph" element={<KnowledgeGraph />} />
         </Routes>
       </Layout>
     </Router>

@@ -1,4 +1,4 @@
-import { useParams, Link, useSearchParams } from 'react-router-dom'
+import { useParams, Link, useSearchParams, useNavigate } from 'react-router-dom'
 import {
   GitBranch,
   Puzzle,
@@ -31,6 +31,7 @@ const iconMap: Record<string, LucideIcon> = {
 export default function CategoryPage() {
   const { slug } = useParams<{ slug: string }>()
   const [searchParams, setSearchParams] = useSearchParams()
+  const navigate = useNavigate()
   const category = getCategoryBySlug(slug ?? '')
   const activeSubSlug = searchParams.get('sub') ?? undefined
 
@@ -55,6 +56,10 @@ export default function CategoryPage() {
   const IconComponent = iconMap[category.icon] || Zap
 
   const handleSubClick = (subSlug: string) => {
+    if (subSlug === 'knowledge-graph') {
+      navigate('/knowledge-graph')
+      return
+    }
     if (activeSubSlug === subSlug) {
       setSearchParams({})
     } else {
