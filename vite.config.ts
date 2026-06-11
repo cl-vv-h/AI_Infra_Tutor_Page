@@ -8,13 +8,17 @@ export default defineConfig({
   base: '/AI_Infra_Tutor_Page/',
   build: {
     sourcemap: 'hidden',
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 1500,
     rollupOptions: {
       output: {
-        manualChunks: {
-          'sglang-content': [
-            './src/data/sglang-articles.ts',
-          ],
+        manualChunks(id) {
+          if (id.includes('node_modules/mermaid/')) return 'mermaid'
+          if (id.includes('node_modules/katex/')) return 'mermaid'
+          if (id.includes('node_modules/cytoscape/')) return 'mermaid'
+          if (id.includes('node_modules/dagre/')) return 'mermaid'
+          if (id.includes('node_modules/d3-')) return 'mermaid'
+          if (id.includes('node_modules/highlight.js/')) return 'highlight'
+          if (id.includes('src/data/sglang-content/')) return 'sglang-content'
         },
       },
     },

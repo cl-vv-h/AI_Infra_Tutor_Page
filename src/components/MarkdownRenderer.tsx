@@ -1,35 +1,77 @@
-import { useState, useCallback, type ReactNode } from 'react'
+import { useState, useEffect, useRef, useCallback, type ReactNode } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import rehypeHighlight from 'rehype-highlight'
 import rehypeSlug from 'rehype-slug'
-import { ChevronDown, ChevronRight, Copy, Check } from 'lucide-react'
+import { Copy, Check } from 'lucide-react'
+
+let mermaidInitialized = false
+async function getMermaid() {
+  const m = await import('mermaid')
+  if (!mermaidInitialized) {
+    m.default.initialize({
+      startOnLoad: false,
+      theme: 'dark',
+      themeVariables: {
+        primaryColor: '#1a1f35',
+        primaryTextColor: '#e5e7eb',
+        primaryBorderColor: '#00d4ff',
+        lineColor: '#4b5563',
+        secondaryColor: '#1e2440',
+        tertiaryColor: '#0d1117',
+        fontFamily: '"Space Grotesk", "Noto Sans SC", sans-serif',
+      },
+    })
+    mermaidInitialized = true
+  }
+  return m.default
+}
 
 interface MarkdownRendererProps {
   content: string
 }
 
 function MermaidBlock({ code }: { code: string }) {
-  const [expanded, setExpanded] = useState(false)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const [svg, setSvg] = useState<string>('')
+  const [error, setError] = useState<string>('')
+
+  useEffect(() => {
+    let cancelled = false
+    const renderDiagram = async () => {
+      try {
+        const mermaid = await getMermaid()
+        if (cancelled) return
+        const id = `mermaid-${Math.random().toString(36).slice(2, 11)}`
+        const { svg: renderedSvg } = await mermaid.render(id, code)
+        if (!cancelled) {
+          setSvg(renderedSvg)
+          setError('')
+        }
+      } catch (err) {
+        if (!cancelled) setError(String(err))
+      }
+    }
+    renderDiagram()
+    return () => { cancelled = true }
+  }, [code])
+
+  if (error) {
+    return (
+      <div className="my-4 rounded-lg border border-red-500/20 bg-red-500/5 p-4">
+        <p className="mb-2 text-sm text-red-400">Mermaid 渲染失败</p>
+        <pre className="overflow-x-auto text-xs text-gray-400"><code>{code}</code></pre>
+      </div>
+    )
+  }
 
   return (
-    <div className="mermaid-diagram my-4 rounded-lg border border-[#00d4ff]/20 bg-[#0d1117] p-4">
-      <div className="mb-2 flex items-center gap-2 text-sm text-[#00d4ff]">
-        <span className="font-medium">Mermaid 图表</span>
-        <span className="text-gray-500">（请在支持Mermaid的查看器中查看）</span>
-      </div>
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="flex items-center gap-1 text-xs text-gray-400 hover:text-gray-300 transition-colors"
-      >
-        {expanded ? <ChevronDown className="h-3 w-3" /> : <ChevronRight className="h-3 w-3" />}
-        {expanded ? '收起源码' : '查看源码'}
-      </button>
-      {expanded && (
-        <pre className="mt-2 overflow-x-auto rounded bg-black/30 p-3 text-xs text-gray-300">
-          <code>{code}</code>
-        </pre>
+    <div ref={containerRef} className="mermaid-diagram my-4 overflow-x-auto rounded-lg border border-white/10 bg-[#0d1117] p-6">
+      {svg ? (
+        <div dangerouslySetInnerHTML={{ __html: svg }} className="flex justify-center" />
+      ) : (
+        <div className="flex items-center justify-center py-8 text-gray-500">渲染中...</div>
       )}
     </div>
   )
@@ -156,9 +198,17 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
         tr: ({ children }) => (
           <tr className="border-b border-white/5">{children}</tr>
         ),
-        img: ({ src, alt }) => (
-          <img src={src} alt={alt} className="my-4 max-w-full rounded-lg" />
-        ),
+        img: ({ src, alt }) => {
+          if (!src) return null
+          if (src.startsWith('http') || src.startsWith('data:')) {
+            return <img src={src} alt={alt} className="my-4 max-w-full rounded-lg" />
+          }
+          return (
+            <div className="my-4 rounded-lg border border-white/10 bg-[#1a1f35] p-4 text-center">
+              <p className="text-sm text-gray-400">图片: {alt || src}</p>
+            </div>
+          )
+        },
         code: ({ className, children, ...props }) => {
           const isBlock = className?.startsWith('language-') || String(children).includes('\n')
           if (isBlock) {

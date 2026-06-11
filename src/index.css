@@ -53,3 +53,33 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-thumb:hover {
   background: #2a2f45;
 }
+
+.mermaid-diagram svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.mermaid-diagram .node rect,
+.mermaid-diagram .node circle,
+.mermaid-diagram .node polygon {
+  fill: #1a1f35 !important;
+  stroke: #00d4ff !important;
+}
+
+.mermaid-diagram .edgeLabel {
+  background-color: #0a0f1e !important;
+  color: #e5e7eb !important;
+}
+
+.mermaid-diagram .label {
+  color: #e5e7eb !important;
+}
+
+.mermaid-diagram .edgePath .path {
+  stroke: #4b5563 !important;
+}
+
+.mermaid-diagram .cluster rect {
+  fill: #0d1117 !important;
+  stroke: #2a2f45 !important;
+}
