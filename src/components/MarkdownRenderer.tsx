@@ -5,15 +5,20 @@ import rehypeRaw from 'rehype-raw'
 import rehypeSlug from 'rehype-slug'
 import { Copy, Check, AlertCircle } from 'lucide-react'
 
-let mermaidInstance: ReturnType<typeof import('mermaid')['default']> | null = null
-let mermaidInitPromise: Promise<ReturnType<typeof import('mermaid')['default']>> | null = null
+interface MermaidAPI {
+  initialize: (config: Record<string, unknown>) => void
+  render: (id: string, code: string) => Promise<{ svg: string }>
+}
+
+let mermaidInstance: MermaidAPI | null = null
+let mermaidInitPromise: Promise<MermaidAPI> | null = null
 
 async function getMermaid() {
   if (mermaidInstance) return mermaidInstance
   if (mermaidInitPromise) return mermaidInitPromise
 
   mermaidInitPromise = (async () => {
-    const m = await import('mermaid')
+    const m = await import('mermaid') as { default: MermaidAPI }
     m.default.initialize({
       startOnLoad: false,
       theme: 'dark',
