@@ -25,7 +25,7 @@ export default function Home() {
             系统化掌握大模型推理核心技术，从并行策略到推理部署的全链路知识体系
           </p>
           <Link
-            to="/category/parallel-strategy"
+            to="/category/sglang"
             className="inline-flex items-center gap-2 rounded-lg bg-[#00d4ff] px-8 py-3 font-semibold text-[#0a0f1e] transition-all hover:bg-[#00b8e6] hover:shadow-lg hover:shadow-[#00d4ff]/25"
           >
             开始学习

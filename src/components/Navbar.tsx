@@ -4,7 +4,7 @@ import { Zap, Menu, X, Github } from 'lucide-react';
 
 const navLinks = [
   { label: '首页', to: '/' },
-  { label: '分类', to: '/category/parallel-strategy' },
+  { label: 'SGLang', to: '/category/sglang' },
   { label: '关于', to: '/about' },
 ];
 
@@ -33,7 +33,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/cl-vv-h/AI_Infra_Tutor_Page"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 transition-colors hover:text-white"

@@ -5,15 +5,11 @@ const categoryLinks = [
   { label: 'LoRA', to: '/category/lora' },
   { label: 'Prefill', to: '/category/prefill' },
   { label: 'Decode', to: '/category/decode' },
-  { label: '推理采样', to: '/category/sampling' },
-  { label: '投机推理', to: '/category/speculative-decoding' },
-  { label: '量化', to: '/category/quantization' },
   { label: 'SGLang', to: '/category/sglang' },
-  { label: '分布式推理', to: '/category/distributed-inference' },
 ]
 
 const resourceLinks = [
-  { label: 'GitHub', href: 'https://github.com' },
+  { label: 'GitHub', href: 'https://github.com/cl-vv-h/AI_Infra_Tutor_Page' },
   { label: '贡献指南', to: '/about' },
 ]
 
@@ -25,7 +21,7 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 text-sm font-semibold text-white">关于</h3>
             <p className="text-sm leading-relaxed text-gray-400">
-              AI Inference Tutor 是一个专注于大模型推理技术的知识平台，涵盖并行策略、LoRA、Prefill/Decode、量化、SGLang等核心技术领域，帮助开发者深入理解大模型推理的底层原理与工程实践。
+              AI Inference Tutor 是一个专注于大模型推理技术的知识平台，涵盖并行策略、LoRA、Prefill/Decode、SGLang等核心技术领域，提供教学Demo与源码级深度解析。
             </p>
           </div>
 
