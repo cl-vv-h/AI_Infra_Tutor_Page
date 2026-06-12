@@ -15,6 +15,7 @@ export const categories: Category[] = [
       { id: 'sub-1-4', categoryId: 'cat-1', name: '流水线并行', slug: 'pipeline-parallelism', description: '流水线并行的调度策略与气泡优化' },
       { id: 'sub-1-5', categoryId: 'cat-1', name: '混合并行', slug: 'hybrid-parallelism', description: '3D并行与自动并行策略的组合优化' },
       { id: 'sub-1-6', categoryId: 'cat-1', name: '并行策略选择与性能对比', slug: 'parallel-comparison', description: '不同并行策略的适用场景与性能权衡' },
+      { id: 'sub-1-7', categoryId: 'cat-1', name: '并行策略教学Demo', slug: 'parallel-demos', description: 'DP/TP/PP/SP/EP推理并行策略的教学版Python Demo与讲义' },
     ],
   },
   {
@@ -31,6 +32,7 @@ export const categories: Category[] = [
       { id: 'sub-2-4', categoryId: 'cat-2', name: 'AdaLoRA', slug: 'adalora', description: '自适应秩分配的LoRA变体' },
       { id: 'sub-2-5', categoryId: 'cat-2', name: 'LoRA变体对比', slug: 'lora-variants', description: '主流LoRA变体的性能与适用场景对比' },
       { id: 'sub-2-6', categoryId: 'cat-2', name: '应用场景与性能评估', slug: 'lora-evaluation', description: 'LoRA在不同场景下的性能评估与最佳实践' },
+      { id: 'sub-2-7', categoryId: 'cat-2', name: 'LoRA教学Demo', slug: 'lora-demos', description: 'LoRA/QLoRA/DoRA/AdaLoRA的教学版实现与代码导读' },
     ],
   },
   {
@@ -46,6 +48,7 @@ export const categories: Category[] = [
       { id: 'sub-3-3', categoryId: 'cat-3', name: '优化技术', slug: 'prefill-optimization', description: 'FlashAttention等Prefill加速技术' },
       { id: 'sub-3-4', categoryId: 'cat-3', name: '内存管理策略', slug: 'prefill-memory', description: 'KV Cache分配与显存管理策略' },
       { id: 'sub-3-5', categoryId: 'cat-3', name: '性能瓶颈分析', slug: 'prefill-bottleneck', description: 'Prefill阶段的计算/内存瓶颈与优化方向' },
+      { id: 'sub-3-6', categoryId: 'cat-3', name: 'Prefill教学Demo', slug: 'prefill-demos', description: 'FlashAttention、KV Cache、Chunked Prefill的教学版Python实现' },
     ],
   },
   {
@@ -61,6 +64,7 @@ export const categories: Category[] = [
       { id: 'sub-4-3', categoryId: 'cat-4', name: '批处理策略', slug: 'decode-batching', description: 'Continuous Batching与动态批处理策略' },
       { id: 'sub-4-4', categoryId: 'cat-4', name: '延迟优化技术', slug: 'decode-latency', description: '降低首字时间与解码延迟的优化方法' },
       { id: 'sub-4-5', categoryId: 'cat-4', name: '解码算法实现', slug: 'decode-algorithm', description: '主流推理引擎的解码算法实现细节' },
+      { id: 'sub-4-6', categoryId: 'cat-4', name: 'Decode教学Demo', slug: 'decode-demos', description: 'FlashDecoding等Decode阶段优化的教学版Python实现' },
     ],
   },
   {
