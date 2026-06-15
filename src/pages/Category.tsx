@@ -34,6 +34,7 @@ const topicNumbers: Record<string, string> = {
   'sub-8-1': '专题一',
   'sub-8-2': '专题二',
   'sub-8-3': '专题三',
+  'sub-8-4': '专题四',
 }
 
 function SglangOverview({

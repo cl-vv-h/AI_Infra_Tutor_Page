@@ -213,6 +213,78 @@ const nodes: GraphNode[] = [
     height: 56,
     color: '#f97316',
   },
+  {
+    id: 'init-npu-backend',
+    name: 'init_npu_backend',
+    file: 'runtime/npu_backend.py',
+    layer: 'Ascend NPU适配层',
+    description: 'NPU后端初始化入口，检测Ascend环境并配置NPU专属参数，是所有NPU适配的起点',
+    x: 250,
+    y: 430,
+    width: 180,
+    height: 56,
+    color: '#ef4444',
+  },
+  {
+    id: 'ascend-attention',
+    name: 'Ascend Attention',
+    file: 'attention/ascend/',
+    layer: 'Ascend NPU适配层',
+    description: 'Ascend NPU上的Attention后端实现，适配NPU的KV Cache布局与HiCache机制',
+    x: 100,
+    y: 520,
+    width: 180,
+    height: 56,
+    color: '#ef4444',
+  },
+  {
+    id: 'npu-graph',
+    name: 'NPUGraph',
+    file: 'npu_graph/',
+    layer: 'Ascend NPU适配层',
+    description: 'NPU Graph编译与replay机制，piecewise graph、shape capture与编译优化',
+    x: 300,
+    y: 540,
+    width: 170,
+    height: 56,
+    color: '#ef4444',
+  },
+  {
+    id: 'hccl-communication',
+    name: 'HCCL Communication',
+    file: 'distributed/hccl/',
+    layer: 'Ascend NPU适配层',
+    description: '华为HCCL集合通信库适配，支持多卡Ascend下的张量并行与ZBAL配置',
+    x: 500,
+    y: 540,
+    width: 200,
+    height: 56,
+    color: '#ef4444',
+  },
+  {
+    id: 'ascend-transfer-engine',
+    name: 'AscendTransferEngine',
+    file: 'transfer_engine/ascend/',
+    layer: 'Ascend NPU适配层',
+    description: 'Ascend PD分离传输引擎，基于SDMA/Device RDMA实现跨节点KV Cache传输',
+    x: 700,
+    y: 620,
+    width: 210,
+    height: 56,
+    color: '#ef4444',
+  },
+  {
+    id: 'ascend-lora-backend',
+    name: 'Ascend LoRA Backend',
+    file: 'lora/ascend/',
+    layer: 'Ascend NPU适配层',
+    description: 'Ascend NPU上的LoRA后端实现，适配NPU的MoE stream管理与fallback机制',
+    x: 100,
+    y: 620,
+    width: 200,
+    height: 56,
+    color: '#ef4444',
+  },
 ]
 
 const edges: GraphEdge[] = [
@@ -232,6 +304,13 @@ const edges: GraphEdge[] = [
   { from: 'scheduler', to: 'pd-disaggregation', label: 'PD分离', type: 'dashed' },
   { from: 'tokenizer-manager', to: 'lora', label: 'LoRA路由', type: 'dashed' },
   { from: 'tokenizer-manager', to: 'grammar', label: '语法约束', type: 'dashed' },
+  { from: 'scheduler', to: 'init-npu-backend', label: 'NPU初始化', type: 'dashed' },
+  { from: 'tp-model-worker', to: 'init-npu-backend', label: 'NPU后端', type: 'dashed' },
+  { from: 'tp-model-worker', to: 'ascend-attention', label: 'NPU Attention', type: 'dashed' },
+  { from: 'tp-model-worker', to: 'npu-graph', label: 'NPU Graph', type: 'dashed' },
+  { from: 'tp-model-worker', to: 'hccl-communication', label: 'HCCL通信', type: 'dashed' },
+  { from: 'scheduler', to: 'ascend-transfer-engine', label: 'PD传输', type: 'dashed' },
+  { from: 'scheduler', to: 'ascend-lora-backend', label: 'NPU LoRA', type: 'dashed' },
 ]
 
 const layerLegend = [
@@ -242,6 +321,7 @@ const layerLegend = [
   { name: 'Model层', color: '#ec4899' },
   { name: 'Cache子系统', color: '#06b6d4' },
   { name: 'Generation子系统', color: '#f97316' },
+  { name: 'Ascend NPU适配层', color: '#ef4444' },
 ]
 
 function getConnectedNodeIds(nodeId: string): Set<string> {
@@ -285,7 +365,7 @@ export default function KnowledgeGraphView() {
     : []
 
   const svgWidth = 1050
-  const svgHeight = 660
+  const svgHeight = 740
 
   return (
     <div className="flex gap-6">

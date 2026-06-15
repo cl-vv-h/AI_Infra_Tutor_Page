@@ -57,6 +57,7 @@ export const categories: Category[] = [
       { id: 'sub-8-1', categoryId: 'cat-8', name: '源码总览阅读路线', slug: 'sglang-source-reading', description: '从全局视角理解SGLang：特性地图→请求生命周期→各核心模块逐步深入，适合首次阅读源码的开发者' },
       { id: 'sub-8-2', categoryId: 'cat-8', name: 'Scheduler架构解析', slug: 'scheduler-architecture', description: '深入Scheduler模块：架构概览→流程图→代码导读→函数地图，从宏观到微观的渐进式学习路径' },
       { id: 'sub-8-3', categoryId: 'cat-8', name: 'TP Worker与Model Runner', slug: 'tp-worker-model-runner', description: '深入推理执行层：架构概览→流程图→函数地图，理解张量并行与模型推理的底层实现' },
+      { id: 'sub-8-4', categoryId: 'cat-8', name: 'Ascend NPU适配', slug: 'sglang-ascend-npu', description: 'SGLang在华为昇腾NPU上的适配实践：环境搭建→最小服务→Attention/Graph/HCCL/PD分离/LoRA等NPU专属适配详解' },
     ],
   },
 ]
