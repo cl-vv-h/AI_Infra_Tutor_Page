@@ -24,3 +24,10 @@ dist-ssr
 *.sw?
 
 .trae
+
+# Source repo mirror used for content integration
+SGLang_Tutor_latest/
+
+# Temporary diff/inventory files
+diff_files.txt
+zh_files.txt

@@ -18,8 +18,7 @@ export default defineConfig({
           if (id.includes('node_modules/dagre/')) return 'mermaid'
           if (id.includes('node_modules/d3-')) return 'mermaid'
           if (id.includes('node_modules/highlight.js/')) return 'highlight'
-          if (id.includes('src/data/sglang-content/')) return 'sglang-content'
-          if (id.includes('src/data/ai-infra-basic/')) return 'ai-infra-basic'
+          if (id.includes('src/data/content/')) return 'site-content'
         },
       },
     },

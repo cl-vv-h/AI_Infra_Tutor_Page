@@ -1,52 +1,212 @@
 import type { Article } from '@/types'
-import featureMapContent from './sglang-content/sglang-source-reading/00-feature-map.md?raw'
-import requestLifecycleContent from './sglang-content/sglang-source-reading/01-request-lifecycle.md?raw'
-import schedulerCoreContent from './sglang-content/sglang-source-reading/02-scheduler-core.md?raw'
-import kvCacheRadixCacheContent from './sglang-content/sglang-source-reading/03-kv-cache-radix-cache.md?raw'
-import modelRunnerAttentionContent from './sglang-content/sglang-source-reading/04-model-runner-attention.md?raw'
-import speculativeDecodingContent from './sglang-content/sglang-source-reading/05-speculative-decoding.md?raw'
-import multiprocessDistributedContent from './sglang-content/sglang-source-reading/06-multiprocess-distributed.md?raw'
-import disaggregationPdContent from './sglang-content/sglang-source-reading/07-disaggregation-pd.md?raw'
-import schedulerArchitectureContent from './sglang-content/scheduler-architecture/01-architecture.md?raw'
-import schedulerFlowchartsContent from './sglang-content/scheduler-architecture/02-flowcharts.md?raw'
-import schedulerCodeWalkthroughContent from './sglang-content/scheduler-architecture/03-annotated-code-walkthrough.md?raw'
-import schedulerFunctionMapContent from './sglang-content/scheduler-architecture/04-function-map.md?raw'
-import tpWorkerArchitectureContent from './sglang-content/tp-worker-model-runner/01-architecture.md?raw'
-import tpWorkerFlowchartsContent from './sglang-content/tp-worker-model-runner/02-flowcharts.md?raw'
-import tpWorkerFunctionMapContent from './sglang-content/tp-worker-model-runner/03-function-map.md?raw'
-import loraServingContent from './sglang-content/sglang-source-reading/08-lora-serving.md?raw'
-import schedulerAnnotatedContent from './sglang-content/scheduler-architecture/05-scheduler-annotated-cn.py?raw'
-import tpWorkerAnnotatedContent from './sglang-content/tp-worker-model-runner/04-tp-worker-annotated-cn.py?raw'
-import modelRunnerAnnotatedContent from './sglang-content/tp-worker-model-runner/05-model-runner-annotated-cn.py?raw'
-import ascendBackgroundContent from './sglang-content/sglang-ascend-npu/00-background.md?raw'
-import ascendEnvironmentContent from './sglang-content/sglang-ascend-npu/01-environment-and-install.md?raw'
-import ascendIntegrationMapContent from './sglang-content/sglang-ascend-npu/02-ascend-npu-integration-map.md?raw'
-import ascendMinimalServingContent from './sglang-content/sglang-ascend-npu/03-launch-and-minimal-serving.md?raw'
-import ascendBackendArgsContent from './sglang-content/sglang-ascend-npu/04-npu-backend-args.md?raw'
-import ascendAttentionKVContent from './sglang-content/sglang-ascend-npu/05-attention-kv-cache.md?raw'
-import ascendGraphCompilationContent from './sglang-content/sglang-ascend-npu/06-npu-graph-compilation.md?raw'
-import ascendHCCLContent from './sglang-content/sglang-ascend-npu/07-distributed-hccl-tp.md?raw'
-import ascendPDDisaggContent from './sglang-content/sglang-ascend-npu/08-ascend-pd-disaggregation.md?raw'
-import ascendLoRAMoEContent from './sglang-content/sglang-ascend-npu/09-lora-moe-feature-branches.md?raw'
-import ascendBenchmarkContent from './sglang-content/sglang-ascend-npu/10-benchmark-debugging.md?raw'
 
-function wrapPy(title: string, summary: string, rawCode: string): string {
-  return `# ${title}\n\n${summary}\n\n## 源码导读\n\n以下是带中文注释的源码，建议结合注释逐步阅读。\n\n\`\`\`python\n${rawCode}\n\`\`\``
+// ============ sglang-source-reading (sub-8-1) ============
+import srFeatureMapZh from './content/zh/sglang-source-reading/00-overview/00-feature-map.md?raw'
+import srFeatureMapEn from './content/en/sglang-source-reading/00-overview/00-feature-map.md?raw'
+import srPublicCompsZh from './content/zh/sglang-source-reading/00-overview/01-public-components-code-walkthrough.md?raw'
+import srPublicCompsEn from './content/en/sglang-source-reading/00-overview/01-public-components-code-walkthrough.md?raw'
+import srRequestLifecycleZh from './content/zh/sglang-source-reading/01-entry-routing/01-request-lifecycle.md?raw'
+import srRequestLifecycleEn from './content/en/sglang-source-reading/01-entry-routing/01-request-lifecycle.md?raw'
+import srRouterZh from './content/zh/sglang-source-reading/01-entry-routing/09-router.md?raw'
+import srRouterEn from './content/en/sglang-source-reading/01-entry-routing/09-router.md?raw'
+import srSglRouterZh from './content/zh/sglang-source-reading/01-entry-routing/10-sgl-router-source-deep-dive.md?raw'
+import srSglRouterEn from './content/en/sglang-source-reading/01-entry-routing/10-sgl-router-source-deep-dive.md?raw'
+import srSchedulerCoreZh from './content/zh/sglang-source-reading/02-scheduler-runtime/02-scheduler-core.md?raw'
+import srSchedulerCoreEn from './content/en/sglang-source-reading/02-scheduler-runtime/02-scheduler-core.md?raw'
+import srMultiprocZh from './content/zh/sglang-source-reading/02-scheduler-runtime/06-multiprocess-distributed.md?raw'
+import srMultiprocEn from './content/en/sglang-source-reading/02-scheduler-runtime/06-multiprocess-distributed.md?raw'
+import srKvCacheZh from './content/zh/sglang-source-reading/03-cache-memory/03-kv-cache-radix-cache.md?raw'
+import srKvCacheEn from './content/en/sglang-source-reading/03-cache-memory/03-kv-cache-radix-cache.md?raw'
+import srModelRunnerZh from './content/zh/sglang-source-reading/04-model-execution/04-model-runner-attention.md?raw'
+import srModelRunnerEn from './content/en/sglang-source-reading/04-model-execution/04-model-runner-attention.md?raw'
+import srLayerCommZh from './content/zh/sglang-source-reading/05-layer-communication/01-layer-communicator-and-common-layers.md?raw'
+import srLayerCommEn from './content/en/sglang-source-reading/05-layer-communication/01-layer-communicator-and-common-layers.md?raw'
+import srSpecDecodingZh from './content/zh/sglang-source-reading/06-advanced-features/05-speculative-decoding.md?raw'
+import srSpecDecodingEn from './content/en/sglang-source-reading/06-advanced-features/05-speculative-decoding.md?raw'
+import srDisaggPdZh from './content/zh/sglang-source-reading/06-advanced-features/07-disaggregation-pd.md?raw'
+import srDisaggPdEn from './content/en/sglang-source-reading/06-advanced-features/07-disaggregation-pd.md?raw'
+import srLoraServingZh from './content/zh/sglang-source-reading/06-advanced-features/08-lora-serving.md?raw'
+import srLoraServingEn from './content/en/sglang-source-reading/06-advanced-features/08-lora-serving.md?raw'
+
+// ============ scheduler-architecture (sub-8-2) ============
+import saArchZh from './content/zh/scheduler-architecture/01-architecture.md?raw'
+import saArchEn from './content/en/scheduler-architecture/01-architecture.md?raw'
+import saFlowZh from './content/zh/scheduler-architecture/02-flowcharts.md?raw'
+import saFlowEn from './content/en/scheduler-architecture/02-flowcharts.md?raw'
+import saWalkZh from './content/zh/scheduler-architecture/03-annotated-code-walkthrough.md?raw'
+import saWalkEn from './content/en/scheduler-architecture/03-annotated-code-walkthrough.md?raw'
+import saFuncMapZh from './content/zh/scheduler-architecture/04-function-map.md?raw'
+import saFuncMapEn from './content/en/scheduler-architecture/04-function-map.md?raw'
+import saAnnotatedPyZh from './content/zh/scheduler-architecture/05-scheduler-annotated-cn.py?raw'
+import saAnnotatedPyEn from './content/en/scheduler-architecture/05-scheduler-annotated-cn.py?raw'
+
+// ============ tp-worker-model-runner (sub-8-3) ============
+import tpArchZh from './content/zh/tp-worker-model-runner/01-architecture.md?raw'
+import tpArchEn from './content/en/tp-worker-model-runner/01-architecture.md?raw'
+import tpFlowZh from './content/zh/tp-worker-model-runner/02-flowcharts.md?raw'
+import tpFlowEn from './content/en/tp-worker-model-runner/02-flowcharts.md?raw'
+import tpFuncMapZh from './content/zh/tp-worker-model-runner/03-function-map.md?raw'
+import tpFuncMapEn from './content/en/tp-worker-model-runner/03-function-map.md?raw'
+import tpAnnotatedPyZh from './content/zh/tp-worker-model-runner/04-tp-worker-annotated-cn.py?raw'
+import tpAnnotatedPyEn from './content/en/tp-worker-model-runner/04-tp-worker-annotated-cn.py?raw'
+import tpModelRunnerPyZh from './content/zh/tp-worker-model-runner/05-model-runner-annotated-cn.py?raw'
+import tpModelRunnerPyEn from './content/en/tp-worker-model-runner/05-model-runner-annotated-cn.py?raw'
+
+// ============ sglang-ascend-npu (sub-8-4) ============
+import an00Zh from './content/zh/sglang-ascend-npu/00-background.md?raw'
+import an00En from './content/en/sglang-ascend-npu/00-background.md?raw'
+import an01Zh from './content/zh/sglang-ascend-npu/01-environment-and-install.md?raw'
+import an01En from './content/en/sglang-ascend-npu/01-environment-and-install.md?raw'
+import an02Zh from './content/zh/sglang-ascend-npu/02-ascend-npu-integration-map.md?raw'
+import an02En from './content/en/sglang-ascend-npu/02-ascend-npu-integration-map.md?raw'
+import an03Zh from './content/zh/sglang-ascend-npu/03-launch-and-minimal-serving.md?raw'
+import an03En from './content/en/sglang-ascend-npu/03-launch-and-minimal-serving.md?raw'
+import an04Zh from './content/zh/sglang-ascend-npu/04-npu-backend-args.md?raw'
+import an04En from './content/en/sglang-ascend-npu/04-npu-backend-args.md?raw'
+import an05Zh from './content/zh/sglang-ascend-npu/05-attention-kv-cache.md?raw'
+import an05En from './content/en/sglang-ascend-npu/05-attention-kv-cache.md?raw'
+import an06Zh from './content/zh/sglang-ascend-npu/06-npu-graph-compilation.md?raw'
+import an06En from './content/en/sglang-ascend-npu/06-npu-graph-compilation.md?raw'
+import an07Zh from './content/zh/sglang-ascend-npu/07-distributed-hccl-tp.md?raw'
+import an07En from './content/en/sglang-ascend-npu/07-distributed-hccl-tp.md?raw'
+import an08Zh from './content/zh/sglang-ascend-npu/08-ascend-pd-disaggregation.md?raw'
+import an08En from './content/en/sglang-ascend-npu/08-ascend-pd-disaggregation.md?raw'
+import an09Zh from './content/zh/sglang-ascend-npu/09-lora-moe-feature-branches.md?raw'
+import an09En from './content/en/sglang-ascend-npu/09-lora-moe-feature-branches.md?raw'
+import an10Zh from './content/zh/sglang-ascend-npu/10-benchmark-debugging.md?raw'
+import an10En from './content/en/sglang-ascend-npu/10-benchmark-debugging.md?raw'
+import an11Zh from './content/zh/sglang-ascend-npu/11-performance-optimization-work-map.md?raw'
+import an11En from './content/en/sglang-ascend-npu/11-performance-optimization-work-map.md?raw'
+import an12Zh from './content/zh/sglang-ascend-npu/12-npu-profiling-guide.md?raw'
+import an12En from './content/en/sglang-ascend-npu/12-npu-profiling-guide.md?raw'
+import an13Zh from './content/zh/sglang-ascend-npu/13-run-models-by-scenario.md?raw'
+import an13En from './content/en/sglang-ascend-npu/13-run-models-by-scenario.md?raw'
+import an14Zh from './content/zh/sglang-ascend-npu/14-performance-testing.md?raw'
+import an14En from './content/en/sglang-ascend-npu/14-performance-testing.md?raw'
+import an15Zh from './content/zh/sglang-ascend-npu/15-accuracy-testing-and-debugging.md?raw'
+import an15En from './content/en/sglang-ascend-npu/15-accuracy-testing-and-debugging.md?raw'
+
+// source-code-walkthrough
+import anScm01Zh from './content/zh/sglang-ascend-npu/source-code-walkthrough/01-sglang-npu-component-map.md?raw'
+import anScm01En from './content/en/sglang-ascend-npu/source-code-walkthrough/01-sglang-npu-component-map.md?raw'
+import anScm15Zh from './content/zh/sglang-ascend-npu/source-code-walkthrough/15-distributed-hccl-and-communication.md?raw'
+import anScm15En from './content/en/sglang-ascend-npu/source-code-walkthrough/15-distributed-hccl-and-communication.md?raw'
+import anExGlmZh from './content/zh/sglang-ascend-npu/source-code-walkthrough/examples/00-glm-4.7-flash-end-to-end.md?raw'
+import anExGlmEn from './content/en/sglang-ascend-npu/source-code-walkthrough/examples/00-glm-4.7-flash-end-to-end.md?raw'
+import anFn00Zh from './content/zh/sglang-ascend-npu/source-code-walkthrough/foundation/00-reading-method-and-branch-search.md?raw'
+import anFn00En from './content/en/sglang-ascend-npu/source-code-walkthrough/foundation/00-reading-method-and-branch-search.md?raw'
+import anFn01Zh from './content/zh/sglang-ascend-npu/source-code-walkthrough/foundation/01-platform-detection-and-process-startup.md?raw'
+import anFn01En from './content/en/sglang-ascend-npu/source-code-walkthrough/foundation/01-platform-detection-and-process-startup.md?raw'
+import anFn02Zh from './content/zh/sglang-ascend-npu/source-code-walkthrough/foundation/02-server-args-and-npu-defaults.md?raw'
+import anFn02En from './content/en/sglang-ascend-npu/source-code-walkthrough/foundation/02-server-args-and-npu-defaults.md?raw'
+import anFn03Zh from './content/zh/sglang-ascend-npu/source-code-walkthrough/foundation/03-request-lifecycle-npu-branch-points.md?raw'
+import anFn03En from './content/en/sglang-ascend-npu/source-code-walkthrough/foundation/03-request-lifecycle-npu-branch-points.md?raw'
+import anFn04Zh from './content/zh/sglang-ascend-npu/source-code-walkthrough/foundation/04-model-loading-dtype-and-layout.md?raw'
+import anFn04En from './content/en/sglang-ascend-npu/source-code-walkthrough/foundation/04-model-loading-dtype-and-layout.md?raw'
+import anFn05Zh from './content/zh/sglang-ascend-npu/source-code-walkthrough/foundation/05-model-runner-forward-batch-and-input-buffers.md?raw'
+import anFn05En from './content/en/sglang-ascend-npu/source-code-walkthrough/foundation/05-model-runner-forward-batch-and-input-buffers.md?raw'
+
+// ============ ascend-kernel-infra (sub-8-5) ============
+import akiReadmeZh from './content/zh/ascend-kernel-infra/README.md?raw'
+import akiReadmeEn from './content/en/ascend-kernel-infra/README.md?raw'
+import akiStackZh from './content/zh/ascend-kernel-infra/01-stack-and-relationships.md?raw'
+import akiStackEn from './content/en/ascend-kernel-infra/01-stack-and-relationships.md?raw'
+import akiCannZh from './content/zh/ascend-kernel-infra/02-cann-stack-and-boundaries.md?raw'
+import akiCannEn from './content/en/ascend-kernel-infra/02-cann-stack-and-boundaries.md?raw'
+// foundations
+import akiF1Zh from './content/zh/ascend-kernel-infra/foundations/01-kernel-first-principles.md?raw'
+import akiF1En from './content/en/ascend-kernel-infra/foundations/01-kernel-first-principles.md?raw'
+import akiF2Zh from './content/zh/ascend-kernel-infra/foundations/02-ascend-hardware.md?raw'
+import akiF2En from './content/en/ascend-kernel-infra/foundations/02-ascend-hardware.md?raw'
+import akiF3Zh from './content/zh/ascend-kernel-infra/foundations/03-memory-pipeline-and-sync.md?raw'
+import akiF3En from './content/en/ascend-kernel-infra/foundations/03-memory-pipeline-and-sync.md?raw'
+// ascend-c
+import akiAc1Zh from './content/zh/ascend-kernel-infra/ascend-c/01-global-local-tensor-pipe-queue.md?raw'
+import akiAc1En from './content/en/ascend-kernel-infra/ascend-c/01-global-local-tensor-pipe-queue.md?raw'
+import akiAc2Zh from './content/zh/ascend-kernel-infra/ascend-c/02-add-operator-end-to-end.md?raw'
+import akiAc2En from './content/en/ascend-kernel-infra/ascend-c/02-add-operator-end-to-end.md?raw'
+import akiAc3Zh from './content/zh/ascend-kernel-infra/ascend-c/03-tiling-pipeline-sync-optimization.md?raw'
+import akiAc3En from './content/en/ascend-kernel-infra/ascend-c/03-tiling-pipeline-sync-optimization.md?raw'
+import akiAc4Zh from './content/zh/ascend-kernel-infra/ascend-c/04-platform-tiling-and-workspace-contracts.md?raw'
+import akiAc4En from './content/en/ascend-kernel-infra/ascend-c/04-platform-tiling-and-workspace-contracts.md?raw'
+// triton-ascend
+import akiTa1Zh from './content/zh/ascend-kernel-infra/triton-ascend/01-program-grid-tile.md?raw'
+import akiTa1En from './content/en/ascend-kernel-infra/triton-ascend/01-program-grid-tile.md?raw'
+import akiTa2Zh from './content/zh/ascend-kernel-infra/triton-ascend/02-tensor-addressing-reduction-matmul.md?raw'
+import akiTa2En from './content/en/ascend-kernel-infra/triton-ascend/02-tensor-addressing-reduction-matmul.md?raw'
+import akiTa3Zh from './content/zh/ascend-kernel-infra/triton-ascend/03-compile-debug-optimize.md?raw'
+import akiTa3En from './content/en/ascend-kernel-infra/triton-ascend/03-compile-debug-optimize.md?raw'
+import akiTa4Zh from './content/zh/ascend-kernel-infra/triton-ascend/04-ttir-mlir-driver-and-cache.md?raw'
+import akiTa4En from './content/en/ascend-kernel-infra/triton-ascend/04-ttir-mlir-driver-and-cache.md?raw'
+import akiTa5Zh from './content/zh/ascend-kernel-infra/triton-ascend/05-persistent-kernel-and-large-grid.md?raw'
+import akiTa5En from './content/en/ascend-kernel-infra/triton-ascend/05-persistent-kernel-and-large-grid.md?raw'
+// sgl-kernel-npu
+import akiSk1Zh from './content/zh/ascend-kernel-infra/sgl-kernel-npu/01-repository-and-op-lifecycle.md?raw'
+import akiSk1En from './content/en/ascend-kernel-infra/sgl-kernel-npu/01-repository-and-op-lifecycle.md?raw'
+import akiSk2Zh from './content/zh/ascend-kernel-infra/sgl-kernel-npu/02-triton-fused-split-qk-norm.md?raw'
+import akiSk2En from './content/en/ascend-kernel-infra/sgl-kernel-npu/02-triton-fused-split-qk-norm.md?raw'
+import akiSk3Zh from './content/zh/ascend-kernel-infra/sgl-kernel-npu/03-ascend-c-apply-token-bitmask.md?raw'
+import akiSk3En from './content/en/ascend-kernel-infra/sgl-kernel-npu/03-ascend-c-apply-token-bitmask.md?raw'
+import akiSk4Zh from './content/zh/ascend-kernel-infra/sgl-kernel-npu/04-fla-chunk-gated-delta-rule-mixed-path.md?raw'
+import akiSk4En from './content/en/ascend-kernel-infra/sgl-kernel-npu/04-fla-chunk-gated-delta-rule-mixed-path.md?raw'
+import akiSk5Zh from './content/zh/ascend-kernel-infra/sgl-kernel-npu/05-deepep-hccl-and-moe-kernel-path.md?raw'
+import akiSk5En from './content/en/ascend-kernel-infra/sgl-kernel-npu/05-deepep-hccl-and-moe-kernel-path.md?raw'
+import akiSk6Zh from './content/zh/ascend-kernel-infra/sgl-kernel-npu/06-deepep-low-latency-and-layered-a2-path.md?raw'
+import akiSk6En from './content/en/ascend-kernel-infra/sgl-kernel-npu/06-deepep-low-latency-and-layered-a2-path.md?raw'
+import akiSk8Zh from './content/zh/ascend-kernel-infra/sgl-kernel-npu/08-fla-mega-kernel-device-stages.md?raw'
+import akiSk8En from './content/en/ascend-kernel-infra/sgl-kernel-npu/08-fla-mega-kernel-device-stages.md?raw'
+// torch_npu
+import akiTn1Zh from './content/zh/ascend-kernel-infra/torch_npu/01-dispatch-aclnn-and-custom-op-boundaries.md?raw'
+import akiTn1En from './content/en/ascend-kernel-infra/torch_npu/01-dispatch-aclnn-and-custom-op-boundaries.md?raw'
+// reference
+import akiRefCodeZh from './content/zh/ascend-kernel-infra/reference/code-reading-and-types.md?raw'
+import akiRefCodeEn from './content/en/ascend-kernel-infra/reference/code-reading-and-types.md?raw'
+import akiRefTechZh from './content/zh/ascend-kernel-infra/reference/technology-comparison.md?raw'
+import akiRefTechEn from './content/en/ascend-kernel-infra/reference/technology-comparison.md?raw'
+import akiRefGlossZh from './content/zh/ascend-kernel-infra/reference/glossary.md?raw'
+import akiRefGlossEn from './content/en/ascend-kernel-infra/reference/glossary.md?raw'
+
+function wrapPy(title: string, titleEn: string, summary: string, summaryEn: string, rawCodeZh: string, rawCodeEn: string): { zh: string; en: string } {
+  return {
+    zh: `# ${title}\n\n${summary}\n\n## 源码导读\n\n以下是带中文注释的源码，建议结合注释逐步阅读。\n\n\`\`\`python\n${rawCodeZh}\n\`\`\``,
+    en: `# ${titleEn}\n\n${summaryEn}\n\n## Source Walkthrough\n\nThe following is the annotated source code. Read it step by step with the comments.\n\n\`\`\`python\n${rawCodeEn}\n\`\`\``,
+  }
 }
 
 export const sglangArticles: Article[] = [
+  // ============ sglang-source-reading (sub-8-1) ============
   {
     id: 'sglang-sr-00',
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-1',
     title: 'SGLang 特性地图',
+    titleEn: 'SGLang Feature Map',
     slug: 'sglang-feature-map',
     summary: 'SGLang源码全景特性地图，梳理核心功能模块与代码定位',
-    content: featureMapContent,
+    summaryEn: 'Panoramic feature map of SGLang source code, mapping core functional modules to code locations',
+    content: srFeatureMapZh,
+    contentEn: srFeatureMapEn,
     tags: ['SGLang', '源码解析', '特性地图'],
     readTime: '45 min',
     date: '2025-04-01',
     prevArticleId: null,
+    nextArticleId: 'sglang-sr-00b',
+  },
+  {
+    id: 'sglang-sr-00b',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-1',
+    title: '公共组件代码导读',
+    titleEn: 'Public Components Code Walkthrough',
+    slug: 'sglang-public-components-walkthrough',
+    summary: 'SGLang公共组件的代码导读，覆盖常用工具、数据结构与跨模块共享逻辑',
+    summaryEn: 'Code walkthrough of SGLang public components, covering common utilities, data structures, and cross-module shared logic',
+    content: srPublicCompsZh,
+    contentEn: srPublicCompsEn,
+    tags: ['SGLang', '公共组件', '源码解析'],
+    readTime: '40 min',
+    date: '2025-04-02',
+    prevArticleId: 'sglang-sr-00',
     nextArticleId: 'sglang-sr-01',
   },
   {
@@ -54,13 +214,50 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-1',
     title: '请求生命周期',
+    titleEn: 'Request Lifecycle',
     slug: 'sglang-request-lifecycle',
     summary: '从请求发起到响应返回的完整生命周期解析',
-    content: requestLifecycleContent,
+    summaryEn: 'Full lifecycle analysis from request initiation to response return',
+    content: srRequestLifecycleZh,
+    contentEn: srRequestLifecycleEn,
     tags: ['SGLang', '请求生命周期', '源码解析'],
     readTime: '25 min',
     date: '2025-04-05',
-    prevArticleId: 'sglang-sr-00',
+    prevArticleId: 'sglang-sr-00b',
+    nextArticleId: 'sglang-sr-01b',
+  },
+  {
+    id: 'sglang-sr-01b',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-1',
+    title: 'Router路由层',
+    titleEn: 'Router',
+    slug: 'sglang-router',
+    summary: 'SGLang Router的路由分发、负载均衡与多DP/TP Worker管理',
+    summaryEn: 'SGLang Router: routing dispatch, load balancing, and multi DP/TP worker management',
+    content: srRouterZh,
+    contentEn: srRouterEn,
+    tags: ['SGLang', 'Router', '路由'],
+    readTime: '30 min',
+    date: '2025-04-06',
+    prevArticleId: 'sglang-sr-01',
+    nextArticleId: 'sglang-sr-01c',
+  },
+  {
+    id: 'sglang-sr-01c',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-1',
+    title: 'sgl-router源码深度解析',
+    titleEn: 'sgl-router Source Deep Dive',
+    slug: 'sgl-router-source-deep-dive',
+    summary: 'sgl-router（Rust实现）的源码深度解析：路由策略、缓存与性能优化',
+    summaryEn: 'Deep dive into sgl-router (Rust) source: routing strategy, caching, and performance optimization',
+    content: srSglRouterZh,
+    contentEn: srSglRouterEn,
+    tags: ['SGLang', 'sgl-router', 'Rust', '源码解析'],
+    readTime: '50 min',
+    date: '2025-04-07',
+    prevArticleId: 'sglang-sr-01b',
     nextArticleId: 'sglang-sr-02',
   },
   {
@@ -68,13 +265,16 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-1',
     title: 'Scheduler核心调度',
+    titleEn: 'Scheduler Core',
     slug: 'sglang-scheduler-core',
     summary: 'Scheduler核心调度逻辑与批处理策略深度解析',
-    content: schedulerCoreContent,
+    summaryEn: 'Deep analysis of Scheduler core scheduling logic and batching strategies',
+    content: srSchedulerCoreZh,
+    contentEn: srSchedulerCoreEn,
     tags: ['SGLang', 'Scheduler', '调度'],
     readTime: '30 min',
     date: '2025-04-10',
-    prevArticleId: 'sglang-sr-01',
+    prevArticleId: 'sglang-sr-01c',
     nextArticleId: 'sglang-sr-03',
   },
   {
@@ -82,9 +282,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-1',
     title: 'KV Cache与Radix Cache',
+    titleEn: 'KV Cache & Radix Cache',
     slug: 'sglang-kv-cache',
     summary: 'KV Cache管理机制与RadixAttention核心创新解析',
-    content: kvCacheRadixCacheContent,
+    summaryEn: 'KV Cache management mechanism and RadixAttention core innovation analysis',
+    content: srKvCacheZh,
+    contentEn: srKvCacheEn,
     tags: ['SGLang', 'KV Cache', 'RadixAttention'],
     readTime: '35 min',
     date: '2025-04-15',
@@ -96,13 +299,33 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-1',
     title: 'Model Runner与Attention',
+    titleEn: 'Model Runner & Attention',
     slug: 'sglang-model-runner-attention',
     summary: 'ModelRunner执行流程与Attention机制实现细节',
-    content: modelRunnerAttentionContent,
+    summaryEn: 'ModelRunner execution flow and Attention implementation details',
+    content: srModelRunnerZh,
+    contentEn: srModelRunnerEn,
     tags: ['SGLang', 'ModelRunner', 'Attention'],
     readTime: '40 min',
     date: '2025-04-20',
     prevArticleId: 'sglang-sr-03',
+    nextArticleId: 'sglang-sr-04b',
+  },
+  {
+    id: 'sglang-sr-04b',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-1',
+    title: '通信层与公共Layer',
+    titleEn: 'Layer Communicator & Common Layers',
+    slug: 'sglang-layer-communicator',
+    summary: '通信层组件与公共Layer实现：TensorParallelLinear、LayerCommunicator等',
+    summaryEn: 'Communication layer components and common Layer implementations: TensorParallelLinear, LayerCommunicator, etc.',
+    content: srLayerCommZh,
+    contentEn: srLayerCommEn,
+    tags: ['SGLang', '通信层', 'Layer', 'TP'],
+    readTime: '40 min',
+    date: '2025-04-21',
+    prevArticleId: 'sglang-sr-04',
     nextArticleId: 'sglang-sr-05',
   },
   {
@@ -110,13 +333,16 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-1',
     title: '投机解码',
+    titleEn: 'Speculative Decoding',
     slug: 'sglang-speculative-decoding-sglang',
     summary: 'SGLang中投机解码的实现原理与代码解析',
-    content: speculativeDecodingContent,
+    summaryEn: 'Implementation principles and code analysis of speculative decoding in SGLang',
+    content: srSpecDecodingZh,
+    contentEn: srSpecDecodingEn,
     tags: ['SGLang', '投机解码', 'Speculative Decoding'],
     readTime: '45 min',
     date: '2025-04-25',
-    prevArticleId: 'sglang-sr-04',
+    prevArticleId: 'sglang-sr-04b',
     nextArticleId: 'sglang-sr-06',
   },
   {
@@ -124,9 +350,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-1',
     title: '多进程与分布式',
+    titleEn: 'Multiprocess & Distributed',
     slug: 'sglang-multiprocess-distributed',
     summary: 'SGLang多进程架构与分布式推理实现详解',
-    content: multiprocessDistributedContent,
+    summaryEn: 'Detailed explanation of SGLang multiprocess architecture and distributed inference implementation',
+    content: srMultiprocZh,
+    contentEn: srMultiprocEn,
     tags: ['SGLang', '分布式', '多进程', 'TP'],
     readTime: '50 min',
     date: '2025-04-30',
@@ -138,9 +367,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-1',
     title: 'Prefill-Decode分离',
+    titleEn: 'Prefill-Decode Disaggregation',
     slug: 'sglang-disaggregation-pd',
     summary: 'Prefill与Decode分离架构的设计原理与实现',
-    content: disaggregationPdContent,
+    summaryEn: 'Design principles and implementation of Prefill-Decode disaggregation architecture',
+    content: srDisaggPdZh,
+    contentEn: srDisaggPdEn,
     tags: ['SGLang', 'PD分离', 'Disaggregation'],
     readTime: '50 min',
     date: '2025-05-05',
@@ -152,23 +384,31 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-1',
     title: 'LoRA Serving与Adapter热加载',
+    titleEn: 'LoRA Serving & Adapter Hot-loading',
     slug: 'sglang-lora-serving',
     summary: 'SGLang中LoRA adapter的加载、切换与热加载机制源码解析',
-    content: loraServingContent,
+    summaryEn: 'Source code analysis of LoRA adapter loading, switching, and hot-loading mechanisms in SGLang',
+    content: srLoraServingZh,
+    contentEn: srLoraServingEn,
     tags: ['SGLang', 'LoRA', 'Adapter', '源码解析'],
     readTime: '45 min',
     date: '2025-05-10',
     prevArticleId: 'sglang-sr-07',
     nextArticleId: null,
   },
+
+  // ============ scheduler-architecture (sub-8-2) ============
   {
     id: 'sglang-sa-01',
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-2',
     title: 'Scheduler架构概览',
+    titleEn: 'Scheduler Architecture Overview',
     slug: 'sglang-scheduler-architecture',
     summary: 'Scheduler整体架构设计与核心组件关系',
-    content: schedulerArchitectureContent,
+    summaryEn: 'Overall Scheduler architecture design and core component relationships',
+    content: saArchZh,
+    contentEn: saArchEn,
     tags: ['SGLang', 'Scheduler', '架构'],
     readTime: '20 min',
     date: '2025-05-10',
@@ -180,9 +420,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-2',
     title: 'Scheduler流程图',
+    titleEn: 'Scheduler Flowcharts',
     slug: 'sglang-scheduler-flowcharts',
     summary: 'Scheduler请求调度的详细流程图与状态转换',
-    content: schedulerFlowchartsContent,
+    summaryEn: 'Detailed flowcharts and state transitions of Scheduler request dispatching',
+    content: saFlowZh,
+    contentEn: saFlowEn,
     tags: ['SGLang', 'Scheduler', '流程图'],
     readTime: '25 min',
     date: '2025-05-15',
@@ -194,9 +437,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-2',
     title: 'Scheduler代码导读',
+    titleEn: 'Scheduler Code Walkthrough',
     slug: 'sglang-scheduler-code-walkthrough',
     summary: '带中文注释的Scheduler核心代码逐行导读',
-    content: schedulerCodeWalkthroughContent,
+    summaryEn: 'Line-by-line walkthrough of Scheduler core code with annotations',
+    content: saWalkZh,
+    contentEn: saWalkEn,
     tags: ['SGLang', 'Scheduler', '代码注释'],
     readTime: '60 min',
     date: '2025-05-20',
@@ -208,37 +454,58 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-2',
     title: 'Scheduler函数地图',
+    titleEn: 'Scheduler Function Map',
     slug: 'sglang-scheduler-function-map',
     summary: 'Scheduler模块核心函数定位与调用关系',
-    content: schedulerFunctionMapContent,
+    summaryEn: 'Core function locations and call relationships in the Scheduler module',
+    content: saFuncMapZh,
+    contentEn: saFuncMapEn,
     tags: ['SGLang', 'Scheduler', '函数地图'],
     readTime: '25 min',
     date: '2025-05-25',
     prevArticleId: 'sglang-sa-03',
     nextArticleId: 'sglang-sa-05',
   },
-  {
-    id: 'sglang-sa-05',
-    categoryId: 'cat-8',
-    subCategoryId: 'sub-8-2',
-    title: 'Scheduler带中文注释源码',
-    slug: 'sglang-scheduler-annotated-code',
-    summary: 'Scheduler核心模块的完整中文注释版源码',
-    content: wrapPy('Scheduler带中文注释源码', 'Scheduler核心模块的完整中文注释版源码，逐行解读调度逻辑', schedulerAnnotatedContent),
-    tags: ['SGLang', 'Scheduler', '代码注释'],
-    readTime: '60 min',
-    date: '2025-05-30',
-    prevArticleId: 'sglang-sa-04',
-    nextArticleId: null,
-  },
+  (() => {
+    const wrapped = wrapPy(
+      'Scheduler带中文注释源码',
+      'Scheduler Annotated Source',
+      'Scheduler核心模块的完整中文注释版源码，逐行解读调度逻辑',
+      'Complete annotated source of the Scheduler core module, line-by-line explanation of scheduling logic',
+      saAnnotatedPyZh,
+      saAnnotatedPyEn,
+    )
+    return {
+      id: 'sglang-sa-05',
+      categoryId: 'cat-8',
+      subCategoryId: 'sub-8-2',
+      title: 'Scheduler带中文注释源码',
+      titleEn: 'Scheduler Annotated Source',
+      slug: 'sglang-scheduler-annotated-code',
+      summary: 'Scheduler核心模块的完整中文注释版源码',
+      summaryEn: 'Complete annotated source of the Scheduler core module',
+      content: wrapped.zh,
+      contentEn: wrapped.en,
+      tags: ['SGLang', 'Scheduler', '代码注释'],
+      readTime: '60 min',
+      date: '2025-05-30',
+      prevArticleId: 'sglang-sa-04',
+      nextArticleId: null,
+    }
+  })(),
+
+  // ============ tp-worker-model-runner (sub-8-3) ============
   {
     id: 'sglang-tw-01',
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-3',
     title: 'TP Worker架构概览',
+    titleEn: 'TP Worker Architecture Overview',
     slug: 'sglang-tp-worker-architecture',
     summary: 'TpModelWorker整体架构设计与组件关系',
-    content: tpWorkerArchitectureContent,
+    summaryEn: 'Overall TpModelWorker architecture design and component relationships',
+    content: tpArchZh,
+    contentEn: tpArchEn,
     tags: ['SGLang', 'TP Worker', '架构'],
     readTime: '20 min',
     date: '2025-05-30',
@@ -250,9 +517,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-3',
     title: 'TP Worker流程图',
+    titleEn: 'TP Worker Flowcharts',
     slug: 'sglang-tp-worker-flowcharts',
     summary: 'TpModelWorker与ModelRunner执行流程详解',
-    content: tpWorkerFlowchartsContent,
+    summaryEn: 'Detailed execution flow of TpModelWorker and ModelRunner',
+    content: tpFlowZh,
+    contentEn: tpFlowEn,
     tags: ['SGLang', 'TP Worker', '流程图'],
     readTime: '30 min',
     date: '2025-06-05',
@@ -264,51 +534,85 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-3',
     title: 'TP Worker函数地图',
+    titleEn: 'TP Worker Function Map',
     slug: 'sglang-tp-worker-function-map',
     summary: 'TpModelWorker与ModelRunner核心函数定位',
-    content: tpWorkerFunctionMapContent,
+    summaryEn: 'Core function locations of TpModelWorker and ModelRunner',
+    content: tpFuncMapZh,
+    contentEn: tpFuncMapEn,
     tags: ['SGLang', 'TP Worker', '函数地图'],
     readTime: '25 min',
     date: '2025-06-10',
     prevArticleId: 'sglang-tw-02',
     nextArticleId: 'sglang-tw-04',
   },
-  {
-    id: 'sglang-tw-04',
-    categoryId: 'cat-8',
-    subCategoryId: 'sub-8-3',
-    title: 'TpModelWorker带中文注释源码',
-    slug: 'sglang-tp-worker-annotated-code',
-    summary: 'TpModelWorker完整中文注释版源码',
-    content: wrapPy('TpModelWorker带中文注释源码', 'TpModelWorker的完整中文注释版源码，理解张量并行Worker的实现', tpWorkerAnnotatedContent),
-    tags: ['SGLang', 'TP Worker', '代码注释'],
-    readTime: '50 min',
-    date: '2025-06-05',
-    prevArticleId: 'sglang-tw-03',
-    nextArticleId: 'sglang-tw-05',
-  },
-  {
-    id: 'sglang-tw-05',
-    categoryId: 'cat-8',
-    subCategoryId: 'sub-8-3',
-    title: 'ModelRunner带中文注释源码',
-    slug: 'sglang-model-runner-annotated-code',
-    summary: 'ModelRunner完整中文注释版源码',
-    content: wrapPy('ModelRunner带中文注释源码', 'ModelRunner的完整中文注释版源码，理解模型推理执行的底层实现', modelRunnerAnnotatedContent),
-    tags: ['SGLang', 'ModelRunner', '代码注释'],
-    readTime: '60 min',
-    date: '2025-06-10',
-    prevArticleId: 'sglang-tw-04',
-    nextArticleId: null,
-  },
+  (() => {
+    const wrapped = wrapPy(
+      'TpModelWorker带中文注释源码',
+      'TpModelWorker Annotated Source',
+      'TpModelWorker的完整中文注释版源码，理解张量并行Worker的实现',
+      'Complete annotated source of TpModelWorker, understanding the tensor-parallel worker implementation',
+      tpAnnotatedPyZh,
+      tpAnnotatedPyEn,
+    )
+    return {
+      id: 'sglang-tw-04',
+      categoryId: 'cat-8',
+      subCategoryId: 'sub-8-3',
+      title: 'TpModelWorker带中文注释源码',
+      titleEn: 'TpModelWorker Annotated Source',
+      slug: 'sglang-tp-worker-annotated-code',
+      summary: 'TpModelWorker完整中文注释版源码',
+      summaryEn: 'Complete annotated source of TpModelWorker',
+      content: wrapped.zh,
+      contentEn: wrapped.en,
+      tags: ['SGLang', 'TP Worker', '代码注释'],
+      readTime: '50 min',
+      date: '2025-06-15',
+      prevArticleId: 'sglang-tw-03',
+      nextArticleId: 'sglang-tw-05',
+    }
+  })(),
+  (() => {
+    const wrapped = wrapPy(
+      'ModelRunner带中文注释源码',
+      'ModelRunner Annotated Source',
+      'ModelRunner的完整中文注释版源码，理解模型推理执行的底层实现',
+      'Complete annotated source of ModelRunner, understanding the low-level implementation of model inference execution',
+      tpModelRunnerPyZh,
+      tpModelRunnerPyEn,
+    )
+    return {
+      id: 'sglang-tw-05',
+      categoryId: 'cat-8',
+      subCategoryId: 'sub-8-3',
+      title: 'ModelRunner带中文注释源码',
+      titleEn: 'ModelRunner Annotated Source',
+      slug: 'sglang-model-runner-annotated-code',
+      summary: 'ModelRunner完整中文注释版源码',
+      summaryEn: 'Complete annotated source of ModelRunner',
+      content: wrapped.zh,
+      contentEn: wrapped.en,
+      tags: ['SGLang', 'ModelRunner', '代码注释'],
+      readTime: '60 min',
+      date: '2025-06-20',
+      prevArticleId: 'sglang-tw-04',
+      nextArticleId: null,
+    }
+  })(),
+
+  // ============ sglang-ascend-npu main (sub-8-4) ============
   {
     id: 'sglang-an-00',
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-4',
     title: 'Ascend NPU背景知识',
+    titleEn: 'Ascend NPU Background',
     slug: 'sglang-ascend-background',
     summary: 'Ascend NPU硬件架构、CANN软件栈、torch_npu与HCCL等前置概念',
-    content: ascendBackgroundContent,
+    summaryEn: 'Background concepts: Ascend NPU hardware architecture, CANN software stack, torch_npu and HCCL',
+    content: an00Zh,
+    contentEn: an00En,
     tags: ['SGLang', 'Ascend', 'NPU', '背景知识'],
     readTime: '25 min',
     date: '2025-06-15',
@@ -320,9 +624,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-4',
     title: '环境搭建与安装',
+    titleEn: 'Environment Setup & Installation',
     slug: 'sglang-ascend-environment',
     summary: 'Ascend NPU服务器上的SGLang NPU版本安装与环境检查',
-    content: ascendEnvironmentContent,
+    summaryEn: 'Installing SGLang NPU version on Ascend NPU servers and environment verification',
+    content: an01Zh,
+    contentEn: an01En,
     tags: ['SGLang', 'Ascend', '安装', '环境'],
     readTime: '30 min',
     date: '2025-06-16',
@@ -334,9 +641,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-4',
     title: 'Ascend NPU全量接入地图',
+    titleEn: 'Ascend NPU Integration Map',
     slug: 'sglang-ascend-integration-map',
     summary: 'SGLang源码中所有NPU接入点、初始化流程与调用关系的知识图谱',
-    content: ascendIntegrationMapContent,
+    summaryEn: 'Knowledge map of all NPU integration points, initialization flow, and call relationships in SGLang source',
+    content: an02Zh,
+    contentEn: an02En,
     tags: ['SGLang', 'Ascend', '接入地图', '源码'],
     readTime: '40 min',
     date: '2025-06-17',
@@ -348,9 +658,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-4',
     title: '最小服务启动与验证',
+    titleEn: 'Minimal Serving Launch & Verification',
     slug: 'sglang-ascend-minimal-serving',
     summary: '单卡启动SGLang NPU服务、请求验证与启动日志解读',
-    content: ascendMinimalServingContent,
+    summaryEn: 'Launching SGLang NPU service on a single card, request verification, and startup log analysis',
+    content: an03Zh,
+    contentEn: an03En,
     tags: ['SGLang', 'Ascend', '服务启动'],
     readTime: '30 min',
     date: '2025-06-18',
@@ -362,9 +675,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-4',
     title: 'NPU默认启动参数',
+    titleEn: 'NPU Default Server Args',
     slug: 'sglang-ascend-backend-args',
     summary: 'set_default_server_args()逐行解读，理解NPU下的参数差异',
-    content: ascendBackendArgsContent,
+    summaryEn: 'Line-by-line analysis of set_default_server_args() to understand parameter differences on NPU',
+    content: an04Zh,
+    contentEn: an04En,
     tags: ['SGLang', 'Ascend', '参数', '配置'],
     readTime: '20 min',
     date: '2025-06-19',
@@ -376,9 +692,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-4',
     title: 'Attention与KV Cache',
+    titleEn: 'Attention & KV Cache',
     slug: 'sglang-ascend-attention-kv',
     summary: 'Ascend attention backend、KV cache布局与HiCache在NPU上的适配',
-    content: ascendAttentionKVContent,
+    summaryEn: 'Ascend attention backend, KV cache layout, and HiCache adaptation on NPU',
+    content: an05Zh,
+    contentEn: an05En,
     tags: ['SGLang', 'Ascend', 'Attention', 'KV Cache'],
     readTime: '30 min',
     date: '2025-06-20',
@@ -390,9 +709,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-4',
     title: 'NPU Graph与编译',
+    titleEn: 'NPU Graph & Compilation',
     slug: 'sglang-ascend-graph-compilation',
     summary: 'NPUGraph、piecewise graph、shape capture与replay机制',
-    content: ascendGraphCompilationContent,
+    summaryEn: 'NPUGraph, piecewise graph, shape capture, and replay mechanisms',
+    content: an06Zh,
+    contentEn: an06En,
     tags: ['SGLang', 'Ascend', 'Graph', '编译'],
     readTime: '25 min',
     date: '2025-06-21',
@@ -404,9 +726,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-4',
     title: 'TP/HCCL/分布式通信',
+    titleEn: 'TP/HCCL/Distributed Communication',
     slug: 'sglang-ascend-hccl-tp',
     summary: '多卡Ascend下的张量并行、HCCL通信与ZBAL配置',
-    content: ascendHCCLContent,
+    summaryEn: 'Tensor parallelism, HCCL communication, and ZBAL configuration on multi-card Ascend',
+    content: an07Zh,
+    contentEn: an07En,
     tags: ['SGLang', 'Ascend', 'HCCL', 'TP'],
     readTime: '25 min',
     date: '2025-06-22',
@@ -418,9 +743,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-4',
     title: 'Ascend PD分离',
+    titleEn: 'Ascend PD Disaggregation',
     slug: 'sglang-ascend-pd-disaggregation',
     summary: 'AscendTransferEngine、SDMA/Device RDMA与KV传输',
-    content: ascendPDDisaggContent,
+    summaryEn: 'AscendTransferEngine, SDMA/Device RDMA, and KV transfer',
+    content: an08Zh,
+    contentEn: an08En,
     tags: ['SGLang', 'Ascend', 'PD分离', 'Disaggregation'],
     readTime: '25 min',
     date: '2025-06-23',
@@ -432,9 +760,12 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-4',
     title: 'LoRA/MoE/特性分支',
+    titleEn: 'LoRA/MoE/Feature Branches',
     slug: 'sglang-ascend-lora-moe',
     summary: 'Ascend LoRA backend、MoE stream管理与fallback机制',
-    content: ascendLoRAMoEContent,
+    summaryEn: 'Ascend LoRA backend, MoE stream management, and fallback mechanisms',
+    content: an09Zh,
+    contentEn: an09En,
     tags: ['SGLang', 'Ascend', 'LoRA', 'MoE'],
     readTime: '25 min',
     date: '2025-06-24',
@@ -446,13 +777,706 @@ export const sglangArticles: Article[] = [
     categoryId: 'cat-8',
     subCategoryId: 'sub-8-4',
     title: '性能压测与排错',
+    titleEn: 'Benchmarking & Debugging',
     slug: 'sglang-ascend-benchmark',
     summary: '压测方法、日志定位、性能问题排查的实践指南',
-    content: ascendBenchmarkContent,
+    summaryEn: 'Practical guide to benchmarking methods, log analysis, and performance troubleshooting',
+    content: an10Zh,
+    contentEn: an10En,
     tags: ['SGLang', 'Ascend', '压测', '排错'],
     readTime: '25 min',
     date: '2025-06-25',
     prevArticleId: 'sglang-an-09',
+    nextArticleId: 'sglang-an-11',
+  },
+  {
+    id: 'sglang-an-11',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: '性能优化工作地图',
+    titleEn: 'Performance Optimization Work Map',
+    slug: 'sglang-ascend-perf-work-map',
+    summary: '性能优化工作的全景地图：从算子到通信、从图编译到调度',
+    summaryEn: 'Panoramic map of performance optimization work: from operators to communication, from graph compilation to scheduling',
+    content: an11Zh,
+    contentEn: an11En,
+    tags: ['SGLang', 'Ascend', '性能优化', '工作地图'],
+    readTime: '30 min',
+    date: '2025-06-26',
+    prevArticleId: 'sglang-an-10',
+    nextArticleId: 'sglang-an-12',
+  },
+  {
+    id: 'sglang-an-12',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: 'NPU Profiling指南',
+    titleEn: 'NPU Profiling Guide',
+    slug: 'sglang-ascend-profiling-guide',
+    summary: 'Ascend Profiling工具使用、OpTrace、timeline解读与瓶颈定位',
+    summaryEn: 'Using Ascend Profiling tools, OpTrace, timeline interpretation, and bottleneck identification',
+    content: an12Zh,
+    contentEn: an12En,
+    tags: ['SGLang', 'Ascend', 'Profiling', '性能分析'],
+    readTime: '30 min',
+    date: '2025-06-27',
+    prevArticleId: 'sglang-an-11',
+    nextArticleId: 'sglang-an-13',
+  },
+  {
+    id: 'sglang-an-13',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: '按场景运行模型',
+    titleEn: 'Running Models by Scenario',
+    slug: 'sglang-ascend-run-models-scenario',
+    summary: '不同模型（LLaMA/Qwen/GLM/DeepSeek等）在不同场景下的启动与适配',
+    summaryEn: 'Launching and adapting different models (LLaMA/Qwen/GLM/DeepSeek etc.) in different scenarios',
+    content: an13Zh,
+    contentEn: an13En,
+    tags: ['SGLang', 'Ascend', '场景', '模型'],
+    readTime: '35 min',
+    date: '2025-06-28',
+    prevArticleId: 'sglang-an-12',
+    nextArticleId: 'sglang-an-14',
+  },
+  {
+    id: 'sglang-an-14',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: '性能测试',
+    titleEn: 'Performance Testing',
+    slug: 'sglang-ascend-performance-testing',
+    summary: '性能测试方法、指标、benchmark脚本与结果分析',
+    summaryEn: 'Performance testing methods, metrics, benchmark scripts, and result analysis',
+    content: an14Zh,
+    contentEn: an14En,
+    tags: ['SGLang', 'Ascend', '性能测试', 'Benchmark'],
+    readTime: '30 min',
+    date: '2025-06-29',
+    prevArticleId: 'sglang-an-13',
+    nextArticleId: 'sglang-an-15',
+  },
+  {
+    id: 'sglang-an-15',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: '精度测试与排错',
+    titleEn: 'Accuracy Testing & Debugging',
+    slug: 'sglang-ascend-accuracy-testing',
+    summary: '精度测试方法、对齐GPU结果、数值误差定位与排查',
+    summaryEn: 'Accuracy testing methods, aligning with GPU results, numerical error localization and troubleshooting',
+    content: an15Zh,
+    contentEn: an15En,
+    tags: ['SGLang', 'Ascend', '精度测试', '排错'],
+    readTime: '30 min',
+    date: '2025-06-30',
+    prevArticleId: 'sglang-an-14',
+    nextArticleId: 'sglang-an-scm-01',
+  },
+
+  // ============ sglang-ascend-npu source-code-walkthrough (sub-8-4) ============
+  {
+    id: 'sglang-an-scm-01',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: 'SGLang NPU组件地图',
+    titleEn: 'SGLang NPU Component Map',
+    slug: 'sglang-npu-component-map',
+    summary: 'SGLang NPU源码逐层组件地图：从平台检测到模型执行的完整链路',
+    summaryEn: 'Layer-by-layer SGLang NPU component map: complete chain from platform detection to model execution',
+    content: anScm01Zh,
+    contentEn: anScm01En,
+    tags: ['SGLang', 'Ascend', '组件地图', '源码'],
+    readTime: '40 min',
+    date: '2025-07-01',
+    prevArticleId: 'sglang-an-15',
+    nextArticleId: 'sglang-an-fn-00',
+  },
+  {
+    id: 'sglang-an-fn-00',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: '阅读方法与分支搜索',
+    titleEn: 'Reading Method & Branch Search',
+    slug: 'sglang-npu-reading-method',
+    summary: 'SGLang NPU源码阅读方法论：如何高效定位NPU相关分支与代码路径',
+    summaryEn: 'Methodology for reading SGLang NPU source: how to efficiently locate NPU-related branches and code paths',
+    content: anFn00Zh,
+    contentEn: anFn00En,
+    tags: ['SGLang', 'Ascend', '阅读方法', '源码'],
+    readTime: '25 min',
+    date: '2025-07-02',
+    prevArticleId: 'sglang-an-scm-01',
+    nextArticleId: 'sglang-an-fn-01',
+  },
+  {
+    id: 'sglang-an-fn-01',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: '平台检测与进程启动',
+    titleEn: 'Platform Detection & Process Startup',
+    slug: 'sglang-npu-platform-detection',
+    summary: 'NPU平台检测、进程启动与初始化流程源码解析',
+    summaryEn: 'Source analysis of NPU platform detection, process startup, and initialization flow',
+    content: anFn01Zh,
+    contentEn: anFn01En,
+    tags: ['SGLang', 'Ascend', '平台检测', '启动'],
+    readTime: '30 min',
+    date: '2025-07-03',
+    prevArticleId: 'sglang-an-fn-00',
+    nextArticleId: 'sglang-an-fn-02',
+  },
+  {
+    id: 'sglang-an-fn-02',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: 'Server Args与NPU默认值',
+    titleEn: 'Server Args & NPU Defaults',
+    slug: 'sglang-npu-server-args',
+    summary: 'Server参数体系与NPU场景下的默认值差异源码解析',
+    summaryEn: 'Source analysis of Server argument system and default value differences in NPU scenarios',
+    content: anFn02Zh,
+    contentEn: anFn02En,
+    tags: ['SGLang', 'Ascend', 'ServerArgs', '参数'],
+    readTime: '25 min',
+    date: '2025-07-04',
+    prevArticleId: 'sglang-an-fn-01',
+    nextArticleId: 'sglang-an-fn-03',
+  },
+  {
+    id: 'sglang-an-fn-03',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: '请求生命周期NPU分支点',
+    titleEn: 'Request Lifecycle NPU Branch Points',
+    slug: 'sglang-npu-request-lifecycle',
+    summary: '请求生命周期中NPU相关的分支点与差异代码解析',
+    summaryEn: 'Analysis of NPU-related branch points and differential code in the request lifecycle',
+    content: anFn03Zh,
+    contentEn: anFn03En,
+    tags: ['SGLang', 'Ascend', '请求生命周期', '分支'],
+    readTime: '35 min',
+    date: '2025-07-05',
+    prevArticleId: 'sglang-an-fn-02',
+    nextArticleId: 'sglang-an-fn-04',
+  },
+  {
+    id: 'sglang-an-fn-04',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: '模型加载Dtype与Layout',
+    titleEn: 'Model Loading Dtype & Layout',
+    slug: 'sglang-npu-model-loading',
+    summary: 'NPU下模型加载、dtype选择与权重Layout的源码解析',
+    summaryEn: 'Source analysis of model loading, dtype selection, and weight Layout on NPU',
+    content: anFn04Zh,
+    contentEn: anFn04En,
+    tags: ['SGLang', 'Ascend', '模型加载', 'Dtype'],
+    readTime: '30 min',
+    date: '2025-07-06',
+    prevArticleId: 'sglang-an-fn-03',
+    nextArticleId: 'sglang-an-fn-05',
+  },
+  {
+    id: 'sglang-an-fn-05',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: 'ModelRunner前向Batch与输入Buffer',
+    titleEn: 'ModelRunner Forward Batch & Input Buffers',
+    slug: 'sglang-npu-model-runner-forward',
+    summary: 'ModelRunner前向batch组织、输入Buffer管理与NPU特定优化',
+    summaryEn: 'ModelRunner forward batch organization, input buffer management, and NPU-specific optimizations',
+    content: anFn05Zh,
+    contentEn: anFn05En,
+    tags: ['SGLang', 'Ascend', 'ModelRunner', 'Batch'],
+    readTime: '40 min',
+    date: '2025-07-07',
+    prevArticleId: 'sglang-an-fn-04',
+    nextArticleId: 'sglang-an-scm-15',
+  },
+  {
+    id: 'sglang-an-scm-15',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: '分布式HCCL与通信',
+    titleEn: 'Distributed HCCL & Communication',
+    slug: 'sglang-npu-distributed-hccl',
+    summary: 'NPU分布式HCCL通信、TP/PP通信与跨卡数据流源码解析',
+    summaryEn: 'Source analysis of NPU distributed HCCL communication, TP/PP communication, and cross-card data flow',
+    content: anScm15Zh,
+    contentEn: anScm15En,
+    tags: ['SGLang', 'Ascend', 'HCCL', '分布式'],
+    readTime: '40 min',
+    date: '2025-07-08',
+    prevArticleId: 'sglang-an-fn-05',
+    nextArticleId: 'sglang-an-ex-glm',
+  },
+  {
+    id: 'sglang-an-ex-glm',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-4',
+    title: 'GLM-4.7-Flash端到端案例',
+    titleEn: 'GLM-4.7-Flash End-to-End Example',
+    slug: 'sglang-npu-glm-flash-example',
+    summary: 'GLM-4.7-Flash在Ascend NPU上的端到端运行案例与代码解析',
+    summaryEn: 'End-to-end case study and code analysis of GLM-4.7-Flash running on Ascend NPU',
+    content: anExGlmZh,
+    contentEn: anExGlmEn,
+    tags: ['SGLang', 'Ascend', 'GLM', '案例'],
+    readTime: '45 min',
+    date: '2025-07-09',
+    prevArticleId: 'sglang-an-scm-15',
+    nextArticleId: 'sglang-aki-00',
+  },
+
+  // ============ ascend-kernel-infra (sub-8-5) ============
+  {
+    id: 'sglang-aki-00',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'Ascend Kernel Infra：从推理框架走向NPU算子',
+    titleEn: 'Ascend Kernel Infra: From Inference Framework to NPU Kernel',
+    slug: 'ascend-kernel-infra-overview',
+    summary: '承接SGLang Ascend NPU适配，向下深入算子层：sgl-kernel-npu、Triton-Ascend、Ascend C、torch_npu的关系与学习路线',
+    summaryEn: 'Continuing from SGLang Ascend NPU adaptation, diving into the kernel layer: relationships and learning path of sgl-kernel-npu, Triton-Ascend, Ascend C, and torch_npu',
+    content: akiReadmeZh,
+    contentEn: akiReadmeEn,
+    tags: ['Ascend', '算子', 'sgl-kernel-npu', 'Triton-Ascend'],
+    readTime: '15 min',
+    date: '2025-07-10',
+    prevArticleId: 'sglang-an-ex-glm',
+    nextArticleId: 'sglang-aki-01',
+  },
+  {
+    id: 'sglang-aki-01',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: '五个关键对象如何组成Ascend NPU推理与算子栈',
+    titleEn: 'How Five Key Objects Form the Ascend NPU Inference and Kernel Stack',
+    slug: 'ascend-kernel-stack-relationships',
+    summary: '建立边界与调用关系：SGLang模型代码如何落到Ascend NPU执行，各层各自解决什么问题',
+    summaryEn: 'Establishing boundaries and call relationships: how SGLang model code executes on Ascend NPU, and what each layer solves',
+    content: akiStackZh,
+    contentEn: akiStackEn,
+    tags: ['Ascend', '算子栈', '调用关系'],
+    readTime: '25 min',
+    date: '2025-07-11',
+    prevArticleId: 'sglang-aki-00',
+    nextArticleId: 'sglang-aki-02',
+  },
+  {
+    id: 'sglang-aki-02',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'CANN栈与边界',
+    titleEn: 'CANN Stack and Boundaries',
+    slug: 'ascend-cann-stack-boundaries',
+    summary: 'CANN软件栈的层次结构与各组件边界，算子在不同层的注册与调用路径',
+    summaryEn: 'CANN software stack layers and component boundaries, operator registration and call paths across layers',
+    content: akiCannZh,
+    contentEn: akiCannEn,
+    tags: ['Ascend', 'CANN', '算子栈'],
+    readTime: '25 min',
+    date: '2025-07-12',
+    prevArticleId: 'sglang-aki-01',
+    nextArticleId: 'sglang-aki-f1',
+  },
+  // foundations
+  {
+    id: 'sglang-aki-f1',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: '算子第一性原理',
+    titleEn: 'Kernel First Principles',
+    slug: 'ascend-kernel-first-principles',
+    summary: '从第一性原理理解NPU算子：计算、存储、同步的基本概念',
+    summaryEn: 'Understanding NPU kernels from first principles: basic concepts of computation, storage, and synchronization',
+    content: akiF1Zh,
+    contentEn: akiF1En,
+    tags: ['Ascend', '算子', '基础'],
+    readTime: '20 min',
+    date: '2025-07-13',
+    prevArticleId: 'sglang-aki-02',
+    nextArticleId: 'sglang-aki-f2',
+  },
+  {
+    id: 'sglang-aki-f2',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'Ascend NPU、AI Core与存储层级',
+    titleEn: 'Ascend NPU, AI Core, and Memory Hierarchy',
+    slug: 'ascend-hardware',
+    summary: 'Ascend NPU硬件架构、AI Core结构与存储层级详解',
+    summaryEn: 'Detailed explanation of Ascend NPU hardware architecture, AI Core structure, and memory hierarchy',
+    content: akiF2Zh,
+    contentEn: akiF2En,
+    tags: ['Ascend', '硬件', 'AI Core', '存储层级'],
+    readTime: '30 min',
+    date: '2025-07-14',
+    prevArticleId: 'sglang-aki-f1',
+    nextArticleId: 'sglang-aki-f3',
+  },
+  {
+    id: 'sglang-aki-f3',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: '搬运、计算、同步与流水',
+    titleEn: 'Memory Transfer, Computation, Synchronization, and Pipeline',
+    slug: 'ascend-memory-pipeline-sync',
+    summary: 'NPU算子中的搬运、计算、同步操作与流水线优化',
+    summaryEn: 'Memory transfer, computation, synchronization, and pipeline optimization in NPU kernels',
+    content: akiF3Zh,
+    contentEn: akiF3En,
+    tags: ['Ascend', '搬运', '流水', '同步'],
+    readTime: '30 min',
+    date: '2025-07-15',
+    prevArticleId: 'sglang-aki-f2',
+    nextArticleId: 'sglang-aki-tn1',
+  },
+  // torch_npu
+  {
+    id: 'sglang-aki-tn1',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'torch_npu：Dispatch、aclnn与自定义算子边界',
+    titleEn: 'torch_npu: Dispatch, aclnn, and Custom Op Boundaries',
+    slug: 'ascend-torch-npu-dispatch',
+    summary: 'torch_npu的dispatch机制、aclnn算子调用与自定义算子注册的边界',
+    summaryEn: 'torch_npu dispatch mechanism, aclnn operator calls, and custom operator registration boundaries',
+    content: akiTn1Zh,
+    contentEn: akiTn1En,
+    tags: ['Ascend', 'torch_npu', 'dispatch', 'aclnn'],
+    readTime: '25 min',
+    date: '2025-07-16',
+    prevArticleId: 'sglang-aki-f3',
+    nextArticleId: 'sglang-aki-ac1',
+  },
+  // ascend-c
+  {
+    id: 'sglang-aki-ac1',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'Ascend C：Global/Local Tensor、Pipe与Queue',
+    titleEn: 'Ascend C: Global/Local Tensor, Pipe, and Queue',
+    slug: 'ascend-c-global-local-tensor',
+    summary: 'Ascend C编程模型中的Global/Local Tensor、Pipe与Queue机制',
+    summaryEn: 'Global/Local Tensor, Pipe, and Queue mechanisms in the Ascend C programming model',
+    content: akiAc1Zh,
+    contentEn: akiAc1En,
+    tags: ['Ascend C', 'Tensor', 'Pipe', 'Queue'],
+    readTime: '30 min',
+    date: '2025-07-17',
+    prevArticleId: 'sglang-aki-tn1',
+    nextArticleId: 'sglang-aki-ac2',
+  },
+  {
+    id: 'sglang-aki-ac2',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'Ascend C：Add算子端到端实现',
+    titleEn: 'Ascend C: Add Operator End-to-End Implementation',
+    slug: 'ascend-c-add-operator',
+    summary: '从零实现一个Add算子：注册、tiling、kernel、编译与调用全流程',
+    summaryEn: 'Implementing an Add operator from scratch: registration, tiling, kernel, compilation, and invocation',
+    content: akiAc2Zh,
+    contentEn: akiAc2En,
+    tags: ['Ascend C', 'Add', '端到端'],
+    readTime: '35 min',
+    date: '2025-07-18',
+    prevArticleId: 'sglang-aki-ac1',
+    nextArticleId: 'sglang-aki-ac3',
+  },
+  {
+    id: 'sglang-aki-ac3',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'Ascend C：Tiling、流水、同步优化',
+    titleEn: 'Ascend C: Tiling, Pipeline, and Synchronization Optimization',
+    slug: 'ascend-c-tiling-pipeline-optimization',
+    summary: 'Tiling策略、Double Buffer流水与同步机制的优化实践',
+    summaryEn: 'Optimization practices for tiling strategies, double buffer pipeline, and synchronization mechanisms',
+    content: akiAc3Zh,
+    contentEn: akiAc3En,
+    tags: ['Ascend C', 'Tiling', '流水', '优化'],
+    readTime: '30 min',
+    date: '2025-07-19',
+    prevArticleId: 'sglang-aki-ac2',
+    nextArticleId: 'sglang-aki-ac4',
+  },
+  {
+    id: 'sglang-aki-ac4',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'Ascend C：平台Tiling与Workspace契约',
+    titleEn: 'Ascend C: Platform Tiling and Workspace Contracts',
+    slug: 'ascend-c-platform-tiling-workspace',
+    summary: '平台相关的Tiling约束、Workspace分配与算子接口契约',
+    summaryEn: 'Platform-related tiling constraints, workspace allocation, and operator interface contracts',
+    content: akiAc4Zh,
+    contentEn: akiAc4En,
+    tags: ['Ascend C', 'Tiling', 'Workspace', '契约'],
+    readTime: '25 min',
+    date: '2025-07-20',
+    prevArticleId: 'sglang-aki-ac3',
+    nextArticleId: 'sglang-aki-ta1',
+  },
+  // triton-ascend
+  {
+    id: 'sglang-aki-ta1',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'Triton-Ascend：Program、Grid与Tile',
+    titleEn: 'Triton-Ascend: Program, Grid, and Tile',
+    slug: 'triton-ascend-program-grid-tile',
+    summary: 'Triton-Ascend的编程模型：Program、Grid与Tile映射到NPU的执行单元',
+    summaryEn: 'Triton-Ascend programming model: Program, Grid, and Tile mapping to NPU execution units',
+    content: akiTa1Zh,
+    contentEn: akiTa1En,
+    tags: ['Triton-Ascend', 'Grid', 'Tile'],
+    readTime: '30 min',
+    date: '2025-07-21',
+    prevArticleId: 'sglang-aki-ac4',
+    nextArticleId: 'sglang-aki-ta2',
+  },
+  {
+    id: 'sglang-aki-ta2',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'Triton-Ascend：Tensor寻址、Reduction与Matmul',
+    titleEn: 'Triton-Ascend: Tensor Addressing, Reduction, and Matmul',
+    slug: 'triton-ascend-tensor-reduction-matmul',
+    summary: 'Triton-Ascend中的Tensor寻址、Reduction算子与Matmul实现',
+    summaryEn: 'Tensor addressing, reduction operators, and matmul implementation in Triton-Ascend',
+    content: akiTa2Zh,
+    contentEn: akiTa2En,
+    tags: ['Triton-Ascend', 'Reduction', 'Matmul'],
+    readTime: '30 min',
+    date: '2025-07-22',
+    prevArticleId: 'sglang-aki-ta1',
+    nextArticleId: 'sglang-aki-ta3',
+  },
+  {
+    id: 'sglang-aki-ta3',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'Triton-Ascend：编译、调试与优化',
+    titleEn: 'Triton-Ascend: Compile, Debug, and Optimize',
+    slug: 'triton-ascend-compile-debug-optimize',
+    summary: 'Triton-Ascend的编译流程、调试方法与性能优化技巧',
+    summaryEn: 'Triton-Ascend compilation flow, debugging methods, and performance optimization techniques',
+    content: akiTa3Zh,
+    contentEn: akiTa3En,
+    tags: ['Triton-Ascend', '编译', '调试', '优化'],
+    readTime: '30 min',
+    date: '2025-07-23',
+    prevArticleId: 'sglang-aki-ta2',
+    nextArticleId: 'sglang-aki-ta4',
+  },
+  {
+    id: 'sglang-aki-ta4',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'Triton-Ascend：TTIR/MLIR驱动与Cache',
+    titleEn: 'Triton-Ascend: TTIR/MLIR Driver and Cache',
+    slug: 'triton-ascend-ttir-mlir-cache',
+    summary: 'Triton-Ascend的TTIR/MLIR编译驱动、算子融合与编译缓存机制',
+    summaryEn: 'Triton-Ascend TTIR/MLIR compilation driver, operator fusion, and compilation cache mechanism',
+    content: akiTa4Zh,
+    contentEn: akiTa4En,
+    tags: ['Triton-Ascend', 'TTIR', 'MLIR', 'Cache'],
+    readTime: '30 min',
+    date: '2025-07-24',
+    prevArticleId: 'sglang-aki-ta3',
+    nextArticleId: 'sglang-aki-ta5',
+  },
+  {
+    id: 'sglang-aki-ta5',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'Triton-Ascend：Persistent Kernel与大Grid',
+    titleEn: 'Triton-Ascend: Persistent Kernel and Large Grid',
+    slug: 'triton-ascend-persistent-kernel',
+    summary: 'Persistent Kernel模式与大Grid场景下的编程与性能优化',
+    summaryEn: 'Persistent kernel pattern and programming/performance optimization for large grid scenarios',
+    content: akiTa5Zh,
+    contentEn: akiTa5En,
+    tags: ['Triton-Ascend', 'Persistent', 'Grid'],
+    readTime: '30 min',
+    date: '2025-07-25',
+    prevArticleId: 'sglang-aki-ta4',
+    nextArticleId: 'sglang-aki-sk1',
+  },
+  // sgl-kernel-npu
+  {
+    id: 'sglang-aki-sk1',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'sgl-kernel-npu：仓库结构与算子生命周期',
+    titleEn: 'sgl-kernel-npu: Repository Structure and Op Lifecycle',
+    slug: 'sgl-kernel-npu-repo-lifecycle',
+    summary: 'sgl-kernel-npu仓库结构、算子注册/编译/注册到SGLang的完整生命周期',
+    summaryEn: 'sgl-kernel-npu repository structure and the complete lifecycle from operator registration/compilation to SGLang integration',
+    content: akiSk1Zh,
+    contentEn: akiSk1En,
+    tags: ['sgl-kernel-npu', '仓库', '生命周期'],
+    readTime: '25 min',
+    date: '2025-07-26',
+    prevArticleId: 'sglang-aki-ta5',
+    nextArticleId: 'sglang-aki-sk2',
+  },
+  {
+    id: 'sglang-aki-sk2',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'sgl-kernel-npu：Triton Fused Split QK Norm',
+    titleEn: 'sgl-kernel-npu: Triton Fused Split QK Norm',
+    slug: 'sgl-kernel-npu-fused-split-qk-norm',
+    summary: 'Triton实现的Fused Split QK Norm算子源码阅读与优化分析',
+    summaryEn: 'Source reading and optimization analysis of the Triton-implemented Fused Split QK Norm operator',
+    content: akiSk2Zh,
+    contentEn: akiSk2En,
+    tags: ['sgl-kernel-npu', 'Triton', 'Fused', 'QK Norm'],
+    readTime: '30 min',
+    date: '2025-07-27',
+    prevArticleId: 'sglang-aki-sk1',
+    nextArticleId: 'sglang-aki-sk3',
+  },
+  {
+    id: 'sglang-aki-sk3',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'sgl-kernel-npu：Ascend C ApplyTokenBitmask',
+    titleEn: 'sgl-kernel-npu: Ascend C ApplyTokenBitmask',
+    slug: 'sgl-kernel-npu-apply-token-bitmask',
+    summary: 'Ascend C实现的ApplyTokenBitmask算子源码阅读',
+    summaryEn: 'Source reading of the Ascend C implemented ApplyTokenBitmask operator',
+    content: akiSk3Zh,
+    contentEn: akiSk3En,
+    tags: ['sgl-kernel-npu', 'Ascend C', 'TokenBitmask'],
+    readTime: '25 min',
+    date: '2025-07-28',
+    prevArticleId: 'sglang-aki-sk2',
+    nextArticleId: 'sglang-aki-sk4',
+  },
+  {
+    id: 'sglang-aki-sk4',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'sgl-kernel-npu：FLA Chunk Gated Delta Rule Mixed Path',
+    titleEn: 'sgl-kernel-npu: FLA Chunk Gated Delta Rule Mixed Path',
+    slug: 'sgl-kernel-npu-fla-chunk-delta-rule',
+    summary: 'Flash Linear Attention的Chunk Gated Delta Rule Mixed Path算子源码解析',
+    summaryEn: 'Source analysis of the Flash Linear Attention Chunk Gated Delta Rule Mixed Path operator',
+    content: akiSk4Zh,
+    contentEn: akiSk4En,
+    tags: ['sgl-kernel-npu', 'FLA', 'Delta Rule'],
+    readTime: '35 min',
+    date: '2025-07-29',
+    prevArticleId: 'sglang-aki-sk3',
+    nextArticleId: 'sglang-aki-sk5',
+  },
+  {
+    id: 'sglang-aki-sk5',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'sgl-kernel-npu：DeepEP HCCL与MoE Kernel路径',
+    titleEn: 'sgl-kernel-npu: DeepEP HCCL and MoE Kernel Path',
+    slug: 'sgl-kernel-npu-deepep-hccl-moe',
+    summary: 'DeepEP的HCCL通信与MoE Kernel执行路径源码解析',
+    summaryEn: 'Source analysis of DeepEP HCCL communication and MoE kernel execution paths',
+    content: akiSk5Zh,
+    contentEn: akiSk5En,
+    tags: ['sgl-kernel-npu', 'DeepEP', 'HCCL', 'MoE'],
+    readTime: '35 min',
+    date: '2025-07-30',
+    prevArticleId: 'sglang-aki-sk4',
+    nextArticleId: 'sglang-aki-sk6',
+  },
+  {
+    id: 'sglang-aki-sk6',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'sgl-kernel-npu：DeepEP低延迟与分层A2路径',
+    titleEn: 'sgl-kernel-npu: DeepEP Low Latency and Layered A2 Path',
+    slug: 'sgl-kernel-npu-deepep-low-latency',
+    summary: 'DeepEP低延迟模式与分层All-to-All通信路径的源码解析',
+    summaryEn: 'Source analysis of DeepEP low-latency mode and layered All-to-All communication paths',
+    content: akiSk6Zh,
+    contentEn: akiSk6En,
+    tags: ['sgl-kernel-npu', 'DeepEP', '低延迟', 'A2'],
+    readTime: '35 min',
+    date: '2025-07-31',
+    prevArticleId: 'sglang-aki-sk5',
+    nextArticleId: 'sglang-aki-sk8',
+  },
+  {
+    id: 'sglang-aki-sk8',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: 'sgl-kernel-npu：FLA Mega Kernel与Device Stages',
+    titleEn: 'sgl-kernel-npu: FLA Mega Kernel and Device Stages',
+    slug: 'sgl-kernel-npu-fla-mega-kernel',
+    summary: 'Flash Linear Attention的Mega Kernel与Device Stages源码解析',
+    summaryEn: 'Source analysis of Flash Linear Attention Mega Kernel and Device Stages',
+    content: akiSk8Zh,
+    contentEn: akiSk8En,
+    tags: ['sgl-kernel-npu', 'FLA', 'Mega Kernel'],
+    readTime: '35 min',
+    date: '2025-08-01',
+    prevArticleId: 'sglang-aki-sk6',
+    nextArticleId: 'sglang-aki-ref-code',
+  },
+  // reference
+  {
+    id: 'sglang-aki-ref-code',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: '参考：代码阅读手册——变量类型、形状、地址与源码实现',
+    titleEn: 'Reference: Code Reading Handbook — Variable Types, Shapes, Addresses, and Source Implementation',
+    slug: 'ascend-kernel-code-reading-handbook',
+    summary: 'Ascend算子代码阅读手册：变量类型系统、张量形状、地址管理与源码实现约定',
+    summaryEn: 'Ascend kernel code reading handbook: variable type system, tensor shapes, address management, and source implementation conventions',
+    content: akiRefCodeZh,
+    contentEn: akiRefCodeEn,
+    tags: ['Ascend', '参考', '代码阅读', '类型系统'],
+    readTime: '25 min',
+    date: '2025-08-02',
+    prevArticleId: 'sglang-aki-sk8',
+    nextArticleId: 'sglang-aki-ref-tech',
+  },
+  {
+    id: 'sglang-aki-ref-tech',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: '参考：技术对比',
+    titleEn: 'Reference: Technology Comparison',
+    slug: 'ascend-kernel-tech-comparison',
+    summary: 'sgl-kernel-npu、Triton-Ascend、Ascend C、torch_npu等技术方案的横向对比',
+    summaryEn: 'Horizontal comparison of sgl-kernel-npu, Triton-Ascend, Ascend C, torch_npu, and other technology solutions',
+    content: akiRefTechZh,
+    contentEn: akiRefTechEn,
+    tags: ['Ascend', '参考', '技术对比'],
+    readTime: '20 min',
+    date: '2025-08-03',
+    prevArticleId: 'sglang-aki-ref-code',
+    nextArticleId: 'sglang-aki-ref-gloss',
+  },
+  {
+    id: 'sglang-aki-ref-gloss',
+    categoryId: 'cat-8',
+    subCategoryId: 'sub-8-5',
+    title: '参考：术语表',
+    titleEn: 'Reference: Glossary',
+    slug: 'ascend-kernel-glossary',
+    summary: 'Ascend算子开发相关术语表与中英对照',
+    summaryEn: 'Glossary of Ascend kernel development terms with Chinese-English mapping',
+    content: akiRefGlossZh,
+    contentEn: akiRefGlossEn,
+    tags: ['Ascend', '参考', '术语表'],
+    readTime: '15 min',
+    date: '2025-08-04',
+    prevArticleId: 'sglang-aki-ref-tech',
     nextArticleId: null,
   },
 ]
