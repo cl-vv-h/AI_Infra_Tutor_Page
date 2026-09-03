@@ -1,8 +1,8 @@
-// Eagerly import all SVG assets under content/ as URLs.
+// Eagerly import supported learning assets under content/ as URLs.
 // Builds a filename -> URL map so relative paths like `./assets/foo.svg`
 // in markdown can be rewritten to resolvable URLs at render time.
 
-const svgModules = import.meta.glob('./content/**/*.svg', {
+const assetModules = import.meta.glob('./content/**/*.{svg,png,jpg,jpeg,webp,gif}', {
   eager: true,
   query: '?url',
   import: 'default',
@@ -10,7 +10,7 @@ const svgModules = import.meta.glob('./content/**/*.svg', {
 
 // Map from filename to URL. Filenames are unique across the content tree.
 const assetUrlByFilename: Record<string, string> = {}
-for (const [path, url] of Object.entries(svgModules)) {
+for (const [path, url] of Object.entries(assetModules)) {
   const filename = path.split('/').pop()!
   if (!assetUrlByFilename[filename]) {
     assetUrlByFilename[filename] = url

@@ -206,7 +206,12 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
           </blockquote>
         ),
         a: ({ children, href }) => (
-          <a href={href} className="text-[#00d4ff] hover:underline" target="_blank" rel="noopener noreferrer">
+          <a
+            href={href}
+            className="text-[#70e1f5] hover:underline"
+            target={href?.startsWith('#/') ? undefined : '_blank'}
+            rel={href?.startsWith('#/') ? undefined : 'noopener noreferrer'}
+          >
             {children}
           </a>
         ),

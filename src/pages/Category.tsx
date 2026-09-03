@@ -17,6 +17,8 @@ import { getCategoryBySlug } from '@/data/categories'
 import { getArticlesByCategory, getArticlesBySubCategory } from '@/data/articles'
 import Sidebar from '@/components/Sidebar'
 import ArticleCard from '@/components/ArticleCard'
+import { useLanguage } from '@/hooks/useLanguage'
+import type { Language } from '@/types'
 
 const iconMap: Record<string, LucideIcon> = {
   GitBranch,
@@ -35,14 +37,17 @@ const topicNumbers: Record<string, string> = {
   'sub-8-2': '专题二',
   'sub-8-3': '专题三',
   'sub-8-4': '专题四',
+  'sub-8-5': '专题五',
 }
 
 function SglangOverview({
   category,
   onSubClick,
+  language,
 }: {
   category: NonNullable<ReturnType<typeof getCategoryBySlug>>
   onSubClick: (subSlug: string) => void
+  language: Language
 }) {
   const knowledgeGraphSub = category.subcategories.find((s) => s.slug === 'knowledge-graph')
   const topicSubs = category.subcategories.filter((s) => s.slug !== 'knowledge-graph')
@@ -53,14 +58,14 @@ function SglangOverview({
         <div className="rounded-xl border border-white/10 bg-[#1a1f35] p-6">
           <div className="flex items-center gap-3 mb-3">
             <Globe className="h-5 w-5 text-[#8b5cf6]" />
-            <h3 className="text-lg font-semibold text-white">{knowledgeGraphSub.name}</h3>
+            <h3 className="text-lg font-semibold text-white">{language === 'zh' ? knowledgeGraphSub.name : knowledgeGraphSub.nameEn}</h3>
           </div>
-          <p className="text-sm text-gray-400 mb-4">{knowledgeGraphSub.description}</p>
+          <p className="text-sm text-gray-400 mb-4">{language === 'zh' ? knowledgeGraphSub.description : knowledgeGraphSub.descriptionEn}</p>
           <button
             onClick={() => onSubClick(knowledgeGraphSub.slug)}
             className="inline-flex items-center gap-1.5 text-sm font-medium text-[#8b5cf6] hover:text-[#a78bfa] transition-colors"
           >
-            查看知识图谱
+            {language === 'zh' ? '查看知识图谱' : 'Open knowledge graph'}
             <span className="text-xs">→</span>
           </button>
         </div>
@@ -79,13 +84,13 @@ function SglangOverview({
                 {topicLabel.replace('专题', '')}
               </div>
               <h3 className="text-lg font-semibold text-white">
-                {topicLabel}：{sub.name}
+                {language === 'zh' ? `${topicLabel}：${sub.name}` : `Track ${topicLabel.replace('专题', '')} · ${sub.nameEn}`}
               </h3>
               <span className="ml-auto rounded-full bg-[#8b5cf6]/10 px-2.5 py-0.5 text-xs text-[#8b5cf6]">
-                {articles.length} 篇
+                {articles.length} {language === 'zh' ? '篇' : 'articles'}
               </span>
             </div>
-            <p className="mb-5 text-sm text-gray-400">{sub.description}</p>
+            <p className="mb-5 text-sm text-gray-400">{language === 'zh' ? sub.description : sub.descriptionEn}</p>
 
             <div className="relative pl-8">
               <div className="absolute left-3 top-0 bottom-0 w-px bg-white/10" />
@@ -100,9 +105,9 @@ function SglangOverview({
                   </div>
                   <div className="flex-1 rounded-lg border border-white/5 bg-[#141830] p-4 transition-all group-hover:border-[#8b5cf6]/30 group-hover:bg-[#1e2440]">
                     <h4 className="font-semibold text-white transition-colors group-hover:text-[#8b5cf6]">
-                      {article.title}
+                      {language === 'zh' ? article.title : article.titleEn}
                     </h4>
-                    <p className="mt-1 text-sm text-gray-400">{article.summary}</p>
+                    <p className="mt-1 text-sm text-gray-400">{language === 'zh' ? article.summary : article.summaryEn}</p>
                     <span className="mt-2 inline-flex items-center gap-1 text-xs text-gray-500">
                       <Clock className="h-3 w-3" />
                       {article.readTime}
@@ -121,9 +126,11 @@ function SglangOverview({
 function SglangSubcategoryView({
   sub,
   articles,
+  language,
 }: {
   sub: NonNullable<ReturnType<typeof getCategoryBySlug>>['subcategories'][0]
   articles: ReturnType<typeof getArticlesBySubCategory>
+  language: Language
 }) {
   const topicLabel = topicNumbers[sub.id] || ''
 
@@ -137,12 +144,12 @@ function SglangSubcategoryView({
         )}
         <div>
           <h2 className="text-xl font-bold text-white">
-            {topicLabel ? `${topicLabel}：` : ''}{sub.name}
+            {language === 'zh' ? `${topicLabel ? `${topicLabel}：` : ''}${sub.name}` : `${topicLabel ? `Track ${topicLabel.replace('专题', '')} · ` : ''}${sub.nameEn}`}
           </h2>
-          <p className="mt-1 text-sm text-gray-400">{sub.description}</p>
+          <p className="mt-1 text-sm text-gray-400">{language === 'zh' ? sub.description : sub.descriptionEn}</p>
         </div>
         <span className="ml-auto rounded-full bg-[#8b5cf6]/10 px-2.5 py-0.5 text-xs text-[#8b5cf6]">
-          {articles.length} 篇
+          {articles.length} {language === 'zh' ? '篇' : 'articles'}
         </span>
       </div>
 
@@ -159,9 +166,9 @@ function SglangSubcategoryView({
             </div>
             <div className="flex-1 rounded-lg border border-white/5 bg-[#1a1f35] p-4 transition-all group-hover:border-[#8b5cf6]/30 group-hover:bg-[#1e2440]">
               <h4 className="font-semibold text-white transition-colors group-hover:text-[#8b5cf6]">
-                {article.title}
+                {language === 'zh' ? article.title : article.titleEn}
               </h4>
-              <p className="mt-1 text-sm text-gray-400">{article.summary}</p>
+              <p className="mt-1 text-sm text-gray-400">{language === 'zh' ? article.summary : article.summaryEn}</p>
               <span className="mt-2 inline-flex items-center gap-1 text-xs text-gray-500">
                 <Clock className="h-3 w-3" />
                 {article.readTime}
@@ -178,6 +185,7 @@ export default function CategoryPage() {
   const { slug } = useParams<{ slug: string }>()
   const [searchParams, setSearchParams] = useSearchParams()
   const navigate = useNavigate()
+  const { language } = useLanguage()
   const category = getCategoryBySlug(slug ?? '')
   const activeSubSlug = searchParams.get('sub') ?? undefined
 
@@ -222,11 +230,12 @@ export default function CategoryPage() {
         activeSubSlug={activeSubSlug}
         onSubClick={handleSubClick}
         categorySlug={category.slug}
+        language={language}
       />
 
-      <div className="ml-64 min-h-screen flex-1 p-8">
-        <Link to="/" className="mb-6 inline-block text-sm text-gray-500 hover:text-[#00d4ff] transition-colors">
-          ← 返回首页
+      <div className="min-h-screen flex-1 p-5 sm:p-8 lg:ml-64">
+        <Link to="/learn" className="mb-6 inline-block text-sm text-gray-500 hover:text-[#00d4ff] transition-colors">
+          ← {language === 'zh' ? '返回课程' : 'Back to curriculum'}
         </Link>
 
         <div className="mb-10 flex items-center gap-4">
@@ -237,20 +246,36 @@ export default function CategoryPage() {
             <IconComponent className="h-7 w-7" style={{ color: category.color }} />
           </div>
           <div>
-            <h1 className="text-3xl font-bold text-white">{category.name}</h1>
-            <p className="mt-1 text-gray-400">{category.description}</p>
+            <h1 className="text-3xl font-bold text-white">{language === 'zh' ? category.name : category.nameEn}</h1>
+            <p className="mt-1 text-gray-400">{language === 'zh' ? category.description : category.descriptionEn}</p>
           </div>
         </div>
+
+        {category.subcategories.length > 1 && (
+          <div className="mb-8 flex gap-2 overflow-x-auto pb-2 lg:hidden">
+            {category.subcategories.map((sub) => (
+              <button
+                key={sub.id}
+                type="button"
+                onClick={() => handleSubClick(sub.slug)}
+                className={`shrink-0 rounded-full border px-3 py-2 text-xs ${activeSubSlug === sub.slug ? 'border-violet-300/40 bg-violet-300/10 text-violet-200' : 'border-white/10 text-white/45'}`}
+              >
+                {language === 'zh' ? sub.name : sub.nameEn}
+              </button>
+            ))}
+          </div>
+        )}
 
         {isSglang && !activeSubSlug && (
           <SglangOverview
             category={category}
             onSubClick={handleSubClick}
+            language={language}
           />
         )}
 
         {isSglang && activeSubSlug && activeSub && (
-          <SglangSubcategoryView sub={activeSub} articles={filteredArticles} />
+          <SglangSubcategoryView sub={activeSub} articles={filteredArticles} language={language} />
         )}
 
         {!isSglang && filteredArticles.length > 0 && (
@@ -258,9 +283,9 @@ export default function CategoryPage() {
             {filteredArticles.map((article) => (
               <ArticleCard
                 key={article.id}
-                title={article.title}
+                title={language === 'zh' ? article.title : article.titleEn}
                 slug={article.slug}
-                summary={article.summary}
+                summary={language === 'zh' ? article.summary : article.summaryEn}
                 tags={article.tags}
                 readTime={article.readTime}
                 date={article.date}

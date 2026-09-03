@@ -132,6 +132,19 @@ export const categories: Category[] = [
     ],
   },
   {
+    id: 'cat-15',
+    name: 'Gated Delta Network',
+    nameEn: 'Gated Delta Network',
+    slug: 'gated-delta-network',
+    description: '从线性注意力数学、层内张量流到 recurrent state、chunk prefill 与服务化实现',
+    descriptionEn: 'Linear-attention math, layer tensor flow, recurrent state, chunk prefill, and serving implementation',
+    icon: 'Waves',
+    color: '#a3e635',
+    subcategories: [
+      { id: 'sub-15-1', categoryId: 'cat-15', name: 'GDN 与线性注意力', nameEn: 'GDN & Linear Attention', slug: 'gdn-topics', description: 'Qwen3-Next GDN 原理、张量形状、训练与推理状态管理', descriptionEn: 'Qwen3-Next GDN principles, tensor shapes, training, and serving state management' },
+    ],
+  },
+  {
     id: 'cat-13',
     name: '量化',
     nameEn: 'Quantization',

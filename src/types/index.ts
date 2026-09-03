@@ -38,6 +38,7 @@ export interface Article {
   date: string
   prevArticleId: string | null
   nextArticleId: string | null
+  sourcePath?: string
 }
 
 export interface LearningPath {

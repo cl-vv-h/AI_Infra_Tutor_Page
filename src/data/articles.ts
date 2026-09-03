@@ -1,11 +1,7 @@
 import type { Article } from '@/types'
-import { sglangArticles } from './sglang-articles'
-import { aiInfraBasicArticles } from './ai-infra-basic-articles'
+import { curriculumArticles } from './curriculum'
 
-export const articles: Article[] = [
-  ...sglangArticles,
-  ...aiInfraBasicArticles,
-]
+export const articles: Article[] = curriculumArticles
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug)

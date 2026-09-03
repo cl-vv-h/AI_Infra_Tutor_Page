@@ -1,0 +1,51 @@
+name: Refresh daily news
+
+on:
+  schedule:
+    - cron: '30 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: daily-news
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Collect public news feeds
+        run: node scripts/fetch-news.mjs
+
+      - name: Commit public news data
+        id: publish
+        run: |
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+          if git diff --quiet -- src/data/news; then
+            echo "No news data changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/news/daily.json src/data/news/archive
+          git commit -m "chore(news): refresh daily signals"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Publish the refreshed site
+        if: steps.publish.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

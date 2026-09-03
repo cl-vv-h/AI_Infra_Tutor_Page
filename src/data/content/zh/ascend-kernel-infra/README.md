@@ -70,6 +70,7 @@
 | 内容 | 学习成果 |
 |---|---|
 | [torch_npu 01：Dispatcher、ACLNN 与 Custom Op 的边界](./torch_npu/01-dispatch-aclnn-and-custom-op-boundaries.md) | 能区分标准 `torch`/`torch_npu`/`torch.ops.*` 调用分别落到哪条 NPU 路径 |
+| [torch_npu 02：Stream、Event、异步生命周期与计算图](./torch_npu/02-stream-events-and-graph-capture.md) | 能区分 default/current Stream、Event 依赖、`record_stream` 内存保护和 graph capture，并读懂 `getCurrentNPUStream()` 到 `aclrtStream` 的源码路径 |
 
 ### 5. sgl-kernel-npu：回到真实生产源码
 
@@ -87,7 +88,7 @@
 
 | 内容 | 用途 |
 |---|---|
-| [代码阅读手册：变量类型、形状、地址与源码实现](./reference/code-reading-and-types.md) | 逐层区分 Python 对象、Triton IR 类型、pointer/value block、Ascend C Global/Local Tensor，并解释 pointer 为什么能与 offset 相加 |
+| [代码阅读手册：变量类型、形状、地址、C++ 命名空间与源码实现](./reference/code-reading-and-types.md) | 逐层区分 Python 对象、Triton IR 类型、pointer/value block、Ascend C Global/Local Tensor；解释 pointer arithmetic，以及 `at::`、`c10::`、`torch::`、torch_npu/CANN/Ascend C 命名空间的边界 |
 | [技术选型：何时复用、何时 Triton、何时 Ascend C](./reference/technology-comparison.md) | 特点、优劣势、决策树、评审清单 |
 | [术语表](./reference/glossary.md) | 集中解释 program、grid、tile、AI Core、GlobalTensor、流水等名词 |
 

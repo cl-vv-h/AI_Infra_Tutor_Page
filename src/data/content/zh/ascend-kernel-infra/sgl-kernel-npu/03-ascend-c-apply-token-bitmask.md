@@ -150,6 +150,8 @@ logits.index_put_({rowIndices}, result)
 | `numIndices` | `int64_t` | 实际需要处理的行数；没有 indices 时等于 batch |
 | `result` | `at::Tensor` | kernel 修改后的选中行结果 |
 
+这里第一次出现的 `c10::optional<at::Tensor>` 要从外向内读：`at::Tensor` 是 PyTorch/ATen 的 Host tensor 句柄，`c10::optional<T>` 表示“可能有一个 `T`，也可能没有”。因此它表示 Python 的 `indices=None` 或一个真实 indices tensor，而不是 Ascend C 的 local tensor。`c10` 是 PyTorch core 命名空间，`at` 是 ATen 命名空间；不同命名空间的类型可以正常组合成 C++ 模板。`indices` 有值后仍需继续检查 `defined()`、`numel()`、dtype 和维度。完整说明见[代码阅读手册第 8.5 节](../reference/code-reading-and-types.md#85-c10optionalattensor-要从外向内读)。
+
 真实源码证据链在 Host 文件中非常集中：
 
 - [`#L35-L43`](https://github.com/sgl-project/sgl-kernel-npu/blob/b2378ee05769cf7df209ffc5e1b669728f435a7e/csrc/apply_token_bitmask/op_host/apply_token_bitmask.cpp#L35-L43)：判断是否有 `indices`，并把它转为 1D `int64` 的 `rowIndices`；
@@ -329,9 +331,15 @@ Device 文件为 half、float、bfloat16 提供三个入口。Host 按 logits dt
 
 ## 15. 异步生命周期
 
-Host 在 launch 前对 working tensor 调用 `record_stream(npuStream)`，防止异步 kernel 完成前底层 storage 被 allocator 回收。
+Host 在 launch 前对两个 working Tensor 调用 `record_stream(npuStream)`。这会把 current Stream 登记到 caching allocator 的 `stream_uses`，但不代表本算子真的发生了跨 Stream。
 
-这类 bug 的典型表现是偶现错误，而不是每次稳定失败。Kernel 正确性不仅在 device 数学里，也包括 Host 对异步生命周期的管理。
+逐分支审计可见：`index/zeros/contiguous`、`EXEC_KERNEL_CMD`、后续 `copy_`/`index_put_` 全部使用 current Stream；wrapper 没有创建 side Stream。因此对正常同 Stream 调用，这两次登记在正确性上是冗余的，不是 bitmask 数学或异步 launch 的必要步骤。`workingLogits` 要么 alias 返回的 `logits`，要么是 current-Stream 临时量；`workingBitmask` 也通常在 current Stream 分配/使用。
+
+它们只在一种边缘情形提供额外保护：working storage alias 另一条 Stream 分配的输入，而调用方准备过早释放最后一个引用。但它们不建立数据就绪依赖，也没有覆盖所有可能 alias，所以不能把它理解为“本算子自动支持任意跨 Stream 输入”。
+
+仓库其他算子没有隐藏的统一 `record_stream`：`EXEC_KERNEL_CMD` 只取得 current Stream 并转换裸指针。`causal_conv1d`、`catlass_matmul_basic` 等局部 tiling/workspace 同样异步提交，却依靠同 allocation/current Stream 顺序。只有实际把 storage 交给另一条 side/communication Stream 时，才需要 `record_stream(consumer)`，或 Event + keepalive/反向 wait 的等效方案。完整 allocator 源码、分支表和实验见[Stream 专章第 7.4～7.6 节](../torch_npu/02-stream-events-and-graph-capture.md#74-为什么-sgl-kernel-npu-只有-apply_token_bitmask-显式调用它)。
+
+这里的 `npuStream` 是 `c10_npu::NPUStream` Host 包装；`record_stream` 不会同步 kernel，也不会构建计算图。`getCurrentNPUStream()`、原生 `aclrtStream`、Event 与 graph capture 的完整关系见[torch_npu 02：Stream、Event、异步生命周期与计算图](../torch_npu/02-stream-events-and-graph-capture.md)。
 
 ## 16. 测试如何设计
 
@@ -435,6 +443,8 @@ CopyIn 分别为 logits 和 bitmask 分配 LocalTensor，完成 GM→UB 后 EnQu
 Kernel launch 提交到 stream 后会立即返回 Host。局部 `workingLogits`/`workingBitmask` Python/C++ 引用可能很快离开作用域，但 NPU 仍在读取它们。Caching allocator 若不知道该 stream 仍使用 storage，可能把内存分配给其他 tensor，造成偶发数据污染。
 
 `record_stream` 告诉 allocator：这块 storage 在指定 NPU stream 完成相关工作前不能安全回收复用。它不替代算子间数据依赖同步，而是保护异步内存所有权。
+
+如果 producer 和本 kernel 位于不同 Stream，还必须另用 Event/`wait_stream` 建立执行顺序；只记录 storage 不能保证其中的数据已经写好。参见[Stream 专章第 6-8 节](../torch_npu/02-stream-events-and-graph-capture.md#6-多-stream并发不是自动获得的)。
 
 ### 5. 为什么 `packed == -1` 可以快速跳过？
 

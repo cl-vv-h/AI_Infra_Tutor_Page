@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom'
-import { Github, BookOpen, Target, Users, Mail } from 'lucide-react'
+import { Github, BookOpen, Target, Users, ShieldCheck } from 'lucide-react'
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-[#0a0f1e]">
+    <div className="min-h-screen bg-[#070b10]">
       <section className="py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-white">关于 AI Inference Tutor</h1>
+          <h1 className="mb-4 text-4xl font-bold text-white">关于 AI Infra Space</h1>
           <p className="text-lg text-gray-400">
-            一个系统化的大模型推理技术知识库
+            理解系统，追踪信号，保留通向下一次探索的入口
           </p>
         </div>
       </section>
@@ -21,7 +21,7 @@ export default function About() {
               <h2 className="text-2xl font-bold text-white">项目使命</h2>
             </div>
             <p className="leading-relaxed text-gray-300">
-              AI Inference Tutor 致力于为开发者提供系统化、高质量的大模型推理技术学习资源。我们将推理领域的核心知识拆解为九大领域，从并行策略到推理部署，帮助开发者建立完整的知识体系，深入理解大模型推理的每一个环节。
+              项目希望把分散的 AI Infra 知识整理成可行走的地图：既能从 Prefill、KV Cache 等基础概念开始，也能一路深入 SGLang 调度、分布式执行、Ascend NPU 与真实算子源码。
             </p>
           </div>
 
@@ -64,19 +64,19 @@ export default function About() {
 
           <div className="rounded-xl border border-white/5 bg-[#1a1f35] p-8">
             <div className="mb-4 flex items-center gap-3">
-              <Mail className="h-6 w-6 text-[#00d4ff]" />
-              <h2 className="text-2xl font-bold text-white">联系我们</h2>
+              <ShieldCheck className="h-6 w-6 text-[#d8ff78]" />
+              <h2 className="text-2xl font-bold text-white">公开与安全</h2>
             </div>
             <p className="mb-4 leading-relaxed text-gray-300">
-              如果你有任何问题或建议，欢迎通过以下方式联系：
+              网站只发布公开课程、公共新闻元数据与来源链接。自动化所需凭证保存在 GitHub Secrets 中，不进入仓库、网页或报告。
             </p>
             <Link
-              to="https://github.com"
+              to="https://github.com/cl-vv-h/AI_Infra_Tutor_Page"
               target="_blank"
               className="inline-flex items-center gap-2 rounded-lg bg-white/5 px-4 py-2 text-sm text-gray-300 transition-colors hover:bg-white/10 hover:text-white"
             >
               <Github className="h-4 w-4" />
-              GitHub
+              查看项目仓库
             </Link>
           </div>
         </div>

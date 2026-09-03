@@ -28,6 +28,23 @@
 | Host-side Dispatch | 本课程中指 C++ Host wrapper 在被 PyTorch dispatcher 调到以后，继续按 dtype、shape、硬件资源、workspace 等条件选择具体 kernel 变体和 launch 参数；它不是独立进程调度 |
 | PrivateUse1 | PyTorch 为外部设备 backend 保留的 dispatch key，torch_npu 用于 NPU 接入 |
 | OpCommand | `torch_npu` framework 层用于打包一次 NPU 算子调用、stream 和 custom handler 的命令对象 |
+| C++ Namespace / 命名空间 | 用于组织 C++ 名字并避免冲突的作用域；`A::B` 表示到作用域 `A` 中查找 `B`。它本身不创建对象，也不能单独证明代码运行在 Host 或 Device |
+| `at::` / ATen | PyTorch 基础 tensor/算子库的 C++ 命名空间；包含 `at::Tensor`、`at::ScalarType`、`at::empty` 等。Host `at::Tensor` 是带元数据与 storage 生命周期的句柄，元素 storage 可以位于 NPU |
+| `c10::` / C10 | PyTorch core 基础设施命名空间，提供 `optional`、`Device`、`DeviceType`、`Scalar`、`Stream` 等跨 backend 类型和工具 |
+| `torch::` | PyTorch C++ frontend/扩展注册命名空间；常见 `torch::Library`、`torch::nn`。常规 C++ frontend 头会向 `torch::` 暴露 ATen 类型，因此 `torch::Tensor` 通常解析为同一底层 tensor 类型 |
+| `c10_npu::` | torch_npu 的 NPU core 适配命名空间，常用于取得当前 NPU stream、管理设备与 guard；它是顶层名字 `c10_npu`，不是 `c10::npu` |
+| `at_npu::native::` | torch_npu 的 native/执行框架命名空间，常见 `OpCommand`；属于 Host backend 实现，不是 Ascend C Device API |
+| `platform_ascendc::` | CANN 的 Host platform/tiling 相关命名空间，查询 AIC/AIV 数量与 UB/L1/L0 等资源，供 Host 计算执行计划 |
+| `AscendC::` | CANN Ascend C 编程 API 命名空间，主要出现在 Device kernel，包含 `GlobalTensor`、`LocalTensor`、`TPipe/TQue`、搬运和计算 API |
+| Dispatcher Namespace | PyTorch operator 注册表中的逻辑名字空间，例如 `TORCH_LIBRARY_FRAGMENT(npu, m)` 对应 Python `torch.ops.npu`；它不是 C++ `namespace npu`，也不证明算子属于某个仓库 |
+| Anonymous Namespace / 匿名命名空间 | `namespace { ... }` 创建的 translation-unit 内部作用域，常用来隐藏注册辅助符号；与 `torch.ops` 的 dispatcher namespace 无关 |
+| ACL/ACLRT 名字前缀 | `aclrtStream`、`aclrtMemcpy` 等来自 C 风格 API，使用 `acl`/`aclrt` 前缀避免冲突；它们不是 `aclrt::Stream` 形式的 C++ namespace |
+| `ge::` | CANN Graph Engine 相关 C++ 命名空间，常见 `DataType`、`Format`、`graphStatus`，主要服务 Host 算子描述、校验和图/运行时接口 |
+| `gert::` | CANN Graph Engine Runtime 相关命名空间，常见 tensor descriptor、storage shape 和 tiling/runtime context；这里的 `gert::Tensor` 不是 `at::Tensor` |
+| `optiling::` | Ascend 算子工程中组织 Host tiling class、校验与 tiling helper 的常见 namespace；名字表达代码组织，不保证每个内部类型只会被 Host header 使用 |
+| `matmul_tiling::` | CANN MatMul Host tiling API/helper 的 namespace，用于依据矩阵 shape/layout、dtype 和硬件资源生成矩阵计算参数 |
+| `AscendC::MicroAPI::` | Ascend C 中面向 Vector 寄存器与更低层微指令控制的 Device API；`RegTensor`/`MaskReg` 与 UB `LocalTensor` 的抽象层级不同 |
+| Namespace Alias | `namespace py = pybind11;` 为现有 namespace 创建短别名；`py::arg` 与 `pybind11::arg` 指向同一声明，不发生对象转换或复制 |
 
 ## B. 算子与编译
 
@@ -51,7 +68,7 @@
 | `solve_tril` | 下三角矩阵求解/求逆相关阶段；`tril` 表示 lower triangular，下三角 |
 | WY / `wy_fast` | FLA chunk 递推中的紧凑中间因子构造阶段；在当前源码中主要把 `A_inv`、`k/v/beta/g` 合成后续 `chunk_h` 可复用的 `w/u` 张量 |
 | DSL | 领域专用语言；Triton 是面向并行 kernel 的 Python DSL |
-| JIT | Just-In-Time，运行时按参数编译 kernel；Triton 常用此方式 |
+| JIT | Just-In-Time（即时编译）：Python 进程运行后，首次遇到未缓存的参数 specialization 时编译 kernel 变体；命中进程内/磁盘 cache 时复用，不是每次 launch 都重编译 |
 | AOT | Ahead-Of-Time，部署前编译；Ascend C shared library 常走此路线 |
 | IR | Intermediate Representation，编译器在前端与机器代码之间使用的中间表示 |
 | TTIR | Triton IR，Triton 编译链中的核心中间表示之一 |
@@ -133,11 +150,13 @@
 | L2 Cache | 多核共享的 GM 访问缓存 |
 | L1 Buffer | 较大的片上中转/复用存储，常服务 Cube 数据 |
 | A1/B1 | Ascend C `TPosition` 中常见的 Cube A/B 操作数在 L1 阶段的逻辑位置；它描述数据角色，不应被硬编码理解为所有架构上的固定物理分区 |
+| C1 | Ascend C 中 Cube bias 输入的第一级逻辑位置，物理上可映射 L1 或 UB，依产品而变；不是 Cube output |
 | L1A/L1B | 资料或口语中有时用来描述 L1 中服务 A/B 操作数的区域或角色；不同硬件映射可能不同，初学时优先用 A1/B1 这种逻辑位置理解 |
 | L0A/L0B | Cube A/B 输入操作数的近端存储 |
 | A2/B2 | Ascend C `TPosition` 中常见的 Cube A/B 操作数在 L0 阶段的逻辑位置，通常对应 L0A/L0B 角色 |
+| C2 | Ascend C 中分块后的 Cube bias 输入逻辑位置，物理上可映射 BiasTable/BT 或 L0C，依产品而变；不要与 CO2 混淆 |
 | L0C | Cube 累加结果存储 |
-| CO1/CO2 | Cube 输出或累加结果相关的逻辑位置/阶段命名，常与 L0C、输出格式转换和写回路径相关；具体含义需看目标架构和 API 文档 |
+| CO1/CO2 | Cube output 的逻辑阶段：CO1 常对应 L0C 中的分块累加结果，CO2 常对应进入 GM 或 UB 的最终矩阵结果；具体物理映射需看目标架构 |
 | UB | Unified Buffer，Vector 输入输出和临时数据的主要片上存储 |
 
 ## E. Ascend C 数据与资源
@@ -178,11 +197,20 @@
 | Pipeline / 流水 | 让不同 tile 的搬入、计算、搬出阶段在不同硬件通路重叠 |
 | Double Buffer | 使用 ping/pong 两组 buffer，让下一 tile 搬入与当前 tile 计算重叠 |
 | Queue Depth | 同一 TQue 可连续入队而未出队的次数，不等于 buffer number |
-| Event | 表达异步指令通路之间依赖的同步资源 |
+| Event | Runtime 或 Device 流水中的进度/依赖标记；在 Host Stream 语境中，Event record 后要等该 Stream 前序任务完成才完成，可由另一 Stream wait 来建立跨 Stream 顺序 |
 | Barrier | 让指定范围内多个执行者都到达某点后再继续的同步机制 |
-| Stream | Host 向 device 提交异步任务的有序队列 |
+| Stream | Host/runtime 向某个 device 提交 kernel launch、异步拷贝、Event 等任务的有序执行序列；同一 Stream 隐式有序，不与 CPU 线程或 AI Core 一一绑定 |
+| Default Stream | 某 device/context 自动具备的固定默认 Stream；“默认”描述固定身份，不表示它永远是 current stream |
+| Current Stream | 框架为当前 device 与 Host 执行上下文选中的提交目标；PyTorch NPU 算子和 custom wrapper 通常应继承它 |
+| Allocation / Creation Stream | Caching allocator 分配某个 storage 时与该内存块关联的 Stream；allocator 默认知道这条 Stream，但不会自动知道所有非 creation-stream 使用 |
+| `c10::Stream` | PyTorch C10 层的 backend-neutral Stream 身份值，包含 device/stream 标识但不直接等于 CANN 原生队列句柄 |
+| `c10_npu::NPUStream` | torch_npu 对 NPU Stream 的 Host C++ 包装，可通过 `.stream(false)` 取得底层 `aclrtStream` |
+| `aclrtStream` | CANN Runtime 的原生不透明 Stream 句柄，传给异步拷贝、kernel 或 ACLNN launch API |
+| `wait_event` / `wait_stream` | 向一条 Stream 加入对另一条 Stream 进度的异步等待，建立跨 Stream 执行依赖而通常不阻塞 Host |
+| Stream Synchronize | 让 Host 阻塞直到某条 Stream 先前提交的任务完成；比 Event wait 更粗，滥用会破坏异步重叠 |
 | Task Queue | Triton-Ascend launcher/runtime 的异步提交模式；开启后 Host 提交 launch 后可先返回，但这不等于 device kernel 内部变成 persistent 调度 |
-| Record Stream | 告知 allocator 某 tensor storage 正被异步 stream 使用，避免提前回收 |
+| Record Stream | 告知 caching allocator 某 tensor storage 正被指定 Stream（主要是非 allocation stream）异步使用，避免提前回收复用；只在 allocation stream 使用通常不需再次记录。它不建立执行依赖，也不阻塞 Host |
+| Graph Capture / NPUGraph | 在 capture Stream 上记录一段相对稳定的 launch 序列并生成可 replay 的图；图描述可重放工作，Stream 承载提交与顺序，二者不是同一对象 |
 | Cross-core Sync | 多核之间的数据就绪或阶段同步 |
 | CV Fusion | Cube 与 Vector 阶段在同一融合算子内协作执行 |
 | `TLOAD` | PTO 风格 device helper 中常见的搬入动作，可理解为把 GM 或较低层数据搬进片上 tile；类似 CopyIn，但参数携带 PTO tile/layout 语义 |

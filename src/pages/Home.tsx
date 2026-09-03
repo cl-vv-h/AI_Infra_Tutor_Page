@@ -1,120 +1,131 @@
+import { ArrowUpRight, Asterisk, Github, Radio } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, Calendar, Clock } from 'lucide-react'
-import { categories, learningPaths } from '@/data/categories'
-import { articles } from '@/data/articles'
-import CategoryCard from '@/components/CategoryCard'
+import { portalModules, type PortalModule } from '@/data/modules'
 
-const levelMap: Record<string, string> = {
-  beginner: '入门',
-  intermediate: '进阶',
-  advanced: '专家',
+const statusLabel: Record<PortalModule['status'], string> = {
+  live: 'ONLINE',
+  beta: 'BETA',
+  planned: 'PLANNED',
+}
+
+function ModuleCard({ module, index }: { module: PortalModule; index: number }) {
+  const Icon = module.icon
+  const content = (
+    <>
+      <div className="module-card__glow" style={{ backgroundColor: module.accent }} />
+      <div className="relative z-10 flex h-full flex-col">
+        <div className="flex items-center justify-between gap-4">
+          <span className="font-mono text-[0.68rem] tracking-[0.22em] text-white/45">
+            {module.eyebrow}
+          </span>
+          <span className="flex items-center gap-2 font-mono text-[0.62rem] tracking-[0.16em] text-white/50">
+            <span
+              className={`h-1.5 w-1.5 rounded-full ${module.status === 'live' ? 'animate-pulse' : ''}`}
+              style={{ backgroundColor: module.accent }}
+            />
+            {statusLabel[module.status]}
+          </span>
+        </div>
+
+        <div className="mt-16 flex items-end justify-between gap-5 sm:mt-24">
+          <div
+            className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-black/20"
+            style={{ color: module.accent }}
+          >
+            <Icon className="h-6 w-6" />
+          </div>
+          <span className="font-display text-6xl font-semibold tracking-[-0.08em] text-white/[0.045]">
+            0{index + 1}
+          </span>
+        </div>
+
+        <div className="mt-6">
+          <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-[1.7rem]">
+            {module.title}
+          </h2>
+          <p className="mt-1 font-mono text-[0.7rem] uppercase tracking-[0.15em] text-white/35">
+            {module.titleEn}
+          </p>
+          <p className="mt-5 max-w-md text-sm leading-7 text-slate-300/75">
+            {module.description}
+          </p>
+        </div>
+
+        <div className="mt-auto flex items-end justify-between gap-4 pt-8">
+          <div className="flex flex-wrap gap-2">
+            {module.stats.map((stat) => (
+              <span key={stat} className="rounded-full border border-white/10 px-2.5 py-1 text-[0.68rem] text-white/45">
+                {stat}
+              </span>
+            ))}
+          </div>
+          {module.to ? (
+            <span
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-[#070b10] transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
+              style={{ backgroundColor: module.accent }}
+            >
+              <ArrowUpRight className="h-4 w-4" />
+            </span>
+          ) : (
+            <span className="shrink-0 font-mono text-[0.65rem] tracking-widest text-white/25">SOON</span>
+          )}
+        </div>
+      </div>
+    </>
+  )
+
+  const cardClass = 'module-card group relative min-h-[420px] overflow-hidden rounded-[1.75rem] border border-white/10 bg-[#0d131b]/80 p-6 text-left transition-all duration-500 hover:-translate-y-1 hover:border-white/20 sm:p-7'
+
+  return module.to ? (
+    <Link className={cardClass} to={module.to}>{content}</Link>
+  ) : (
+    <div className={`${cardClass} opacity-70`} aria-label={`${module.title}，规划中`}>{content}</div>
+  )
 }
 
 export default function Home() {
-  const latestArticles = articles.slice(0, 4)
-
   return (
-    <div className="min-h-screen bg-[#0a0f1e]">
-      <section className="grid-bg relative overflow-hidden py-32">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#00d4ff]/5 to-transparent" />
-        <div className="container relative mx-auto px-6 text-center">
-          <h1 className="mb-6 text-5xl font-bold tracking-tight text-white md:text-6xl">
-            AI Inference Tutor
-          </h1>
-          <p className="mx-auto mb-10 max-w-2xl text-lg text-gray-400 md:text-xl">
-            系统化掌握大模型推理核心技术，从并行策略到推理部署的全链路知识体系
-          </p>
-          <Link
-            to="/category/sglang"
-            className="inline-flex items-center gap-2 rounded-lg bg-[#00d4ff] px-8 py-3 font-semibold text-[#0a0f1e] transition-all hover:bg-[#00b8e6] hover:shadow-lg hover:shadow-[#00d4ff]/25"
+    <div className="portal-shell min-h-[calc(100vh-4rem)] overflow-hidden">
+      <section className="relative mx-auto max-w-[1440px] px-5 pb-20 pt-16 sm:px-8 sm:pt-24 lg:px-12">
+        <div className="portal-orbit portal-orbit--one" />
+        <div className="portal-orbit portal-orbit--two" />
+
+        <div className="relative z-10 grid gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:items-end">
+          <div>
+            <div className="mb-6 flex items-center gap-3 font-mono text-[0.68rem] uppercase tracking-[0.25em] text-cyan-200/55">
+              <Radio className="h-3.5 w-3.5" />
+              Open knowledge system · v2
+            </div>
+            <h1 className="max-w-5xl text-5xl font-semibold leading-[0.98] tracking-[-0.055em] text-white sm:text-7xl lg:text-[6.4rem]">
+              理解复杂系统，
+              <span className="portal-gradient-text block">从一张好地图开始。</span>
+            </h1>
+          </div>
+          <div className="max-w-lg border-l border-white/10 pl-6 lg:pb-2">
+            <Asterisk className="mb-5 h-5 w-5 text-lime-200" />
+            <p className="text-base leading-8 text-slate-300/70">
+              一个持续生长的 AI Infra 知识入口：深读技术，追踪世界，也为下一种探索方式保留空间。
+            </p>
+          </div>
+        </div>
+
+        <div className="relative z-10 mt-16 grid gap-5 lg:grid-cols-3">
+          {portalModules.map((module, index) => (
+            <ModuleCard key={module.id} module={module} index={index} />
+          ))}
+        </div>
+
+        <div className="relative z-10 mt-8 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/35 sm:flex-row sm:items-center sm:justify-between">
+          <span className="font-mono tracking-[0.14em]">CURATED · BILINGUAL · SOURCE-LED</span>
+          <a
+            href="https://github.com/cl-vv-h/AI_Infra_Tutor_Page"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 transition-colors hover:text-white"
           >
-            开始学习
-            <ArrowRight className="h-4 w-4" />
-          </Link>
-        </div>
-      </section>
-
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="mb-12 text-center text-3xl font-bold text-white">知识领域</h2>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {categories.map((cat) => (
-              <CategoryCard key={cat.id} name={cat.name} slug={cat.slug} description={cat.description} icon={cat.icon} color={cat.color} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="mb-12 text-center text-3xl font-bold text-white">学习路径</h2>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            {learningPaths.map((path) => (
-              <div
-                key={path.id}
-                className="rounded-xl border border-white/5 bg-[#1a1f35] p-6"
-                style={{ borderLeftWidth: '4px', borderLeftColor: path.color }}
-              >
-                <div className="mb-3 flex items-center gap-3">
-                  <h3 className="text-lg font-semibold text-white">{path.title}</h3>
-                  <span
-                    className="rounded-full px-2.5 py-0.5 text-xs font-medium"
-                    style={{ backgroundColor: `${path.color}20`, color: path.color }}
-                  >
-                    {levelMap[path.level]}
-                  </span>
-                </div>
-                <p className="mb-4 text-sm text-gray-400">{path.description}</p>
-                <ul className="space-y-2">
-                  {path.topics.map((topic) => (
-                    <li key={topic} className="flex items-center gap-2 text-sm text-gray-300">
-                      <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: path.color }} />
-                      {topic}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <h2 className="mb-12 text-center text-3xl font-bold text-white">最新内容</h2>
-          <div className="space-y-4">
-            {latestArticles.map((article) => (
-              <Link
-                key={article.id}
-                to={`/article/${article.slug}`}
-                className="group flex flex-col gap-3 rounded-xl border border-white/5 bg-[#1a1f35] p-5 transition-all hover:border-white/10 hover:bg-[#1e2440] md:flex-row md:items-start md:gap-6"
-              >
-                <div className="flex-1">
-                  <h3 className="mb-1 text-base font-semibold text-white group-hover:text-[#00d4ff] transition-colors">
-                    {article.title}
-                  </h3>
-                  <p className="text-sm text-gray-400 line-clamp-2">{article.summary}</p>
-                </div>
-                <div className="flex shrink-0 items-center gap-4 text-xs text-gray-500">
-                  <span className="flex items-center gap-1">
-                    <Calendar className="h-3 w-3" />
-                    {article.date}
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Clock className="h-3 w-3" />
-                    {article.readTime}
-                  </span>
-                </div>
-                <div className="flex shrink-0 flex-wrap gap-1.5">
-                  {article.tags.slice(0, 3).map((tag) => (
-                    <span key={tag} className="rounded-full bg-white/5 px-2 py-0.5 text-xs text-gray-400">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </Link>
-            ))}
-          </div>
+            <Github className="h-3.5 w-3.5" />
+            在 GitHub 上共同构建
+          </a>
         </div>
       </section>
     </div>

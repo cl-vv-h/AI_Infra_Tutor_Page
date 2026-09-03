@@ -4,8 +4,10 @@ import { getArticlesBySubCategory } from '@/data/articles'
 interface SubCategory {
   id: string
   name: string
+  nameEn?: string
   slug: string
   description: string
+  descriptionEn?: string
 }
 
 interface SidebarProps {
@@ -14,6 +16,7 @@ interface SidebarProps {
   activeSubSlug?: string
   onSubClick?: (subSlug: string) => void
   categorySlug?: string
+  language?: 'zh' | 'en'
 }
 
 export default function Sidebar({
@@ -22,6 +25,7 @@ export default function Sidebar({
   activeSubSlug,
   onSubClick,
   categorySlug,
+  language = 'zh',
 }: SidebarProps) {
   const isSglang = categorySlug === 'sglang'
 
@@ -30,7 +34,7 @@ export default function Sidebar({
     const topicSubs = subcategories.filter((s) => s.slug !== 'knowledge-graph')
 
     return (
-      <aside className="fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 overflow-y-auto border-r border-white/10 bg-[#0a0f1e] p-4">
+      <aside className="fixed left-0 top-16 hidden h-[calc(100vh-4rem)] w-64 overflow-y-auto border-r border-white/10 bg-[#0a0f1e] p-4 lg:block">
         <h2 className="mb-4 px-3 text-sm font-semibold text-[#8b5cf6]">
           {categoryName}
         </h2>
@@ -51,7 +55,7 @@ export default function Sidebar({
           <div className="my-3 border-t border-white/5" />
 
           <div className="px-3 pb-2 text-xs font-medium uppercase tracking-wider text-gray-600">
-            专题学习
+            {language === 'zh' ? '专题学习' : 'Learning tracks'}
           </div>
 
           {topicSubs.map((sub) => {
@@ -70,7 +74,7 @@ export default function Sidebar({
                 <span className="flex items-center justify-between">
                   <span className="flex items-center gap-2">
                     <BookOpen className="h-4 w-4 shrink-0" />
-                    <span>{sub.name}</span>
+                    <span>{language === 'zh' ? sub.name : sub.nameEn}</span>
                   </span>
                   <span className="ml-2 rounded-full bg-white/5 px-2 py-0.5 text-xs text-gray-500">
                     {articleCount}
@@ -78,7 +82,7 @@ export default function Sidebar({
                 </span>
                 {isActive && sub.description && (
                   <span className="mt-1 block text-xs text-gray-500 pl-6">
-                    {sub.description}
+                    {language === 'zh' ? sub.description : sub.descriptionEn}
                   </span>
                 )}
               </button>
@@ -90,7 +94,7 @@ export default function Sidebar({
   }
 
   return (
-    <aside className="fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 overflow-y-auto border-r border-white/10 bg-[#0a0f1e] p-4">
+    <aside className="fixed left-0 top-16 hidden h-[calc(100vh-4rem)] w-64 overflow-y-auto border-r border-white/10 bg-[#0a0f1e] p-4 lg:block">
       <h2 className="mb-4 px-3 text-sm font-semibold text-[#00d4ff]">
         {categoryName}
       </h2>
@@ -108,10 +112,10 @@ export default function Sidebar({
                   : 'text-gray-400 hover:bg-white/5 hover:text-gray-200'
               }`}
             >
-              <span className="block">{sub.name}</span>
+              <span className="block">{language === 'zh' ? sub.name : sub.nameEn}</span>
               {isActive && sub.description && (
                 <span className="mt-1 block text-xs text-gray-500">
-                  {sub.description}
+                  {language === 'zh' ? sub.description : sub.descriptionEn}
                 </span>
               )}
             </button>
