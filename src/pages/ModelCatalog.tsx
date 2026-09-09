@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowRight, ArrowUpRight, Boxes, GitCompareArrows, Search, X } from 'lucide-react'
 import { modelArchitectures } from '@/data/models'
-import { attentionComposition, attentionFilters, catalogComparisonHref, catalogParams, emptyCatalog, filterCatalog, hasExperts, modelAttentionProfile, parseCatalog, toggleCatalogSelection } from '@/lib/model-catalog'
+import { attentionComposition, attentionFilters, catalogComparisonHref, catalogComparisonScenario, catalogParams, emptyCatalog, filterCatalog, hasExperts, modelAttentionProfile, parseCatalog, toggleCatalogSelection } from '@/lib/model-catalog'
 import type { CatalogState } from '@/lib/model-catalog'
 
 const layerLabels = { mha: 'MHA', gqa: '完整 GQA', mla: 'MLA', gdn: 'DeltaNet', swa: '滑窗 GQA' }
@@ -15,6 +15,7 @@ export default function ModelCatalog() {
   const filtered = filterCatalog(modelArchitectures, state)
   const selected = state.selected.map((id) => modelArchitectures.find((model) => model.id === id)!)
   const compareHref = catalogComparisonHref(state.selected, modelArchitectures)
+  const compareScenario = catalogComparisonScenario(state.selected, modelArchitectures)
   const facetBase = filterCatalog(modelArchitectures, { ...state, attention: 'all' })
   const visibleIds = new Set(filtered.map((model) => model.id))
   useEffect(() => {
@@ -48,7 +49,7 @@ export default function ModelCatalog() {
       <section aria-label="已选模型对比" className="mt-4 rounded-2xl border border-violet-200/20 bg-[#141220] p-4 sm:p-5">
         <div className="flex flex-wrap items-center justify-between gap-3"><h2 className="flex items-center gap-2 text-base font-medium"><GitCompareArrows className="h-5 w-5 text-violet-200" />待对比 {selected.length} / 3</h2>{compareHref ? <Link to={compareHref} className="inline-flex items-center gap-2 rounded-xl bg-violet-200 px-4 py-2.5 text-sm font-medium text-[#171023]">比较已选模型<ArrowRight className="h-4 w-4" /></Link> : <button disabled type="button" className="rounded-xl border border-white/10 px-4 py-2.5 text-sm text-white/40">至少选择 2 个模型</button>}</div>
         <div className="mt-3 flex flex-wrap gap-2">{selected.map((model) => <button key={model.id} type="button" onClick={() => toggle(model.id)} aria-label={`移除对比 ${model.name}`} className="flex items-center gap-2 rounded-lg border border-violet-200/25 px-3 py-2 text-left text-sm text-violet-100">{model.name}{!visibleIds.has(model.id) && <span className="text-white/50">（筛选外）</span>}<X className="h-4 w-4 shrink-0" /></button>)}</div>
-        <p aria-live="polite" className="mt-3 text-sm leading-6 text-white/60">{selected.length === 3 ? '已选满 3 个；先移除一项再添加其他模型。' : selected.length ? '可以继续筛选、添加模型；已选项不会因筛选而丢失。' : '在卡片上勾选 2–3 个检查点。对比的是架构和理论缓存，不是性能排名。'} 对比初始条件：B=4、S=8,192、TP=4、KV=2 字节，可在对比台调整。</p>
+        <p aria-live="polite" className="mt-3 text-sm leading-6 text-white/60">{selected.length === 3 ? '已选满 3 个；先移除一项再添加其他模型。' : selected.length ? '可以继续筛选、添加模型；已选项不会因筛选而丢失。' : '在卡片上勾选 2–3 个检查点。对比的是架构和理论缓存，不是性能排名。'} 对比初始条件：B=4、S={compareScenario.sequence.toLocaleString('en-US')}、TP=4、KV=2 字节。S 统一取 8,192 与所选最短配置上限的较小值，可在对比台调整。</p>
       </section>
       <div className="mt-6 flex flex-wrap items-center justify-between gap-3"><p aria-live="polite" className="text-sm text-white/65">找到 {filtered.length} / {modelArchitectures.length} 个模型</p><button type="button" onClick={() => update({ ...emptyCatalog, selected: state.selected })} className="text-sm text-cyan-100 hover:underline">清除筛选，保留选择</button></div>
       {filtered.length ? <section aria-label="模型目录结果" className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">{filtered.map((model) => {

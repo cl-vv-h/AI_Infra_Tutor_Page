@@ -97,6 +97,17 @@ try {
     }
   }
   const unknownModel = renderExplorer('/models/not-a-real-model?b=999')
+  const olmo = renderExplorer('/models/olmo-2-1124-7b?layer=31&node=qk-norm&tp=4&b=4&s=4096')
+  for (const text of ['Q/K Norm · 跨全部 heads', '8 GiB', '32 GiB', '[4096]', '[4, 4096, 2, 32, 128]', '汇集式 Attention TP']) assert.ok(olmo.includes(text), text)
+  const olmoIds = [...olmo.matchAll(/id="model-node-([^"]+)"/g)].map((match) => match[1])
+  assert.deepEqual(olmoIds, ['embedding', 'attention-projection', 'qk-norm', 'mha', 'kv-cache', 'attention-post-norm', 'attention-add', 'ffn', 'ffn-post-norm', 'ffn-add', 'lm-head'])
+  assert.doesNotMatch(olmo, /id="model-node-(?:attention-norm|ffn-norm)"/)
+  const olmoCompared = render('?models=olmo-2-1124-7b,llama-3-1-8b&tp=4&b=4&s=4096')
+  assert.match(olmoCompared, /8 GiB/)
+  assert.match(olmoCompared, /512 MiB/)
+  assert.match(olmoCompared, /KV 不除以 TP/)
+  assert.match(olmoCompared, /子层输出、残差相加前；另有 Q\/K Norm/)
+  assert.match(render('?models=olmo-2-1124-7b,llama-3-1-8b&s=8192'), /S 超过当前配置上限 4,096/)
   const phi = renderExplorer('/models/phi-3-5-mini-instruct?layer=31&node=mha&tp=4&b=4&s=4096')
   assert.equal((phi.match(/aria-label="Layer \d+ · Full \/ MHA/g) ?? []).length, 32)
   assert.ok(phi.includes('id="model-node-mha"') && phi.includes('id="model-node-kv-cache"'))

@@ -12,7 +12,7 @@ test('all models have exactly one attention profile and accurate layer compositi
     assert.ok(attentionFilters.some((filter) => filter.id === modelAttentionProfile(model)))
     assert.equal(attentionComposition(model).reduce((sum, part) => sum + part.count, 0), model.dimensions.layers)
   }
-  assert.deepEqual(ids(filterCatalog(registry, state({ attention: 'mha' }))), ['phi-3-5-mini-instruct'])
+  assert.deepEqual(ids(filterCatalog(registry, state({ attention: 'mha' }))), ['phi-3-5-mini-instruct', 'olmo-2-1124-7b'])
   assert.deepEqual(ids(filterCatalog(registry, state({ attention: 'mixed' }))), ['gemma-2-9b'])
   assert.deepEqual(attentionComposition(registry.find((model) => model.id === 'qwen3-5-9b')), [{ kind: 'gdn', count: 24 }, { kind: 'gqa', count: 8 }])
   assert.equal(attentionFilters.slice(1).reduce((sum, filter) => sum + filterCatalog(registry, state({ attention: filter.id })).length, 0), registry.length)
@@ -76,4 +76,13 @@ test('comparison handoff preserves the exact chosen models and uses identical ex
   assert.deepEqual(compared.scenario, { phase: 'decode', batch: 4, sequence: 8192, tp: 4, cacheBytes: 2 })
   assert.deepEqual(compared.notices, [])
   for (const bad of [[], [registry[0].id], ['unknown', registry[0].id], [registry[0].id, registry[0].id], ids(registry.slice(0, 4))]) assert.equal(catalogComparisonHref(bad, registry), null)
+})
+
+test('catalogue compares a 4K model with the same supported initial context for every pick', () => {
+  const selected = ['olmo-2-1124-7b', 'llama-3-1-8b', 'phi-3-5-mini-instruct']
+  const compared = parseComparison(new URL(catalogComparisonHref(selected, registry), 'https://example.org').searchParams, registry)
+  assert.equal(compared.scenario.sequence, 4096)
+  assert.deepEqual(compared.modelIds, selected)
+  assert.deepEqual(compared.notices, [])
+  for (const id of selected) assert.ok(compared.scenario.sequence <= registry.find((model) => model.id === id).execution.maxContext)
 })

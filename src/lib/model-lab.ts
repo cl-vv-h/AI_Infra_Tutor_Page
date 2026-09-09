@@ -12,6 +12,12 @@ export function localKvHeads(model: ModelArchitecture, tp: TensorParallelSize) {
   return Math.max(1, model.dimensions.kvHeads / tp)
 }
 
+/** Cache placement can differ from projection-weight sharding (e.g. gathered Q/K/V). */
+export function cacheKvHeads(model: ModelArchitecture, tp: TensorParallelSize) {
+  return model.execution.cache.kind === 'gqa' && model.execution.cache.layout === 'replicated'
+    ? model.dimensions.kvHeads : localKvHeads(model, tp)
+}
+
 export function tokenCount(scenario: InferenceScenario) {
   return scenario.batch * (scenario.phase === 'prefill' ? scenario.sequence : 1)
 }
@@ -31,6 +37,7 @@ export function formatShape(template: string, model: ModelArchitecture, scenario
   const values: Record<string, number> = {
     localHeads: model.dimensions.attentionHeads / scenario.tp,
     localKvHeads: localKvHeads(model, scenario.tp),
+    cacheKvHeads: cacheKvHeads(model, scenario.tp),
     vocabShard: Math.ceil(model.dimensions.vocabSize / scenario.tp),
     intermediateShard: model.dimensions.intermediateSize / scenario.tp,
     expertShard: (model.execution.expertIntermediateSize ?? model.dimensions.intermediateSize) / scenario.tp,
@@ -57,7 +64,7 @@ export function cacheEstimate(model: ModelArchitecture, scenario: InferenceScena
   const fullKvLayers = kvLayers - slidingLayers
   const valuesPerTokenPerLayer = cache.kind === 'mla'
     ? cache.latentWidth + cache.ropeWidth
-    : 2 * localKvHeads(model, scenario.tp) * model.dimensions.headDim
+    : 2 * cacheKvHeads(model, scenario.tp) * model.dimensions.headDim
   const bytesPerToken = valuesPerTokenPerLayer * kvLayers * scenario.cacheBytes
   const retainedTokens = cachedSequence(model, scenario.sequence)
   const slidingRetainedTokens = windowSequence(model, scenario.sequence)
@@ -103,6 +110,10 @@ export function decoderNodes(model: ModelArchitecture, layer: number): Architect
     knowledge: [{ label: '残差与 Pre-Norm', to: '/category/model-architecture' }, { label: 'TP 通信', to: '/category/parallel-strategy' }], tone: 'output',
   })
   const ffn = layer < model.execution.denseLayers ? get('dense-ffn') ?? get('ffn') : get('moe')
+  if (model.execution.normLayout === 'post-branch-qk') return [
+    get('attention-projection'), get('qk-norm'), get(attentionKind(model, layer)), get('attention-post-norm'), residual('attention-add', 'Attention 子层输入'),
+    ffn, get('ffn-post-norm'), residual('ffn-add', 'FFN 子层输入'),
+  ]
   if (model.execution.normLayout === 'pre-post') return [
     get('attention-norm'), get(attentionKind(model, layer)), get('attention-post-norm'), residual('attention-add', 'Attention 子层输入'),
     get('ffn-norm'), ffn, get('ffn-post-norm'), residual('ffn-add', 'FFN 子层输入'),

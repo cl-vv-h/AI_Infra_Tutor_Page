@@ -74,6 +74,11 @@ export function toggleCatalogSelection(state: CatalogState, id: string, registry
 
 export function catalogComparisonHref(selected: string[], registry: ModelArchitecture[]) {
   if (selected.length < 2 || selected.length > 3 || new Set(selected).size !== selected.length || selected.some((id) => !registry.some((model) => model.id === id))) return null
-  // Keep the comparison workbench's public, identical conditions for every model.
-  return `/models/compare?${comparisonParams({ modelIds: selected, scenario: defaultComparisonScenario, scope: 'rank' })}`
+  return `/models/compare?${comparisonParams({ modelIds: selected, scenario: catalogComparisonScenario(selected, registry), scope: 'rank' })}`
+}
+
+/** A new catalogue comparison starts at one shared, supported context for all picks. */
+export function catalogComparisonScenario(selected: string[], registry: ModelArchitecture[]) {
+  const models = registry.filter((model) => selected.includes(model.id))
+  return { ...defaultComparisonScenario, sequence: Math.min(defaultComparisonScenario.sequence, ...models.map((model) => model.execution.maxContext)) }
 }

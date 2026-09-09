@@ -106,10 +106,10 @@ test('all model layers have a complete residual block and resolvable shapes', ()
   for (const model of modelArchitectures) {
     for (let layer = 0; layer < model.dimensions.layers; layer++) {
       const nodes = decoderNodes(model, layer)
-      assert.equal(nodes.length, model.execution.normLayout === 'pre-post' ? 8 : 6)
+      assert.equal(nodes.length, model.execution.normLayout ? 8 : 6)
       const groups = decoderGroups(model, layer)
       assert.equal(groups[0].at(-1).id, 'attention-add')
-      assert.equal(groups[1][0].id, 'ffn-norm')
+      assert.equal(groups[1][0].id, model.execution.normLayout === 'post-branch-qk' ? 'ffn' : 'ffn-norm')
       assert.equal(groups[1].at(-1).id, 'ffn-add')
       assert.equal(nodes.filter((node) => ['ffn', 'dense-ffn', 'moe'].includes(node.id)).length, 1)
       for (const tp of model.supportedTp) {

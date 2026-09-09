@@ -27,6 +27,9 @@ try {
     assert.doesNotMatch(html, /NaN|undefined/)
   }
   const hidden = render(new URLSearchParams({ q: 'not-found', pick: 'phi-3-5-mini-instruct,llama-3-1-8b' }))
+  const olmo = render(new URLSearchParams({ pick: 'olmo-2-1124-7b,llama-3-1-8b' }))
+  assert.match(olmo, /S=4,096/)
+  assert.match(olmo, /s=4096/)
   assert.match(hidden, /没有匹配的模型/)
   assert.match(hidden, /（筛选外）/)
   assert.ok(hidden.includes('比较已选模型'))

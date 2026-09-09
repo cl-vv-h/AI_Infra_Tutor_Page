@@ -97,13 +97,13 @@ npm run news:fetch
 
 `#/models` 是可扩展的模型图解目录，卡片、机构、层数、上下文与注意力层占比均由现有模型注册表生成，不另维护一份模型名单。可搜索模型/机构/模块/权重名称，组合筛选完整 MHA、完整 GQA、MLA、全滑窗、完整+滑窗、DeltaNet 混合，以及全部 Dense / 包含 MoE。搜索忽略常见标点差异，多词按 AND 匹配；没有结果时保留空状态，不自动扩大筛选。
 
-勾选 2–3 个模型可进入对比台，选择顺序不变，初始条件统一为 B=4、S=8192、TP=4、KV=2 字节。已选项即使被筛选隐藏也会留在上方，可逐项移除；达到三项后禁止继续添加。`q`、`attention`、`ffn`、`pick` 存入 Hash URL，浏览器返回可恢复筛选和选择，分享会包含搜索词；不使用账户或上传收藏。非法枚举、未知/重复/超量选择会提示，关键词最多 200 字符。`#/models/:modelId` 和 `#/models/compare` 保持原有路径；图解提供“浏览全部模型图解”返回入口。目录的层占比不是速度或计算占比，也不把标称参数与上下文当成部署容量承诺。
+勾选 2–3 个模型可进入对比台，选择顺序不变，初始条件统一为 B=4、TP=4、KV=2 字节，S 取 8192 与所选模型最短上下文上限的较小值。所有模型使用同一个 S，并在目录中提前展示；对比台已有的显式条件不被改写，超范围仍提示。已选项即使被筛选隐藏也会留在上方，可逐项移除；达到三项后禁止继续添加。`q`、`attention`、`ffn`、`pick` 存入 Hash URL，浏览器返回可恢复筛选和选择，分享会包含搜索词；不使用账户或上传收藏。非法枚举、未知/重复/超量选择会提示，关键词最多 200 字符。`#/models/:modelId` 和 `#/models/compare` 保持原有路径；图解提供“浏览全部模型图解”返回入口。目录的层占比不是速度或计算占比，也不把标称参数与上下文当成部署容量承诺。
 
 “Decoder 权重账本”随模型、当前层和 TP 联动，展示图示张量的逐项 Shape 算式、模块占比、本层全局唯一元素数与每卡理论载荷，并按实际 Dense/MoE、GQA/MLA/DeltaNet 层型累计所有 Decoder 层。占比条可定位到结构图中的模块；4/8/16/32-bit 统一假定位宽独立于 KV 精度，通过图解链接的 `wbits` 参数保存。成对矩阵使用显式 `multiplicity`，不同 Shape 的并列权重分别求积相加；计算器不执行 Shape 字符串中的代码，未识别定义会停用合计。
 
 账本只统计已展示的 Decoder 张量，不是完整 checkpoint 参数统计或部署显存预测。它不包含 Embedding/共享 LM Head、视觉编码器、MTP、未展示的 buffer、激活、KV/循环状态、运行时工作区、量化元数据或打包对齐。MoE 在 EP=1 假设下统计所有常驻专家，不以 Top-k 激活参数替代；Norm、路由器和部分 KV 投影的 TP 复制按图解约定保留。低位宽只用于理论载荷对照，不宣称所有权重或硬件支持对应量化。参考 [Transformers 量化概念](https://huggingface.co/docs/transformers/main/en/quantization/concept_guide)。
 
-模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts`、`src/data/mistral-models.ts`、`src/data/gemma-models.ts` 与 `src/data/phi-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供十一个代表模型：
+模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts`、`src/data/mistral-models.ts`、`src/data/gemma-models.ts`、`src/data/phi-models.ts` 与 `src/data/olmo-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供十二个代表模型：
 
 - Llama 3.1 8B：Dense、GQA、SwiGLU；
 - DeepSeek-V3：MLA、DeepSeekMoE、MTP；
@@ -115,9 +115,10 @@ npm run news:fetch
 - Mistral-7B-v0.1：32 层滑动窗口 GQA、4,096 token 窗口、Dense SwiGLU；
 - Mixtral-8x7B-v0.1：32 层完整 GQA、8 专家 / Top-2 MoE，无滑动窗口；
 - Gemma 2 9B：42 层交替局部/完整 GQA、4 个子层边界 RMSNorm、GeGLU、共享词嵌入及 logits softcap；
-- Phi-3.5 Mini Instruct：32 层 MHA、32Q/32KV × 96D、融合 QKV 与 Gate/Up 投影、LongRoPE、独立词嵌入与 LM Head。
+- Phi-3.5 Mini Instruct：32 层 MHA、32Q/32KV × 96D、融合 QKV 与 Gate/Up 投影、LongRoPE、独立词嵌入与 LM Head；
+- OLMo 2 7B · 1124：32 层 MHA、完整投影宽度 Q/K RMSNorm、子层输出 Norm、4K 上下文与参考汇集式 Attention TP。
 
-每个模型都有可直接分享的 Hash 路由，例如 `#/models/qwen3-30b-a3b`。模块支持悬浮预览与点击锁定；窄屏点击打开原生模态详情，可用 Esc 关闭。Layer 控件展开一个真实 Decoder 层，显示两次残差连接，并按模型选择 Pre-Norm 或 Pre+Post-Norm 布局、按层号选择 Dense 或 MoE，其他层折叠。图中为自回归主干，不包含 MTP 辅助预测分支。
+每个模型都有可直接分享的 Hash 路由，例如 `#/models/qwen3-30b-a3b`。模块支持悬浮预览与点击锁定；窄屏点击打开原生模态详情，可用 Esc 关闭。Layer 控件展开一个真实 Decoder 层，显示两次残差连接，并按模型选择 Pre-Norm、Pre+Post-Norm 或子层输出 Norm 布局、按层号选择 Dense 或 MoE，其他层折叠。图中为自回归主干，不包含 MTP 辅助预测分支。
 
 “复制当前图解”保留模型、`layer`、已选 `node`、`phase`、`b`、`s`、`tp` 与 `bytes`；刷新和返回可还原相同条件，临时悬浮和模块搜索词不进入分享链接。窄屏打开链接后可用“查看已选模块”展开详情。模型不存在时显示选择页；数值超出该模型配置或模块不属于当前层时明确提示，不悄悄渲染错误分支。切换模型保留有效推理条件并从第 0 层开始，超出新模型范围的参数会提示并恢复默认值。
 
@@ -136,6 +137,12 @@ Gemma 2 9B 的 `mixed` 布局按每层类型分别统计：21 个完整层使用
 Phi-3.5 Mini 的 [官方配置](https://huggingface.co/microsoft/Phi-3.5-mini-instruct/blob/main/config.json) 中 Q/KV 均为 32 heads，层图和对比台明确显示 MHA；计算复用通用 KV-head 公式。`sliding_window=262144` 超出 `max_position_embeddings=131072`，因此在支持范围内按完整 S 计数，不外推至 256K。LongRoPE 的 4096 是位置缩放参考，不是 KV 裁剪窗口；short/long 系数各 48 个且不是可训练矩阵。投影、Pre-Norm 残差与 SwiGLU 对照 [Transformers v4.57.1 Phi3 实现](https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/models/phi3/modeling_phi3.py)，位置计算参考[同版本 LongRoPE](https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/modeling_rope_utils.py)。融合 QKV 的每卡 Shape 表示各 Q/K/V head 分片再打包，不是将原始全局矩阵的连续行直接等分。“MHA / GQA：KV 头数”预设保持共同推理条件；在相同 B/S/TP/缓存精度下，Phi 的理论 KV 是 Llama 3.1 8B 的 3 倍，不能从参数规模推断缓存大小。
 
 `npm run test:models`（Node.js 22.18+）校验逐层路径、Shape 模板、已知 KV 容量及 TP 复制边界；构建仍兼容 Node.js 20。
+
+OLMo 2 图解针对 [Ai2 OLMo-2-1124-7B 配置](https://huggingface.co/allenai/OLMo-2-1124-7B/blob/main/config.json)，不将其他版本的上下文扩展混入：H=4096、32 层、32Q/32KV、D=128、I=11008、vocab=100352、S≤4096。其 [Transformers v4.57.1 实现](https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/models/olmo2/modeling_olmo2.py) 在 reshape heads 前归一化 Q/K 的完整投影宽度；每层有两条 Q/K Norm 与两条子层输出 Norm，均为带缩放权重的 RMSNorm，不是 OLMo 初代的无参数 LayerNorm。
+
+`normLayout: post-branch-qk` 展开投影 → Q/K Norm → RoPE/MHA/o_proj → Attention 输出 Norm → 残差，以及 FFN → FFN 输出 Norm → 残差。Q/K 各一条 [4096] 缩放向量，V 绕过 Norm。Decoder 权重元素数为每层 `4H² + 3HI + 4H`，其中矩阵按 TP 分片而四条 Norm 向量保留副本；不重复统计投影，也不把 Embedding/LM Head 加入 Decoder 账本。
+
+OLMo 2 缓存采用[固定版本 TP 配置](https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/models/olmo2/configuration_olmo2.py#L85)与[并行算子定义](https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/integrations/tensor_parallel.py#L821)对应的路径：`colwise_rep` 分片权重但汇集 Q/K/V 输出，`rowwise_rep` 接收复制输入并切分给 o_proj；`cache.layout: replicated` 因此每卡保存完整 32 KV heads。`cacheKvHeads` 独立于投影的 `localKvHeads`，防止把权重切分直接套入缓存计算。B=4、S=4096、2-byte KV 时每卡 8 GiB，TP=4 组内合计 32 GiB；这只是该路径的逻辑 KV，不是部署总显存、速度比较或所有引擎必须采用的布局，未进行真实多卡性能测试。
 
 ### 模型对比台
 

@@ -53,8 +53,8 @@ export interface ModelArchitecture {
     maxContext: number
     contextNote?: string
     denseLayers: number
-    normLayout?: 'pre-post'
-    cache: { kind: 'gqa' } | { kind: 'swa'; window: number } | { kind: 'mixed'; window: number; layerTypes: Array<'sliding_attention' | 'full_attention'> } | { kind: 'mla'; latentWidth: number; ropeWidth: number } | {
+    normLayout?: 'pre-post' | 'post-branch-qk'
+    cache: { kind: 'gqa'; layout?: 'replicated' } | { kind: 'swa'; window: number } | { kind: 'mixed'; window: number; layerTypes: Array<'sliding_attention' | 'full_attention'> } | { kind: 'mla'; latentWidth: number; ropeWidth: number } | {
       kind: 'hybrid'
       layerTypes: Array<'linear_attention' | 'full_attention'>
       keyHeads: number

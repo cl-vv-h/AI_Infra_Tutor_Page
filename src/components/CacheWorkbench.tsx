@@ -1,6 +1,6 @@
 import { Database, SlidersHorizontal } from 'lucide-react'
 import type { ModelArchitecture } from '@/types/model'
-import { attentionKind, cacheEstimate, formatBytes, localKvHeads, tokenCount } from '@/lib/model-lab'
+import { attentionKind, cacheEstimate, cacheKvHeads, formatBytes, tokenCount } from '@/lib/model-lab'
 import type { InferenceScenario } from '@/lib/model-lab'
 
 export function CacheWorkbench({ model, layer = 0, scenario, onBatch, onSequence, onBytes }: {
@@ -18,7 +18,8 @@ export function CacheWorkbench({ model, layer = 0, scenario, onBatch, onSequence
   const mixed = cache.kind === 'mixed'
   const hasWindow = sliding || mixed
   const currentSliding = hasWindow && attentionKind(model, layer) === 'swa'
-  const width = cache.kind === 'mla' ? `${cache.latentWidth} + ${cache.ropeWidth}` : `2 × ${localKvHeads(model, scenario.tp)} × ${model.dimensions.headDim}`
+  const width = cache.kind === 'mla' ? `${cache.latentWidth} + ${cache.ropeWidth}` : `2 × ${cacheKvHeads(model, scenario.tp)} × ${model.dimensions.headDim}`
+  const gathered = cache.kind === 'gqa' && cache.layout === 'replicated'
   const replication = cache.kind !== 'mla' && scenario.tp > model.dimensions.kvHeads
   const breakdown = [
     { label: `${estimate.fullKvLayers} 层完整 KV`, bytes: estimate.fullKvBytes, color: '#70e1f5' },
@@ -39,6 +40,7 @@ export function CacheWorkbench({ model, layer = 0, scenario, onBatch, onSequence
           <label className="flex flex-col gap-2 text-sm text-white/65">{hybrid ? '完整 KV 精度' : '缓存精度'}<select aria-label="KV 缓存精度" value={scenario.cacheBytes} onChange={(e) => onBytes(Number(e.target.value) as 1 | 2)} className={controlClass}><option value={2}>BF16 / FP16 · 2 B</option><option value={1}>FP8 · 1 B</option></select></label>
         </div>
         <p className="mt-4 text-sm leading-6 text-white/65">{scenario.phase === 'prefill' ? `N = B × S = ${tokenCount(scenario).toLocaleString('en-US')}；本次处理完整输入。` : `N = B = ${scenario.batch}；S 包含刚写入的新 token，其余为历史。`}</p>
+        {gathered && <p className="mt-3 rounded-xl border border-amber-200/25 bg-amber-200/5 p-3 text-sm leading-6 text-amber-100">汇集式 Attention TP：投影权重分片，Q/K/V 输出汇集。每卡缓存完整 {model.dimensions.kvHeads} 个 KV heads，不再除以 TP；这是当前参考实现的路径，不代表所有引擎。</p>}
         {mixed && <p className="mt-3 text-sm leading-6 text-cyan-100">当前 Layer {layer}：{currentSliding ? `滑窗注意力 · 保留最近 ${estimate.slidingRetainedTokens.toLocaleString('en-US')} 个位置` : `完整注意力 · 保留全部 ${scenario.sequence.toLocaleString('en-US')} 个位置`}。窗口饱和后，整模型仍有 {estimate.fullKvLayers} 层 KV 随 S 增长。</p>}
         {currentSliding && <div className="mt-4 rounded-2xl border border-amber-200/20 bg-amber-200/5 p-4">
           <h3 className="text-sm font-semibold text-amber-100">滚动窗口 · W = {cache.window.toLocaleString('en-US')}</h3>
@@ -59,7 +61,7 @@ export function CacheWorkbench({ model, layer = 0, scenario, onBatch, onSequence
     <details className="border-t border-white/10 px-5 py-3">
       <summary className="cursor-pointer text-sm text-cyan-100/85">{hasWindow ? '滑动窗口不等于上下文上限：查看计算口径' : hybrid ? '哪些状态随上下文增长？查看公式与长度对照' : '为什么 TP 不一定等比例减少缓存？查看计算口径'}</summary>
       <div className="mt-3 grid gap-3 pb-2 text-sm leading-6 text-white/65 md:grid-cols-2">
-        <p>{cache.kind === 'mla' ? '当前采用常见的 latent-cache MLA 路径：每个 TP rank 持有完整的压缩 KV 与 RoPE 分量，TP 改变 attention head 投影分片，但不缩小这份 latent cache。' : replication ? `这个模型只有 ${model.dimensions.kvHeads} 个 KV heads。TP = ${scenario.tp} 时每卡仍需 1 个完整 KV head，head 在多卡间复制，所以集群总缓存会上升。` : `每卡缓存 ${localKvHeads(model, scenario.tp)} 个 KV heads。仅在 KV heads 能被 TP 整除时，缓存才随 TP 等比例下降；TP 大于 KV heads 时开始复制。`}</p>
+        <p>{cache.kind === 'mla' ? '当前采用常见的 latent-cache MLA 路径：每个 TP rank 持有完整的压缩 KV 与RoPE 分量，TP 改变 attention head 投影分片，但不缩小这份 latent cache。' : gathered ? `Q/K Norm 在汇集后的完整投影上计算。缓存按每卡 ${cacheKvHeads(model, scenario.tp)} 个 KV heads 的副本估算，TP 卡数增加会增加组内重复存储；不能套用 KV heads / TP。` : replication ? `这个模型只有 ${model.dimensions.kvHeads} 个 KV heads。TP = ${scenario.tp} 时每卡仍需 1 个完整 KV head，head 在多卡间复制，所以集群总缓存会上升。` : `在 head 分片路径下，每卡缓存 ${cacheKvHeads(model, scenario.tp)} 个 KV heads。KV heads 能被 TP 整除时缓存随 TP 等比例下降；TP 大于 KV heads 时开始复制。`}</p>
         <p>这是有效 token 的理论缓存容量，未计入模型权重、激活、页尾填充、量化 scale、图捕获与通信缓冲，不是部署所需总显存。FP8 为容量假设，实际可用性和精度取决于引擎与硬件。S 上限取当前官方配置，未应用额外的上下文扩展。{model.execution.contextNote}</p>
         {hybrid && <><p>循环矩阵 = B × {estimate.recurrentLayers} 层 × ({cache.valueHeads} / TP) heads × {cache.keyDim} × {cache.valueDim} × {cache.recurrentBytes} 字节。矩阵固定为 FP32；仅调整 KV 精度不会将它减半。</p><p>卷积窗口 = B × {estimate.recurrentLayers} 层 × ((2 × {cache.keyHeads} × {cache.keyDim} + {cache.valueHeads} × {cache.valueDim}) / TP) 通道 × {cache.convStateSlots} 槽 × {cache.convBytes} 字节。本图按 Transformers 的完整窗口分配估算，部分引擎采用 K−1 个槽。</p></>}
       </div>

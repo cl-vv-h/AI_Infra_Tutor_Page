@@ -18,7 +18,7 @@ test('all registered model Decoder definitions are countable at every supported 
     const nodes = new Map(Array.from({ length: m.dimensions.layers }, (_, layer) => decoderNodes(m, layer)).flat().map((node) => [node.id, node]))
     for (const node of nodes.values()) for (const weight of node.weights) {
       assert.ok(weightElements(weight, m, tp) > 0, `${m.id}/${node.id}/${weight.name}/TP${tp}`)
-      if (/each/.test(weight.name)) assert.equal(weight.multiplicity, 2, weight.name)
+      if (/each/.test(weight.name)) assert.ok(Number.isInteger(weight.multiplicity) && weight.multiplicity >= 2, weight.name)
     }
     const budget = decoderWeightBudget(m, 0, tp, 16)
     assert.equal(budget.complete, true, m.id)

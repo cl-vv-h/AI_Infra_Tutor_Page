@@ -28,6 +28,7 @@ function cacheLabel(model: ModelArchitecture) {
 
 function cacheNote(model: ModelArchitecture, tp: TensorParallelSize) {
   const cache = model.execution.cache
+  if (cache.kind === 'gqa' && cache.layout === 'replicated') return `汇集式 Attention TP：权重分片，但每卡缓存完整 ${model.dimensions.kvHeads} 个 KV heads，KV 不除以 TP。按 Transformers v4.57.1 参考路径，不代表所有引擎。`
   if (cache.kind === 'mla') return `采用 latent-cache 路径：${cache.latentWidth} 维压缩 KV + ${cache.ropeWidth} 维 RoPE 在每个 TP rank 复制。`
   if (cache.kind === 'mixed') return '按实际层分布分别计算完整 KV 和滑窗 KV。局部窗口填满后，完整注意力层继续增加缓存；总曲线不会变平。'
   if (cache.kind === 'swa') return `每卡保留 ${localKvHeads(model, tp)} 个 KV heads 的完整逻辑窗口 min(S, ${integer(cache.window)})。窗口饱和后只替换旧位置，不增加缓存容量。`
@@ -81,7 +82,7 @@ export default function ModelCompare() {
     { label: 'KV / 循环状态层数', values: models.map((model) => { const { kvLayers, recurrentLayers } = cacheEstimate(model, defaultComparisonScenario); return `${kvLayers} / ${recurrentLayers}` }) },
     { label: '完整 / 滑窗 KV 层数', values: models.map((model) => { const { fullKvLayers, slidingLayers } = cacheEstimate(model, defaultComparisonScenario); return `${fullKvLayers} / ${slidingLayers}` }) },
     { label: 'KV 保留长度', values: models.map((model) => model.execution.cache.kind === 'mixed' ? `完整层 S / 滑窗层 min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'swa' ? `min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'hybrid' ? 'S（仅完整注意力层）' : 'S') },
-    { label: '子层边界 RMSNorm', values: models.map((model) => model.execution.normLayout === 'pre-post' ? '4 × RMSNorm · Pre + Post' : '2 × RMSNorm · Pre') },
+    { label: '子层边界 RMSNorm', values: models.map((model) => model.execution.normLayout === 'pre-post' ? '4 × RMSNorm · Pre + Post' : model.execution.normLayout === 'post-branch-qk' ? '2 × RMSNorm · 子层输出、残差相加前；另有 Q/K Norm' : '2 × RMSNorm · Pre') },
     { label: '当前配置上下文上限', values: models.map((model) => `${integer(model.execution.maxContext)} tokens`) },
     { label: '图解已覆盖的 TP', values: models.map((model) => model.supportedTp.join(' / ')) },
   ]
@@ -149,7 +150,7 @@ export default function ModelCompare() {
         <div className="mt-4 grid gap-5 text-sm leading-7 text-slate-400 lg:grid-cols-3">
           <p>这里只计算全部主干层的逻辑有效 token 缓存与循环状态，不含权重、激活、视觉编码器临时张量、分页填充、量化 scale、图捕获、通信缓冲及 MTP / 推测解码副本。缓存少不代表推理更快或效果更好。</p>
           <p>完整 KV 精度选项不会改变 Hybrid 的 FP32 循环矩阵和 BF16 卷积窗口。卷积采用 Transformers 的完整 4 槽窗口口径，部分引擎使用 K−1 槽。FP8 是容量假设，不表示所选模型、引擎与硬件必然支持。</p>
-          <div><p>MLA 按压缩 latent 在各 TP rank 复制估算；GQA 按 KV head 分片，TP 大于 KV heads 时计入复制。对比工具没有为任何单个模型偷偷调整 B、S 或 TP。</p><div className="mt-3 flex flex-wrap gap-x-4 gap-y-2"><Link to="/category/kv-cache-memory" className="text-cyan-200 hover:underline">学习 KV Cache</Link><Link to="/category/parallel-strategy" className="text-cyan-200 hover:underline">学习并行策略</Link><Link to="/learn?q=Gated%20Delta" className="text-cyan-200 hover:underline">学习 DeltaNet</Link></div></div>
+          <div><p>MLA 按压缩 latent 在各 TP rank 复制估算；MHA/GQA 默认按 KV head 分片，TP 大于 KV heads 时计入复制。明确采用汇集式 Attention TP 的模型保留完整 KV 副本，以模型说明为准。对比工具没有为任何单个模型偷偷调整 B、S 或 TP。</p><div className="mt-3 flex flex-wrap gap-x-4 gap-y-2"><Link to="/category/kv-cache-memory" className="text-cyan-200 hover:underline">学习 KV Cache</Link><Link to="/category/parallel-strategy" className="text-cyan-200 hover:underline">学习并行策略</Link><Link to="/learn?q=Gated%20Delta" className="text-cyan-200 hover:underline">学习 DeltaNet</Link></div></div>
         </div>
         {models.filter((model) => model.execution.contextNote).map((model) => <p key={model.id} className="mt-4 border-t border-white/10 pt-4 text-sm leading-6 text-slate-400"><span className="text-slate-200">{model.name}：</span>{model.execution.contextNote}</p>)}
       </section>
