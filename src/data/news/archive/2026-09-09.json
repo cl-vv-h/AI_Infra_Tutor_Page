@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-09T12:21:23.797Z",
+  "generatedAt": "2026-09-09T13:43:29.670Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 23,
-  "failedSourceCount": 10,
+  "sourceCount": 25,
+  "failedSourceCount": 9,
   "sourceStates": [
     {
       "name": "DeepMind",
@@ -11,10 +11,10 @@
       "country": "United Kingdom",
       "category": "ai",
       "type": "research",
-      "state": "ok",
-      "entryCount": 100,
-      "latestPublishedAt": "2026-09-08T14:00:15.000Z",
-      "selectedCount": 1,
+      "state": "unavailable",
+      "entryCount": 0,
+      "latestPublishedAt": null,
+      "selectedCount": 0,
       "libraryCount": 1
     },
     {
@@ -37,7 +37,7 @@
       "type": "news",
       "state": "ok",
       "entryCount": 19,
-      "latestPublishedAt": "2026-09-09T12:05:34.000Z",
+      "latestPublishedAt": "2026-09-09T13:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -131,8 +131,8 @@
       "country": "Canada",
       "category": "finance",
       "type": "institution",
-      "state": "unavailable",
-      "entryCount": 0,
+      "state": "ok",
+      "entryCount": 10,
       "latestPublishedAt": null,
       "selectedCount": 0,
       "libraryCount": 0
@@ -181,7 +181,7 @@
       "type": "news",
       "state": "ok",
       "entryCount": 24,
-      "latestPublishedAt": "2026-09-09T12:15:56.000Z",
+      "latestPublishedAt": "2026-09-09T13:05:48.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -205,7 +205,7 @@
       "type": "news",
       "state": "ok",
       "entryCount": 50,
-      "latestPublishedAt": "2026-09-09T10:38:57.000Z",
+      "latestPublishedAt": "2026-09-09T12:29:22.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -294,6 +294,18 @@
       "libraryCount": 0
     },
     {
+      "name": "FlashInfer Blog",
+      "url": "https://flashinfer.ai/feed.xml",
+      "country": "International",
+      "category": "ai",
+      "type": "engineering",
+      "state": "ok",
+      "entryCount": 5,
+      "latestPublishedAt": "2025-10-21T00:00:00.000Z",
+      "selectedCount": 0,
+      "libraryCount": 0
+    },
+    {
       "name": "arXiv Distributed Systems",
       "url": "https://export.arxiv.org/api/query?search_query=cat:cs.DC&sortBy=submittedDate&sortOrder=descending&max_results=20",
       "country": "International",
@@ -314,7 +326,7 @@
       "state": "ok",
       "entryCount": 10,
       "latestPublishedAt": "2026-09-08T01:00:02.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 2
     },
     {
@@ -323,11 +335,11 @@
       "country": "United States",
       "category": "technology",
       "type": "engineering",
-      "state": "unavailable",
-      "entryCount": 0,
-      "latestPublishedAt": null,
-      "selectedCount": 0,
-      "libraryCount": 0
+      "state": "ok",
+      "entryCount": 100,
+      "latestPublishedAt": "2026-09-08T12:00:00.000Z",
+      "selectedCount": 1,
+      "libraryCount": 8
     },
     {
       "name": "AMD ROCm Blog",
@@ -349,8 +361,8 @@
       "type": "engineering",
       "state": "ok",
       "entryCount": 20,
-      "latestPublishedAt": "2026-09-08T13:10:00.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-09-09T13:00:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 4
     },
     {
@@ -413,8 +425,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-09-09T10:05:25.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 28.4,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 28.1,
       "topics": [
         "security"
       ]
@@ -429,8 +441,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T17:43:32.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 28.3,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 28,
       "topics": [
         "hardware"
       ]
@@ -445,12 +457,44 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T17:38:03.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 28.3,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 28,
       "topics": [
         "kernels",
         "hardware",
         "training"
+      ]
+    },
+    {
+      "id": "99e4ca4b0f738f96",
+      "category": "ai",
+      "title": "Sequoia doubles down on Cymphony as AI agents create new enterprise security risks",
+      "summary": "Cymphony was valued at more than $100 million in a $25 million Series A co-led by Sequoia and SMBC Fin Atlas Beyond Fund.",
+      "url": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T13:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 27.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "088283cb41cd74b0",
+      "category": "ai",
+      "title": "Besxar is building an orbital semiconductor factory, one SpaceX rocket at a time",
+      "summary": "If you want to manufacture in space—and bring the products back again—there’s a limited set of options: Wait to go to the International Space Station, or partner with a handful of start-ups launching spacecraft that spend time in orbit before they return to Earth. But the vehicle that goes to space and comes back to […]",
+      "url": "https://techcrunch.com/2026/09/09/besxar-is-strapping-advanced-chip-fabs-onto-spacexs-falcon-9-rockets/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T12:30:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 27.7,
+      "topics": [
+        "hardware"
       ]
     },
     {
@@ -463,8 +507,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-09-09T06:27:22.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 27.5,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 27.2,
       "topics": [
         "security"
       ]
@@ -479,8 +523,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-09-09T06:20:49.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 27.5,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 27.2,
       "topics": []
     },
     {
@@ -493,8 +537,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T13:31:47.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 27.3,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 27,
       "topics": [
         "hardware"
       ]
@@ -509,8 +553,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-09-09T09:12:58.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 27.2,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 26.9,
       "topics": [
         "security"
       ]
@@ -525,8 +569,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 25.6,
       "topics": [
         "inference",
         "hardware",
@@ -543,8 +587,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 25.6,
       "topics": [
         "inference",
         "hardware",
@@ -561,13 +605,27 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 25.6,
       "topics": [
         "inference",
         "hardware",
         "training"
       ]
+    },
+    {
+      "id": "69c14e7de23233c8",
+      "category": "technology",
+      "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
+      "summary": "Workers now enables Node.js compatibility by default, supports applications up to 64 mebibytes, and adds a URL-based module registry with import.meta, lazy compilation, shared code caches, and clearer errors.",
+      "url": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-09T13:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 24.8,
+      "topics": []
     },
     {
       "id": "6a8c0d8c3f746708",
@@ -579,8 +637,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-09-08T20:29:59.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 24.7,
       "topics": []
     },
     {
@@ -593,9 +651,26 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-09-08T20:16:16.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 24.6,
       "topics": []
+    },
+    {
+      "id": "475c114fd7233b42",
+      "category": "technology",
+      "title": "Introducing CUDA Rust: Two Tracks for Writing GPU Kernels",
+      "summary": "In September 2026, NVIDIA announced it is leaning into native GPU programming in Rust. CUDA C++ and CUDA Python are mature, enterprise-grade toolchains, and...",
+      "url": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-08T12:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 24.6,
+      "topics": [
+        "kernels",
+        "hardware"
+      ]
     },
     {
       "id": "fe853397ac381c7d",
@@ -607,11 +682,366 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-08T21:11:46.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 24.2,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 23.9,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "0ba4eccc93ed8aec",
+      "category": "world",
+      "title": "Rungis market chief on supply chains and feeding the world",
+      "summary": "In today’s edition, FRANCE 24’s Delano D'Souza speaks with the man at the heart of France's food supply chain. Stéphane Layani is the head of the Rungis wholesale food market – the largest of its kind in Europe – and chairman of the World Union of Wholesale Markets. Earlier this year Layani came out with a book titled Le Monde a faim, or \"The World is Hungry\" in English. In his interview, he gives his perspective on how France's food system will transform in the coming years.",
+      "url": "https://www.france24.com/en/tv-shows/entre-nous/20260909-rungis-market-chief-on-supply-chains-and-feeding-the-world",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T13:05:48.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "be583bd8ad0f77b1",
+      "category": "technology",
+      "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
+      "summary": "Automatic Key Exchange probes TLS 1.3-capable customer origins to learn which key agreement algorithms they support. We then lead with the most secure algorithm when connecting to the origin, preferring post-quantum connections wherever the origin supports it.",
+      "url": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-08T13:10:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "32ff9d6d8f4cc3ce",
+      "category": "ai",
+      "title": "Instacart launches an AI grocery shopping assistant called Clementine",
+      "summary": "Instacart is the latest app to bake a conversational AI assistant into its platform.",
+      "url": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T13:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "aee7a92a9677b0ef",
+      "category": "world",
+      "title": "Messi closes in on takeover of Spanish second-division club",
+      "summary": "Argentine superstar reaches preliminary agreement to acquire Eldense on the eastern Mediterranean, expanding his growing portfolio of football and business investments. Leer más",
+      "url": "https://www.batimes.com.ar/news/sports/messi-closes-in-on-takeover-of-spanish-second-division-club.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T11:15:46.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "abbcec1e869fa12b",
+      "category": "world",
+      "title": "U.S. military destroys 5 Iranian oil tankers. And, the Smithsonian head resigns",
+      "summary": "The U.S. military says it has destroyed five Iranian oil tankers as the conflict continues to escalate. And, Smithsonian head Lonnie G. Bunch III says he plans to step down by the end of the year.",
+      "url": "https://www.npr.org/2026/09/09/g-s1-142496/up-first-newsletter-iran-us-uk-israel-palestine-lonnie-bunch-smithsonian",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T11:12:27.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "795353809f642907",
+      "category": "world",
+      "title": "AI datacentres pose growing threat to electricity systems worldwide",
+      "summary": "Use of data-intensive technologies – in particular artificial intelligence (AI) data centres – is growing faster than electricity infrastructure can handle, the UN’s economic commission for Europe has warned, raising concerns about the future reliability and resilience of energy systems worldwide.",
+      "url": "https://news.un.org/feed/view/en/story/2026/09/1168296",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-08T12:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 21.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "9a61b86b4e21c9f2",
+      "category": "ai",
+      "title": "vLLM x AgentX: Optimizing for Real-World Agentic Serving",
+      "summary": "How vLLM optimizes KV cache management, parallelism, scheduling, and P/D disaggregation for agentic workloads, validated on SemiAnalysis AgentX with up to 130K tokens per GPU-second and a 14.6x-106x serving-cost advantage over Opus 5.",
+      "url": "https://vllm.ai/blog/2026-09-08-vllm-agentx",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-08T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 21.6,
+      "topics": [
+        "inference",
+        "hardware"
+      ]
+    },
+    {
+      "id": "d49667a4200b4f69",
+      "category": "world",
+      "title": "Senegal lawmakers push back against PM Lo over IMF agreement",
+      "summary": "The International Monetary Fund took centre stage on Tuesday during debates in Senegal's National Assembly. Laying out the government’s general policy statement, Prime Minister Ahmadou Al Aminou Mohamed Lo defended its recent agreement with the IMF on a three year aid programme worth $2.2 billion.",
+      "url": "https://www.africanews.com/2026/09/09/senegal-lawmakers-push-back-against-pm-lo-over-imf-agreement/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T06:40:39.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 21.2,
+      "topics": []
+    },
+    {
+      "id": "a52e3986693b07a8",
+      "category": "world",
+      "title": "Ships and seafarers increasingly caught in the crossfire of unrelated wars",
+      "summary": "The global shipping industry is facing a \"genuinely unprecedented\" convergence of maritime crises, with vessels and seafarers increasingly used as “leverage” in conflicts that have nothing to do with them.",
+      "url": "https://news.un.org/feed/view/en/story/2026/09/1168297",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-08T12:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 20.6,
+      "topics": []
+    },
+    {
+      "id": "27818c1dc5326de4",
+      "category": "finance",
+      "title": "Warning against Scams Using the Bank of Japan's Name",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/about/organization/notice/index.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-09T01:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 19.8,
+      "topics": []
+    },
+    {
+      "id": "ba9e3f06ec80e102",
+      "category": "finance",
+      "title": "Money Stock (Aug.)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/money/ms/ms2608.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-08T23:50:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 19.5,
+      "topics": []
+    },
+    {
+      "id": "e0975fe3436de732",
+      "category": "technology",
+      "title": "GOG brings back \"big box\" PC games, one printable template at a time",
+      "summary": "Preservation \"goodies\" also include downloadable 3D models for desktop perusal.",
+      "url": "https://arstechnica.com/gaming/2026/09/gog-brings-back-big-box-pc-games-one-printable-template-at-a-time/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-08T21:23:13.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "cb2324eb4e8f8d9e",
+      "category": "world",
+      "title": "Egypt air show spotlights drones and military hardware",
+      "summary": "Dozens of exhibitors from several countries are taking part in the El Alamein International Air Show, held this week at the airport in Egypt's northwestern Mediterranean coast.",
+      "url": "https://www.africanews.com/2026/09/09/egypt-air-show-spotlights-drones-and-military-hardware/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T12:29:22.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 18.7,
+      "topics": []
+    },
+    {
+      "id": "a9026a6806c3ad21",
+      "category": "technology",
+      "title": "NIH to use part of its budget to pay for Department of Defense research",
+      "summary": "Money would ostensibly fund research the NIH leadership said it no longer wanted.",
+      "url": "https://arstechnica.com/science/2026/09/nih-to-use-part-of-its-budget-to-pay-for-department-of-defense-research/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-08T20:06:44.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 18.6,
+      "topics": []
+    },
+    {
+      "id": "ecf26b9291f2bd0d",
+      "category": "world",
+      "title": "Inflation in Buenos Aires City slowed to 1.7% in August",
+      "summary": "Price hikes in the capital slowed for the first time in two months; Deceleration offers potential early read ahead of Thursday's national data from INDEC. Leer más",
+      "url": "https://www.batimes.com.ar/news/economy/inflation-in-buenos-aires-city-slowed-to-17-in-august.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-09-08T19:40:56.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 18.5,
+      "topics": []
+    },
+    {
+      "id": "8058a6b37be9bafa",
+      "category": "world",
+      "title": "Lionel Messi nears deal to buy another football team",
+      "summary": "Star plans to buy a majority stake in Spanish second-division football team Eldense, pending due diligence, according to reports. Leer más",
+      "url": "https://www.batimes.com.ar/news/sports/lionel-messi-nears-deal-to-buy-another-football-team.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T11:07:30.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 18.4,
+      "topics": []
+    },
+    {
+      "id": "5e3ec4b9fd6715b3",
+      "category": "finance",
+      "title": "Frank Elderson: Fireside chat",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260908~3652aa828f.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-08T15:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 18.3,
+      "topics": []
+    },
+    {
+      "id": "9084d9083826258f",
+      "category": "world",
+      "title": "Citing the 'Deep State,' Trump overhauls the intelligence community",
+      "summary": "The catastrophic 9/11 attacks forced the intelligence community to radically revamp its ways of doing business. Now, critics say, President Trump is dismantling much of what was built since then.",
+      "url": "https://www.npr.org/2026/09/09/nx-s1-5955756/deep-state-trump-9-11-national-intelligence",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T09:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 17.8,
+      "topics": []
+    },
+    {
+      "id": "e4fa30f8e17a68e5",
+      "category": "world",
+      "title": "Iceland summons U.S. ambassador after Trump posts countries draped with American flag",
+      "summary": "Iceland summoned the U.S. ambassador after President Trump posted a map on Truth Social that showed the country, along with a number of other nations, covered with an American flag.",
+      "url": "https://www.npr.org/2026/09/09/nx-s1-5961412/iceland-summons-u-s-ambassador-after-trump-posts-countries-draped-with-american-flag",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T08:44:40.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 17.8,
+      "topics": []
+    },
+    {
+      "id": "3706cd763ad6ca30",
+      "category": "finance",
+      "title": "Global standard-setting bodies publish a toolkit for cyber resilience at FMIs and a discussion paper on FMIs’ reliance on third-party service providers",
+      "summary": "CPMI-IOSCO are seeking input from stakeholders on a cyber resilience toolkit for financial market infrastructures (FMIs) and on risks to FMIs from third-party service providers. The Cyber resilience toolkit: practical considerations for FMIs supports FMIs in strengthening their cyber resilience frameworks. The discussion paper FMIs’ reliance on third-party service providers: challenges and risks explores the increased reliance of FMIs on third-party service providers.",
+      "url": "https://www.bis.org/media-releases/20260908-global-standard-setting-bodies-publish-toolkit-cyber-resilience-fmis-and-discussion-paper-fmis",
+      "source": "Bank for International Settlements",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-08T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 17.6,
+      "topics": []
+    },
+    {
+      "id": "cfec4a97ee576849",
+      "category": "technology",
+      "title": "The internet’s favorite cat comes to Apple Arcade with Pusheen’s Place",
+      "summary": "On October 1, Apple Arcade is rolling out a lineup of fun new games, from cozy cat collecting to zombie-blasting mayhem to beloved App Store hits.",
+      "url": "https://www.apple.com/newsroom/2026/09/the-internets-favorite-cat-comes-to-apple-arcade-with-pusheens-place/",
+      "source": "Apple Newsroom",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-09-08T13:59:40.685Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 17.1,
+      "topics": []
+    },
+    {
+      "id": "4aa981767494da21",
+      "category": "technology",
+      "title": "Alibaba Cloud, Ant Group, Cambricon and Huawei Come Together in Shanghai to Advance the Open Source AI Stack at PyTorch Conference China",
+      "summary": "China’s leading AI technology companies Alibaba Cloud, Cambricon and Ant Group join the PyTorch Foundation as members Summary Alibaba Cloud and Cambricon joined the PyTorch Foundation as Platinum members, and...",
+      "url": "https://pytorch.org/blog/alibaba-cloud-ant-group-cambricon-and-huawei-come-together-in-shanghai-to-advance-the-open-source-ai-stack-at-pytorch-conference-china/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-08T01:00:02.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 16.8,
+      "topics": []
+    },
+    {
+      "id": "1690c4c0b90e4e6d",
+      "category": "technology",
+      "title": "Cambricon Joins the PyTorch Foundation as a Platinum Member",
+      "summary": "The PyTorch Foundation, a community-driven hub for open source AI under the Linux Foundation, is announcing today that Cambricon has joined as a Platinum member. Founded in 2016, Cambricon is...",
+      "url": "https://pytorch.org/blog/cambricon-joins-the-pytorch-foundation-as-a-platinum-member/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-08T00:59:13.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 16.8,
+      "topics": []
+    },
+    {
+      "id": "50a2e33224d88108",
+      "category": "world",
+      "title": "UN chief demands Israeli withdrawal from Lebanon amid Nabatieh escalation",
+      "summary": "The Secretary-General has condemned mounting civilian casualties in southern Lebanon and called on Israel to withdraw its forces from Lebanese territory, as fighting intensifies in and around Nabatieh.",
+      "url": "https://news.un.org/feed/view/en/story/2026/09/1168298",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-08T12:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 16.6,
+      "topics": []
+    },
+    {
+      "id": "77ef841b029ef931",
+      "category": "finance",
+      "title": "Principal Figures of Financial Institutions (Aug.)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/dl/depo/kashi/kasi2608.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-07T23:50:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 13.5,
+      "topics": []
     },
     {
       "id": "417db71b37404e36",
@@ -625,20 +1055,6 @@
       "publishedAt": "2026-09-09T12:15:56.000Z",
       "fetchedAt": "2026-09-09T12:21:23.797Z",
       "score": 24,
-      "topics": []
-    },
-    {
-      "id": "be583bd8ad0f77b1",
-      "category": "technology",
-      "title": "Automatic Key Exchange: faster, post-quantum secure origin handshakes for 45 billion daily connections (and counting)",
-      "summary": "Automatic Key Exchange probes TLS 1.3-capable customer origins to learn which key agreement algorithms they support. We then lead with the most secure algorithm when connecting to the origin, preferring post-quantum connections wherever the origin supports it.",
-      "url": "https://blog.cloudflare.com/automatic-key-exchange-for-origins/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-08T13:10:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 23.2,
       "topics": []
     },
     {
@@ -673,34 +1089,6 @@
       "topics": []
     },
     {
-      "id": "aee7a92a9677b0ef",
-      "category": "world",
-      "title": "Messi closes in on takeover of Spanish second-division club",
-      "summary": "Argentine superstar reaches preliminary agreement to acquire Eldense on the eastern Mediterranean, expanding his growing portfolio of football and business investments. Leer más",
-      "url": "https://www.batimes.com.ar/news/sports/messi-closes-in-on-takeover-of-spanish-second-division-club.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-09-09T11:15:46.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 22.7,
-      "topics": []
-    },
-    {
-      "id": "abbcec1e869fa12b",
-      "category": "world",
-      "title": "U.S. military destroys 5 Iranian oil tankers. And, the Smithsonian head resigns",
-      "summary": "The U.S. military says it has destroyed five Iranian oil tankers as the conflict continues to escalate. And, Smithsonian head Lonnie G. Bunch III says he plans to step down by the end of the year.",
-      "url": "https://www.npr.org/2026/09/09/g-s1-142496/up-first-newsletter-iran-us-uk-israel-palestine-lonnie-bunch-smithsonian",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-09-09T11:12:27.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 22.7,
-      "topics": []
-    },
-    {
       "id": "fe686c245aa337e2",
       "category": "ai",
       "title": "Chrome is now shipping updates every 2 weeks as AI changes the security landscape",
@@ -717,95 +1105,6 @@
       ]
     },
     {
-      "id": "795353809f642907",
-      "category": "world",
-      "title": "AI datacentres pose growing threat to electricity systems worldwide",
-      "summary": "Use of data-intensive technologies – in particular artificial intelligence (AI) data centres – is growing faster than electricity infrastructure can handle, the UN’s economic commission for Europe has warned, raising concerns about the future reliability and resilience of energy systems worldwide.",
-      "url": "https://news.un.org/feed/view/en/story/2026/09/1168296",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 21.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "9a61b86b4e21c9f2",
-      "category": "ai",
-      "title": "vLLM x AgentX: Optimizing for Real-World Agentic Serving",
-      "summary": "How vLLM optimizes KV cache management, parallelism, scheduling, and P/D disaggregation for agentic workloads, validated on SemiAnalysis AgentX with up to 130K tokens per GPU-second and a 14.6x-106x serving-cost advantage over Opus 5.",
-      "url": "https://vllm.ai/blog/2026-09-08-vllm-agentx",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 21.9,
-      "topics": [
-        "inference",
-        "hardware"
-      ]
-    },
-    {
-      "id": "d49667a4200b4f69",
-      "category": "world",
-      "title": "Senegal lawmakers push back against PM Lo over IMF agreement",
-      "summary": "The International Monetary Fund took centre stage on Tuesday during debates in Senegal's National Assembly. Laying out the government’s general policy statement, Prime Minister Ahmadou Al Aminou Mohamed Lo defended its recent agreement with the IMF on a three year aid programme worth $2.2 billion.",
-      "url": "https://www.africanews.com/2026/09/09/senegal-lawmakers-push-back-against-pm-lo-over-imf-agreement/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-09-09T06:40:39.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 21.6,
-      "topics": []
-    },
-    {
-      "id": "a52e3986693b07a8",
-      "category": "world",
-      "title": "Ships and seafarers increasingly caught in the crossfire of unrelated wars",
-      "summary": "The global shipping industry is facing a \"genuinely unprecedented\" convergence of maritime crises, with vessels and seafarers increasingly used as “leverage” in conflicts that have nothing to do with them.",
-      "url": "https://news.un.org/feed/view/en/story/2026/09/1168297",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 20.9,
-      "topics": []
-    },
-    {
-      "id": "27818c1dc5326de4",
-      "category": "finance",
-      "title": "Warning against Scams Using the Bank of Japan's Name",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/about/organization/notice/index.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-09T01:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 20.2,
-      "topics": []
-    },
-    {
-      "id": "ba9e3f06ec80e102",
-      "category": "finance",
-      "title": "Money Stock (Aug.)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/money/ms/ms2608.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-08T23:50:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 19.9,
-      "topics": []
-    },
-    {
       "id": "1f03aca556679db8",
       "category": "ai",
       "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
@@ -817,20 +1116,6 @@
       "publishedAt": "2026-09-08T14:00:15.000Z",
       "fetchedAt": "2026-09-09T12:21:23.797Z",
       "score": 19.4,
-      "topics": []
-    },
-    {
-      "id": "e0975fe3436de732",
-      "category": "technology",
-      "title": "GOG brings back \"big box\" PC games, one printable template at a time",
-      "summary": "Preservation \"goodies\" also includes downloadable 3D models for desktop perusal.",
-      "url": "https://arstechnica.com/gaming/2026/09/gog-brings-back-big-box-pc-games-one-printable-template-at-a-time/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-09-08T21:23:13.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 19.3,
       "topics": []
     },
     {
@@ -848,62 +1133,6 @@
       "topics": []
     },
     {
-      "id": "a9026a6806c3ad21",
-      "category": "technology",
-      "title": "NIH to use part of its budget to pay for Department of Defense research",
-      "summary": "Money would ostensibly fund research the NIH leadership said it no longer wanted.",
-      "url": "https://arstechnica.com/science/2026/09/nih-to-use-part-of-its-budget-to-pay-for-department-of-defense-research/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-09-08T20:06:44.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.9,
-      "topics": []
-    },
-    {
-      "id": "ecf26b9291f2bd0d",
-      "category": "world",
-      "title": "Inflation in Buenos Aires City slowed to 1.7% in August",
-      "summary": "Price hikes in the capital slowed for the first time in two months; Deceleration offers potential early read ahead of Thursday's national data from INDEC. Leer más",
-      "url": "https://www.batimes.com.ar/news/economy/inflation-in-buenos-aires-city-slowed-to-17-in-august.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-09-08T19:40:56.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.8,
-      "topics": []
-    },
-    {
-      "id": "8058a6b37be9bafa",
-      "category": "world",
-      "title": "Lionel Messi nears deal to buy another football team",
-      "summary": "Star plans to buy a majority stake in Spanish second-division football team Eldense, pending due diligence, according to reports. Leer más",
-      "url": "https://www.batimes.com.ar/news/sports/lionel-messi-nears-deal-to-buy-another-football-team.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-09-09T11:07:30.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.7,
-      "topics": []
-    },
-    {
-      "id": "5e3ec4b9fd6715b3",
-      "category": "finance",
-      "title": "Frank Elderson: Fireside chat",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260908~3652aa828f.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-08T15:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.7,
-      "topics": []
-    },
-    {
       "id": "fc1f76a91e3a42a7",
       "category": "world",
       "title": "Gambian leader vows power boost after violent blackout protests",
@@ -915,118 +1144,6 @@
       "publishedAt": "2026-09-09T10:38:57.000Z",
       "fetchedAt": "2026-09-09T12:21:23.797Z",
       "score": 18.6,
-      "topics": []
-    },
-    {
-      "id": "9084d9083826258f",
-      "category": "world",
-      "title": "Citing the 'Deep State,' Trump overhauls the intelligence community",
-      "summary": "The catastrophic 9/11 attacks forced the intelligence community to radically revamp its ways of doing business. Now, critics say, President Trump is dismantling much of what was built since then.",
-      "url": "https://www.npr.org/2026/09/09/nx-s1-5955756/deep-state-trump-9-11-national-intelligence",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-09-09T09:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.2,
-      "topics": []
-    },
-    {
-      "id": "e4fa30f8e17a68e5",
-      "category": "world",
-      "title": "Iceland summons U.S. ambassador after Trump posts countries draped with American flag",
-      "summary": "Iceland summoned the U.S. ambassador after President Trump posted a map on Truth Social that showed the country, along with a number of other nations, covered with an American flag.",
-      "url": "https://www.npr.org/2026/09/09/nx-s1-5961412/iceland-summons-u-s-ambassador-after-trump-posts-countries-draped-with-american-flag",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-09-09T08:44:40.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.1,
-      "topics": []
-    },
-    {
-      "id": "3706cd763ad6ca30",
-      "category": "finance",
-      "title": "Global standard-setting bodies publish a toolkit for cyber resilience at FMIs and a discussion paper on FMIs’ reliance on third-party service providers",
-      "summary": "CPMI-IOSCO are seeking input from stakeholders on a cyber resilience toolkit for financial market infrastructures (FMIs) and on risks to FMIs from third-party service providers. The Cyber resilience toolkit: practical considerations for FMIs supports FMIs in strengthening their cyber resilience frameworks. The discussion paper FMIs’ reliance on third-party service providers: challenges and risks explores the increased reliance of FMIs on third-party service providers.",
-      "url": "https://www.bis.org/media-releases/20260908-global-standard-setting-bodies-publish-toolkit-cyber-resilience-fmis-and-discussion-paper-fmis",
-      "source": "Bank for International Settlements",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 17.9,
-      "topics": []
-    },
-    {
-      "id": "cfec4a97ee576849",
-      "category": "technology",
-      "title": "The internet’s favorite cat comes to Apple Arcade with Pusheen’s Place",
-      "summary": "On October 1, Apple Arcade is rolling out a lineup of fun new games, from cozy cat collecting to zombie-blasting mayhem to beloved App Store hits.",
-      "url": "https://www.apple.com/newsroom/2026/09/the-internets-favorite-cat-comes-to-apple-arcade-with-pusheens-place/",
-      "source": "Apple Newsroom",
-      "sourceCountry": "United States",
-      "sourceType": "release",
-      "publishedAt": "2026-09-08T13:59:40.685Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 17.4,
-      "topics": []
-    },
-    {
-      "id": "4aa981767494da21",
-      "category": "technology",
-      "title": "Alibaba Cloud, Ant Group, Cambricon and Huawei Come Together in Shanghai to Advance the Open Source AI Stack at PyTorch Conference China",
-      "summary": "China’s leading AI technology companies Alibaba Cloud, Cambricon and Ant Group join the PyTorch Foundation as members Summary Alibaba Cloud and Cambricon joined the PyTorch Foundation as Platinum members, and...",
-      "url": "https://pytorch.org/blog/alibaba-cloud-ant-group-cambricon-and-huawei-come-together-in-shanghai-to-advance-the-open-source-ai-stack-at-pytorch-conference-china/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-08T01:00:02.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 17.2,
-      "topics": []
-    },
-    {
-      "id": "1690c4c0b90e4e6d",
-      "category": "technology",
-      "title": "Cambricon Joins the PyTorch Foundation as a Platinum Member",
-      "summary": "The PyTorch Foundation, a community-driven hub for open source AI under the Linux Foundation, is announcing today that Cambricon has joined as a Platinum member. Founded in 2016, Cambricon is...",
-      "url": "https://pytorch.org/blog/cambricon-joins-the-pytorch-foundation-as-a-platinum-member/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-08T00:59:13.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 17.2,
-      "topics": []
-    },
-    {
-      "id": "50a2e33224d88108",
-      "category": "world",
-      "title": "UN chief demands Israeli withdrawal from Lebanon amid Nabatieh escalation",
-      "summary": "The Secretary-General has condemned mounting civilian casualties in southern Lebanon and called on Israel to withdraw its forces from Lebanese territory, as fighting intensifies in and around Nabatieh.",
-      "url": "https://news.un.org/feed/view/en/story/2026/09/1168298",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 16.9,
-      "topics": []
-    },
-    {
-      "id": "77ef841b029ef931",
-      "category": "finance",
-      "title": "Principal Figures of Financial Institutions (Aug.)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/dl/depo/kashi/kasi2608.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-07T23:50:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 13.9,
       "topics": []
     },
     {
@@ -1093,19 +1210,6 @@
       "publishedAt": "2026-09-08T06:28:32.000Z",
       "fetchedAt": "2026-09-09T11:50:42.037Z",
       "score": 25.7
-    },
-    {
-      "id": "475c114fd7233b42",
-      "category": "technology",
-      "title": "Introducing CUDA Rust: Two Tracks for Writing GPU Kernels",
-      "summary": "In September 2026, NVIDIA announced it is leaning into native GPU programming in Rust. CUDA C++ and CUDA Python are mature, enterprise-grade toolchains, and...",
-      "url": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-09T11:50:42.037Z",
-      "score": 25
     },
     {
       "id": "47d18a147c80b90a",

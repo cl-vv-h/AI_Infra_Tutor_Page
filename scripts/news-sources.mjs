@@ -192,6 +192,14 @@ export const newsSources = [
     weight: 9,
   },
   {
+    name: 'FlashInfer Blog',
+    country: 'International',
+    category: 'ai',
+    type: 'engineering',
+    url: 'https://flashinfer.ai/feed.xml',
+    weight: 10,
+  },
+  {
     name: 'arXiv Distributed Systems',
     country: 'International',
     category: 'ai',

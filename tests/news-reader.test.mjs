@@ -1,7 +1,9 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { filterNews, mergeSavedItems, readSavedItems, validNewsItem } from '../src/lib/news-reader.ts'
-import { topicsForItem } from '../src/lib/news-topics.mjs'
+import { filterNews, mergeSavedItems, newsParams, parseNewsParams, readSavedItems, validNewsItem } from '../src/lib/news-reader.ts'
+import { newsTopics, topicsForItem } from '../src/lib/news-topics.mjs'
+import { newsStudyGuides } from '../src/data/news-study-guides.ts'
+import { categories } from '../src/data/categories.ts'
 
 const item = { id: 'one', title: 'SGLang inference kernels', summary: 'GPU serving with a KV cache', url: 'https://example.org/article', source: 'Engine Blog', sourceCountry: 'International', sourceType: 'engineering', category: 'ai', score: 24, publishedAt: '2026-09-08T00:00:00Z', fetchedAt: '2026-09-09T00:00:00Z' }
 const filters = { category: 'all', sourceType: 'all', topic: 'all', query: '', sortBy: 'latest' }
@@ -35,4 +37,53 @@ test('search combines tokens, source type, category and topic without mutating d
   assert.deepEqual(result.map((entry) => entry.id), ['one'])
   assert.equal(items[0].id, 'two')
   assert.equal(filterNews(items, { ...filters, query: 'missing' }, topicsForItem).length, 0)
+})
+
+const dates = ['2026-09-09', '2026-09-08']
+const parse = (query) => parseNewsParams(new URLSearchParams(query), dates, newsTopics.map((topic) => topic.id))
+
+test('news links restore all public filters, source names, unicode keywords and archive dates', () => {
+  for (const view of ['daily', 'library', 'archive']) {
+    const state = { view, category: 'technology', sourceType: 'engineering', source: 'AMD ROCm Blog', topic: 'kernels', query: '编译 & torch.compile', sortBy: 'latest', archiveDate: dates[1] }
+    const params = newsParams(state)
+    const restored = parse(params)
+    assert.deepEqual(restored.notices, [])
+    assert.deepEqual(restored.state, { ...state, archiveDate: view === 'archive' ? dates[1] : dates[0] })
+    assert.equal(params.has('date'), view === 'archive')
+  }
+  assert.equal(parse('').state.category, 'ai')
+  assert.equal(parse('view=library').state.category, 'all')
+  assert.equal(parse('view=library').state.sortBy, 'latest')
+})
+
+test('invalid news link fields are bounded with notices and unknown fields are never serialized', () => {
+  const parsed = parse('view=unknown&category=bad&type=evil&topic=constructor&sort=random&date=2099-12-31&q=%00hello&source=' + 'x'.repeat(200) + '&token=secret&items=private')
+  assert.ok(parsed.notices.length >= 8)
+  assert.equal(parsed.state.view, 'daily')
+  assert.equal(parsed.state.topic, 'all')
+  assert.equal(parsed.state.archiveDate, dates[0])
+  assert.equal(parsed.state.query, 'hello')
+  assert.equal(parsed.state.source.length, 120)
+  assert.equal(parse('q=' + '文'.repeat(201)).state.query.length, 200)
+  const params = newsParams({ ...parsed.state, items: [item], token: 'secret' })
+  assert.equal(params.has('items'), false)
+  assert.equal(params.has('token'), false)
+  assert.equal(parseNewsParams(new URLSearchParams(), [], []).state.archiveDate, '')
+})
+
+test('specific source is exact and missing sources stay empty instead of broadening a shared search', () => {
+  const items = [item, { ...item, id: 'two', source: 'Engine Blog 2' }]
+  assert.deepEqual(filterNews(items, { ...filters, source: 'Engine Blog' }, topicsForItem).map((entry) => entry.id), ['one'])
+  const { state } = parse('view=library&source=Previously+available+blog')
+  assert.equal(state.source, 'Previously available blog')
+  assert.equal(filterNews(items, state, topicsForItem).length, 0)
+})
+
+test('all technical topics have reading guides and their learning links resolve', () => {
+  assert.deepEqual(Object.keys(newsStudyGuides).sort(), newsTopics.map((topic) => topic.id).sort())
+  for (const guide of Object.values(newsStudyGuides)) {
+    assert.equal(guide.questions.length, 3)
+    for (const link of guide.links) assert.ok(['/models', '/models/compare', ...categories.map((category) => `/category/${category.slug}`)].includes(link.to), link.to)
+    for (const link of guide.originals ?? []) assert.equal(new URL(link.url).protocol, 'https:')
+  }
 })

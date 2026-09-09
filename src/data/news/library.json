@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T12:21:23.797Z",
+  "generatedAt": "2026-09-09T13:43:29.670Z",
   "lookbackDays": 90,
   "items": [
     {
@@ -12,8 +12,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T17:43:32.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 28.3,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 28,
       "topics": [
         "hardware"
       ]
@@ -28,8 +28,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T17:38:03.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 28.3,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 28,
       "topics": [
         "kernels",
         "hardware",
@@ -46,9 +46,26 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T13:31:47.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 27.3,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 27,
       "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "475c114fd7233b42",
+      "category": "technology",
+      "title": "Introducing CUDA Rust: Two Tracks for Writing GPU Kernels",
+      "summary": "In September 2026, NVIDIA announced it is leaning into native GPU programming in Rust. CUDA C++ and CUDA Python are mature, enterprise-grade toolchains, and...",
+      "url": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-08T12:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 24.6,
+      "topics": [
+        "kernels",
         "hardware"
       ]
     },
@@ -62,8 +79,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T08:51:19.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 26.1,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 25.8,
       "topics": [
         "inference",
         "hardware",
@@ -80,8 +97,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T06:28:32.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25.5,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 25.2,
       "topics": [
         "inference",
         "hardware",
@@ -99,8 +116,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 25.6,
       "topics": [
         "inference",
         "hardware",
@@ -117,8 +134,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 25.6,
       "topics": [
         "inference",
         "hardware",
@@ -135,8 +152,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 25.6,
       "topics": [
         "inference",
         "hardware",
@@ -153,8 +170,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 21.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 21.6,
       "topics": [
         "inference",
         "hardware"
@@ -170,8 +187,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-07T14:52:48.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 21.6,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 21.3,
       "topics": [
         "hardware"
       ]
@@ -186,8 +203,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-07T13:05:37.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 23.2,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 23,
       "topics": [
         "inference",
         "training"
@@ -203,7 +220,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-07T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 19,
       "topics": [
         "inference",
@@ -220,10 +237,26 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T21:03:02.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 22,
       "topics": [
         "security"
+      ]
+    },
+    {
+      "id": "3f64826645c26f40",
+      "category": "technology",
+      "title": "NVIDIA PAIR Virtual Inference Router Expands Available Compute on Your Local Network",
+      "summary": "AI agents are learning to do more by working together. A lead agent can break a complex task into smaller jobs and assign those jobs to specialized subagents....",
+      "url": "https://developer.nvidia.com/blog/nvidia-pair-virtual-inference-router-expands-available-compute-on-your-local-network/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-03T16:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 19,
+      "topics": [
+        "inference"
       ]
     },
     {
@@ -236,7 +269,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 23,
       "topics": [
         "hardware",
@@ -254,10 +287,76 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-02T18:41:48.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 23,
       "topics": [
         "kernels"
+      ]
+    },
+    {
+      "id": "3619baf67ea70414",
+      "category": "technology",
+      "title": "The Modern CUDA Toolbox in Practice: A Step-by-Step Optimization Walkthrough",
+      "summary": "NVIDIA CUDA remains the foundation of GPU-accelerated computing, powering everything from scientific simulations to large-scale AI training. But writing...",
+      "url": "https://developer.nvidia.com/blog/the-modern-cuda-toolbox-in-practice-a-step-by-step-optimization-walkthrough/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-02T17:15:57.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 23,
+      "topics": [
+        "kernels",
+        "hardware",
+        "training"
+      ]
+    },
+    {
+      "id": "f533fe6886daa6d0",
+      "category": "technology",
+      "title": "Co-Designing AI Models Using Speculative Decoding for Faster LLM Inference",
+      "summary": "This post is the third in a series on AI model co-design. It explores how to accelerate LLM inference while maintaining accuracy using speculative decoding and...",
+      "url": "https://developer.nvidia.com/blog/co-designing-ai-models-using-speculative-decoding-for-faster-llm-inference/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-02T16:04:19.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 23,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "ffa35343d7da9a48",
+      "category": "technology",
+      "title": "Building an Adaptive Agentic Cybersecurity System with NVIDIA Nemotron",
+      "summary": "AI is changing the pace of cybersecurity. Agentic systems can coordinate work and pursue complex objectives over long horizons. Security teams are beginning to...",
+      "url": "https://developer.nvidia.com/blog/building-an-adaptive-agentic-cybersecurity-system-with-nvidia-nemotron/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-01T17:00:04.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 23,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "660dae08a2834507",
+      "category": "technology",
+      "title": "How to Size GPUs for AI Inference and TCO Without Overspending",
+      "summary": "The surge in AI adoption is transforming everything from chatbots to content generation. Still, a common pain point remains: How can organizations confidently...",
+      "url": "https://developer.nvidia.com/blog/how-to-size-gpus-for-ai-inference-and-tco-without-overspending/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-01T15:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 19,
+      "topics": [
+        "inference"
       ]
     },
     {
@@ -270,7 +369,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-01T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 23,
       "topics": [
         "inference"
@@ -286,7 +385,23 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-01T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 23,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "c784ace4b28be6c9",
+      "category": "technology",
+      "title": "Deploy an Open Model from Checkpoint to Inference in Two Commands with NVIDIA TensorRT Model Connect",
+      "summary": "Open AI models are evolving faster than ever, but bringing them into native applications can still require model-specific conversion, preprocessing,...",
+      "url": "https://developer.nvidia.com/blog/deploy-an-open-model-from-checkpoint-to-inference-in-two-commands-with-nvidia-tensorrt-model-connect/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-28T17:06:28.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 23,
       "topics": [
         "inference"
@@ -302,7 +417,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-28T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -318,7 +433,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-28T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 19,
       "topics": [
         "inference",
@@ -336,9 +451,27 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-27T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 23,
       "topics": [
+        "kernels",
+        "hardware"
+      ]
+    },
+    {
+      "id": "80f8fafdcc1b0b2c",
+      "category": "technology",
+      "title": "Restore LLM Inference Capacity in Seconds with Shadow Engine Recovery in NVIDIA Dynamo",
+      "summary": "When an LLM engine process fails, the standard recovery path involves a cold restart. This requires loading weights into HBM from storage, compiling kernels,...",
+      "url": "https://developer.nvidia.com/blog/restore-llm-inference-capacity-in-seconds-with-shadow-engine-recovery-in-nvidia-dynamo/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-25T20:57:54.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 19,
+      "topics": [
+        "inference",
         "kernels",
         "hardware"
       ]
@@ -353,7 +486,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-25T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 23,
       "topics": [
         "models"
@@ -369,7 +502,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-23T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 19,
       "topics": [
         "inference"
@@ -385,7 +518,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-22T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 23,
       "topics": [
         "inference"
@@ -401,7 +534,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-21T23:19:57.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 18,
       "topics": [
         "training"
@@ -417,7 +550,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-21T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 19,
       "topics": [
         "inference",
@@ -434,7 +567,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-20T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 23,
       "topics": [
         "training"
@@ -450,7 +583,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-14T13:12:12.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 22,
       "topics": [
         "security"
@@ -466,7 +599,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-10T13:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 22,
       "topics": [
         "inference",
@@ -483,7 +616,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-07-29T16:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
       "score": 22,
       "topics": [
         "security"

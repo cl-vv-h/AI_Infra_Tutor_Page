@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-09T12:21:23.797Z",
+  "generatedAt": "2026-09-09T13:43:29.670Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 23,
-  "failedSourceCount": 10,
+  "sourceCount": 25,
+  "failedSourceCount": 9,
   "sourceStates": [
     {
       "name": "DeepMind",
@@ -11,10 +11,10 @@
       "country": "United Kingdom",
       "category": "ai",
       "type": "research",
-      "state": "ok",
-      "entryCount": 100,
-      "latestPublishedAt": "2026-09-08T14:00:15.000Z",
-      "selectedCount": 1,
+      "state": "unavailable",
+      "entryCount": 0,
+      "latestPublishedAt": null,
+      "selectedCount": 0,
       "libraryCount": 1
     },
     {
@@ -37,7 +37,7 @@
       "type": "news",
       "state": "ok",
       "entryCount": 19,
-      "latestPublishedAt": "2026-09-09T12:05:34.000Z",
+      "latestPublishedAt": "2026-09-09T13:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -131,8 +131,8 @@
       "country": "Canada",
       "category": "finance",
       "type": "institution",
-      "state": "unavailable",
-      "entryCount": 0,
+      "state": "ok",
+      "entryCount": 10,
       "latestPublishedAt": null,
       "selectedCount": 0,
       "libraryCount": 0
@@ -181,7 +181,7 @@
       "type": "news",
       "state": "ok",
       "entryCount": 24,
-      "latestPublishedAt": "2026-09-09T12:15:56.000Z",
+      "latestPublishedAt": "2026-09-09T13:05:48.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -205,7 +205,7 @@
       "type": "news",
       "state": "ok",
       "entryCount": 50,
-      "latestPublishedAt": "2026-09-09T10:38:57.000Z",
+      "latestPublishedAt": "2026-09-09T12:29:22.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -294,6 +294,18 @@
       "libraryCount": 0
     },
     {
+      "name": "FlashInfer Blog",
+      "url": "https://flashinfer.ai/feed.xml",
+      "country": "International",
+      "category": "ai",
+      "type": "engineering",
+      "state": "ok",
+      "entryCount": 5,
+      "latestPublishedAt": "2025-10-21T00:00:00.000Z",
+      "selectedCount": 0,
+      "libraryCount": 0
+    },
+    {
       "name": "arXiv Distributed Systems",
       "url": "https://export.arxiv.org/api/query?search_query=cat:cs.DC&sortBy=submittedDate&sortOrder=descending&max_results=20",
       "country": "International",
@@ -314,7 +326,7 @@
       "state": "ok",
       "entryCount": 10,
       "latestPublishedAt": "2026-09-08T01:00:02.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 2
     },
     {
@@ -323,11 +335,11 @@
       "country": "United States",
       "category": "technology",
       "type": "engineering",
-      "state": "unavailable",
-      "entryCount": 0,
-      "latestPublishedAt": null,
-      "selectedCount": 0,
-      "libraryCount": 0
+      "state": "ok",
+      "entryCount": 100,
+      "latestPublishedAt": "2026-09-08T12:00:00.000Z",
+      "selectedCount": 1,
+      "libraryCount": 8
     },
     {
       "name": "AMD ROCm Blog",
@@ -349,8 +361,8 @@
       "type": "engineering",
       "state": "ok",
       "entryCount": 20,
-      "latestPublishedAt": "2026-09-08T13:10:00.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-09-09T13:00:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 4
     },
     {
@@ -413,8 +425,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-09-09T10:05:25.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 28.4,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 28.1,
       "topics": [
         "security"
       ]
@@ -429,8 +441,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T17:43:32.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 28.3,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 28,
       "topics": [
         "hardware"
       ]
@@ -445,12 +457,44 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T17:38:03.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 28.3,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 28,
       "topics": [
         "kernels",
         "hardware",
         "training"
+      ]
+    },
+    {
+      "id": "99e4ca4b0f738f96",
+      "category": "ai",
+      "title": "Sequoia doubles down on Cymphony as AI agents create new enterprise security risks",
+      "summary": "Cymphony was valued at more than $100 million in a $25 million Series A co-led by Sequoia and SMBC Fin Atlas Beyond Fund.",
+      "url": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T13:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 27.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "088283cb41cd74b0",
+      "category": "ai",
+      "title": "Besxar is building an orbital semiconductor factory, one SpaceX rocket at a time",
+      "summary": "If you want to manufacture in space—and bring the products back again—there’s a limited set of options: Wait to go to the International Space Station, or partner with a handful of start-ups launching spacecraft that spend time in orbit before they return to Earth. But the vehicle that goes to space and comes back to […]",
+      "url": "https://techcrunch.com/2026/09/09/besxar-is-strapping-advanced-chip-fabs-onto-spacexs-falcon-9-rockets/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T12:30:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 27.7,
+      "topics": [
+        "hardware"
       ]
     },
     {
@@ -463,8 +507,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-09-09T06:27:22.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 27.5,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 27.2,
       "topics": [
         "security"
       ]
@@ -479,8 +523,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-09-09T06:20:49.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 27.5,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 27.2,
       "topics": []
     },
     {
@@ -493,8 +537,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T13:31:47.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 27.3,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 27,
       "topics": [
         "hardware"
       ]
@@ -509,8 +553,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-09-09T09:12:58.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 27.2,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 26.9,
       "topics": [
         "security"
       ]
@@ -525,8 +569,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 25.6,
       "topics": [
         "inference",
         "hardware",
@@ -543,8 +587,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 25.6,
       "topics": [
         "inference",
         "hardware",
@@ -561,13 +605,27 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 25.6,
       "topics": [
         "inference",
         "hardware",
         "training"
       ]
+    },
+    {
+      "id": "69c14e7de23233c8",
+      "category": "technology",
+      "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
+      "summary": "Workers now enables Node.js compatibility by default, supports applications up to 64 mebibytes, and adds a URL-based module registry with import.meta, lazy compilation, shared code caches, and clearer errors.",
+      "url": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-09T13:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 24.8,
+      "topics": []
     },
     {
       "id": "6a8c0d8c3f746708",
@@ -579,8 +637,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-09-08T20:29:59.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 24.7,
       "topics": []
     },
     {
@@ -593,9 +651,26 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-09-08T20:16:16.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 25,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 24.6,
       "topics": []
+    },
+    {
+      "id": "475c114fd7233b42",
+      "category": "technology",
+      "title": "Introducing CUDA Rust: Two Tracks for Writing GPU Kernels",
+      "summary": "In September 2026, NVIDIA announced it is leaning into native GPU programming in Rust. CUDA C++ and CUDA Python are mature, enterprise-grade toolchains, and...",
+      "url": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-08T12:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 24.6,
+      "topics": [
+        "kernels",
+        "hardware"
+      ]
     },
     {
       "id": "fe853397ac381c7d",
@@ -607,24 +682,24 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-08T21:11:46.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 24.2,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 23.9,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "417db71b37404e36",
+      "id": "0ba4eccc93ed8aec",
       "category": "world",
-      "title": "Serbia's Vucic calls snap elections after nearly two years of protests",
-      "summary": "Serbian President Aleksandar Vucic on Wednesday called snap parliamentary elections for October 25. They are expected to be a key test of his right-wing populist Serbian Progressive Party after nearly two years of student-led anti-corruption protests.",
-      "url": "https://www.france24.com/en/europe/20260909-serbia-vucic-calls-snap-elections-after-nearly-two-years-protests",
+      "title": "Rungis market chief on supply chains and feeding the world",
+      "summary": "In today’s edition, FRANCE 24’s Delano D'Souza speaks with the man at the heart of France's food supply chain. Stéphane Layani is the head of the Rungis wholesale food market – the largest of its kind in Europe – and chairman of the World Union of Wholesale Markets. Earlier this year Layani came out with a book titled Le Monde a faim, or \"The World is Hungry\" in English. In his interview, he gives his perspective on how France's food system will transform in the coming years.",
+      "url": "https://www.france24.com/en/tv-shows/entre-nous/20260909-rungis-market-chief-on-supply-chains-and-feeding-the-world",
       "source": "France 24",
       "sourceCountry": "France",
       "sourceType": "news",
-      "publishedAt": "2026-09-09T12:15:56.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 24,
+      "publishedAt": "2026-09-09T13:05:48.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 23.8,
       "topics": []
     },
     {
@@ -637,39 +712,22 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T13:10:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 23.2,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 22.9,
       "topics": []
     },
     {
-      "id": "fe860f25f940a257",
-      "category": "technology",
-      "title": "PyTorch x Hugging Face in Bengaluru: Building India’s Next Generation of ML Systems Contributors",
-      "summary": "TL;DR More than 170 students, engineers, researchers, and open-source contributors gathered in Bengaluru for a technical evening hosted by Red Hat and Hugging Face around PyTorch, large-scale inference, reinforcement learning...",
-      "url": "https://pytorch.org/blog/pytorch-x-hugging-face-in-bengaluru-building-indias-next-generation-of-ml-systems-contributors/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-07T13:05:37.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 23.2,
-      "topics": [
-        "inference",
-        "training"
-      ]
-    },
-    {
-      "id": "d3bb8dba3443130a",
+      "id": "32ff9d6d8f4cc3ce",
       "category": "ai",
-      "title": "Suno replaces its AI models with a new one trained on licensed music as copyright suits pile up",
-      "summary": "As it grapples with a bevy of lawsuits, Suno said its new model, Suno v6, is not trained using music it used to train previous versions of the AI model.",
-      "url": "https://techcrunch.com/2026/09/09/suno-replaces-its-ai-models-with-a-new-one-trained-on-licensed-music-as-copyright-suits-pile-up/",
+      "title": "Instacart launches an AI grocery shopping assistant called Clementine",
+      "summary": "Instacart is the latest app to bake a conversational AI assistant into its platform.",
+      "url": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
       "source": "TechCrunch AI",
       "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-09-09T12:05:34.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 22.9,
+      "publishedAt": "2026-09-09T13:00:00.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 22.8,
       "topics": []
     },
     {
@@ -682,8 +740,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-09-09T11:15:46.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 22.7,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 22.4,
       "topics": []
     },
     {
@@ -696,25 +754,9 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-09T11:12:27.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 22.7,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 22.4,
       "topics": []
-    },
-    {
-      "id": "fe686c245aa337e2",
-      "category": "ai",
-      "title": "Chrome is now shipping updates every 2 weeks as AI changes the security landscape",
-      "summary": "Google is speeding up Chrome’s release schedule to ship security patches and new features faster.",
-      "url": "https://techcrunch.com/2026/09/08/chrome-is-now-shipping-updates-every-2-weeks-as-ai-changes-the-security-landscape/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-09-08T15:04:09.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 22.7,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "795353809f642907",
@@ -726,8 +768,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 21.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 21.6,
       "topics": [
         "security"
       ]
@@ -742,8 +784,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 21.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 21.6,
       "topics": [
         "inference",
         "hardware"
@@ -759,8 +801,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-09-09T06:40:39.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 21.6,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 21.2,
       "topics": []
     },
     {
@@ -773,8 +815,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 20.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 20.6,
       "topics": []
     },
     {
@@ -787,8 +829,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-09-09T01:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 20.2,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -801,50 +843,36 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-09-08T23:50:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 19.9,
-      "topics": []
-    },
-    {
-      "id": "1f03aca556679db8",
-      "category": "ai",
-      "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
-      "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
-      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
-      "source": "DeepMind",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "research",
-      "publishedAt": "2026-09-08T14:00:15.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 19.4,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 19.5,
       "topics": []
     },
     {
       "id": "e0975fe3436de732",
       "category": "technology",
       "title": "GOG brings back \"big box\" PC games, one printable template at a time",
-      "summary": "Preservation \"goodies\" also includes downloadable 3D models for desktop perusal.",
+      "summary": "Preservation \"goodies\" also include downloadable 3D models for desktop perusal.",
       "url": "https://arstechnica.com/gaming/2026/09/gog-brings-back-big-box-pc-games-one-printable-template-at-a-time/",
       "source": "Ars Technica",
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-08T21:23:13.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 19.3,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 18.9,
       "topics": []
     },
     {
-      "id": "973a830c46459e11",
-      "category": "ai",
-      "title": "Cognition hits $48B valuation, signaling investors believe AI coding is far from a winner-take-all market",
-      "summary": "Cognition's valuation multiple is higher than Cursor's was before selling to SpaceX.",
-      "url": "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
+      "id": "cb2324eb4e8f8d9e",
+      "category": "world",
+      "title": "Egypt air show spotlights drones and military hardware",
+      "summary": "Dozens of exhibitors from several countries are taking part in the El Alamein International Air Show, held this week at the airport in Egypt's northwestern Mediterranean coast.",
+      "url": "https://www.africanews.com/2026/09/09/egypt-air-show-spotlights-drones-and-military-hardware/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
       "sourceType": "news",
-      "publishedAt": "2026-09-08T21:04:06.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 19.2,
+      "publishedAt": "2026-09-09T12:29:22.000Z",
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 18.7,
       "topics": []
     },
     {
@@ -857,8 +885,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-08T20:06:44.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 18.6,
       "topics": []
     },
     {
@@ -871,8 +899,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-09-08T19:40:56.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.8,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 18.5,
       "topics": []
     },
     {
@@ -885,8 +913,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-09-09T11:07:30.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.7,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 18.4,
       "topics": []
     },
     {
@@ -899,22 +927,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-09-08T15:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.7,
-      "topics": []
-    },
-    {
-      "id": "fc1f76a91e3a42a7",
-      "category": "world",
-      "title": "Gambian leader vows power boost after violent blackout protests",
-      "summary": "Gambian President Adama Barrow on Tuesday pledged to boost power supplies by next month after violent protests over blackouts that have dogged the west African country since June",
-      "url": "https://www.africanews.com/2026/09/09/gambian-leader-vows-power-boost-after-violent-blackout-protests/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-09-09T10:38:57.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.6,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 18.3,
       "topics": []
     },
     {
@@ -927,8 +941,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-09T09:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.2,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 17.8,
       "topics": []
     },
     {
@@ -941,8 +955,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-09T08:44:40.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 18.1,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 17.8,
       "topics": []
     },
     {
@@ -955,8 +969,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 17.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 17.6,
       "topics": []
     },
     {
@@ -969,8 +983,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-09-08T13:59:40.685Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 17.4,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 17.1,
       "topics": []
     },
     {
@@ -983,8 +997,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T01:00:02.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 17.2,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 16.8,
       "topics": []
     },
     {
@@ -997,8 +1011,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:59:13.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 17.2,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 16.8,
       "topics": []
     },
     {
@@ -1011,8 +1025,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 16.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 16.6,
       "topics": []
     },
     {
@@ -1025,8 +1039,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-09-07T23:50:00.000Z",
-      "fetchedAt": "2026-09-09T12:21:23.797Z",
-      "score": 13.9,
+      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "score": 13.5,
       "topics": []
     }
   ]
