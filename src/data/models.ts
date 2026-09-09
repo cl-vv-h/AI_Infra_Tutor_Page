@@ -3,6 +3,7 @@ import { qwenArchitectures } from './qwen-models.ts'
 import { hybridArchitectures } from './hybrid-models.ts'
 import { mistralArchitectures } from './mistral-models.ts'
 import { gemmaArchitectures } from './gemma-models.ts'
+import { phiArchitectures } from './phi-models.ts'
 
 export const modelArchitectures: ModelArchitecture[] = [
   {
@@ -441,6 +442,7 @@ export const modelArchitectures: ModelArchitecture[] = [
   ...hybridArchitectures,
   ...mistralArchitectures,
   ...gemmaArchitectures,
+  ...phiArchitectures,
 ]
 
 export function getModelArchitecture(id?: string) {

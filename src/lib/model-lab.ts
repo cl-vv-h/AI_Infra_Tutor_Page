@@ -76,6 +76,7 @@ export function attentionKind(model: ModelArchitecture, layer: number) {
   const cache = model.execution.cache
   if (cache.kind === 'hybrid') return cache.layerTypes[layer] === 'linear_attention' ? 'gdn' : 'gqa'
   if (cache.kind === 'mixed') return cache.layerTypes[layer] === 'sliding_attention' ? 'swa' : 'gqa'
+  if (cache.kind === 'gqa' && model.dimensions.attentionHeads === model.dimensions.kvHeads) return 'mha'
   return cache.kind
 }
 

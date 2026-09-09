@@ -88,7 +88,7 @@ npm run news:fetch
 
 账本只统计已展示的 Decoder 张量，不是完整 checkpoint 参数统计或部署显存预测。它不包含 Embedding/共享 LM Head、视觉编码器、MTP、未展示的 buffer、激活、KV/循环状态、运行时工作区、量化元数据或打包对齐。MoE 在 EP=1 假设下统计所有常驻专家，不以 Top-k 激活参数替代；Norm、路由器和部分 KV 投影的 TP 复制按图解约定保留。低位宽只用于理论载荷对照，不宣称所有权重或硬件支持对应量化。参考 [Transformers 量化概念](https://huggingface.co/docs/transformers/main/en/quantization/concept_guide)。
 
-模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts`、`src/data/mistral-models.ts` 与 `src/data/gemma-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供十个代表模型：
+模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts`、`src/data/mistral-models.ts`、`src/data/gemma-models.ts` 与 `src/data/phi-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供十一个代表模型：
 
 - Llama 3.1 8B：Dense、GQA、SwiGLU；
 - DeepSeek-V3：MLA、DeepSeekMoE、MTP；
@@ -99,7 +99,8 @@ npm run news:fetch
 - Qwen3.5-35B-A3B：30 层 DeltaNet + 10 层 Gated Full Attention、256 routed / Top-8 + gated shared expert、视觉编码器；
 - Mistral-7B-v0.1：32 层滑动窗口 GQA、4,096 token 窗口、Dense SwiGLU；
 - Mixtral-8x7B-v0.1：32 层完整 GQA、8 专家 / Top-2 MoE，无滑动窗口；
-- Gemma 2 9B：42 层交替局部/完整 GQA、4 个子层边界 RMSNorm、GeGLU、共享词嵌入及 logits softcap。
+- Gemma 2 9B：42 层交替局部/完整 GQA、4 个子层边界 RMSNorm、GeGLU、共享词嵌入及 logits softcap；
+- Phi-3.5 Mini Instruct：32 层 MHA、32Q/32KV × 96D、融合 QKV 与 Gate/Up 投影、LongRoPE、独立词嵌入与 LM Head。
 
 每个模型都有可直接分享的 Hash 路由，例如 `#/models/qwen3-30b-a3b`。模块支持悬浮预览与点击锁定；窄屏点击打开原生模态详情，可用 Esc 关闭。Layer 控件展开一个真实 Decoder 层，显示两次残差连接，并按模型选择 Pre-Norm 或 Pre+Post-Norm 布局、按层号选择 Dense 或 MoE，其他层折叠。图中为自回归主干，不包含 MTP 辅助预测分支。
 
@@ -107,7 +108,7 @@ npm run news:fetch
 
 模块检索按模块名称、权重名称和中间张量名称匹配，索引只包含各层实际存在的节点。点击结果定位到最近适用层（等距时取较小层号），桌面滚动并聚焦对应节点，窄屏打开详情。全局 Embedding、视觉分支和 LM Head 保持当前层上下文。模块索引与 URL 校验集中在 `src/lib/model-explorer.ts`。
 
-层分布图按 MLA、GQA/Full、Sliding GQA、Gated DeltaNet 着色，点击层号同步切换计算模块与缓存支路。Qwen3.5 的 Inspector 还显示 Q/K/V、输出门、循环矩阵等中间张量及 Prefill/Decode 算法说明；可选视觉分支显示 patch embedding、ViT 与 merger 的全局权重。
+层分布图按 MLA、MHA/Full、GQA/Full、Sliding GQA、Gated DeltaNet 着色，点击层号同步切换计算模块与缓存支路。Qwen3.5 的 Inspector 还显示 Q/K/V、输出门、循环矩阵等中间张量及 Prefill/Decode 算法说明；可选视觉分支显示 patch embedding、ViT 与 merger 的全局权重。
 
 KV Cache 容量实验支持 B、S、TP、缓存字节数与 Prefill/Decode 切换，驱动数字化输入输出 Shape。计算明确区分 GQA head 分片/复制与 MLA latent 复制；展示全部主干层的每卡、全 TP 组逻辑缓存量，不将其误作部署总显存。模型的 `execution` 字段声明上下文上限、Dense 层数与缓存布局。新增模型须同时提供官方配置来源、这些元数据及模块权重。
 
@@ -116,6 +117,8 @@ Hybrid 缓存分为完整注意力 KV（随 S 增长）、FP32 循环矩阵（�
 滑动窗口模型使用 `min(S, W)` 计算逻辑 KV 长度，滚动时间轴显示当前可见的位置范围；对比曲线包含窗口饱和点。Mistral-7B-v0.1 的 W=4,096，但配置上下文是 32,768；Mixtral-8x7B-v0.1 的 `sliding_window=null`，不能沿用这个窗口。容量按包含当前 token 的完整逻辑窗口估算，一些后端跨步保留 W−1 个历史位置，未裁剪实现也可能占用更多空间。零容量增长不意味着零计算或零写入，Prefill 仍需处理全部输入。
 
 Gemma 2 9B 的 `mixed` 布局按每层类型分别统计：21 个完整层使用 S、21 个滑窗层使用 min(S, 4,096)。总 KV = B × (S × Lfull + min(S, W) × Lwindow) × 2 × 每卡 KV heads × head_dim × bytes；4K 后增长率减半而非归零，曲线止于配置上限 8K。图中的本层窗口、缓存 Shape 与层号同步变化。`normLayout: pre-post` 将两个 Post-Norm 放在各自残差相加之前；不能直接复用两 Norm 的 Decoder 顺序。参数取 Google 官方 9B 配置（固定提交），运算顺序对照 Transformers v4.57.1。模型权重不随网站分发。
+
+Phi-3.5 Mini 的 [官方配置](https://huggingface.co/microsoft/Phi-3.5-mini-instruct/blob/main/config.json) 中 Q/KV 均为 32 heads，层图和对比台明确显示 MHA；计算复用通用 KV-head 公式。`sliding_window=262144` 超出 `max_position_embeddings=131072`，因此在支持范围内按完整 S 计数，不外推至 256K。LongRoPE 的 4096 是位置缩放参考，不是 KV 裁剪窗口；short/long 系数各 48 个且不是可训练矩阵。投影、Pre-Norm 残差与 SwiGLU 对照 [Transformers v4.57.1 Phi3 实现](https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/models/phi3/modeling_phi3.py)，位置计算参考[同版本 LongRoPE](https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/modeling_rope_utils.py)。融合 QKV 的每卡 Shape 表示各 Q/K/V head 分片再打包，不是将原始全局矩阵的连续行直接等分。“MHA / GQA：KV 头数”预设保持共同推理条件；在相同 B/S/TP/缓存精度下，Phi 的理论 KV 是 Llama 3.1 8B 的 3 倍，不能从参数规模推断缓存大小。
 
 `npm run test:models`（Node.js 22.18+）校验逐层路径、Shape 模板、已知 KV 容量及 TP 复制边界；构建仍兼容 Node.js 20。
 

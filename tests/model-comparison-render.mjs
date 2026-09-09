@@ -97,6 +97,16 @@ try {
     }
   }
   const unknownModel = renderExplorer('/models/not-a-real-model?b=999')
+  const phi = renderExplorer('/models/phi-3-5-mini-instruct?layer=31&node=mha&tp=4&b=4&s=4096')
+  assert.equal((phi.match(/aria-label="Layer \d+ · Full \/ MHA/g) ?? []).length, 32)
+  assert.ok(phi.includes('id="model-node-mha"') && phi.includes('id="model-node-kv-cache"'))
+  for (const text of ['MHA · Fused QKV + LongRoPE', '1.5 GiB', '[4, 8, 96]', 'short_factor', 'SwiGLU · Fused Gate/Up', '不外推到 256K']) assert.ok(phi.includes(text), text)
+  assert.ok(!phi.includes('滚动窗口 · W'))
+  const mhaComparison = render('?models=phi-3-5-mini-instruct,llama-3-1-8b&tp=4&b=4&s=8192')
+  for (const text of ['MHA / GQA：KV 头数', 'MHA · 每个 Q head 独立 KV', '3 GiB', '1 GiB']) assert.ok(mhaComparison.includes(text), text)
+  const phiLimit = renderExplorer('/models/phi-3-5-mini-instruct?s=131072&node=kv-cache')
+  assert.ok(phiLimit.includes('[4, 131072, 2, 8, 96]'))
+  assert.ok(phiLimit.includes('已达配置上下文上限'))
   assert.match(unknownModel, /未找到这个模型图解/)
   assert.doesNotMatch(unknownModel, /每卡逻辑 KV Cache|INSPECTOR/)
   const wrongLayer = renderExplorer('/models/deepseek-v3?layer=0&node=moe&tp=3&s=999999')

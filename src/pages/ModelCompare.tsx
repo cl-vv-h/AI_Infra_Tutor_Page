@@ -12,6 +12,7 @@ import ModelComparisonChart from '@/components/ModelComparisonChart'
 const controlClass = 'min-w-0 rounded-xl border border-white/15 bg-[#0c131c] px-3 py-3 text-sm text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-200'
 const integer = (value: number) => value.toLocaleString('en-US')
 const presets = [
+  { label: 'MHA / GQA：KV 头数', ids: ['phi-3-5-mini-instruct', 'llama-3-1-8b'] },
   { label: 'GQA / MLA / Hybrid', ids: ['llama-3-1-8b', 'glm-4-7-flash', 'qwen3-5-9b'] },
   { label: 'Qwen Dense 演进', ids: ['qwen3-8b', 'qwen3-5-9b'] },
   { label: '稀疏专家架构', ids: ['deepseek-v3', 'qwen3-30b-a3b', 'qwen3-5-35b-a3b'] },
@@ -22,7 +23,7 @@ const presets = [
 function cacheLabel(model: ModelArchitecture) {
   if (model.execution.cache.kind === 'mixed') return `Full + Sliding GQA · W ${integer(model.execution.cache.window)}`
   if (model.execution.cache.kind === 'swa') return `Sliding GQA · W ${integer(model.execution.cache.window)}`
-  return model.execution.cache.kind === 'mla' ? 'MLA · 压缩 latent' : model.execution.cache.kind === 'hybrid' ? 'Gated DeltaNet + Full Attention' : 'GQA'
+  return model.execution.cache.kind === 'mla' ? 'MLA · 压缩 latent' : model.execution.cache.kind === 'hybrid' ? 'Gated DeltaNet + Full Attention' : model.dimensions.attentionHeads === model.dimensions.kvHeads ? 'MHA · 每个 Q head 独立 KV' : 'GQA'
 }
 
 function cacheNote(model: ModelArchitecture, tp: TensorParallelSize) {

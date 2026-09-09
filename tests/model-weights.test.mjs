@@ -13,7 +13,7 @@ test('shape arithmetic accepts only bracketed positive integer products and sums
   for (const value of ['[N, 128]', '[SwiGLU(2 → 4)]', '[0, 2]', '[-1]', '[1.5]', '[9007199254740992]', '[2] * evil()', '[2] trailing', '']) assert.equal(shapeElements(value), null, value)
 })
 
-test('all ten model Decoder definitions are countable at every supported TP', () => {
+test('all registered model Decoder definitions are countable at every supported TP', () => {
   for (const m of modelArchitectures) for (const tp of m.supportedTp) {
     const nodes = new Map(Array.from({ length: m.dimensions.layers }, (_, layer) => decoderNodes(m, layer)).flat().map((node) => [node.id, node]))
     for (const node of nodes.values()) for (const weight of node.weights) {
