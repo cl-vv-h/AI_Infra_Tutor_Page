@@ -1,183 +1,76 @@
-import { createHash } from 'node:crypto'
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, rename, writeFile } from 'node:fs/promises'
 import { newsSources } from './news-sources.mjs'
+import { deduplicateItems, parseFeed, prepareItems, requireUsableFeeds, selectDiverse, selectLibrary } from './news-core.mjs'
 
-const outputPath = new URL('../src/data/news/daily.json', import.meta.url)
-const archiveRoot = new URL('../src/data/news/archive/', import.meta.url)
+const outputRoot = new URL('../src/data/news/', import.meta.url)
+const archiveRoot = new URL('archive/', outputRoot)
 const now = new Date()
 const today = now.toISOString().slice(0, 10)
 const lookbackHours = Number(process.env.NEWS_LOOKBACK_HOURS ?? 48)
 const maxPerCategory = Number(process.env.NEWS_MAX_PER_CATEGORY ?? 16)
+if (!Number.isFinite(lookbackHours) || lookbackHours <= 0 || !Number.isInteger(maxPerCategory) || maxPerCategory < 1) throw new Error('Invalid news collection limits')
 
-function decodeEntities(value = '') {
-  const named = {
-    amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ',
+async function readSnapshot(url) {
+  try { return JSON.parse(await readFile(url, 'utf8')) } catch (error) {
+    if (error.code === 'ENOENT') return { items: [] }
+    throw error
   }
-  return value
-    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)))
-    .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(Number.parseInt(code, 16)))
-    .replace(/&([a-z]+);/gi, (match, key) => named[key] ?? match)
-}
-
-function cleanText(value = '') {
-  return decodeEntities(value)
-    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/[\u0000-\u001f\u007f]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-}
-
-function readTag(block, names) {
-  for (const name of names) {
-    const escaped = name.replace(':', '\\:')
-    const match = block.match(new RegExp(`<${escaped}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${escaped}>`, 'i'))
-    if (match?.[1]) return cleanText(match[1])
-  }
-  return ''
-}
-
-function readLink(block) {
-  const rssLink = readTag(block, ['link'])
-  if (/^https?:\/\//i.test(rssLink)) return rssLink
-  const atomLink = block.match(/<link[^>]+href=["']([^"']+)["'][^>]*>/i)?.[1]
-  if (/^https?:\/\//i.test(atomLink ?? '')) return decodeEntities(atomLink ?? '').trim()
-  const guid = readTag(block, ['guid', 'id'])
-  return /^https?:\/\//i.test(guid) ? guid : ''
-}
-
-function parseFeed(xml) {
-  const blocks = [
-    ...(xml.match(/<item(?:\s[^>]*)?>[\s\S]*?<\/item>/gi) ?? []),
-    ...(xml.match(/<entry(?:\s[^>]*)?>[\s\S]*?<\/entry>/gi) ?? []),
-  ]
-
-  return blocks.map((block) => ({
-    title: readTag(block, ['title']),
-    summary: readTag(block, ['description', 'summary', 'content', 'content:encoded']),
-    url: readLink(block),
-    publishedAt: readTag(block, ['pubDate', 'published', 'updated', 'dc:date']),
-  }))
-}
-
-function normalizedUrl(value) {
-  try {
-    const url = new URL(value)
-    if (!['http:', 'https:'].includes(url.protocol)) return null
-    if (url.protocol === 'http:') url.protocol = 'https:'
-    for (const key of [...url.searchParams.keys()]) {
-      if (key.startsWith('utm_') || ['cmpid', 'ocid', 'at_campaign', 'at_medium'].includes(key)) {
-        url.searchParams.delete(key)
-      }
-    }
-    url.hash = ''
-    return url.toString()
-  } catch {
-    return null
-  }
-}
-
-function importanceScore(item, source) {
-  const published = Date.parse(item.publishedAt)
-  const ageHours = Number.isFinite(published) ? Math.max(0, (now.getTime() - published) / 3_600_000) : lookbackHours
-  const recency = Math.max(0, 12 - ageHours / 4)
-  const signalWords = /breakthrough|launch|release|regulation|policy|rate|inflation|election|agreement|conflict|security|research|model|chip|semiconductor|market|economy/i
-  const systemsWords = /inference|serving|kernel|compiler|distributed|accelerator|GPU|NPU|CUDA|ROCm|PyTorch|benchmark|throughput|latency|quantization|attention|cache|runtime|framework/i
-  const signal = signalWords.test(`${item.title} ${item.summary}`) ? 4 : 0
-  const systemsSignal = systemsWords.test(`${item.title} ${item.summary}`) ? 5 : 0
-  const sourceTypeBoost = { research: 4, engineering: 4, release: 3, institution: 2, analysis: 1, news: 0 }[source.type] ?? 0
-  const prereleasePenalty = /(?:^|[.-])(?:rc|alpha|beta|dev|nightly)\d*\b|^trunk\//i.test(item.title) ? 4 : 0
-  return Math.round((source.weight + recency + signal + systemsSignal + sourceTypeBoost - prereleasePenalty) * 10) / 10
 }
 
 async function fetchSource(source) {
-  const controller = new AbortController()
-  const timeout = setTimeout(() => controller.abort(), 15_000)
-  try {
-    const response = await fetch(source.url, {
-      headers: {
-        'User-Agent': 'AI-Infra-Space-News-Radar/1.0 (+https://github.com/cl-vv-h/AI_Infra_Tutor_Page)',
-        Accept: 'application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.5',
-      },
-      signal: controller.signal,
-    })
-    if (!response.ok) throw new Error(`HTTP ${response.status}`)
-    const xml = await response.text()
-    return parseFeed(xml)
-      .filter((entry) => {
-        if (!source.includeKeywords?.length) return true
-        const haystack = (source.matchScope === 'title' ? entry.title : `${entry.title} ${entry.summary}`).toLowerCase()
-        return source.includeKeywords.some((keyword) => haystack.includes(keyword.toLowerCase()))
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const response = await fetch(source.url, {
+        headers: { 'User-Agent': 'AI-Infra-Space-News-Radar/1.0 (+https://github.com/cl-vv-h/AI_Infra_Tutor_Page)', Accept: 'application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9' },
+        signal: AbortSignal.timeout(15000),
       })
-      .map((entry) => ({ ...entry, source }))
-  } finally {
-    clearTimeout(timeout)
+      if (!response.ok) {
+        if (attempt === 0 && response.status >= 500) continue
+        return { source, state: 'unavailable', entries: [], httpStatus: response.status }
+      }
+      try { return { source, state: 'ok', entries: parseFeed(await response.text()) } } catch (error) {
+        if (error.message === 'INVALID_FEED') return { source, state: 'invalid', entries: [] }
+        throw error
+      }
+    } catch {
+      if (attempt === 1) return { source, state: 'unavailable', entries: [] }
+    }
   }
 }
 
-const settled = await Promise.allSettled(newsSources.map(fetchSource))
-const failures = []
-const candidates = []
+// Limit concurrent requests; a single transient connection reset gets one retry.
+const results = []
+for (let i = 0; i < newsSources.length; i += 6) results.push(...await Promise.all(newsSources.slice(i, i + 6).map(fetchSource)))
+requireUsableFeeds(results)
 
-settled.forEach((result, index) => {
-  if (result.status === 'fulfilled') {
-    candidates.push(...result.value)
-  } else {
-    failures.push({ source: newsSources[index].name, error: String(result.reason?.message ?? result.reason) })
-  }
-})
+const candidates = results.flatMap(({ source, entries }) => entries.map((entry) => ({ ...entry, source })))
+const dailyItems = selectDiverse(prepareItems(candidates, now, lookbackHours), maxPerCategory, 3)
+const oldLibrary = await readSnapshot(new URL('library.json', outputRoot))
+const oldArchive = await readSnapshot(new URL(`${today}.json`, archiveRoot))
+const libraryItems = selectLibrary([...prepareItems(candidates, now, 90 * 24), ...oldLibrary.items], now)
+const sourceStates = results.map(({ source, state, entries, httpStatus }) => ({
+  name: source.name, url: source.url, country: source.country, category: source.category, type: source.type, state,
+  ...(httpStatus ? { httpStatus } : {}), entryCount: entries.length,
+  latestPublishedAt: entries.map((item) => Date.parse(item.publishedAt)).filter((date) => Number.isFinite(date) && date <= now.getTime() + 3600000).sort((a, b) => b - a).map((date) => new Date(date).toISOString())[0] ?? null,
+  selectedCount: dailyItems.filter((item) => item.source === source.name).length,
+  libraryCount: libraryItems.filter((item) => item.source === source.name).length,
+}))
+const output = { generatedAt: now.toISOString(), status: dailyItems.length ? 'ready' : 'empty', lookbackHours,
+  sourceCount: results.filter((result) => result.state === 'ok').length,
+  failedSourceCount: results.filter((result) => result.state !== 'ok').length,
+  sourceStates, items: dailyItems }
+const library = { generatedAt: now.toISOString(), lookbackDays: 90, items: libraryItems }
+// Preserve already collected same-day stories even if a later feed response is shorter.
+const archive = { ...output, items: deduplicateItems([...dailyItems, ...oldArchive.items]) }
 
-const cutoff = now.getTime() - lookbackHours * 3_600_000
-const seen = new Set()
-const items = candidates
-  .map((entry) => {
-    const url = normalizedUrl(entry.url)
-    const publishedTime = Date.parse(entry.publishedAt)
-    if (!url || !entry.title || !Number.isFinite(publishedTime) || publishedTime < cutoff || publishedTime > now.getTime() + 3_600_000) {
-      return null
-    }
-    const fingerprint = cleanText(entry.title).toLowerCase().replace(/[^a-z0-9\u4e00-\u9fff]/g, '').slice(0, 120)
-    if (!fingerprint || seen.has(fingerprint)) return null
-    seen.add(fingerprint)
-
-    return {
-      id: createHash('sha256').update(`${entry.source.category}:${url}`).digest('hex').slice(0, 16),
-      category: entry.source.category,
-      title: cleanText(entry.title).slice(0, 240),
-      summary: cleanText(entry.summary).slice(0, 520),
-      url,
-      source: entry.source.name,
-      sourceCountry: entry.source.country,
-      sourceType: entry.source.type,
-      publishedAt: new Date(publishedTime).toISOString(),
-      fetchedAt: now.toISOString(),
-      score: importanceScore(entry, entry.source),
-    }
-  })
-  .filter(Boolean)
-  .sort((a, b) => b.score - a.score || Date.parse(b.publishedAt) - Date.parse(a.publishedAt))
-
-const categoryCounts = new Map()
-const selectedItems = items.filter((item) => {
-  const count = categoryCounts.get(item.category) ?? 0
-  if (count >= maxPerCategory) return false
-  categoryCounts.set(item.category, count + 1)
-  return true
-})
-
-const output = {
-  generatedAt: now.toISOString(),
-  status: selectedItems.length > 0 ? 'ready' : 'empty',
-  sourceCount: newsSources.length - failures.length,
-  failedSourceCount: failures.length,
-  items: selectedItems,
+async function writeSnapshot(url, data) {
+  const temp = new URL(`${url.href}.tmp`)
+  await writeFile(temp, `${JSON.stringify(data, null, 2)}\n`, 'utf8')
+  await rename(temp, url)
 }
-
 await mkdir(archiveRoot, { recursive: true })
-await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`, 'utf8')
-await writeFile(new URL(`${today}.json`, archiveRoot), `${JSON.stringify(output, null, 2)}\n`, 'utf8')
-
-console.log(`Collected ${selectedItems.length} items from ${output.sourceCount}/${newsSources.length} sources.`)
-if (failures.length) console.warn('Unavailable feeds:', failures.map((failure) => failure.source).join(', '))
+await writeSnapshot(new URL(`${today}.json`, archiveRoot), archive)
+await writeSnapshot(new URL('library.json', outputRoot), library)
+await writeSnapshot(new URL('daily.json', outputRoot), output)
+console.log(`Collected ${dailyItems.length} daily signals, ${libraryItems.length} technical reads from ${output.sourceCount}/${newsSources.length} feeds.`)
+for (const source of sourceStates.filter((item) => item.state !== 'ok')) console.warn(`${source.name}: ${source.state}${source.httpStatus ? ` (HTTP ${source.httpStatus})` : ''}`)

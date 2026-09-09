@@ -54,6 +54,7 @@ SGLANG_TUTOR_PATH=/path/to/SGLang_Tutor npm run sync:curriculum
 `.github/workflows/daily-news.yml` 每天 `00:30 UTC` 运行。它从公开 RSS/Atom 信源采集新闻，执行 URL 清理、标题去重、时间窗口过滤和信源/时效加权，并写入：
 
 - `src/data/news/daily.json`：网页当前内容；
+- `src/data/news/library.json`：近 90 天的 AI Infra 工程与研究长读；
 - `src/data/news/archive/YYYY-MM-DD.json`：周报所需的七日公开数据。
 
 本地可运行：
@@ -64,7 +65,11 @@ npm run news:fetch
 
 信源配置位于 `scripts/news-sources.mjs`，目前覆盖论文与研究、AI 推理框架发布、PyTorch/NVIDIA/AMD 等工程博客、央行与国际机构原文和多地区国际媒体。排序会额外提升 inference、serving、kernel、compiler、GPU/NPU、quantization、attention 等技术信号的权重；arXiv 条目还会经过标题关键词过滤，避免泛化的分布式系统论文挤占版面。
 
-网页支持按“研究 / 工程 / 发布 / 机构 / 分析 / 报道”筛选、全文搜索、按时效或信号强度排序，并可将条目保存到只存在浏览器本机的阅读清单。自动聚合不等于事实核查，所有条目始终保留原始来源链接。
+页面分为每日信号、技术长读、历史归档、阅读清单四个视图，支持来源类别、技术主题、关键词组合筛选。归档按日期延迟加载。长读从工程/研究来源中按 AI Infra 关键词筛选，保留 90 天内文章，每来源最多 8 篇；这是自动筛选，不是逐篇人工审读。每日信号保留 48 小时时间窗口，每个来源最多 3 条，避免单个高频媒体挤占板块。
+
+收藏保存文章快照（标题、摘要、链接等公开元数据），每日数据更新后仍可阅读。旧版编号收藏会尝试从归档恢复；存储失败会在页面提示，不阻止阅读。支持导出 JSON 到用户本机；收藏不上传、不进入仓库。订阅状态目录显示最近采集是否成功、各来源收录数量；自动聚合不等于事实核查，所有条目始终保留原始来源链接。
+
+采集器优先选择 Atom HTML alternate 链接，拒绝返回 HTML 错误页的伪成功响应，并在所有来源均无可用条目时保留上一版数据。单次临时连接失败会重试一次，同日归档合并已收录条目，避免较晚采集丢失较早数据。`npm run test:news`（Node.js 22.18+）覆盖解析、时间窗口、来源多样性、收藏恢复和筛选。
 
 ## 模型结构实验室
 

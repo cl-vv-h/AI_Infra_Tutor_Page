@@ -13,6 +13,27 @@ export interface NewsItem {
   publishedAt: string
   fetchedAt: string
   score: number
+  topics?: string[]
+}
+
+export interface NewsSourceState {
+  name: string
+  url: string
+  country: string
+  category: NewsCategory
+  type: NewsSourceType
+  state: 'ok' | 'unavailable' | 'invalid'
+  httpStatus?: number
+  entryCount: number
+  latestPublishedAt: string | null
+  selectedCount: number
+  libraryCount: number
+}
+
+export interface NewsLibraryData {
+  generatedAt: string | null
+  lookbackDays: number
+  items: NewsItem[]
 }
 
 export interface DailyNewsData {
@@ -20,6 +41,8 @@ export interface DailyNewsData {
   status: 'ready' | 'empty' | 'seed'
   sourceCount: number
   failedSourceCount: number
+  lookbackHours?: number
+  sourceStates?: NewsSourceState[]
   items: NewsItem[]
 }
 

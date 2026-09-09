@@ -1,0 +1,509 @@
+{
+  "generatedAt": "2026-09-09T12:21:23.797Z",
+  "lookbackDays": 90,
+  "items": [
+    {
+      "id": "b7cb3c7790582368",
+      "category": "ai",
+      "title": "Distributed Linear Programming on GPU Clusters at Extreme Scale",
+      "summary": "Large linear programs can exceed the memory of a single compute node. Although first-order methods replace sparse factorizations with GPU-suited matrix-vector products, other solver phases can reintroduce a single-node memory limit. We present SHARDLP, a distributed GPU LP solver that keeps the matrix and primal-dual state partitioned from sharded input through solution output. On the Google PDLP benchmark, SHARDLP reaches the published criterion on nine of eleven instances, compared with eight in the published CPU",
+      "url": "https://arxiv.org/abs/2609.09108v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-08T17:43:32.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 28.3,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "4f1999159a01524b",
+      "category": "ai",
+      "title": "Ozaki 2.5: Engineering the Deconstruction Path of fp64-Emulated Dense Matrix Multiplication on FP8 Tensor Cores",
+      "summary": "FP8 Ozaki II emulates FP64 matrix multiplication by tensor-core products over a CRT residue system; converting the operands into residue planes (the deconstruction term in the Tensor-Memory Equilibrium model of the companion paper \"FP8 is All You Need, Part 1\") costs integer-pipe and memory resources before tensor instructions issue. This paper engineers that path; every result is a model projection pending measurement. First, a deconstruction-aware model: on the NVIDIA Rubin GPU the emulated rate reaches the arith",
+      "url": "https://arxiv.org/abs/2609.09095v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-08T17:38:03.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 28.3,
+      "topics": [
+        "kernels",
+        "hardware",
+        "training"
+      ]
+    },
+    {
+      "id": "125a1dee6a220363",
+      "category": "ai",
+      "title": "Tools-CC-Bench: a Benchmark Suite for Collective Communication with Compression in HPC and AI Workloads",
+      "summary": "Distributed HPC and LLM workloads increasingly require efficient communication for scalability, yet growing data movement has become a major performance bottleneck. Communication compression can reduce this overhead and complement execution-level optimizations, but its benefits remain difficult to assess because existing benchmarks lack support for diverse backends, realistic datasets, application-specific accuracy metrics, and overlap-induced resource contention. We present CC-Bench, a lightweight, extensible, and",
+      "url": "https://arxiv.org/abs/2609.08739v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-08T13:31:47.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 27.3,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "8a6f4852079ac160",
+      "category": "ai",
+      "title": "Sample-Guided Exact Top-K Selection for Long-Context Sparse Attention",
+      "summary": "Sparse attention bounds downstream attention work by retaining a fixed-size subset of indexed tokens, but its standalone exact Top-$K$ stage must still process materialized score rows whose length grows with context. Production radix selectors discover their first actionable boundary only after a complete-row pass, forcing another row-scale traversal before exact refinement. We observe that locating a compact upper tail requires substantially less resolution than identifying the exact rank boundary, and that fixed-",
+      "url": "https://arxiv.org/abs/2609.08450v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-08T08:51:19.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 26.1,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "5a566062d0bd5f2a",
+      "category": "ai",
+      "title": "A Measurement Study of LLM Inference Trade-offs Across Edge Continuum Hardware",
+      "summary": "Large language models (LLMs) are increasingly used as backends for intelligent web services, but serving them across the edge continuum requires balancing quality, latency, model footprint, and energy. This paper presents a controlled measurement study of self-hosted LLM inference across edge and near-edge deployment nodes: an NVIDIA Jetson AGX Orin and a near-edge server with CPU-only and GPU-enabled inference modes. We evaluate multiple open-weight LLMs and quantization variants using a fixed question-answering w",
+      "url": "https://arxiv.org/abs/2609.08307v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-08T06:28:32.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 25.5,
+      "topics": [
+        "inference",
+        "hardware",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "d4f4e6b9e3548673",
+      "category": "ai",
+      "title": "GLM 5.3 Optimizations, Part 1: Hybrid HiSparse Offloading in vLLM",
+      "summary": "vLLM integrates HiSparse as a pressure-driven memory tier that composes with the Hybrid Memory Allocator and KV offloading, letting GLM 5.3 requests keep decoding when their KV no longer fits in GPU memory, so concurrency stays high.",
+      "url": "https://vllm.ai/blog/2026-09-08-glm53-part1-hybrid-sparse-offloading",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-08T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 25.9,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "38d9435f2bf8d521",
+      "category": "technology",
+      "title": "veRL on AMD: Production-Ready RL Post-Training on ROCm",
+      "summary": "Reinforcement learning post-training on AMD Instinct GPUs is here — with a turnkey container, AITER-accelerated vLLM and SGLang rollout, and accuracy validated on both MI300 and MI355.",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/verl/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-08T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 25.9,
+      "topics": [
+        "inference",
+        "hardware",
+        "training"
+      ]
+    },
+    {
+      "id": "360230b8e2d9c4db",
+      "category": "technology",
+      "title": "Efficiently Serving NVFP4 Models on AMD Instinct™ MI350X/MI355X Accelerators via Online NVFP4 to Quark MXFP4 Requantization",
+      "summary": "A growing share of frontier open-weight models are available in NVFP4 format, but on some AMD GPUs (MI350X / MI355X), FP4 compute support is limited to MXFP4. This means NVFP4 checkpoints couldn’t run on the native 4-bit acceleration path these GPUs provide.",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/nvfp4-to-mxfp4/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-08T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 25.9,
+      "topics": [
+        "inference",
+        "hardware",
+        "training"
+      ]
+    },
+    {
+      "id": "9a61b86b4e21c9f2",
+      "category": "ai",
+      "title": "vLLM x AgentX: Optimizing for Real-World Agentic Serving",
+      "summary": "How vLLM optimizes KV cache management, parallelism, scheduling, and P/D disaggregation for agentic workloads, validated on SemiAnalysis AgentX with up to 130K tokens per GPU-second and a 14.6x-106x serving-cost advantage over Opus 5.",
+      "url": "https://vllm.ai/blog/2026-09-08-vllm-agentx",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-08T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 21.9,
+      "topics": [
+        "inference",
+        "hardware"
+      ]
+    },
+    {
+      "id": "5d6f5cd06ea0fe2c",
+      "category": "ai",
+      "title": "GPU-Accelerated Hypergraph Partitioning and Placement to Map SNNs on Neuromorphic Hardware",
+      "summary": "SNNs running on neuromorphic hardware use spikes to achieve sparse and energy-efficient communication over a mesh of cores. In turn, system performance heavily depends on the assignment of neurons to cores: the mapping. Since hardware features inter-core multicast and intra-core replication of spikes, we model SNNs as hypergraphs to exploit both opportunities for reducing communication traffic. Mapping thus comprises two NP-hard problems: hypergraph partitioning and placement on the lattice of cores. High-quality s",
+      "url": "https://arxiv.org/abs/2609.07577v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-07T14:52:48.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 21.6,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "fe860f25f940a257",
+      "category": "technology",
+      "title": "PyTorch x Hugging Face in Bengaluru: Building India’s Next Generation of ML Systems Contributors",
+      "summary": "TL;DR More than 170 students, engineers, researchers, and open-source contributors gathered in Bengaluru for a technical evening hosted by Red Hat and Hugging Face around PyTorch, large-scale inference, reinforcement learning...",
+      "url": "https://pytorch.org/blog/pytorch-x-hugging-face-in-bengaluru-building-indias-next-generation-of-ml-systems-contributors/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-07T13:05:37.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 23.2,
+      "topics": [
+        "inference",
+        "training"
+      ]
+    },
+    {
+      "id": "3079d03f11cc072f",
+      "category": "ai",
+      "title": "Serving LLMs on Tenstorrent Hardware: Inside the vLLM TT Plugin",
+      "summary": "Tenstorrent accelerators join vLLM as an out-of-tree platform plugin, driven by mesh-architecture choices: phase-based scheduling, single-process data parallelism on Galaxy, on-device sampling with host fallback, and async decode overlap.",
+      "url": "https://vllm.ai/blog/2026-09-07-vllm-tt-plugin",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-07T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 19,
+      "topics": [
+        "inference",
+        "hardware"
+      ]
+    },
+    {
+      "id": "02fd1a092949f146",
+      "category": "technology",
+      "title": "Introducing context-aware vulnerability discovery and remediation with Cloudflare Managed Defense and OpenAI Daybreak models",
+      "summary": "Use production traffic and security signals to prioritize findings, prepare edge mitigations when safe, and propose code patches. By combining WAF data with OpenAI Daybreak models, Vulnerability Discovery and Remediation helps teams identify and patch the most critical threats first.",
+      "url": "https://blog.cloudflare.com/vulnerability-discovery-remediation/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-03T21:03:02.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 22,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "6c30037871f1eb5a",
+      "category": "technology",
+      "title": "Enabling DeepSeek-V4-Flash Training on AMD Instinct MI355X GPUs with Primus",
+      "summary": "DeepSeek-AI released the DeepSeek-V4 series on April 24, 2026: a preview pair of MIT-licensed Mixture-of-Experts models, with DeepSeek-V4-Flash at 284B total parameters (13B activated) and a one-million-token context window. Flash pushes sparse attention further than any open-weight model before it: its 43 transformer layers interleave three different attention types, each layer sits inside a hyper-connection block rather than a plain residual, and every token is routed through 256 experts. Each of those choices br",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/primus-deepseek-v4/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 23,
+      "topics": [
+        "hardware",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "83d1a4db03fd47f0",
+      "category": "technology",
+      "title": "PyTorch 2.14 Release Blog",
+      "summary": "We are excited to announce the release of PyTorch® 2.14 (release notes)! The PyTorch 2.14 release features the following changes: NVGEMM brings CuTeDSL-generated CUTLASS kernels to Inductor, with epilogue fusion,...",
+      "url": "https://pytorch.org/blog/pytorch-2-14-release-blog/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-02T18:41:48.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 23,
+      "topics": [
+        "kernels"
+      ]
+    },
+    {
+      "id": "55b2e72090a299d4",
+      "category": "ai",
+      "title": "MiniMax H3 on vLLM-Omni: From System-Wide Optimization to Real-Time Serving with FastVideo’s FastH3",
+      "summary": "How vLLM-Omni optimizes and scales the complete MiniMax H3 stack, then integrates FastVideo’s four-step FastH3 for generation faster than playback.",
+      "url": "https://vllm.ai/blog/2026-09-01-minimax-h3-production-serving",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-01T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 23,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "8c6d72908f3d5ec8",
+      "category": "technology",
+      "title": "Optimizing ATOM and vLLM-ATOM for High-Interactivity Inference",
+      "summary": "When you type a question into a chat assistant, ask a coding agent to make an edit, or watch tokens stream back from a model, what you feel is not throughput. You feel responsiveness. The pause before the first word appears, and the pace at which each following word arrives, decide whether an assistant feels instant or sluggish. As LLMs move into interactive assistants, coding agents, and multi-step tool-calling loops, this responsiveness — how quickly the system reacts to a single user — has become a first-class p",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/atom-high-interactivity-mi355/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-01T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 23,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "122faf6f57dccec8",
+      "category": "technology",
+      "title": "A Deep Dive into LDS Optimizations on AMD Instinct MI450 GPUs",
+      "summary": "The first two authors (Plavsic, Zaghen) contributed equally to this work.",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/mi450-lds-optimization/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-28T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 19,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "9d9a5f12adbdb012",
+      "category": "technology",
+      "title": "4-bit KV Caching in LMCache: Offloading Quantized KV Beyond HBM for Context-Heavy Agents on AMD MI355X",
+      "summary": "As agents carry ever-longer context from turn to turn, the KV cache becomes the resource that runs out first. Two techniques ease that pressure from different angles: KV quantization makes each cached token smaller, while a hierarchical cache like LMCache spills cold KV to CPU DRAM. The two have mostly been developed independently.",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/4bit-KV-LMcache/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-28T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 19,
+      "topics": [
+        "inference",
+        "hardware",
+        "training"
+      ]
+    },
+    {
+      "id": "69a99b2b8b269f00",
+      "category": "technology",
+      "title": "ROCm 10.0: A Decade of Open Compute, Built for the Age of Agentic AI",
+      "summary": "AMD shipped ROCm 1.0 in April 2016: an open-source GPU compute stack built around a C++ compiler and a GPU programming language called HIP, aimed at high-performance computing. A decade later, the same platform trains and serves frontier AI models across industries and enables nearly every compute application benefiting from GPUs.",
+      "url": "https://rocm.blogs.amd.com/ecosystems-and-partners/rocm-x-blog/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-27T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 23,
+      "topics": [
+        "kernels",
+        "hardware"
+      ]
+    },
+    {
+      "id": "52fc0429abc504a0",
+      "category": "technology",
+      "title": "Enabling Physical AI Agents with Lemonade",
+      "summary": "In this blog we will demonstrate how to run local agents enabled by VLMs (Vision-Language Models) hosted by the Lemonade framework in the domain of robot control. These models allowed us to run an interactive robotic arm manipulation simulation entirely locally, showing the effectiveness of Lemonade for Physical AI.",
+      "url": "https://rocm.blogs.amd.com/ecosystems-and-partners/rai-lemonade-agents/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-25T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 23,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "beda9a47a9cb61ff",
+      "category": "ai",
+      "title": "Exploring Speculative Decoding in vLLM on AMD GPUs",
+      "summary": "A practical guide to speculative decoding in vLLM on AMD GPUs, covering draft-and-verify mechanics, MTP, EAGLE-3, DFlash, DSpark, configuration, tuning, and benchmark results.",
+      "url": "https://vllm.ai/blog/2026-08-23-speculative-decoding-amd-gpus",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-23T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 19,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "84c1535d7778b7e8",
+      "category": "ai",
+      "title": "Large-Scale Sharded Weight Transfer with Ray Direct Transport (RDT) in vLLM",
+      "summary": "We implement a native sharded weight transfer engine in vLLM utilizing Ray Direct Transport (RDT), achieving weight transfer for the Kimi K2 model in BF16 on 48 8xH100 nodes in 7.53s",
+      "url": "https://vllm.ai/blog/2026-08-22-rdt-weight-transfer",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-22T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 23,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "3b2e029bd22913b7",
+      "category": "technology",
+      "title": "Say it once: Introducing Bot Preference Sync",
+      "summary": "Cloudflare's new Bot Preference Sync automatically aligns your robots.txt file with your AI bot policies for Search, Agent, and Training. Easily manage which bots access your content without maintaining static files.",
+      "url": "https://blog.cloudflare.com/bot-preference-sync/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-21T23:19:57.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 18,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "8e7a215e81c91e39",
+      "category": "ai",
+      "title": "IsoExec: Unified Execution to Eliminate Trainer-Inference Mismatch in SkyRL",
+      "summary": "IsoExec unifies numerical execution across SkyRL's vLLM and Megatron runtimes, reducing the average rollout-versus-training logprob difference below 1e-6 on Qwen3.5-35B-A3B with 25% overhead.",
+      "url": "https://vllm.ai/blog/2026-08-21-isoexec",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-21T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 19,
+      "topics": [
+        "inference",
+        "training"
+      ]
+    },
+    {
+      "id": "37f4488a006f7f6a",
+      "category": "ai",
+      "title": "VeRL-Omni v0.2.0: Faster Diffusion RL and Stable Omni Training",
+      "summary": "A release focused on higher-throughput diffusion rollout, reusable omni adapters, and broader recipe coverage.",
+      "url": "https://vllm.ai/blog/2026-08-20-verl-omni-v0-2-0",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-20T00:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 23,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "0f9dbd11baeb4e08",
+      "category": "technology",
+      "title": "How Cloudflare detects MCP traffic and helps secure it",
+      "summary": "Cloudflare Gateway identifies MCP requests using protocol-level heuristics. Security teams can use that signal to find shadow MCP traffic, enforce Portal-only access for approved servers, and block direct connections on managed network paths.",
+      "url": "https://blog.cloudflare.com/mcp-security-updates/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-14T13:12:12.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 22,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "03ce2340c2fb4180",
+      "category": "technology",
+      "title": "Serving the most critical missions: Cloudflare for Government achieves FedRAMP Class D (High) Certified status",
+      "summary": "Cloudflare for Government achieves FedRAMP Class D (High) Certified status. We also announce our commitment to pursue DoD IL4 authorization. Cloudflare brings world-class security, performance, and developer products to the public sector.",
+      "url": "https://blog.cloudflare.com/fedramp-class-d-certification/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-10T13:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "security"
+      ]
+    },
+    {
+      "id": "b23473fddc69d373",
+      "category": "technology",
+      "title": "Tame Dependabot: Group your updates, slow the cadence, keep security fast",
+      "summary": "Dependabot keeps your dependencies current, but its defaults can flood your repository with pull requests. Here's how grouping updates, slowing the cadence, and keeping security fixes fast cut the noise on a Microsoft open source project. The post Tame Dependabot: Group your updates, slow the cadence, keep security fast appeared first on The GitHub Blog .",
+      "url": "https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/",
+      "source": "GitHub Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-07-29T16:00:00.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 22,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "f5f05c83a0e64a43",
+      "category": "ai",
+      "title": "Introducing Gemini 3.5 Flash Cyber",
+      "summary": "Google introduces Gemini 3.5 Flash Cyber, a lightweight cybersecurity model to find and patch vulnerabilities.",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-5-flash-cyber/",
+      "source": "DeepMind",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "research",
+      "publishedAt": "2026-07-17T15:00:11.000Z",
+      "fetchedAt": "2026-09-09T12:21:23.797Z",
+      "score": 22,
+      "topics": [
+        "security"
+      ]
+    }
+  ]
+}

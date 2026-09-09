@@ -10,6 +10,7 @@
     "preview": "vite preview --configLoader runner",
     "check": "tsc -b --noEmit",
     "test:models": "node --experimental-strip-types --test tests/model-lab.test.mjs",
+    "test:news": "node --experimental-strip-types --test tests/news-core.test.mjs tests/news-reader.test.mjs",
     "sync:curriculum": "node scripts/sync-curriculum.mjs",
     "news:fetch": "node scripts/fetch-news.mjs",
     "news:weekly:check": "node scripts/validate-weekly-report.mjs"
