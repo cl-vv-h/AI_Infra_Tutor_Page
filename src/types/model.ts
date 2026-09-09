@@ -29,6 +29,7 @@ export interface ArchitectureNode {
   knowledge: ModelKnowledgeLink[]
   tone: 'input' | 'attention' | 'ffn' | 'memory' | 'output'
   layerRange?: string
+  weightlessNote?: string
 }
 
 export interface ModelArchitecture {
@@ -43,6 +44,13 @@ export interface ModelArchitecture {
   configUrl: string
   configLabel: string
   supportedTp: TensorParallelSize[]
+  execution: {
+    maxContext: number
+    contextNote?: string
+    denseLayers: number
+    cache: { kind: 'gqa' } | { kind: 'mla'; latentWidth: number; ropeWidth: number }
+    expertIntermediateSize?: number
+  }
   metrics: ModelMetric[]
   dimensions: {
     hiddenSize: number

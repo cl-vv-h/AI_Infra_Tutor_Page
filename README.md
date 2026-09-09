@@ -68,13 +68,19 @@ npm run news:fetch
 
 ## 模型结构实验室
 
-模型结构数据位于 `src/data/models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供三类代表性结构：
+模型结构数据位于 `src/data/models.ts` 与 `src/data/qwen-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供五个代表模型：
 
 - Llama 3.1 8B：Dense、GQA、SwiGLU；
 - DeepSeek-V3：MLA、DeepSeekMoE、MTP；
-- GLM-4.7-Flash：MLA、Sparse MoE、MTP。
+- GLM-4.7-Flash：MLA、Sparse MoE；
+- Qwen3-8B：GQA、QK-Norm、Dense SwiGLU；
+- Qwen3-30B-A3B：GQA、QK-Norm、128 experts / Top-8 MoE。
 
-每个模型都有可直接分享的 Hash 路由，例如 `#/models/deepseek-v3`。模块支持悬浮预览与点击锁定；Prefill/Decode 和 TP 控件会改变当前运行语境与每卡权重 Shape。新增模型只需扩展 `modelArchitectures` 注册表，无需重写页面。
+每个模型都有可直接分享的 Hash 路由，例如 `#/models/qwen3-30b-a3b`。模块支持悬浮预览与点击锁定；窄屏点击打开原生模态详情，可用 Esc 关闭。Layer 控件展开一个真实 Decoder 层，显示两次残差连接、两次 RMSNorm，并按层号选择 Dense 或 MoE，其他层折叠。图中为自回归主干，不包含 MTP 辅助预测分支。
+
+KV Cache 容量实验支持 B、S、TP、缓存字节数与 Prefill/Decode 切换，驱动数字化输入输出 Shape。计算明确区分 GQA head 分片/复制与 MLA latent 复制；展示全部主干层的每卡、全 TP 组逻辑缓存量，不将其误作部署总显存。模型的 `execution` 字段声明上下文上限、Dense 层数与缓存布局。新增模型须同时提供官方配置来源、这些元数据及模块权重。
+
+`npm run test:models`（Node.js 22.18+）校验逐层路径、Shape 模板、已知 KV 容量及 TP 复制边界；构建仍兼容 Node.js 20。
 
 ### 每周报告
 

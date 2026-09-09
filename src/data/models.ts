@@ -1,4 +1,5 @@
 import type { ModelArchitecture } from '@/types/model'
+import { qwenArchitectures } from './qwen-models.ts'
 
 export const modelArchitectures: ModelArchitecture[] = [
   {
@@ -13,6 +14,7 @@ export const modelArchitectures: ModelArchitecture[] = [
     configUrl: 'https://huggingface.co/zai-org/GLM-4.7-Flash/blob/main/config.json',
     configLabel: '官方 config.json',
     supportedTp: [1, 2, 4],
+    execution: { maxContext: 202752, denseLayers: 1, cache: { kind: 'mla', latentWidth: 512, ropeWidth: 64 }, expertIntermediateSize: 1536 },
     metrics: [
       { label: 'Decoder Layers', value: '47' },
       { label: 'Hidden Width', value: '2,048' },
@@ -66,6 +68,8 @@ export const modelArchitectures: ModelArchitecture[] = [
           { name: 'q_a_proj', shape: '[768, 2,048]' },
           { name: 'q_b_proj · TP local', shape: '[{localHeads} × 256, 768]' },
           { name: 'kv_a_proj', shape: '[576, 2,048]', note: '512 latent + 64 RoPE' },
+          { name: 'kv_b_proj · TP local', shape: '[{localHeads} × 448, 512]', note: '192 non-RoPE K + 256 V per head' },
+          { name: 'q_a_layernorm / kv_a_layernorm', shape: '[768] / [512]' },
           { name: 'o_proj · TP local', shape: '[2,048, {localHeads} × 256]' },
         ],
         knowledge: [
@@ -84,7 +88,7 @@ export const modelArchitectures: ModelArchitecture[] = [
         subtitle: '每层保存 512 + 64 维',
         description: '长期缓存压缩后的 KV latent 与 RoPE 分量，避免为历史 token 保存完整 K/V heads；Decode 的关键收益来自显存容量与带宽。',
         inputShape: '[N, 512 + 64]',
-        outputShape: '[pages, 576]',
+        outputShape: '[{batch}, {sequence}, 576]',
         weights: [],
         knowledge: [
           { label: 'KV Cache 与显存', to: '/category/kv-cache-memory' },
@@ -103,9 +107,9 @@ export const modelArchitectures: ModelArchitecture[] = [
         outputShape: '[N, 2,048]',
         weights: [
           { name: 'router.gate', shape: '[64, 2,048]' },
-          { name: 'experts.gate_up_proj', shape: '[64, 2 × 1,536, 2,048]' },
-          { name: 'experts.down_proj', shape: '[64, 2,048, 1,536]' },
-          { name: 'shared_expert', shape: '[1 × SwiGLU(2,048 → 1,536 → 2,048)]' },
+          { name: 'experts.gate_up_proj · TP local', shape: '[64, 2 × {expertShard}, 2,048]', note: 'EP = 1；本图仅按 expert 中间维做 TP 切分' },
+          { name: 'experts.down_proj · TP local', shape: '[64, 2,048, {expertShard}]' },
+          { name: 'shared_expert · TP local', shape: '[SwiGLU(2,048 → {expertShard} → 2,048)]' },
         ],
         knowledge: [
           { label: 'Sparse MoE', to: '/category/model-architecture' },
@@ -123,8 +127,8 @@ export const modelArchitectures: ModelArchitecture[] = [
         inputShape: '[N, 2,048]',
         outputShape: '[N, 2,048]',
         weights: [
-          { name: 'gate_up_proj', shape: '[2 × 10,240, 2,048]' },
-          { name: 'down_proj', shape: '[2,048, 10,240]' },
+          { name: 'gate_up_proj · TP local', shape: '[2 × {intermediateShard}, 2,048]' },
+          { name: 'down_proj · TP local', shape: '[2,048, {intermediateShard}]' },
         ],
         knowledge: [{ label: '模型架构基础', to: '/category/model-architecture' }],
         tone: 'ffn',
@@ -162,6 +166,7 @@ export const modelArchitectures: ModelArchitecture[] = [
     configUrl: 'https://huggingface.co/deepseek-ai/DeepSeek-V3-Base/blob/main/config.json',
     configLabel: '官方 config.json',
     supportedTp: [1, 2, 4, 8],
+    execution: { maxContext: 163840, denseLayers: 3, cache: { kind: 'mla', latentWidth: 512, ropeWidth: 64 }, expertIntermediateSize: 2048 },
     metrics: [
       { label: 'Decoder Layers', value: '61' },
       { label: 'Hidden Width', value: '7,168' },
@@ -215,6 +220,7 @@ export const modelArchitectures: ModelArchitecture[] = [
           { name: 'q_a_proj', shape: '[1,536, 7,168]' },
           { name: 'q_b_proj · TP local', shape: '[{localHeads} × 192, 1,536]' },
           { name: 'kv_a_proj', shape: '[576, 7,168]', note: '512 latent + 64 RoPE' },
+          { name: 'q_a_layernorm / kv_a_layernorm', shape: '[1,536] / [512]' },
           { name: 'kv_b_proj · TP local', shape: '[{localHeads} × 256, 512]' },
           { name: 'o_proj · TP local', shape: '[7,168, {localHeads} × 128]' },
         ],
@@ -233,7 +239,7 @@ export const modelArchitectures: ModelArchitecture[] = [
         subtitle: '576 values / token / layer',
         description: '每个历史 token 保存 512 维 KV latent 和 64 维旋转位置分量；相比完整 128-head K/V，显著降低长上下文的缓存流量。',
         inputShape: '[N, 512 + 64]',
-        outputShape: '[pages, 576]',
+        outputShape: '[{batch}, {sequence}, 576]',
         weights: [],
         knowledge: [
           { label: 'KV Cache 与显存', to: '/category/kv-cache-memory' },
@@ -251,8 +257,8 @@ export const modelArchitectures: ModelArchitecture[] = [
         inputShape: '[N, 7,168]',
         outputShape: '[N, 7,168]',
         weights: [
-          { name: 'gate_up_proj', shape: '[2 × 18,432, 7,168]' },
-          { name: 'down_proj', shape: '[7,168, 18,432]' },
+          { name: 'gate_up_proj · TP local', shape: '[2 × {intermediateShard}, 7,168]' },
+          { name: 'down_proj · TP local', shape: '[7,168, {intermediateShard}]' },
         ],
         knowledge: [{ label: '模型架构基础', to: '/category/model-architecture' }],
         tone: 'ffn',
@@ -268,9 +274,9 @@ export const modelArchitectures: ModelArchitecture[] = [
         outputShape: '[N, 7,168]',
         weights: [
           { name: 'router.gate', shape: '[256, 7,168]' },
-          { name: 'experts.gate_up_proj', shape: '[256, 2 × 2,048, 7,168]' },
-          { name: 'experts.down_proj', shape: '[256, 7,168, 2,048]' },
-          { name: 'shared_expert', shape: '[1 × SwiGLU(7,168 → 2,048 → 7,168)]' },
+          { name: 'experts.gate_up_proj · TP local', shape: '[256, 2 × {expertShard}, 7,168]', note: 'EP = 1；本图仅按 expert 中间维做 TP 切分' },
+          { name: 'experts.down_proj · TP local', shape: '[256, 7,168, {expertShard}]' },
+          { name: 'shared_expert · TP local', shape: '[SwiGLU(7,168 → {expertShard} → 7,168)]' },
         ],
         knowledge: [
           { label: 'Sparse MoE', to: '/category/model-architecture' },
@@ -311,6 +317,7 @@ export const modelArchitectures: ModelArchitecture[] = [
     configUrl: 'https://github.com/meta-llama/llama-models/blob/main/models/sku_list.py',
     configLabel: '官方架构配置',
     supportedTp: [1, 2, 4, 8],
+    execution: { maxContext: 131072, denseLayers: 32, cache: { kind: 'gqa' } },
     metrics: [
       { label: 'Decoder Layers', value: '32' },
       { label: 'Hidden Width', value: '4,096' },
@@ -381,7 +388,7 @@ export const modelArchitectures: ModelArchitecture[] = [
         subtitle: '8 KV heads · 128 head dim',
         description: '每层为历史 token 保存 K 与 V。Tensor Parallel 下 8 个 KV heads 分片到各 rank；Paged Attention 再把序列映射到非连续显存页。',
         inputShape: '[N, 2, {localKvHeads}, 128]',
-        outputShape: '[pages, 2, {localKvHeads}, 128]',
+        outputShape: '[{batch}, {sequence}, 2, {localKvHeads}, 128]',
         weights: [],
         knowledge: [
           { label: 'KV Cache 与显存', to: '/category/kv-cache-memory' },
@@ -427,6 +434,7 @@ export const modelArchitectures: ModelArchitecture[] = [
       },
     ],
   },
+  ...qwenArchitectures,
 ]
 
 export function getModelArchitecture(id?: string) {
