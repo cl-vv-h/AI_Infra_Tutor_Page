@@ -103,6 +103,10 @@ npm run news:fetch
 
 账本只统计已展示的 Decoder 张量，不是完整 checkpoint 参数统计或部署显存预测。它不包含 Embedding/共享 LM Head、视觉编码器、MTP、未展示的 buffer、激活、KV/循环状态、运行时工作区、量化元数据或打包对齐。MoE 在 EP=1 假设下统计所有常驻专家，不以 Top-k 激活参数替代；Norm、路由器和部分 KV 投影的 TP 复制按图解约定保留。低位宽只用于理论载荷对照，不宣称所有权重或硬件支持对应量化。参考 [Transformers 量化概念](https://huggingface.co/docs/transformers/main/en/quantization/concept_guide)。
 
+“缓存预算反算”输入每卡**已经留给 KV／循环状态**的 GiB 预算，分别计算固定 S 时的最大等长并发 B、固定 B 时的最长 S，并可单独带回图解。两个最大值各自固定另一变量，不能直接组合。计算沿用各模型的 KV 分片／复制、完整／滑窗和混合循环状态公式；S 只在 1024 至官方配置上限内求边界，B 的理论值不截断，但应用按钮最多带入图解支持的 64。零预算和不足一个请求显示明确提示，非法输入停止计算。
+
+预算通过 Hash URL 的 `budget` 参数分享，范围 0–1024 GiB、最多三位小数；缺省 8 GiB 只是示例，不是硬件检测结果。不读取设备或上传输入。预算需事先扣除权重、激活、图捕获、通信缓冲和安全余量；结果不计页尾填充、量化元数据、前缀共享或推测解码额外副本，仅为当前逻辑缓存布局的容量边界，不是吞吐预测或部署保证。引擎实际显存还受上下文、并发及 CUDA Graph 等影响，参见 [vLLM 显存管理说明](https://docs.vllm.ai/en/stable/configuration/conserving_memory/)。
+
 模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts`、`src/data/mistral-models.ts`、`src/data/gemma-models.ts`、`src/data/phi-models.ts` 与 `src/data/olmo-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供十二个代表模型：
 
 - Llama 3.1 8B：Dense、GQA、SwiGLU；

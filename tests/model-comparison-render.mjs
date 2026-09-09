@@ -97,6 +97,17 @@ try {
     }
   }
   const unknownModel = renderExplorer('/models/not-a-real-model?b=999')
+  const capacity = renderExplorer('/models/llama-3-1-8b?b=4&s=4096&tp=4&budget=0.5')
+  for (const text of ['缓存预算反算', 'value="0.5"', '需要 512 MiB / 卡', '预算内剩余 0 B', '应用 B=4', '不能将各自最大 B 和最大 S 同时组合']) assert.ok(capacity.includes(text), text)
+  assert.match(capacity, /<details open=""/)
+  const zeroCapacity = renderExplorer('/models/llama-3-1-8b?budget=0')
+  for (const text of ['超出预算 512 MiB', '无可用 S', 'disabled=""', '应用 B=0']) assert.ok(zeroCapacity.includes(text), text)
+  assert.doesNotMatch(zeroCapacity, /NaN|Infinity/)
+  const largeCapacity = renderExplorer('/models/llama-3-1-8b?budget=16')
+  assert.match(largeCapacity, /应用 B=64/)
+  assert.match(largeCapacity, /图解控件上限为 64/)
+  assert.match(largeCapacity, /131,072/)
+  assert.match(renderExplorer('/models/llama-3-1-8b?budget=-1'), /budget 参数无效/)
   const olmo = renderExplorer('/models/olmo-2-1124-7b?layer=31&node=qk-norm&tp=4&b=4&s=4096')
   for (const text of ['Q/K Norm · 跨全部 heads', '8 GiB', '32 GiB', '[4096]', '[4, 4096, 2, 32, 128]', '汇集式 Attention TP']) assert.ok(olmo.includes(text), text)
   const olmoIds = [...olmo.matchAll(/id="model-node-([^"]+)"/g)].map((match) => match[1])

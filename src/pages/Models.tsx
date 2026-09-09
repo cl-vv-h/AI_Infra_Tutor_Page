@@ -12,6 +12,7 @@ import { explorerHref, explorerParams, parseExplorer, selectExplorerLayer } from
 import type { ExplorerState } from '@/lib/model-explorer'
 import ModelModuleFinder from '@/components/ModelModuleFinder'
 import ModelWeightBudget from '@/components/ModelWeightBudget'
+import CacheCapacityPlanner from '@/components/CacheCapacityPlanner'
 
 function Inspector({ node, model, scenario, preview = false }: { node: ArchitectureNode; model: ModelArchitecture; scenario: InferenceScenario; preview?: boolean }) {
   return <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#0c131c]">
@@ -152,12 +153,13 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
       {notices.length > 0 && <p role="status" className="mt-4 rounded-xl border border-amber-200/20 bg-amber-200/5 p-4 text-sm leading-6 text-amber-100">{notices.join(' ')}</p>}
       <ModelLayerMap model={model} selectedLayer={effectiveLayer} onSelect={(value) => changeLayer(value)} />
       <CacheWorkbench model={model} layer={effectiveLayer} scenario={scenario} onBatch={(batch) => updateScenario({ batch })} onSequence={(sequence) => updateScenario({ sequence })} onBytes={(cacheBytes) => updateScenario({ cacheBytes })} />
+      <CacheCapacityPlanner model={model} scenario={scenario} budgetGiB={state.cacheBudgetGiB} onBudget={(cacheBudgetGiB) => update({ cacheBudgetGiB }, true)} onBatch={(batch) => updateScenario({ batch })} onSequence={(sequence) => updateScenario({ sequence })} />
       <ModelModuleFinder model={model} layer={effectiveLayer} selectedId={selected.id} onSelect={(node, layer) => inspect(node, layer, true)} />
       <ModelWeightBudget model={model} layer={effectiveLayer} tp={effectiveTp} bits={state.weightBits ?? 16} selectedId={selected.id} onBits={(weightBits) => update({ weightBits })} onSelect={(node) => inspect(node, effectiveLayer, true)} />
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#0b1119] p-4">
         <p className="text-sm text-white/70">已选 <span className="font-mono text-cyan-100">Layer {effectiveLayer}</span> · {selected.title}</p>
         <div className="flex flex-wrap gap-3"><button type="button" onClick={() => inspect(selected, effectiveLayer, true)} className="rounded-xl border border-white/15 px-3 py-2.5 text-sm text-cyan-100 hover:bg-white/5">查看已选模块</button><button type="button" onClick={copyExplorer} className="inline-flex items-center gap-2 rounded-xl border border-cyan-200/25 px-3 py-2.5 text-sm text-cyan-100 hover:bg-white/5">{copyStatus === 'copied' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}复制当前图解</button></div>
-        <p role="status" className="w-full text-sm text-white/55">{copyStatus === 'copied' ? '已复制模型、层、已选模块、推理条件和权重位宽；不包含临时悬浮预览。' : copyStatus === 'failed' ? '无法自动复制，请选择下方链接手动复制。' : '链接保留层号、已选模块、阶段、B、S、TP、缓存精度和权重位宽。窄屏可点击“查看已选模块”打开详情。'}</p>
+        <p role="status" className="w-full text-sm text-white/55">{copyStatus === 'copied' ? '已复制模型、层、已选模块、推理条件、权重位宽和缓存预算；不包含临时悬浮预览。' : copyStatus === 'failed' ? '无法自动复制，请选择下方链接手动复制。' : '链接保留层号、已选模块、阶段、B、S、TP、缓存精度、权重位宽和缓存预算。窄屏可点击“查看已选模块”打开详情。'}</p>
         {copyStatus === 'failed' && <input readOnly aria-label="手动复制图解链接" value={copyState?.url ?? ''} onFocus={(event) => event.target.select()} className="w-full rounded-xl border border-white/15 bg-black/20 p-3 text-sm text-white" />}
       </div>
 

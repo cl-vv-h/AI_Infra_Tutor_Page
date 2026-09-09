@@ -2,12 +2,14 @@ import type { ArchitectureNode, ModelArchitecture, TensorParallelSize } from '..
 import type { InferenceScenario } from './model-lab.ts'
 import { attentionKind, decoderNodes, layerCacheNode } from './model-lab.ts'
 import type { WeightBits } from './model-weights.ts'
+import { defaultCacheBudgetGiB, parseCacheBudget } from './cache-capacity.ts'
 
 export interface ExplorerState {
   layer: number
   nodeId: string
   scenario: InferenceScenario
   weightBits?: WeightBits
+  cacheBudgetGiB?: number
 }
 
 export function explorerNodes(model: ModelArchitecture, layer: number) {
@@ -35,19 +37,23 @@ export function parseExplorer(params: URLSearchParams, model: ModelArchitecture)
   const tp = integer('tp', model.supportedTp.includes(4) ? 4 : model.supportedTp[0], (n) => model.supportedTp.includes(n as TensorParallelSize), model.supportedTp.join('/')) as TensorParallelSize
   const cacheBytes = integer('bytes', 2, (n) => n === 1 || n === 2, '1/2') as 1 | 2
   const weightBits = integer('wbits', 16, (n) => [4, 8, 16, 32].includes(n), '4/8/16/32') as WeightBits
+  const requestedBudget = params.get('budget')
+  const budget = requestedBudget === null ? defaultCacheBudgetGiB : parseCacheBudget(requestedBudget)
+  if (budget === null) notices.push('budget 参数无效（0–1024 GiB，最多三位小数），已恢复为 8 GiB。')
+  const cacheBudgetGiB = budget ?? defaultCacheBudgetGiB
   const phase = params.get('phase') === 'prefill' ? 'prefill' : 'decode'
   if (params.has('phase') && !['prefill', 'decode'].includes(params.get('phase')!)) notices.push('未知推理阶段，已恢复为 Decode。')
   const nodes = explorerNodes(model, layer)
   const requested = params.get('node')
   const nodeId = nodes.some((node) => node.id === requested) ? requested! : attentionKind(model, layer)
   if (requested !== null && requested !== nodeId) notices.push(`该模块不在 Layer ${layer} 中，已选择本层注意力。可用模块检索跳转到适用层。`)
-  const state: ExplorerState = { layer, nodeId, scenario: { phase, batch, sequence, tp, cacheBytes }, ...(weightBits !== 16 ? { weightBits } : {}) }
+  const state: ExplorerState = { layer, nodeId, scenario: { phase, batch, sequence, tp, cacheBytes }, ...(weightBits !== 16 ? { weightBits } : {}), ...(cacheBudgetGiB !== defaultCacheBudgetGiB ? { cacheBudgetGiB } : {}) }
   return { state, notices, nodes }
 }
 
 export function explorerParams(state: ExplorerState) {
   const { phase, batch, sequence, tp, cacheBytes } = state.scenario
-  return new URLSearchParams({ layer: String(state.layer), node: state.nodeId, phase, b: String(batch), s: String(sequence), tp: String(tp), bytes: String(cacheBytes), ...(state.weightBits && state.weightBits !== 16 ? { wbits: String(state.weightBits) } : {}) })
+  return new URLSearchParams({ layer: String(state.layer), node: state.nodeId, phase, b: String(batch), s: String(sequence), tp: String(tp), bytes: String(cacheBytes), ...(state.weightBits && state.weightBits !== 16 ? { wbits: String(state.weightBits) } : {}), ...(state.cacheBudgetGiB !== undefined && state.cacheBudgetGiB !== defaultCacheBudgetGiB ? { budget: String(state.cacheBudgetGiB) } : {}) })
 }
 
 export function explorerHref(modelId: string, state: ExplorerState) {
