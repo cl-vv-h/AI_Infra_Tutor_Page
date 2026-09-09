@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import { modelArchitectures, getModelArchitecture } from '../src/data/models.ts'
-import { cacheEstimate, decoderNodes, formatShape, localKvHeads, tokenCount } from '../src/lib/model-lab.ts'
+import { attentionKind, cacheEstimate, decoderNodes, formatShape, layerCacheNode, localKvHeads, tokenCount } from '../src/lib/model-lab.ts'
 
 const base = { batch: 1, sequence: 1024, tp: 1, phase: 'decode', cacheBytes: 2 }
 
@@ -48,6 +48,58 @@ test('GLM and DeepSeek switch FFN exactly at their dense-layer boundary', () => 
   }
 })
 
+test('Qwen3.5 layer schedules route full attention and DeltaNet to different states', () => {
+  const dense = getModelArchitecture('qwen3-5-9b')
+  const moe = getModelArchitecture('qwen3-5-35b-a3b')
+  assert.deepEqual(Array.from({ length: 32 }, (_, i) => i).filter((i) => attentionKind(dense, i) === 'gqa'), [3, 7, 11, 15, 19, 23, 27, 31])
+  assert.deepEqual(Array.from({ length: 40 }, (_, i) => i).filter((i) => attentionKind(moe, i) === 'gqa'), [3, 7, 11, 15, 19, 23, 27, 31, 35, 39])
+  assert.equal(decoderNodes(dense, 0)[1].id, 'gdn')
+  assert.equal(layerCacheNode(dense, 0).id, 'recurrent-state')
+  assert.equal(decoderNodes(dense, 3)[1].id, 'gqa')
+  assert.equal(layerCacheNode(dense, 3).id, 'kv-cache')
+  assert.equal(decoderNodes(dense, 3)[4].id, 'ffn')
+  assert.equal(decoderNodes(moe, 3)[4].id, 'moe')
+})
+
+test('hybrid memory uses only eight KV layers plus 24 fixed state layers', () => {
+  const model = getModelArchitecture('qwen3-5-9b')
+  const estimate = cacheEstimate(model, { ...base, tp: 4 })
+  assert.equal(estimate.kvLayers, 8)
+  assert.equal(estimate.recurrentLayers, 24)
+  assert.equal(estimate.kvBytes, 8 * 1024 ** 2)
+  assert.equal(estimate.recurrentBytes, 12 * 1024 ** 2)
+  assert.equal(estimate.convBytes, 384 * 1024)
+  assert.equal(estimate.perRankBytes, 20.375 * 1024 ** 2)
+  const longer = cacheEstimate(model, { ...base, tp: 4, sequence: 4096 })
+  assert.equal(longer.recurrentBytes, estimate.recurrentBytes)
+  assert.equal(longer.convBytes, estimate.convBytes)
+  assert.equal(longer.kvBytes, estimate.kvBytes * 4)
+  assert.equal(longer.perRankBytes, 44.375 * 1024 ** 2)
+})
+
+test('FP8 changes only hybrid KV, and TP head replication does not replicate recurrent matrices', () => {
+  const model = getModelArchitecture('qwen3-5-35b-a3b')
+  const four = cacheEstimate(model, { ...base, tp: 4 })
+  const eight = cacheEstimate(model, { ...base, tp: 8 })
+  const fp8 = cacheEstimate(model, { ...base, tp: 4, cacheBytes: 1 })
+  assert.equal(four.perRankBytes, 25.46875 * 1024 ** 2)
+  assert.equal(eight.kvBytes, four.kvBytes)
+  assert.equal(eight.recurrentBytes * 8, four.recurrentBytes * 4)
+  assert.equal(eight.convBytes * 8, four.convBytes * 4)
+  assert.equal(fp8.kvBytes, four.kvBytes / 2)
+  assert.equal(fp8.recurrentBytes, four.recurrentBytes)
+  assert.equal(fp8.convBytes, four.convBytes)
+})
+
+test('Qwen3.5 full-attention Q projection includes its output gate', () => {
+  const model = getModelArchitecture('qwen3-5-9b')
+  const attention = decoderNodes(model, 3)[1]
+  const projection = attention.weights.find((weight) => weight.name.startsWith('q_proj'))
+  assert.equal(formatShape(projection.shape, model, { ...base, tp: 4 }), '[2 × 4 × 256, 4096]')
+  const state = layerCacheNode(model, 0)
+  assert.equal(formatShape(state.outputShape, model, { ...base, tp: 4 }), '[1, 8, 128, 128] + [1, 2048, 4]')
+})
+
 test('all model layers have a complete residual block and resolvable shapes', () => {
   for (const model of modelArchitectures) {
     for (let layer = 0; layer < model.dimensions.layers; layer++) {
@@ -61,7 +113,7 @@ test('all model layers have a complete residual block and resolvable shapes', ()
         assert.equal(model.dimensions.attentionHeads % tp, 0)
         assert.ok(Number.isInteger(localKvHeads(model, tp)))
         for (const node of [...nodes, ...model.nodes]) {
-          for (const shape of [node.inputShape, node.outputShape, ...node.weights.map((w) => w.shape)]) {
+          for (const shape of [node.inputShape, node.outputShape, ...node.weights.map((w) => w.shape), ...(node.tensors ?? []).map((tensor) => tensor.shape)]) {
             const actual = formatShape(shape, model, { ...base, tp })
             assert.doesNotMatch(actual, /\{|\}|NaN|undefined|\bN\b/, `${model.id} layer ${layer} TP ${tp}: ${actual}`)
           }

@@ -30,6 +30,8 @@ export interface ArchitectureNode {
   tone: 'input' | 'attention' | 'ffn' | 'memory' | 'output'
   layerRange?: string
   weightlessNote?: string
+  phaseNotes?: Record<InferencePhase, string>
+  tensors?: Array<{ label: string; shape: string; note?: string }>
 }
 
 export interface ModelArchitecture {
@@ -43,12 +45,24 @@ export interface ModelArchitecture {
   accent: string
   configUrl: string
   configLabel: string
+  implementationUrl?: string
   supportedTp: TensorParallelSize[]
   execution: {
     maxContext: number
     contextNote?: string
     denseLayers: number
-    cache: { kind: 'gqa' } | { kind: 'mla'; latentWidth: number; ropeWidth: number }
+    cache: { kind: 'gqa' } | { kind: 'mla'; latentWidth: number; ropeWidth: number } | {
+      kind: 'hybrid'
+      layerTypes: Array<'linear_attention' | 'full_attention'>
+      keyHeads: number
+      valueHeads: number
+      keyDim: number
+      valueDim: number
+      convKernel: number
+      convStateSlots: number
+      convBytes: number
+      recurrentBytes: number
+    }
     expertIntermediateSize?: number
   }
   metrics: ModelMetric[]

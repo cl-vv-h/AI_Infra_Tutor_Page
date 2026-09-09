@@ -2,10 +2,11 @@ import { useRef, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ArrowDown, ArrowUpRight, BookOpen, Box, Braces, Database, Layers3, MousePointer2, X } from 'lucide-react'
 import { getModelArchitecture, modelArchitectures } from '@/data/models'
-import { decoderNodes, formatShape, tokenCount } from '@/lib/model-lab'
+import { attentionKind, decoderNodes, formatShape, layerCacheNode, tokenCount } from '@/lib/model-lab'
 import type { InferenceScenario } from '@/lib/model-lab'
 import type { ArchitectureNode, InferencePhase, ModelArchitecture, TensorParallelSize } from '@/types/model'
 import { CacheWorkbench } from '@/components/CacheWorkbench'
+import { ModelLayerMap } from '@/components/ModelLayerMap'
 
 function Inspector({ node, model, scenario }: { node: ArchitectureNode; model: ModelArchitecture; scenario: InferenceScenario }) {
   return <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#0c131c]">
@@ -14,6 +15,7 @@ function Inspector({ node, model, scenario }: { node: ArchitectureNode; model: M
       <h2 className="mt-4 text-xl font-semibold text-white">{node.title}</h2>
       <p className="mt-2 text-sm text-white/60">{node.subtitle}</p>
       <p className="mt-4 text-base leading-7 text-slate-300">{node.description}</p>
+      {node.phaseNotes && <p className="mt-4 rounded-xl border border-cyan-200/20 bg-cyan-200/5 p-3 text-sm leading-6 text-cyan-100"><span className="mr-2 font-mono uppercase">{scenario.phase}</span>{node.phaseNotes[scenario.phase]}</p>}
     </div>
     <div className="grid grid-cols-2 gap-px bg-white/[0.08]">
       {[['INPUT', node.inputShape], ['OUTPUT', node.outputShape]].map(([label, value]) => <div key={label} className="bg-[#0c131c] p-4">
@@ -22,6 +24,7 @@ function Inspector({ node, model, scenario }: { node: ArchitectureNode; model: M
       </div>)}
     </div>
     <div className="p-5">
+      {node.tensors && <div className="mb-5 space-y-3"><h3 className="text-xs tracking-wider text-white/60">INTERMEDIATE TENSORS</h3>{node.tensors.map((tensor) => <div key={tensor.label} className="border-l border-lime-200/40 pl-3"><p className="text-sm text-white/70">{tensor.label}</p><p className="mt-1 break-words font-mono text-sm text-lime-100">{formatShape(tensor.shape, model, scenario)}</p>{tensor.note && <p className="mt-1 text-xs text-white/55">{tensor.note}</p>}</div>)}</div>}
       <div className="flex items-center gap-2 font-mono text-xs tracking-wider text-white/60"><Layers3 className="h-4 w-4" /> WEIGHTS · [OUT, IN]</div>
       <p className="mt-2 text-xs leading-5 text-white/50">TP local 为每卡分片，其余为完整矩阵或复制权重。融合布局为等价示意。</p>
       <div className="mt-4 space-y-3">
@@ -57,8 +60,9 @@ export default function Models() {
   const block = decoderNodes(model, effectiveLayer)
   const embedding = model.nodes.find((node) => node.id === 'embedding')!
   const head = model.nodes.find((node) => node.id === 'lm-head')!
-  const cache = model.nodes.find((node) => node.id === 'kv-cache')!
-  const visibleNodes = [embedding, ...block, cache, head]
+  const cache = layerCacheNode(model, effectiveLayer)
+  const vision = model.nodes.find((node) => node.id === 'vision')
+  const visibleNodes = [embedding, ...block, cache, head, ...(vision ? [vision] : [])]
   const selected = visibleNodes.find((node) => node.id === selectedId) ?? block[1]
   const inspected = visibleNodes.find((node) => node.id === hoveredId) ?? selected
   const isDense = effectiveLayer < model.execution.denseLayers
@@ -95,7 +99,7 @@ export default function Models() {
       <section className="rounded-3xl border border-white/10 bg-[#0b1119]/90 p-3" aria-label="模型与推理配置">
         <div className="flex gap-2 overflow-x-auto pb-1" aria-label="选择模型">
           {modelArchitectures.map((item) => <button key={item.id} type="button" aria-pressed={item.id === model.id}
-            onClick={() => { navigate(`/models/${item.id}`); setLayer(0); setHoveredId(null); setSelectedId(item.execution.cache.kind); }}
+            onClick={() => { navigate(`/models/${item.id}`); setLayer(0); setHoveredId(null); setSelectedId(attentionKind(item, 0)); }}
             className={`min-w-fit rounded-2xl px-4 py-3 text-left transition ${item.id === model.id ? 'bg-white/10 text-white ring-1 ring-cyan-200/30' : 'text-white/60 hover:bg-white/[0.05] hover:text-white'}`}>
             <span className="block text-sm font-semibold">{item.name}</span><span className="mt-1 block font-mono text-xs text-white/50">{item.family}</span>
           </button>)}
@@ -110,6 +114,7 @@ export default function Models() {
         </div>
       </section>
 
+      <ModelLayerMap model={model} selectedLayer={effectiveLayer} onSelect={(value) => { setLayer(value); setHoveredId(null); setSelectedId(attentionKind(model, value)) }} />
       <CacheWorkbench model={model} scenario={scenario} onBatch={setBatch} onSequence={setSequence} onBytes={setCacheBytes} />
 
       <section className="mt-5 grid items-start gap-5 xl:grid-cols-[15rem_minmax(0,1fr)_22rem]">
@@ -120,6 +125,7 @@ export default function Models() {
             <p className="mt-2 text-sm text-white/60">{model.organization} · {model.parameters}<br />{model.activeParameters} active</p>
             <p className="mt-4 text-base leading-7 text-slate-300">{model.description}</p>
             <a href={model.configUrl} target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 text-sm text-cyan-200 hover:text-cyan-100">{model.configLabel}<ArrowUpRight className="h-4 w-4" /></a>
+            {model.implementationUrl && <a href={model.implementationUrl} target="_blank" rel="noreferrer" className="mt-3 inline-flex items-center gap-2 text-sm text-cyan-200 hover:text-cyan-100">参考实现与权重定义<ArrowUpRight className="h-4 w-4" /></a>}
           </div>
           <div className="grid grid-cols-2 gap-2">{model.metrics.map((metric) => <div key={metric.label} className="rounded-2xl border border-white/10 bg-white/[0.025] p-3"><div className="font-mono text-xs text-white/50">{metric.label}</div><div className="mt-2 text-sm font-semibold text-white/90">{metric.value}</div></div>)}</div>
           <p className="px-2 text-sm leading-6 text-white/60">图中展开第 {effectiveLayer} 层，其余层折叠。标准自回归主干，不包含 MTP 辅助预测分支。EP = 1，PP = 1。</p>
@@ -127,7 +133,7 @@ export default function Models() {
 
         <div className="model-canvas rounded-3xl border border-white/10 bg-[#080d13] p-4 sm:p-6">
           <div className="mb-5 flex flex-wrap items-center justify-between gap-2 text-sm text-white/60"><span>{phase === 'prefill' ? 'Prefill · 无前缀缓存，处理完整输入' : 'Decode · 每请求新增 1 token'}</span><span className="font-mono text-cyan-200">N = {tokenCount(scenario).toLocaleString('en-US')}</span></div>
-          {nodeButton(embedding)}{flowLine}
+          {vision ? <><div className="grid gap-3 sm:grid-cols-2">{nodeButton(embedding)}{nodeButton(vision)}</div><div className="mx-auto mt-3 max-w-[25rem] rounded-xl border border-white/15 p-3 text-center text-sm text-white/70">↓ 视觉输出替换对应占位 embedding ↓<br /><span className="font-mono text-xs text-cyan-100">{formatShape('[N, ' + model.dimensions.hiddenSize + ']', model, scenario)}</span></div></> : nodeButton(embedding)}{flowLine}
           {effectiveLayer > 0 && <><div className="model-folded-layers">前 {effectiveLayer} 层 Decoder</div>{flowLine}</>}
           <div className="rounded-2xl border border-dashed border-cyan-200/25 px-3 py-4 sm:px-6">
             <div className="mb-5 flex flex-wrap justify-between gap-2 font-mono text-xs text-cyan-100/80"><span>DECODER LAYER {effectiveLayer}</span><span className="text-violet-200">{isDense ? 'DENSE FFN' : 'SPARSE MoE'}</span></div>
@@ -135,7 +141,7 @@ export default function Models() {
               <div className="model-residual-wire" aria-hidden="true"><span>+</span></div>
               {group.map((node, index) => <div key={node.id}>
                 {nodeButton(node)}
-                {['mla', 'gqa'].includes(node.id) && <button type="button" aria-pressed={selected.id === cache.id} onClick={() => inspect(cache)} onMouseEnter={() => setHoveredId(cache.id)} onMouseLeave={() => setHoveredId(null)} onFocus={() => setHoveredId(cache.id)} onBlur={() => setHoveredId(null)} className={`mx-auto mt-3 flex w-full max-w-[25rem] items-center gap-3 rounded-xl border p-3 text-left transition ${selected.id === cache.id ? 'border-lime-200/70 bg-lime-200/10' : 'border-lime-200/25 bg-[#0b1514] hover:border-lime-200/60'}`}>
+                {['mla', 'gqa', 'gdn'].includes(node.id) && <button type="button" aria-pressed={selected.id === cache.id} onClick={() => inspect(cache)} onMouseEnter={() => setHoveredId(cache.id)} onMouseLeave={() => setHoveredId(null)} onFocus={() => setHoveredId(cache.id)} onBlur={() => setHoveredId(null)} className={`mx-auto mt-3 flex w-full max-w-[25rem] items-center gap-3 rounded-xl border p-3 text-left transition ${selected.id === cache.id ? 'border-lime-200/70 bg-lime-200/10' : 'border-lime-200/25 bg-[#0b1514] hover:border-lime-200/60'}`}>
                   <Database className="h-5 w-5 shrink-0 text-lime-200" /><span className="min-w-0"><span className="block text-sm font-semibold text-lime-100">↔ {cache.title}</span><span className="mt-1 block break-words font-mono text-xs text-white/65">{formatShape(cache.outputShape, model, scenario)}</span></span>
                 </button>}
                 {(index < group.length - 1 || groupIndex === 0) && flowLine}
@@ -145,7 +151,7 @@ export default function Models() {
           {flowLine}
           {effectiveLayer < model.dimensions.layers - 1 && <><div className="model-folded-layers">后 {model.dimensions.layers - effectiveLayer - 1} 层 Decoder <ArrowDown className="inline h-3 w-3" /></div>{flowLine}</>}
           {nodeButton(head)}
-          <p className="mt-5 text-xs leading-5 text-white/55">N 是本次前向的 token 数；Decode 的 KV Cache 仍包含完整历史 S。输出是逻辑 Shape，内核可能采用不同的打包、分页或融合布局。</p>
+          <p className="mt-5 text-xs leading-5 text-white/55">N 是本次前向的 token 数；完整注意力 KV 保留历史 S，DeltaNet 状态保留定长矩阵与短窗口。输出是逻辑 Shape，内核可能采用不同的打包、分页或融合布局。</p>
         </div>
 
         <aside className="hidden xl:sticky xl:top-20 xl:block"><Inspector node={inspected} model={model} scenario={scenario} /></aside>

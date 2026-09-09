@@ -17,6 +17,7 @@ export function tokenCount(scenario: InferenceScenario) {
 }
 
 export function formatShape(template: string, model: ModelArchitecture, scenario: InferenceScenario) {
+  const hybrid = model.execution.cache.kind === 'hybrid' ? model.execution.cache : null
   const values: Record<string, number> = {
     localHeads: model.dimensions.attentionHeads / scenario.tp,
     localKvHeads: localKvHeads(model, scenario.tp),
@@ -24,6 +25,13 @@ export function formatShape(template: string, model: ModelArchitecture, scenario
     intermediateShard: model.dimensions.intermediateSize / scenario.tp,
     expertShard: (model.execution.expertIntermediateSize ?? model.dimensions.intermediateSize) / scenario.tp,
     tp: scenario.tp, batch: scenario.batch, sequence: scenario.sequence,
+    ...(hybrid ? {
+      linearKeyHeads: hybrid.keyHeads / scenario.tp,
+      linearValueHeads: hybrid.valueHeads / scenario.tp,
+      linearQkv: (2 * hybrid.keyHeads * hybrid.keyDim + hybrid.valueHeads * hybrid.valueDim) / scenario.tp,
+      linearValueWidth: hybrid.valueHeads * hybrid.valueDim / scenario.tp,
+      convSlots: hybrid.convStateSlots,
+    } : {}),
   }
   return template.replace(/\{(\w+)\}/g, (original, name) => values[name]?.toLocaleString('en-US') ?? original)
     .replace(/\bN\b/g, tokenCount(scenario).toLocaleString('en-US'))
@@ -33,12 +41,27 @@ export function formatShape(template: string, model: ModelArchitecture, scenario
 
 export function cacheEstimate(model: ModelArchitecture, scenario: InferenceScenario) {
   const cache = model.execution.cache
+  const kvLayers = cache.kind === 'hybrid' ? cache.layerTypes.filter((type) => type === 'full_attention').length : model.dimensions.layers
+  const recurrentLayers = model.dimensions.layers - kvLayers
   const valuesPerTokenPerLayer = cache.kind === 'mla'
     ? cache.latentWidth + cache.ropeWidth
     : 2 * localKvHeads(model, scenario.tp) * model.dimensions.headDim
-  const bytesPerToken = valuesPerTokenPerLayer * model.dimensions.layers * scenario.cacheBytes
-  const perRankBytes = scenario.batch * scenario.sequence * bytesPerToken
-  return { perRankBytes, allRankBytes: perRankBytes * scenario.tp, bytesPerToken, valuesPerTokenPerLayer }
+  const bytesPerToken = valuesPerTokenPerLayer * kvLayers * scenario.cacheBytes
+  const kvBytes = scenario.batch * scenario.sequence * bytesPerToken
+  const recurrentBytes = cache.kind === 'hybrid' ? scenario.batch * recurrentLayers * cache.valueHeads / scenario.tp * cache.keyDim * cache.valueDim * cache.recurrentBytes : 0
+  const convBytes = cache.kind === 'hybrid' ? scenario.batch * recurrentLayers * (2 * cache.keyHeads * cache.keyDim + cache.valueHeads * cache.valueDim) / scenario.tp * cache.convStateSlots * cache.convBytes : 0
+  const perRankBytes = kvBytes + recurrentBytes + convBytes
+  return { perRankBytes, allRankBytes: perRankBytes * scenario.tp, bytesPerToken, valuesPerTokenPerLayer, kvBytes, recurrentBytes, convBytes, kvLayers, recurrentLayers }
+}
+
+export function attentionKind(model: ModelArchitecture, layer: number) {
+  const cache = model.execution.cache
+  if (cache.kind === 'hybrid') return cache.layerTypes[layer] === 'linear_attention' ? 'gdn' : 'gqa'
+  return cache.kind
+}
+
+export function layerCacheNode(model: ModelArchitecture, layer: number) {
+  return model.nodes.find((node) => node.id === (attentionKind(model, layer) === 'gdn' ? 'recurrent-state' : 'kv-cache'))!
 }
 
 export function formatBytes(bytes: number) {
@@ -60,7 +83,7 @@ export function decoderNodes(model: ModelArchitecture, layer: number): Architect
   })
   const ffn = layer < model.execution.denseLayers ? get('dense-ffn') ?? get('ffn') : get('moe')
   return [
-    get('attention-norm'), get('mla') ?? get('gqa'), residual('attention-add', 'Attention 子层输入'),
+    get('attention-norm'), get(attentionKind(model, layer)), residual('attention-add', 'Attention 子层输入'),
     {
       id: 'ffn-norm', eyebrow: 'PRE-NORM', title: 'Post-Attention RMSNorm', subtitle: 'FFN 前归一化',
       description: 'Attention 残差相加后，再做一次 RMSNorm，供 Dense FFN 或 MoE 使用。归一化前的向量保留用于第二次残差相加。',
