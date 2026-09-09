@@ -32,7 +32,8 @@ try {
     for (let j = i + 1; j < modelArchitectures.length; j++) {
       const a = modelArchitectures[i]
       const b = modelArchitectures[j]
-      const html = render(`?models=${a.id},${b.id}&view=group&tp=4&bytes=1&b=8&s=32768`)
+      const sequence = Math.min(32768, a.execution.maxContext, b.execution.maxContext)
+      const html = render(`?models=${a.id},${b.id}&view=group&tp=4&bytes=1&b=8&s=${sequence}`)
       assert.equal((html.match(/<article /g) ?? []).length, 2)
       assert.ok(html.includes(a.name) && html.includes(b.name))
       assert.ok(html.includes(a.configUrl.replaceAll('&', '&amp;')))
@@ -42,7 +43,7 @@ try {
         const link = [...html.matchAll(/href="([^"]+)"/g)].map((match) => match[1].replaceAll('&amp;', '&')).find((href) => href.startsWith(`/models/${model.id}?`))
         assert.ok(link, 'comparison must carry its conditions into the explorer')
         const params = new URL(link, 'https://example.org').searchParams
-        for (const [key, value] of Object.entries({ tp: '4', bytes: '1', b: '8', s: '32768', layer: '0', phase: 'decode' })) assert.equal(params.get(key), value)
+        for (const [key, value] of Object.entries({ tp: '4', bytes: '1', b: '8', s: String(sequence), layer: '0', phase: 'decode' })) assert.equal(params.get(key), value)
       }
       assert.doesNotMatch(html, /当前条件不计算|NaN|undefined|Infinity/)
     }
@@ -64,7 +65,7 @@ try {
   }
   let restoredModules = 0
   for (const model of modelArchitectures) {
-    const scenario = { phase: 'prefill', batch: 3, sequence: 16384, tp: 2, cacheBytes: 1 }
+    const scenario = { phase: 'prefill', batch: 3, sequence: Math.min(16384, model.execution.maxContext), tp: 2, cacheBytes: 1 }
     for (const target of moduleIndex(model)) {
       const layer = nearestModuleLayer(target, model.dimensions.layers - 1)
       const html = renderExplorer(explorerHref(model.id, { layer, nodeId: target.node.id, scenario }))
@@ -85,6 +86,18 @@ try {
   assert.match(wrongLayer, /该模块不在 Layer 0 中/)
   assert.match(wrongLayer, /id="model-node-mla"[^>]*aria-pressed="true"/)
   assert.match(wrongLayer, /tp 参数无效/)
+  const gemmaLocal = renderExplorer('/models/gemma-2-9b?layer=0&node=window-cache&s=8192')
+  const gemmaGlobal = renderExplorer('/models/gemma-2-9b?layer=1&node=kv-cache&s=8192')
+  assert.ok(gemmaLocal.includes('[4, 4096, 2, 2, 256]'))
+  assert.ok(gemmaGlobal.includes('[4, 8192, 2, 2, 256]'))
+  assert.ok(gemmaLocal.includes('21 层完整 KV') && gemmaLocal.includes('21 层滑窗 KV'))
+  assert.ok(gemmaLocal.includes('滚动窗口 · W'))
+  assert.ok(!gemmaGlobal.includes('滚动窗口 · W'))
+  for (const html of [gemmaLocal, gemmaGlobal]) {
+    const ids = [...html.matchAll(/id="model-node-([^"]+)"/g)].map((match) => match[1])
+    assert.ok(ids.indexOf('attention-post-norm') < ids.indexOf('attention-add'))
+    assert.ok(ids.indexOf('ffn-post-norm') < ids.indexOf('ffn-add'))
+  }
   const sliding = render('?models=mistral-7b-v0-1,mixtral-8x7b-v0-1&s=16384&tp=4')
   assert.match(sliding, /滑动窗口 KV/)
   assert.match(sliding, /容量增长：\+0 B/)

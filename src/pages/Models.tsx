@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { ArrowDown, ArrowUpRight, BookOpen, Box, Braces, Check, Copy, Database, GitCompareArrows, Layers3, MousePointer2, X } from 'lucide-react'
 import { modelArchitectures } from '@/data/models'
-import { attentionKind, decoderNodes, formatShape, layerCacheNode, tokenCount } from '@/lib/model-lab'
+import { attentionKind, decoderGroups, formatShape, layerCacheNode, tokenCount } from '@/lib/model-lab'
 import type { InferenceScenario } from '@/lib/model-lab'
 import type { ArchitectureNode, ModelArchitecture } from '@/types/model'
 import { CacheWorkbench } from '@/components/CacheWorkbench'
@@ -30,8 +30,8 @@ function Inspector({ node, model, scenario, preview = false }: { node: Architect
     </div>
     <div className="p-5">
       {node.tensors && <div className="mb-5 space-y-3"><h3 className="text-xs tracking-wider text-white/60">INTERMEDIATE TENSORS</h3>{node.tensors.map((tensor) => <div key={tensor.label} className="border-l border-lime-200/40 pl-3"><p className="text-sm text-white/70">{tensor.label}</p><p className="mt-1 break-words font-mono text-sm text-lime-100">{formatShape(tensor.shape, model, scenario)}</p>{tensor.note && <p className="mt-1 text-xs text-white/55">{tensor.note}</p>}</div>)}</div>}
-      <div className="flex items-center gap-2 font-mono text-xs tracking-wider text-white/60"><Layers3 className="h-4 w-4" /> WEIGHTS · [OUT, IN]</div>
-      <p className="mt-2 text-xs leading-5 text-white/50">TP local 为每卡分片，其余为完整矩阵或复制权重。融合布局为等价示意。</p>
+      <div className="flex items-center gap-2 font-mono text-xs tracking-wider text-white/60"><Layers3 className="h-4 w-4" /> WEIGHTS</div>
+      <p className="mt-2 text-xs leading-5 text-white/50">二维 Linear 按 [OUT, IN]；向量、专家堆叠与卷积按各自逻辑布局。TP local 为每卡分片，其余为完整或复制权重。融合布局为等价示意。</p>
       <div className="mt-4 space-y-3">
         {node.weights.map((weight) => <div key={weight.name} className="rounded-xl border border-white/10 bg-black/15 p-3">
           <div className="break-words text-sm text-white/75">{weight.name}</div>
@@ -67,7 +67,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
   const [copyState, setCopyState] = useState<{ path: string; status: 'copied' | 'failed'; url: string } | null>(null)
   const copyStatus = copyState?.path === canonical ? copyState.status : null
   const dialog = useRef<HTMLDialogElement>(null)
-  const block = decoderNodes(model, effectiveLayer)
+  const groups = decoderGroups(model, effectiveLayer)
   const embedding = model.nodes.find((node) => node.id === 'embedding')!
   const head = model.nodes.find((node) => node.id === 'lm-head')!
   const cache = layerCacheNode(model, effectiveLayer)
@@ -149,7 +149,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
 
       {notices.length > 0 && <p role="status" className="mt-4 rounded-xl border border-amber-200/20 bg-amber-200/5 p-4 text-sm leading-6 text-amber-100">{notices.join(' ')}</p>}
       <ModelLayerMap model={model} selectedLayer={effectiveLayer} onSelect={(value) => changeLayer(value)} />
-      <CacheWorkbench model={model} scenario={scenario} onBatch={(batch) => updateScenario({ batch })} onSequence={(sequence) => updateScenario({ sequence })} onBytes={(cacheBytes) => updateScenario({ cacheBytes })} />
+      <CacheWorkbench model={model} layer={effectiveLayer} scenario={scenario} onBatch={(batch) => updateScenario({ batch })} onSequence={(sequence) => updateScenario({ sequence })} onBytes={(cacheBytes) => updateScenario({ cacheBytes })} />
       <ModelModuleFinder model={model} layer={effectiveLayer} selectedId={selected.id} onSelect={(node, layer) => inspect(node, layer, true)} />
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#0b1119] p-4">
         <p className="text-sm text-white/70">已选 <span className="font-mono text-cyan-100">Layer {effectiveLayer}</span> · {selected.title}</p>
@@ -178,7 +178,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
           {effectiveLayer > 0 && <><div className="model-folded-layers">前 {effectiveLayer} 层 Decoder</div>{flowLine}</>}
           <div className="rounded-2xl border border-dashed border-cyan-200/25 px-3 py-4 sm:px-6">
             <div className="mb-5 flex flex-wrap justify-between gap-2 font-mono text-xs text-cyan-100/80"><span>DECODER LAYER {effectiveLayer}</span><span className="text-violet-200">{isDense ? 'DENSE FFN' : 'SPARSE MoE'}</span></div>
-            {[block.slice(0, 3), block.slice(3)].map((group, groupIndex) => <div key={groupIndex} className="model-residual-group">
+            {groups.map((group, groupIndex) => <div key={groupIndex} className="model-residual-group">
               <div className="model-residual-wire" aria-hidden="true"><span>+</span></div>
               {group.map((node, index) => <div key={node.id}>
                 {nodeButton(node)}

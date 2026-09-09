@@ -16,9 +16,11 @@ const presets = [
   { label: 'Qwen Dense 演进', ids: ['qwen3-8b', 'qwen3-5-9b'] },
   { label: '稀疏专家架构', ids: ['deepseek-v3', 'qwen3-30b-a3b', 'qwen3-5-35b-a3b'] },
   { label: 'Mistral 滑窗 / Mixtral MoE', ids: ['mistral-7b-v0-1', 'mixtral-8x7b-v0-1'] },
+  { label: '完整 / 交替 / 全滑窗', ids: ['llama-3-1-8b', 'gemma-2-9b', 'mistral-7b-v0-1'] },
 ]
 
 function cacheLabel(model: ModelArchitecture) {
+  if (model.execution.cache.kind === 'mixed') return `Full + Sliding GQA · W ${integer(model.execution.cache.window)}`
   if (model.execution.cache.kind === 'swa') return `Sliding GQA · W ${integer(model.execution.cache.window)}`
   return model.execution.cache.kind === 'mla' ? 'MLA · 压缩 latent' : model.execution.cache.kind === 'hybrid' ? 'Gated DeltaNet + Full Attention' : 'GQA'
 }
@@ -26,6 +28,7 @@ function cacheLabel(model: ModelArchitecture) {
 function cacheNote(model: ModelArchitecture, tp: TensorParallelSize) {
   const cache = model.execution.cache
   if (cache.kind === 'mla') return `采用 latent-cache 路径：${cache.latentWidth} 维压缩 KV + ${cache.ropeWidth} 维 RoPE 在每个 TP rank 复制。`
+  if (cache.kind === 'mixed') return '按实际层分布分别计算完整 KV 和滑窗 KV。局部窗口填满后，完整注意力层继续增加缓存；总曲线不会变平。'
   if (cache.kind === 'swa') return `每卡保留 ${localKvHeads(model, tp)} 个 KV heads 的完整逻辑窗口 min(S, ${integer(cache.window)})。窗口饱和后只替换旧位置，不增加缓存容量。`
   const prefix = tp > model.dimensions.kvHeads ? `${model.dimensions.kvHeads} 个 KV heads 少于 TP ${tp}，每卡仍需 1 个完整 head，会发生复制。` : `完整注意力每卡存 ${localKvHeads(model, tp)} 个 KV heads。`
   return prefix + (cache.kind === 'hybrid' ? ' DeltaNet 使用定长 FP32 循环矩阵和 BF16 卷积窗口。' : '')
@@ -75,7 +78,9 @@ export default function ModelCompare() {
     { label: '标准 Attention Q heads', values: models.map((model) => String(model.dimensions.attentionHeads)) },
     { label: '注意力 KV 表示', values: models.map((model) => model.execution.cache.kind === 'mla' ? `${model.execution.cache.latentWidth} latent + ${model.execution.cache.ropeWidth} RoPE` : `${model.dimensions.kvHeads} KV heads × ${model.dimensions.headDim} head dim × K/V`) },
     { label: 'KV / 循环状态层数', values: models.map((model) => { const { kvLayers, recurrentLayers } = cacheEstimate(model, defaultComparisonScenario); return `${kvLayers} / ${recurrentLayers}` }) },
-    { label: 'KV 保留长度', values: models.map((model) => model.execution.cache.kind === 'swa' ? `min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'hybrid' ? 'S（仅完整注意力层）' : 'S') },
+    { label: '完整 / 滑窗 KV 层数', values: models.map((model) => { const { fullKvLayers, slidingLayers } = cacheEstimate(model, defaultComparisonScenario); return `${fullKvLayers} / ${slidingLayers}` }) },
+    { label: 'KV 保留长度', values: models.map((model) => model.execution.cache.kind === 'mixed' ? `完整层 S / 滑窗层 min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'swa' ? `min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'hybrid' ? 'S（仅完整注意力层）' : 'S') },
+    { label: '子层边界 RMSNorm', values: models.map((model) => model.execution.normLayout === 'pre-post' ? '4 × RMSNorm · Pre + Post' : '2 × RMSNorm · Pre') },
     { label: '当前配置上下文上限', values: models.map((model) => `${integer(model.execution.maxContext)} tokens`) },
     { label: '图解已覆盖的 TP', values: models.map((model) => model.supportedTp.join(' / ')) },
   ]
@@ -105,7 +110,8 @@ export default function ModelCompare() {
         {models.map((model, index) => {
           const { estimate, reasons } = results[index]
           const parts = estimate ? [
-            { label: model.execution.cache.kind === 'swa' ? '滑动窗口 KV' : '完整注意力 KV', bytes: estimate.kvBytes * factor, color: '#70e1f5' },
+            { label: model.execution.cache.kind === 'swa' ? '滑动窗口 KV' : '完整注意力 KV', bytes: (model.execution.cache.kind === 'mixed' ? estimate.fullKvBytes : estimate.kvBytes) * factor, color: '#70e1f5' },
+            ...(model.execution.cache.kind === 'mixed' ? [{ label: '滑动窗口 KV', bytes: estimate.slidingKvBytes * factor, color: '#ffc98b' }] : []),
             { label: '循环矩阵 · FP32', bytes: estimate.recurrentBytes * factor, color: '#d8ff78' },
             { label: '卷积窗口 · BF16', bytes: estimate.convBytes * factor, color: '#c7a8ff' },
           ] : []

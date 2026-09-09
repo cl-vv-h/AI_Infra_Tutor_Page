@@ -134,3 +134,14 @@ test('Mistral comparison curve has a 4096-token knee while Mixtral continues gro
   assert.equal(at(sliding, 4096).growthBytesPerToken, 0)
   assert.ok(at(full, 4096).growthBytesPerToken > 0)
 })
+
+test('Gemma curve stops at 8K, with a slope change at 4K instead of a plateau', () => {
+  const gemma = model('gemma-2-9b')
+  const points = comparisonSeries(gemma, defaultComparisonScenario)
+  assert.equal(points.at(-1).sequence, 8192)
+  const at4k = points.find((point) => point.sequence === 4096)
+  assert.equal(at4k.perRankBytes, 1344 * MiB)
+  assert.equal(points.at(-1).perRankBytes, 2016 * MiB)
+  assert.equal(at4k.growthBytesPerToken, at4k.bytesPerToken / 2)
+  assert.equal(compareEstimate(gemma, { ...defaultComparisonScenario, sequence: 8193 }).estimate, null)
+})

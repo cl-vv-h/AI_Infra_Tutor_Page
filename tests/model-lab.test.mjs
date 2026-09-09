@@ -3,7 +3,7 @@ import test from 'node:test'
 import { readFile } from 'node:fs/promises'
 import { categories } from '../src/data/categories.ts'
 import { modelArchitectures, getModelArchitecture } from '../src/data/models.ts'
-import { attentionKind, cacheEstimate, decoderNodes, formatShape, layerCacheNode, localKvHeads, tokenCount } from '../src/lib/model-lab.ts'
+import { attentionKind, cacheEstimate, decoderGroups, decoderNodes, formatShape, layerCacheNode, localKvHeads, tokenCount } from '../src/lib/model-lab.ts'
 
 const base = { batch: 1, sequence: 1024, tp: 1, phase: 'decode', cacheBytes: 2 }
 
@@ -106,10 +106,11 @@ test('all model layers have a complete residual block and resolvable shapes', ()
   for (const model of modelArchitectures) {
     for (let layer = 0; layer < model.dimensions.layers; layer++) {
       const nodes = decoderNodes(model, layer)
-      assert.equal(nodes.length, 6)
-      assert.equal(nodes[2].id, 'attention-add')
-      assert.equal(nodes[3].id, 'ffn-norm')
-      assert.equal(nodes[5].id, 'ffn-add')
+      assert.equal(nodes.length, model.execution.normLayout === 'pre-post' ? 8 : 6)
+      const groups = decoderGroups(model, layer)
+      assert.equal(groups[0].at(-1).id, 'attention-add')
+      assert.equal(groups[1][0].id, 'ffn-norm')
+      assert.equal(groups[1].at(-1).id, 'ffn-add')
       assert.equal(nodes.filter((node) => ['ffn', 'dense-ffn', 'moe'].includes(node.id)).length, 1)
       for (const tp of model.supportedTp) {
         assert.equal(model.dimensions.attentionHeads % tp, 0)
@@ -194,4 +195,59 @@ test('every model knowledge link resolves to an existing article or category', a
       }
     }
   }
+})
+
+test('Gemma 2 uses 21 local and 21 global layers with pre/post norms inside both residual branches', () => {
+  const model = getModelArchitecture('gemma-2-9b')
+  assert.equal(model.dimensions.layers, 42)
+  assert.equal(model.execution.maxContext, 8192)
+  assert.equal(model.execution.normLayout, 'pre-post')
+  for (let layer = 0; layer < 42; layer++) {
+    const sliding = layer % 2 === 0
+    assert.equal(attentionKind(model, layer), sliding ? 'swa' : 'gqa')
+    assert.equal(layerCacheNode(model, layer).id, sliding ? 'window-cache' : 'kv-cache')
+    assert.deepEqual(decoderGroups(model, layer).map((group) => group.map((node) => node.id)), [
+      ['attention-norm', sliding ? 'swa' : 'gqa', 'attention-post-norm', 'attention-add'],
+      ['ffn-norm', 'ffn', 'ffn-post-norm', 'ffn-add'],
+    ])
+    const norms = decoderNodes(model, layer).filter((node) => node.eyebrow === 'RMSNORM')
+    assert.equal(norms.length, 4)
+    assert.ok(norms.every((node) => node.description.includes('(1 + weight)')))
+  }
+})
+
+test('Gemma mixed cache splits full/window capacity and halves growth after the local knee', () => {
+  const model = getModelArchitecture('gemma-2-9b')
+  for (const tp of model.supportedTp) for (const batch of [1, 3, 4]) for (const cacheBytes of [1, 2]) for (const sequence of [1024, 4095, 4096, 4097, 8192]) {
+    const scenario = { ...base, tp, batch, cacheBytes, sequence }
+    const e = cacheEstimate(model, scenario)
+    const width = 2 * (8 / tp) * 256 * cacheBytes
+    assert.equal(e.fullKvLayers, 21)
+    assert.equal(e.slidingLayers, 21)
+    assert.equal(e.kvLayers, 42)
+    assert.equal(e.recurrentLayers, 0)
+    assert.equal(e.fullKvBytes, batch * sequence * 21 * width)
+    assert.equal(e.slidingKvBytes, batch * Math.min(sequence, 4096) * 21 * width)
+    assert.equal(e.perRankBytes, e.fullKvBytes + e.slidingKvBytes)
+    assert.equal(e.growthBytesPerToken, (sequence >= 4096 ? 21 : 42) * width)
+    assert.equal(formatShape(layerCacheNode(model, 0).outputShape, model, scenario), `[${batch}, ${Math.min(sequence, 4096)}, 2, ${8 / tp}, 256]`)
+    assert.equal(formatShape(layerCacheNode(model, 1).outputShape, model, scenario), `[${batch}, ${sequence}, 2, ${8 / tp}, 256]`)
+  }
+  const e = cacheEstimate(model, { ...base, sequence: 8192 })
+  assert.equal(e.fullKvBytes, 1344 * 1024 ** 2)
+  assert.equal(e.slidingKvBytes, 672 * 1024 ** 2)
+  assert.equal(e.perRankBytes, 2016 * 1024 ** 2)
+})
+
+test('Gemma head dimensions, GeGLU, tied embedding and softcaps are not inferred from Llama geometry', () => {
+  const model = getModelArchitecture('gemma-2-9b')
+  assert.equal(model.dimensions.hiddenSize, 3584)
+  assert.equal(model.dimensions.attentionHeads * model.dimensions.headDim, 4096)
+  assert.equal(model.dimensions.intermediateSize, 14336)
+  const attention = model.nodes.find((node) => node.id === 'swa')
+  assert.equal(formatShape(attention.weights[0].shape, model, { ...base, tp: 4 }), '[4 × 256, 3584]')
+  assert.ok(attention.description.includes('50 × tanh(x / 50)'))
+  assert.ok(model.nodes.find((node) => node.id === 'ffn').title.includes('GELU-tanh'))
+  assert.ok(model.nodes.find((node) => node.id === 'lm-head').description.includes('30 × tanh(x / 30)'))
+  assert.equal(formatShape(model.nodes.find((node) => node.id === 'lm-head').weights[1].shape, model, { ...base, tp: 8 }), '[32000, 3584]')
 })

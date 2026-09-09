@@ -82,7 +82,7 @@ npm run news:fetch
 
 ## 模型结构实验室
 
-模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts` 与 `src/data/mistral-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供九个代表模型：
+模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts`、`src/data/mistral-models.ts` 与 `src/data/gemma-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供十个代表模型：
 
 - Llama 3.1 8B：Dense、GQA、SwiGLU；
 - DeepSeek-V3：MLA、DeepSeekMoE、MTP；
@@ -92,9 +92,10 @@ npm run news:fetch
 - Qwen3.5-9B：24 层 DeltaNet + 8 层 Gated Full Attention、Dense FFN、视觉编码器；
 - Qwen3.5-35B-A3B：30 层 DeltaNet + 10 层 Gated Full Attention、256 routed / Top-8 + gated shared expert、视觉编码器；
 - Mistral-7B-v0.1：32 层滑动窗口 GQA、4,096 token 窗口、Dense SwiGLU；
-- Mixtral-8x7B-v0.1：32 层完整 GQA、8 专家 / Top-2 MoE，无滑动窗口。
+- Mixtral-8x7B-v0.1：32 层完整 GQA、8 专家 / Top-2 MoE，无滑动窗口；
+- Gemma 2 9B：42 层交替局部/完整 GQA、4 个子层边界 RMSNorm、GeGLU、共享词嵌入及 logits softcap。
 
-每个模型都有可直接分享的 Hash 路由，例如 `#/models/qwen3-30b-a3b`。模块支持悬浮预览与点击锁定；窄屏点击打开原生模态详情，可用 Esc 关闭。Layer 控件展开一个真实 Decoder 层，显示两次残差连接、两次 RMSNorm，并按层号选择 Dense 或 MoE，其他层折叠。图中为自回归主干，不包含 MTP 辅助预测分支。
+每个模型都有可直接分享的 Hash 路由，例如 `#/models/qwen3-30b-a3b`。模块支持悬浮预览与点击锁定；窄屏点击打开原生模态详情，可用 Esc 关闭。Layer 控件展开一个真实 Decoder 层，显示两次残差连接，并按模型选择 Pre-Norm 或 Pre+Post-Norm 布局、按层号选择 Dense 或 MoE，其他层折叠。图中为自回归主干，不包含 MTP 辅助预测分支。
 
 “复制当前图解”保留模型、`layer`、已选 `node`、`phase`、`b`、`s`、`tp` 与 `bytes`；刷新和返回可还原相同条件，临时悬浮和模块搜索词不进入分享链接。窄屏打开链接后可用“查看已选模块”展开详情。模型不存在时显示选择页；数值超出该模型配置或模块不属于当前层时明确提示，不悄悄渲染错误分支。切换模型保留有效推理条件并从第 0 层开始，超出新模型范围的参数会提示并恢复默认值。
 
@@ -107,6 +108,8 @@ KV Cache 容量实验支持 B、S、TP、缓存字节数与 Prefill/Decode 切�
 Hybrid 缓存分为完整注意力 KV（随 S 增长）、FP32 循环矩阵（定长）及 BF16 卷积窗口（定长）。参考 Transformers 的 4 槽卷积状态分配，部分引擎使用 K−1 槽；不含前缀/推测解码额外副本、模型权重和工作空间。完整 KV 精度选项不会改变循环状态精度。公式与多种上下文长度对照均可在容量面板展开查看。
 
 滑动窗口模型使用 `min(S, W)` 计算逻辑 KV 长度，滚动时间轴显示当前可见的位置范围；对比曲线包含窗口饱和点。Mistral-7B-v0.1 的 W=4,096，但配置上下文是 32,768；Mixtral-8x7B-v0.1 的 `sliding_window=null`，不能沿用这个窗口。容量按包含当前 token 的完整逻辑窗口估算，一些后端跨步保留 W−1 个历史位置，未裁剪实现也可能占用更多空间。零容量增长不意味着零计算或零写入，Prefill 仍需处理全部输入。
+
+Gemma 2 9B 的 `mixed` 布局按每层类型分别统计：21 个完整层使用 S、21 个滑窗层使用 min(S, 4,096)。总 KV = B × (S × Lfull + min(S, W) × Lwindow) × 2 × 每卡 KV heads × head_dim × bytes；4K 后增长率减半而非归零，曲线止于配置上限 8K。图中的本层窗口、缓存 Shape 与层号同步变化。`normLayout: pre-post` 将两个 Post-Norm 放在各自残差相加之前；不能直接复用两 Norm 的 Decoder 顺序。参数取 Google 官方 9B 配置（固定提交），运算顺序对照 Transformers v4.57.1。模型权重不随网站分发。
 
 `npm run test:models`（Node.js 22.18+）校验逐层路径、Shape 模板、已知 KV 容量及 TP 复制边界；构建仍兼容 Node.js 20。
 

@@ -59,7 +59,7 @@ export function compareEstimate(model: ModelArchitecture, scenario: InferenceSce
 }
 
 export function comparisonSeries(model: ModelArchitecture, scenario: InferenceScenario) {
-  const window = model.execution.cache.kind === 'swa' ? [model.execution.cache.window] : []
+  const window = model.execution.cache.kind === 'swa' || model.execution.cache.kind === 'mixed' ? [model.execution.cache.window] : []
   const lengths = [...new Set([...contextProbes, ...window, model.execution.maxContext, scenario.sequence])].sort((a, b) => a - b)
   return lengths.flatMap((sequence) => {
     const { estimate } = compareEstimate(model, { ...scenario, sequence })
