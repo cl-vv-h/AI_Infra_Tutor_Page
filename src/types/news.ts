@@ -1,4 +1,5 @@
 export type NewsCategory = 'ai' | 'technology' | 'finance' | 'world'
+export type NewsSourceType = 'research' | 'engineering' | 'release' | 'institution' | 'analysis' | 'news'
 
 export interface NewsItem {
   id: string
@@ -8,6 +9,7 @@ export interface NewsItem {
   url: string
   source: string
   sourceCountry: string
+  sourceType?: NewsSourceType
   publishedAt: string
   fetchedAt: string
   score: number

@@ -43,7 +43,9 @@ function readLink(block) {
   const rssLink = readTag(block, ['link'])
   if (/^https?:\/\//i.test(rssLink)) return rssLink
   const atomLink = block.match(/<link[^>]+href=["']([^"']+)["'][^>]*>/i)?.[1]
-  return decodeEntities(atomLink ?? '').trim()
+  if (/^https?:\/\//i.test(atomLink ?? '')) return decodeEntities(atomLink ?? '').trim()
+  const guid = readTag(block, ['guid', 'id'])
+  return /^https?:\/\//i.test(guid) ? guid : ''
 }
 
 function parseFeed(xml) {
@@ -64,6 +66,7 @@ function normalizedUrl(value) {
   try {
     const url = new URL(value)
     if (!['http:', 'https:'].includes(url.protocol)) return null
+    if (url.protocol === 'http:') url.protocol = 'https:'
     for (const key of [...url.searchParams.keys()]) {
       if (key.startsWith('utm_') || ['cmpid', 'ocid', 'at_campaign', 'at_medium'].includes(key)) {
         url.searchParams.delete(key)
@@ -81,8 +84,12 @@ function importanceScore(item, source) {
   const ageHours = Number.isFinite(published) ? Math.max(0, (now.getTime() - published) / 3_600_000) : lookbackHours
   const recency = Math.max(0, 12 - ageHours / 4)
   const signalWords = /breakthrough|launch|release|regulation|policy|rate|inflation|election|agreement|conflict|security|research|model|chip|semiconductor|market|economy/i
+  const systemsWords = /inference|serving|kernel|compiler|distributed|accelerator|GPU|NPU|CUDA|ROCm|PyTorch|benchmark|throughput|latency|quantization|attention|cache|runtime|framework/i
   const signal = signalWords.test(`${item.title} ${item.summary}`) ? 4 : 0
-  return Math.round((source.weight + recency + signal) * 10) / 10
+  const systemsSignal = systemsWords.test(`${item.title} ${item.summary}`) ? 5 : 0
+  const sourceTypeBoost = { research: 4, engineering: 4, release: 3, institution: 2, analysis: 1, news: 0 }[source.type] ?? 0
+  const prereleasePenalty = /(?:^|[.-])(?:rc|alpha|beta|dev|nightly)\d*\b|^trunk\//i.test(item.title) ? 4 : 0
+  return Math.round((source.weight + recency + signal + systemsSignal + sourceTypeBoost - prereleasePenalty) * 10) / 10
 }
 
 async function fetchSource(source) {
@@ -98,7 +105,13 @@ async function fetchSource(source) {
     })
     if (!response.ok) throw new Error(`HTTP ${response.status}`)
     const xml = await response.text()
-    return parseFeed(xml).map((entry) => ({ ...entry, source }))
+    return parseFeed(xml)
+      .filter((entry) => {
+        if (!source.includeKeywords?.length) return true
+        const haystack = (source.matchScope === 'title' ? entry.title : `${entry.title} ${entry.summary}`).toLowerCase()
+        return source.includeKeywords.some((keyword) => haystack.includes(keyword.toLowerCase()))
+      })
+      .map((entry) => ({ ...entry, source }))
   } finally {
     clearTimeout(timeout)
   }
@@ -137,6 +150,7 @@ const items = candidates
       url,
       source: entry.source.name,
       sourceCountry: entry.source.country,
+      sourceType: entry.source.type,
       publishedAt: new Date(publishedTime).toISOString(),
       fetchedAt: now.toISOString(),
       score: importanceScore(entry, entry.source),

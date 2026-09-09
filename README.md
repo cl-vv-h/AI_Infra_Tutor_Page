@@ -8,6 +8,7 @@
 
 - `#/`：模块化门户首页。新增模块只需扩展 `src/data/modules.ts`。
 - `#/learn`：AI Infra 课程地图，按“基础 → 框架 → 硬件与算子”组织。
+- `#/models/*`：可交互模型结构实验室，可检查权重、张量 Shape、TP 分片和知识索引。
 - `#/category/*`、`#/article/*`：主题与文章详情，支持中文/英文切换。
 - `#/news`：AI、科技、金融、国际形势四板块的每日信号与每周报告。
 
@@ -61,7 +62,19 @@ SGLANG_TUTOR_PATH=/path/to/SGLang_Tutor npm run sync:curriculum
 npm run news:fetch
 ```
 
-信源配置位于 `scripts/news-sources.mjs`，目前覆盖研究机构、科技公司、央行/国际金融机构和多地区国际媒体。自动聚合不等于事实核查，网页始终保留原始来源链接。
+信源配置位于 `scripts/news-sources.mjs`，目前覆盖论文与研究、AI 推理框架发布、PyTorch/NVIDIA/AMD 等工程博客、央行与国际机构原文和多地区国际媒体。排序会额外提升 inference、serving、kernel、compiler、GPU/NPU、quantization、attention 等技术信号的权重；arXiv 条目还会经过标题关键词过滤，避免泛化的分布式系统论文挤占版面。
+
+网页支持按“研究 / 工程 / 发布 / 机构 / 分析 / 报道”筛选、全文搜索、按时效或信号强度排序，并可将条目保存到只存在浏览器本机的阅读清单。自动聚合不等于事实核查，所有条目始终保留原始来源链接。
+
+## 模型结构实验室
+
+模型结构数据位于 `src/data/models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供三类代表性结构：
+
+- Llama 3.1 8B：Dense、GQA、SwiGLU；
+- DeepSeek-V3：MLA、DeepSeekMoE、MTP；
+- GLM-4.7-Flash：MLA、Sparse MoE、MTP。
+
+每个模型都有可直接分享的 Hash 路由，例如 `#/models/deepseek-v3`。模块支持悬浮预览与点击锁定；Prefill/Decode 和 TP 控件会改变当前运行语境与每卡权重 Shape。新增模型只需扩展 `modelArchitectures` 注册表，无需重写页面。
 
 ### 每周报告
 

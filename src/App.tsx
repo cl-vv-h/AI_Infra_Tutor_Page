@@ -4,6 +4,7 @@ import Layout from '@/components/Layout'
 
 const Home = lazy(() => import('@/pages/Home'))
 const Learn = lazy(() => import('@/pages/Learn'))
+const Models = lazy(() => import('@/pages/Models'))
 const News = lazy(() => import('@/pages/News'))
 const CategoryPage = lazy(() => import('@/pages/Category'))
 const ArticlePage = lazy(() => import('@/pages/Article'))
@@ -18,6 +19,8 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/learn" element={<Learn />} />
+            <Route path="/models" element={<Models />} />
+            <Route path="/models/:modelId" element={<Models />} />
             <Route path="/news" element={<News />} />
             <Route path="/category/:slug" element={<CategoryPage />} />
             <Route path="/article/:slug" element={<ArticlePage />} />

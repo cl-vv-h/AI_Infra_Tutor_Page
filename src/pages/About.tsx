@@ -21,7 +21,7 @@ export default function About() {
               <h2 className="text-2xl font-bold text-white">项目使命</h2>
             </div>
             <p className="leading-relaxed text-gray-300">
-              项目希望把分散的 AI Infra 知识整理成可行走的地图：既能从 Prefill、KV Cache 等基础概念开始，也能一路深入 SGLang 调度、分布式执行、Ascend NPU 与真实算子源码。
+              项目希望把分散的 AI Infra 知识整理成可行走、可交互的地图：既能从 Prefill、KV Cache 等基础概念开始，也能检查真实模型的权重与张量 Shape，一路深入 SGLang 调度、分布式执行、Ascend NPU 与算子源码。
             </p>
           </div>
 
@@ -68,7 +68,7 @@ export default function About() {
               <h2 className="text-2xl font-bold text-white">公开与安全</h2>
             </div>
             <p className="mb-4 leading-relaxed text-gray-300">
-              网站只发布公开课程、公共新闻元数据与来源链接。自动化所需凭证保存在 GitHub Secrets 中，不进入仓库、网页或报告。
+              网站只发布公开课程、模型配置、公共新闻元数据与来源链接。每周报告由本机 Codex 直接生成，不需要在 GitHub Actions 或仓库中配置模型 API Key；浏览器阅读清单也只保存在当前设备。
             </p>
             <Link
               to="https://github.com/cl-vv-h/AI_Infra_Tutor_Page"

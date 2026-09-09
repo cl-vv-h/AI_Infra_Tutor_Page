@@ -6,6 +6,7 @@ import { useLanguage } from '@/hooks/useLanguage'
 const navLinks = [
   { label: '首页', to: '/' },
   { label: 'AI Infra', to: '/learn' },
+  { label: '模型实验室', to: '/models' },
   { label: '新闻雷达', to: '/news' },
   { label: '关于', to: '/about' },
 ]

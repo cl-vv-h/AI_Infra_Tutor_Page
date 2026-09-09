@@ -15,6 +15,17 @@ const fail = (message) => {
   process.exit(1)
 }
 
+const canonicalUrl = (value) => {
+  try {
+    const url = new URL(value)
+    if (url.protocol === 'http:') url.protocol = 'https:'
+    if (url.pathname.length > 1) url.pathname = url.pathname.replace(/\/+$/, '')
+    return url.toString()
+  } catch {
+    return value
+  }
+}
+
 let archiveFiles
 try {
   archiveFiles = (await readdir(archiveRoot))
@@ -37,7 +48,7 @@ try {
 const archives = await Promise.all(
   archiveFiles.map(async (name) => JSON.parse(await readFile(new URL(name, archiveRoot), 'utf8'))),
 )
-const archiveUrls = new Set(archives.flatMap((archive) => archive.items ?? []).map((item) => item.url))
+const archiveUrls = new Set(archives.flatMap((archive) => archive.items ?? []).map((item) => canonicalUrl(item.url)))
 const expectedStart = archiveFiles[0].replace('.json', '')
 const expectedEnd = archiveFiles.at(-1).replace('.json', '')
 
@@ -62,14 +73,15 @@ const sourceUrls = new Set()
 for (const source of report.sources) {
   if (!source || typeof source.title !== 'string' || typeof source.source !== 'string') fail('a source entry is malformed')
   if (typeof source.url !== 'string' || !/^https:\/\//.test(source.url)) fail('all source URLs must use HTTPS')
-  if (!archiveUrls.has(source.url)) fail(`source URL is absent from the archive: ${source.url}`)
-  if (sourceUrls.has(source.url)) fail(`duplicate source URL: ${source.url}`)
-  sourceUrls.add(source.url)
+  const sourceUrl = canonicalUrl(source.url)
+  if (!archiveUrls.has(sourceUrl)) fail(`source URL is absent from the archive: ${source.url}`)
+  if (sourceUrls.has(sourceUrl)) fail(`duplicate source URL: ${source.url}`)
+  sourceUrls.add(sourceUrl)
 }
 
 const contentUrls = [...report.content.matchAll(/https:\/\/[^\s)\]]+/g)].map(([url]) => url.replace(/[.,;!?，。；！？]+$/, ''))
 for (const url of contentUrls) {
-  if (!sourceUrls.has(url)) fail(`content cites a URL not declared in sources: ${url}`)
+  if (!sourceUrls.has(canonicalUrl(url))) fail(`content cites a URL not declared in sources: ${url}`)
 }
 
 console.log(`Weekly report is valid: ${report.periodStart}–${report.periodEnd}, ${report.sources.length} cited sources.`)

@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react'
-import { BookOpenText, Newspaper, Orbit } from 'lucide-react'
+import { BookOpenText, Boxes, Newspaper } from 'lucide-react'
 
 export interface PortalModule {
   id: string
@@ -38,17 +38,18 @@ export const portalModules: PortalModule[] = [
     icon: Newspaper,
     accent: '#d8ff78',
     stats: ['每日更新', '国际信源', '每周报告'],
-    status: 'beta',
+    status: 'live',
   },
   {
-    id: 'future',
-    eyebrow: 'NEXT / 03',
-    title: '下一间实验室',
-    titleEn: 'Next Lab',
-    description: '为未来的工具、实验和专题预留独立入口；模块结构可继续横向扩展。',
-    icon: Orbit,
+    id: 'models',
+    eyebrow: 'INSPECT / 03',
+    title: '模型结构实验室',
+    titleEn: 'Model Architecture Lab',
+    description: '把大模型拆成可交互的数据流：检查模块、权重 Shape、运行时状态与知识索引。',
+    to: '/models',
+    icon: Boxes,
     accent: '#c7a8ff',
-    stats: ['开放规划', '模块化接入'],
-    status: 'planned',
+    stats: ['悬浮检查', 'Shape 推导', '知识索引'],
+    status: 'beta',
   },
 ]
