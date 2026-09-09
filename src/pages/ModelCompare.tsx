@@ -14,15 +14,18 @@ const presets = [
   { label: 'GQA / MLA / Hybrid', ids: ['llama-3-1-8b', 'glm-4-7-flash', 'qwen3-5-9b'] },
   { label: 'Qwen Dense 演进', ids: ['qwen3-8b', 'qwen3-5-9b'] },
   { label: '稀疏专家架构', ids: ['deepseek-v3', 'qwen3-30b-a3b', 'qwen3-5-35b-a3b'] },
+  { label: 'Mistral 滑窗 / Mixtral MoE', ids: ['mistral-7b-v0-1', 'mixtral-8x7b-v0-1'] },
 ]
 
 function cacheLabel(model: ModelArchitecture) {
+  if (model.execution.cache.kind === 'swa') return `Sliding GQA · W ${integer(model.execution.cache.window)}`
   return model.execution.cache.kind === 'mla' ? 'MLA · 压缩 latent' : model.execution.cache.kind === 'hybrid' ? 'Gated DeltaNet + Full Attention' : 'GQA'
 }
 
 function cacheNote(model: ModelArchitecture, tp: TensorParallelSize) {
   const cache = model.execution.cache
   if (cache.kind === 'mla') return `采用 latent-cache 路径：${cache.latentWidth} 维压缩 KV + ${cache.ropeWidth} 维 RoPE 在每个 TP rank 复制。`
+  if (cache.kind === 'swa') return `每卡保留 ${localKvHeads(model, tp)} 个 KV heads 的完整逻辑窗口 min(S, ${integer(cache.window)})。窗口饱和后只替换旧位置，不增加缓存容量。`
   const prefix = tp > model.dimensions.kvHeads ? `${model.dimensions.kvHeads} 个 KV heads 少于 TP ${tp}，每卡仍需 1 个完整 head，会发生复制。` : `完整注意力每卡存 ${localKvHeads(model, tp)} 个 KV heads。`
   return prefix + (cache.kind === 'hybrid' ? ' DeltaNet 使用定长 FP32 循环矩阵和 BF16 卷积窗口。' : '')
 }
@@ -68,9 +71,10 @@ export default function ModelCompare() {
     { label: 'Decoder 层数', values: models.map((model) => String(model.dimensions.layers)) },
     { label: 'Dense / MoE 层数', values: models.map((model) => `${model.execution.denseLayers} / ${model.dimensions.layers - model.execution.denseLayers}`) },
     { label: 'Hidden width', values: models.map((model) => integer(model.dimensions.hiddenSize)) },
-    { label: '完整 Attention Q heads', values: models.map((model) => String(model.dimensions.attentionHeads)) },
-    { label: '完整注意力缓存表示', values: models.map((model) => model.execution.cache.kind === 'mla' ? `${model.execution.cache.latentWidth} latent + ${model.execution.cache.ropeWidth} RoPE` : `${model.dimensions.kvHeads} KV heads × ${model.dimensions.headDim} head dim × K/V`) },
-    { label: '完整 KV / 循环状态层数', values: models.map((model) => { const { kvLayers, recurrentLayers } = cacheEstimate(model, defaultComparisonScenario); return `${kvLayers} / ${recurrentLayers}` }) },
+    { label: '标准 Attention Q heads', values: models.map((model) => String(model.dimensions.attentionHeads)) },
+    { label: '注意力 KV 表示', values: models.map((model) => model.execution.cache.kind === 'mla' ? `${model.execution.cache.latentWidth} latent + ${model.execution.cache.ropeWidth} RoPE` : `${model.dimensions.kvHeads} KV heads × ${model.dimensions.headDim} head dim × K/V`) },
+    { label: 'KV / 循环状态层数', values: models.map((model) => { const { kvLayers, recurrentLayers } = cacheEstimate(model, defaultComparisonScenario); return `${kvLayers} / ${recurrentLayers}` }) },
+    { label: 'KV 保留长度', values: models.map((model) => model.execution.cache.kind === 'swa' ? `min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'hybrid' ? 'S（仅完整注意力层）' : 'S') },
     { label: '当前配置上下文上限', values: models.map((model) => `${integer(model.execution.maxContext)} tokens`) },
     { label: '图解已覆盖的 TP', values: models.map((model) => model.supportedTp.join(' / ')) },
   ]
@@ -87,9 +91,9 @@ export default function ModelCompare() {
         <div className="grid gap-4 md:grid-cols-3">{[0, 1, 2].map((slot) => <label key={slot} className="flex min-w-0 flex-col gap-2 text-sm text-slate-300"><span style={{ color: comparisonColors[slot] }}>模型 {slot + 1}{slot === 2 && ' · 可选'}</span><select className={controlClass} value={state.modelIds[slot] ?? ''} onChange={(event) => { const ids = [...state.modelIds]; if (event.target.value) ids[slot] = event.target.value; else ids.splice(slot, 1); update({ modelIds: ids }) }}>{slot === 2 && <option value="">不加入第三个模型</option>}{modelArchitectures.map((model) => <option key={model.id} value={model.id} disabled={state.modelIds.includes(model.id) && state.modelIds[slot] !== model.id}>{model.name} · {model.parameters}</option>)}</select></label>)}</div>
         <div className="mt-5 grid gap-4 border-t border-white/10 pt-5 sm:grid-cols-2 lg:grid-cols-5">
           <label className="flex flex-col gap-2 text-sm text-slate-300">并发请求 B<select className={controlClass} value={scenario.batch} onChange={(event) => update({ scenario: { ...scenario, batch: Number(event.target.value) } })}>{[...new Set([1, 2, 4, 8, 16, 32, 64, scenario.batch])].sort((a, b) => a - b).map((value) => <option key={value} value={value}>{value}</option>)}</select></label>
-          <label className="flex flex-col gap-2 text-sm text-slate-300">每请求缓存 S<select className={controlClass} value={scenario.sequence} onChange={(event) => update({ scenario: { ...scenario, sequence: Number(event.target.value) } })}>{sequenceOptions.map((value) => <option key={value} value={value}>{integer(value)} tokens</option>)}</select></label>
+          <label className="flex flex-col gap-2 text-sm text-slate-300">每请求序列 S<select className={controlClass} value={scenario.sequence} onChange={(event) => update({ scenario: { ...scenario, sequence: Number(event.target.value) } })}>{sequenceOptions.map((value) => <option key={value} value={value}>{integer(value)} tokens</option>)}</select></label>
           <label className="flex flex-col gap-2 text-sm text-slate-300">Tensor Parallel<select className={controlClass} value={scenario.tp} onChange={(event) => update({ scenario: { ...scenario, tp: Number(event.target.value) as TensorParallelSize } })}>{[1, 2, 4, 8].map((value) => <option key={value} value={value}>TP {value}</option>)}</select></label>
-          <label className="flex flex-col gap-2 text-sm text-slate-300">完整 KV 精度<select className={controlClass} value={scenario.cacheBytes} onChange={(event) => update({ scenario: { ...scenario, cacheBytes: Number(event.target.value) as 1 | 2 } })}><option value={2}>BF16 / FP16 · 2 B</option><option value={1}>FP8 假设 · 1 B</option></select></label>
+          <label className="flex flex-col gap-2 text-sm text-slate-300">注意力 KV 精度<select className={controlClass} value={scenario.cacheBytes} onChange={(event) => update({ scenario: { ...scenario, cacheBytes: Number(event.target.value) as 1 | 2 } })}><option value={2}>BF16 / FP16 · 2 B</option><option value={1}>FP8 假设 · 1 B</option></select></label>
           <label className="flex flex-col gap-2 text-sm text-slate-300">容量视图<select className={controlClass} value={scope} onChange={(event) => update({ scope: event.target.value === 'group' ? 'group' : 'rank' })}><option value="rank">每张卡 / TP rank</option><option value="group">全部 TP 卡合计</option></select></label>
         </div>
         <p className="mt-4 text-sm leading-6 text-slate-400">Decode 持久状态口径；S 包含刚写入的新 token。EP = 1、PP = 1，无前缀共享。B、S、TP、KV 精度对所有模型完全相同。</p>
@@ -100,7 +104,7 @@ export default function ModelCompare() {
         {models.map((model, index) => {
           const { estimate, reasons } = results[index]
           const parts = estimate ? [
-            { label: '完整注意力 KV', bytes: estimate.kvBytes * factor, color: '#70e1f5' },
+            { label: model.execution.cache.kind === 'swa' ? '滑动窗口 KV' : '完整注意力 KV', bytes: estimate.kvBytes * factor, color: '#70e1f5' },
             { label: '循环矩阵 · FP32', bytes: estimate.recurrentBytes * factor, color: '#d8ff78' },
             { label: '卷积窗口 · BF16', bytes: estimate.convBytes * factor, color: '#c7a8ff' },
           ] : []
@@ -114,7 +118,7 @@ export default function ModelCompare() {
                 <div className="mt-5 flex h-3 overflow-hidden rounded-full bg-white/5" aria-hidden="true">{parts.map((part) => <span key={part.label} style={{ width: `${100 * part.bytes / maxBytes}%`, backgroundColor: part.color }} />)}</div>
                 <p className="mt-2 text-xs text-slate-500">各模型条形共用同一容量刻度</p>
                 <dl className="mt-4 space-y-2">{parts.map((part) => <div className="flex flex-wrap justify-between gap-2 text-sm" key={part.label}><dt style={{ color: part.color }}>{part.label}</dt><dd className="font-mono text-slate-300">{formatBytes(part.bytes)}</dd></div>)}</dl>
-                <p className="mt-4 text-sm leading-6 text-slate-400">单请求新增 1 token：+{formatBytes(estimate.bytesPerToken * factor)}{scope === 'rank' ? ' / 卡' : ' / TP 组'}</p>
+                <p className="mt-4 text-sm leading-6 text-slate-400">{scenario.sequence >= model.execution.maxContext ? '已达配置上下文上限，未估算下一 token。' : `单请求再增 1 token 的容量增长：+${formatBytes(estimate.growthBytesPerToken * factor)}${scope === 'rank' ? ' / 卡' : ' / TP 组'}`}</p>
                 <p className="mt-4 text-sm leading-6 text-slate-400">{cacheNote(model, scenario.tp)}</p>
               </> : <div className="my-5 rounded-2xl border border-amber-200/20 bg-amber-200/5 p-4"><p className="text-base font-medium text-amber-100">当前条件不计算</p>{reasons.map((reason) => <p key={reason} className="mt-2 text-sm leading-6 text-amber-100/80">{reason}</p>)}</div>}
               <div className="mt-auto flex flex-wrap gap-x-5 gap-y-3 pt-6"><Link to={`/models/${model.id}`} className="inline-flex items-center gap-1 text-sm text-cyan-200 hover:underline">打开交互结构图<ArrowUpRight className="h-4 w-4" /></Link><a href={model.configUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm text-slate-400 hover:text-white">官方配置<ArrowUpRight className="h-4 w-4" /></a></div>

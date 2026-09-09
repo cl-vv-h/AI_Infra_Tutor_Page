@@ -123,3 +123,14 @@ test('growth curves use exact shared estimates and stop at each model boundary',
   }
   assert.deepEqual(comparisonSeries(model('glm-4-7-flash'), { ...defaultComparisonScenario, tp: 8 }), [])
 })
+
+test('Mistral comparison curve has a 4096-token knee while Mixtral continues growing', () => {
+  const sliding = comparisonSeries(model('mistral-7b-v0-1'), defaultComparisonScenario)
+  const full = comparisonSeries(model('mixtral-8x7b-v0-1'), defaultComparisonScenario)
+  const at = (points, sequence) => points.find((point) => point.sequence === sequence)
+  assert.equal(at(sliding, 4096).perRankBytes, 512 * MiB)
+  assert.equal(at(sliding, 32768).perRankBytes, at(sliding, 4096).perRankBytes)
+  assert.equal(at(full, 32768).perRankBytes, at(full, 4096).perRankBytes * 8)
+  assert.equal(at(sliding, 4096).growthBytesPerToken, 0)
+  assert.ok(at(full, 4096).growthBytesPerToken > 0)
+})

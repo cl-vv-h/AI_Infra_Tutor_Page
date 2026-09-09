@@ -142,7 +142,7 @@ export default function Models() {
               <div className="model-residual-wire" aria-hidden="true"><span>+</span></div>
               {group.map((node, index) => <div key={node.id}>
                 {nodeButton(node)}
-                {['mla', 'gqa', 'gdn'].includes(node.id) && <button type="button" aria-pressed={selected.id === cache.id} onClick={() => inspect(cache)} onMouseEnter={() => setHoveredId(cache.id)} onMouseLeave={() => setHoveredId(null)} onFocus={() => setHoveredId(cache.id)} onBlur={() => setHoveredId(null)} className={`mx-auto mt-3 flex w-full max-w-[25rem] items-center gap-3 rounded-xl border p-3 text-left transition ${selected.id === cache.id ? 'border-lime-200/70 bg-lime-200/10' : 'border-lime-200/25 bg-[#0b1514] hover:border-lime-200/60'}`}>
+                {['mla', 'gqa', 'gdn', 'swa'].includes(node.id) && <button type="button" aria-pressed={selected.id === cache.id} onClick={() => inspect(cache)} onMouseEnter={() => setHoveredId(cache.id)} onMouseLeave={() => setHoveredId(null)} onFocus={() => setHoveredId(cache.id)} onBlur={() => setHoveredId(null)} className={`mx-auto mt-3 flex w-full max-w-[25rem] items-center gap-3 rounded-xl border p-3 text-left transition ${selected.id === cache.id ? 'border-lime-200/70 bg-lime-200/10' : 'border-lime-200/25 bg-[#0b1514] hover:border-lime-200/60'}`}>
                   <Database className="h-5 w-5 shrink-0 text-lime-200" /><span className="min-w-0"><span className="block text-sm font-semibold text-lime-100">↔ {cache.title}</span><span className="mt-1 block break-words font-mono text-xs text-white/65">{formatShape(cache.outputShape, model, scenario)}</span></span>
                 </button>}
                 {(index < group.length - 1 || groupIndex === 0) && flowLine}
@@ -152,7 +152,7 @@ export default function Models() {
           {flowLine}
           {effectiveLayer < model.dimensions.layers - 1 && <><div className="model-folded-layers">后 {model.dimensions.layers - effectiveLayer - 1} 层 Decoder <ArrowDown className="inline h-3 w-3" /></div>{flowLine}</>}
           {nodeButton(head)}
-          <p className="mt-5 text-xs leading-5 text-white/55">N 是本次前向的 token 数；完整注意力 KV 保留历史 S，DeltaNet 状态保留定长矩阵与短窗口。输出是逻辑 Shape，内核可能采用不同的打包、分页或融合布局。</p>
+          <p className="mt-5 text-xs leading-5 text-white/55">N 是本次前向的 token 数；完整注意力保留历史 S，滑动注意力保留 min(S, W)，DeltaNet 保留定长矩阵与短窗口。输出是逻辑 Shape，内核可能采用不同的打包、分页或融合布局。</p>
         </div>
 
         <aside className="hidden xl:sticky xl:top-20 xl:block"><Inspector node={inspected} model={model} scenario={scenario} /></aside>

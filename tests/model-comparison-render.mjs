@@ -12,7 +12,7 @@ const server = await createServer({
 })
 
 try {
-  const { MemoryRouter } = await server.ssrLoadModule('react-router-dom')
+  const { MemoryRouter, Routes, Route } = await server.ssrLoadModule('react-router-dom')
   const { default: Compare } = await server.ssrLoadModule('/src/pages/ModelCompare.tsx')
   const { modelArchitectures } = await server.ssrLoadModule('/src/data/models.ts')
   const render = (query = '') => renderToString(h(MemoryRouter, { initialEntries: [`/models/compare${query}`] }, h(Compare)))
@@ -44,7 +44,22 @@ try {
   const malformed = render('?models=%3Cscript%3E&b=Infinity&tp=3&view=bad')
   assert.match(malformed, /参数无效/)
   assert.doesNotMatch(malformed, /<script>/)
-  console.log('Comparison render smoke tests passed: default trio, all 21 model pairs, shared group settings, limits and malformed links.')
+  const { default: Models } = await server.ssrLoadModule('/src/pages/Models.tsx')
+  for (const id of ['mistral-7b-v0-1', 'mixtral-8x7b-v0-1']) {
+    const route = h(Route, { path: '/models/:modelId', element: h(Models) })
+    const html = renderToString(h(MemoryRouter, { initialEntries: [`/models/${id}`] }, h(Routes, null, route)))
+    assert.doesNotMatch(html, /NaN|undefined|Infinity/)
+    assert.equal((html.match(/aria-label="Layer \d+ ·/g) ?? []).length, 32)
+    assert.match(html, /32,000/)
+    assert.ok(html.includes(id === 'mistral-7b-v0-1' ? '滚动窗口 · W' : 'Mixtral Top-2 MoE'))
+  }
+  const sliding = render('?models=mistral-7b-v0-1,mixtral-8x7b-v0-1&s=16384&tp=4')
+  assert.match(sliding, /滑动窗口 KV/)
+  assert.match(sliding, /容量增长：\+0 B/)
+  assert.match(sliding, /min\(S, 4,096\)/)
+  const atLimit = render('?models=mistral-7b-v0-1,mixtral-8x7b-v0-1&s=32768&tp=4')
+  assert.equal((atLimit.match(/已达配置上下文上限/g) ?? []).length, 2)
+  console.log(`Model render smoke tests passed: default trio, all ${modelArchitectures.length * (modelArchitectures.length - 1) / 2} model pairs, Mistral/Mixtral explorers, shared settings and limits.`)
 } finally {
   await server.close()
 }

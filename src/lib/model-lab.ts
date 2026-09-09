@@ -16,6 +16,11 @@ export function tokenCount(scenario: InferenceScenario) {
   return scenario.batch * (scenario.phase === 'prefill' ? scenario.sequence : 1)
 }
 
+/** Logical retained positions, including the current token, not allocation. */
+export function cachedSequence(model: ModelArchitecture, sequence: number) {
+  return model.execution.cache.kind === 'swa' ? Math.min(sequence, model.execution.cache.window) : sequence
+}
+
 export function formatShape(template: string, model: ModelArchitecture, scenario: InferenceScenario) {
   const hybrid = model.execution.cache.kind === 'hybrid' ? model.execution.cache : null
   const values: Record<string, number> = {
@@ -24,7 +29,7 @@ export function formatShape(template: string, model: ModelArchitecture, scenario
     vocabShard: Math.ceil(model.dimensions.vocabSize / scenario.tp),
     intermediateShard: model.dimensions.intermediateSize / scenario.tp,
     expertShard: (model.execution.expertIntermediateSize ?? model.dimensions.intermediateSize) / scenario.tp,
-    tp: scenario.tp, batch: scenario.batch, sequence: scenario.sequence,
+    tp: scenario.tp, batch: scenario.batch, sequence: scenario.sequence, cachedSequence: cachedSequence(model, scenario.sequence),
     ...(hybrid ? {
       linearKeyHeads: hybrid.keyHeads / scenario.tp,
       linearValueHeads: hybrid.valueHeads / scenario.tp,
@@ -47,11 +52,13 @@ export function cacheEstimate(model: ModelArchitecture, scenario: InferenceScena
     ? cache.latentWidth + cache.ropeWidth
     : 2 * localKvHeads(model, scenario.tp) * model.dimensions.headDim
   const bytesPerToken = valuesPerTokenPerLayer * kvLayers * scenario.cacheBytes
-  const kvBytes = scenario.batch * scenario.sequence * bytesPerToken
+  const retainedTokens = cachedSequence(model, scenario.sequence)
+  const kvBytes = scenario.batch * retainedTokens * bytesPerToken
+  const growthBytesPerToken = cache.kind === 'swa' && scenario.sequence >= cache.window ? 0 : bytesPerToken
   const recurrentBytes = cache.kind === 'hybrid' ? scenario.batch * recurrentLayers * cache.valueHeads / scenario.tp * cache.keyDim * cache.valueDim * cache.recurrentBytes : 0
   const convBytes = cache.kind === 'hybrid' ? scenario.batch * recurrentLayers * (2 * cache.keyHeads * cache.keyDim + cache.valueHeads * cache.valueDim) / scenario.tp * cache.convStateSlots * cache.convBytes : 0
   const perRankBytes = kvBytes + recurrentBytes + convBytes
-  return { perRankBytes, allRankBytes: perRankBytes * scenario.tp, bytesPerToken, valuesPerTokenPerLayer, kvBytes, recurrentBytes, convBytes, kvLayers, recurrentLayers }
+  return { perRankBytes, allRankBytes: perRankBytes * scenario.tp, bytesPerToken, growthBytesPerToken, retainedTokens, valuesPerTokenPerLayer, kvBytes, recurrentBytes, convBytes, kvLayers, recurrentLayers }
 }
 
 export function attentionKind(model: ModelArchitecture, layer: number) {

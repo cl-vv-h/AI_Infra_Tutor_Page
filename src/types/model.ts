@@ -51,7 +51,7 @@ export interface ModelArchitecture {
     maxContext: number
     contextNote?: string
     denseLayers: number
-    cache: { kind: 'gqa' } | { kind: 'mla'; latentWidth: number; ropeWidth: number } | {
+    cache: { kind: 'gqa' } | { kind: 'swa'; window: number } | { kind: 'mla'; latentWidth: number; ropeWidth: number } | {
       kind: 'hybrid'
       layerTypes: Array<'linear_attention' | 'full_attention'>
       keyHeads: number

@@ -1,5 +1,7 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
+import { readFile } from 'node:fs/promises'
+import { categories } from '../src/data/categories.ts'
 import { modelArchitectures, getModelArchitecture } from '../src/data/models.ts'
 import { attentionKind, cacheEstimate, decoderNodes, formatShape, layerCacheNode, localKvHeads, tokenCount } from '../src/lib/model-lab.ts'
 
@@ -118,6 +120,77 @@ test('all model layers have a complete residual block and resolvable shapes', ()
             assert.doesNotMatch(actual, /\{|\}|NaN|undefined|\bN\b/, `${model.id} layer ${layer} TP ${tp}: ${actual}`)
           }
         }
+      }
+    }
+  }
+})
+
+test('Mistral v0.1 sliding cache saturates exactly at W while preserving full prefill token count', () => {
+  const model = getModelArchitecture('mistral-7b-v0-1')
+  assert.equal(model.execution.cache.kind, 'swa')
+  assert.equal(model.execution.cache.window, 4096)
+  for (const tp of model.supportedTp) {
+    for (const batch of [1, 4]) {
+      for (const cacheBytes of [1, 2]) {
+        for (const sequence of [1, 1024, 4095, 4096, 4097, 32768]) {
+          const scenario = { ...base, tp, batch, cacheBytes, sequence }
+          const estimate = cacheEstimate(model, scenario)
+          const width = 32 * 2 * (8 / tp) * 128 * cacheBytes
+          assert.equal(estimate.retainedTokens, Math.min(sequence, 4096))
+          assert.equal(estimate.kvBytes, batch * Math.min(sequence, 4096) * width)
+          assert.equal(estimate.bytesPerToken, width)
+          assert.equal(estimate.growthBytesPerToken, sequence < 4096 ? width : 0)
+          assert.equal(estimate.recurrentBytes + estimate.convBytes, 0)
+          assert.equal(cacheEstimate(model, { ...scenario, phase: 'prefill' }).perRankBytes, estimate.perRankBytes)
+          assert.equal(tokenCount({ ...scenario, phase: 'prefill' }), batch * sequence)
+          assert.equal(formatShape(layerCacheNode(model, 0).outputShape, model, scenario), `[${batch}, ${Math.min(sequence, 4096)}, 2, ${8 / tp}, 128]`)
+        }
+      }
+    }
+  }
+  assert.equal(cacheEstimate(model, { ...base, sequence: 32768 }).perRankBytes, 512 * 1024 ** 2)
+})
+
+test('Mixtral has full GQA cache, not eight KV copies or the Mistral window', () => {
+  const model = getModelArchitecture('mixtral-8x7b-v0-1')
+  const mistral = getModelArchitecture('mistral-7b-v0-1')
+  for (let layer = 0; layer < 32; layer++) {
+    assert.equal(attentionKind(mistral, layer), 'swa')
+    assert.equal(decoderNodes(mistral, layer)[4].id, 'ffn')
+    assert.equal(attentionKind(model, layer), 'gqa')
+    assert.equal(decoderNodes(model, layer)[4].id, 'moe')
+  }
+  const scenario = { ...base, sequence: 32768, tp: 4 }
+  const full = cacheEstimate(model, scenario)
+  assert.equal(full.retainedTokens, 32768)
+  assert.equal(full.perRankBytes, 1024 * 1024 ** 2)
+  assert.equal(full.perRankBytes, cacheEstimate(getModelArchitecture('llama-3-1-8b'), scenario).perRankBytes)
+  assert.equal(full.perRankBytes, cacheEstimate(mistral, scenario).perRankBytes * 8)
+  const expert = decoderNodes(model, 0)[4]
+  assert.equal(formatShape(expert.weights[1].shape, model, { ...scenario, tp: 8 }), '[8, 1792, 4096]')
+  assert.equal(expert.tensors[1].shape, '[N, 2]')
+})
+
+test('marginal capacity growth equals the exact next-token difference for every cache family', () => {
+  for (const model of modelArchitectures) {
+    for (const sequence of [1024, 4095, 4096, 4097]) {
+      const scenario = { ...base, batch: 4, sequence, tp: 4 }
+      const current = cacheEstimate(model, scenario)
+      const next = cacheEstimate(model, { ...scenario, sequence: sequence + 1 })
+      assert.equal(next.perRankBytes - current.perRankBytes, current.growthBytesPerToken * scenario.batch)
+    }
+  }
+})
+
+test('every model knowledge link resolves to an existing article or category', async () => {
+  const articles = JSON.parse(await readFile(new URL('../src/data/curriculum-index.json', import.meta.url), 'utf8'))
+  for (const model of modelArchitectures) {
+    for (const node of model.nodes) {
+      for (const link of node.knowledge) {
+        const url = new URL(link.to, 'https://example.org')
+        if (url.pathname.startsWith('/article/')) assert.ok(articles.some((article) => url.pathname === `/article/${article.slug}`), `${model.id}: ${link.to}`)
+        else if (url.pathname.startsWith('/category/')) assert.ok(categories.some((category) => url.pathname === `/category/${category.slug}`), `${model.id}: ${link.to}`)
+        else assert.fail(`Unexpected knowledge target: ${link.to}`)
       }
     }
   }

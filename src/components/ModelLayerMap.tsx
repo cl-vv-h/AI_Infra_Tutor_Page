@@ -1,8 +1,8 @@
 import { attentionKind } from '@/lib/model-lab'
 import type { ModelArchitecture } from '@/types/model'
 
-const labels = { gqa: 'Full / GQA', mla: 'MLA', gdn: 'Gated DeltaNet' }
-const colors = { gqa: 'border-cyan-200/35 bg-cyan-200/10 text-cyan-100', mla: 'border-violet-200/35 bg-violet-200/10 text-violet-100', gdn: 'border-lime-200/35 bg-lime-200/10 text-lime-100' }
+const labels = { gqa: 'Full / GQA', mla: 'MLA', gdn: 'Gated DeltaNet', swa: 'Sliding / GQA' }
+const colors = { gqa: 'border-cyan-200/35 bg-cyan-200/10 text-cyan-100', mla: 'border-violet-200/35 bg-violet-200/10 text-violet-100', gdn: 'border-lime-200/35 bg-lime-200/10 text-lime-100', swa: 'border-amber-200/35 bg-amber-200/10 text-amber-100' }
 
 export function ModelLayerMap({ model, selectedLayer, onSelect }: { model: ModelArchitecture; selectedLayer: number; onSelect: (layer: number) => void }) {
   const kinds = Array.from({ length: model.dimensions.layers }, (_, i) => attentionKind(model, i))
