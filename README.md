@@ -119,7 +119,7 @@ npm run news:fetch
 
 预算通过 Hash URL 的 `budget` 参数分享，范围 0–1024 GiB、最多三位小数；缺省 8 GiB 只是示例，不是硬件检测结果。不读取设备或上传输入。预算需事先扣除权重、激活、图捕获、通信缓冲和安全余量；结果不计页尾填充、量化元数据、前缀共享或推测解码额外副本，仅为当前逻辑缓存布局的容量边界，不是吞吐预测或部署保证。引擎实际显存还受上下文、并发及 CUDA Graph 等影响，参见 [vLLM 显存管理说明](https://docs.vllm.ai/en/stable/configuration/conserving_memory/)。
 
-模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts`、`src/data/mistral-models.ts`、`src/data/gemma-models.ts`、`src/data/phi-models.ts`、`src/data/olmo-models.ts` 与 `src/data/starcoder-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供十三个代表模型：
+模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts`、`src/data/mistral-models.ts`、`src/data/gemma-models.ts`、`src/data/phi-models.ts`、`src/data/olmo-models.ts`、`src/data/starcoder-models.ts` 与 `src/data/pythia-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供十四个代表模型：
 
 - Llama 3.1 8B：Dense、GQA、SwiGLU；
 - DeepSeek-V3：MLA、DeepSeekMoE、MTP；
@@ -134,10 +134,15 @@ npm run news:fetch
 - Phi-3.5 Mini Instruct：32 层 MHA、32Q/32KV × 96D、融合 QKV 与 Gate/Up 投影、LongRoPE、独立词嵌入与 LM Head；
 - OLMo 2 7B · 1124：32 层 MHA、完整投影宽度 Q/K RMSNorm、子层输出 Norm、4K 上下文与参考汇集式 Attention TP。
 - StarCoder2 3B：30 层滑窗 GQA、带 scale / bias 的 LayerNorm、两矩阵 GELU MLP 与有偏置投影；16K 上下文、4K 窗口。
+- Pythia 1.4B：24 层并行残差、16Q/16KV 完整 MHA、head 内交错融合 QKV、32/128 维 Partial RoPE、独立词嵌入与 LM Head；2K 上下文。
 
-每个模型都有可直接分享的 Hash 路由，例如 `#/models/qwen3-30b-a3b`。模块支持悬浮预览与点击锁定；窄屏点击打开原生模态详情，可用 Esc 关闭。Layer 控件展开一个真实 Decoder 层，显示两次残差连接，并按模型选择 Pre-Norm、Pre+Post-Norm 或子层输出 Norm 布局、按层号选择 Dense 或 MoE，其他层折叠。图中为自回归主干，不包含 MTP 辅助预测分支。
+每个模型都有可直接分享的 Hash 路由，例如 `#/models/qwen3-30b-a3b`。模块支持悬浮预览与点击锁定；窄屏点击打开原生模态详情，可用 Esc 关闭。Layer 控件展开一个真实 Decoder 层：顺序布局显示两次残差连接，并行布局显示两支同源分叉与一次三路汇合；按模型选择 Pre-Norm、Pre+Post-Norm 或子层输出 Norm 布局、按层号选择 Dense 或 MoE，其他层折叠。图中为自回归主干，不包含 MTP 辅助预测分支。
 
 “复制当前图解”保留模型、`layer`、已选 `node`、`phase`、`b`、`s`、`tp` 与 `bytes`；刷新和返回可还原相同条件，临时悬浮和模块搜索词不进入分享链接。窄屏打开链接后可用“查看已选模块”展开详情。模型不存在时显示选择页；数值超出该模型配置或模块不属于当前层时明确提示，不悄悄渲染错误分支。切换模型保留有效推理条件并从第 0 层开始，超出新模型范围的参数会提示并恢复默认值。
+
+Pythia 1.4B 对照 [EleutherAI 配置](https://huggingface.co/EleutherAI/pythia-1.4b/blob/main/config.json)与 [Transformers v4.57.1 的 GPT-NeoX 实现](https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/models/gpt_neox/modeling_gpt_neox.py)：`use_parallel_residual=true` 时，`A=Attention(LN₁(x))`、`M=MLP(LN₂(x))`，输出为 `x+A+M`。名为 `post_attention_layernorm` 的 LN₂ 仍读取 x，不读取 x+A；两份 Norm 各自有独立 scale/bias。图解以并列分支呈现，画布不足 36rem 时上下排列但保持同源标签，不画 Attention→MLP 数据边。只有一个可检查的三路 `parallel-add` 节点，不插入顺序模型的两次残差节点；这是逻辑依赖图，不意味着运行时并发、加法融合或性能提升。
+
+Pythia 的 QKV 输出按 `[head, Q/K/V, head_dim]` 排列，Q/K 前 32 维旋转、余下 96 维直通；完整 128D 的 K/V 仍进入缓存，MLP 不增加 KV 副本。图示 TP 沿 head 与 MLP 中间维分片，两支输出归约后各加一次完整 bias，Norm 向量复制；不将图示 TP 当作框架支持承诺。B=4、S=2048、TP=4、2-byte KV 时缓存为 384 MiB/卡，组内 1.5 GiB。每层 Decoder 独立元素数为 50,358,272；24 层再加最终 Norm 的 4,096 元素，与[官方模型卡](https://huggingface.co/EleutherAI/pythia-1.4b)非词嵌入参数量 1,208,602,624 一致。账本本身不计最终 Norm 或两张独立词表矩阵。对比台新增“并行 / 顺序残差 · S=2,048”组合，选择时显式采用双方有效的共同长度；手写超长链接仍拒绝外推。
 
 模块检索按模块名称、权重名称和中间张量名称匹配，索引只包含各层实际存在的节点。点击结果定位到最近适用层（等距时取较小层号），桌面滚动并聚焦对应节点，窄屏打开详情。全局 Embedding、视觉分支和 LM Head 保持当前层上下文。模块索引与 URL 校验集中在 `src/lib/model-explorer.ts`。
 

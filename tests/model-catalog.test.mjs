@@ -12,7 +12,7 @@ test('all models have exactly one attention profile and accurate layer compositi
     assert.ok(attentionFilters.some((filter) => filter.id === modelAttentionProfile(model)))
     assert.equal(attentionComposition(model).reduce((sum, part) => sum + part.count, 0), model.dimensions.layers)
   }
-  assert.deepEqual(ids(filterCatalog(registry, state({ attention: 'mha' }))), ['phi-3-5-mini-instruct', 'olmo-2-1124-7b'])
+  assert.deepEqual(ids(filterCatalog(registry, state({ attention: 'mha' }))), ['phi-3-5-mini-instruct', 'olmo-2-1124-7b', 'pythia-1-4b'])
   assert.deepEqual(ids(filterCatalog(registry, state({ attention: 'mixed' }))), ['gemma-2-9b'])
   assert.deepEqual(attentionComposition(registry.find((model) => model.id === 'qwen3-5-9b')), [{ kind: 'gdn', count: 24 }, { kind: 'gqa', count: 8 }])
   assert.equal(attentionFilters.slice(1).reduce((sum, filter) => sum + filterCatalog(registry, state({ attention: filter.id })).length, 0), registry.length)

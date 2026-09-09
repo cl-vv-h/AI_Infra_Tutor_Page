@@ -106,11 +106,17 @@ test('all model layers have a complete residual block and resolvable shapes', ()
   for (const model of modelArchitectures) {
     for (let layer = 0; layer < model.dimensions.layers; layer++) {
       const nodes = decoderNodes(model, layer)
-      assert.equal(nodes.length, model.execution.normLayout ? 8 : 6)
+      const parallel = model.execution.residualLayout === 'parallel'
+      assert.equal(nodes.length, parallel ? 5 : model.execution.normLayout ? 8 : 6)
       const groups = decoderGroups(model, layer)
-      assert.equal(groups[0].at(-1).id, 'attention-add')
+      assert.equal(groups[0].at(-1).id, parallel ? attentionKind(model, layer) : 'attention-add')
       assert.equal(groups[1][0].id, model.execution.normLayout === 'post-branch-qk' ? 'ffn' : 'ffn-norm')
-      assert.equal(groups[1].at(-1).id, 'ffn-add')
+      assert.equal(groups[1].at(-1).id, parallel ? 'ffn' : 'ffn-add')
+      if (parallel) {
+        assert.equal(nodes.at(-1).id, 'parallel-add')
+        assert.equal(nodes.filter((node) => node.id.endsWith('-add')).length, 1)
+        assert.equal(groups.flat().length, nodes.length - 1)
+      }
       assert.equal(nodes.filter((node) => ['ffn', 'dense-ffn', 'moe'].includes(node.id)).length, 1)
       for (const tp of model.supportedTp) {
         assert.equal(model.dimensions.attentionHeads % tp, 0)

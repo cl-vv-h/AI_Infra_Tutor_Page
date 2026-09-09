@@ -142,10 +142,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .model-canvas {
+  container-type: inline-size;
   background-image:
     linear-gradient(rgba(112, 225, 245, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(112, 225, 245, 0.035) 1px, transparent 1px);
   background-size: 28px 28px;
+}
+
+@container (min-width: 36rem) {
+  .model-parallel-branches { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 .model-node {

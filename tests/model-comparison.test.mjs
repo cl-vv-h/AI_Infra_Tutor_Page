@@ -85,6 +85,11 @@ test('comparison agrees with the existing model explorer for every covered model
           for (const sequence of [1024, 4096, item.execution.maxContext]) {
             const scenario = { batch, sequence, tp, cacheBytes, phase: 'decode' }
             const result = compareEstimate(item, scenario)
+            if (sequence > item.execution.maxContext) {
+              assert.equal(result.estimate, null)
+              assert.ok(result.reasons.some((reason) => reason.includes('S 超过当前配置上限')))
+              continue
+            }
             assert.deepEqual(result.reasons, [])
             assert.deepEqual(result.estimate, cacheEstimate(item, scenario))
             assert.equal(memoryValue(result.estimate, 'group'), memoryValue(result.estimate, 'rank') * tp)

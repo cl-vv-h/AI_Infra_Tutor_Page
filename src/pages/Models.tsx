@@ -80,6 +80,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
   const selected = visibleNodes.find((node) => node.id === state.nodeId)!
   const inspected = visibleNodes.find((node) => node.id === hoveredId) ?? selected
   const isDense = effectiveLayer < model.execution.denseLayers
+  const parallelResidual = model.execution.residualLayout === 'parallel'
 
   useEffect(() => {
     if (!pendingLocate || pendingLocate.id !== state.nodeId || pendingLocate.layer !== effectiveLayer) return
@@ -120,6 +121,12 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
       <span className="mt-2 block text-base font-semibold text-white">{node.title}</span>
       <span className="mt-1 block text-sm text-white/60">{node.subtitle}</span>
       <span className="mt-3 block break-words font-mono text-xs text-cyan-100/80">{formatShape(node.outputShape, model, scenario)}</span>
+    </button>
+  }
+
+  function cacheButton() {
+    return <button id={`model-node-${cache.id}`} type="button" aria-pressed={selected.id === cache.id} onClick={() => inspect(cache)} onMouseEnter={() => setHoveredId(cache.id)} onMouseLeave={() => setHoveredId(null)} onFocus={() => setHoveredId(cache.id)} onBlur={() => setHoveredId(null)} className={`mx-auto mt-3 flex w-full max-w-[25rem] items-center gap-3 rounded-xl border p-3 text-left transition ${selected.id === cache.id ? 'border-lime-200/70 bg-lime-200/10' : 'border-lime-200/25 bg-[#0b1514] hover:border-lime-200/60'}`}>
+      <Database className="h-5 w-5 shrink-0 text-lime-200" /><span className="min-w-0"><span className="block text-sm font-semibold text-lime-100">↔ {cache.title}</span><span className="mt-1 block break-words font-mono text-xs text-white/65">{formatShape(cache.outputShape, model, scenario)}</span></span>
     </button>
   }
 
@@ -184,13 +191,22 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
           {effectiveLayer > 0 && <><div className="model-folded-layers">前 {effectiveLayer} 层 Decoder</div>{flowLine}</>}
           <div className="rounded-2xl border border-dashed border-cyan-200/25 px-3 py-4 sm:px-6">
             <div className="mb-5 flex flex-wrap justify-between gap-2 font-mono text-xs text-cyan-100/80"><span>DECODER LAYER {effectiveLayer}</span><span className="text-violet-200">{isDense ? 'DENSE FFN' : 'SPARSE MoE'}</span></div>
-            {groups.map((group, groupIndex) => <div key={groupIndex} className="model-residual-group">
+            {parallelResidual ? <div role="group" aria-label="并行残差：同源分叉与三路汇合">
+              <div className="rounded-xl border border-amber-200/30 bg-amber-200/5 p-3 text-center text-sm leading-6 text-amber-100">同一层输入 x · 两路独立读取<br /><span className="font-mono">{formatShape('[N, ' + model.dimensions.hiddenSize + ']', model, scenario)}</span><br />x 另行保留，直接送到最后的加法节点</div>
+              <div className="model-parallel-branches mt-4 grid gap-4">
+                {groups.map((group, branch) => <div key={branch} data-parallel-branch={branch === 0 ? 'attention' : 'mlp'} className="flex min-w-0 flex-col rounded-xl border border-white/10 bg-black/10 p-3">
+                  <h3 className={`mb-4 text-center text-sm font-medium ${branch === 0 ? 'text-cyan-100' : 'text-violet-100'}`}>{branch === 0 ? '分支 A：x → LN₁ → Attention' : '分支 M：x → LN₂ → MLP'}</h3>
+                  {group.map((node, index) => <div key={node.id}>{nodeButton(node)}{index < group.length - 1 && flowLine}{['mla', 'gqa', 'mha', 'gdn', 'swa'].includes(node.id) && cacheButton()}</div>)}
+                  <p className="mt-auto pt-4 text-center font-mono text-sm text-white/65">{branch === 0 ? 'A → 共同汇合' : 'M → 共同汇合'}</p>
+                </div>)}
+              </div>
+              {flowLine}{nodeButton(visibleNodes.find((node) => node.id === 'parallel-add')!)}
+              <p className="mt-4 text-sm leading-6 text-white/60">两支之间没有 Attention → MLP 的数据边。上下或并排排列都表示同源分支；实际是否同时执行取决于运行时，不是吞吐或速度承诺。</p>
+            </div> : groups.map((group, groupIndex) => <div key={groupIndex} className="model-residual-group">
               <div className="model-residual-wire" aria-hidden="true"><span>+</span></div>
               {group.map((node, index) => <div key={node.id}>
                 {nodeButton(node)}
-                {['mla', 'gqa', 'mha', 'gdn', 'swa'].includes(node.id) && <button id={`model-node-${cache.id}`} type="button" aria-pressed={selected.id === cache.id} onClick={() => inspect(cache)} onMouseEnter={() => setHoveredId(cache.id)} onMouseLeave={() => setHoveredId(null)} onFocus={() => setHoveredId(cache.id)} onBlur={() => setHoveredId(null)} className={`mx-auto mt-3 flex w-full max-w-[25rem] items-center gap-3 rounded-xl border p-3 text-left transition ${selected.id === cache.id ? 'border-lime-200/70 bg-lime-200/10' : 'border-lime-200/25 bg-[#0b1514] hover:border-lime-200/60'}`}>
-                  <Database className="h-5 w-5 shrink-0 text-lime-200" /><span className="min-w-0"><span className="block text-sm font-semibold text-lime-100">↔ {cache.title}</span><span className="mt-1 block break-words font-mono text-xs text-white/65">{formatShape(cache.outputShape, model, scenario)}</span></span>
-                </button>}
+                {['mla', 'gqa', 'mha', 'gdn', 'swa'].includes(node.id) && cacheButton()}
                 {(index < group.length - 1 || groupIndex === 0) && flowLine}
               </div>)}
             </div>)}

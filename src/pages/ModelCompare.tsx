@@ -12,6 +12,7 @@ import ModelComparisonChart from '@/components/ModelComparisonChart'
 const controlClass = 'min-w-0 rounded-xl border border-white/15 bg-[#0c131c] px-3 py-3 text-sm text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-200'
 const integer = (value: number) => value.toLocaleString('en-US')
 const presets = [
+  { label: '并行 / 顺序残差', ids: ['pythia-1-4b', 'starcoder2-3b'], sequence: 2048 },
   { label: 'GELU / SwiGLU：FFN 与 Norm', ids: ['starcoder2-3b', 'mistral-7b-v0-1'] },
   { label: 'MHA / GQA：KV 头数', ids: ['phi-3-5-mini-instruct', 'llama-3-1-8b'] },
   { label: 'GQA / MLA / Hybrid', ids: ['llama-3-1-8b', 'glm-4-7-flash', 'qwen3-5-9b'] },
@@ -84,6 +85,7 @@ export default function ModelCompare() {
     { label: '完整 / 滑窗 KV 层数', values: models.map((model) => { const { fullKvLayers, slidingLayers } = cacheEstimate(model, defaultComparisonScenario); return `${fullKvLayers} / ${slidingLayers}` }) },
     { label: 'KV 保留长度', values: models.map((model) => model.execution.cache.kind === 'mixed' ? `完整层 S / 滑窗层 min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'swa' ? `min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'hybrid' ? 'S（仅完整注意力层）' : 'S') },
     { label: '子层边界归一化', values: models.map((model) => model.execution.normKind === 'layernorm' ? '2 × LayerNorm · Pre · 每个含 scale + bias' : model.execution.normLayout === 'pre-post' ? '4 × RMSNorm · Pre + Post' : model.execution.normLayout === 'post-branch-qk' ? '2 × RMSNorm · 子层输出、残差相加前；另有 Q/K Norm' : '2 × RMSNorm · Pre') },
+    { label: '残差数据依赖', values: models.map((model) => model.execution.residualLayout === 'parallel' ? '并行：Attention 与 MLP 同读 x，最后合并 x + A + M' : '顺序：先合并 Attention 残差，再进入 FFN / MoE') },
     { label: 'FFN 运算', values: models.map((model) => model.nodes.filter((node) => ['ffn', 'dense-ffn', 'moe'].includes(node.id)).map((node) => node.title).join(' / ')) },
     { label: '当前配置上下文上限', values: models.map((model) => `${integer(model.execution.maxContext)} tokens`) },
     { label: '图解已覆盖的 TP', values: models.map((model) => model.supportedTp.join(' / ')) },
@@ -97,7 +99,7 @@ export default function ModelCompare() {
       </header>
 
       <section aria-label="统一对比条件" className="mt-6 rounded-3xl border border-white/10 bg-[#0b131b] p-5 sm:p-6">
-        <div className="mb-5 flex flex-wrap items-center gap-2"><span className="mr-2 text-sm text-slate-400">对比组合</span>{presets.map((preset) => <button key={preset.label} type="button" onClick={() => update({ modelIds: preset.ids })} aria-pressed={preset.ids.join(',') === state.modelIds.join(',')} className="rounded-full border border-white/15 px-3 py-2 text-sm text-cyan-100 transition hover:bg-white/5 focus-visible:outline focus-visible:outline-cyan-200">{preset.label}</button>)}</div>
+        <div className="mb-5 flex flex-wrap items-center gap-2"><span className="mr-2 text-sm text-slate-400">对比组合</span>{presets.map((preset) => <button key={preset.label} type="button" onClick={() => update({ modelIds: preset.ids, ...(preset.sequence ? { scenario: { ...scenario, sequence: preset.sequence } } : {}) })} aria-pressed={preset.ids.join(',') === state.modelIds.join(',') && (!preset.sequence || scenario.sequence === preset.sequence)} className="rounded-full border border-white/15 px-3 py-2 text-sm text-cyan-100 transition hover:bg-white/5 focus-visible:outline focus-visible:outline-cyan-200">{preset.label}{preset.sequence ? ` · S=${integer(preset.sequence)}` : ''}</button>)}</div>
         <div className="grid gap-4 md:grid-cols-3">{[0, 1, 2].map((slot) => <label key={slot} className="flex min-w-0 flex-col gap-2 text-sm text-slate-300"><span style={{ color: comparisonColors[slot] }}>模型 {slot + 1}{slot === 2 && ' · 可选'}</span><select className={controlClass} value={state.modelIds[slot] ?? ''} onChange={(event) => { const ids = [...state.modelIds]; if (event.target.value) ids[slot] = event.target.value; else ids.splice(slot, 1); update({ modelIds: ids }) }}>{slot === 2 && <option value="">不加入第三个模型</option>}{modelArchitectures.map((model) => <option key={model.id} value={model.id} disabled={state.modelIds.includes(model.id) && state.modelIds[slot] !== model.id}>{model.name} · {model.parameters}</option>)}</select></label>)}</div>
         <div className="mt-5 grid gap-4 border-t border-white/10 pt-5 sm:grid-cols-2 lg:grid-cols-5">
           <label className="flex flex-col gap-2 text-sm text-slate-300">并发请求 B<select className={controlClass} value={scenario.batch} onChange={(event) => update({ scenario: { ...scenario, batch: Number(event.target.value) } })}>{[...new Set([1, 2, 4, 8, 16, 32, 64, scenario.batch])].sort((a, b) => a - b).map((value) => <option key={value} value={value}>{value}</option>)}</select></label>

@@ -110,6 +110,17 @@ export function decoderNodes(model: ModelArchitecture, layer: number): Architect
     knowledge: [{ label: '残差与 Pre-Norm', to: '/category/model-architecture' }, { label: 'TP 通信', to: '/category/parallel-strategy' }], tone: 'output',
   })
   const ffn = layer < model.execution.denseLayers ? get('dense-ffn') ?? get('ffn') : get('moe')
+  if (model.execution.residualLayout === 'parallel') return [
+    get('attention-norm'), get(attentionKind(model, layer)), get('ffn-norm'), ffn,
+    {
+      id: 'parallel-add', eyebrow: 'PARALLEL MERGE', title: 'Parallel Residual Add', subtitle: 'y = x + A + M · 三路同 Shape 相加',
+      description: 'A = Attention(LN₁(x))，M = MLP(LN₂(x))。两条分支读取同一份层输入 x；MLP 不依赖 Attention 输出。将两个分支结果与保留的 x 逐元素相加，再交给下一层。这里表示计算依赖，不承诺执行器实际并发、加法融合或速度提升。',
+      inputShape: `${shape} + ${shape} + ${shape}`, outputShape: shape, weights: [],
+      tensors: [{ label: '保留的层输入 x', shape }, { label: 'Attention 分支输出 A', shape }, { label: 'MLP 分支输出 M', shape }],
+      weightlessNote: '三路逐元素求和，没有可训练权重。图示 TP 中两支输出先完成所需归约并各加一次输出 bias，再与 x 合并。',
+      knowledge: [{ label: 'Decoder 与残差', to: '/category/model-architecture' }, { label: 'TP 与输出归约', to: '/category/parallel-strategy' }], tone: 'output',
+    },
+  ]
   if (model.execution.normLayout === 'post-branch-qk') return [
     get('attention-projection'), get('qk-norm'), get(attentionKind(model, layer)), get('attention-post-norm'), residual('attention-add', 'Attention 子层输入'),
     ffn, get('ffn-post-norm'), residual('ffn-add', 'FFN 子层输入'),
@@ -133,6 +144,8 @@ export function decoderNodes(model: ModelArchitecture, layer: number): Architect
 
 export function decoderGroups(model: ModelArchitecture, layer: number) {
   const nodes = decoderNodes(model, layer)
+  // Parallel branches have no inner residual add; their shared merge is a separate node.
+  if (model.execution.residualLayout === 'parallel') return [nodes.slice(0, 2), nodes.slice(2, 4)]
   const split = nodes.findIndex((node) => node.id === 'attention-add') + 1
   return [nodes.slice(0, split), nodes.slice(split)]
 }

@@ -54,6 +54,7 @@ export interface ModelArchitecture {
     contextNote?: string
     denseLayers: number
     normKind?: 'rmsnorm' | 'layernorm'
+    residualLayout?: 'parallel'
     normLayout?: 'pre-post' | 'post-branch-qk'
     cache: { kind: 'gqa'; layout?: 'replicated' } | { kind: 'swa'; window: number } | { kind: 'mixed'; window: number; layerTypes: Array<'sliding_attention' | 'full_attention'> } | { kind: 'mla'; latentWidth: number; ropeWidth: number } | {
       kind: 'hybrid'
