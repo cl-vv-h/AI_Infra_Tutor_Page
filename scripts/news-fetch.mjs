@@ -56,15 +56,21 @@ export async function fetchSource(source, fetchImpl = fetch) {
   const endpoint = githubReleaseEndpoint(source)
   if (feed.state === 'ok' || !endpoint) return { source, channel: 'feed', ...feed }
   const base = { source, channel: 'github-api', feedFailure: { state: feed.state, ...(feed.httpStatus ? { httpStatus: feed.httpStatus } : {}) } }
+  return { ...base, ...await fetchGithubReleases(source, fetchImpl) }
+}
+
+export async function fetchGithubReleases(source, fetchImpl = fetch) {
+  const endpoint = githubReleaseEndpoint(source)
+  if (!endpoint) throw new Error('INVALID_RELEASE_SOURCE')
   // Exactly one unauthenticated fallback request; do not retry rate limits or read tokens.
   try {
     const response = await fetchImpl(endpoint, {
       headers: { 'User-Agent': userAgent, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2026-03-10' },
       redirect: 'error', signal: AbortSignal.timeout(15000),
     })
-    if (!response.ok) return { ...base, state: 'unavailable', entries: [], httpStatus: response.status }
-    try { return { ...base, state: 'ok', entries: parseGithubReleases(await response.json(), source) } } catch {
-      return { ...base, state: 'invalid', entries: [] }
+    if (!response.ok) return { state: 'unavailable', entries: [], httpStatus: response.status }
+    try { return { state: 'ok', entries: parseGithubReleases(await response.json(), source) } } catch {
+      return { state: 'invalid', entries: [] }
     }
-  } catch { return { ...base, state: 'unavailable', entries: [] } }
+  } catch { return { state: 'unavailable', entries: [] } }
 }

@@ -14,6 +14,16 @@ export interface NewsItem {
   fetchedAt: string
   score: number
   topics?: string[]
+  releaseStage?: 'stable' | 'prerelease'
+  publishedAtKind?: 'github-release'
+}
+
+export interface NewsReleaseData {
+  generatedAt: string | null
+  lookbackDays: number
+  limitPerStage: number
+  items: NewsItem[]
+  sources: Array<{ name: string; repository: string; url: string; state: 'ok' | 'unavailable' | 'invalid'; httpStatus?: number; lastSuccessAt: string | null; count: number }>
 }
 
 export interface NewsSourceState {

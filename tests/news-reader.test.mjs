@@ -87,3 +87,27 @@ test('all technical topics have reading guides and their learning links resolve'
     for (const link of guide.originals ?? []) assert.equal(new URL(link.url).protocol, 'https:')
   }
 })
+
+test('release links preserve stage and all shared filters; leaving the desk clears stage', () => {
+  const { state, notices } = parse('view=releases&stage=prerelease&source=SGLang+Releases&q=cache&topic=inference')
+  assert.equal(state.view, 'releases')
+  assert.equal(state.releaseStage, 'prerelease')
+  assert.equal(state.category, 'all')
+  assert.equal(state.sortBy, 'latest')
+  assert.deepEqual(notices, [])
+  assert.deepEqual(parse(newsParams(state)).state, state)
+  assert.equal(newsParams({ ...state, view: 'library' }).has('stage'), false)
+  assert.equal(parse('view=releases&stage=evil').state.releaseStage, 'all')
+  assert.match(parse('view=releases&stage=evil').notices[0], /stage/)
+})
+
+test('release stage filters combine with source/search and do not classify unmarked articles as stable', () => {
+  const stable = { ...item, id: 'stable', sourceType: 'release', releaseStage: 'stable', publishedAtKind: 'github-release' }
+  const preview = { ...stable, id: 'preview', releaseStage: 'prerelease' }
+  const items = [item, stable, preview]
+  assert.deepEqual(filterNews(items, { ...filters, releaseStage: 'stable', source: item.source, query: 'kernels' }, topicsForItem).map((entry) => entry.id), ['stable'])
+  assert.deepEqual(filterNews(items, { ...filters, releaseStage: 'prerelease' }, topicsForItem).map((entry) => entry.id), ['preview'])
+  const restored = readSavedItems(JSON.stringify({ version: 2, items: [preview] }))
+  assert.equal(restored[0].releaseStage, 'prerelease')
+  assert.equal(restored[0].publishedAtKind, 'github-release')
+})

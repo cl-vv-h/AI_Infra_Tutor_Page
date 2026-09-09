@@ -1,0 +1,1062 @@
+{
+  "generatedAt": "2026-09-09T15:14:28.382Z",
+  "lookbackDays": 90,
+  "limitPerStage": 8,
+  "sources": [
+    {
+      "name": "SGLang Releases",
+      "repository": "sgl-project/sglang",
+      "url": "https://github.com/sgl-project/sglang/releases",
+      "state": "ok",
+      "lastSuccessAt": "2026-09-09T15:14:28.382Z",
+      "count": 8
+    },
+    {
+      "name": "vLLM Releases",
+      "repository": "vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm/releases",
+      "state": "ok",
+      "lastSuccessAt": "2026-09-09T15:14:28.382Z",
+      "count": 8
+    },
+    {
+      "name": "FlashInfer Releases",
+      "repository": "flashinfer-ai/flashinfer",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases",
+      "state": "ok",
+      "lastSuccessAt": "2026-09-09T15:14:28.382Z",
+      "count": 14
+    },
+    {
+      "name": "Transformers Releases",
+      "repository": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers/releases",
+      "state": "ok",
+      "lastSuccessAt": "2026-09-09T15:14:28.382Z",
+      "count": 8
+    },
+    {
+      "name": "TensorRT-LLM Releases",
+      "repository": "NVIDIA/TensorRT-LLM",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases",
+      "state": "ok",
+      "lastSuccessAt": "2026-09-09T15:14:28.382Z",
+      "count": 8
+    },
+    {
+      "name": "Triton Releases",
+      "repository": "triton-lang/triton",
+      "url": "https://github.com/triton-lang/triton/releases",
+      "state": "ok",
+      "lastSuccessAt": "2026-09-09T15:14:28.382Z",
+      "count": 2
+    }
+  ],
+  "items": [
+    {
+      "id": "ad3baa5182403d56",
+      "category": "technology",
+      "title": "TensorRT-LLM · v1.3.0rc26（预发布）",
+      "summary": "Highlights Known Issues - LoRA adapters that target the routed experts of Qwen3 mixture-of-experts models are silently ignored and produce base-model output. Adapters targeting attention layers behave correctly. - Models using the V2 KV cache manager may fail to start with an insufficient-memory error even when enough GPU memory is free, because the KV cache size estimate is too conservative. GPT-OSS with Eagle-3 speculative decoding and sliding-window cache reuse is the most affected configuration. Lowering the ma",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc26",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-09-09T09:37:50.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 28.6,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "80483f129bec5062",
+      "category": "ai",
+      "title": "vllm · v0.29.0",
+      "summary": "v0.29.0 Highlights This release features 594 commits from 277 contributors (91 new)! Model Runner V2 is now the default for all models (#53183), completing the rollout that began with pooling models (#48290). MRV2 also gained CUDA graph memory profiling for KV cache auto-sizing (#53306), batch-sharded sampling that cuts per-step logits memory by 1/TP (#50465), prompt embeds (#42963), extract_hidden_states speculation (#49811), padded FULL cudagraph dispatch for uniform decode under spec decode (#53407), and DP-sync",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-09-09T08:54:49.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 32.4,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "d092a4e725391c31",
+      "category": "ai",
+      "title": "flashinfer · Release v0.6.18.post1",
+      "summary": "Full Changelog: https://github.com/flashinfer-ai/flashinfer/compare/v0.6.18...v0.6.18.post1",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.6.18.post1",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-09-05T03:19:53.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 21,
+      "topics": [
+        "kernels"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "e7064b5a6b687e1f",
+      "category": "ai",
+      "title": "sglang · v0.5.19",
+      "summary": "Highlights 786 PRs from 214 contributors. New models in this release (see the cookbook for all supported models): | Model | Type | PRs | Cookbook | |---|---|---|---| | Qwen3.8 (2.4T-A95B) | Autoregressive | #35758 ⭐ | link | | Qwen3.8-27B | Autoregressive | #34859 | link | | dots3.note | Autoregressive | #33829 ⭐ | link | | Ling-3.0-flash | Autoregressive | #33561 | link | | Ling-3.0-tiny | Autoregressive | #33561 | link | | Spark2.5 | Autoregressive | #35963 ⭐ | | | MiniCPM-SALA | Autoregressive | #30360 | | | Gra",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.19",
+      "source": "SGLang Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-09-05T02:27:42.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "121a0f864834b89f",
+      "category": "technology",
+      "title": "TensorRT-LLM · v1.3.0rc25（预发布）",
+      "summary": "Highlights Annoucements - KV Cache Manager - Enabled KV cache manager V2 by default for: - DeepSeek V3, DeepSeek R1, and DeepSeek V3 Lite - DeepSeek V3.2 - DeepSeek V4 - GLM-5 - GPT-OSS - Mistral Large 3 - Kimi K2, Kimi K2.5, and Kimi K3 - MiniMax M2 and MiniMax M3 - Nemotron H and Nemotron H Puzzle - Qwen3-Next, Qwen3.5, and Qwen3.8 - Gemma 3 and Gemma 4 - KV cache manager V2 is the recommended architecture, with improved scalability and stability. All new models will use V2 by default, existing models will be mig",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc25",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-08-31T03:24:43.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 18,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "b6b30494c77b7d35",
+      "category": "ai",
+      "title": "flashinfer · Release v0.6.18",
+      "summary": "_These highlights are also published at flashinfer.ai/releases._ v0.6.18 Highlights This release completes NVIDIA Rubin (SM107) support, brings whole-layer expert-parallel MoE to Hopper, adds decode paths for DeepSeek-V4 sparse attention and Kimi K3 linear attention, and broadens low-precision MoE coverage with MXFP4 on Blackwell RTX PRO and DGX Spark and weight-only W4A16 on B200 and B300. SM107 (Rubin) support FlashInfer 0.6.18 completes support for NVIDIA Rubin (SM107), begun in 0.6.16. Rubin devices now dispatc",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.6.18",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-29T02:01:33.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 21,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "5d10d7d17e34c28e",
+      "category": "technology",
+      "title": "triton · Triton 3.8.0 Release Notes",
+      "summary": "Triton 3.8.0 Release Notes Table of Contents Dialect & Frontend Backend & Compiler AMD/HIP Backend NVIDIA Backend Gluon & Layout Improvements Kernels & Benchmarks Proton Profiling Testing & CI Build & Infrastructure Documentation Breaking Changes Contributors Dialect & Frontend New Features Aggregate types: @triton.aggregate and @gluon.aggregate are now public APIs. Aggregates support inherited fields, default values, generated constructors, immutable instances, and aggregate_replace() (#10095, #9572) tl.topk: Adde",
+      "url": "https://github.com/triton-lang/triton/releases/tag/v3.8.0",
+      "source": "Triton Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-28T18:25:56.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 21,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "9fd4aa8dce60d87d",
+      "category": "ai",
+      "title": "transformers · Release v5.16.1",
+      "summary": "Release v5.16.1 This is a special release as we include GLM! (and a few small fixes) GLM-5.3-Flash GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks. GLM-5.3-Flash starts from a newly trained base model, with its architecture and training recipe redesigned around capability and eff",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.16.1",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-26T14:50:01.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "ee47966454f0c0e6",
+      "category": "ai",
+      "title": "transformers · Release: v5.16.0",
+      "summary": "Release v5.16.0 New Model additions Qwen4-Exp Qwen4-Exp builds on Qwen3.5's hybrid text and multimodal architecture with three key components: GatedResidual (GR), Qwen Sparse Attention (QSA), and Per-Layer Embedding (PLE). GR is a Qwen-developed residual architecture that combines Hyper-Connection with GatedNorm. It mixes multiple residual streams with fine-grained elementwise gating before each attention and Mixture-of-Experts (MoE) block, then controls how much of the block output is injected back into each strea",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.16.0",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-26T12:35:15.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "a804292422e177dc",
+      "category": "ai",
+      "title": "vllm · v0.28.0",
+      "summary": "v0.28.0 Highlights This release features 584 commits from 270 contributors (76 new)! Kimi-K3 performance push: a major optimization effort for Kimi-K3 across the stack — Decode Context Parallel (DCP) support (#50484), fused FlashKDA decode and prefill kernels (#50654, #51311, #52458), SiTU activation support for MegaMoE (#50510), GEMM-RS for sequence parallelism (#52079), combined all-gathers with 1.5~3x kernel-level speedup (#51070), an adaptive speculative token budget delivering ~60% better DSpark TTFT (#51725),",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.28.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-26T09:46:30.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "7a5343aba7d42afb",
+      "category": "ai",
+      "title": "sglang · v0.5.18",
+      "summary": "Highlights 710 PRs from 212 contributors. New models in this release (see the cookbook for all supported models): | Model | Type | PRs | Cookbook | |---|---|---|---| | Muse Glimmer | Autoregressive (Multimodal) | #34262 | link | | Intern-S2-Mobius | Autoregressive | #33691 | link | | SANA-Video | Diffusion | #32921 | link | | LingBot-Video-MoE | Diffusion | #32341 | link | | LTX-2.5 | Diffusion | #34471 | link | | Cosmos3 Edge & Distilled | Diffusion | #31590 | link | | LongCat-Image | Diffusion | #23274 | | Plus c",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18",
+      "source": "SGLang Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-22T00:09:15.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "964e93f7097656dc",
+      "category": "ai",
+      "title": "transformers · Patch release: v5.15.1",
+      "summary": "Patch release v5.15.1 This patch most notably solves a few issues with DFlash and MTP candidate generators, as well as an issue where images could sometimes not be processed on accelerator if using Lanczos filter. It contains the following commits: Fix DFlash candidate token device mismatch with device_map=\"auto\" (#47877) by and Align logit distributions for CandidateGenerators using sampling (#48007) by Fix MTP config when mlp_layer_types is absent (#48015) by Fallback from 'lanczos' to 'bicubic' when on cuda (#48",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.15.1",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-19T10:50:47.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "kernels",
+        "hardware",
+        "models"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "c538772cf93edf0e",
+      "category": "ai",
+      "title": "flashinfer · Nightly Release v0.6.18-20260819（预发布）",
+      "summary": "Automated nightly build for version 0.6.18 (dev20260819)",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/nightly-v0.6.18-20260819",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-19T03:55:09.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 17,
+      "topics": [
+        "kernels"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "f4f608d1f89459cc",
+      "category": "ai",
+      "title": "flashinfer · Nightly Release v0.6.18-20260818（预发布）",
+      "summary": "Automated nightly build for version 0.6.18 (dev20260818)",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/nightly-v0.6.18-20260818",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-18T05:59:09.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 17,
+      "topics": [
+        "kernels"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "8cd1e4f963d7e226",
+      "category": "ai",
+      "title": "flashinfer · Nightly Release v0.6.18-20260817（预发布）",
+      "summary": "Automated nightly build for version 0.6.18 (dev20260817)",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/nightly-v0.6.18-20260817",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-17T03:23:59.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 17,
+      "topics": [
+        "kernels"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "31d045dc8e60d0e9",
+      "category": "ai",
+      "title": "flashinfer · Nightly Release v0.6.18-20260816（预发布）",
+      "summary": "Automated nightly build for version 0.6.18 (dev20260816)",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/nightly-v0.6.18-20260816",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-16T04:14:55.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 17,
+      "topics": [
+        "kernels"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "d3829fe0e12f611b",
+      "category": "ai",
+      "title": "flashinfer · Nightly Release v0.6.18-20260814（预发布）",
+      "summary": "Automated nightly build for version 0.6.18 (dev20260814)",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/nightly-v0.6.18-20260814",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-14T05:02:11.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 17,
+      "topics": [
+        "kernels"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "82d8dc72a44a42d5",
+      "category": "ai",
+      "title": "flashinfer · Nightly Release v0.6.18-20260813（预发布）",
+      "summary": "Automated nightly build for version 0.6.18 (dev20260813)",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/nightly-v0.6.18-20260813",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-13T16:28:41.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 17,
+      "topics": [
+        "kernels"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "1703963c4db74d42",
+      "category": "technology",
+      "title": "TensorRT-LLM · v1.3.0rc24（预发布）",
+      "summary": "Known Issues - Workloads combining torch.compile with CUDA graphs can fail during initialization or inference with allocator assertions, missing outputs, or illegal memory accesses. - MLA models using MTP with multi-stream or piecewise CUDA graphs on SM120 can asynchronously crash with an illegal memory access. - Workloads using KVCacheManagerV2 may intermittently report a teardown failure after otherwise successful inference; this is observed with DeepSeek-V4-Flash. - Diffusion image and video pipelines can show o",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc24",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-08-12T07:07:24.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 18,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "0e3a927e994e2b80",
+      "category": "ai",
+      "title": "vllm · v0.27.1",
+      "summary": "This is a patch release on top of v0.27.0. Support quantized DSpark Markov heads (#50424)",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.1",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-11T10:47:49.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "ca4f12b6bb42d037",
+      "category": "ai",
+      "title": "flashinfer · Release v0.6.17",
+      "summary": "_These highlights are also published at flashinfer.ai/releases._ v0.6.17 Highlights This release brings MoE expert parallelism into serving engines, refreshes the Blackwell SM12x fused-MoE kernels with an FP4 accuracy fix, extends the unified MoE API to MXFP4 W4A8/W4A16 and shared experts, and adds decode coverage for Kimi K3 MLA and MiniMax-M3 sparse attention on vLLM. MoE expert parallelism production-ready in vLLM The MegaMoE path in flashinfer.moe_ep is ready for serving engines: full CUDA-graph capture and rep",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.6.17",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-11T05:09:14.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 21,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "61d0b2d9478f0a14",
+      "category": "ai",
+      "title": "flashinfer · Nightly Release v0.6.18-20260811（预发布）",
+      "summary": "Automated nightly build for version 0.6.18 (dev20260811)",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/nightly-v0.6.18-20260811",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-11T03:53:39.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 17,
+      "topics": [
+        "kernels"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "0076b4d8ce14fe3e",
+      "category": "ai",
+      "title": "flashinfer · Release v0.6.16.post4",
+      "summary": "v0.6.16.post4 Restores import flashinfer.comm on Python 3.10 and 3.11. A type annotation in flashinfer/comm/fd_exchange.py evaluated only on Python 3.12+, and flashinfer.comm imports that module at import time, so the package failed to import on interpreters inside the supported range. Downstream packages that touch flashinfer.comm during their own initialization were affected as well. Upgrade to this release if you run FlashInfer on Python 3.10 or 3.11. https://github.com/flashinfer-ai/flashinfer/pull/4354 Full Ch",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.6.16.post4",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-10T22:15:43.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 21,
+      "topics": [
+        "kernels"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "1a54b5a2a8ef31f8",
+      "category": "ai",
+      "title": "vllm · v0.27.0",
+      "summary": "vLLM v0.27.0 Release Notes Highlights This release features 561 commits from 242 contributors (64 new)! Kimi K3 support with a full stack landing in one release: core model files and kernels (#50089, #50000), Python (#50093) and Rust (#50104) frontends, AttnRes kernels (#50090), DeepGEMM support (#50458), compressed-tensors quantized checkpoints (#50500), DSpark AR fusion (#50242), and an option to shard the shared expert instead of replicating it (#50656). More new models: Qwen3.5 text-only dense and MoE models (#",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.27.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-10T21:18:11.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "30cf900e88c42298",
+      "category": "ai",
+      "title": "transformers · Release: v5.15.0",
+      "summary": "Release v5.15.0 New Model additions Meta Muse Glimmer Muse Glimmer, released today, is Meta’s new multimodal model, especially designed for agentic use cases. Distilled from Muse to 30B parameters, and released under the Apache 2.0 license, it can be deployed to local setups for privacy-aware applications such as coding, document analysis, personal assistants, Claw- or Hermes-like setups. Muse Glimmer is a dense 30B parameter model consisting of: 2B ViT-style encoder for vision (Perception Encoder) 28B parameter te",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.15.0",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-10T10:28:13.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "55949a66237424b4",
+      "category": "ai",
+      "title": "flashinfer · Nightly Release v0.6.18-20260810（预发布）",
+      "summary": "Automated nightly build for version 0.6.18 (dev20260810)",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/nightly-v0.6.18-20260810",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-10T04:02:53.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 17,
+      "topics": [
+        "kernels"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "7882b11cd784e638",
+      "category": "ai",
+      "title": "flashinfer · Release v0.6.16.post3",
+      "summary": "What's Changed revert(moe): revert #3738 SM90 CUTLASS MoE backend (+ dependents #4025, #4080) on release-v0.6.16 by in https://github.com/flashinfer-ai/flashinfer/pull/4412 Full Changelog: https://github.com/flashinfer-ai/flashinfer/compare/v0.6.16.post2...v0.6.16.post3",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.6.16.post3",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-08T00:53:40.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 21,
+      "topics": [
+        "kernels",
+        "models"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "5fbfeee571a147c9",
+      "category": "ai",
+      "title": "sglang · v0.5.17",
+      "summary": "Highlights 582 PRs from 194 contributors. Kimi K3 day-0 support: A 2.8T-parameter multimodal LatentMoE (896 experts, top-16, routed in a 3584-dim latent space) with a 1M-token context, 69 KDA linear-attention layers interleaved with 24 MLA layers, and a MoonViT3d vision tower, shipping as a native MXFP4 checkpoint. SGLang serves it from day 0 with DCP, DSpark speculative decoding, chunked-prefill PP with TP decode, KDA-aware prefix caching, HiCache L2 over DCP, LoRA on the quantized weights, and reasoning, tool-cal",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.17",
+      "source": "SGLang Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-08T00:19:16.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "345e89f36ce68f50",
+      "category": "ai",
+      "title": "flashinfer · Release v0.6.16.post2",
+      "summary": "FlashInfer 0.6.16.post2 includes the tvm-ffi v0.1.13-post2 hotfix regarding its ABI compatibility. We recommend upgrading to this latest version. Full Changelog: https://github.com/flashinfer-ai/flashinfer/compare/v0.6.16.post1...v0.6.16.post2",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.6.16.post2",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-08-06T21:09:06.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 21,
+      "topics": [
+        "kernels"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "7709fc02307e0ae6",
+      "category": "technology",
+      "title": "TensorRT-LLM · v1.3.0rc23（预发布）",
+      "summary": "Known Issues - Deepseek-V4-Pro can hang on GB300 disagg setups. - DeepSeek-R1 NVFP4 multi-GPU (PP4 + MTP) can crash with an MPI worker exit during execution (seen on GB300). - DeepSeek-V3-Lite BF16 + chunked prefill (Python scheduler) can hang / fail to complete. - Qwen MoE multi-LoRA (routed experts, varying ranks, eager) can fail during sampling. - Gemma3-1B FP8 prequantized with torch.compile can fail during CUDA graph capture (PyTorch CUDA allocator internal assert). - Qwen3.5-35B-A3B BF16 (CUTLASS, TP1 on A100",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc23",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-07-31T18:55:20.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 18,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "a6fa0af13265d689",
+      "category": "ai",
+      "title": "vllm · v0.26.0",
+      "summary": "vLLM v0.26.0 Release Notes Highlights This release features 411 commits from 212 contributors (61 new)! New Inkling model family with a full support stack: base modeling (#48799), piecewise CUDA graph support (#48822), Hopper FA4 relative attention (#48858), MTP=1 speculative decoding (#48869), LoRA (#48884), and standard ModelOpt NVFP4 quantization (#48990). DeepSeek-V4 performance push across vendors: a specialized routing kernel (2.94% E2E TPOT, #48660), fused_topk_bias (1.5–2x kernel, #47463), and redundant rep",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.26.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-07-27T01:06:58.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "68179fe4c2512f3c",
+      "category": "ai",
+      "title": "sglang · v0.5.16",
+      "summary": "Highlights 574 PRs from 169 contributors. DSpark: confidence-driven speculative decoding: A new speculative algorithm. It drafts semi-autoregressively in blocks, then sizes each verify window from the draft's own confidence instead of a fixed draft length. Reaches 383.7 tok/s at accept length ~5 on DeepSeek-V4-Pro, TP8 on B300 (bs=1). Enable with --speculative-algorithm DSPARK and SGLANG_RAGGED_VERIFY_MODE=compact; tune the block with --speculative-dspark-block-size (#30261, #31434, blog). Inkling support: A 975B-p",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.16",
+      "source": "SGLang Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-07-25T00:13:18.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "5fcc6a456baf36ec",
+      "category": "technology",
+      "title": "TensorRT-LLM · v1.3.0rc22（预发布）",
+      "summary": "Known Issues - torch.compile crashes in the PyTorch compilation backend - Several multi-GPU accuracy paths fail with KeyError in the remove_copy pass when torch_compile=True (e.g. DeepSeek-V3-Lite bf16/FP8/NVFP4; Llama-3.1-8B-Instruct FP8 with FlashInfer). Workaround: disable torch.compile for affected configs DeepSeek-V3.2 FP8 block-scale OOM on H200. - test_fp8_blockscale configs can OOM on DGX H200 under default / disable_skip_indexer settings. - Mixtral FP8 MoE + multi-LoRA tactic mismatch - Routed-expert FP8 m",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc22",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-07-22T22:41:15.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 18,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "4ac1b9b74fc93424",
+      "category": "ai",
+      "title": "transformers · Patch release: v5.14.1",
+      "summary": "Patch release v5.14.1 This patch solves a few issues which appeared when integrating Inkling model, most notably an issue affecting models using EncoderDecoderCache during assisted generation. It also fixes an issue that could appear during prefill with StaticCache and sdpa without padding for Inkling which uses a position_bias. It contains the following commits: Fix sdpa prefill with position_bias (#47359) by Fix assisted decoding for models with EncoderDecoder cache & OlmoHybrid (#47361) by [FP8] Bump kernels ver",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.14.1",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-07-16T09:41:36.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "models",
+        "training"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "7456c120515010dd",
+      "category": "technology",
+      "title": "TensorRT-LLM · v1.3.0rc21（预发布）",
+      "summary": "Deprecation Notices - AutoDeploy backend is being deprecated. We are aware that earlier model support is a critical priority for many users of TensorRT LLM and are working on agentic approaches to improve time to functional model support in the PyTorch backend. As an early indicator, this was used to release Minimax M3 functional support within the first week of model release. Known Issues - DeepSeek V3.2 - Host KV cache offload can fail on multi-GPU setups: executor init may hit GPU OOM (H200), or hang when combin",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc21",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-07-15T22:46:20.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 18,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "47cf1f8216389934",
+      "category": "ai",
+      "title": "transformers · Release v5.14.0",
+      "summary": "Release v5.14.0 New Model additions Inkling (fresh from Thinking Machines): 975B total, 41B active Add Inkling model #47347 by and Inkling is a general-purpose multimodal model that accepts text, image and audio inputs and generates text outputs. It is intended for use in English and other languages, and across multiple coding languages. The model is designed to be used by developers building AI- powered applications, including agentic and tool-use systems, coding assistants, chatbots, and retrieval-augmented gener",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.14.0",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-07-15T19:02:19.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "d3020b7955da753e",
+      "category": "ai",
+      "title": "vllm · v0.25.1",
+      "summary": "vLLM v0.25.1 Highlights This release features 2 commits from 2 contributors (1 new)! v0.25.1 is a patch release containing two targeted bug fixes on top of v0.25.0. Bug Fixes Avoid blocking model launching when no system FFmpeg is available for TorchCodec (#47888). Previously import torchcodec raised a RuntimeError at import time when system FFmpeg was missing, which blocked startup (e.g. vllm serve Qwen/Qwen3-VL-2B-Instruct) even when TorchCodec was not in use. The error is now deferred to runtime so it only surfa",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.25.1",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-07-14T08:51:20.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "models",
+        "training"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "e1452a0cc9bbedf6",
+      "category": "ai",
+      "title": "sglang · v0.5.15.post1",
+      "summary": "v0.5.15.post1 includes a few patches, mostly for GLM 5.2 #30454 #30627: Fix DSA model launching on non Cuda/HIP devices #30858: Fix flashinfer dependency on Cuda 12 images #31001: Fix NaN outputs caused by flashinfer trtllm FP4 MoE kernels on long input #30839: Fix GLM 5.2 IndexShare on PD disaggregation setting #30992: Fix GLM 5.2 IndexShare on Context Parallel setting",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.15.post1",
+      "source": "SGLang Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-07-14T08:43:33.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "models"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "3c6bb6076779bbe5",
+      "category": "ai",
+      "title": "vllm · v0.25.0",
+      "summary": "vLLM v0.25.0 Release Notes Highlights This release features 558 commits from 232 contributors (64 new)! Model Runner V2 is now the default for all dense models (#44443). Building on quantized-model support from the previous release, MRv2 is now the standard execution path, with new support for EVS (#46535), realtime embeddings (#46762), prefix caching for Mamba hybrid models (#42406), multimodal-prefix bidirectional attention (#46942), and dynamic speculative decoding compatible with full CUDA graphs (#45953). Page",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.25.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-07-11T20:06:44.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "360b04a6228776dd",
+      "category": "ai",
+      "title": "transformers · Patch release v5.13.1",
+      "summary": "Patch release v5.13.1 This patch is focused on enabling transformers for the latest release of vllm! Be more defensive with remap_legacy_layer_types for custom models (#47245) from Fix custom code which doesn't know about the new linear layer type names (#47174) from Fix case where _LazyAutoMapping.register is passed a str key (#47148) from",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.13.1",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-07-11T09:15:36.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "models"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "9aa0e3de08563861",
+      "category": "ai",
+      "title": "sglang · v0.5.15",
+      "summary": "Highlights GLM-5.2 NVFP4, tuned for production: We took time this cycle to tune GLM-5.2 NVFP4 on Blackwell for optimized production serving. It now runs at 500+ tok/s/user on 8x B300, 450 on 4x GB300 (bs=1). Run GLM-5.2 with our cookbook. Spec V2 by default: zero-overhead scheduling via CUDA-graphable DSA draft-extend, dropped D2H/H2D syncs, fused metadata ops. +11% end-to-end TPS (#29413, #29343, #29166, #29077). IndexShare MTP: reuses the indexer top-k across draft steps, up to 1.9x lower draft-step cost at long ",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.15",
+      "source": "SGLang Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-07-10T22:58:33.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "ef1edf4f85d242ba",
+      "category": "ai",
+      "title": "transformers · Release v5.13.0",
+      "summary": "Release v5.13.0 New Model additions KimiK 2.5, 2.6, and 2.7 This release includes the architecture for Kimi 2.5 which is used by 2.5-2.7: Kimi K2.5 is an open-source, native multimodal agentic model that advances practical capabilities in long-horizon coding, coding-driven design, proactive autonomous execution, and swarm-based task orchestration. The model was proposed in Kimi K2.5: Visual Agentic Intelligence and further improved in Kimi K2.6: Advancing Open-Source Coding. Kimi K2.5 achieves significant improveme",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.13.0",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-07-03T16:06:27.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "ace84378cb4110b6",
+      "category": "technology",
+      "title": "TensorRT-LLM · v1.3.0rc20（预发布）",
+      "summary": "This RC version will be the last one supporting the TensorRT backend, in the next version the TensorRT backend will be removed! Known Issues - DeepSeek V3/V3.2 can crash with an illegal memory access or hang during warm up. - Autotuning for Qwen3-family models can crash with \"Assertion failed: Failed to initialize cutlass TMA WS grouped gemm.\" API - Add API to configure TeaCache coefficients (#13170) - BREAKING CHANGE: Make request chat_template opt-in (#14646) Feature - Add DeepSeek V4 preparation (#15378, #15379,",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc20",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-06-30T01:11:27.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 18,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "7b866390537da064",
+      "category": "ai",
+      "title": "vllm · v0.24.0",
+      "summary": "vLLM v0.24.0 Release Notes Highlights This release features 571 commits from 256 contributors (77 new)! MiniMax-M3: Added support for the new MiniMax-M3 model (#45381), with a fast follow-on of BF16/FP8 indexer via MSA (#45892), MXFP4 support (#45896), FP8 sparse GQA (#45744), and extensive AMD/ROCm tuning — mxfp8 MoE/linear on gfx950 (#45725), fp8_per_channel for bf16 weights on MI300X (#45854), FP8 KV-cache fix (#45720), and packed-modules mapping (#45794). A MiniMax-M2 perf regression was also fixed (#45935). De",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.24.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-06-29T19:41:59.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "3821a495304ab616",
+      "category": "ai",
+      "title": "sglang · v0.5.14",
+      "summary": "Highlights New Model Support: GLM-5.2, LiquidAI LFM2.5, Kimi-K2.7-Code, Poolside Laguna-M.1, DiffusionGemma, Zyphra ZAYA1, MiMo-V2-ASR DeepSeek-V4 on GB300 since Day 0: 5x higher throughput at the same interactivity, serving DeepSeek-V4 on NVIDIA GB300 with SGLang (blog). Waterfill & LPLB MoE load balancing: Two dispatch-time load-balancing methods for DeepEP expert parallelism: Waterfill for shared-expert dispatch and LPLB for redundant expert replicas, improving throughput for DeepSeek-V3/R1 and DeepSeek-V4 (blog",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.14",
+      "source": "SGLang Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-06-26T22:57:30.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "db83756ea83abf6f",
+      "category": "technology",
+      "title": "TensorRT-LLM · v1.3.0rc19（预发布）",
+      "summary": "Known Issues - Llama 3.1 8B FP8 can hang during the autotuner warmup on GB200. Model Support - Support NVIDIA Wan2.2-T2V quantized checkpoints (#15093) - Enable MTP for Step-3.7 NVFP4 and port Step-3.7VL vision tower to TRT-LLM modules (#14926) - Support T5 and BART in the PyTorch backend (#13919) - Support MiniMax-M3 in the PyTorch backend (#15292) API - Align VisualGen serve request schema with VisualGenParams (#14733) - Support multi-item scoring in LLM.encode (#14693) - Drop legacy --extra_visual_gen_options CL",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc19",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-06-23T16:49:25.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 18,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "56f5a48c967b81fd",
+      "category": "technology",
+      "title": "triton · Triton 3.7.1 Release Notes",
+      "summary": "Triton 3.7.1 is a patch release on top of 3.7.0. It fixes the following 2 regressions and contains no new features or API changes. Regression fixes Add async read dependencies to FenceAsync — a missing fence between a shared-memory store (st.shared) and an async copy_local_to_global could let the async copy read shared memory before the store completed, producing incorrect results. FenceAsync now inserts the required fence. (triton-lang/triton#9610) [InstCombine] Shrink added constant using LHS known zeros — fixes ",
+      "url": "https://github.com/triton-lang/triton/releases/tag/v3.7.1",
+      "source": "Triton Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-06-18T14:38:51.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 21,
+      "topics": [
+        "kernels"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    },
+    {
+      "id": "1f81b72ab44cb036",
+      "category": "ai",
+      "title": "sglang · v0.5.13",
+      "summary": "Highlights New Model Support: Autoregressive: Nemotron 3 Ultra (Day-0, blog), Step-3.7-Flash, Command A+ Diffusion: Cosmos3, LingBot-World, SANA-WM, Ernie-Image, FLUX.2-Klein 4B/9B, Ideogram 4 Spec V2 is now the default speculative-decoding path: Tree drafting with topk > 1 is production-ready across the triton / FA3 / MLA / aiter backends, including page_size > 1 and Mamba/hybrid-linear models (#26997, #26972, #27463). Spec V1 is deprecated, with EAGLE/MTP now running on the unified V2 worker (#25464), and topk = ",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.13",
+      "source": "SGLang Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-06-13T00:17:49.000Z",
+      "fetchedAt": "2026-09-09T15:14:28.382Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ],
+      "releaseStage": "stable",
+      "publishedAtKind": "github-release"
+    }
+  ]
+}

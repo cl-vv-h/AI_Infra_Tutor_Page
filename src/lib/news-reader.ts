@@ -5,7 +5,7 @@ const types = new Set(['research', 'engineering', 'release', 'institution', 'ana
 export const readingListKey = 'ai-infra-news-reading-list-v2'
 export const legacyReadingListKey = 'ai-infra-news-reading-list'
 
-export type NewsView = 'daily' | 'library' | 'archive' | 'saved'
+export type NewsView = 'daily' | 'library' | 'releases' | 'archive' | 'saved'
 export interface NewsFilters {
   category: 'all' | NewsCategory
   sourceType: 'all' | NewsSourceType
@@ -13,6 +13,7 @@ export interface NewsFilters {
   topic: string
   query: string
   sortBy: 'signal' | 'latest'
+  releaseStage?: 'all' | 'stable' | 'prerelease'
 }
 export interface NewsReaderState extends NewsFilters {
   view: NewsView
@@ -35,7 +36,7 @@ export function parseNewsParams(params: URLSearchParams, archiveDates: string[],
     if (safe !== raw) notices.push(`${key} 筛选过长或含控制字符，已截断。`)
     return safe
   }
-  const view = choice<NewsView>('view', ['daily', 'library', 'archive', 'saved'], 'daily')
+  const view = choice<NewsView>('view', ['daily', 'library', 'releases', 'archive', 'saved'], 'daily')
   const state: NewsReaderState = {
     view,
     category: choice('category', ['all', 'ai', 'technology', 'finance', 'world'], view === 'daily' ? 'ai' : 'all'),
@@ -44,6 +45,7 @@ export function parseNewsParams(params: URLSearchParams, archiveDates: string[],
     source: text('source', 120), topic: choice('topic', ['all', ...topicIds], 'all'), query: text('q', 200),
     sortBy: choice('sort', ['signal', 'latest'], view === 'daily' ? 'signal' : 'latest'),
     archiveDate: choice('date', archiveDates, archiveDates[0] ?? ''),
+    ...(view === 'releases' ? { releaseStage: choice('stage', ['all', 'stable', 'prerelease'], 'all') } : {}),
   }
   return { state, notices }
 }
@@ -55,6 +57,7 @@ export function newsParams(state: NewsReaderState) {
   if (state.topic !== 'all') params.set('topic', state.topic)
   if (state.query) params.set('q', state.query)
   if (state.view === 'archive' && state.archiveDate) params.set('date', state.archiveDate)
+  if (state.view === 'releases' && state.releaseStage && state.releaseStage !== 'all') params.set('stage', state.releaseStage)
   return params
 }
 
@@ -95,6 +98,7 @@ export function filterNews(items: NewsItem[], filters: NewsFilters, classifyTopi
   return items.filter((item) => filters.category === 'all' || item.category === filters.category)
     .filter((item) => filters.sourceType === 'all' || inferSourceType(item) === filters.sourceType)
     .filter((item) => !filters.source || item.source === filters.source)
+    .filter((item) => !filters.releaseStage || filters.releaseStage === 'all' || item.releaseStage === filters.releaseStage)
     .filter((item) => filters.topic === 'all' || classifyTopics(item).includes(filters.topic))
     .filter((item) => words.every((word) => `${item.title} ${item.summary} ${item.source}`.toLowerCase().includes(word)))
     .sort((a, b) => filters.sortBy === 'latest' ? Date.parse(b.publishedAt) - Date.parse(a.publishedAt) : b.score - a.score || Date.parse(b.publishedAt) - Date.parse(a.publishedAt))

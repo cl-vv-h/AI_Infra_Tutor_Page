@@ -27,10 +27,13 @@ jobs:
           node-version: '20'
 
       - name: Validate feed parsing and selection
-        run: node --test tests/news-core.test.mjs tests/news-fetch.test.mjs
+        run: node --test tests/news-core.test.mjs tests/news-fetch.test.mjs tests/news-releases.test.mjs
 
       - name: Collect public news feeds
         run: node scripts/fetch-news.mjs
+
+      - name: Collect official framework release history
+        run: node scripts/fetch-releases.mjs
 
       - name: Commit public news data
         id: publish
@@ -42,7 +45,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/news/daily.json src/data/news/library.json src/data/news/archive
+          git add src/data/news/daily.json src/data/news/library.json src/data/news/releases.json src/data/news/archive
           git commit -m "chore(news): refresh daily signals"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
