@@ -5,6 +5,7 @@ import { mistralArchitectures } from './mistral-models.ts'
 import { gemmaArchitectures } from './gemma-models.ts'
 import { phiArchitectures } from './phi-models.ts'
 import { olmoArchitectures } from './olmo-models.ts'
+import { starcoderArchitectures } from './starcoder-models.ts'
 
 export const modelArchitectures: ModelArchitecture[] = [
   {
@@ -445,6 +446,7 @@ export const modelArchitectures: ModelArchitecture[] = [
   ...gemmaArchitectures,
   ...phiArchitectures,
   ...olmoArchitectures,
+  ...starcoderArchitectures,
 ]
 
 export function getModelArchitecture(id?: string) {

@@ -97,6 +97,13 @@ try {
     }
   }
   const unknownModel = renderExplorer('/models/not-a-real-model?b=999')
+  const starcoder = renderExplorer('/models/starcoder2-3b?layer=29&node=ffn-norm&tp=4&b=4&s=8192')
+  for (const text of ['Post-Attention LayerNorm', 'post_attention_layernorm.bias', 'GELU MLP · Two Linear Layers', 'c_fc.bias', '240 MiB', '[4, 4096, 2, 1, 128]', '16,384', 'Final LayerNorm + Tied LM Head']) assert.ok(starcoder.includes(text), text)
+  assert.match(starcoder, /id="model-node-ffn-norm"[^>]*aria-pressed="true"/)
+  assert.doesNotMatch(starcoder, /Post-Attention RMSNorm|参数无效/)
+  const starcoderComparison = render('?models=starcoder2-3b,mistral-7b-v0-1&tp=4&b=4&s=8192')
+  for (const text of ['2 × LayerNorm · Pre · 每个含 scale + bias', '2 × RMSNorm · Pre', 'FFN 运算', 'GELU MLP · Two Linear Layers', 'Dense SwiGLU', '发生整 head 复制']) assert.ok(starcoderComparison.includes(text), text)
+  assert.match(renderExplorer('/models/starcoder2-3b?s=32768'), /s 参数无效/)
   const capacity = renderExplorer('/models/llama-3-1-8b?b=4&s=4096&tp=4&budget=0.5')
   for (const text of ['缓存预算反算', 'value="0.5"', '需要 512 MiB / 卡', '预算内剩余 0 B', '应用 B=4', '不能将各自最大 B 和最大 S 同时组合']) assert.ok(capacity.includes(text), text)
   assert.match(capacity, /<details open=""/)

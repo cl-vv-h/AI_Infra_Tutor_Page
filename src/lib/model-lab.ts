@@ -120,7 +120,7 @@ export function decoderNodes(model: ModelArchitecture, layer: number): Architect
   ]
   return [
     get('attention-norm'), get(attentionKind(model, layer)), residual('attention-add', 'Attention 子层输入'),
-    {
+    get('ffn-norm') ?? {
       id: 'ffn-norm', eyebrow: 'PRE-NORM', title: 'Post-Attention RMSNorm', subtitle: 'FFN 前归一化',
       description: 'Attention 残差相加后，再做一次 RMSNorm，供 Dense FFN 或 MoE 使用。归一化前的向量保留用于第二次残差相加。',
       inputShape: shape, outputShape: shape,

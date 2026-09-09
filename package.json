@@ -14,7 +14,7 @@
     "lint": "eslint .",
     "preview": "vite preview --configLoader runner",
     "check": "tsc -b --noEmit",
-    "test:models": "node --experimental-strip-types --test tests/model-lab.test.mjs tests/model-comparison.test.mjs tests/model-explorer.test.mjs tests/model-weights.test.mjs tests/phi-model.test.mjs tests/model-catalog.test.mjs tests/olmo-model.test.mjs tests/cache-capacity.test.mjs",
+    "test:models": "node --experimental-strip-types --test tests/model-lab.test.mjs tests/model-comparison.test.mjs tests/model-explorer.test.mjs tests/model-weights.test.mjs tests/phi-model.test.mjs tests/model-catalog.test.mjs tests/olmo-model.test.mjs tests/cache-capacity.test.mjs tests/starcoder-model.test.mjs",
     "test:models:render": "node tests/model-comparison-render.mjs && node tests/model-catalog-render.mjs",
     "test:news": "node --experimental-strip-types --test tests/news-core.test.mjs tests/news-fetch.test.mjs tests/news-reader.test.mjs tests/news-releases.test.mjs tests/news-learning.test.mjs",
     "test:news:render": "node tests/news-render.mjs",

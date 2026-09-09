@@ -12,6 +12,7 @@ import ModelComparisonChart from '@/components/ModelComparisonChart'
 const controlClass = 'min-w-0 rounded-xl border border-white/15 bg-[#0c131c] px-3 py-3 text-sm text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-200'
 const integer = (value: number) => value.toLocaleString('en-US')
 const presets = [
+  { label: 'GELU / SwiGLU：FFN 与 Norm', ids: ['starcoder2-3b', 'mistral-7b-v0-1'] },
   { label: 'MHA / GQA：KV 头数', ids: ['phi-3-5-mini-instruct', 'llama-3-1-8b'] },
   { label: 'GQA / MLA / Hybrid', ids: ['llama-3-1-8b', 'glm-4-7-flash', 'qwen3-5-9b'] },
   { label: 'Qwen Dense 演进', ids: ['qwen3-8b', 'qwen3-5-9b'] },
@@ -31,7 +32,7 @@ function cacheNote(model: ModelArchitecture, tp: TensorParallelSize) {
   if (cache.kind === 'gqa' && cache.layout === 'replicated') return `汇集式 Attention TP：权重分片，但每卡缓存完整 ${model.dimensions.kvHeads} 个 KV heads，KV 不除以 TP。按 Transformers v4.57.1 参考路径，不代表所有引擎。`
   if (cache.kind === 'mla') return `采用 latent-cache 路径：${cache.latentWidth} 维压缩 KV + ${cache.ropeWidth} 维 RoPE 在每个 TP rank 复制。`
   if (cache.kind === 'mixed') return '按实际层分布分别计算完整 KV 和滑窗 KV。局部窗口填满后，完整注意力层继续增加缓存；总曲线不会变平。'
-  if (cache.kind === 'swa') return `每卡保留 ${localKvHeads(model, tp)} 个 KV heads 的完整逻辑窗口 min(S, ${integer(cache.window)})。窗口饱和后只替换旧位置，不增加缓存容量。`
+  if (cache.kind === 'swa') return `每卡保留 ${localKvHeads(model, tp)} 个 KV heads 的完整逻辑窗口 min(S, ${integer(cache.window)})。${tp > model.dimensions.kvHeads ? `${model.dimensions.kvHeads} 个 KV heads 少于 TP ${tp}，发生整 head 复制。` : ''}窗口饱和后只替换旧位置，不增加缓存容量。`
   const prefix = tp > model.dimensions.kvHeads ? `${model.dimensions.kvHeads} 个 KV heads 少于 TP ${tp}，每卡仍需 1 个完整 head，会发生复制。` : `完整注意力每卡存 ${localKvHeads(model, tp)} 个 KV heads。`
   return prefix + (cache.kind === 'hybrid' ? ' DeltaNet 使用定长 FP32 循环矩阵和 BF16 卷积窗口。' : '')
 }
@@ -82,7 +83,8 @@ export default function ModelCompare() {
     { label: 'KV / 循环状态层数', values: models.map((model) => { const { kvLayers, recurrentLayers } = cacheEstimate(model, defaultComparisonScenario); return `${kvLayers} / ${recurrentLayers}` }) },
     { label: '完整 / 滑窗 KV 层数', values: models.map((model) => { const { fullKvLayers, slidingLayers } = cacheEstimate(model, defaultComparisonScenario); return `${fullKvLayers} / ${slidingLayers}` }) },
     { label: 'KV 保留长度', values: models.map((model) => model.execution.cache.kind === 'mixed' ? `完整层 S / 滑窗层 min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'swa' ? `min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'hybrid' ? 'S（仅完整注意力层）' : 'S') },
-    { label: '子层边界 RMSNorm', values: models.map((model) => model.execution.normLayout === 'pre-post' ? '4 × RMSNorm · Pre + Post' : model.execution.normLayout === 'post-branch-qk' ? '2 × RMSNorm · 子层输出、残差相加前；另有 Q/K Norm' : '2 × RMSNorm · Pre') },
+    { label: '子层边界归一化', values: models.map((model) => model.execution.normKind === 'layernorm' ? '2 × LayerNorm · Pre · 每个含 scale + bias' : model.execution.normLayout === 'pre-post' ? '4 × RMSNorm · Pre + Post' : model.execution.normLayout === 'post-branch-qk' ? '2 × RMSNorm · 子层输出、残差相加前；另有 Q/K Norm' : '2 × RMSNorm · Pre') },
+    { label: 'FFN 运算', values: models.map((model) => model.nodes.filter((node) => ['ffn', 'dense-ffn', 'moe'].includes(node.id)).map((node) => node.title).join(' / ')) },
     { label: '当前配置上下文上限', values: models.map((model) => `${integer(model.execution.maxContext)} tokens`) },
     { label: '图解已覆盖的 TP', values: models.map((model) => model.supportedTp.join(' / ')) },
   ]

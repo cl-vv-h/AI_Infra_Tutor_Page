@@ -111,7 +111,7 @@ npm run news:fetch
 
 预算通过 Hash URL 的 `budget` 参数分享，范围 0–1024 GiB、最多三位小数；缺省 8 GiB 只是示例，不是硬件检测结果。不读取设备或上传输入。预算需事先扣除权重、激活、图捕获、通信缓冲和安全余量；结果不计页尾填充、量化元数据、前缀共享或推测解码额外副本，仅为当前逻辑缓存布局的容量边界，不是吞吐预测或部署保证。引擎实际显存还受上下文、并发及 CUDA Graph 等影响，参见 [vLLM 显存管理说明](https://docs.vllm.ai/en/stable/configuration/conserving_memory/)。
 
-模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts`、`src/data/mistral-models.ts`、`src/data/gemma-models.ts`、`src/data/phi-models.ts` 与 `src/data/olmo-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供十二个代表模型：
+模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts`、`src/data/mistral-models.ts`、`src/data/gemma-models.ts`、`src/data/phi-models.ts`、`src/data/olmo-models.ts` 与 `src/data/starcoder-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供十三个代表模型：
 
 - Llama 3.1 8B：Dense、GQA、SwiGLU；
 - DeepSeek-V3：MLA、DeepSeekMoE、MTP；
@@ -125,6 +125,7 @@ npm run news:fetch
 - Gemma 2 9B：42 层交替局部/完整 GQA、4 个子层边界 RMSNorm、GeGLU、共享词嵌入及 logits softcap；
 - Phi-3.5 Mini Instruct：32 层 MHA、32Q/32KV × 96D、融合 QKV 与 Gate/Up 投影、LongRoPE、独立词嵌入与 LM Head；
 - OLMo 2 7B · 1124：32 层 MHA、完整投影宽度 Q/K RMSNorm、子层输出 Norm、4K 上下文与参考汇集式 Attention TP。
+- StarCoder2 3B：30 层滑窗 GQA、带 scale / bias 的 LayerNorm、两矩阵 GELU MLP 与有偏置投影；16K 上下文、4K 窗口。
 
 每个模型都有可直接分享的 Hash 路由，例如 `#/models/qwen3-30b-a3b`。模块支持悬浮预览与点击锁定；窄屏点击打开原生模态详情，可用 Esc 关闭。Layer 控件展开一个真实 Decoder 层，显示两次残差连接，并按模型选择 Pre-Norm、Pre+Post-Norm 或子层输出 Norm 布局、按层号选择 Dense 或 MoE，其他层折叠。图中为自回归主干，不包含 MTP 辅助预测分支。
 
@@ -151,6 +152,10 @@ OLMo 2 图解针对 [Ai2 OLMo-2-1124-7B 配置](https://huggingface.co/allenai/O
 `normLayout: post-branch-qk` 展开投影 → Q/K Norm → RoPE/MHA/o_proj → Attention 输出 Norm → 残差，以及 FFN → FFN 输出 Norm → 残差。Q/K 各一条 [4096] 缩放向量，V 绕过 Norm。Decoder 权重元素数为每层 `4H² + 3HI + 4H`，其中矩阵按 TP 分片而四条 Norm 向量保留副本；不重复统计投影，也不把 Embedding/LM Head 加入 Decoder 账本。
 
 OLMo 2 缓存采用[固定版本 TP 配置](https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/models/olmo2/configuration_olmo2.py#L85)与[并行算子定义](https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/integrations/tensor_parallel.py#L821)对应的路径：`colwise_rep` 分片权重但汇集 Q/K/V 输出，`rowwise_rep` 接收复制输入并切分给 o_proj；`cache.layout: replicated` 因此每卡保存完整 32 KV heads。`cacheKvHeads` 独立于投影的 `localKvHeads`，防止把权重切分直接套入缓存计算。B=4、S=4096、2-byte KV 时每卡 8 GiB，TP=4 组内合计 32 GiB；这只是该路径的逻辑 KV，不是部署总显存、速度比较或所有引擎必须采用的布局，未进行真实多卡性能测试。
+
+StarCoder2 3B 对照 [BigCode 检查点配置](https://huggingface.co/bigcode/starcoder2-3b/blob/main/config.json)与 [Transformers v4.57.1 层实现](https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/models/starcoder2/modeling_starcoder2.py)：H=3072、I=12288、30 层、24Q/2KV、D=128、vocab=49152、S≤16384、W=4096。两处 Pre-LayerNorm 各有 weight / bias；Q/K/V/O 与 MLP 的 c_fc/c_proj 共六个 Linear 均有 bias，MLP 为 tanh 近似 GELU，没有 gate/up 相乘。Decoder 账本逐项计入这些向量，不套用 SwiGLU 的三矩阵公式。显式 `ffn-norm` 节点优先于通用 RMSNorm 回退；对比台显示实际归一化类型及 FFN 运算，提供与 Mistral 的对照入口。
+
+StarCoder2 图示采用 head-wise 逻辑 TP：Q 与 MLP 中间维分片，完整 KV head 最少每卡一个，TP=4/8 时 K/V 权重、bias 和缓存均有复制；o_proj/c_proj 的 bias 每卡保留完整向量，在输出归约后只加一次。它不是 Transformers 原生 TP 支持矩阵或性能测试。B=4、S≥4096、2-byte KV 下，TP=2/4/8 的单卡逻辑窗口都是 240 MiB，组内总量随副本数增加；预算反算也沿用该口径。Final LayerNorm 的 scale/bias 与词表矩阵不在 Decoder 账本中；词表共享遵循该配置未覆盖的 [PretrainedConfig 默认 tie_word_embeddings=true](https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/configuration_utils.py#L199)。[官方模型卡](https://huggingface.co/bigcode/starcoder2-3b)说明其为代码补全而非指令模型；Fill-in-the-Middle 是训练目标，不是额外运行时网络分支。
 
 ### 模型对比台
 
