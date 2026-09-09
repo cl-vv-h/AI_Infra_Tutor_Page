@@ -23,6 +23,8 @@ export interface NewsSourceState {
   category: NewsCategory
   type: NewsSourceType
   state: 'ok' | 'unavailable' | 'invalid'
+  channel?: 'feed' | 'github-api'
+  feedFailure?: { state: 'unavailable' | 'invalid'; httpStatus?: number }
   httpStatus?: number
   entryCount: number
   latestPublishedAt: string | null

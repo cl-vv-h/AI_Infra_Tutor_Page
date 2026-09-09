@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-09T13:43:29.670Z",
+  "generatedAt": "2026-09-09T14:29:37.019Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 25,
-  "failedSourceCount": 9,
+  "sourceCount": 32,
+  "failedSourceCount": 2,
   "sourceStates": [
     {
       "name": "DeepMind",
@@ -11,10 +11,11 @@
       "country": "United Kingdom",
       "category": "ai",
       "type": "research",
-      "state": "unavailable",
-      "entryCount": 0,
-      "latestPublishedAt": null,
-      "selectedCount": 0,
+      "state": "ok",
+      "channel": "feed",
+      "entryCount": 100,
+      "latestPublishedAt": "2026-09-08T14:00:15.000Z",
+      "selectedCount": 1,
       "libraryCount": 1
     },
     {
@@ -24,6 +25,7 @@
       "category": "ai",
       "type": "news",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-09-03T16:00:59.000Z",
       "selectedCount": 0,
@@ -36,8 +38,9 @@
       "category": "ai",
       "type": "news",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 19,
-      "latestPublishedAt": "2026-09-09T13:00:00.000Z",
+      "latestPublishedAt": "2026-09-09T14:18:34.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -48,6 +51,7 @@
       "category": "technology",
       "type": "news",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-09-09T11:00:10.000Z",
       "selectedCount": 3,
@@ -60,6 +64,7 @@
       "category": "technology",
       "type": "release",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-09-08T13:59:40.685Z",
       "selectedCount": 1,
@@ -72,8 +77,9 @@
       "category": "technology",
       "type": "research",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-09-09T06:20:49.000Z",
+      "latestPublishedAt": "2026-09-09T13:24:37.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -84,6 +90,7 @@
       "category": "finance",
       "type": "institution",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 15,
       "latestPublishedAt": "2026-09-08T15:00:00.000Z",
       "selectedCount": 1,
@@ -96,6 +103,7 @@
       "category": "finance",
       "type": "institution",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-09-04T15:00:00.000Z",
       "selectedCount": 0,
@@ -108,6 +116,7 @@
       "category": "finance",
       "type": "institution",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-08-27T13:16:29.000Z",
       "selectedCount": 0,
@@ -120,6 +129,7 @@
       "category": "finance",
       "type": "institution",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 44,
       "latestPublishedAt": "2026-09-09T01:00:00.000Z",
       "selectedCount": 3,
@@ -132,6 +142,7 @@
       "category": "finance",
       "type": "institution",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": null,
       "selectedCount": 0,
@@ -144,6 +155,7 @@
       "category": "finance",
       "type": "institution",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 1,
       "latestPublishedAt": "2026-09-03T03:30:00.000Z",
       "selectedCount": 0,
@@ -156,6 +168,7 @@
       "category": "finance",
       "type": "institution",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-09-08T00:00:00.000Z",
       "selectedCount": 1,
@@ -168,8 +181,9 @@
       "category": "world",
       "type": "institution",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 30,
-      "latestPublishedAt": "2026-09-08T12:00:00.000Z",
+      "latestPublishedAt": "2026-09-09T12:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -180,8 +194,9 @@
       "category": "world",
       "type": "news",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-09-09T13:05:48.000Z",
+      "latestPublishedAt": "2026-09-09T13:49:48.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -192,8 +207,9 @@
       "category": "world",
       "type": "news",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-09-09T11:12:27.000Z",
+      "latestPublishedAt": "2026-09-09T13:56:23.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -204,8 +220,9 @@
       "category": "world",
       "type": "news",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-09-09T12:29:22.000Z",
+      "latestPublishedAt": "2026-09-09T13:57:17.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -216,6 +233,7 @@
       "category": "world",
       "type": "news",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-09-09T11:15:46.000Z",
       "selectedCount": 3,
@@ -228,6 +246,7 @@
       "category": "ai",
       "type": "engineering",
       "state": "unavailable",
+      "channel": "feed",
       "entryCount": 0,
       "latestPublishedAt": null,
       "selectedCount": 0,
@@ -240,6 +259,7 @@
       "category": "ai",
       "type": "engineering",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-09-08T00:00:00.000Z",
       "selectedCount": 2,
@@ -252,6 +272,7 @@
       "category": "ai",
       "type": "research",
       "state": "unavailable",
+      "channel": "feed",
       "entryCount": 0,
       "latestPublishedAt": null,
       "selectedCount": 0,
@@ -263,9 +284,10 @@
       "country": "International",
       "category": "ai",
       "type": "release",
-      "state": "unavailable",
-      "entryCount": 0,
-      "latestPublishedAt": null,
+      "state": "ok",
+      "channel": "feed",
+      "entryCount": 10,
+      "latestPublishedAt": "2026-09-05T02:27:42.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -275,10 +297,11 @@
       "country": "International",
       "category": "ai",
       "type": "release",
-      "state": "unavailable",
-      "entryCount": 0,
-      "latestPublishedAt": null,
-      "selectedCount": 0,
+      "state": "ok",
+      "channel": "feed",
+      "entryCount": 10,
+      "latestPublishedAt": "2026-09-09T09:40:07.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -287,9 +310,10 @@
       "country": "International",
       "category": "ai",
       "type": "release",
-      "state": "unavailable",
-      "entryCount": 0,
-      "latestPublishedAt": null,
+      "state": "ok",
+      "channel": "feed",
+      "entryCount": 10,
+      "latestPublishedAt": "2026-09-05T03:25:44.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -300,6 +324,7 @@
       "category": "ai",
       "type": "engineering",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 5,
       "latestPublishedAt": "2025-10-21T00:00:00.000Z",
       "selectedCount": 0,
@@ -312,6 +337,7 @@
       "category": "ai",
       "type": "research",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-09-08T17:43:32.000Z",
       "selectedCount": 3,
@@ -324,6 +350,7 @@
       "category": "technology",
       "type": "engineering",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-09-08T01:00:02.000Z",
       "selectedCount": 2,
@@ -336,6 +363,7 @@
       "category": "technology",
       "type": "engineering",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-09-08T12:00:00.000Z",
       "selectedCount": 1,
@@ -348,6 +376,7 @@
       "category": "technology",
       "type": "engineering",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-09-08T00:00:00.000Z",
       "selectedCount": 2,
@@ -360,6 +389,7 @@
       "category": "technology",
       "type": "engineering",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-09-09T13:00:00.000Z",
       "selectedCount": 2,
@@ -372,6 +402,7 @@
       "category": "technology",
       "type": "engineering",
       "state": "ok",
+      "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-09-02T18:00:00.000Z",
       "selectedCount": 0,
@@ -383,9 +414,10 @@
       "country": "International",
       "category": "ai",
       "type": "release",
-      "state": "unavailable",
-      "entryCount": 0,
-      "latestPublishedAt": null,
+      "state": "ok",
+      "channel": "feed",
+      "entryCount": 10,
+      "latestPublishedAt": "2026-08-26T15:03:33.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -395,10 +427,11 @@
       "country": "United States",
       "category": "technology",
       "type": "release",
-      "state": "unavailable",
-      "entryCount": 0,
-      "latestPublishedAt": null,
-      "selectedCount": 0,
+      "state": "ok",
+      "channel": "feed",
+      "entryCount": 10,
+      "latestPublishedAt": "2026-09-09T09:37:50.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -407,14 +440,57 @@
       "country": "International",
       "category": "technology",
       "type": "release",
-      "state": "unavailable",
-      "entryCount": 0,
-      "latestPublishedAt": null,
+      "state": "ok",
+      "channel": "feed",
+      "entryCount": 10,
+      "latestPublishedAt": "2026-08-31T03:20:09.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     }
   ],
   "items": [
+    {
+      "id": "80483f129bec5062",
+      "category": "ai",
+      "title": "v0.29.0",
+      "summary": "v0.29.0 Highlights This release features 594 commits from 277 contributors (91 new)! Model Runner V2 is now the default for all models ( #53183 ), completing the rollout that began with pooling models ( #48290 ). MRV2 also gained CUDA graph memory profiling for KV cache auto-sizing ( #53306 ), batch-sharded sampling that cuts per-step logits memory by 1/TP ( #50465 ), prompt embeds ( #42963 ), extract_hidden_states speculation ( #49811 ), padded FULL cudagraph dispatch for uniform decode under spec decode ( #53407 ",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-09-09T09:40:07.000Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 32.8,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ]
+    },
+    {
+      "id": "ad3baa5182403d56",
+      "category": "technology",
+      "title": "v1.3.0rc26",
+      "summary": "Highlights Known Issues LoRA adapters that target the routed experts of Qwen3 mixture-of-experts models are silently ignored and produce base-model output. Adapters targeting attention layers behave correctly. Models using the V2 KV cache manager may fail to start with an insufficient-memory error even when enough GPU memory is free, because the KV cache size estimate is too conservative. GPT-OSS with Eagle-3 speculative decoding and sliding-window cache reuse is the most affected configuration. Lowering the maximu",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc26",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-09-09T09:37:50.000Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 32.8,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ]
+    },
     {
       "id": "24c140e19d424534",
       "category": "world",
@@ -425,8 +501,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-09-09T10:05:25.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 28.1,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 27.9,
       "topics": [
         "security"
       ]
@@ -441,8 +517,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T17:43:32.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 28,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 27.8,
       "topics": [
         "hardware"
       ]
@@ -457,8 +533,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T17:38:03.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 28,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 27.8,
       "topics": [
         "kernels",
         "hardware",
@@ -475,8 +551,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-09T13:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 27.8,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 27.6,
       "topics": [
         "security"
       ]
@@ -491,8 +567,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-09T12:30:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 27.7,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 27.5,
       "topics": [
         "hardware"
       ]
@@ -507,8 +583,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-09-09T06:27:22.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 27.2,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 27,
       "topics": [
         "security"
       ]
@@ -523,8 +599,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-09-09T06:20:49.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 27.2,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 27,
       "topics": []
     },
     {
@@ -537,8 +613,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T13:31:47.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 27,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 26.8,
       "topics": [
         "hardware"
       ]
@@ -553,8 +629,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-09-09T09:12:58.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 26.9,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 26.7,
       "topics": [
         "security"
       ]
@@ -569,8 +645,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 25.6,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 25.4,
       "topics": [
         "inference",
         "hardware",
@@ -587,8 +663,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 25.6,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 25.4,
       "topics": [
         "inference",
         "hardware",
@@ -605,13 +681,27 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 25.6,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 25.4,
       "topics": [
         "inference",
         "hardware",
         "training"
       ]
+    },
+    {
+      "id": "abea1cec4493fe1d",
+      "category": "technology",
+      "title": "NASA Names Two Artemis II Astronauts to Emeritus Program",
+      "summary": "Following their landmark Artemis II mission earlier this year, distinguished NASA astronauts Victor Glover and Reid Wiseman are transitioning in September to emeritus status at the agency’s Johnson Space Center in Houston. In an emeritus role, individuals with a high degree of technical and professional knowledge can continue to support the agency by donating their […]",
+      "url": "https://www.nasa.gov/news-release/nasa-names-two-artemis-ii-astronauts-to-emeritus-program/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-09-09T13:24:37.000Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 24.7,
+      "topics": []
     },
     {
       "id": "69c14e7de23233c8",
@@ -623,8 +713,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-09T13:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 24.8,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 24.6,
       "topics": []
     },
     {
@@ -637,22 +727,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-09-08T20:29:59.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 24.7,
-      "topics": []
-    },
-    {
-      "id": "c7b5fe013b9b7e3e",
-      "category": "technology",
-      "title": "NASA Calls for Proposals to Accelerate Lunar Surface Technologies",
-      "summary": "NASA is seeking proposals to advance the technology and infrastructure needed to explore the Moon and establish a Moon Base in the lunar South Pole region. Announced on Tuesday, Sept. 8, the solicitation targets capability gaps, including power generation, oxygen extraction, and producing materials on the Moon required for construction and operations. These technologies are […]",
-      "url": "https://www.nasa.gov/news-release/nasa-calls-for-proposals-to-accelerate-lunar-surface-technologies/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-09-08T20:16:16.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 24.6,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 24.5,
       "topics": []
     },
     {
@@ -665,27 +741,11 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 24.6,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 24.4,
       "topics": [
         "kernels",
         "hardware"
-      ]
-    },
-    {
-      "id": "fe853397ac381c7d",
-      "category": "technology",
-      "title": "Why this month's Microsoft patch release is a doozy",
-      "summary": "Security gnomes are pumping out patches ahead of an expected onslaught of AI-assisted attacks.",
-      "url": "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-09-08T21:11:46.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 23.9,
-      "topics": [
-        "security"
       ]
     },
     {
@@ -698,8 +758,38 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-09-09T13:05:48.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 23.8,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "fe853397ac381c7d",
+      "category": "technology",
+      "title": "Why this month's Microsoft patch release is a doozy",
+      "summary": "Security gnomes are pumping out patches ahead of an expected onslaught of AI-assisted attacks.",
+      "url": "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-08T21:11:46.000Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 23.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "01d980ad8421d1fd",
+      "category": "ai",
+      "title": "AI spend per employee slumped at top firms in August — summer doldrums or a warning sign?",
+      "summary": "Falling token costs, cheaper models, and less spend per employee—AI adoption isn't playing out the way hyperscalers hoped.",
+      "url": "https://techcrunch.com/2026/09/09/ai-spend-per-employee-slumped-at-top-firms-in-august-summer-doldrums-or-a-warning-sign/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T14:18:34.000Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 23,
       "topics": []
     },
     {
@@ -712,22 +802,22 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T13:10:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 22.9,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 22.7,
       "topics": []
     },
     {
-      "id": "32ff9d6d8f4cc3ce",
-      "category": "ai",
-      "title": "Instacart launches an AI grocery shopping assistant called Clementine",
-      "summary": "Instacart is the latest app to bake a conversational AI assistant into its platform.",
-      "url": "https://techcrunch.com/2026/09/09/instacart-launches-an-ai-grocery-shopping-assistant-called-clementine/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-09-09T13:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 22.8,
+      "id": "ecde9f06c3d6ada8",
+      "category": "world",
+      "title": "Record number of attacks on education, global fund warns",
+      "summary": "While September traditionally marks the start of the school year across the northern hemisphere, a staggering 93 million children are not in class at all amid an unprecedented number of attacks on learning, education experts warned on Wednesday.",
+      "url": "https://news.un.org/feed/view/en/story/2026/09/1168300",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-09T12:00:00.000Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 22.4,
       "topics": []
     },
     {
@@ -740,8 +830,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-09-09T11:15:46.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 22.4,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 22.2,
       "topics": []
     },
     {
@@ -754,8 +844,22 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-09T11:12:27.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 22.4,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 22.2,
+      "topics": []
+    },
+    {
+      "id": "e26085cba079f32e",
+      "category": "ai",
+      "title": "v0.29.0rc6",
+      "summary": "[Bugfix][Core] Apply dense prefix cache default to hybrid models ( #55 …",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0rc6",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-09-08T08:34:20.000Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 21.5,
       "topics": []
     },
     {
@@ -768,8 +872,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 21.6,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 21.4,
       "topics": [
         "security"
       ]
@@ -784,8 +888,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 21.6,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 21.4,
       "topics": [
         "inference",
         "hardware"
@@ -801,8 +905,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-09-09T06:40:39.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 21.2,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 21,
       "topics": []
     },
     {
@@ -815,8 +919,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 20.6,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 20.4,
       "topics": []
     },
     {
@@ -829,8 +933,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-09-09T01:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 19.8,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 19.6,
       "topics": []
     },
     {
@@ -843,8 +947,50 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-09-08T23:50:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 19.5,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 19.3,
+      "topics": []
+    },
+    {
+      "id": "9e554acf9e1eed94",
+      "category": "world",
+      "title": "Ballon d'Or 2026: Hakimi, Mané among African nominees",
+      "summary": "Nominations for the 2026 Ballon d'Or, which recognises performances during the 2025-26 season, were announced by France Football magazine on Tuesday, ahead of the awards ceremony in London on October 26.",
+      "url": "https://www.africanews.com/2026/09/09/ballon-dor-2026-hakimi-mane-among-african-nominees/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T13:57:17.000Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "1d221c7e5b56a4da",
+      "category": "world",
+      "title": "Greetings from Paris, where the 2024 Olympics balloon rises again",
+      "summary": "The floating Olympic cauldron, held aloft by a giant glowing balloon, is still making regular appearances two years after the 2024 Paris Games, showing up all summer long in the nighttime Paris sky.",
+      "url": "https://www.npr.org/2026/09/09/g-s1-142424/paris-olympic-balloon-cauldron-tuileries",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-09-09T13:56:23.000Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "1f03aca556679db8",
+      "category": "ai",
+      "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+      "summary": "AlphaGenome Atlas maps the molecular effects of 9 billion single-letter DNA variants across the human genome.",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source": "DeepMind",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "research",
+      "publishedAt": "2026-09-08T14:00:15.000Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 18.9,
       "topics": []
     },
     {
@@ -857,21 +1003,7 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-08T21:23:13.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 18.9,
-      "topics": []
-    },
-    {
-      "id": "cb2324eb4e8f8d9e",
-      "category": "world",
-      "title": "Egypt air show spotlights drones and military hardware",
-      "summary": "Dozens of exhibitors from several countries are taking part in the El Alamein International Air Show, held this week at the airport in Egypt's northwestern Mediterranean coast.",
-      "url": "https://www.africanews.com/2026/09/09/egypt-air-show-spotlights-drones-and-military-hardware/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-09-09T12:29:22.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
       "score": 18.7,
       "topics": []
     },
@@ -885,8 +1017,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-08T20:06:44.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 18.6,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 18.4,
       "topics": []
     },
     {
@@ -899,8 +1031,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-09-08T19:40:56.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 18.5,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 18.3,
       "topics": []
     },
     {
@@ -913,8 +1045,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-09-09T11:07:30.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 18.4,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 18.2,
       "topics": []
     },
     {
@@ -927,8 +1059,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-09-08T15:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 18.3,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 18.1,
       "topics": []
     },
     {
@@ -941,22 +1073,22 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-09T09:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 17.8,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 17.6,
       "topics": []
     },
     {
-      "id": "e4fa30f8e17a68e5",
-      "category": "world",
-      "title": "Iceland summons U.S. ambassador after Trump posts countries draped with American flag",
-      "summary": "Iceland summoned the U.S. ambassador after President Trump posted a map on Truth Social that showed the country, along with a number of other nations, covered with an American flag.",
-      "url": "https://www.npr.org/2026/09/09/nx-s1-5961412/iceland-summons-u-s-ambassador-after-trump-posts-countries-draped-with-american-flag",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-09-09T08:44:40.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 17.8,
+      "id": "74404666e981f77e",
+      "category": "ai",
+      "title": "v0.29.0rc5",
+      "summary": "[Core] Default prefix_cache_retention_interval to dense for Mamba + E…",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.29.0rc5",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-09-08T08:20:33.000Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 17.5,
       "topics": []
     },
     {
@@ -969,8 +1101,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 17.6,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 17.4,
       "topics": []
     },
     {
@@ -983,8 +1115,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-09-08T13:59:40.685Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 17.1,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 16.9,
       "topics": []
     },
     {
@@ -997,8 +1129,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T01:00:02.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 16.8,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 16.6,
       "topics": []
     },
     {
@@ -1011,21 +1143,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:59:13.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 16.8,
-      "topics": []
-    },
-    {
-      "id": "50a2e33224d88108",
-      "category": "world",
-      "title": "UN chief demands Israeli withdrawal from Lebanon amid Nabatieh escalation",
-      "summary": "The Secretary-General has condemned mounting civilian casualties in southern Lebanon and called on Israel to withdraw its forces from Lebanese territory, as fighting intensifies in and around Nabatieh.",
-      "url": "https://news.un.org/feed/view/en/story/2026/09/1168298",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
       "score": 16.6,
       "topics": []
     },
@@ -1039,8 +1157,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-09-07T23:50:00.000Z",
-      "fetchedAt": "2026-09-09T13:43:29.670Z",
-      "score": 13.5,
+      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "score": 13.3,
       "topics": []
     }
   ]

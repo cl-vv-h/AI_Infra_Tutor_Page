@@ -27,7 +27,7 @@ jobs:
           node-version: '20'
 
       - name: Validate feed parsing and selection
-        run: node --test tests/news-core.test.mjs
+        run: node --test tests/news-core.test.mjs tests/news-fetch.test.mjs
 
       - name: Collect public news feeds
         run: node scripts/fetch-news.mjs

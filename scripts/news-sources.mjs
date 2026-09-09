@@ -173,6 +173,7 @@ export const newsSources = [
     category: 'ai',
     type: 'release',
     url: 'https://github.com/sgl-project/sglang/releases.atom',
+    githubRepository: 'sgl-project/sglang',
     weight: 10,
   },
   {
@@ -181,6 +182,7 @@ export const newsSources = [
     category: 'ai',
     type: 'release',
     url: 'https://github.com/vllm-project/vllm/releases.atom',
+    githubRepository: 'vllm-project/vllm',
     weight: 10,
   },
   {
@@ -189,6 +191,7 @@ export const newsSources = [
     category: 'ai',
     type: 'release',
     url: 'https://github.com/flashinfer-ai/flashinfer/releases.atom',
+    githubRepository: 'flashinfer-ai/flashinfer',
     weight: 9,
   },
   {
@@ -259,6 +262,7 @@ export const newsSources = [
     category: 'ai',
     type: 'release',
     url: 'https://github.com/huggingface/transformers/releases.atom',
+    githubRepository: 'huggingface/transformers',
     weight: 10,
   },
   {
@@ -267,6 +271,7 @@ export const newsSources = [
     category: 'technology',
     type: 'release',
     url: 'https://github.com/NVIDIA/TensorRT-LLM/releases.atom',
+    githubRepository: 'NVIDIA/TensorRT-LLM',
     weight: 10,
   },
   {
@@ -275,6 +280,7 @@ export const newsSources = [
     category: 'technology',
     type: 'release',
     url: 'https://github.com/triton-lang/triton/releases.atom',
+    githubRepository: 'triton-lang/triton',
     weight: 9,
   },
 ]

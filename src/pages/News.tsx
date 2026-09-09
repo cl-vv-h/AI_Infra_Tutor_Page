@@ -6,6 +6,7 @@ import libraryJson from '@/data/news/library.json'
 import weeklyJson from '@/data/news/weekly/latest.json'
 import MarkdownRenderer from '@/components/MarkdownRenderer'
 import NewsStudyGuide from '@/components/NewsStudyGuide'
+import NewsSourceStatus from '@/components/NewsSourceStatus'
 import { newsTopics, topicsForItem } from '@/lib/news-topics.mjs'
 import { filterNews, inferSourceType, legacyReadingListKey, mergeSavedItems, newsParams, parseNewsParams, readingListKey, readSavedItems } from '@/lib/news-reader'
 import type { NewsReaderState, NewsView as View } from '@/lib/news-reader'
@@ -151,7 +152,7 @@ export default function News() {
     <header className="border-b border-white/10">
       <div className="mx-auto flex max-w-[1440px] flex-wrap items-end justify-between gap-5 px-5 py-8 sm:px-8 lg:px-12">
         <div><p className="flex items-center gap-2 font-mono text-xs tracking-[0.2em] text-lime-200/75"><Radio className="h-4 w-4" /> GLOBAL SIGNAL DESK</p><h1 className="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl">发现技术，读懂进展。</h1><p className="mt-3 text-base text-slate-300">从推理引擎、芯片与论文，到政策和国际动态。</p></div>
-        <div className="text-sm leading-7 text-white/60"><p>{daily.sourceCount} / {daily.sourceCount + daily.failedSourceCount} 个订阅正常 · {library.items.length} 篇技术长读</p><p>最近采集：{formatDate(daily.generatedAt, true)}</p></div>
+        <div className="text-sm leading-7 text-white/60"><p>{daily.sourceCount} / {daily.sourceCount + daily.failedSourceCount} 个信源可读取 · {library.items.length} 篇技术长读</p><p>最近采集：{formatDate(daily.generatedAt, true)}</p></div>
       </div>
     </header>
 
@@ -182,9 +183,9 @@ export default function News() {
       {loading ? <p role="status" className="py-16 text-center text-white/65">正在读取 {archiveDate} 的归档…</p> : archiveError && view === 'archive' ? <div role="alert" className="py-16 text-center text-white/70"><p>{archiveError}</p><button type="button" className={`${inputClass} mt-4`} onClick={() => setRetry((value) => value + 1)}>重试</button></div> : filtered.length ? <section aria-label={viewMeta[view].title} className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">{filtered.map((item) => <NewsCard key={item.id} item={item} saved={savedItems.some((saved) => saved.id === item.id)} disabled={migrating} onSave={toggleSaved} onTopic={setTopic} onSource={(source) => update({ source })} />)}</section> : <section className="mt-4 rounded-3xl border border-dashed border-white/15 py-16 text-center"><Clock3 className="mx-auto h-6 w-6 text-white/50" /><h2 className="mt-4 text-xl text-white">{view === 'saved' && !savedItems.length ? '收藏文章，留给稍后的自己。' : '没有匹配的文章'}</h2><p className="mt-3 text-sm text-white/60">{view === 'saved' && !savedItems.length ? '在每日信号或技术长读中点击书签即可保存。' : '试试其他日期、板块或关键词。'}</p><button type="button" onClick={() => view === 'saved' && !savedItems.length ? switchView('library') : resetFilters()} className={`${inputClass} mt-5`}>{view === 'saved' && !savedItems.length ? '浏览技术长读' : '清除筛选'}</button></section>}
 
       <details className="mt-8 rounded-2xl border border-white/10 bg-[#0b131c] p-5">
-        <summary className="cursor-pointer text-sm text-white/80"><Globe2 className="mr-2 inline h-4 w-4 text-cyan-200" />信源目录与采集状态 · {daily.failedSourceCount} 个订阅本次未成功</summary>
-        <p className="mt-4 text-sm leading-6 text-white/60">状态表示最近一次订阅读取是否成功，不是文章真实性或质量评分。技术长读可能保留此前已收录的文章；仍以原始发布日期为准。主题由关键词匹配得到。</p>
-        <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">{daily.sourceStates?.map((source) => <div key={source.name} className="rounded-xl border border-white/10 p-4"><div className="flex items-start justify-between gap-3"><a href={source.url} target="_blank" rel="noreferrer" className="text-sm text-cyan-100 hover:underline">{source.name}<ArrowUpRight className="ml-1 inline h-3 w-3" /></a><span className={`shrink-0 text-xs ${source.state === 'ok' ? 'text-lime-200' : 'text-amber-200'}`}>{source.state === 'ok' ? '正常' : source.state === 'invalid' ? '格式异常' : '暂不可用'}</span></div><p className="mt-2 text-xs text-white/55">{source.country} · {sourceLabels[source.type]}</p><p className="mt-2 text-sm text-white/65">每日 {source.selectedCount} 条 · 长读 {source.libraryCount} 篇</p><p className="mt-2 text-sm text-white/55">订阅内最近发布：{formatDate(source.latestPublishedAt)}</p></div>)}</div>
+        <summary className="cursor-pointer text-sm text-white/80"><Globe2 className="mr-2 inline h-4 w-4 text-cyan-200" />信源目录与采集状态 · {daily.failedSourceCount} 个信源本次未成功</summary>
+        <p className="mt-4 text-sm leading-6 text-white/60">状态表示最近一次读取是否成功，不是文章真实性或质量评分。框架版本的 Atom 订阅失败时，会尝试官方公开接口；无需令牌，仅读取最近 30 个发布记录，不代表完整版本历史。可读取不代表最近有更新，仍以原始发布日期为准。技术长读可能保留此前已收录的文章。主题由关键词匹配得到。</p>
+        <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">{daily.sourceStates?.map((source) => <div key={source.name} className="rounded-xl border border-white/10 p-4"><a href={source.url} target="_blank" rel="noreferrer" className="text-sm text-cyan-100 hover:underline">{source.name}<ArrowUpRight className="ml-1 inline h-3 w-3" /></a><NewsSourceStatus source={source} /><p className="mt-2 text-xs text-white/55">{source.country} · {sourceLabels[source.type]}</p><p className="mt-2 text-sm text-white/65">每日 {source.selectedCount} 条 · 长读 {source.libraryCount} 篇</p><p className="mt-2 text-sm text-white/55">本次读到的最近发布：{formatDate(source.latestPublishedAt)}</p></div>)}</div>
         <p className="mt-4 text-sm leading-6 text-white/55">编辑规则综合发布时间、信源类别和技术关键词，并限制单个来源占比；新闻聚合没有替你完成事实核查。技术博客中的基准数据也需结合测试条件阅读。</p>
       </details>
 

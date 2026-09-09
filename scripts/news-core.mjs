@@ -68,7 +68,7 @@ export function importanceScore(item, source, now) {
   const signal = /breakthrough|launch|release|regulation|policy|rate|inflation|election|agreement|conflict|security|research|model|chip|market|economy/i.test(`${item.title} ${item.summary}`) ? 4 : 0
   const systems = topicsForItem(item).length ? 5 : 0
   const boost = { research: 4, engineering: 4, release: 3, institution: 2, analysis: 1, news: 0 }[source.type] ?? 0
-  const prerelease = /(?:^|[.-])(?:rc|alpha|beta|dev|nightly)\d*\b|^trunk\//i.test(item.title) ? 4 : 0
+  const prerelease = item.prerelease === true || /(?:^|[.-])(?:rc|alpha|beta|dev|nightly)\d*\b|^trunk\//i.test(item.title) ? 4 : 0
   return Math.round((source.weight + recency + signal + systems + boost - prerelease) * 10) / 10
 }
 

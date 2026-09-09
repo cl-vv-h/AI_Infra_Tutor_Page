@@ -80,6 +80,8 @@ npm run news:fetch
 
 采集器优先选择 Atom HTML alternate 链接，拒绝返回 HTML 错误页的伪成功响应，并在所有来源均无可用条目时保留上一版数据。单次临时连接失败会重试一次，同日归档合并已收录条目，避免较晚采集丢失较早数据。`npm run test:news`（Node.js 22.18+）覆盖解析、时间窗口、来源多样性、收藏恢复、筛选链接及课程目标；`npm run test:news:render` 对全部主题、当前长读信源、空状态和不安全查询进行静态渲染检查，不替代浏览器交互测试。
 
+六个 GitHub 框架版本源在 Atom 失败时，使用同仓库的 [GitHub Releases 公开接口](https://docs.github.com/en/rest/releases/releases#list-releases) 备用读取：仅配置中显式绑定的仓库可启用，每源最多一次请求、最多 30 个发布记录，不追踪重定向，不读取或发送任何令牌。接口支持公开资源免认证访问；遇到限流不重试，保留故障状态。页面区分订阅正常、备用通道可用及双通道失败，并记录原订阅故障。使用 `published_at` 而非提交创建或更新时间过滤 48 小时窗口；草稿剔除，预发布明确标注并降权。只保留标题、纯文本摘要、原文链接与发布日期，不保存作者资料、附件或接口原始响应。它不是完整版本历史，也不会为了填充新闻而将旧版本改为当天发布。周报仍由本地 Codex Luna 生成，与此免认证采集无关。
+
 ## 模型结构实验室
 
 模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts`、`src/data/mistral-models.ts` 与 `src/data/gemma-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供十个代表模型：
