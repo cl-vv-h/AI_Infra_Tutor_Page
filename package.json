@@ -4,6 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/generate-curriculum-index.mjs",
+    "prebuild": "node scripts/generate-curriculum-index.mjs",
+    "postbuild": "node scripts/check-curriculum-bundle.mjs",
+    "curriculum:index": "node scripts/generate-curriculum-index.mjs",
+    "test:curriculum": "node --experimental-strip-types --test tests/curriculum.test.mjs",
     "dev": "vite --configLoader runner",
     "build": "tsc -b && vite build --configLoader runner",
     "lint": "eslint .",

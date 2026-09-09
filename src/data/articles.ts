@@ -1,16 +1,16 @@
-import type { Article } from '@/types'
+import type { ArticleMetadata } from '@/types'
 import { curriculumArticles } from './curriculum'
 
-export const articles: Article[] = curriculumArticles
+export const articles: ArticleMetadata[] = curriculumArticles
 
-export function getArticleBySlug(slug: string): Article | undefined {
+export function getArticleBySlug(slug: string): ArticleMetadata | undefined {
   return articles.find((a) => a.slug === slug)
 }
 
-export function getArticlesByCategory(categoryId: string): Article[] {
+export function getArticlesByCategory(categoryId: string): ArticleMetadata[] {
   return articles.filter((a) => a.categoryId === categoryId)
 }
 
-export function getArticlesBySubCategory(subCategoryId: string): Article[] {
+export function getArticlesBySubCategory(subCategoryId: string): ArticleMetadata[] {
   return articles.filter((a) => a.subCategoryId === subCategoryId)
 }

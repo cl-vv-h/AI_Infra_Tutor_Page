@@ -1,6 +1,7 @@
 import { access, cp, mkdir } from 'node:fs/promises'
 import { extname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { generateCurriculumIndex } from './generate-curriculum-index.mjs'
 
 const projectRoot = fileURLToPath(new URL('../', import.meta.url))
 const defaultTutorPath = resolve(projectRoot, '../sglang_tutor')
@@ -21,4 +22,5 @@ for (const language of ['zh', 'en']) {
   })
 }
 
+await generateCurriculumIndex()
 console.log(`Curriculum synced from ${tutorPath}.`)

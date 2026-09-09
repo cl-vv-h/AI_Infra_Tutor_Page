@@ -243,8 +243,8 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
         ),
         img: ({ src, alt }) => {
           if (!src) return null
-          if (src.startsWith('http') || src.startsWith('data:')) {
-            return <img src={src} alt={alt} className="my-4 max-w-full rounded-lg" />
+          if (src.startsWith('http') || src.startsWith('data:') || src.startsWith('/')) {
+            return <img src={src} alt={alt} loading="lazy" className="my-4 max-w-full rounded-lg" />
           }
           return (
             <div className="my-4 rounded-lg border border-white/10 bg-[#1a1f35] p-4 text-center">

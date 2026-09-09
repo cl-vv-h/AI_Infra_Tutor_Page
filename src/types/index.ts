@@ -41,6 +41,12 @@ export interface Article {
   sourcePath?: string
 }
 
+/** Lightweight catalogue entry; article bodies are loaded separately. */
+export type ArticleMetadata = Omit<Article, 'content' | 'contentEn' | 'sourcePath'> & {
+  sourcePath: string
+  availableLanguages: Language[]
+}
+
 export interface LearningPath {
   id: string
   title: string

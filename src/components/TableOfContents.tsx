@@ -1,7 +1,10 @@
-import { useMemo, useEffect, useState, useCallback } from 'react'
+import { useEffect, useState, type RefObject } from 'react'
+import { useLocation } from 'react-router-dom'
+import { useLanguage } from '@/hooks/useLanguage'
 
 interface TableOfContentsProps {
   content: string
+  contentRoot: RefObject<HTMLDivElement>
 }
 
 interface TocItem {
@@ -10,104 +13,65 @@ interface TocItem {
   level: number
 }
 
-function generateSlug(text: string): string {
-  return text
-    .toLowerCase()
-    .trim()
-    .replace(/[^\w\s\u4e00-\u9fff-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '')
-}
-
-export default function TableOfContents({ content }: TableOfContentsProps) {
-  const [activeId, setActiveId] = useState<string>('')
-
-  const items = useMemo<TocItem[]>(() => {
-    const headings: TocItem[] = []
-    const usedIds = new Map<string, number>()
-    const lines = content.split('\n')
-    for (const line of lines) {
-      const h2Match = line.match(/^## (.+)$/)
-      const h3Match = line.match(/^### (.+)$/)
-      const h4Match = line.match(/^#### (.+)$/)
-      let text = ''
-      let level = 0
-      if (h2Match) {
-        text = h2Match[1]
-        level = 2
-      } else if (h3Match) {
-        text = h3Match[1]
-        level = 3
-      } else if (h4Match) {
-        text = h4Match[1]
-        level = 4
-      }
-      if (level > 0) {
-        let id = generateSlug(text)
-        const count = usedIds.get(id) ?? 0
-        usedIds.set(id, count + 1)
-        if (count > 0) {
-          id = `${id}-${count}`
-        }
-        headings.push({ id, text, level })
-      }
-    }
-    return headings
-  }, [content])
+export default function TableOfContents({ content, contentRoot }: TableOfContentsProps) {
+  const [items, setItems] = useState<TocItem[]>([])
+  const [activeId, setActiveId] = useState('')
+  const { language } = useLanguage()
+  const { hash } = useLocation()
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            setActiveId(entry.target.id)
-          }
-        }
-      },
-      {
-        rootMargin: '-80px 0px -60% 0px',
-        threshold: 0,
-      }
-    )
-
-    for (const item of items) {
-      const el = document.getElementById(item.id)
-      if (el) observer.observe(el)
-    }
-
+    // The rendered headings are the source of truth. This matches rehype-slug
+    // for inline code, punctuation and duplicate titles, and excludes code fences.
+    const headings = [...(contentRoot.current?.querySelectorAll<HTMLHeadingElement>('h2[id], h3[id], h4[id]') ?? [])]
+    setItems(headings.map((heading) => ({
+      id: heading.id,
+      text: heading.textContent ?? '',
+      level: Number(heading.tagName.slice(1)),
+    })))
+    if (!('IntersectionObserver' in window)) return
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) if (entry.isIntersecting) setActiveId(entry.target.id)
+    }, { rootMargin: '-80px 0px -60% 0px', threshold: 0 })
+    headings.forEach((heading) => observer.observe(heading))
     return () => observer.disconnect()
-  }, [items])
+  }, [content, contentRoot])
 
-  const handleClick = useCallback((id: string) => {
-    const el = document.getElementById(id)
-    el?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }, [])
+  useEffect(() => {
+    if (!hash) return
+    let id = hash.slice(1)
+    try { id = decodeURIComponent(id) } catch { /* Keep the original fragment. */ }
+    document.getElementById(id)?.scrollIntoView({ block: 'start' })
+  }, [hash, content])
 
-  if (items.length === 0) return null
+  if (!items.length) return null
 
   return (
-    <aside className="w-56 shrink-0">
-      <div className="sticky top-8 rounded-xl border border-white/5 bg-[#1a1f35] p-4">
-        <h4 className="mb-3 text-sm font-semibold text-white">目录</h4>
-        <nav className="space-y-1">
+    <aside className="order-first min-w-0 lg:order-none lg:col-start-2 lg:row-start-1">
+      <details open className="rounded-2xl border border-white/10 bg-[#101923] p-4 lg:sticky lg:top-24">
+        <summary className="cursor-pointer text-sm font-semibold text-white">
+          {language === 'zh' ? '本篇目录' : 'On this page'} <span className="ml-2 font-mono text-xs font-normal text-slate-400">{items.length}</span>
+        </summary>
+        <nav aria-label={language === 'zh' ? '本篇目录' : 'On this page'} className="mt-4 max-h-56 space-y-1 overflow-y-auto lg:max-h-[calc(100vh-12rem)]">
           {items.map((item) => (
             <button
               key={item.id}
-              onClick={() => handleClick(item.id)}
-              className={`block w-full text-left text-sm transition-colors hover:text-[#00d4ff] ${
-                activeId === item.id ? 'text-[#00d4ff]' : 'text-gray-300'
-              } ${
-                item.level === 3 ? 'pl-3 text-gray-500' : ''
-              } ${
-                item.level === 4 ? 'pl-6 text-gray-500' : ''
-              }`}
+              type="button"
+              aria-current={activeId === item.id ? 'location' : undefined}
+              onClick={() => {
+                const heading = document.getElementById(item.id)
+                if (!heading) return
+                heading.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' })
+                heading.tabIndex = -1
+                heading.focus({ preventScroll: true })
+                setActiveId(item.id)
+              }}
+              className={`block w-full rounded px-2 py-1.5 text-left text-sm leading-6 transition-colors hover:bg-white/5 hover:text-cyan-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-200 ${activeId === item.id ? 'bg-cyan-200/5 text-cyan-200' : 'text-slate-400'} ${item.level === 3 ? 'pl-4' : item.level === 4 ? 'pl-6' : ''}`}
             >
               {item.text}
             </button>
           ))}
         </nav>
-      </div>
+      </details>
     </aside>
   )
 }

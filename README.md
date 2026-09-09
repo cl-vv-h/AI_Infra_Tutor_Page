@@ -31,7 +31,11 @@ npm run build
 
 ## 同步 SGLang Tutor 课程
 
-网站会通过 `import.meta.glob` 自动建立双语课程索引，因此新增文章不需要手写 TypeScript import。
+网站在同步、启动开发和构建时自动生成 `src/data/curriculum-index.json` 双语元数据索引。目录和搜索只加载标题、摘要、标签及路径；打开文章时通过 `import.meta.glob` 单独读取所选语言正文，因此新增文章不需要手写 TypeScript import，也不会让浏览目录的访客下载全部课程。
+
+课程页支持中英文关键词组合检索（标题、摘要、标签、源码路径），查询保存在 `#/learn?q=…`，便于分享与返回。阅读页支持正文加载重试；只有缺少译文时才回退到已有语言，不把网络错误当成缺少译文。窄屏目录可折叠，目录使用正文实际标题生成，兼容重复标题、内联代码与代码围栏。
+
+直接编辑课程后可运行 `npm run curriculum:index` 刷新目录；`npm run test:curriculum`（Node.js 22.18+）校验索引同步、相邻课程、双语加载和搜索。生产构建仍兼容 Node.js 20，构建结束会自动检查页面没有静态导入任何课程正文、每篇正文独立打包。
 
 当 `SGLang_Tutor` 与本仓库位于同一父目录时：
 

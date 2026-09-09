@@ -1,0 +1,3193 @@
+[
+  {
+    "id": "curriculum-ai-infra-basic--attention-kernel--flash-attention-tutorial",
+    "categoryId": "cat-4",
+    "subCategoryId": "sub-4-6",
+    "tags": [
+      "Attention",
+      "Kernel"
+    ],
+    "title": "flashattentiontutorial.py",
+    "titleEn": "flashattentiontutorial.py",
+    "slug": "ai-infra-basic--attention-kernel--flash-attention-tutorial",
+    "summary": "\"\"\" ============================================================ FlashAttention 教学版源码 ============================================================",
+    "summaryEn": "\"\"\" ============================================================ FlashAttention 教学版源码 ============================================================",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "63 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-ai-infra-basic--attention-kernel--flash-decoding-tutorial",
+    "sourcePath": "ai-infra-basic/Attention_Kernel/flash_attention_tutorial.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--attention-kernel--flash-decoding-tutorial",
+    "categoryId": "cat-4",
+    "subCategoryId": "sub-4-6",
+    "tags": [
+      "Attention",
+      "Kernel"
+    ],
+    "title": "flashdecodingtutorial.py",
+    "titleEn": "flashdecodingtutorial.py",
+    "slug": "ai-infra-basic--attention-kernel--flash-decoding-tutorial",
+    "summary": "\"\"\" ============================================================ FlashDecoding 教学版源码 ============================================================",
+    "summaryEn": "\"\"\" ============================================================ FlashDecoding 教学版源码 ============================================================",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "31 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--attention-kernel--flash-attention-tutorial",
+    "nextArticleId": "curriculum-ai-infra-basic--attention-kernel--readme",
+    "sourcePath": "ai-infra-basic/Attention_Kernel/flash_decoding_tutorial.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--attention-kernel--readme",
+    "categoryId": "cat-4",
+    "subCategoryId": "sub-4-6",
+    "tags": [
+      "Attention",
+      "Kernel"
+    ],
+    "title": "Attention Kernel 教学入口",
+    "titleEn": "Attention Kernel",
+    "slug": "ai-infra-basic--attention-kernel--readme",
+    "summary": "这个目录用纯 PyTorch 教学代码解释 attention kernel 优化背后的核心想法。重点不是替代 CUDA/Triton 实现，而是把计算顺序、softmax 稳定性、KV Cache 访问和 decode 阶段的瓶颈讲清楚。",
+    "summaryEn": "This topic provides educational implementations of FlashAttention and FlashDecoding algorithms, demonstrating how attention computation is restruct…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "4 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--attention-kernel--flash-decoding-tutorial",
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/Attention_Kernel/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--benchmark-profiling--readme",
+    "categoryId": "cat-14",
+    "subCategoryId": "sub-14-1",
+    "tags": [
+      "Benchmark",
+      "Profiling"
+    ],
+    "title": "Benchmark Profiling",
+    "titleEn": "Benchmark & Profiling",
+    "slug": "ai-infra-basic--benchmark-profiling--readme",
+    "summary": "这一章讲如何判断一个 serving 系统到底快不快，以及慢在哪里。Benchmark 给出外部指标，profiling 帮你定位内部瓶颈。两者缺一不可。",
+    "summaryEn": "Performance benchmarking and profiling for LLM serving: TTFT, ITL, TPS metrics, load testing, profiling tools, and bottleneck identification.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "5 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/Benchmark_Profiling/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--execution-graph--01-what-is-graph",
+    "categoryId": "cat-9",
+    "subCategoryId": "sub-9-1",
+    "tags": [
+      "Graph",
+      "Runtime"
+    ],
+    "title": "什么是 Graph：从计算图到 SGLang CUDA Graph",
+    "titleEn": "What is a Computational Graph",
+    "slug": "ai-infra-basic--execution-graph--01-what-is-graph",
+    "summary": "你在 SGLang 里看到的 graph，大多数时候不是“知识图谱”或“数据结构课里的图搜索”，而是把一段模型计算提前记录成可复用的执行计划。",
+    "summaryEn": "1. From Eager Execution to Graph Representation",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "18 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-ai-infra-basic--execution-graph--02-graph-execution-dataflow",
+    "sourcePath": "ai-infra-basic/Execution_Graph/01-what-is-graph.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--execution-graph--02-graph-execution-dataflow",
+    "categoryId": "cat-9",
+    "subCategoryId": "sub-9-1",
+    "tags": [
+      "Graph",
+      "Runtime"
+    ],
+    "title": "Graph 执行原理：调度、数据与流转",
+    "titleEn": "Graph Execution Dataflow",
+    "slug": "ai-infra-basic--execution-graph--02-graph-execution-dataflow",
+    "summary": "上一讲解释了 Graph 是什么。这一讲更具体：在 SGLang 的 decode graph replay 中，哪些数据会进入 graph，谁决定是否走 graph，graph 内部如何被调度，数据又如何从请求队列一路流到 KV Cache、logits 和 sampler。",
+    "summaryEn": "Graph replay requires fixed input shapes. SGLang handles this by:",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "23 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--execution-graph--01-what-is-graph",
+    "nextArticleId": "curriculum-ai-infra-basic--execution-graph--readme",
+    "sourcePath": "ai-infra-basic/Execution_Graph/02-graph-execution-dataflow.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--execution-graph--readme",
+    "categoryId": "cat-9",
+    "subCategoryId": "sub-9-1",
+    "tags": [
+      "Graph",
+      "Runtime"
+    ],
+    "title": "Execution Graph",
+    "titleEn": "Execution Graph",
+    "slug": "ai-infra-basic--execution-graph--readme",
+    "summary": "这一章解释生产推理中常见的 execution graph 优化，例如 CUDA Graph、torch.compile、静态 shape replay。它们解决的不是模型数学问题，而是减少 CPU launch overhead、稳定 kernel 调度，并让 decode loop 更接近…",
+    "summaryEn": "From computation graph concepts to CUDA/NPU Graph, torch.compile, static shape reuse, and replay dataflow in LLM serving.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "5 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--execution-graph--02-graph-execution-dataflow",
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/Execution_Graph/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--gated-delta-network--01-gdn-math-and-state",
+    "categoryId": "cat-15",
+    "subCategoryId": "sub-15-1",
+    "tags": [
+      "GDN",
+      "Linear Attention"
+    ],
+    "title": "01. GDN 数学原理：Gated Delta Rule 与状态矩阵",
+    "titleEn": "01. GDN Math: Gated Delta Rule and the State Matrix",
+    "slug": "ai-infra-basic--gated-delta-network--01-gdn-math-and-state",
+    "summary": "01. GDN 数学原理：Gated Delta Rule 与状态矩阵",
+    "summaryEn": "01. GDN Math: Gated Delta Rule and the State Matrix",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "9 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-ai-infra-basic--gated-delta-network--02-gdn-layer-dataflow-and-shapes",
+    "sourcePath": "ai-infra-basic/Gated_Delta_Network/01-gdn-math-and-state.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--gated-delta-network--02-gdn-layer-dataflow-and-shapes",
+    "categoryId": "cat-15",
+    "subCategoryId": "sub-15-1",
+    "tags": [
+      "GDN",
+      "Linear Attention"
+    ],
+    "title": "02. GDN 层内数据流与 shape",
+    "titleEn": "02. GDN Layer Dataflow and Shapes",
+    "slug": "ai-infra-basic--gated-delta-network--02-gdn-layer-dataflow-and-shapes",
+    "summary": "这一讲用下面的符号描述 GDN 层。它们对应 Qwen3-Next/SGLang 实现中的字段。",
+    "summaryEn": "This lecture uses the following symbols to describe a GDN layer. They correspond to fields used by Qwen3-Next and the SGLang implementation.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "12 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--gated-delta-network--01-gdn-math-and-state",
+    "nextArticleId": "curriculum-ai-infra-basic--gated-delta-network--03-gdn-training-and-serving",
+    "sourcePath": "ai-infra-basic/Gated_Delta_Network/02-gdn-layer-dataflow-and-shapes.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--gated-delta-network--03-gdn-training-and-serving",
+    "categoryId": "cat-15",
+    "subCategoryId": "sub-15-1",
+    "tags": [
+      "GDN",
+      "Linear Attention"
+    ],
+    "title": "03. GDN 的训练、Prefill、Decode 与 Serving 状态管理",
+    "titleEn": "03. GDN Training, Prefill, Decode, and Serving State Management",
+    "slug": "ai-infra-basic--gated-delta-network--03-gdn-training-and-serving",
+    "summary": "03. GDN 的训练、Prefill、Decode 与 Serving 状态管理",
+    "summaryEn": "03. GDN Training, Prefill, Decode, and Serving State Management",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "12 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--gated-delta-network--02-gdn-layer-dataflow-and-shapes",
+    "nextArticleId": "curriculum-ai-infra-basic--gated-delta-network--readme",
+    "sourcePath": "ai-infra-basic/Gated_Delta_Network/03-gdn-training-and-serving.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--gated-delta-network--readme",
+    "categoryId": "cat-15",
+    "subCategoryId": "sub-15-1",
+    "tags": [
+      "GDN",
+      "Linear Attention"
+    ],
+    "title": "Gated Delta Network",
+    "titleEn": "Gated Delta Network",
+    "slug": "ai-infra-basic--gated-delta-network--readme",
+    "summary": "GDN 在本专题中指 Gated Delta Network / Gated DeltaNet，也就是 Qwen3-Next 等混合架构中使用的一类线性注意力层。它不是图像压缩里的 Generalized Divisive Normalization。GDN 的核心是用一个固定大小的 recu…",
+    "summaryEn": "In this topic, GDN means Gated Delta Network / Gated DeltaNet, the linear-attention-style layer used by hybrid models such as Qwen3-Next. It is not…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "6 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--gated-delta-network--03-gdn-training-and-serving",
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/Gated_Delta_Network/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--inference-basics--readme",
+    "categoryId": "cat-10",
+    "subCategoryId": "sub-10-1",
+    "tags": [
+      "Inference",
+      "Basics"
+    ],
+    "title": "Inference Basics",
+    "titleEn": "Inference Basics",
+    "slug": "ai-infra-basic--inference-basics--readme",
+    "summary": "这一章回答一个最基础的问题：LLM 推理到底在做什么，为什么 serving 系统不能只是把请求放进一个 for 循环里逐个跑。",
+    "summaryEn": "This chapter answers the most fundamental question: what does LLM inference actually do, and why can't a serving system simply put requests into a …",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "5 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/Inference_Basics/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--kv-cache-memory--readme",
+    "categoryId": "cat-11",
+    "subCategoryId": "sub-11-1",
+    "tags": [
+      "KV Cache",
+      "Memory"
+    ],
+    "title": "KV Cache Memory",
+    "titleEn": "KV Cache Memory",
+    "slug": "ai-infra-basic--kv-cache-memory--readme",
+    "summary": "这一章关注 LLM serving 中最珍贵的资源之一：KV Cache 显存。只要理解 KV Cache 的形状、分配、复用和回收，就能理解很多调度、attention backend、prefix cache 和 PD 分离设计。",
+    "summaryEn": "This chapter focuses on one of the most precious resources in LLM serving: KV Cache memory. Once you understand KV Cache shapes, allocation, reuse,…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "4 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/KV_Cache_Memory/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--kv-transfer--readme",
+    "categoryId": "cat-12",
+    "subCategoryId": "sub-12-1",
+    "tags": [
+      "KV Transfer",
+      "Disaggregation"
+    ],
+    "title": "KV Transfer",
+    "titleEn": "KV Transfer (PD Disaggregation)",
+    "slug": "ai-infra-basic--kv-transfer--readme",
+    "summary": "这一章解释 KV Cache 如何在不同 worker 或不同节点之间移动。KV Transfer 常见于 Prefill/Decode Disaggregation，也就是把长 prompt 的 prefill 和持续 decode 放到不同资源池中执行。",
+    "summaryEn": "Prefill/Decode disaggregation: splitting LLM serving into separate prefill and decode workers, with KV Cache transferred between them.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "4 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/KV_Transfer/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--lora--adalora-tutorial",
+    "categoryId": "cat-2",
+    "subCategoryId": "sub-2-7",
+    "tags": [
+      "LoRA",
+      "PEFT"
+    ],
+    "title": "adaloratutorialv2.py",
+    "titleEn": "adaloratutorialv2.py",
+    "slug": "ai-infra-basic--lora--adalora-tutorial",
+    "summary": "\"\"\" ============================================================ AdaLoRA 教学版源码 v2 ============================================================",
+    "summaryEn": "\"\"\" ============================================================ AdaLoRA 教学版源码 v2 ============================================================",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "60 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-ai-infra-basic--lora--dora-tutorial",
+    "sourcePath": "ai-infra-basic/LoRA/adalora_tutorial.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--lora--dora-tutorial",
+    "categoryId": "cat-2",
+    "subCategoryId": "sub-2-7",
+    "tags": [
+      "LoRA",
+      "PEFT"
+    ],
+    "title": "doratutorial.py",
+    "titleEn": "doratutorial.py",
+    "slug": "ai-infra-basic--lora--dora-tutorial",
+    "summary": "\"\"\" ============================================================ DoRA / Weight-Decomposed Low-Rank Adaptation 教学版源码 ===============================…",
+    "summaryEn": "\"\"\" ============================================================ DoRA / Weight-Decomposed Low-Rank Adaptation 教学版源码 ===============================…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "40 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--lora--adalora-tutorial",
+    "nextArticleId": "curriculum-ai-infra-basic--lora--lora-tutorial",
+    "sourcePath": "ai-infra-basic/LoRA/dora_tutorial.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--lora--lora-tutorial",
+    "categoryId": "cat-2",
+    "subCategoryId": "sub-2-7",
+    "tags": [
+      "LoRA",
+      "PEFT"
+    ],
+    "title": "loratutorial.py",
+    "titleEn": "loratutorial.py",
+    "slug": "ai-infra-basic--lora--lora-tutorial",
+    "summary": "\"\"\" ============================================================ LoRA / Low-Rank Adaptation 完整教学代码 ================================================…",
+    "summaryEn": "\"\"\" ============================================================ LoRA / Low-Rank Adaptation 完整教学代码 ================================================…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "43 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--lora--dora-tutorial",
+    "nextArticleId": "curriculum-ai-infra-basic--lora--qlora-tutorial",
+    "sourcePath": "ai-infra-basic/LoRA/lora_tutorial.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--lora--qlora-tutorial",
+    "categoryId": "cat-2",
+    "subCategoryId": "sub-2-7",
+    "tags": [
+      "LoRA",
+      "PEFT"
+    ],
+    "title": "qloratutorial.py",
+    "titleEn": "qloratutorial.py",
+    "slug": "ai-infra-basic--lora--qlora-tutorial",
+    "summary": "\"\"\" ============================================================ QLoRA 教学版源码 ============================================================",
+    "summaryEn": "\"\"\" ============================================================ QLoRA 教学版源码 ============================================================",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "57 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--lora--lora-tutorial",
+    "nextArticleId": "curriculum-ai-infra-basic--lora--readme",
+    "sourcePath": "ai-infra-basic/LoRA/qlora_tutorial.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--lora--readme",
+    "categoryId": "cat-2",
+    "subCategoryId": "sub-2-7",
+    "tags": [
+      "LoRA",
+      "PEFT"
+    ],
+    "title": "LoRA 系列教学入口",
+    "titleEn": "LoRA (Low-Rank Adaptation)",
+    "slug": "ai-infra-basic--lora--readme",
+    "summary": "这个目录用小型 Transformer 和简化 Linear 模块解释参数高效微调。阅读目标是理解 adapter 如何插入模型、哪些参数参与训练、推理时如何合并，以及 QLoRA/DoRA/AdaLoRA 分别解决什么问题。",
+    "summaryEn": "This topic covers the principles and serving of efficient fine-tuning methods: LoRA, QLoRA, DoRA, and AdaLoRA, with focus on their computational fo…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "4 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--lora--qlora-tutorial",
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/LoRA/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--mamba-state-space--01-mamba-and-sglang-state",
+    "categoryId": "cat-7",
+    "subCategoryId": "sub-7-1",
+    "tags": [
+      "Mamba",
+      "SSM"
+    ],
+    "title": "Mamba 是什么：从 State Space Model 到 SGLang Mamba State",
+    "titleEn": "What is Mamba: From State Space Models to SGLang Mamba State",
+    "slug": "ai-infra-basic--mamba-state-space--01-mamba-and-sglang-state",
+    "summary": "Mamba 是什么：从 State Space Model 到 SGLang Mamba State",
+    "summaryEn": "What is Mamba: From State Space Models to SGLang Mamba State",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "20 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-ai-infra-basic--mamba-state-space--02-mamba-principles",
+    "sourcePath": "ai-infra-basic/Mamba_State_Space/01-mamba-and-sglang-state.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--mamba-state-space--02-mamba-principles",
+    "categoryId": "cat-7",
+    "subCategoryId": "sub-7-1",
+    "tags": [
+      "Mamba",
+      "SSM"
+    ],
+    "title": "Mamba 原理详解：从 SSM 到 Mamba2 Forward",
+    "titleEn": "Mamba Principles: Selective Scan & State Space",
+    "slug": "ai-infra-basic--mamba-state-space--02-mamba-principles",
+    "summary": "上一讲把 Mamba 放进 SGLang serving 里做了总览，但 Mamba 的内部原理还没有展开。这里我们从最小 SSM 公式开始，一步步走到 SGLang 代码中的 Mamba2 forward：inproj - causal conv - selective scan / sta…",
+    "summaryEn": "Mamba Principles: Selective Scan & State Space",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "17 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--mamba-state-space--01-mamba-and-sglang-state",
+    "nextArticleId": "curriculum-ai-infra-basic--mamba-state-space--03-mamba-radix-cache",
+    "sourcePath": "ai-infra-basic/Mamba_State_Space/02-mamba-principles.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--mamba-state-space--03-mamba-radix-cache",
+    "categoryId": "cat-7",
+    "subCategoryId": "sub-7-1",
+    "tags": [
+      "Mamba",
+      "SSM"
+    ],
+    "title": "Mamba 和 Radix Cache：状态复用、代码依赖与执行流程",
+    "titleEn": "Mamba Radix Cache: State Management vs KV Cache",
+    "slug": "ai-infra-basic--mamba-state-space--03-mamba-radix-cache",
+    "summary": "Mamba 和 Radix Cache：状态复用、代码依赖与执行流程",
+    "summaryEn": "Mamba Radix Cache: State Management vs KV Cache",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "20 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--mamba-state-space--02-mamba-principles",
+    "nextArticleId": "curriculum-ai-infra-basic--mamba-state-space--readme",
+    "sourcePath": "ai-infra-basic/Mamba_State_Space/03-mamba-radix-cache.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--mamba-state-space--readme",
+    "categoryId": "cat-7",
+    "subCategoryId": "sub-7-1",
+    "tags": [
+      "Mamba",
+      "SSM"
+    ],
+    "title": "Mamba / State Space Model 教学入口",
+    "titleEn": "Mamba / State Space Models",
+    "slug": "ai-infra-basic--mamba-state-space--readme",
+    "summary": "这个目录专门解释 Mamba 以及 SGLang 中围绕 Mamba 出现的运行时概念：mamba state、MambaPool、mambaschedulerstrategy、mambatrackindices、Mamba radix cache、hybrid attention backe…",
+    "summaryEn": "Mamba and State Space Models (SSM): principles, Mamba state management, scheduler strategy, and radix cache state handling in SGLang.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "4 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--mamba-state-space--03-mamba-radix-cache",
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/Mamba_State_Space/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--model-architecture--01-decoder-only-transformer",
+    "categoryId": "cat-5",
+    "subCategoryId": "sub-5-1",
+    "tags": [
+      "Architecture",
+      "LLM"
+    ],
+    "title": "Decoder-only Transformer：从 Token 到下一个 Token",
+    "titleEn": "Decoder-only Transformer: From Token to Next Token",
+    "slug": "ai-infra-basic--model-architecture--01-decoder-only-transformer",
+    "summary": "Decoder-only Transformer：从 Token 到下一个 Token",
+    "summaryEn": "Decoder-only Transformer: From Token to Next Token",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "10 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--02-gqa-attention-shapes",
+    "sourcePath": "ai-infra-basic/Model_Architecture/01-decoder-only-transformer.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--model-architecture--02-gqa-attention-shapes",
+    "categoryId": "cat-5",
+    "subCategoryId": "sub-5-1",
+    "tags": [
+      "Architecture",
+      "LLM"
+    ],
+    "title": "Grouped-Query Attention：QKV、RoPE 与 KV Cache 的形状流",
+    "titleEn": "Grouped-Query Attention: QKV, RoPE & KV Cache Shape Flow",
+    "slug": "ai-infra-basic--model-architecture--02-gqa-attention-shapes",
+    "summary": "Grouped-Query Attention：QKV、RoPE 与 KV Cache 的形状流",
+    "summaryEn": "Grouped-Query Attention: QKV, RoPE & KV Cache Shape Flow",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "10 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--01-decoder-only-transformer",
+    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--03-sparse-moe-routing",
+    "sourcePath": "ai-infra-basic/Model_Architecture/02-gqa-attention-shapes.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--model-architecture--03-sparse-moe-routing",
+    "categoryId": "cat-5",
+    "subCategoryId": "sub-5-1",
+    "tags": [
+      "Architecture",
+      "LLM"
+    ],
+    "title": "Sparse MoE：Router、Top-K、Expert 与数据重排",
+    "titleEn": "Sparse MoE: Router, Top-K, Expert & Data Rearrangement",
+    "slug": "ai-infra-basic--model-architecture--03-sparse-moe-routing",
+    "summary": "Sparse MoE：Router、Top-K、Expert 与数据重排",
+    "summaryEn": "Sparse MoE: Router, Top-K, Expert & Data Rearrangement",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "11 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--02-gqa-attention-shapes",
+    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--04-multi-head-latent-attention",
+    "sourcePath": "ai-infra-basic/Model_Architecture/03-sparse-moe-routing.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--model-architecture--04-multi-head-latent-attention",
+    "categoryId": "cat-5",
+    "subCategoryId": "sub-5-1",
+    "tags": [
+      "Architecture",
+      "LLM"
+    ],
+    "title": "Multi-head Latent Attention：低秩压缩与解耦位置编码",
+    "titleEn": "Multi-head Latent Attention: Low-Rank Compression & Decoupled RoPE",
+    "slug": "ai-infra-basic--model-architecture--04-multi-head-latent-attention",
+    "summary": "Multi-head Latent Attention：低秩压缩与解耦位置编码",
+    "summaryEn": "Multi-head Latent Attention: Low-Rank Compression & Decoupled RoPE",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "14 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--03-sparse-moe-routing",
+    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--05-architecture-families",
+    "sourcePath": "ai-infra-basic/Model_Architecture/04-multi-head-latent-attention.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--model-architecture--05-architecture-families",
+    "categoryId": "cat-5",
+    "subCategoryId": "sub-5-1",
+    "tags": [
+      "Architecture",
+      "LLM"
+    ],
+    "title": "主流大模型架构谱系：哪些模块发生了变化",
+    "titleEn": "LLM Architecture Families: Which Modules Changed",
+    "slug": "ai-infra-basic--model-architecture--05-architecture-families",
+    "summary": "1. Token mixer：不同 token 如何交换信息，如双向 Attention、因果 Attention、Cross Attention、SSM。 2. Channel mixer：单个 token 的 hidden vector 如何非线性变换，如 Dense FFN、SwiGLU…",
+    "summaryEn": "LLM Architecture Families: Which Modules Changed",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "15 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--04-multi-head-latent-attention",
+    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--06-efficient-attention-landscape",
+    "sourcePath": "ai-infra-basic/Model_Architecture/05-architecture-families.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--model-architecture--06-efficient-attention-landscape",
+    "categoryId": "cat-5",
+    "subCategoryId": "sub-5-1",
+    "tags": [
+      "Architecture",
+      "LLM"
+    ],
+    "title": "高效 Attention 全景：压缩、稀疏、递归与 Kernel",
+    "titleEn": "Efficient Attention Landscape: Compression, Sparsity, Recurrence, and Kernels",
+    "slug": "ai-infra-basic--model-architecture--06-efficient-attention-landscape",
+    "summary": "GQA、MLA、DSA、CSA、KDA、FlashAttention 经常出现在同一张列表里，但它们优化的并不是同一个问题：",
+    "summaryEn": "Efficient Attention Landscape: Compression, Sparsity, Recurrence, and Kernels",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "13 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--05-architecture-families",
+    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--07-deepseek-sparse-attention",
+    "sourcePath": "ai-infra-basic/Model_Architecture/06-efficient-attention-landscape.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--model-architecture--07-deepseek-sparse-attention",
+    "categoryId": "cat-5",
+    "subCategoryId": "sub-5-1",
+    "tags": [
+      "Architecture",
+      "LLM"
+    ],
+    "title": "DeepSeek Sparse Attention：在 MLA Cache 上学习检索",
+    "titleEn": "DeepSeek Sparse Attention: Learned Indexing over MLA Cache",
+    "slug": "ai-infra-basic--model-architecture--07-deepseek-sparse-attention",
+    "summary": "DeepSeek Sparse Attention：在 MLA Cache 上学习检索",
+    "summaryEn": "DeepSeek Sparse Attention: Learned Indexing over MLA Cache",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "14 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--06-efficient-attention-landscape",
+    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--08-compressed-sparse-attention",
+    "sourcePath": "ai-infra-basic/Model_Architecture/07-deepseek-sparse-attention.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--model-architecture--08-compressed-sparse-attention",
+    "categoryId": "cat-5",
+    "subCategoryId": "sub-5-1",
+    "tags": [
+      "Architecture",
+      "LLM"
+    ],
+    "title": "压缩稀疏注意力（CSA）与分层压缩注意力（HCA）",
+    "titleEn": "Compressed Sparse Attention (CSA) and Hierarchical Compressed Attention (HCA)",
+    "slug": "ai-infra-basic--model-architecture--08-compressed-sparse-attention",
+    "summary": "压缩稀疏注意力（Compressed Sparse Attention，CSA）是 DeepSeek-V4 引入的长上下文注意力设计。它的核心动作可以概括为：",
+    "summaryEn": "Compressed Sparse Attention (CSA) and Hierarchical Compressed Attention (HCA)",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "13 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--07-deepseek-sparse-attention",
+    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--09-kimi-delta-attention",
+    "sourcePath": "ai-infra-basic/Model_Architecture/08-compressed-sparse-attention.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--model-architecture--09-kimi-delta-attention",
+    "categoryId": "cat-5",
+    "subCategoryId": "sub-5-1",
+    "tags": [
+      "Architecture",
+      "LLM"
+    ],
+    "title": "Kimi Delta Attention（KDA）：线性注意力的细粒度门控",
+    "titleEn": "Kimi Delta Attention (KDA): Fine-Grained Gating for Linear Attention",
+    "slug": "ai-infra-basic--model-architecture--09-kimi-delta-attention",
+    "summary": "Kimi Delta Attention（KDA）：线性注意力的细粒度门控",
+    "summaryEn": "Kimi Delta Attention (KDA): Fine-Grained Gating for Linear Attention",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "12 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--08-compressed-sparse-attention",
+    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--readme",
+    "sourcePath": "ai-infra-basic/Model_Architecture/09-kimi-delta-attention.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--model-architecture--readme",
+    "categoryId": "cat-5",
+    "subCategoryId": "sub-5-1",
+    "tags": [
+      "Architecture",
+      "LLM"
+    ],
+    "title": "主流大模型架构与实现原理",
+    "titleEn": "Mainstream LLM Architectures & Implementation Principles",
+    "slug": "ai-infra-basic--model-architecture--readme",
+    "summary": "本专题独立讲解大语言模型本身的计算结构，不依赖任何训练或推理框架。内容从标准 Transformer 出发，依次展开 Attention、KV Cache、Sparse MoE、Multi-head Latent Attention、稀疏/压缩注意力、递归线性注意力、状态空间模型及代表性架构家…",
+    "summaryEn": "Mainstream LLM Architectures & Implementation Principles",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "5 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--09-kimi-delta-attention",
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/Model_Architecture/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--dp-inference-demo",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "dpinferencedemo.py",
+    "titleEn": "dpinferencedemo.py",
+    "slug": "ai-infra-basic--parallel-strategy--dp-inference-demo",
+    "summary": "\"\"\" 教学目标： 用最小代码理解“大模型推理中的数据并行 DP”。",
+    "summaryEn": "\"\"\" 教学目标： 用最小代码理解“大模型推理中的数据并行 DP”。",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "28 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--ep-moe-demo",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/dp_inference_demo.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--ep-moe-demo",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "epmoefulldemo.py",
+    "titleEn": "epmoefulldemo.py",
+    "slug": "ai-infra-basic--parallel-strategy--ep-moe-demo",
+    "summary": "\"\"\" ============================================================ Expert Parallelism / EP / MoE 完整教学版代码 ============================================…",
+    "summaryEn": "\"\"\" ============================================================ Expert Parallelism / EP / MoE 完整教学版代码 ============================================…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "63 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--dp-inference-demo",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--pp-inference-demo",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/ep_moe_demo.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--pp-inference-demo",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "ppautoregressivedemo.py",
+    "titleEn": "ppautoregressivedemo.py",
+    "slug": "ai-infra-basic--parallel-strategy--pp-inference-demo",
+    "summary": "\"\"\" 教学目标： 用完整代码理解 Pipeline Parallelism，流水线并行，在自回归推理中的执行方式。",
+    "summaryEn": "\"\"\" 教学目标： 用完整代码理解 Pipeline Parallelism，流水线并行，在自回归推理中的执行方式。",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "48 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--ep-moe-demo",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--readme",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/pp_inference_demo.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--readme",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "Parallel Strategy 教学入口",
+    "titleEn": "Parallel Strategy",
+    "slug": "ai-infra-basic--parallel-strategy--readme",
+    "summary": "这个目录整理 LLM 推理中常见的多卡并行策略。主讲义是 tutorial.md，配套 Python demo 用更小的张量和模型结构模拟 DP、TP、PP、SP/CP、EP 的切分对象和通信模式。",
+    "summaryEn": "This topic covers the parallelization strategies used in LLM inference: Data Parallelism (DP), Tensor Parallelism (TP), Pipeline Parallelism (PP), …",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "4 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--pp-inference-demo",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--sp-inference-demo",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--sp-inference-demo",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "spcontextparalleldemo.py",
+    "titleEn": "spcontextparalleldemo.py",
+    "slug": "ai-infra-basic--parallel-strategy--sp-inference-demo",
+    "summary": "\"\"\" 教学目标： 更接近工业实现地理解 Sequence / Context Parallelism。",
+    "summaryEn": "\"\"\" 教学目标： 更接近工业实现地理解 Sequence / Context Parallelism。",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "62 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--readme",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--tp-inference-demo",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/sp_inference_demo.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--tp-inference-demo",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "tpattentioninferencedemo.py",
+    "titleEn": "tpattentioninferencedemo.py",
+    "slug": "ai-infra-basic--parallel-strategy--tp-inference-demo",
+    "summary": "\"\"\" 教学目标： 用完整代码理解大模型推理中的 Tensor Parallelism，张量并行。",
+    "summaryEn": "\"\"\" 教学目标： 用完整代码理解大模型推理中的 Tensor Parallelism，张量并行。",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "63 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--sp-inference-demo",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--tutorial",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/tp_inference_demo.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--tutorial",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "大模型推理并行策略整理：DP / TP / PP / SP / EP",
+    "titleEn": "Parallel Strategy Tutorial",
+    "slug": "ai-infra-basic--parallel-strategy--tutorial",
+    "summary": "大模型推理并行策略整理：DP / TP / PP / SP / EP",
+    "summaryEn": "1. Why Parallelism in LLM Inference",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "28 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--tp-inference-demo",
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/tutorial.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--quantization--01-quantization-foundations",
+    "categoryId": "cat-13",
+    "subCategoryId": "sub-13-1",
+    "tags": [
+      "Quantization",
+      "Kernel"
+    ],
+    "title": "01. 量化基础：从浮点数到低 bit 表示",
+    "titleEn": "01. 量化基础：从浮点数到低 bit 表示",
+    "slug": "ai-infra-basic--quantization--01-quantization-foundations",
+    "summary": "资源 量化能改善什么 典型例子 --------- 模型常驻显存 权重从 BF16/FP16 降到 8-bit、4-bit 或更低 70B BF16 约 140 GB，W4 权重主体约 35 GB，加上 scale 后略高 显存带宽 GEMM、attention、MoE 每次读取的数据更少 d…",
+    "summaryEn": "资源 量化能改善什么 典型例子 --------- 模型常驻显存 权重从 BF16/FP16 降到 8-bit、4-bit 或更低 70B BF16 约 140 GB，W4 权重主体约 35 GB，加上 scale 后略高 显存带宽 GEMM、attention、MoE 每次读取的数据更少 d…",
+    "availableLanguages": [
+      "zh"
+    ],
+    "readTime": "11 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-ai-infra-basic--quantization--02-bitwidth-formats-and-packing",
+    "sourcePath": "ai-infra-basic/Quantization/01-quantization-foundations.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--quantization--02-bitwidth-formats-and-packing",
+    "categoryId": "cat-13",
+    "subCategoryId": "sub-13-1",
+    "tags": [
+      "Quantization",
+      "Kernel"
+    ],
+    "title": "02. 位宽记号、FP8/MXFP8 与 packed W4",
+    "titleEn": "02. 位宽记号、FP8/MXFP8 与 packed W4",
+    "slug": "ai-infra-basic--quantization--02-bitwidth-formats-and-packing",
+    "summary": "但不同框架命名并不完全统一。因此读一个名字时要先拆字段，再回到 quant config 和 kernel contract。",
+    "summaryEn": "但不同框架命名并不完全统一。因此读一个名字时要先拆字段，再回到 quant config 和 kernel contract。",
+    "availableLanguages": [
+      "zh"
+    ],
+    "readTime": "14 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--quantization--01-quantization-foundations",
+    "nextArticleId": "curriculum-ai-infra-basic--quantization--03-weight-quantization-algorithms",
+    "sourcePath": "ai-infra-basic/Quantization/02-bitwidth-formats-and-packing.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--quantization--03-weight-quantization-algorithms",
+    "categoryId": "cat-13",
+    "subCategoryId": "sub-13-1",
+    "tags": [
+      "Quantization",
+      "Kernel"
+    ],
+    "title": "03. 权重量化算法：从 RTN 到 GPTQ、AWQ、AutoRound、HQQ、NF4",
+    "titleEn": "03. 权重量化算法：从 RTN 到 GPTQ、AWQ、AutoRound、HQQ、NF4",
+    "slug": "ai-infra-basic--quantization--03-weight-quantization-algorithms",
+    "summary": "03. 权重量化算法：从 RTN 到 GPTQ、AWQ、AutoRound、HQQ、NF4",
+    "summaryEn": "03. 权重量化算法：从 RTN 到 GPTQ、AWQ、AutoRound、HQQ、NF4",
+    "availableLanguages": [
+      "zh"
+    ],
+    "readTime": "13 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--quantization--02-bitwidth-formats-and-packing",
+    "nextArticleId": "curriculum-ai-infra-basic--quantization--04-activation-kv-fp8-quantization",
+    "sourcePath": "ai-infra-basic/Quantization/03-weight-quantization-algorithms.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--quantization--04-activation-kv-fp8-quantization",
+    "categoryId": "cat-13",
+    "subCategoryId": "sub-13-1",
+    "tags": [
+      "Quantization",
+      "Kernel"
+    ],
+    "title": "04. Activation、KV Cache、FP8 与 MXFP8 量化",
+    "titleEn": "04. Activation、KV Cache、FP8 与 MXFP8 量化",
+    "slug": "ai-infra-basic--quantization--04-activation-kv-fp8-quantization",
+    "summary": "04. Activation、KV Cache、FP8 与 MXFP8 量化",
+    "summaryEn": "04. Activation、KV Cache、FP8 与 MXFP8 量化",
+    "availableLanguages": [
+      "zh"
+    ],
+    "readTime": "11 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--quantization--03-weight-quantization-algorithms",
+    "nextArticleId": "curriculum-ai-infra-basic--quantization--05-serving-kernel-and-debugging",
+    "sourcePath": "ai-infra-basic/Quantization/04-activation-kv-fp8-quantization.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--quantization--05-serving-kernel-and-debugging",
+    "categoryId": "cat-13",
+    "subCategoryId": "sub-13-1",
+    "tags": [
+      "Quantization",
+      "Kernel"
+    ],
+    "title": "05. Serving 中的量化数据流、kernel 与排障",
+    "titleEn": "05. Serving 中的量化数据流、kernel 与排障",
+    "slug": "ai-infra-basic--quantization--05-serving-kernel-and-debugging",
+    "summary": "阶段 最容易出错的点 ------ config 解析 quantmethod、bits、groupsize、weightblocksize 与 checkpoint 不一致 权重分配 逻辑 shape 和 packed physical shape 混淆 权重加载 TP 分片 offset …",
+    "summaryEn": "阶段 最容易出错的点 ------ config 解析 quantmethod、bits、groupsize、weightblocksize 与 checkpoint 不一致 权重分配 逻辑 shape 和 packed physical shape 混淆 权重加载 TP 分片 offset …",
+    "availableLanguages": [
+      "zh"
+    ],
+    "readTime": "15 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--quantization--04-activation-kv-fp8-quantization",
+    "nextArticleId": "curriculum-ai-infra-basic--quantization--readme",
+    "sourcePath": "ai-infra-basic/Quantization/05-serving-kernel-and-debugging.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--quantization--readme",
+    "categoryId": "cat-13",
+    "subCategoryId": "sub-13-1",
+    "tags": [
+      "Quantization",
+      "Kernel"
+    ],
+    "title": "Quantization",
+    "titleEn": "Quantization",
+    "slug": "ai-infra-basic--quantization--readme",
+    "summary": "量化是把模型中的浮点数据换成更低 bit 的表示，并在尽量少损失质量的前提下降低显存、带宽和计算成本。它不只是“把 FP16 变成 INT4”这么简单，还包括 scale/zero point、校准、打包、kernel 布局、KV Cache dtype、activation 动态量化、FP8…",
+    "summaryEn": "Model quantization for LLM inference: weight-only quantization (GPTQ, AWQ), activation quantization (W8A8, FP8), KV cache quantization, and calibra…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "7 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--quantization--05-serving-kernel-and-debugging",
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/Quantization/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--schedule-optimization--chunked-prefill-with-fakellm-tutorial",
+    "categoryId": "cat-3",
+    "subCategoryId": "sub-3-6",
+    "tags": [
+      "Scheduling",
+      "Prefill"
+    ],
+    "title": "chunkedprefilltutorial.py",
+    "titleEn": "chunkedprefilltutorial.py",
+    "slug": "ai-infra-basic--schedule-optimization--chunked-prefill-with-fakellm-tutorial",
+    "summary": "\"\"\" ============================================================ Chunked Prefill 教学版源码 ============================================================",
+    "summaryEn": "\"\"\" ============================================================ Chunked Prefill 教学版源码 ============================================================",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "46 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-ai-infra-basic--schedule-optimization--prefill-decode-demo",
+    "sourcePath": "ai-infra-basic/Schedule_Optimization/chunked_prefill_with_fakeLLM_tutorial.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--schedule-optimization--prefill-decode-demo",
+    "categoryId": "cat-3",
+    "subCategoryId": "sub-3-6",
+    "tags": [
+      "Scheduling",
+      "Prefill"
+    ],
+    "title": "prefilldecodedemo.py",
+    "titleEn": "prefilldecodedemo.py",
+    "slug": "ai-infra-basic--schedule-optimization--prefill-decode-demo",
+    "summary": "import math from dataclasses import dataclass from typing import List, Optional, Tuple",
+    "summaryEn": "import math from dataclasses import dataclass from typing import List, Optional, Tuple",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "55 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--schedule-optimization--chunked-prefill-with-fakellm-tutorial",
+    "nextArticleId": "curriculum-ai-infra-basic--schedule-optimization--readme",
+    "sourcePath": "ai-infra-basic/Schedule_Optimization/prefill_decode_demo.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--schedule-optimization--readme",
+    "categoryId": "cat-3",
+    "subCategoryId": "sub-3-6",
+    "tags": [
+      "Scheduling",
+      "Prefill"
+    ],
+    "title": "Schedule Optimization 教学入口",
+    "titleEn": "Schedule Optimization",
+    "slug": "ai-infra-basic--schedule-optimization--readme",
+    "summary": "这个目录用小型 demo 解释 LLM serving 调度中最基础、也最容易混淆的部分：Prefill/Decode 的差异、KV Cache 的作用，以及 Chunked Prefill 为什么能改善长 prompt 对系统延迟的影响。",
+    "summaryEn": "This topic explains the key scheduling optimizations that make LLM serving systems efficient: continuous batching, chunked prefill, and the fundame…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "4 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--schedule-optimization--prefill-decode-demo",
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/Schedule_Optimization/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--speculative-decoding--01-speculative-decoding-principles",
+    "categoryId": "cat-6",
+    "subCategoryId": "sub-6-1",
+    "tags": [
+      "Speculative Decoding",
+      "Serving"
+    ],
+    "title": "01. 投机解码的基本原理",
+    "titleEn": "Speculative Decoding Principles",
+    "slug": "ai-infra-basic--speculative-decoding--01-speculative-decoding-principles",
+    "summary": "这意味着生成 N 个 token 至少需要 N 次 target model forward。即使每次 decode 的输入只有一个 token，大模型仍然要经历 embedding、所有 decoder layers、attention、MLP/MoE、LM head、sampling、KV…",
+    "summaryEn": "1. The Problem: Sequential Decode Bottleneck",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "17 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-ai-infra-basic--speculative-decoding--02-rejection-sampling-math",
+    "sourcePath": "ai-infra-basic/Speculative_Decoding/01-speculative-decoding-principles.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--speculative-decoding--02-rejection-sampling-math",
+    "categoryId": "cat-6",
+    "subCategoryId": "sub-6-1",
+    "tags": [
+      "Speculative Decoding",
+      "Serving"
+    ],
+    "title": "02. 投机采样的数学原理",
+    "titleEn": "Rejection Sampling Math for Speculative Decoding",
+    "slug": "ai-infra-basic--speculative-decoding--02-rejection-sampling-math",
+    "summary": "目标：先从 q 中采样候选 y，但最终输出的 token 分布必须等于 p。",
+    "summaryEn": "Rejection Sampling Math for Speculative Decoding",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "19 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--speculative-decoding--01-speculative-decoding-principles",
+    "nextArticleId": "curriculum-ai-infra-basic--speculative-decoding--03-serving-implementation-dataflow",
+    "sourcePath": "ai-infra-basic/Speculative_Decoding/02-rejection-sampling-math.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--speculative-decoding--03-serving-implementation-dataflow",
+    "categoryId": "cat-6",
+    "subCategoryId": "sub-6-1",
+    "tags": [
+      "Speculative Decoding",
+      "Serving"
+    ],
+    "title": "03. Serving 系统中的实现与数据流",
+    "titleEn": "Speculative Decoding: Serving Implementation Dataflow",
+    "slug": "ai-infra-basic--speculative-decoding--03-serving-implementation-dataflow",
+    "summary": "状态 为什么相关 ------ Request state 一轮可能提交多个 token，请求长度和输出数组不是每轮只加 1 Target KV Cache verify 会产生候选 token 的 KV，但只有接受路径能成为正式 KV Draft KV / draft hidden draf…",
+    "summaryEn": "Speculative Decoding: Serving Implementation Dataflow",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "14 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--speculative-decoding--02-rejection-sampling-math",
+    "nextArticleId": "curriculum-ai-infra-basic--speculative-decoding--04-algorithm-landscape",
+    "sourcePath": "ai-infra-basic/Speculative_Decoding/03-serving-implementation-dataflow.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--speculative-decoding--04-algorithm-landscape",
+    "categoryId": "cat-6",
+    "subCategoryId": "sub-6-1",
+    "tags": [
+      "Speculative Decoding",
+      "Serving"
+    ],
+    "title": "04. 投机推理算法谱系",
+    "titleEn": "Speculative Decoding Algorithm Landscape",
+    "slug": "ai-infra-basic--speculative-decoding--04-algorithm-landscape",
+    "summary": "各种 speculative inference 方法看起来很多，但可以用两个轴统一理解：",
+    "summaryEn": "Speculative Decoding Algorithm Landscape",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "16 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--speculative-decoding--03-serving-implementation-dataflow",
+    "nextArticleId": "curriculum-ai-infra-basic--speculative-decoding--readme",
+    "sourcePath": "ai-infra-basic/Speculative_Decoding/04-algorithm-landscape.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--speculative-decoding--readme",
+    "categoryId": "cat-6",
+    "subCategoryId": "sub-6-1",
+    "tags": [
+      "Speculative Decoding",
+      "Serving"
+    ],
+    "title": "Speculative Decoding / Speculative Inference 教学入口",
+    "titleEn": "Speculative Decoding",
+    "slug": "ai-infra-basic--speculative-decoding--readme",
+    "summary": "Speculative Decoding / Speculative Inference 教学入口",
+    "summaryEn": "This topic explains how to accelerate LLM decoding by using a fast \"draft\" model to propose multiple tokens, which are then verified by the target …",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "8 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--speculative-decoding--04-algorithm-landscape",
+    "nextArticleId": null,
+    "sourcePath": "ai-infra-basic/Speculative_Decoding/README.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--01-stack-and-relationships",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "第一讲：五个关键对象如何组成 Ascend NPU 推理与算子栈",
+    "titleEn": "01. Stack & Relationships: SGLang, sgl-kernel-npu, Triton-Ascend, Ascend C, torchnpu",
+    "slug": "ascend-kernel-infra--01-stack-and-relationships",
+    "summary": "这一讲只建立边界和调用关系，不深入 SGLang 的调度实现。读完后，应能回答三个问题：",
+    "summaryEn": "01. Stack & Relationships: SGLang, sgl-kernel-npu, Triton-Ascend, Ascend C, torchnpu",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "24 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-ascend-kernel-infra--02-cann-stack-and-boundaries",
+    "sourcePath": "ascend-kernel-infra/01-stack-and-relationships.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--02-cann-stack-and-boundaries",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "第二讲：CANN 全栈与边界",
+    "titleEn": "02. CANN Stack & Boundaries",
+    "slug": "ascend-kernel-infra--02-cann-stack-and-boundaries",
+    "summary": "本讲承接 第一讲：五个关键对象如何组成 Ascend NPU 推理与算子栈。上一讲回答“谁和谁是什么关系”；这一讲回答“CANN 这一个大名字内部到底分几层，每层分别负责什么”。",
+    "summaryEn": "Layer Responsibility Not Responsible For --------- Driver/Firmware Device discovery, DMA, interrupt handling, memory mapping Operator logic, tensor…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "28 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--01-stack-and-relationships",
+    "nextArticleId": "curriculum-ascend-kernel-infra--ascend-c--01-global-local-tensor-pipe-queue",
+    "sourcePath": "ascend-kernel-infra/02-cann-stack-and-boundaries.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--ascend-c--01-global-local-tensor-pipe-queue",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "Ascend C 01：Global/Local Tensor、TPipe 与 TQue",
+    "titleEn": "Ascend C 01: GlobalTensor, LocalTensor, TPipe & TQue",
+    "slug": "ascend-kernel-infra--ascend-c--01-global-local-tensor-pipe-queue",
+    "summary": "Ascend C 01：Global/Local Tensor、TPipe 与 TQue",
+    "summaryEn": "Ascend C 01: GlobalTensor, LocalTensor, TPipe & TQue",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "20 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--02-cann-stack-and-boundaries",
+    "nextArticleId": "curriculum-ascend-kernel-infra--ascend-c--02-add-operator-end-to-end",
+    "sourcePath": "ascend-kernel-infra/ascend-c/01-global-local-tensor-pipe-queue.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--ascend-c--02-add-operator-end-to-end",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "Ascend C 02：一个 Add 算子的端到端工程",
+    "titleEn": "Ascend C 02: Add Operator End-to-End",
+    "slug": "ascend-kernel-infra--ascend-c--02-add-operator-end-to-end",
+    "summary": "本章不追求复制某个 CANN 模板的全部样板代码，而是解释一个生产算子从 Python/PyTorch 调用到 device kernel 的每个边界。",
+    "summaryEn": "Ascend C 02: Add Operator End-to-End",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "18 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--ascend-c--01-global-local-tensor-pipe-queue",
+    "nextArticleId": "curriculum-ascend-kernel-infra--ascend-c--03-tiling-pipeline-sync-optimization",
+    "sourcePath": "ascend-kernel-infra/ascend-c/02-add-operator-end-to-end.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--ascend-c--03-tiling-pipeline-sync-optimization",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "Ascend C 03：Tiling、流水、同步与性能优化",
+    "titleEn": "Ascend C 03: Tiling, Pipeline, Sync & Optimization",
+    "slug": "ascend-kernel-infra--ascend-c--03-tiling-pipeline-sync-optimization",
+    "summary": "本章关注 Ascend C 的核心价值：当编译器自动策略不够时，开发者可以显式设计数据通路和流水。",
+    "summaryEn": "Ascend C 03: Tiling, Pipeline, Sync & Optimization",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "12 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--ascend-c--02-add-operator-end-to-end",
+    "nextArticleId": "curriculum-ascend-kernel-infra--ascend-c--04-platform-tiling-and-workspace-contracts",
+    "sourcePath": "ascend-kernel-infra/ascend-c/03-tiling-pipeline-sync-optimization.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--ascend-c--04-platform-tiling-and-workspace-contracts",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "Ascend C 04：Platform、Tiling、Workspace 与 Host/Device 契约",
+    "titleEn": "Ascend C 04: Platform, Tiling, Workspace & Host/Device Contracts",
+    "slug": "ascend-kernel-infra--ascend-c--04-platform-tiling-and-workspace-contracts",
+    "summary": "Ascend C 04：Platform、Tiling、Workspace 与 Host/Device 契约",
+    "summaryEn": "Ascend C 04: Platform, Tiling, Workspace & Host/Device Contracts",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "40 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--ascend-c--03-tiling-pipeline-sync-optimization",
+    "nextArticleId": "curriculum-ascend-kernel-infra--foundations--01-kernel-first-principles",
+    "sourcePath": "ascend-kernel-infra/ascend-c/04-platform-tiling-and-workspace-contracts.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--foundations--01-kernel-first-principles",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "基础 01：从一个公式到并行 Kernel",
+    "titleEn": "Foundation 01: From Formula to Parallel Kernel",
+    "slug": "ascend-kernel-infra--foundations--01-kernel-first-principles",
+    "summary": "本章先不写任何框架代码，只回答一个根问题：一条数学公式为什么会变成 grid、program、tile、搬运和同步？",
+    "summaryEn": "Foundation 01: From Formula to Parallel Kernel",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "15 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--ascend-c--04-platform-tiling-and-workspace-contracts",
+    "nextArticleId": "curriculum-ascend-kernel-infra--foundations--02-ascend-hardware",
+    "sourcePath": "ascend-kernel-infra/foundations/01-kernel-first-principles.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--foundations--02-ascend-hardware",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "基础 02：Ascend NPU、AI Core 与存储层级",
+    "titleEn": "Foundation 02: Ascend NPU Hardware & Memory Hierarchy",
+    "slug": "ascend-kernel-infra--foundations--02-ascend-hardware",
+    "summary": "本章建立一个“够用但不假装所有芯片都一样”的硬件模型。不同 Ascend 产品和架构版本的核数、容量、数据通路会变化，写生产 kernel 时必须查目标硬件规格；这里先学习稳定的共同概念。",
+    "summaryEn": "Foundation 02: Ascend NPU Hardware & Memory Hierarchy",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "22 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--foundations--01-kernel-first-principles",
+    "nextArticleId": "curriculum-ascend-kernel-infra--foundations--03-memory-pipeline-and-sync",
+    "sourcePath": "ascend-kernel-infra/foundations/02-ascend-hardware.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--foundations--03-memory-pipeline-and-sync",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "基础 03：搬运、计算、同步与流水",
+    "titleEn": "Foundation 03: Data Movement, Synchronization & Pipeline",
+    "slug": "ascend-kernel-infra--foundations--03-memory-pipeline-and-sync",
+    "summary": "高性能 kernel 不是“先把所有数据复制完，再全部计算，最后全部写回”。它更像工厂流水线：前一块在计算时，后一块可以搬入，前前一块可以搬出。",
+    "summaryEn": "Foundation 03: Data Movement, Synchronization & Pipeline",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "13 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--foundations--02-ascend-hardware",
+    "nextArticleId": "curriculum-ascend-kernel-infra--readme",
+    "sourcePath": "ascend-kernel-infra/foundations/03-memory-pipeline-and-sync.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--readme",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "Ascend Kernel Infra：从推理框架走向 NPU 算子",
+    "titleEn": "Ascend Kernel Infra: From Inference Framework to NPU Operators",
+    "slug": "ascend-kernel-infra--readme",
+    "summary": "Ascend Kernel Infra：从推理框架走向 NPU 算子",
+    "summaryEn": "Ascend Kernel Infra: From Inference Framework to NPU Operators",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "16 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--foundations--03-memory-pipeline-and-sync",
+    "nextArticleId": "curriculum-ascend-kernel-infra--reference--code-reading-and-types",
+    "sourcePath": "ascend-kernel-infra/README.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--reference--code-reading-and-types",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "代码阅读手册：变量类型、形状、地址与源码实现",
+    "titleEn": "Code Reading Manual: Types, Shapes & Addresses",
+    "slug": "ascend-kernel-infra--reference--code-reading-and-types",
+    "summary": "这份手册解决一个贯穿本专题的问题：同一个变量不能只问“它是什么类型”，还要同时问它属于哪一层、元素是什么类型、有没有静态形状、位于哪种存储空间，以及它代表值还是地址。",
+    "summaryEn": "Code Reading Manual: Types, Shapes & Addresses",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "50 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--readme",
+    "nextArticleId": "curriculum-ascend-kernel-infra--reference--glossary",
+    "sourcePath": "ascend-kernel-infra/reference/code-reading-and-types.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--reference--glossary",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "参考：Ascend Kernel Infra 术语表",
+    "titleEn": "Glossary / 术语表",
+    "slug": "ascend-kernel-infra--reference--glossary",
+    "summary": "本表给出本课程中的工作定义。遇到具体硬件规格和 API 行为时，仍以目标 CANN/Triton-Ascend 版本文档为准。",
+    "summaryEn": "Framework, Runtime, and C++ Namespaces",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "33 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--reference--code-reading-and-types",
+    "nextArticleId": "curriculum-ascend-kernel-infra--reference--technology-comparison",
+    "sourcePath": "ascend-kernel-infra/reference/glossary.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--reference--technology-comparison",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "参考：sgl-kernel-npu、Triton-Ascend 与 Ascend C 技术选型",
+    "titleEn": "Technology Comparison: When to Use What",
+    "slug": "ascend-kernel-infra--reference--technology-comparison",
+    "summary": "参考：sgl-kernel-npu、Triton-Ascend 与 Ascend C 技术选型",
+    "summaryEn": "Technology Comparison: When to Use What",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "8 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--reference--glossary",
+    "nextArticleId": "curriculum-ascend-kernel-infra--roadmap",
+    "sourcePath": "ascend-kernel-infra/reference/technology-comparison.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--roadmap",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "Ascend Kernel Infra 路线图",
+    "titleEn": "Ascend Kernel Infra Learning Roadmap",
+    "slug": "ascend-kernel-infra--roadmap",
+    "summary": "主题 前置知识 当前状态 对应文件 ------------ 软件栈关系：先分清 SGLang、sgl-kernel-npu、torchnpu、Triton-Ascend、Ascend C 无 已完成 01-stack-and-relationships.md CANN 全栈与边界：Drive…",
+    "summaryEn": "Ascend Kernel Infra Learning Roadmap",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "8 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--reference--technology-comparison",
+    "nextArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--01-repository-and-op-lifecycle",
+    "sourcePath": "ascend-kernel-infra/ROADMAP.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--sgl-kernel-npu--01-repository-and-op-lifecycle",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "sgl-kernel-npu 01：仓库结构与算子生命周期",
+    "titleEn": "sgl-kernel-npu 01: Repository Structure & Operator Lifecycle",
+    "slug": "ascend-kernel-infra--sgl-kernel-npu--01-repository-and-op-lifecycle",
+    "summary": "本章以官方仓库 b2378ee（2026-07-02） 为源码基线。仓库更新很快，目录或 API 变化时应以自己的 checkout 为准。",
+    "summaryEn": "sgl-kernel-npu 01: Repository Structure & Operator Lifecycle",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "51 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--roadmap",
+    "nextArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--02-triton-fused-split-qk-norm",
+    "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/01-repository-and-op-lifecycle.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--sgl-kernel-npu--02-triton-fused-split-qk-norm",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "sgl-kernel-npu 02：Triton 源码精读——Fused Split Q/K Norm",
+    "titleEn": "sgl-kernel-npu 02: Triton Fused Split Q/K Norm",
+    "slug": "ascend-kernel-infra--sgl-kernel-npu--02-triton-fused-split-qk-norm",
+    "summary": "sgl-kernel-npu 02：Triton 源码精读——Fused Split Q/K Norm",
+    "summaryEn": "sgl-kernel-npu 02: Triton Fused Split Q/K Norm",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "16 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--01-repository-and-op-lifecycle",
+    "nextArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--03-ascend-c-apply-token-bitmask",
+    "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/02-triton-fused-split-qk-norm.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--sgl-kernel-npu--03-ascend-c-apply-token-bitmask",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "sgl-kernel-npu 03：Ascend C 源码精读——Apply Token Bitmask",
+    "titleEn": "sgl-kernel-npu 03: Ascend C Apply Token Bitmask",
+    "slug": "ascend-kernel-infra--sgl-kernel-npu--03-ascend-c-apply-token-bitmask",
+    "summary": "sgl-kernel-npu 03：Ascend C 源码精读——Apply Token Bitmask",
+    "summaryEn": "sgl-kernel-npu 03: Ascend C Apply Token Bitmask",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "39 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--02-triton-fused-split-qk-norm",
+    "nextArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--04-fla-chunk-gated-delta-rule-mixed-path",
+    "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/03-ascend-c-apply-token-bitmask.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--sgl-kernel-npu--04-fla-chunk-gated-delta-rule-mixed-path",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "sgl-kernel-npu 04：FLA Chunk Gated Delta Rule 的双路径入口",
+    "titleEn": "sgl-kernel-npu 04: FLA Chunk Gated Delta Rule — Dual Path",
+    "slug": "ascend-kernel-infra--sgl-kernel-npu--04-fla-chunk-gated-delta-rule-mixed-path",
+    "summary": "sgl-kernel-npu 04：FLA Chunk Gated Delta Rule 的双路径入口",
+    "summaryEn": "sgl-kernel-npu 04: FLA Chunk Gated Delta Rule — Dual Path",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "39 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--03-ascend-c-apply-token-bitmask",
+    "nextArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--05-deepep-hccl-and-moe-kernel-path",
+    "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/04-fla-chunk-gated-delta-rule-mixed-path.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--sgl-kernel-npu--05-deepep-hccl-and-moe-kernel-path",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "sgl-kernel-npu 05：DeepEP、HCCL 与 MoE token 路径",
+    "titleEn": "sgl-kernel-npu 05: DeepEP, HCCL & MoE Token Path",
+    "slug": "ascend-kernel-infra--sgl-kernel-npu--05-deepep-hccl-and-moe-kernel-path",
+    "summary": "sgl-kernel-npu 05：DeepEP、HCCL 与 MoE token 路径",
+    "summaryEn": "sgl-kernel-npu 05: DeepEP, HCCL & MoE Token Path",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "47 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--04-fla-chunk-gated-delta-rule-mixed-path",
+    "nextArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--06-deepep-low-latency-and-layered-a2-path",
+    "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/05-deepep-hccl-and-moe-kernel-path.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--sgl-kernel-npu--06-deepep-low-latency-and-layered-a2-path",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "sgl-kernel-npu 06：DeepEP Low-Latency、A2 Layered 与小 Batch 推理路径",
+    "titleEn": "sgl-kernel-npu 06: DeepEP Low-Latency & A2 Layered Path",
+    "slug": "ascend-kernel-infra--sgl-kernel-npu--06-deepep-low-latency-and-layered-a2-path",
+    "summary": "sgl-kernel-npu 06：DeepEP Low-Latency、A2 Layered 与小 Batch 推理路径",
+    "summaryEn": "sgl-kernel-npu 06: DeepEP Low-Latency & A2 Layered Path",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "48 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--05-deepep-hccl-and-moe-kernel-path",
+    "nextArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--08-fla-mega-kernel-device-stages",
+    "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/06-deepep-low-latency-and-layered-a2-path.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--sgl-kernel-npu--08-fla-mega-kernel-device-stages",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "sgl-kernel-npu 08：FLA Mega Kernel、Device Stage 与 Ascend 数据流",
+    "titleEn": "sgl-kernel-npu 08: FLA Mega Kernel & Device Stages",
+    "slug": "ascend-kernel-infra--sgl-kernel-npu--08-fla-mega-kernel-device-stages",
+    "summary": "sgl-kernel-npu 08：FLA Mega Kernel、Device Stage 与 Ascend 数据流",
+    "summaryEn": "sgl-kernel-npu 08: FLA Mega Kernel & Device Stages",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "80 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--06-deepep-low-latency-and-layered-a2-path",
+    "nextArticleId": "curriculum-ascend-kernel-infra--torch-npu--01-dispatch-aclnn-and-custom-op-boundaries",
+    "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/08-fla-mega-kernel-device-stages.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--torch-npu--01-dispatch-aclnn-and-custom-op-boundaries",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "torchnpu 01：Dispatcher、ACLNN 与 Custom Op 的边界",
+    "titleEn": "torchnpu 01: Dispatcher, ACLNN & Custom Op Boundaries",
+    "slug": "ascend-kernel-infra--torch-npu--01-dispatch-aclnn-and-custom-op-boundaries",
+    "summary": "torchnpu 01：Dispatcher、ACLNN 与 Custom Op 的边界",
+    "summaryEn": "torchnpu 01: Dispatcher, ACLNN & Custom Op Boundaries",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "41 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--sgl-kernel-npu--08-fla-mega-kernel-device-stages",
+    "nextArticleId": "curriculum-ascend-kernel-infra--torch-npu--02-stream-events-and-graph-capture",
+    "sourcePath": "ascend-kernel-infra/torch_npu/01-dispatch-aclnn-and-custom-op-boundaries.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--torch-npu--02-stream-events-and-graph-capture",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "torchnpu 02：Stream、Event、异步生命周期与计算图",
+    "titleEn": "torchnpu 02: Streams, Events, Asynchronous Lifetimes, and Graph Capture",
+    "slug": "ascend-kernel-infra--torch-npu--02-stream-events-and-graph-capture",
+    "summary": "torchnpu 02：Stream、Event、异步生命周期与计算图",
+    "summaryEn": "torchnpu 02: Streams, Events, Asynchronous Lifetimes, and Graph Capture",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "61 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--torch-npu--01-dispatch-aclnn-and-custom-op-boundaries",
+    "nextArticleId": "curriculum-ascend-kernel-infra--triton-ascend--01-program-grid-tile",
+    "sourcePath": "ascend-kernel-infra/torch_npu/02-stream-events-and-graph-capture.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--triton-ascend--01-program-grid-tile",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "Triton-Ascend 01：Program、Grid、Tile 与第一个 Kernel",
+    "titleEn": "Triton-Ascend 01: Program, Grid, Tile & First Kernel",
+    "slug": "ascend-kernel-infra--triton-ascend--01-program-grid-tile",
+    "summary": "Triton-Ascend 01：Program、Grid、Tile 与第一个 Kernel",
+    "summaryEn": "Triton-Ascend 01: Program, Grid, Tile & First Kernel",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "26 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--torch-npu--02-stream-events-and-graph-capture",
+    "nextArticleId": "curriculum-ascend-kernel-infra--triton-ascend--02-tensor-addressing-reduction-matmul",
+    "sourcePath": "ascend-kernel-infra/triton-ascend/01-program-grid-tile.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--triton-ascend--02-tensor-addressing-reduction-matmul",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "Triton-Ascend 02：地址、广播、归约与矩阵分块",
+    "titleEn": "Triton-Ascend 02: Tensor Addressing, Reduction & MatMul",
+    "slug": "ascend-kernel-infra--triton-ascend--02-tensor-addressing-reduction-matmul",
+    "summary": "Vector Add 只处理一维连续数据。本章把相同模型扩展到二维 tensor、RMSNorm 和矩阵乘，掌握读 sgl-kernel-npu Triton 源码所需的核心语法。",
+    "summaryEn": "Triton-Ascend 02: Tensor Addressing, Reduction & MatMul",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "25 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--triton-ascend--01-program-grid-tile",
+    "nextArticleId": "curriculum-ascend-kernel-infra--triton-ascend--03-compile-debug-optimize",
+    "sourcePath": "ascend-kernel-infra/triton-ascend/02-tensor-addressing-reduction-matmul.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--triton-ascend--03-compile-debug-optimize",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "Triton-Ascend 03：编译、调试与性能优化",
+    "titleEn": "Triton-Ascend 03: Compilation, Debugging & Optimization",
+    "slug": "ascend-kernel-infra--triton-ascend--03-compile-debug-optimize",
+    "summary": "调试的第一步不只是打印数值，而是写出每个 IR value 的类型。这里沿用代码阅读手册的四列：前端对象、编译期/运行时、dtype/shape、值或地址。",
+    "summaryEn": "Triton-Ascend 03: Compilation, Debugging & Optimization",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "13 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--triton-ascend--02-tensor-addressing-reduction-matmul",
+    "nextArticleId": "curriculum-ascend-kernel-infra--triton-ascend--04-ttir-mlir-driver-and-cache",
+    "sourcePath": "ascend-kernel-infra/triton-ascend/03-compile-debug-optimize.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--triton-ascend--04-ttir-mlir-driver-and-cache",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "Triton-Ascend 04：TTIR、MLIR、Driver 与 Cache",
+    "titleEn": "Triton-Ascend 04: TTIR, MLIR, Driver & Cache",
+    "slug": "ascend-kernel-infra--triton-ascend--04-ttir-mlir-driver-and-cache",
+    "summary": "Triton-Ascend 04：TTIR、MLIR、Driver 与 Cache",
+    "summaryEn": "Triton-Ascend 04: TTIR, MLIR, Driver & Cache",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "34 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--triton-ascend--03-compile-debug-optimize",
+    "nextArticleId": "curriculum-ascend-kernel-infra--triton-ascend--05-persistent-kernel-and-large-grid",
+    "sourcePath": "ascend-kernel-infra/triton-ascend/04-ttir-mlir-driver-and-cache.md"
+  },
+  {
+    "id": "curriculum-ascend-kernel-infra--triton-ascend--05-persistent-kernel-and-large-grid",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-5",
+    "tags": [
+      "Ascend NPU",
+      "Kernel"
+    ],
+    "title": "Triton-Ascend 05：Persistent Kernel、大 Grid 与 Task Queue 边界",
+    "titleEn": "Triton-Ascend 05: Persistent Kernel & Large Grid",
+    "slug": "ascend-kernel-infra--triton-ascend--05-persistent-kernel-and-large-grid",
+    "summary": "Triton-Ascend 05：Persistent Kernel、大 Grid 与 Task Queue 边界",
+    "summaryEn": "Triton-Ascend 05: Persistent Kernel & Large Grid",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "33 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ascend-kernel-infra--triton-ascend--04-ttir-mlir-driver-and-cache",
+    "nextArticleId": null,
+    "sourcePath": "ascend-kernel-infra/triton-ascend/05-persistent-kernel-and-large-grid.md"
+  },
+  {
+    "id": "curriculum-scheduler-architecture--01-architecture",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-2",
+    "tags": [
+      "SGLang",
+      "Scheduler"
+    ],
+    "title": "Scheduler 架构总览",
+    "titleEn": "Scheduler Architecture Overview",
+    "slug": "scheduler-architecture--01-architecture",
+    "summary": "Scheduler 是 SGLang server 里真正决定“下一次 GPU forward 跑哪些请求”的组件。它一边从 Tokenizer/RPC 收请求，一边维护等待队列和运行中 batch，再根据 KV cache、请求优先级、chunked prefill、LoRA、grammar…",
+    "summaryEn": "The Scheduler is the component in an SGLang server that truly decides \"which requests the next GPU forward should run.\" It receives requests from T…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "9 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-scheduler-architecture--02-flowcharts",
+    "sourcePath": "scheduler-architecture/01-architecture.md"
+  },
+  {
+    "id": "curriculum-scheduler-architecture--02-flowcharts",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-2",
+    "tags": [
+      "SGLang",
+      "Scheduler"
+    ],
+    "title": "Scheduler 流程图",
+    "titleEn": "Scheduler Flowcharts",
+    "slug": "scheduler-architecture--02-flowcharts",
+    "summary": "- python/sglang/srt/managers/scheduler.py:runschedulerprocess - python/sglang/srt/managers/scheduler.py:configureschedulerprocess - python/sglang/s…",
+    "summaryEn": "- python/sglang/srt/managers/scheduler.py:runschedulerprocess - python/sglang/srt/managers/scheduler.py:configureschedulerprocess - python/sglang/s…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "9 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-scheduler-architecture--01-architecture",
+    "nextArticleId": "curriculum-scheduler-architecture--03-annotated-code-walkthrough",
+    "sourcePath": "scheduler-architecture/02-flowcharts.md"
+  },
+  {
+    "id": "curriculum-scheduler-architecture--03-annotated-code-walkthrough",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-2",
+    "tags": [
+      "SGLang",
+      "Scheduler"
+    ],
+    "title": "Scheduler 教学版代码导读",
+    "titleEn": "Scheduler: Educational Code Walkthrough",
+    "slug": "scheduler-architecture--03-annotated-code-walkthrough",
+    "summary": "说明：本文不是修改后的源码，而是针对 python/sglang/srt/managers/scheduler.py 的教学版代码骨架。代码块保留关键控制流，并加入中文注释解释每段逻辑。阅读时建议同时打开原文件，按“文件 + 函数名”定位。",
+    "summaryEn": "Scheduler: Educational Code Walkthrough",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "32 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-scheduler-architecture--02-flowcharts",
+    "nextArticleId": "curriculum-scheduler-architecture--04-function-map",
+    "sourcePath": "scheduler-architecture/03-annotated-code-walkthrough.md"
+  },
+  {
+    "id": "curriculum-scheduler-architecture--04-function-map",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-2",
+    "tags": [
+      "SGLang",
+      "Scheduler"
+    ],
+    "title": "Scheduler 函数地图",
+    "titleEn": "Scheduler Function Map",
+    "slug": "scheduler-architecture--04-function-map",
+    "summary": "本文件按“入口 - 输入 - 调度 - 执行 - 结果 - 控制”整理 scheduler.py。行号来自当前仓库快照，用于辅助定位；更稳定的定位方式是文件名 + 函数名。",
+    "summaryEn": "This file organizes scheduler.py by \"Entry → Input → Scheduling → Execution → Result → Control\". Line numbers come from the current repository snap…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "12 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-scheduler-architecture--03-annotated-code-walkthrough",
+    "nextArticleId": "curriculum-scheduler-architecture--05-scheduler-annotated-cn",
+    "sourcePath": "scheduler-architecture/04-function-map.md"
+  },
+  {
+    "id": "curriculum-scheduler-architecture--05-scheduler-annotated-cn",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-2",
+    "tags": [
+      "SGLang",
+      "Scheduler"
+    ],
+    "title": "-- coding: utf-8 --",
+    "titleEn": "-- coding: utf-8 --",
+    "slug": "scheduler-architecture--05-scheduler-annotated-cn",
+    "summary": "-- coding: utf-8 -- 教学版文件：由 python/sglang/srt/managers/scheduler.py 生成。 用途：在不修改原始源码的前提下，为 Scheduler 源码阅读提供中文块级注释。 注意：本文件只用于学习对照，不参与 SGLang 运行；如需运行请…",
+    "summaryEn": "-- coding: utf-8 -- 教学版文件：由 python/sglang/srt/managers/scheduler.py 生成。 用途：在不修改原始源码的前提下，为 Scheduler 源码阅读提供中文块级注释。 注意：本文件只用于学习对照，不参与 SGLang 运行；如需运行请…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "359 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-scheduler-architecture--04-function-map",
+    "nextArticleId": "curriculum-scheduler-architecture--readme",
+    "sourcePath": "scheduler-architecture/05-scheduler-annotated-cn.py"
+  },
+  {
+    "id": "curriculum-scheduler-architecture--readme",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-2",
+    "tags": [
+      "SGLang",
+      "Scheduler"
+    ],
+    "title": "Scheduler 架构专题",
+    "titleEn": "Scheduler Architecture Topic",
+    "slug": "scheduler-architecture--readme",
+    "summary": "本目录专门讲解 python/sglang/srt/managers/scheduler.py。目标不是复制完整源码，而是把 Scheduler 的职责、关键状态、主循环、请求入队、prefill/decode 调度、forward 执行、结果处理这些路径拆开讲清楚。",
+    "summaryEn": "This directory is dedicated to explaining python/sglang/srt/managers/scheduler.py. The goal is not to replicate the complete source code, but to cl…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "4 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-scheduler-architecture--05-scheduler-annotated-cn",
+    "nextArticleId": null,
+    "sourcePath": "scheduler-architecture/README.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--00-background",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "00. Ascend NPU 背景知识",
+    "titleEn": "00. Ascend NPU Background",
+    "slug": "sglang-ascend-npu--00-background",
+    "summary": "这一讲回答一个前置问题：在真正阅读 SGLang 的 NPU 代码、部署 SGLang 服务之前，需要先理解 Ascend NPU 这套软硬件栈里有哪些对象，它们和 CUDA/GPU serving 的差异在哪里。",
+    "summaryEn": "This lecture answers a prerequisite question: before reading SGLang's NPU code or deploying SGLang services, you need to understand what objects ex…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "17 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-sglang-ascend-npu--01-environment-and-install",
+    "sourcePath": "sglang-ascend-npu/00-background.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--01-environment-and-install",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "01. 安装与环境：GNU/Linux + Ascend NPU 服务器上跑通 SGLang",
+    "titleEn": "01. Environment & Installation",
+    "slug": "sglang-ascend-npu--01-environment-and-install",
+    "summary": "01. 安装与环境：GNU/Linux + Ascend NPU 服务器上跑通 SGLang",
+    "summaryEn": "SGLang uses python/pyprojectnpu.toml for NPU-specific dependencies:",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "17 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--00-background",
+    "nextArticleId": "curriculum-sglang-ascend-npu--02-ascend-npu-integration-map",
+    "sourcePath": "sglang-ascend-npu/01-environment-and-install.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--02-ascend-npu-integration-map",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "SGLang Ascend NPU 接入点与调用图谱",
+    "titleEn": "02. Ascend NPU Integration Map",
+    "slug": "sglang-ascend-npu--02-ascend-npu-integration-map",
+    "summary": "本篇聚焦一个问题：Ascend NPU 在 SGLang 里到底接入了哪些地方，这些类和函数如何从启动、初始化、请求执行、KV cache、attention、graph、分布式、PD 分离、LoRA、MoE 和量化串起来。",
+    "summaryEn": "Where NPU Branches Exist in SGLang",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "41 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--01-environment-and-install",
+    "nextArticleId": "curriculum-sglang-ascend-npu--03-launch-and-minimal-serving",
+    "sourcePath": "sglang-ascend-npu/02-ascend-npu-integration-map.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--03-launch-and-minimal-serving",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "03. 隔离环境启动与最小 Serving 跑通",
+    "titleEn": "03. Isolated Environment Setup & Minimal Serving",
+    "slug": "sglang-ascend-npu--03-launch-and-minimal-serving",
+    "summary": "这一讲只解决一件事：在一台 GNU/Linux + Ascend NPU 服务器上，用尽量不影响整机环境的方式跑通 SGLang 服务。",
+    "summaryEn": "03. Isolated Environment Setup & Minimal Serving",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "20 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--02-ascend-npu-integration-map",
+    "nextArticleId": "curriculum-sglang-ascend-npu--04-npu-backend-args",
+    "sourcePath": "sglang-ascend-npu/03-launch-and-minimal-serving.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--04-npu-backend-args",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "04. NPU 后端参数与默认值",
+    "titleEn": "04. NPU Backend Args & Default Overrides",
+    "slug": "sglang-ascend-npu--04-npu-backend-args",
+    "summary": "这一讲拆解 SGLang 在 Ascend NPU 上为什么要改默认参数，以及这些参数会影响哪些源码分支。核心文件是：",
+    "summaryEn": "04. NPU Backend Args & Default Overrides",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "8 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--03-launch-and-minimal-serving",
+    "nextArticleId": "curriculum-sglang-ascend-npu--05-attention-kv-cache",
+    "sourcePath": "sglang-ascend-npu/04-npu-backend-args.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--05-attention-kv-cache",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "05. Ascend Attention、KV Cache 与 HiCache",
+    "titleEn": "05. Ascend Attention & KV Cache",
+    "slug": "sglang-ascend-npu--05-attention-kv-cache",
+    "summary": "05. Ascend Attention、KV Cache 与 HiCache",
+    "summaryEn": "attentionbackend = \"ascend\" is resolved in attentionregistry.py:",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "9 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--04-npu-backend-args",
+    "nextArticleId": "curriculum-sglang-ascend-npu--06-npu-graph-compilation",
+    "sourcePath": "sglang-ascend-npu/05-attention-kv-cache.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--06-npu-graph-compilation",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "06. NPU Graph 与 Piecewise Compilation",
+    "titleEn": "06. NPU Graph & Compilation",
+    "slug": "sglang-ascend-npu--06-npu-graph-compilation",
+    "summary": "06. NPU Graph 与 Piecewise Compilation",
+    "summaryEn": "This chapter is the configuration and troubleshooting entry point. For the source-complete distinction among autograd, FX/compiler, and NPUGraph la…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "7 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--05-attention-kv-cache",
+    "nextArticleId": "curriculum-sglang-ascend-npu--07-distributed-hccl-tp",
+    "sourcePath": "sglang-ascend-npu/06-npu-graph-compilation.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--07-distributed-hccl-tp",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "07. 分布式、HCCL 与 Tensor Parallel",
+    "titleEn": "07. Distributed: HCCL & Tensor Parallelism",
+    "slug": "sglang-ascend-npu--07-distributed-hccl-tp",
+    "summary": "这一讲讲 Ascend NPU 多卡推理。SGLang 的上层并行概念仍然是 TP、PP、DP、EP，但底层通信从 CUDA/NCCL 世界切到 Ascend/HCCL 世界。",
+    "summaryEn": "07. Distributed: HCCL & Tensor Parallelism",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "6 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--06-npu-graph-compilation",
+    "nextArticleId": "curriculum-sglang-ascend-npu--08-ascend-pd-disaggregation",
+    "sourcePath": "sglang-ascend-npu/07-distributed-hccl-tp.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--08-ascend-pd-disaggregation",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "08. Ascend PD Disaggregation 与 KV Transfer",
+    "titleEn": "08. Ascend PD Disaggregation",
+    "slug": "sglang-ascend-npu--08-ascend-pd-disaggregation",
+    "summary": "08. Ascend PD Disaggregation 与 KV Transfer",
+    "summaryEn": "Core source: srt/disaggregation/ascend/transferengine.py",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "7 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--07-distributed-hccl-tp",
+    "nextArticleId": "curriculum-sglang-ascend-npu--09-lora-moe-feature-branches",
+    "sourcePath": "sglang-ascend-npu/08-ascend-pd-disaggregation.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--09-lora-moe-feature-branches",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "09. Ascend LoRA、MoE、量化与特性分支",
+    "titleEn": "09. LoRA, MoE & Feature Branches on Ascend",
+    "slug": "sglang-ascend-npu--09-lora-moe-feature-branches",
+    "summary": "这一讲看 NPU 上的高级特性后端。它们不是跑通 SGLang 的第一步，但在真实业务中经常遇到：LoRA adapter serving、MoE 模型、GPTQ/AWQ/INT8/INT4 量化、多模态处理、Mamba/GDN/hybrid linear attention。",
+    "summaryEn": "09. LoRA, MoE & Feature Branches on Ascend",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "7 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--08-ascend-pd-disaggregation",
+    "nextArticleId": "curriculum-sglang-ascend-npu--10-benchmark-debugging",
+    "sourcePath": "sglang-ascend-npu/09-lora-moe-feature-branches.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--10-benchmark-debugging",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "10. Benchmark、Profiling 与排错",
+    "titleEn": "10. Benchmark & Debugging",
+    "slug": "sglang-ascend-npu--10-benchmark-debugging",
+    "summary": "这一讲给出 Ascend NPU 上 SGLang 的验证、压测和排错方法。核心原则：先正确，再稳定，最后性能。",
+    "summaryEn": "Correctness first → Stability second → Performance last",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "7 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--09-lora-moe-feature-branches",
+    "nextArticleId": "curriculum-sglang-ascend-npu--11-performance-optimization-work-map",
+    "sourcePath": "sglang-ascend-npu/10-benchmark-debugging.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--11-performance-optimization-work-map",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "11. SGLang NPU 推理优化工作地图",
+    "titleEn": "11. Performance Optimization Work Map",
+    "slug": "sglang-ascend-npu--11-performance-optimization-work-map",
+    "summary": "这一讲面向刚开始参与 SGLang Ascend NPU 开发的同学。假设你的主要工作围绕两个仓库：",
+    "summaryEn": "11. Performance Optimization Work Map",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "19 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--10-benchmark-debugging",
+    "nextArticleId": "curriculum-sglang-ascend-npu--12-npu-profiling-guide",
+    "sourcePath": "sglang-ascend-npu/11-performance-optimization-work-map.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--12-npu-profiling-guide",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "12. SGLang-NPU Profiling 详细教学",
+    "titleEn": "12. NPU Profiling Guide",
+    "slug": "sglang-ascend-npu--12-npu-profiling-guide",
+    "summary": "这一讲专门讲 SGLang-NPU 的 profiling。目标不是“打开一个 profiler 看一眼图”，而是建立一套可复现的性能归因流程：先确定慢在哪里，再决定应该改 sglang 主仓、sglang-kernel-npu，还是环境与部署参数。",
+    "summaryEn": "Always measure without profiler overhead first:",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "30 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--11-performance-optimization-work-map",
+    "nextArticleId": "curriculum-sglang-ascend-npu--13-run-models-by-scenario",
+    "sourcePath": "sglang-ascend-npu/12-npu-profiling-guide.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--13-run-models-by-scenario",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "13. SGLang NPU 多场景模型运行手册",
+    "titleEn": "13. Multi-Scenario Model Runbook",
+    "slug": "sglang-ascend-npu--13-run-models-by-scenario",
+    "summary": "这一讲是场景化启动手册。前面的章节分别讲环境、参数、PD、LoRA、profiling；这一讲把它们组合成“我要跑某类模型/某种部署形态时，该用什么命令、先验收什么、常见坑在哪”。",
+    "summaryEn": "Your Situation Recommended Path ------ First NPU run Single-card Dense Model Model doesn't fit one NPU Multi-card TP Separate prefill/decode PD Dis…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "35 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--12-npu-profiling-guide",
+    "nextArticleId": "curriculum-sglang-ascend-npu--14-performance-testing",
+    "sourcePath": "sglang-ascend-npu/13-run-models-by-scenario.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--14-performance-testing",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "14. SGLang Ascend NPU 性能测试",
+    "titleEn": "14. Performance Testing",
+    "slug": "sglang-ascend-npu--14-performance-testing",
+    "summary": "1. 应该用什么 workload 衡量 SGLang-NPU 的推理性能？ 2. 如何用可复现脚本跑单卡、多卡、PD 分离、在线服务等场景？ 3. 拿到结果后，如何判断瓶颈在 prefill、decode、调度、graph、通信、router 还是 KV transfer？",
+    "summaryEn": "Metric Definition What It Reveals --------- QPS Queries Per Second System throughput TTFT Time To First Token Prefill + scheduling latency ITL Inte…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "38 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--13-run-models-by-scenario",
+    "nextArticleId": "curriculum-sglang-ascend-npu--15-accuracy-testing-and-debugging",
+    "sourcePath": "sglang-ascend-npu/14-performance-testing.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--15-accuracy-testing-and-debugging",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "15. SGLang Ascend NPU 精度测试与问题定位",
+    "titleEn": "15. Accuracy Testing & Debugging",
+    "slug": "sglang-ascend-npu--15-accuracy-testing-and-debugging",
+    "summary": "1. 如何用数据集评估 SGLang-NPU 模型输出是否正确？ 2. aisbench 这类 Ascend 离线推理工具在精度验证中应该放在什么位置？ 3. 一旦出现精度问题，如何沿 SGLang 执行流程定位到 tokenizer、batch、attention/KV、graph、TP、P…",
+    "summaryEn": "- Fixed model checkpoint (same commit/hash) - Fixed input data (JSONL dataset) - Fixed sampling parameters (temperature=0, fixed seed) - Fixed chat…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "39 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--14-performance-testing",
+    "nextArticleId": "curriculum-sglang-ascend-npu--readme",
+    "sourcePath": "sglang-ascend-npu/15-accuracy-testing-and-debugging.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--readme",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "SGLang Ascend NPU 实践总览",
+    "titleEn": "SGLang Ascend NPU Practice Overview",
+    "slug": "sglang-ascend-npu--readme",
+    "summary": "本目录用于拆解 SGLang 在 Ascend NPU 上的适配、部署和源码实践。学习目标不是把 GPU serving 经验简单搬到 NPU，而是建立一条清晰路径：先跑通环境和最小服务，再理解 SGLang 如何识别 NPU、设置默认参数、选择 Ascend 后端，最后深入 attentio…",
+    "summaryEn": "SGLang Ascend NPU Practice Overview",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "29 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--15-accuracy-testing-and-debugging",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--01-sglang-npu-component-map",
+    "sourcePath": "sglang-ascend-npu/README.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--01-sglang-npu-component-map",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "第一讲：SGLang NPU 全组件与双仓目录总览",
+    "titleEn": "01. SGLang NPU Component Map",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--01-sglang-npu-component-map",
+    "summary": "本讲不急着进入某个大文件逐行阅读，而是先建立一张稳定的组件地图。以后看到 isnpu()、attentionbackend=\"ascend\"、torch.ops.npu. 或 sglkernelnpu. 时，先判断代码属于哪一层、哪个组件，再沿着该组件的调用链继续阅读。",
+    "summaryEn": "Complete Component Map: SGLang ↔ sgl-kernel-npu",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "33 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--readme",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--05-npu-graph-and-compilation",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/01-sglang-npu-component-map.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--05-npu-graph-and-compilation",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "05：计算图、torch.compile 与 SGLang NPU Graph 源码全链路",
+    "titleEn": "05: Computation Graphs, torch.compile, and the SGLang NPU Graph Source Path",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--05-npu-graph-and-compilation",
+    "summary": "05：计算图、torch.compile 与 SGLang NPU Graph 源码全链路",
+    "summaryEn": "05: Computation Graphs, torch.compile, and the SGLang NPU Graph Source Path",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "140 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--01-sglang-npu-component-map",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--15-distributed-hccl-and-communication",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/05-npu-graph-and-compilation.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--15-distributed-hccl-and-communication",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "第十五讲：LayerCommunicator、HCCL 与层边界通信",
+    "titleEn": "15. Distributed HCCL & Communication on NPU",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--15-distributed-hccl-and-communication",
+    "summary": "第十五讲：LayerCommunicator、HCCL 与层边界通信",
+    "summaryEn": "15. Distributed HCCL & Communication on NPU",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "48 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--05-npu-graph-and-compilation",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--00-glm-4-7-flash-end-to-end",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/15-distributed-hccl-and-communication.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--00-glm-4-7-flash-end-to-end",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "端到端样例：GLM-4.7-Flash 在 SGLang Ascend NPU 中的完整执行路径",
+    "titleEn": "GLM-4.7-Flash: End-to-End Model Execution on Ascend NPU",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--examples--00-glm-4-7-flash-end-to-end",
+    "summary": "端到端样例：GLM-4.7-Flash 在 SGLang Ascend NPU 中的完整执行路径",
+    "summaryEn": "GLM-4.7-Flash: End-to-End Model Execution on Ascend NPU",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "350 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--15-distributed-hccl-and-communication",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--01-qwen3-5-hybrid-end-to-end",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/examples/00-glm-4.7-flash-end-to-end.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--01-qwen3-5-hybrid-end-to-end",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "端到端样例：Qwen3.5 Hybrid 在 SGLang Ascend NPU 中的完整执行路径",
+    "titleEn": "端到端样例：Qwen3.5 Hybrid 在 SGLang Ascend NPU 中的完整执行路径",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--examples--01-qwen3-5-hybrid-end-to-end",
+    "summary": "端到端样例：Qwen3.5 Hybrid 在 SGLang Ascend NPU 中的完整执行路径",
+    "summaryEn": "端到端样例：Qwen3.5 Hybrid 在 SGLang Ascend NPU 中的完整执行路径",
+    "availableLanguages": [
+      "zh"
+    ],
+    "readTime": "56 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--00-glm-4-7-flash-end-to-end",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--00-reading-method-and-branch-search",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/examples/01-qwen3.5-hybrid-end-to-end.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--00-reading-method-and-branch-search",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "00. 源码阅读方法与 Ascend 分支搜索法",
+    "titleEn": "Foundation 00: Reading Method & Branch Search",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--foundation--00-reading-method-and-branch-search",
+    "summary": "课程定位：本文件是组件主课程的基础补充材料。请先阅读第一讲：SGLang NPU 全组件总览，再使用本讲的方法搜索具体组件。",
+    "summaryEn": "Foundation 00: Reading Method & Branch Search",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "9 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--01-qwen3-5-hybrid-end-to-end",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--01-platform-detection-and-process-startup",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/00-reading-method-and-branch-search.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--01-platform-detection-and-process-startup",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "01. NPU 平台识别与进程启动",
+    "titleEn": "Foundation 01: Platform Detection & Process Startup",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--foundation--01-platform-detection-and-process-startup",
+    "summary": "课程定位：本文件是公共启动链路补充材料；对应组件主课程的第 02 讲“平台、运行时与 kernel bootstrap”。主目录见源码串讲 README。",
+    "summaryEn": "Foundation 01: Platform Detection & Process Startup",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "11 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--00-reading-method-and-branch-search",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--02-server-args-and-npu-defaults",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/01-platform-detection-and-process-startup.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--02-server-args-and-npu-defaults",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "02. ServerArgs 校验与 NPU 默认参数",
+    "titleEn": "Foundation 02: Server Args & NPU Defaults",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--foundation--02-server-args-and-npu-defaults",
+    "summary": "课程定位：本文件是公共参数链路补充材料；它将作为组件主课程第 02 讲的平台初始化前置知识。主目录见源码串讲 README。",
+    "summaryEn": "Foundation 02: Server Args & NPU Defaults",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "10 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--01-platform-detection-and-process-startup",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--03-request-lifecycle-npu-branch-points",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/02-server-args-and-npu-defaults.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--03-request-lifecycle-npu-branch-points",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "03. 请求主链路中的 NPU 接入点",
+    "titleEn": "Foundation 03: Request Lifecycle NPU Branch Points",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--foundation--03-request-lifecycle-npu-branch-points",
+    "summary": "课程定位：本文件是公共请求链路补充材料。组件主课程会从这里标出的分支点，继续深入各 backend 与 kernel。主目录见源码串讲 README。",
+    "summaryEn": "Foundation 03: Request Lifecycle NPU Branch Points",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "13 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--02-server-args-and-npu-defaults",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--04-model-loading-dtype-and-layout",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/03-request-lifecycle-npu-branch-points.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--04-model-loading-dtype-and-layout",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "04. 模型加载、权重放置与 dtype/layout",
+    "titleEn": "Foundation 04: Model Loading, Dtype & Layout",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--foundation--04-model-loading-dtype-and-layout",
+    "summary": "课程定位：本文件是模型加载公共链路补充材料；量化、MoE、LoRA 和模型专用组件会复用这里的权重与 layout 概念。主目录见源码串讲 README。",
+    "summaryEn": "Foundation 04: Model Loading, Dtype & Layout",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "13 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--03-request-lifecycle-npu-branch-points",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--05-model-runner-forward-batch-and-input-buffers",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/04-model-loading-dtype-and-layout.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--05-model-runner-forward-batch-and-input-buffers",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "05. ModelRunner、ForwardBatch 与设备输入缓冲区",
+    "titleEn": "Foundation 05: ModelRunner Forward, Batch & Input Buffers",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--foundation--05-model-runner-forward-batch-and-input-buffers",
+    "summary": "05. ModelRunner、ForwardBatch 与设备输入缓冲区",
+    "summaryEn": "Foundation 05: ModelRunner Forward, Batch & Input Buffers",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "14 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--04-model-loading-dtype-and-layout",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--readme",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/05-model-runner-forward-batch-and-input-buffers.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--readme",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "SGLang Ascend NPU 源码串讲",
+    "titleEn": "Source Code Walkthrough: SGLang NPU Components",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--readme",
+    "summary": "本目录按“组件”而不是“执行阶段”组织 SGLang Ascend NPU 源码教程。",
+    "summaryEn": "Source Code Walkthrough: SGLang NPU Components",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "16 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--05-model-runner-forward-batch-and-input-buffers",
+    "nextArticleId": null,
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/README.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--00-overview--00-feature-map",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "SGLang 特性地图：读源码前先认识这些分支",
+    "titleEn": "SGLang Feature Map",
+    "slug": "sglang-source-reading--00-overview--00-feature-map",
+    "summary": "这份文档不是用户手册，而是“读源码词典”。你在看 SGLang 源码时，经常会遇到 dllmconfig is not None、disaggregationmode == PREFILL、enableoverlap、specalgorithm、enablehierarchicalcache …",
+    "summaryEn": "Component Source Location Links Out Links In Role --------------- Scheduler managers/scheduler.py 111 50 Central scheduling hub TokenizerManager ma…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "69 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-sglang-source-reading--00-overview--01-public-components-code-walkthrough",
+    "sourcePath": "sglang-source-reading/00-overview/00-feature-map.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--00-overview--01-public-components-code-walkthrough",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "SGLang 公共组件全景与 Code Walkthrough",
+    "titleEn": "Public Components Code Walkthrough",
+    "slug": "sglang-source-reading--00-overview--01-public-components-code-walkthrough",
+    "summary": "这一讲不是继续增加一个孤立专题，而是把 SGLang online serving 的高频公共组件按真实调用层次串起来。读完后，你应该能回答三个问题：",
+    "summaryEn": "Public Components Code Walkthrough",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "36 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--00-overview--00-feature-map",
+    "nextArticleId": "curriculum-sglang-source-reading--01-entry-routing--01-request-lifecycle",
+    "sourcePath": "sglang-source-reading/00-overview/01-public-components-code-walkthrough.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--01-entry-routing--01-request-lifecycle",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "第 1 讲：一次 ChatCompletion 请求的完整生命周期",
+    "titleEn": "Request Lifecycle: From HTTP to Token and Back",
+    "slug": "sglang-source-reading--01-entry-routing--01-request-lifecycle",
+    "summary": "本讲目标：理解一个 OpenAI-compatible /v1/chat/completions 请求如何进入 SGLang，如何被转换成内部请求、tokenize、调度、送入模型前向计算，并最终 detokenize 后返回客户端。",
+    "summaryEn": "Request Lifecycle: From HTTP to Token and Back",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "18 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--00-overview--01-public-components-code-walkthrough",
+    "nextArticleId": "curriculum-sglang-source-reading--01-entry-routing--09-router",
+    "sourcePath": "sglang-source-reading/01-entry-routing/01-request-lifecycle.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--01-entry-routing--09-router",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "第 9 讲：SGLang Router 架构与源码解析",
+    "titleEn": "SGLang Router: SmartRouter, KV-Aware Routing & More",
+    "slug": "sglang-source-reading--01-entry-routing--09-router",
+    "summary": "前面几讲我们一直在讲 TokenizerManager、Scheduler、ModelRunner、KV cache、PD 分离和 LoRA，但有一个词很容易被遗漏：router。",
+    "summaryEn": "SGLang Router: SmartRouter, KV-Aware Routing & More",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "74 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--01-entry-routing--01-request-lifecycle",
+    "nextArticleId": "curriculum-sglang-source-reading--01-entry-routing--10-sgl-router-source-deep-dive",
+    "sourcePath": "sglang-source-reading/01-entry-routing/09-router.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--01-entry-routing--10-sgl-router-source-deep-dive",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "第 10 讲：sgl-router 源码深潜",
+    "titleEn": "第 10 讲：sgl-router 源码深潜",
+    "slug": "sglang-source-reading--01-entry-routing--10-sgl-router-source-deep-dive",
+    "summary": "第 9 讲已经说明了 SGLang 里“router”这个词有很多层含义：服务级 worker router、SmartRouter、调度模拟 router、PD bootstrap route、MoE expert router 等。本讲只聚焦 独立的 sgl-router 服务，也就是一个…",
+    "summaryEn": "第 9 讲已经说明了 SGLang 里“router”这个词有很多层含义：服务级 worker router、SmartRouter、调度模拟 router、PD bootstrap route、MoE expert router 等。本讲只聚焦 独立的 sgl-router 服务，也就是一个…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "60 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--01-entry-routing--09-router",
+    "nextArticleId": "curriculum-sglang-source-reading--02-scheduler-runtime--02-scheduler-core",
+    "sourcePath": "sglang-source-reading/01-entry-routing/10-sgl-router-source-deep-dive.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--02-scheduler-runtime--02-scheduler-core",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "第 2 讲：Scheduler 调度核心",
+    "titleEn": "Scheduler Core: Continuous Batching & Batch Formation",
+    "slug": "sglang-source-reading--02-scheduler-runtime--02-scheduler-core",
+    "summary": "本讲目标：理解 SGLang 的 Scheduler 如何把离散请求变成连续执行的 GPU batch。重点不是背完每个优化分支，而是抓住三个状态：waitingqueue、lastbatch、runningbatch。",
+    "summaryEn": "Scheduler Core: Continuous Batching & Batch Formation",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "23 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--01-entry-routing--10-sgl-router-source-deep-dive",
+    "nextArticleId": "curriculum-sglang-source-reading--02-scheduler-runtime--06-multiprocess-distributed",
+    "sourcePath": "sglang-source-reading/02-scheduler-runtime/02-scheduler-core.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--02-scheduler-runtime--06-multiprocess-distributed",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "第 6 讲：多进程 / 多卡 / 分布式执行",
+    "titleEn": "Multi-Process & Distributed Architecture",
+    "slug": "sglang-source-reading--02-scheduler-runtime--06-multiprocess-distributed",
+    "summary": "这一讲接在第 5 讲之后。前五讲已经把单个请求从 HTTP、Tokenizer、Scheduler、KV cache、ModelRunner、Speculative Decoding 串起来了；现在要回答一个更工程化的问题：",
+    "summaryEn": "Multi-Process & Distributed Architecture",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "68 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--02-scheduler-runtime--02-scheduler-core",
+    "nextArticleId": "curriculum-sglang-source-reading--03-cache-memory--03-kv-cache-radix-cache",
+    "sourcePath": "sglang-source-reading/02-scheduler-runtime/06-multiprocess-distributed.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--03-cache-memory--03-kv-cache-radix-cache",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "第 3 讲：KV Cache、Radix Cache 与 HiCache",
+    "titleEn": "KV Cache & Radix Cache",
+    "slug": "sglang-source-reading--03-cache-memory--03-kv-cache-radix-cache",
+    "summary": "第 3 讲：KV Cache、Radix Cache 与 HiCache",
+    "summaryEn": "SGLang's KV Cache is managed through two key pools:",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "26 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--02-scheduler-runtime--06-multiprocess-distributed",
+    "nextArticleId": "curriculum-sglang-source-reading--04-model-execution--04-model-runner-attention",
+    "sourcePath": "sglang-source-reading/03-cache-memory/03-kv-cache-radix-cache.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--04-model-execution--04-model-runner-attention",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "第 4 讲：ModelRunner 与 Attention Backend",
+    "titleEn": "ModelRunner & Attention Execution",
+    "slug": "sglang-source-reading--04-model-execution--04-model-runner-attention",
+    "summary": "第 4 讲：ModelRunner 与 Attention Backend",
+    "summaryEn": "1. ModelRunner: The Execution Core",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "34 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--03-cache-memory--03-kv-cache-radix-cache",
+    "nextArticleId": "curriculum-sglang-source-reading--05-layer-communication--01-layer-communicator-and-common-layers",
+    "sourcePath": "sglang-source-reading/04-model-execution/04-model-runner-attention.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--05-layer-communication--01-layer-communicator-and-common-layers",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "Layer 层、LayerCommunicator 与通用算子源码导读",
+    "titleEn": "LayerCommunicator & Common Layers",
+    "slug": "sglang-source-reading--05-layer-communication--01-layer-communicator-and-common-layers",
+    "summary": "Layer 层、LayerCommunicator 与通用算子源码导读",
+    "summaryEn": "1. LayerCommunicator: The Hidden Glue",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "22 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--04-model-execution--04-model-runner-attention",
+    "nextArticleId": "curriculum-sglang-source-reading--05-layer-communication--02-tp-dp-ep-sharding-and-ascend-npu",
+    "sourcePath": "sglang-source-reading/05-layer-communication/01-layer-communicator-and-common-layers.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--05-layer-communication--02-tp-dp-ep-sharding-and-ascend-npu",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "TP、DP、EP 如何真正完成切分：从 rank 拓扑到 Ascend NPU 执行",
+    "titleEn": "How TP, DP, and EP Are Actually Sharded: From Rank Topology to Ascend NPU Execution",
+    "slug": "sglang-source-reading--05-layer-communication--02-tp-dp-ep-sharding-and-ascend-npu",
+    "summary": "TP、DP、EP 如何真正完成切分：从 rank 拓扑到 Ascend NPU 执行",
+    "summaryEn": "How TP, DP, and EP Are Actually Sharded: From Rank Topology to Ascend NPU Execution",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "45 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--05-layer-communication--01-layer-communicator-and-common-layers",
+    "nextArticleId": "curriculum-sglang-source-reading--06-advanced-features--05-speculative-decoding",
+    "sourcePath": "sglang-source-reading/05-layer-communication/02-tp-dp-ep-sharding-and-ascend-npu.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--06-advanced-features--05-speculative-decoding",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "第 5 讲：Speculative Decoding",
+    "titleEn": "Speculative Decoding in SGLang",
+    "slug": "sglang-source-reading--06-advanced-features--05-speculative-decoding",
+    "summary": "这一讲接在第 4 讲的 ModelRunner 与 attention backend 之后。前面我们已经知道普通 decode 每轮通常只为每个请求生成 1 个 token；Speculative Decoding 要解决的问题是：能不能先用便宜的 draft 路径猜多个 token，再用 …",
+    "summaryEn": "- Loads a smaller draft model (EAGLE, or separate small model) - TpModelWorker.initmodelconfig() uses speculativedraftmodelpath - Forward generates…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "43 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--05-layer-communication--02-tp-dp-ep-sharding-and-ascend-npu",
+    "nextArticleId": "curriculum-sglang-source-reading--06-advanced-features--07-disaggregation-pd",
+    "sourcePath": "sglang-source-reading/06-advanced-features/05-speculative-decoding.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--06-advanced-features--07-disaggregation-pd",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "第 7 讲：Disaggregation / PD 分离",
+    "titleEn": "PD Disaggregation (Prefill/Decode Separation)",
+    "slug": "sglang-source-reading--06-advanced-features--07-disaggregation-pd",
+    "summary": "这一讲接在第 6 讲之后。第 6 讲已经解释了一个统一模型实例内部的多进程、多卡、TP/PP/DP/EP rank 关系；这一讲开始看更高一层的部署拆分：",
+    "summaryEn": "PD Disaggregation (Prefill/Decode Separation)",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "73 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--06-advanced-features--05-speculative-decoding",
+    "nextArticleId": "curriculum-sglang-source-reading--06-advanced-features--08-lora-serving",
+    "sourcePath": "sglang-source-reading/06-advanced-features/07-disaggregation-pd.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--06-advanced-features--08-lora-serving",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "第 8 讲：LoRA Serving / Adapter 热加载",
+    "titleEn": "LoRA Serving in SGLang",
+    "slug": "sglang-source-reading--06-advanced-features--08-lora-serving",
+    "summary": "这一讲进入 SGLang 的 LoRA serving。它不是单纯“把 LoRA 权重加载进模型”这么简单，而是在一个正在服务的 base model 上，同时处理：",
+    "summaryEn": "Backend Source Platform --------- CUDA LoRA lora/backend/cudabackend.py NVIDIA GPUs Ascend LoRA lora/backend/ascendbackend.py Ascend NPU Triton LoR…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "46 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--06-advanced-features--07-disaggregation-pd",
+    "nextArticleId": "curriculum-sglang-source-reading--readme",
+    "sourcePath": "sglang-source-reading/06-advanced-features/08-lora-serving.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--readme",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "SGLang 源码阅读笔记",
+    "titleEn": "SGLang Source Code Reading Notes",
+    "slug": "sglang-source-reading--readme",
+    "summary": "这组笔记用于配合 Codex 一起阅读 SGLang 源码。现在目录已经从“按讲次平铺”调整为“按源码层次归档”：先看全局组件，再沿入口、调度、缓存、模型执行、layer/通信和高级特性逐层下钻。",
+    "summaryEn": "This set of notes is designed for reading SGLang source code alongside Codex. The directory has been reorganized from \"sequential lectures\" to \"arc…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "10 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--06-advanced-features--08-lora-serving",
+    "nextArticleId": null,
+    "sourcePath": "sglang-source-reading/README.md"
+  },
+  {
+    "id": "curriculum-tp-worker-model-runner--01-architecture",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-3",
+    "tags": [
+      "SGLang",
+      "ModelRunner"
+    ],
+    "title": "架构总览",
+    "titleEn": "Architecture Overview",
+    "slug": "tp-worker-model-runner--01-architecture",
+    "summary": "tpworker.py 位于 python/sglang/srt/managers/，属于 runtime manager 层。它直接承接 Scheduler 发来的 batch，并把请求送入模型执行层。",
+    "summaryEn": "tpworker.py is at python/sglang/srt/managers/, belonging to the runtime manager layer. It directly receives batches from the Scheduler and passes r…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "8 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-tp-worker-model-runner--02-flowcharts",
+    "sourcePath": "tp-worker-model-runner/01-architecture.md"
+  },
+  {
+    "id": "curriculum-tp-worker-model-runner--02-flowcharts",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-3",
+    "tags": [
+      "SGLang",
+      "ModelRunner"
+    ],
+    "title": "详细流程图",
+    "titleEn": "Detailed Flowcharts",
+    "slug": "tp-worker-model-runner--02-flowcharts",
+    "summary": "- TpModelWorker.forwardbatchgeneration()：生成入口。 - ForwardBatch.initnew(batch, self.modelrunner)：调度 batch 到模型 batch 的转换。 - self.ppgroup.islastrank：区分…",
+    "summaryEn": "1. From Scheduler to Model Execution",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "10 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-tp-worker-model-runner--01-architecture",
+    "nextArticleId": "curriculum-tp-worker-model-runner--03-function-map",
+    "sourcePath": "tp-worker-model-runner/02-flowcharts.md"
+  },
+  {
+    "id": "curriculum-tp-worker-model-runner--03-function-map",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-3",
+    "tags": [
+      "SGLang",
+      "ModelRunner"
+    ],
+    "title": "函数与代码段定位",
+    "titleEn": "Function & Code Segment Map",
+    "slug": "tp-worker-model-runner--03-function-map",
+    "summary": "本文件把 tpworker.py 与 modelrunner.py 的关键函数按阅读目的分组。建议先看函数职责，再打开注释版源码逐段阅读。",
+    "summaryEn": "This file groups key functions from tpworker.py and modelrunner.py by reading purpose. It's recommended to first understand function responsibiliti…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "14 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-tp-worker-model-runner--02-flowcharts",
+    "nextArticleId": "curriculum-tp-worker-model-runner--04-tp-worker-annotated-cn",
+    "sourcePath": "tp-worker-model-runner/03-function-map.md"
+  },
+  {
+    "id": "curriculum-tp-worker-model-runner--04-tp-worker-annotated-cn",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-3",
+    "tags": [
+      "SGLang",
+      "ModelRunner"
+    ],
+    "title": "-- coding: utf-8 --",
+    "titleEn": "-- coding: utf-8 --",
+    "slug": "tp-worker-model-runner--04-tp-worker-annotated-cn",
+    "summary": "-- coding: utf-8 -- ============================================================================= SGLang 中文精读注释版源码副本 ==============================…",
+    "summaryEn": "-- coding: utf-8 -- ============================================================================= SGLang 中文精读注释版源码副本 ==============================…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "55 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-tp-worker-model-runner--03-function-map",
+    "nextArticleId": "curriculum-tp-worker-model-runner--05-model-runner-annotated-cn",
+    "sourcePath": "tp-worker-model-runner/04-tp-worker-annotated-cn.py"
+  },
+  {
+    "id": "curriculum-tp-worker-model-runner--05-model-runner-annotated-cn",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-3",
+    "tags": [
+      "SGLang",
+      "ModelRunner"
+    ],
+    "title": "-- coding: utf-8 --",
+    "titleEn": "-- coding: utf-8 --",
+    "slug": "tp-worker-model-runner--05-model-runner-annotated-cn",
+    "summary": "-- coding: utf-8 -- ============================================================================= SGLang 中文精读注释版源码副本 ==============================…",
+    "summaryEn": "-- coding: utf-8 -- ============================================================================= SGLang 中文精读注释版源码副本 ==============================…",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "316 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-tp-worker-model-runner--04-tp-worker-annotated-cn",
+    "nextArticleId": "curriculum-tp-worker-model-runner--06-model-loading-and-architecture-resolution",
+    "sourcePath": "tp-worker-model-runner/05-model-runner-annotated-cn.py"
+  },
+  {
+    "id": "curriculum-tp-worker-model-runner--06-model-loading-and-architecture-resolution",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-3",
+    "tags": [
+      "SGLang",
+      "ModelRunner"
+    ],
+    "title": "第 6 讲：ModelRunner 如何识别并加载不同模型",
+    "titleEn": "Lesson 6: How ModelRunner Recognizes and Loads Different Models",
+    "slug": "tp-worker-model-runner--06-model-loading-and-architecture-resolution",
+    "summary": "这一讲回答一个非常实际的问题：当你启动 SGLang 并传入一个模型路径或模型名时，ModelRunner 到底怎么知道应该实例化 DeepseekV4ForCausalLM、Glm4MoeForCausalLM、GlmMoeDsaForCausalLM，还是退回到 Transformers …",
+    "summaryEn": "Lesson 6: How ModelRunner Recognizes and Loads Different Models",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "30 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-tp-worker-model-runner--05-model-runner-annotated-cn",
+    "nextArticleId": "curriculum-tp-worker-model-runner--readme",
+    "sourcePath": "tp-worker-model-runner/06-model-loading-and-architecture-resolution.md"
+  },
+  {
+    "id": "curriculum-tp-worker-model-runner--readme",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-3",
+    "tags": [
+      "SGLang",
+      "ModelRunner"
+    ],
+    "title": "TP Worker 与 ModelRunner 教学目录",
+    "titleEn": "TP Worker & ModelRunner Learning Directory",
+    "slug": "tp-worker-model-runner--readme",
+    "summary": "本目录用于阅读 SGLang 中 tpworker.py 与 modelrunner.py 的实现。两者分别位于：",
+    "summaryEn": "TP Worker & ModelRunner Learning Directory",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "4 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-tp-worker-model-runner--06-model-loading-and-architecture-resolution",
+    "nextArticleId": null,
+    "sourcePath": "tp-worker-model-runner/README.md"
+  }
+]
