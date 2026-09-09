@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowLeft, ArrowUpRight, Check, Copy, GitCompareArrows, Info } from 'lucide-react'
 import { modelArchitectures } from '@/data/models'
-import { cacheEstimate, formatBytes, localKvHeads } from '@/lib/model-lab'
+import { attentionKind, cacheEstimate, formatBytes, localKvHeads } from '@/lib/model-lab'
+import { explorerHref } from '@/lib/model-explorer'
 import type { ModelArchitecture, TensorParallelSize } from '@/types/model'
 import { compareEstimate, comparisonColors, comparisonParams, contextProbes, defaultComparisonScenario, memoryValue, parseComparison } from '@/lib/model-comparison'
 import type { ComparisonState } from '@/lib/model-comparison'
@@ -121,7 +122,7 @@ export default function ModelCompare() {
                 <p className="mt-4 text-sm leading-6 text-slate-400">{scenario.sequence >= model.execution.maxContext ? '已达配置上下文上限，未估算下一 token。' : `单请求再增 1 token 的容量增长：+${formatBytes(estimate.growthBytesPerToken * factor)}${scope === 'rank' ? ' / 卡' : ' / TP 组'}`}</p>
                 <p className="mt-4 text-sm leading-6 text-slate-400">{cacheNote(model, scenario.tp)}</p>
               </> : <div className="my-5 rounded-2xl border border-amber-200/20 bg-amber-200/5 p-4"><p className="text-base font-medium text-amber-100">当前条件不计算</p>{reasons.map((reason) => <p key={reason} className="mt-2 text-sm leading-6 text-amber-100/80">{reason}</p>)}</div>}
-              <div className="mt-auto flex flex-wrap gap-x-5 gap-y-3 pt-6"><Link to={`/models/${model.id}`} className="inline-flex items-center gap-1 text-sm text-cyan-200 hover:underline">打开交互结构图<ArrowUpRight className="h-4 w-4" /></Link><a href={model.configUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm text-slate-400 hover:text-white">官方配置<ArrowUpRight className="h-4 w-4" /></a></div>
+              <div className="mt-auto flex flex-wrap gap-x-5 gap-y-3 pt-6"><Link to={estimate ? explorerHref(model.id, { scenario, layer: 0, nodeId: attentionKind(model, 0) }) : `/models/${model.id}`} className="inline-flex items-center gap-1 text-sm text-cyan-200 hover:underline">{estimate ? '携带条件查看结构图' : '打开默认结构图'}<ArrowUpRight className="h-4 w-4" /></Link><a href={model.configUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm text-slate-400 hover:text-white">官方配置<ArrowUpRight className="h-4 w-4" /></a></div>
             </div>
           </article>
         })}
