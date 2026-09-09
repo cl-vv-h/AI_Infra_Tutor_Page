@@ -57,6 +57,37 @@ try {
   const { formatBytes } = await server.ssrLoadModule('/src/lib/model-lab.ts')
   const { decoderWeightBudget } = await server.ssrLoadModule('/src/lib/model-weights.ts')
   const renderExplorer = (path) => renderToString(h(MemoryRouter, { initialEntries: [path] }, h(Routes, null, h(Route, { path: '/models/:modelId', element: h(Models) })))).replace(/<!--.*?-->/g, '')
+  let workspaceRoutes = 0
+  for (const model of modelArchitectures) {
+    for (const active of ['diagram', 'cache', 'weights']) {
+      const html = renderExplorer(`/models/${model.id}?view=${active}&b=3&s=2048&tp=2&bytes=1&wbits=4&budget=0.5`)
+      const tabs = [...html.matchAll(/<button[^>]*role="tab"[^>]*>/g)].map(([tag]) => tag)
+      const panels = [...html.matchAll(/<div role="tabpanel"[^>]*>/g)].map(([tag]) => tag)
+      assert.equal(tabs.length, 3)
+      assert.equal(panels.length, 3)
+      for (const view of ['diagram', 'cache', 'weights']) {
+        const tab = tabs.find((tag) => tag.includes(`id="workspace-tab-${view}"`))
+        const panel = panels.find((tag) => tag.includes(`id="workspace-panel-${view}"`))
+        assert.ok(tab.includes(`aria-controls="workspace-panel-${view}"`))
+        assert.ok(tab.includes(`aria-selected="${active === view}"`))
+        assert.ok(tab.includes(`tabindex="${active === view ? 0 : -1}"`))
+        assert.ok(panel.includes(`aria-labelledby="workspace-tab-${view}"`))
+        assert.equal(panel.includes('hidden=""'), active !== view)
+      }
+      assert.ok(html.indexOf('aria-label="交互模型结构图"') < html.indexOf('id="workspace-panel-cache"'))
+      assert.match(html, /B 3 · S 2,048 · 缓存 8-bit/)
+      assert.match(html, /Layer 0 · 每卡 .* · 4-bit 理论载荷/)
+      assert.match(html, /value="0.5"/)
+      assert.match(html, /<section aria-label="Decoder 权重账本"/)
+      assert.match(html, /展开完整层分布/)
+      assert.doesNotMatch(html, /参数无效|NaN|undefined/)
+      workspaceRoutes++
+    }
+  }
+  const legacyWorkspace = renderExplorer('/models/llama-3-1-8b?wbits=4&budget=0.5')
+  assert.match(legacyWorkspace, /role="tab" id="workspace-tab-diagram"[^>]*aria-selected="true"/)
+  assert.match(renderExplorer('/models/llama-3-1-8b?view=invalid'), /未知工作区，已返回结构图。/)
+  console.log(`Workspace static render verified: ${workspaceRoutes} model/view routes, one visible panel, linked tabs, shared conditions and legacy graph default.`)
   for (const model of modelArchitectures) {
     for (const bits of [4, 16, 32]) {
       const layer = model.dimensions.layers - 1

@@ -2,7 +2,51 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 import { modelArchitectures, getModelArchitecture } from '../src/data/models.ts'
 import { attentionKind, cacheEstimate, formatShape } from '../src/lib/model-lab.ts'
-import { explorerHref, explorerNodes, explorerParams, findModules, moduleIndex, nearestModuleLayer, parseExplorer, selectExplorerLayer } from '../src/lib/model-explorer.ts'
+import { explorerHref, explorerNodes, explorerParams, explorerViewForKey, explorerViews, findModules, moduleIndex, nearestModuleLayer, parseExplorer, selectExplorerLayer, selectExplorerNode } from '../src/lib/model-explorer.ts'
+
+test('workspace URLs preserve every experiment parameter, with the graph as the legacy default', () => {
+  for (const model of modelArchitectures) {
+    const base = parseExplorer(new URLSearchParams('layer=1&b=3&s=2048&tp=2&bytes=1&wbits=4&budget=0.5'), model).state
+    assert.equal(base.view, undefined)
+    for (const { id: view } of explorerViews) {
+      const parsed = parseExplorer(explorerParams({ ...base, view }), model)
+      assert.deepEqual(parsed.notices, [])
+      assert.deepEqual(parsed.state, view === 'diagram' ? base : { ...base, view })
+      const changed = selectExplorerLayer(model, parsed.state, 2)
+      assert.equal(changed.view, parsed.state.view)
+      assert.deepEqual(changed.scenario, base.scenario)
+      const inspected = selectExplorerNode(changed, 'lm-head')
+      assert.equal(inspected.view, 'diagram')
+      assert.equal(inspected.nodeId, 'lm-head')
+      assert.equal(inspected.layer, 2)
+      assert.deepEqual(inspected.scenario, base.scenario)
+      assert.equal(inspected.weightBits, 4)
+      assert.equal(inspected.cacheBudgetGiB, 0.5)
+      assert.equal(explorerParams(inspected).has('view'), false)
+    }
+  }
+})
+
+test('unknown workspace values cannot become shared URL state', () => {
+  const model = modelArchitectures[0]
+  for (const value of ['', 'unknown', '<script>', 'CACHE', 'https://example.org']) {
+    const parsed = parseExplorer(new URLSearchParams({ view: value }), model)
+    assert.equal(parsed.state.view, undefined)
+    assert.deepEqual(parsed.notices, ['未知工作区，已返回结构图。'])
+    assert.equal(explorerParams({ ...parsed.state, view: value }).has('view'), false)
+  }
+})
+
+test('workspace arrow keys wrap; Home/End navigate and unrelated keys retain native behavior', () => {
+  const views = explorerViews.map((item) => item.id)
+  for (const [index, view] of views.entries()) {
+    assert.equal(explorerViewForKey(view, 'ArrowRight'), views[(index + 1) % views.length])
+    assert.equal(explorerViewForKey(view, 'ArrowLeft'), views[(index + views.length - 1) % views.length])
+    assert.equal(explorerViewForKey(view, 'Home'), 'diagram')
+    assert.equal(explorerViewForKey(view, 'End'), 'weights')
+    for (const key of ['Tab', 'Enter', ' ', 'ArrowUp', 'Escape']) assert.equal(explorerViewForKey(view, key), null)
+  }
+})
 
 test('all model layers and visible modules round-trip with exact shapes and scenario state', () => {
   for (const model of modelArchitectures) {

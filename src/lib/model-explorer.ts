@@ -4,12 +4,26 @@ import { attentionKind, decoderNodes, layerCacheNode } from './model-lab.ts'
 import type { WeightBits } from './model-weights.ts'
 import { defaultCacheBudgetGiB, parseCacheBudget } from './cache-capacity.ts'
 
+export const explorerViews = [
+  { id: 'diagram', label: '结构图' },
+  { id: 'cache', label: '缓存容量' },
+  { id: 'weights', label: '权重清单' },
+] as const
+export type ExplorerView = typeof explorerViews[number]['id']
+
+export function explorerViewForKey(view: ExplorerView, key: string): ExplorerView | null {
+  const index = explorerViews.findIndex((item) => item.id === view)
+  const next = key === 'Home' ? 0 : key === 'End' ? explorerViews.length - 1 : key === 'ArrowRight' ? (index + 1) % explorerViews.length : key === 'ArrowLeft' ? (index + explorerViews.length - 1) % explorerViews.length : null
+  return next === null ? null : explorerViews[next].id
+}
+
 export interface ExplorerState {
   layer: number
   nodeId: string
   scenario: InferenceScenario
   weightBits?: WeightBits
   cacheBudgetGiB?: number
+  view?: ExplorerView
 }
 
 export function explorerNodes(model: ModelArchitecture, layer: number) {
@@ -47,13 +61,16 @@ export function parseExplorer(params: URLSearchParams, model: ModelArchitecture)
   const requested = params.get('node')
   const nodeId = nodes.some((node) => node.id === requested) ? requested! : attentionKind(model, layer)
   if (requested !== null && requested !== nodeId) notices.push(`该模块不在 Layer ${layer} 中，已选择本层注意力。可用模块检索跳转到适用层。`)
-  const state: ExplorerState = { layer, nodeId, scenario: { phase, batch, sequence, tp, cacheBytes }, ...(weightBits !== 16 ? { weightBits } : {}), ...(cacheBudgetGiB !== defaultCacheBudgetGiB ? { cacheBudgetGiB } : {}) }
+  const requestedView = params.get('view')
+  const view = explorerViews.find((item) => item.id === requestedView)?.id ?? 'diagram'
+  if (requestedView !== null && !explorerViews.some((item) => item.id === requestedView)) notices.push('未知工作区，已返回结构图。')
+  const state: ExplorerState = { layer, nodeId, scenario: { phase, batch, sequence, tp, cacheBytes }, ...(weightBits !== 16 ? { weightBits } : {}), ...(cacheBudgetGiB !== defaultCacheBudgetGiB ? { cacheBudgetGiB } : {}), ...(view !== 'diagram' ? { view } : {}) }
   return { state, notices, nodes }
 }
 
 export function explorerParams(state: ExplorerState) {
   const { phase, batch, sequence, tp, cacheBytes } = state.scenario
-  return new URLSearchParams({ layer: String(state.layer), node: state.nodeId, phase, b: String(batch), s: String(sequence), tp: String(tp), bytes: String(cacheBytes), ...(state.weightBits && state.weightBits !== 16 ? { wbits: String(state.weightBits) } : {}), ...(state.cacheBudgetGiB !== undefined && state.cacheBudgetGiB !== defaultCacheBudgetGiB ? { budget: String(state.cacheBudgetGiB) } : {}) })
+  return new URLSearchParams({ layer: String(state.layer), node: state.nodeId, phase, b: String(batch), s: String(sequence), tp: String(tp), bytes: String(cacheBytes), ...(state.weightBits && state.weightBits !== 16 ? { wbits: String(state.weightBits) } : {}), ...(state.cacheBudgetGiB !== undefined && state.cacheBudgetGiB !== defaultCacheBudgetGiB ? { budget: String(state.cacheBudgetGiB) } : {}), ...(state.view === 'cache' || state.view === 'weights' ? { view: state.view } : {}) })
 }
 
 export function explorerHref(modelId: string, state: ExplorerState) {
@@ -64,6 +81,11 @@ export function explorerHref(modelId: string, state: ExplorerState) {
 export function selectExplorerLayer(model: ModelArchitecture, state: ExplorerState, layer: number): ExplorerState {
   const nodeId = explorerNodes(model, layer).some((node) => node.id === state.nodeId) ? state.nodeId : attentionKind(model, layer)
   return { ...state, layer, nodeId }
+}
+
+/** Module inspection always returns to the graph without resetting the experiment. */
+export function selectExplorerNode(state: ExplorerState, nodeId: string, layer = state.layer): ExplorerState {
+  return { ...state, nodeId, layer, view: 'diagram' }
 }
 
 export interface ModuleTarget { node: ArchitectureNode; layers: number[]; global: boolean }

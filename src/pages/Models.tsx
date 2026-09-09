@@ -8,11 +8,12 @@ import type { ArchitectureNode, ModelArchitecture } from '@/types/model'
 import { CacheWorkbench } from '@/components/CacheWorkbench'
 import { ModelLayerMap } from '@/components/ModelLayerMap'
 import { comparisonHref } from '@/lib/model-comparison'
-import { explorerHref, explorerParams, parseExplorer, selectExplorerLayer } from '@/lib/model-explorer'
+import { explorerHref, explorerParams, parseExplorer, selectExplorerLayer, selectExplorerNode } from '@/lib/model-explorer'
 import type { ExplorerState } from '@/lib/model-explorer'
 import ModelModuleFinder from '@/components/ModelModuleFinder'
 import ModelWeightBudget from '@/components/ModelWeightBudget'
 import CacheCapacityPlanner from '@/components/CacheCapacityPlanner'
+import ModelWorkspaceTabs from '@/components/ModelWorkspaceTabs'
 
 function Inspector({ node, model, scenario, preview = false }: { node: ArchitectureNode; model: ModelArchitecture; scenario: InferenceScenario; preview?: boolean }) {
   return <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#0c131c]">
@@ -62,6 +63,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
   const { state, notices, nodes: visibleNodes } = parseExplorer(params, model)
   const { layer: effectiveLayer, scenario } = state
   const { phase, tp: effectiveTp } = scenario
+  const view = state.view ?? 'diagram'
   const canonical = explorerHref(model.id, state)
   const [hovered, setHovered] = useState<{ id: string; context: string } | null>(null)
   const hoveredId = hovered?.context === canonical ? hovered.id : null
@@ -97,7 +99,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
   function updateScenario(next: Partial<InferenceScenario>) { update({ scenario: { ...scenario, ...next } }) }
   function changeLayer(layer: number, replace = false) { update(selectExplorerLayer(model, state, layer), replace) }
   function inspect(node: ArchitectureNode, layer = effectiveLayer, locate = false) {
-    update({ nodeId: node.id, layer })
+    update(selectExplorerNode(state, node.id, layer))
     if (locate) setPendingLocate({ id: node.id, layer })
     if (window.matchMedia('(max-width: 1279px)').matches && !dialog.current?.open) dialog.current?.showModal()
   }
@@ -126,7 +128,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
     <header className="border-b border-white/[0.08] bg-[#070b10]/60">
       <div className="mx-auto flex max-w-[1600px] flex-wrap items-end justify-between gap-4 px-5 py-7 sm:px-8 lg:px-10">
         <div><div className="flex items-center gap-2 font-mono text-xs tracking-[0.2em] text-cyan-200/70"><Braces className="h-4 w-4" /> MODEL ARCHITECTURE LAB</div>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white">从一个 token，看清一层模型。</h1><Link to="/models" className="mt-3 inline-block text-sm text-cyan-100 hover:underline">← 浏览全部模型图解</Link></div>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white">{model.name} · 结构实验室</h1><Link to="/models" className="mt-3 inline-block text-sm text-cyan-100 hover:underline">← 浏览全部模型图解</Link></div>
         <div className="flex flex-wrap items-center gap-4"><p className="flex items-center gap-2 text-sm text-white/60"><MousePointer2 className="h-4 w-4 text-cyan-200" /> 悬浮预览 · 点击查看 · 逐层探索</p><Link to={comparisonHref(model.id, scenario)} className="inline-flex items-center gap-2 rounded-full border border-cyan-200/25 bg-cyan-200/5 px-4 py-2.5 text-sm text-cyan-100 transition hover:bg-cyan-200/10"><GitCompareArrows className="h-4 w-4" />对比当前模型</Link></div>
       </div>
     </header>
@@ -151,20 +153,18 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
       </section>
 
       {notices.length > 0 && <p role="status" className="mt-4 rounded-xl border border-amber-200/20 bg-amber-200/5 p-4 text-sm leading-6 text-amber-100">{notices.join(' ')}</p>}
-      <ModelLayerMap model={model} selectedLayer={effectiveLayer} onSelect={(value) => changeLayer(value)} />
-      <CacheWorkbench model={model} layer={effectiveLayer} scenario={scenario} onBatch={(batch) => updateScenario({ batch })} onSequence={(sequence) => updateScenario({ sequence })} onBytes={(cacheBytes) => updateScenario({ cacheBytes })} />
-      <CacheCapacityPlanner model={model} scenario={scenario} budgetGiB={state.cacheBudgetGiB} onBudget={(cacheBudgetGiB) => update({ cacheBudgetGiB }, true)} onBatch={(batch) => updateScenario({ batch })} onSequence={(sequence) => updateScenario({ sequence })} />
-      <ModelModuleFinder model={model} layer={effectiveLayer} selectedId={selected.id} onSelect={(node, layer) => inspect(node, layer, true)} />
-      <ModelWeightBudget model={model} layer={effectiveLayer} tp={effectiveTp} bits={state.weightBits ?? 16} selectedId={selected.id} onBits={(weightBits) => update({ weightBits })} onSelect={(node) => inspect(node, effectiveLayer, true)} />
+      <ModelWorkspaceTabs view={view} onSelect={(view) => update({ view })} />
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#0b1119] p-4">
-        <p className="text-sm text-white/70">已选 <span className="font-mono text-cyan-100">Layer {effectiveLayer}</span> · {selected.title}</p>
+        <div><p className="text-sm text-white/70">已选 <span className="font-mono text-cyan-100">Layer {effectiveLayer}</span> · {selected.title}</p><button type="button" onClick={() => { update({ view: 'cache' }); document.getElementById('workspace-tab-cache')?.focus() }} className="mt-2 text-left text-sm text-white/65 underline decoration-white/25 underline-offset-4 hover:text-cyan-100">B {scenario.batch} · S {scenario.sequence.toLocaleString('en-US')} · 缓存 {scenario.cacheBytes * 8}-bit · 调整条件</button></div>
         <div className="flex flex-wrap gap-3"><button type="button" onClick={() => inspect(selected, effectiveLayer, true)} className="rounded-xl border border-white/15 px-3 py-2.5 text-sm text-cyan-100 hover:bg-white/5">查看已选模块</button><button type="button" onClick={copyExplorer} className="inline-flex items-center gap-2 rounded-xl border border-cyan-200/25 px-3 py-2.5 text-sm text-cyan-100 hover:bg-white/5">{copyStatus === 'copied' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}复制当前图解</button></div>
-        <p role="status" className="w-full text-sm text-white/55">{copyStatus === 'copied' ? '已复制模型、层、已选模块、推理条件、权重位宽和缓存预算；不包含临时悬浮预览。' : copyStatus === 'failed' ? '无法自动复制，请选择下方链接手动复制。' : '链接保留层号、已选模块、阶段、B、S、TP、缓存精度、权重位宽和缓存预算。窄屏可点击“查看已选模块”打开详情。'}</p>
+        <p role="status" className="w-full text-sm text-white/55">{copyStatus === 'copied' ? '已复制工作区、模型、层、已选模块、推理条件、权重位宽和缓存预算；不包含临时悬浮预览。' : copyStatus === 'failed' ? '无法自动复制，请选择下方链接手动复制。' : '复制链接可保留当前工作区与全部推理条件。窄屏点击“查看已选模块”打开详情。'}</p>
         {copyStatus === 'failed' && <input readOnly aria-label="手动复制图解链接" value={copyState?.url ?? ''} onFocus={(event) => event.target.select()} className="w-full rounded-xl border border-white/15 bg-black/20 p-3 text-sm text-white" />}
       </div>
 
-      <section className="mt-5 grid items-start gap-5 xl:grid-cols-[15rem_minmax(0,1fr)_22rem]">
-        <aside className="space-y-4">
+      <div role="tabpanel" id="workspace-panel-diagram" aria-labelledby="workspace-tab-diagram" tabIndex={0} hidden={view !== 'diagram'} className="focus-visible:outline-cyan-200">
+      <ModelModuleFinder model={model} layer={effectiveLayer} selectedId={selected.id} onSelect={(node, layer) => inspect(node, layer, true)} />
+      <section aria-label="交互模型结构图" className="mt-5 grid items-start gap-5 xl:grid-cols-[15rem_minmax(0,1fr)_22rem]">
+        <aside className="order-2 space-y-4 xl:order-1">
           <div className="rounded-3xl border border-white/10 bg-[#0b1119]/80 p-5">
             <div className="font-mono text-xs tracking-widest text-white/50">MODEL CARD</div>
             <h2 className="mt-4 text-2xl font-semibold text-white">{model.name}</h2>
@@ -175,9 +175,10 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
           </div>
           <div className="grid grid-cols-2 gap-2">{model.metrics.map((metric) => <div key={metric.label} className="rounded-2xl border border-white/10 bg-white/[0.025] p-3"><div className="font-mono text-xs text-white/50">{metric.label}</div><div className="mt-2 text-sm font-semibold text-white/90">{metric.value}</div></div>)}</div>
           <p className="px-2 text-sm leading-6 text-white/60">图中展开第 {effectiveLayer} 层，其余层折叠。标准自回归主干，不包含 MTP 辅助预测分支。EP = 1，PP = 1。</p>
+          <details className="rounded-2xl border border-white/10 bg-[#0b1119] p-4"><summary className="cursor-pointer text-base text-cyan-100">展开完整层分布</summary><ModelLayerMap model={model} selectedLayer={effectiveLayer} onSelect={(value) => changeLayer(value)} /></details>
         </aside>
 
-        <div className="model-canvas rounded-3xl border border-white/10 bg-[#080d13] p-4 sm:p-6">
+        <div className="model-canvas order-1 min-w-0 rounded-3xl border border-white/10 bg-[#080d13] p-4 sm:p-6 xl:order-2">
           <div className="mb-5 flex flex-wrap items-center justify-between gap-2 text-sm text-white/60"><span>{phase === 'prefill' ? 'Prefill · 无前缀缓存，处理完整输入' : 'Decode · 每请求新增 1 token'}</span><span className="font-mono text-cyan-200">N = {tokenCount(scenario).toLocaleString('en-US')}</span></div>
           {vision ? <><div className="grid gap-3 sm:grid-cols-2">{nodeButton(embedding)}{nodeButton(vision)}</div><div className="mx-auto mt-3 max-w-[25rem] rounded-xl border border-white/15 p-3 text-center text-sm text-white/70">↓ 视觉输出替换对应占位 embedding ↓<br /><span className="font-mono text-xs text-cyan-100">{formatShape('[N, ' + model.dimensions.hiddenSize + ']', model, scenario)}</span></div></> : nodeButton(embedding)}{flowLine}
           {effectiveLayer > 0 && <><div className="model-folded-layers">前 {effectiveLayer} 层 Decoder</div>{flowLine}</>}
@@ -200,10 +201,22 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
           <p className="mt-5 text-xs leading-5 text-white/55">N 是本次前向的 token 数；完整注意力保留历史 S，滑动注意力保留 min(S, W)，DeltaNet 保留定长矩阵与短窗口。输出是逻辑 Shape，内核可能采用不同的打包、分页或融合布局。</p>
         </div>
 
-        <aside className="hidden xl:sticky xl:top-20 xl:block"><Inspector node={inspected} model={model} scenario={scenario} preview={inspected.id !== selected.id} /></aside>
+        <aside className="order-3 hidden xl:sticky xl:top-20 xl:block"><Inspector node={inspected} model={model} scenario={scenario} preview={inspected.id !== selected.id} /></aside>
       </section>
+      </div>
+      <div role="tabpanel" id="workspace-panel-cache" aria-labelledby="workspace-tab-cache" tabIndex={0} hidden={view !== 'cache'} className="focus-visible:outline-cyan-200">
+        <h2 className="mt-5 text-xl font-semibold text-white">缓存容量与并发预算</h2>
+        <p className="mt-2 text-sm leading-6 text-white/65">这里修改的 B、S 与缓存精度会同步到结构图和张量 Shape。仅估算缓存，不代表整卡可部署显存。</p>
+        <CacheWorkbench model={model} layer={effectiveLayer} scenario={scenario} onBatch={(batch) => updateScenario({ batch })} onSequence={(sequence) => updateScenario({ sequence })} onBytes={(cacheBytes) => updateScenario({ cacheBytes })} />
+        <CacheCapacityPlanner model={model} scenario={scenario} budgetGiB={state.cacheBudgetGiB} onBudget={(cacheBudgetGiB) => update({ cacheBudgetGiB }, true)} onBatch={(batch) => updateScenario({ batch })} onSequence={(sequence) => updateScenario({ sequence })} />
+      </div>
+      <div role="tabpanel" id="workspace-panel-weights" aria-labelledby="workspace-tab-weights" tabIndex={0} hidden={view !== 'weights'} className="focus-visible:outline-cyan-200">
+        <h2 className="mt-5 text-xl font-semibold text-white">Decoder 权重清单</h2>
+        <p className="mt-2 text-sm leading-6 text-white/65">按当前层与 TP 查看权重。点击权重模块可返回结构图，查看输入输出与知识索引。</p>
+        <ModelWeightBudget model={model} layer={effectiveLayer} tp={effectiveTp} bits={state.weightBits ?? 16} selectedId={selected.id} onBits={(weightBits) => update({ weightBits })} onSelect={(node) => inspect(node, effectiveLayer, true)} />
+      </div>
     </main>
-    <dialog ref={dialog} aria-label="模块详情" className="model-inspector-dialog" onClick={(event) => { if (event.target === dialog.current) dialog.current.close() }}>
+    <dialog ref={dialog} aria-label="模块详情" className="model-inspector-dialog" onClose={() => document.getElementById(`model-node-${selected.id}`)?.focus()} onClick={(event) => { if (event.target === dialog.current) dialog.current.close() }}>
       <button autoFocus type="button" aria-label="关闭模块详情" onClick={() => dialog.current?.close()} className="sticky top-0 z-10 mb-2 ml-auto flex items-center gap-2 rounded-full border border-white/20 bg-[#0c131c] px-4 py-2 text-sm text-white"><X className="h-4 w-4" />关闭</button>
       <Inspector node={selected} model={model} scenario={scenario} />
     </dialog>
