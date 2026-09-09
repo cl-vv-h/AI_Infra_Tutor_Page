@@ -9,6 +9,7 @@ import MarkdownRenderer from '@/components/MarkdownRenderer'
 import NewsStudyGuide from '@/components/NewsStudyGuide'
 import NewsSourceStatus from '@/components/NewsSourceStatus'
 import NewsReleaseDesk from '@/components/NewsReleaseDesk'
+import NewsLearningTrail from '@/components/NewsLearningTrail'
 import { newsTopics, topicsForItem } from '@/lib/news-topics.mjs'
 import { filterNews, inferSourceType, legacyReadingListKey, mergeSavedItems, newsParams, parseNewsParams, readingListKey, readSavedItems } from '@/lib/news-reader'
 import type { NewsReaderState, NewsView as View } from '@/lib/news-reader'
@@ -64,6 +65,7 @@ function NewsCard({ item, saved, disabled, onSave, onTopic, onSource }: { item: 
     <p className={`mt-3 text-base leading-7 text-slate-300 ${expanded ? '' : 'line-clamp-3'}`}>{summary}</p>
     {summary.length > 130 && <button type="button" aria-expanded={expanded} onClick={() => setExpanded((value) => !value)} className="mt-2 self-start text-sm text-cyan-200/80 hover:text-cyan-100">{expanded ? '收起摘要' : '展开摘要'}</button>}
     {topics.length > 0 && <div className="mt-4 flex flex-wrap gap-2">{topics.map((id) => <button key={id} type="button" onClick={() => onTopic(id)} className="rounded-full border border-white/10 px-2.5 py-1 text-xs text-white/65 hover:border-cyan-200/40 hover:text-cyan-100">{newsTopics.find((topic) => topic.id === id)?.label}</button>)}</div>}
+    <NewsLearningTrail item={item} />
     <div className="mt-auto flex items-end justify-between gap-3 pt-5"><span className="text-xs text-white/50">{categoryLabels[item.category]} · {item.sourceCountry}</span><a href={item.url} target="_blank" rel="noreferrer" aria-label={`阅读原文：${item.title}`} className="inline-flex shrink-0 items-center gap-1.5 text-sm text-cyan-100">原文<ArrowUpRight className="h-4 w-4" /></a></div>
   </article>
 }
