@@ -12,7 +12,7 @@ function mistralModel(moe: boolean): ModelArchitecture {
     tensors: [{ label: 'Router logits', shape: '[N, 8]' }, { label: 'Selected expert ids / weights', shape: '[N, 2]', note: '分数和编号是两个张量；专家间 token 数不一定均匀。' }],
     weights: [
       { name: 'block_sparse_moe.gate · replicated', shape: '[8, 4,096]' },
-      { name: 'experts.w1 / w3 · each TP local', shape: '[8, {expertShard}, 4,096]', note: 'w1 是 gate，w3 是 up；首维按 8 个独立专家堆叠示意。' },
+      { name: 'experts.w1 / w3 · each TP local', shape: '[8, {expertShard}, 4,096]', multiplicity: 2, note: 'w1 是 gate，w3 是 up；首维按 8 个独立专家堆叠示意。' },
       { name: 'experts.w2 · TP local', shape: '[8, 4,096, {expertShard}]', note: 'Down projection；TP 局部输出需归约。' },
     ],
     knowledge: [{ label: 'Sparse MoE', to: '/article/ai-infra-basic--model-architecture--03-sparse-moe-routing' }, { label: 'TP / EP', to: '/category/parallel-strategy' }],
@@ -20,7 +20,7 @@ function mistralModel(moe: boolean): ModelArchitecture {
     id: 'ffn', eyebrow: 'DENSE FFN', title: 'Dense SwiGLU', subtitle: '4,096 → 14,336 → 4,096',
     description: 'SiLU(gate_proj(x)) 与 up_proj(x) 相乘，再通过 down_proj 返回残差宽度。所有 token 使用相同的 Dense FFN；没有 Router 或稀疏专家。',
     inputShape: shape, outputShape: shape, tone: 'ffn', layerRange: 'Layers 0–31',
-    weights: [{ name: 'gate_proj / up_proj · each TP local', shape: '[{intermediateShard}, 4,096]' }, { name: 'down_proj · TP local', shape: '[4,096, {intermediateShard}]' }],
+    weights: [{ name: 'gate_proj / up_proj · each TP local', shape: '[{intermediateShard}, 4,096]', multiplicity: 2 }, { name: 'down_proj · TP local', shape: '[4,096, {intermediateShard}]' }],
     knowledge: [{ label: 'Transformer 与 FFN', to: '/category/model-architecture' }, { label: 'TP 分片', to: '/category/parallel-strategy' }],
   }
   return {
@@ -60,7 +60,7 @@ function mistralModel(moe: boolean): ModelArchitecture {
           decode: moe ? '每请求新增一个 query，读取 S 个历史及当前位置的 KV。' : '每请求新增一个 query；窗口饱和后淘汰最早 KV 并写入新位置。固定的是本层缓存容量，不是新增 token 的计算量。',
         },
         tensors: [{ label: 'Q after projection / RoPE', shape: '[N, {localHeads}, 128]' }, { label: 'K / V · each', shape: '[N, {localKvHeads}, 128]' }],
-        weights: [{ name: 'q_proj · TP local', shape: '[{localHeads} × 128, 4,096]' }, { name: 'k_proj / v_proj · each TP local', shape: '[{localKvHeads} × 128, 4,096]' }, { name: 'o_proj · TP local', shape: '[4,096, {localHeads} × 128]' }],
+        weights: [{ name: 'q_proj · TP local', shape: '[{localHeads} × 128, 4,096]' }, { name: 'k_proj / v_proj · each TP local', shape: '[{localKvHeads} × 128, 4,096]', multiplicity: 2 }, { name: 'o_proj · TP local', shape: '[4,096, {localHeads} × 128]' }],
         knowledge: [{ label: 'Attention 算法', to: '/category/decode' }, { label: 'KV Cache', to: '/category/kv-cache-memory' }],
       },
       {

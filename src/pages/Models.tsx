@@ -11,6 +11,7 @@ import { comparisonHref } from '@/lib/model-comparison'
 import { explorerHref, explorerParams, parseExplorer, selectExplorerLayer } from '@/lib/model-explorer'
 import type { ExplorerState } from '@/lib/model-explorer'
 import ModelModuleFinder from '@/components/ModelModuleFinder'
+import ModelWeightBudget from '@/components/ModelWeightBudget'
 
 function Inspector({ node, model, scenario, preview = false }: { node: ArchitectureNode; model: ModelArchitecture; scenario: InferenceScenario; preview?: boolean }) {
   return <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#0c131c]">
@@ -36,6 +37,7 @@ function Inspector({ node, model, scenario, preview = false }: { node: Architect
         {node.weights.map((weight) => <div key={weight.name} className="rounded-xl border border-white/10 bg-black/15 p-3">
           <div className="break-words text-sm text-white/75">{weight.name}</div>
           <div className="mt-2 break-words font-mono text-sm text-cyan-100">{formatShape(weight.shape, model, scenario)}</div>
+          {weight.multiplicity && <p className="mt-2 text-sm text-violet-100">本行包含 {weight.multiplicity} 份同 Shape 权重。</p>}
           {weight.note && <p className="mt-2 text-xs leading-5 text-white/55">{weight.note}</p>}
         </div>)}
         {!node.weights.length && <p className="text-sm leading-6 text-white/60">{node.weightlessNote ?? '这是运行时缓存，没有可训练权重。Shape 表示逻辑有效 token，不含分页填充。'}</p>}
@@ -151,10 +153,11 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
       <ModelLayerMap model={model} selectedLayer={effectiveLayer} onSelect={(value) => changeLayer(value)} />
       <CacheWorkbench model={model} layer={effectiveLayer} scenario={scenario} onBatch={(batch) => updateScenario({ batch })} onSequence={(sequence) => updateScenario({ sequence })} onBytes={(cacheBytes) => updateScenario({ cacheBytes })} />
       <ModelModuleFinder model={model} layer={effectiveLayer} selectedId={selected.id} onSelect={(node, layer) => inspect(node, layer, true)} />
+      <ModelWeightBudget model={model} layer={effectiveLayer} tp={effectiveTp} bits={state.weightBits ?? 16} selectedId={selected.id} onBits={(weightBits) => update({ weightBits })} onSelect={(node) => inspect(node, effectiveLayer, true)} />
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#0b1119] p-4">
         <p className="text-sm text-white/70">已选 <span className="font-mono text-cyan-100">Layer {effectiveLayer}</span> · {selected.title}</p>
         <div className="flex flex-wrap gap-3"><button type="button" onClick={() => inspect(selected, effectiveLayer, true)} className="rounded-xl border border-white/15 px-3 py-2.5 text-sm text-cyan-100 hover:bg-white/5">查看已选模块</button><button type="button" onClick={copyExplorer} className="inline-flex items-center gap-2 rounded-xl border border-cyan-200/25 px-3 py-2.5 text-sm text-cyan-100 hover:bg-white/5">{copyStatus === 'copied' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}复制当前图解</button></div>
-        <p role="status" className="w-full text-sm text-white/55">{copyStatus === 'copied' ? '已复制模型、层、已选模块和推理条件；不包含临时悬浮预览。' : copyStatus === 'failed' ? '无法自动复制，请选择下方链接手动复制。' : '链接保留层号、已选模块、阶段、B、S、TP 和缓存精度。窄屏可点击“查看已选模块”打开详情。'}</p>
+        <p role="status" className="w-full text-sm text-white/55">{copyStatus === 'copied' ? '已复制模型、层、已选模块、推理条件和权重位宽；不包含临时悬浮预览。' : copyStatus === 'failed' ? '无法自动复制，请选择下方链接手动复制。' : '链接保留层号、已选模块、阶段、B、S、TP、缓存精度和权重位宽。窄屏可点击“查看已选模块”打开详情。'}</p>
         {copyStatus === 'failed' && <input readOnly aria-label="手动复制图解链接" value={copyState?.url ?? ''} onFocus={(event) => event.target.select()} className="w-full rounded-xl border border-white/15 bg-black/20 p-3 text-sm text-white" />}
       </div>
 

@@ -112,7 +112,7 @@ export const modelArchitectures: ModelArchitecture[] = [
           { name: 'router.gate', shape: '[64, 2,048]' },
           { name: 'experts.gate_up_proj · TP local', shape: '[64, 2 × {expertShard}, 2,048]', note: 'EP = 1；本图仅按 expert 中间维做 TP 切分' },
           { name: 'experts.down_proj · TP local', shape: '[64, 2,048, {expertShard}]' },
-          { name: 'shared_expert · TP local', shape: '[SwiGLU(2,048 → {expertShard} → 2,048)]' },
+          { name: 'shared_expert · TP local', shape: '[2 × {expertShard}, 2,048] + [2,048, {expertShard}]', note: '融合 gate/up 与 down 两个矩阵；等价于三路 SwiGLU 投影。' },
         ],
         knowledge: [
           { label: 'Sparse MoE', to: '/category/model-architecture' },
@@ -279,7 +279,7 @@ export const modelArchitectures: ModelArchitecture[] = [
           { name: 'router.gate', shape: '[256, 7,168]' },
           { name: 'experts.gate_up_proj · TP local', shape: '[256, 2 × {expertShard}, 7,168]', note: 'EP = 1；本图仅按 expert 中间维做 TP 切分' },
           { name: 'experts.down_proj · TP local', shape: '[256, 7,168, {expertShard}]' },
-          { name: 'shared_expert · TP local', shape: '[SwiGLU(7,168 → {expertShard} → 7,168)]' },
+          { name: 'shared_expert · TP local', shape: '[2 × {expertShard}, 7,168] + [7,168, {expertShard}]', note: '融合 gate/up 与 down 两个矩阵；等价于三路 SwiGLU 投影。' },
         ],
         knowledge: [
           { label: 'Sparse MoE', to: '/category/model-architecture' },

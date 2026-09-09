@@ -9,6 +9,8 @@ export interface ModelMetric {
 export interface ModelWeight {
   name: string
   shape: string
+  /** Number of equally shaped tensors represented by this row (not inferred from labels). */
+  multiplicity?: number
   note?: string
 }
 

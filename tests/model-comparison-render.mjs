@@ -54,7 +54,24 @@ try {
   const { default: Models } = await server.ssrLoadModule('/src/pages/Models.tsx')
   const { explorerHref, moduleIndex, nearestModuleLayer } = await server.ssrLoadModule('/src/lib/model-explorer.ts')
   const { formatShape } = await server.ssrLoadModule('/src/lib/model-lab.ts')
+  const { formatBytes } = await server.ssrLoadModule('/src/lib/model-lab.ts')
+  const { decoderWeightBudget } = await server.ssrLoadModule('/src/lib/model-weights.ts')
   const renderExplorer = (path) => renderToString(h(MemoryRouter, { initialEntries: [path] }, h(Routes, null, h(Route, { path: '/models/:modelId', element: h(Models) })))).replace(/<!--.*?-->/g, '')
+  for (const model of modelArchitectures) {
+    for (const bits of [4, 16, 32]) {
+      const layer = model.dimensions.layers - 1
+      const html = renderExplorer(`/models/${model.id}?layer=${layer}&tp=4&wbits=${bits}`)
+      const budget = decoderWeightBudget(model, layer, 4, bits)
+      assert.ok(html.includes(`Layer ${layer} · 每卡 ${formatBytes(budget.bytes)} · ${bits}-bit 理论载荷`))
+      assert.ok(html.includes(`全部 ${model.dimensions.layers} 层每卡 · 图示权重`))
+      assert.ok(html.includes(formatBytes(budget.allLayersBytes)))
+      assert.ok(html.includes('不是完整模型参数量或可部署显存'))
+      assert.ok(html.includes('href="/category/quantization"'))
+      assert.equal((html.match(/aria-label="定位权重模块：/g) ?? []).length, budget.rows.length)
+      assert.doesNotMatch(html, /未计算|尚未提供可计算|NaN|undefined/)
+    }
+  }
+  assert.match(renderExplorer('/models/gemma-2-9b?wbits=3'), /wbits 参数无效/)
   for (const id of ['mistral-7b-v0-1', 'mixtral-8x7b-v0-1']) {
     const route = h(Route, { path: '/models/:modelId', element: h(Models) })
     const html = renderToString(h(MemoryRouter, { initialEntries: [`/models/${id}`] }, h(Routes, null, route)))

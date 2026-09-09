@@ -84,6 +84,10 @@ npm run news:fetch
 
 ## 模型结构实验室
 
+“Decoder 权重账本”随模型、当前层和 TP 联动，展示图示张量的逐项 Shape 算式、模块占比、本层全局唯一元素数与每卡理论载荷，并按实际 Dense/MoE、GQA/MLA/DeltaNet 层型累计所有 Decoder 层。占比条可定位到结构图中的模块；4/8/16/32-bit 统一假定位宽独立于 KV 精度，通过图解链接的 `wbits` 参数保存。成对矩阵使用显式 `multiplicity`，不同 Shape 的并列权重分别求积相加；计算器不执行 Shape 字符串中的代码，未识别定义会停用合计。
+
+账本只统计已展示的 Decoder 张量，不是完整 checkpoint 参数统计或部署显存预测。它不包含 Embedding/共享 LM Head、视觉编码器、MTP、未展示的 buffer、激活、KV/循环状态、运行时工作区、量化元数据或打包对齐。MoE 在 EP=1 假设下统计所有常驻专家，不以 Top-k 激活参数替代；Norm、路由器和部分 KV 投影的 TP 复制按图解约定保留。低位宽只用于理论载荷对照，不宣称所有权重或硬件支持对应量化。参考 [Transformers 量化概念](https://huggingface.co/docs/transformers/main/en/quantization/concept_guide)。
+
 模型结构数据位于 `src/data/models.ts`、`src/data/qwen-models.ts`、`src/data/hybrid-models.ts`、`src/data/mistral-models.ts` 与 `src/data/gemma-models.ts`，页面组件位于 `src/pages/Models.tsx`。当前提供十个代表模型：
 
 - Llama 3.1 8B：Dense、GQA、SwiGLU；

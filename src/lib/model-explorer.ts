@@ -1,11 +1,13 @@
 import type { ArchitectureNode, ModelArchitecture, TensorParallelSize } from '../types/model.ts'
 import type { InferenceScenario } from './model-lab.ts'
 import { attentionKind, decoderNodes, layerCacheNode } from './model-lab.ts'
+import type { WeightBits } from './model-weights.ts'
 
 export interface ExplorerState {
   layer: number
   nodeId: string
   scenario: InferenceScenario
+  weightBits?: WeightBits
 }
 
 export function explorerNodes(model: ModelArchitecture, layer: number) {
@@ -32,19 +34,20 @@ export function parseExplorer(params: URLSearchParams, model: ModelArchitecture)
   const sequence = integer('s', Math.min(4096, model.execution.maxContext), (n) => n >= 1024 && n <= model.execution.maxContext, `1024–${model.execution.maxContext}`)
   const tp = integer('tp', model.supportedTp.includes(4) ? 4 : model.supportedTp[0], (n) => model.supportedTp.includes(n as TensorParallelSize), model.supportedTp.join('/')) as TensorParallelSize
   const cacheBytes = integer('bytes', 2, (n) => n === 1 || n === 2, '1/2') as 1 | 2
+  const weightBits = integer('wbits', 16, (n) => [4, 8, 16, 32].includes(n), '4/8/16/32') as WeightBits
   const phase = params.get('phase') === 'prefill' ? 'prefill' : 'decode'
   if (params.has('phase') && !['prefill', 'decode'].includes(params.get('phase')!)) notices.push('未知推理阶段，已恢复为 Decode。')
   const nodes = explorerNodes(model, layer)
   const requested = params.get('node')
   const nodeId = nodes.some((node) => node.id === requested) ? requested! : attentionKind(model, layer)
   if (requested !== null && requested !== nodeId) notices.push(`该模块不在 Layer ${layer} 中，已选择本层注意力。可用模块检索跳转到适用层。`)
-  const state: ExplorerState = { layer, nodeId, scenario: { phase, batch, sequence, tp, cacheBytes } }
+  const state: ExplorerState = { layer, nodeId, scenario: { phase, batch, sequence, tp, cacheBytes }, ...(weightBits !== 16 ? { weightBits } : {}) }
   return { state, notices, nodes }
 }
 
 export function explorerParams(state: ExplorerState) {
   const { phase, batch, sequence, tp, cacheBytes } = state.scenario
-  return new URLSearchParams({ layer: String(state.layer), node: state.nodeId, phase, b: String(batch), s: String(sequence), tp: String(tp), bytes: String(cacheBytes) })
+  return new URLSearchParams({ layer: String(state.layer), node: state.nodeId, phase, b: String(batch), s: String(sequence), tp: String(tp), bytes: String(cacheBytes), ...(state.weightBits && state.weightBits !== 16 ? { wbits: String(state.weightBits) } : {}) })
 }
 
 export function explorerHref(modelId: string, state: ExplorerState) {

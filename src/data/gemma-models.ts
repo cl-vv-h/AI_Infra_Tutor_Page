@@ -14,7 +14,7 @@ const attention = (sliding: boolean): ArchitectureNode => ({
     decode: sliding ? '当前 query 直接读取最近最多 4,096 个位置的 KV，包含当前 token；窗口饱和后复用旧槽。' : '当前 query 读取全部 S 个有效位置的 KV；本层缓存继续随 S 增长。',
   },
   tensors: [{ label: 'Q after RoPE', shape: '[N, {localHeads}, 256]' }, { label: 'K / V · each', shape: '[N, {localKvHeads}, 256]' }],
-  weights: [{ name: 'q_proj · TP local', shape: '[{localHeads} × 256, 3,584]' }, { name: 'k_proj / v_proj · each TP local', shape: '[{localKvHeads} × 256, 3,584]' }, { name: 'o_proj · TP local', shape: '[3,584, {localHeads} × 256]' }],
+  weights: [{ name: 'q_proj · TP local', shape: '[{localHeads} × 256, 3,584]' }, { name: 'k_proj / v_proj · each TP local', shape: '[{localKvHeads} × 256, 3,584]', multiplicity: 2 }, { name: 'o_proj · TP local', shape: '[3,584, {localHeads} × 256]' }],
   knowledge: [{ label: 'Attention 算法', to: '/category/decode' }, { label: 'KV Cache', to: '/category/kv-cache-memory' }],
 })
 
@@ -35,7 +35,7 @@ export const gemmaArchitectures: ModelArchitecture[] = [{
     attention(true), attention(false),
     norm('attention-post-norm', 'post_attention_layernorm.weight', 'Post-Attention RMSNorm', '归一化 Attention 输出，再与原始子层输入相加；不是残差之后的 FFN 前归一化。', 'attention'),
     norm('ffn-norm', 'pre_feedforward_layernorm.weight', 'Pre-FFN RMSNorm', '第一条残差相加后，为 FFN 输入做独立归一化。', 'ffn'),
-    { id: 'ffn', eyebrow: 'DENSE FFN', title: 'GeGLU · GELU-tanh', subtitle: '3,584 → 14,336 → 3,584', description: 'GELU-tanh(gate_proj(x)) 与 up_proj(x) 逐元素相乘，再由 down_proj 返回残差宽度。GELU 使用 tanh 近似；不要替换成 SiLU / SwiGLU。', inputShape: shape, outputShape: shape, tone: 'ffn', weights: [{ name: 'gate_proj / up_proj · each TP local', shape: '[{intermediateShard}, 3,584]' }, { name: 'down_proj · TP local', shape: '[3,584, {intermediateShard}]' }], knowledge },
+    { id: 'ffn', eyebrow: 'DENSE FFN', title: 'GeGLU · GELU-tanh', subtitle: '3,584 → 14,336 → 3,584', description: 'GELU-tanh(gate_proj(x)) 与 up_proj(x) 逐元素相乘，再由 down_proj 返回残差宽度。GELU 使用 tanh 近似；不要替换成 SiLU / SwiGLU。', inputShape: shape, outputShape: shape, tone: 'ffn', weights: [{ name: 'gate_proj / up_proj · each TP local', shape: '[{intermediateShard}, 3,584]', multiplicity: 2 }, { name: 'down_proj · TP local', shape: '[3,584, {intermediateShard}]' }], knowledge },
     norm('ffn-post-norm', 'post_feedforward_layernorm.weight', 'Post-FFN RMSNorm', '归一化 FFN 输出，再执行第二条残差相加。', 'ffn'),
     { id: 'window-cache', eyebrow: 'STATE', title: 'Local Window KV Cache', subtitle: '仅偶数层 · min(S, 4,096)', description: '局部注意力层只需保留窗口内 KV。这里显示逻辑有效长度，不含分页、静态预分配或临时 Prefill 激活。', inputShape: '[N, 2, {localKvHeads}, 256]', outputShape: '[{batch}, {windowSequence}, 2, {localKvHeads}, 256]', tone: 'memory', weights: [], knowledge: [{ label: 'KV Cache 与显存', to: '/category/kv-cache-memory' }] },
     { id: 'kv-cache', eyebrow: 'STATE', title: 'Global KV Cache', subtitle: '仅奇数层 · 保留 S', description: '完整注意力层保存所有有效位置。整模型 KV 是完整层与滑窗层之和；不能让全部 42 层都在 4K 后停止增长。', inputShape: '[N, 2, {localKvHeads}, 256]', outputShape: '[{batch}, {sequence}, 2, {localKvHeads}, 256]', tone: 'memory', weights: [], knowledge: [{ label: 'KV Cache 与显存', to: '/category/kv-cache-memory' }] },

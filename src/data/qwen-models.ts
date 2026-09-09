@@ -63,8 +63,8 @@ function qwenModel(moe: boolean): ModelArchitecture {
         inputShape: shape, outputShape: shape,
         weights: [
           { name: 'q_proj · TP local', shape: `[{localHeads} × 128, ${hidden}]` },
-          { name: 'k_proj / v_proj · each TP local', shape: `[{localKvHeads} × 128, ${hidden}]` },
-          { name: 'q_norm / k_norm · each', shape: '[128]', note: '每个 head 共享的缩放向量；各 TP rank 复制' },
+          { name: 'k_proj / v_proj · each TP local', shape: `[{localKvHeads} × 128, ${hidden}]`, multiplicity: 2 },
+          { name: 'q_norm / k_norm · each', shape: '[128]', multiplicity: 2, note: '每个 head 共享的缩放向量；各 TP rank 复制' },
           { name: 'o_proj · TP local', shape: `[${hidden}, {localHeads} × 128]` },
         ],
         knowledge: [{ label: 'GQA 与 RoPE', to: '/category/model-architecture' }, { label: 'TP 分片', to: '/category/parallel-strategy' }],
