@@ -10,6 +10,8 @@ import NewsStudyGuide from '@/components/NewsStudyGuide'
 import NewsSourceStatus from '@/components/NewsSourceStatus'
 import NewsReleaseDesk from '@/components/NewsReleaseDesk'
 import NewsLearningTrail from '@/components/NewsLearningTrail'
+import ReadingListImport from '@/components/ReadingListImport'
+import { commitReadingImport, ReadingImportError } from '@/lib/reading-list-transfer'
 import { newsTopics, topicsForItem } from '@/lib/news-topics.mjs'
 import { filterNews, inferSourceType, legacyReadingListKey, mergeSavedItems, newsParams, parseNewsParams, readingListKey, readSavedItems } from '@/lib/news-reader'
 import type { NewsReaderState, NewsView as View } from '@/lib/news-reader'
@@ -60,7 +62,8 @@ function NewsCard({ item, saved, disabled, onSave, onTopic, onSource }: { item: 
       <div className="min-w-0"><button type="button" aria-label={`只看来源：${item.source}`} onClick={() => onSource(item.source)} className="text-left text-sm font-medium text-cyan-100 hover:underline">{item.source}</button><p className="mt-1 text-xs text-white/55">{sourceLabels[inferSourceType(item)]} · <time dateTime={item.publishedAt}>{formatDate(item.publishedAt)}</time></p></div>
       <button type="button" disabled={disabled} aria-pressed={saved} aria-label={`${saved ? '取消收藏' : '收藏'}：${item.title}`} onClick={() => onSave(item)} className={`grid h-10 w-10 shrink-0 place-items-center rounded-full border transition disabled:opacity-40 ${saved ? 'border-lime-200/50 bg-lime-200/10 text-lime-100' : 'border-white/15 text-white/60 hover:border-white/40 hover:text-white'}`}>{saved ? <Check className="h-4 w-4" /> : <Bookmark className="h-4 w-4" />}</button>
     </div>
-    {item.publishedAtKind === 'github-release' && item.releaseStage && <div className="mt-4 flex flex-wrap items-center gap-2 text-sm"><span className={`rounded-full border px-2.5 py-1 ${item.releaseStage === 'stable' ? 'border-lime-200/25 text-lime-100' : 'border-amber-200/25 text-amber-100'}`}>{item.releaseStage === 'stable' ? '正式版' : '预发布'}</span><span className="text-white/50">官方发布时间 · {formatDate(item.publishedAt, true)}（本地时区）</span></div>}
+    {item.origin === 'imported' && <p className="mt-4 text-sm text-amber-100">本机导入 · 来源及日期未核验</p>}
+    {item.origin !== 'imported' && item.publishedAtKind === 'github-release' && item.releaseStage && <div className="mt-4 flex flex-wrap items-center gap-2 text-sm"><span className={`rounded-full border px-2.5 py-1 ${item.releaseStage === 'stable' ? 'border-lime-200/25 text-lime-100' : 'border-amber-200/25 text-amber-100'}`}>{item.releaseStage === 'stable' ? '正式版' : '预发布'}</span><span className="text-white/50">官方发布时间 · {formatDate(item.publishedAt, true)}（本地时区）</span></div>}
     <h3 className="mt-5 text-xl font-semibold leading-7 text-white"><a href={item.url} target="_blank" rel="noreferrer" className="transition hover:text-cyan-100">{item.title}</a></h3>
     <p className={`mt-3 text-base leading-7 text-slate-300 ${expanded ? '' : 'line-clamp-3'}`}>{summary}</p>
     {summary.length > 130 && <button type="button" aria-expanded={expanded} onClick={() => setExpanded((value) => !value)} className="mt-2 self-start text-sm text-cyan-200/80 hover:text-cyan-100">{expanded ? '收起摘要' : '展开摘要'}</button>}
@@ -145,6 +148,12 @@ export default function News() {
     const anchor = document.createElement('a'); anchor.href = url; anchor.download = 'ai-infra-reading-list.json'; anchor.click()
     setTimeout(() => URL.revokeObjectURL(url), 1000)
   }
+  function importSaved(items: NewsItem[]) {
+    if (migrating || initial.error) throw new ReadingImportError('原收藏正在恢复或读取异常；未导入。')
+    const plan = commitReadingImport(savedItems, items, pendingLegacyIds, window.localStorage)
+    setSavedItems(plan.items)
+    setStorageMessage(`已合并 ${plan.additions.length} 条到本机阅读清单，原收藏未覆盖。当前筛选仍保留；如未看到新文章，可清除筛选。`)
+  }
 
   const currentArchive = archiveData?.date === archiveDate ? archiveData.data : null
   const items = view === 'daily' ? daily.items : view === 'library' ? library.items : view === 'releases' ? releases.items : view === 'saved' ? savedItems : currentArchive?.items ?? emptyItems
@@ -168,6 +177,7 @@ export default function News() {
 
       <section aria-label="新闻筛选" className="mt-5 space-y-4">
         <div className="flex flex-wrap items-center justify-between gap-3"><p className="max-w-3xl text-sm leading-6 text-white/65">{viewMeta[view].description}</p>{view === 'archive' && <label className="flex items-center gap-2 text-sm text-white/70">采集日期<select aria-label="选择归档日期" value={archiveDate} onChange={(event) => update({ archiveDate: event.target.value })} className={inputClass}>{archiveDates.map((date) => <option key={date} value={date}>{date}</option>)}</select></label>}{view === 'saved' && <button type="button" disabled={!savedItems.length || migrating} onClick={exportSaved} className={`${inputClass} disabled:opacity-40`}>导出阅读清单</button>}</div>
+        {view === 'saved' && <ReadingListImport current={savedItems} disabled={migrating || !!initial.error} onConfirm={importSaved} />}
         {view === 'releases' && <NewsReleaseDesk data={releases} source={source} stage={releaseStage ?? 'all'} onSource={(source) => update({ source })} onStage={(releaseStage) => update({ releaseStage })} />}
         <div className="flex flex-wrap items-center gap-2 text-sm"><span className="mr-1 text-white/60">专题入口</span>{newsTopics.filter((item) => ['inference', 'kernels', 'models'].includes(item.id)).map((item) => <button key={item.id} type="button" onClick={() => update({ ...clearFilters, view: 'library', topic: item.id, sortBy: 'latest' })} className="rounded-lg border border-cyan-200/15 px-3 py-2 text-cyan-100 hover:bg-cyan-200/5">{item.label}<ArrowUpRight className="ml-1 inline h-3.5 w-3.5" /></button>)}</div>
         <div className="flex flex-wrap gap-2">{(Object.keys(categoryLabels) as Array<'all' | NewsCategory>).map((key) => <button key={key} type="button" aria-pressed={category === key} onClick={() => setCategory(key)} className={`rounded-full border px-4 py-2 text-sm ${category === key ? 'border-white/30 bg-white/10 text-white' : 'border-white/10 text-white/60 hover:text-white'}`}>{categoryLabels[key]} <span className="ml-1 font-mono text-xs text-white/50">{key === 'all' ? items.length : items.filter((item) => item.category === key).length}</span></button>)}</div>

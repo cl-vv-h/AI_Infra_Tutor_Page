@@ -14,6 +14,8 @@ try {
   const { default: NewsLearningTrail } = await server.ssrLoadModule('/src/components/NewsLearningTrail.tsx')
   const { learningForNews } = await server.ssrLoadModule('/src/lib/news-learning.ts')
   const { newsLearningConcepts } = await server.ssrLoadModule('/src/data/news-learning.ts')
+  const { default: ReadingListImport, ReadingImportPreview } = await server.ssrLoadModule('/src/components/ReadingListImport.tsx')
+  const { previewReadingImport } = await server.ssrLoadModule('/src/lib/reading-list-transfer.ts')
   const { filterNews, parseNewsParams } = await server.ssrLoadModule('/src/lib/news-reader.ts')
   const { newsTopics, topicsForItem } = await server.ssrLoadModule('/src/lib/news-topics.mjs')
   const { newsStudyGuides } = await server.ssrLoadModule('/src/data/news-study-guides.ts')
@@ -63,6 +65,37 @@ try {
     assert.equal((html.match(/<article /g) ?? []).length, library.items.filter((item) => item.source === source).length, source)
   }
   const saved = render('?view=saved')
+  assert.match(saved, /导入阅读清单/)
+  assert.match(saved, /type="file"/)
+  assert.doesNotMatch(home, /选择阅读清单 JSON 文件/)
+  const blockedImport = renderToString(h(ReadingListImport, { current: [], disabled: true, onConfirm() { assert.fail('No write during render') } }))
+  assert.match(blockedImport, /disabled=""/)
+  assert.match(blockedImport, /暂不允许导入/)
+  const imported = previewReadingImport(JSON.stringify({ version: 2, items: [{ ...releases.items[0], title: '<script>alert(1)</script> imported' }] }))
+  const preview = (candidate, current = [], disabled = false) => renderToString(h(ReadingImportPreview, { candidate, current, disabled, onConfirm() { assert.fail('No write during preview') } })).replace(/<!--.*?-->/g, '')
+  const importPreview = preview(imported)
+  assert.match(importPreview, /待新增 1 条 · 重复 0 条 · 已有 0 条保留/)
+  assert.match(importPreview, /确认合并 1 条/)
+  assert.match(importPreview, /&lt;script&gt;/)
+  assert.doesNotMatch(importPreview, /<script>|<a |<iframe|<img /)
+  assert.match(preview(imported, [], true), /disabled=""/)
+  const duplicatePreview = preview(imported, imported.items)
+  assert.match(duplicatePreview, /全部记录已存在，无需写入/)
+  assert.doesNotMatch(duplicatePreview, /确认合并/)
+  const seven = previewReadingImport(JSON.stringify({ version: 2, items: Array.from({ length: 7 }, (_, i) => ({ ...releases.items[0], id: `import-${i}`, url: `https://example.org/${i}` })) }))
+  assert.equal((preview(seven).match(/<li /g) ?? []).length, 5)
+  assert.match(preview(seven), /另有 2 条/)
+  const previousWindow = globalThis.window
+  try {
+    globalThis.window = { localStorage: { getItem() { return JSON.stringify({ version: 2, items: imported.items }) } } }
+    const importedPage = render('?view=saved')
+    assert.match(importedPage, /本机导入 · 来源及日期未核验/)
+    assert.doesNotMatch(importedPage, /官方发布时间 ·|<script>/)
+    assert.match(importedPage, /&lt;script&gt;/)
+  } finally {
+    if (previousWindow === undefined) delete globalThis.window
+    else globalThis.window = previousWindow
+  }
   for (const source of ['', ...releases.sources.map((entry) => entry.name)]) {
     for (const stage of ['all', 'stable', 'prerelease']) {
       const html = render(`?${new URLSearchParams({ view: 'releases', source, stage })}`)

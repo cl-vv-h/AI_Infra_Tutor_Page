@@ -16,6 +16,7 @@ export interface NewsItem {
   topics?: string[]
   releaseStage?: 'stable' | 'prerelease'
   publishedAtKind?: 'github-release'
+  origin?: 'imported'
 }
 
 export interface NewsReleaseData {
