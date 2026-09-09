@@ -125,7 +125,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
     <header className="border-b border-white/[0.08] bg-[#070b10]/60">
       <div className="mx-auto flex max-w-[1600px] flex-wrap items-end justify-between gap-4 px-5 py-7 sm:px-8 lg:px-10">
         <div><div className="flex items-center gap-2 font-mono text-xs tracking-[0.2em] text-cyan-200/70"><Braces className="h-4 w-4" /> MODEL ARCHITECTURE LAB</div>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white">从一个 token，看清一层模型。</h1></div>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white">从一个 token，看清一层模型。</h1><Link to="/models" className="mt-3 inline-block text-sm text-cyan-100 hover:underline">← 浏览全部模型图解</Link></div>
         <div className="flex flex-wrap items-center gap-4"><p className="flex items-center gap-2 text-sm text-white/60"><MousePointer2 className="h-4 w-4 text-cyan-200" /> 悬浮预览 · 点击查看 · 逐层探索</p><Link to={comparisonHref(model.id, scenario)} className="inline-flex items-center gap-2 rounded-full border border-cyan-200/25 bg-cyan-200/5 px-4 py-2.5 text-sm text-cyan-100 transition hover:bg-cyan-200/10"><GitCompareArrows className="h-4 w-4" />对比当前模型</Link></div>
       </div>
     </header>

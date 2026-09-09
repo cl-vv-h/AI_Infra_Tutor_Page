@@ -14,7 +14,7 @@ function staticDependencies(key, seen = new Set()) {
   return seen
 }
 
-for (const key of ['index.html', 'src/pages/Home.tsx', 'src/pages/Learn.tsx', 'src/pages/Category.tsx', 'src/pages/Models.tsx', 'src/pages/ModelCompare.tsx', 'src/pages/Article.tsx']) {
+for (const key of ['index.html', 'src/pages/Home.tsx', 'src/pages/Learn.tsx', 'src/pages/Category.tsx', 'src/pages/ModelCatalog.tsx', 'src/pages/Models.tsx', 'src/pages/ModelCompare.tsx', 'src/pages/Article.tsx']) {
   assert.ok(manifest[key], `Missing route in build: ${key}`)
   assert.equal([...staticDependencies(key)].some(isBody), false, `Route eagerly imports course bodies: ${key}`)
 }
