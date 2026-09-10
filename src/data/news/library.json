@@ -1,7 +1,110 @@
 {
-  "generatedAt": "2026-09-09T14:29:37.019Z",
+  "generatedAt": "2026-09-10T05:03:51.267Z",
   "lookbackDays": 90,
   "items": [
+    {
+      "id": "818f66f4d9d79d87",
+      "category": "ai",
+      "title": "Following the Bottleneck: Optimizing MiniMax M3 on AMD Instinct MI355X",
+      "summary": "A performance model for LLM serving: inspect local shapes, remove repeated work, verify data movement and dispatch, then follow the queue.",
+      "url": "https://vllm.ai/blog/2026-09-10-minimax-m3-mi355x",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 33.7,
+      "topics": [
+        "inference",
+        "hardware"
+      ]
+    },
+    {
+      "id": "1b3bbb2c1c3b9efc",
+      "category": "technology",
+      "title": "When to Use Encode-Prefill-Decode Disaggregation to Accelerate Multimodal Model Serving",
+      "summary": "Encode-prefill-decode (EPD) disaggregation is an inference optimization technique for multimodal models that separates the vision encoder stage from the prefill...",
+      "url": "https://developer.nvidia.com/blog/when-to-use-encode-prefill-decode-disaggregation-to-accelerate-multimodal-model-serving/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-09T20:31:04.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 32.9,
+      "topics": [
+        "inference",
+        "models"
+      ]
+    },
+    {
+      "id": "3b85ce034d504eb3",
+      "category": "technology",
+      "title": "CUDA Toolkit 13.4 Adds Windows on Arm Support and Greater Control over Shared GPUs",
+      "summary": "Every NVIDIA CUDA Toolkit release adds functionality and performance improvements that help developers get more from NVIDIA GPUs and the broader NVIDIA software...",
+      "url": "https://developer.nvidia.com/blog/cuda-toolkit-13-4-adds-windows-on-arm-support-and-greater-control-over-shared-gpus/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-09T20:24:12.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 32.8,
+      "topics": [
+        "kernels"
+      ]
+    },
+    {
+      "id": "d025eaabc53a3cc1",
+      "category": "ai",
+      "title": "Epoch: Compiling Diffusion Blocks for Sparse MoE Serving",
+      "summary": "Diffusion language models generate text by refining a fixed-size block of token positions through many forward passes, a loop that does not match the per-forward execution unit used by most LLM serving systems. A dense MoE runtime binds all work to the refinement-iteration clock: it rebuilds similar routing structure on every forward, recomputes expert outputs for positions whose logits are already dead, and sends those positions through dense expert-parallel collectives. This paper presents \\sys{}, a serving syste",
+      "url": "https://arxiv.org/abs/2609.09748v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-09T05:47:57.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 27.2,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "4916cb5be7bd6d1f",
+      "category": "technology",
+      "title": "Iteratively Tuning hipBLASLt TensileLite Kernels: A Smaller Search, a Faster Kernel",
+      "summary": "A TensileLite run can only return a kernel its configuration’s search space can express. That sounds like a technicality, but it is the one fact that decides whether a tuning campaign helps or hurts. The configuration is not a hint handed to an optimizer that is free to look elsewhere; it is the complete enumeration of what the run is allowed to consider, and anything outside it stays unreachable no matter how long the run is given. In a previous blog, Reverse-Engineering hipBLASLt TensileLite Kernels, we used that",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/iteratively-tuning-hipblaslt/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-09T00:00:00.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 23.7,
+      "topics": [
+        "inference",
+        "kernels"
+      ]
+    },
+    {
+      "id": "34f24084eda3c4fc",
+      "category": "ai",
+      "title": "Smart Adaptive Computing Across the Continuum: LLMs in IoT-Edge-Cloud Resource Management",
+      "summary": "Managing resources across IoT, edge, and cloud layers calls for continuous, context-aware decisions under constraints that rarely stay fixed. Deep reinforcement learning (DRL) handles this class of problems well, and large language models (LLMs) are increasingly used to augment DRL pipelines, yet the architectural relationship between the two is seldom made explicit. We build on Wang et al.'s taxonomy of Continuum Orchestration Systems employing DRL techniques and extend it with two further dimensions. The AI Augme",
+      "url": "https://arxiv.org/abs/2609.09348v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-08T18:37:13.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 24.4,
+      "topics": [
+        "models",
+        "training"
+      ]
+    },
     {
       "id": "b7cb3c7790582368",
       "category": "ai",
@@ -12,8 +115,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T17:43:32.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 27.8,
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 24.2,
       "topics": [
         "hardware"
       ]
@@ -28,8 +131,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T17:38:03.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 27.8,
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 24.1,
       "topics": [
         "kernels",
         "hardware",
@@ -46,8 +149,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T13:31:47.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 26.8,
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 23.1,
       "topics": [
         "hardware"
       ]
@@ -62,8 +165,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 24.4,
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 20.7,
       "topics": [
         "kernels",
         "hardware"
@@ -79,8 +182,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T08:51:19.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 25.6,
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 21.9,
       "topics": [
         "inference",
         "hardware",
@@ -97,8 +200,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-08T06:28:32.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 25,
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 21.4,
       "topics": [
         "inference",
         "hardware",
@@ -116,8 +219,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 25.4,
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 23,
       "topics": [
         "inference",
         "hardware",
@@ -134,8 +237,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 25.4,
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 23,
       "topics": [
         "inference",
         "hardware",
@@ -152,8 +255,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 25.4,
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 23,
       "topics": [
         "inference",
         "hardware",
@@ -170,8 +273,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 21.4,
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 19,
       "topics": [
         "inference",
         "hardware"
@@ -203,7 +306,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-07T13:05:37.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 23,
       "topics": [
         "inference",
@@ -220,7 +323,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-07T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 19,
       "topics": [
         "inference",
@@ -237,7 +340,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T21:03:02.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 22,
       "topics": [
         "security"
@@ -253,10 +356,58 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T16:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 19,
       "topics": [
         "inference"
+      ]
+    },
+    {
+      "id": "cbb0ac4f8ff635f7",
+      "category": "ai",
+      "title": "NeoMME: an efficient Multimodal-native and Multilingual Encoder",
+      "summary": "",
+      "url": "https://huggingface.co/blog/Hcompany/neomme",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-03T13:13:48.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 19,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "7cd66c809e7deda5",
+      "category": "ai",
+      "title": "Fine-tuning a 350M Model for Better Structured Outputs in 100 GRPO Steps",
+      "summary": "",
+      "url": "https://huggingface.co/blog/grpo-with-trl-ifstruct",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 23,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "ec3c7981fec8e4b3",
+      "category": "ai",
+      "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+      "summary": "",
+      "url": "https://huggingface.co/blog/train-to-paint-with-code",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-03T00:00:00.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 23,
+      "topics": [
+        "training"
       ]
     },
     {
@@ -269,7 +420,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 23,
       "topics": [
         "hardware",
@@ -287,7 +438,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-02T18:41:48.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 23,
       "topics": [
         "kernels"
@@ -303,7 +454,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-02T17:15:57.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 23,
       "topics": [
         "kernels",
@@ -321,7 +472,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-02T16:04:19.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 23,
       "topics": [
         "inference"
@@ -337,7 +488,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-01T17:00:04.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 23,
       "topics": [
         "security"
@@ -353,7 +504,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-01T15:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 19,
       "topics": [
         "inference"
@@ -369,7 +520,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-01T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 23,
       "topics": [
         "inference"
@@ -385,26 +536,26 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-01T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 23,
       "topics": [
         "inference"
       ]
     },
     {
-      "id": "c784ace4b28be6c9",
-      "category": "technology",
-      "title": "Deploy an Open Model from Checkpoint to Inference in Two Commands with NVIDIA TensorRT Model Connect",
-      "summary": "Open AI models are evolving faster than ever, but bringing them into native applications can still require model-specific conversion, preprocessing,...",
-      "url": "https://developer.nvidia.com/blog/deploy-an-open-model-from-checkpoint-to-inference-in-two-commands-with-nvidia-tensorrt-model-connect/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
+      "id": "d347273d894b606d",
+      "category": "ai",
+      "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
+      "summary": "",
+      "url": "https://huggingface.co/blog/webgpu-kernels",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
       "sourceType": "engineering",
-      "publishedAt": "2026-08-28T17:06:28.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 23,
+      "publishedAt": "2026-09-01T00:00:00.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 19,
       "topics": [
-        "inference"
+        "kernels"
       ]
     },
     {
@@ -417,7 +568,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-28T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -433,7 +584,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-28T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 19,
       "topics": [
         "inference",
@@ -451,7 +602,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-27T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 23,
       "topics": [
         "kernels",
@@ -459,37 +610,36 @@
       ]
     },
     {
-      "id": "80f8fafdcc1b0b2c",
-      "category": "technology",
-      "title": "Restore LLM Inference Capacity in Seconds with Shadow Engine Recovery in NVIDIA Dynamo",
-      "summary": "When an LLM engine process fails, the standard recovery path involves a cold restart. This requires loading weights into HBM from storage, compiling kernels,...",
-      "url": "https://developer.nvidia.com/blog/restore-llm-inference-capacity-in-seconds-with-shadow-engine-recovery-in-nvidia-dynamo/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
+      "id": "ca727eefb28ad3de",
+      "category": "ai",
+      "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+      "summary": "",
+      "url": "https://huggingface.co/blog/train-multi-vector-encoder",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
       "sourceType": "engineering",
-      "publishedAt": "2026-08-25T20:57:54.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 19,
+      "publishedAt": "2026-08-26T00:00:00.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 23,
       "topics": [
-        "inference",
-        "kernels",
-        "hardware"
+        "models",
+        "training"
       ]
     },
     {
-      "id": "52fc0429abc504a0",
-      "category": "technology",
-      "title": "Enabling Physical AI Agents with Lemonade",
-      "summary": "In this blog we will demonstrate how to run local agents enabled by VLMs (Vision-Language Models) hosted by the Lemonade framework in the domain of robot control. These models allowed us to run an interactive robotic arm manipulation simulation entirely locally, showing the effectiveness of Lemonade for Physical AI.",
-      "url": "https://rocm.blogs.amd.com/ecosystems-and-partners/rai-lemonade-agents/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
+      "id": "62ac4ba76bc98b2c",
+      "category": "ai",
+      "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
+      "summary": "",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
       "sourceType": "engineering",
-      "publishedAt": "2026-08-25T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "publishedAt": "2026-08-25T11:39:24.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 23,
       "topics": [
-        "models"
+        "training"
       ]
     },
     {
@@ -502,7 +652,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-23T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 19,
       "topics": [
         "inference"
@@ -518,7 +668,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-22T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 23,
       "topics": [
         "inference"
@@ -534,10 +684,42 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-21T23:19:57.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 18,
       "topics": [
         "training"
+      ]
+    },
+    {
+      "id": "81d41bf71b597911",
+      "category": "ai",
+      "title": "How mobility gives language models a deeper understanding of place",
+      "summary": "Algorithms & Theory",
+      "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-08-21T10:54:00.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 23,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "c36052d5dad5b60d",
+      "category": "ai",
+      "title": "How Hugging Face Inference Endpoints, Jobs, and Buckets Power Search on Papers with Code",
+      "summary": "",
+      "url": "https://huggingface.co/blog/pwc-search",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-08-21T00:00:00.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 19,
+      "topics": [
+        "inference"
       ]
     },
     {
@@ -550,7 +732,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-21T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 19,
       "topics": [
         "inference",
@@ -558,19 +740,19 @@
       ]
     },
     {
-      "id": "37f4488a006f7f6a",
+      "id": "bb177fd36edcf9c9",
       "category": "ai",
-      "title": "VeRL-Omni v0.2.0: Faster Diffusion RL and Stable Omni Training",
-      "summary": "A release focused on higher-throughput diffusion rollout, reusable omni adapters, and broader recipe coverage.",
-      "url": "https://vllm.ai/blog/2026-08-20-verl-omni-v0-2-0",
-      "source": "vLLM Blog",
+      "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
+      "summary": "",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+      "source": "Hugging Face Blog",
       "sourceCountry": "International",
       "sourceType": "engineering",
-      "publishedAt": "2026-08-20T00:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
-      "score": 23,
+      "publishedAt": "2026-08-20T16:52:57.000Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
+      "score": 19,
       "topics": [
-        "training"
+        "inference"
       ]
     },
     {
@@ -583,7 +765,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-14T13:12:12.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 22,
       "topics": [
         "security"
@@ -599,7 +781,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-10T13:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 22,
       "topics": [
         "inference",
@@ -616,7 +798,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-07-29T16:00:00.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 22,
       "topics": [
         "security"
@@ -632,7 +814,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-07-17T15:00:11.000Z",
-      "fetchedAt": "2026-09-09T14:29:37.019Z",
+      "fetchedAt": "2026-09-10T05:03:51.267Z",
       "score": 22,
       "topics": [
         "security"
