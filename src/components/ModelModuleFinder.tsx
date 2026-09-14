@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { ArrowDownRight, Search } from 'lucide-react'
 import type { ArchitectureNode, ModelArchitecture } from '@/types/model'
-import { findModules, moduleIndex, nearestModuleLayer } from '@/lib/model-explorer'
+import { explorerNodes, findModules, moduleIndex, nearestModuleLayer } from '@/lib/model-explorer'
 
 export default function ModelModuleFinder({ model, layer, selectedId, onSelect }: { model: ModelArchitecture; layer: number; selectedId: string; onSelect: (node: ArchitectureNode, layer: number) => void }) {
   const [query, setQuery] = useState('')
@@ -13,10 +13,11 @@ export default function ModelModuleFinder({ model, layer, selectedId, onSelect }
     <p aria-live="polite" className="mt-3 text-sm text-white/60">{results.length} 个模块。若当前层没有该模块，会定位到最近的适用层。</p>
     <ul className="mt-3 grid gap-2 sm:grid-cols-2 xl:grid-cols-3">{results.map((target) => {
       const destination = nearestModuleLayer(target, layer)
-      return <li key={target.node.id}><button type="button" aria-pressed={selectedId === target.node.id && destination === layer} onClick={() => onSelect(target.node, destination)} className="h-full w-full rounded-xl border border-white/10 p-4 text-left transition hover:border-cyan-200/40 focus-visible:outline-cyan-200">
+      const node = explorerNodes(model, destination).find(item => item.id === target.node.id)!
+      return <li key={target.node.id}><button type="button" aria-pressed={selectedId === target.node.id && destination === layer} onClick={() => onSelect(node, destination)} className="h-full w-full rounded-xl border border-white/10 p-4 text-left transition hover:border-cyan-200/40 focus-visible:outline-cyan-200">
         <span className="block text-base font-medium text-white">{target.node.title}<ArrowDownRight className="ml-2 inline h-4 w-4 text-cyan-200" /></span>
         <span className="mt-2 block text-sm text-cyan-100/80">{target.global ? '全局模块' : `${target.layers.length} 层适用`} · {destination === layer ? `当前 Layer ${layer}` : `跳转 Layer ${destination}`}</span>
-        <span className="mt-2 block break-words text-xs leading-5 text-white/55">{target.node.weights.map((weight) => weight.name).join(' · ') || target.node.subtitle}</span>
+        <span className="mt-2 block break-words text-xs leading-5 text-white/55">{node.weights.map((weight) => weight.name).join(' · ') || node.subtitle}</span>
       </button></li>
     })}</ul>
     {!results.length && <p className="mt-3 rounded-xl border border-dashed border-white/15 p-4 text-sm text-white/60">没有匹配的模块。试试更短的名称，或清空搜索查看全部模块。</p>}

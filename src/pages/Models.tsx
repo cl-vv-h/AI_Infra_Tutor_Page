@@ -15,6 +15,8 @@ import ModelWeightBudget from '@/components/ModelWeightBudget'
 import CacheCapacityPlanner from '@/components/CacheCapacityPlanner'
 import ModelWorkspaceTabs from '@/components/ModelWorkspaceTabs'
 import ModelLearningGuide from '@/components/ModelLearningGuide'
+import AttentionResidualWorkbench from '@/components/AttentionResidualWorkbench'
+import KimiLatentMoeFlow from '@/components/KimiLatentMoeFlow'
 
 function Inspector({ node, model, scenario, preview = false }: { node: ArchitectureNode; model: ModelArchitecture; scenario: InferenceScenario; preview?: boolean }) {
   return <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#0c131c]">
@@ -216,6 +218,19 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
                 </div>
               </section>)}
               <p className="text-sm leading-6 text-white/65">四路是 residual stream 轴，不是 TP rank，也不是四个 Attention heads。每个子层只计算一次；Attention 的 Post 输出是 FFN 的 Pre 输入。</p>
+            </div> : model.execution.residualLayout === 'attn-res' ? <div role="group" aria-label="Attention Residual 跨层通路">
+              <AttentionResidualWorkbench model={model} layer={effectiveLayer} scenario={scenario} onLayer={changeLayer} />
+              {groups.map((group, branch) => <section key={branch} aria-label={`AttnRes ${branch === 0 ? 'Attention' : 'FFN'} 子层`} className="mt-5 rounded-2xl border border-amber-100/20 p-3">
+                <h3 className="mb-4 text-sm text-amber-100">{branch === 0 ? 'Attention' : isDense ? 'Dense FFN' : 'LatentMoE'}：深度聚合 → Norm → 子层计算 → 块内累加</h3>
+                {group.filter(node => node.id !== 'attn-res-write').map((node, i, main) => <div key={node.id}>
+                  {nodeButton(node)}
+                  {node.id === 'attn-res-read' && <aside className="my-4 rounded-xl border border-dashed border-amber-200/35 bg-amber-200/5 p-3"><p className="mb-3 text-xs leading-6 text-amber-100">状态支路：从原始 prefix 写 bank，不把 bank 当成 Norm 的输入。</p>{nodeButton(group.find(n => n.id === 'attn-res-write')!)}<p className="mt-3 text-xs leading-6 text-white/65">主路继续使用上方 READ 的聚合结果 ↓</p></aside>}
+                  {node.id === attentionKind(model, effectiveLayer) && cacheButton()}
+                  {node.id === 'moe' && model.id === 'kimi-k3' && <KimiLatentMoeFlow />}
+                  {i < main.length - 1 && flowLine}
+                </div>)}
+                <p className="mt-4 text-xs leading-6 text-white/65">原始 prefix 单独保留用于累加；加权后的输入不替换 prefix，已冻结的 bank 不被覆写。</p>
+              </section>)}
             </div> : groups.map((group, groupIndex) => <div key={groupIndex} className="model-residual-group">
               <div className="model-residual-wire" aria-hidden="true"><span>+</span></div>
               {group.map((node, index) => <div key={node.id}>

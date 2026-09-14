@@ -10,6 +10,8 @@ export interface KdaMlaCache {
   convBytes: number
   stateBytes: number
   latentWidth: number
+  /** Shared content-key channels retained even when no rotary transform is applied. */
+  sharedKeyWidth?: number
   indexWidth: number
   indexPool: number
   indexTopk: number
@@ -71,7 +73,8 @@ export interface ModelArchitecture {
     denseLayers: number
     hashLayers?: number
     normKind?: 'rmsnorm' | 'layernorm'
-    residualLayout?: 'parallel' | 'mhc'
+    residualLayout?: 'parallel' | 'mhc' | 'attn-res'
+    residualBlockSize?: number
     residualStreams?: number
     outputGroups?: number
     normLayout?: 'pre-post' | 'post-branch-qk'

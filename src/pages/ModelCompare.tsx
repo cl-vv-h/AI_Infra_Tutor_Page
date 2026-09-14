@@ -23,7 +23,7 @@ const presets = [
 ]
 
 function cacheLabel(model: ModelArchitecture) {
-  if (model.execution.cache.kind === 'kda-mla') return 'KDA + NoPE DSA · 池化 Index K'
+  if (model.execution.cache.kind === 'kda-mla') return model.execution.cache.indexWidth ? 'KDA + NoPE DSA · 池化 Index K' : 'KDA + Gated MLA · 完整历史'
   if (model.execution.cache.kind === 'compressed') return 'SWA + CSA / HCA · 共享 KV'
   if (model.execution.cache.kind === 'mixed') return `Full + Sliding GQA · W ${integer(model.execution.cache.window)}`
   if (model.execution.cache.kind === 'swa') return `Sliding GQA · W ${integer(model.execution.cache.window)}`
@@ -32,7 +32,7 @@ function cacheLabel(model: ModelArchitecture) {
 
 function cacheNote(model: ModelArchitecture, tp: TensorParallelSize) {
   const cache = model.execution.cache
-  if (cache.kind === 'kda-mla') return 'KDA 矩阵 / 卷积状态按 head 切分；DSA 的 512 维完整 latent、池化 Index K 和 BF16 尾部按 rank 复制。压缩索引不压缩主历史，池展开回原始 token，最多 Top-2048 + 3 tail。'
+  if (cache.kind === 'kda-mla') return cache.indexWidth ? 'KDA 矩阵 / 卷积状态按 head 切分；DSA 的 512 维完整 latent、池化 Index K 和 BF16 尾部按 rank 复制。压缩索引不压缩主历史，池展开回原始 token，最多 Top-2048 + 3 tail。' : 'KDA 矩阵 / 卷积按 head 切分；MLA 的 512 latent + 64 未旋转共享 K 各 rank 复制。没有 DSA 索引；临时 AttnRes 深度 bank 不计入持久缓存预算。'
   if (cache.kind === 'compressed') return '每卡复制单份共享 KV：原始滑窗 + floor(S/r) 压缩历史，另计 C4 Index K 和参考实现 FP32 compressor 状态。Top-512 只限制读取，不限制已存记录数；实际量化布局和环形状态可能不同。'
   if (cache.kind === 'gqa' && cache.layout === 'replicated') return `汇集式 Attention TP：权重分片，但每卡缓存完整 ${model.dimensions.kvHeads} 个 KV heads，KV 不除以 TP。按 Transformers v4.57.1 参考路径，不代表所有引擎。`
   if (cache.kind === 'mla') return `采用 latent-cache 路径：${cache.latentWidth} 维压缩 KV + ${cache.ropeWidth} 维 RoPE 在每个 TP rank 复制。${cache.indexWidth ? `另计每层 ${cache.indexWidth} 维 Index K 全历史预留；Top-k 只减少读取，不缩短 S。` : ''}`
@@ -83,9 +83,9 @@ export default function ModelCompare() {
     { label: 'Decoder 层数', values: models.map((model) => String(model.dimensions.layers)) },
     { label: 'Dense / MoE 层数', values: models.map((model) => `${model.execution.denseLayers} / ${model.dimensions.layers - model.execution.denseLayers}`) },
     { label: 'Hidden width', values: models.map((model) => integer(model.dimensions.hiddenSize)) },
-    { label: '主干 residual streams', values: models.map((model) => model.execution.residualLayout === 'mhc' ? `${model.execution.residualStreams} 路 · mHC Pre / Post` : '1 路') },
+    { label: '主干 residual streams', values: models.map((model) => model.execution.residualLayout === 'attn-res' ? `块内 prefix + 深度快照 · 每 ${model.execution.residualBlockSize} 层写入` : model.execution.residualLayout === 'mhc' ? `${model.execution.residualStreams} 路 · mHC Pre / Post` : '1 路') },
     { label: '标准 Attention Q heads', values: models.map((model) => String(model.dimensions.attentionHeads)) },
-    { label: '注意力 KV 表示', values: models.map((model) => model.execution.cache.kind === 'kda-mla' ? `${model.execution.cache.latentWidth} latent · NoPE；KDA 用定长矩阵` : model.execution.cache.kind === 'compressed' ? `${model.execution.cache.kvWidth} 维 K=V 共享表示；不乘二` : model.execution.cache.kind === 'mla' ? `${model.execution.cache.latentWidth} latent + ${model.execution.cache.ropeWidth} RoPE` : `${model.dimensions.kvHeads} KV heads × ${model.dimensions.headDim} head dim × K/V`) },
+    { label: '注意力 KV 表示', values: models.map((model) => model.execution.cache.kind === 'kda-mla' ? `${model.execution.cache.latentWidth} latent${model.execution.cache.sharedKeyWidth ? ` + ${model.execution.cache.sharedKeyWidth} 未旋转共享 K` : ''} · NoPE；KDA 用定长矩阵` : model.execution.cache.kind === 'compressed' ? `${model.execution.cache.kvWidth} 维 K=V 共享表示；不乘二` : model.execution.cache.kind === 'mla' ? `${model.execution.cache.latentWidth} latent + ${model.execution.cache.ropeWidth} RoPE` : `${model.dimensions.kvHeads} KV heads × ${model.dimensions.headDim} head dim × K/V`) },
     { label: 'KV / 循环状态层数', values: models.map((model) => { const { kvLayers, recurrentLayers } = cacheEstimate(model, defaultComparisonScenario); return `${kvLayers} / ${recurrentLayers}` }) },
     { label: '完整 / 滑窗 KV 层数', values: models.map((model) => { const { fullKvLayers, slidingLayers } = cacheEstimate(model, defaultComparisonScenario); return `${fullKvLayers} / ${slidingLayers}` }) },
     { label: 'KV 保留长度', values: models.map((model) => model.execution.cache.kind === 'compressed' ? 'min(S,128) 原始位置 + floor(S/r) 压缩位置' : model.execution.cache.kind === 'mixed' ? `完整层 S / 滑窗层 min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'swa' ? `min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'hybrid' ? 'S（仅完整注意力层）' : 'S') },
@@ -121,9 +121,9 @@ export default function ModelCompare() {
         {models.map((model, index) => {
           const { estimate, reasons } = results[index]
           const parts = estimate ? [
-            { label: model.execution.cache.kind === 'kda-mla' ? 'DSA 完整 latent 历史' : model.execution.cache.kind === 'swa' || model.execution.cache.kind === 'compressed' ? '滑动窗口 KV' : '完整注意力 KV', bytes: (model.execution.cache.kind === 'compressed' ? estimate.slidingKvBytes : model.execution.cache.kind === 'mixed' ? estimate.fullKvBytes : estimate.kvBytes) * factor, color: '#70e1f5' },
+            { label: model.execution.cache.kind === 'kda-mla' ? model.execution.cache.indexWidth ? 'DSA 完整 latent 历史' : 'MLA latent + 共享 K 历史' : model.execution.cache.kind === 'swa' || model.execution.cache.kind === 'compressed' ? '滑动窗口 KV' : '完整注意力 KV', bytes: (model.execution.cache.kind === 'compressed' ? estimate.slidingKvBytes : model.execution.cache.kind === 'mixed' ? estimate.fullKvBytes : estimate.kvBytes) * factor, color: '#70e1f5' },
             ...(model.execution.cache.kind === 'compressed' ? [{ label: '压缩 KV 历史', bytes: estimate.compressedBytes * factor, color: '#c7a8ff' }, { label: 'Compressor 状态 · FP32', bytes: estimate.compressorBytes * factor, color: '#d8ff78' }] : []),
-            ...(model.execution.cache.kind === 'kda-mla' ? [{ label: 'Index key / score 尾部 · BF16', bytes: estimate.compressorBytes * factor, color: '#ffc98b' }] : []),
+            ...(model.execution.cache.kind === 'kda-mla' && estimate.compressorBytes ? [{ label: 'Index key / score 尾部 · BF16', bytes: estimate.compressorBytes * factor, color: '#ffc98b' }] : []),
             ...(model.execution.cache.kind === 'mixed' ? [{ label: '滑动窗口 KV', bytes: estimate.slidingKvBytes * factor, color: '#ffc98b' }] : []),
             ...(estimate.indexBytes ? [{ label: model.execution.cache.kind === 'kda-mla' ? '池化 DSA Index K' : 'DSA Index K', bytes: estimate.indexBytes * factor, color: '#ffc98b' }] : []),
             { label: '循环矩阵 · FP32', bytes: estimate.recurrentBytes * factor, color: '#d8ff78' },

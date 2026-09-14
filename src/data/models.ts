@@ -10,6 +10,7 @@ import { pythiaArchitectures } from './pythia-models.ts'
 import { glm5Architectures } from './glm5-models.ts'
 import { deepseekV4Architectures } from './deepseek-v4-models.ts'
 import { glm53Architectures } from './glm53-models.ts'
+import { kimiK3Architecture } from './kimi-k3-model.ts'
 
 export const modelArchitectures: ModelArchitecture[] = [
   {
@@ -455,6 +456,7 @@ export const modelArchitectures: ModelArchitecture[] = [
   ...glm5Architectures,
   ...deepseekV4Architectures,
   ...glm53Architectures,
+  kimiK3Architecture,
 ]
 
 export function getModelArchitecture(id?: string) {

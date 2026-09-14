@@ -73,13 +73,36 @@ KDA 的遗忘门沿 key 通道变化，beta 沿 head 变化，不套用 Gated De
 
 独立测试 `tests/glm53-model.test.mjs` 覆盖层分布、视觉汇合、均值 Head、索引尾部、TP/精度算术、预算边界及权重账本。105 项模型测试、51 个工作区路由、136 组模型对比及 181 个模块链接通过。Chrome 152 在 360、390、768、1440px 通过池边界交互、视觉模块弹窗与 KDA / Dense 切换，并检查缓存和 mHC 截图。关闭详情时仅补救失落的焦点，不用延迟 close 事件覆盖用户已经移往滑块的焦点；浏览器回归显式模拟了这个事件顺序。以上不等于 Safari、所有设备或 GPU 执行验证。
 
+## 2026-09-14：Kimi-K3、Attention Residual 与 LatentMoE
+
+接入独立的 `moonshotai/Kimi-K3`：93 层，69 KDA / 24 Gated MLA；配置使用从 1 开始的层号，网站统一转换为从 0 开始。最后两层 91、92 都是 MLA，不能仅按每四层一次推导。模型卡标称 2.8T / 104B 激活；不把图示 Decoder 权重账本当作完整检查点参数量。第一层 Dense SiTU-GLU，后 92 层 LatentMoE；配置没有 NextN 辅助层。
+
+新增跨层深度实验和独立 AttnRes 图形路径。每 12 层先聚合、再写入原始 prefix 快照并重置块内累计；普通层只累计子层输出。Layer 0 保存输入 embedding，Layer 12 保存 Layers 0–11 的子层输出和；最后从 8 个快照和最后块 prefix 共 9 个候选聚合。打分 Norm、打分投影、输入 Norm 是独立权重，不套 mHC、均值 Head 或普通层输入残差。实验可跳转 0、11、12、13、84、92，显示候选数、快照来源和 bank 生命周期，不伪造 learned 分数。
+
+可展开 LatentMoE 支路图将 routed 与 shared 明确分开：Router 读取 7168 维主干，896 routed experts 选 16 个；routed 支路 7168→3584→专家→加权合并及必要归约→RMSNorm→7168；shared 支路仍读取 7168 维，两个 shared experts 合并为 intermediate=6144。SiTU-GLU 是平滑 tanh 饱和（gate beta=4、up beta=25），不是硬截断。EP=1 普通 TP 下，latent 降/升维投影和路由器复制，专家中间维分片。
+
+KDA 使用完整输出门投影 7168→12288，而 forget gate 仍为 128 维低秩。运行时 `A_log` 按 96 heads 分片；SGLang loader 兼容 128 元素检查点布局并取前 96 个，账本计算运行时张量。MLA 的 NoPE 只跳过旋转：Q/K 仍为 128+64=192 维，V 为 128 维；缓存为 512 latent + 64 未旋转共享 K。没有 DSA Index K 或 Top-k 截断。
+
+缓存基线为固定版本 SGLang、EP=1、Attention TP=TP、无推测解码：
+
+- 24 层 MLA 各 rank 复制 `B×S×576×bytes`。
+- 69 层 KDA 保留 `B×(96/TP)×128²×4` 字节矩阵及 `B×(3×12288/TP)×3×2` 字节卷积历史。精度选项不改变这两项。
+- B=1 / S=4096 / TP=4 / 两字节：MLA 113,246,208 B + KDA 矩阵 108,527,616 B + 卷积 3,815,424 B = **225,589,248 B / rank**（215.14 MiB）。每请求下一 token 增长 27 KiB / rank。
+- AttnRes bank 是每次 forward 重建的临时深度状态，不并入持久缓存容量反算。普通 TP、BF16、未分块 Prefill 下最多 `[B×S,8,7168]`，B=1 / S=4096 为 448 MiB；Decode `[B,8,7168]` 为 112 KiB。这是 bank 张量自身，不含其他临时激活；实际 chunked prefill 以当前块的 token 数为准。
+- 不计量化 scale、页尾/allocator、前缀快照、视觉/打分工作区、通信或图捕获。Transformers 参考代码保存展开 K/V，不能直接使用这里的 absorbed-MLA 容量。
+
+视觉塔为 27 层、hidden=1024、QKV width=1536、12 heads；2D RoPE 与双向视觉注意力不因文本 NoPE 而取消。逐帧 14×14 Conv2d patch 后，按 grid item 做时间均值与空间 2×2 拼接，PatchMerger V2 用 4096→4096→7168 GELU 和输出 RMSNorm。视觉输出数量 `Σ(h×w/4)` 不等于视频全部 patch 数除四；主要视觉权重另列，不混入 Decoder 账本。
+
+证据：[官方配置](https://huggingface.co/moonshotai/Kimi-K3/blob/main/config.json)、[模型卡](https://huggingface.co/moonshotai/Kimi-K3)、[官方文本参考实现](https://huggingface.co/moonshotai/Kimi-K3/blob/main/modeling_kimi_linear.py)、[官方视觉参考实现](https://huggingface.co/moonshotai/Kimi-K3/blob/main/modeling_kimi_k3.py)（两个参考文件页面显示初始提交 `c5d1dd4c428bd1ce8b88c5044f3b6ccde9e3b721`）；[SGLang K3 实现](https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/models/kimi_k3.py)、[AttnRes](https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/layers/attn_residual.py)、[缓存配置](https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/configs/kimi_linear.py)。核对日期 2026-09-14。
+
+`tests/kimi-k3-model.test.mjs` 独立检查层分布、块边界、候选数、运行时权重算术、NoPE 共享 K、缓存精度及预算边界；通用模块链接验收按目标层解析动态 Shape，不拿 Layer 0 的快照数量套所有层。真实浏览器回归覆盖深度实验、LatentMoE 双支路、最后 MLA、精度/TP 切换和 URL 条件保留。这些是图解与算式验证，不是 GPU/NPU 推理验收。
+
 ## 其余请求模型：已核对配置，尚未实现
 
 以下是后续实现约束，不是已完成图解列表。禁止用旧模型的算式替换它们。
 
 | 精确检查点 | 配置中必须单独处理的结构 |
 | --- | --- |
-| [Kimi-K3](https://huggingface.co/moonshotai/Kimi-K3/blob/main/config.json) | 93 文本层，KDA + MLA；配置层列表从 1 开始；Attention Residual、latent MoE 与视觉输入 |
 | [DeepSeek-V4.1-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/config.json) | 40 层因果 Encoder–Decoder；跨层 KV 来源与 Index 来源不同；Engram、视觉与 DSpark 需要独立支路；不能套 Decoder-only 全层独立 KV |
 
 后续每个模型都须核对实现中的字段消费者，再补数据流、张量、缓存与相应测试；不能仅根据 model card 或 config 数字宣称完整支持。

@@ -1,6 +1,7 @@
 import type { ArchitectureNode, InferencePhase, ModelArchitecture, TensorParallelSize } from '../types/model'
 import { compressedCacheParts } from './compressed-cache.ts'
 import { kdaMlaCacheParts } from './kda-mla-cache.ts'
+import { attentionResidualStage } from './attention-residual.ts'
 
 export interface InferenceScenario {
   phase: InferencePhase
@@ -67,7 +68,7 @@ export function cacheEstimate(model: ModelArchitecture, scenario: InferenceScena
   if (cache.kind === 'kda-mla') {
     const p = kdaMlaCacheParts(cache, scenario.sequence, scenario.batch, scenario.tp, scenario.cacheBytes)
     return { perRankBytes: p.total, allRankBytes: p.total * scenario.tp, bytesPerToken: p.growthBytesPerToken, growthBytesPerToken: p.growthBytesPerToken,
-      retainedTokens: scenario.sequence, valuesPerTokenPerLayer: cache.latentWidth, kvBytes: p.kvBytes, indexBytes: p.indexBytes,
+      retainedTokens: scenario.sequence, valuesPerTokenPerLayer: cache.latentWidth + (cache.sharedKeyWidth ?? 0), kvBytes: p.kvBytes, indexBytes: p.indexBytes,
       compressedBytes: 0, compressorBytes: p.tailBytes, recurrentBytes: p.recurrentBytes, convBytes: p.convBytes,
       kvLayers: p.kvLayers, recurrentLayers: p.recurrentLayers, fullKvLayers: p.kvLayers, slidingLayers: 0,
       fullKvBytes: p.kvBytes, slidingKvBytes: 0, slidingRetainedTokens: 0 }
@@ -140,6 +141,17 @@ export function decoderNodes(model: ModelArchitecture, layer: number): Architect
     knowledge: [{ label: '残差与 Pre-Norm', to: '/category/model-architecture' }, { label: 'TP 通信', to: '/category/parallel-strategy' }], tone: 'output',
   })
   const ffn = layer < (model.execution.hashLayers ?? 0) ? get('hash-moe') : layer < model.execution.denseLayers ? get('dense-ffn') ?? get('ffn') : get('moe')
+  if (model.execution.residualLayout === 'attn-res') {
+    const stage = attentionResidualStage(layer, model.execution.residualBlockSize!)
+    const read = (id: string, count: number) => ({ ...get(id), subtitle: `${count} 个候选向量 · 同一 token 的深度方向聚合`, inputShape: `[N, ${count}, ${model.dimensions.hiddenSize}]` })
+    return [
+      { ...read('attn-res-read', stage.attentionCandidates), ...(layer === 0 ? { subtitle: 'Layer 0：无旧快照，直接使用 embedding' } : {}) },
+      { ...get('attn-res-write'), subtitle: stage.write ? `写入 Bank ${stage.bankBefore}，清空当前 prefix` : `非边界层：保留 ${stage.bankBefore} 个快照，不写入`, outputShape: `[N, ${stage.bankAfter}, ${model.dimensions.hiddenSize}] bank` },
+      get('attention-norm'), get(attentionKind(model, layer)),
+      { ...get('attn-res-add'), subtitle: stage.write ? '新块：prefix = Attention 输出，不再加旧块' : '块内：prefix += Attention 输出' },
+      read('ffn-res-read', stage.ffnCandidates), get('ffn-norm'), ffn, get('ffn-res-add'),
+    ]
+  }
   if (model.execution.residualLayout === 'mhc') return [get('hc-attn-pre'), get('attention-norm'), get(attentionKind(model, layer)), get('hc-attn-post'), get('hc-ffn-pre'), get('ffn-norm'), ffn, get('hc-ffn-post')]
   if (model.execution.residualLayout === 'parallel') return [
     get('attention-norm'), get(attentionKind(model, layer)), get('ffn-norm'), ffn,
@@ -178,6 +190,7 @@ export function decoderGroups(model: ModelArchitecture, layer: number) {
   // Parallel branches have no inner residual add; their shared merge is a separate node.
   if (model.execution.residualLayout === 'parallel') return [nodes.slice(0, 2), nodes.slice(2, 4)]
   if (model.execution.residualLayout === 'mhc') return [nodes.slice(0, 4), nodes.slice(4)]
+  if (model.execution.residualLayout === 'attn-res') return [nodes.slice(0, 5), nodes.slice(5)]
   const split = nodes.findIndex((node) => node.id === 'attention-add') + 1
   return [nodes.slice(0, split), nodes.slice(split)]
 }
