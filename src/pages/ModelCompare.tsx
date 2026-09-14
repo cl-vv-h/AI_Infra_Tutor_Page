@@ -25,13 +25,13 @@ const presets = [
 function cacheLabel(model: ModelArchitecture) {
   if (model.execution.cache.kind === 'mixed') return `Full + Sliding GQA · W ${integer(model.execution.cache.window)}`
   if (model.execution.cache.kind === 'swa') return `Sliding GQA · W ${integer(model.execution.cache.window)}`
-  return model.execution.cache.kind === 'mla' ? 'MLA · 压缩 latent' : model.execution.cache.kind === 'hybrid' ? 'Gated DeltaNet + Full Attention' : model.dimensions.attentionHeads === model.dimensions.kvHeads ? 'MHA · 每个 Q head 独立 KV' : 'GQA'
+  return model.execution.cache.kind === 'mla' ? model.execution.cache.indexWidth ? 'DSA + MLA · 压缩 latent 与 Index K' : 'MLA · 压缩 latent' : model.execution.cache.kind === 'hybrid' ? 'Gated DeltaNet + Full Attention' : model.dimensions.attentionHeads === model.dimensions.kvHeads ? 'MHA · 每个 Q head 独立 KV' : 'GQA'
 }
 
 function cacheNote(model: ModelArchitecture, tp: TensorParallelSize) {
   const cache = model.execution.cache
   if (cache.kind === 'gqa' && cache.layout === 'replicated') return `汇集式 Attention TP：权重分片，但每卡缓存完整 ${model.dimensions.kvHeads} 个 KV heads，KV 不除以 TP。按 Transformers v4.57.1 参考路径，不代表所有引擎。`
-  if (cache.kind === 'mla') return `采用 latent-cache 路径：${cache.latentWidth} 维压缩 KV + ${cache.ropeWidth} 维 RoPE 在每个 TP rank 复制。`
+  if (cache.kind === 'mla') return `采用 latent-cache 路径：${cache.latentWidth} 维压缩 KV + ${cache.ropeWidth} 维 RoPE 在每个 TP rank 复制。${cache.indexWidth ? `另计每层 ${cache.indexWidth} 维 Index K 全历史预留；Top-k 只减少读取，不缩短 S。` : ''}`
   if (cache.kind === 'mixed') return '按实际层分布分别计算完整 KV 和滑窗 KV。局部窗口填满后，完整注意力层继续增加缓存；总曲线不会变平。'
   if (cache.kind === 'swa') return `每卡保留 ${localKvHeads(model, tp)} 个 KV heads 的完整逻辑窗口 min(S, ${integer(cache.window)})。${tp > model.dimensions.kvHeads ? `${model.dimensions.kvHeads} 个 KV heads 少于 TP ${tp}，发生整 head 复制。` : ''}窗口饱和后只替换旧位置，不增加缓存容量。`
   const prefix = tp > model.dimensions.kvHeads ? `${model.dimensions.kvHeads} 个 KV heads 少于 TP ${tp}，每卡仍需 1 个完整 head，会发生复制。` : `完整注意力每卡存 ${localKvHeads(model, tp)} 个 KV heads。`
@@ -118,6 +118,7 @@ export default function ModelCompare() {
           const parts = estimate ? [
             { label: model.execution.cache.kind === 'swa' ? '滑动窗口 KV' : '完整注意力 KV', bytes: (model.execution.cache.kind === 'mixed' ? estimate.fullKvBytes : estimate.kvBytes) * factor, color: '#70e1f5' },
             ...(model.execution.cache.kind === 'mixed' ? [{ label: '滑动窗口 KV', bytes: estimate.slidingKvBytes * factor, color: '#ffc98b' }] : []),
+            ...(estimate.indexBytes ? [{ label: 'DSA Index K', bytes: estimate.indexBytes * factor, color: '#ffc98b' }] : []),
             { label: '循环矩阵 · FP32', bytes: estimate.recurrentBytes * factor, color: '#d8ff78' },
             { label: '卷积窗口 · BF16', bytes: estimate.convBytes * factor, color: '#c7a8ff' },
           ] : []

@@ -65,7 +65,10 @@ export function cacheEstimate(model: ModelArchitecture, scenario: InferenceScena
   const valuesPerTokenPerLayer = cache.kind === 'mla'
     ? cache.latentWidth + cache.ropeWidth
     : 2 * cacheKvHeads(model, scenario.tp) * model.dimensions.headDim
-  const bytesPerToken = valuesPerTokenPerLayer * kvLayers * scenario.cacheBytes
+  const indexValues = cache.kind === 'mla' ? cache.indexWidth ?? 0 : 0
+  const indexBytesPerToken = indexValues * kvLayers * scenario.cacheBytes
+  const indexBytes = scenario.batch * scenario.sequence * indexBytesPerToken
+  const bytesPerToken = valuesPerTokenPerLayer * kvLayers * scenario.cacheBytes + indexBytesPerToken
   const retainedTokens = cachedSequence(model, scenario.sequence)
   const slidingRetainedTokens = windowSequence(model, scenario.sequence)
   const bytesPerLayerToken = valuesPerTokenPerLayer * scenario.cacheBytes
@@ -75,8 +78,8 @@ export function cacheEstimate(model: ModelArchitecture, scenario: InferenceScena
   const growthBytesPerToken = (cache.kind === 'swa' || cache.kind === 'mixed') && scenario.sequence >= cache.window ? fullKvLayers * bytesPerLayerToken : bytesPerToken
   const recurrentBytes = cache.kind === 'hybrid' ? scenario.batch * recurrentLayers * cache.valueHeads / scenario.tp * cache.keyDim * cache.valueDim * cache.recurrentBytes : 0
   const convBytes = cache.kind === 'hybrid' ? scenario.batch * recurrentLayers * (2 * cache.keyHeads * cache.keyDim + cache.valueHeads * cache.valueDim) / scenario.tp * cache.convStateSlots * cache.convBytes : 0
-  const perRankBytes = kvBytes + recurrentBytes + convBytes
-  return { perRankBytes, allRankBytes: perRankBytes * scenario.tp, bytesPerToken, growthBytesPerToken, retainedTokens, valuesPerTokenPerLayer, kvBytes, recurrentBytes, convBytes, kvLayers, recurrentLayers, fullKvLayers, slidingLayers, fullKvBytes, slidingKvBytes, slidingRetainedTokens }
+  const perRankBytes = kvBytes + indexBytes + recurrentBytes + convBytes
+  return { perRankBytes, allRankBytes: perRankBytes * scenario.tp, bytesPerToken, growthBytesPerToken, retainedTokens, valuesPerTokenPerLayer, kvBytes, indexBytes, recurrentBytes, convBytes, kvLayers, recurrentLayers, fullKvLayers, slidingLayers, fullKvBytes, slidingKvBytes, slidingRetainedTokens }
 }
 
 export function attentionKind(model: ModelArchitecture, layer: number) {

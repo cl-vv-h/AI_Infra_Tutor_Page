@@ -14,6 +14,7 @@ export function CacheWorkbench({ model, layer = 0, scenario, onBatch, onSequence
   const estimate = cacheEstimate(model, scenario)
   const cache = model.execution.cache
   const hybrid = cache.kind === 'hybrid'
+  const indexWidth = cache.kind === 'mla' ? cache.indexWidth ?? 0 : 0
   const sliding = cache.kind === 'swa'
   const mixed = cache.kind === 'mixed'
   const hasWindow = sliding || mixed
@@ -23,6 +24,7 @@ export function CacheWorkbench({ model, layer = 0, scenario, onBatch, onSequence
   const replication = cache.kind !== 'mla' && scenario.tp > model.dimensions.kvHeads
   const breakdown = [
     { label: `${estimate.fullKvLayers} 层完整 KV`, bytes: estimate.fullKvBytes, color: '#70e1f5' },
+    ...(indexWidth ? [{ label: `${estimate.kvLayers} 层 Index K`, bytes: estimate.indexBytes, color: '#ffc98b' }] : []),
     ...(mixed ? [{ label: `${estimate.slidingLayers} 层滑窗 KV`, bytes: estimate.slidingKvBytes, color: '#ffc98b' }] : []),
     ...(hybrid ? [
       { label: `${estimate.recurrentLayers} 层循环矩阵 · FP32`, bytes: estimate.recurrentBytes, color: '#d8ff78' },
@@ -41,6 +43,7 @@ export function CacheWorkbench({ model, layer = 0, scenario, onBatch, onSequence
         </div>
         <p className="mt-4 text-sm leading-6 text-white/65">{scenario.phase === 'prefill' ? `N = B × S = ${tokenCount(scenario).toLocaleString('en-US')}；本次处理完整输入。` : `N = B = ${scenario.batch}；S 包含刚写入的新 token，其余为历史。`}</p>
         {gathered && <p className="mt-3 rounded-xl border border-amber-200/25 bg-amber-200/5 p-3 text-sm leading-6 text-amber-100">汇集式 Attention TP：投影权重分片，Q/K/V 输出汇集。每卡缓存完整 {model.dimensions.kvHeads} 个 KV heads，不再除以 TP；这是当前参考实现的路径，不代表所有引擎。</p>}
+        {indexWidth > 0 && <p className="mt-3 rounded-xl border border-amber-200/25 bg-amber-200/5 p-3 text-sm leading-6 text-amber-100">DSA 的 Top-k 限制主 Attention 的读取位置，不把历史缓存裁成 Top-k 长度。这里按 SGLang Ascend 全层 Index K 分配口径计入 {indexWidth} 维索引缓存；IndexShare 复用位置表，不自动删除 Shared 层的物理预留。三类状态采用所选统一精度，仅作逻辑容量假设。</p>}
         {mixed && <p className="mt-3 text-sm leading-6 text-cyan-100">当前 Layer {layer}：{currentSliding ? `滑窗注意力 · 保留最近 ${estimate.slidingRetainedTokens.toLocaleString('en-US')} 个位置` : `完整注意力 · 保留全部 ${scenario.sequence.toLocaleString('en-US')} 个位置`}。窗口饱和后，整模型仍有 {estimate.fullKvLayers} 层 KV 随 S 增长。</p>}
         {currentSliding && <div className="mt-4 rounded-2xl border border-amber-200/20 bg-amber-200/5 p-4">
           <h3 className="text-sm font-semibold text-amber-100">滚动窗口 · W = {cache.window.toLocaleString('en-US')}</h3>
@@ -53,8 +56,9 @@ export function CacheWorkbench({ model, layer = 0, scenario, onBatch, onSequence
       <div className="rounded-2xl border border-white/10 bg-black/15 p-4">
         <div className="flex items-center gap-2 text-sm text-lime-100"><Database className="h-4 w-4" />每卡{hybrid ? '持久状态合计' : '逻辑 KV Cache'} · 全部 {model.dimensions.layers} 层</div>
         <output aria-live="polite" className="mt-3 block font-mono text-3xl tracking-tight text-white">{formatBytes(estimate.perRankBytes)}</output>
-        {(hybrid || mixed) && <><div className="mt-4 flex h-2 overflow-hidden rounded-full" aria-hidden="true">{breakdown.map((part) => <span key={part.label} style={{ width: `${100 * part.bytes / estimate.perRankBytes}%`, backgroundColor: part.color }} />)}</div><div className="mt-3 space-y-2">{breakdown.map((part) => <div key={part.label} className="flex flex-wrap justify-between gap-2 text-sm"><span style={{ color: part.color }}>{part.label}</span><span className="font-mono text-white/90">{formatBytes(part.bytes)}</span></div>)}</div></>}
+        {(hybrid || mixed || indexWidth > 0) && <><div className="mt-4 flex h-2 overflow-hidden rounded-full" aria-hidden="true">{breakdown.map((part) => <span key={part.label} style={{ width: `${100 * part.bytes / estimate.perRankBytes}%`, backgroundColor: part.color }} />)}</div><div className="mt-3 space-y-2">{breakdown.map((part) => <div key={part.label} className="flex flex-wrap justify-between gap-2 text-sm"><span style={{ color: part.color }}>{part.label}</span><span className="font-mono text-white/90">{formatBytes(part.bytes)}</span></div>)}</div></>}
         <p className="mt-3 break-words font-mono text-xs leading-6 text-cyan-100/80">KV = B × {mixed ? `(S × Lfull + min(S, ${cache.window}) × Lwindow)` : `${sliding ? `min(S, ${cache.window})` : 'S'} × Lkv`} × ({width}) × bytes<br />{scenario.batch} × {mixed ? `(${scenario.sequence} × ${estimate.fullKvLayers} + ${estimate.slidingRetainedTokens} × ${estimate.slidingLayers})` : `${estimate.retainedTokens.toLocaleString('en-US')} × ${estimate.kvLayers}`} × {estimate.valuesPerTokenPerLayer} × {scenario.cacheBytes}</p>
+        {indexWidth > 0 && <p className="mt-2 font-mono text-xs leading-6 text-amber-100">另加 Index K = B × S × {estimate.kvLayers} × {indexWidth} × bytes = {formatBytes(estimate.indexBytes)}；合计为主 KV + Index K。</p>}
         <p className="mt-2 text-sm text-white/65">{scenario.sequence >= model.execution.maxContext ? '已达配置上下文上限，未估算下一 token。' : `单请求再增 1 token 的容量增长：+${formatBytes(estimate.growthBytesPerToken)} / 卡`}<br />所有 TP 卡合计：{formatBytes(estimate.allRankBytes)}</p>
       </div>
     </div>

@@ -56,7 +56,7 @@ export interface ModelArchitecture {
     normKind?: 'rmsnorm' | 'layernorm'
     residualLayout?: 'parallel'
     normLayout?: 'pre-post' | 'post-branch-qk'
-    cache: { kind: 'gqa'; layout?: 'replicated' } | { kind: 'swa'; window: number } | { kind: 'mixed'; window: number; layerTypes: Array<'sliding_attention' | 'full_attention'> } | { kind: 'mla'; latentWidth: number; ropeWidth: number } | {
+    cache: { kind: 'gqa'; layout?: 'replicated' } | { kind: 'swa'; window: number } | { kind: 'mixed'; window: number; layerTypes: Array<'sliding_attention' | 'full_attention'> } | { kind: 'mla'; latentWidth: number; ropeWidth: number; /** Replicated index K allocation at every layer, using the selected logical precision. */ indexWidth?: number } | {
       kind: 'hybrid'
       layerTypes: Array<'linear_attention' | 'full_attention'>
       keyHeads: number

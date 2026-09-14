@@ -4,7 +4,7 @@ import type { InferenceScenario } from './model-lab.ts'
 
 export const defaultComparisonIds = ['llama-3-1-8b', 'glm-4-7-flash', 'qwen3-5-9b']
 export const comparisonColors = ['#70e1f5', '#c7a8ff', '#d8ff78']
-export const contextProbes = [1024, 4096, 16384, 32768, 65536, 131072, 262144]
+export const contextProbes = [1024, 4096, 16384, 32768, 65536, 131072, 262144, 524288, 1048576]
 export type MemoryScope = 'rank' | 'group'
 export interface ComparisonState {
   modelIds: string[]
@@ -35,7 +35,7 @@ export function parseComparison(params: URLSearchParams, registry: ModelArchitec
     return fallback
   }
   const batch = number('b', 4, (value) => value >= 1 && value <= 64)
-  const sequence = number('s', 8192, (value) => value >= 1024 && value <= 262144)
+  const sequence = number('s', 8192, (value) => value >= 1024 && value <= 1048576)
   const tp = number('tp', 4, (value) => [1, 2, 4, 8].includes(value)) as TensorParallelSize
   const cacheBytes = number('bytes', 2, (value) => value === 1 || value === 2) as 1 | 2
   if (params.has('view') && !['rank', 'group'].includes(params.get('view')!)) notices.push('未知容量视图，已使用每卡容量。')
@@ -54,7 +54,7 @@ export function compareEstimate(model: ModelArchitecture, scenario: InferenceSce
   const reasons: string[] = []
   if (!model.supportedTp.includes(scenario.tp)) reasons.push(`此图解尚未覆盖 TP ${scenario.tp}；可用 TP：${model.supportedTp.join(' / ')}。`)
   if (scenario.sequence > model.execution.maxContext) reasons.push(`S 超过当前配置上限 ${model.execution.maxContext.toLocaleString('en-US')}，不外推。`)
-  if (!Number.isInteger(scenario.batch) || scenario.batch < 1 || scenario.batch > 64 || !Number.isInteger(scenario.sequence) || scenario.sequence < 1024 || scenario.sequence > 262144 || ![1, 2].includes(scenario.cacheBytes)) reasons.push('推理条件超出对比工具范围。')
+  if (!Number.isInteger(scenario.batch) || scenario.batch < 1 || scenario.batch > 64 || !Number.isInteger(scenario.sequence) || scenario.sequence < 1024 || scenario.sequence > 1048576 || ![1, 2].includes(scenario.cacheBytes)) reasons.push('推理条件超出对比工具范围。')
   return reasons.length ? { estimate: null, reasons } : { estimate: cacheEstimate(model, scenario), reasons }
 }
 

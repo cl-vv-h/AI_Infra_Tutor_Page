@@ -14,6 +14,7 @@ import ModelModuleFinder from '@/components/ModelModuleFinder'
 import ModelWeightBudget from '@/components/ModelWeightBudget'
 import CacheCapacityPlanner from '@/components/CacheCapacityPlanner'
 import ModelWorkspaceTabs from '@/components/ModelWorkspaceTabs'
+import ModelLearningGuide from '@/components/ModelLearningGuide'
 
 function Inspector({ node, model, scenario, preview = false }: { node: ArchitectureNode; model: ModelArchitecture; scenario: InferenceScenario; preview?: boolean }) {
   return <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#0c131c]">
@@ -169,6 +170,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
       </div>
 
       <div role="tabpanel" id="workspace-panel-diagram" aria-labelledby="workspace-tab-diagram" tabIndex={0} hidden={view !== 'diagram'} className="focus-visible:outline-cyan-200">
+      <ModelLearningGuide model={model} layer={effectiveLayer} selectedId={selected.id} scenario={scenario} onSelect={(node) => update(selectExplorerNode(state, node.id))} />
       <ModelModuleFinder model={model} layer={effectiveLayer} selectedId={selected.id} onSelect={(node, layer) => inspect(node, layer, true)} />
       <section aria-label="交互模型结构图" className="mt-5 grid items-start gap-5 xl:grid-cols-[15rem_minmax(0,1fr)_22rem]">
         <aside className="order-2 space-y-4 xl:order-1">

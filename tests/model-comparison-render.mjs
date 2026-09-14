@@ -57,6 +57,18 @@ try {
   const { formatBytes } = await server.ssrLoadModule('/src/lib/model-lab.ts')
   const { decoderWeightBudget } = await server.ssrLoadModule('/src/lib/model-weights.ts')
   const renderExplorer = (path) => renderToString(h(MemoryRouter, { initialEntries: [path] }, h(Routes, null, h(Route, { path: '/models/:modelId', element: h(Models) })))).replace(/<!--.*?-->/g, '')
+  const glm = renderExplorer('/models/glm-5-2?layer=3&node=moe&b=4&s=4096&tp=4')
+  for (const value of ['DSA + Multi-Head Latent Attention', '312 MiB', '1.68 GiB', 'Index K', '逐步导览', 'Top-8']) assert.ok(glm.includes(value), value)
+  assert.match(glm, /aria-current="step"[^>]*>.*?Sparse MoE/)
+  assert.match(glm, /id="learning-answer" hidden=""/)
+  assert.match(renderExplorer('/models/glm-5-2?layer=3&node=lm-head'), /当前层之后还有 74 个 Decoder 层/)
+  const million = renderExplorer('/models/glm-5-2?view=cache&s=1048576&b=1')
+  assert.match(million, /107.25 GiB/)
+  assert.doesNotMatch(million, /参数无效|NaN|undefined/)
+  const glmComparison = render('?models=glm-5-2,deepseek-v3&s=1048576')
+  assert.match(glmComparison, /DSA Index K/)
+  assert.equal((glmComparison.match(/当前条件不计算/g) ?? []).length, 1)
+  assert.match(glmComparison, /S 超过当前配置上限 163,840/)
   let workspaceRoutes = 0
   for (const model of modelArchitectures) {
     for (const active of ['diagram', 'cache', 'weights']) {
