@@ -53,10 +53,13 @@ export interface ModelArchitecture {
     maxContext: number
     contextNote?: string
     denseLayers: number
+    hashLayers?: number
     normKind?: 'rmsnorm' | 'layernorm'
-    residualLayout?: 'parallel'
+    residualLayout?: 'parallel' | 'mhc'
+    residualStreams?: number
+    outputGroups?: number
     normLayout?: 'pre-post' | 'post-branch-qk'
-    cache: { kind: 'gqa'; layout?: 'replicated' } | { kind: 'swa'; window: number } | { kind: 'mixed'; window: number; layerTypes: Array<'sliding_attention' | 'full_attention'> } | { kind: 'mla'; latentWidth: number; ropeWidth: number; /** Replicated index K allocation at every layer, using the selected logical precision. */ indexWidth?: number } | {
+    cache: { kind: 'compressed'; window: number; ratios: Array<0 | 4 | 128>; kvWidth: number; indexWidth: number; indexTopk: number; stateBytes: number } | { kind: 'gqa'; layout?: 'replicated' } | { kind: 'swa'; window: number } | { kind: 'mixed'; window: number; layerTypes: Array<'sliding_attention' | 'full_attention'> } | { kind: 'mla'; latentWidth: number; ropeWidth: number; /** Replicated index K allocation at every layer, using the selected logical precision. */ indexWidth?: number } | {
       kind: 'hybrid'
       layerTypes: Array<'linear_attention' | 'full_attention'>
       keyHeads: number

@@ -49,5 +49,5 @@ try {
   assert.ok(app.includes('<Route path="/models" element={<ModelCatalog />} />'))
   assert.ok(app.includes('<Route path="/models/:modelId" element={<Models />} />'))
   assert.ok(app.includes('<Route path="/models/compare" element={<ModelCompare />} />'))
-  console.log(`Catalog static render verified: ${registry.length} cards, 21 attention/FFN combinations, selection limits, hidden picks and preserved routes.`)
+  console.log(`Catalog static render verified: ${registry.length} cards, ${attentionFilters.length * 3} attention/FFN combinations, selection limits, hidden picks and preserved routes.`)
 } finally { await server.close() }

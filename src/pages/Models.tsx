@@ -82,6 +82,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
   const inspected = visibleNodes.find((node) => node.id === hoveredId) ?? selected
   const isDense = effectiveLayer < model.execution.denseLayers
   const parallelResidual = model.execution.residualLayout === 'parallel'
+  const mhcResidual = model.execution.residualLayout === 'mhc'
 
   useEffect(() => {
     if (!pendingLocate || pendingLocate.id !== state.nodeId || pendingLocate.layer !== effectiveLayer) return
@@ -204,6 +205,16 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
               </div>
               {flowLine}{nodeButton(visibleNodes.find((node) => node.id === 'parallel-add')!)}
               <p className="mt-4 text-sm leading-6 text-white/60">两支之间没有 Attention → MLP 的数据边。上下或并排排列都表示同源分支；实际是否同时执行取决于运行时，不是吞吐或速度承诺。</p>
+            </div> : mhcResidual ? <div role="group" aria-label="mHC 四路残差通路" className="space-y-5">
+              <div className="grid grid-cols-4 gap-2" aria-label="四路 residual streams">{[0, 1, 2, 3].map(stream => <div key={stream} className="rounded-xl border border-rose-200/30 bg-rose-200/5 px-2 py-3 text-center font-mono text-xs text-rose-100">Stream {stream}<br />{model.dimensions.hiddenSize}</div>)}</div>
+              {groups.map((group, branch) => <section key={branch} aria-label={`mHC ${branch === 0 ? 'Attention' : 'MoE'} 子层`} className="rounded-2xl border border-rose-200/20 p-3">
+                <h3 className="mb-3 text-sm font-medium text-rose-100">{branch === 0 ? 'Attention' : 'MoE'}：四路输入 → Pre → 单路计算 → Post → 四路输出</h3>
+                <div className="grid grid-cols-[minmax(0,1fr)_4.5rem] items-start gap-3 sm:grid-cols-[minmax(0,1fr)_6rem]">
+                  <div className="min-w-0">{group.map((node, index) => <div key={node.id}>{nodeButton(node)}{node.id === attentionKind(model, effectiveLayer) && cacheButton()}{index < group.length - 1 && flowLine}</div>)}</div>
+                  <aside className="self-stretch rounded-xl border border-dashed border-rose-200/35 bg-rose-200/5 p-2 text-center text-xs leading-6 text-rose-100">保留本子层四路 residual<br />↓<br />Pre 产生 post / Hres<br />↓<br />绕过单路子层计算<br />↓<br />送入对应 Post 混合</aside>
+                </div>
+              </section>)}
+              <p className="text-sm leading-6 text-white/65">四路是 residual stream 轴，不是 TP rank，也不是四个 Attention heads。每个子层只计算一次；Attention 的 Post 输出是 MoE 的 Pre 输入。</p>
             </div> : groups.map((group, groupIndex) => <div key={groupIndex} className="model-residual-group">
               <div className="model-residual-wire" aria-hidden="true"><span>+</span></div>
               {group.map((node, index) => <div key={node.id}>

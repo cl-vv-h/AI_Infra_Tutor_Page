@@ -1,4 +1,5 @@
 import type { ArchitectureNode, InferencePhase, ModelArchitecture, TensorParallelSize } from '../types/model'
+import { compressedCacheParts } from './compressed-cache.ts'
 
 export interface InferenceScenario {
   phase: InferencePhase
@@ -29,7 +30,7 @@ export function cachedSequence(model: ModelArchitecture, sequence: number) {
 
 export function windowSequence(model: ModelArchitecture, sequence: number) {
   const cache = model.execution.cache
-  return cache.kind === 'swa' || cache.kind === 'mixed' ? Math.min(sequence, cache.window) : sequence
+  return cache.kind === 'swa' || cache.kind === 'mixed' || cache.kind === 'compressed' ? Math.min(sequence, cache.window) : sequence
 }
 
 export function formatShape(template: string, model: ModelArchitecture, scenario: InferenceScenario) {
@@ -42,6 +43,8 @@ export function formatShape(template: string, model: ModelArchitecture, scenario
     intermediateShard: model.dimensions.intermediateSize / scenario.tp,
     expertShard: (model.execution.expertIntermediateSize ?? model.dimensions.intermediateSize) / scenario.tp,
     tp: scenario.tp, batch: scenario.batch, sequence: scenario.sequence, cachedSequence: cachedSequence(model, scenario.sequence), windowSequence: windowSequence(model, scenario.sequence),
+    compressed4: Math.floor(scenario.sequence / 4), compressed128: Math.floor(scenario.sequence / 128),
+    localGroups: (model.execution.outputGroups ?? 1) / scenario.tp,
     ...(hybrid ? {
       linearKeyHeads: hybrid.keyHeads / scenario.tp,
       linearValueHeads: hybrid.valueHeads / scenario.tp,
@@ -58,6 +61,15 @@ export function formatShape(template: string, model: ModelArchitecture, scenario
 
 export function cacheEstimate(model: ModelArchitecture, scenario: InferenceScenario) {
   const cache = model.execution.cache
+  if (cache.kind === 'compressed') {
+    const part = compressedCacheParts(model, scenario.sequence, scenario.batch, scenario.cacheBytes)
+    const growth = compressedCacheParts(model, scenario.sequence + 1, 1, scenario.cacheBytes).total - compressedCacheParts(model, scenario.sequence, 1, scenario.cacheBytes).total
+    return { perRankBytes: part.total, allRankBytes: part.total * scenario.tp, bytesPerToken: growth, growthBytesPerToken: growth,
+      retainedTokens: scenario.sequence, valuesPerTokenPerLayer: cache.kvWidth,
+      kvBytes: part.slidingBytes + part.compressedBytes, indexBytes: part.indexBytes, compressedBytes: part.compressedBytes, compressorBytes: part.compressorBytes,
+      recurrentBytes: 0, convBytes: 0, kvLayers: model.dimensions.layers, recurrentLayers: 0,
+      fullKvLayers: 0, slidingLayers: model.dimensions.layers, fullKvBytes: 0, slidingKvBytes: part.slidingBytes, slidingRetainedTokens: part.slidingTokens }
+  }
   const kvLayers = cache.kind === 'hybrid' ? cache.layerTypes.filter((type) => type === 'full_attention').length : model.dimensions.layers
   const recurrentLayers = cache.kind === 'hybrid' ? model.dimensions.layers - kvLayers : 0
   const slidingLayers = cache.kind === 'swa' ? kvLayers : cache.kind === 'mixed' ? cache.layerTypes.filter((type) => type === 'sliding_attention').length : 0
@@ -79,11 +91,12 @@ export function cacheEstimate(model: ModelArchitecture, scenario: InferenceScena
   const recurrentBytes = cache.kind === 'hybrid' ? scenario.batch * recurrentLayers * cache.valueHeads / scenario.tp * cache.keyDim * cache.valueDim * cache.recurrentBytes : 0
   const convBytes = cache.kind === 'hybrid' ? scenario.batch * recurrentLayers * (2 * cache.keyHeads * cache.keyDim + cache.valueHeads * cache.valueDim) / scenario.tp * cache.convStateSlots * cache.convBytes : 0
   const perRankBytes = kvBytes + indexBytes + recurrentBytes + convBytes
-  return { perRankBytes, allRankBytes: perRankBytes * scenario.tp, bytesPerToken, growthBytesPerToken, retainedTokens, valuesPerTokenPerLayer, kvBytes, indexBytes, recurrentBytes, convBytes, kvLayers, recurrentLayers, fullKvLayers, slidingLayers, fullKvBytes, slidingKvBytes, slidingRetainedTokens }
+  return { perRankBytes, allRankBytes: perRankBytes * scenario.tp, bytesPerToken, growthBytesPerToken, retainedTokens, valuesPerTokenPerLayer, kvBytes, indexBytes, compressedBytes: 0, compressorBytes: 0, recurrentBytes, convBytes, kvLayers, recurrentLayers, fullKvLayers, slidingLayers, fullKvBytes, slidingKvBytes, slidingRetainedTokens }
 }
 
 export function attentionKind(model: ModelArchitecture, layer: number) {
   const cache = model.execution.cache
+  if (cache.kind === 'compressed') return cache.ratios[layer] === 4 ? 'csa' : cache.ratios[layer] === 128 ? 'hca' : 'window-mqa'
   if (cache.kind === 'hybrid') return cache.layerTypes[layer] === 'linear_attention' ? 'gdn' : 'gqa'
   if (cache.kind === 'mixed') return cache.layerTypes[layer] === 'sliding_attention' ? 'swa' : 'gqa'
   if (cache.kind === 'gqa' && model.dimensions.attentionHeads === model.dimensions.kvHeads) return 'mha'
@@ -92,6 +105,7 @@ export function attentionKind(model: ModelArchitecture, layer: number) {
 
 export function layerCacheNode(model: ModelArchitecture, layer: number) {
   const kind = attentionKind(model, layer)
+  if (model.execution.cache.kind === 'compressed') return model.nodes.find(node => node.id === `${kind}-cache`)!
   return model.nodes.find((node) => node.id === (kind === 'gdn' ? 'recurrent-state' : kind === 'swa' && model.execution.cache.kind === 'mixed' ? 'window-cache' : 'kv-cache'))!
 }
 
@@ -112,7 +126,8 @@ export function decoderNodes(model: ModelArchitecture, layer: number): Architect
     weightlessNote: '逐元素加法，没有可训练参数。',
     knowledge: [{ label: '残差与 Pre-Norm', to: '/category/model-architecture' }, { label: 'TP 通信', to: '/category/parallel-strategy' }], tone: 'output',
   })
-  const ffn = layer < model.execution.denseLayers ? get('dense-ffn') ?? get('ffn') : get('moe')
+  const ffn = layer < (model.execution.hashLayers ?? 0) ? get('hash-moe') : layer < model.execution.denseLayers ? get('dense-ffn') ?? get('ffn') : get('moe')
+  if (model.execution.residualLayout === 'mhc') return [get('hc-attn-pre'), get('attention-norm'), get(attentionKind(model, layer)), get('hc-attn-post'), get('hc-ffn-pre'), get('ffn-norm'), ffn, get('hc-ffn-post')]
   if (model.execution.residualLayout === 'parallel') return [
     get('attention-norm'), get(attentionKind(model, layer)), get('ffn-norm'), ffn,
     {
@@ -149,6 +164,7 @@ export function decoderGroups(model: ModelArchitecture, layer: number) {
   const nodes = decoderNodes(model, layer)
   // Parallel branches have no inner residual add; their shared merge is a separate node.
   if (model.execution.residualLayout === 'parallel') return [nodes.slice(0, 2), nodes.slice(2, 4)]
+  if (model.execution.residualLayout === 'mhc') return [nodes.slice(0, 4), nodes.slice(4)]
   const split = nodes.findIndex((node) => node.id === 'attention-add') + 1
   return [nodes.slice(0, split), nodes.slice(split)]
 }

@@ -69,6 +69,29 @@ try {
   assert.match(glmComparison, /DSA Index K/)
   assert.equal((glmComparison.match(/当前条件不计算/g) ?? []).length, 1)
   assert.match(glmComparison, /S 超过当前配置上限 163,840/)
+  for (const [layer, kind] of [[0, 'window-mqa'], [2, 'csa'], [3, 'hca'], [42, 'csa']]) {
+    const html = renderExplorer(`/models/deepseek-v4-flash?layer=${layer}&node=${kind}&b=1&s=4096&tp=8`)
+    assert.match(html, /role="group" aria-label="mHC 四路残差通路"/)
+    assert.match(html, /aria-label="mHC Attention 子层"/)
+    assert.match(html, /aria-label="mHC MoE 子层"/)
+    assert.doesNotMatch(html, /class="model-residual-wire"|id="model-node-(?:attention-add|ffn-add|parallel-add)"/)
+    const ids = [...html.matchAll(/id="model-node-([^"]+)"/g)].map(m => m[1])
+    assert.deepEqual(ids, ['embedding', 'hc-attn-pre', 'attention-norm', kind, `${kind}-cache`, 'hc-attn-post', 'hc-ffn-pre', 'ffn-norm', layer < 3 ? 'hash-moe' : 'moe', 'hc-ffn-post', 'lm-head'])
+    assert.match(html, /43.89 MiB/)
+    assert.match(html, /Compressor 状态 · 固定 FP32/)
+    assert.match(html, /主干不是四份 KV/)
+    const expected = kind === 'csa' ? ['1,024', '512'] : kind === 'hca' ? ['32', '32'] : ['0', '0']
+    assert.match(html, new RegExp(`本层完整压缩历史</h3><p[^>]*>${expected[0]} 条`))
+    assert.match(html, new RegExp(`当前 Decode 读取压缩条数</h3><p[^>]*>${expected[1]} 条`))
+    const prefill = renderExplorer(`/models/deepseek-v4-flash?layer=${layer}&view=cache&phase=prefill&b=1&s=4096&tp=8`)
+    assert.match(prefill, new RegExp(`Prefill 最后 query 读取压缩条数</h3><p[^>]*>${expected[1]} 条`))
+    assert.doesNotMatch(prefill, /当前 Decode 读取压缩条数/)
+    assert.match(prefill, /不是整次 Prefill 的读取总量/)
+    const ffnBranch = html.split('aria-label="mHC MoE 子层"')[1].split('</section>')[0]
+    assert.doesNotMatch(ffnBranch, /id="model-node-.*?-cache"/)
+  }
+  const compressedComparison = render('?models=deepseek-v4-flash,glm-5-2&s=4096&b=1')
+  for (const text of ['43.89 MiB', '压缩 KV 历史', 'Compressor 状态 · FP32', '4 路 · mHC Pre / Post', 'K=V 共享表示']) assert.ok(compressedComparison.includes(text), text)
   let workspaceRoutes = 0
   for (const model of modelArchitectures) {
     for (const active of ['diagram', 'cache', 'weights']) {

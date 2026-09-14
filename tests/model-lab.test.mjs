@@ -107,17 +107,18 @@ test('all model layers have a complete residual block and resolvable shapes', ()
     for (let layer = 0; layer < model.dimensions.layers; layer++) {
       const nodes = decoderNodes(model, layer)
       const parallel = model.execution.residualLayout === 'parallel'
-      assert.equal(nodes.length, parallel ? 5 : model.execution.normLayout ? 8 : 6)
+      const mhc = model.execution.residualLayout === 'mhc'
+      assert.equal(nodes.length, parallel ? 5 : model.execution.normLayout || mhc ? 8 : 6)
       const groups = decoderGroups(model, layer)
-      assert.equal(groups[0].at(-1).id, parallel ? attentionKind(model, layer) : 'attention-add')
-      assert.equal(groups[1][0].id, model.execution.normLayout === 'post-branch-qk' ? 'ffn' : 'ffn-norm')
-      assert.equal(groups[1].at(-1).id, parallel ? 'ffn' : 'ffn-add')
+      assert.equal(groups[0].at(-1).id, mhc ? 'hc-attn-post' : parallel ? attentionKind(model, layer) : 'attention-add')
+      assert.equal(groups[1][0].id, mhc ? 'hc-ffn-pre' : model.execution.normLayout === 'post-branch-qk' ? 'ffn' : 'ffn-norm')
+      assert.equal(groups[1].at(-1).id, mhc ? 'hc-ffn-post' : parallel ? 'ffn' : 'ffn-add')
       if (parallel) {
         assert.equal(nodes.at(-1).id, 'parallel-add')
         assert.equal(nodes.filter((node) => node.id.endsWith('-add')).length, 1)
         assert.equal(groups.flat().length, nodes.length - 1)
       }
-      assert.equal(nodes.filter((node) => ['ffn', 'dense-ffn', 'moe'].includes(node.id)).length, 1)
+      assert.equal(nodes.filter((node) => ['ffn', 'dense-ffn', 'moe', 'hash-moe'].includes(node.id)).length, 1)
       for (const tp of model.supportedTp) {
         assert.equal(model.dimensions.attentionHeads % tp, 0)
         assert.ok(Number.isInteger(localKvHeads(model, tp)))

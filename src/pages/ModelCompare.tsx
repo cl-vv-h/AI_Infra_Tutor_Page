@@ -23,6 +23,7 @@ const presets = [
 ]
 
 function cacheLabel(model: ModelArchitecture) {
+  if (model.execution.cache.kind === 'compressed') return 'SWA + CSA / HCA · 共享 KV'
   if (model.execution.cache.kind === 'mixed') return `Full + Sliding GQA · W ${integer(model.execution.cache.window)}`
   if (model.execution.cache.kind === 'swa') return `Sliding GQA · W ${integer(model.execution.cache.window)}`
   return model.execution.cache.kind === 'mla' ? model.execution.cache.indexWidth ? 'DSA + MLA · 压缩 latent 与 Index K' : 'MLA · 压缩 latent' : model.execution.cache.kind === 'hybrid' ? 'Gated DeltaNet + Full Attention' : model.dimensions.attentionHeads === model.dimensions.kvHeads ? 'MHA · 每个 Q head 独立 KV' : 'GQA'
@@ -30,6 +31,7 @@ function cacheLabel(model: ModelArchitecture) {
 
 function cacheNote(model: ModelArchitecture, tp: TensorParallelSize) {
   const cache = model.execution.cache
+  if (cache.kind === 'compressed') return '每卡复制单份共享 KV：原始滑窗 + floor(S/r) 压缩历史，另计 C4 Index K 和参考实现 FP32 compressor 状态。Top-512 只限制读取，不限制已存记录数；实际量化布局和环形状态可能不同。'
   if (cache.kind === 'gqa' && cache.layout === 'replicated') return `汇集式 Attention TP：权重分片，但每卡缓存完整 ${model.dimensions.kvHeads} 个 KV heads，KV 不除以 TP。按 Transformers v4.57.1 参考路径，不代表所有引擎。`
   if (cache.kind === 'mla') return `采用 latent-cache 路径：${cache.latentWidth} 维压缩 KV + ${cache.ropeWidth} 维 RoPE 在每个 TP rank 复制。${cache.indexWidth ? `另计每层 ${cache.indexWidth} 维 Index K 全历史预留；Top-k 只减少读取，不缩短 S。` : ''}`
   if (cache.kind === 'mixed') return '按实际层分布分别计算完整 KV 和滑窗 KV。局部窗口填满后，完整注意力层继续增加缓存；总曲线不会变平。'
@@ -79,14 +81,15 @@ export default function ModelCompare() {
     { label: 'Decoder 层数', values: models.map((model) => String(model.dimensions.layers)) },
     { label: 'Dense / MoE 层数', values: models.map((model) => `${model.execution.denseLayers} / ${model.dimensions.layers - model.execution.denseLayers}`) },
     { label: 'Hidden width', values: models.map((model) => integer(model.dimensions.hiddenSize)) },
+    { label: '主干 residual streams', values: models.map((model) => model.execution.residualLayout === 'mhc' ? `${model.execution.residualStreams} 路 · mHC Pre / Post` : '1 路') },
     { label: '标准 Attention Q heads', values: models.map((model) => String(model.dimensions.attentionHeads)) },
-    { label: '注意力 KV 表示', values: models.map((model) => model.execution.cache.kind === 'mla' ? `${model.execution.cache.latentWidth} latent + ${model.execution.cache.ropeWidth} RoPE` : `${model.dimensions.kvHeads} KV heads × ${model.dimensions.headDim} head dim × K/V`) },
+    { label: '注意力 KV 表示', values: models.map((model) => model.execution.cache.kind === 'compressed' ? `${model.execution.cache.kvWidth} 维 K=V 共享表示；不乘二` : model.execution.cache.kind === 'mla' ? `${model.execution.cache.latentWidth} latent + ${model.execution.cache.ropeWidth} RoPE` : `${model.dimensions.kvHeads} KV heads × ${model.dimensions.headDim} head dim × K/V`) },
     { label: 'KV / 循环状态层数', values: models.map((model) => { const { kvLayers, recurrentLayers } = cacheEstimate(model, defaultComparisonScenario); return `${kvLayers} / ${recurrentLayers}` }) },
     { label: '完整 / 滑窗 KV 层数', values: models.map((model) => { const { fullKvLayers, slidingLayers } = cacheEstimate(model, defaultComparisonScenario); return `${fullKvLayers} / ${slidingLayers}` }) },
-    { label: 'KV 保留长度', values: models.map((model) => model.execution.cache.kind === 'mixed' ? `完整层 S / 滑窗层 min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'swa' ? `min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'hybrid' ? 'S（仅完整注意力层）' : 'S') },
+    { label: 'KV 保留长度', values: models.map((model) => model.execution.cache.kind === 'compressed' ? 'min(S,128) 原始位置 + floor(S/r) 压缩位置' : model.execution.cache.kind === 'mixed' ? `完整层 S / 滑窗层 min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'swa' ? `min(S, ${integer(model.execution.cache.window)})` : model.execution.cache.kind === 'hybrid' ? 'S（仅完整注意力层）' : 'S') },
     { label: '子层边界归一化', values: models.map((model) => model.execution.normKind === 'layernorm' ? '2 × LayerNorm · Pre · 每个含 scale + bias' : model.execution.normLayout === 'pre-post' ? '4 × RMSNorm · Pre + Post' : model.execution.normLayout === 'post-branch-qk' ? '2 × RMSNorm · 子层输出、残差相加前；另有 Q/K Norm' : '2 × RMSNorm · Pre') },
-    { label: '残差数据依赖', values: models.map((model) => model.execution.residualLayout === 'parallel' ? '并行：Attention 与 MLP 同读 x，最后合并 x + A + M' : '顺序：先合并 Attention 残差，再进入 FFN / MoE') },
-    { label: 'FFN 运算', values: models.map((model) => model.nodes.filter((node) => ['ffn', 'dense-ffn', 'moe'].includes(node.id)).map((node) => node.title).join(' / ')) },
+    { label: '残差数据依赖', values: models.map((model) => model.execution.residualLayout === 'mhc' ? '顺序子层：四路 Pre 合并 → 子层 → Post 分发与混合；无普通残差 Add' : model.execution.residualLayout === 'parallel' ? '并行：Attention 与 MLP 同读 x，最后合并 x + A + M' : '顺序：先合并 Attention 残差，再进入 FFN / MoE') },
+    { label: 'FFN 运算', values: models.map((model) => model.nodes.filter((node) => ['ffn', 'dense-ffn', 'moe', 'hash-moe'].includes(node.id)).map((node) => node.title).join(' / ')) },
     { label: '当前配置上下文上限', values: models.map((model) => `${integer(model.execution.maxContext)} tokens`) },
     { label: '图解已覆盖的 TP', values: models.map((model) => model.supportedTp.join(' / ')) },
   ]
@@ -116,7 +119,8 @@ export default function ModelCompare() {
         {models.map((model, index) => {
           const { estimate, reasons } = results[index]
           const parts = estimate ? [
-            { label: model.execution.cache.kind === 'swa' ? '滑动窗口 KV' : '完整注意力 KV', bytes: (model.execution.cache.kind === 'mixed' ? estimate.fullKvBytes : estimate.kvBytes) * factor, color: '#70e1f5' },
+            { label: model.execution.cache.kind === 'swa' || model.execution.cache.kind === 'compressed' ? '滑动窗口 KV' : '完整注意力 KV', bytes: (model.execution.cache.kind === 'compressed' ? estimate.slidingKvBytes : model.execution.cache.kind === 'mixed' ? estimate.fullKvBytes : estimate.kvBytes) * factor, color: '#70e1f5' },
+            ...(model.execution.cache.kind === 'compressed' ? [{ label: '压缩 KV 历史', bytes: estimate.compressedBytes * factor, color: '#c7a8ff' }, { label: 'Compressor 状态 · FP32', bytes: estimate.compressorBytes * factor, color: '#d8ff78' }] : []),
             ...(model.execution.cache.kind === 'mixed' ? [{ label: '滑动窗口 KV', bytes: estimate.slidingKvBytes * factor, color: '#ffc98b' }] : []),
             ...(estimate.indexBytes ? [{ label: 'DSA Index K', bytes: estimate.indexBytes * factor, color: '#ffc98b' }] : []),
             { label: '循环矩阵 · FP32', bytes: estimate.recurrentBytes * factor, color: '#d8ff78' },
