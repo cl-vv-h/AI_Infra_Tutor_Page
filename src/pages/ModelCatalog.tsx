@@ -5,8 +5,8 @@ import { modelArchitectures } from '@/data/models'
 import { attentionComposition, attentionFilters, catalogComparisonHref, catalogComparisonScenario, catalogParams, emptyCatalog, filterCatalog, hasExperts, modelAttentionProfile, parseCatalog, toggleCatalogSelection } from '@/lib/model-catalog'
 import type { CatalogState } from '@/lib/model-catalog'
 
-const layerLabels = { mha: 'MHA', gqa: '完整 GQA', mla: 'MLA', gdn: 'DeltaNet', swa: '滑窗 GQA', 'window-mqa': '纯滑窗 MQA', csa: 'SWA+CSA', hca: 'SWA+HCA' }
-const layerColors = { mha: '#a5d8ff', gqa: '#70e1f5', mla: '#c7a8ff', gdn: '#d8ff78', swa: '#ffc98b', 'window-mqa': '#70e1f5', csa: '#c7a8ff', hca: '#ffaeb9' }
+const layerLabels = { mha: 'MHA', gqa: '完整 GQA', mla: 'MLA', gdn: 'DeltaNet', kda: 'KDA', swa: '滑窗 GQA', 'window-mqa': '纯滑窗 MQA', csa: 'SWA+CSA', hca: 'SWA+HCA' }
+const layerColors = { mha: '#a5d8ff', gqa: '#70e1f5', mla: '#c7a8ff', gdn: '#d8ff78', kda: '#a8e8c5', swa: '#ffc98b', 'window-mqa': '#70e1f5', csa: '#c7a8ff', hca: '#ffaeb9' }
 const inputClass = 'min-w-0 rounded-xl border border-white/15 bg-[#0b131c] px-4 py-3 text-base text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-200'
 
 export default function ModelCatalog() {

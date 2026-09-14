@@ -3,6 +3,7 @@ import type { ModelArchitecture } from '@/types/model'
 import { attentionKind, cacheEstimate, cacheKvHeads, formatBytes, tokenCount } from '@/lib/model-lab'
 import type { InferenceScenario } from '@/lib/model-lab'
 import CompressedCacheWorkbench from './CompressedCacheWorkbench'
+import KdaMlaWorkbench from './KdaMlaWorkbench'
 
 export function CacheWorkbench({ model, layer = 0, scenario, onBatch, onSequence, onBytes }: {
   model: ModelArchitecture
@@ -13,6 +14,7 @@ export function CacheWorkbench({ model, layer = 0, scenario, onBatch, onSequence
   onBytes: (value: 1 | 2) => void
 }) {
   if (model.execution.cache.kind === 'compressed') return <CompressedCacheWorkbench model={model} layer={layer} scenario={scenario} onBatch={onBatch} onSequence={onSequence} onBytes={onBytes} />
+  if (model.execution.cache.kind === 'kda-mla') return <KdaMlaWorkbench model={model} layer={layer} scenario={scenario} onBatch={onBatch} onSequence={onSequence} onBytes={onBytes} />
   const estimate = cacheEstimate(model, scenario)
   const cache = model.execution.cache
   const hybrid = cache.kind === 'hybrid'

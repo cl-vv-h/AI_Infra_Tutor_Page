@@ -84,7 +84,7 @@ test('module index contains exactly the actual layers for every target, with no 
     for (const target of index) {
       const expected = Array.from({ length: model.dimensions.layers }, (_, i) => i).filter((layer) => explorerNodes(model, layer).some((node) => node.id === target.node.id))
       assert.deepEqual(target.layers, expected)
-      assert.equal(target.global, ['embedding', 'lm-head', 'vision'].includes(target.node.id))
+      assert.equal(target.global, ['embedding', 'lm-head', 'vision', 'hc-expand'].includes(target.node.id))
       for (let layer = 0; layer < model.dimensions.layers; layer++) {
         const nearest = nearestModuleLayer(target, layer)
         assert.ok(target.layers.includes(nearest))

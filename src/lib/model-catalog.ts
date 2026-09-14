@@ -8,6 +8,7 @@ export const attentionFilters = [
   { id: 'swa', label: '全滑窗' }, { id: 'mixed', label: '完整 + 滑窗' },
   { id: 'hybrid', label: 'DeltaNet 混合' },
   { id: 'compressed', label: 'SWA + 压缩注意力' },
+  { id: 'kda-mla', label: 'KDA + 稀疏 MLA' },
 ] as const
 export type AttentionFilter = typeof attentionFilters[number]['id']
 export interface CatalogState { query: string; attention: AttentionFilter; ffn: 'all' | 'dense' | 'moe'; selected: string[] }

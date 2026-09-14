@@ -9,6 +9,7 @@ import { starcoderArchitectures } from './starcoder-models.ts'
 import { pythiaArchitectures } from './pythia-models.ts'
 import { glm5Architectures } from './glm5-models.ts'
 import { deepseekV4Architectures } from './deepseek-v4-models.ts'
+import { glm53Architectures } from './glm53-models.ts'
 
 export const modelArchitectures: ModelArchitecture[] = [
   {
@@ -453,6 +454,7 @@ export const modelArchitectures: ModelArchitecture[] = [
   ...pythiaArchitectures,
   ...glm5Architectures,
   ...deepseekV4Architectures,
+  ...glm53Architectures,
 ]
 
 export function getModelArchitecture(id?: string) {

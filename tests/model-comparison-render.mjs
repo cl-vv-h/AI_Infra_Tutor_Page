@@ -92,6 +92,19 @@ try {
   }
   const compressedComparison = render('?models=deepseek-v4-flash,glm-5-2&s=4096&b=1')
   for (const text of ['43.89 MiB', '压缩 KV 历史', 'Compressor 状态 · FP32', '4 路 · mHC Pre / Post', 'K=V 共享表示']) assert.ok(compressedComparison.includes(text), text)
+  for (const layer of [0, 2, 3, 44]) {
+    const kind = layer % 4 === 3 ? 'mla' : 'kda'
+    const html = renderExplorer(`/models/glm-5-3-flash?layer=${layer}&b=1&s=4096&tp=4`)
+    const ids = [...html.matchAll(/id="model-node-([^"]+)"/g)].map(m => m[1])
+    assert.deepEqual(ids, ['embedding', 'vision', 'hc-expand', 'hc-attn-pre', 'attention-norm', kind, kind === 'kda' ? 'recurrent-state' : 'kv-cache', 'hc-attn-post', 'hc-ffn-pre', 'ffn-norm', layer < 3 ? 'dense-ffn' : 'moe', 'hc-ffn-post', 'lm-head'])
+    assert.ok(html.includes(`aria-label="mHC ${layer < 3 ? 'Dense FFN' : 'MoE'} 子层"`))
+    for (const text of ['81.97 MiB', '11 层池化 Index K', '34 层 KDA 矩阵', '34 层 KDA 卷积', '2,048 个有效读取位置', 'Mean HC Head + Norm + LM Head']) assert.ok(html.includes(text), text)
+    assert.doesNotMatch(html, /id="model-node-(?:attention-add|ffn-add)"|NaN|undefined/)
+  }
+  const glm53Tail = renderExplorer('/models/glm-5-3-flash?view=cache&phase=prefill&s=4095&layer=3&b=1&tp=4')
+  for (const text of ['Prefill 最后 query', '2,051 个有效读取位置', '最多选 512 池', '再加 3 个尾部 token']) assert.ok(glm53Tail.includes(text), text)
+  const glm53Compared = render('?models=glm-5-3-flash,glm-5-2&s=4096&b=1&tp=4')
+  for (const text of ['81.97 MiB', 'KDA + NoPE DSA', '池化 DSA Index K', 'Index key / score 尾部 · BF16', '512 latent · NoPE']) assert.ok(glm53Compared.includes(text), text)
   let workspaceRoutes = 0
   for (const model of modelArchitectures) {
     for (const active of ['diagram', 'cache', 'weights']) {

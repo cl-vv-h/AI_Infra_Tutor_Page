@@ -191,6 +191,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
         <div className="model-canvas order-1 min-w-0 rounded-3xl border border-white/10 bg-[#080d13] p-4 sm:p-6 xl:order-2">
           <div className="mb-5 flex flex-wrap items-center justify-between gap-2 text-sm text-white/60"><span>{phase === 'prefill' ? 'Prefill · 无前缀缓存，处理完整输入' : 'Decode · 每请求新增 1 token'}</span><span className="font-mono text-cyan-200">N = {tokenCount(scenario).toLocaleString('en-US')}</span></div>
           {vision ? <><div className="grid gap-3 sm:grid-cols-2">{nodeButton(embedding)}{nodeButton(vision)}</div><div className="mx-auto mt-3 max-w-[25rem] rounded-xl border border-white/15 p-3 text-center text-sm text-white/70">↓ 视觉输出替换对应占位 embedding ↓<br /><span className="font-mono text-xs text-cyan-100">{formatShape('[N, ' + model.dimensions.hiddenSize + ']', model, scenario)}</span></div></> : nodeButton(embedding)}{flowLine}
+          {model.nodes.find(node => node.id === 'hc-expand') && <>{nodeButton(model.nodes.find(node => node.id === 'hc-expand')!)}{flowLine}</>}
           {effectiveLayer > 0 && <><div className="model-folded-layers">前 {effectiveLayer} 层 Decoder</div>{flowLine}</>}
           <div className="rounded-2xl border border-dashed border-cyan-200/25 px-3 py-4 sm:px-6">
             <div className="mb-5 flex flex-wrap justify-between gap-2 font-mono text-xs text-cyan-100/80"><span>DECODER LAYER {effectiveLayer}</span><span className="text-violet-200">{isDense ? 'DENSE FFN' : 'SPARSE MoE'}</span></div>
@@ -207,14 +208,14 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
               <p className="mt-4 text-sm leading-6 text-white/60">两支之间没有 Attention → MLP 的数据边。上下或并排排列都表示同源分支；实际是否同时执行取决于运行时，不是吞吐或速度承诺。</p>
             </div> : mhcResidual ? <div role="group" aria-label="mHC 四路残差通路" className="space-y-5">
               <div className="grid grid-cols-4 gap-2" aria-label="四路 residual streams">{[0, 1, 2, 3].map(stream => <div key={stream} className="rounded-xl border border-rose-200/30 bg-rose-200/5 px-2 py-3 text-center font-mono text-xs text-rose-100">Stream {stream}<br />{model.dimensions.hiddenSize}</div>)}</div>
-              {groups.map((group, branch) => <section key={branch} aria-label={`mHC ${branch === 0 ? 'Attention' : 'MoE'} 子层`} className="rounded-2xl border border-rose-200/20 p-3">
-                <h3 className="mb-3 text-sm font-medium text-rose-100">{branch === 0 ? 'Attention' : 'MoE'}：四路输入 → Pre → 单路计算 → Post → 四路输出</h3>
+              {groups.map((group, branch) => <section key={branch} aria-label={`mHC ${branch === 0 ? 'Attention' : isDense ? 'Dense FFN' : 'MoE'} 子层`} className="rounded-2xl border border-rose-200/20 p-3">
+                <h3 className="mb-3 text-sm font-medium text-rose-100">{branch === 0 ? 'Attention' : isDense ? 'Dense FFN' : 'MoE'}：四路输入 → Pre → 单路计算 → Post → 四路输出</h3>
                 <div className="grid grid-cols-[minmax(0,1fr)_4.5rem] items-start gap-3 sm:grid-cols-[minmax(0,1fr)_6rem]">
                   <div className="min-w-0">{group.map((node, index) => <div key={node.id}>{nodeButton(node)}{node.id === attentionKind(model, effectiveLayer) && cacheButton()}{index < group.length - 1 && flowLine}</div>)}</div>
                   <aside className="self-stretch rounded-xl border border-dashed border-rose-200/35 bg-rose-200/5 p-2 text-center text-xs leading-6 text-rose-100">保留本子层四路 residual<br />↓<br />Pre 产生 post / Hres<br />↓<br />绕过单路子层计算<br />↓<br />送入对应 Post 混合</aside>
                 </div>
               </section>)}
-              <p className="text-sm leading-6 text-white/65">四路是 residual stream 轴，不是 TP rank，也不是四个 Attention heads。每个子层只计算一次；Attention 的 Post 输出是 MoE 的 Pre 输入。</p>
+              <p className="text-sm leading-6 text-white/65">四路是 residual stream 轴，不是 TP rank，也不是四个 Attention heads。每个子层只计算一次；Attention 的 Post 输出是 FFN 的 Pre 输入。</p>
             </div> : groups.map((group, groupIndex) => <div key={groupIndex} className="model-residual-group">
               <div className="model-residual-wire" aria-hidden="true"><span>+</span></div>
               {group.map((node, index) => <div key={node.id}>
@@ -245,7 +246,13 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
         <ModelWeightBudget model={model} layer={effectiveLayer} tp={effectiveTp} bits={state.weightBits ?? 16} selectedId={selected.id} onBits={(weightBits) => update({ weightBits })} onSelect={(node) => inspect(node, effectiveLayer, true)} />
       </div>
     </main>
-    <dialog ref={dialog} aria-label="模块详情" className="model-inspector-dialog" onClose={() => document.getElementById(`model-node-${selected.id}`)?.focus()} onClick={(event) => { if (event.target === dialog.current) dialog.current.close() }}>
+    <dialog ref={dialog} aria-label="模块详情" className="model-inspector-dialog" onClose={() => {
+      // Native dialog closing restores focus; its deferred close event must not steal a newer focus.
+      const active = document.activeElement
+      if (!active || active === document.body || dialog.current?.contains(active)) {
+        document.getElementById(`model-node-${selected.id}`)?.focus()
+      }
+    }} onClick={(event) => { if (event.target === dialog.current) dialog.current.close() }}>
       <button autoFocus type="button" aria-label="关闭模块详情" onClick={() => dialog.current?.close()} className="sticky top-0 z-10 mb-2 ml-auto flex items-center gap-2 rounded-full border border-white/20 bg-[#0c131c] px-4 py-2 text-sm text-white"><X className="h-4 w-4" />关闭</button>
       <Inspector node={selected} model={model} scenario={scenario} />
     </dialog>

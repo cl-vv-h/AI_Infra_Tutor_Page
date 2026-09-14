@@ -51,13 +51,34 @@ npm run build
 
 本批已在 Chrome 152 的 360、390、768、1440px 视口测试导览答案切换、窄屏详情弹窗与焦点归还、键盘工作区导航、511→512 压缩记录边界、阶段与层切换，并人工查看 mHC / 缓存面板截图；这不等于 Safari、所有设备或 GPU 推理验收。
 
+## 2026-09-14：GLM-5.3-Flash、KDA 与池化索引
+
+接入独立的 `zai-org/GLM-5.3-Flash`：45 个文本层，34 KDA / 11 NoPE DSA，前三层 Dense / 后 42 层 MoE，288 routed experts / Top-8 + 1 shared。模型卡标称 320B 总参数 / 18B 激活；不根据图示权重账本反推完整参数量。一个 NextN 辅助层未计入 45 层主干。
+
+端到端入口先将视觉特征替换文本中的占位 embedding，再展开四路 mHC。新增独立、可分享的 `hc-expand` 模块，避免在单路视觉输出与四路文本主干之间错误连接。24 层视觉塔以 2×14×14 patch 输入，2×2 下采样至 4096 维，再经 Merger 汇入文本；视觉节点列出主要未分片权重，不宣称完整视觉参数盘点。图示 448×448 的 1024→256 token 仅为一个 temporal patch 的例子，实际输入遵循 grid_thw。
+
+mHC 的子层 Pre / Post 保留四路旁路，但最终 HC Head 是**无参数四路均值**，不是 DeepSeek V4 的可学习动态 Head。Dense 层在图中明确标记 Dense FFN，不冒充 MoE。
+
+KDA 的遗忘门沿 key 通道变化，beta 沿 head 变化，不套用 Gated DeltaNet 的标量遗忘门。图解拆明 QKV 及卷积、低秩 forget/output gate、FP32 矩阵与输出 gated RMSNorm。DSA 则压缩 Index K：每四个 token 一个索引池，最多选 512 池并展开为 2048 个原始 token，再加 0–3 个未满尾部；主 MLA 历史仍保存全部 S 条 512 维 latent，不被池化或 Top-k 截断。新的实验面板展示不同 query 的因果可见池数和展开数量，不捏造 learned 排名。
+
+缓存选择 SGLang 无推测解码、EP=1、Attention TP=TP 的**逻辑占用基线**：
+
+- 每个 DSA 层：`S×512×bytes` 主 latent、`floor(S/4)×128×bytes` Index K；key / score 各四槽 BF16 尾部，按 rank 复制。
+- 每个 KDA 层：`(64/TP)×128²×4` 字节矩阵；`(3×8192/TP)×3×2` 字节历史卷积窗口，采用 K−1 槽布局。
+- B=1 / S=4096 / TP=4 / 两字节时：主 latent 46,137,344 B + Index K 2,883,584 B + 尾部 22,528 B + KDA 矩阵 35,651,584 B + 卷积 1,253,376 B = **85,948,416 B / rank**（81.97 MiB）。四路 mHC 不乘四；只有 KDA 部分随 TP 均分。
+- 精度选项仅作用于主 latent 和 Index K，其余状态精度固定。未计 FP8 scale、页尾空位、哨兵请求、最大请求数预分配、视觉临时激活、MTP / ReplaySSM、前缀快照或图捕获。不是整卡部署预算。
+- Transformers 参考路径保存展开的 K/V 和 full-history packed indexer 状态，与此 SGLang latent/pool 路径不同；不得将本估算套在该 eager 缓存实现上。
+
+证据：[官方配置](https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json)、[模型卡](https://huggingface.co/zai-org/GLM-5.3-Flash)、[SGLang 模型（固定 revision）](https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/models/glm5_next.py)、[IndexerKPool](https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/layers/attention/dsa/dsa_indexer_kpool.py)、[状态布局](https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/configs/mamba_utils.py)、[DSA 尾部缓冲](https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/mem_cache/memory_pool.py)、[Transformers 语义参考（固定 revision）](https://github.com/huggingface/transformers/blob/93ebf6b11127967f2725cf4d012aae55c3654f5a/src/transformers/models/glm5_next/modeling_glm5_next.py)。核对日期 2026-09-14。
+
+独立测试 `tests/glm53-model.test.mjs` 覆盖层分布、视觉汇合、均值 Head、索引尾部、TP/精度算术、预算边界及权重账本。105 项模型测试、51 个工作区路由、136 组模型对比及 181 个模块链接通过。Chrome 152 在 360、390、768、1440px 通过池边界交互、视觉模块弹窗与 KDA / Dense 切换，并检查缓存和 mHC 截图。关闭详情时仅补救失落的焦点，不用延迟 close 事件覆盖用户已经移往滑块的焦点；浏览器回归显式模拟了这个事件顺序。以上不等于 Safari、所有设备或 GPU 执行验证。
+
 ## 其余请求模型：已核对配置，尚未实现
 
 以下是后续实现约束，不是已完成图解列表。禁止用旧模型的算式替换它们。
 
 | 精确检查点 | 配置中必须单独处理的结构 |
 | --- | --- |
-| [GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json) | 45 文本层，34 KDA + 11 DSA；4 路 mHC；视觉输入；DSA 无 RoPE 的主 MLA 与压缩 Index K |
 | [Kimi-K3](https://huggingface.co/moonshotai/Kimi-K3/blob/main/config.json) | 93 文本层，KDA + MLA；配置层列表从 1 开始；Attention Residual、latent MoE 与视觉输入 |
 | [DeepSeek-V4.1-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/config.json) | 40 层因果 Encoder–Decoder；跨层 KV 来源与 Index 来源不同；Engram、视觉与 DSpark 需要独立支路；不能套 Decoder-only 全层独立 KV |
 

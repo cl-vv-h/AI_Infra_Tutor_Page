@@ -31,7 +31,7 @@ export function explorerNodes(model: ModelArchitecture, layer: number) {
     model.nodes.find((node) => node.id === 'embedding')!,
     ...decoderNodes(model, layer), layerCacheNode(model, layer),
     model.nodes.find((node) => node.id === 'lm-head')!,
-    ...model.nodes.filter((node) => node.id === 'vision'),
+    ...model.nodes.filter((node) => ['vision', 'hc-expand'].includes(node.id)),
   ]
 }
 
@@ -95,7 +95,7 @@ export function moduleIndex(model: ModelArchitecture): ModuleTarget[] {
     for (const node of explorerNodes(model, layer)) {
       const found = index.get(node.id)
       if (found) found.layers.push(layer)
-      else index.set(node.id, { node, layers: [layer], global: ['embedding', 'lm-head', 'vision'].includes(node.id) })
+      else index.set(node.id, { node, layers: [layer], global: ['embedding', 'lm-head', 'vision', 'hc-expand'].includes(node.id) })
     }
   }
   return [...index.values()]

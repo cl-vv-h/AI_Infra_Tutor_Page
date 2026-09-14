@@ -1,5 +1,6 @@
 import type { ArchitectureNode, InferencePhase, ModelArchitecture, TensorParallelSize } from '../types/model'
 import { compressedCacheParts } from './compressed-cache.ts'
+import { kdaMlaCacheParts } from './kda-mla-cache.ts'
 
 export interface InferenceScenario {
   phase: InferencePhase
@@ -35,6 +36,7 @@ export function windowSequence(model: ModelArchitecture, sequence: number) {
 
 export function formatShape(template: string, model: ModelArchitecture, scenario: InferenceScenario) {
   const hybrid = model.execution.cache.kind === 'hybrid' ? model.execution.cache : null
+  const kda = model.execution.cache.kind === 'kda-mla' ? model.execution.cache : null
   const values: Record<string, number> = {
     localHeads: model.dimensions.attentionHeads / scenario.tp,
     localKvHeads: localKvHeads(model, scenario.tp),
@@ -45,6 +47,7 @@ export function formatShape(template: string, model: ModelArchitecture, scenario
     tp: scenario.tp, batch: scenario.batch, sequence: scenario.sequence, cachedSequence: cachedSequence(model, scenario.sequence), windowSequence: windowSequence(model, scenario.sequence),
     compressed4: Math.floor(scenario.sequence / 4), compressed128: Math.floor(scenario.sequence / 128),
     localGroups: (model.execution.outputGroups ?? 1) / scenario.tp,
+    ...(kda ? { kdaHeads: kda.heads / scenario.tp, kdaWidth: kda.heads * kda.headDim / scenario.tp, kdaQkv: 3 * kda.heads * kda.headDim / scenario.tp, pooledIndex: Math.floor(scenario.sequence / kda.indexPool) } : {}),
     ...(hybrid ? {
       linearKeyHeads: hybrid.keyHeads / scenario.tp,
       linearValueHeads: hybrid.valueHeads / scenario.tp,
@@ -61,6 +64,14 @@ export function formatShape(template: string, model: ModelArchitecture, scenario
 
 export function cacheEstimate(model: ModelArchitecture, scenario: InferenceScenario) {
   const cache = model.execution.cache
+  if (cache.kind === 'kda-mla') {
+    const p = kdaMlaCacheParts(cache, scenario.sequence, scenario.batch, scenario.tp, scenario.cacheBytes)
+    return { perRankBytes: p.total, allRankBytes: p.total * scenario.tp, bytesPerToken: p.growthBytesPerToken, growthBytesPerToken: p.growthBytesPerToken,
+      retainedTokens: scenario.sequence, valuesPerTokenPerLayer: cache.latentWidth, kvBytes: p.kvBytes, indexBytes: p.indexBytes,
+      compressedBytes: 0, compressorBytes: p.tailBytes, recurrentBytes: p.recurrentBytes, convBytes: p.convBytes,
+      kvLayers: p.kvLayers, recurrentLayers: p.recurrentLayers, fullKvLayers: p.kvLayers, slidingLayers: 0,
+      fullKvBytes: p.kvBytes, slidingKvBytes: 0, slidingRetainedTokens: 0 }
+  }
   if (cache.kind === 'compressed') {
     const part = compressedCacheParts(model, scenario.sequence, scenario.batch, scenario.cacheBytes)
     const growth = compressedCacheParts(model, scenario.sequence + 1, 1, scenario.cacheBytes).total - compressedCacheParts(model, scenario.sequence, 1, scenario.cacheBytes).total
@@ -96,6 +107,7 @@ export function cacheEstimate(model: ModelArchitecture, scenario: InferenceScena
 
 export function attentionKind(model: ModelArchitecture, layer: number) {
   const cache = model.execution.cache
+  if (cache.kind === 'kda-mla') return cache.layerTypes[layer]
   if (cache.kind === 'compressed') return cache.ratios[layer] === 4 ? 'csa' : cache.ratios[layer] === 128 ? 'hca' : 'window-mqa'
   if (cache.kind === 'hybrid') return cache.layerTypes[layer] === 'linear_attention' ? 'gdn' : 'gqa'
   if (cache.kind === 'mixed') return cache.layerTypes[layer] === 'sliding_attention' ? 'swa' : 'gqa'
@@ -105,6 +117,7 @@ export function attentionKind(model: ModelArchitecture, layer: number) {
 
 export function layerCacheNode(model: ModelArchitecture, layer: number) {
   const kind = attentionKind(model, layer)
+  if (kind === 'kda') return model.nodes.find(node => node.id === 'recurrent-state')!
   if (model.execution.cache.kind === 'compressed') return model.nodes.find(node => node.id === `${kind}-cache`)!
   return model.nodes.find((node) => node.id === (kind === 'gdn' ? 'recurrent-state' : kind === 'swa' && model.execution.cache.kind === 'mixed' ? 'window-cache' : 'kv-cache'))!
 }

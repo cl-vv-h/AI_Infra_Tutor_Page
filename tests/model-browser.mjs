@@ -77,9 +77,44 @@ try {
       await page.locator('#workspace-tab-cache').click()
       await cache.screenshot({ path: join(process.env.MODEL_QA_SCREENSHOTS, `cache-${width}.png`) })
     }
+    await page.goto(`${base}#/models/glm-5-3-flash?layer=3&node=mla&view=cache&phase=prefill&b=1&s=4095&tp=4`, { waitUntil: 'networkidle' })
+    const glmCache = page.getByRole('region', { name: 'KDA 与池化 DSA 缓存实验' })
+    await expect(glmCache).toContainText('2,051 个有效读取位置')
+    await expect(glmCache).toContainText('再加 3 个尾部 token')
+    await fits('GLM pooled-index cache')
+    await page.getByLabel('每请求序列 token 数', { exact: true }).selectOption('4096')
+    await expect(glmCache).toContainText('2,048 个有效读取位置')
+    await expect(glmCache).toContainText('81.97 MiB')
+    await page.locator('#workspace-tab-diagram').click()
+    await page.locator('#model-node-hc-expand').click()
+    if (width < 1280) {
+      await expect(page.getByRole('dialog', { name: '模块详情' })).toBeVisible()
+      await expect(page.getByRole('dialog', { name: '模块详情' })).toContainText('替换')
+      await page.getByRole('button', { name: '关闭模块详情' }).click()
+      await expect(page.locator('#model-node-hc-expand')).toBeFocused()
+    }
+    const layerSlider = page.getByLabel('查看 Decoder 层号', { exact: true })
+    await layerSlider.focus()
+    if (width < 1280) {
+      // Reproduce a close notification arriving after the user moves elsewhere.
+      await page.getByRole('dialog', { name: '模块详情', includeHidden: true }).evaluate(el => el.dispatchEvent(new Event('close')))
+    }
+    await expect(layerSlider).toBeFocused()
+    await page.keyboard.press('Home')
+    await expect(page.locator('#model-node-kda')).toBeVisible()
+    await expect(page.locator('#model-node-dense-ffn')).toBeVisible()
+    await expect(page.locator('[aria-label="mHC Dense FFN 子层"]')).toBeVisible()
+    const order = await page.locator('[id^="model-node-"]').evaluateAll(nodes => nodes.map(n => n.id))
+    assert.deepEqual(order.slice(0, 4), ['model-node-embedding', 'model-node-vision', 'model-node-hc-expand', 'model-node-hc-attn-pre'])
+    await fits('GLM multimodal diagram')
+    if (process.env.MODEL_QA_SCREENSHOTS) {
+      await page.locator('[aria-label="mHC Attention 子层"]').screenshot({ path: join(process.env.MODEL_QA_SCREENSHOTS, `glm-kda-${width}.png`) })
+      await page.locator('#workspace-tab-cache').click()
+      await glmCache.screenshot({ path: join(process.env.MODEL_QA_SCREENSHOTS, `glm-cache-${width}.png`) })
+    }
     assert.deepEqual(errors, [], `${width}px runtime errors`)
     await page.close()
-    console.log(`Browser interactions passed at ${width}px: guide, dialog, focus, tabs, cache boundaries, phase and layer switching.`)
+    console.log(`Browser interactions passed at ${width}px: V4 guide/dialog/tabs/compression; GLM 5.3 pooled-index tail, KDA/dense boundary and visual-before-mHC ordering.`)
   }
   console.log(`${checks} viewport overflow checks passed. Browser: ${browser.version()}. No GPU inference tested.`)
 } finally {

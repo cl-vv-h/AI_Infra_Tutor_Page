@@ -1,6 +1,22 @@
 export type InferencePhase = 'prefill' | 'decode'
 export type TensorParallelSize = 1 | 2 | 4 | 8
 
+export interface KdaMlaCache {
+  kind: 'kda-mla'
+  layerTypes: Array<'kda' | 'mla'>
+  heads: number
+  headDim: number
+  convSlots: number
+  convBytes: number
+  stateBytes: number
+  latentWidth: number
+  indexWidth: number
+  indexPool: number
+  indexTopk: number
+  tailSlots: number
+  tailBytes: number
+}
+
 export interface ModelMetric {
   label: string
   value: string
@@ -59,7 +75,7 @@ export interface ModelArchitecture {
     residualStreams?: number
     outputGroups?: number
     normLayout?: 'pre-post' | 'post-branch-qk'
-    cache: { kind: 'compressed'; window: number; ratios: Array<0 | 4 | 128>; kvWidth: number; indexWidth: number; indexTopk: number; stateBytes: number } | { kind: 'gqa'; layout?: 'replicated' } | { kind: 'swa'; window: number } | { kind: 'mixed'; window: number; layerTypes: Array<'sliding_attention' | 'full_attention'> } | { kind: 'mla'; latentWidth: number; ropeWidth: number; /** Replicated index K allocation at every layer, using the selected logical precision. */ indexWidth?: number } | {
+    cache: KdaMlaCache | { kind: 'compressed'; window: number; ratios: Array<0 | 4 | 128>; kvWidth: number; indexWidth: number; indexTopk: number; stateBytes: number } | { kind: 'gqa'; layout?: 'replicated' } | { kind: 'swa'; window: number } | { kind: 'mixed'; window: number; layerTypes: Array<'sliding_attention' | 'full_attention'> } | { kind: 'mla'; latentWidth: number; ropeWidth: number; /** Replicated index K allocation at every layer, using the selected logical precision. */ indexWidth?: number } | {
       kind: 'hybrid'
       layerTypes: Array<'linear_attention' | 'full_attention'>
       keyHeads: number
