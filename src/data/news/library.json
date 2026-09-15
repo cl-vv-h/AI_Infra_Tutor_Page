@@ -1,7 +1,57 @@
 {
-  "generatedAt": "2026-09-14T05:18:14.273Z",
+  "generatedAt": "2026-09-15T05:09:22.945Z",
   "lookbackDays": 90,
   "items": [
+    {
+      "id": "09d38645436ba91e",
+      "category": "technology",
+      "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
+      "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE...",
+      "url": "https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-14T16:39:15.000Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
+      "score": 31.9,
+      "topics": [
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "8fff4ec66540b8c7",
+      "category": "technology",
+      "title": "Summer Training: Catching Up With NASA’s Astronaut Candidates",
+      "summary": "Did you spend part of your summer camping, hiking, at the pool, or in an aircraft? So did NASA’s 2025 Astronaut Candidate Class. The 10 candidates have been working their way through a comprehensive and rigorous training program since the agency introduced them to the public on Sept. 22, 2025, from NASA’s Johnson Space Center […]",
+      "url": "https://www.nasa.gov/centers-and-facilities/johnson/summer-training-catching-up-with-nasas-astronaut-candidates/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-09-14T15:00:00.000Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
+      "score": 26.5,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "17484399503afa2f",
+      "category": "technology",
+      "title": "An Educational GEMM Ladder for Helios GPUs",
+      "summary": "AMD Helios will be an important platform for AI. Helios offers 432 GB of HBM4, 23 TB/s of HBM bandwidth per GPU, and 40 PFLOPs of FP4 compute AMD Instinct™ MI455X GPU. These capabilities will be especially valuable for large frontier models and long-context agentic workloads.",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/hipkittens-gemm-ladder/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-14T00:00:00.000Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
+      "score": 27.7,
+      "topics": [
+        "kernels",
+        "hardware"
+      ]
+    },
     {
       "id": "f3d0c812ca888606",
       "category": "technology",
@@ -12,7 +62,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-11T17:45:57.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -28,7 +78,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-11T13:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 22,
       "topics": [
         "security"
@@ -61,7 +111,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-10T16:55:32.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "inference",
@@ -95,7 +145,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-10T15:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "inference"
@@ -183,11 +233,27 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-10T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "inference",
         "hardware"
+      ]
+    },
+    {
+      "id": "532647f12abc8812",
+      "category": "ai",
+      "title": "Async GRPO with LoRA across HF Jobs: a bucket, a proxy, and no NCCL",
+      "summary": "",
+      "url": "https://huggingface.co/blog/asyncgrpo-lora-hfjobs",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-10T00:00:00.000Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
+      "score": 19,
+      "topics": [
+        "training"
       ]
     },
     {
@@ -200,7 +266,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-10T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "inference"
@@ -216,7 +282,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-09T20:31:04.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "inference",
@@ -250,7 +316,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-09T20:24:12.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "kernels"
@@ -283,7 +349,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-09T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "inference",
@@ -300,7 +366,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T12:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -317,7 +383,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "inference",
@@ -335,7 +401,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "inference",
@@ -353,7 +419,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "inference",
@@ -371,7 +437,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "inference",
@@ -388,7 +454,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-07T13:05:37.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "inference",
@@ -405,7 +471,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-07T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "inference",
@@ -422,7 +488,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T21:03:02.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 22,
       "topics": [
         "security"
@@ -438,7 +504,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T16:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "inference"
@@ -454,7 +520,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T13:13:48.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "models"
@@ -470,7 +536,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "training"
@@ -486,7 +552,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "training"
@@ -502,7 +568,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "hardware",
@@ -520,7 +586,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-02T18:41:48.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "kernels"
@@ -536,28 +602,12 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-02T17:15:57.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "kernels",
         "hardware",
         "training"
-      ]
-    },
-    {
-      "id": "f533fe6886daa6d0",
-      "category": "technology",
-      "title": "Co-Designing AI Models Using Speculative Decoding for Faster LLM Inference",
-      "summary": "This post is the third in a series on AI model co-design. It explores how to accelerate LLM inference while maintaining accuracy using speculative decoding and...",
-      "url": "https://developer.nvidia.com/blog/co-designing-ai-models-using-speculative-decoding-for-faster-llm-inference/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-02T16:04:19.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
-      "score": 23,
-      "topics": [
-        "inference"
       ]
     },
     {
@@ -570,7 +620,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-01T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "inference"
@@ -586,7 +636,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-01T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "inference"
@@ -602,7 +652,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-01T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -618,7 +668,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-28T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -634,29 +684,12 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-28T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "inference",
         "hardware",
         "training"
-      ]
-    },
-    {
-      "id": "69a99b2b8b269f00",
-      "category": "technology",
-      "title": "ROCm 10.0: A Decade of Open Compute, Built for the Age of Agentic AI",
-      "summary": "AMD shipped ROCm 1.0 in April 2016: an open-source GPU compute stack built around a C++ compiler and a GPU programming language called HIP, aimed at high-performance computing. A decade later, the same platform trains and serves frontier AI models across industries and enables nearly every compute application benefiting from GPUs.",
-      "url": "https://rocm.blogs.amd.com/ecosystems-and-partners/rocm-x-blog/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-08-27T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
-      "score": 23,
-      "topics": [
-        "kernels",
-        "hardware"
       ]
     },
     {
@@ -669,7 +702,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-26T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "models",
@@ -686,7 +719,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-25T11:39:24.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "training"
@@ -702,7 +735,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-23T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "inference"
@@ -718,7 +751,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-22T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "inference"
@@ -734,7 +767,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-21T23:19:57.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 18,
       "topics": [
         "training"
@@ -750,7 +783,7 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-08-21T10:54:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 23,
       "topics": [
         "models"
@@ -766,23 +799,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-21T00:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
-      "score": 19,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "bb177fd36edcf9c9",
-      "category": "ai",
-      "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
-      "summary": "",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-08-20T16:52:57.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 19,
       "topics": [
         "inference"
@@ -798,7 +815,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-14T13:12:12.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 22,
       "topics": [
         "security"
@@ -831,7 +848,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-07-29T16:00:00.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 22,
       "topics": [
         "security"
@@ -847,7 +864,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-07-17T15:00:11.000Z",
-      "fetchedAt": "2026-09-14T05:18:14.273Z",
+      "fetchedAt": "2026-09-15T05:09:22.945Z",
       "score": 22,
       "topics": [
         "security"
