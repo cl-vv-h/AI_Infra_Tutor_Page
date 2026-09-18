@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T05:08:20.888Z",
+  "generatedAt": "2026-09-18T05:01:06.360Z",
   "lookbackDays": 90,
   "limitPerStage": 8,
   "sources": [
@@ -8,7 +8,7 @@
       "repository": "sgl-project/sglang",
       "url": "https://github.com/sgl-project/sglang/releases",
       "state": "ok",
-      "lastSuccessAt": "2026-09-17T05:08:20.888Z",
+      "lastSuccessAt": "2026-09-18T05:01:06.360Z",
       "count": 7
     },
     {
@@ -16,7 +16,7 @@
       "repository": "vllm-project/vllm",
       "url": "https://github.com/vllm-project/vllm/releases",
       "state": "ok",
-      "lastSuccessAt": "2026-09-17T05:08:20.888Z",
+      "lastSuccessAt": "2026-09-18T05:01:06.360Z",
       "count": 8
     },
     {
@@ -24,7 +24,7 @@
       "repository": "flashinfer-ai/flashinfer",
       "url": "https://github.com/flashinfer-ai/flashinfer/releases",
       "state": "ok",
-      "lastSuccessAt": "2026-09-17T05:08:20.888Z",
+      "lastSuccessAt": "2026-09-18T05:01:06.360Z",
       "count": 14
     },
     {
@@ -32,7 +32,7 @@
       "repository": "huggingface/transformers",
       "url": "https://github.com/huggingface/transformers/releases",
       "state": "ok",
-      "lastSuccessAt": "2026-09-17T05:08:20.888Z",
+      "lastSuccessAt": "2026-09-18T05:01:06.360Z",
       "count": 8
     },
     {
@@ -40,7 +40,7 @@
       "repository": "NVIDIA/TensorRT-LLM",
       "url": "https://github.com/NVIDIA/TensorRT-LLM/releases",
       "state": "ok",
-      "lastSuccessAt": "2026-09-17T05:08:20.888Z",
+      "lastSuccessAt": "2026-09-18T05:01:06.360Z",
       "count": 8
     },
     {
@@ -48,11 +48,33 @@
       "repository": "triton-lang/triton",
       "url": "https://github.com/triton-lang/triton/releases",
       "state": "ok",
-      "lastSuccessAt": "2026-09-17T05:08:20.888Z",
+      "lastSuccessAt": "2026-09-18T05:01:06.360Z",
       "count": 1
     }
   ],
   "items": [
+    {
+      "id": "a1726216f846d796",
+      "category": "technology",
+      "title": "TensorRT-LLM · v1.3.0rc27（预发布）",
+      "summary": "Highlights Known Issues - GPT-OSS Eagle3 speculative decoding may hang, produce non-terminating output, or lose accuracy when using multi-GPU execution. - GPT-OSS W4 inference with the Triton MoE backend may intermittently hang or lose accuracy in four-GPU data-parallel or expert-parallel configurations. - GPT-OSS Harmony tool calls may continue generating after the tool-call delimiter, resulting in malformed or repeated tool calls and an incorrect finish reason. - Qwen3-235B NVFP4 inference on B200 may intermitten",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc27",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-09-18T03:14:53.000Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
+      "score": 29.6,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ],
+      "releaseStage": "prerelease",
+      "publishedAtKind": "github-release"
+    },
     {
       "id": "553d5f8e02e0afe4",
       "category": "ai",
@@ -63,8 +85,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-16T10:06:25.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
-      "score": 24.2,
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
+      "score": 18.3,
       "topics": [
         "kernels"
       ],
@@ -81,7 +103,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-09T15:42:45.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -103,7 +125,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-09-09T09:37:50.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 18,
       "topics": [
         "inference",
@@ -126,7 +148,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-09T08:54:49.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -149,7 +171,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-05T03:19:53.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 21,
       "topics": [
         "kernels"
@@ -167,7 +189,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-05T02:27:42.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -190,7 +212,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-08-31T03:24:43.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 18,
       "topics": [
         "inference",
@@ -212,7 +234,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-29T02:01:33.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 21,
       "topics": [
         "inference",
@@ -235,7 +257,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-28T18:25:56.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 21,
       "topics": [
         "inference",
@@ -257,7 +279,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-26T14:50:01.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -279,7 +301,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-26T12:35:15.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -301,7 +323,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-26T09:46:30.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -324,7 +346,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-22T00:09:15.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -347,7 +369,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-19T10:50:47.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "kernels",
@@ -367,7 +389,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-19T03:55:09.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -385,7 +407,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-18T05:59:09.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -403,7 +425,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-17T03:23:59.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -421,7 +443,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-16T04:14:55.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -439,7 +461,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-14T05:02:11.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -457,7 +479,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-13T16:28:41.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -475,7 +497,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-08-12T07:07:24.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 18,
       "topics": [
         "inference",
@@ -498,7 +520,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-11T10:47:49.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference"
@@ -516,7 +538,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-11T05:09:14.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 21,
       "topics": [
         "inference",
@@ -538,7 +560,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-11T03:53:39.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -556,7 +578,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-10T22:15:43.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 21,
       "topics": [
         "kernels"
@@ -574,7 +596,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-10T21:18:11.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -596,7 +618,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-10T10:28:13.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -619,7 +641,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-08T00:53:40.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 21,
       "topics": [
         "kernels",
@@ -638,7 +660,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-08T00:19:16.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -660,7 +682,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-06T21:09:06.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 21,
       "topics": [
         "kernels"
@@ -678,7 +700,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-07-31T18:55:20.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 18,
       "topics": [
         "inference",
@@ -700,7 +722,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-07-27T01:06:58.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -723,7 +745,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-07-25T00:13:18.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -745,7 +767,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-07-22T22:41:15.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 18,
       "topics": [
         "inference",
@@ -767,7 +789,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-07-16T09:41:36.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -788,7 +810,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-07-15T22:46:20.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 18,
       "topics": [
         "inference",
@@ -810,7 +832,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-07-15T19:02:19.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -832,7 +854,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-07-14T08:51:20.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -853,7 +875,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-07-14T08:43:33.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -873,7 +895,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-07-11T20:06:44.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -896,7 +918,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-07-11T09:15:36.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -915,7 +937,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-07-10T22:58:33.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -937,7 +959,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-06-30T01:11:27.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 18,
       "topics": [
         "inference",
@@ -958,7 +980,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-06-29T19:41:59.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -981,7 +1003,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-06-26T22:57:30.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
+      "fetchedAt": "2026-09-18T05:01:06.360Z",
       "score": 22,
       "topics": [
         "inference",
@@ -992,28 +1014,6 @@
         "security"
       ],
       "releaseStage": "stable",
-      "publishedAtKind": "github-release"
-    },
-    {
-      "id": "db83756ea83abf6f",
-      "category": "technology",
-      "title": "TensorRT-LLM · v1.3.0rc19（预发布）",
-      "summary": "Known Issues - Llama 3.1 8B FP8 can hang during the autotuner warmup on GB200. Model Support - Support NVIDIA Wan2.2-T2V quantized checkpoints (#15093) - Enable MTP for Step-3.7 NVFP4 and port Step-3.7VL vision tower to TRT-LLM modules (#14926) - Support T5 and BART in the PyTorch backend (#13919) - Support MiniMax-M3 in the PyTorch backend (#15292) API - Align VisualGen serve request schema with VisualGenParams (#14733) - Support multi-item scoring in LLM.encode (#14693) - Drop legacy --extra_visual_gen_options CL",
-      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc19",
-      "source": "TensorRT-LLM Releases",
-      "sourceCountry": "United States",
-      "sourceType": "release",
-      "publishedAt": "2026-06-23T16:49:25.000Z",
-      "fetchedAt": "2026-09-17T05:08:20.888Z",
-      "score": 18,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
-      ],
-      "releaseStage": "prerelease",
       "publishedAtKind": "github-release"
     }
   ]
