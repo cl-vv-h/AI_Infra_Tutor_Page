@@ -65,10 +65,10 @@ function moe(hash = false): ArchitectureNode {
   return {
     id: hash ? 'hash-moe' : 'moe', eyebrow: 'FFN / ROUTING', title: hash ? 'Token-id routed MoE' : 'Score-routed MoE',
     subtitle: hash ? 'Layers 0–2 · 预设 6 个专家编号' : 'Layers 3–42 · 分数 Top-6',
-    description: `256 个 routed experts，每 token 执行 6 个，另有 1 个 shared expert；单专家中间维 2,048，SwiGLU 带 limit=10。${hash ? '前三层按 input_ids 查 tid2eid，决定专家集合；仍计算 sqrt(softplus(router(x))) 作为被选专家的权重，并非没有 Router GEMM 或没有 MoE。' : '其余层以 sqrt(softplus(router(x))) 加 correction bias 选 Top-6；bias 不进入原始路由权重。'}被选原始分数归一化后乘 1.5。图中按 SGLang EP=1、专家中间维 TP 切分；这与官方最小实现跨 rank 分配完整专家的并行方式不同。`,
+    description: `256 个 routed experts，每 token 执行 6 个，另有 1 个 shared expert；单专家中间维 2,048，SwiGLU 带 limit=10。${hash ? '前三层按 input_ids 查 tid2eid，决定专家集合；仍计算 sqrt(softplus(router(x))) 作为被选专家的权重，并非没有 Router GEMM 或没有 MoE。' : '其余层以 sqrt(softplus(router(x))) 加 correction bias 选 Top-6；bias 不进入原始路由权重。'}被选原始分数归一化后乘 1.5。图中按 SGLang 当前 EP 分配专家、MoE-TP 切分专家中间维；shared 始终按完整 TP 切分，与官方最小实现的并行口径分开。`,
     inputShape: hidden, outputShape: hidden,
     tensors: [{ label: 'Router scores', shape: '[N, 256]' }, { label: '专家索引与权重', shape: '[N, 6] / [N, 6]' }, ...(hash ? [{ label: 'tid2eid 冻结 INT32 表', shape: '[129280, 6]', note: '每层 3,102,720 B，三层独立；不是浮点可训练权重，未混入统一位宽权重账本或 KV 缓存预算。' }] : [])],
-    weights: [{ name: 'gate.weight · replicated', shape: '[256, 4096]' }, ...(!hash ? [{ name: 'e_score_correction_bias · replicated', shape: '[256]' }] : []), { name: 'experts.gate_up_proj · TP local', shape: '[256, 2 × {expertShard}, 4096]' }, { name: 'experts.down_proj · TP local', shape: '[256, 4096, {expertShard}]' }, { name: 'shared_expert.gate_up_proj · TP local', shape: '[2 × {expertShard}, 4096]' }, { name: 'shared_expert.down_proj · TP local', shape: '[4096, {expertShard}]' }],
+    weights: [{ name: 'gate.weight · replicated', shape: '[256, 4096]' }, ...(!hash ? [{ name: 'e_score_correction_bias · replicated', shape: '[256]' }] : []), { routedExpert: true, name: 'experts.gate_up_proj · TP local', shape: '[256, 2 × {expertShard}, 4096]' }, { routedExpert: true, name: 'experts.down_proj · TP local', shape: '[256, 4096, {expertShard}]' }, { name: 'shared_expert.gate_up_proj · TP local', shape: '[2 × {expertShard}, 4096]' }, { name: 'shared_expert.down_proj · TP local', shape: '[4096, {expertShard}]' }],
     knowledge, tone: 'ffn', layerRange: hash ? 'Layers 0–2' : 'Layers 3–42',
   }
 }
@@ -80,8 +80,8 @@ export const deepseekV4Architectures: ModelArchitecture[] = [{
   configUrl: 'https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/blob/main/config.json', configLabel: '官方原始 Flash 配置 · 2026-09-14 核对',
   implementationUrl: 'https://github.com/sgl-project/sglang/blob/main/python/sglang/srt/models/deepseek_v4.py', supportedTp: [1, 2, 4, 8],
   execution: { maxContext: 1048576, denseLayers: 0, hashLayers: 3, residualLayout: 'mhc', residualStreams: 4, outputGroups: 8,
-    contextNote: '缓存为占用的逻辑记录 + 官方最小实现 FP32 compressor 窗口。不是生产量化布局，也不是 max_seq_len 预分配；不含 INT32 路由表、RoPE 表、临时 logits、MTP 和分页开销。权重按 SGLang EP=1 的 TP 基线，缓存状态口径另行明示。',
-    cache: { kind: 'compressed', window: 128, ratios, kvWidth: 512, indexWidth: 128, indexTopk: 512, stateBytes: 4 }, expertIntermediateSize: 2048 },
+    contextNote: '缓存为占用的逻辑记录 + 官方最小实现 FP32 compressor 窗口。不是生产量化布局，也不是 max_seq_len 预分配；不含 INT32 路由表、RoPE 表、临时 logits、MTP 和分页开销。权重按 SGLang 当前 EP / MoE-TP 基线，缓存状态口径另行明示。',
+    cache: { kind: 'compressed', window: 128, ratios, kvWidth: 512, indexWidth: 128, indexTopk: 512, stateBytes: 4 }, expertParallel: { experts: 256, topK: 6, hiddenSize: 4096 }, expertIntermediateSize: 2048 },
   metrics: [{ label: 'Target Layers', value: '43' }, { label: 'SWA / CSA / HCA', value: '2 / 21 / 20' }, { label: 'Residual Streams', value: '4 · mHC' }, { label: 'MoE', value: '256 · Top-6 + shared' }],
   dimensions: { hiddenSize: 4096, vocabSize: 129280, layers: 43, attentionHeads: 64, kvHeads: 1, headDim: 512, intermediateSize: 2048 },
   nodes: [

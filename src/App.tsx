@@ -7,6 +7,8 @@ const Learn = lazy(() => import('@/pages/Learn'))
 const Models = lazy(() => import('@/pages/Models'))
 const ModelCatalog = lazy(() => import('@/pages/ModelCatalog'))
 const ModelCompare = lazy(() => import('@/pages/ModelCompare'))
+const DeepseekV41 = lazy(() => import('@/pages/DeepseekV41'))
+const DpaLab = lazy(() => import('@/pages/DpaLab'))
 const News = lazy(() => import('@/pages/News'))
 const CategoryPage = lazy(() => import('@/pages/Category'))
 const ArticlePage = lazy(() => import('@/pages/Article'))
@@ -23,6 +25,9 @@ export default function App() {
             <Route path="/learn" element={<Learn />} />
             <Route path="/models" element={<ModelCatalog />} />
             <Route path="/models/compare" element={<ModelCompare />} />
+            <Route path="/models/deepseek-v4-1-flash" element={<DeepseekV41 />} />
+            <Route path="/models/glm-5-2/dpa" element={<DpaLab />} />
+            <Route path="/models/qwen3-8b/dpa" element={<DpaLab modelId="qwen3-8b" />} />
             <Route path="/models/:modelId" element={<Models />} />
             <Route path="/news" element={<News />} />
             <Route path="/category/:slug" element={<CategoryPage />} />

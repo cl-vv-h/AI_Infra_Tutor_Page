@@ -7,18 +7,24 @@ function qwenModel(moe: boolean): ModelArchitecture {
   const shape = `[N, ${hidden}]`
   const ffn: ArchitectureNode = moe ? {
     id: 'moe', eyebrow: 'FFN', title: 'Sparse MoE', subtitle: '128 experts · Top-8 · 无 shared expert',
-    description: '每个 token 经 Router 选择 8 个专家，加权合并输出。128 个专家都需要驻留；激活参数量不等于模型装载所需显存。这里展示 EP = 1 的 expert Tensor Parallel 分片。',
+    description: '每个 token 经 Router 选择 8 个专家，加权合并输出。128 个专家都需要驻留；激活参数量不等于模型装载所需显存。EP 划分现有 TP 组，专家轴按 EP 分片，中间维按 MoE-TP=TP/EP 分片；无共享专家。',
     inputShape: shape, outputShape: shape, tone: 'ffn', layerRange: 'Layers 0–47',
+    tensors: [{ label: 'Router logits', shape: '[N, 128]' }, { label: 'Top-8 专家编号 / 归一化权重', shape: '[N, 8] / [N, 8]', note: '编号与权重是不同 dtype 的张量，不把 Top-8 当作只加载八个专家。' }],
     weights: [
-      { name: 'router.gate', shape: '[128, 2,048]', note: '路由权重复制到各 TP rank' },
-      { name: 'experts.gate_up_proj · TP local', shape: '[128, 2 × {expertShard}, 2,048]' },
-      { name: 'experts.down_proj · TP local', shape: '[128, 2,048, {expertShard}]' },
+      { name: 'router.gate', shape: '[128, 2,048]', note: 'Router 在各 rank 复制；官方 BF16 配置与 SGLang 普通路径保留 BF16。混合面板固定 FP32 是自定义存储假设，不是原生 dtype。' },
+      { name: 'experts.gate_up_proj · TP local', shape: '[128, 2 × {expertShard}, 2,048]', routedExpert: true },
+      { name: 'experts.down_proj · TP local', shape: '[128, 2,048, {expertShard}]', routedExpert: true },
     ],
     knowledge: [{ label: 'MoE 与稀疏激活', to: '/category/model-architecture' }, { label: 'TP / EP', to: '/category/parallel-strategy' }],
   } : {
     id: 'ffn', eyebrow: 'FFN', title: 'Dense SwiGLU', subtitle: '4,096 → 12,288 → 4,096',
     description: 'Gate 和 Up 两个投影分别产生门控与数值分支；SiLU(gate) 与 up 逐元素相乘，再投影回 hidden width。每个 token 都经过这套相同的权重。',
     inputShape: shape, outputShape: shape, tone: 'ffn', layerRange: 'Layers 0–35',
+    tensors: [
+      { label: '合并 Gate / Up 投影', shape: '[N, 2 × {intermediateShard}]' },
+      { label: 'SiLU(Gate) × Up', shape: '[N, {intermediateShard}]' },
+      { label: 'Down 投影部分和（TP 归约前）', shape: '[N, 4,096]' },
+    ],
     weights: [
       { name: 'gate_proj · TP local', shape: '[{intermediateShard}, 4,096]' },
       { name: 'up_proj · TP local', shape: '[{intermediateShard}, 4,096]' },
@@ -34,8 +40,9 @@ function qwenModel(moe: boolean): ModelArchitecture {
       : 'Dense Qwen3 的清晰基线：36 层 GQA + SwiGLU。Query 和 Key 在各自 head 内做 RMSNorm，再应用 RoPE，便于对照 Llama 的注意力路径。',
     parameters: moe ? '30.5B' : '8.2B', activeParameters: moe ? '3.3B' : '8.2B', accent: '#b6a0ff',
     configUrl: `https://huggingface.co/Qwen/${moe ? 'Qwen3-30B-A3B' : 'Qwen3-8B'}/blob/main/config.json`,
+    ...(moe ? { implementationUrl: 'https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/models/qwen3_moe.py' } : {}),
     configLabel: '官方 config.json', supportedTp: [1, 2, 4, 8],
-    execution: { maxContext: 40960, contextNote: 'Qwen3 的配置上限为 40,960；官方模型卡注明原生上下文为 32,768，扩展到 131,072 需要另配 YaRN。配置可接受的长度不等于该长度上的质量保证。', denseLayers: moe ? 0 : layers, cache: { kind: 'gqa' }, ...(moe ? { expertIntermediateSize: 768 } : {}) },
+    execution: { maxContext: 40960, contextNote: 'Qwen3 的配置上限为 40,960；官方模型卡注明原生上下文为 32,768，扩展到 131,072 需要另配 YaRN。配置可接受的长度不等于该长度上的质量保证。', denseLayers: moe ? 0 : layers, cache: { kind: 'gqa' }, ...(moe ? { expertIntermediateSize: 768, expertParallel: { experts: 128, topK: 8, hiddenSize: 2048 } } : {}) },
     metrics: [
       { label: 'Decoder Layers', value: String(layers) }, { label: 'Hidden Width', value: hidden },
       { label: 'Attention', value: `32Q / ${moe ? 4 : 8}KV · QK-Norm` }, { label: 'Config Context', value: '40,960' },
@@ -61,6 +68,7 @@ function qwenModel(moe: boolean): ModelArchitecture {
           ? '每组 8 个 Q heads 共享一对 K/V。Q/K 在 128 维 head 内归一化后应用 RoPE。TP = 8 时，只有 4 个 KV heads，因此各 KV head 会复制到 2 个 rank，而不能继续等分成半个 head。'
           : '每组 4 个 Q heads 共享 K/V。Q/K 投影后分别进行 head 内 RMSNorm，再应用 RoPE；V 不经过这两个步骤。输出投影后还需要 TP 归约。',
         inputShape: shape, outputShape: shape,
+        ...(moe ? { tensors: [{ label: 'Q · TP local', shape: '[N, {localHeads}, 128]' }, { label: 'K / V · each TP local', shape: '[N, {localKvHeads}, 128]', note: 'TP8 时每个 KV head 在两个 rank 复制，EP 不改变 Attention 分片。' }] } : {}),
         weights: [
           { name: 'q_proj · TP local', shape: `[{localHeads} × 128, ${hidden}]` },
           { name: 'k_proj / v_proj · each TP local', shape: `[{localKvHeads} × 128, ${hidden}]`, multiplicity: 2 },

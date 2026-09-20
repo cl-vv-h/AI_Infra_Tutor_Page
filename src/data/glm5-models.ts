@@ -15,8 +15,8 @@ export const glm5Architectures: ModelArchitecture[] = [{
   supportedTp: [1, 2, 4, 8],
   execution: {
     maxContext: 1048576, denseLayers: 3,
-    contextNote: '1M 为配置上限，不是单卡容量承诺。本图按 EP=1、PP=1 的逻辑 TP 展示；DSA Index K 按 Ascend 全层预留，不含检索工作区、位置表与 NextN。实际缓存精度和分配以固定引擎版本为准。',
-    cache: { kind: 'mla', latentWidth: 512, ropeWidth: 64, indexWidth: 128 }, expertIntermediateSize: 2048,
+    contextNote: '1M 为配置上限，不是单卡容量承诺。本图按 PP=1、Attention TP=TP 展示；routed 专家采用当前 EP / MoE-TP 布局；DSA Index K 按 Ascend 全层预留，不含检索工作区、位置表与 NextN。实际缓存精度和分配以固定引擎版本为准。',
+    cache: { kind: 'mla', latentWidth: 512, ropeWidth: 64, indexWidth: 128 }, expertParallel: { experts: 256, topK: 8, hiddenSize: 6144 }, expertIntermediateSize: 2048,
   },
   metrics: [{ label: 'Decoder Layers', value: '78' }, { label: 'Hidden Width', value: '6,144' }, { label: 'DSA / MoE Top-k', value: '2,048 tokens / 8 experts' }, { label: 'Context', value: '1,048,576' }],
   dimensions: { hiddenSize: 6144, vocabSize: 154880, layers: 78, attentionHeads: 64, kvHeads: 64, headDim: 256, intermediateSize: 12288 },
@@ -83,7 +83,7 @@ export const glm5Architectures: ModelArchitecture[] = [{
       description: 'Router 使用 sigmoid 与 correction bias 选择 8 个 routed experts，并执行 1 个 shared expert。选中权重归一化，routed 分支使用 2.5 缩放。这里 Top-8 选的是专家，与 DSA 的 Top-2048 历史位置完全不同；专家中间维为 2,048，不是 Dense 层的 12,288。',
       inputShape: '[N, 6144]', outputShape: '[N, 6144]',
       tensors: [{ label: 'Router 分数', shape: '[N, 256]' }, { label: '每 token 专家索引', shape: '[N, 8]' }],
-      weights: [{ name: 'gate.weight · replicated', shape: '[256, 6144]' }, { name: 'e_score_correction_bias · replicated', shape: '[256]' }, { name: 'experts.gate_up_proj · TP local', shape: '[256, 2 × {expertShard}, 6144]', note: 'EP=1；保留所有专家，仅中间维分片。' }, { name: 'experts.down_proj · TP local', shape: '[256, 6144, {expertShard}]' }, { name: 'shared_experts.gate_up_proj · TP local', shape: '[2 × {expertShard}, 6144]' }, { name: 'shared_experts.down_proj · TP local', shape: '[6144, {expertShard}]' }],
+      weights: [{ name: 'gate.weight · replicated', shape: '[256, 6144]' }, { name: 'e_score_correction_bias · replicated', shape: '[256]' }, { routedExpert: true, name: 'experts.gate_up_proj · TP local', shape: '[256, 2 × {expertShard}, 6144]', note: 'EP=1；保留所有专家，仅中间维分片。' }, { routedExpert: true, name: 'experts.down_proj · TP local', shape: '[256, 6144, {expertShard}]' }, { name: 'shared_experts.gate_up_proj · TP local', shape: '[2 × {expertShard}, 6144]' }, { name: 'shared_experts.down_proj · TP local', shape: '[6144, {expertShard}]' }],
       knowledge: [{ label: 'MoE 路由', to: architecture }, { label: 'TP / EP 区别', to: parallel }], tone: 'ffn', layerRange: 'Layers 3–77',
     },
     {

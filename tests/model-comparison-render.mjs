@@ -57,6 +57,25 @@ try {
   const { formatBytes } = await server.ssrLoadModule('/src/lib/model-lab.ts')
   const { decoderWeightBudget } = await server.ssrLoadModule('/src/lib/model-weights.ts')
   const renderExplorer = (path) => renderToString(h(MemoryRouter, { initialEntries: [path] }, h(Routes, null, h(Route, { path: '/models/:modelId', element: h(Models) })))).replace(/<!--.*?-->/g, '')
+  for (const [id, layer, experts, intermediate, width] of [['glm-5-2', 3, 256, 2048, 6144], ['glm-5-3-flash', 3, 288, 2048, 4096], ['kimi-k3', 92, 896, 3072, 3584], ['deepseek-v4-flash', 0, 256, 2048, 4096]]) {
+    for (const ep of [2, 4, 8]) for (const view of ['diagram', 'weights', 'cache']) {
+      const node = id === 'deepseek-v4-flash' && layer < 3 ? 'hash-moe' : 'moe'
+      const html = renderExplorer(`/models/${id}?layer=${layer}&node=${node}&tp=8&ep=${ep}&replicas=2&rank=15&view=${view}`)
+      const expected = `[${experts / ep}, 2 × ${intermediate / (8 / ep)}, ${width}]`
+      // Desktop Inspector, modal Inspector, rank panel and ledger all render the same local tensor.
+      assert.ok(html.split(expected).length - 1 >= 4, `${id}/${ep}/${view}: missing shared EP shape`)
+      assert.ok(html.includes(`TP=8、EP=${ep}、MoE-TP=${8 / ep}`))
+      assert.ok(html.includes(`EP = ${ep}，MoE-TP = ${8 / ep}`))
+      assert.ok(html.includes(`当前 TP=8、EP=${ep}、独立副本=2`))
+      if (id === 'kimi-k3') {
+        assert.ok(html.includes(`单专家激活 [T_e, ${3072 * ep / 8}]`))
+        assert.ok(html.includes('本卡 shared 激活 [4, 768]'))
+      }
+      assert.ok(!html.includes('本面板之外的结构图、权重账本和缓存仍是 EP=1'))
+      assert.doesNotMatch(html, /NaN|undefined|Infinity/)
+    }
+  }
+  console.log('EP state render verified: 36 model/EP/workspace routes with shared Inspector, rank and ledger shapes.')
   const glm = renderExplorer('/models/glm-5-2?layer=3&node=moe&b=4&s=4096&tp=4')
   for (const layer of [0, 11, 12, 13, 84, 91, 92]) {
     const kind = layer % 4 === 3 || layer === 92 ? 'mla' : 'kda'
@@ -157,7 +176,7 @@ try {
       assert.ok(html.includes(`Layer ${layer} · 每卡 ${formatBytes(budget.bytes)} · ${bits}-bit 理论载荷`))
       assert.ok(html.includes(`全部 ${model.dimensions.layers} 层每卡 · 图示权重`))
       assert.ok(html.includes(formatBytes(budget.allLayersBytes)))
-      assert.ok(html.includes('不是完整模型参数量或可部署显存'))
+      assert.ok(html.includes('不是完整 checkpoint，也不是可部署单卡显存'))
       assert.ok(html.includes('href="/category/quantization"'))
       assert.equal((html.match(/aria-label="定位权重模块：/g) ?? []).length, budget.rows.length)
       assert.doesNotMatch(html, /未计算|尚未提供可计算|NaN|undefined/)

@@ -2,17 +2,18 @@ import { comparisonColors, comparisonSeries, contextProbes, memoryValue } from '
 import type { MemoryScope } from '@/lib/model-comparison'
 import { formatBytes } from '@/lib/model-lab'
 import type { InferenceScenario } from '@/lib/model-lab'
-import type { ModelArchitecture } from '@/types/model'
+import type { ModelDirectoryEntry } from '@/data/model-directory'
 
-export default function ModelComparisonChart({ models, scenario, scope, onSequence }: {
-  models: ModelArchitecture[]
+export default function ModelComparisonChart({ models, scenario, scope, v41Storage, onSequence }: {
+  models: ModelDirectoryEntry[]
   scenario: InferenceScenario
   scope: MemoryScope
+  v41Storage?: 'reference' | 'packed'
   onSequence: (sequence: number) => void
 }) {
-  const series = models.map((model) => ({ model, points: comparisonSeries(model, scenario) }))
+  const series = models.map((model) => ({ model, points: comparisonSeries(model, scenario, v41Storage) }))
   const maxBytes = Math.max(1, ...series.flatMap(({ points }) => points.map((point) => memoryValue(point, scope))))
-  const x = (sequence: number) => 90 + (Math.log2(sequence) - 10) / 8 * 720
+  const x = (sequence: number) => 90 + (Math.log2(sequence) - 10) / 10 * 720
   const y = (bytes: number) => 265 - bytes / maxBytes * 215
 
   return <section className="mt-6 rounded-3xl border border-white/10 bg-[#0b131b] p-5 sm:p-6" aria-labelledby="comparison-growth-title">
@@ -39,7 +40,7 @@ export default function ModelComparisonChart({ models, scenario, scope, onSequen
     <details className="mt-5 border-t border-white/10 pt-4">
       <summary className="cursor-pointer text-sm text-cyan-100">查看各长度的精确容量</summary>
       <div className="mt-3 overflow-x-auto" tabIndex={0} role="region" aria-label="各长度精确缓存容量">
-        <table className="w-full min-w-[540px] text-left text-sm"><caption className="sr-only">同一 B、TP、KV 精度下的精确容量；破折号表示超出配置或图解范围。</caption><thead><tr><th scope="col" className="p-3 text-slate-300">S / tokens</th>{models.map((model) => <th scope="col" className="p-3 text-white" key={model.id}>{model.name}</th>)}</tr></thead>
+        <table className="w-full min-w-[540px] text-left text-sm"><caption className="sr-only">同一 B、S、卡数下的容量；各模型存储格式见上方设置，破折号表示超出范围。</caption><thead><tr><th scope="col" className="p-3 text-slate-300">S / tokens</th>{models.map((model) => <th scope="col" className="p-3 text-white" key={model.id}>{model.name}</th>)}</tr></thead>
           <tbody>{contextProbes.map((size) => <tr key={size} className="border-t border-white/10"><th scope="row" className="p-3 font-mono font-normal text-slate-300">{size.toLocaleString('en-US')}</th>{series.map(({ model, points }) => { const point = points.find((item) => item.sequence === size); return <td key={model.id} className="p-3 font-mono text-slate-300">{point ? formatBytes(memoryValue(point, scope)) : '—'}</td> })}</tr>)}</tbody>
         </table>
       </div>

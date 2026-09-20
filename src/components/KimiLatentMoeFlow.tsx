@@ -1,14 +1,18 @@
-export default function KimiLatentMoeFlow() {
+import type { InferenceScenario } from '@/lib/model-lab'
+import { tokenCount } from '@/lib/model-lab'
+import type { TensorParallelSize } from '@/types/model'
+
+export default function KimiLatentMoeFlow({ scenario, ep }: { scenario: InferenceScenario; ep: TensorParallelSize }) {
   return <details aria-label="LatentMoE 支路图" className="mt-3 rounded-xl border border-violet-200/25 bg-violet-200/5 p-3 text-sm leading-6 text-white/70">
     <summary className="cursor-pointer text-violet-100">展开 routed / shared 数据流</summary>
-    <p className="mt-3 rounded-lg border border-white/15 p-3 text-center text-cyan-100">同一份 FFN 输入 x：<span className="font-mono">[N, 7168]</span><br />两支独立读取 x</p>
+    <p className="mt-3 rounded-lg border border-white/15 p-3 text-center text-cyan-100">同一份 FFN 输入 x：<span className="font-mono">[{tokenCount(scenario)}, 7168]</span><br />两支独立读取 x · EP {ep} / MoE-TP {scenario.tp / ep}</p>
     <div className="mt-3 grid gap-3 sm:grid-cols-2">
       <section aria-label="Routed latent 支路" className="min-w-0 rounded-xl border border-violet-200/20 p-3">
         <h4 className="font-semibold text-violet-100">Routed · 16 / 896</h4>
         <ol className="mt-3 space-y-3">
           <li>Router 读取原始 x → Top-16 编号与权重</li>
           <li>↓ 共享降维投影<br /><span className="font-mono">7168 → 3584</span></li>
-          <li>↓ 所选专家 SiTU-GLU<br /><span className="font-mono">3584 → 3072 → 3584</span></li>
+          <li>↓ 所选专家 SiTU-GLU<br /><span className="font-mono">完整专家 3584 → 3072 → 3584</span><p className="mt-2 text-cyan-100">本卡 {896 / ep} 个专家；单专家激活 [T_e, {3072 * ep / scenario.tp}]。down {scenario.tp / ep > 1 ? '为 MoE-TP 部分和' : '已含完整中间维'}。</p></li>
           <li>↓ 按路由权重合并，并完成所需 TP 归约</li>
           <li>↓ 对完整 latent 做 RMSNorm<br /><span className="font-mono">[N, 3584]</span></li>
           <li>↓ 共享升维投影<br /><span className="font-mono">3584 → 7168</span></li>
@@ -19,6 +23,7 @@ export default function KimiLatentMoeFlow() {
         <p className="mt-3">直接读取原始 x，不读取 routed latent 或其 Norm 结果。</p>
         <p className="mt-3 font-mono">7168 → 6144 → 7168</p>
         <p className="mt-3">2 个 shared experts 的中间维合并；SiTU-GLU。按图示 TP 做所需输出归约。</p>
+        <p className="mt-2 text-emerald-100">本卡 shared 激活 [{tokenCount(scenario)}, {6144 / scenario.tp}]；使用完整 TP={scenario.tp}，不跟随 EP 放大中间维。</p>
       </section>
     </div>
     <p className="mt-3 rounded-lg border border-cyan-200/20 p-3 text-center text-cyan-100">两支 7168 维结果相加 → MoE 输出<br />再交给下方 FFN → Block Prefix 累加</p>

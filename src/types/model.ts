@@ -30,6 +30,8 @@ export interface ModelWeight {
   /** Number of equally shaped tensors represented by this row (not inferred from labels). */
   multiplicity?: number
   note?: string
+  /** Explicitly verified routed-expert axis 0; never infer this from a name. */
+  routedExpert?: boolean
 }
 
 export interface ModelKnowledgeLink {
@@ -91,6 +93,8 @@ export interface ModelArchitecture {
       recurrentBytes: number
     }
     expertIntermediateSize?: number
+    /** SGLang FusedMoE baseline: no A2A, no shared fusion/EPLB, MoE DP=1. */
+    expertParallel?: { experts: number; topK: number; hiddenSize: number }
   }
   metrics: ModelMetric[]
   dimensions: {

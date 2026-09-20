@@ -1,11 +1,45 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import { modelArchitectures } from '../src/data/models.ts'
-import { decoderWeightBudget, shapeElements, weightElements } from '../src/lib/model-weights.ts'
+import { decoderWeightBudget, expertParallelSizes, formatWeight, shapeElements, weightElements } from '../src/lib/model-weights.ts'
+import { rankModule } from '../src/lib/model-ranks.ts'
 import { decoderNodes } from '../src/lib/model-lab.ts'
 import { explorerHref, parseExplorer } from '../src/lib/model-explorer.ts'
 
 const model = (id) => modelArchitectures.find((item) => item.id === id)
+
+test('EP layout is identical in Inspector formatting, full ledger and rank lab', () => {
+  for (const id of ['glm-5-2', 'glm-5-3-flash', 'kimi-k3', 'deepseek-v4-flash']) {
+    const m = model(id)
+    for (const tp of m.supportedTp) for (const ep of expertParallelSizes(m, tp)) {
+      for (const layer of [0, 3, m.dimensions.layers - 1]) {
+        const scenario = { phase: 'prefill', batch: 3, sequence: 4096, tp, cacheBytes: 2 }
+        const budget = decoderWeightBudget(m, layer, tp, 4, ep)
+        const baseline = decoderWeightBudget(m, layer, tp, 4)
+        assert.equal(budget.bytes, baseline.bytes, `${id}: changing EP does not double-divide bytes`)
+        assert.equal(budget.allLayersBytes, baseline.allLayersBytes)
+        for (const row of budget.rows) {
+          const rank = rankModule(m, layer, row.node.id, scenario, 4, 2, ep)
+          assert.equal(row.bytes, rank.localBytes)
+          for (const [index, w] of row.weights.entries()) {
+            const original = row.node.weights[index]
+            assert.equal(w.shape, formatWeight(original, m, scenario, ep).shape)
+            assert.equal(w.shape, rank.weights[index].shape)
+            assert.equal(w.name, rank.weights[index].name)
+            if (!original.routedExpert) assert.equal(w.shape, baseline.rows.find((r) => r.node.id === row.node.id).weights[index].shape)
+          }
+        }
+      }
+    }
+  }
+  const kimi = model('kimi-k3')
+  const routed = decoderWeightBudget(kimi, 92, 8, 16, 4).rows.find((r) => r.node.id === 'moe').weights.filter((w) => w.routedExpert)
+  assert.equal(routed[0].shape, '[224, 2 × 1536, 3584]')
+  assert.equal(routed[1].shape, '[224, 3584, 1536]')
+  assert.equal(routed.reduce((sum, w) => sum + w.local, 0), 3 * 896 * 3584 * 3072 / 8)
+  assert.throws(() => decoderWeightBudget(kimi, 0, 4, 16, 8), /Invalid/)
+  assert.throws(() => decoderWeightBudget(model('llama-3-1-8b'), 0, 4, 16, 2), /Invalid/)
+})
 
 test('shape arithmetic accepts only bracketed positive integer products and sums', () => {
   assert.equal(shapeElements('[2 × 1024, 4096] + [4096, 1024]'), 3 * 1024 * 4096)
