@@ -97,14 +97,14 @@ export default function Home() {
               Open knowledge system · v2
             </div>
             <h1 className="max-w-5xl text-5xl font-semibold leading-[0.98] tracking-[-0.055em] text-white sm:text-7xl lg:text-[6.4rem]">
-              理解复杂系统，
-              <span className="portal-gradient-text block">从一张好地图开始。</span>
+              AI Infra
+              <span className="portal-gradient-text block">知识与实践</span>
             </h1>
           </div>
           <div className="max-w-lg border-l border-white/10 pl-6 lg:pb-2">
             <Asterisk className="mb-5 h-5 w-5 text-lime-200" />
             <p className="text-base leading-8 text-slate-300/70">
-              一个持续生长的 AI Infra 知识入口：深读技术，追踪世界，也为下一种探索方式保留空间。
+              系统课程、模型架构、推理实验与全球新闻。
             </p>
           </div>
         </div>

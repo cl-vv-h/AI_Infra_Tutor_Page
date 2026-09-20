@@ -93,6 +93,6 @@ test('vision temporal pooling and residual navigation retain exact model conditi
     assert.equal(next.nodeId, 'attn-res-read')
     assert.deepEqual(parseExplorer(explorerParams(next), model).notices, [])
     assert.deepEqual(next.scenario, state.scenario)
-    assert.match(learningStops(model, layer).find(s => s.node.id === 'attn-res-read').question, /冻结 bank/)
+    assert.match(learningStops(model, layer).find(s => s.node.id === 'attn-res-read').focus, /冻结 bank/)
   }
 })

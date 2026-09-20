@@ -20,6 +20,6 @@ export default function ModelModuleFinder({ model, layer, selectedId, onSelect }
         <span className="mt-2 block break-words text-xs leading-5 text-white/55">{node.weights.map((weight) => weight.name).join(' · ') || node.subtitle}</span>
       </button></li>
     })}</ul>
-    {!results.length && <p className="mt-3 rounded-xl border border-dashed border-white/15 p-4 text-sm text-white/60">没有匹配的模块。试试更短的名称，或清空搜索查看全部模块。</p>}
+    {!results.length && <p className="mt-3 rounded-xl border border-dashed border-white/15 p-4 text-sm text-white/60">没有匹配的模块。</p>}
   </details>
 }

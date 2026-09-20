@@ -19,7 +19,7 @@ export default function CompressedCacheWorkbench({ model, layer, scenario, onBat
   ] as const
   const control = 'rounded-xl border border-white/20 bg-[#0c131c] px-3 py-2 text-base text-white'
   return <section aria-label="压缩注意力缓存实验" className="mt-4 rounded-3xl border border-cyan-200/20 bg-[#0b131b] p-5">
-    <h2 className="text-lg font-semibold text-white">保存多少，读取多少？</h2>
+    <h2 className="text-lg font-semibold text-white">压缩缓存 · 存储与读取</h2>
     <p className="mt-3 text-sm leading-6 text-white/65">S 包含当前 token；这里只计算有效记录与参考实现的固定压缩窗口，不模拟权重或完整显存。mHC 四路主干不是四份 KV。单个 512 维表示同时作为 K 和 V，也不乘二。</p>
     <div className="mt-4 flex flex-wrap gap-4">
       <label className="flex flex-col gap-2 text-sm text-white/70">请求 B<select aria-label="并发请求数" className={control} value={scenario.batch} onChange={e => onBatch(Number(e.target.value))}>{[...new Set([1, 2, 4, 8, 16, 32, 64, scenario.batch])].sort((a, b) => a - b).map(n => <option key={n} value={n}>{n}</option>)}</select></label>

@@ -90,9 +90,9 @@ try {
   }
   const kimiComparison = render('?models=kimi-k3,glm-5-3-flash&s=4096&b=1&tp=4')
   for (const text of ['215.14 MiB', '81.97 MiB', '64 未旋转共享 K', '每 12 层写入', 'KDA + Gated MLA']) assert.ok(kimiComparison.includes(text), text)
-  for (const value of ['DSA + Multi-Head Latent Attention', '312 MiB', '1.68 GiB', 'Index K', '逐步导览', 'Top-8']) assert.ok(glm.includes(value), value)
-  assert.match(glm, /aria-current="step"[^>]*>.*?Sparse MoE/)
-  assert.match(glm, /id="learning-answer" hidden=""/)
+  for (const value of ['DSA + Multi-Head Latent Attention', '312 MiB', '1.68 GiB', 'Index K', '模块知识卡', 'Top-8']) assert.ok(glm.includes(value), value)
+  assert.match(glm, /<option value="moe" selected="">Sparse MoE<\/option>/)
+  assert.match(glm, /id="module-knowledge-content"/)
   assert.match(renderExplorer('/models/glm-5-2?layer=3&node=lm-head'), /当前层之后还有 74 个 Decoder 层/)
   const million = renderExplorer('/models/glm-5-2?view=cache&s=1048576&b=1')
   assert.match(million, /107.25 GiB/)

@@ -25,7 +25,7 @@ try {
     assert.ok(html.includes(`全部 ${tp * replicas} 个 ranks 都可选择`))
     assert.ok(html.includes('aria-label="权重阅读顺序"'))
     assert.ok(html.includes('aria-label="模块边界逻辑载荷"'))
-    assert.ok(html.includes('元素量和参考字节如何阅读'))
+    assert.ok(html.includes('逻辑元素与参考载荷'))
     assert.ok(html.includes('不从名称猜 dtype 或份数'))
     assert.equal(html.includes('aria-label="Attention head 归属"'), id !== 'kimi-k3')
     if (id !== 'kimi-k3') {

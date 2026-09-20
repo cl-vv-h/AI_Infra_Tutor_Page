@@ -6,6 +6,7 @@ const Home = lazy(() => import('@/pages/Home'))
 const Learn = lazy(() => import('@/pages/Learn'))
 const Models = lazy(() => import('@/pages/Models'))
 const ModelCatalog = lazy(() => import('@/pages/ModelCatalog'))
+const ModelKnowledge = lazy(() => import('@/pages/ModelKnowledge'))
 const ModelCompare = lazy(() => import('@/pages/ModelCompare'))
 const DeepseekV41 = lazy(() => import('@/pages/DeepseekV41'))
 const DpaLab = lazy(() => import('@/pages/DpaLab'))
@@ -24,6 +25,8 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/learn" element={<Learn />} />
             <Route path="/models" element={<ModelCatalog />} />
+            <Route path="/models/knowledge" element={<ModelKnowledge />} />
+            <Route path="/models/knowledge/:topicId" element={<ModelKnowledge />} />
             <Route path="/models/compare" element={<ModelCompare />} />
             <Route path="/models/deepseek-v4-1-flash" element={<DeepseekV41 />} />
             <Route path="/models/glm-5-2/dpa" element={<DpaLab />} />

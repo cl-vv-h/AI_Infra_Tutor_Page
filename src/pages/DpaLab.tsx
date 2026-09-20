@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ModelSectionNav from '@/components/ModelSectionNav'
 import { Link, useSearchParams } from 'react-router-dom'
 import { dpaLayout, dpaParams, dpaSizes, dpaSource, parseDpa } from '@/lib/dpa-lab'
 import type { DpaModelId, DpaScenario } from '@/lib/dpa-lab'
@@ -26,7 +27,8 @@ export default function DpaLab({ modelId = 'glm-5-2' }: { modelId?: DpaModelId }
     const url = new URL(window.location.href); url.search = ''; url.hash = `/models/${modelId}/dpa?${canonical}`
     try { await navigator.clipboard.writeText(url.toString()); setCopied(copyKey) } catch { setCopied('failed') }
   }
-  return <main className="mx-auto max-w-7xl px-5 pb-20 pt-28 text-white">
+  return <main className="mx-auto max-w-7xl px-5 pb-20 pt-8 text-white">
+    <ModelSectionNav />
     <Link to={`/models/${modelId}`} className="text-sm text-cyan-100 hover:underline">← {model.name} 结构图</Link>
     <p className="mt-6 font-mono text-xs tracking-widest text-cyan-200">SGLANG / DP ATTENTION LAB</p>
     <h1 className="mt-3 text-3xl font-semibold sm:text-5xl">同一组卡，两种并行划分</h1>

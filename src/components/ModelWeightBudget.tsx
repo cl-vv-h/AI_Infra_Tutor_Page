@@ -37,7 +37,7 @@ export default function ModelWeightBudget({ model, layer, tp, bits, ep = 1, repl
         <details className="mt-3 text-sm"><summary className="cursor-pointer text-white/60">{number(row.local)} 元素 / 卡 · 展开逐项公式</summary><ul className="mt-3 space-y-3">{row.weights.map((weight) => <li key={weight.name} className="border-l border-white/15 pl-3"><p className="break-words text-white/75">{weight.name}</p><p className="mt-1 break-words font-mono text-violet-100">{weight.shape}{weight.copies > 1 ? ` × ${weight.copies} 份` : ''} → {number(weight.local)}</p></li>)}</ul></details>
       </div>
     })}</div>
-    <details className="mt-4 text-sm leading-6 text-white/65"><summary className="cursor-pointer">如何从本层累加到所有副本？</summary>
+    <details className="mt-4 text-sm leading-6 text-white/65"><summary className="cursor-pointer">层、Decoder 与副本的汇总关系</summary>
     <p className="mt-2">{mixed ? `每卡按张量逐项累加 payload 与 scale = ${memory(budget.bytes)}` : `每卡元素数 ${number(budget.local)} × ${bits} / 8 = ${memory(budget.bytes)}`}。TP 组总副本量为每卡值 × {tp}，不等于全局唯一参数量；Norm、路由器及部分 KV 投影可能复制。MoE 的 Top-k 激活量不等于常驻权重，混合模型的全层总计按实际层型逐层相加。</p>
     <p className="mt-3 text-sm leading-6 text-cyan-100">全部图示 Decoder 权重 / {replicas} 个独立副本：{memory(budget.allLayersBytes === null ? null : budget.allLayersBytes * tp * replicas)}（每卡 × {tp} × {replicas}）。DP 不改变单卡 Shape；固定 TP 时改变 EP 重排专家轴和中间维，本基线的 routed 每卡总元素数不变。</p>
     </details>

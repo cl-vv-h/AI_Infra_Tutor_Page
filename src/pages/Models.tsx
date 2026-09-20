@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import ModelSectionNav from '@/components/ModelSectionNav'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { ArrowDown, ArrowUpRight, BookOpen, Box, Braces, Check, Copy, Database, GitCompareArrows, Layers3, MousePointer2, X } from 'lucide-react'
 import { modelArchitectures } from '@/data/models'
@@ -150,11 +151,12 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
       <div className="mx-auto flex max-w-[1600px] flex-wrap items-end justify-between gap-4 px-5 py-7 sm:px-8 lg:px-10">
         <div><div className="flex items-center gap-2 font-mono text-xs tracking-[0.2em] text-cyan-200/70"><Braces className="h-4 w-4" /> MODEL ARCHITECTURE LAB</div>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white">{model.name} · 结构实验室</h1><Link to="/models" className="mt-3 inline-block text-sm text-cyan-100 hover:underline">← 浏览全部模型图解</Link></div>
-        <div className="flex flex-wrap items-center gap-4"><p className="flex items-center gap-2 text-sm text-white/60"><MousePointer2 className="h-4 w-4 text-cyan-200" /> 悬浮预览 · 点击查看 · 逐层探索</p><Link to={comparisonHref(model.id, scenario)} className="inline-flex items-center gap-2 rounded-full border border-cyan-200/25 bg-cyan-200/5 px-4 py-2.5 text-sm text-cyan-100 transition hover:bg-cyan-200/10"><GitCompareArrows className="h-4 w-4" />对比当前模型</Link></div>
+        <div className="flex flex-wrap items-center gap-4"><p className="flex items-center gap-2 text-sm text-white/60"><MousePointer2 className="h-4 w-4 text-cyan-200" /> 结构 · 张量 · 存储</p><Link to={comparisonHref(model.id, scenario)} className="inline-flex items-center gap-2 rounded-full border border-cyan-200/25 bg-cyan-200/5 px-4 py-2.5 text-sm text-cyan-100 transition hover:bg-cyan-200/10"><GitCompareArrows className="h-4 w-4" />对比当前模型</Link></div>
       </div>
     </header>
 
     <main className="mx-auto max-w-[1600px] px-5 py-6 sm:px-8 lg:px-10">
+      <ModelSectionNav />
       <section className="rounded-3xl border border-white/10 bg-[#0b1119]/90 p-3" aria-label="模型与推理配置">
         <div className="flex flex-wrap items-end gap-3 p-1" aria-label="选择模型">
           <label className="flex w-full min-w-0 flex-col gap-2 text-sm text-white/65 sm:w-80">切换模型
@@ -189,7 +191,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
       <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#0b1119] p-4">
         <div><p className="text-sm text-white/70">已选 <span className="font-mono text-cyan-100">Layer {effectiveLayer}</span> · {selected.title}</p><button type="button" onClick={() => { update({ view: 'cache' }); document.getElementById('workspace-tab-cache')?.focus() }} className="mt-2 text-left text-sm text-white/65 underline decoration-white/25 underline-offset-4 hover:text-cyan-100">B {scenario.batch} · S {scenario.sequence.toLocaleString('en-US')} · 缓存 {scenario.cacheBytes * 8}-bit · 调整条件</button></div>
         <div className="flex flex-wrap gap-3"><button type="button" onClick={() => inspect(selected, effectiveLayer, true)} className="rounded-xl border border-white/15 px-3 py-2.5 text-sm text-cyan-100 hover:bg-white/5">查看已选模块</button><button type="button" onClick={copyExplorer} className="inline-flex items-center gap-2 rounded-xl border border-cyan-200/25 px-3 py-2.5 text-sm text-cyan-100 hover:bg-white/5">{copyStatus === 'copied' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}复制当前图解</button></div>
-        <p role="status" className="w-full text-sm text-white/55">{copyStatus === 'copied' ? '已复制工作区、模型、层、已选模块、推理条件、权重位宽和缓存预算；不包含临时悬浮预览。' : copyStatus === 'failed' ? '无法自动复制，请选择下方链接手动复制。' : '复制链接可保留当前工作区与全部推理条件。窄屏点击“查看已选模块”打开详情。'}</p>
+        <p role="status" className={copyStatus ? 'w-full text-sm text-white/55' : 'sr-only'}>{copyStatus === 'copied' ? '已复制当前模型与实验参数。' : copyStatus === 'failed' ? '无法自动复制，请选择下方链接手动复制。' : ''}</p>
         {copyStatus === 'failed' && <input readOnly aria-label="手动复制图解链接" value={copyState?.url ?? ''} onFocus={(event) => event.target.select()} className="w-full rounded-xl border border-white/15 bg-black/20 p-3 text-sm text-white" />}
       </div>
 
@@ -279,7 +281,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
       </div>
       <div role="tabpanel" id="workspace-panel-weights" aria-labelledby="workspace-tab-weights" tabIndex={0} hidden={view !== 'weights'} className="focus-visible:outline-cyan-200">
         <h2 className="mt-5 text-xl font-semibold text-white">Decoder 权重清单</h2>
-        <p className="mt-2 text-sm leading-6 text-white/65">先看一个模块，再汇总所有层。不同统计范围不能直接相加；点击权重模块可返回结构图。</p>
+        <p className="mt-2 text-sm leading-6 text-white/65">当前模块、全 Decoder 与全副本分别统计。</p>
         <nav aria-label="权重阅读顺序" className="mt-3 flex flex-wrap gap-2">{[
           ['weight-rank-section', '1 · 当前 rank / 当前模块'],
           ['weight-decoder-section', '2 · 整个 Decoder / 所有副本'],

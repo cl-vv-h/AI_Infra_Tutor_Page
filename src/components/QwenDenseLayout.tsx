@@ -14,7 +14,7 @@ export default function QwenDenseLayout({ tp, policy, dpaRows }: { tp: TensorPar
   ].map(weight => ({ ...weight, storage: mixedWeightStorage(weight, 'ffn', policy) }))
   const bytes = weights.reduce((sum, weight) => sum + weight.storage.bytes, 0)
   return <details aria-label="Qwen3 Dense 融合布局" className="mt-4 rounded-xl border border-cyan-200/20 p-4 text-sm leading-6 text-white/70">
-    <summary className="cursor-pointer text-cyan-100">SGLang 如何合并 Gate / Up · 本层 MLP 每 rank {bytes.toLocaleString('en-US')} B</summary>
+    <summary className="cursor-pointer text-cyan-100">SGLang Gate / Up 融合布局 · 本层 MLP 每 rank {bytes.toLocaleString('en-US')} B</summary>
     <p className="mt-3">Qwen3 复用 Qwen2MLP：Gate 和 Up 按输出维做列并行并合并，Down 按输入维做行并行。当前 TP={tp}，中间维 I={intermediate}；Gate/Up 各自占 {intermediate} 行，融合不把参数或 scale 再加一遍。下方是同一 MLP 账本的另一种布局视图，不是额外分配。</p>
     <div className="mt-3 grid gap-3 sm:grid-cols-2">{weights.map(weight => <div key={weight.name} className="min-w-0 rounded-xl bg-white/5 p-3"><p className="break-words font-mono text-cyan-100">{weight.name} {weight.shape}</p><MixedWeightDetails storage={weight.storage} copies={1} /></div>)}</div>
     <p className="mt-3">输入 [{n},4096] → 合并投影 [{n},{2 * intermediate}] → SiLU(Gate)×Up [{n},{intermediate}] → Down 部分和 [{n},4096] → TP 归约后的输出 [{n},4096]。{dpaRows === undefined ? 'N 来自当前 batch/阶段；独立 DP 复制整个 TP 组，不继续缩小这些矩阵。' : '这里的行数是 DPA 汇合缓冲（含 padding），不是当前请求组的有效 token 数；Dense 中间维仍按总 TP 划分。'}</p>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import ModelSectionNav from '@/components/ModelSectionNav'
 import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowLeft, ArrowUpRight, Check, Copy, GitCompareArrows, Info } from 'lucide-react'
 import { modelDirectory as modelArchitectures, isV41Entry } from '@/data/model-directory'
@@ -106,6 +107,7 @@ export default function ModelCompare() {
 
   return <div className="model-lab-shell min-h-screen pb-20">
     <div className="mx-auto max-w-[1600px] px-5 py-7 sm:px-8 lg:px-10">
+      <ModelSectionNav />
       <header className="flex flex-wrap items-end justify-between gap-5">
         <div><Link to="/models" className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-cyan-100"><ArrowLeft className="h-4 w-4" />返回结构实验室</Link><h1 className="mt-4 flex items-center gap-3 text-3xl font-semibold text-white"><GitCompareArrows className="h-7 w-7 text-cyan-200" />模型对比台</h1><p className="mt-3 text-base leading-7 text-slate-400">同一组推理条件，比较架构与缓存。不是性能榜单，也不是部署显存预算。</p></div>
         <div><button type="button" onClick={copyComparison} className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2.5 text-sm text-white hover:bg-white/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-200">{copyStatus === 'copied' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}复制此对比</button><p role="status" className="mt-2 max-w-xs text-sm text-slate-400">{copyStatus === 'copied' ? '已复制模型和推理条件的链接。' : copyStatus === 'failed' ? '未能写入剪贴板，可直接复制地址栏链接。' : '模型与条件均保存在网址中。'}</p></div>
@@ -174,7 +176,7 @@ export default function ModelCompare() {
       </section>
 
       <section className="mt-6 rounded-3xl border border-white/10 bg-white/[0.025] p-5 sm:p-6" aria-labelledby="comparison-assumptions-title">
-        <h2 id="comparison-assumptions-title" className="flex items-center gap-2 text-lg font-semibold text-white"><Info className="h-5 w-5 text-cyan-200" />如何理解这些数字</h2>
+        <h2 id="comparison-assumptions-title" className="flex items-center gap-2 text-lg font-semibold text-white"><Info className="h-5 w-5 text-cyan-200" />计算口径</h2>
         <div className="mt-4 grid gap-5 text-sm leading-7 text-slate-400 lg:grid-cols-3">
           <p>这里只计算主干层的有效 token 缓存与持久状态，不含权重、激活、视觉临时张量、分页填充、图捕获、通信缓冲及推测解码副本。通用模型不计量化 scale；V4.1 紧凑格式已计其已核对的 scale。V4.1 另不含候选 mask、Top-k 位置表和最大上下文预分配。缓存少不代表推理更快或效果更好。</p>
           <p>完整 KV 精度选项不会改变 Hybrid 的 FP32 循环矩阵和 BF16 卷积窗口。卷积采用 Transformers 的完整 4 槽窗口口径，部分引擎使用 K−1 槽。FP8 是容量假设，不表示所选模型、引擎与硬件必然支持。</p>

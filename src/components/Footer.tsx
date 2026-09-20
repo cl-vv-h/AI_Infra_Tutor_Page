@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const categoryLinks = [
   { label: 'AI Infra 教学', to: '/learn' },
-  { label: '模型结构实验室', to: '/models' },
+  { label: '模型知识体系', to: '/models/knowledge' },
   { label: 'SGLang 源码', to: '/category/sglang' },
   { label: '全球新闻雷达', to: '/news' },
 ]

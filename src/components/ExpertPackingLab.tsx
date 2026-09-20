@@ -16,7 +16,7 @@ export default function ExpertPackingLab({ model, experts, hidden, intermediate,
   const data = expertPacking(experts, hidden, intermediate, tp, selected)
   return <section aria-label="专家权重加载布局" className="mt-5 rounded-2xl border border-emerald-200/25 bg-emerald-200/[0.03] p-3 sm:p-4">
     <p className="font-mono text-xs tracking-widest text-emerald-200">EXPERT PACKING / LOAD TIME</p>
-    <h4 className="mt-2 text-lg font-medium text-white">逻辑 Shape 不变，存储 Shape 怎样变化？</h4>
+    <h4 className="mt-2 text-lg font-medium text-white">逻辑 Shape 与存储布局</h4>
     <p className="mt-2 text-sm leading-6 text-white/70">独立对照：把 SGLang 的加载分配规则应用到本层 routed 专家的逻辑 Shape，不代表当前检查点已量化，也不会修改上方统一位宽或下方整层账本。这里只算 routed 专家，不含 Router、shared 专家、latent 投影和其他模块。</p>
     {model.id === 'glm-5-2' && <p className="mt-2 text-sm leading-6 text-amber-100">GLM-5.2 公开配置声明 BF16，没有 quantization_config；这里不是 BF16 → FP8 检查点转换器。</p>}
     <label className="mt-4 block text-sm text-emerald-100">加载布局：{expertFormatLabels[selected]}<input aria-label="专家权重加载格式" className="mt-3 block w-full accent-emerald-200" type="range" min={0} max={formats.length - 1} step={1} value={formats.indexOf(selected)} aria-valuetext={expertFormatLabels[selected]} onChange={(event) => onFormat(formats[Number(event.target.value)])} /></label>

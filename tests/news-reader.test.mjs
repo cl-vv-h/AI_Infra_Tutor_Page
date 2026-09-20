@@ -82,7 +82,7 @@ test('specific source is exact and missing sources stay empty instead of broaden
 test('all technical topics have reading guides and their learning links resolve', () => {
   assert.deepEqual(Object.keys(newsStudyGuides).sort(), newsTopics.map((topic) => topic.id).sort())
   for (const guide of Object.values(newsStudyGuides)) {
-    assert.equal(guide.questions.length, 3)
+    assert.equal(guide.points.length, 3)
     for (const link of guide.links) assert.ok(['/models', '/models/compare', ...categories.map((category) => `/category/${category.slug}`)].includes(link.to), link.to)
     for (const link of guide.originals ?? []) assert.equal(new URL(link.url).protocol, 'https:')
   }

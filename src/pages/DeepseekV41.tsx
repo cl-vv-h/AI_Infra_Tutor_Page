@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import ModelSectionNav from '@/components/ModelSectionNav'
 import { Link, useSearchParams } from 'react-router-dom'
 import { formatBytes } from '@/lib/model-lab'
 import { parseV41Scenario, v41Cache, v41Layer, v41Params, v41Query, v41Reference, v41Source, v41Weights, v41WeightStorage } from '@/lib/deepseek-v41-reference'
@@ -46,12 +47,13 @@ export default function DeepseekV41() {
     const url = new URL(window.location.href); url.search = ''; url.hash = `/models/deepseek-v4-1-flash?${canonical}`
     try { await navigator.clipboard.writeText(url.toString()); setCopied(canonical) } catch { setCopied('failed') }
   }
-  return <main className="mx-auto max-w-7xl px-5 pb-20 pt-28 text-white">
+  return <main className="mx-auto max-w-7xl px-5 pb-20 pt-8 text-white">
+    <ModelSectionNav />
     <Link to="/models" className="text-sm text-cyan-100 hover:underline">← 返回模型目录</Link>
     {state.sequence >= 1024 ? <Link to={`/models/compare?${comparisonParams({ modelIds: ['deepseek-v4-1-flash', 'deepseek-v4-flash'], scenario: { batch: state.batch, sequence: state.sequence, tp: state.world as 1 | 2 | 4 | 8, cacheBytes: 2, phase: 'decode' }, scope: 'rank', v41Storage: state.storage })}`} className="ml-5 inline-block text-sm text-violet-100 hover:underline">携带 B / S / world 对照 V4 缓存（单副本）</Link> : <span className="ml-5 inline-block text-xs text-white/50">跨模型对比要求 S ≥ 1,024；不自动改写当前长度。</span>}
     <p className="mt-7 font-mono text-xs tracking-widest text-violet-200">REFERENCE LAB / CSA2 · SINGLE-PASS mHC</p>
     <h1 className="mt-3 text-3xl font-semibold sm:text-5xl">DeepSeek-V4.1-Flash</h1>
-    <p className="mt-4 max-w-4xl text-base leading-7 text-white/70">从跨层来源理解 40 层因果 Encoder–Decoder：主 KV、Index K、Top-k 位置表和候选池分别由谁写入、由谁复用？再切换 rank，看官方参考实现的权重分片与真实量化 scale。</p>
+    <p className="mt-4 max-w-4xl text-base leading-7 text-white/70">40 层因果 Encoder–Decoder：跨层 KV 与索引复用、逐 rank 权重分片和量化存储。</p>
     <div className="mt-4 rounded-xl border border-amber-200/25 bg-amber-200/5 p-4 text-sm leading-6 text-amber-100">已接入目录与缓存对比，但此页采用官方最小实现，不能当成 SGLang 部署验证。参考 forward 顺序运行 40 层；模型卡的 8B Prefill / 16B Decode 是 CED 优化口径，本页没有实现跳过后 20 层的优化或 SWA Bounded Replay。</div>
     <p className="mt-3 text-sm text-white/55">主干标称 552B，Engram 另约 196B；不把主干参数、全检查点与稀疏激活参数混为一谈。数值来源：<a className="text-cyan-100 hover:underline" href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash" target="_blank" rel="noreferrer">官方模型卡 ↗</a></p>
     {notices.length > 0 && <p role="status" className="mt-4 text-sm text-amber-100">{notices.join(' ')}</p>}

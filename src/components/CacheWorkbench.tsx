@@ -68,7 +68,7 @@ export function CacheWorkbench({ model, layer = 0, scenario, onBatch, onSequence
       </div>
     </div>
     <details className="border-t border-white/10 px-5 py-3">
-      <summary className="cursor-pointer text-sm text-cyan-100/85">{hasWindow ? '滑动窗口不等于上下文上限：查看计算口径' : hybrid ? '哪些状态随上下文增长？查看公式与长度对照' : '为什么 TP 不一定等比例减少缓存？查看计算口径'}</summary>
+      <summary className="cursor-pointer text-sm text-cyan-100/85">{hasWindow ? '滑动窗口不等于上下文上限：查看计算口径' : hybrid ? '循环状态与历史缓存 · 公式' : 'TP 分片与缓存复制 · 公式'}</summary>
       <div className="mt-3 grid gap-3 pb-2 text-sm leading-6 text-white/65 md:grid-cols-2">
         <p>{cache.kind === 'mla' ? '当前采用常见的 latent-cache MLA 路径：每个 TP rank 持有完整的压缩 KV 与RoPE 分量，TP 改变 attention head 投影分片，但不缩小这份 latent cache。' : gathered ? `Q/K Norm 在汇集后的完整投影上计算。缓存按每卡 ${cacheKvHeads(model, scenario.tp)} 个 KV heads 的副本估算，TP 卡数增加会增加组内重复存储；不能套用 KV heads / TP。` : replication ? `这个模型只有 ${model.dimensions.kvHeads} 个 KV heads。TP = ${scenario.tp} 时每卡仍需 1 个完整 KV head，head 在多卡间复制，所以集群总缓存会上升。` : `在 head 分片路径下，每卡缓存 ${cacheKvHeads(model, scenario.tp)} 个 KV heads。KV heads 能被 TP 整除时缓存随 TP 等比例下降；TP 大于 KV heads 时开始复制。`}</p>
         <p>这是有效 token 的理论缓存容量，未计入模型权重、激活、页尾填充、量化 scale、图捕获与通信缓冲，不是部署所需总显存。FP8 为容量假设，实际可用性和精度取决于引擎与硬件。S 上限取当前官方配置，未应用额外的上下文扩展。{model.execution.contextNote}</p>

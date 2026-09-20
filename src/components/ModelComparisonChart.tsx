@@ -18,7 +18,7 @@ export default function ModelComparisonChart({ models, scenario, scope, v41Stora
 
   return <section className="mt-6 rounded-3xl border border-white/10 bg-[#0b131b] p-5 sm:p-6" aria-labelledby="comparison-growth-title">
     <div className="flex flex-wrap items-end justify-between gap-4">
-      <div><h2 id="comparison-growth-title" className="text-xl font-semibold text-white">上下文变长，缓存如何增长？</h2><p className="mt-2 text-sm leading-6 text-slate-400">横轴为对数长度，纵轴为统一线性容量；曲线止于各模型当前配置上限。</p></div>
+      <div><h2 id="comparison-growth-title" className="text-xl font-semibold text-white">上下文长度与缓存容量</h2><p className="mt-2 text-sm leading-6 text-slate-400">横轴为对数长度，纵轴为统一线性容量；曲线止于各模型当前配置上限。</p></div>
       <span className="rounded-full border border-white/15 px-3 py-1.5 text-sm text-slate-300">{scope === 'rank' ? '每卡' : `全部 ${scenario.tp} 卡`} · B = {scenario.batch}</span>
     </div>
     <div className="mt-5 overflow-x-auto" tabIndex={0} role="region" aria-label="缓存增长图，可横向滚动">

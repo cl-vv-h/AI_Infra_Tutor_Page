@@ -40,8 +40,8 @@ try {
   for (const [lesson, step] of v41Lessons.entries()) {
     const html = render(`lesson=${lesson}&view=${step.view}&layer=${step.layer}&flow=${step.flow}`)
     assert.ok(html.includes(`id="${step.target}"`))
-    assert.ok(html.includes('aria-current="step"'))
-    assert.match(html, /id="v41-lesson-answer" hidden=""/)
+    assert.ok(html.includes('aria-label="V4.1 架构专题"'))
+    assert.match(html, /id="v41-topic-content"/)
     assert.ok(html.includes(step.title))
   }
   console.log('V4.1 reference static render: 240 layer/world/workspace routes, 8 guided lessons, source modes, lagged mHC and two cache baselines passed.')

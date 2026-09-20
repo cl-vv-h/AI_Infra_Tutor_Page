@@ -22,7 +22,7 @@ export default function KimiWeightAudit({ model, tp = 1, ep = 1, replicas = 1, r
     ['= 96 个权重文件总字节', checkpoint.fileBytes],
   ] as const
   return <section aria-label="Kimi 权重口径核对" id="weight-checkpoint-section" tabIndex={-1} className="mt-4 scroll-mt-24 rounded-2xl border border-amber-200/25 bg-amber-200/5 p-4 text-sm leading-6 focus-visible:outline-amber-200 sm:p-5">
-    <h3 className="text-base font-semibold text-amber-100">为什么官方是约 1.56 TB？</h3>
+    <h3 className="text-base font-semibold text-amber-100">Kimi 原生权重 · 1.56 TB</h3>
     <p className="mt-2 text-white/80">完整权重文件：{decimalTB(checkpoint.fileBytes)} · {bytes(checkpoint.fileBytes)}。这是 96 个文件的固定体积，不是当前 rank 显存；不会随 TP 或混合精度变化。</p>
     <details className="mt-3 text-white/70" aria-label="Kimi 文件差额与审计说明"><summary className="cursor-pointer">展开文件、Decoder 与单位差额的完整对账</summary>
     <p className="mt-2 text-white/75">官方仓库文件体积、图示 Decoder 小计、当前 rank 的权重和部署显存是四个不同数字。以下固定 TP=1 对齐单位与统计口径，不跟随上方 TP 改写官方文件体积。</p>

@@ -6,7 +6,7 @@ import { useLanguage } from '@/hooks/useLanguage'
 const navLinks = [
   { label: '首页', to: '/' },
   { label: 'AI Infra', to: '/learn' },
-  { label: '模型实验室', to: '/models' },
+  { label: '模型实验室', to: '/models/knowledge' },
   { label: '新闻雷达', to: '/news' },
   { label: '关于', to: '/about' },
 ]
@@ -26,7 +26,7 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => {
-            const active = link.to === '/' ? location.pathname === '/' : location.pathname.startsWith(link.to)
+            const active = link.to === '/' ? location.pathname === '/' : location.pathname.startsWith(link.to === '/models/knowledge' ? '/models' : link.to)
             return (
             <Link
               key={link.to}

@@ -40,7 +40,7 @@ test('mHC groups preserve four-stream residuals, reduce once, then mix once per 
     assert.ok(!nodes.some(n => n.id.endsWith('-add')))
     const stops = learningStops(model, layer)
     assert.equal(stops.filter(s => s.node.tone === 'memory').length, 1)
-    assert.match(stops.find(s => s.node.id === 'hc-attn-pre').question, /四路/)
+    assert.match(stops.find(s => s.node.id === 'hc-attn-pre').focus, /四路/)
   }
 })
 
