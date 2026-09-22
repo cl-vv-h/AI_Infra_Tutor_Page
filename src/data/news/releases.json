@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T05:17:36.496Z",
+  "generatedAt": "2026-09-22T05:15:42.436Z",
   "lookbackDays": 90,
   "limitPerStage": 8,
   "sources": [
@@ -7,7 +7,8 @@
       "name": "SGLang Releases",
       "repository": "sgl-project/sglang",
       "url": "https://github.com/sgl-project/sglang/releases",
-      "state": "ok",
+      "state": "unavailable",
+      "httpStatus": 403,
       "lastSuccessAt": "2026-09-21T05:17:36.496Z",
       "count": 8
     },
@@ -15,7 +16,8 @@
       "name": "vLLM Releases",
       "repository": "vllm-project/vllm",
       "url": "https://github.com/vllm-project/vllm/releases",
-      "state": "ok",
+      "state": "unavailable",
+      "httpStatus": 403,
       "lastSuccessAt": "2026-09-21T05:17:36.496Z",
       "count": 8
     },
@@ -23,7 +25,8 @@
       "name": "FlashInfer Releases",
       "repository": "flashinfer-ai/flashinfer",
       "url": "https://github.com/flashinfer-ai/flashinfer/releases",
-      "state": "ok",
+      "state": "unavailable",
+      "httpStatus": 403,
       "lastSuccessAt": "2026-09-21T05:17:36.496Z",
       "count": 14
     },
@@ -31,7 +34,8 @@
       "name": "Transformers Releases",
       "repository": "huggingface/transformers",
       "url": "https://github.com/huggingface/transformers/releases",
-      "state": "ok",
+      "state": "unavailable",
+      "httpStatus": 403,
       "lastSuccessAt": "2026-09-21T05:17:36.496Z",
       "count": 8
     },
@@ -39,7 +43,8 @@
       "name": "TensorRT-LLM Releases",
       "repository": "NVIDIA/TensorRT-LLM",
       "url": "https://github.com/NVIDIA/TensorRT-LLM/releases",
-      "state": "ok",
+      "state": "unavailable",
+      "httpStatus": 403,
       "lastSuccessAt": "2026-09-21T05:17:36.496Z",
       "count": 8
     },
@@ -47,7 +52,8 @@
       "name": "Triton Releases",
       "repository": "triton-lang/triton",
       "url": "https://github.com/triton-lang/triton/releases",
-      "state": "ok",
+      "state": "unavailable",
+      "httpStatus": 403,
       "lastSuccessAt": "2026-09-21T05:17:36.496Z",
       "count": 1
     }
