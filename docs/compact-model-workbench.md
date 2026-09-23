@@ -25,7 +25,21 @@ an independent static HTML viewer or downloading renderer code at runtime.
 Public URL fields: `tp`, `ep`, `adp` (Attention DP), `pp`, `stage`, `replicas`.
 Existing mixed precision and per-weight fields are unchanged. Old links default
 to `adp=1`, `pp=1`, `stage=0`. Controls and parsing validate values; the UI exposes
-PP sizes 1–16, bounded by the number of Decoder layers.
+PP sizes 1–64, bounded by the number of Decoder layers. TP / EP / Attention DP /
+independent DP use powers of two through 64; each model's ordinary TP choices
+retain its head/group geometry constraints. GLM-5.2 / GLM-5.3 and DeepSeek-V3
+reach TP=64; Kimi-K3 reaches 32 (96 attention heads), and DeepSeek-V4's current
+whole-output-group layout remains at 8. These are calculator-layout limits,
+not universal limits of those models or inference engines.
+
+Larger TP may replicate GQA KV heads or violate a quantization block's alignment.
+The DPA reference includes those KV replicas. Module-default precision and expert
+packing choices are filtered by actual local matrix shapes; incompatible URL
+formats produce a notice and fall back to BF16. Per-weight overrides retain
+their existing per-matrix validation. Kimi's separate native SM100 allocation
+audit remains TP<=8; its logical weight calculator supports the larger range.
+DeepSeek-V4.1 retains its independent world<=8 reference, while its independent
+DP replica count now reaches 64. No >8 deployment has been run on hardware.
 
 For this storage model:
 

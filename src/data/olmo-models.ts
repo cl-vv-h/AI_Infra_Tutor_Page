@@ -13,7 +13,7 @@ export const olmoArchitectures: ModelArchitecture[] = [{
   parameters: '7B', activeParameters: '7B', accent: '#9fe2bf',
   configUrl: 'https://huggingface.co/allenai/OLMo-2-1124-7B/blob/main/config.json', configLabel: 'Ai2 官方 1124 配置',
   implementationUrl: 'https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/models/olmo2/modeling_olmo2.py',
-  supportedTp: [1, 2, 4, 8],
+  supportedTp: [1, 2, 4, 8, 16, 32],
   execution: {
     maxContext: 4096, denseLayers: 32, normLayout: 'post-branch-qk', cache: { kind: 'gqa', layout: 'replicated' },
     contextNote: 'OLMo-2-1124-7B：32 Q / 32 KV，最大上下文 4,096，无滑窗或额外 RoPE 扩展。按 Transformers v4.57.1 的 base_model_tp_plan：Q/K/V 为 colwise_rep，权重分片但输出汇集；Q/K Norm 跨完整投影宽度，Attention 和 KV 在每个 rank 保留全部 heads。o_proj 为 rowwise_rep，FFN 正常分片。这里是该参考路径的逻辑容量，不是所有推理引擎的唯一布局，也未执行多卡性能实测。',

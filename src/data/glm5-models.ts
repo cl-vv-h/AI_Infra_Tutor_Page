@@ -12,7 +12,7 @@ export const glm5Architectures: ModelArchitecture[] = [{
   parameters: '753B', activeParameters: '未单独核定', accent: '#76e7c5',
   configUrl: 'https://huggingface.co/zai-org/GLM-5.2/blob/main/config.json', configLabel: '官方 config · 2026-09-14 核对',
   implementationUrl: 'https://github.com/sgl-project/sglang/blob/main/python/sglang/srt/models/deepseek_v2.py',
-  supportedTp: [1, 2, 4, 8],
+  supportedTp: [1, 2, 4, 8, 16, 32, 64],
   execution: {
     maxContext: 1048576, denseLayers: 3,
     contextNote: '1M 为配置上限，不是单卡容量承诺。本图按 PP=1、Attention TP=TP 展示；routed 专家采用当前 EP / MoE-TP 布局；DSA Index K 按 Ascend 全层预留，不含检索工作区、位置表与 NextN。实际缓存精度和分配以固定引擎版本为准。',

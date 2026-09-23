@@ -7,6 +7,7 @@ import type { ModelDirectoryEntry } from '@/data/model-directory'
 import { attentionKind, cacheEstimate, formatBytes, localKvHeads } from '@/lib/model-lab'
 import { explorerHref } from '@/lib/model-explorer'
 import type { ModelArchitecture, TensorParallelSize } from '@/types/model'
+import { parallelSizes } from '@/types/model'
 import { compareEstimate, comparisonColors, comparisonParams, contextProbes, defaultComparisonScenario, memoryValue, parseComparison, v41ComparisonExplorerHref } from '@/lib/model-comparison'
 import type { ComparisonState } from '@/lib/model-comparison'
 import ModelComparisonChart from '@/components/ModelComparisonChart'
@@ -120,7 +121,7 @@ export default function ModelCompare() {
         <div className="mt-5 grid gap-4 border-t border-white/10 pt-5 sm:grid-cols-2 lg:grid-cols-5">
           <label className="flex flex-col gap-2 text-sm text-slate-300">并发请求 B<select aria-label="并发请求 B" className={controlClass} value={scenario.batch} onChange={(event) => update({ scenario: { ...scenario, batch: Number(event.target.value) } })}>{[...new Set([1, 2, 4, 8, 16, 32, 64, scenario.batch])].sort((a, b) => a - b).map((value) => <option key={value} value={value}>{value}</option>)}</select></label>
           <label className="flex flex-col gap-2 text-sm text-slate-300">每请求序列 S<select aria-label="每请求序列 S" className={controlClass} value={scenario.sequence} onChange={(event) => update({ scenario: { ...scenario, sequence: Number(event.target.value) } })}>{sequenceOptions.map((value) => <option key={value} value={value}>{integer(value)} tokens</option>)}</select></label>
-          <label className="flex flex-col gap-2 text-sm text-slate-300">{hasV41 ? '卡数 / Attention TP（V4.1 world）' : 'Tensor Parallel'}<select aria-label="对比 Tensor Parallel" className={controlClass} value={scenario.tp} onChange={(event) => update({ scenario: { ...scenario, tp: Number(event.target.value) as TensorParallelSize } })}>{[1, 2, 4, 8].map((value) => <option key={value} value={value}>TP {value}</option>)}</select></label>
+          <label className="flex flex-col gap-2 text-sm text-slate-300">{hasV41 ? '卡数 / Attention TP（V4.1 world）' : 'Tensor Parallel'}<select aria-label="对比 Tensor Parallel" className={controlClass} value={scenario.tp} onChange={(event) => update({ scenario: { ...scenario, tp: Number(event.target.value) as TensorParallelSize } })}>{parallelSizes.map((value) => <option key={value} value={value}>TP {value}</option>)}</select></label>
           <label className="flex flex-col gap-2 text-sm text-slate-300">{hasV41 ? '通用模型 KV 精度（不含 V4.1）' : '注意力 KV 精度'}<select aria-label="对比 KV 精度" className={controlClass} value={scenario.cacheBytes} onChange={(event) => update({ scenario: { ...scenario, cacheBytes: Number(event.target.value) as 1 | 2 } })}><option value={2}>BF16 / FP16 · 2 B</option><option value={1}>FP8 假设 · 1 B</option></select></label>
           <label className="flex flex-col gap-2 text-sm text-slate-300">容量视图<select aria-label="容量视图" className={controlClass} value={scope} onChange={(event) => update({ scope: event.target.value === 'group' ? 'group' : 'rank' })}><option value="rank">每张卡 / TP rank</option><option value="group">全部 TP 卡合计</option></select></label>
         </div>

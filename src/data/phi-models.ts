@@ -13,7 +13,7 @@ export const phiArchitectures: ModelArchitecture[] = [{
   parameters: '3.8B', activeParameters: '3.8B', accent: '#a5d8ff',
   configUrl: 'https://huggingface.co/microsoft/Phi-3.5-mini-instruct/blob/main/config.json', configLabel: '微软官方 config.json',
   implementationUrl: 'https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/models/phi3/modeling_phi3.py',
-  supportedTp: [1, 2, 4, 8],
+  supportedTp: [1, 2, 4, 8, 16, 32],
   execution: {
     maxContext: 131072, denseLayers: 32, cache: { kind: 'gqa' },
     contextNote: 'Phi-3.5 Mini 的 Q/KV 均为 32 heads，是 MHA。官方 sliding_window=262,144 大于 max_position_embeddings=131,072；在本工具范围内不会裁剪，因此按完整 S 估算。LongRoPE 的 original_max_position_embeddings=4,096 是位置缩放参考，不是 KV 窗口；不外推到 256K。TP 为按 Q/K/V 各自 head 切分的逻辑布局，并非把完整打包矩阵连续等分。',

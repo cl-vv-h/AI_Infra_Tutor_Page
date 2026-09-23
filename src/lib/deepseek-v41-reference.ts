@@ -1,4 +1,5 @@
 /** Verified against the official minimal implementation, not a SGLang backend. */
+import { isParallelSize } from '../types/model.ts'
 export const v41Reference = {
   revision: '517ef625df97ec57aadc91b67506a57c20fdc5bb', layers: 40, encoderLayers: 20,
   hidden: 5120, heads: 64, headDim: 512, qRank: 1280, outputGroups: 8, outputRank: 1024,
@@ -31,7 +32,7 @@ export function parseV41Scenario(params: URLSearchParams) {
     return fallback
   }
   const world = number('world', 4, (n) => [1, 2, 4, 8].includes(n))
-  const replicas = number('replicas', 1, (n) => [1, 2, 4, 8].includes(n))
+  const replicas = number('replicas', 1, isParallelSize)
   const state: V41Scenario = {
     layer: number('layer', 20, (n) => integer(n, 0, 39)), batch: number('b', 1, (n) => integer(n, 1, 64)),
     sequence: number('s', 4096, (n) => integer(n, 1, v41Reference.maxContext)), world, replicas,
@@ -167,7 +168,7 @@ export interface V41Stage { id: string; title: string; input: V41Axes; output: V
 /** Flatten B and the current query length only. S still means total request history. */
 export function v41RankFlow(state: V41Scenario) {
   const { world, replicas, rank, batch, sequence, phase } = state
-  if (![1, 2, 4, 8].includes(world) || ![1, 2, 4, 8].includes(replicas) || !integer(rank, 0, world * replicas - 1) || !integer(batch, 1, 64) || !integer(sequence, 1, v41Reference.maxContext) || !['prefill', 'decode'].includes(phase)) throw new Error('Invalid V4.1 rank scenario')
+  if (![1, 2, 4, 8].includes(world) || !isParallelSize(replicas) || !integer(rank, 0, world * replicas - 1) || !integer(batch, 1, 64) || !integer(sequence, 1, v41Reference.maxContext) || !['prefill', 'decode'].includes(phase)) throw new Error('Invalid V4.1 rank scenario')
   const layer = v41Layer(state.layer)
   const localRank = rank % world, replica = Math.floor(rank / world)
   const tokens = batch * (phase === 'prefill' ? sequence : 1)

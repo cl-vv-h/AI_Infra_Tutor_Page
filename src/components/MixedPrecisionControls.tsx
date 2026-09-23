@@ -3,10 +3,13 @@ import { defaultMixedPrecision, availableMixedExperts, matrixPrecisions, mixedPr
 import type { ExpertPrecision, MixedPrecision } from '@/lib/mixed-precision'
 import type { TensorParallelSize } from '@/types/model'
 import WeightPrecisionEditor from './WeightPrecisionEditor'
+import { getModelArchitecture } from '@/data/models'
+import { modulePrecisionOptions } from '@/lib/weight-precision-policy'
 
 export default function MixedPrecisionControls({ value, hasDense = true, denseOnly = false, modelId = '', tp = 1, ep = 1, attentionTp = tp, layer = 0, compact = false, onChange }: { value?: MixedPrecision; hasDense?: boolean; denseOnly?: boolean; modelId?: string; tp?: number; ep?: number; attentionTp?: number; layer?: number; compact?: boolean; onChange: (value: MixedPrecision | undefined) => void }) {
   const routedOnly = modelId === 'qwen3-30b-a3b'
   const expertOptions = availableMixedExperts(modelId, tp, ep)
+  const moduleOptions = modelId ? modulePrecisionOptions(getModelArchitecture(modelId), tp as TensorParallelSize, ep as TensorParallelSize) : undefined
   const splitExperts = hasRoutedOverrides(value)
   const latest = useRef(value)
   useLayoutEffect(() => { latest.current = value }, [value])
@@ -20,11 +23,12 @@ export default function MixedPrecisionControls({ value, hasDense = true, denseOn
     <div className="mt-3 flex flex-wrap gap-2">{[{ label: '统一位宽 · 理论对照', mixed: false }, { label: '按模块混合精度', mixed: true }].map(item => <button key={item.label} type="button" aria-pressed={!!value === item.mixed} onClick={() => { if (!!value !== item.mixed) onChange(item.mixed ? { ...defaultMixedPrecision } : undefined) }} className={`min-h-11 rounded-xl border px-3 text-sm ${!!value === item.mixed ? 'border-violet-200/50 bg-violet-200/10 text-violet-100' : 'border-white/15 text-white/65'}`}>{item.label}</button>)}</div>
     {value ? <>
       <div className={`mt-4 grid gap-3 ${denseOnly || routedOnly ? '' : compact ? 'sm:grid-cols-2' : 'sm:grid-cols-3'}`}>{(['mlp', 'shared', 'experts'] as const).filter(key => (!denseOnly || key === 'mlp') && (!routedOnly || key === 'experts')).map(key => {
-        const options: readonly ExpertPrecision[] = key === 'experts' ? expertOptions : matrixPrecisions
+        const options: readonly ExpertPrecision[] = (key === 'experts' ? expertOptions : matrixPrecisions).filter(format => !moduleOptions || moduleOptions[key].includes(format))
         const label = { mlp: 'Dense MLP', shared: 'Shared MLP', experts: 'Routed MoE' }[key]
         return <label key={key} className="text-sm leading-6 text-white/75">{label}<span className="block text-xs text-violet-100">{key === 'mlp' && !hasDense ? '本模型无 Dense MLP' : mixedPrecisionLabels[value[key]]}</span><select aria-label={`${label} 精度`} disabled={key === 'mlp' && !hasDense} value={value[key]} className="mt-3 block min-h-11 w-full min-w-0 rounded-lg border border-white/20 bg-[#101e29] p-2 text-sm text-white disabled:opacity-40" onChange={e => change({ [key]: e.target.value })}>{options.map(format => <option key={format} value={format}>{mixedPrecisionLabels[format]}</option>)}</select></label>
       })}</div>
-      {hasDense && !denseOnly && !routedOnly && <button type="button" onClick={() => onChange({ ...defaultMixedPrecision, mlp: 'fp8' })} className="mt-4 min-h-11 rounded-lg border border-white/20 px-3 text-sm text-cyan-100">应用预设：Dense FP8 / Experts BF16</button>}
+      {hasDense && !denseOnly && !routedOnly && <button type="button" disabled={moduleOptions && !moduleOptions.mlp.includes('fp8')} onClick={() => onChange({ ...defaultMixedPrecision, mlp: 'fp8' })} className="mt-4 min-h-11 rounded-lg border border-white/20 px-3 text-sm text-cyan-100 disabled:cursor-not-allowed disabled:opacity-40">应用预设：Dense FP8 / Experts BF16</button>}
+      <p className="mt-2 text-xs leading-5 text-white/50">精度选项按当前分片的矩阵维度与量化对齐要求筛选；调整 TP / EP 后，不兼容的模块默认格式会提示并恢复 BF16。</p>
       {routedOnly && <p className="mt-3 text-xs leading-6 text-white/65">MoE-TP={tp / ep} · I_local={768 / (tp / ep)}。FP8 block、INT4 group 128 与 W4A8 按分片对齐过滤；无 Dense/Shared MLP 或 correction bias。官方配置与 SGLang 普通 Router 是 BF16；FP32 为本页默认自定义假设。</p>}
       {!denseOnly && value.experts === 'w4afp8' && !splitExperts && <label className="mt-4 block text-sm leading-6 text-white/75">W4A8 权重阶段<select aria-label="W4A8 权重阶段" value={value.w4Stage ?? 'allocated'} onChange={e => change({ w4Stage: e.target.value === 'processed' ? 'processed' : undefined })} className="mt-2 block w-full min-w-0 rounded-xl border border-white/20 bg-[#101e29] p-3 text-white"><option value="allocated">初始分配 · FP32 scale</option><option value="processed">后处理 · BF16 scale</option></select></label>}
       <details className="mt-3 text-xs leading-6 text-white/65"><summary className="cursor-pointer">默认格式与覆盖规则</summary><p>模块默认用于全部适用 Decoder 层；未覆盖的 Attention / Norm 为 BF16，Router / correction bias 为 FP32 自定义假设。逐权重覆盖可分别修改它们。权重格式不改变模块边界激活或 KV 精度；不是原生检查点清单或部署支持声明。</p></details>

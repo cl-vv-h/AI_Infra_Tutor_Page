@@ -1,5 +1,7 @@
 export type InferencePhase = 'prefill' | 'decode'
-export type TensorParallelSize = 1 | 2 | 4 | 8
+export const parallelSizes = [1, 2, 4, 8, 16, 32, 64] as const
+export type TensorParallelSize = typeof parallelSizes[number]
+export const isParallelSize = (value: number): value is TensorParallelSize => parallelSizes.includes(value as TensorParallelSize)
 
 export interface KdaMlaCache {
   kind: 'kda-mla'

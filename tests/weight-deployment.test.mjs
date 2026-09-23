@@ -25,7 +25,7 @@ test('combined EP, DPA, PP and replicas reconcile against independent DPA refere
   for(const id of ['glm-5-2','qwen3-8b']) {
     const model = getModelArchitecture(id)
     for(const tp of model.supportedTp) for(const attentionDp of attentionDpSizes(model,tp)) for(const ep of expertParallelSizes(model,tp)) {
-      const mixed = {mlp:'fp8',shared:'bf16',experts:'int8'}
+      const mixed = {mlp:tp === 64 ? 'bf16' : 'fp8',shared:'bf16',experts:'int8'}
       if(id==='qwen3-8b') mixed.experts='bf16'
       const dpa = dpaLayout({tp,ep,dp:attentionDp,rank:0,layer:3,requests:Array(attentionDp).fill(2),sequence:4096,phase:'decode',bits:16,cacheBytes:2,mixed},id)
       const next = deploymentWeightBudget(model,3,16,{tp,ep,attentionDp,pp:4,stage:2,replicas:2},mixed)

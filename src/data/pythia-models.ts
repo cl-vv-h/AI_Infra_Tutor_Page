@@ -12,7 +12,7 @@ export const pythiaArchitectures: ModelArchitecture[] = [{
   parameters: '1.4B', activeParameters: '1.4B', accent: '#ffc98b',
   configUrl: 'https://huggingface.co/EleutherAI/pythia-1.4b/blob/main/config.json', configLabel: 'EleutherAI 官方 config.json',
   implementationUrl: 'https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/models/gpt_neox/modeling_gpt_neox.py',
-  supportedTp: [1, 2, 4, 8],
+  supportedTp: [1, 2, 4, 8, 16],
   execution: {
     maxContext: 2048, denseLayers: 24, normKind: 'layernorm', residualLayout: 'parallel', cache: { kind: 'gqa' },
     contextNote: '固定 Pythia-1.4B 配置，上限 2,048，不外推上下文。TP 示例按完整 head 与 MLP 中间维分片，输出投影归约后加一次完整 bias；不宣称 Transformers 原生 TP 支持矩阵。并行残差指数据依赖，不意味着实现同时执行两个分支。推理 eval 关闭 Dropout。',
@@ -48,7 +48,7 @@ export const pythiaArchitectures: ModelArchitecture[] = [{
     },
     {
       id: 'kv-cache', eyebrow: 'ATTENTION STATE', title: 'Full MHA KV Cache', subtitle: '16 KV heads · 完整 128D · 全历史 S',
-      description: '缓存旋转后的 K 与未旋转的 V，每个 head 都有完整 128 维；rotary_pct=0.25 不代表缓存只保留四分之一。图示按 head 切分，TP=1/2/4/8 对应每卡 16/8/4/2 heads。MLP 分支没有额外 KV 副本。',
+      description: '缓存旋转后的 K 与未旋转的 V，每个 head 都有完整 128 维；rotary_pct=0.25 不代表缓存只保留四分之一。图示按 head 切分，TP=1/2/4/8/16 对应每卡 16/8/4/2/1 heads。MLP 分支没有额外 KV 副本。',
       inputShape: '[N, 2, {localKvHeads}, 128]', outputShape: '[{batch}, {sequence}, 2, {localKvHeads}, 128]', weights: [], tone: 'memory',
       knowledge: [{ label: 'KV 缓存与显存', to: '/category/kv-cache-memory' }, ...parallel],
     },

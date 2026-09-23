@@ -1,4 +1,5 @@
 import type { ArchitectureNode, ModelArchitecture, ModelWeight, TensorParallelSize } from '../types/model.ts'
+import { parallelSizes } from '../types/model.ts'
 import { decoderNodes, formatShape } from './model-lab.ts'
 import type { InferenceScenario } from './model-lab.ts'
 import { mixedWeightStorage, supportsMixedPrecision, validateMixedPrecision } from './mixed-precision.ts'
@@ -13,7 +14,7 @@ export function expertParallelSizes(model: ModelArchitecture, tp: number): Tenso
   if (!model.supportedTp.includes(tp as TensorParallelSize)) return []
   const metadata = model.execution.expertParallel
   if (!metadata) return [1]
-  return ([1, 2, 4, 8] as const).filter((ep) => tp % ep === 0 && metadata.experts % ep === 0 && (model.execution.expertIntermediateSize ?? 0) % (tp / ep) === 0)
+  return parallelSizes.filter((ep) => tp % ep === 0 && metadata.experts % ep === 0 && (model.execution.expertIntermediateSize ?? 0) % (tp / ep) === 0)
 }
 
 /** One source of truth for Inspector, rank lab and Decoder ledger. Shared tensors keep full TP. */

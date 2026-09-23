@@ -1,4 +1,5 @@
 import type { ModelArchitecture } from '../types/model.ts'
+import { parallelSizes, isParallelSize } from '../types/model.ts'
 import type { InferenceScenario } from './model-lab.ts'
 import { decoderNodes, formatShape, tokenCount } from './model-lab.ts'
 import { expertParallelSizes, formatWeight, weightElements } from './model-weights.ts'
@@ -8,14 +9,14 @@ import type { MixedPrecision } from './mixed-precision.ts'
 import { tensorPayload } from './tensor-payload.ts'
 import { attentionHeadRanks } from './attention-heads.ts'
 
-export const replicaSizes = [1, 2, 4, 8] as const
+export const replicaSizes = parallelSizes
 export type ReplicaSize = typeof replicaSizes[number]
 
 export { expertParallelSizes } from './model-weights.ts'
 
 /** Independent serving replicas, each with its own TP group. Not SGLang DPA. */
 export function rankTopology(tp: number, replicas: ReplicaSize, batch: number) {
-  if (![1, 2, 4, 8].includes(tp) || !replicaSizes.includes(replicas) || !Number.isInteger(batch) || batch < 1 || batch > 64) throw new Error('Invalid rank topology')
+  if (!isParallelSize(tp) || !replicaSizes.includes(replicas) || !Number.isInteger(batch) || batch < 1 || batch > 64) throw new Error('Invalid rank topology')
   return Array.from({ length: replicas * tp }, (_, rank) => ({
     rank, replica: Math.floor(rank / tp), tpRank: rank % tp,
     requestStart: Math.floor(rank / tp) * batch, requestEnd: (Math.floor(rank / tp) + 1) * batch - 1,

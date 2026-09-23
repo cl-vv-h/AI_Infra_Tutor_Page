@@ -1,10 +1,11 @@
 import type { ModelArchitecture, TensorParallelSize } from '../types/model.ts'
+import { parallelSizes, isParallelSize } from '../types/model.ts'
 import { decoderWeightBudget } from './model-weights.ts'
 import type { WeightBits } from './model-weights.ts'
 import type { MixedPrecision } from './mixed-precision.ts'
 
 export function attentionDpSizes(model: ModelArchitecture, tp: TensorParallelSize): TensorParallelSize[] {
-  return ([1, 2, 4, 8] as const).filter(dp => tp % dp === 0 && model.supportedTp.includes(tp / dp as TensorParallelSize))
+  return parallelSizes.filter(dp => tp % dp === 0 && model.supportedTp.includes(tp / dp as TensorParallelSize))
 }
 
 /** Same balanced contiguous split as SGLang get_pp_indices: extra layers at the end. */
@@ -32,7 +33,7 @@ export interface WeightDeployment {
 /** Logical illustrated Decoder storage, NOT full checkpoint or deployment feasibility. */
 export function deploymentWeightBudget(model: ModelArchitecture, layer: number, bits: WeightBits, config: WeightDeployment, mixed?: MixedPrecision) {
   const { tp, ep, attentionDp, pp, stage, replicas } = config
-  if (!attentionDpSizes(model, tp).includes(attentionDp) || ![1, 2, 4, 8].includes(replicas) || !Number.isInteger(stage) || stage < 0 || stage >= pp) throw new Error('Invalid deployment configuration')
+  if (!attentionDpSizes(model, tp).includes(attentionDp) || !isParallelSize(replicas) || !Number.isInteger(pp) || pp < 1 || pp > Math.min(64, model.dimensions.layers) || !Number.isInteger(stage) || stage < 0 || stage >= pp) throw new Error('Invalid deployment configuration')
   const attentionTp = tp / attentionDp as TensorParallelSize
   const budget = decoderWeightBudget(model, layer, tp, bits, ep, mixed, attentionTp)
   const stages = pipelineStages(model.dimensions.layers, pp).map(part => {

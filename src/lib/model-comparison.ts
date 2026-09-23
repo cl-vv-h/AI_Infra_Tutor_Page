@@ -1,4 +1,5 @@
 import type { TensorParallelSize } from '../types/model.ts'
+import { isParallelSize } from '../types/model.ts'
 import type { ModelDirectoryEntry } from '../data/model-directory.ts'
 import { isV41Entry } from '../data/model-directory.ts'
 import { v41Cache, v41Params } from './deepseek-v41-reference.ts'
@@ -40,7 +41,7 @@ export function parseComparison(params: URLSearchParams, registry: ModelDirector
   }
   const batch = number('b', 4, (value) => value >= 1 && value <= 64)
   const sequence = number('s', 8192, (value) => value >= 1024 && value <= 1048576)
-  const tp = number('tp', 4, (value) => [1, 2, 4, 8].includes(value)) as TensorParallelSize
+  const tp = number('tp', 4, isParallelSize) as TensorParallelSize
   const cacheBytes = number('bytes', 2, (value) => value === 1 || value === 2) as 1 | 2
   if (params.has('view') && !['rank', 'group'].includes(params.get('view')!)) notices.push('未知容量视图，已使用每卡容量。')
   const storage = params.get('v41storage')

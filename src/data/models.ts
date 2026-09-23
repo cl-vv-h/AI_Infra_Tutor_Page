@@ -176,7 +176,7 @@ export const modelArchitectures: ModelArchitecture[] = [
     accent: '#c7a8ff',
     configUrl: 'https://huggingface.co/deepseek-ai/DeepSeek-V3-Base/blob/main/config.json',
     configLabel: '官方 config.json',
-    supportedTp: [1, 2, 4, 8],
+    supportedTp: [1, 2, 4, 8, 16, 32, 64],
     execution: { maxContext: 163840, denseLayers: 3, cache: { kind: 'mla', latentWidth: 512, ropeWidth: 64 }, expertIntermediateSize: 2048 },
     metrics: [
       { label: 'Decoder Layers', value: '61' },
@@ -327,7 +327,7 @@ export const modelArchitectures: ModelArchitecture[] = [
     accent: '#d8ff78',
     configUrl: 'https://github.com/meta-llama/llama-models/blob/main/models/sku_list.py',
     configLabel: '官方架构配置',
-    supportedTp: [1, 2, 4, 8],
+    supportedTp: [1, 2, 4, 8, 16, 32],
     execution: { maxContext: 131072, denseLayers: 32, cache: { kind: 'gqa' } },
     metrics: [
       { label: 'Decoder Layers', value: '32' },

@@ -1,6 +1,6 @@
 import type { ModelArchitecture } from '@/types/model'
 import { formatBytes } from '@/lib/model-lab'
-import { availableExpertFormats, expertPacking, expertPackingSource, expertFormatLabels } from '@/lib/expert-packing'
+import { compatibleExpertFormats, expertPacking, expertPackingSource, expertFormatLabels } from '@/lib/expert-packing'
 import type { ExpertFormat } from '@/lib/expert-packing'
 
 const shape = (values: number[]) => `[${values.join(', ')}]`
@@ -10,7 +10,7 @@ export default function ExpertPackingLab({ model, experts, hidden, intermediate,
   model: ModelArchitecture; experts: number; hidden: number; intermediate: number; tp: number; ep: number
   replicas: number; rank: number; format: ExpertFormat; onFormat: (format: ExpertFormat) => void
 }) {
-  const formats = availableExpertFormats(model)
+  const formats = compatibleExpertFormats(model, tp, ep)
   if (!formats.length) return null
   const selected = formats.includes(format) ? format : 'bf16'
   const data = expertPacking(experts, hidden, intermediate, tp, selected)

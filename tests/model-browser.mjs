@@ -10,6 +10,16 @@ const { expect } = require(`${process.env.MODEL_QA_PLAYWRIGHT || 'playwright'}/t
 const base = process.env.MODEL_QA_BASE || 'http://127.0.0.1:4175/AI_Infra_Tutor_Page/'
 const browser = await chromium.launch({ headless: true, ...(process.env.MODEL_QA_CHANNEL ? { channel: process.env.MODEL_QA_CHANNEL } : {}) })
 let checks = 0
+// Keep the historical 8-way fixtures; the compact suite separately tests 16/32/64.
+async function selectEight(slider) {
+  let index = Number(await slider.inputValue())
+  while (index !== 3) {
+    const direction = index < 3 ? 1 : -1
+    await slider.press(direction > 0 ? 'ArrowRight' : 'ArrowLeft')
+    index += direction
+    await expect(slider).toHaveValue(String(index))
+  }
+}
 try {
   for (const width of [360, 390, 768, 1440]) {
     const page = await browser.newPage({ viewport: { width, height: 960 }, reducedMotion: 'reduce' })
@@ -405,7 +415,7 @@ try {
     await rankLab.getByText('q_proj · TP local · 8 MiB', { exact: true }).click()
     await expect(qDetails.getByText('[8 × 128, 4096]', { exact: true })).toBeVisible()
     await fits('rank module detail')
-    await page.getByLabel('独立 DP 副本数', { exact: true }).press('End')
+    await selectEight(page.getByLabel('独立 DP 副本数', { exact: true }))
     await rankLab.getByLabel('观察 DP 副本', { exact: true }).selectOption('7')
     await rankLab.getByRole('button', { name: '观察 Rank 31', exact: true }).click()
     await expect(page).toHaveURL(/rank=31/)
@@ -514,7 +524,7 @@ try {
     await v41TensorFlow.getByRole('button', { name: 'Rank 0', exact: true }).click()
     await expect(v41Rank).toHaveValue('0')
     await expect(v41TensorFlow).toContainText('padding 0 行')
-    await page.getByLabel('V4.1 独立副本', { exact: true }).press('End')
+    await selectEight(page.getByLabel('V4.1 独立副本', { exact: true }))
     await expect(v41Rank).toHaveAttribute('max', '63')
     await v41Rank.press('End')
     await expect(v41Rank).toHaveValue('63')
@@ -836,7 +846,7 @@ try {
     await expect(page.getByLabel('DPA tp', { exact: true })).toHaveAttribute('aria-valuetext', '1')
     await expect(page.getByLabel('DPA dp', { exact: true })).toHaveAttribute('max', '0')
     await expect(page.getByLabel('DPA dp', { exact: true })).toHaveAttribute('aria-valuetext', '1')
-    await page.getByLabel('DPA tp', { exact: true }).press('End')
+    await selectEight(page.getByLabel('DPA tp', { exact: true }))
     await expect(page.getByLabel('DPA tp', { exact: true })).toHaveAttribute('aria-valuetext', '8')
     await expect(page.getByLabel('DPA dp', { exact: true })).toHaveAttribute('max', '3')
     await page.getByLabel('DPA dp', { exact: true }).press('End')
@@ -877,10 +887,10 @@ try {
       await expect(page).toHaveURL(/ep=4/)
       await expect(packing).toContainText(`[${E / 4}, ${2 * I}, ${lastFormat === 'fp4-load' ? H / 2 : H}]`)
       await expect(packing).toContainText(`${allocation.toLocaleString('en-US')} B`)
-      await page.getByLabel('Rank 实验 TP', { exact: true }).press('End')
+      await selectEight(page.getByLabel('Rank 实验 TP', { exact: true }))
       await expect(page).toHaveURL(/tp=8/)
       await expect(packing).toContainText(`${(allocation / 2).toLocaleString('en-US')} B`)
-      await page.getByLabel('独立 DP 副本数', { exact: true }).press('End')
+      await selectEight(page.getByLabel('独立 DP 副本数', { exact: true }))
       await expect(page).toHaveURL(/replicas=8/)
       await expect(packing).toContainText(`${(allocation / 2 * 64).toLocaleString('en-US')} B`)
       await page.reload({ waitUntil: 'networkidle' })
@@ -989,7 +999,7 @@ try {
       await page.evaluate(() => window.scrollBy(0, -85))
       await page.screenshot({ path: join(process.env.MODEL_QA_SCREENSHOTS, `w4-metadata-${width}.png`), animations: 'disabled' })
     }
-    await page.getByLabel('Rank 实验 TP', { exact: true }).press('End')
+    await selectEight(page.getByLabel('Rank 实验 TP', { exact: true }))
     await expect(expertDetail).toContainText('Weight scale [224, 7, 12288] · BF16')
     await page.getByLabel('Rank 实验 EP', { exact: true }).press('Home')
     const downDetail = mixedRank.locator('details').filter({ has: page.locator('summary').filter({ hasText: /^experts.down_proj/ }) })
@@ -1061,7 +1071,7 @@ try {
     await expect(nativeExpertPost).toContainText('gemm1_alpha [896] · F32')
     await expect(nativeExpertPost).toContainText('w13_weight_scale [896, 6144, 112] · F8_E4M3FN view')
     await fits('Kimi native processed nine parameters')
-    await page.getByLabel('Rank 实验 TP', { exact: true }).press('End')
+    await selectEight(page.getByLabel('Rank 实验 TP', { exact: true }))
     await expect(native).toContainText('207,481,242,608 B')
     await expect(page.getByLabel('Rank 实验 EP', { exact: true })).toBeEnabled()
     await expect(page.getByLabel('Rank 实验 EP', { exact: true })).toHaveAttribute('max', '3')
@@ -1091,7 +1101,7 @@ try {
     await page.getByLabel('DPA tp', { exact: true }).press('Home')
     await expect(page.getByLabel('DPA dp', { exact: true })).toHaveAttribute('max', '0')
     await expect(page.getByLabel('DPA ep', { exact: true })).toHaveAttribute('aria-valuetext', '1')
-    await page.getByLabel('DPA tp', { exact: true }).press('End')
+    await selectEight(page.getByLabel('DPA tp', { exact: true }))
     await expect(page.getByLabel('DPA dp', { exact: true })).toHaveAttribute('max', '3')
     await page.getByLabel('DPA dp', { exact: true }).press('End')
     await expect(page.getByLabel('DPA dp', { exact: true })).toHaveAttribute('aria-valuetext', '8')

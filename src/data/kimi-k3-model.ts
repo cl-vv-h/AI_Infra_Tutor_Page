@@ -15,7 +15,7 @@ export const kimiK3Architecture: ModelArchitecture = {
   description: '93 层原生多模态主干：69 KDA + 24 Gated MLA；每 12 层形成一个 Attention Residual 块。Routed experts 在 3584 维 latent 空间计算，共享专家保留 7168 维主干。',
   parameters: '2.8T（模型卡）', activeParameters: '104B（模型卡）', accent: '#ffcd94',
   configUrl: 'https://huggingface.co/moonshotai/Kimi-K3/blob/main/config.json', configLabel: '官方 Kimi-K3 配置 · 2026-09-14 核对',
-  implementationUrl: 'https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/models/kimi_k3.py', supportedTp: [1, 2, 4, 8],
+  implementationUrl: 'https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/models/kimi_k3.py', supportedTp: [1, 2, 4, 8, 16, 32],
   execution: {
     maxContext: 1048576, denseLayers: 1, residualLayout: 'attn-res', residualBlockSize: 12, expertParallel: { experts: 896, topK: 16, hiddenSize: 3584 }, expertIntermediateSize: 3072,
     contextNote: 'SGLang Attention TP=TP 的逻辑基线（当前 EP 只改变路由专家分片）：MLA 使用 512 latent + 64 个未旋转共享 K 通道，各 rank 复制；KDA 按 head 分片，矩阵 FP32、K−1=3 个卷积槽 BF16。无 DSA Index K。AttnRes 跨层残差快照缓冲区仅在本次前向计算中有效，不属于跨解码步保留的 KV Cache。未计 MXFP4/FP8 scale、分页、激活、通信或图捕获；不代表整卡部署。Transformers 参考路径缓存展开 K/V，是另一口径。',

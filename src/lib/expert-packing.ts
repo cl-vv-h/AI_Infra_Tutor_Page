@@ -1,4 +1,5 @@
 import type { ModelArchitecture } from '../types/model.ts'
+import { isParallelSize } from '../types/model.ts'
 
 export const expertFormats = ['bf16', 'fp8-block', 'mxfp8', 'fp4-load'] as const
 export type ExpertFormat = typeof expertFormats[number]
@@ -16,13 +17,20 @@ export function availableExpertFormats(model: Pick<ModelArchitecture, 'id'>): re
 
 const elements = (shape: number[]) => shape.reduce((a, b) => a * b, 1)
 
+export function compatibleExpertFormats(model: ModelArchitecture, tp: number, ep: number) {
+  if (!model.execution.expertParallel) return []
+  return availableExpertFormats(model).filter(format => {
+    try { expertPacking(model.execution.expertParallel!.experts / ep, model.execution.expertParallel!.hiddenSize, model.execution.expertIntermediateSize! / (tp / ep), tp, format); return true } catch { return false }
+  })
+}
+
 /** Fp8MoEMethod.create_fp8_moe_weight_ allocation before post-load processing.
  * Gated experts, non-Aiter, non-HIP-int4, no bias; default FP4 scale dtype.
  * BF16 is a logical no-scale baseline, not execution through the FP8 method.
  */
 export function expertPacking(localExperts: number, hidden: number, intermediate: number, tp: number, format: ExpertFormat) {
   if (![localExperts, hidden, intermediate].every((v) => Number.isSafeInteger(v) && v > 0)
-    || ![1, 2, 4, 8].includes(tp) || !expertFormats.includes(format)) throw new Error('Invalid expert packing conditions')
+    || !isParallelSize(tp) || !expertFormats.includes(format)) throw new Error('Invalid expert packing conditions')
   const blockN = format === 'fp8-block' ? 128 : 1
   const blockK = format === 'fp8-block' ? 128 : 32
   if ((format === 'fp8-block' || format === 'mxfp8')

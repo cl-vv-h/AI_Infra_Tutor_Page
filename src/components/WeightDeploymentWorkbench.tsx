@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
 import type { ModelArchitecture, TensorParallelSize } from '@/types/model'
+import { parallelSizes } from '@/types/model'
 import type { ExplorerState } from '@/lib/model-explorer'
 import { attentionDpSizes, deploymentWeightBudget } from '@/lib/weight-deployment'
 import { expertParallelSizes } from '@/lib/model-weights'
@@ -36,11 +37,12 @@ export default function WeightDeploymentWorkbench({ model, state, onChange }: {
             {field('每阶段 TP', tp, model.supportedTp, n => onChange({ scenario: { ...state.scenario, tp: n as TensorParallelSize }, ep: 1, attentionDp: 1 }), '每个 PP 阶段的卡数')}
             {field('Expert EP', ep, expertParallelSizes(model, tp), n => onChange({ ep: n as TensorParallelSize }), `MoE-TP = ${budget.moeTp}`)}
             {field('Attention DP', attentionDp, attentionDpSizes(model, tp), n => onChange({ attentionDp: n as TensorParallelSize }), `Attention TP = ${budget.attentionTp}`)}
-            {field('Pipeline PP', pp, Array.from({ length: Math.min(16, model.dimensions.layers) }, (_, i) => i + 1), n => onChange({ pp: n, ppStage: Math.min(stage, n - 1) }), '按连续层切分，不直接平分字节')}
+            {field('Pipeline PP', pp, Array.from({ length: Math.min(64, model.dimensions.layers) }, (_, i) => i + 1), n => onChange({ pp: n, ppStage: Math.min(stage, n - 1) }), '最多 64 阶段，且不超过层数')}
             {field('观察 PP 阶段', stage, budget.stages.map(s => s.stage), n => onChange({ ppStage: n }), '各阶段的权重可能不同')}
-            {field('独立 DP 副本', replicas, [1, 2, 4, 8], n => onChange({ replicas: n as TensorParallelSize }), '复制完整 TP × PP 部署')}
+            {field('独立 DP 副本', replicas, parallelSizes, n => onChange({ replicas: n as TensorParallelSize }), '复制完整 TP × PP 部署')}
           </div>
           <p className="mt-3 text-xs leading-5 text-cyan-100">{tp} TP × {pp} PP × {replicas} 独立 DP = {budget.cards} 卡。EP 和 Attention DP 划分同一组 TP 卡，不额外相乘。</p>
+          <p className="mt-2 text-xs leading-5 text-white/50">并行度范围扩展至 64，按当前模型的完整头、分组和维度分片规则筛选。此处 TP 表示每阶段并行组规模；实际 Attention TP 与 MoE-TP 见对应选项。可计算容量不代表后端已验证可部署。</p>
           {!state.mixed && <label className="mt-3 block text-xs text-white/65">统一权重位宽<select aria-label="统一权重位宽" className={selectClass} value={state.weightBits ?? 16} onChange={e => onChange({ weightBits: Number(e.target.value) as 4 | 8 | 16 | 32 })}>{[16, 8, 4, 32].map(n => <option key={n} value={n}>{n}-bit · 不含量化 scale</option>)}</select></label>}
         </section>
         {supportsMixedPrecision(model.id) && <MixedPrecisionControls compact value={state.mixed} hasDense={model.execution.denseLayers > 0} denseOnly={model.id === 'qwen3-8b'} modelId={model.id} tp={tp} ep={ep} attentionTp={budget.attentionTp} layer={state.layer} onChange={mixed => onChange({ mixed })} />}

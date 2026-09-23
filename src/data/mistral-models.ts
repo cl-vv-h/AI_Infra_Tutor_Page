@@ -30,7 +30,7 @@ function mistralModel(moe: boolean): ModelArchitecture {
     parameters: moe ? '46.7B' : '7.3B', activeParameters: moe ? '12.9B' : '7.3B', accent: '#ffc98b',
     configUrl: `https://huggingface.co/mistralai/${checkpoint}/blob/main/config.json`, configLabel: '官方 v0.1 config.json',
     implementationUrl: `https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/models/${moe ? 'mixtral/modeling_mixtral.py' : 'mistral/modeling_mistral.py'}`,
-    supportedTp: [1, 2, 4, 8],
+    supportedTp: [1, 2, 4, 8, 16, 32],
     execution: {
       maxContext: 32768, denseLayers: moe ? 0 : 32, ...(moe ? { expertIntermediateSize: 14336 } : {}),
       cache: moe ? { kind: 'gqa' } : { kind: 'swa', window: 4096 },

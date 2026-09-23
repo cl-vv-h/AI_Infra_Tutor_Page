@@ -41,7 +41,7 @@ function qwenModel(moe: boolean): ModelArchitecture {
     parameters: moe ? '30.5B' : '8.2B', activeParameters: moe ? '3.3B' : '8.2B', accent: '#b6a0ff',
     configUrl: `https://huggingface.co/Qwen/${moe ? 'Qwen3-30B-A3B' : 'Qwen3-8B'}/blob/main/config.json`,
     ...(moe ? { implementationUrl: 'https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/models/qwen3_moe.py' } : {}),
-    configLabel: '官方 config.json', supportedTp: [1, 2, 4, 8],
+    configLabel: '官方 config.json', supportedTp: [1, 2, 4, 8, 16, 32],
     execution: { maxContext: 40960, contextNote: 'Qwen3 的配置上限为 40,960；官方模型卡注明原生上下文为 32,768，扩展到 131,072 需要另配 YaRN。配置可接受的长度不等于该长度上的质量保证。', denseLayers: moe ? 0 : layers, cache: { kind: 'gqa' }, ...(moe ? { expertIntermediateSize: 768, expertParallel: { experts: 128, topK: 8, hiddenSize: 2048 } } : {}) },
     metrics: [
       { label: 'Decoder Layers', value: String(layers) }, { label: 'Hidden Width', value: hidden },

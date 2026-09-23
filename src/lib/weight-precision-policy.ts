@@ -1,10 +1,42 @@
 import type { ModelArchitecture, TensorParallelSize } from '../types/model.ts'
 import { decoderNodes } from './model-lab.ts'
 import { formatWeight, isAttentionWeightNode } from './model-weights.ts'
-import { effectiveWeightPrecision, hasRoutedOverrides, matrixPrecisions, mixedWeightRole, mixedWeightStorage, precisionKey, precisionWeightParts } from './mixed-precision.ts'
+import { effectiveWeightPrecision, hasRoutedOverrides, matrixPrecisions, expertPrecisions, mixedWeightRole, mixedWeightStorage, precisionKey, precisionWeightParts } from './mixed-precision.ts'
 import type { ExpertPrecision, MixedPrecision } from './mixed-precision.ts'
 
 const inventories = new Map<string, ReturnType<typeof buildInventory>>()
+const moduleOptions = new Map<string, Record<'mlp' | 'shared' | 'experts', readonly ExpertPrecision[]>>()
+
+/** Validate module defaults against every applicable local matrix, not just bit width. */
+export function modulePrecisionOptions(model: ModelArchitecture, tp: TensorParallelSize, ep: TensorParallelSize) {
+  const key = `${model.id}/${tp}/${ep}`
+  if (!moduleOptions.has(key)) {
+    const weights = [...new Map(Array.from({ length: model.dimensions.layers }, (_, layer) => decoderNodes(model, layer)
+      .filter(node => node.tone !== 'attention')
+      .flatMap(node => node.weights.map(weight => ({ nodeId: node.id, weight: formatWeight(weight, model, { phase: 'decode', batch: 1, sequence: 1024, tp, cacheBytes: 2 }, ep) }))))
+      .flat().map(item => [`${item.nodeId}/${item.weight.name}/${item.weight.shape}`, item])).values()]
+    const options = {} as Record<'mlp' | 'shared' | 'experts', readonly ExpertPrecision[]>
+    for (const role of ['mlp', 'shared', 'experts'] as const) {
+      options[role] = (role === 'experts' ? expertPrecisions : matrixPrecisions).filter(format => weights
+        .filter(item => mixedWeightRole(item.weight, item.nodeId) === role).every(item => {
+          try { mixedWeightStorage(item.weight, item.nodeId, { mlp: 'bf16', shared: 'bf16', experts: 'bf16', [role]: format }); return true } catch { return false }
+        }))
+    }
+    moduleOptions.set(key, options)
+  }
+  return moduleOptions.get(key)!
+}
+
+export function normalizeModulePrecision(model: ModelArchitecture, tp: TensorParallelSize, ep: TensorParallelSize, policy: MixedPrecision, notices: string[]) {
+  const options = modulePrecisionOptions(model, tp, ep)
+  const next = { ...policy }
+  for (const role of ['mlp', 'shared', 'experts'] as const) if (!options[role].includes(next[role])) {
+    notices.push(`${role} 的 ${next[role]} 不满足当前分片的量化对齐，已恢复 BF16；可调整 TP / EP 后重新选择。`)
+    next[role] = 'bf16'
+    if (role === 'experts') delete next.w4Stage
+  }
+  return next
+}
 function buildInventory(model: ModelArchitecture, tp: TensorParallelSize, ep: TensorParallelSize, attentionTp: TensorParallelSize) {
   return Array.from({ length: model.dimensions.layers }, (_, layer) => decoderNodes(model, layer).flatMap(node => node.weights.flatMap(weight => {
     const localTp = isAttentionWeightNode(node) ? attentionTp : tp

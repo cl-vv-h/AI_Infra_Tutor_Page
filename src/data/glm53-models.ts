@@ -19,7 +19,7 @@ export const glm53Architectures: ModelArchitecture[] = [{
   description: '45 层原生多模态混合主干：34 层 KDA 的定长记忆与 11 层 NoPE DSA 的可检索历史互补。四路 mHC 在子层边界混合，最终取均值。前三层 Dense，后 42 层 MoE；不是 GLM-5.2 的缩小别名。',
   parameters: '320B（模型卡）', activeParameters: '18B（模型卡）', accent: '#a8e8c5',
   configUrl: 'https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/config.json', configLabel: '官方 GLM-5.3-Flash 配置 · 2026-09-14 核对',
-  implementationUrl: `https://github.com/sgl-project/sglang/blob/${sgRevision}/python/sglang/srt/models/glm5_next.py`, supportedTp: [1, 2, 4, 8],
+  implementationUrl: `https://github.com/sgl-project/sglang/blob/${sgRevision}/python/sglang/srt/models/glm5_next.py`, supportedTp: [1, 2, 4, 8, 16, 32, 64],
   execution: { maxContext: 1048576, denseLayers: 3, residualLayout: 'mhc', residualStreams: 4, expertParallel: { experts: 288, topK: 8, hiddenSize: 4096 }, expertIntermediateSize: 2048,
     contextNote: 'SGLang Attention TP=TP 的逻辑基线（当前 EP 只改变 routed 专家分片）：KDA 矩阵 FP32，K−1=3 个卷积槽 BF16；DSA latent / 池化 Index K 各 rank 复制，尾部双缓冲各 4 槽 BF16。无 MTP / 推测验证额外槽。不是 Transformers 展开 K/V 与 packed indexer 历史的缓存实现，也不是实际 FP8 分页布局。',
     cache: { kind: 'kda-mla', layerTypes: Array.from({ length: 45 }, (_, i) => i % 4 === 3 ? 'mla' : 'kda'), heads: 64, headDim: 128, convSlots: 3, convBytes: 2, stateBytes: 4, latentWidth: 512, indexWidth: 128, indexPool: 4, indexTopk: 2048, tailSlots: 4, tailBytes: 2 } },

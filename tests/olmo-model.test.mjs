@@ -58,7 +58,7 @@ test('gathered attention cache does not shrink with TP; group storage counts com
     assert.equal(estimate.perRankBytes, expected)
     assert.equal(estimate.allRankBytes, expected * tp)
     assert.equal(estimate.valuesPerTokenPerLayer, 8192)
-    assert.equal(estimate.perRankBytes / cacheEstimate(llama, input).perRankBytes, 4 * tp)
+    assert.equal(estimate.perRankBytes / cacheEstimate(llama, input).perRankBytes, 32 / Math.max(1, 8 / tp))
     assert.equal(cacheEstimate(olmo, { ...input, cacheBytes: 1 }).perRankBytes, expected / 2)
     assert.equal(formatShape(node('kv-cache').outputShape, olmo, input), `[4, ${sequence}, 2, 32, 128]`)
   }

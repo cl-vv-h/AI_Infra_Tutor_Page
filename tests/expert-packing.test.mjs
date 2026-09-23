@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { availableExpertFormats, expertPacking } from '../src/lib/expert-packing.ts'
+import { availableExpertFormats, compatibleExpertFormats, expertPacking } from '../src/lib/expert-packing.ts'
 import { getModelArchitecture, modelArchitectures } from '../src/data/models.ts'
 import { decoderNodes } from '../src/lib/model-lab.ts'
 import { expertParallelSizes, rankModule } from '../src/lib/model-ranks.ts'
@@ -56,7 +56,7 @@ test('every supported model/layer/TP/EP allocation equals routed-only logical we
           const logical = data.weights.filter((w) => w.routedExpert).reduce((sum, w) => sum + w.local, 0)
           assert.equal(logical, 3 * e.localExperts * e.hiddenSize * e.intermediate)
           const full = 3 * model.execution.expertParallel.experts * e.hiddenSize * model.execution.expertIntermediateSize
-          for (const format of availableExpertFormats(model)) {
+          for (const format of compatibleExpertFormats(model, tp, ep)) {
             const allocation = expertPacking(e.localExperts, e.hiddenSize, e.intermediate, tp, format)
             assert.equal(allocation.baselineBytes, logical * 2)
             assert.equal(allocation.payloadBytes, logical * (format === 'bf16' ? 2 : format === 'fp4-load' ? 0.5 : 1))

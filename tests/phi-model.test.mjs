@@ -35,13 +35,13 @@ test('fused QKV is three head shards and SwiGLU retains all three projections', 
   assert.equal(formatShape(phi.nodes.find((node) => node.id === 'lm-head').weights[1].shape, phi, scenario), '[8016, 3072]')
 })
 
-test('MHA KV is exactly three times Llama GQA at common conditions and keeps growing beyond 4K', () => {
+test('MHA KV vs Llama GQA includes replicated KV heads above TP8 and keeps growing beyond 4K', () => {
   const llama = getModelArchitecture('llama-3-1-8b')
   for (const tp of phi.supportedTp) for (const sequence of [4096, 4097, 32768, 131072]) {
     const input = { ...scenario, tp, sequence }
     const value = cacheEstimate(phi, input)
     assert.equal(value.perRankBytes, 4 * sequence * 32 * 2 * (32 / tp) * 96 * 2)
-    assert.equal(value.perRankBytes, cacheEstimate(llama, input).perRankBytes * 3)
+    assert.equal(value.perRankBytes, cacheEstimate(llama, input).perRankBytes * 3 / Math.max(1, tp / 8))
     assert.equal(value.slidingLayers, 0)
     assert.equal(value.retainedTokens, sequence)
     assert.equal(cacheEstimate(phi, { ...input, cacheBytes: 1 }).perRankBytes, value.perRankBytes / 2)

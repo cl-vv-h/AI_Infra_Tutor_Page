@@ -35,7 +35,7 @@ function qwen35(moe: boolean): ModelArchitecture {
     parameters: moe ? '35B' : '9B', activeParameters: moe ? '3B' : '9B', accent: '#f0b88a',
     configUrl: `https://huggingface.co/Qwen/${name}/blob/main/config.json`, configLabel: '官方文本与视觉配置',
     implementationUrl: `https://github.com/huggingface/transformers/blob/main/src/transformers/models/${moe ? 'qwen3_5_moe/modeling_qwen3_5_moe' : 'qwen3_5/modeling_qwen3_5'}.py`,
-    supportedTp: [1, 2, 4, 8],
+    supportedTp: [1, 2, 4, 8, 16],
     execution: {
       maxContext: 262144, denseLayers: moe ? 0 : layers, expertIntermediateSize: moe ? 512 : undefined,
       contextNote: '此估算只计算语言主干的单份请求状态；视觉 token 已计入 S 时也会占用语言 KV，不包含视觉编码器临时激活或 speculative / prefix cache 额外状态副本。',

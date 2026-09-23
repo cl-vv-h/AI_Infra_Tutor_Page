@@ -3,9 +3,10 @@ import { decoderNodes } from './model-lab.ts'
 import { formatWeight, weightElements } from './model-weights.ts'
 import type { WeightBits } from './model-weights.ts'
 import type { TensorParallelSize } from '../types/model.ts'
+import { parallelSizes } from '../types/model.ts'
 import { matrixPrecisions, expertPrecisions, mixedWeightStorage } from './mixed-precision.ts'
 import type { MixedPrecision } from './mixed-precision.ts'
-import { readWeightOverrides, writeWeightOverrides } from './weight-precision-policy.ts'
+import { readWeightOverrides, writeWeightOverrides, normalizeModulePrecision } from './weight-precision-policy.ts'
 import { readW4Stage } from './w4-lifecycle.ts'
 
 export const dpaRevision = '96d91ef9266d2bebd8e8c09ef1f28b2d521631ff'
@@ -20,7 +21,7 @@ export interface DpaScenario {
   requests: number[]; sequence: number; phase: 'prefill' | 'decode'; bits: WeightBits; cacheBytes: 1 | 2
   mixed?: MixedPrecision
 }
-const sizes = [1, 2, 4, 8] as const
+const sizes = parallelSizes
 export function dpaSizes(tp: number) { return sizes.filter((n) => tp % n === 0 && n <= tp) }
 export function parseDpa(params: URLSearchParams, modelId: DpaModelId = 'glm-5-2') {
   const model = dpaModel(modelId), gqa = modelId === 'qwen3-8b'
@@ -31,7 +32,7 @@ export function parseDpa(params: URLSearchParams, modelId: DpaModelId = 'glm-5-2
     if (/^\d+$/.test(raw) && Number.isSafeInteger(n) && check(n)) return n
     notices.push(`${key} 无效，恢复 ${fallback}。`); return fallback
   }
-  const tp = number('tp', 8, (n) => sizes.includes(n as TensorParallelSize)) as TensorParallelSize
+  const tp = number('tp', 8, (n) => model.supportedTp.includes(n as TensorParallelSize)) as TensorParallelSize
   const dp = number('dp', Math.min(4, tp), (n) => dpaSizes(tp).includes(n as TensorParallelSize)) as TensorParallelSize
   const ep = number('ep', gqa ? 1 : Math.min(4, tp), (n) => (gqa ? [1] : dpaSizes(tp)).includes(n as TensorParallelSize)) as TensorParallelSize
   const raw = params.get('groups')
@@ -62,6 +63,7 @@ export function parseDpa(params: URLSearchParams, modelId: DpaModelId = 'glm-5-2
         if (state.mixed.shared !== 'bf16' || state.mixed.experts !== 'bf16' || state.mixed.w4Stage) notices.push('Qwen3-8B 没有专家模块，已清除不适用的 Shared/Routed 精度与 W4A8 阶段。')
         state.mixed = { mlp: state.mixed.mlp, shared: 'bf16', experts: 'bf16' }
       }
+      state.mixed = normalizeModulePrecision(model, tp, ep, state.mixed, notices)
       state.mixed = readWeightOverrides(params, model, tp, ep, state.mixed, notices, tp / dp as TensorParallelSize)
     } else notices.push('precision 无效，恢复统一位宽理论对照。')
   }
@@ -96,7 +98,9 @@ export function dpaLayout(state: DpaScenario, modelId: DpaModelId = 'glm-5-2') {
   const counts = mode === 'MAX_LEN' ? aligned.map(() => maximum) : aligned
   const totalTokens = raw.reduce((a, b) => a + b, 0), bufferRows = counts.reduce((a, b) => a + b, 0)
   const totalRequests = state.requests.reduce((a, b) => a + b, 0)
-  const cacheWidth = (tp: number) => gqa ? 2 * (model.dimensions.kvHeads / tp) * model.dimensions.headDim : 704
+  const localKv = (tp: number) => Math.max(1, model.dimensions.kvHeads / tp)
+  const kvCopies = Math.max(1, attentionTp / model.dimensions.kvHeads)
+  const cacheWidth = (tp: number) => gqa ? 2 * localKv(tp) * model.dimensions.headDim : 704
   const perRequestCache = state.sequence * model.dimensions.layers * cacheWidth(attentionTp) * state.cacheBytes
   const normalPerRequestCache = state.sequence * model.dimensions.layers * cacheWidth(state.tp) * state.cacheBytes
   const groups = counts.map((padded, dpRank) => ({ dpRank, requests: state.requests[dpRank], tokens: raw[dpRank], aligned: aligned[dpRank], padded,
@@ -114,8 +118,8 @@ export function dpaLayout(state: DpaScenario, modelId: DpaModelId = 'glm-5-2') {
     const dpRank = Math.floor(rank / attentionTp), epRank = Math.floor(rank / moeTp)
     return { rank, dpRank, attentionRank: rank % attentionTp, epRank, moeTpRank: rank % moeTp,
       headsStart: rank % attentionTp * (model.dimensions.attentionHeads / attentionTp), headsEnd: (rank % attentionTp + 1) * (model.dimensions.attentionHeads / attentionTp) - 1,
-      kvHeadsStart: gqa ? rank % attentionTp * (model.dimensions.kvHeads / attentionTp) : null,
-      kvHeadsEnd: gqa ? (rank % attentionTp + 1) * (model.dimensions.kvHeads / attentionTp) - 1 : null,
+      kvHeadsStart: gqa ? Math.floor((rank % attentionTp) / kvCopies) * localKv(attentionTp) : null,
+      kvHeadsEnd: gqa ? (Math.floor((rank % attentionTp) / kvCopies) + 1) * localKv(attentionTp) - 1 : null,
       expertStart: gqa ? null : epRank * model.execution.expertParallel!.experts / state.ep,
       expertEnd: gqa ? null : (epRank + 1) * model.execution.expertParallel!.experts / state.ep - 1,
       epPeers: Array.from({ length: state.ep }, (_, i) => i * moeTp + rank % moeTp),
@@ -150,14 +154,14 @@ export function dpaLayout(state: DpaScenario, modelId: DpaModelId = 'glm-5-2') {
   ]
   const tensor = (id: string, label: string, shape: number[], copies = 1) => ({ id, label, shape, copies, bytes: shape.reduce((a, b) => a * b, 1) * 2 * copies, dtype: 'BF16' as const })
   const internalTensors = gqa ? [
-    tensor('qkv', '融合 QKV 投影（有效 token）', [localTokens, (model.dimensions.attentionHeads + 2 * model.dimensions.kvHeads) * model.dimensions.headDim / attentionTp]),
+    tensor('qkv', '融合 QKV 投影（有效 token）', [localTokens, (model.dimensions.attentionHeads / attentionTp + 2 * localKv(attentionTp)) * model.dimensions.headDim]),
     tensor('q', 'Q（QKV 的视图）', [localTokens, model.dimensions.attentionHeads / attentionTp, model.dimensions.headDim]),
-    tensor('kv', 'K / V 各一份（QKV 的视图）', [localTokens, model.dimensions.kvHeads / attentionTp, model.dimensions.headDim], 2),
+    tensor('kv', 'K / V 各一份（QKV 的视图）', [localTokens, localKv(attentionTp), model.dimensions.headDim], 2),
     tensor('gate-up', 'Gate / Up 合并投影（含 padding）', [bufferRows, 2 * model.dimensions.intermediateSize / state.tp]),
     tensor('activation', 'SiLU(Gate) × Up（含 padding）', [bufferRows, model.dimensions.intermediateSize / state.tp]),
     tensor('down-partial', 'Down 部分和（总 TP 归约前）', [bufferRows, model.dimensions.hiddenSize]),
   ] : []
-  const cacheShape = gqa ? [ranks[state.rank].group.requests, state.sequence, 2, model.dimensions.kvHeads / attentionTp, model.dimensions.headDim] : null
+  const cacheShape = gqa ? [ranks[state.rank].group.requests, state.sequence, 2, localKv(attentionTp), model.dimensions.headDim] : null
   return { model, gqa, cacheShape, internalTensors, attentionTp, moeTp, mode, groups, bufferSegments, ranks, selected: ranks[state.rank], raw, aligned, counts, totalRequests, totalTokens, bufferRows,
     paddingRows: bufferRows - totalTokens, globalBufferBytes: bufferRows * model.dimensions.hiddenSize * 2,
     sumBufferRows: sum, maxBufferRows: maximum * state.dp,

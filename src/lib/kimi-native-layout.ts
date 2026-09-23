@@ -1,4 +1,5 @@
 import checkpoint from '../data/kimi-checkpoint-audit.json' with { type: 'json' }
+import { isParallelSize } from '../types/model.ts'
 
 const count = (shape: number[]) => shape.reduce((a, b) => a * b, 1)
 const width = (dtype: string) => ({ BF16: 2, F32: 4, U8: 1 })[dtype]
@@ -9,7 +10,7 @@ export const nativeRoles: Record<string, string> = { experts: 'Routed 专家', r
  * Deliberately before backend post-load transformations, aliases and extra buffers.
  */
 export function kimiNativeLayout(tp: number, ep: number, replicas = 1, rank = 0) {
-  if (![1, 2, 4, 8].includes(tp) || ![1, 2, 4, 8].includes(ep) || tp % ep || ![1, 2, 4, 8].includes(replicas) || !Number.isInteger(rank) || rank < 0 || rank >= tp * replicas) throw new Error('Invalid native Kimi topology')
+  if (![1, 2, 4, 8].includes(tp) || ![1, 2, 4, 8].includes(ep) || tp % ep || !isParallelSize(replicas) || !Number.isInteger(rank) || rank < 0 || rank >= tp * replicas) throw new Error('Invalid native Kimi topology')
   const moeTp = tp / ep
   const tpRank = rank % tp
   const epRank = Math.floor(tpRank / moeTp)

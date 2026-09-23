@@ -144,7 +144,7 @@ test('Mistral v0.1 sliding cache saturates exactly at W while preserving full pr
         for (const sequence of [1, 1024, 4095, 4096, 4097, 32768]) {
           const scenario = { ...base, tp, batch, cacheBytes, sequence }
           const estimate = cacheEstimate(model, scenario)
-          const width = 32 * 2 * (8 / tp) * 128 * cacheBytes
+          const width = 32 * 2 * Math.max(1, 8 / tp) * 128 * cacheBytes
           assert.equal(estimate.retainedTokens, Math.min(sequence, 4096))
           assert.equal(estimate.kvBytes, batch * Math.min(sequence, 4096) * width)
           assert.equal(estimate.bytesPerToken, width)
@@ -152,7 +152,7 @@ test('Mistral v0.1 sliding cache saturates exactly at W while preserving full pr
           assert.equal(estimate.recurrentBytes + estimate.convBytes, 0)
           assert.equal(cacheEstimate(model, { ...scenario, phase: 'prefill' }).perRankBytes, estimate.perRankBytes)
           assert.equal(tokenCount({ ...scenario, phase: 'prefill' }), batch * sequence)
-          assert.equal(formatShape(layerCacheNode(model, 0).outputShape, model, scenario), `[${batch}, ${Math.min(sequence, 4096)}, 2, ${8 / tp}, 128]`)
+          assert.equal(formatShape(layerCacheNode(model, 0).outputShape, model, scenario), `[${batch}, ${Math.min(sequence, 4096)}, 2, ${Math.max(1, 8 / tp)}, 128]`)
         }
       }
     }
@@ -229,7 +229,7 @@ test('Gemma mixed cache splits full/window capacity and halves growth after the 
   for (const tp of model.supportedTp) for (const batch of [1, 3, 4]) for (const cacheBytes of [1, 2]) for (const sequence of [1024, 4095, 4096, 4097, 8192]) {
     const scenario = { ...base, tp, batch, cacheBytes, sequence }
     const e = cacheEstimate(model, scenario)
-    const width = 2 * (8 / tp) * 256 * cacheBytes
+    const width = 2 * Math.max(1, 8 / tp) * 256 * cacheBytes
     assert.equal(e.fullKvLayers, 21)
     assert.equal(e.slidingLayers, 21)
     assert.equal(e.kvLayers, 42)
@@ -238,8 +238,8 @@ test('Gemma mixed cache splits full/window capacity and halves growth after the 
     assert.equal(e.slidingKvBytes, batch * Math.min(sequence, 4096) * 21 * width)
     assert.equal(e.perRankBytes, e.fullKvBytes + e.slidingKvBytes)
     assert.equal(e.growthBytesPerToken, (sequence >= 4096 ? 21 : 42) * width)
-    assert.equal(formatShape(layerCacheNode(model, 0).outputShape, model, scenario), `[${batch}, ${Math.min(sequence, 4096)}, 2, ${8 / tp}, 256]`)
-    assert.equal(formatShape(layerCacheNode(model, 1).outputShape, model, scenario), `[${batch}, ${sequence}, 2, ${8 / tp}, 256]`)
+    assert.equal(formatShape(layerCacheNode(model, 0).outputShape, model, scenario), `[${batch}, ${Math.min(sequence, 4096)}, 2, ${Math.max(1, 8 / tp)}, 256]`)
+    assert.equal(formatShape(layerCacheNode(model, 1).outputShape, model, scenario), `[${batch}, ${sequence}, 2, ${Math.max(1, 8 / tp)}, 256]`)
   }
   const e = cacheEstimate(model, { ...base, sequence: 8192 })
   assert.equal(e.fullKvBytes, 1344 * 1024 ** 2)

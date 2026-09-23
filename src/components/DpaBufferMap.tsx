@@ -24,7 +24,7 @@ export default function DpaBufferMap({ data, onSelectGroup }: {
     <p className="mt-2 text-xs leading-5 text-white/60">{data.bufferRows > 0 ? `缓冲范围 ${interval(0, data.bufferRows)}；每卡 ${number(data.bufferRows)} 行，返回当前组仅取 ${interval(data.selected.group.offset, data.selected.group.tokens)} 的有效数据。` : '空缓冲：所有组都没有有效 token，也没有补齐行。'}</p>
     <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
       {data.groups.map((group) => <button key={group.dpRank} type="button" aria-label={`查看 DPA 缓冲组 ${group.dpRank}`} aria-pressed={group.dpRank === data.selected.dpRank} onClick={() => onSelectGroup(group.dpRank)} className={`min-w-0 rounded-xl border p-3 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-200 ${group.dpRank === data.selected.dpRank ? 'border-cyan-200 bg-cyan-200/10' : 'border-white/15 bg-white/[0.02]'}`}>
-        <span className="block text-sm text-cyan-100">DPA {group.dpRank} · R{group.peers.join('/R')}</span>
+        <span className="block break-words text-sm text-cyan-100">DPA {group.dpRank} · {group.peers.length > 8 ? `R${group.peers[0]}–R${group.peers.at(-1)}（${group.peers.length} 卡）` : `R${group.peers.join('/R')}`}</span>
         <span className="mt-2 block break-words font-mono text-xs text-white/80">{interval(group.offset, group.padded)}</span>
         <span className="mt-2 block text-xs leading-6 text-white/65">有效 {number(group.tokens)} · 对齐补齐 {number(group.aligned - group.tokens)} · MAX 补齐 {number(group.padded - group.aligned)}</span>
         <span className="mt-1 block break-words text-xs leading-5 text-white/60">{group.tokens > 0 ? `有效返回 ${interval(group.offset, group.tokens)}` : group.padded > 0 ? '无有效返回；这一组仅含补齐槽。' : '空区间；不占缓冲行。'}</span>

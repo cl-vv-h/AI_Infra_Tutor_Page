@@ -18,7 +18,7 @@ try {
     assert.ok(html.includes('每行宽度 4096'))
     assert.ok(html.includes('GQA DPA 内部张量'))
     assert.ok(html.includes('GQA DPA 缓存归属'))
-    assert.ok(html.includes('全卡 KV 不变，不等于每卡 KV 不变'))
+    assert.ok(html.includes('KV 总量由请求分组与 KV head 复制共同决定'))
     assert.ok(html.includes('并非再次跨卡 ReduceScatter'))
     assert.ok(html.includes('这里的行数是 DPA 汇合缓冲'))
     assert.ok(html.includes('href="/models/qwen3-8b"'))

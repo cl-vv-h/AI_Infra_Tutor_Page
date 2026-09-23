@@ -24,7 +24,7 @@ export const gemmaArchitectures: ModelArchitecture[] = [{
   parameters: '9B', activeParameters: '9B', accent: '#9dbbff',
   configUrl: 'https://github.com/google/gemma_pytorch/blob/cb7c0152a369e43908e769eb09e1ce6043afe084/gemma/config.py#L129', configLabel: 'Google 官方 9B 配置',
   implementationUrl: 'https://github.com/huggingface/transformers/blob/v4.57.1/src/transformers/models/gemma2/modeling_gemma2.py',
-  supportedTp: [1, 2, 4, 8],
+  supportedTp: [1, 2, 4, 8, 16],
   execution: { maxContext: 8192, denseLayers: 42, normLayout: 'pre-post', cache: { kind: 'mixed', window: 4096, layerTypes: Array.from({ length: 42 }, (_, i) => i % 2 === 0 ? 'sliding_attention' : 'full_attention') },
     contextNote: '编号从 0 开始：21 层滑窗、21 层完整注意力，配置上下文 8,192。局部容量按包含当前 token 的完整逻辑窗口计算，实际后端可保留 W−1 历史槽或采用不同物理分配。这里只展示架构，不打包模型权重；下载与使用须遵守 Gemma 模型条款。' },
   dimensions: { hiddenSize: 3584, vocabSize: 256000, layers: 42, attentionHeads: 16, kvHeads: 8, headDim: 256, intermediateSize: 14336 },

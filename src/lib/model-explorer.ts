@@ -5,9 +5,9 @@ import type { WeightBits } from './model-weights.ts'
 import { expertParallelSizes, replicaSizes } from './model-ranks.ts'
 import type { ReplicaSize } from './model-ranks.ts'
 import { defaultCacheBudgetGiB, parseCacheBudget } from './cache-capacity.ts'
-import { availableExpertFormats, expertFormats } from './expert-packing.ts'
+import { compatibleExpertFormats, expertFormats } from './expert-packing.ts'
 import type { ExpertFormat } from './expert-packing.ts'
-import { readWeightOverrides, writeWeightOverrides } from './weight-precision-policy.ts'
+import { readWeightOverrides, writeWeightOverrides, normalizeModulePrecision } from './weight-precision-policy.ts'
 import { matrixPrecisions, expertPrecisions, supportsMixedPrecision, availableMixedExperts } from './mixed-precision.ts'
 import type { MixedPrecision } from './mixed-precision.ts'
 import { readW4Stage } from './w4-lifecycle.ts'
@@ -69,11 +69,11 @@ export function parseExplorer(params: URLSearchParams, model: ModelArchitecture)
   const tp = integer('tp', model.supportedTp.includes(4) ? 4 : model.supportedTp[0], (n) => model.supportedTp.includes(n as TensorParallelSize), model.supportedTp.join('/')) as TensorParallelSize
   const cacheBytes = integer('bytes', 2, (n) => n === 1 || n === 2, '1/2') as 1 | 2
   const weightBits = integer('wbits', 16, (n) => [4, 8, 16, 32].includes(n), '4/8/16/32') as WeightBits
-  const replicas = integer('replicas', 1, (n) => replicaSizes.includes(n as ReplicaSize), '1/2/4/8') as ReplicaSize
+  const replicas = integer('replicas', 1, (n) => replicaSizes.includes(n as ReplicaSize), replicaSizes.join('/')) as ReplicaSize
   const rank = integer('rank', 0, (n) => n >= 0 && n < tp * replicas, `0–${tp * replicas - 1}`)
   const allowedEp = expertParallelSizes(model, tp)
   const ep = integer('ep', 1, (n) => allowedEp.includes(n as ReplicaSize), allowedEp.join('/')) as ReplicaSize
-  const pp = integer('pp', 1, n => n >= 1 && n <= Math.min(16, model.dimensions.layers), `1–${Math.min(16, model.dimensions.layers)}`)
+  const pp = integer('pp', 1, n => n >= 1 && n <= Math.min(64, model.dimensions.layers), `1–${Math.min(64, model.dimensions.layers)}`)
   const ppStage = integer('stage', 0, n => n >= 0 && n < pp, `0–${pp - 1}`)
   const attentionDp = integer('adp', 1, n => attentionDpSizes(model, tp).includes(n as TensorParallelSize), attentionDpSizes(model, tp).join('/')) as TensorParallelSize
   const requestedBudget = params.get('budget')
@@ -120,13 +120,14 @@ export function parseExplorer(params: URLSearchParams, model: ModelArchitecture)
           state.mixed = { mlp: 'bf16', shared: 'bf16', experts: 'bf16' }
         }
       }
+      state.mixed = normalizeModulePrecision(model, tp, ep, state.mixed, notices)
       state.mixed = readWeightOverrides(params, model, tp, ep, state.mixed, notices, tp / attentionDp as TensorParallelSize)
     } else notices.push('该模型或链接尚不支持此混合精度方案，已恢复统一位宽。')
   }
   if (requestedPacking !== null) {
-    if (availableExpertFormats(model).includes(requestedPacking as ExpertFormat)) {
+    if (compatibleExpertFormats(model, tp, ep).includes(requestedPacking as ExpertFormat)) {
       if (requestedPacking !== 'bf16') state.expertFormat = requestedPacking as ExpertFormat
-    } else notices.push('该专家加载格式不在本模型的核对范围内，已恢复为 BF16 基线。')
+    } else notices.push('该专家加载格式不在本模型的核对范围内或不满足当前分片对齐，已恢复为 BF16 基线。')
   }
   return { state, notices, nodes }
 }
@@ -145,7 +146,7 @@ export function explorerParams(state: ExplorerState) {
     writeWeightOverrides(result, state.mixed)
   }
   if (state.nativeStage === 'processed') result.set('native', 'processed')
-  const pp = Number.isInteger(state.pp) && state.pp! >= 1 && state.pp! <= 16 ? state.pp! : 1
+  const pp = Number.isInteger(state.pp) && state.pp! >= 1 && state.pp! <= 64 ? state.pp! : 1
   if (pp > 1) result.set('pp', String(pp))
   if (state.ppStage && Number.isInteger(state.ppStage) && state.ppStage > 0) result.set('stage', String(Math.min(state.ppStage, pp - 1)))
   if (state.attentionDp && state.attentionDp > 1) result.set('adp', String(Math.min(tp, state.attentionDp)))
