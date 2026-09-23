@@ -61,6 +61,10 @@ try {
       await fit()
     }
     await page.goto(`${base}#/models/qwen3-8b/dpa?tp=8&dp=4&ep=1&layer=3&precision=mixed`,{waitUntil:'networkidle'})
+    // Hash navigation can resolve before the lazy DPA route replaces the old
+    // explorer; wait for its unique content before operating shared controls.
+    await expect(page.getByRole('heading',{level:1,name:'同一组卡，两种并行划分',exact:true})).toBeVisible()
+    await expect(page.getByRole('region',{name:'DPA 配置',exact:true})).toBeVisible()
     await editor.locator(':scope > summary').click()
     await editor.getByLabel('精度权重模块',{exact:true}).selectOption('gqa')
     await editor.getByLabel('k_proj 权重格式',{exact:true}).selectOption('int8')
