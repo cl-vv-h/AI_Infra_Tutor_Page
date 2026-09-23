@@ -16,7 +16,8 @@ try {
     await page.route('**/*',route=>new URL(route.request().url()).origin===new URL(base).origin?route.continue():route.abort())
     const fit=async()=>assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`Overflow at ${width}`)
     await page.goto(`${base}#/`,{waitUntil:'networkidle'})
-    await page.getByRole('link').filter({hasText:'算子耗时估算'}).click()
+    await page.getByRole('link').filter({hasText:'Profiling 分析工作台'}).click()
+    await page.getByRole('link',{name:'单算子理论校核',exact:true}).click()
     await expect(page.getByRole('heading',{name:'算子耗时估算',exact:true})).toBeVisible()
     await expect(page.getByTestId('runtime-range')).toBeVisible()
     await expect(page.getByText(/此处 Cube 375/)).toBeVisible()
@@ -79,7 +80,7 @@ try {
     assert.ok(!output.includes('12345.6789')&&!output.includes('12.3456789'))
     assert.deepEqual(Object.keys(report).sort(),['schema','version','hardwareId','input','result','notice'].sort())
     assert.equal(new URL(page.url()).search,'')
-    assert.equal(new URL(page.url()).hash,'#/operators')
+    assert.equal(new URL(page.url()).hash,'#/operators/estimate')
     assert.ok(requests.every(r=>r.method==='GET'),'No data POSTs')
     for(const op of ['rmsnorm','softmax','gather']) {
       await page.getByLabel('算子类型',{exact:true}).selectOption(op)

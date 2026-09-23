@@ -7,7 +7,7 @@ const navLinks = [
   { label: '首页', to: '/' },
   { label: 'AI Infra', to: '/learn' },
   { label: '模型实验室', to: '/models/knowledge' },
-  { label: '算子估算', to: '/operators' },
+  { label: '性能分析', to: '/operators' },
   { label: '新闻雷达', to: '/news' },
   { label: '关于', to: '/about' },
 ]

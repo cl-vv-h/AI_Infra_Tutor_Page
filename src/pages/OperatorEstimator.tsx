@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import PerformanceNav from '@/components/PerformanceNav'
+import { clearProfileSample, peekProfileSample, profileEstimateCandidate } from '@/lib/profile-estimate-bridge'
 import { Activity, ArrowUpRight, Download, RotateCcw } from 'lucide-react'
 import { compareMeasurement, defaultEstimate, estimateRuntime, estimatorVersion, hardwareProfiles, hardwareSources, operatorNames, type EstimateInput, type Operator, type Precision } from '@/lib/operator-estimator'
 
@@ -9,6 +11,9 @@ const time = (n: number) => `${number(n)} µs`
 type NumericKey = { [K in keyof EstimateInput]: EstimateInput[K] extends number ? K : never }[keyof EstimateInput]
 
 export default function OperatorEstimator() {
+  const [sample]=useState(peekProfileSample)
+  useEffect(()=>clearProfileSample(),[])
+  const suggested=sample?profileEstimateCandidate(sample):null
   const [hardwareId,setHardwareId] = useState('910c')
   const [form,setForm] = useState(() => Object.fromEntries(Object.entries(defaultEstimate()).map(([k,v])=>[k,typeof v === 'number' ? String(v) : v])) as Record<keyof EstimateInput,string|boolean>)
   const [measured,setMeasured] = useState('')
@@ -63,6 +68,8 @@ export default function OperatorEstimator() {
   </> : <>{field('rows','输入行数 R')}{field('width','行宽 D')}{input.operator==='gather' && field('selected','索引数 Rselected')}</>
 
   return <div className="mx-auto max-w-[1440px] px-4 py-8 text-slate-200 sm:px-8 lg:px-12">
+    <PerformanceNav/>
+    {sample&&<section className={`${panelClass} mb-5 text-xs leading-6`} aria-label="Profiling 热点校核"><p className="break-words text-cyan-100">来自热点：{sample.type} · {sample.shape} · P50 {time(sample.median)}</p><p className="mt-2 text-slate-400">请先选择采样对应的硬件，并确认布局、转置与 kernel 范围。候选映射仅支持 2D 无转置 MatMul 或末轴 RMSNorm/Softmax，不自动把未知 fused kernel 当作标准算子。</p>{suggested?<button className="mt-3 rounded-lg border border-cyan-200/30 px-3 py-2 text-cyan-100" onClick={()=>{patch(suggested);setMeasured(String(sample.median));setUnit('us')}}>确认语义并填入候选 Shape / P50</button>:<p className="mt-2 text-amber-200">当前签名无法可靠映射，请手动填写参数；热点数据不会自动套用估算公式。</p>}</section>}
     <header className="mb-6 flex flex-wrap items-end justify-between gap-4">
       <div><p className="mb-2 flex items-center gap-2 font-mono text-xs tracking-widest text-cyan-300"><Activity size={15}/> OPERATOR / PERFORMANCE</p>
         <h1 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">算子耗时估算</h1>

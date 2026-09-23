@@ -53,8 +53,8 @@ export const portalModules: PortalModule[] = [
     status: 'beta',
   },
   {
-    id: 'operators', eyebrow: 'ESTIMATE / 04', title: '算子耗时估算', titleEn: 'Operator Performance Lab',
-    description: '结合昇腾硬件、算子与 Shape，分解计算和访存成本，对照 Profiling 实测发现排查线索。',
-    to: '/operators', icon: Activity, accent: '#ffbd85', stats: ['硬件规格', '耗时建模', '实测对照'], status: 'beta',
+    id: 'operators', eyebrow: 'PROFILE / 04', title: 'Profiling 分析工作台', titleEn: 'Performance Analysis Lab',
+    description: '本地分析真实采样，定位热点、长尾与通信重叠，对照优化前后差异，并进行硬件理论校核。',
+    to: '/operators', icon: Activity, accent: '#ffbd85', stats: ['热点归因线索', 'A/B 对照', '本地隐私'], status: 'beta',
   },
 ]

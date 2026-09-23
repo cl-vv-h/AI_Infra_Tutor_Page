@@ -15,7 +15,7 @@ const CategoryPage = lazy(() => import('@/pages/Category'))
 const ArticlePage = lazy(() => import('@/pages/Article'))
 const About = lazy(() => import('@/pages/About'))
 const KnowledgeGraph = lazy(() => import('@/pages/KnowledgeGraph'))
-const OperatorEstimator = lazy(() => import('@/pages/OperatorEstimator'))
+const PerformanceWorkspace = lazy(() => import('@/pages/PerformanceWorkspace'))
 
 export default function App() {
   return (
@@ -34,7 +34,7 @@ export default function App() {
             <Route path="/models/qwen3-8b/dpa" element={<DpaLab modelId="qwen3-8b" />} />
             <Route path="/models/:modelId" element={<Models />} />
             <Route path="/news" element={<News />} />
-            <Route path="/operators" element={<OperatorEstimator />} />
+            <Route path="/operators/*" element={<PerformanceWorkspace />} />
             <Route path="/category/:slug" element={<CategoryPage />} />
             <Route path="/article/:slug" element={<ArticlePage />} />
             <Route path="/about" element={<About />} />

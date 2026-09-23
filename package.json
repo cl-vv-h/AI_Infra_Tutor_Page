@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "test:profiling": "node --experimental-strip-types --test tests/profile-analysis.test.mjs",
+    "test:profiling:browser": "node tests/profiling-browser.mjs",
     "test:operators": "node --experimental-strip-types --test tests/operator-estimator.test.mjs",
     "test:operators:browser": "node tests/operator-estimator-browser.mjs",
     "predev": "node scripts/generate-curriculum-index.mjs",
