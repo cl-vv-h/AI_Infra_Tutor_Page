@@ -1,7 +1,244 @@
 {
-  "generatedAt": "2026-09-22T05:15:33.331Z",
+  "generatedAt": "2026-09-23T05:00:13.926Z",
   "lookbackDays": 90,
   "items": [
+    {
+      "id": "67ac31c0681fd940",
+      "category": "ai",
+      "title": "SARA: SLO-Aware Resource Allocation for Disaggregated Agentic LLM Services",
+      "summary": "Recent advances in large language models (LLMs) are driving the emergence of multi-modal and agentic services for mobile users through cloud and edge infrastructures, where long-context workloads pose daunting challenges for inference latency. Existing disaggregated LLM serving systems largely rely on hardware profiling, configuration enumeration, or heuristic scheduling, offering limited analytical guidance for cost-efficient resource allocation. In this paper, we propose SARA, a Service level objectives (SLOs)-Aw",
+      "url": "https://arxiv.org/abs/2609.26763v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-22T17:42:35.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 30.2,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "9fd0e52d61a8e087",
+      "category": "technology",
+      "title": "Enabling Private High-Performance Production AI Inference with NVIDIA Confidential Computing",
+      "summary": "As large language model (LLM) inference increasingly processes sensitive information and proprietary model context across personal, enterprise, and regulated...",
+      "url": "https://developer.nvidia.com/blog/enabling-private-high-performance-production-ai-inference-with-nvidia-confidential-computing/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-22T17:27:41.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 32.1,
+      "topics": [
+        "inference",
+        "models"
+      ]
+    },
+    {
+      "id": "d5cf3d5389c79c87",
+      "category": "technology",
+      "title": "Topology-Aware Workload Scheduling with NVIDIA Topograph",
+      "summary": "AI factories are power-limited systems that deliver maximum value when fully optimized. GPU workload placement is a key optimization. Poor workload placement...",
+      "url": "https://developer.nvidia.com/blog/topology-aware-workload-scheduling-with-nvidia-topograph/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-22T17:16:28.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 28.1,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "291d36fdb522a6dc",
+      "category": "technology",
+      "title": "Hardware-Agnostic Models in vLLM",
+      "summary": "TL;DR To achieve state-of-the-art performance at the frontier, vLLM is changing its internal implementation in ways that make it incompatible with fullgraph torch.compile. This may have consequences for users who...",
+      "url": "https://pytorch.org/blog/hardware-agnostic-models-in-vllm/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-22T15:45:46.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 31.7,
+      "topics": [
+        "inference",
+        "kernels"
+      ]
+    },
+    {
+      "id": "412724ea4322c86b",
+      "category": "technology",
+      "title": "How Shopify built a continual learning loop with PyTorch and vLLM",
+      "summary": "TL;DR: This case study explores how Shopify compresses production failures into model weights every day, beats frontier-model quality, and cuts serving costs 96% by building a continual learning loop with...",
+      "url": "https://pytorch.org/blog/how-shopify-built-a-continual-learning-loop-with-pytorch-and-vllm/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-22T13:45:18.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 31.2,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "59e4818a4d6f7aa9",
+      "category": "ai",
+      "title": "DHSched: Stateless Control for Stateful Real-Time Avatar Serving",
+      "summary": "Real-time avatar services run long-lived, GPU-backed sessions that transform a continuous text stream into speech, facial motion, rendered video, and RTC media. Elastic operation repeatedly reassigns these sessions across Workers. A reassignment updates shared placement state while the previous GPU runtime and RTC connection remain alive, opening a gap between control-plane assignment and execution authority. A stateful controller serializes ownership by retaining per-session authority, placing that state on the co",
+      "url": "https://arxiv.org/abs/2609.26363v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-22T13:06:52.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 29,
+      "topics": [
+        "inference",
+        "hardware"
+      ]
+    },
+    {
+      "id": "00a258331827847c",
+      "category": "technology",
+      "title": "Accelerating a ROS 2 Node with an AI Agent and NVIDIA Isaac ROS",
+      "summary": "GPU acceleration can speed up compute-intensive robotics workloads, but a fast CUDA kernel alone does not guarantee a fast ROS 2 graph. As messages move between...",
+      "url": "https://developer.nvidia.com/blog/accelerating-a-ros-2-node-with-an-ai-agent-and-nvidia-isaac-ros/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-22T12:00:00.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 26.7,
+      "topics": [
+        "kernels",
+        "hardware"
+      ]
+    },
+    {
+      "id": "90a0665b3a2e5722",
+      "category": "ai",
+      "title": "Flux: Optimal Scheduling of Optical Circuit Switches for LLM Training",
+      "summary": "Optical Circuit Switching (OCS) offers high bandwidth density and energy efficiency for LLM training, but incurs a non-negligible reconfiguration delay. Prior work typically schedules optical circuit switches independently of compute, using aggregate traffic demand to determine which circuits to provision and when. We argue that this separation creates a fundamental inefficiency: reconfigurations that ignore the compute timeline can stall communication, resulting in low circuit utilization and large buffer requirem",
+      "url": "https://arxiv.org/abs/2609.25949v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-22T09:55:13.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 24.2,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "2e6d1da0078210eb",
+      "category": "technology",
+      "title": "Zebra-HyLo: Upcycling Transformers into Long-Context Hybrid LLMs on AMD Instinct™ GPUs",
+      "summary": "Hybrid language models that interleave attention with linear sequence-modeling blocks have become the default answer to the cost of long context. Jamba, Samba, Qwen3-Next and Kimi-Linear all take this shape, and they all share one property that makes them expensive to adopt: they are pretrained from scratch. Every one of them pays the full cost of building a foundation model again, which means the enormous investment already sunk into existing Transformer checkpoints is thrown away.",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/hylo-long-context/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 27.7,
+      "topics": [
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "dab2938f89de63ba",
+      "category": "technology",
+      "title": "Benchmarking Kimi-K3 Across vLLM, SGLang, and ATOM on MI350X",
+      "summary": "Moonshot AI released the weights for Kimi-K3, a 2.8-trillion-parameter, 1M-context, natively-MXFP4 Mixture-of-Experts (MoE) model, and AMD Instinct™ support was available on day 0 across three independent serving frameworks: vLLM, SGLang, and ATOM. The recipes target the gfx950 generation (MI350X and MI355X). The measurements in this post were taken on an 8× MI350X node.",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/kimi-k3-mad/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 27.7,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "c77cf60598103490",
+      "category": "ai",
+      "title": "Transformers now runs llama.cpp quants",
+      "summary": "",
+      "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 23.7,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "9e1cf4a07040dd1d",
+      "category": "technology",
+      "title": "Performance Profiling on AMD GPUs - Part 6: Advanced Thread Trace (ATT) - The Microscope for Your Application",
+      "summary": "This post is the sixth part of the Performance Profiling on AMD GPUs series, which works through the ROCm profiling tools one layer at a time. Part 1 laid the foundations and introduced the profiling tools available for AMD GPUs, Parts 2 and 3 walked through basic and advanced profiling workflows with rocprofv3, rocprof-sys, and rocprof-compute, Part 4 applied those workflows to a Fortran OpenMP offload application, and Part 5 used the resulting profiles to drive an AI-assisted kernel optimization loop. Those parts",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/profiling-guide/att/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-09-22T00:00:00.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 23.7,
+      "topics": [
+        "kernels",
+        "hardware"
+      ]
+    },
+    {
+      "id": "bac45f07fce2f6cb",
+      "category": "ai",
+      "title": "Rollout Efficiency in Reinforcement Learning for Reasoning Large Language Models: A Taxonomy and Future Directions",
+      "summary": "Reasoning-oriented reinforcement learning enables large language models to solve mathematical, coding, and other multi-step tasks, but shifts a substantial portion of the training cost to rollout, where trajectories are generated for policy updates. Efficient rollout mechanisms are therefore essential to reduce this cost while maintaining the freshness, consistency, and statistical validity of training data. This survey provides a systematic taxonomy of recent research on rollout efficiency for reasoning-oriented r",
+      "url": "https://arxiv.org/abs/2609.25463v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-21T22:40:11.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 25.4,
+      "topics": [
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "08c462e89ac4588f",
+      "category": "ai",
+      "title": "Fast Recovery for LLM Serving via Decoupled Device Memory Lifetime in Dynamo",
+      "summary": "Large language model (LLM) inference replicas run across tightly coupled GPUs and serve traffic continuously for weeks. Hardware and software failures are therefore inevitable, and one worker failure can disrupt an entire replica. Recovery requires reinitializing the engine, taking minutes even when weights and compilation artifacts are cached. Production deployments overprovision serving capacity to mask this window. We argue that the dominant cost is loss of ready serving capacity, not request progress, so recove",
+      "url": "https://arxiv.org/abs/2609.25451v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-21T22:05:55.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 25.3,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
+      ]
+    },
     {
       "id": "9fa09ac1a280c2ba",
       "category": "technology",
@@ -12,8 +249,24 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-09-21T21:55:40.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 28.2,
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 22.2,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "b2bede68c784eef3",
+      "category": "ai",
+      "title": "ZeroGate: Trust-Preserving Fast Paths for Governed AI Agent Runtimes",
+      "summary": "Moving authorization earlier can shorten an agent's dispatch boundary without removing authorization work. It can also admit an action whose payload, authority, or relevant state has changed. ZeroGate separates exact-action approval from durable local admission: an issuer signs a short-lived ActionPass, and a trusted runtime adapter reconstructs the final action before a local gate checks its binding and consumes its nonce. A SQLite transaction couples nonce consumption, applicable quota updates, and an admission r",
+      "url": "https://arxiv.org/abs/2609.25443v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-21T21:54:27.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 25.2,
       "topics": [
         "inference"
       ]
@@ -28,12 +281,29 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T21:51:06.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 33.1,
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 27.2,
       "topics": [
         "inference",
         "kernels",
         "hardware"
+      ]
+    },
+    {
+      "id": "54b452054282f3ff",
+      "category": "ai",
+      "title": "Cloud, Edge, or Split? Profiling Onboard and Split Vision-Language Model Deployment for Drone AI",
+      "summary": "Vision-Language Models (VLMs) enable edge devices like unmanned aerial vehicles (UAVs) to interpret visual observations and reason about complex environments using natural-language instructions. However, their practical deployment remains challenging as onboard inference is constrained by limited computational, memory, and energy resources, whereas cloud-based inference introduces communication latency, bandwidth overhead, and dependence on network connectivity. To address these limitations, split computing offers ",
+      "url": "https://arxiv.org/abs/2609.25415v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-21T21:15:00.000Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 25.1,
+      "topics": [
+        "inference",
+        "models"
       ]
     },
     {
@@ -46,8 +316,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T20:41:14.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 28.9,
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 22.9,
       "topics": [
         "models"
       ]
@@ -62,96 +332,12 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-21T17:57:40.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 30.2,
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 24.2,
       "topics": [
         "inference",
         "hardware",
         "models"
-      ]
-    },
-    {
-      "id": "049d730cc79f20c5",
-      "category": "ai",
-      "title": "Analytical Power-Aware Provisioning for Prefill-Decode Disaggregated AI Inference",
-      "summary": "Power availability increasingly constrains the operation of AI inference fleets, creating a need for provisioning methods that jointly consider serving capacity and power consumption. Prefill--decode (PD) disaggregation has emerged as a prevalent architecture for large-scale inference serving. However, determining the appropriate numbers of prefill and decode instances is challenging because serving capacity depends jointly on workload characteristics, hardware constraints, queueing, and KV-cache reservations. Exis",
-      "url": "https://arxiv.org/abs/2609.24639v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-21T14:17:46.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 29.3,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "0df0e7d72b1be46b",
-      "category": "ai",
-      "title": "Bridging the Vendor Gap: Enabling AMD GPU Support for Awkward Array via ROCm/HIP for the HL-LHC Era",
-      "summary": "The High-Luminosity LHC (HL-LHC) will demand order-of-magnitude gains in analysis throughput, and increasingly those gains must come from GPUs that are not made by a single vendor. Leadership-class systems such as El Capitan, Frontier and LUMI are built on AMD accelerators, yet the Scikit-HEP analysis stack---and Awkward Array in particular---has grown up CUDA-first. We report on $rawkward$, a Rust-backed kernel engine that adds a ROCm/HIP backend for Awkward Array's nested, jagged, variable-length data structures.",
-      "url": "https://arxiv.org/abs/2609.24628v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-21T14:11:12.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 29.2,
-      "topics": [
-        "kernels",
-        "hardware"
-      ]
-    },
-    {
-      "id": "cbfcdebe24232b7a",
-      "category": "ai",
-      "title": "Toward GPU-Resident Climate Models: A Feasibility Study on Lossy Compression for the Spherical Harmonic Transform's Communication Bottleneck",
-      "summary": "Operational pseudospectral atmospheric models such as the ECMWF Integrated Forecasting System (IFS) run today almost exclusively on CPUs; GPU ports are under active development but not yet used in production. These models rely on the Spherical Harmonic Transform (SHT). Each time-step requires forward and inverse SHTs, and both passes depend on global pencil transposition that redistribute multi-dimensional arrays across compute nodes. At large node counts these global collectives dominate wall-clock time. We invest",
-      "url": "https://arxiv.org/abs/2609.24294v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-21T08:53:27.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 27.9,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
-      "id": "d9e938d12d13fa71",
-      "category": "ai",
-      "title": "Dissecting How Die Scaling Breaks GPU Fine-grained Scheduling",
-      "summary": "Modern GPUs are no longer physically symmetric. Die scaling leads to both manufacturing-driven floorsweeping and cache and memory partitioning. The former creates chip-specific compute topologies, while the latter causes non-uniform memory access. These asymmetries are substantial. Topology-oblivious compute unit allocation can lead to up to 1.33x performance variation, while remote accesses increase HBM latency by up to 67% and nearly double L2 latency. However, these asymmetries are hidden behind the GPU's logica",
-      "url": "https://arxiv.org/abs/2609.24270v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-21T08:34:29.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 27.8,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware"
-      ]
-    },
-    {
-      "id": "b14ff6d5a4289963",
-      "category": "ai",
-      "title": "A principled approach for energy-efficient training via phase-aware GPU frequency tuning",
-      "summary": "Modern AI model training imposes unprecedented computational demands, making it a key contributor to datacenter energy consumption. Yet a significant fraction of the energy consumed during training does not translate to useful computation due to bottlenecks throughout the training pipeline. We present PAFT, a phase-aware, dynamically adaptable GPU frequency tuning system that reduces energy consumption of training workloads with minimal performance overhead. The key insight behind PAFT is that bottlenecks represent",
-      "url": "https://arxiv.org/abs/2609.24205v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-21T07:20:57.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 27.5,
-      "topics": [
-        "hardware",
-        "training"
       ]
     },
     {
@@ -164,8 +350,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 27.7,
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 23,
       "topics": [
         "inference",
         "kernels",
@@ -182,8 +368,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 23.7,
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 19,
       "topics": [
         "inference"
       ]
@@ -198,8 +384,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 23.7,
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 19,
       "topics": [
         "inference"
       ]
@@ -214,29 +400,12 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 23.7,
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
+      "score": 19,
       "topics": [
         "inference",
         "hardware",
         "models"
-      ]
-    },
-    {
-      "id": "b85f0231bf1c133e",
-      "category": "ai",
-      "title": "TriFleetRCA: On-Premise LLM Root Cause Analysis for Kubernetes",
-      "summary": "Root cause analysis at a remote site is slow: evidence is scattered across pod logs, Kubernetes events and cluster-level objects, and many operators cannot send production logs to a hosted model at all. On-premise inference removes the second constraint but raises a question live-cluster benchmarks have not addressed: when one workstation GPU fixes both the model and the context budget, how should evidence be retrieved, and what happens when the runbooks the model consults have been tampered with? We present TriFle",
-      "url": "https://arxiv.org/abs/2609.23766v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-20T17:34:18.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 24.1,
-      "topics": [
-        "inference",
-        "hardware"
       ]
     },
     {
@@ -249,27 +418,11 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-18T19:04:41.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 23,
       "topics": [
         "inference",
         "hardware"
-      ]
-    },
-    {
-      "id": "9fcf5a45168309c4",
-      "category": "ai",
-      "title": "TrustBOM: A Scalable Architecture for Confidentiality-Preserving SBOMs Across Organizations",
-      "summary": "Software Bills of Materials (SBOMs) have emerged as a key mechanism for software supply chain governance in enterprise architectures. However, their adoption across organizations remains limited due to concerns about exposing sensitive dependency information. To address this limitation, we propose TrustBOM, a scalable architecture for confidentiality-preserving SBOMs integrated into enterprise CI/CD workflows. TrustBOM enables software providers to attest that specific vulnerabilities or restricted licenses are abs",
-      "url": "https://arxiv.org/abs/2609.21419v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-18T07:29:50.000Z",
-      "fetchedAt": "2026-09-21T05:17:28.727Z",
-      "score": 21,
-      "topics": [
-        "inference"
       ]
     },
     {
@@ -282,7 +435,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-18T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 19,
       "topics": [
         "inference",
@@ -299,7 +452,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-17T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 23,
       "topics": [
         "inference",
@@ -317,7 +470,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-17T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 23,
       "topics": [
         "inference",
@@ -334,7 +487,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-17T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 23,
       "topics": [
         "inference",
@@ -352,7 +505,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-16T20:06:17.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 22,
       "topics": [
         "security"
@@ -368,7 +521,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-16T18:55:21.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -386,29 +539,11 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-16T16:28:59.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 23,
       "topics": [
         "kernels",
         "hardware"
-      ]
-    },
-    {
-      "id": "b61bb90e4eb5aa04",
-      "category": "technology",
-      "title": "DFlash Speculative Decoding on AMD Instinct MI355X: Up to 5× Faster Qwen3.5 Inference",
-      "summary": "Autoregressive decode generates one token per model forward pass, so single-request latency is bounded by how fast you can stream weights through the GPU — not by compute. Speculative decoding attacks that bottleneck by letting a small draft model propose several tokens that the large target model then verifies in a single parallel pass. In this post we bring DFlash [3] — a block-diffusion drafter — to AMD Instinct MI355X through vLLM [4] on ROCm [5], benchmark it head-to-head against Qwen3.5’s [6] built-in MTP dra",
-      "url": "https://rocm.blogs.amd.com/artificial-intelligence/dflash-on-MI355x/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-16T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 23,
-      "topics": [
-        "inference",
-        "hardware",
-        "training"
       ]
     },
     {
@@ -437,7 +572,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-15T17:00:11.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 23,
       "topics": [
         "models"
@@ -453,27 +588,10 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-15T16:55:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 19,
       "topics": [
         "inference"
-      ]
-    },
-    {
-      "id": "f94fe2c97bef94a7",
-      "category": "technology",
-      "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
-      "summary": "For operators of large-scale AI factories, maximizing continuous output is essential for productivity. In massive-scale AI training, every GPU in the cluster...",
-      "url": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-15T16:55:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 19,
-      "topics": [
-        "hardware",
-        "training"
       ]
     },
     {
@@ -486,7 +604,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-15T13:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 22,
       "topics": [
         "training"
@@ -502,7 +620,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-15T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 19,
       "topics": [
         "training"
@@ -518,45 +636,11 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-15T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 19,
       "topics": [
         "inference",
         "kernels",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "fb93a98fc84b4070",
-      "category": "technology",
-      "title": "Thread Trace Part 1: ROCprof Compute Viewer",
-      "summary": "Once you have identified a GPU kernel to optimize, you need to understand how its instructions execute and where waves spend time waiting. Thread trace gives you a detailed view of that behavior, helping you investigate stalls, gaps in execution, and competition for hardware resources.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/thread-trace/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-15T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 19,
-      "topics": [
-        "kernels",
-        "hardware"
-      ]
-    },
-    {
-      "id": "09d38645436ba91e",
-      "category": "technology",
-      "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
-      "summary": "Mixture of experts (MoE) has become one of the defining architectural trends in large-scale AI model training. DeepSeek, Qwen, and Mixtral are examples of MoE...",
-      "url": "https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-14T16:39:15.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 23,
-      "topics": [
         "models",
         "training"
       ]
@@ -578,23 +662,6 @@
       ]
     },
     {
-      "id": "17484399503afa2f",
-      "category": "technology",
-      "title": "An Educational GEMM Ladder for Helios GPUs",
-      "summary": "AMD Helios will be an important platform for AI. Helios offers 432 GB of HBM4, 23 TB/s of HBM bandwidth per GPU, and 40 PFLOPs of FP4 compute AMD Instinct™ MI455X GPU. These capabilities will be especially valuable for large frontier models and long-context agentic workloads.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/hipkittens-gemm-ladder/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-14T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 23,
-      "topics": [
-        "kernels",
-        "hardware"
-      ]
-    },
-    {
       "id": "1849aa2e8596c80b",
       "category": "ai",
       "title": "Kimi K3 Performance Optimizations in vLLM: The Road to 2.8× Throughput",
@@ -604,7 +671,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-13T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 19,
       "topics": [
         "inference",
@@ -623,7 +690,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-11T17:45:57.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -639,27 +706,10 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-11T13:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 22,
       "topics": [
         "security"
-      ]
-    },
-    {
-      "id": "eb267fad586b48e1",
-      "category": "technology",
-      "title": "How Full-Stack NIM Optimizations Deliver 2.5x More Users on Nemotron 3 Ultra",
-      "summary": "Deploying a large language model is only the first step toward production-ready serving. Production teams also need to serve as many concurrent users as...",
-      "url": "https://developer.nvidia.com/blog/how-full-stack-nim-optimizations-deliver-2-5x-more-users-on-nemotron-3-ultra/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-10T16:55:32.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 23,
-      "topics": [
-        "inference",
-        "models"
       ]
     },
     {
@@ -672,7 +722,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-10T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 23,
       "topics": [
         "inference",
@@ -689,7 +739,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-10T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 19,
       "topics": [
         "training"
@@ -705,7 +755,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-10T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 19,
       "topics": [
         "inference"
@@ -721,7 +771,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-08T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 23,
       "topics": [
         "inference",
@@ -756,7 +806,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T21:03:02.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 22,
       "topics": [
         "security"
@@ -772,7 +822,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T13:13:48.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 19,
       "topics": [
         "models"
@@ -788,7 +838,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 23,
       "topics": [
         "training"
@@ -804,7 +854,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 23,
       "topics": [
         "training"
@@ -836,7 +886,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-01T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -852,26 +902,10 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-08-26T00:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 23,
       "topics": [
         "models",
-        "training"
-      ]
-    },
-    {
-      "id": "62ac4ba76bc98b2c",
-      "category": "ai",
-      "title": "Quantization-Aware Healing: a compressed, 4-bit model that outperforms its full-precision original",
-      "summary": "",
-      "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-08-25T11:39:24.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
-      "score": 23,
-      "topics": [
         "training"
       ]
     },
@@ -885,7 +919,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-08-21T23:19:57.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 18,
       "topics": [
         "training"
@@ -901,7 +935,7 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-08-21T10:54:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 23,
       "topics": [
         "models"
@@ -950,7 +984,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-07-29T16:00:00.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 22,
       "topics": [
         "security"
@@ -966,7 +1000,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-07-17T15:00:11.000Z",
-      "fetchedAt": "2026-09-22T05:15:33.331Z",
+      "fetchedAt": "2026-09-23T05:00:13.926Z",
       "score": 22,
       "topics": [
         "security"
