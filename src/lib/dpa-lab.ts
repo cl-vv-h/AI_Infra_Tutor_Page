@@ -5,6 +5,7 @@ import type { WeightBits } from './model-weights.ts'
 import type { TensorParallelSize } from '../types/model.ts'
 import { matrixPrecisions, expertPrecisions, mixedWeightStorage } from './mixed-precision.ts'
 import type { MixedPrecision } from './mixed-precision.ts'
+import { readWeightOverrides, writeWeightOverrides } from './weight-precision-policy.ts'
 import { readW4Stage } from './w4-lifecycle.ts'
 
 export const dpaRevision = '96d91ef9266d2bebd8e8c09ef1f28b2d521631ff'
@@ -61,6 +62,7 @@ export function parseDpa(params: URLSearchParams, modelId: DpaModelId = 'glm-5-2
         if (state.mixed.shared !== 'bf16' || state.mixed.experts !== 'bf16' || state.mixed.w4Stage) notices.push('Qwen3-8B 没有专家模块，已清除不适用的 Shared/Routed 精度与 W4A8 阶段。')
         state.mixed = { mlp: state.mixed.mlp, shared: 'bf16', experts: 'bf16' }
       }
+      state.mixed = readWeightOverrides(params, model, tp, ep, state.mixed, notices, tp / dp as TensorParallelSize)
     } else notices.push('precision 无效，恢复统一位宽理论对照。')
   }
   return { state, notices }
@@ -75,6 +77,7 @@ export function dpaParams(state: DpaScenario, modelId: DpaModelId = 'glm-5-2') {
     params.set('precision', 'mixed')
     for (const key of ['mlp', 'shared', 'experts'] as const) params.set(key, state.mixed[key])
     if (state.mixed.w4Stage) params.set('w4stage', state.mixed.w4Stage)
+    writeWeightOverrides(params, state.mixed)
   }
   return params
 }
@@ -127,7 +130,7 @@ export function dpaLayout(state: DpaScenario, modelId: DpaModelId = 'glm-5-2') {
     const layout = formatWeight(weight, model, scenario, attention ? 1 : state.ep)
     const elements = weightElements(weight, model, tp, attention ? 1 : state.ep)
     if (elements === null) throw new Error('Unresolved DPA weight')
-    const storage = state.mixed ? mixedWeightStorage(layout, node.id, state.mixed) : undefined
+    const storage = state.mixed ? mixedWeightStorage(layout, node.id, state.mixed, layer) : undefined
     return { ...layout, node: node.title, nodeId: node.id, storage, bytes: storage?.bytes ?? elements * state.bits / 8, attention }
   }))
   const layerBudgets = Array.from({ length: model.dimensions.layers }, (_, layer) => {

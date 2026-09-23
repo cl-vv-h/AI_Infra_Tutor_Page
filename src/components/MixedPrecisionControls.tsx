@@ -1,24 +1,46 @@
-import { defaultMixedPrecision, availableMixedExperts, matrixPrecisions, mixedPrecisionLabels } from '@/lib/mixed-precision'
+import { useLayoutEffect, useRef } from 'react'
+import { defaultMixedPrecision, availableMixedExperts, matrixPrecisions, mixedPrecisionLabels, hasRoutedOverrides } from '@/lib/mixed-precision'
 import type { ExpertPrecision, MixedPrecision } from '@/lib/mixed-precision'
+import type { TensorParallelSize } from '@/types/model'
+import WeightPrecisionEditor from './WeightPrecisionEditor'
 
-export default function MixedPrecisionControls({ value, hasDense = true, denseOnly = false, modelId = '', tp = 1, ep = 1, onChange }: { value?: MixedPrecision; hasDense?: boolean; denseOnly?: boolean; modelId?: string; tp?: number; ep?: number; onChange: (value: MixedPrecision | undefined) => void }) {
+export default function MixedPrecisionControls({ value, hasDense = true, denseOnly = false, modelId = '', tp = 1, ep = 1, attentionTp = tp, layer = 0, onChange }: { value?: MixedPrecision; hasDense?: boolean; denseOnly?: boolean; modelId?: string; tp?: number; ep?: number; attentionTp?: number; layer?: number; onChange: (value: MixedPrecision | undefined) => void }) {
   const routedOnly = modelId === 'qwen3-30b-a3b'
   const expertOptions = availableMixedExperts(modelId, tp, ep)
+  const splitExperts = hasRoutedOverrides(value)
+  const latest = useRef(value)
+  useLayoutEffect(() => { latest.current = value }, [value])
+  function change(fields: Partial<MixedPrecision>) {
+    const next = { ...(latest.current ?? defaultMixedPrecision), ...fields }
+    latest.current = next
+    onChange(next)
+  }
   return <section aria-label="按模块选择精度" className="mt-5 rounded-2xl border border-violet-200/25 bg-[#101720] p-4 sm:p-5">
-    <h3 className="font-semibold text-white">先选择计算口径</h3>
+    <h3 className="font-semibold text-white">权重精度方案</h3>
     <div className="mt-3 flex flex-wrap gap-2">{[{ label: '统一位宽 · 理论对照', mixed: false }, { label: '按模块混合精度', mixed: true }].map(item => <button key={item.label} type="button" aria-pressed={!!value === item.mixed} onClick={() => { if (!!value !== item.mixed) onChange(item.mixed ? { ...defaultMixedPrecision } : undefined) }} className={`min-h-11 rounded-xl border px-3 text-sm ${!!value === item.mixed ? 'border-violet-200/50 bg-violet-200/10 text-violet-100' : 'border-white/15 text-white/65'}`}>{item.label}</button>)}</div>
     {value ? <>
       <div className={`mt-4 grid gap-4 ${denseOnly || routedOnly ? '' : 'sm:grid-cols-3'}`}>{(['mlp', 'shared', 'experts'] as const).filter(key => (!denseOnly || key === 'mlp') && (!routedOnly || key === 'experts')).map(key => {
         const options: readonly ExpertPrecision[] = key === 'experts' ? expertOptions : matrixPrecisions
         const label = { mlp: 'Dense MLP', shared: 'Shared MLP', experts: 'Routed MoE' }[key]
-        return <label key={key} className="text-sm leading-6 text-white/75">{label}<span className="block text-xs text-violet-100">{key === 'mlp' && !hasDense ? '本模型无 Dense MLP' : mixedPrecisionLabels[value[key]]}</span><input key={options.join(',')} aria-label={`${label} 精度`} disabled={key === 'mlp' && !hasDense} type="range" min={0} max={options.length - 1} step={1} value={options.indexOf(value[key])} aria-valuetext={mixedPrecisionLabels[value[key]]} className="mt-3 block w-full accent-violet-200 disabled:opacity-40" onChange={e => onChange({ ...value, [key]: options[Number(e.target.value)] })} /></label>
+        return <label key={key} className="text-sm leading-6 text-white/75">{label}<span className="block text-xs text-violet-100">{key === 'mlp' && !hasDense ? '本模型无 Dense MLP' : mixedPrecisionLabels[value[key]]}</span><select aria-label={`${label} 精度`} disabled={key === 'mlp' && !hasDense} value={value[key]} className="mt-3 block min-h-11 w-full min-w-0 rounded-lg border border-white/20 bg-[#101e29] p-2 text-sm text-white disabled:opacity-40" onChange={e => change({ [key]: e.target.value })}>{options.map(format => <option key={format} value={format}>{mixedPrecisionLabels[format]}</option>)}</select></label>
       })}</div>
-      {routedOnly && <div className="mt-3 text-sm leading-6 text-amber-100"><p>MoE-TP={tp / ep} · I_local={768 / (tp / ep)} · {expertOptions.length === 2 ? '当前仅可选 BF16 / MXFP4' : '四种专家格式均满足当前对齐'}</p><p className="mt-2">官方配置与 SGLang 普通 Router 是 BF16；本页自定义 Router FP32。</p><details className="mt-2 text-xs text-white/65"><summary className="cursor-pointer">格式对齐与加载边界</summary><p className="mt-2">FP8/W4A8 要求中间维按 128 对齐，MoE-TP 为 4 或 8 时不可选，可增大 EP。MXFP4 的 32 对齐在这些分片下仍成立。这里不含 runner 额外 padding，不是原生检查点或可部署后端保证。</p></details></div>}
-      {!denseOnly && value.experts === 'w4afp8' && <label className="mt-4 block text-sm leading-6 text-white/75">W4A8 权重阶段<select aria-label="W4A8 权重阶段" value={value.w4Stage ?? 'allocated'} onChange={e => onChange({ ...value, w4Stage: e.target.value === 'processed' ? 'processed' : undefined })} className="mt-2 block w-full min-w-0 rounded-xl border border-white/20 bg-[#101e29] p-3 text-white"><option value="allocated">初始分配 · FP32 scale</option><option value="processed">后处理 · BF16 scale</option></select><span className="mt-2 block text-xs text-cyan-100">{value.w4Stage === 'processed' ? '权重与 scale 总账已使用后处理布局；仅 W4A8 专家改变，其他模块仍按所选存储假设。' : '当前总账使用初始布局；可切换查看 scale 转换与重排后的权重大小。'}</span></label>}
-      {denseOnly ? <p className="mt-4 text-sm leading-6 text-white/70">全部 36 层 Dense MLP 按所选 BF16 或 FP8 存储；Attention、两套层 RMSNorm 及 Q/K Norm 保持 BF16 假设。本模型没有 Router、Shared 或 Routed MoE，不显示无效专家选项。FP8 使用 E4M3 payload、128×128 block 与 FP32 scale，动态激活不计静态 input scale。模块边界仍按 BF16，不随权重自动变为 FP8。</p> : <>
-      <p className="mt-4 text-sm leading-6 text-white/70">{routedOnly ? '全部 48 层采用同一专家格式，无 Dense/Shared MLP 或 correction bias。Attention 与 Norm 保持 BF16 假设；逐 rank 和全部 Decoder 总账计入所选 weight scale，W4A8 另含静态 input scale。' : '配置对所有对应 Decoder 层生效；当前层没有该模块时，只影响其他层及全层合计。Router 权重与 correction bias 固定 FP32；未选择的 Attention、Norm 与其他投影按 BF16 假设。以下逐 rank 和全部 Decoder 总账共同使用此方案，计入 weight scale；W4A8 还计入静态 input scale。'}</p>
-      <details className="mt-3 text-xs leading-6 text-white/60"><summary className="cursor-pointer">格式区别与部署边界</summary><p className="mt-2">FP8：E4M3 payload、128×128 block、FP32 scale。MXFP4：两值一字节、每 32 个权重一个 UINT8 scale。W4A8 特指 SGLang W4AFp8 的 INT4 权重 / FP8 激活、group 128；不是 NPU 的 W4A8 INT8 激活分支，也不是 MXFP4。A8 影响 kernel 内部量化激活，不代表模块边界输入输出都占 1 B。</p><p className="mt-2">W4AFp8 初始 weight scale 为 FP32、按专家 input scale 为 BF16。后处理将 weight scale 转 BF16 后重排，将 gate/up、down 的 input scale 分别归约为一个 FP32 标量；阶段选择同时改变逐 rank 和全层总账。后处理不改变 INT8 payload 形状，scale Shape [E,O,G] 变成 [E,G/a,O×a]，G 能被 4 整除时 a=4，否则 a=1。</p><p className="mt-2">这是自定义存储情景，不是完整原生 checkpoint dtype 清单；只核对上述 W4A8 路径，不承诺当前模型/硬件支持该启动组合。其他格式仍按所选假设。运行元数据独立列出，不混入权重与 scale 小计；不含 allocator、转换峰值、其他对齐、KV、通信与激活工作区。</p><a className="text-cyan-100 hover:underline" href="https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/layers/quantization/w4afp8.py" target="_blank" rel="noreferrer">核对 W4AFp8 分配与后处理 ↗</a></details>
-      </>}
-    </> : <p className="mt-3 text-sm leading-6 text-white/65">统一 4-bit 会把 Attention、Norm 等也缩成 4-bit，并漏掉 scale；只适合作为理论下界对照，不能与官方完整混合精度权重直接比较。</p>}
+      {hasDense && !denseOnly && !routedOnly && <button type="button" onClick={() => onChange({ ...defaultMixedPrecision, mlp: 'fp8' })} className="mt-4 min-h-11 rounded-lg border border-white/20 px-3 text-sm text-cyan-100">应用预设：Dense FP8 / Experts BF16</button>}
+      {routedOnly && <p className="mt-3 text-xs leading-6 text-white/65">MoE-TP={tp / ep} · I_local={768 / (tp / ep)}。FP8 block、INT4 group 128 与 W4A8 按分片对齐过滤；无 Dense/Shared MLP 或 correction bias。官方配置与 SGLang 普通 Router 是 BF16；FP32 为本页默认自定义假设。</p>}
+      {!denseOnly && value.experts === 'w4afp8' && !splitExperts && <label className="mt-4 block text-sm leading-6 text-white/75">W4A8 权重阶段<select aria-label="W4A8 权重阶段" value={value.w4Stage ?? 'allocated'} onChange={e => change({ w4Stage: e.target.value === 'processed' ? 'processed' : undefined })} className="mt-2 block w-full min-w-0 rounded-xl border border-white/20 bg-[#101e29] p-3 text-white"><option value="allocated">初始分配 · FP32 scale</option><option value="processed">后处理 · BF16 scale</option></select></label>}
+      <p className="mt-4 text-xs leading-6 text-white/65">模块默认用于全部适用 Decoder 层；未覆盖的 Attention / Norm 为 BF16，Router / correction bias 为 FP32 自定义假设。逐权重覆盖可分别修改它们。权重格式不改变模块边界激活或 KV 精度；不是原生检查点清单或部署支持声明。</p>
+      {modelId && <WeightPrecisionEditor modelId={modelId} tp={tp as TensorParallelSize} ep={ep as TensorParallelSize} attentionTp={attentionTp as TensorParallelSize} layer={layer} value={value} onChange={onChange} />}
+      {splitExperts && <p className="mt-3 text-xs leading-6 text-amber-100">专家逐权重方案使用拆分逻辑矩阵账本，不套用融合 W4A8 后处理与运行元数据。</p>}
+      <details className="mt-4 text-xs leading-6 text-white/65"><summary className="cursor-pointer">格式、scale 与统计边界</summary>
+        <ul className="mt-3 list-disc space-y-2 pl-4">
+          <li>BF16 / FP16 / FP32：每元素 2 / 2 / 4 B，无量化 scale。</li>
+          <li>FP8 E4M3：128×128 block 或每逻辑矩阵一个 FP32 scale；两者单独选择。</li>
+          <li>INT8：对称 per-output-channel，FP32 scale；INT4：对称 group 128，FP32 scale。无 zero-point，不等同于 LLM.int8()、AWQ 或 GPTQ。</li>
+          <li>MXFP4：E2M1，group 32，UINT8 容器承载 E8M0 scale。NVFP4：E2M1，group 16，FP8 E4M3 block scale，另含每逻辑矩阵 FP32 global scale。</li>
+          <li>W4A8：保留 SGLang W4AFp8 专家路径，INT4 权重 / FP8 激活。初始 weight scale 为 FP32、input scale 为 BF16；已核对后处理转换为 BF16 重排 scale 和 FP32 标量 input scale。</li>
+        </ul>
+        <p className="mt-3">统计 payload、weight scale、global scale 与已有静态 input scale；不含激活动态 scale、转换峰值、kernel workspace、KV 或通信缓冲。NVFP4 / per-tensor FP8 以每个 Gate、Up 和每位专家各自的逻辑矩阵计 scale，不假定后端融合共享。</p>
+        <div className="mt-3 flex flex-wrap gap-4"><a className="text-cyan-100 hover:underline" href="https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/" target="_blank" rel="noreferrer">NVIDIA FP4 格式 ↗</a><a className="text-cyan-100 hover:underline" href="https://huggingface.co/docs/transformers/quantization/concept_guide" target="_blank" rel="noreferrer">量化粒度与对称格式 ↗</a><a className="text-cyan-100 hover:underline" href="https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/layers/quantization/w4afp8.py" target="_blank" rel="noreferrer">W4AFp8 固定实现 ↗</a></div>
+      </details>
+    </> : <p className="mt-3 text-sm leading-6 text-white/65">统一位宽仅为理论载荷；启用混合方案后可设置模块默认、逐权重与单层覆盖，并计入 scale。</p>}
   </section>
 }

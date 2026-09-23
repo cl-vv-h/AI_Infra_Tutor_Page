@@ -5,6 +5,7 @@ import { dpaLayout, dpaParams, dpaSizes, dpaSource, parseDpa } from '@/lib/dpa-l
 import type { DpaModelId, DpaScenario } from '@/lib/dpa-lab'
 import { formatBytes } from '@/lib/model-lab'
 import DpaBufferMap from '@/components/DpaBufferMap'
+import { hasRoutedOverrides } from '@/lib/mixed-precision'
 import MixedPrecisionControls from '@/components/MixedPrecisionControls'
 import MixedWeightDetails from '@/components/MixedWeightDetails'
 import W4RuntimeMetadata from '@/components/W4RuntimeMetadata'
@@ -48,7 +49,7 @@ export default function DpaLab({ modelId = 'glm-5-2' }: { modelId?: DpaModelId }
       </div>
       <p className="mt-4 text-sm text-cyan-100">{state.tp} 张卡 · Attention TP={data.attentionTp} · {gqa ? `Dense TP=${state.tp}` : `MoE-TP=${data.moeTp}`}。{gqa ? 'Attention DP 在同一组卡内划分，没有 EP；' : 'DP 和 EP 在同一组卡内划分，不额外相乘；'}DP=1 即退回普通 Attention TP。</p>
     </section>
-    <MixedPrecisionControls value={state.mixed} denseOnly={gqa} onChange={mixed => update({ mixed })} />
+    <MixedPrecisionControls value={state.mixed} denseOnly={gqa} modelId={modelId} tp={state.tp} ep={state.ep} attentionTp={state.tp / state.dp} layer={state.layer} onChange={mixed => update({ mixed })} />
     <section className={panel} aria-label="DPA 请求分组">
       <h2 className="text-xl font-semibold">每个 Attention 组有自己的请求</h2>
       <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">{data.groups.map((g) => <div key={g.dpRank} className="rounded-xl border border-white/15 p-3"><label className="text-sm">DPA {g.dpRank}：{g.requests} 个请求<input aria-label={`DPA 组 ${g.dpRank} 请求数`} type="range" min={0} max={64} value={g.requests} onChange={(e) => changeRequests(g.dpRank, Number(e.target.value))} className="mt-4 w-full accent-cyan-200" /></label><p className="mt-2 text-xs leading-6 text-white/60">有效 N={g.tokens.toLocaleString('en-US')} · 本卡保留缓存 {formatBytes(g.cacheBytes)}</p><div className="mt-3 flex flex-wrap gap-2">{g.peers.map((rank) => <button key={rank} type="button" aria-label={`DPA 观察 Rank ${rank}`} aria-pressed={state.rank === rank} onClick={() => update({ rank })} className={`min-h-11 rounded-lg border px-3 text-sm ${state.rank === rank ? 'border-cyan-200 bg-cyan-200/15 text-cyan-100' : 'border-white/15 text-white/65'}`}>R{rank}</button>)}</div></div>)}</div>
@@ -86,9 +87,9 @@ export default function DpaLab({ modelId = 'glm-5-2' }: { modelId?: DpaModelId }
       ].map(([label, bytes], index) => <div key={label} className={`min-w-0 rounded-xl bg-white/5 p-3 ${index === 2 ? 'col-span-2 sm:col-span-1' : ''}`}><p className="text-xs text-white/60">{label}</p><output className="mt-2 block break-words font-mono text-sm text-cyan-100 sm:text-base">{formatBytes(Number(bytes))}</output><p className="mt-1 break-words text-xs text-white/55">{Number(bytes).toLocaleString('en-US')} B</p></div>)}</div>
       <details className="mt-3 text-xs leading-6 text-white/60"><summary className="cursor-pointer">完整统计范围与加载后差异</summary><p className="mt-2">{gqa ? 'Qwen3 的 FP8 情景核对初始 E4M3 权重与 FP32 block scale，需要预先序列化的 FP8 checkpoint。' : 'W4A8 可选择初始分配或固定版本后处理：payload 不变，weight scale 转 BF16 并重排，gate/up 与 down 各保留一个 FP32 input scale。其他格式仍按所选假设，W4A8 运行元数据另列。'}不因此宣称全部模型已验证最终内存布局。不含 Embedding、LM Head、KV、激活、通信、转换峰值或 allocator；全层合计仍是图示 Decoder 权重与 scale 小计。</p></details>
       <p className="mt-3 text-sm leading-6 text-white/65">Attention 权重按 Attention TP={data.attentionTp}，{gqa ? `Dense MLP 按总 TP=${state.tp}；两套层 RMSNorm 与 Q/K Norm 复制。本模型无 Router、专家与 Indexer。` : `routed 按 EP=${state.ep} / MoE-TP=${data.moeTp}，shared 与 Dense 按总 TP=${state.tp}；Norm、低秩输入投影及 Indexer 复制。`}增加 DPA 可能增大本卡 Attention 权重，不会让所有矩阵一起缩小。</p>
-      {gqa && state.mixed && <QwenDenseLayout tp={state.tp} policy={state.mixed} dpaRows={data.bufferRows} />}
+      {gqa && state.mixed && <QwenDenseLayout tp={state.tp} layer={state.layer} policy={state.mixed} dpaRows={data.bufferRows} />}
       <div className="mt-4 grid gap-3 sm:grid-cols-2">{data.weights.map((w, i) => <details key={`${w.nodeId}-${i}`} className="min-w-0 rounded-xl border border-white/10 p-3 text-sm"><summary className="cursor-pointer break-words text-white/80">{w.name} · {formatBytes(w.bytes)}</summary><p className="mt-3 break-words font-mono text-cyan-100">{w.shape} × {w.multiplicity ?? 1} 份</p>{w.storage && <MixedWeightDetails storage={w.storage} copies={w.multiplicity ?? 1} />}<p className="mt-2 text-xs leading-6 text-white/55">{w.node} · {w.attention ? 'Attention TP 布局' : 'FFN / 复制布局'}{w.note ? `；${w.note}` : ''}</p></details>)}</div>
-      {!data.dense && state.mixed?.experts === 'w4afp8' && <W4RuntimeMetadata experts={256 / state.ep} cards={state.tp} />}
+      {!data.dense && state.mixed?.experts === 'w4afp8' && !hasRoutedOverrides(state.mixed) && <W4RuntimeMetadata experts={256 / state.ep} cards={state.tp} />}
       <p className="mt-4 text-xs leading-6 text-amber-100/80">每卡拥有不同分片或副本，但此基线各卡权重大小相同；全卡合计包含 DPA 引入的 Attention 复制，不是去重参数量。空闲组仍保留权重。切换当前层不改变 {dimensions.layers} 层总账；修改模块精度只改变对应层和模块，不改变 BF16 激活与缓存口径。</p>
     </section>
     <footer className="mt-6 text-sm leading-7 text-white/55">可核对的来源：{[['分组', 'distributed/parallel_state.py'], ['宽度', 'runtime_context.py'], ['数据汇合', 'layers/communicator.py'], ['补齐与通信', 'layers/dp_attention.py'], ['补齐顺序', 'model_executor/forward_batch_info.py'], ['模型主干', gqa ? 'models/qwen3.py' : 'models/deepseek_v2.py'], ...(gqa ? [['Dense MLP', 'models/qwen2.py'], ['行并行归约', 'layers/linear.py']] : [])].map(([label, file]) => <a key={file} href={dpaSource(file)} target="_blank" rel="noreferrer" className="ml-3 inline-block text-cyan-100 hover:underline">{label} ↗</a>)}<p className="mt-3">本页仅核对 {model.name} 的上述基线；其他模型、DPA+DeepEP、LM Head 的独立并行策略、混合阶段批次和多机启动仍须分别核验。</p></footer>

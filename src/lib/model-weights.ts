@@ -56,7 +56,7 @@ export function decoderWeightBudget(model: ModelArchitecture, layer: number, tp:
     const weights = node.weights.map((weight) => {
       const formatted = formatWeight(weight, model, { phase: 'decode', batch: 1, sequence: 1024, tp, cacheBytes: 2 }, ep)
       const local = weightElements(weight, model, tp, ep)
-      const storage = mixed ? mixedWeightStorage(formatted, node.id, mixed) : undefined
+      const storage = mixed ? mixedWeightStorage(formatted, node.id, mixed, index) : undefined
       return { ...formatted, copies: weight.multiplicity ?? 1, local, global: weightElements(weight, model, 1), storage, bytes: storage?.bytes ?? (local === null ? null : local * bits / 8) }
     })
     const complete = weights.every((weight) => weight.local !== null && weight.global !== null)

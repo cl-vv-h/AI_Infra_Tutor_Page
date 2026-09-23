@@ -9,6 +9,7 @@ import ExpertPackingLab from '@/components/ExpertPackingLab'
 import type { ExpertFormat } from '@/lib/expert-packing'
 import type { MixedPrecision } from '@/lib/mixed-precision'
 import MixedWeightDetails from '@/components/MixedWeightDetails'
+import { hasRoutedOverrides } from '@/lib/mixed-precision'
 import W4RuntimeMetadata from '@/components/W4RuntimeMetadata'
 import AttentionHeadOwnership from '@/components/AttentionHeadOwnership'
 
@@ -34,7 +35,7 @@ export default function ModelRankWorkbench({ model, layer, scenario, nodeId, bit
     <div className="mt-4 grid gap-4 sm:grid-cols-3">
       <label className="text-sm text-white/75">TP / 副本：{scenario.tp}<input className="mt-3 block w-full accent-cyan-200" aria-label="Rank 实验 TP" type="range" min={0} max={model.supportedTp.length - 1} step={1} value={model.supportedTp.indexOf(scenario.tp)} aria-valuetext={String(scenario.tp)} onChange={(event) => onChange({ tp: model.supportedTp[Number(event.target.value)] })} /></label>
       <label className="text-sm text-white/75">独立 DP 副本：{replicas}<input className="mt-3 block w-full accent-cyan-200" aria-label="独立 DP 副本数" type="range" min={0} max={replicaSizes.length - 1} step={1} value={replicaSizes.indexOf(replicas)} aria-valuetext={String(replicas)} onChange={(event) => onChange({ replicas: replicaSizes[Number(event.target.value)] })} /></label>
-      {mixed ? <p className="text-sm leading-6 text-violet-100">当前按模块混合精度<br />{model.id === 'qwen3-8b' ? 'Dense MLP 可选精度' : 'Router FP32'} · 权重与 scale 合计<br /><span className="text-xs text-white/60">请用上方模块精度滑块调整</span></p> : <label className="text-sm text-white/75">统一假定位宽：{bits}-bit<input className="mt-3 block w-full accent-violet-200" aria-label="Rank 实验权重位宽" type="range" min={0} max={precisions.length - 1} step={1} value={precisions.indexOf(bits)} aria-valuetext={`${bits}-bit`} onChange={(event) => onChange({ bits: precisions[Number(event.target.value)] })} /></label>}
+      {mixed ? <p className="text-sm leading-6 text-violet-100">当前按模块混合精度<br />{model.id === 'qwen3-8b' ? 'Dense MLP 可选精度' : 'Router FP32 为默认，可逐项覆盖'} · 权重与 scale 合计<br /><span className="text-xs text-white/60">使用上方模块默认与逐权重选择器</span></p> : <label className="text-sm text-white/75">统一假定位宽：{bits}-bit<input className="mt-3 block w-full accent-violet-200" aria-label="Rank 实验权重位宽" type="range" min={0} max={precisions.length - 1} step={1} value={precisions.indexOf(bits)} aria-valuetext={`${bits}-bit`} onChange={(event) => onChange({ bits: precisions[Number(event.target.value)] })} /></label>}
     </div>
     {model.execution.expertParallel ? <div className="mt-4 rounded-xl border border-violet-200/20 p-3">
       {/* Recreate when bounds change: native clamping can leave React's range value tracker stale. */}
@@ -89,8 +90,8 @@ export default function ModelRankWorkbench({ model, layer, scenario, nodeId, bit
     </details>)}</div>
     {!data.weights.length && <p className="mt-3 text-sm text-white/65">该模块没有图示权重；零权重载荷不等于零运行时内存。</p>}
     {!mixed && <p className="mt-4 text-sm leading-6 text-amber-100/85">当前范围：EP={ep}、PP=1、独立 DP，无 DPA。本面板、Decoder 权重账本与结构图模块详情共用当前 EP 布局。Attention TP 不变，因此 EP 不改变每卡缓存。上方统一位宽只改变图示权重的理论载荷，逻辑 Shape 不变；不含 scale、zero-point、对齐、通信、激活和缓存。已核对的 routed 模块另提供专家加载对照，单独核算 payload 与 scale；不替换这份理论总账，也不是整模部署支持承诺。</p>}
-    {mixed && <p className="mt-3 text-sm leading-6 text-violet-100">当前混合方案已替代统一位宽：上方总量包含所选格式的 payload、weight scale 和静态 input scale；未包含运行时额外内存。EP 与 DP 口径不变。</p>}
-    {expert && mixed?.experts === 'w4afp8' && <W4RuntimeMetadata experts={expert.localExperts} cards={scenario.tp * replicas} />}
+    {mixed && <p className="mt-3 text-sm leading-6 text-violet-100">当前混合方案已替代统一位宽：上方总量包含所选格式的 payload、weight scale、global scale 和静态 input scale；未包含运行时额外内存。EP 与 DP 口径不变。</p>}
+    {expert && mixed?.experts === 'w4afp8' && !hasRoutedOverrides(mixed) && <W4RuntimeMetadata experts={expert.localExperts} cards={scenario.tp * replicas} />}
     {expert && !mixed && <ExpertPackingLab model={model} experts={expert.localExperts} hidden={expert.hiddenSize} intermediate={expert.intermediate} tp={scenario.tp} ep={ep} replicas={replicas} rank={current.rank} format={expertFormat} onFormat={(expertFormat) => onChange({ expertFormat })} />}
     <a className="mt-3 inline-block text-sm text-cyan-100 hover:underline" href="https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/docs/docs/advanced_features/dp_dpa_smg_guide.mdx" target="_blank" rel="noreferrer">核对 SGLang 独立 DP 与 DPA 的区别 ↗</a>
     {model.execution.expertParallel && <a className="mt-3 block text-sm text-cyan-100 hover:underline" href="https://github.com/sgl-project/sglang/blob/96d91ef9266d2bebd8e8c09ef1f28b2d521631ff/python/sglang/srt/layers/moe/fused_moe_triton/layer.py" target="_blank" rel="noreferrer">核对 FusedMoE 的专家轴与中间维分片 ↗</a>}

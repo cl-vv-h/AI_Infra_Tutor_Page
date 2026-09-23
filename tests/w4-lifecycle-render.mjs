@@ -25,7 +25,7 @@ try {
     assert.ok(!html.includes('aria-label="Shared MLP 精度"'))
     assert.ok(html.includes('官方配置与 SGLang 普通 Router 是 BF16'))
     assert.ok(html.includes('无 Dense/Shared MLP 或 correction bias'))
-    assert.ok(html.includes('格式对齐与加载边界'))
+    assert.ok(html.includes('格式、scale 与统计边界'))
     assert.ok(html.includes(`[${128 / ep}, 2 × ${768 / (tp / ep)}, 2048]`))
     assert.equal(html.includes('已恢复 routed BF16'), invalid)
     assert.equal(html.includes('aria-label="W4A8 权重阶段"'), experts === 'w4afp8' && !invalid)

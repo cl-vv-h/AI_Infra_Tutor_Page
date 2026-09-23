@@ -19,7 +19,7 @@ test('Qwen3 MoE independently reconciles 48 layers, resident experts, FP32 scena
     const norm = 8704
     const baseline = decoderWeightBudget(model, 0, tp, 16, ep)
     assert.equal(baseline.allLayersBytes, 48 * (attention + norm + 524288 + 1207959552 / tp))
-    for (const experts of availableMixedExperts(model.id, tp, ep)) for (const processed of [false, true]) {
+    for (const experts of availableMixedExperts(model.id, tp, ep).filter(f => ['bf16', 'fp8', 'mxfp4', 'w4afp8'].includes(f))) for (const processed of [false, true]) {
       const policy = { ...defaultMixedPrecision, experts, ...(processed ? { w4Stage: 'processed' } : {}) }
       const routed = experts === 'bf16' ? 1207959552 / tp : experts === 'fp8' ? 604127232 / tp : experts === 'mxfp4' ? 320864256 / tp : processed ? 311427072 / tp + 8 : 320864256 / tp + 768 / ep
       const budget = decoderWeightBudget(model, 47, tp, 4, ep, policy)
@@ -271,7 +271,7 @@ test('mixed settings roundtrip independently; unsupported models and unknown for
   assert.deepEqual(parseExplorer(explorerParams(state), model).state, state)
   assert.deepEqual(selectExplorerLayer(model, state, 0).mixed, mixed)
   assert.equal(explorerParams({ ...state, mixed: undefined }).has('precision'), false)
-  const invalid = parseExplorer(new URLSearchParams('precision=mixed&mlp=mxfp4&shared=oops&experts=awq'), model)
+  const invalid = parseExplorer(new URLSearchParams('precision=mixed&mlp=unknown&shared=oops&experts=awq'), model)
   assert.deepEqual(invalid.state.mixed, defaultMixedPrecision)
   assert.equal(invalid.notices.length, 3)
   const llama = getModelArchitecture('llama-3-1-8b')

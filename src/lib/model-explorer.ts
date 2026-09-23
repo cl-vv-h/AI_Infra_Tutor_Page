@@ -7,6 +7,7 @@ import type { ReplicaSize } from './model-ranks.ts'
 import { defaultCacheBudgetGiB, parseCacheBudget } from './cache-capacity.ts'
 import { availableExpertFormats, expertFormats } from './expert-packing.ts'
 import type { ExpertFormat } from './expert-packing.ts'
+import { readWeightOverrides, writeWeightOverrides } from './weight-precision-policy.ts'
 import { matrixPrecisions, expertPrecisions, supportsMixedPrecision, availableMixedExperts } from './mixed-precision.ts'
 import type { MixedPrecision } from './mixed-precision.ts'
 import { readW4Stage } from './w4-lifecycle.ts'
@@ -105,10 +106,11 @@ export function parseExplorer(params: URLSearchParams, model: ModelArchitecture)
         if (state.mixed.mlp !== 'bf16' || state.mixed.shared !== 'bf16') notices.push('Qwen3-30B-A3B 没有 Dense 或 Shared MLP，已清除不适用的精度。')
         state.mixed = { ...state.mixed, mlp: 'bf16', shared: 'bf16' }
         if (!availableMixedExperts(model.id, tp, ep).includes(state.mixed.experts)) {
-          notices.push(`当前 MoE-TP=${tp / ep}，专家中间维 ${768 / (tp / ep)} 不满足 FP8/W4A8 的 128 对齐，已恢复 routed BF16；可增大 EP 后重新选择。`)
+          notices.push(`当前 MoE-TP=${tp / ep}，专家中间维 ${768 / (tp / ep)} 不满足 FP8 block / INT4 / W4A8 的 128 对齐，已恢复 routed BF16；可增大 EP 后重新选择。`)
           state.mixed = { mlp: 'bf16', shared: 'bf16', experts: 'bf16' }
         }
       }
+      state.mixed = readWeightOverrides(params, model, tp, ep, state.mixed, notices)
     } else notices.push('该模型或链接尚不支持此混合精度方案，已恢复统一位宽。')
   }
   if (requestedPacking !== null) {
@@ -130,6 +132,7 @@ export function explorerParams(state: ExplorerState) {
     result.set('precision', 'mixed')
     for (const key of ['mlp', 'shared', 'experts'] as const) result.set(key, state.mixed[key])
     if (state.mixed.w4Stage) result.set('w4stage', state.mixed.w4Stage)
+    writeWeightOverrides(result, state.mixed)
   }
   if (state.nativeStage === 'processed') result.set('native', 'processed')
   return result

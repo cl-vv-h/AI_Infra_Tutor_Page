@@ -292,8 +292,8 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
           section?.focus({ preventScroll: true })
         }} className="min-h-11 rounded-xl border border-white/15 px-3 py-2 text-left text-sm text-cyan-100 hover:border-cyan-200/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-200">{label}</button>)}</nav>
         {model.id === 'kimi-k3' && <KimiWeightAudit model={model} tp={scenario.tp} ep={state.ep ?? 1} replicas={state.replicas ?? 1} rank={state.rank ?? 0} stage={state.nativeStage ?? 'initial'} onStage={stage => update({ nativeStage: stage === 'processed' ? stage : undefined })} />}
-        {supportsMixedPrecision(model.id) && <MixedPrecisionControls value={state.mixed} hasDense={model.execution.denseLayers > 0} denseOnly={model.id === 'qwen3-8b'} modelId={model.id} tp={effectiveTp} ep={state.ep ?? 1} onChange={(mixed) => update({ mixed }, true)} />}
-        {model.id === 'qwen3-8b' && state.mixed && <QwenDenseLayout tp={effectiveTp} policy={state.mixed} />}
+        {supportsMixedPrecision(model.id) && <MixedPrecisionControls value={state.mixed} hasDense={model.execution.denseLayers > 0} denseOnly={model.id === 'qwen3-8b'} modelId={model.id} tp={effectiveTp} ep={state.ep ?? 1} layer={effectiveLayer} onChange={(mixed) => update({ mixed }, true)} />}
+        {model.id === 'qwen3-8b' && state.mixed && <QwenDenseLayout tp={effectiveTp} layer={effectiveLayer} policy={state.mixed} />}
         <ModelRankWorkbench model={model} layer={effectiveLayer} scenario={scenario} nodeId={selected.id} bits={state.weightBits ?? 16} replicas={state.replicas ?? 1} rank={state.rank ?? 0} ep={state.ep ?? 1} expertFormat={state.expertFormat} mixed={state.mixed} onChange={(next) => update({
           ...(next.tp !== undefined ? { scenario: { ...scenario, tp: next.tp } } : {}),
           ...(next.replicas !== undefined ? { replicas: next.replicas } : {}),

@@ -54,7 +54,7 @@ export function rankModule(model: ModelArchitecture, layer: number, nodeId: stri
     const { name, note, shape } = formatWeight(weight, model, scenario, ep)
     const local = weightElements(weight, model, scenario.tp, ep)
     const unique = weightElements(weight, model, 1)
-    const storage = mixed ? mixedWeightStorage({ ...weight, name, shape }, nodeId, mixed) : undefined
+    const storage = mixed ? mixedWeightStorage({ ...weight, name, shape }, nodeId, mixed, layer) : undefined
     return { name, note,
       routedExpert: weight.routedExpert ?? false, copies: weight.multiplicity ?? 1, shape,
       unshardedShape: formatShape(weight.shape, model, { ...scenario, tp: 1 }),
@@ -62,7 +62,7 @@ export function rankModule(model: ModelArchitecture, layer: number, nodeId: stri
   })
   const complete = weights.every((weight) => weight.local !== null && weight.unique !== null)
   const localBytes = complete ? weights.reduce((sum, weight) => sum + weight.bytes!, 0) : null
-  const uniqueBytes = complete ? node.weights.reduce((sum, weight, index) => sum + (mixed ? mixedWeightStorage(formatWeight(weight, model, { ...scenario, tp: 1 }, 1), nodeId, mixed).bytes : weights[index].unique! * bits / 8), 0) : null
+  const uniqueBytes = complete ? node.weights.reduce((sum, weight, index) => sum + (mixed ? mixedWeightStorage(formatWeight(weight, model, { ...scenario, tp: 1 }, 1), nodeId, mixed, layer).bytes : weights[index].unique! * bits / 8), 0) : null
   const metadata = model.execution.expertParallel
   const hasExperts = weights.some((weight) => weight.routedExpert)
   const input = formatShape(node.inputShape, model, scenario)
