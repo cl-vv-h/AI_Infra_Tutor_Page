@@ -40,7 +40,7 @@ function cacheLabel(model: ModelDirectoryEntry) {
 function cacheNote(model: ModelDirectoryEntry, tp: TensorParallelSize) {
   if (isV41Entry(model)) return '主 KV 与 Index K 只有 Layer 2/8/14/20 四个 owner，40 层各有 SWA 窗口；另计三个 C2 FP32 增量状态。每卡复制缓存，不除 world。重算 Top-k 位置表不新增 Index K 历史；Top-512 不限制已存记录数。'
   const cache = model.execution.cache
-  if (cache.kind === 'kda-mla') return cache.indexWidth ? 'KDA 矩阵 / 卷积状态按 head 切分；DSA 的 512 维完整 latent、池化 Index K 和 BF16 尾部按 rank 复制。压缩索引不压缩主历史，池展开回原始 token，最多 Top-2048 + 3 tail。' : 'KDA 矩阵 / 卷积按 head 切分；MLA 的 512 latent + 64 未旋转共享 K 各 rank 复制。没有 DSA 索引；临时 AttnRes 深度 bank 不计入持久缓存预算。'
+  if (cache.kind === 'kda-mla') return cache.indexWidth ? 'KDA 矩阵 / 卷积状态按 head 切分；DSA 的 512 维完整 latent、池化 Index K 和 BF16 尾部按 rank 复制。压缩索引不压缩主历史，池展开回原始 token，最多 Top-2048 + 3 tail。' : 'KDA 矩阵 / 卷积按 head 切分；MLA 的 512 latent + 64 未旋转共享 K 各 rank 复制。没有 DSA 索引；AttnRes 跨层残差快照缓冲区仅在本次前向计算中有效，不计入持久缓存预算。'
   if (cache.kind === 'compressed') return '每卡复制单份共享 KV：原始滑窗 + floor(S/r) 压缩历史，另计 C4 Index K 和参考实现 FP32 compressor 状态。Top-512 只限制读取，不限制已存记录数；实际量化布局和环形状态可能不同。'
   if (cache.kind === 'gqa' && cache.layout === 'replicated') return `汇集式 Attention TP：权重分片，但每卡缓存完整 ${model.dimensions.kvHeads} 个 KV heads，KV 不除以 TP。按 Transformers v4.57.1 参考路径，不代表所有引擎。`
   if (cache.kind === 'mla') return `采用 latent-cache 路径：${cache.latentWidth} 维压缩 KV + ${cache.ropeWidth} 维 RoPE 在每个 TP rank 复制。${cache.indexWidth ? `另计每层 ${cache.indexWidth} 维 Index K 全历史预留；Top-k 只减少读取，不缩短 S。` : ''}`
@@ -92,7 +92,7 @@ export default function ModelCompare() {
     { label: 'Decoder 层数', values: models.map((model) => String(model.dimensions.layers)) },
     { label: 'Dense / MoE 层数', values: models.map((model) => `${model.execution.denseLayers} / ${model.dimensions.layers - model.execution.denseLayers}`) },
     { label: 'Hidden width', values: models.map((model) => integer(model.dimensions.hiddenSize)) },
-    { label: '主干 residual streams', values: models.map((model) => isV41Entry(model) ? '4 路 · Single-Pass mHC' : model.execution.residualLayout === 'attn-res' ? `块内 prefix + 深度快照 · 每 ${model.execution.residualBlockSize} 层写入` : model.execution.residualLayout === 'mhc' ? `${model.execution.residualStreams} 路 · mHC Pre / Post` : '1 路') },
+    { label: '主干 residual streams', values: models.map((model) => isV41Entry(model) ? '4 路 · Single-Pass mHC' : model.execution.residualLayout === 'attn-res' ? `块内累加状态 + 跨层残差快照 · 每 ${model.execution.residualBlockSize} 层写入` : model.execution.residualLayout === 'mhc' ? `${model.execution.residualStreams} 路 · mHC Pre / Post` : '1 路') },
     { label: '标准 Attention Q heads', values: models.map((model) => String(model.dimensions.attentionHeads)) },
     { label: '注意力 KV 表示', values: models.map((model) => isV41Entry(model) ? '512 维 K=V；Index K 128 维，跨层共享 owner' : model.execution.cache.kind === 'kda-mla' ? `${model.execution.cache.latentWidth} latent${model.execution.cache.sharedKeyWidth ? ` + ${model.execution.cache.sharedKeyWidth} 未旋转共享 K` : ''} · NoPE；KDA 用定长矩阵` : model.execution.cache.kind === 'compressed' ? `${model.execution.cache.kvWidth} 维 K=V 共享表示；不乘二` : model.execution.cache.kind === 'mla' ? `${model.execution.cache.latentWidth} latent + ${model.execution.cache.ropeWidth} RoPE` : `${model.dimensions.kvHeads} KV heads × ${model.dimensions.headDim} head dim × K/V`) },
     { label: 'KV / 循环状态层数', values: models.map((model) => { if (isV41Entry(model)) return '40 层 SWA + 4 个全局 owner / 0'; const { kvLayers, recurrentLayers } = cacheEstimate(model, defaultComparisonScenario); return `${kvLayers} / ${recurrentLayers}` }) },

@@ -146,9 +146,9 @@ export function decoderNodes(model: ModelArchitecture, layer: number): Architect
     const read = (id: string, count: number) => ({ ...get(id), subtitle: `${count} 个候选向量 · 同一 token 的深度方向聚合`, inputShape: `[N, ${count}, ${model.dimensions.hiddenSize}]` })
     return [
       { ...read('attn-res-read', stage.attentionCandidates), ...(layer === 0 ? { subtitle: 'Layer 0：无旧快照，直接使用 embedding' } : {}) },
-      { ...get('attn-res-write'), subtitle: stage.write ? `写入 Bank ${stage.bankBefore}，清空当前 prefix` : `非边界层：保留 ${stage.bankBefore} 个快照，不写入`, outputShape: `[N, ${stage.bankAfter}, ${model.dimensions.hiddenSize}] bank` },
+      { ...get('attn-res-write'), subtitle: stage.write ? `写入快照槽位 ${stage.bankBefore}，重置块内累加状态` : `非边界层：保留 ${stage.bankBefore} 个快照，不写入`, outputShape: `[N, ${stage.bankAfter}, ${model.dimensions.hiddenSize}] bank` },
       get('attention-norm'), get(attentionKind(model, layer)),
-      { ...get('attn-res-add'), subtitle: stage.write ? '新块：prefix = Attention 输出，不再加旧块' : '块内：prefix += Attention 输出' },
+      { ...get('attn-res-add'), subtitle: stage.write ? '新块：以 Attention 输出初始化累加状态' : '块内：将 Attention 输出加入累加状态' },
       read('ffn-res-read', stage.ffnCandidates), get('ffn-norm'), ffn, get('ffn-res-add'),
     ]
   }

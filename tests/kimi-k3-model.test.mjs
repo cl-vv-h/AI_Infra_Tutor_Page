@@ -41,7 +41,7 @@ test('AttnRes reads before writing at boundaries and carries raw prefix, not the
   const head = model.nodes.find(n => n.id === 'lm-head')
   assert.equal(head.inputShape, '[N, 9, 7168]')
   assert.equal(head.weights.length, 4)
-  assert.match(model.nodes.find(n => n.id === 'ffn-res-add').description, /不替换这份累计状态/)
+  assert.match(model.nodes.find(n => n.id === 'ffn-res-add').description, /不替换原始累加状态/)
 })
 
 test('NoPE keeps 64 shared K channels and no sparse index; only KDA cache shards with TP', () => {
@@ -93,6 +93,6 @@ test('vision temporal pooling and residual navigation retain exact model conditi
     assert.equal(next.nodeId, 'attn-res-read')
     assert.deepEqual(parseExplorer(explorerParams(next), model).notices, [])
     assert.deepEqual(next.scenario, state.scenario)
-    assert.match(learningStops(model, layer).find(s => s.node.id === 'attn-res-read').focus, /冻结 bank/)
+    assert.match(learningStops(model, layer).find(s => s.node.id === 'attn-res-read').focus, /已保存快照/)
   }
 })
