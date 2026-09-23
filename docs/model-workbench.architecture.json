@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": { "title": "模型工作台 · 设计方案", "locale": "zh-CN", "quality_profile": "showcase" },
+  "components": [
+    { "id": "configuration", "type": "frontend", "label": "实验配置", "sublabel": "模型 · 层号 · 并行", "pos": [80, 80], "size": [220, 84] },
+    { "id": "diagram", "type": "backend", "label": "结构图", "sublabel": "核心主路 · 点击展开", "pos": [80, 230], "size": [220, 84] },
+    { "id": "cache", "type": "backend", "label": "缓存容量", "sublabel": "请求数 · 上下文 · 格式", "pos": [430, 230], "size": [220, 84] },
+    { "id": "weights", "type": "backend", "label": "权重清单", "sublabel": "模块默认 · 逐权重覆盖", "pos": [780, 230], "size": [220, 84] },
+    { "id": "results", "type": "database", "label": "实时权重账本", "sublabel": "当前卡 · PP 分段 · 全部署", "pos": [780, 390], "size": [220, 84] }
+  ],
+  "connections": [
+    { "from": "configuration", "to": "diagram", "label": "选择视图", "labelAt": [190, 197] },
+    { "from": "configuration", "to": "cache", "label": "缓存条件" },
+    { "from": "configuration", "to": "weights", "label": "并行条件" },
+    { "from": "weights", "to": "results", "label": "实时重算", "labelAt": [890, 352] }
+  ]
+}

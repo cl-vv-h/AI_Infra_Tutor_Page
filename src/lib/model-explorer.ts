@@ -11,6 +11,7 @@ import { readWeightOverrides, writeWeightOverrides } from './weight-precision-po
 import { matrixPrecisions, expertPrecisions, supportsMixedPrecision, availableMixedExperts } from './mixed-precision.ts'
 import type { MixedPrecision } from './mixed-precision.ts'
 import { readW4Stage } from './w4-lifecycle.ts'
+import { attentionDpSizes } from './weight-deployment.ts'
 
 export const explorerViews = [
   { id: 'diagram', label: '结构图' },
@@ -38,6 +39,9 @@ export interface ExplorerState {
   expertFormat?: ExpertFormat
   mixed?: MixedPrecision
   nativeStage?: 'processed'
+  pp?: number
+  ppStage?: number
+  attentionDp?: TensorParallelSize
 }
 
 export function explorerNodes(model: ModelArchitecture, layer: number) {
@@ -69,6 +73,9 @@ export function parseExplorer(params: URLSearchParams, model: ModelArchitecture)
   const rank = integer('rank', 0, (n) => n >= 0 && n < tp * replicas, `0–${tp * replicas - 1}`)
   const allowedEp = expertParallelSizes(model, tp)
   const ep = integer('ep', 1, (n) => allowedEp.includes(n as ReplicaSize), allowedEp.join('/')) as ReplicaSize
+  const pp = integer('pp', 1, n => n >= 1 && n <= Math.min(16, model.dimensions.layers), `1–${Math.min(16, model.dimensions.layers)}`)
+  const ppStage = integer('stage', 0, n => n >= 0 && n < pp, `0–${pp - 1}`)
+  const attentionDp = integer('adp', 1, n => attentionDpSizes(model, tp).includes(n as TensorParallelSize), attentionDpSizes(model, tp).join('/')) as TensorParallelSize
   const requestedBudget = params.get('budget')
   const budget = requestedBudget === null ? defaultCacheBudgetGiB : parseCacheBudget(requestedBudget)
   if (budget === null) notices.push('budget 参数无效（0–1024 GiB，最多三位小数），已恢复为 8 GiB。')
@@ -84,6 +91,9 @@ export function parseExplorer(params: URLSearchParams, model: ModelArchitecture)
   if (requestedView !== null && !explorerViews.some((item) => item.id === requestedView)) notices.push('未知工作区，已返回结构图。')
   const state: ExplorerState = { layer, nodeId, scenario: { phase, batch, sequence, tp, cacheBytes }, ...(ep !== 1 ? { ep } : {}), ...(replicas !== 1 ? { replicas } : {}), ...(rank !== 0 ? { rank } : {}), ...(weightBits !== 16 ? { weightBits } : {}), ...(cacheBudgetGiB !== defaultCacheBudgetGiB ? { cacheBudgetGiB } : {}), ...(view !== 'diagram' ? { view } : {}) }
   const requestedPacking = params.get('packing')
+  if (pp !== 1) state.pp = pp
+  if (ppStage !== 0) state.ppStage = ppStage
+  if (attentionDp !== 1) state.attentionDp = attentionDp
   if (params.has('native')) {
     if (model.id === 'kimi-k3' && params.get('native') === 'processed') state.nativeStage = 'processed'
     else if (params.get('native') !== 'initial' || model.id !== 'kimi-k3') notices.push('原生加载阶段不在本模型的核对范围内，已恢复初始参数。')
@@ -110,7 +120,7 @@ export function parseExplorer(params: URLSearchParams, model: ModelArchitecture)
           state.mixed = { mlp: 'bf16', shared: 'bf16', experts: 'bf16' }
         }
       }
-      state.mixed = readWeightOverrides(params, model, tp, ep, state.mixed, notices)
+      state.mixed = readWeightOverrides(params, model, tp, ep, state.mixed, notices, tp / attentionDp as TensorParallelSize)
     } else notices.push('该模型或链接尚不支持此混合精度方案，已恢复统一位宽。')
   }
   if (requestedPacking !== null) {
@@ -135,6 +145,10 @@ export function explorerParams(state: ExplorerState) {
     writeWeightOverrides(result, state.mixed)
   }
   if (state.nativeStage === 'processed') result.set('native', 'processed')
+  const pp = Number.isInteger(state.pp) && state.pp! >= 1 && state.pp! <= 16 ? state.pp! : 1
+  if (pp > 1) result.set('pp', String(pp))
+  if (state.ppStage && Number.isInteger(state.ppStage) && state.ppStage > 0) result.set('stage', String(Math.min(state.ppStage, pp - 1)))
+  if (state.attentionDp && state.attentionDp > 1) result.set('adp', String(Math.min(tp, state.attentionDp)))
   return result
 }
 

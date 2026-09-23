@@ -23,7 +23,7 @@ try {
     assert.equal((picker.match(/<option /g) ?? []).length, replicas)
     assert.ok(picker.includes(`<option value="${replica}" selected="">`))
     assert.ok(html.includes(`全部 ${tp * replicas} 个 ranks 都可选择`))
-    assert.ok(html.includes('aria-label="权重阅读顺序"'))
+    assert.ok(html.includes('aria-label="实时权重结果"'))
     assert.ok(html.includes('aria-label="模块边界逻辑载荷"'))
     assert.ok(html.includes('逻辑元素与参考载荷'))
     assert.ok(html.includes('不从名称猜 dtype 或份数'))
@@ -34,11 +34,12 @@ try {
       assert.equal((html.match(/aria-label="Attention Rank /g) ?? []).length, tp)
     }
     for (const section of ['rank', 'decoder', ...(id === 'kimi-k3' ? ['checkpoint'] : [])]) assert.match(html, new RegExp(`id="weight-${section}-section" tabindex="-1"`))
-    assert.equal(html.includes('3 · 官方文件 / 原生加载对账'), id === 'kimi-k3')
+    assert.equal(html.includes('独立参考：官方 checkpoint 与原生加载对账'), id === 'kimi-k3')
     const budget = decoderWeightBudget(model, 3, tp, 16)
-    for (const bytes of [budget.bytes, budget.allLayersBytes, budget.allLayersBytes * tp * replicas]) assert.ok(html.includes(`${bytes.toLocaleString('en-US')} B`))
+    assert.ok(html.includes(`data-testid="weight-current" data-bytes="${budget.allLayersBytes}"`))
+    assert.ok(html.includes(`data-testid="weight-fleet" data-bytes="${budget.allLayersBytes * tp * replicas}"`))
     assert.ok(html.includes('不是整个 Decoder 或完整模型'))
-    assert.ok(html.includes('这是去重逻辑参数元素数，不是单卡字节'))
+    assert.ok(html.includes('全部署 = 各阶段每卡之和 × TP × 独立 DP'))
     if (id === 'kimi-k3') {
       const disclosure = html.match(/<details[^>]*aria-label="Kimi 文件差额与审计说明"[^>]*>/)[0]
       assert.ok(!disclosure.includes('open='))

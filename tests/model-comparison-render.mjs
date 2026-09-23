@@ -64,9 +64,9 @@ try {
       const expected = `[${experts / ep}, 2 × ${intermediate / (8 / ep)}, ${width}]`
       // Desktop Inspector, modal Inspector, rank panel and ledger all render the same local tensor.
       assert.ok(html.split(expected).length - 1 >= 4, `${id}/${ep}/${view}: missing shared EP shape`)
-      assert.ok(html.includes(`TP=8、EP=${ep}、MoE-TP=${8 / ep}`))
+      assert.ok(html.includes(`MoE-TP = ${8 / ep}`))
       assert.ok(html.includes(`EP = ${ep}，MoE-TP = ${8 / ep}`))
-      assert.ok(html.includes(`当前 TP=8、EP=${ep}、独立副本=2`))
+      assert.ok(html.includes(`TP 8 · EP ${ep} · PP 1 · Attention DP 1 · 独立 DP 2`))
       if (id === 'kimi-k3') {
         assert.ok(html.includes(`单专家激活 [T_e, ${3072 * ep / 8}]`))
         assert.ok(html.includes('本卡 shared 激活 [4, 768]'))
@@ -156,7 +156,8 @@ try {
       }
       assert.ok(html.indexOf('aria-label="交互模型结构图"') < html.indexOf('id="workspace-panel-cache"'))
       assert.match(html, /B 3 · S 2,048 · 缓存 8-bit/)
-      assert.match(html, /Layer 0 · 每卡 .* · 4-bit 理论载荷/)
+      assert.match(html, /Layer 0 · 模块占用/)
+      assert.match(html, /4-bit · 不含量化 scale/)
       assert.match(html, /value="0.5"/)
       assert.match(html, /<section aria-label="Decoder 权重账本"/)
       assert.match(html, /展开完整层分布/)
@@ -173,12 +174,12 @@ try {
       const layer = model.dimensions.layers - 1
       const html = renderExplorer(`/models/${model.id}?layer=${layer}&tp=4&wbits=${bits}`)
       const budget = decoderWeightBudget(model, layer, 4, bits)
-      assert.ok(html.includes(`Layer ${layer} · 每卡 ${formatBytes(budget.bytes)} · ${bits}-bit 理论载荷`))
-      assert.ok(html.includes(`全部 ${model.dimensions.layers} 层每卡 · 图示权重`))
+      assert.ok(html.includes(`Layer ${layer} · 模块占用`))
+      assert.ok(html.includes(`${formatBytes(budget.bytes)} / 卡`))
       assert.ok(html.includes(formatBytes(budget.allLayersBytes)))
-      assert.ok(html.includes('不是完整 checkpoint，也不是可部署单卡显存'))
-      assert.ok(html.includes('href="/category/quantization"'))
-      assert.equal((html.match(/aria-label="定位权重模块：/g) ?? []).length, budget.rows.length)
+      assert.ok(html.includes('非整卡显存'))
+      assert.ok(html.includes('统计边界与公式'))
+      assert.equal((html.match(/data-weight-module=/g) ?? []).length, budget.rows.length)
       assert.doesNotMatch(html, /未计算|尚未提供可计算|NaN|undefined/)
     }
   }

@@ -13,6 +13,21 @@ let checks = 0
 try {
   for (const width of [360, 390, 768, 1440]) {
     const page = await browser.newPage({ viewport: { width, height: 960 }, reducedMotion: 'reduce' })
+    // This suite exercises the retained advanced tools. Compact defaults and
+    // native disclosure interactions have their own workbench browser suite.
+    const revealAdvanced = async () => {
+      const match = new URL(page.url()).hash.match(/^#\/models\/([^/?]+)(?:\?|$)/)
+      if (match && !['knowledge', 'compare', 'deepseek-v4-1-flash'].includes(match[1])) await expect(page.getByLabel('切换模型', { exact: true })).toHaveValue(match[1])
+      await page.evaluate(() => {
+      for (const id of ['model-full-diagram', 'model-cache-details', 'model-rank-details', 'model-native-details']) {
+        const details = document.getElementById(id)
+        if (details) details.open = true
+      }
+      })
+    }
+    const originalGoto = page.goto.bind(page), originalReload = page.reload.bind(page)
+    page.goto = async (...args) => { const response = await originalGoto(...args); await revealAdvanced(); return response }
+    page.reload = async (...args) => { const response = await originalReload(...args); await revealAdvanced(); return response }
     page.setDefaultTimeout(10000)
     const errors = []
     page.on('pageerror', error => errors.push(error.message))
@@ -428,21 +443,22 @@ try {
     await expect(ownership).toContainText('分片组：R6 / R7')
     await expect(expertWeight).toContainText('[224, 2 × 1536, 3584]')
     const epLedger = page.getByRole('region', { name: 'Decoder 权重账本', exact: true })
-    await expect(epLedger).toContainText('TP=8、EP=4、MoE-TP=2')
-    const moeRow = epLedger.locator('div.rounded-xl').filter({ has: page.getByRole('button', { name: /定位权重模块：.*LatentMoE/ }) })
-    await moeRow.locator('summary').click()
+    await expect(page.getByLabel('Expert EP', { exact: true })).toHaveValue('4')
+    const moeRow = epLedger.locator('[data-weight-module="moe"]')
+    await moeRow.locator(':scope > summary').click()
     await expect(moeRow).toContainText('[224, 2 × 1536, 3584]')
-    await epLedger.getByRole('button', { name: /定位权重模块：.*LatentMoE/ }).click()
-    const epInspector = width < 1280 ? page.getByRole('dialog', { name: '模块详情' }) : page.locator('aside').filter({ hasText: 'INSPECTOR' })
+    await page.getByRole('tab', { name: '结构图', exact: true }).click()
+    await page.getByRole('region', { name: '模型核心结构', exact: true }).getByRole('button').filter({ hasText: 'LatentMoE' }).click()
+    const epInspector = page.getByRole('dialog', { name: '模块详情' })
     await expect(epInspector).toContainText('[224, 2 × 1536, 3584]')
     await expect(epInspector).not.toContainText('[896, 2 × 384, 3584]')
     const inspectedExpertShape = epInspector.getByText('[224, 2 × 1536, 3584]', { exact: true })
     await inspectedExpertShape.scrollIntoViewIfNeeded()
     await expect(inspectedExpertShape).toBeInViewport({ ratio: 1 })
     if (process.env.MODEL_QA_SCREENSHOTS) await page.screenshot({ path: join(process.env.MODEL_QA_SCREENSHOTS, `ep-shared-inspector-${width}.png`) })
-    if (width < 1280) await page.getByRole('button', { name: '关闭模块详情', exact: true }).click()
+    await page.getByRole('button', { name: '关闭模块详情', exact: true }).click()
     await page.getByRole('tab', { name: '缓存容量', exact: true }).click()
-    await expect(page.getByRole('tabpanel', { name: '缓存容量', exact: true })).toContainText('当前 TP=8、EP=4、独立副本=1')
+    await expect(page.getByRole('tabpanel', { name: '缓存容量', exact: true })).toContainText('基础缓存口径：TP 8')
     await page.getByRole('tab', { name: '权重清单', exact: true }).click()
     await fits('EP shared across diagram ledger and cache')
     await page.reload({ waitUntil: 'networkidle' })
@@ -762,7 +778,8 @@ try {
     await expect(page).not.toHaveURL(/precision=mixed/)
     await fits('DPA mixed reload and exit')
     await page.goto(`${base}#/models/qwen3-8b`, { waitUntil: 'networkidle' })
-    await page.getByRole('link', { name: /^打开 Qwen3-8B DP Attention 实验/ }).click()
+    await page.getByRole('tab', { name: '权重清单', exact: true }).click()
+    await page.getByRole('link', { name: '深入：Attention DP 请求分组与通信实验 ↗', exact: true }).click()
     await expect(page).toHaveURL(/models\/qwen3-8b\/dpa/)
     await expect(page.getByLabel('DPA ep', { exact: true })).toHaveCount(0)
     await expect(page.getByLabel('DPA layer', { exact: true })).toHaveAttribute('max', '35')
@@ -912,7 +929,7 @@ try {
     await expect(expertDetail).toContainText('Payload Shape [224, 6144, 1792]')
     await page.reload({ waitUntil: 'networkidle' })
     await expect(mixedControls.getByLabel('Shared MLP 精度', { exact: true })).toHaveValue('fp8')
-    await expect(page.getByRole('region', { name: 'Decoder 权重账本', exact: true })).toContainText('自定义混合格式（含 scale）')
+    await expect(page.getByLabel('实时权重结果', { exact: true })).toContainText('含 scale')
     const audit = page.getByRole('region', { name: 'Kimi 权重口径核对', exact: true })
     const auditBody = audit.getByLabel('Kimi 文件差额与审计说明', { exact: true })
     await expect(auditBody).not.toHaveAttribute('open', '')
@@ -1086,7 +1103,7 @@ try {
     await page.goto(`${base}#/models/kimi-k3?view=weights&node=moe&layer=3&tp=8&ep=8&replicas=8&rank=63&precision=mixed&experts=w4afp8`, { waitUntil: 'networkidle' })
     const compactRank = page.getByRole('region', { name: '逐 rank 并行实验', exact: true })
     const replicaPicker = compactRank.getByLabel('观察 DP 副本', { exact: true })
-    const compactScope = page.getByLabel('Decoder 分范围字节汇总', { exact: true })
+    const compactScope = page.getByLabel('实时权重结果', { exact: true })
     const frozenScope = await compactScope.textContent()
     await expect(replicaPicker.locator('option')).toHaveCount(8)
     await expect(compactRank.getByRole('button', { name: /^观察 Rank / })).toHaveCount(8)
@@ -1114,12 +1131,13 @@ try {
       await page.screenshot({ path: join(process.env.MODEL_QA_SCREENSHOTS, `weight-reading-ranks-${width}.png`), animations: 'disabled' })
     }
     const readingUrl = page.url()
-    const readingNav = page.getByRole('navigation', { name: '权重阅读顺序', exact: true })
-    for (const [label, id] of [['1 · 当前 rank / 当前模块', 'weight-rank-section'], ['2 · 整个 Decoder / 所有副本', 'weight-decoder-section'], ['3 · 官方文件 / 原生加载对账', 'weight-checkpoint-section']]) {
-      await readingNav.getByRole('button', { name: label, exact: true }).focus()
+    for (const id of ['model-rank-details', 'model-native-details']) {
+      const disclosure = page.locator(`#${id}`)
+      await disclosure.locator(':scope > summary').focus()
       await page.keyboard.press('Enter')
-      await expect(page.locator(`#${id}`)).toBeFocused()
-      await expect(page.locator(`#${id}`).getByRole('heading').first()).toBeInViewport()
+      await expect(disclosure).not.toHaveAttribute('open', '')
+      await page.keyboard.press('Enter')
+      await expect(disclosure).toHaveAttribute('open', '')
       await expect(page).toHaveURL(readingUrl)
     }
     await fits('weight scope keyboard navigation preserves hash route and numerical conditions')

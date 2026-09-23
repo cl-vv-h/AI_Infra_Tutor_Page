@@ -21,6 +21,8 @@
     "test:models:mixed": "node --experimental-strip-types --test tests/mixed-precision.test.mjs && node tests/w4-lifecycle-render.mjs",
     "test:models:precision": "node --experimental-strip-types --test tests/weight-precision.test.mjs && node tests/weight-precision-render.mjs",
     "test:models:precision:browser": "node tests/weight-precision-browser.mjs",
+    "test:models:deployment": "node --experimental-strip-types --test tests/weight-deployment.test.mjs",
+    "test:models:deployment:browser": "node tests/weight-deployment-browser.mjs",
     "test:models:browser": "node tests/model-browser.mjs",
     "test:models:checkpoint": "node --experimental-strip-types --test tests/kimi-checkpoint-audit.test.mjs tests/kimi-native-layout.test.mjs tests/kimi-native-postload.test.mjs && node tests/kimi-native-render.mjs",
     "test:models:knowledge": "node --experimental-strip-types --test tests/model-knowledge.test.mjs && node tests/model-knowledge-render.mjs",

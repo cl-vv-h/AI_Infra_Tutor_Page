@@ -1,10 +1,13 @@
-import type { ModelArchitecture, ModelWeight, TensorParallelSize } from '../types/model.ts'
+import type { ArchitectureNode, ModelArchitecture, ModelWeight, TensorParallelSize } from '../types/model.ts'
 import { decoderNodes, formatShape } from './model-lab.ts'
 import type { InferenceScenario } from './model-lab.ts'
 import { mixedWeightStorage, supportsMixedPrecision, validateMixedPrecision } from './mixed-precision.ts'
 import type { MixedPrecision } from './mixed-precision.ts'
 
 export type WeightBits = 4 | 8 | 16 | 32
+
+/** Attention projections use their request group's TP; FFN keeps stage-wide TP. */
+export const isAttentionWeightNode = (node: ArchitectureNode) => node.tone === 'attention'
 
 export function expertParallelSizes(model: ModelArchitecture, tp: number): TensorParallelSize[] {
   if (!model.supportedTp.includes(tp as TensorParallelSize)) return []
@@ -46,16 +49,19 @@ export function weightElements(weight: ModelWeight, model: ModelArchitecture, tp
 }
 
 /** Only the explicitly illustrated Decoder tensors, not a checkpoint inventory. */
-export function decoderWeightBudget(model: ModelArchitecture, layer: number, tp: TensorParallelSize, bits: WeightBits, ep: TensorParallelSize = 1, mixed?: MixedPrecision) {
+export function decoderWeightBudget(model: ModelArchitecture, layer: number, tp: TensorParallelSize, bits: WeightBits, ep: TensorParallelSize = 1, mixed?: MixedPrecision, attentionTp: TensorParallelSize = tp) {
   if (!Number.isInteger(layer) || layer < 0 || layer >= model.dimensions.layers || !model.supportedTp.includes(tp) || ![4, 8, 16, 32].includes(bits)) throw new Error('Invalid weight budget conditions')
+  if (!expertParallelSizes(model, tp).includes(ep) || !model.supportedTp.includes(attentionTp) || attentionTp > tp || tp % attentionTp) throw new Error('Invalid weight parallelism')
   if (mixed) {
     validateMixedPrecision(mixed)
     if (!supportsMixedPrecision(model.id)) throw new Error('Mixed policy not audited for this model')
   }
   const countLayer = (index: number) => decoderNodes(model, index).filter((node) => node.weights.length).map((node) => {
+    const localTp = isAttentionWeightNode(node) ? attentionTp : tp
+    const localEp = isAttentionWeightNode(node) ? 1 : ep
     const weights = node.weights.map((weight) => {
-      const formatted = formatWeight(weight, model, { phase: 'decode', batch: 1, sequence: 1024, tp, cacheBytes: 2 }, ep)
-      const local = weightElements(weight, model, tp, ep)
+      const formatted = formatWeight(weight, model, { phase: 'decode', batch: 1, sequence: 1024, tp: localTp, cacheBytes: 2 }, localEp)
+      const local = weightElements(weight, model, localTp, localEp)
       const storage = mixed ? mixedWeightStorage(formatted, node.id, mixed, index) : undefined
       return { ...formatted, copies: weight.multiplicity ?? 1, local, global: weightElements(weight, model, 1), storage, bytes: storage?.bytes ?? (local === null ? null : local * bits / 8) }
     })
@@ -71,5 +77,5 @@ export function decoderWeightBudget(model: ModelArchitecture, layer: number, tp:
   const global = complete ? rows.reduce((sum, row) => sum + row.global!, 0) : null
   const allLayersLocal = complete ? layers.flat().reduce((sum, row) => sum + row.local!, 0) : null
   const allLayersGlobal = complete ? layers.flat().reduce((sum, row) => sum + row.global!, 0) : null
-  return { rows, complete, local, global, bytes: local === null ? null : rows.reduce((sum, row) => sum + row.bytes!, 0), allLayersLocal, allLayersGlobal, allLayersBytes: allLayersLocal === null ? null : layers.flat().reduce((sum, row) => sum + row.bytes!, 0) }
+  return { rows, layers, complete, local, global, bytes: local === null ? null : rows.reduce((sum, row) => sum + row.bytes!, 0), allLayersLocal, allLayersGlobal, allLayersBytes: allLayersLocal === null ? null : layers.flat().reduce((sum, row) => sum + row.bytes!, 0) }
 }

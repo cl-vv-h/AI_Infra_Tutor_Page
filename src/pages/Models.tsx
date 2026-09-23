@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import ModelSectionNav from '@/components/ModelSectionNav'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
-import { ArrowDown, ArrowUpRight, BookOpen, Box, Braces, Check, Copy, Database, GitCompareArrows, Layers3, MousePointer2, X } from 'lucide-react'
+import { ArrowDown, ArrowUpRight, BookOpen, Box, Check, Copy, Database, GitCompareArrows, Layers3, X } from 'lucide-react'
 import { modelArchitectures } from '@/data/models'
 import { attentionKind, decoderGroups, formatShape, layerCacheNode, tokenCount } from '@/lib/model-lab'
 import type { InferenceScenario } from '@/lib/model-lab'
@@ -12,7 +12,9 @@ import { comparisonHref } from '@/lib/model-comparison'
 import { explorerHref, explorerParams, parseExplorer, selectExplorerLayer, selectExplorerNode } from '@/lib/model-explorer'
 import type { ExplorerState } from '@/lib/model-explorer'
 import ModelModuleFinder from '@/components/ModelModuleFinder'
-import ModelWeightBudget from '@/components/ModelWeightBudget'
+import WeightDeploymentWorkbench from '@/components/WeightDeploymentWorkbench'
+import CompactModelOverview from '@/components/CompactModelOverview'
+import CompactCacheWorkbench from '@/components/CompactCacheWorkbench'
 import ModelRankWorkbench from '@/components/ModelRankWorkbench'
 import CacheCapacityPlanner from '@/components/CacheCapacityPlanner'
 import ModelWorkspaceTabs from '@/components/ModelWorkspaceTabs'
@@ -21,9 +23,7 @@ import AttentionResidualWorkbench from '@/components/AttentionResidualWorkbench'
 import KimiLatentMoeFlow from '@/components/KimiLatentMoeFlow'
 import { formatWeight } from '@/lib/model-weights'
 import type { TensorParallelSize } from '@/types/model'
-import MixedPrecisionControls from '@/components/MixedPrecisionControls'
 import KimiWeightAudit from '@/components/KimiWeightAudit'
-import { supportsMixedPrecision } from '@/lib/mixed-precision'
 import QwenDenseLayout from '@/components/QwenDenseLayout'
 import { sortCatalog } from '@/lib/model-popularity'
 
@@ -75,6 +75,8 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
   const navigate = useNavigate()
   const [params, setParams] = useSearchParams()
   const { state, notices, nodes: visibleNodes } = parseExplorer(params, model)
+  const latestState = useRef(state)
+  useLayoutEffect(() => { latestState.current = state }, [state])
   const { layer: effectiveLayer, scenario } = state
   const { phase, tp: effectiveTp } = scenario
   const view = state.view ?? 'diagram'
@@ -100,6 +102,8 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
   useEffect(() => {
     if (!pendingLocate || pendingLocate.id !== state.nodeId || pendingLocate.layer !== effectiveLayer) return
     if (!dialog.current?.open) {
+      const fullDiagram = document.getElementById('model-full-diagram') as HTMLDetailsElement | null
+      if (fullDiagram) fullDiagram.open = true
       const target = document.getElementById(`model-node-${pendingLocate.id}`)
       target?.scrollIntoView({ block: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' })
       target?.focus({ preventScroll: true })
@@ -108,7 +112,9 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
   }, [pendingLocate, state.nodeId, effectiveLayer])
 
   function update(next: Partial<ExplorerState>, replace = false) {
-    const nextParams = explorerParams({ ...state, ...next })
+    const nextState = { ...latestState.current, ...next }
+    latestState.current = nextState
+    const nextParams = explorerParams(nextState)
     if (nextParams.toString() !== params.toString()) setParams(nextParams, { replace, preventScrollReset: true })
     setHoveredId(null)
   }
@@ -148,18 +154,17 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
   const flowLine = <div className="model-flow-line" aria-hidden="true"><span /></div>
   return <div className="model-lab-shell min-h-screen pb-20">
     <header className="border-b border-white/[0.08] bg-[#070b10]/60">
-      <div className="mx-auto flex max-w-[1600px] flex-wrap items-end justify-between gap-4 px-5 py-7 sm:px-8 lg:px-10">
-        <div><div className="flex items-center gap-2 font-mono text-xs tracking-[0.2em] text-cyan-200/70"><Braces className="h-4 w-4" /> MODEL ARCHITECTURE LAB</div>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white">{model.name} · 结构实验室</h1><Link to="/models" className="mt-3 inline-block text-sm text-cyan-100 hover:underline">← 浏览全部模型图解</Link></div>
-        <div className="flex flex-wrap items-center gap-4"><p className="flex items-center gap-2 text-sm text-white/60"><MousePointer2 className="h-4 w-4 text-cyan-200" /> 结构 · 张量 · 存储</p><Link to={comparisonHref(model.id, scenario)} className="inline-flex items-center gap-2 rounded-full border border-cyan-200/25 bg-cyan-200/5 px-4 py-2.5 text-sm text-cyan-100 transition hover:bg-cyan-200/10"><GitCompareArrows className="h-4 w-4" />对比当前模型</Link></div>
+      <div className="mx-auto flex max-w-[1600px] flex-wrap items-center justify-between gap-3 px-5 py-4 sm:px-8 lg:px-10">
+        <h1 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">{model.name} · 结构实验室</h1>
+        <Link to={comparisonHref(model.id, scenario)} className="inline-flex items-center gap-2 rounded-full border border-cyan-200/25 px-3 py-2 text-xs text-cyan-100 hover:bg-cyan-200/10"><GitCompareArrows className="h-4 w-4" />对比当前模型</Link>
       </div>
     </header>
 
-    <main className="mx-auto max-w-[1600px] px-5 py-6 sm:px-8 lg:px-10">
-      <ModelSectionNav />
-      <section className="rounded-3xl border border-white/10 bg-[#0b1119]/90 p-3" aria-label="模型与推理配置">
-        <div className="flex flex-wrap items-end gap-3 p-1" aria-label="选择模型">
-          <label className="flex w-full min-w-0 flex-col gap-2 text-sm text-white/65 sm:w-80">切换模型
+    <main className="mx-auto max-w-[1600px] px-5 py-3 sm:px-8 lg:px-10">
+      <ModelSectionNav compact />
+      <section className="flex flex-wrap items-end gap-3 rounded-2xl border border-white/10 bg-[#0b1119]/90 p-3" aria-label="模型与推理配置">
+        <div className="flex w-full min-w-0 flex-wrap items-end gap-3 p-1 xl:w-auto" aria-label="选择模型">
+          <label className="flex w-full min-w-0 flex-col gap-1 text-xs text-white/65 sm:w-60">切换模型
             <select aria-label="切换模型" value={model.id} onChange={(event) => {
               const item = modelChoices.find(item => item.id === event.target.value)
               if (item && item.id !== model.id) navigate(explorerHref(item.id, { ...state, layer: 0, nodeId: attentionKind(item, 0) }))
@@ -167,35 +172,29 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
               {modelChoices.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}
             </select>
           </label>
-          <p className="pb-2 text-xs leading-5 text-white/50">按 HF 近月下载快照排序 · <Link to="/models" className="text-cyan-100 hover:underline">查看全部模型与排序依据</Link><br />切换后从第 0 层开始，保留目标模型支持的推理配置。</p>
         </div>
-        <div className="mt-3 flex flex-wrap items-center gap-3 border-t border-white/10 pt-3">
+        <div className="flex min-w-0 flex-1 basis-full flex-wrap items-center gap-3 pb-1 xl:basis-0">
           <div className="flex rounded-xl bg-black/20 p-1" aria-label="推理阶段">{(['prefill', 'decode'] as const).map((item) => <button key={item} type="button" aria-pressed={phase === item} onClick={() => updateScenario({ phase: item })} className={`rounded-lg px-4 py-2 text-sm uppercase ${phase === item ? 'bg-white/10 text-white' : 'text-white/60'}`}>{item}</button>)}</div>
           <div className="flex items-center gap-1" aria-label="Tensor Parallel 大小"><span className="px-2 font-mono text-sm text-white/60">TP</span>{model.supportedTp.map((size) => <button key={size} type="button" aria-label={`TP ${size}`} aria-pressed={effectiveTp === size} onClick={() => updateScenario({ tp: size })} className={`h-10 w-10 rounded-xl text-sm ${effectiveTp === size ? 'bg-cyan-200 text-[#071014]' : 'text-white/65 hover:bg-white/10'}`}>{size}</button>)}</div>
           <label className="ml-auto flex items-center gap-3 text-sm text-white/70">Layer
             <input aria-label="查看 Decoder 层号" type="range" min={0} max={model.dimensions.layers - 1} value={effectiveLayer} onChange={(e) => changeLayer(Number(e.target.value), true)} className="w-32 accent-cyan-200 sm:w-44" />
-            <output className="w-16 font-mono text-white">{effectiveLayer} / {model.dimensions.layers - 1}</output>
+            <input aria-label="直接输入层号" type="number" min={0} max={model.dimensions.layers - 1} value={effectiveLayer} onFocus={e => e.target.select()} onChange={e => { const n = Number(e.target.value); if (e.target.value && Number.isInteger(n) && n >= 0 && n < model.dimensions.layers) changeLayer(n, true) }} className="min-h-10 w-16 rounded-lg border border-white/15 bg-[#101e29] px-2 font-mono text-white" />
           </label>
         </div>
       </section>
 
       {notices.length > 0 && <p role="status" className="mt-4 rounded-xl border border-amber-200/20 bg-amber-200/5 p-4 text-sm leading-6 text-amber-100">{notices.join(' ')}</p>}
       <ModelWorkspaceTabs view={view} onSelect={(view) => update({ view })} />
-      {model.id === 'glm-5-2' && <Link to="/models/glm-5-2/dpa" className="mt-4 block rounded-xl border border-violet-200/25 bg-violet-200/5 p-4 text-sm leading-6 text-violet-100 hover:border-violet-200/60">打开 GLM-5.2 DP Attention 实验 → 对照 Attention / MoE 两种分组、负载不均、补齐及每 rank 权重（独立实验条件）</Link>}
-      {model.id === 'qwen3-8b' && <Link to="/models/qwen3-8b/dpa" className="mt-4 block rounded-xl border border-violet-200/25 bg-violet-200/5 p-4 text-sm leading-6 text-violet-100 hover:border-violet-200/60">打开 Qwen3-8B DP Attention 实验 → GQA 权重与 KV head 分片、Dense 总 TP、负载不均（独立实验条件）</Link>}
-      <div aria-label="当前并行配置" className="mt-4 rounded-xl border border-cyan-200/20 bg-cyan-200/5 p-4 text-sm leading-6 text-cyan-100">
-        TP {effectiveTp} · EP {state.ep ?? 1} · MoE-TP {effectiveTp / (state.ep ?? 1)} · 独立 DP {state.replicas ?? 1} · 教学 Rank {state.rank ?? 0} · 权重 {state.mixed ? '模块混合精度' : `${state.weightBits ?? 16}-bit`}
-        <button type="button" onClick={() => { update({ view: 'weights' }); document.getElementById('workspace-tab-weights')?.focus() }} className="ml-3 min-h-10 underline underline-offset-4">调整并行与权重</button>
-        <p className="mt-1 text-xs text-white/60">同一配置贯通三工作区；PP=1、无 DPA，MoE A2A=none。模型对比页另有独立的 EP=1 条件，不沿用当前 EP。</p>
-      </div>
-      <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[#0b1119] p-4">
-        <div><p className="text-sm text-white/70">已选 <span className="font-mono text-cyan-100">Layer {effectiveLayer}</span> · {selected.title}</p><button type="button" onClick={() => { update({ view: 'cache' }); document.getElementById('workspace-tab-cache')?.focus() }} className="mt-2 text-left text-sm text-white/65 underline decoration-white/25 underline-offset-4 hover:text-cyan-100">B {scenario.batch} · S {scenario.sequence.toLocaleString('en-US')} · 缓存 {scenario.cacheBytes * 8}-bit · 调整条件</button></div>
-        <div className="flex flex-wrap gap-3"><button type="button" onClick={() => inspect(selected, effectiveLayer, true)} className="rounded-xl border border-white/15 px-3 py-2.5 text-sm text-cyan-100 hover:bg-white/5">查看已选模块</button><button type="button" onClick={copyExplorer} className="inline-flex items-center gap-2 rounded-xl border border-cyan-200/25 px-3 py-2.5 text-sm text-cyan-100 hover:bg-white/5">{copyStatus === 'copied' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}复制当前图解</button></div>
+      <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+        <p aria-label="当前并行配置" className="text-xs text-white/55">TP {effectiveTp} · EP {state.ep ?? 1} · PP {state.pp ?? 1} · Attention DP {state.attentionDp ?? 1} · 独立 DP {state.replicas ?? 1} · {state.mixed ? '模块混合精度' : `${state.weightBits ?? 16}-bit`}{view !== 'weights' && '（PP / Attention DP 用于权重估算）'}</p>
+        <button type="button" onClick={copyExplorer} className="inline-flex min-h-10 items-center gap-2 rounded-lg px-2 text-xs text-cyan-100 hover:bg-white/5">{copyStatus === 'copied' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}复制当前图解</button>
         <p role="status" className={copyStatus ? 'w-full text-sm text-white/55' : 'sr-only'}>{copyStatus === 'copied' ? '已复制当前模型与实验参数。' : copyStatus === 'failed' ? '无法自动复制，请选择下方链接手动复制。' : ''}</p>
         {copyStatus === 'failed' && <input readOnly aria-label="手动复制图解链接" value={copyState?.url ?? ''} onFocus={(event) => event.target.select()} className="w-full rounded-xl border border-white/15 bg-black/20 p-3 text-sm text-white" />}
       </div>
 
       <div role="tabpanel" id="workspace-panel-diagram" aria-labelledby="workspace-tab-diagram" tabIndex={0} hidden={view !== 'diagram'} className="focus-visible:outline-cyan-200">
+      <CompactModelOverview model={model} layer={effectiveLayer} onSelect={node => { inspect(node); if (!dialog.current?.open) dialog.current?.showModal() }} />
+      <details id="model-full-diagram" className="mt-4 rounded-2xl border border-white/10 p-4"><summary className="cursor-pointer text-sm text-cyan-100">展开完整结构、张量 Shape 与学习指引</summary>
       <ModelLearningGuide model={model} layer={effectiveLayer} selectedId={selected.id} scenario={scenario} onSelect={(node) => update(selectExplorerNode(state, node.id))} />
       <ModelModuleFinder model={model} layer={effectiveLayer} selectedId={selected.id} onSelect={(node, layer) => inspect(node, layer, true)} />
       <section aria-label="交互模型结构图" className="mt-5 grid items-start gap-5 xl:grid-cols-[15rem_minmax(0,1fr)_22rem]">
@@ -271,28 +270,18 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
 
         <aside aria-label="模块详情侧栏" tabIndex={0} className="order-3 hidden xl:sticky xl:top-20 xl:block xl:max-h-[calc(100dvh-6rem)] xl:overflow-y-auto xl:overscroll-contain"><Inspector node={inspected} model={model} scenario={scenario} ep={state.ep ?? 1} preview={inspected.id !== selected.id} /></aside>
       </section>
+      </details>
       </div>
       <div role="tabpanel" id="workspace-panel-cache" aria-labelledby="workspace-tab-cache" tabIndex={0} hidden={view !== 'cache'} className="focus-visible:outline-cyan-200">
-        <h2 className="mt-5 text-xl font-semibold text-white">缓存容量与并发预算</h2>
-        <p className="mt-2 text-sm leading-6 text-white/65">这里修改的 B、S 与缓存精度会同步到结构图和张量 Shape。仅估算缓存，不代表整卡可部署显存。</p>
-        <p className="mt-2 text-sm leading-6 text-cyan-100">当前 TP={effectiveTp}、EP={state.ep ?? 1}、独立副本={state.replicas ?? 1}。本基线只调整 routed 专家分片，Attention TP 与每副本 B 不变，因此 EP 不改变每卡 KV / 循环状态；此处仍是每卡缓存，不是全部副本的总量。</p>
-        <CacheWorkbench model={model} layer={effectiveLayer} scenario={scenario} onBatch={(batch) => updateScenario({ batch })} onSequence={(sequence) => updateScenario({ sequence })} onBytes={(cacheBytes) => updateScenario({ cacheBytes })} />
+        <CompactCacheWorkbench model={model} scenario={scenario} onChange={updateScenario} />
         <CacheCapacityPlanner model={model} scenario={scenario} budgetGiB={state.cacheBudgetGiB} onBudget={(cacheBudgetGiB) => update({ cacheBudgetGiB }, true)} onBatch={(batch) => updateScenario({ batch })} onSequence={(sequence) => updateScenario({ sequence })} />
+        <details id="model-cache-details" className="mt-4 rounded-2xl border border-white/10 p-4"><summary className="cursor-pointer text-sm text-cyan-100">展开缓存组成、层型与公式</summary>
+        <CacheWorkbench model={model} layer={effectiveLayer} scenario={scenario} onBatch={(batch) => updateScenario({ batch })} onSequence={(sequence) => updateScenario({ sequence })} onBytes={(cacheBytes) => updateScenario({ cacheBytes })} />
+        </details>
       </div>
       <div role="tabpanel" id="workspace-panel-weights" aria-labelledby="workspace-tab-weights" tabIndex={0} hidden={view !== 'weights'} className="focus-visible:outline-cyan-200">
-        <h2 className="mt-5 text-xl font-semibold text-white">Decoder 权重清单</h2>
-        <p className="mt-2 text-sm leading-6 text-white/65">当前模块、全 Decoder 与全副本分别统计。</p>
-        <nav aria-label="权重阅读顺序" className="mt-3 flex flex-wrap gap-2">{[
-          ['weight-rank-section', '1 · 当前 rank / 当前模块'],
-          ['weight-decoder-section', '2 · 整个 Decoder / 所有副本'],
-          ...(model.id === 'kimi-k3' ? [['weight-checkpoint-section', '3 · 官方文件 / 原生加载对账']] : []),
-        ].map(([id, label]) => <button key={id} type="button" onClick={() => {
-          const section = document.getElementById(id)
-          section?.scrollIntoView({ block: 'start' })
-          section?.focus({ preventScroll: true })
-        }} className="min-h-11 rounded-xl border border-white/15 px-3 py-2 text-left text-sm text-cyan-100 hover:border-cyan-200/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-200">{label}</button>)}</nav>
-        {model.id === 'kimi-k3' && <KimiWeightAudit model={model} tp={scenario.tp} ep={state.ep ?? 1} replicas={state.replicas ?? 1} rank={state.rank ?? 0} stage={state.nativeStage ?? 'initial'} onStage={stage => update({ nativeStage: stage === 'processed' ? stage : undefined })} />}
-        {supportsMixedPrecision(model.id) && <MixedPrecisionControls value={state.mixed} hasDense={model.execution.denseLayers > 0} denseOnly={model.id === 'qwen3-8b'} modelId={model.id} tp={effectiveTp} ep={state.ep ?? 1} layer={effectiveLayer} onChange={(mixed) => update({ mixed }, true)} />}
+        <WeightDeploymentWorkbench model={model} state={state} onChange={next => update(next, true)} />
+        {(state.pp ?? 1) === 1 && (state.attentionDp ?? 1) === 1 ? <details id="model-rank-details" className="mt-4 rounded-2xl border border-white/10 p-4"><summary className="cursor-pointer text-sm text-cyan-100">深入：逐 rank 分片、专家打包与加载布局</summary>
         {model.id === 'qwen3-8b' && state.mixed && <QwenDenseLayout tp={effectiveTp} layer={effectiveLayer} policy={state.mixed} />}
         <ModelRankWorkbench model={model} layer={effectiveLayer} scenario={scenario} nodeId={selected.id} bits={state.weightBits ?? 16} replicas={state.replicas ?? 1} rank={state.rank ?? 0} ep={state.ep ?? 1} expertFormat={state.expertFormat} mixed={state.mixed} onChange={(next) => update({
           ...(next.tp !== undefined ? { scenario: { ...scenario, tp: next.tp } } : {}),
@@ -303,7 +292,9 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
           ...(next.bits !== undefined ? { weightBits: next.bits } : {}),
           ...(next.expertFormat !== undefined ? { expertFormat: next.expertFormat } : {}),
         }, true)} />
-        <ModelWeightBudget model={model} layer={effectiveLayer} tp={effectiveTp} ep={state.ep ?? 1} replicas={state.replicas ?? 1} bits={state.weightBits ?? 16} mixed={state.mixed} selectedId={selected.id} onBits={(weightBits) => update({ weightBits })} onSelect={(node) => inspect(node, effectiveLayer, true)} />
+        </details> : <p className="mt-3 text-xs text-white/50">旧版逐 rank / 打包实验限定 PP=1、Attention DP=1；当前组合请查看上方分段账本。</p>}
+        {model.id === 'kimi-k3' && <details id="model-native-details" className="mt-4 rounded-2xl border border-white/10 p-4"><summary className="cursor-pointer text-sm text-cyan-100">独立参考：官方 checkpoint 与原生加载对账（PP=1 / 无 DPA）</summary><KimiWeightAudit model={model} tp={scenario.tp} ep={state.ep ?? 1} replicas={state.replicas ?? 1} rank={state.rank ?? 0} stage={state.nativeStage ?? 'initial'} onStage={stage => update({ nativeStage: stage === 'processed' ? stage : undefined })} /></details>}
+        {['glm-5-2', 'qwen3-8b'].includes(model.id) && <Link to={`/models/${model.id}/dpa`} className="mt-4 inline-block text-sm text-cyan-100 hover:underline">深入：Attention DP 请求分组与通信实验 ↗</Link>}
       </div>
     </main>
     <dialog ref={dialog} aria-label="模块详情" className="model-inspector-dialog" onClose={() => {

@@ -1,14 +1,14 @@
 import type { ModelArchitecture, TensorParallelSize } from '../types/model.ts'
 import { decoderNodes } from './model-lab.ts'
-import { formatWeight } from './model-weights.ts'
+import { formatWeight, isAttentionWeightNode } from './model-weights.ts'
 import { effectiveWeightPrecision, hasRoutedOverrides, matrixPrecisions, mixedWeightRole, mixedWeightStorage, precisionKey, precisionWeightParts } from './mixed-precision.ts'
 import type { ExpertPrecision, MixedPrecision } from './mixed-precision.ts'
 
 const inventories = new Map<string, ReturnType<typeof buildInventory>>()
 function buildInventory(model: ModelArchitecture, tp: TensorParallelSize, ep: TensorParallelSize, attentionTp: TensorParallelSize) {
   return Array.from({ length: model.dimensions.layers }, (_, layer) => decoderNodes(model, layer).flatMap(node => node.weights.flatMap(weight => {
-    const localTp = ['gqa', 'mla'].includes(node.id) ? attentionTp : tp
-    const formatted = formatWeight(weight, model, { phase: 'decode', batch: 1, sequence: 1024, tp: localTp, cacheBytes: 2 }, ['gqa', 'mla'].includes(node.id) ? 1 : ep)
+    const localTp = isAttentionWeightNode(node) ? attentionTp : tp
+    const formatted = formatWeight(weight, model, { phase: 'decode', batch: 1, sequence: 1024, tp: localTp, cacheBytes: 2 }, isAttentionWeightNode(node) ? 1 : ep)
     return precisionWeightParts(formatted).map(part => {
       const options = matrixPrecisions.filter(format => {
         try { mixedWeightStorage(part, node.id, { mlp: 'bf16', shared: 'bf16', experts: 'bf16', weights: { [precisionKey(node.id, part.name)]: format } }, layer); return true } catch { return false }
