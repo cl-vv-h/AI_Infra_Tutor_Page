@@ -1,5 +1,5 @@
 import type { LucideIcon } from 'lucide-react'
-import { BookOpenText, Boxes, Newspaper } from 'lucide-react'
+import { BookOpenText, Boxes, Newspaper, Activity } from 'lucide-react'
 
 export interface PortalModule {
   id: string
@@ -51,5 +51,10 @@ export const portalModules: PortalModule[] = [
     accent: '#c7a8ff',
     stats: ['体系索引', '模型架构', '并行实验'],
     status: 'beta',
+  },
+  {
+    id: 'operators', eyebrow: 'ESTIMATE / 04', title: '算子耗时估算', titleEn: 'Operator Performance Lab',
+    description: '结合昇腾硬件、算子与 Shape，分解计算和访存成本，对照 Profiling 实测发现排查线索。',
+    to: '/operators', icon: Activity, accent: '#ffbd85', stats: ['硬件规格', '耗时建模', '实测对照'], status: 'beta',
   },
 ]

@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "test:operators": "node --experimental-strip-types --test tests/operator-estimator.test.mjs",
+    "test:operators:browser": "node tests/operator-estimator-browser.mjs",
     "predev": "node scripts/generate-curriculum-index.mjs",
     "prebuild": "node scripts/generate-curriculum-index.mjs",
     "postbuild": "node scripts/check-curriculum-bundle.mjs",

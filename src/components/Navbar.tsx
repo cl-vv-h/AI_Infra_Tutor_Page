@@ -7,6 +7,7 @@ const navLinks = [
   { label: '首页', to: '/' },
   { label: 'AI Infra', to: '/learn' },
   { label: '模型实验室', to: '/models/knowledge' },
+  { label: '算子估算', to: '/operators' },
   { label: '新闻雷达', to: '/news' },
   { label: '关于', to: '/about' },
 ]
@@ -24,7 +25,7 @@ export default function Navbar() {
           INFRA//SPACE
         </Link>
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-6 lg:flex">
           {navLinks.map((link) => {
             const active = link.to === '/' ? location.pathname === '/' : location.pathname.startsWith(link.to === '/models/knowledge' ? '/models' : link.to)
             return (
@@ -61,7 +62,7 @@ export default function Navbar() {
           <button
             onClick={() => setOpen(!open)}
             aria-label={open ? '关闭菜单' : '打开菜单'}
-            className="text-white/70 md:hidden"
+            className="text-white/70 lg:hidden"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -69,7 +70,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="border-b border-white/10 bg-[#070b10]/95 backdrop-blur-xl md:hidden">
+        <div className="border-b border-white/10 bg-[#070b10]/95 backdrop-blur-xl lg:hidden">
           <div className="flex flex-col gap-2 px-4 py-3">
             {navLinks.map((link) => (
               <Link
