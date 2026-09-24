@@ -12,3 +12,17 @@ export function demoProfile(candidate=false) {
   }
   return rows.map(r=>r.map(c=>`"${c.replace(/"/g,'""')}"`).join(',')).join('\n')
 }
+
+// Synthetic, explicitly labelled ranges and percentages; no captured user information.
+export function singleProfileDemo() {
+  const traceEvents:unknown[]=[{ph:'M',pid:4,name:'process_name',args:{name:'Ascend Hardware'}},{ph:'M',pid:1,name:'process_name',args:{name:'Synthetic annotations'}}]
+  const host=(name:string,ts:number,dur:number)=>traceEvents.push({ph:'X',pid:1,tid:0,name,ts,dur})
+  const task=(name:string,ts:number,dur:number,ratio:number,step:number,stream=0)=>traceEvents.push({ph:'X',pid:4,tid:stream,name,ts,dur,args:{'OP Type':name,'Input Shapes':name==='MatMul'?'128,7168;7168,2048':'128,7168','Input Data Types':'BF16;BF16','Input Formats':'ND;ND','Step ID':step,...(name==='MatMul'?{'aic_mac_ratio(%)':ratio}:name==='RmsNorm'?{'aiv_vec_ratio(%)':ratio}:{})}})
+  host('prefill',0,2000);task('MatMul',100,1200,75,0);task('RmsNorm',1350,300,15,0);task('HcclAllReduce',1450,350,0,0,1)
+  for(let i=0;i<8;i++) {
+    const s=2300+i*1000,d=i===5?750:400
+    host('scheduler',s-150,100);host('decode',s,d)
+    task('MatMul',s+20,i===5?450:180,18,i+1);task('RmsNorm',s+d-100,60,22,i+1)
+  }
+  return JSON.stringify({traceEvents})
+}

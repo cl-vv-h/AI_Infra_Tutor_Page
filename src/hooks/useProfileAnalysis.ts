@@ -1,13 +1,15 @@
 import { useEffect, useRef, useState } from 'react'
 import { emptyProfileFilter, type ProfileAnalysis, type ProfileFilter } from '@/lib/profile-analysis'
 import { profileLimits, type TimeUnit } from '@/lib/profile-import'
+import { defaultDiagnosticConfig, type DiagnosticConfig } from '@/lib/profile-diagnostics'
 export function useProfileAnalysis() {
   const worker=useRef<Worker|null>(null),serial=useRef(0)
   const [analysis,setAnalysis]=useState<ProfileAnalysis|null>(null)
   const [filter,setFilter]=useState(emptyProfileFilter)
+  const [config,setConfig]=useState(defaultDiagnosticConfig)
   const [busy,setBusy]=useState(false),[error,setError]=useState(''),[loaded,setLoaded]=useState(false)
   useEffect(()=>()=>worker.current?.terminate(),[])
-  const clear=()=>{serial.current++;worker.current?.terminate();worker.current=null;setLoaded(false);setAnalysis(null);setError('');setBusy(false);setFilter(emptyProfileFilter())}
+  const clear=()=>{serial.current++;worker.current?.terminate();worker.current=null;setLoaded(false);setAnalysis(null);setError('');setBusy(false);setFilter(emptyProfileFilter());setConfig(defaultDiagnosticConfig())}
   const begin=()=>{
     clear();setBusy(true)
     const id=++serial.current
@@ -16,8 +18,8 @@ export function useProfileAnalysis() {
     w.onmessage=({data})=>{
       if(data.id!==serial.current)return
       setBusy(false)
-      if(data.error){setError(data.error);setAnalysis(null);return}
-      setError('');setAnalysis(data.analysis);setLoaded(true);setFilter(data.analysis.selectedFilter)
+      if(data.error){setError(data.error);return}
+      setError('');setAnalysis(data.analysis);setLoaded(true);setFilter(data.analysis.selectedFilter);setConfig(data.analysis.diagnostics.config)
     }
     w.onerror=()=>{if(worker.current===w){setBusy(false);setError('本地解析线程失败，请清空后重试或缩小文件。');setAnalysis(null)}}
     return {w,id}
@@ -31,7 +33,13 @@ export function useProfileAnalysis() {
   }
   const updateFilter=(next:ProfileFilter)=>{
     setFilter(next);setError('');setAnalysis(null);setBusy(true)
-    worker.current?.postMessage({id:++serial.current,type:'analyze',filter:next})
+    const nextConfig=next.device!==filter.device?{...config,manual:[],aligned:false}:config
+    setConfig(nextConfig)
+    worker.current?.postMessage({id:++serial.current,type:'analyze',filter:next,config:nextConfig})
   }
-  return {analysis,filter,busy,error,loaded,loadText,loadFile,updateFilter,clear}
+  const updateConfig=(next:DiagnosticConfig)=>{
+    setError('');setBusy(true)
+    worker.current?.postMessage({id:++serial.current,type:'analyze',filter,config:next})
+  }
+  return {analysis,filter,config,busy,error,loaded,loadText,loadFile,updateFilter,updateConfig,clear}
 }

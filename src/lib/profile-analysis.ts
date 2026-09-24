@@ -1,10 +1,13 @@
+import { diagnoseProfile, defaultDiagnosticConfig, type DiagnosticConfig, type DiagnosticAnalysis, type Annotation, type Counter, type PipeMetric, type Phase } from './profile-diagnostics.ts'
 export type TaskKind = 'compute' | 'communication' | 'copy' | 'other'
 export interface ProfileEvent {
   name: string; type: string; shape: string; dtype: string; format: string
   device: string; stream: string; step: string; duration: number; start?: number; kind: TaskKind
+  phase?: Phase; counters?: Partial<Record<PipeMetric, Counter>>
 }
 export interface ProfileData {
   events: ProfileEvent[]; warnings: string[]; source: 'csv' | 'trace'; skipped: number
+  annotations?: Annotation[]
 }
 export interface ProfileFilter { device: string; stream: string; step: string; from: string; to: string; search: string }
 export interface ProfileGroup {
@@ -19,6 +22,7 @@ export interface ProfileAnalysis {
   origin: number; end: number; devices: string[]; streams: string[]; steps: string[]; warnings: string[]
   lanes: { stream: string; events: { start: number; duration: number; kind: TaskKind; name: string }[] }[]
   timelineTruncated: boolean; selectedDevice: string; selectedFilter: ProfileFilter
+  diagnostics: DiagnosticAnalysis
 }
 export const emptyProfileFilter = (): ProfileFilter => ({device:'',stream:'',step:'',from:'',to:'',search:''})
 export const signature = (e: ProfileEvent) => JSON.stringify([e.type,e.shape,e.dtype,e.format])
@@ -55,7 +59,7 @@ export function intervalCoverage(events:ProfileEvent[]) {
   }
   return {busy,overlap,comm,computeComm,exclusive,maxConcurrency}
 }
-export function analyzeProfile(data:ProfileData, filter=emptyProfileFilter()):ProfileAnalysis {
+export function analyzeProfile(data:ProfileData, filter=emptyProfileFilter(), config:DiagnosticConfig=defaultDiagnosticConfig()):ProfileAnalysis {
   const devices=[...new Set(data.events.map(e=>e.device))].sort()
   const selectedDevice=filter.device||devices[0]||''
   const domain=data.events.filter(e=>e.device===selectedDevice)
@@ -93,11 +97,13 @@ export function analyzeProfile(data:ProfileData, filter=emptyProfileFilter()):Pr
   if(!completeTimeline)warnings.push('部分或全部任务缺少设备时间戳；窗口、重叠和独占覆盖不可完整计算。')
   if(useWindow)warnings.push('时间过滤仅保留完整落在窗口内的调用，不裁切时长；跨边界调用被排除。')
   if(!events.length)warnings.push('当前筛选没有匹配任务。')
-  if(!steps.length)warnings.push('无 Step ID；请手动用相对时间窗口选择稳态或单阶段，不能自动识别 prefill / decode。')
+  if(!steps.length)warnings.push('无 Step ID；阶段需依赖明确标记或手动区间，不能按首步推断 Prefill / Decode。')
   const drawn=timed.slice().sort((a,b)=>a.start!-b.start!).slice(0,1200)
   const laneMap=new Map<string,ProfileAnalysis['lanes'][number]['events']>()
   for(const e of drawn){if(!laneMap.has(e.stream))laneMap.set(e.stream,[]);laneMap.get(e.stream)!.push({start:e.start!-origin,duration:e.duration,kind:e.kind,name:e.type})}
-  return {groups,count:events.length,total,timedCount:timed.length,span,busy:completeTimeline?coverage.busy:null,idle:span===null?null:Math.max(0,span-coverage.busy),overlap:completeTimeline?coverage.overlap:null,communication:completeTimeline?coverage.comm:null,computeCommunication:completeTimeline?coverage.computeComm:null,exposedCommunication:completeTimeline?coverage.comm-coverage.computeComm:null,maxConcurrency:completeTimeline?coverage.maxConcurrency:null,origin,end:end-origin,devices,streams,steps,warnings,lanes:[...laneMap].map(([stream,events])=>({stream,events})),timelineTruncated:timed.length>drawn.length,selectedDevice,selectedFilter:{...filter,device:selectedDevice}}
+  const diagnostics=diagnoseProfile(data,events,origin,end,selectedDevice,config)
+  if(filter.stream||filter.step||filter.search||useWindow)diagnostics.warnings.push('当前诊断使用筛选后的任务；阶段标记可能涵盖被过滤掉的任务，未覆盖时间不能直接归因于调度或设备空闲。')
+  return {diagnostics,groups,count:events.length,total,timedCount:timed.length,span,busy:completeTimeline?coverage.busy:null,idle:span===null?null:Math.max(0,span-coverage.busy),overlap:completeTimeline?coverage.overlap:null,communication:completeTimeline?coverage.comm:null,computeCommunication:completeTimeline?coverage.computeComm:null,exposedCommunication:completeTimeline?coverage.comm-coverage.computeComm:null,maxConcurrency:completeTimeline?coverage.maxConcurrency:null,origin,end:end-origin,devices,streams,steps,warnings,lanes:[...laneMap].map(([stream,events])=>({stream,events})),timelineTruncated:timed.length>drawn.length,selectedDevice,selectedFilter:{...filter,device:selectedDevice}}
 }
 export function compareProfiles(baseline:ProfileAnalysis,candidate:ProfileAnalysis) {
   const before=new Map(baseline.groups.map(g=>[g.key,g])),after=new Map(candidate.groups.map(g=>[g.key,g]))
@@ -121,7 +127,9 @@ export function workWhatIf(analysis:ProfileAnalysis,key:string,speedup:number) {
 // Export deliberately excludes all user-controlled text, filenames, ranks, timestamps and tensor shapes.
 export function anonymousProfileReport(a:ProfileAnalysis,b?:ProfileAnalysis) {
   const metrics=(x:ProfileAnalysis)=>({calls:x.count,workUs:x.total,spanUs:x.span,busyUs:x.busy,idleUs:x.idle,overlapUs:x.overlap,commUs:x.communication,commComputeOverlapUs:x.computeCommunication})
-  return {schema:'anonymous-profile-report',version:1,note:'Observed device tasks, not an end-to-end critical path. Group names/shapes and raw data omitted.',baseline:metrics(a),candidate:b?metrics(b):undefined,
+  const d=a.diagnostics
+  return {schema:'anonymous-profile-report',version:2,note:'Observed device tasks, not an end-to-end critical path. Group names/shapes and raw data omitted.',baseline:metrics(a),candidate:b?metrics(b):undefined,
+    singleProfile:{phaseBasis:d.phaseBasis,phases:d.phases.map(p=>({phase:p.phase,workUs:p.work,wallUs:p.wall,busyUs:p.busy,scheduleUs:p.schedule,calls:p.calls})),decode:{count:d.iterations.count,p50Us:d.iterations.p50,p95Us:d.iterations.p95},scheduling:d.scheduling,thresholdPercent:d.config.threshold,utilization:d.utilization.map((r,i)=>({id:`U${i+1}`,metric:r.metric,meanPercent:r.mean,samples:r.samples,calls:r.calls,lowWorkUs:r.lowWork,measuredWorkUs:r.measuredWork}))},
     groups:a.groups.map((g,i)=>({id:`G${i+1}`,calls:g.count,workUs:g.total,p50Us:g.median,p95Us:g.p95,exclusiveUs:g.exclusive})),
     comparison:b?compareProfiles(a,b).rows.map((r,i)=>({id:`C${i+1}`,matched:r.reliable,baselineCalls:r.before?.count??0,candidateCalls:r.after?.count??0,medianRatio:r.medianRatio,normalizedDeltaUs:r.normalizedDelta})):undefined}
 }
