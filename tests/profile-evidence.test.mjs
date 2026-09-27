@@ -5,7 +5,7 @@ import { analyzeProfile, anonymousProfileReport, emptyProfileFilter } from '../s
 import { importProfileBundle, planProfileImport, parseProfileSummary } from '../src/lib/profile-bundle.ts'
 import { profileClockBase, profileTimestamp } from '../src/lib/profile-clock.ts'
 import { profileBundleFixture } from './profile-bundle-fixture.mjs'
-import { profileTimeline } from '../src/lib/profile-timeline.ts'
+import { profileTimeline, timelineBins } from '../src/lib/profile-timeline.ts'
 
 test('CANN decimal epochs retain nanosecond-scale tasks and aligned Host markers', () => {
   const text=JSON.stringify([
@@ -89,10 +89,13 @@ test('full timeline includes late tasks and union coverage rather than summed wo
   const base={name:'x',type:'x',shape:'',dtype:'',format:'',device:'0',stream:'0',step:'',kind:'compute',duration:32,start:100}
   const timeline=profileTimeline([base,{...base,start:116},{...base,start:100,role:'wait',duration:64},{...base,start:163,duration:1,stream:'last'}],100)
   assert.equal(timeline.start,0);assert.equal(timeline.end,64)
-  assert.equal(timeline.lanes[0].bins.reduce((s,b)=>s+b.execution,0),48)
-  assert.equal(timeline.lanes[0].bins.reduce((s,b)=>s+b.wait,0),64)
-  assert.equal(timeline.lanes[1].bins[63].execution,1)
+  assert.equal(timelineBins(timeline,timeline.lanes[0]).reduce((s,b)=>s+b.execution,0),48)
+  assert.equal(timelineBins(timeline,timeline.lanes[0]).reduce((s,b)=>s+b.wait,0),64)
+  assert.equal(timelineBins(timeline,timeline.lanes[1])[63].execution,1)
   assert.equal(profileTimeline([{...base,start:undefined}],0).missing,1)
+  const many=profileTimeline(Array.from({length:5000},(_,i)=>({...base,stream:String(i)})),100)
+  assert.equal(many.lanes.length,5000)
+  assert.ok(JSON.stringify(many).length<600000,'sparse stream storage must not allocate 64 bins per stream')
 })
 
 test('recognized CANN schema auto-decodes fractional pipes but keeps Cube utilization independent', () => {
