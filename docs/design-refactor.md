@@ -29,6 +29,7 @@ inspection. Evidence is from production builds, not development-only previews.
 | Comparison | `/models/compare`, models/shared conditions/scopes, chart, sharing, incompatible scenarios | Comparison units/render and model browser |
 | Profiling | `/operators`, local single/multi-file and directory imports, reconciliation/inventory, evidence candidates, Host/API/Step tables, all-stream timeline, per-hotspot counters, phases, A/B, errors/cancel, anonymous export, estimator handoff | Profiling units and three browser suites; local real-capture validation described in `profiling-evidence-upgrade.md` |
 | Estimator | `/operators/estimate`, hardware/operator/dtype/layout, invalid/zero/bounds, transferred sample, reset | Estimator units/browser |
+| Profiling guide | `/operators/guide`, linked from workbench only; lazy reader, TOC, glossary, synthetic examples, disclosures, in-module analysis retention, back/refresh, loading/failure recovery | `tests/profiling-guide.test.mjs`, `tests/profiling-guide-browser.mjs`; no private capture assets |
 | News | `/news`, daily/library/releases/archive/saved, categories/topics/source/search/sort, source outages, loading/error/retry, bookmark/import/export/share privacy, weekly | News units/render, design browser and archive outage/recovery browser |
 | Supporting | `/about`, loading/empty/missing routes | Design browser |
 

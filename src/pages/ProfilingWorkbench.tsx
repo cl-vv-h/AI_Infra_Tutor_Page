@@ -84,6 +84,7 @@ export default function ProfilingWorkbench(){
   return <div className="page-container py-8 text-secondary">
     <PerformanceNav/>
     <PageHeader eyebrow="PROFILE / EVIDENCE" title="Profiling 分析工作台" description="联合分析设备时间线、算子 Shape、流水线计数器与 Host 汇总；先核对数据完整性，再定位值得验证的优化候选。可选 A/B 对照验证回归。" compact />
+    <Link to="/operators/guide" className="mb-2 inline-flex min-h-11 items-center gap-2 text-sm text-accent hover:underline">阅读教程：如何看懂 Profiling <span aria-hidden="true">→</span></Link>
     <div className="mb-6">
       <div className="mt-4 flex flex-wrap items-center gap-3"><button className={button} onClick={()=>{baseline.loadText(singleProfileDemo());candidate.clear();setTab('single')}}>加载单份阶段分析示例</button><button className={button} onClick={()=>{baseline.loadText(demoProfile());candidate.loadText(demoProfile(true));setTab('hotspots')}}>加载合成 A/B 示例</button><button className={button} onClick={()=>{baseline.clear();candidate.clear();clearProfileSample();setSelected('');setComparable(false);setExported(false)}}>清空全部数据</button><span className="flex items-center gap-1.5 text-xs text-emerald-200/80"><ShieldCheck size={14}/>本地解析 · 不上传 · 不持久保存</span></div>
     </div>
