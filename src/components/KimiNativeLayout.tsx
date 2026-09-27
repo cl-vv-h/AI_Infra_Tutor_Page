@@ -16,10 +16,10 @@ export default function KimiNativeLayout({ tp, ep, replicas, rank, stage = 'init
   const total = processed ? post.trackedBytes : data.bytes
   const totalLabel = processed ? '已核对持久张量' : '全模型初始参数'
   const [role, setRole] = useState('experts')
-  return <details aria-label="Kimi 原生加载基线" className="mt-3 rounded-xl border border-cyan-200/20 p-3 text-sm text-white/70">
+  return <details aria-label="Kimi 原生加载基线" className="mt-3 rounded-xl border border-cyan-200/20 p-3 text-sm text-secondary">
     <summary className="cursor-pointer text-cyan-100">按当前配置查看原生加载基线 · Rank {rank} · {formatBytes(total)}{processed ? ' · 后处理已核对小计' : ''}</summary>
     <p className="mt-3 leading-6">CUDA SM100 / FlashInfer MXFP4 · {processed ? '后处理已核对持久张量' : '初始参数分配（后处理前）'}。默认 BF16、PP=1、A2A=none、无 DPA/EPLB/冗余专家。沿用下方 TP/EP/独立 DP/rank 控件；不采用自定义 MLP/W4A8 精度，因为这里核对的是官方 MXFP4 checkpoint。不是最终常驻显存。</p>
-    <label className="mt-3 block">原生权重阶段<select aria-label="Kimi 原生权重阶段" value={stage} onChange={event => onStage?.(event.target.value as KimiNativeStage)} className="mt-2 block w-full min-w-0 rounded-lg border border-white/20 bg-[#101820] p-2 text-white"><option value="initial">初始参数（后处理前）</option><option value="processed">后处理 · 已核对持久张量</option></select></label>
+    <label className="mt-3 block">原生权重阶段<select aria-label="Kimi 原生权重阶段" value={stage} onChange={event => onStage?.(event.target.value as KimiNativeStage)} className="mt-2 block w-full min-w-0 rounded-lg border border-white/20 bg-raised p-2 text-white"><option value="initial">初始参数（后处理前）</option><option value="processed">后处理 · 已核对持久张量</option></select></label>
     <p className="mt-2 leading-6">Rank {rank}：DP 副本 {data.replica}，TP rank {data.tpRank}，EP rank {data.epRank}，MoE-TP rank {data.moeTpRank}。本地专家 [{data.expertRange.join(', ')})，每专家 intermediate={data.intermediate}。共享 MLP 按完整 TP={tp} 分片，视觉塔完整复制。</p>
     <div className="mt-3 grid gap-3 sm:grid-cols-3">{[
       [`${totalLabel} / rank`, total], [`${totalLabel} / TP 组`, total * tp], [`${totalLabel} / 全部副本`, total * tp * replicas],
@@ -27,7 +27,7 @@ export default function KimiNativeLayout({ tp, ep, replicas, rank, stage = 'init
     {processed ? <KimiPostloadDetails data={post} /> : <>
     <p className="mt-3 text-xs leading-5">checkpoint 映射到本 rank 的参数：{exact(data.parametersBytes)}；额外零 bias：{exact(data.addedBiasBytes)}。文件 header 不进参数账本。独立 DP 只复制，不减小每卡参数；EP 改变专家数与 MoE-TP 轴，不再对同一份 payload 重复除 EP。</p>
     <details className="mt-3"><summary className="cursor-pointer">全模型模块小计</summary><dl className="mt-3 space-y-2">{data.groups.map(group => <div key={group.role} className="rounded-lg bg-black/15 p-2 sm:flex sm:justify-between sm:gap-3"><dt>{group.label}</dt><dd className="shrink-0 font-mono text-xs">{exact(group.bytes)}</dd></div>)}<div className="rounded-lg bg-black/15 p-2 sm:flex sm:justify-between sm:gap-3"><dt>额外零 bias（92 层）</dt><dd className="shrink-0 font-mono text-xs">{exact(data.addedBiasBytes)}</dd></div></dl></details>
-    <label className="mt-4 block">选择原生权重模块<select aria-label="原生权重模块" value={role} onChange={event => setRole(event.target.value)} className="mt-2 block w-full min-w-0 rounded-lg border border-white/20 bg-[#101820] p-2 text-white">{Object.entries(nativeRoles).map(([key, label]) => <option key={key} value={key}>{label}</option>)}</select></label>
+    <label className="mt-4 block">选择原生权重模块<select aria-label="原生权重模块" value={role} onChange={event => setRole(event.target.value)} className="mt-2 block w-full min-w-0 rounded-lg border border-white/20 bg-raised p-2 text-white">{Object.entries(nativeRoles).map(([key, label]) => <option key={key} value={key}>{label}</option>)}</select></label>
     <p className="mt-2 text-xs leading-5">逐行显示 checkpoint 源张量映射到本 rank 的分片与份数；QKV 等融合投影可能合并这些行，不把源张量形状当作最终 kernel 布局。专家的六个实际初始容器另列在下方。</p>
     <div className="mt-3 space-y-2">{data.rows.filter(row => row.role === role).map(row => <details key={row.name + row.shape.join(',')} className="min-w-0 rounded-lg bg-black/15 p-2"><summary className="cursor-pointer break-all text-xs">{row.name.replace('language_model.model.', '')} · {formatBytes(row.bytes)}</summary>
       <p className="mt-2 break-words font-mono text-xs">文件 {shape(row.checkpointShape)} · {row.checkpointDtype} → 本 rank {shape(row.shape)} · {row.dtype}</p>

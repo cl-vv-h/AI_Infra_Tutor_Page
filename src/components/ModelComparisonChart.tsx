@@ -18,8 +18,8 @@ export default function ModelComparisonChart({ models, scenario, scope, v41Stora
 
   return <section className="mt-6 rounded-3xl border border-white/10 bg-[#0b131b] p-5 sm:p-6" aria-labelledby="comparison-growth-title">
     <div className="flex flex-wrap items-end justify-between gap-4">
-      <div><h2 id="comparison-growth-title" className="text-xl font-semibold text-white">上下文长度与缓存容量</h2><p className="mt-2 text-sm leading-6 text-slate-400">横轴为对数长度，纵轴为统一线性容量；曲线止于各模型当前配置上限。</p></div>
-      <span className="rounded-full border border-white/15 px-3 py-1.5 text-sm text-slate-300">{scope === 'rank' ? '每卡' : `全部 ${scenario.tp} 卡`} · B = {scenario.batch}</span>
+      <div><h2 id="comparison-growth-title" className="text-xl font-semibold text-white">上下文长度与缓存容量</h2><p className="mt-2 text-sm leading-6 text-muted">横轴为对数长度，纵轴为统一线性容量；曲线止于各模型当前配置上限。</p></div>
+      <span className="rounded-full border border-white/15 px-3 py-1.5 text-sm text-secondary">{scope === 'rank' ? '每卡' : `全部 ${scenario.tp} 卡`} · B = {scenario.batch}</span>
     </div>
     <div className="mt-5 overflow-x-auto" tabIndex={0} role="region" aria-label="缓存增长图，可横向滚动">
       <svg viewBox="0 0 880 320" className="min-w-[640px] w-full" role="img" aria-labelledby="growth-chart-title growth-chart-desc">
@@ -36,12 +36,12 @@ export default function ModelComparisonChart({ models, scenario, scope, v41Stora
       </svg>
     </div>
     <div className="mt-2 flex flex-wrap gap-x-5 gap-y-2">{series.map(({ model, points }, index) => <span key={model.id} className="flex items-center gap-2 text-sm" style={{ color: comparisonColors[index] }}><span aria-hidden="true">{index === 0 ? '━━' : index === 1 ? '┄┄' : '···'}</span>{model.name}{!points.length && ' · 未计算'}</span>)}</div>
-    <div className="mt-5 flex flex-wrap gap-2" aria-label="选择对照上下文长度">{contextProbes.map((size) => <button key={size} type="button" aria-pressed={size === scenario.sequence} onClick={() => onSequence(size)} className={`rounded-xl border px-3 py-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-200 ${size === scenario.sequence ? 'border-cyan-200/50 bg-cyan-200/10 text-cyan-100' : 'border-white/10 text-slate-300 hover:border-white/30'}`}>{size / 1024}K</button>)}</div>
+    <div className="mt-5 flex flex-wrap gap-2" aria-label="选择对照上下文长度">{contextProbes.map((size) => <button key={size} type="button" aria-pressed={size === scenario.sequence} onClick={() => onSequence(size)} className={`rounded-xl border px-3 py-2 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-200 ${size === scenario.sequence ? 'border-cyan-200/50 bg-cyan-200/10 text-cyan-100' : 'border-white/10 text-secondary hover:border-white/30'}`}>{size / 1024}K</button>)}</div>
     <details className="mt-5 border-t border-white/10 pt-4">
       <summary className="cursor-pointer text-sm text-cyan-100">查看各长度的精确容量</summary>
       <div className="mt-3 overflow-x-auto" tabIndex={0} role="region" aria-label="各长度精确缓存容量">
-        <table className="w-full min-w-[540px] text-left text-sm"><caption className="sr-only">同一 B、S、卡数下的容量；各模型存储格式见上方设置，破折号表示超出范围。</caption><thead><tr><th scope="col" className="p-3 text-slate-300">S / tokens</th>{models.map((model) => <th scope="col" className="p-3 text-white" key={model.id}>{model.name}</th>)}</tr></thead>
-          <tbody>{contextProbes.map((size) => <tr key={size} className="border-t border-white/10"><th scope="row" className="p-3 font-mono font-normal text-slate-300">{size.toLocaleString('en-US')}</th>{series.map(({ model, points }) => { const point = points.find((item) => item.sequence === size); return <td key={model.id} className="p-3 font-mono text-slate-300">{point ? formatBytes(memoryValue(point, scope)) : '—'}</td> })}</tr>)}</tbody>
+        <table className="w-full min-w-[540px] text-left text-sm"><caption className="sr-only">同一 B、S、卡数下的容量；各模型存储格式见上方设置，破折号表示超出范围。</caption><thead><tr><th scope="col" className="p-3 text-secondary">S / tokens</th>{models.map((model) => <th scope="col" className="p-3 text-white" key={model.id}>{model.name}</th>)}</tr></thead>
+          <tbody>{contextProbes.map((size) => <tr key={size} className="border-t border-white/10"><th scope="row" className="p-3 font-mono font-normal text-secondary">{size.toLocaleString('en-US')}</th>{series.map(({ model, points }) => { const point = points.find((item) => item.sequence === size); return <td key={model.id} className="p-3 font-mono text-secondary">{point ? formatBytes(memoryValue(point, scope)) : '—'}</td> })}</tr>)}</tbody>
         </table>
       </div>
     </details>

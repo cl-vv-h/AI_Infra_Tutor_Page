@@ -13,7 +13,7 @@ export default function QwenDenseLayout({ tp, policy, dpaRows, layer = 0 }: { tp
     { name: 'down_proj', shape: `[4096, ${intermediate}]` },
   ].map(weight => ({ ...weight, storage: mixedWeightStorage(weight, 'ffn', policy, layer) }))
   const bytes = weights.reduce((sum, weight) => sum + weight.storage.bytes, 0)
-  return <details aria-label="Qwen3 Dense 融合布局" className="mt-4 rounded-xl border border-cyan-200/20 p-4 text-sm leading-6 text-white/70">
+  return <details aria-label="Qwen3 Dense 融合布局" className="mt-4 rounded-xl border border-cyan-200/20 p-4 text-sm leading-6 text-secondary">
     <summary className="cursor-pointer text-cyan-100">SGLang Gate / Up 融合布局 · 本层 MLP 每 rank {bytes.toLocaleString('en-US')} B</summary>
     <p className="mt-3">Qwen3 复用 Qwen2MLP：Gate 和 Up 按输出维做列并行并合并，Down 按输入维做行并行。当前 TP={tp}，中间维 I={intermediate}；Gate/Up 各自占 {intermediate} 行，融合不把参数或 scale 再加一遍。下方是同一 MLP 账本，不是额外分配；Gate 与 Up 精度不同时分别计数，不能视为同一个可执行融合容器。</p>
     <div className="mt-3 grid gap-3 sm:grid-cols-2">{weights.map(weight => <div key={weight.name} className="min-w-0 rounded-xl bg-white/5 p-3"><p className="break-words font-mono text-cyan-100">{weight.name} {weight.shape}</p><MixedWeightDetails storage={weight.storage} copies={1} /></div>)}</div>

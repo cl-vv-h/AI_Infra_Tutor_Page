@@ -23,7 +23,8 @@ try {
   for (const topic of modelKnowledge) {
     const html = render(`/models/knowledge/${topic.id}`, '/models/knowledge/:topicId', Knowledge)
     check(html)
-    assert.ok(html.includes(`<h1 class="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">${topic.title}</h1>`))
+    assert.ok(html.includes(`<h1>${topic.title}</h1>`))
+    assert.match(html, /class="page-heading page-heading--compact"/)
     for (const concept of topic.concepts) assert.ok(html.includes(concept.title))
     assert.ok(html.includes('aria-current="page"'))
   }

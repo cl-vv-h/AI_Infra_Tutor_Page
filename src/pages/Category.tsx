@@ -17,6 +17,7 @@ import { getCategoryBySlug } from '@/data/categories'
 import { getArticlesByCategory, getArticlesBySubCategory } from '@/data/articles'
 import Sidebar from '@/components/Sidebar'
 import ArticleCard from '@/components/ArticleCard'
+import PageHeader from '@/components/PageHeader'
 import { useLanguage } from '@/hooks/useLanguage'
 import type { Language } from '@/types'
 
@@ -55,15 +56,15 @@ function SglangOverview({
   return (
     <div className="space-y-8">
       {knowledgeGraphSub && (
-        <div className="rounded-xl border border-white/10 bg-[#1a1f35] p-6">
+        <div className="rounded-xl border border-white/10 bg-surface p-6">
           <div className="flex items-center gap-3 mb-3">
-            <Globe className="h-5 w-5 text-[#8b5cf6]" />
+            <Globe className="h-5 w-5 text-accent" />
             <h3 className="text-lg font-semibold text-white">{language === 'zh' ? knowledgeGraphSub.name : knowledgeGraphSub.nameEn}</h3>
           </div>
-          <p className="text-sm text-gray-400 mb-4">{language === 'zh' ? knowledgeGraphSub.description : knowledgeGraphSub.descriptionEn}</p>
+          <p className="text-sm text-muted mb-4">{language === 'zh' ? knowledgeGraphSub.description : knowledgeGraphSub.descriptionEn}</p>
           <button
             onClick={() => onSubClick(knowledgeGraphSub.slug)}
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-[#8b5cf6] hover:text-[#a78bfa] transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-ink transition-colors"
           >
             {language === 'zh' ? '查看知识图谱' : 'Open knowledge graph'}
             <span className="text-xs">→</span>
@@ -77,20 +78,20 @@ function SglangOverview({
         return (
           <div
             key={sub.id}
-            className="rounded-xl border border-white/10 bg-[#1a1f35] p-6"
+            className="rounded-xl border border-white/10 bg-surface p-6"
           >
-            <div className="mb-1 flex items-center gap-3">
-              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#8b5cf6]/20 text-xs font-bold text-[#8b5cf6]">
+            <div className="mb-2 flex flex-wrap items-center gap-3">
+              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-accent/10 text-xs font-bold text-accent">
                 {topicLabel.replace('专题', '')}
               </div>
               <h3 className="text-lg font-semibold text-white">
                 {language === 'zh' ? `${topicLabel}：${sub.name}` : `Track ${topicLabel.replace('专题', '')} · ${sub.nameEn}`}
               </h3>
-              <span className="ml-auto rounded-full bg-[#8b5cf6]/10 px-2.5 py-0.5 text-xs text-[#8b5cf6]">
+              <span className="ml-auto shrink-0 rounded-full bg-accent/10 px-2.5 py-0.5 text-xs text-accent">
                 {articles.length} {language === 'zh' ? '篇' : 'articles'}
               </span>
             </div>
-            <p className="mb-5 text-sm text-gray-400">{language === 'zh' ? sub.description : sub.descriptionEn}</p>
+            <p className="mb-5 text-sm text-muted">{language === 'zh' ? sub.description : sub.descriptionEn}</p>
 
             <div className="relative pl-8">
               <div className="absolute left-3 top-0 bottom-0 w-px bg-white/10" />
@@ -100,15 +101,15 @@ function SglangOverview({
                   to={`/article/${article.slug}`}
                   className="group relative mb-4 flex items-start gap-4 last:mb-0"
                 >
-                  <div className="absolute -left-5 flex h-6 w-6 items-center justify-center rounded-full bg-[#8b5cf6] text-xs font-bold text-white">
+                  <div className="absolute -left-5 flex h-6 w-6 items-center justify-center rounded-full bg-action text-xs font-bold text-white">
                     {index + 1}
                   </div>
-                  <div className="flex-1 rounded-lg border border-white/5 bg-[#141830] p-4 transition-all group-hover:border-[#8b5cf6]/30 group-hover:bg-[#1e2440]">
-                    <h4 className="font-semibold text-white transition-colors group-hover:text-[#8b5cf6]">
+                  <div className="min-w-0 flex-1 rounded-lg border border-white/5 bg-raised p-4 transition-all group-hover:border-accent/40 group-hover:bg-raised">
+                    <h4 className="font-semibold text-white transition-colors group-hover:text-accent">
                       {language === 'zh' ? article.title : article.titleEn}
                     </h4>
-                    <p className="mt-1 text-sm text-gray-400">{language === 'zh' ? article.summary : article.summaryEn}</p>
-                    <span className="mt-2 inline-flex items-center gap-1 text-xs text-gray-500">
+                    <p className="mt-1 break-words text-sm leading-6 text-muted">{language === 'zh' ? article.summary : article.summaryEn}</p>
+                    <span className="mt-2 inline-flex items-center gap-1 text-xs text-muted">
                       <Clock className="h-3 w-3" />
                       {article.readTime}
                     </span>
@@ -138,17 +139,17 @@ function SglangSubcategoryView({
     <div>
       <div className="mb-6 flex items-center gap-3">
         {topicLabel && (
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#8b5cf6]/20 text-xs font-bold text-[#8b5cf6]">
+          <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-xs font-bold text-accent">
             {topicLabel.replace('专题', '')}
           </div>
         )}
-        <div>
+        <div className="min-w-0">
           <h2 className="text-xl font-bold text-white">
             {language === 'zh' ? `${topicLabel ? `${topicLabel}：` : ''}${sub.name}` : `${topicLabel ? `Track ${topicLabel.replace('专题', '')} · ` : ''}${sub.nameEn}`}
           </h2>
-          <p className="mt-1 text-sm text-gray-400">{language === 'zh' ? sub.description : sub.descriptionEn}</p>
+          <p className="mt-1 break-words text-sm leading-6 text-muted">{language === 'zh' ? sub.description : sub.descriptionEn}</p>
         </div>
-        <span className="ml-auto rounded-full bg-[#8b5cf6]/10 px-2.5 py-0.5 text-xs text-[#8b5cf6]">
+        <span className="ml-auto shrink-0 rounded-full bg-accent/10 px-2.5 py-0.5 text-xs text-accent">
           {articles.length} {language === 'zh' ? '篇' : 'articles'}
         </span>
       </div>
@@ -161,15 +162,15 @@ function SglangSubcategoryView({
             to={`/article/${article.slug}`}
             className="group relative mb-4 flex items-start gap-4 last:mb-0"
           >
-            <div className="absolute -left-5 flex h-6 w-6 items-center justify-center rounded-full bg-[#8b5cf6] text-xs font-bold text-white">
+            <div className="absolute -left-5 flex h-6 w-6 items-center justify-center rounded-full bg-action text-xs font-bold text-white">
               {index + 1}
             </div>
-            <div className="flex-1 rounded-lg border border-white/5 bg-[#1a1f35] p-4 transition-all group-hover:border-[#8b5cf6]/30 group-hover:bg-[#1e2440]">
-              <h4 className="font-semibold text-white transition-colors group-hover:text-[#8b5cf6]">
+            <div className="min-w-0 flex-1 rounded-lg border border-white/5 bg-surface p-4 transition-all group-hover:border-accent/40 group-hover:bg-raised">
+              <h4 className="font-semibold text-white transition-colors group-hover:text-accent">
                 {language === 'zh' ? article.title : article.titleEn}
               </h4>
-              <p className="mt-1 text-sm text-gray-400">{language === 'zh' ? article.summary : article.summaryEn}</p>
-              <span className="mt-2 inline-flex items-center gap-1 text-xs text-gray-500">
+              <p className="mt-1 break-words text-sm leading-6 text-muted">{language === 'zh' ? article.summary : article.summaryEn}</p>
+              <span className="mt-2 inline-flex items-center gap-1 text-xs text-muted">
                 <Clock className="h-3 w-3" />
                 {article.readTime}
               </span>
@@ -194,8 +195,8 @@ export default function CategoryPage() {
       <div className="flex min-h-[60vh] items-center justify-center">
         <div className="text-center">
           <h1 className="mb-4 text-4xl font-bold text-white">404</h1>
-          <p className="mb-6 text-gray-400">未找到该分类</p>
-          <Link to="/" className="text-[#00d4ff] hover:underline">返回首页</Link>
+          <p className="mb-6 text-muted">未找到该分类</p>
+          <Link to="/" className="text-accent hover:underline">返回首页</Link>
         </div>
       </div>
     )
@@ -225,7 +226,7 @@ export default function CategoryPage() {
   return (
     <div className="flex">
       <Sidebar
-        categoryName={category.name}
+        categoryName={language === 'zh' ? category.name : category.nameEn}
         subcategories={category.subcategories}
         activeSubSlug={activeSubSlug}
         onSubClick={handleSubClick}
@@ -233,23 +234,12 @@ export default function CategoryPage() {
         language={language}
       />
 
-      <div className="min-h-screen flex-1 p-5 sm:p-8 lg:ml-64">
-        <Link to="/learn" className="mb-6 inline-block text-sm text-gray-500 hover:text-[#00d4ff] transition-colors">
+      <div className="min-h-screen min-w-0 flex-1 p-5 sm:p-8 lg:ml-64 lg:px-10">
+        <Link to="/learn" className="mb-5 inline-flex min-h-11 items-center text-sm text-muted transition-colors hover:text-accent">
           ← {language === 'zh' ? '返回课程' : 'Back to curriculum'}
         </Link>
 
-        <div className="mb-10 flex items-center gap-4">
-          <div
-            className="flex h-14 w-14 items-center justify-center rounded-xl"
-            style={{ backgroundColor: `${category.color}15` }}
-          >
-            <IconComponent className="h-7 w-7" style={{ color: category.color }} />
-          </div>
-          <div>
-            <h1 className="text-3xl font-bold text-white">{language === 'zh' ? category.name : category.nameEn}</h1>
-            <p className="mt-1 text-gray-400">{language === 'zh' ? category.description : category.descriptionEn}</p>
-          </div>
-        </div>
+        <PageHeader eyebrow={language === 'zh' ? '课程专题' : 'CURRICULUM / TOPIC'} title={language === 'zh' ? category.name : category.nameEn} description={language === 'zh' ? category.description : category.descriptionEn} actions={<><IconComponent className="h-5 w-5" style={{ color: category.color }} /><span>{allArticles.length} {language === 'zh' ? '篇内容' : 'articles'}</span></>} />
 
         {category.subcategories.length > 1 && (
           <div className="mb-8 flex gap-2 overflow-x-auto pb-2 lg:hidden">
@@ -257,8 +247,9 @@ export default function CategoryPage() {
               <button
                 key={sub.id}
                 type="button"
+                aria-pressed={activeSubSlug === sub.slug}
                 onClick={() => handleSubClick(sub.slug)}
-                className={`shrink-0 rounded-full border px-3 py-2 text-xs ${activeSubSlug === sub.slug ? 'border-violet-300/40 bg-violet-300/10 text-violet-200' : 'border-white/10 text-white/45'}`}
+                className={`min-h-11 shrink-0 rounded-lg border px-3 py-2 text-xs ${activeSubSlug === sub.slug ? 'border-accent/40 bg-accent/10 text-accent' : 'border-line text-muted'}`}
               >
                 {language === 'zh' ? sub.name : sub.nameEn}
               </button>
@@ -266,7 +257,7 @@ export default function CategoryPage() {
           </div>
         )}
 
-        {isSglang && !activeSubSlug && (
+        {isSglang && !activeSub && (
           <SglangOverview
             category={category}
             onSubClick={handleSubClick}
@@ -295,8 +286,8 @@ export default function CategoryPage() {
         )}
 
         {!isSglang && filteredArticles.length === 0 && (
-          <div className="flex items-center justify-center rounded-xl border border-white/5 bg-[#1a1f35] py-20">
-            <p className="text-gray-500">暂无内容，敬请期待</p>
+          <div className="flex items-center justify-center rounded-xl border border-white/5 bg-surface py-20">
+            <p className="text-muted">暂无内容，敬请期待</p>
           </div>
         )}
       </div>

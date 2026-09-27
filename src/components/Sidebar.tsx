@@ -34,19 +34,19 @@ export default function Sidebar({
     const topicSubs = subcategories.filter((s) => s.slug !== 'knowledge-graph')
 
     return (
-      <aside className="fixed left-0 top-16 hidden h-[calc(100vh-4rem)] w-64 overflow-y-auto border-r border-white/10 bg-[#0a0f1e] p-4 lg:block">
-        <h2 className="mb-4 px-3 text-sm font-semibold text-[#8b5cf6]">
+      <aside className="fixed left-0 top-16 hidden h-[calc(100vh-4rem)] w-64 overflow-y-auto border-r border-white/10 bg-canvas p-4 lg:block">
+        <h2 className="mb-4 px-3 text-sm font-semibold text-accent">
           {categoryName}
         </h2>
 
-        <nav className="space-y-1">
+        <nav aria-label={language === 'zh' ? '专题导航' : 'Topic navigation'} className="space-y-1">
           {knowledgeGraphSub && (
             <button
               onClick={() => onSubClick?.(knowledgeGraphSub.slug)}
-              className="block w-full rounded-md px-3 py-2 text-left text-sm transition-colors text-gray-400 hover:bg-white/5 hover:text-gray-200"
+              className="block w-full rounded-md px-3 py-2 text-left text-sm transition-colors text-muted hover:bg-white/5 hover:text-gray-200"
             >
               <span className="flex items-center gap-2">
-                <Globe className="h-4 w-4 text-[#8b5cf6]" />
+                <Globe className="h-4 w-4 text-accent" />
                 {knowledgeGraphSub.name}
               </span>
             </button>
@@ -54,7 +54,7 @@ export default function Sidebar({
 
           <div className="my-3 border-t border-white/5" />
 
-          <div className="px-3 pb-2 text-xs font-medium uppercase tracking-wider text-gray-600">
+          <div className="px-3 pb-2 text-xs font-medium uppercase tracking-wider text-muted">
             {language === 'zh' ? '专题学习' : 'Learning tracks'}
           </div>
 
@@ -64,11 +64,12 @@ export default function Sidebar({
             return (
               <button
                 key={sub.id}
+                aria-pressed={isActive}
                 onClick={() => onSubClick?.(sub.slug)}
                 className={`block w-full rounded-md px-3 py-2 text-left text-sm transition-colors ${
                   isActive
-                    ? 'bg-[#8b5cf6]/10 font-medium text-[#8b5cf6]'
-                    : 'text-gray-400 hover:bg-white/5 hover:text-gray-200'
+                    ? 'bg-accent/10 font-medium text-accent'
+                    : 'text-muted hover:bg-white/5 hover:text-gray-200'
                 }`}
               >
                 <span className="flex items-center justify-between">
@@ -76,12 +77,12 @@ export default function Sidebar({
                     <BookOpen className="h-4 w-4 shrink-0" />
                     <span>{language === 'zh' ? sub.name : sub.nameEn}</span>
                   </span>
-                  <span className="ml-2 rounded-full bg-white/5 px-2 py-0.5 text-xs text-gray-500">
+                  <span className="ml-2 rounded-full bg-white/5 px-2 py-0.5 text-xs text-muted">
                     {articleCount}
                   </span>
                 </span>
                 {isActive && sub.description && (
-                  <span className="mt-1 block text-xs text-gray-500 pl-6">
+                  <span className="mt-1 block text-xs text-muted pl-6">
                     {language === 'zh' ? sub.description : sub.descriptionEn}
                   </span>
                 )}
@@ -94,27 +95,28 @@ export default function Sidebar({
   }
 
   return (
-    <aside className="fixed left-0 top-16 hidden h-[calc(100vh-4rem)] w-64 overflow-y-auto border-r border-white/10 bg-[#0a0f1e] p-4 lg:block">
-      <h2 className="mb-4 px-3 text-sm font-semibold text-[#00d4ff]">
+    <aside className="fixed left-0 top-16 hidden h-[calc(100vh-4rem)] w-64 overflow-y-auto border-r border-white/10 bg-canvas p-4 lg:block">
+      <h2 className="mb-4 px-3 text-sm font-semibold text-accent">
         {categoryName}
       </h2>
 
-      <nav className="space-y-1">
+      <nav aria-label={language === 'zh' ? '专题导航' : 'Topic navigation'} className="space-y-1">
         {subcategories.map((sub) => {
           const isActive = sub.slug === activeSubSlug
           return (
             <button
               key={sub.id}
+              aria-pressed={isActive}
               onClick={() => onSubClick?.(sub.slug)}
               className={`block w-full rounded-md px-3 py-2 text-left text-sm transition-colors ${
                 isActive
-                  ? 'bg-[#00d4ff]/10 font-medium text-[#00d4ff]'
-                  : 'text-gray-400 hover:bg-white/5 hover:text-gray-200'
+                  ? 'bg-accent/10 font-medium text-accent'
+                  : 'text-muted hover:bg-white/5 hover:text-gray-200'
               }`}
             >
               <span className="block">{language === 'zh' ? sub.name : sub.nameEn}</span>
               {isActive && sub.description && (
-                <span className="mt-1 block text-xs text-gray-500">
+                <span className="mt-1 block text-xs text-muted">
                   {language === 'zh' ? sub.description : sub.descriptionEn}
                 </span>
               )}

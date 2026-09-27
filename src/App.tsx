@@ -16,12 +16,13 @@ const ArticlePage = lazy(() => import('@/pages/Article'))
 const About = lazy(() => import('@/pages/About'))
 const KnowledgeGraph = lazy(() => import('@/pages/KnowledgeGraph'))
 const PerformanceWorkspace = lazy(() => import('@/pages/PerformanceWorkspace'))
+const NotFound = lazy(() => import('@/pages/NotFound'))
 
 export default function App() {
   return (
     <Router basename="/">
       <Layout>
-        <Suspense fallback={<div className="grid min-h-[70vh] place-items-center text-sm text-white/35">正在连接知识节点…</div>}>
+        <Suspense fallback={<div role="status" className="page-container grid min-h-[70vh] place-items-center text-sm text-muted">正在加载页面…</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/learn" element={<Learn />} />
@@ -39,6 +40,7 @@ export default function App() {
             <Route path="/article/:slug" element={<ArticlePage />} />
             <Route path="/about" element={<About />} />
             <Route path="/knowledge-graph" element={<KnowledgeGraph />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </Layout>

@@ -368,8 +368,15 @@ export default function KnowledgeGraphView() {
   const svgHeight = 740
 
   return (
-    <div className="flex gap-6">
-      <div className="flex-1 overflow-x-auto">
+    <div className="grid min-w-0 gap-6 xl:grid-cols-[minmax(0,1fr)_auto]">
+      <div className="min-w-0">
+        <label className="mb-4 block text-sm text-secondary">选择模块
+          <select aria-label="选择架构模块" value={selectedNode ?? ''} onChange={event => setSelectedNode(event.target.value || null)} className="ml-3 max-w-full rounded-lg border border-line bg-field px-3 py-2">
+            <option value="">查看整体架构</option>
+            {nodes.map(node => <option key={node.id} value={node.id}>{node.name}</option>)}
+          </select>
+        </label>
+        <div role="region" aria-label="可横向滚动的架构图" tabIndex={0} className="overflow-x-auto rounded-xl border border-line bg-surface p-3">
         <svg
           viewBox={`0 0 ${svgWidth} ${svgHeight}`}
           className="w-full min-w-[800px]"
@@ -473,6 +480,13 @@ export default function KnowledgeGraphView() {
             return (
               <g
                 key={node.id}
+                role="button"
+                tabIndex={0}
+                aria-label={`查看模块 ${node.name}`}
+                aria-pressed={isSelected}
+                onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); handleNodeClick(node.id) } }}
+                onFocus={() => handleNodeHover(node.id)}
+                onBlur={() => handleNodeHover(null)}
                 onMouseEnter={() => handleNodeHover(node.id)}
                 onMouseLeave={() => handleNodeHover(null)}
                 onClick={() => handleNodeClick(node.id)}
@@ -516,45 +530,47 @@ export default function KnowledgeGraphView() {
             )
           })}
         </svg>
+        </div>
 
-        <div className="mt-4 flex flex-wrap gap-4 rounded-xl border border-white/5 bg-[#1a1f35] px-5 py-3">
+        <div className="mt-4 flex flex-wrap gap-4 rounded-xl border border-white/5 bg-surface px-5 py-3">
           {layerLegend.map((item) => (
             <div key={item.name} className="flex items-center gap-2">
               <div
                 className="h-3 w-3 rounded-sm"
                 style={{ backgroundColor: item.color }}
               />
-              <span className="text-xs text-gray-400">{item.name}</span>
+              <span className="text-xs text-muted">{item.name}</span>
             </div>
           ))}
         </div>
       </div>
 
       {selectedNodeData && (
-        <div className="w-80 shrink-0 self-start rounded-xl border border-white/5 bg-[#1a1f35] p-5">
+        <section aria-label="架构模块详情" className="surface-card self-start p-5 xl:sticky xl:top-24 xl:w-80">
           <div className="mb-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div
                 className="h-3 w-3 rounded-sm"
                 style={{ backgroundColor: selectedNodeData.color }}
               />
-              <span className="text-xs text-gray-400">{selectedNodeData.layer}</span>
+              <span className="text-xs text-muted">{selectedNodeData.layer}</span>
             </div>
             <button
+              aria-label="关闭架构模块详情"
               onClick={() => setSelectedNode(null)}
-              className="text-gray-500 transition-colors hover:text-white"
+              className="utility-button"
             >
               ✕
             </button>
           </div>
 
           <h3 className="mb-1 text-xl font-bold text-white">{selectedNodeData.name}</h3>
-          <p className="mb-4 font-mono text-xs text-gray-500">{selectedNodeData.file}</p>
-          <p className="mb-5 text-sm leading-relaxed text-gray-300">{selectedNodeData.description}</p>
+          <p className="mb-4 break-words font-mono text-xs text-muted">{selectedNodeData.file}</p>
+          <p className="mb-5 text-sm leading-relaxed text-secondary">{selectedNodeData.description}</p>
 
           {selectedConnected.length > 0 && (
             <div>
-              <h4 className="mb-2 text-xs font-semibold text-gray-400">关联模块</h4>
+              <h4 className="mb-2 text-xs font-semibold text-muted">关联模块</h4>
               <div className="space-y-2">
                 {selectedConnected.map((conn) => (
                   <div
@@ -565,14 +581,14 @@ export default function KnowledgeGraphView() {
                       className="h-2 w-2 rounded-full"
                       style={{ backgroundColor: conn.color }}
                     />
-                    <span className="text-sm text-gray-300">{conn.name}</span>
-                    <span className="ml-auto text-xs text-gray-500">{conn.layer}</span>
+                    <span className="text-sm text-secondary">{conn.name}</span>
+                    <span className="ml-auto text-xs text-muted">{conn.layer}</span>
                   </div>
                 ))}
               </div>
             </div>
           )}
-        </div>
+        </section>
       )}
     </div>
   )

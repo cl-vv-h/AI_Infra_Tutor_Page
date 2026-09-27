@@ -3,7 +3,7 @@ import { tokenCount } from '@/lib/model-lab'
 import type { TensorParallelSize } from '@/types/model'
 
 export default function KimiLatentMoeFlow({ scenario, ep }: { scenario: InferenceScenario; ep: TensorParallelSize }) {
-  return <details aria-label="LatentMoE 支路图" className="mt-3 rounded-xl border border-violet-200/25 bg-violet-200/5 p-3 text-sm leading-6 text-white/70">
+  return <details aria-label="LatentMoE 支路图" className="mt-3 rounded-xl border border-violet-200/25 bg-violet-200/5 p-3 text-sm leading-6 text-secondary">
     <summary className="cursor-pointer text-violet-100">展开 routed / shared 数据流</summary>
     <p className="mt-3 rounded-lg border border-white/15 p-3 text-center text-cyan-100">同一份 FFN 输入 x：<span className="font-mono">[{tokenCount(scenario)}, 7168]</span><br />两支独立读取 x · EP {ep} / MoE-TP {scenario.tp / ep}</p>
     <div className="mt-3 grid gap-3 sm:grid-cols-2">
@@ -27,6 +27,6 @@ export default function KimiLatentMoeFlow({ scenario, ep }: { scenario: Inferenc
       </section>
     </div>
     <p className="mt-3 rounded-lg border border-cyan-200/20 p-3 text-center text-cyan-100">两支 7168 维结果相加 → MoE 输出<br />再交给下方 FFN → Block Prefix 累加</p>
-    <p className="mt-3 text-xs text-white/55">表示数据依赖，不保证硬件实际同时执行；归约可能由实现合并到共享 collective，但不能在局部 routed 和上提前做非线性 Norm。</p>
+    <p className="mt-3 text-xs text-secondary">表示数据依赖，不保证硬件实际同时执行；归约可能由实现合并到共享 collective，但不能在局部 routed 和上提前做非线性 Norm。</p>
   </details>
 }

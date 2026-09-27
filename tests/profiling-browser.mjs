@@ -45,7 +45,7 @@ try{
     await page.getByRole('button',{name:'确认语义并填入候选 Shape / P50',exact:true}).click()
     await expect(page.getByLabel('M · 输出行数',{exact:true})).toHaveValue('128')
     await expect(page.getByLabel('实测耗时',{exact:true})).toHaveValue('200')
-    await page.getByRole('link',{name:'Profiling 分析',exact:true}).click()
+    await page.getByRole('navigation',{name:'性能工具',exact:true}).getByRole('link',{name:'Profiling 分析',exact:true}).click()
     await expect(summary).toContainText('160 次调用')
     const aSlot=page.getByRole('region',{name:'基线 A导入',exact:true})
     await aSlot.locator('summary').filter({hasText:'范围与稳态筛选'}).click()

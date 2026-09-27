@@ -16,8 +16,16 @@ interface TocItem {
 export default function TableOfContents({ content, contentRoot }: TableOfContentsProps) {
   const [items, setItems] = useState<TocItem[]>([])
   const [activeId, setActiveId] = useState('')
+  const [open, setOpen] = useState(() => typeof window !== 'undefined' && window.matchMedia('(min-width: 1024px)').matches)
   const { language } = useLanguage()
   const { hash } = useLocation()
+
+  useEffect(() => {
+    const desktop = window.matchMedia('(min-width: 1024px)')
+    const update = () => setOpen(desktop.matches)
+    desktop.addEventListener('change', update)
+    return () => desktop.removeEventListener('change', update)
+  }, [])
 
   useEffect(() => {
     // The rendered headings are the source of truth. This matches rehype-slug
@@ -41,15 +49,17 @@ export default function TableOfContents({ content, contentRoot }: TableOfContent
     let id = hash.slice(1)
     try { id = decodeURIComponent(id) } catch { /* Keep the original fragment. */ }
     document.getElementById(id)?.scrollIntoView({ block: 'start' })
-  }, [hash, content])
+  // The TOC is discovered after the body renders. Its mobile summary changes
+  // the document height, so resolve the anchor again after that layout exists.
+  }, [hash, content, items])
 
   if (!items.length) return null
 
   return (
     <aside className="order-first min-w-0 lg:order-none lg:col-start-2 lg:row-start-1">
-      <details open className="rounded-2xl border border-white/10 bg-[#101923] p-4 lg:sticky lg:top-24">
+      <details open={open} onToggle={event => setOpen(event.currentTarget.open)} className="rounded-xl border border-line bg-surface p-4 lg:sticky lg:top-24">
         <summary className="cursor-pointer text-sm font-semibold text-white">
-          {language === 'zh' ? '本篇目录' : 'On this page'} <span className="ml-2 font-mono text-xs font-normal text-slate-400">{items.length}</span>
+          {language === 'zh' ? '本篇目录' : 'On this page'} <span className="ml-2 font-mono text-xs font-normal text-muted">{items.length}</span>
         </summary>
         <nav aria-label={language === 'zh' ? '本篇目录' : 'On this page'} className="mt-4 max-h-56 space-y-1 overflow-y-auto lg:max-h-[calc(100vh-12rem)]">
           {items.map((item) => (
@@ -65,7 +75,7 @@ export default function TableOfContents({ content, contentRoot }: TableOfContent
                 heading.focus({ preventScroll: true })
                 setActiveId(item.id)
               }}
-              className={`block w-full rounded px-2 py-1.5 text-left text-sm leading-6 transition-colors hover:bg-white/5 hover:text-cyan-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-200 ${activeId === item.id ? 'bg-cyan-200/5 text-cyan-200' : 'text-slate-400'} ${item.level === 3 ? 'pl-4' : item.level === 4 ? 'pl-6' : ''}`}
+              className={`block w-full rounded px-2 py-1.5 text-left text-sm leading-6 transition-colors hover:bg-raised hover:text-ink ${activeId === item.id ? 'bg-accent/10 text-accent' : 'text-muted'} ${item.level === 3 ? 'pl-4' : item.level === 4 ? 'pl-6' : ''}`}
             >
               {item.text}
             </button>

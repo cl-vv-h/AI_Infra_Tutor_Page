@@ -9,6 +9,7 @@ import { kimiWeightAudit } from '../src/lib/kimi-weight-audit.ts'
 import { explorerParams, parseExplorer, selectExplorerLayer } from '../src/lib/model-explorer.ts'
 import { w4InterleavedScaleShape, w4RuntimeMetadata } from '../src/lib/w4-lifecycle.ts'
 import { dpaLayout, dpaParams, parseDpa } from '../src/lib/dpa-lab.ts'
+import { modulePrecisionOptions } from '../src/lib/weight-precision-policy.ts'
 
 const ids = ['glm-5-2', 'glm-5-3-flash', 'kimi-k3', 'deepseek-v4-flash']
 const scenario = { phase: 'decode', batch: 3, sequence: 4096, tp: 4, cacheBytes: 2 }
@@ -162,9 +163,16 @@ test('rank and all-layer ledgers share mixed storage across four models, TP, EP,
   for (const id of ids) {
     const model = getModelArchitecture(id)
     for (const tp of model.supportedTp) for (const ep of expertParallelSizes(model, tp)) {
+      const options = modulePrecisionOptions(model, tp, ep)
       for (const experts of ['bf16', 'fp8', 'mxfp4', 'w4afp8']) for (const mlp of ['bf16', 'fp8']) for (const w4Stage of experts === 'w4afp8' ? [undefined, 'processed'] : [undefined]) {
         const policy = { mlp, shared: mlp, experts, ...(w4Stage ? { w4Stage } : {}) }
         const last = model.dimensions.layers - 1
+        // Large TP partitions may violate FP8 block/group alignment. Such
+        // policies must reject, not become fractional or silently approximate.
+        if (!options.mlp.includes(mlp) || !options.shared.includes(mlp) || !options.experts.includes(experts)) {
+          assert.throws(() => decoderWeightBudget(model, last, tp, 4, ep, policy), /align|divis|multiple|128|32/i)
+          continue
+        }
         const budget = decoderWeightBudget(model, last, tp, 4, ep, policy)
         let all = 0
         for (let layer = 0; layer <= last; layer++) for (const node of decoderNodes(model, layer)) {

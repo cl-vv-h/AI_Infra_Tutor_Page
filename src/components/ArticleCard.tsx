@@ -21,13 +21,13 @@ export default function ArticleCard({
   return (
     <Link
       to={`/article/${slug}`}
-      className="group block rounded-lg border border-white/10 bg-[#1a1f35] p-6 transition-all duration-300 hover:border-[#00d4ff]/40 hover:shadow-lg hover:shadow-[#00d4ff]/5"
+      className="surface-card group block p-5 transition-colors hover:border-accent/40"
     >
-      <h3 className="mb-2 text-lg font-semibold text-white transition-colors group-hover:text-[#00d4ff]">
+      <h3 className="mb-2 text-lg font-semibold text-white transition-colors group-hover:text-accent">
         {title}
       </h3>
 
-      <p className="mb-4 line-clamp-2 text-sm leading-relaxed text-gray-400">
+      <p className="mb-4 line-clamp-2 text-sm leading-relaxed text-muted">
         {summary}
       </p>
 
@@ -35,14 +35,14 @@ export default function ArticleCard({
         {tags.map((tag) => (
           <span
             key={tag}
-            className="rounded-full bg-[#00d4ff]/10 px-2.5 py-0.5 text-xs text-[#00d4ff]"
+            className="rounded border border-line bg-raised px-2 py-1 text-xs text-secondary"
           >
             {tag}
           </span>
         ))}
       </div>
 
-      <div className="flex items-center gap-4 text-xs text-gray-500">
+      <div className="flex items-center gap-4 text-xs text-muted">
         <span className="flex items-center gap-1">
           <Clock className="h-3.5 w-3.5" />
           {readTime}

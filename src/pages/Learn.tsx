@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import {
   ArrowRight,
   BookOpen,
-  Braces,
   Cpu,
   GitBranch,
   Network,
@@ -12,6 +11,7 @@ import {
 import { articles, getArticlesByCategory } from '@/data/articles'
 import { categories } from '@/data/categories'
 import CurriculumSearch from '@/components/CurriculumSearch'
+import PageHeader from '@/components/PageHeader'
 
 const foundations = new Set([
   'cat-10', 'cat-5', 'cat-11', 'cat-3', 'cat-4', 'cat-6', 'cat-15',
@@ -61,47 +61,21 @@ export default function Learn() {
 
   return (
     <div className="learn-shell min-h-screen pb-24">
-      <header className="border-b border-white/[0.08]">
-        <div className="mx-auto max-w-[1440px] px-5 py-10 sm:px-8 sm:py-14 lg:px-12">
-          <div className="grid gap-10 lg:grid-cols-[1fr_22rem] lg:items-end">
-            <div>
-              <div className="mb-5 flex items-center gap-2 font-mono text-xs tracking-[0.22em] text-cyan-200/55">
-                <Braces className="h-4 w-4" /> CURRICULUM / 2026
-              </div>
-              <h1 className="max-w-4xl text-4xl font-semibold leading-[1.12] tracking-[-0.04em] text-white sm:text-5xl">
-                AI Infra，
-                <span className="text-white/35">从概念到源码。</span>
-              </h1>
-              <p className="mt-7 max-w-2xl text-base leading-8 text-slate-300/65">
-                内容同步自 SGLang Tutor 本地课程，按“基础 → 框架 → 硬件与算子”重组。每篇文章保留中英文版本与源码路径。
-              </p>
-            </div>
-
-            <div className="grid grid-cols-3 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10">
-              {[
-                [String(articles.length), '篇内容'],
-                [String(categories.length), '个主题'],
-                ['ZH/EN', '双语'],
-              ].map(([value, label]) => (
-                <div key={label} className="bg-[#0a1017] px-3 py-5 text-center">
-                  <div className="font-mono text-lg font-semibold text-white">{value}</div>
-                  <div className="mt-1 text-xs text-white/35">{label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
+      <div className="border-b border-line">
+        <div className="page-container py-10 sm:py-12">
+          <PageHeader eyebrow="CURRICULUM / 系统课程" title="AI Infra，从概念到源码。" description="内容同步自 SGLang Tutor，按基础、框架、硬件与算子组织。保留中英文版本与源码路径。" actions={<div className="flex flex-wrap gap-5 text-xs text-muted"><span><strong className="mr-1 text-base font-medium text-ink">{articles.length}</strong>篇内容</span><span><strong className="mr-1 text-base font-medium text-ink">{categories.length}</strong>个主题</span><span>ZH / EN 双语</span></div>} />
           <CurriculumSearch />
         </div>
-      </header>
+      </div>
 
-      <main className="mx-auto max-w-[1440px] space-y-24 px-5 pt-14 sm:px-8 lg:px-12">
+      <div className="page-container space-y-14 pt-10">
         <section>
           <div className="mb-7 flex items-end justify-between gap-6">
             <div>
-              <p className="font-mono text-xs tracking-[0.2em] text-white/35">RECOMMENDED ROUTE</p>
+              <p className="font-mono text-xs tracking-[0.2em] text-muted">RECOMMENDED ROUTE</p>
               <h2 className="mt-2 text-2xl font-semibold tracking-tight text-white">一条不容易迷路的路线</h2>
             </div>
-            <GitBranch className="hidden h-6 w-6 text-white/25 sm:block" />
+            <GitBranch className="hidden h-6 w-6 text-muted sm:block" />
           </div>
 
           <div className="grid gap-4 lg:grid-cols-3">
@@ -111,15 +85,15 @@ export default function Learn() {
                 <Link
                   key={route.to}
                   to={route.to}
-                  className="group rounded-3xl border border-white/10 bg-[#0e151e]/75 p-6 transition hover:-translate-y-1 hover:border-white/20"
+                  className="surface-card group p-6 transition-colors hover:border-accent/40"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="font-mono text-xs tracking-[0.15em] text-white/35">{route.label}</span>
+                    <span className="font-mono text-xs tracking-[0.15em] text-muted">{route.label}</span>
                     <Icon className="h-5 w-5" style={{ color: route.color }} />
                   </div>
-                  <h3 className="mt-12 text-xl font-semibold text-white">{route.title}</h3>
-                  <p className="mt-3 min-h-12 text-sm leading-6 text-slate-300/60">{route.description}</p>
-                  <span className="mt-6 inline-flex items-center gap-2 text-xs text-white/45 transition group-hover:text-white">
+                  <h3 className="mt-6 text-xl font-semibold text-ink">{route.title}</h3>
+                  <p className="mt-3 min-h-12 text-sm leading-6 text-secondary">{route.description}</p>
+                  <span className="mt-6 inline-flex items-center gap-2 text-xs text-muted transition group-hover:text-white">
                     进入路线 <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                   </span>
                 </Link>
@@ -131,52 +105,52 @@ export default function Learn() {
         <section>
           <div className="mb-8 grid gap-5 lg:grid-cols-[1fr_22rem] lg:items-end">
             <div>
-              <p className="font-mono text-xs tracking-[0.2em] text-white/35">KNOWLEDGE DOMAINS</p>
+              <p className="font-mono text-xs tracking-[0.2em] text-muted">KNOWLEDGE DOMAINS</p>
               <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white">基础与优化专题</h2>
             </div>
           </div>
 
-          <div className="grid gap-px overflow-hidden rounded-3xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-px overflow-hidden rounded-xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
             {topicCategories.map((category, index) => {
               const count = getArticlesByCategory(category.id).length
               return (
                 <Link
                   key={category.id}
                   to={`/category/${category.slug}`}
-                  className="group min-h-64 bg-[#0a1017] p-6 transition-colors hover:bg-[#101923]"
+                  className="group bg-surface p-5 transition-colors hover:bg-raised"
                 >
                   <div className="flex items-center justify-between gap-4">
-                    <span className="font-mono text-xs tracking-widest text-white/30">
+                    <span className="font-mono text-xs tracking-widest text-muted">
                       DOMAIN {String(index + 1).padStart(2, '0')}
                     </span>
-                    <span className="rounded-full border border-white/10 px-2.5 py-1 text-xs text-white/35">{count} 篇</span>
+                    <span className="rounded-full border border-white/10 px-2.5 py-1 text-xs text-muted">{count} 篇</span>
                   </div>
-                  <div className="mt-12 h-1 w-10 rounded-full" style={{ backgroundColor: category.color }} />
+                  <div className="mt-5 h-0.5 w-6 rounded-full" style={{ backgroundColor: category.color }} />
                   <h3 className="mt-5 text-xl font-semibold text-white">{category.name}</h3>
-                  <p className="mt-1 text-xs tracking-wide text-white/30">{category.nameEn}</p>
-                  <p className="mt-4 line-clamp-2 text-sm leading-6 text-slate-300/55">{category.description}</p>
-                  <ArrowRight className="mt-6 h-4 w-4 text-white/25 transition group-hover:translate-x-1 group-hover:text-white" />
+                  <p className="mt-1 text-xs tracking-wide text-muted">{category.nameEn}</p>
+                  <p className="mt-4 line-clamp-2 text-sm leading-6 text-secondary">{category.description}</p>
+                  <ArrowRight className="mt-6 h-4 w-4 text-muted transition group-hover:translate-x-1 group-hover:text-white" />
                 </Link>
               )
             })}
           </div>
 
           {topicCategories.length === 0 && (
-            <div className="rounded-3xl border border-dashed border-white/10 py-16 text-center text-sm text-white/35">
+            <div className="rounded-3xl border border-dashed border-white/10 py-16 text-center text-sm text-muted">
               没有匹配的主题，换个关键词试试。
             </div>
           )}
         </section>
 
-        <section className="grid gap-8 overflow-hidden rounded-[2rem] border border-violet-300/15 bg-violet-300/[0.045] p-7 sm:p-10 lg:grid-cols-[0.85fr_1.15fr]">
+        <section className="surface-card grid gap-8 p-6 sm:p-8 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
-            <Network className="h-7 w-7 text-violet-300" />
-            <p className="mt-8 font-mono text-xs tracking-[0.2em] text-violet-200/50">DEEP DIVE</p>
+            <Network className="h-6 w-6 text-accent" />
+            <p className="eyebrow mt-5">DEEP DIVE</p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white">SGLang 系统阅读室</h2>
-            <p className="mt-5 max-w-md text-sm leading-7 text-slate-300/65">
+            <p className="mt-5 max-w-md text-sm leading-7 text-secondary">
               五条互相衔接的深读线：源码总览、Scheduler、TP Worker / ModelRunner、Ascend NPU 适配与算子基础设施。
             </p>
-            <Link to="/category/sglang" className="mt-8 inline-flex items-center gap-2 rounded-full bg-violet-300 px-5 py-2.5 text-sm font-semibold text-[#110d19] transition hover:bg-violet-200">
+            <Link to="/category/sglang" className="button-secondary mt-6">
               打开系统地图 <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -186,11 +160,11 @@ export default function Learn() {
               <Link
                 key={sub.id}
                 to={`/category/sglang?sub=${sub.slug}`}
-                className="rounded-2xl border border-white/[0.08] bg-black/15 p-5 transition hover:border-violet-300/30 hover:bg-violet-200/[0.04]"
+                className="rounded-lg border border-line bg-canvas p-5 transition-colors hover:border-accent/40"
               >
-                <span className="font-mono text-xs text-violet-200/40">0{index + 1}</span>
+                <span className="font-mono text-xs text-muted">0{index + 1}</span>
                 <h3 className="mt-5 text-base font-medium text-white">{sub.name}</h3>
-                <p className="mt-2 line-clamp-2 text-xs leading-5 text-white/40">{sub.description}</p>
+                <p className="mt-2 line-clamp-2 text-xs leading-5 text-muted">{sub.description}</p>
               </Link>
             ))}
           </div>
@@ -207,15 +181,15 @@ export default function Learn() {
                 <Link key={article.id} to={`/article/${article.slug}`} className="group grid gap-3 py-5 sm:grid-cols-[1fr_auto] sm:items-center">
                   <div>
                     <h3 className="font-medium text-white transition group-hover:text-lime-200">{article.title}</h3>
-                    <p className="mt-1 line-clamp-1 text-sm text-white/35">{article.summary}</p>
+                    <p className="mt-1 line-clamp-1 text-sm text-muted">{article.summary}</p>
                   </div>
-                  <span className="flex items-center gap-2 font-mono text-xs text-white/30">{article.readTime} <ArrowRight className="h-3.5 w-3.5" /></span>
+                  <span className="flex items-center gap-2 font-mono text-xs text-muted">{article.readTime} <ArrowRight className="h-3.5 w-3.5" /></span>
                 </Link>
               ))}
             </div>
           </section>
         )}
-      </main>
+      </div>
     </div>
   )
 }

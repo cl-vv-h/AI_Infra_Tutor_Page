@@ -7,7 +7,7 @@ export default function AttentionResidualWorkbench({ model, layer, scenario, onL
   const block = model.execution.residualBlockSize!
   const s = attentionResidualStage(layer, block)
   const slots = Math.ceil(model.dimensions.layers / block)
-  return <section aria-label="Attention Residual 深度实验" className="mb-5 rounded-2xl border border-amber-200/30 bg-amber-200/5 p-4 text-sm leading-6 text-white/70">
+  return <section aria-label="Attention Residual 深度实验" className="mb-5 rounded-2xl border border-amber-200/30 bg-amber-200/5 p-4 text-sm leading-6 text-secondary">
     <h3 className="text-base font-semibold text-amber-100">Attention Residual · 跨层残差聚合</h3>
     <p className="mt-3"><strong className="text-white">跨层残差快照缓冲区（bank）</strong>保存同一 token 的输入表示及已完成残差块的输出累加值，供后续层加权聚合。这里的 bank 是实现中的张量容器，不是硬件存储体，也不是 KV Cache。</p>
     <p className="mt-2">块内累加状态（prefix）保存当前残差块已执行子层的输出之和；这里的 prefix 不指提示词前缀或前缀缓存。</p>

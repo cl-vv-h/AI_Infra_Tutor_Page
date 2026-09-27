@@ -16,6 +16,14 @@
 
 ## 本地开发
 
+### 项目级设计 skill
+
+`.agents/skills/awesome-design-md/` 封装了 [VoltAgent Awesome DESIGN.md](https://github.com/voltagent/awesome-design-md) 的设计资料，仅作用于本项目，不安装全局工具。可在项目任务中使用 `$awesome-design-md`；后续 UI 修改先遵循根目录 `DESIGN.md`。
+
+界面采用 Linear 风格的深色层次与克制强调色，结合 Mintlify 的文档阅读结构。技术图表保留表示模块、分片和状态的语义颜色。上游固定版本、完整参考文件与 MIT 许可证随 skill 一起保存。
+
+全站路由与功能验收记录见 `docs/design-refactor.md`。浏览器检查运行 `npm run test:design:browser`，通过环境变量提供预览地址和本机已安装的 Playwright；不提交浏览器数据、截图或导入文件。
+
 建议使用 Node.js 20：
 
 ```bash

@@ -1,36 +1,30 @@
 import { Link } from 'react-router-dom'
 import { Github, BookOpen, Target, Users, ShieldCheck } from 'lucide-react'
+import PageHeader from '@/components/PageHeader'
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-[#070b10]">
-      <section className="py-20">
-        <div className="mx-auto max-w-3xl px-6 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-white">关于 AI Infra Space</h1>
-          <p className="text-lg text-gray-400">
-            理解系统，追踪信号，保留通向下一次探索的入口
-          </p>
-        </div>
-      </section>
+    <div className="page-container min-h-screen py-10 sm:py-12">
+      <PageHeader eyebrow="ABOUT / 开放知识空间" title="关于 AI Infra Space" description="系统学习与交互实验，让模型推理的原理、实现和性能可以相互验证。" />
 
       <section className="pb-20">
-        <div className="mx-auto max-w-3xl px-6">
-          <div className="mb-16 rounded-xl border border-white/5 bg-[#1a1f35] p-8">
+        <div className="grid items-start gap-6 lg:grid-cols-2">
+          <div className="surface-card p-6 sm:p-8">
             <div className="mb-4 flex items-center gap-3">
-              <Target className="h-6 w-6 text-[#00d4ff]" />
+              <Target className="h-6 w-6 text-accent" />
               <h2 className="text-2xl font-bold text-white">项目使命</h2>
             </div>
-            <p className="leading-relaxed text-gray-300">
+            <p className="leading-relaxed text-secondary">
               项目希望把分散的 AI Infra 知识整理成可行走、可交互的地图：既能从 Prefill、KV Cache 等基础概念开始，也能检查真实模型的权重与张量 Shape，一路深入 SGLang 调度、分布式执行、Ascend NPU 与算子源码。
             </p>
           </div>
 
-          <div className="mb-16 rounded-xl border border-white/5 bg-[#1a1f35] p-8">
+          <div className="surface-card p-6 sm:p-8 lg:row-span-2">
             <div className="mb-4 flex items-center gap-3">
-              <BookOpen className="h-6 w-6 text-[#00d4ff]" />
+              <BookOpen className="h-6 w-6 text-accent" />
               <h2 className="text-2xl font-bold text-white">内容标准</h2>
             </div>
-            <p className="mb-6 leading-relaxed text-gray-300">
+            <p className="mb-6 leading-relaxed text-secondary">
               每篇内容遵循五维度标准，确保知识的完整性与实用性：
             </p>
             <div className="space-y-4">
@@ -42,38 +36,39 @@ export default function About() {
                 { title: '典型应用案例', desc: '结合真实场景，展示技术的实际应用效果' },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 rounded-lg bg-white/5 p-4">
-                  <div className="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-[#00d4ff]" />
+                  <div className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                   <div>
                     <h3 className="font-semibold text-white">{item.title}</h3>
-                    <p className="mt-1 text-sm text-gray-400">{item.desc}</p>
+                    <p className="mt-1 text-sm text-muted">{item.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="mb-16 rounded-xl border border-white/5 bg-[#1a1f35] p-8">
+          <div className="surface-card p-6 sm:p-8">
             <div className="mb-4 flex items-center gap-3">
-              <Users className="h-6 w-6 text-[#00d4ff]" />
+              <Users className="h-6 w-6 text-accent" />
               <h2 className="text-2xl font-bold text-white">参与贡献</h2>
             </div>
-            <p className="leading-relaxed text-gray-300">
+            <p className="leading-relaxed text-secondary">
               我们欢迎所有对大模型推理技术感兴趣的开发者参与贡献。无论是修正错误、补充内容还是新增主题，每一份贡献都将帮助更多人掌握推理技术。请通过 GitHub 提交 Issue 或 Pull Request 参与贡献。
             </p>
           </div>
 
-          <div className="rounded-xl border border-white/5 bg-[#1a1f35] p-8">
+          <div className="surface-card p-6 sm:p-8 lg:col-span-2">
             <div className="mb-4 flex items-center gap-3">
-              <ShieldCheck className="h-6 w-6 text-[#d8ff78]" />
+              <ShieldCheck className="h-6 w-6 text-accent" />
               <h2 className="text-2xl font-bold text-white">公开与安全</h2>
             </div>
-            <p className="mb-4 leading-relaxed text-gray-300">
+            <p className="mb-4 leading-relaxed text-secondary">
               网站只发布公开课程、模型配置、公共新闻元数据与来源链接。每周报告由本机 Codex 直接生成，不需要在 GitHub Actions 或仓库中配置模型 API Key；浏览器阅读清单也只保存在当前设备。
             </p>
             <Link
               to="https://github.com/cl-vv-h/AI_Infra_Tutor_Page"
               target="_blank"
-              className="inline-flex items-center gap-2 rounded-lg bg-white/5 px-4 py-2 text-sm text-gray-300 transition-colors hover:bg-white/10 hover:text-white"
+              rel="noreferrer"
+              className="button-secondary"
             >
               <Github className="h-4 w-4" />
               查看项目仓库

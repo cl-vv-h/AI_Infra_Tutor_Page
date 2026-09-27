@@ -38,7 +38,7 @@ export default function CategoryCard({ name, slug, description, icon, color }: C
   return (
     <Link
       to={`/category/${slug}`}
-      className="group block rounded-lg border border-white/10 bg-[#1a1f35] p-6 transition-all duration-300 hover:border-opacity-60 hover:shadow-lg"
+      className="group block rounded-lg border border-white/10 bg-surface p-6 transition-all duration-300 hover:border-opacity-60 hover:shadow-lg"
       style={{
         ['--card-color' as string]: color,
       }}
@@ -62,7 +62,7 @@ export default function CategoryCard({ name, slug, description, icon, color }: C
         {name}
       </h3>
 
-      <p className="text-sm leading-relaxed text-gray-400">{description}</p>
+      <p className="text-sm leading-relaxed text-muted">{description}</p>
     </Link>
   );
 }
