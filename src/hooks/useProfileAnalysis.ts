@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { emptyProfileFilter, type ProfileAnalysis, type ProfileFilter } from '@/lib/profile-analysis'
-import { profileLimits, type TimeUnit } from '@/lib/profile-import'
+import { type TimeUnit } from '@/lib/profile-import'
 import { defaultDiagnosticConfig, type DiagnosticConfig } from '@/lib/profile-diagnostics'
 export function useProfileAnalysis() {
   const worker=useRef<Worker|null>(null),serial=useRef(0)
@@ -8,8 +8,9 @@ export function useProfileAnalysis() {
   const [filter,setFilter]=useState(emptyProfileFilter)
   const [config,setConfig]=useState(defaultDiagnosticConfig)
   const [busy,setBusy]=useState(false),[error,setError]=useState(''),[loaded,setLoaded]=useState(false)
+  const [progress,setProgress]=useState('')
   useEffect(()=>()=>worker.current?.terminate(),[])
-  const clear=()=>{serial.current++;worker.current?.terminate();worker.current=null;setLoaded(false);setAnalysis(null);setError('');setBusy(false);setFilter(emptyProfileFilter());setConfig(defaultDiagnosticConfig())}
+  const clear=()=>{serial.current++;worker.current?.terminate();worker.current=null;setLoaded(false);setAnalysis(null);setError('');setBusy(false);setProgress('');setFilter(emptyProfileFilter());setConfig(defaultDiagnosticConfig())}
   const begin=()=>{
     clear();setBusy(true)
     const id=++serial.current
@@ -17,7 +18,9 @@ export function useProfileAnalysis() {
     worker.current=w
     w.onmessage=({data})=>{
       if(data.id!==serial.current)return
+      if(data.progress){setProgress(data.progress);return}
       setBusy(false)
+      setProgress('')
       if(data.error){setError(data.error);return}
       setError('');setAnalysis(data.analysis);setLoaded(true);setFilter(data.analysis.selectedFilter);setConfig(data.analysis.diagnostics.config)
     }
@@ -25,12 +28,11 @@ export function useProfileAnalysis() {
     return {w,id}
   }
   const loadText=(text:string,unit:TimeUnit='auto')=>{const {w,id}=begin();w.postMessage({id,type:'load',text,unit})}
-  const loadFile=async(file:File,unit:TimeUnit)=>{
-    if(file.size>profileLimits.bytes){clear();setError('单文件上限 50 MiB，请先裁剪采样范围。');return}
+  const loadFiles=(files:File[],unit:TimeUnit)=>{
     const {w,id}=begin()
-    try{const text=await file.text();if(serial.current===id)w.postMessage({id,type:'load',text,unit})}
-    catch {if(serial.current===id){setBusy(false);setError('无法读取文件。')}}
+    w.postMessage({id,type:'files',files,unit})
   }
+  const loadFile=(file:File,unit:TimeUnit)=>loadFiles([file],unit)
   const updateFilter=(next:ProfileFilter)=>{
     setFilter(next);setError('');setAnalysis(null);setBusy(true)
     const nextConfig=next.device!==filter.device?{...config,manual:[],aligned:false}:config
@@ -41,5 +43,5 @@ export function useProfileAnalysis() {
     setError('');setBusy(true)
     worker.current?.postMessage({id:++serial.current,type:'analyze',filter,config:next})
   }
-  return {analysis,filter,config,busy,error,loaded,loadText,loadFile,updateFilter,updateConfig,clear}
+  return {analysis,filter,config,busy,error,loaded,progress,loadText,loadFile,loadFiles,updateFilter,updateConfig,clear}
 }

@@ -1,12 +1,12 @@
 import { intervalCoverage, percentile, signature } from './profile-analysis.ts'
 import type { ProfileData, ProfileEvent } from './profile-analysis.ts'
 
-export const pipeMetrics = ['cube', 'vector', 'aicMte2', 'aivMte2', 'aicScalar', 'aivScalar'] as const
+export const pipeMetrics = ['cube', 'vector', 'aicMte1', 'aicMte2', 'aicMte3', 'aivMte2', 'aivMte3', 'aicScalar', 'aivScalar', 'fixpipe', 'cubeUtilization'] as const
 export type PipeMetric = typeof pipeMetrics[number]
-export const pipeLabels: Record<PipeMetric, string> = { cube: 'Cube / MAC', vector: 'Vector', aicMte2: 'AIC MTE2', aivMte2: 'AIV MTE2', aicScalar: 'AIC Scalar', aivScalar: 'AIV Scalar' }
+export const pipeLabels: Record<PipeMetric, string> = { cube: 'Cube / MAC 活跃占比', vector: 'Vector', aicMte1: 'AIC MTE1', aicMte2: 'AIC MTE2', aicMte3: 'AIC MTE3', aivMte2: 'AIV MTE2', aivMte3: 'AIV MTE3', aicScalar: 'AIC Scalar', aivScalar: 'AIV Scalar', fixpipe: 'FixPipe', cubeUtilization: 'Cube 利用率（独立指标）' }
 export type Phase = 'prefill' | 'decode'
 export type PhaseBucket = Phase | 'conflict' | 'unassigned'
-export interface Counter { value: number; percent: boolean }
+export interface Counter { value: number; percent: boolean; fraction?: boolean }
 export interface Annotation { name: string; source: string; start: number; duration: number }
 export interface ManualPhase { phase: Phase; from: number; to: number }
 export interface DiagnosticConfig {
@@ -177,14 +177,14 @@ export function diagnoseProfile(data: ProfileData, events: ProfileEvent[], origi
   let counterCalls=0,ambiguous=0,invalid=0
   for(const e of events) {
     if(e.counters&&Object.keys(e.counters).length)counterCalls++
-    const metric=config.metric==='auto'?(/matmul|gemm/i.test(e.type)?'cube':/norm|softmax|gelu|silu|relu|add|mul|gather|cast/i.test(e.type)?'vector':undefined):config.metric
+    const metric=config.metric==='auto'?(/^(AI_CORE|MIX_AIC)$/.test(e.taskType??'')?'cube':/^(AI_VECTOR_CORE|MIX_AIV)$/.test(e.taskType??'')?'vector':/matmul|gemm/i.test(e.type)?'cube':/norm|softmax|gelu|silu|relu|add|mul|gather|cast/i.test(e.type)?'vector':undefined):config.metric
     if(!metric)continue
     const k=signature(e),id=JSON.stringify([k,metric])
     if(!utilizationMap.has(id))utilizationMap.set(id,{key:k,type:e.type,shape:e.shape,metric,mean:null,samples:0,calls:0,measuredWork:0,totalWork:0,lowWork:0,lowCalls:0})
     const r=utilizationMap.get(id)!;r.calls++;r.totalWork+=e.duration
     const c=e.counters?.[metric];if(!c)continue
-    if(!c.percent&&config.ratioUnit==='auto'){ambiguous++;continue}
-    const percent=c.value*(c.percent||config.ratioUnit==='percent'?1:100)
+    if(!c.percent&&!c.fraction&&config.ratioUnit==='auto'){ambiguous++;continue}
+    const percent=c.value*(c.percent?1:c.fraction?100:config.ratioUnit==='percent'?1:100)
     if(!Number.isFinite(percent)||percent<0||percent>100){invalid++;continue}
     r.mean=(r.mean??0)+percent*e.duration;r.measuredWork+=e.duration;r.samples++
     if(percent<config.threshold){r.lowWork+=e.duration;r.lowCalls++}

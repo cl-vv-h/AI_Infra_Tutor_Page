@@ -27,7 +27,7 @@ inspection. Evidence is from production builds, not development-only previews.
 | DPA | `/models/glm-5-2/dpa`, `/models/qwen3-8b/dpa`, load/group/rank/precision/buffer views | DPA units/render and model browser |
 | V4.1 reference | `/models/deepseek-v4-1-flash`, workspace tabs, source owners, layer/rank/quantization, cache/weight scopes | V4.1 units/render and model browser |
 | Comparison | `/models/compare`, models/shared conditions/scopes, chart, sharing, incompatible scenarios | Comparison units/render and model browser |
-| Profiling | `/operators`, local imports, single-profile phases, hotspots/timeline, A/B, errors, anonymous export, transfer to estimator | Profiling units and both browser suites |
+| Profiling | `/operators`, local single/multi-file and directory imports, reconciliation/inventory, evidence candidates, Host/API/Step tables, all-stream timeline, per-hotspot counters, phases, A/B, errors/cancel, anonymous export, estimator handoff | Profiling units and three browser suites; local real-capture validation described in `profiling-evidence-upgrade.md` |
 | Estimator | `/operators/estimate`, hardware/operator/dtype/layout, invalid/zero/bounds, transferred sample, reset | Estimator units/browser |
 | News | `/news`, daily/library/releases/archive/saved, categories/topics/source/search/sort, source outages, loading/error/retry, bookmark/import/export/share privacy, weekly | News units/render, design browser and archive outage/recovery browser |
 | Supporting | `/about`, loading/empty/missing routes | Design browser |

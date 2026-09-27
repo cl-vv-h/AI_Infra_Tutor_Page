@@ -1,5 +1,6 @@
 import type { ProfileData, TaskKind } from './profile-analysis.ts'
 import type { Counter, PipeMetric, Phase } from './profile-diagnostics.ts'
+import { profileClockBase, profileTimestamp } from './profile-clock.ts'
 export const profileLimits={bytes:50*1024*1024,events:200000,groups:20000}
 export type TimeUnit='auto'|'us'|'ms'|'ns'
 const clean=(v:unknown)=>v===null||v===undefined?'':typeof v==='object'?JSON.stringify(v):String(v).trim()
@@ -8,14 +9,14 @@ const canonical=(v:unknown)=>missing(clean(v)).replace(/\s/g,'').replace(/\],\[/
 const list=(v:unknown)=>canonical(v).replace(/["']/g,'').replace(/,/g,';')
 const key=(s:string)=>s.toLowerCase().replace(/[\s_-]/g,'').replace(/[µμ]/g,'u')
 const phaseOf=(v:unknown):Phase|undefined=>/^(prefill|decode)$/i.test(clean(v))?clean(v).toLowerCase() as Phase:undefined
-const counterAliases:Record<PipeMetric,string[]>={cube:['aic_mac_ratio','aic_cube_ratio'],vector:['aiv_vec_ratio'],aicMte2:['aic_mte2_ratio'],aivMte2:['aiv_mte2_ratio'],aicScalar:['aic_scalar_ratio'],aivScalar:['aiv_scalar_ratio']}
-function counters(fields:Record<string,unknown>) {
+const counterAliases:Record<PipeMetric,string[]>={cube:['aic_mac_ratio','aic_cube_ratio'],vector:['aiv_vec_ratio'],aicMte1:['aic_mte1_ratio'],aicMte2:['aic_mte2_ratio'],aicMte3:['aic_mte3_ratio'],aivMte2:['aiv_mte2_ratio'],aivMte3:['aiv_mte3_ratio'],aicScalar:['aic_scalar_ratio'],aivScalar:['aiv_scalar_ratio'],fixpipe:['aic_fixpipe_ratio'],cubeUtilization:['cube_utilization']}
+function counters(fields:Record<string,unknown>,cannSchema=false) {
   const out:Partial<Record<PipeMetric,Counter>>={}
   for(const [metric,aliases] of Object.entries(counterAliases))for(const [field,raw] of Object.entries(fields)) {
     const normalized=key(field),explicit=normalized.endsWith('(%)')||normalized.endsWith('%')
     if(!aliases.some(alias=>key(alias)===normalized.replace(/\(%\)$|%$/,'')))continue
     const str=clean(raw),value=finite(str.replace(/%$/,''))
-    if(value!==undefined&&!(metric in out))out[metric as PipeMetric]={value,percent:explicit||str.endsWith('%')}
+    if(value!==undefined&&!(metric in out))out[metric as PipeMetric]={value,percent:explicit||str.endsWith('%'),...(cannSchema&&!explicit&&!str.endsWith('%')&&metric!=='cubeUtilization'?{fraction:true}:{})}
   }
   return out
 }
@@ -27,10 +28,15 @@ function finite(v:unknown) {
 }
 function kindOf(type:string,task:string):TaskKind {
   const s=`${type} ${task}`.toLowerCase()
-  if(/hccl|allreduce|allgather|alltoall|reducescatter|broadcast|communication|notifywait|notifyrecord/.test(s))return 'communication'
-  if(/memcpy|memset|memorycopy/.test(s))return 'copy'
+  if(/hccl|hcom|allreduce|allgather|alltoall|reducescatter|broadcast|communication/.test(s))return 'communication'
+  if(/memcpy|memset|memorycopy|sdma|ubdma/.test(s))return 'copy'
   if(/ai[_ ]?(core|vector|cpu)|aiv|aic|cube|vector|matmul|gemm|norm|softmax|attention|indexer|add|mul|gather/.test(s))return 'compute'
   return 'other'
+}
+function taskRole(task:string):'execution'|'wait'|'control' {
+  if(/(?:^|_)(?:WAIT|NOTIFY_WAIT)$/.test(task.toUpperCase()))return 'wait'
+  if(/EVENT_RECORD|EVENT_RESET|NOTIFY_RECORD|MODEL_EXECUTE/i.test(task))return 'control'
+  return 'execution'
 }
 export function parseCsv(text:string):string[][] {
   const rows:string[][]=[];let row:string[]=[],field='',quoted=false,closed=false
@@ -74,19 +80,25 @@ function parseKernelCsv(text:string,unit:TimeUnit):ProfileData {
   const col=(...names:string[])=>normalized.findIndex(h=>names.some(n=>h===key(n)))
   const timeCol=(stem:string[])=>normalized.findIndex(h=>stem.some(s=>h===s||new RegExp(`^${s}\\((us|ns|ms|s)\\)$`).test(h)))
   const name=col('Name','OP Name','OpName','Kernel Name'),type=col('Type','OP Type','OpType','Kernel Type')
-  const duration=timeCol(['duration','taskduration']),start=timeCol(['starttime','taskstarttime']),count=col('Count','Calls')
+  const duration=timeCol(['duration','taskduration','tasktime']),start=timeCol(['starttime','taskstarttime','taskstart']),count=col('Count','Calls')
   if(duration<0||name<0&&type<0)throw new Error('需要 Name / OP Type 与 Duration(us) / Task Duration(us) 列。不能用 aicore_time、Wait Time、API 时间或 op_statistic 汇总代替逐任务耗时。')
   const durationScale=timeScale(headers[duration],unit),startScale=start<0?1:timeScale(headers[start],unit)
   const device=col('Device ID','Device_id','Device'),stream=col('Stream ID','Stream_id','Stream'),step=col('Step ID','Step Id','Step'),shape=col('Input Shapes'),dtype=col('Input Data Types','Input Data Type','Input Dtypes'),format=col('Input Formats','Input Format'),task=col('Task Type','Accelerator Core')
   const rank=col('Rank ID','Rank'),phase=col('Phase','Inference Phase')
-  const data:ProfileData={events:[],source:'csv',skipped:0,warnings:['CSV 应来自设备层逐任务表；不会自动推断硬件型号或采样阶段。']}
+  const taskId=col('Task ID'),modelId=col('Model ID'),outputShape=col('Output Shapes'),outputDtype=col('Output Data Types'),outputFormat=col('Output Formats'),blockNum=col('Block Num','Block Dim')
+  const cannSchema=taskId>=0&&task>=0&&device>=0&&col('aic_total_cycles')>=0
+  const clockBaseUs=start<0?0:profileClockBase(rows.map(r=>r[start]),startScale)
+  const data:ProfileData={events:[],source:'csv',skipped:0,clockBaseUs,warnings:['CSV 应来自设备层逐任务表；不会自动推断硬件型号或采样阶段。']}
+  if(cannSchema)data.warnings.push('已识别 CANN 逐任务指标结构：*_ratio 按 0–1 占比解释；cube_utilization(%) 单独保留，不等同于 MAC 活跃占比或整卡算力利用率。')
+  if(clockBaseUs)data.warnings.push('绝对时间戳已先减去整秒基准，再保留小数部分，避免极短任务被浮点舍入丢弃。')
   for(const row of rows){
     if(row.length!==headers.length){data.skipped++;continue}
     if(count>=0&&(finite(row[count])??1)!==1)throw new Error('检测到 Count 非 1 的聚合行；请使用逐调用 kernel_details.csv，而非 op_statistic。')
-    const d=finite(row[duration]),s=start<0?undefined:finite(row[start])
+    const d=finite(row[duration]),s=start<0?undefined:profileTimestamp(row[start],startScale,clockBaseUs)
     const n=missing(clean(row[name])),t=missing(clean(row[type]))||n
-    if(d===undefined||d<=0||d*durationScale>1e12||!t||(s!==undefined&&(s<0||s*startScale>Number.MAX_SAFE_INTEGER||s*startScale+d*durationScale<=s*startScale))){data.skipped++;continue}
-    data.events.push({name:n||t,type:t,phase:phaseOf(row[phase]),counters:counters(Object.fromEntries(headers.map((h,i)=>[h,row[i]]))),shape:canonical(row[shape]),dtype:list(row[dtype]).toLowerCase(),format:list(row[format]).toUpperCase(),device:(rank>=0?`rank:${missing(clean(row[rank]))||'unknown'}/`:'')+(missing(clean(row[device]))||'未标注设备'),stream:missing(clean(row[stream]))||'未标注 stream',step:missing(clean(row[step])),duration:d*durationScale,start:s===undefined?undefined:s*startScale,kind:kindOf(t,clean(row[task]))})
+    if(d===undefined||d<=0||d*durationScale>1e12||!t||(start>=0&&finite(row[start])!==undefined&&s===undefined)||(s!==undefined&&(s<0||s+d*durationScale<=s))){data.skipped++;continue}
+    const taskType=clean(row[task])||t
+    data.events.push({name:n||t,type:t,phase:phaseOf(row[phase]),counters:counters(Object.fromEntries(headers.map((h,i)=>[h,row[i]])),cannSchema),shape:canonical(row[shape]),dtype:list(row[dtype]).toLowerCase(),format:list(row[format]).toUpperCase(),device:(rank>=0?`rank:${missing(clean(row[rank]))||'unknown'}/`:'')+(missing(clean(row[device]))||'未标注设备'),stream:missing(clean(row[stream]))||'未标注 stream',step:missing(clean(row[step])),duration:d*durationScale,start:s,kind:kindOf(t,taskType),role:taskRole(taskType),taskId:missing(clean(row[taskId])),modelId:missing(clean(row[modelId])),taskType,outputShape:canonical(row[outputShape]),outputDtype:list(row[outputDtype]).toLowerCase(),outputFormat:list(row[outputFormat]).toUpperCase(),blockNum:finite(row[blockNum])})
   }
   return checkEvents(data)
 }
@@ -100,12 +112,15 @@ function parseTrace(text:string):ProfileData {
   for(const e of raw)if(e&&e.ph==='M'&&e.name==='process_name'&&/^(ascend hardware\b|gpu\b|device\s*\d+$)/i.test(clean(e.args?.name)))hardwarePids.add(clean(e.pid))
   const data:ProfileData={events:[],annotations:[],source:'trace',skipped:0,warnings:['Chrome Trace 的 ts / dur 按规范解释为 µs；displayTimeUnit 只影响显示，不改变事件单位。设备层完整 X 事件用于算子统计；Host 标记单独保存，需确认来源与时钟后用于阶段/调度计时。']}
   const annotationNames=new Set<string>()
+  const clockBaseUs=profileClockBase(raw.filter(e=>e?.ph==='X').map(e=>e.ts))
+  data.clockBaseUs=clockBaseUs
+  if(clockBaseUs)data.warnings.push('绝对时间戳已转换为相对整秒基准；字符串中的亚微秒精度在转换前保留。')
   let unsupported=0
   for(const e of raw){
     if(!e||typeof e!=='object')continue
     const isDevice=hardwarePids.size?hardwarePids.has(clean(e.pid)):/^(kernel|gpu_kernel|gpu_memcpy|gpu_memset)$/i.test(clean(e.cat))
     if(!isDevice) {
-      const s=finite(e.ts),d=finite(e.dur),name=clean(e.name)
+      const s=profileTimestamp(e.ts,1,clockBaseUs),d=finite(e.dur),name=clean(e.name)
       if(e.ph==='X'&&name&&s!==undefined&&d!==undefined&&s>=0&&d>0&&d<=1e12&&s<=Number.MAX_SAFE_INTEGER&&s+d>s) {
         if(name.length>16384)throw new Error('Trace 标记名称过长。')
         const source=`pid:${clean(e.pid)||'unknown'}/tid:${clean(e.tid)||'unknown'}`
@@ -116,12 +131,13 @@ function parseTrace(text:string):ProfileData {
       continue
     }
     if(e.ph!=='X'){if(e.ph==='B'||e.ph==='E')unsupported++;continue}
-    const d=finite(e.dur),s=finite(e.ts),args=e.args&&typeof e.args==='object'?e.args:{}
+    const d=finite(e.dur),s=profileTimestamp(e.ts,1,clockBaseUs),args=e.args&&typeof e.args==='object'?e.args:{}
     if(!clean(e.name)||d===undefined||d<=0||d>1e12||s===undefined||s<0||s>Number.MAX_SAFE_INTEGER||s+d<=s){data.skipped++;continue}
     const n=clean(e.name),t=clean(args['OP Type']??args['Op Type']??args['Type'])||n
     const fields=[n,t,clean(args['Input Shapes']),clean(args['Input Dims'])]
     if(fields.some(f=>f.length>16384))throw new Error('Trace 算子字段过长，请移除调用栈等非分析数据。')
-    data.events.push({name:n,type:t,phase:phaseOf(args['Phase']),counters:counters(args),shape:canonical(args['Input Shapes']??args['Input Dims']),dtype:list(args['Input Data Types']??args['Input type']??args['Input Types']).toLowerCase(),format:list(args['Input Formats']).toUpperCase(),device:`pid:${clean(e.pid)||'unknown'}`,stream:clean(e.tid)||'未标注 stream',step:clean(args['Step ID']??args['Step Id']),duration:d,start:s,kind:kindOf(t,`${clean(args['Task Type'])} ${clean(e.cat)}`)})
+    const taskType=clean(args['Task Type'])
+    data.events.push({name:n,type:t,phase:phaseOf(args['Phase']),counters:counters(args),shape:canonical(args['Input Shapes']??args['Input Dims']),dtype:list(args['Input Data Types']??args['Input type']??args['Input Types']).toLowerCase(),format:list(args['Input Formats']).toUpperCase(),device:`pid:${clean(e.pid)||'unknown'}`,stream:clean(args['Physic Stream Id']??e.tid)||'未标注 stream',step:clean(args['Step ID']??args['Step Id']),duration:d,start:s,kind:kindOf(t,`${taskType} ${clean(e.cat)}`),role:taskRole(taskType),taskId:clean(args['Task Id']??args['Task ID']),modelId:clean(args['Model Id']??args['Model ID']),taskType})
   }
   if(unsupported)data.warnings.push(`设备层有 ${unsupported} 个 B/E 事件未配对，本版只支持完整 X 事件。`)
   return checkEvents(data)

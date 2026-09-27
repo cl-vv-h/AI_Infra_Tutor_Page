@@ -1,13 +1,22 @@
 import { diagnoseProfile, defaultDiagnosticConfig, type DiagnosticConfig, type DiagnosticAnalysis, type Annotation, type Counter, type PipeMetric, type Phase } from './profile-diagnostics.ts'
+import type { ProfileImportEvidence } from './profile-bundle.ts'
+import { analyzeHardware, type HardwareAnalysis } from './profile-hardware.ts'
+import { profileTimeline } from './profile-timeline.ts'
 export type TaskKind = 'compute' | 'communication' | 'copy' | 'other'
 export interface ProfileEvent {
   name: string; type: string; shape: string; dtype: string; format: string
   device: string; stream: string; step: string; duration: number; start?: number; kind: TaskKind
   phase?: Phase; counters?: Partial<Record<PipeMetric, Counter>>
+  role?: 'execution' | 'wait' | 'control'
+  taskId?: string; taskType?: string; modelId?: string
+  outputShape?: string; outputDtype?: string; outputFormat?: string
+  blockNum?: number
 }
 export interface ProfileData {
   events: ProfileEvent[]; warnings: string[]; source: 'csv' | 'trace'; skipped: number
   annotations?: Annotation[]
+  clockBaseUs?: number
+  evidence?: ProfileImportEvidence
 }
 export interface ProfileFilter { device: string; stream: string; step: string; from: string; to: string; search: string }
 export interface ProfileGroup {
@@ -23,6 +32,8 @@ export interface ProfileAnalysis {
   lanes: { stream: string; events: { start: number; duration: number; kind: TaskKind; name: string }[] }[]
   timelineTruncated: boolean; selectedDevice: string; selectedFilter: ProfileFilter
   diagnostics: DiagnosticAnalysis
+  hardware: HardwareAnalysis
+  timelineOverview: ReturnType<typeof profileTimeline>
 }
 export const emptyProfileFilter = (): ProfileFilter => ({device:'',stream:'',step:'',from:'',to:'',search:''})
 export const signature = (e: ProfileEvent) => JSON.stringify([e.type,e.shape,e.dtype,e.format])
@@ -70,7 +81,8 @@ export function analyzeProfile(data:ProfileData, filter=emptyProfileFilter(), co
   const lower=filter.from.trim()?Number(filter.from):0,upper=filter.to.trim()?Number(filter.to):Infinity
   if(!Number.isFinite(lower)||lower<0||Number.isNaN(upper)||upper<=lower||(filter.to.trim()&&!Number.isFinite(upper)))throw new Error('时间窗口需要满足 0 ≤ 起点 < 终点，单位 µs。')
   const useWindow=Boolean(filter.from.trim()||filter.to.trim())
-  const events=domain.filter(e=>(!filter.stream||e.stream===filter.stream)&&(!filter.step||e.step===filter.step)&&(!filter.search||`${e.name} ${e.type} ${e.shape}`.toLowerCase().includes(filter.search.toLowerCase()))&&(!useWindow||(e.start!==undefined&&e.start-origin>=lower&&e.start+e.duration-origin<=upper)))
+  const records=domain.filter(e=>(!filter.stream||e.stream===filter.stream)&&(!filter.step||e.step===filter.step)&&(!filter.search||`${e.name} ${e.type} ${e.shape}`.toLowerCase().includes(filter.search.toLowerCase()))&&(!useWindow||(e.start!==undefined&&e.start-origin>=lower&&e.start+e.duration-origin<=upper)))
+  const events=records.filter(e=>!e.role||e.role==='execution')
   const streams=[...new Set(domain.map(e=>e.stream))].sort(),steps=[...new Set(domain.map(e=>e.step).filter(Boolean))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}))
   const timed=events.filter(e=>e.start!==undefined)
   const completeTimeline=events.length>0&&timed.length===events.length
@@ -102,8 +114,10 @@ export function analyzeProfile(data:ProfileData, filter=emptyProfileFilter(), co
   const laneMap=new Map<string,ProfileAnalysis['lanes'][number]['events']>()
   for(const e of drawn){if(!laneMap.has(e.stream))laneMap.set(e.stream,[]);laneMap.get(e.stream)!.push({start:e.start!-origin,duration:e.duration,kind:e.kind,name:e.type})}
   const diagnostics=diagnoseProfile(data,events,origin,end,selectedDevice,config)
+  const hardware=analyzeHardware(data,records,config)
+  if(hardware.waits||hardware.controls)warnings.push(`保留 ${hardware.waits} 条等待与 ${hardware.controls} 条控制任务，独立列示；不计入执行算子工作量和执行覆盖。`)
   if(filter.stream||filter.step||filter.search||useWindow)diagnostics.warnings.push('当前诊断使用筛选后的任务；阶段标记可能涵盖被过滤掉的任务，未覆盖时间不能直接归因于调度或设备空闲。')
-  return {diagnostics,groups,count:events.length,total,timedCount:timed.length,span,busy:completeTimeline?coverage.busy:null,idle:span===null?null:Math.max(0,span-coverage.busy),overlap:completeTimeline?coverage.overlap:null,communication:completeTimeline?coverage.comm:null,computeCommunication:completeTimeline?coverage.computeComm:null,exposedCommunication:completeTimeline?coverage.comm-coverage.computeComm:null,maxConcurrency:completeTimeline?coverage.maxConcurrency:null,origin,end:end-origin,devices,streams,steps,warnings,lanes:[...laneMap].map(([stream,events])=>({stream,events})),timelineTruncated:timed.length>drawn.length,selectedDevice,selectedFilter:{...filter,device:selectedDevice}}
+  return {diagnostics,hardware,timelineOverview:profileTimeline(records,origin),groups,count:events.length,total,timedCount:timed.length,span,busy:completeTimeline?coverage.busy:null,idle:span===null?null:Math.max(0,span-coverage.busy),overlap:completeTimeline?coverage.overlap:null,communication:completeTimeline?coverage.comm:null,computeCommunication:completeTimeline?coverage.computeComm:null,exposedCommunication:completeTimeline?coverage.comm-coverage.computeComm:null,maxConcurrency:completeTimeline?coverage.maxConcurrency:null,origin,end:end-origin,devices,streams,steps,warnings,lanes:[...laneMap].map(([stream,events])=>({stream,events})),timelineTruncated:timed.length>drawn.length,selectedDevice,selectedFilter:{...filter,device:selectedDevice}}
 }
 export function compareProfiles(baseline:ProfileAnalysis,candidate:ProfileAnalysis) {
   const before=new Map(baseline.groups.map(g=>[g.key,g])),after=new Map(candidate.groups.map(g=>[g.key,g]))
@@ -126,9 +140,12 @@ export function workWhatIf(analysis:ProfileAnalysis,key:string,speedup:number) {
 }
 // Export deliberately excludes all user-controlled text, filenames, ranks, timestamps and tensor shapes.
 export function anonymousProfileReport(a:ProfileAnalysis,b?:ProfileAnalysis) {
-  const metrics=(x:ProfileAnalysis)=>({calls:x.count,workUs:x.total,spanUs:x.span,busyUs:x.busy,idleUs:x.idle,overlapUs:x.overlap,commUs:x.communication,commComputeOverlapUs:x.computeCommunication})
+  const metrics=(x:ProfileAnalysis)=>({calls:x.count,workUs:x.total,spanUs:x.span,busyUs:x.busy,idleUs:x.idle,overlapUs:x.overlap,commUs:x.communication,commComputeOverlapUs:x.computeCommunication,
+    hardware:{records:x.hardware.records,execution:x.hardware.execution,waits:x.hardware.waits,controls:x.hardware.controls,waitWorkUs:x.hardware.waitWork,waitCoverageUs:x.hardware.waitCoverage,waitOutsideExecutionUs:x.hardware.waitOutsideExecution}})
   const d=a.diagnostics
-  return {schema:'anonymous-profile-report',version:2,note:'Observed device tasks, not an end-to-end critical path. Group names/shapes and raw data omitted.',baseline:metrics(a),candidate:b?metrics(b):undefined,
+  const ids=new Map(a.groups.map((g,i)=>[g.key,`G${i+1}`]))
+  return {schema:'anonymous-profile-report',version:3,note:'Observed device tasks, not an end-to-end critical path. Group names/shapes and raw data omitted.',baseline:metrics(a),candidate:b?metrics(b):undefined,
+    pipelines:a.hardware.pipelines.map(r=>({groupId:ids.get(r.key),metric:r.metric,meanPercent:r.mean,samples:r.samples,calls:r.calls,measuredWorkUs:r.measuredWork,workUs:r.work})),
     singleProfile:{phaseBasis:d.phaseBasis,phases:d.phases.map(p=>({phase:p.phase,workUs:p.work,wallUs:p.wall,busyUs:p.busy,scheduleUs:p.schedule,calls:p.calls})),decode:{count:d.iterations.count,p50Us:d.iterations.p50,p95Us:d.iterations.p95},scheduling:d.scheduling,thresholdPercent:d.config.threshold,utilization:d.utilization.map((r,i)=>({id:`U${i+1}`,metric:r.metric,meanPercent:r.mean,samples:r.samples,calls:r.calls,lowWorkUs:r.lowWork,measuredWorkUs:r.measuredWork}))},
     groups:a.groups.map((g,i)=>({id:`G${i+1}`,calls:g.count,workUs:g.total,p50Us:g.median,p95Us:g.p95,exclusiveUs:g.exclusive})),
     comparison:b?compareProfiles(a,b).rows.map((r,i)=>({id:`C${i+1}`,matched:r.reliable,baselineCalls:r.before?.count??0,candidateCalls:r.after?.count??0,medianRatio:r.medianRatio,normalizedDeltaUs:r.normalizedDelta})):undefined}
