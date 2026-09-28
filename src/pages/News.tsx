@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowUpRight, Bookmark, Check, Clock3, Copy, Database, FileText, Globe2, Search, Sparkles } from 'lucide-react'
 import dailyJson from '@/data/news/daily.json'
 import libraryJson from '@/data/news/library.json'
 import releasesJson from '@/data/news/releases.json'
 import weeklyJson from '@/data/news/weekly/latest.json'
 import PageHeader from '@/components/PageHeader'
-import MarkdownRenderer from '@/components/MarkdownRenderer'
+import NewsFreshness from '@/components/NewsFreshness'
 import NewsStudyGuide from '@/components/NewsStudyGuide'
 import NewsSourceStatus from '@/components/NewsSourceStatus'
 import NewsReleaseDesk from '@/components/NewsReleaseDesk'
@@ -168,6 +168,7 @@ export default function News() {
   return <div className="news-shell min-h-screen pb-20">
     <div className="page-container pt-10">
       <PageHeader eyebrow="GLOBAL SIGNAL DESK" title="发现技术，读懂进展。" description="从推理引擎、芯片与论文，到政策和国际动态。" actions={<div className="text-xs leading-6"><p>{daily.sourceCount} / {daily.sourceCount + daily.failedSourceCount} 个信源可读取 · {library.items.length} 篇技术长读</p><p>最近采集：{formatDate(daily.generatedAt, true)}</p></div>} />
+      <NewsFreshness/>
     </div>
 
     <div className="page-container">
@@ -218,7 +219,7 @@ export default function News() {
 
       <section id="weekly" className="surface-card mt-12 scroll-mt-20 overflow-hidden">
         <header className="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 p-6 sm:p-8"><div><p className="flex items-center gap-2 font-mono text-xs tracking-widest text-violet-200"><FileText className="h-4 w-4" /> WEEKLY SYNTHESIS</p><h2 className="mt-3 text-2xl font-semibold text-white">每周信号报告</h2><p className="mt-2 text-sm text-secondary">{weekly.periodStart ? `覆盖归档：${weekly.periodStart} 至 ${weekly.periodEnd}` : '等待首次周报'} · {weekly.sources.length} 个引用来源</p></div><p className="flex items-center gap-2 text-xs text-secondary"><Database className="h-4 w-4" />{weekly.model ?? 'Luna · 等待生成'}</p></header>
-        <div className="weekly-report reading-body mx-auto max-w-[824px] p-6 sm:p-8"><MarkdownRenderer content={weekly.content} /></div>
+        <div className="p-6 sm:p-8"><p className="mb-4 text-sm leading-7 text-secondary">查看各期报告、引用原文与归档覆盖情况。旧报告保留，缺期如实提示。</p><Link to="/news/weekly" className="button-primary">阅读周报与历史</Link></div>
       </section>
     </div>
   </div>

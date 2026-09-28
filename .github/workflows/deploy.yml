@@ -17,6 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,7 +25,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
           cache: "npm"
 
       - name: Install dependencies
@@ -32,6 +33,15 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Validate calculations, data and report integrity
+        run: npm run check && npm run lint && npm run test:unit && npm run news:weekly:library && npm run test:news:render
+
+      - name: Install test browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Verify critical user journeys before publishing
+        run: npm run test:smoke
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

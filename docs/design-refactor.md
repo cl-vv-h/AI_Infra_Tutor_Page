@@ -31,6 +31,7 @@ inspection. Evidence is from production builds, not development-only previews.
 | Estimator | `/operators/estimate`, hardware/operator/dtype/layout, invalid/zero/bounds, transferred sample, reset | Estimator units/browser |
 | Profiling guide | `/operators/guide`, linked from workbench only; lazy reader, TOC, glossary, synthetic examples, disclosures, in-module analysis retention, back/refresh, loading/failure recovery | `tests/profiling-guide.test.mjs`, `tests/profiling-guide-browser.mjs`; no private capture assets |
 | News | `/news`, daily/library/releases/archive/saved, categories/topics/source/search/sort, source outages, loading/error/retry, bookmark/import/export/share privacy, weekly | News units/render, design browser and archive outage/recovery browser |
+| Weekly reader | `/news/weekly/:period?`, lazy historical reports, freshness/coverage/legacy labels, sources, Markdown export, unknown period, back/refresh, delayed/failed body recovery | Weekly units and four-width `weekly-news-browser.mjs`; included in publication smoke gate |
 | Supporting | `/about`, loading/empty/missing routes | Design browser |
 
 ## Evidence log — 2026-09-27
@@ -78,6 +79,19 @@ inspection. Evidence is from production builds, not development-only previews.
 - Publication gate: verify the Pages workflow for the pushed revision, then run
   the route/interaction suite against the public site. The delivery message
   records the published result; local checks alone are not deployment evidence.
+
+## Reliability increment evidence — 2026-09-28
+
+- TypeScript, ESLint and all 334 unit tests passed, including calendar-week
+  deadlines, citation matching, partial coverage, immutable legacy data and
+  publisher backfill/idempotency tests in temporary synthetic repositories.
+- News SSR and the production build passed. Four-width browser checks passed
+  for weekly status/history/export and delayed/failed body recovery, the
+  Profiling guide, and weight-deployment controls/calculations.
+- Weekly screenshots were inspected at 360px and 1440px. No horizontal document
+  overflow, private captures or uploaded test data were introduced.
+- Freshness monitoring intentionally reports the outstanding weekly backlog;
+  passing code checks do not imply that a new Luna report has been generated.
 
 ## Reproducible QA
 

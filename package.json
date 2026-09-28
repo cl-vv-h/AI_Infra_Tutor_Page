@@ -4,6 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "test:unit": "node --experimental-strip-types --test tests/*.test.mjs",
+    "test:weekly": "node --test tests/weekly-news.test.mjs",
+    "test:smoke": "node scripts/run-browser-checks.mjs",
+    "news:weekly:plan": "node scripts/weekly-plan.mjs",
+    "news:weekly:publish": "node scripts/publish-weekly-report.mjs",
+    "news:weekly:library": "node scripts/check-weekly-library.mjs",
+    "news:health": "node scripts/check-news-freshness.mjs",
     "test:design:browser": "node tests/design-browser.mjs && node tests/reader-recovery-browser.mjs",
     "test:profiling": "node --experimental-strip-types --test tests/profile-analysis.test.mjs tests/profile-diagnostics.test.mjs tests/profile-evidence.test.mjs tests/profiling-guide.test.mjs",
     "test:profiling:browser": "node tests/profiling-browser.mjs && node tests/profile-diagnostics-browser.mjs && node tests/profile-evidence-browser.mjs && node tests/profiling-guide-browser.mjs",
@@ -55,6 +62,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
+    "@playwright/test": "1.62.1",
     "@types/node": "^22.15.30",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",

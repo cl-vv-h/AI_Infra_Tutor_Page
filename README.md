@@ -195,14 +195,16 @@ StarCoder2 图示采用 head-wise 逻辑 TP：Q 与 MLP 中间维分片，完整
 
 ### 每周报告
 
-每周日北京时间 `09:30`，Codex 本地自动化会在本项目中使用 `gpt-5.6-luna`，根据最近七天的公开新闻归档生成来源约束的中文周报。它随后运行本地校验，只提交 `src/data/news/weekly/latest.json`，并推送到 `main` 触发 GitHub Pages 发布。
+周报覆盖周一至周日的完整自然周，目标在次周一北京时间 `09:30` 发布。Codex 本地自动化每日 `09:30` 检查缺期，使用 `gpt-5.6-luna` 每次补发一个期次，最新缺期优先；无缺期不重复生成。生成在从远端 main 创建的隔离工作区进行，不触碰开发目录的未提交修改。操作约定见 [weekly-operations.md](docs/weekly-operations.md)。
+
+`#/news/weekly` 显示最新周报，`#/news/weekly/YYYY-MM-DD` 按期末日期访问历史。新报告保存于 `src/data/news/weekly/reports/`，元数据索引为 `index.json`，`latest.json` 只指向最新期次。页面提供覆盖天数、过期提示、来源清单和 Markdown 下载；早期单日报告保留原貌并标记为未通过新版严格核验。
 
 该流程直接使用 Codex 任务自身的模型能力，不调用 OpenAI API，因此：
 
 - 不需要配置 `OPENAI_API_KEY`；
 - 不会在 GitHub Actions、仓库或构建产物中保存模型凭证；
 - 运行时间到达时，本机 Codex 与该项目需要处于可运行状态；
-- 如果工作区不干净、分支不是 `main`、无法快进同步或校验失败，任务会停止且不会提交或推送。
+- 开发目录不干净不再阻塞生成；隔离工作区有未知修改、实际模型不符、证据校验失败或发布冲突时，任务仍停止，不覆盖用户工作、不强推。
 
 新闻标题、摘要、URL 和信源名称均按不可信输入处理；Codex 只允许基于归档中的公开信息进行总结，事实性内容必须引用归档内的 HTTPS 来源。
 
@@ -210,7 +212,13 @@ StarCoder2 图示采用 head-wise 逻辑 TP：Q 与 MLP 中间维分片，完整
 
 ```bash
 npm run news:weekly:check
+npm run news:weekly:library
+npm run news:weekly:plan
 ```
+
+内容校验与时效监控分开：`npm run news:health` 检查日报 48 小时、周报截止后的 24 小时宽限，GitHub Actions 每日执行并通过失败运行暴露异常。前端根据当前时间显示过期状态，不伪装后台运行状态。报告仍需由指定模型实际生成，校验器不能单凭 `model` 字段证明执行模型。
+
+发布前运行类型、lint、完整单元测试、周报完整性、新闻渲染与关键浏览器流程；失败时不会上传 Pages 产物。PR 使用同样的验证入口。持续改进路线见 [site-roadmap.md](docs/site-roadmap.md)。
 
 不要把个人邮箱、本地绝对路径、用户标识或 `.env` 文件提交到仓库。
 

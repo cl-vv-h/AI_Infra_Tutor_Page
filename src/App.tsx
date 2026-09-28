@@ -11,6 +11,7 @@ const ModelCompare = lazy(() => import('@/pages/ModelCompare'))
 const DeepseekV41 = lazy(() => import('@/pages/DeepseekV41'))
 const DpaLab = lazy(() => import('@/pages/DpaLab'))
 const News = lazy(() => import('@/pages/News'))
+const WeeklyNews = lazy(() => import('@/pages/WeeklyNews'))
 const CategoryPage = lazy(() => import('@/pages/Category'))
 const ArticlePage = lazy(() => import('@/pages/Article'))
 const About = lazy(() => import('@/pages/About'))
@@ -35,6 +36,7 @@ export default function App() {
             <Route path="/models/qwen3-8b/dpa" element={<DpaLab modelId="qwen3-8b" />} />
             <Route path="/models/:modelId" element={<Models />} />
             <Route path="/news" element={<News />} />
+            <Route path="/news/weekly/:period?" element={<WeeklyNews />} />
             <Route path="/operators/*" element={<PerformanceWorkspace />} />
             <Route path="/category/:slug" element={<CategoryPage />} />
             <Route path="/article/:slug" element={<ArticlePage />} />

@@ -60,6 +60,7 @@ export interface DailyNewsData {
 }
 
 export interface WeeklyReportData {
+  archiveDates?: string[]
   generatedAt: string | null
   periodStart: string | null
   periodEnd: string | null
