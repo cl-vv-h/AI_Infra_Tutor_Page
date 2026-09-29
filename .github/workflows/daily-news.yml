@@ -35,6 +35,9 @@ jobs:
       - name: Collect official framework release history
         run: node scripts/fetch-releases.mjs
 
+      - name: Validate and rebuild event tracking from collected evidence
+        run: node --test tests/news-events.test.mjs && node scripts/build-news-events.mjs
+
       - name: Commit public news data
         id: publish
         run: |
@@ -45,7 +48,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/news/daily.json src/data/news/library.json src/data/news/releases.json src/data/news/archive
+          git add src/data/news/daily.json src/data/news/library.json src/data/news/releases.json src/data/news/archive src/data/news/events.json
           git commit -m "chore(news): refresh daily signals"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"

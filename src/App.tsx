@@ -7,6 +7,8 @@ import tokenJourney from '../config/token-journey.json'
 import TokenJourneyBoundary from '@/components/TokenJourneyBoundary'
 import communicationTopology from '../config/communication-topology.json'
 import CommunicationTopologyBoundary from '@/components/CommunicationTopologyBoundary'
+import newsEvents from '../config/news-events.json'
+import NewsEventsBoundary from '@/components/NewsEventsBoundary'
 
 const Home = lazy(() => import('@/pages/Home'))
 const Learn = lazy(() => import('@/pages/Learn'))
@@ -20,6 +22,7 @@ const CommunicationTopology = lazy(() => import('@/pages/CommunicationTopology')
 const DeepseekV41 = lazy(() => import('@/pages/DeepseekV41'))
 const DpaLab = lazy(() => import('@/pages/DpaLab'))
 const News = lazy(() => import('@/pages/News'))
+const NewsEvents = lazy(() => import('@/pages/NewsEvents'))
 const WeeklyNews = lazy(() => import('@/pages/WeeklyNews'))
 const CategoryPage = lazy(() => import('@/pages/Category'))
 const ArticlePage = lazy(() => import('@/pages/Article'))
@@ -48,6 +51,7 @@ export default function App() {
             <Route path="/models/qwen3-8b/dpa" element={<DpaLab modelId="qwen3-8b" />} />
             <Route path="/models/:modelId" element={<Models />} />
             <Route path="/news" element={<News />} />
+            <Route path="/news/events" element={newsEvents.enabled ? <NewsEventsBoundary><NewsEvents /></NewsEventsBoundary> : <NotFound />} />
             <Route path="/news/weekly/:period?" element={<WeeklyNews />} />
             <Route path="/operators/*" element={<PerformanceWorkspace />} />
             <Route path="/category/:slug" element={<CategoryPage />} />

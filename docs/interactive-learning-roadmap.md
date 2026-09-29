@@ -18,14 +18,17 @@ targeted revert and verified Pages publication. No raw profiling is uploaded.
    `#/models/token-journey`: queue, chunked prefill, sample/decode, EOS/cancellation,
    prefix/page lifetime, Q/KV/FFN shapes, causal masks and scoped TP reductions.
    See `docs/token-journey.md` and `docs/releases/token-journey-2026-09-29.md`.
-4. **Communication topology lab — implemented; publication requires release verification.**
+4. **Communication topology lab — implemented; publication tracked in release record.**
    `#/models/communication`: logical groups and physical placement, Ring/Tree
    All-Reduce, Gather/Scatter, All-to-All and PP transfer; finite stepwise playback,
    numerical witnesses and shared-host bandwidth constraints. Hypothetical timing
    is explicitly separate from measurements. See `docs/communication-topology.md`.
-5. **News event tracking — not implemented.** Multi-day event timelines with
-   attributed primary sources, confirmed facts versus viewpoints/uncertainty,
-   links to relevant technical learning, maintained within existing news flows.
+5. **News event tracking — implemented; publication requires release verification.**
+   `#/news/events`: four real tracked themes, attributed reviewed chronology,
+   automatically associated reports, distinct event/publication/collection dates,
+   uncertainty, controlled finite playback, filters, Markdown export and learning
+   links. Daily collection compiles a validated retained index atomically.
+   See `docs/news-events.md` for matching, maintenance and evidence boundaries.
 
 The deployment scenario library remains withdrawn. These features must not
 reintroduce it. Existing news, calculators, A/B analysis and readers stay intact.

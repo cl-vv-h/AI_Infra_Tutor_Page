@@ -46,6 +46,9 @@
     "test:news:render": "node tests/news-render.mjs",
     "sync:curriculum": "node scripts/sync-curriculum.mjs",
     "news:fetch": "node scripts/fetch-news.mjs",
+    "news:events": "node scripts/build-news-events.mjs",
+    "news:events:check": "node scripts/build-news-events.mjs --check",
+    "test:events:browser": "node tests/news-events-browser.mjs",
     "news:releases": "node scripts/fetch-releases.mjs",
     "news:weekly:check": "node scripts/validate-weekly-report.mjs"
   },

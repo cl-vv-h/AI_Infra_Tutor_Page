@@ -1,0 +1,78 @@
+{
+  "version": "news-events/1",
+  "tracks": [
+    {
+      "id": "sglang-runtime",
+      "category": "ai",
+      "title": "SGLang：缓存、通信与版本迁移",
+      "summary": "沿版本记录理解推理运行时的变化。关注缓存默认行为、MoE 通信后端及升级兼容性，而不是将版本发布等同于性能提升。",
+      "startDate": "2026-08-01",
+      "reviewedOn": "2026-09-29",
+      "openQuestions": ["新版本的后端、设备与并行组合是否覆盖你的实际部署？需要对照对应版本文档和实机验证。", "后续发布是否修改这些默认行为或迁移要求？自动关联的新报道尚未进入人工核对结论。"],
+      "learning": [{"label":"SGLang 教学","path":"/category/sglang"},{"label":"KV Cache 的内存口径","path":"/article/ai-infra-basic--kv-cache-memory--readme"},{"label":"MoE 路由沙盘","path":"/models/moe-routing"}],
+      "rules": [
+        {"id":"official-releases","label":"官方 SGLang 仓库的版本发布路径","hosts":["github.com"],"pathPrefix":"/sgl-project/sglang/releases/tag/","any":[],"all":[],"exclude":[]},
+        {"id":"named-coverage","label":"受限来源标题明确提及 SGLang","hosts":["lmsys.org","sglang.io","techcrunch.com","huggingface.co","developer.nvidia.com","blogs.nvidia.com"],"any":["sglang"],"all":[],"exclude":[]}
+      ],
+      "milestones": [
+        {"id":"v0518","date":"2026-08-22","dateMeaning":"版本发布日（UTC）","title":"v0.5.18：编译缓存路径统一","kind":"fact","summary":"官方发布说明将编译内核缓存归入 SGLANG_CACHE_DIR，并提示升级后的首次启动需要重新编译一次。","context":"这里确认的是发布说明中的迁移要求；不据此推断任意设备的启动耗时。","sources":[{"url":"https://github.com/sgl-project/sglang/releases/tag/v0.5.18","title":"SGLang v0.5.18 release notes","publisher":"SGLang 项目","publishedOn":"2026-08-22","reviewedOn":"2026-09-29","basis":"document","scope":"已阅读 Highlights 中的编译缓存路径与首次启动说明。"}]},
+        {"id":"v0519","date":"2026-09-05","dateMeaning":"版本发布日（UTC）","title":"v0.5.19：统一 Radix Tree 与 DeepEP v2","kind":"fact","summary":"发布说明将统一 Radix Tree 设为默认，并增加 DeepEP v2 通信后端入口。后端支持范围仍有模型和精度条件。","context":"默认缓存策略与可选通信后端是两项独立变化，不能把它们当作所有模型都可直接使用的组合。","sources":[{"url":"https://github.com/sgl-project/sglang/releases/tag/v0.5.19","title":"SGLang v0.5.19 release notes","publisher":"SGLang 项目","publishedOn":"2026-09-05","reviewedOn":"2026-09-29","basis":"document","scope":"已阅读 Highlights 的统一 Radix Tree 与 DeepEP v2 支持说明。"}]},
+        {"id":"v0520","date":"2026-09-18","dateMeaning":"版本发布日（UTC）","title":"v0.5.20：检查 CUDA 与 Responses API 迁移","kind":"fact","summary":"发布说明停止 CUDA 12 系列发行产物；Responses API 的结果保留改为显式启用。v0.5.19 被列为最后提供 cu12x 产物的版本。","context":"升级前要分别检查运行环境和 API 状态依赖。本页不是兼容性承诺，也没有将发布方性能数据当作独立测试。","sources":[{"url":"https://github.com/sgl-project/sglang/releases/tag/v0.5.20","title":"SGLang v0.5.20 release notes","publisher":"SGLang 项目","publishedOn":"2026-09-18","reviewedOn":"2026-09-29","basis":"document","scope":"已阅读 Highlights 的 Responses API storage 与 Dependencies and images。"}]}
+      ]
+    },
+    {
+      "id":"workers-platform",
+      "category":"technology",
+      "title":"Cloudflare Workers：运行环境与发布隔离",
+      "summary":"追踪开发平台从语言支持到隔离发布的演进。产品公告与厂商对 Agent 时代的判断分开阅读。",
+      "startDate":"2026-09-01",
+      "reviewedOn":"2026-09-29",
+      "openQuestions":["公告中的隔离和运行限制是否适用于实际使用的绑定、框架与套餐？须核对对应产品文档。","Agent 带来的工作负载变化是厂商判断，不能由这组公告推导全行业规模或性能。"],
+      "learning":[],
+      "rules":[{"id":"workers-announcements","label":"Cloudflare 官方标题提及 Workers、预览或年度创始人信","hosts":["blog.cloudflare.com"],"any":["workers","worker previews","founders' letter","founders’ letter","founders letter"],"all":[],"exclude":[]}],
+      "milestones":[
+        {"id":"python-ga","date":"2026-09-21","dateMeaning":"产品公告发布日期","title":"Python Workers 宣布正式可用","kind":"fact","summary":"Cloudflare 宣布 Python Workers 正式可用，介绍基于 Pyodide／WebAssembly 的运行方式及 Python Web 框架集成。","context":"这是产品发布记录，不是独立性能测试，也不意味着任意 Python 原生依赖都能直接运行。","sources":[{"url":"https://blog.cloudflare.com/python-workers-ga/","title":"Python Workers general availability","publisher":"Cloudflare","publishedOn":"2026-09-21","reviewedOn":"2026-09-29","basis":"document","scope":"已阅读正式可用公告及运行环境说明。"}]},
+        {"id":"worker-previews","date":"2026-09-22","dateMeaning":"产品公告发布日期","title":"Worker Previews：按分支隔离预览环境","kind":"fact","summary":"Cloudflare 发布 Worker Previews，介绍独立的分支代码、配置、URL、可观测数据和状态，减少预览改动触及生产环境的风险。","context":"隔离是产品声明；仍需要根据绑定类型与配置验证边界，不能理解为所有误操作都被阻止。","sources":[{"url":"https://blog.cloudflare.com/worker-previews/","title":"Introducing Worker Previews","publisher":"Cloudflare","publishedOn":"2026-09-22","reviewedOn":"2026-09-29","basis":"document","scope":"已阅读按分支隔离及生产环境边界的说明。"}]},
+        {"id":"founders-letter","date":"2026-09-27","dateMeaning":"公开信发布日期","title":"创始人信：Agent 与互联网基础设施","kind":"statement","summary":"Cloudflare 创始人在年度公开信中讨论 Agent 对互联网流量和开发平台的影响，将其作为公司战略判断的一部分。","context":"这是厂商观点，不是已被独立验证的行业预测。它与前面的产品公告相关，但不证明两者存在因果关系。","sources":[{"url":"https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/","title":"Cloudflare’s 2026 annual founders’ letter","publisher":"Cloudflare","publishedOn":"2026-09-27","reviewedOn":"2026-09-29","basis":"document","scope":"已阅读公开信的 Agent 与互联网发展论述；不复述其流量预测为事实。"}]}
+      ]
+    },
+    {
+      "id":"boj-policy-2026",
+      "category":"finance",
+      "title":"日本央行：政策决定与文件披露",
+      "summary":"把决定日、生效日与会议纪要发布日期分开。这里追踪官方文件，不提供市场预测或投资建议。",
+      "startDate":"2026-09-01",
+      "reviewedOn":"2026-09-29",
+      "openQuestions":["后续政策会议是否改变指引？本页不预测利率路径。","会议纪要描述的是哪次会议？新发布不等于新决定，应先核对文件所对应的会议日期。"],
+      "learning":[],
+      "rules":[
+        {"id":"policy-documents","label":"日本央行货币政策决定文件","hosts":["www.boj.or.jp"],"pathPrefix":"/en/mopo/mpmdeci/","any":[],"all":[],"exclude":[]},
+        {"id":"policy-minutes","label":"日本央行会议纪要与意见摘要","hosts":["www.boj.or.jp"],"pathPrefix":"/en/mopo/mpmsche_minu/","any":[],"all":[],"exclude":[]},
+        {"id":"named-policy-coverage","label":"受限媒体标题同时提及日本央行及利率或政策","hosts":["www.reuters.com","www.ft.com","www.bbc.com","www.france24.com","www.npr.org"],"any":["rate","rates","policy"],"all":["bank of japan"],"exclude":[]}
+      ],
+      "milestones":[
+        {"id":"september-decision","date":"2026-09-18","dateMeaning":"政策决定公布日（日本日期）","title":"公布短期利率操作指引","kind":"fact","summary":"日本央行公布的决定以 7 比 2 通过，将无担保隔夜拆借利率引导至约 1.25%；文件注明相关调整自 9 月 24 日起适用。","context":"指引目标不是对每笔市场成交利率的陈述，更不是收益率预测。请以官方文件及其后续修订为准。","sources":[{"url":"https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf","title":"Change in the Guideline for Money Market Operations","publisher":"日本央行","publishedOn":"2026-09-18","reviewedOn":"2026-09-29","basis":"document","scope":"已核对 PDF 第 1 页的投票、操作指引与生效日期脚注。"}]},
+        {"id":"effective-date","date":"2026-09-24","dateMeaning":"9 月 18 日决定指定的生效日","title":"文件指定的调整生效日期","kind":"fact","summary":"9 月 18 日政策决定的脚注指定 9 月 24 日为新操作指引及相关利率调整的生效日期。","context":"这是同一份文件的另一时间节点，不是新增一份 9 月 24 日公告，也不构成独立来源的再次证实。","sources":[{"url":"https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf","title":"September decision — effective-date footnotes","publisher":"日本央行","publishedOn":"2026-09-18","reviewedOn":"2026-09-29","basis":"document","scope":"沿用原文件第 1 页脚注，不将生效日当作文件发布日期。"}]},
+        {"id":"july-minutes-published","date":"2026-09-28","dateMeaning":"会议纪要发布日期（日本日期）","title":"公布 7 月会议纪要，而非新的 9 月决定","kind":"fact","summary":"日本央行发布 7 月 30—31 日货币政策会议纪要。文件说明纪要在 9 月 17—18 日会议获批准。","context":"发布日期、批准日期与所记录的会议日期不同。本节点位于 9 月 28 日，是按文件公开时点排列。","sources":[{"url":"https://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260731.pdf","title":"Minutes of the Monetary Policy Meeting on July 30 and 31, 2026","publisher":"日本央行","publishedOn":"2026-09-28","reviewedOn":"2026-09-29","basis":"document","scope":"已核对封面会议日期、发布时间及批准日期说明。"}]}
+      ]
+    },
+    {
+      "id":"unga81-debate",
+      "category":"world",
+      "title":"第 81 届联大：议程与各方立场",
+      "summary":"沿一般性辩论追踪多国公开表态。联合国报道是同一个发布体系，多国发言不等于多个独立媒体已交叉验证。",
+      "startDate":"2026-09-15",
+      "endDate":"2026-10-15",
+      "reviewedOn":"2026-09-29",
+      "openQuestions":["这些表态是否形成正式决议、实施安排或后续行动？发言本身不等于政策落地。","同一事件的其他当事方与独立报道是否补充或反驳这些说法？本页没有宣称覆盖所有国家立场。"],
+      "learning":[],
+      "rules":[{"id":"assembly-coverage","label":"受限来源标题提及联大、UNGA 或在联合国的发言","hosts":["news.un.org","ukraine.un.org","www.france24.com","www.npr.org","www.bbc.com","www.reuters.com","apnews.com"],"any":["general assembly","unga","tells un","tells the un"],"all":[],"exclude":[]}],
+      "milestones":[
+        {"id":"debate-opening","date":"2026-09-22","dateMeaning":"一般性辩论开幕日；所引报道发布于 9 月 24 日","title":"一般性辩论在纽约开幕","kind":"fact","summary":"联合国驻乌克兰网站的报道记载，第 81 届联大一般性辩论于 9 月 22 日在纽约开幕，议程涉及和平、发展和人权。","context":"开幕日期早于这篇报道的发布日期；页面不把新闻发布时间当作所有事件的发生时间。","sources":[{"url":"https://ukraine.un.org/en/323265-un-general-assembly-calls-protection-civilians-and-just-peace-ukraine","title":"UN General Assembly calls for protection of civilians and a just peace in Ukraine","publisher":"联合国驻乌克兰机构","publishedOn":"2026-09-24","reviewedOn":"2026-09-29","basis":"document","scope":"已阅读报道全文，使用其中的一般性辩论开幕日期。"}]},
+        {"id":"kenya-reform","date":"2026-09-23","dateMeaning":"联合国新闻所述发言日","title":"肯尼亚：主张安理会与金融体系改革","kind":"statement","summary":"据联合国新闻的发布摘要，肯尼亚总统鲁托在联大发言中批评现有制度与主权平等原则之间的落差，呼吁改革安理会和国际金融体系。","context":"本节点记录鲁托的立场，不把其制度评价表述为本网站已证实的结论。","sources":[{"url":"https://news.un.org/en/story/2026/09/1168419","title":"Kenya’s Ruto addresses the General Assembly","publisher":"联合国新闻","publishedOn":"2026-09-23","reviewedOn":"2026-09-29","basis":"publisher-summary","scope":"依据发布方页面标题、摘要和发布日期；未据此声称核对了完整演讲。"}]},
+        {"id":"india-conflict-cost","date":"2026-09-26","dateMeaning":"联合国新闻所述发言日","title":"印度：关注远离战场国家承担的代价","kind":"statement","summary":"据联合国新闻摘要，印度外长苏杰生表示，冲突持续损害国际和平与安全，远离战场的国家也承受代价。","context":"这是对印度发言立场的归纳，不是对所有经济影响的测量，也没有将其与其他发言合并为共同结论。","sources":[{"url":"https://news.un.org/en/story/2026/09/1168460","title":"Countries far from conflict paying the price for wars not their own, India tells UN","publisher":"联合国新闻","publishedOn":"2026-09-26","reviewedOn":"2026-09-29","basis":"publisher-summary","scope":"依据发布方页面摘要；未独立核查发言涉及的全部背景主张。"}]},
+        {"id":"saudi-gulf-security","date":"2026-09-26","dateMeaning":"联合国新闻所述发言日；同日节点不代表发言先后","title":"沙特阿拉伯：强调海湾安全与航运","kind":"statement","summary":"据联合国新闻摘要，沙特外长警告地区威胁可能影响国际和平、能源安全与贸易，并呼吁加强保护海湾国家和重要航线的合作。","context":"风险判断归属于发言方。本页不据此预测冲突走向、能源价格或航线安全程度。","sources":[{"url":"https://news.un.org/en/story/2026/09/1168459","title":"Saudi Arabia warns Gulf security inseparable from global stability","publisher":"联合国新闻","publishedOn":"2026-09-26","reviewedOn":"2026-09-29","basis":"publisher-summary","scope":"依据发布方页面摘要；发言与事实核验分开呈现。"}]}
+      ]
+    }
+  ]
+}

@@ -99,6 +99,16 @@ inspection. Evidence is from production builds, not development-only previews.
 
 ## Reproducible QA
 
+News event tracking (`#/news/events`) adds a news-reader link, not a home module.
+Its acceptance matrix includes all four themes, reviewed versus rule-associated
+evidence, source/date distinctions, controlled finite chronology, reduced motion,
+keyboard selection, URL/back/refresh, source/search filters, empty and unknown-ID
+states, Markdown export, stale coverage, lazy-load recovery, and unchanged browser
+storage at 360/390/768/1440px. Run `tests/news-events-browser.mjs` and inspect both
+initial viewport and detailed reading screenshots. A build-time gate and targeted
+withdrawal must leave news/weekly and the existing model tools intact. See
+`docs/news-events.md` for the evidence and maintenance contract.
+
 1. `npm run check && npm run lint && npm run build`
 2. `node --experimental-strip-types --test tests/*.test.mjs`
 3. Run all existing `*-render.mjs` checks and browser suites listed above.

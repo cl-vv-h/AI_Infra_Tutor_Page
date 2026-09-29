@@ -5,6 +5,7 @@ import dailyJson from '@/data/news/daily.json'
 import libraryJson from '@/data/news/library.json'
 import releasesJson from '@/data/news/releases.json'
 import weeklyJson from '@/data/news/weekly/latest.json'
+import newsEvents from '../../config/news-events.json'
 import PageHeader from '@/components/PageHeader'
 import NewsFreshness from '@/components/NewsFreshness'
 import NewsStudyGuide from '@/components/NewsStudyGuide'
@@ -169,6 +170,7 @@ export default function News() {
     <div className="page-container pt-10">
       <PageHeader eyebrow="GLOBAL SIGNAL DESK" title="发现技术，读懂进展。" description="从推理引擎、芯片与论文，到政策和国际动态。" actions={<div className="text-xs leading-6"><p>{daily.sourceCount} / {daily.sourceCount + daily.failedSourceCount} 个信源可读取 · {library.items.length} 篇技术长读</p><p>最近采集：{formatDate(daily.generatedAt, true)}</p></div>} />
       <NewsFreshness/>
+      {newsEvents.enabled && <Link to="/news/events" className="mb-4 inline-flex min-h-11 items-center gap-2 rounded-lg border border-line px-4 py-2 text-sm text-accent hover:bg-raised">事件追踪：把跨日报道连成脉络 <ArrowUpRight size={16}/></Link>}
     </div>
 
     <div className="page-container">

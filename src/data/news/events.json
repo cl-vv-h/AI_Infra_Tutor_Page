@@ -1,0 +1,350 @@
+{
+  "version": "news-events/1",
+  "coverage": {
+    "dailyCollectedAt": "2026-09-28T05:43:17.596Z",
+    "releasesCollectedAt": "2026-09-28T05:43:26.836Z",
+    "libraryCollectedAt": "2026-09-28T05:43:17.596Z",
+    "archiveDates": [
+      "2026-09-03",
+      "2026-09-04",
+      "2026-09-05",
+      "2026-09-06",
+      "2026-09-07",
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-10",
+      "2026-09-11",
+      "2026-09-12",
+      "2026-09-13",
+      "2026-09-14",
+      "2026-09-15",
+      "2026-09-16",
+      "2026-09-17",
+      "2026-09-18",
+      "2026-09-19",
+      "2026-09-20",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-09-26",
+      "2026-09-27",
+      "2026-09-28"
+    ],
+    "missingArchiveDates": [],
+    "failedSources": [
+      "Buenos Aires Times"
+    ],
+    "invalidItems": 27
+  },
+  "tracks": [
+    {
+      "id": "sglang-runtime",
+      "reports": [
+        {
+          "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.17",
+          "title": "sglang · v0.5.17",
+          "publisher": "SGLang Releases",
+          "publisherCountry": "International",
+          "publishedAt": "2026-08-08T00:19:16.000Z",
+          "firstCollectedAt": "2026-09-28T05:43:26.836Z",
+          "lastCollectedAt": "2026-09-28T05:43:26.836Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "official-releases"
+          ]
+        },
+        {
+          "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.18",
+          "title": "sglang · v0.5.18",
+          "publisher": "SGLang Releases",
+          "publisherCountry": "International",
+          "publishedAt": "2026-08-22T00:09:15.000Z",
+          "firstCollectedAt": "2026-09-28T05:43:26.836Z",
+          "lastCollectedAt": "2026-09-28T05:43:26.836Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "official-releases"
+          ]
+        },
+        {
+          "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.19",
+          "title": "sglang · v0.5.19",
+          "publisher": "SGLang Releases",
+          "publisherCountry": "International",
+          "publishedAt": "2026-09-05T02:27:42.000Z",
+          "firstCollectedAt": "2026-09-28T05:43:26.836Z",
+          "lastCollectedAt": "2026-09-28T05:43:26.836Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "official-releases"
+          ]
+        },
+        {
+          "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.20",
+          "title": "sglang · v0.5.20",
+          "publisher": "SGLang Releases",
+          "publisherCountry": "International",
+          "publishedAt": "2026-09-18T22:41:33.000Z",
+          "firstCollectedAt": "2026-09-19T04:53:01.330Z",
+          "lastCollectedAt": "2026-09-28T05:43:26.836Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "official-releases"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workers-platform",
+      "reports": [
+        {
+          "url": "https://blog.cloudflare.com/workers-module-registry-nodejs/",
+          "title": "How we rebuilt Cloudflare Workers’ module registry for Node.js compatibility",
+          "publisher": "Cloudflare Engineering",
+          "publisherCountry": "United States",
+          "publishedAt": "2026-09-09T13:00:00.000Z",
+          "firstCollectedAt": "2026-09-09T14:29:37.019Z",
+          "lastCollectedAt": "2026-09-11T05:00:17.920Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "workers-announcements"
+          ]
+        },
+        {
+          "url": "https://blog.cloudflare.com/workers-granular-authorization/",
+          "title": "Give every teammate and agent the right level of access to your Workers",
+          "publisher": "Cloudflare Engineering",
+          "publisherCountry": "United States",
+          "publishedAt": "2026-09-15T13:00:00.000Z",
+          "firstCollectedAt": "2026-09-16T05:05:20.338Z",
+          "lastCollectedAt": "2026-09-16T05:05:20.338Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "workers-announcements"
+          ]
+        },
+        {
+          "url": "https://blog.cloudflare.com/python-workers-ga/",
+          "title": "Python Workers are now generally available",
+          "publisher": "Cloudflare Engineering",
+          "publisherCountry": "United States",
+          "publishedAt": "2026-09-21T13:00:00.000Z",
+          "firstCollectedAt": "2026-09-22T05:15:33.331Z",
+          "lastCollectedAt": "2026-09-22T05:15:33.331Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "workers-announcements"
+          ]
+        },
+        {
+          "url": "https://blog.cloudflare.com/worker-previews/",
+          "title": "Introducing Worker Previews: Isolated preview environments for every change your agent makes",
+          "publisher": "Cloudflare Engineering",
+          "publisherCountry": "United States",
+          "publishedAt": "2026-09-22T13:00:00.000Z",
+          "firstCollectedAt": "2026-09-23T05:00:13.926Z",
+          "lastCollectedAt": "2026-09-23T05:00:13.926Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "workers-announcements"
+          ]
+        },
+        {
+          "url": "https://blog.cloudflare.com/cloudflares-2026-annual-founders-letter/",
+          "title": "Cloudflare’s 2026 Annual Founders’ Letter",
+          "publisher": "Cloudflare Engineering",
+          "publisherCountry": "United States",
+          "publishedAt": "2026-09-27T17:00:00.000Z",
+          "firstCollectedAt": "2026-09-28T05:43:17.596Z",
+          "lastCollectedAt": "2026-09-28T05:43:17.596Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "workers-announcements"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "boj-policy-2026",
+      "reports": [
+        {
+          "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918b.pdf",
+          "title": "(Reference) Change in the Guideline for Money Market Operations (September 2026 MPM)",
+          "publisher": "Bank of Japan",
+          "publisherCountry": "Japan",
+          "publishedAt": "2026-09-18T02:54:00.000Z",
+          "firstCollectedAt": "2026-09-18T05:00:54.644Z",
+          "lastCollectedAt": "2026-09-19T04:53:01.330Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "policy-documents"
+          ]
+        },
+        {
+          "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr260918b.pdf",
+          "title": "Amendment to \"Principal Terms and Conditions of Complementary Deposit Facility\"",
+          "publisher": "Bank of Japan",
+          "publisherCountry": "Japan",
+          "publishedAt": "2026-09-18T03:30:00.000Z",
+          "firstCollectedAt": "2026-09-18T05:00:54.644Z",
+          "lastCollectedAt": "2026-09-19T04:53:01.330Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "policy-documents"
+          ]
+        },
+        {
+          "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
+          "title": "Change in the Guideline for Money Market Operations",
+          "publisher": "Bank of Japan",
+          "publisherCountry": "Japan",
+          "publishedAt": "2026-09-18T03:40:00.000Z",
+          "firstCollectedAt": "2026-09-18T05:00:54.644Z",
+          "lastCollectedAt": "2026-09-19T04:53:01.330Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "policy-documents"
+          ]
+        },
+        {
+          "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr260925a.pdf",
+          "title": "Conduct of Funds-Supplying Operations against Pooled Collateral",
+          "publisher": "Bank of Japan",
+          "publisherCountry": "Japan",
+          "publishedAt": "2026-09-25T08:00:00.000Z",
+          "firstCollectedAt": "2026-09-26T05:18:12.229Z",
+          "lastCollectedAt": "2026-09-27T05:35:21.623Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "policy-documents"
+          ]
+        },
+        {
+          "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260731.pdf",
+          "title": "Minutes of the Monetary Policy Meeting on July 30 and 31, 2026",
+          "publisher": "Bank of Japan",
+          "publisherCountry": "Japan",
+          "publishedAt": "2026-09-27T23:50:00.000Z",
+          "firstCollectedAt": "2026-09-28T05:43:17.596Z",
+          "lastCollectedAt": "2026-09-28T05:43:17.596Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "policy-minutes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unga81-debate",
+      "reports": [
+        {
+          "url": "https://www.france24.com/en/americas/20260917-us-palestinian-leader-visa-un-general-assembly-new-york",
+          "title": "US again denies Palestinian leader visa for UN General Assembly",
+          "publisher": "France 24",
+          "publisherCountry": "France",
+          "publishedAt": "2026-09-17T03:03:25.000Z",
+          "firstCollectedAt": "2026-09-17T05:08:13.556Z",
+          "lastCollectedAt": "2026-09-17T05:08:13.556Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "assembly-coverage"
+          ]
+        },
+        {
+          "url": "https://news.un.org/en/story/2026/09/1168361",
+          "title": "Why the UN General Assembly still matters",
+          "publisher": "UN News",
+          "publisherCountry": "International",
+          "publishedAt": "2026-09-19T12:00:00.000Z",
+          "firstCollectedAt": "2026-09-20T05:13:11.737Z",
+          "lastCollectedAt": "2026-09-21T05:17:28.727Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "assembly-coverage"
+          ]
+        },
+        {
+          "url": "https://www.npr.org/2026/09/22/nx-s1-5955445/the-united-nations-general-assembly-is-meeting-is-it-accomplishing-anything",
+          "title": "The United Nations General Assembly is meeting. Is it accomplishing anything?",
+          "publisher": "NPR World",
+          "publisherCountry": "United States",
+          "publishedAt": "2026-09-22T21:23:48.000Z",
+          "firstCollectedAt": "2026-09-23T05:00:13.926Z",
+          "lastCollectedAt": "2026-09-23T05:00:13.926Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "assembly-coverage"
+          ]
+        },
+        {
+          "url": "https://news.un.org/en/story/2026/09/1168419",
+          "title": "Equality ‘ends at the doors of the Security Council’, Kenya’s Ruto tells General Assembly",
+          "publisher": "UN News",
+          "publisherCountry": "International",
+          "publishedAt": "2026-09-23T12:00:00.000Z",
+          "firstCollectedAt": "2026-09-24T05:11:25.143Z",
+          "lastCollectedAt": "2026-09-24T05:11:25.143Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "assembly-coverage"
+          ]
+        },
+        {
+          "url": "https://www.france24.com/en/fact-checking-trump-s-speech-at-the-united-nations-general-assembly-1",
+          "title": "Fact-checking Trump’s speech at the United Nations General Assembly",
+          "publisher": "France 24",
+          "publisherCountry": "France",
+          "publishedAt": "2026-09-23T20:54:26.000Z",
+          "firstCollectedAt": "2026-09-24T05:11:25.143Z",
+          "lastCollectedAt": "2026-09-24T05:11:25.143Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "assembly-coverage"
+          ]
+        },
+        {
+          "url": "https://news.un.org/en/story/2026/09/1168421",
+          "title": "The Takeaway: UN General Assembly debate Day 2",
+          "publisher": "UN News",
+          "publisherCountry": "International",
+          "publishedAt": "2026-09-24T12:00:00.000Z",
+          "firstCollectedAt": "2026-09-25T05:13:36.108Z",
+          "lastCollectedAt": "2026-09-25T05:13:36.108Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "assembly-coverage"
+          ]
+        },
+        {
+          "url": "https://news.un.org/en/story/2026/09/1168453",
+          "title": "Haiti at ‘watershed moment’, Prime Minister tells UN, urging full backing for security force",
+          "publisher": "UN News",
+          "publisherCountry": "International",
+          "publishedAt": "2026-09-25T12:00:00.000Z",
+          "firstCollectedAt": "2026-09-26T05:18:12.229Z",
+          "lastCollectedAt": "2026-09-26T05:18:12.229Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "assembly-coverage"
+          ]
+        },
+        {
+          "url": "https://news.un.org/en/story/2026/09/1168460",
+          "title": "Countries far from conflict paying the price for wars not their own, India tells UN",
+          "publisher": "UN News",
+          "publisherCountry": "International",
+          "publishedAt": "2026-09-26T12:00:00.000Z",
+          "firstCollectedAt": "2026-09-27T05:35:21.623Z",
+          "lastCollectedAt": "2026-09-28T05:43:17.596Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "assembly-coverage"
+          ]
+        }
+      ]
+    }
+  ],
+  "fingerprint": "0d1f673757ef7e4a1e5ae50163a692df876567ab4c01bafb08683366ab642e49"
+}
