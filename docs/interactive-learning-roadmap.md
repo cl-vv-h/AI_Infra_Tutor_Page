@@ -23,7 +23,7 @@ targeted revert and verified Pages publication. No raw profiling is uploaded.
    All-Reduce, Gather/Scatter, All-to-All and PP transfer; finite stepwise playback,
    numerical witnesses and shared-host bandwidth constraints. Hypothetical timing
    is explicitly separate from measurements. See `docs/communication-topology.md`.
-5. **News event tracking — implemented; publication requires release verification.**
+5. **News event tracking — implemented; publication tracked in release record.**
    `#/news/events`: four real tracked themes, attributed reviewed chronology,
    automatically associated reports, distinct event/publication/collection dates,
    uncertainty, controlled finite playback, filters, Markdown export and learning
