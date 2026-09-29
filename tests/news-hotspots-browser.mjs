@@ -42,6 +42,7 @@ try{
     await page.getByLabel('筛选来源地区').selectOption('')
     await page.getByText('近 7 日板块热力分布',{exact:true}).click()
     await expect(page.getByRole('region',{name:'七日板块热力表'})).toBeVisible();await overflow(page)
+    await expect(page.locator('.hotspot-matrix th').first()).toHaveCSS('white-space','nowrap')
     if(screenshots)await page.screenshot({path:join(screenshots,`hotspots-distribution-${width}.png`),fullPage:true})
     await page.getByLabel('统计窗口').selectOption('168');await page.getByLabel('排序方式').selectOption('sources')
     await expect(page).toHaveURL(/hours=168/);await expect(page).toHaveURL(/sort=sources/)
