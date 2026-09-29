@@ -23,7 +23,13 @@ export default function MultiRankTimeline({result,active,disabled}:{result:RankC
   useEffect(()=>{setPosition(0);setPlaying(false);setPage(0)},[result])
   useEffect(()=>{if(!active||disabled||reduced)setPlaying(false)},[active,disabled,reduced])
   useEffect(()=>{
-    const stop=()=>{if(document.hidden)setPlaying(false)};document.addEventListener('visibilitychange',stop);return()=>document.removeEventListener('visibilitychange',stop)
+    const stop=()=>setPlaying(false),visibility=()=>{if(document.hidden)stop()}
+    // A lazy sibling may suspend before its inactive prop commits. Stop on the
+    // navigation intent too, including a rapid back action during chunk loading.
+    const navigation=(event:MouseEvent)=>{const a=(event.target as Element)?.closest?.('a');if(a?.getAttribute('href')?.startsWith('#/')&&a.hash!==location.hash)stop()}
+    document.addEventListener('visibilitychange',visibility);document.addEventListener('click',navigation,true)
+    window.addEventListener('popstate',stop);window.addEventListener('hashchange',stop)
+    return()=>{document.removeEventListener('visibilitychange',visibility);document.removeEventListener('click',navigation,true);window.removeEventListener('popstate',stop);window.removeEventListener('hashchange',stop)}
   },[])
   useEffect(()=>{
     if(!playing||!active||disabled||reduced)return
