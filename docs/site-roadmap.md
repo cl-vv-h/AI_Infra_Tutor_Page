@@ -13,13 +13,13 @@ This is a prioritised backlog, not a claim that planned features already exist.
   unit tests and core browser interactions, not compilation alone.
 - First new Luna run and its public report still require execution verification.
 
-## 2. Deployment decision workspace — next candidate
+## 2. Deployment scenario library — withdrawn
 
-Save and compare explicitly named model deployment scenarios (precision, TP,
-EP, PP, Attention DP, replicas, KV and reserved workspace) with a versioned local
-export. Explain memory headroom and incompatible configurations. Preserve exact
-formula sources; never describe an estimated fit as measured throughput or a
-guaranteed working engine configuration. No cloud accounts or uploaded data.
+The user rejected this feature on 2026-09-29. Its save/restore, local library and
+scenario comparison have been reverted; do not rebuild or re-enable them without
+an explicit new request. Existing cross-model comparison and model calculators
+remain available. The rollback does not erase previously stored browser data.
+See `releases/deployment-scenarios-2026-09-29.md` for the historical record.
 
 ## 3. Profiling experiment notebook
 

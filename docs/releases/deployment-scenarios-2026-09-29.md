@@ -1,5 +1,35 @@
 # Deployment scenarios — release and rollback record
 
+## Withdrawn on 2026-09-29
+
+The user requested removal of this feature. The historical release description
+below no longer describes the active site. Production rollback uses these commits:
+
+1. `4eda83b`: revert scenario comparison.
+2. `b3fa78d`: revert scenario saving and the library.
+3. `e0a02c3`: revert feature gates and release metadata.
+
+After these reverts the runtime tree is identical to baseline `c32f86d`; only
+this historical record and the roadmap withdrawal note differ. No news content,
+existing cross-model comparison or browser IndexedDB data is deleted. The former
+scenario route is no longer available. `release.json` and `config/features.json`
+mentioned below belonged to the withdrawn feature and no longer exist.
+
+Future changes must still use isolated workspaces, scoped commits, verification
+and targeted dependency-reverse `git revert` rather than resetting main or force
+pushing. Preserve intervening news and user data; stop on rollback conflicts.
+The withdrawn scenario library is not a future automation backlog item.
+
+Rollback verification: type checking, lint, all unit tests, production build,
+news/report integrity and model rendering passed. The publication browser suites
+passed weekly history, Profiling guide and weight deployment at 360, 390, 768
+and 1440px. A separate rollback browser check verified absent scenario controls,
+preserved existing comparison, the former route's not-found state and unchanged
+synthetic IndexedDB content at all four widths. News files match the baseline.
+The existing improvement task was updated with the withdrawal after privately
+backing up its configuration; its schedule and the separate Luna task remain
+unchanged. Pages deployment and public behavior are checked after pushing.
+
 ## Identity and scope
 
 - Development baseline: `c32f86dc748d91cedb13a0e5731c2cbb73a0fa44`.
