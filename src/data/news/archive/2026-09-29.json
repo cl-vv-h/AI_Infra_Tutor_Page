@@ -1,10 +1,75 @@
 {
-  "generatedAt": "2026-09-29T06:00:00.708Z",
+  "generatedAt": "2026-09-29T06:52:28.532Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 34,
+  "sourceCount": 39,
   "failedSourceCount": 0,
   "sourceStates": [
+    {
+      "name": "BBC World",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "country": "United Kingdom",
+      "category": "world",
+      "type": "news",
+      "state": "ok",
+      "channel": "feed",
+      "entryCount": 34,
+      "latestPublishedAt": "2026-09-29T06:15:25.000Z",
+      "selectedCount": 3,
+      "libraryCount": 0
+    },
+    {
+      "name": "BBC Business",
+      "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "country": "United Kingdom",
+      "category": "finance",
+      "type": "news",
+      "state": "ok",
+      "channel": "feed",
+      "entryCount": 53,
+      "latestPublishedAt": "2026-09-29T05:26:50.000Z",
+      "selectedCount": 3,
+      "libraryCount": 0
+    },
+    {
+      "name": "DW",
+      "url": "https://rss.dw.com/rdf/rss-en-all",
+      "country": "Germany",
+      "category": "world",
+      "type": "news",
+      "state": "ok",
+      "channel": "feed",
+      "entryCount": 132,
+      "latestPublishedAt": "2026-09-29T05:36:00.000Z",
+      "selectedCount": 2,
+      "libraryCount": 0
+    },
+    {
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "country": "Qatar",
+      "category": "world",
+      "type": "news",
+      "state": "ok",
+      "channel": "feed",
+      "entryCount": 25,
+      "latestPublishedAt": "2026-09-29T06:29:01.000Z",
+      "selectedCount": 3,
+      "libraryCount": 0
+    },
+    {
+      "name": "CNA Business",
+      "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6936",
+      "country": "Singapore",
+      "category": "finance",
+      "type": "news",
+      "state": "ok",
+      "channel": "feed",
+      "entryCount": 20,
+      "latestPublishedAt": "2026-09-29T05:21:09.000Z",
+      "selectedCount": 3,
+      "libraryCount": 0
+    },
     {
       "name": "DeepMind",
       "url": "https://deepmind.google/blog/rss.xml",
@@ -196,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-09-29T05:21:45.000Z",
+      "latestPublishedAt": "2026-09-29T06:32:31.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -210,7 +275,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-09-28T22:10:02.000Z",
-      "selectedCount": 3,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -222,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-09-29T05:06:48.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-09-29T05:27:26.000Z",
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -236,7 +301,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-09-28T22:32:27.000Z",
-      "selectedCount": 3,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -459,8 +524,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-28T17:06:44.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 29.8,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 29.6,
       "topics": [
         "hardware"
       ]
@@ -475,8 +540,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T13:00:00.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 29.7,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 29.5,
       "topics": [
         "kernels"
       ]
@@ -491,8 +556,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-28T16:31:50.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 29.6,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 29.4,
       "topics": [
         "inference",
         "models"
@@ -508,8 +573,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-28T15:40:36.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 29.4,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 29.2,
       "topics": [
         "models",
         "training"
@@ -525,8 +590,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-29T03:18:39.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 29.3,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 29.1,
       "topics": [
         "kernels"
       ]
@@ -541,10 +606,42 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-29T05:22:03.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 28.8,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 28.6,
       "topics": [
         "kernels"
+      ]
+    },
+    {
+      "id": "ddf205715a3cfc62",
+      "category": "world",
+      "title": "Rubio, Saudi Arabia’s foreign minister hold talks on Yemen, Hormuz Strait",
+      "summary": "Top US and Saudi diplomats discuss cooperation on security challenges, including hostilities with Yemen's Houthis.",
+      "url": "https://www.aljazeera.com/news/2026/9/29/rubio-saudi-arabias-foreign-minister-hold-talks-on-yemen-hormuz-strait?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T04:46:38.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 28.5,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "b928a951c7cafe3c",
+      "category": "world",
+      "title": "OpenAI scraps rollout of new model over safety concerns",
+      "summary": "The firm also issued an update on incidents in which its models accessed Australian government systems.",
+      "url": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T04:30:13.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 28.4,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -557,8 +654,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-09-28T12:00:00.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 27.5,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 27.3,
       "topics": [
         "security"
       ]
@@ -573,8 +670,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-09-28T12:00:00.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 27.5,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 27.3,
       "topics": [
         "security"
       ]
@@ -589,8 +686,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 27.5,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 27.3,
       "topics": [
         "hardware",
         "training"
@@ -606,8 +703,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-09-28T21:25:18.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 26.9,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 26.6,
       "topics": [
         "security"
       ]
@@ -622,8 +719,8 @@
       "sourceCountry": "Australia",
       "sourceType": "institution",
       "publishedAt": "2026-09-29T04:30:00.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 26.6,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 26.4,
       "topics": []
     },
     {
@@ -636,8 +733,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-09-28T19:20:01.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 26.3,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 26.1,
       "topics": []
     },
     {
@@ -650,8 +747,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T13:00:00.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 25.7,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 25.5,
       "topics": [
         "security"
       ]
@@ -666,8 +763,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-09-28T16:26:45.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 25.6,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 25.4,
       "topics": []
     },
     {
@@ -680,8 +777,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-09-28T16:09:09.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 25.5,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 25.3,
       "topics": []
     },
     {
@@ -694,8 +791,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T14:51:57.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 25.2,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 25,
       "topics": []
     },
     {
@@ -708,8 +805,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-28T18:31:23.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 25.1,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 24.9,
       "topics": [
         "security"
       ]
@@ -724,11 +821,69 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-28T16:43:18.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 24.7,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 24.5,
       "topics": [
         "training",
         "security"
+      ]
+    },
+    {
+      "id": "9bcd176b502ae97f",
+      "category": "world",
+      "title": "Australia raises interest rates to 15-year high",
+      "summary": "Reserve Bank of Australia lifts benchmark rate to 4.6 percent amid stubborn inflation.",
+      "url": "https://www.aljazeera.com/economy/2026/9/29/australia-raises-interest-rates-to-15-year-high?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T06:29:01.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "7fe779ada036bbf9",
+      "category": "world",
+      "title": "Watch: Bangkok locals create floating market during floods",
+      "summary": "As sellers waded through floodwaters to sell produce like fish and vegetables from floating platforms and foam boxes, buyers walked or paddled between the makeshift stalls to buy their groceries.",
+      "url": "https://www.bbc.co.uk/news/videos/c6q8jlqvjgdlo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T06:15:25.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "f2483215fb1fff2a",
+      "category": "finance",
+      "title": "Proposed budget 'a step in the right direction'",
+      "summary": "The government releases its proposed budget with \"targeted measures\" to help families.",
+      "url": "https://www.bbc.co.uk/news/articles/c699dz2v752lo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T05:05:02.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "505d8918d6b8fc07",
+      "category": "finance",
+      "title": "Samsung Electronics says HBM to account for nearly 30% of industry DRAM capacity next year",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/samsung-electronics-says-hbm-account-nearly-30-industry-dram-capacity-next-year-6417091",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T01:07:39.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 23.6,
+      "topics": [
+        "hardware"
       ]
     },
     {
@@ -741,24 +896,108 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T01:00:00.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 23.7,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 23.5,
       "topics": [
         "hardware"
       ]
     },
     {
+      "id": "6d2dd281e746afd2",
+      "category": "world",
+      "title": "OpenAI shelves new AI model amid safety concerns",
+      "summary": "The decision comes amid a broader push within the industry to slow the development of increasingly powerful and autonomous systems until safety measures can catch up.",
+      "url": "https://www.dw.com/en/openai-shelves-new-ai-model-amid-safety-concerns/a-79467841?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T03:50:00.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
       "id": "c1979c50e5d0447e",
       "category": "world",
-      "title": "OpenAI cancels release of new AI model over safety concerns",
-      "summary": "OpenAI will not release its latest artificial intelligence model, Astra 6.1, after internal tests found it fell short of safety standards, the ChatGPT maker confirmed on Monday. The decision comes ahead of its annual DevDay conference in San Francisco on Tuesday, where the company is expected to announce new products.",
+      "title": "OpenAI cancels release of new artificial intelligence model over safety concerns",
+      "summary": "OpenAI will not release its latest artificial intelligence model, Astra 6.1, after internal tests found it fell short of safety standards, the maker of ChatGPT confirmed on Monday. The decision came just ahead of Tuesday's annual DevDay developer conference in San Francisco.",
       "url": "https://www.france24.com/en/americas/20260929-openai-cancels-release-new-ai-model-safety-concerns",
       "source": "France 24",
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-09-29T02:54:49.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 23.2,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 23,
+      "topics": []
+    },
+    {
+      "id": "9409b3af44e48c05",
+      "category": "world",
+      "title": "France: Student protests over conditions at French high schools fuel political clashes",
+      "summary": "Over 160 people were arrested and dozens injured after student protests in France descended into violence. With a presidential election approaching, senior politicians are pointing fingers at each other.",
+      "url": "https://www.dw.com/en/france-student-protests-over-conditions-at-french-high-schools-fuel-political-clashes/a-79467746?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T02:26:00.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "ea21d3884ad54a95",
+      "category": "finance",
+      "title": "South Korean exports seen rising for 16th month on solid AI chip demand: Reuters poll",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/south-korean-exports-seen-rising-16th-month-solid-ai-chip-demand-reuters-poll-6417096",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T01:08:01.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 22.6,
+      "topics": []
+    },
+    {
+      "id": "8c24b25e3ef80f26",
+      "category": "finance",
+      "title": "Australia's CSL taps Amazon's cloud unit to boost research pipeline",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/australias-csl-taps-amazons-cloud-unit-boost-research-pipeline-6417076",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T00:47:49.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "cbcd696fc99784a4",
+      "category": "world",
+      "title": "US prosecutors reopen case of alleged gang rape at Cornell University",
+      "summary": "It comes after the woman filed a civil lawsuit alleging she was drugged and raped at a fraternity house in 2024.",
+      "url": "https://www.bbc.co.uk/news/articles/c5wyzrm0n74ro",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T00:38:23.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "51955254231c87cf",
+      "category": "world",
+      "title": "OpenAI cancels release of AI model GPT-6.1 Astra, citing safety concerns",
+      "summary": "AI giant says latest model failed to meet alignment standards during internal testing.",
+      "url": "https://www.aljazeera.com/economy/2026/9/29/openai-scraps-release-of-latest-ai-model-over-safety-concerns?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T00:38:06.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 22.4,
       "topics": []
     },
     {
@@ -771,8 +1010,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-09-29T00:04:48.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 22.5,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 22.3,
       "topics": []
     },
     {
@@ -785,8 +1024,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-09-28T12:00:00.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 22.5,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 22.3,
       "topics": []
     },
     {
@@ -799,8 +1038,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-28T21:29:18.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 21.9,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 21.7,
       "topics": [
         "inference"
       ]
@@ -815,8 +1054,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-29T00:30:00.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 21.6,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 21.4,
       "topics": []
     },
     {
@@ -829,8 +1068,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-28T22:10:02.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 21,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 20.8,
       "topics": []
     },
     {
@@ -843,8 +1082,22 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-28T21:49:10.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 21,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 20.7,
+      "topics": []
+    },
+    {
+      "id": "d5a046f8c0c8dc54",
+      "category": "finance",
+      "title": "Aldi boss says some of rivals' loyalty discounts 'dupe' customers",
+      "summary": "Aldi is the only major supermarket chain that doesn't operate a loyalty scheme, which are hugely popular and used by millions of shoppers.",
+      "url": "https://www.bbc.co.uk/news/articles/c6dj4vkwg8j0o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-09-28T17:45:52.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 20.7,
       "topics": []
     },
     {
@@ -857,8 +1110,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T09:44:05.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 20.9,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 20.7,
       "topics": []
     },
     {
@@ -871,8 +1124,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T08:56:55.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 20.7,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 20.5,
       "topics": []
     },
     {
@@ -885,8 +1138,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T08:55:00.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 20.7,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 20.5,
       "topics": []
     },
     {
@@ -899,8 +1152,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-09-28T20:05:40.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 20.5,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 20.3,
       "topics": []
     },
     {
@@ -913,8 +1166,64 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-28T19:35:51.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 20.4,
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 20.2,
+      "topics": []
+    },
+    {
+      "id": "cae9daa14c1441bd",
+      "category": "finance",
+      "title": "Christine Lagarde: Hearing of the Committee on Economic and Monetary Affairs of the European Parliament",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260928~a875675544.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-28T13:30:00.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 19.7,
+      "topics": []
+    },
+    {
+      "id": "476d61fa87a6e49f",
+      "category": "finance",
+      "title": "Food waste charity gets grant for rising costs",
+      "summary": "The charity received a £60,000 grant, over three years, from Shrewsbury Town Council.",
+      "url": "https://www.bbc.co.uk/news/articles/cqg7kk95zxylo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-09-29T05:26:50.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 19.6,
+      "topics": []
+    },
+    {
+      "id": "f891cd1fc439d70a",
+      "category": "finance",
+      "title": "Minutes of the Monetary Policy Meeting on July 30 and 31, 2026",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260731.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-27T23:50:00.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 19.2,
+      "topics": []
+    },
+    {
+      "id": "e971ccf3bed7fb30",
+      "category": "finance",
+      "title": "Services Producer Price Index (Aug.)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/pi/cspi_release/sppi2608.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-27T23:50:00.000Z",
+      "fetchedAt": "2026-09-29T06:52:28.532Z",
+      "score": 15.2,
       "topics": []
     },
     {
@@ -932,20 +1241,6 @@
       "topics": []
     },
     {
-      "id": "cae9daa14c1441bd",
-      "category": "finance",
-      "title": "Christine Lagarde: Hearing of the Committee on Economic and Monetary Affairs of the European Parliament",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp260928~a875675544.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-28T13:30:00.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 19.9,
-      "topics": []
-    },
-    {
       "id": "a5069b07e99c93a0",
       "category": "world",
       "title": "Ethiopia fighting intensifies as Government forces retake Alamata",
@@ -955,20 +1250,6 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-09-28T16:11:58.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 19.5,
-      "topics": []
-    },
-    {
-      "id": "f891cd1fc439d70a",
-      "category": "finance",
-      "title": "Minutes of the Monetary Policy Meeting on July 30 and 31, 2026",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260731.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-27T23:50:00.000Z",
       "fetchedAt": "2026-09-29T06:00:00.708Z",
       "score": 19.5,
       "topics": []
@@ -1029,20 +1310,6 @@
       "publishedAt": "2026-09-29T05:06:48.000Z",
       "fetchedAt": "2026-09-29T06:00:00.708Z",
       "score": 18.8,
-      "topics": []
-    },
-    {
-      "id": "e971ccf3bed7fb30",
-      "category": "finance",
-      "title": "Services Producer Price Index (Aug.)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/pi/cspi_release/sppi2608.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-27T23:50:00.000Z",
-      "fetchedAt": "2026-09-29T06:00:00.708Z",
-      "score": 15.5,
       "topics": []
     },
     {
