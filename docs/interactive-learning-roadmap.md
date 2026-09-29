@@ -14,8 +14,10 @@ targeted revert and verified Pages publication. No raw profiling is uploaded.
    controlled dispatch/expert/combine animation, pre-capacity load imbalance,
    drop/pad policies, explicit combine normalization, toy numerical outputs and
    per-rank logical communication. See `docs/moe-routing.md` for exact boundaries.
-3. **A token's execution journey — not implemented.** Queue, prefill, decode,
-   tensor shapes, KV lifetime and compute/communication locations.
+3. **A token's execution journey — implemented locally; release verification pending.**
+   `#/models/token-journey`: queue, chunked prefill, sample/decode, EOS/cancellation,
+   prefix/page lifetime, Q/KV/FFN shapes, causal masks and scoped TP reductions.
+   See `docs/token-journey.md`; publication is not implied by local implementation.
 4. **Communication topology lab — not implemented.** Single/multi-host rank
    placement, collective algorithms and declared latency/bandwidth assumptions;
    theoretical predictions explicitly separate from measured performance.

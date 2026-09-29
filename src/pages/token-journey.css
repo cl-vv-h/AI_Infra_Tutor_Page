@@ -1,0 +1,11 @@
+/* Movement only accompanies new KV being appended; no ambient animation. */
+@keyframes journey-write {
+  from { transform: translateY(-5px); opacity: .35; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.journey-kv-enter { animation: journey-write 450ms ease-out both; }
+.journey-progress { transition: width 450ms ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .journey-kv-enter { animation: none; }
+  .journey-progress { transition: none; }
+}
