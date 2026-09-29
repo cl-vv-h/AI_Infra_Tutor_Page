@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-09-28T05:43:17.596Z",
-    "releasesCollectedAt": "2026-09-28T05:43:26.836Z",
-    "libraryCollectedAt": "2026-09-28T05:43:17.596Z",
+    "dailyCollectedAt": "2026-09-29T06:00:00.708Z",
+    "releasesCollectedAt": "2026-09-29T06:00:11.674Z",
+    "libraryCollectedAt": "2026-09-29T06:00:00.708Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -30,12 +30,11 @@
       "2026-09-25",
       "2026-09-26",
       "2026-09-27",
-      "2026-09-28"
+      "2026-09-28",
+      "2026-09-29"
     ],
     "missingArchiveDates": [],
-    "failedSources": [
-      "Buenos Aires Times"
-    ],
+    "failedSources": [],
     "invalidItems": 27
   },
   "tracks": [
@@ -49,7 +48,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-09-28T05:43:26.836Z",
+          "lastCollectedAt": "2026-09-29T06:00:11.674Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -62,7 +61,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-09-28T05:43:26.836Z",
+          "lastCollectedAt": "2026-09-29T06:00:11.674Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -75,7 +74,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-09-28T05:43:26.836Z",
+          "lastCollectedAt": "2026-09-29T06:00:11.674Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -88,7 +87,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-09-28T05:43:26.836Z",
+          "lastCollectedAt": "2026-09-29T06:00:11.674Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -228,7 +227,7 @@
           "publisherCountry": "Japan",
           "publishedAt": "2026-09-27T23:50:00.000Z",
           "firstCollectedAt": "2026-09-28T05:43:17.596Z",
-          "lastCollectedAt": "2026-09-28T05:43:17.596Z",
+          "lastCollectedAt": "2026-09-29T06:00:00.708Z",
           "revisionCount": 0,
           "ruleIds": [
             "policy-minutes"
@@ -346,5 +345,5 @@
       ]
     }
   ],
-  "fingerprint": "0d1f673757ef7e4a1e5ae50163a692df876567ab4c01bafb08683366ab642e49"
+  "fingerprint": "a8b3f09dc89883148d9521656e8282098915458048db753ccd4919d4d049ade2"
 }
