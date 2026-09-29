@@ -8,7 +8,6 @@ const Models = lazy(() => import('@/pages/Models'))
 const ModelCatalog = lazy(() => import('@/pages/ModelCatalog'))
 const ModelKnowledge = lazy(() => import('@/pages/ModelKnowledge'))
 const ModelCompare = lazy(() => import('@/pages/ModelCompare'))
-const DeploymentScenarios = lazy(() => import('@/pages/DeploymentScenarios'))
 const DeepseekV41 = lazy(() => import('@/pages/DeepseekV41'))
 const DpaLab = lazy(() => import('@/pages/DpaLab'))
 const News = lazy(() => import('@/pages/News'))
@@ -32,7 +31,6 @@ export default function App() {
             <Route path="/models/knowledge" element={<ModelKnowledge />} />
             <Route path="/models/knowledge/:topicId" element={<ModelKnowledge />} />
             <Route path="/models/compare" element={<ModelCompare />} />
-            <Route path="/models/scenarios" element={<DeploymentScenarios />} />
             <Route path="/models/deepseek-v4-1-flash" element={<DeepseekV41 />} />
             <Route path="/models/glm-5-2/dpa" element={<DpaLab />} />
             <Route path="/models/qwen3-8b/dpa" element={<DpaLab modelId="qwen3-8b" />} />
