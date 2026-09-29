@@ -2,7 +2,7 @@ name: Refresh daily news
 
 on:
   schedule:
-    - cron: '30 0 * * *'
+    - cron: '30 */4 * * *'
   workflow_dispatch:
 
 permissions:
@@ -27,7 +27,7 @@ jobs:
           node-version: '20'
 
       - name: Validate feed parsing and selection
-        run: node --test tests/news-core.test.mjs tests/news-fetch.test.mjs tests/news-releases.test.mjs
+        run: node --test tests/news-core.test.mjs tests/news-fetch.test.mjs tests/news-releases.test.mjs tests/news-hotspots.test.mjs
 
       - name: Collect public news feeds
         run: node scripts/fetch-news.mjs
@@ -48,7 +48,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/news/daily.json src/data/news/library.json src/data/news/releases.json src/data/news/archive src/data/news/events.json
+          git add src/data/news/daily.json src/data/news/library.json src/data/news/releases.json src/data/news/archive src/data/news/events.json src/data/news/hotspots.json
           git commit -m "chore(news): refresh daily signals"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"

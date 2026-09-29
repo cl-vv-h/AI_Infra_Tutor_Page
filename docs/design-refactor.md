@@ -99,6 +99,16 @@ inspection. Evidence is from production builds, not development-only previews.
 
 ## Reproducible QA
 
+Hotspot discovery (`#/news/events`, `?hotspot=...`) adds explainable activity sorting,
+time/category/source-region filters, category bars and a seven-day count matrix,
+headline clusters, source-linked timelines and local topic follows. Test the initial
+viewport, expanded distribution and detail at 360/390/768/1440px; mobile distribution
+is optional and appears before the list. Verify URL/back/refresh, keyboard controls,
+unknown IDs, stale data, denied/corrupt storage, cross-tab follow preservation,
+explicit mark-read and lazy-resource recovery. `tests/news-hotspots-browser.mjs`
+is a deployment gate. The reviewed chronology remains at `?mode=reviewed` and all
+legacy `?event=...` links remain valid. See `docs/news-hotspots.md`.
+
 News event tracking (`#/news/events`) adds a news-reader link, not a home module.
 Its acceptance matrix includes all four themes, reviewed versus rule-associated
 evidence, source/date distinctions, controlled finite chronology, reduced motion,

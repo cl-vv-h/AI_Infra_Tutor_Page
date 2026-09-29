@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { lazy, useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowLeft, ArrowUpRight, CheckCheck, Download, Pause, Play, StepBack, StepForward } from 'lucide-react'
 import PageHeader from '@/components/PageHeader'
@@ -7,6 +7,8 @@ import snapshotJson from '@/data/news/events.json'
 import { categoryNames, kindNames, validateCatalog, validateSnapshot, readEventQuery, eventQuery, sortedMilestones, canonicalEventUrl, filteredReports, freshnessLabel, eventMarkdown } from '@/lib/news-events.mjs'
 import type { EventCoverage, EventMilestone, EventReport, EventTrack } from '@/lib/news-events.mjs'
 import './news-events.css'
+import hotspotGate from '../../config/news-hotspots.json'
+const NewsHotspots = lazy(() => import('./NewsHotspots'))
 
 const panel = 'rounded-2xl border border-line bg-surface p-4 sm:p-6'
 const button = 'inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-line px-3 py-2 text-sm text-ink hover:bg-raised disabled:cursor-not-allowed disabled:opacity-50'
@@ -144,6 +146,11 @@ function EventReader({ track, reports, coverage, index, searchKey, source, q, na
 }
 
 export default function NewsEvents() {
+  const [params] = useSearchParams()
+  return hotspotGate.enabled && !params.has('event') && params.get('mode')!=='reviewed' ? <NewsHotspots/> : <ReviewedEvents/>
+}
+
+function ReviewedEvents() {
   const [params,setParams] = useSearchParams()
   const {tracks} = useMemo(()=>validateCatalog(catalogJson),[])
   const snapshot = useMemo(()=>validateSnapshot(snapshotJson),[])
@@ -152,6 +159,7 @@ export default function NewsEvents() {
   return <div className="page-container pb-16 pt-3 text-ink [&_button:focus-visible]:outline-accent [&_.page-heading]:mb-4 [&_.page-heading]:pb-4 [&_.page-heading__description]:mt-2">
     <nav aria-label="新闻导航" className="mb-2 flex flex-wrap gap-3 text-sm"><Link className="inline-flex min-h-11 items-center gap-1 text-secondary hover:text-ink" to="/news"><ArrowLeft size={16}/>新闻阅读</Link><Link className="inline-flex min-h-11 items-center text-secondary hover:text-ink" to="/news/weekly">每周报告</Link><span aria-current="page" className="inline-flex min-h-11 items-center text-accent">事件追踪</span></nav>
     <PageHeader compact eyebrow="NEWS / THROUGH TIME" title="把新闻连成脉络" description="关键进展、各方表态与尚待观察的问题，分开阅读。"/>
+    {hotspotGate.enabled && <Link className={`${button} mb-4 text-accent`} to="/news/events">查看热点榜与分布 →</Link>}
     <label className="grid gap-2 text-xs text-secondary">选择追踪主题<select className={`${input} w-full sm:max-w-xl`} value={selected.track?.id||''} onChange={e=>setParams(eventQuery({event:e.target.value}))}>{!selected.track&&<option value="">请选择主题</option>}{tracks.map(track=><option key={track.id} value={track.id}>{categoryNames[track.category]} · {track.title}</option>)}</select></label>
     <p className="mt-3 text-xs leading-5 text-secondary" data-testid="event-freshness">每日采集截至 {utc(snapshot.coverage.dailyCollectedAt)} · {freshnessLabel(snapshot.coverage.dailyCollectedAt)}。关键节点的核对日期另列。</p>
     {selected.error?<section role="alert" className={`${panel} mt-5`}><p>{selected.error}</p><button className={`${button} mt-3`} onClick={()=>setParams(eventQuery({event:selected.track?.id||tracks[0]?.id}))}>返回主题最新核对节点</button></section>:selected.track&&<EventReader key={selected.track.id} track={selected.track} reports={snapshot.tracks.find(track=>track.id===selected.track.id)!.reports} coverage={snapshot.coverage} index={selected.index!} searchKey={params.toString()} source={selected.source!} q={selected.q!} navigate={(step,source,q)=>setParams(eventQuery({event:selected.track!.id,step,source,q}),{replace:source!==selected.source||q!==selected.q})}/>}

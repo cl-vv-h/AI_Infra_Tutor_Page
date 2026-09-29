@@ -65,7 +65,7 @@ SGLANG_TUTOR_PATH=/path/to/SGLang_Tutor npm run sync:curriculum
 
 ### 每日采集
 
-`.github/workflows/daily-news.yml` 每天 `00:30 UTC` 运行。它从公开 RSS/Atom 信源采集新闻，执行 URL 清理、标题去重、时间窗口过滤和信源/时效加权，并写入：
+`.github/workflows/daily-news.yml` 每 4 小时运行（UTC 的 00:30、04:30、08:30、12:30、16:30、20:30；调度可能延迟）。它从公开 RSS/Atom 信源采集新闻，执行 URL 清理、标题去重、时间窗口过滤和信源/时效加权，并写入：
 
 - `src/data/news/daily.json`：网页当前内容；
 - `src/data/news/library.json`：近 90 天的 AI Infra 工程与研究长读；
@@ -81,6 +81,8 @@ npm run news:fetch
 信源配置位于 `scripts/news-sources.mjs`，目前覆盖论文与研究、AI 推理框架发布、PyTorch/NVIDIA/AMD 等工程博客、央行与国际机构原文和多地区国际媒体。排序会额外提升 inference、serving、kernel、compiler、GPU/NPU、quantization、attention 等技术信号的权重；arXiv 条目还会经过标题关键词过滤，避免泛化的分布式系统论文挤占版面。
 
 页面分为每日信号、技术长读、框架版本、历史归档、阅读清单五个视图，支持具体信源、来源类别、技术主题、关键词组合筛选；点击文章的信源名称可只看该来源。归档按日期延迟加载。长读从工程/研究来源中按 AI Infra 关键词筛选，保留 90 天内文章，每来源最多 8 篇；这是自动筛选，不是逐篇人工审读。每日信号保留 48 小时时间窗口，每个来源最多 3 条，避免单个高频媒体挤占板块。
+
+`#/news/events` 提供热点榜、板块／发布来源地区分布和本机主题关注；`hotspots.json` 使用每日精选之前的完整候选标题，滚动保留 30 天。热度代表所采集信源的报道活跃度，不是全网热搜。24 小时衰减、同集团计分上限、标题去重、相似标题待核对聚合与来源边界见 [热点功能说明](docs/news-hotspots.md)。原人工核对时间线在 `?mode=reviewed`，旧 `?event=...` 链接保持有效。
 
 筛选保存在 Hash URL 中，例如 `#/news?view=library&topic=inference`。可复制包含板块、主题、具体来源、关键词、排序和归档日期的链接；更新后的数据可能产生不同结果，不是文章快照。未知来源保留为空结果，无效枚举和归档日期会提示并恢复默认值；关键词限制 200 字符。分享会包含关键词，请勿输入不宜公开的信息。收藏条目不进入链接，阅读清单视图不提供分享按钮。
 

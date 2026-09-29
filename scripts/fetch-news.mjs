@@ -2,6 +2,7 @@ import { mkdir, readFile, rename, writeFile } from 'node:fs/promises'
 import { newsSources } from './news-sources.mjs'
 import { deduplicateItems, prepareItems, requireUsableFeeds, selectDiverse, selectLibrary } from './news-core.mjs'
 import { fetchSource } from './news-fetch.mjs'
+import { collectHotspotCorpus } from './news-hotspots.mjs'
 
 const outputRoot = new URL('../src/data/news/', import.meta.url)
 const archiveRoot = new URL('archive/', outputRoot)
@@ -39,6 +40,10 @@ const output = { generatedAt: now.toISOString(), status: dailyItems.length ? 're
   sourceCount: results.filter((result) => result.state === 'ok').length,
   failedSourceCount: results.filter((result) => result.state !== 'ok').length,
   sourceStates, items: dailyItems }
+let oldHotspots = null
+try { oldHotspots = JSON.parse(await readFile(new URL('hotspots.json', outputRoot), 'utf8')) } catch (error) { if (error.code !== 'ENOENT') throw error }
+// Collect BEFORE the editorial per-category/per-source limits. Store headline metadata only.
+const hotspots = collectHotspotCorpus(prepareItems(candidates, now, 30 * 24), sourceStates, now.toISOString(), oldHotspots)
 const library = { generatedAt: now.toISOString(), lookbackDays: 90, items: libraryItems }
 // Preserve already collected same-day stories even if a later feed response is shorter.
 const archive = { ...output, items: deduplicateItems([...dailyItems, ...oldArchive.items]) }
@@ -52,6 +57,8 @@ await mkdir(archiveRoot, { recursive: true })
 await writeSnapshot(new URL(`${today}.json`, archiveRoot), archive)
 await writeSnapshot(new URL('library.json', outputRoot), library)
 await writeSnapshot(new URL('daily.json', outputRoot), output)
+await writeSnapshot(new URL('hotspots.json', outputRoot), hotspots)
+console.log(`Hotspot corpus: ${hotspots.items.length} rolling 30-day headlines (before daily selection).`)
 console.log(`Collected ${dailyItems.length} daily signals, ${libraryItems.length} technical reads from ${output.sourceCount}/${newsSources.length} feeds.`)
 for (const source of sourceStates.filter((item) => item.channel === 'github-api' && item.state === 'ok')) console.log(`${source.name}: recovered via public GitHub API (${source.entryCount} release records, ${source.selectedCount} selected)`)
 for (const source of sourceStates.filter((item) => item.state !== 'ok')) console.warn(`${source.name}: ${source.state} via ${source.channel}${source.httpStatus ? ` (HTTP ${source.httpStatus})` : ''}`)

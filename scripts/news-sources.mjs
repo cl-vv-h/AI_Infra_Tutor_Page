@@ -1,4 +1,9 @@
 export const newsSources = [
+  { name: 'BBC World', country: 'United Kingdom', category: 'world', type: 'news', url: 'https://feeds.bbci.co.uk/news/world/rss.xml', weight: 8 },
+  { name: 'BBC Business', country: 'United Kingdom', category: 'finance', type: 'news', url: 'https://feeds.bbci.co.uk/news/business/rss.xml', weight: 8 },
+  { name: 'DW', country: 'Germany', category: 'world', type: 'news', url: 'https://rss.dw.com/rdf/rss-en-all', weight: 8 },
+  { name: 'Al Jazeera', country: 'Qatar', category: 'world', type: 'news', url: 'https://www.aljazeera.com/xml/rss/all.xml', weight: 8 },
+  { name: 'CNA Business', country: 'Singapore', category: 'finance', type: 'news', url: 'https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6936', weight: 8 },
   {
     name: 'DeepMind',
     country: 'United Kingdom',

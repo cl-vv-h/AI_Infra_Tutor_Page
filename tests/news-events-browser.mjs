@@ -8,8 +8,9 @@ const base=process.env.MODEL_QA_BASE||'http://127.0.0.1:4195/AI_Infra_Tutor_Page
 const browser=await chromium.launch({headless:true,...(process.env.MODEL_QA_CHANNEL?{channel:process.env.MODEL_QA_CHANNEL}:{})})
 const screenshots=process.env.MODEL_QA_SCREENSHOTS
 if(screenshots)await mkdir(screenshots,{recursive:true})
-const route=`${base}#/news/events`
+const route=`${base}#/news/events?mode=reviewed`
 const enabled=JSON.parse(await readFile(new URL('../config/news-events.json',import.meta.url),'utf8')).enabled
+const hotspotsEnabled=JSON.parse(await readFile(new URL('../config/news-hotspots.json',import.meta.url),'utf8')).enabled
 const overflow=async page=>assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,'horizontal viewport overflow')
 try {
   if(!enabled){
@@ -90,7 +91,7 @@ try {
     }
     const page=await browser.newPage({viewport:{width:1440,height:1000}});page.setDefaultTimeout(15000)
     await page.clock.install({time:new Date('2026-09-29T08:00:00Z')})
-    await page.goto(`${route}?event=sglang-runtime&step=v0518`)
+    await page.goto(`${route}&event=sglang-runtime&step=v0518`)
     await page.getByRole('button',{name:'播放脉络',exact:true}).click()
     await expect(page.getByRole('button',{name:'暂停',exact:true})).toBeVisible()
     await expect(page.locator('.event-read-progress')).toHaveCSS('animation-name','event-read-progress')
@@ -115,16 +116,16 @@ try {
     await page.getByRole('button',{name:'播放脉络',exact:true}).click()
     await page.evaluate(()=>{location.hash='/news/events?event=workers-platform'})
     await expect(page.getByTestId('event-title')).toContainText('创始人信');await expect(page.getByRole('button',{name:'播放脉络',exact:true})).toBeVisible()
-    await page.goto(`${route}?event=unknown`);await expect(page.getByRole('alert')).toContainText('未自动切换')
+    await page.goto(`${route}&event=unknown`);await expect(page.getByRole('alert')).toContainText('未自动切换')
     await page.getByRole('button',{name:'返回主题最新核对节点'}).click();await expect(page.getByTestId('event-title')).toContainText('v0.5.20')
-    await page.goto(`${route}?event=sglang-runtime&step=unknown`);await expect(page.getByRole('alert')).toContainText('节点不存在')
+    await page.goto(`${route}&event=sglang-runtime&step=unknown`);await expect(page.getByRole('alert')).toContainText('节点不存在')
     await page.getByRole('button',{name:'返回主题最新核对节点'}).click()
-    await page.goto(`${route}?event=sglang-runtime&source=missing-publisher`);await expect(page.getByText(/没有匹配报道。/)).toBeVisible()
+    await page.goto(`${route}&event=sglang-runtime&source=missing-publisher`);await expect(page.getByText(/没有匹配报道。/)).toBeVisible()
     await page.clock.setFixedTime(new Date('2026-11-01T08:00:00Z'));await page.reload()
     await expect(page.getByTestId('event-freshness')).toContainText('超过 3 天')
     await page.locator('summary').filter({hasText:'采集覆盖与核对边界'}).click();await expect(page.getByText(/已超过 7 天/)).toBeVisible()
     await page.getByRole('link',{name:'新闻阅读',exact:true}).click();await expect(page.getByRole('link',{name:/事件追踪：/})).toBeVisible()
-    await page.getByRole('link',{name:/事件追踪：/}).click();await expect(page.getByTestId('event-title')).toBeVisible()
+    await page.getByRole('link',{name:/事件追踪：/}).click();if(hotspotsEnabled)await page.getByRole('link',{name:'已核对事件脉络'}).click();await expect(page.getByTestId('event-title')).toBeVisible()
     await page.getByRole('link',{name:/^SGLang 教学/}).click();await expect(page.getByRole('heading',{level:1})).toContainText(/SGLang/i)
     await page.close();console.log('News events motion lifecycle, stale evidence, invalid URL and learning navigation passed')
 

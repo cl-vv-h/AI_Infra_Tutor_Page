@@ -1,0 +1,8 @@
+.hotspot-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 350px); gap: 24px; align-items: start; }
+.hotspot-row { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 12px; }
+.hotspot-spark { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; }
+.hotspot-matrix { width: 100%; min-width: 310px; border-collapse: separate; border-spacing: 3px; font-size: 12px; }
+.hotspot-matrix th { font-weight: 400; color: var(--text-secondary, #b5b7c2); padding: 8px 2px; }
+.hotspot-matrix td { text-align: center; padding: 10px 2px; border-radius: 4px; }
+@media (max-width: 1023px) { .hotspot-layout { grid-template-columns: minmax(0, 1fr); } .hotspot-layout > aside { display: none; order: -1; } .hotspot-layout > aside.is-open { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; } .hotspot-layout > aside > * { margin-top: 0; } .hotspot-layout > aside > details { grid-column: 1 / -1; } }
+@media (max-width: 639px) { .hotspot-layout > aside.is-open { display: block; } .hotspot-layout > aside > * + * { margin-top: 16px; } .hotspot-row { gap: 8px; } }
