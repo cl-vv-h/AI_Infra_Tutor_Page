@@ -18,9 +18,11 @@ targeted revert and verified Pages publication. No raw profiling is uploaded.
    `#/models/token-journey`: queue, chunked prefill, sample/decode, EOS/cancellation,
    prefix/page lifetime, Q/KV/FFN shapes, causal masks and scoped TP reductions.
    See `docs/token-journey.md` and `docs/releases/token-journey-2026-09-29.md`.
-4. **Communication topology lab — not implemented.** Single/multi-host rank
-   placement, collective algorithms and declared latency/bandwidth assumptions;
-   theoretical predictions explicitly separate from measured performance.
+4. **Communication topology lab — implemented; publication requires release verification.**
+   `#/models/communication`: logical groups and physical placement, Ring/Tree
+   All-Reduce, Gather/Scatter, All-to-All and PP transfer; finite stepwise playback,
+   numerical witnesses and shared-host bandwidth constraints. Hypothetical timing
+   is explicitly separate from measurements. See `docs/communication-topology.md`.
 5. **News event tracking — not implemented.** Multi-day event timelines with
    attributed primary sources, confirmed facts versus viewpoints/uncertainty,
    links to relevant technical learning, maintained within existing news flows.

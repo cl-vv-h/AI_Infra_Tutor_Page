@@ -10,6 +10,7 @@
     "test:moe": "node --experimental-strip-types --test tests/moe-routing.test.mjs",
     "test:moe:browser": "node tests/moe-routing-browser.mjs",
     "test:token:browser": "node tests/token-journey-browser.mjs",
+    "test:communication:browser": "node tests/communication-topology-browser.mjs",
     "news:weekly:plan": "node scripts/weekly-plan.mjs",
     "news:weekly:publish": "node scripts/publish-weekly-report.mjs",
     "news:weekly:library": "node scripts/check-weekly-library.mjs",

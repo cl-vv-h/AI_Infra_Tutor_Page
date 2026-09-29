@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {"title":"跨机通信：逻辑 rank 与共享链路", "locale":"zh-CN", "quality_profile":"showcase", "animation":"trace"},
+  "layout": {"mode":"grid","origin":[60,80],"cols":5,"cellW":150,"cellH":76,"gapX":100,"gapY":115},
+  "components": [
+    {"id":"sender_rank_zero","type":"backend","label":"Rank 0","sublabel":"独立逻辑参与者","row":0,"col":0},
+    {"id":"sender_rank_one","type":"backend","label":"Rank 1","sublabel":"与 Rank 0 共用主机","row":2,"col":0},
+    {"id":"sender_uplink","type":"messagebus","label":"发送端出口","sublabel":"共享单向带宽预算","row":1,"col":1},
+    {"id":"network_fabric","type":"cloud","label":"跨机网络","sublabel":"延迟与链路带宽假设","row":1,"col":2},
+    {"id":"receiver_uplink","type":"messagebus","label":"接收端入口","sublabel":"共享单向带宽预算","row":1,"col":3},
+    {"id":"receiver_rank_two","type":"backend","label":"Rank 2","sublabel":"按通信组接收消息","row":0,"col":4},
+    {"id":"receiver_rank_three","type":"backend","label":"Rank 3","sublabel":"按通信组接收消息","row":2,"col":4}
+  ],
+  "boundaries": [
+    {"kind":"region","label":"主机 A","wraps":["sender_rank_zero","sender_rank_one","sender_uplink"],"pad":24},
+    {"kind":"region","label":"主机 B","wraps":["receiver_uplink","receiver_rank_two","receiver_rank_three"],"pad":24}
+  ],
+  "connections": [
+    {"from":"sender_rank_zero","to":"sender_uplink","label":"发送"},
+    {"from":"sender_rank_one","to":"sender_uplink","label":"发送"},
+    {"from":"sender_uplink","to":"network_fabric","label":"出机"},
+    {"from":"network_fabric","to":"receiver_uplink","label":"入机"},
+    {"from":"receiver_uplink","to":"receiver_rank_two","label":"接收"},
+    {"from":"receiver_uplink","to":"receiver_rank_three","label":"接收"}
+  ],
+  "cards": [
+    {"dot":"violet","title":"通信组不等于物理链路","items":["TP / EP / PP 决定谁需要通信；rank 放置决定是否跨机。","图中仅示意 A → B 的消息路径，不是完整集合通信时序。"]},
+    {"dot":"amber","title":"出口可被多个 rank 共享","items":["不能把每张卡的链路带宽直接相加，当作整机网络带宽。","实验室按同步轮次估算，未模拟交换机拥塞与计算重叠。"]}
+  ]
+}
