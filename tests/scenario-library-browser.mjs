@@ -5,6 +5,7 @@ import { join } from 'node:path'
 const require=createRequire(import.meta.url),modulePath=process.env.MODEL_QA_PLAYWRIGHT||'playwright'
 const {chromium}=require(modulePath),{expect}=require(`${modulePath}/test`)
 const base=process.env.MODEL_QA_BASE||'http://127.0.0.1:4187/AI_Infra_Tutor_Page/'
+const {features}=await (await fetch(new URL('release.json',base))).json()
 const query='view=weights&layer=3&tp=8&ep=4&pp=4&stage=2&adp=4&replicas=2&rank=9&precision=mixed&mlp=fp8&experts=bf16&b=8&s=16384&budget=12&bytes=1'
 const browser=await chromium.launch({headless:true,...(process.env.MODEL_QA_CHANNEL?{channel:process.env.MODEL_QA_CHANNEL}:{})})
 async function save(page,name='方案 A'){
@@ -18,6 +19,12 @@ async function save(page,name='方案 A'){
 async function exported(page){const p=page.waitForEvent('download');await page.getByRole('button',{name:'导出全部',exact:true}).click();const file=await p;return JSON.parse(await readFile(await file.path(),'utf8'))}
 async function upload(page,data){await page.getByLabel('导入方案文件').setInputFiles({name:'scenarios.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(data))})}
 try{
+  if(!features.scenarioLibrary){
+    const page=await browser.newPage();await page.goto(`${base}#/models/scenarios`)
+    await expect(page.getByRole('heading',{name:'方案库暂未开放'})).toBeVisible()
+    await expect(page.getByRole('article')).toHaveCount(0)
+    console.log('Disabled library route verified; existing data left untouched.')
+  }else{
   for(const width of [360,390,768,1440]){
     const context=await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce'}),page=await context.newPage(),errors=[],requests=[]
     page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push(r))
@@ -67,4 +74,5 @@ try{
   const blocked=await denied.newPage();await blocked.goto(`${base}#/models/scenarios`);await expect(blocked.getByRole('alert')).toContainText('IndexedDB')
   await expect(blocked.getByRole('button',{name:'导入 JSON'})).toBeDisabled();await denied.close()
   console.log('Scenario transactions: multi-tab stale writes, failed writes and denied storage passed.')
+  }
 }finally{await browser.close()}

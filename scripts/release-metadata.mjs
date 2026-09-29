@@ -25,7 +25,7 @@ export function calculatorFingerprint(root) {
       visit(next)
     }
   }
-  for (const path of ['src/data/models.ts', 'src/lib/model-explorer.ts', 'src/lib/weight-deployment.ts', 'src/lib/cache-capacity.ts']) visit(resolve(root, path))
+  for (const path of ['src/data/models.ts', 'src/lib/model-explorer.ts', 'src/lib/weight-deployment.ts', 'src/lib/cache-capacity.ts', 'src/lib/scenario-comparison.ts']) visit(resolve(root, path))
   const hash = createHash('sha256')
   for (const [path, body] of [...files].sort(([a], [b]) => a.localeCompare(b))) hash.update(relative(root, path)).update('\0').update(body).update('\0')
   return hash.digest('hex')
