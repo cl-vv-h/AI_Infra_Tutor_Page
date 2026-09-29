@@ -1,5 +1,7 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
 import ModelSectionNav from '@/components/ModelSectionNav'
+import ScenarioSave from '@/components/ScenarioSave'
+import { siteFeatures } from '@/lib/site-release'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { ArrowDown, ArrowUpRight, BookOpen, Box, Check, Copy, Database, GitCompareArrows, Layers3, X } from 'lucide-react'
 import { modelArchitectures } from '@/data/models'
@@ -186,6 +188,7 @@ function ModelExplorer({ model }: { model: ModelArchitecture }) {
       {notices.length > 0 && <p role="status" className="mt-4 rounded-xl border border-amber-200/20 bg-amber-200/5 p-4 text-sm leading-6 text-amber-100">{notices.join(' ')}</p>}
       <ModelWorkspaceTabs view={view} onSelect={(view) => update({ view })} />
       <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+        {siteFeatures.scenarioLibrary && <ScenarioSave modelId={model.id} modelName={model.name} state={state} />}
         <p aria-label="当前并行配置" className="text-xs text-secondary">TP {effectiveTp} · EP {state.ep ?? 1} · PP {state.pp ?? 1} · Attention DP {state.attentionDp ?? 1} · 独立 DP {state.replicas ?? 1} · {state.mixed ? '模块混合精度' : `${state.weightBits ?? 16}-bit`}{view !== 'weights' && '（PP / Attention DP 用于权重估算）'}</p>
         <button type="button" onClick={copyExplorer} className="inline-flex min-h-10 items-center gap-2 rounded-lg px-2 text-xs text-cyan-100 hover:bg-white/5">{copyStatus === 'copied' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}复制当前图解</button>
         <p role="status" className={copyStatus ? 'w-full text-sm text-secondary' : 'sr-only'}>{copyStatus === 'copied' ? '已复制当前模型与实验参数。' : copyStatus === 'failed' ? '无法自动复制，请选择下方链接手动复制。' : ''}</p>
