@@ -4,6 +4,11 @@ The site remains a static, privacy-preserving engineering learning workspace.
 Ship small verified increments, keeping the existing routes and calculations.
 This is a prioritised backlog, not a claim that planned features already exist.
 
+The user approved a new ordered set of five interactive increments on 2026-09-29:
+multi-rank Profiling, MoE routing, a token's execution journey, communication
+topology and news event tracking. Follow `interactive-learning-roadmap.md` for
+their current acceptance status and order; reliability fixes remain first.
+
 ## 1. Reliability and news research — current increment
 
 - Isolate the Luna weekly workflow from unfinished development work.

@@ -22,7 +22,7 @@ test('worked examples reconcile without claiming actual capture performance',()=
 test('guide is a lazy in-module reader, not a new portal module',()=>{
   const workspace=read('src/pages/PerformanceWorkspace.tsx')
   assert.match(workspace,/lazy\(\(\)=>import\('\.\/ProfilingGuide'\)\)/)
-  assert.match(workspace,/hidden=\{estimate\|\|guide\}/)
+  assert.match(workspace,/hidden=\{estimate\|\|guide\|\|ranks\}/)
   assert.match(read('src/pages/ProfilingWorkbench.tsx'),/to="\/operators\/guide"/)
   assert.doesNotMatch(read('src/pages/Home.tsx'),/ProfilingGuide|\/operators\/guide/)
   const page=read('src/pages/ProfilingGuide.tsx')
