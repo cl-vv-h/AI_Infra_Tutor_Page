@@ -26,6 +26,7 @@ try{
       page.setDefaultTimeout(15000)
       page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(!['GET','HEAD'].includes(r.method())||new URL(r.url()).origin!==new URL(base).origin)outgoing.push(r.url())})
       await page.goto(route);await expect(page.getByRole('heading',{name:'通信拓扑实验室',exact:true})).toBeVisible()
+      await page.locator('summary').filter({hasText:'逐 rank 发送量与计算假设'}).click()
       await expect(page.getByRole('link',{name:/概念图：为什么共享出口/})).toHaveAttribute('href',new URL('diagrams/communication-topology.html',base).pathname)
       if(width===1440){
         const artifact=await page.request.get(new URL('diagrams/communication-topology.html',base).href)
@@ -34,6 +35,7 @@ try{
         const license=await page.request.get(new URL('diagrams/communication-topology-LICENSE.txt',base).href)
         assert.equal(license.status(),200);assert.match(await license.text(),/MIT License/)
       }
+      await page.locator('summary').filter({hasText:'逐 rank 发送量与计算假设'}).click()
       await expect(page.getByTestId('设备总数')).toHaveText('16');await expect(page.getByTestId('所选组发送总量')).toHaveText('14.00 MiB')
       await expect(page.getByTestId('其中跨机发送')).toHaveText('0.00 KiB');await expect(page.getByTestId('同步轮次模型估时')).toHaveText('34.12 µs')
       await expect(page.getByRole('button',{name:'播放',exact:true})).toBeDisabled()
