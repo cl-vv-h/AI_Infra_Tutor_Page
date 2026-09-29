@@ -9,8 +9,11 @@ targeted revert and verified Pages publication. No raw profiling is uploaded.
    import; independent clock domains; explicit synchronization/correction;
    rank workload/wait coverage and matched communication inspection. No automatic
    causal graph inferred from names, overlapping timestamps or Notify duration.
-2. **MoE routing sandbox — not implemented.** Token/expert routing, Top-K and EP,
-   dispatch/expert/combine animation, imbalance and capacity semantics.
+2. **MoE routing sandbox — implemented; publication tracked in release record.**
+   `#/models/moe-routing`: deterministic token/expert routing, Top-K and EP to 64,
+   controlled dispatch/expert/combine animation, pre-capacity load imbalance,
+   drop/pad policies, explicit combine normalization, toy numerical outputs and
+   per-rank logical communication. See `docs/moe-routing.md` for exact boundaries.
 3. **A token's execution journey — not implemented.** Queue, prefill, decode,
    tensor shapes, KV lifetime and compute/communication locations.
 4. **Communication topology lab — not implemented.** Single/multi-host rank

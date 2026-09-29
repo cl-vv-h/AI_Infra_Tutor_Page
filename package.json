@@ -7,6 +7,8 @@
     "test:unit": "node --experimental-strip-types --test tests/*.test.mjs",
     "test:weekly": "node --test tests/weekly-news.test.mjs",
     "test:smoke": "node scripts/run-browser-checks.mjs",
+    "test:moe": "node --experimental-strip-types --test tests/moe-routing.test.mjs",
+    "test:moe:browser": "node tests/moe-routing-browser.mjs",
     "news:weekly:plan": "node scripts/weekly-plan.mjs",
     "news:weekly:publish": "node scripts/publish-weekly-report.mjs",
     "news:weekly:library": "node scripts/check-weekly-library.mjs",

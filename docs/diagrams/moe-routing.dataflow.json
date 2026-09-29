@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {"title": "MoE：分发、专家计算与归并", "locale": "zh-CN", "quality_profile": "showcase", "animation": "trace", "viewBox": [1080, 460]},
+  "stages": [{"label": "源 Token"}, {"label": "路由选择"}, {"label": "专家布局"}, {"label": "专家计算"}, {"label": "源顺序恢复"}],
+  "nodes": [
+    {"id": "source_tokens", "type": "frontend", "label": "输入激活", "sublabel": "保留 Token 身份", "stage": 0, "row": 0},
+    {"id": "topk_routes", "type": "backend", "label": "Top-K 路由", "sublabel": "专家索引与权重", "stage": 1, "row": 0},
+    {"id": "dispatch_layout", "type": "messagebus", "label": "Dispatch", "sublabel": "跨 rank 分发与重排", "stage": 2, "row": 0},
+    {"id": "expert_evaluate", "type": "backend", "label": "Expert", "sublabel": "各专家处理收到的激活", "stage": 3, "row": 0},
+    {"id": "combine_output", "type": "backend", "label": "Combine", "sublabel": "回传、还原与加权求和", "stage": 4, "row": 0},
+    {"id": "capacity_admission", "type": "security", "label": "容量策略", "sublabel": "Dropless 或显式丢弃", "stage": 1, "row": 1}
+  ],
+  "flows": [
+    {"from": "source_tokens", "to": "topk_routes", "label": "计算得分"},
+    {"from": "topk_routes", "to": "dispatch_layout", "label": "有效分配"},
+    {"from": "dispatch_layout", "to": "expert_evaluate", "label": "专家批次"},
+    {"from": "expert_evaluate", "to": "combine_output", "label": "专家输出"},
+    {"from": "capacity_admission", "to": "topk_routes", "label": "接纳规则"}
+  ],
+  "cards": [
+    {"dot": "violet", "title": "路由与放置是两件事", "items": ["Top-K 决定每个 Token 选择哪些专家。", "EP 决定专家位于哪个 rank，不等于 Top-K。"]},
+    {"dot": "amber", "title": "通信并非逐专家独立发包", "items": ["同一 Token 的多个专家可能位于同一 rank。", "实际传输去重、融合和填充取决于后端。"]},
+    {"dot": "emerald", "title": "教学边界", "items": ["流程表达数据依赖，不代表实测时序。", "不推断吞吐、加速比或真实网络字节数。"]}
+  ]
+}
