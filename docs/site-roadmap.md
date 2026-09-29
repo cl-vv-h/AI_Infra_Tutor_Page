@@ -13,20 +13,13 @@ This is a prioritised backlog, not a claim that planned features already exist.
   unit tests and core browser interactions, not compilation alone.
 - First new Luna run and its public report still require execution verification.
 
-## 2. Deployment decision workspace — implemented increment
+## 2. Deployment decision workspace — next candidate
 
-The generic model explorer now saves named scenarios into a separate transactional
-IndexedDB library. Restore, duplicate, rename, confirmed deletion, versioned JSON
-transfer and 2–3 scenario comparison preserve parallel and per-weight precision
-parameters. The existing cross-model comparison and special V4.1/DPA readers stay
-unchanged. Source-definition fingerprints mark changed calculators; results are
-recomputed, never treated as timeless saved measurements.
-
-PP/Attention DP cache combinations remain explicitly unsupported. Decoder weights
-and validated baseline cache budgets are separate, not a claim of full deployment
-memory or throughput. No cloud accounts, API credentials or uploaded data.
-Next deepen only evidence-backed memory scopes; Profiling experiments remain the
-next independent feature candidate after reliability and scenario feedback.
+Save and compare explicitly named model deployment scenarios (precision, TP,
+EP, PP, Attention DP, replicas, KV and reserved workspace) with a versioned local
+export. Explain memory headroom and incompatible configurations. Preserve exact
+formula sources; never describe an estimated fit as measured throughput or a
+guaranteed working engine configuration. No cloud accounts or uploaded data.
 
 ## 3. Profiling experiment notebook
 
@@ -44,9 +37,8 @@ scenario; avoid generating unsupported technical answers at runtime.
 
 ## Maintenance cadence
 
-Weekly review of public deployment/freshness failures and this backlog. Deliver
-one bounded next increment with evidence, acceptance criteria and the reversible
-release contract in `reversible-releases.md`; do not silently
+Weekly review of public deployment/freshness failures and this backlog. Propose
+one bounded next increment with evidence and acceptance criteria; do not silently
 expand into paid services, new credentials, user accounts or cloud data storage.
 Routine news publication remains in its existing Luna automation. Report only
 actionable changes, failures or decisions, not repeated unchanged status.

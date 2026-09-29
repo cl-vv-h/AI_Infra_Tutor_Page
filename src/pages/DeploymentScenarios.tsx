@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import PageHeader from '@/components/PageHeader'
 import ModelSectionNav from '@/components/ModelSectionNav'
-import ScenarioComparison from '@/components/ScenarioComparison'
 import { calculatorVersion, siteFeatures } from '@/lib/site-release'
 import { exportScenarios, inspectScenario, maxScenarioBytes, mergeScenarios, parseScenarioImport, scenarioName } from '@/lib/deployment-scenarios'
 import type { DeploymentScenarioSnapshot, ScenarioLibrary } from '@/lib/deployment-scenarios'
@@ -17,18 +16,11 @@ export default function DeploymentScenarios() {
   return siteFeatures.scenarioLibrary ? <ScenarioLibraryPage /> : <div className="page-container py-12"><h1 className="text-3xl text-ink">方案库暂未开放</h1><p className="my-5 text-secondary">本机方案没有被删除；重新开放后可继续读取。</p><Link className="button-secondary" to="/models">返回模型目录</Link></div>
 }
 function ScenarioLibraryPage() {
-  const [params, setParams] = useSearchParams()
   const [library, setLibrary] = useState<ScenarioLibrary | null>(null), [error, setError] = useState(''), [message, setMessage] = useState(''), [busy, setBusy] = useState(false)
   const [pending, setPending] = useState<DeploymentScenarioSnapshot[] | null>(null)
   const [editing, setEditing] = useState<{ item: DeploymentScenarioSnapshot; mode: 'rename' | 'copy' | 'delete' } | null>(null), [name, setName] = useState('')
   const dialog = useRef<HTMLDialogElement>(null), file = useRef<HTMLInputElement>(null)
   const active = useRef(true)
-  const selectedIds = [...new Set((params.get('compare') ?? '').split(',').filter(Boolean))].slice(0, 3)
-  const selected = (library?.items ?? []).filter(item => selectedIds.includes(item.id))
-  function toggleSelection(id: string) {
-    const ids = selectedIds.includes(id) ? selectedIds.filter(value => value !== id) : [...selectedIds, id].slice(0, 3)
-    setParams(ids.length ? { compare: ids.join(',') } : {}, { preventScrollReset: true })
-  }
   useEffect(() => { active.current = true; void readScenarioLibrary().then(value => { if (active.current) setLibrary(value) }).catch(e => { if (active.current) setError(e.message) }); return () => { active.current = false } }, [])
   async function refresh() {
     setBusy(true); setError(''); setPending(null)
@@ -75,18 +67,12 @@ function ScenarioLibraryPage() {
       <button className="button-secondary" onClick={refresh} disabled={busy}>刷新方案库</button>
       <button className="button-secondary" disabled={!library || busy} onClick={() => { try { download(library!.items) } catch (e) { setError((e as Error).message) } }}>导出全部</button>
       <button className="button-secondary" disabled={!library || busy} onClick={() => file.current?.click()}>导入 JSON</button>
-      {siteFeatures.scenarioComparison && <button className="button-secondary" disabled={!selectedIds.length} onClick={() => setParams({}, { preventScrollReset: true })}>清空对比选择</button>}
-      {siteFeatures.scenarioComparison && selected.length >= 2 && <button className="button-secondary" onClick={() => download(selected)}>导出所选方案</button>}
       <input ref={file} type="file" accept=".json,application/json" aria-label="导入方案文件" className="sr-only" onChange={e => void importFile(e.target.files?.[0])} />
     </div>
     {error && !editing && <p role="alert" className="mb-5 rounded-xl border border-amber-200/30 p-4 text-sm text-amber-200">{error}</p>}
     {message && <p role="status" className="mb-4 text-sm text-secondary">{message}</p>}
     {importError && <p role="alert" className="mb-4 text-sm text-amber-200">{importError}</p>}
     {!library && !error && <p role="status">正在读取本机方案…</p>}
-    {siteFeatures.scenarioComparison && library && <>
-      <p className="mb-4 text-sm text-secondary">选择 2–3 个方案对比 · 已选 {selected.length} 个{selectedIds.some(id => !library.items.some(s => s.id === id)) && '。链接中部分方案不在此浏览器，请导入 JSON 或清空选择。'}</p>
-      <ScenarioComparison items={selected} />
-    </>}
     {plan && <section aria-label="导入预览" className="surface-card mb-6 p-5"><h2 className="text-lg text-ink">确认导入</h2><p className="my-3 text-sm text-secondary">新增 {plan.added} 个，跳过完全相同的 {plan.skipped} 个；已有方案不覆盖。</p><ul className="mb-3 space-y-2 text-sm text-secondary">{pending!.map(s => <li key={s.id}>{s.name} · {s.modelId}{!inspectScenario(s, calculatorVersion).state && ' · 当前不可恢复，仅保留导出'}</li>)}</ul><button disabled={busy} className="button-primary" onClick={() => void mutate(items => mergeScenarios(items, pending!).items, '导入完成。')}>确认导入</button><button className="button-secondary ml-3" onClick={() => setPending(null)}>取消导入</button></section>}
     {library && <><p className="mb-4 text-xs text-muted">{library.items.length} / 50 个方案 · 仅计算逻辑容量，不保证实际部署可行。请定期导出备份。</p>
       {!library.items.length && <section className="surface-card p-8 text-secondary">还没有方案。在任一通用模型页面点击“保存方案”即可开始。</section>}
@@ -94,7 +80,6 @@ function ScenarioLibraryPage() {
         const info = inspectScenario(item, calculatorVersion)
         return <article key={item.id} aria-label={`方案 ${item.name}`} className="surface-card min-w-0 p-5 [overflow-wrap:anywhere]">
           <h2 className="text-lg text-ink">{item.name}</h2><p className="mt-2 text-sm text-secondary">{info.model?.name ?? item.modelId}</p>
-          {siteFeatures.scenarioComparison && <label className="mt-2 flex min-h-11 items-center gap-2 text-sm text-secondary"><input type="checkbox" aria-label={`对比 ${item.name}`} checked={selectedIds.includes(item.id)} disabled={!selectedIds.includes(item.id) && selectedIds.length >= 3} onChange={() => toggleSelection(item.id)} />加入对比</label>}
           {info.state && <p className="mt-3 text-sm text-secondary">TP {info.state.scenario.tp} · EP {info.state.ep ?? 1} · PP {info.state.pp ?? 1} · Attention DP {info.state.attentionDp ?? 1} · 副本 {info.state.replicas ?? 1}</p>}
           {info.changed && <p className="mt-3 text-xs text-amber-200">计算定义已更新；恢复后按当前版本重算，原始参数保留。</p>}
           {info.reasons.map(reason => <p key={reason} className="mt-3 text-xs text-amber-200">{reason}</p>)}
