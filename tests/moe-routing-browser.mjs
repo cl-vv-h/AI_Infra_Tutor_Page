@@ -29,6 +29,7 @@ try{
     await expect(page.getByTestId('有效专家分配')).toHaveText('48 / 48')
     await expect(page.getByTestId('专家负载峰均比')).toHaveText('1.00×')
     await expect(page.getByRole('button',{name:'播放',exact:true})).toBeDisabled()
+    await expect(page.getByRole('button',{name:'播放',exact:true})).toHaveCSS('opacity','0.5')
     await page.getByRole('button',{name:'下一步',exact:true}).focus();await page.keyboard.press('Enter')
     await expect(page.getByRole('button',{name:'2. Dispatch 分发',exact:true})).toHaveAttribute('aria-pressed','true')
     await page.getByRole('button',{name:'5. 输出完成',exact:true}).click()

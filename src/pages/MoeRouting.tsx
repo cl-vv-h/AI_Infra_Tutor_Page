@@ -125,7 +125,7 @@ export default function MoeRouting() {
   const {search}=useLocation(),[,setSearch]=useSearchParams()
   const parsed=useMemo(()=>{try{return {config:readMoeQuery(search),error:''}}catch(e){return {config:null,error:(e as Error).message}}},[search])
   useEffect(()=>{const before=document.title;document.title='MoE 路由沙盘 · AI Infra Space';return ()=>{document.title=before}},[])
-  return <div className="page-container py-6 text-ink [&_.page-heading]:mb-3 [&_.page-heading]:pb-4 [&_.page-heading__description]:mt-2"><ModelSectionNav compact/><PageHeader eyebrow="INTERACTIVE SYSTEMS" title="MoE 路由沙盘" description="跟随一个 Token，理解分发、专家计算与归并。" compact/>
+  return <div className="page-container py-6 text-ink [&_button:disabled]:opacity-50 [&_input:disabled]:opacity-50 [&_.page-heading]:mb-3 [&_.page-heading]:pb-4 [&_.page-heading__description]:mt-2"><ModelSectionNav compact/><PageHeader eyebrow="INTERACTIVE SYSTEMS" title="MoE 路由沙盘" description="跟随一个 Token，理解分发、专家计算与归并。" compact/>
     <p className="mb-4 text-xs leading-5 text-secondary">本地教学模拟 · 不上传、不持久化 · 不预测吞吐或延迟</p>
     {parsed.config?<Sandbox key={search} config={parsed.config}/>:<section role="alert" className={panel}><h2 className="font-medium">参数无法使用</h2><p className="my-3 text-secondary">{parsed.error}</p><button className="button-primary" onClick={()=>setSearch(writeMoeQuery(defaultMoeConfig))}>重置为默认参数</button></section>}
   </div>
