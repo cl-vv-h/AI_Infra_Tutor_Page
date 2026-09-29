@@ -69,6 +69,12 @@ do not resolve a modify/delete conflict by discarding later evidence blindly.
 After review, verify the old news/weekly routes and publication before declaring
 withdrawal. Re-enable by reverting the actual withdrawal commit.
 
+The release-record commit initially edited the same roadmap line introduced by
+the feature. The follow-up restores that line to the feature's exact wording so
+the single-commit withdrawal remains clean; "requires release verification" is
+the continuing publication gate, not an assertion that publication failed.
+The final tree, including this record, was rehearsed again before the final push.
+
 Alternatively set `config/news-events.json` to `{"enabled":false}`, rebuild and
 publish. That hides the route/link while retaining public event data and daily
 compilation. It is not an instantaneous remote switch and never deletes local
