@@ -38,6 +38,7 @@ Cards use a solid surface and a one-pixel border; little or no shadow. No ambien
 - Compare: selections then shared conditions then results; differences remain inspectable; never replace data with static mockups.
 - Profiling/estimator: primary workflow separated from optional advanced settings, local-data privacy visible, calculations and errors preserved, phase charts and all A/B views usable.
 - News: editorial hierarchy with clear daily/weekly/release/reading-list navigation, compact filters, source/status transparency, readable reports. Preserve categories, countries, search, archive, bookmarks, import/export and local preferences.
+- PULSE news entrance (user-approved September 30 brief): a restrained luminous information sphere is the deliberate exception to the no-decorative-orbits rule. Real news signals, not geography, drive points. The exploration surface uses subtle depth and glass previews; the reading stream remains flat, editorial and keyboard accessible. Scoped light reading is optional; dark is default. Never add fake stories, engagement, importance, growth or live labels to fill a visual.
 - About, loading, empty and not-found: same typography/surfaces, useful next navigation; no dead-end page.
 
 ## Controls and accessibility

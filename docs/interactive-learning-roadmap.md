@@ -34,3 +34,9 @@ The deployment scenario library remains withdrawn. These features must not
 reintroduce it. Existing news, calculators, A/B analysis and readers stay intact.
 For profiling, supporting a synthetic example alone does not satisfy import or
 analysis requirements. For news, static mock stories do not satisfy event tracking.
+
+September 30 user-approved extension to news: PULSE is the new `/news` entrance,
+with a projected 3D point sphere, direct editorial reading, filter/selection URL
+state and the existing local follows. `/news/events` retains the complete hotspot
+distribution and reviewed chronologies. Verification and release status are tracked
+in `releases/news-sphere-2026-09-30.md`; no new research/report generation is implied.

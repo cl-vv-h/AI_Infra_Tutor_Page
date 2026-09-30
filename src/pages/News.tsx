@@ -83,7 +83,7 @@ export default function News() {
   const [copyState, setCopyState] = useState<{ params: string; status: 'copied' | 'failed'; url: string } | null>(null)
   const canonicalParams = newsParams(state).toString()
   const copyStatus = copyState?.params === canonicalParams ? copyState.status : null
-  function update(next: Partial<NewsReaderState>, replace = false) { setParams(newsParams({ ...state, ...next }), { replace, preventScrollReset: true }) }
+  function update(next: Partial<NewsReaderState>, replace = false) { const query = newsParams({ ...state, ...next }); if (!query.size) query.set('view', 'daily'); setParams(query, { replace, preventScrollReset: true }) }
   const setCategory = (category: NewsReaderState['category']) => update({ category })
   const setSourceType = (sourceType: NewsReaderState['sourceType']) => update({ sourceType })
   const setTopic = (topic: string) => update({ topic })
@@ -136,7 +136,7 @@ export default function News() {
     if (view === 'saved') return
     const url = new URL(window.location.href)
     url.search = ''
-    url.hash = `/news?${canonicalParams}`
+    url.hash = `/news?${canonicalParams || 'view=daily'}`
     try { await navigator.clipboard.writeText(url.toString()); setCopyState({ params: canonicalParams, status: 'copied', url: url.toString() }) }
     catch { setCopyState({ params: canonicalParams, status: 'failed', url: url.toString() }) }
   }

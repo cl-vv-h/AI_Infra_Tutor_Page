@@ -7,6 +7,7 @@ const {chromium}=require(modulePath),{expect}=require(`${modulePath}/test`)
 const base=process.env.MODEL_QA_BASE||'http://127.0.0.1:4187/AI_Infra_Tutor_Page/'
 const entries=JSON.parse(await readFile(new URL('../src/data/news/weekly/index.json',import.meta.url),'utf8'))
 const latest=entries[0],oldest=entries.at(-1)
+const radarEnabled=JSON.parse(await readFile(new URL('../config/news-sphere.json',import.meta.url),'utf8')).enabled
 const browser=await chromium.launch({headless:true,...(process.env.MODEL_QA_CHANNEL?{channel:process.env.MODEL_QA_CHANNEL}:{})})
 try{
   for(const width of [360,390,768,1440]){
@@ -39,7 +40,7 @@ try{
     await expect(body).toHaveCount(0)
     await page.goBack();await expect(body).toBeVisible()
     await page.getByRole('link',{name:'← 返回新闻雷达',exact:true}).click()
-    await expect(page.getByRole('heading',{name:'发现技术，读懂进展。'})).toBeVisible()
+    await expect(page.getByRole('heading',{name:radarEnabled?/世界的脉动/:'发现技术，读懂进展。'})).toBeVisible()
     assert.ok(requests.every(r=>r.method==='GET'&&new URL(r.url).origin===new URL(base).origin))
     assert.deepEqual(errors,[])
     await context.close();console.log(`Weekly ${width}px: status, history, citations, download, missing period, back/refresh and privacy passed.`)

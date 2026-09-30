@@ -11,6 +11,14 @@ their current acceptance status and order; reliability fixes remain first.
 
 ## 1. Reliability and news research — current increment
 
+User-approved September 30 redesign: the PULSE entrance adds a real-data,
+controllable 3D news sphere and linked editorial reading stream. Existing daily,
+weekly, archived, saved and event-tracking routes remain available. The independent
+`config/news-sphere.json` build gate restores the original entrance without touching
+local data. See `releases/news-sphere-2026-09-30.md` for verification and rollback.
+Next: observe real published collection/deployment freshness, then refine news
+coverage quality; do not substitute fabricated trend metrics or regenerate Luna reports.
+
 - Isolate the Luna weekly workflow from unfinished development work.
 - Calendar-week planning, catch-up, immutable dated history and evidence checks.
 - Freshness/coverage visibility, historical reading, sources and Markdown export.
