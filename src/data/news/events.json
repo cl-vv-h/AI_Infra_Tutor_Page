@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-09-30T05:52:31.765Z",
-    "releasesCollectedAt": "2026-09-30T05:52:41.632Z",
-    "libraryCollectedAt": "2026-09-30T05:52:31.765Z",
+    "dailyCollectedAt": "2026-09-30T15:11:37.174Z",
+    "releasesCollectedAt": "2026-09-30T15:11:47.177Z",
+    "libraryCollectedAt": "2026-09-30T15:11:37.174Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -49,7 +49,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-09-30T05:52:41.632Z",
+          "lastCollectedAt": "2026-09-30T15:11:47.177Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -62,7 +62,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-09-30T05:52:41.632Z",
+          "lastCollectedAt": "2026-09-30T15:11:47.177Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -75,7 +75,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-09-30T05:52:41.632Z",
+          "lastCollectedAt": "2026-09-30T15:11:47.177Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -88,7 +88,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-09-30T05:52:41.632Z",
+          "lastCollectedAt": "2026-09-30T15:11:47.177Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -233,6 +233,19 @@
           "ruleIds": [
             "policy-minutes"
           ]
+        },
+        {
+          "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr260930a.pdf",
+          "title": "Quarterly Schedule of Outright Purchases of Japanese Government Bonds (Competitive Auction Method) (October-December 2026)",
+          "publisher": "Bank of Japan",
+          "publisherCountry": "Japan",
+          "publishedAt": "2026-09-30T08:00:00.000Z",
+          "firstCollectedAt": "2026-09-30T15:11:37.174Z",
+          "lastCollectedAt": "2026-09-30T15:11:37.174Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "policy-documents"
+          ]
         }
       ]
     },
@@ -346,5 +359,5 @@
       ]
     }
   ],
-  "fingerprint": "69dec45e2a3dce282d426b96da2738c7bc2a20aeed9c5b4b496f14d829c328e1"
+  "fingerprint": "e4a82097b77c97708d5e73bd3f730bbee71a103252acaf161093aade8a1bcd9a"
 }
