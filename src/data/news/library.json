@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T20:58:49.420Z",
+  "generatedAt": "2026-09-30T05:52:31.765Z",
   "lookbackDays": 90,
   "items": [
     {
@@ -12,8 +12,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T19:10:51.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 34.6,
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 32.3,
       "topics": [
         "hardware"
       ]
@@ -28,9 +28,44 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T18:35:09.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 34.4,
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 32.2,
       "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "6ec1d6e5e7ec71ae",
+      "category": "ai",
+      "title": "Joint Effects of GPU Server Topology, Parallelism, and Congestion Control on MoE Inference: A Controlled Simulation Study",
+      "summary": "Mixture-of-experts (MoE) models expand capacity via sparse activation, but inference across GPUs introduces tensor-parallel (TP) collectives and expert-parallel (EP) dispatch and combine operations. Completion time depends not just on communication volume but on how logical groups map onto intra-server interconnects, GPU--NIC connections, and the inter-node network. Using ASTRA-sim with the NS-3 discrete-event backend, we build a controlled matrix of 32 GPU ranks with data and pipeline parallelism fixed at one. Wor",
+      "url": "https://arxiv.org/abs/2609.37828v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-29T15:34:39.000Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 29.4,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "7563bcab4c21367a",
+      "category": "ai",
+      "title": "SPLASH: Switching Parallel Layouts of Attention with Seamless Handoff for LLM Serving",
+      "summary": "No single way of parallelizing attention serves large language models well under all loads. Low concurrency favors tensor parallelism, many independent requests favor data-parallel attention, and long prompts favor context parallelism. Reasoning, agentic, and RL-rollout workloads make a fixed choice untenable: a batch that begins as many short requests ends as a few very long ones, so the best layout changes while the same requests run. Serving engines nevertheless fix one layout at launch, because changing it has ",
+      "url": "https://arxiv.org/abs/2609.37626v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-29T14:02:29.000Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 29,
+      "topics": [
+        "inference",
         "models"
       ]
     },
@@ -44,8 +79,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T13:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 32,
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 29.8,
       "topics": [
         "security"
       ]
@@ -60,10 +95,99 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T13:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 32,
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 29.8,
       "topics": [
         "security"
+      ]
+    },
+    {
+      "id": "076e4d7f7897f9e4",
+      "category": "ai",
+      "title": "MEDEM: Multi-Engine DL Accelerator Design Methodology",
+      "summary": "Multi-engine deep learning (DL) accelerators are becoming increasingly prevalent as they address the heterogeneity and growing complexity of modern DL workloads. To efficiently process diverse DL workloads, these accelerators must incorporate combinations of engines with complementary capabilities to match the distinct computational characteristics of these workloads' heterogeneous kernels. However, existing multi-engine DL accelerator design approaches lack a systematic methodology, leaving fundamental questions u",
+      "url": "https://arxiv.org/abs/2609.37399v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-29T12:41:49.000Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 28.7,
+      "topics": [
+        "kernels",
+        "hardware"
+      ]
+    },
+    {
+      "id": "459fa21fbd12630c",
+      "category": "ai",
+      "title": "vSkipper: Translating Dynamic Layer Skipping into LLM Serving Gains",
+      "summary": "Dynamic layer skipping reduces LLM computation by allowing each token to execute only a subset of the model's layers. However, existing skippers rely on specialized generation loops and do not integrate with modern serving engines. As a result, fewer executed layers do not necessarily translate into lower serving latency: FlexiDepth skips 8 of Llama-3-8B's 32 layers on average, yet its standard generation loop decodes 14.6--21.0% more slowly than the base model. We present vSkipper, a virtualization layer that make",
+      "url": "https://arxiv.org/abs/2609.37062v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-29T09:01:41.000Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 27.8,
+      "topics": [
+        "inference",
+        "models"
+      ]
+    },
+    {
+      "id": "eb764d4e2efe6cdf",
+      "category": "ai",
+      "title": "Efficient Agentic LLM Serving over SSD-based Sparse KV Storage",
+      "summary": "Agentic sessions driven by Large language models (LLMs) often alternate between model inference and tool use, accumulating long histories across successive rounds. Serving these sessions efficiently requires reducing attention computation and retaining history key-value (KV) caches to avoid recomputation. Recently, frontier open-source LLMs adopt sparse attention to reduce computation by selecting only part of the history, while SSDs provide a cheaper alternative to CPU DRAM for storing KV caches. However, sparse K",
+      "url": "https://arxiv.org/abs/2609.36938v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-29T07:50:41.000Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 27.5,
+      "topics": [
+        "inference",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "f6807662a0bc1335",
+      "category": "ai",
+      "title": "Reshaping Rollout Workloads for Asynchronous RL Post-Training on Heterogeneous Accelerators",
+      "summary": "Reinforcement learning (RL) post-training increasingly relies on long-horizon, multi-turn rollouts. As post-training jobs outgrow a single cluster, rollout pools assembled across clusters introduce hardware heterogeneity. Rollout scheduling must serve two stakeholders: the hardware needs high aggregate decode throughput, while each trajectory needs to finish quickly. The tension arises from the memory-bandwidth-bound nature of autoregressive decoding. A large active batch amortizes weight reads for high throughput ",
+      "url": "https://arxiv.org/abs/2609.36899v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-29T07:23:48.000Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 23.4,
+      "topics": [
+        "inference",
+        "hardware",
+        "training"
+      ]
+    },
+    {
+      "id": "5e025a1a0b383f6b",
+      "category": "ai",
+      "title": "Replay the Curvature: Accurate and Scalable NVFP4 Quantization for Large Language Model Inference",
+      "summary": "Large language models make weight storage and memory traffic major inference costs, motivating low-precision formats that represent each weight with only a few bits. Such formats use a scale to map floating-point values into a small codebook; NVFP4 improves local range utilization by letting every 16 E2M1 weights share an E4M3 block scale. Choosing that scale is difficult in GPTQ because quantizing one column updates those that follow, so evaluating a block independently can misestimate its final reconstruction err",
+      "url": "https://arxiv.org/abs/2609.36654v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-09-29T03:55:29.000Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 26.5,
+      "topics": [
+        "inference",
+        "hardware",
+        "models",
+        "training"
       ]
     },
     {
@@ -76,8 +200,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 29.8,
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 27.5,
       "topics": [
         "hardware",
         "training"
@@ -100,74 +224,6 @@
       ]
     },
     {
-      "id": "c33fac351597440e",
-      "category": "ai",
-      "title": "Beyond Energy: When Sustainability Dimensions Reshape LLM Serving Decisions",
-      "summary": "Large language model (LLM) serving has environmental impacts across energy consumption, carbon emission, water consumption, and biodiversity loss. Yet these dimensions are largely evaluated in isolation, leaving it unclear when and how they lead to different optimization decisions. We present PRISM, a unified framework for characterizing and optimizing LLM serving across energy, carbon, water, and biodiversity impacts. Our analysis reveals a fundamental distinction: computing configurations determine energy consump",
-      "url": "https://arxiv.org/abs/2609.35569v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-28T16:31:50.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 25.9,
-      "topics": [
-        "inference",
-        "models"
-      ]
-    },
-    {
-      "id": "6de1ecbbbf3b39d6",
-      "category": "ai",
-      "title": "SOLO: Pretraining Billion-Parameter Language Models with Shared-Output Local Learning",
-      "summary": "Large language models are trained with backpropagation, whose global gradient coordinates all layers but forces each to hold its activations and wait for the gradient to pass back through every deeper layer. Conventional local learning removes this update locking by training each module to predict the target through its own readout, but has not scaled to billion-parameter pretraining. We identify these private readouts as a key weakness, since they leave each module without information from deeper modules. We propo",
-      "url": "https://arxiv.org/abs/2609.35440v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-28T15:40:36.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 25.7,
-      "topics": [
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "d2e769ca1d488361",
-      "category": "ai",
-      "title": "WavePP: High-Throughput Pipeline Parallel LLM Prefill under Prefix Reuse",
-      "summary": "Pipeline parallelism can improve prefill throughput by processing multiple request chunks concurrently across different stages of the model. However, keeping the pipeline fully utilized requires efficient scheduling and request preparation. In systems where stages retain and evict cache state independently, a local cache hit does not guarantee that the same prefix can be reused across the pipeline. Here, coordination overhead can impede request admission cadence and thus reduce overall throughput. In this paper, we",
-      "url": "https://arxiv.org/abs/2609.35263v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-28T14:21:21.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 25.3,
-      "topics": [
-        "inference",
-        "models"
-      ]
-    },
-    {
-      "id": "eeef412199f16f29",
-      "category": "ai",
-      "title": "E3J: An Efficient and Open-Source Backend for Euclidean Equivariant Operations on GPU and TPU",
-      "summary": "We present e3j, a fast Euclid-equivariance backend for geometric deep learning applications with JAX bindings for GPU and TPU. Leveraging both optimized CUDA and Pallas kernels and algorithmic improvements, the library achieves state-of-the-art throughput and runtime on both forward and backward paths. On a machine learning interatomic potential (MLIP) use case, it outperforms established backends, measuring up to 34% speed-up over cuEquivariance on water box NPT simulation using MACE, while remaining fully open so",
-      "url": "https://arxiv.org/abs/2609.35099v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-28T13:10:17.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 25,
-      "topics": [
-        "kernels",
-        "hardware"
-      ]
-    },
-    {
       "id": "114faaef75c27fac",
       "category": "technology",
       "title": "Four months of VoidZero at Cloudflare: making the open-source JavaScript toolchain faster for all humans and agents",
@@ -177,8 +233,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T13:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 26,
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 23.8,
       "topics": [
         "kernels"
       ]
@@ -193,64 +249,10 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T13:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 22,
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 19.8,
       "topics": [
         "security"
-      ]
-    },
-    {
-      "id": "44145942a9ebd93c",
-      "category": "ai",
-      "title": "TempoKV: Timely Staging of LLM KV Caches for Memory-Semantic Flash",
-      "summary": "Reusable prefix key-value (KV) caches can outgrow GPU memory in large language model (LLM) serving. A memory-semantic flash hierarchy offers SSD-backed capacity with a limited fast tier, but a logical KV hit is not necessarily ready for GPU retrieval. Demand staging exposes SSD latency, whereas immediate staging can reserve fast-tier capacity long before retrieval begins. We present TempoKV, a timing-aware resource-commitment layer that separates early knowledge of reuse from the acquisition of staging resources. I",
-      "url": "https://arxiv.org/abs/2609.35065v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-28T12:55:20.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 25,
-      "topics": [
-        "inference",
-        "hardware",
-        "models"
-      ]
-    },
-    {
-      "id": "c269aa732c8a444d",
-      "category": "ai",
-      "title": "Accelerator Choice Is Not Enough: AlphaFold2 Inference on Cloud TPUs",
-      "summary": "AlphaFold2 is written in JAX, so the same inference code compiles and runs unchanged on CPUs, GPUs and Google Cloud TPUs. That portability makes the accelerator look like the main decision a user has to make. We show that it is not. Running one AlphaFold2 inference workload across a Colab CPU runtime, an NVIDIA T4 GPU and a dedicated eight-chip Cloud TPU v5e slice, we find a large hardware advantage for the TPU, 0.47 s per call in steady state on a single chip against 13.1 s on the T4 in the same measurement campai",
-      "url": "https://arxiv.org/abs/2609.34818v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-28T10:17:25.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 24.3,
-      "topics": [
-        "inference",
-        "hardware"
-      ]
-    },
-    {
-      "id": "0a5506894c5273e0",
-      "category": "ai",
-      "title": "WaveAlign: Cache-Aware Query-Row Scheduling for Sparse Attention in Long-Video Generation",
-      "summary": "Long-video generation with diffusion transformers (DiTs) produces extremely long token sequences, making attention a dominant inference bottleneck. Dynamic sparse attention reduces computation, but its realized speedup remains limited because irregular query-row execution degrades L2 cache locality and increases HBM traffic. We present WaveAlign, a lightweight, cache-aware query-row reordering framework for dynamic sparse attention. WaveAlign formulates row ordering as an optimization problem and approximates it wi",
-      "url": "https://arxiv.org/abs/2609.34814v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-09-28T10:15:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 20.3,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models"
       ]
     },
     {
@@ -263,8 +265,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T01:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 20,
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 19,
       "topics": [
         "hardware"
       ]
@@ -279,8 +281,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
-      "score": 23.8,
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
+      "score": 23,
       "topics": [
         "hardware",
         "training"
@@ -296,7 +298,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-25T13:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 22,
       "topics": [
         "security"
@@ -312,7 +314,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-25T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "inference",
@@ -330,7 +332,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-25T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "training"
@@ -346,7 +348,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-25T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "inference",
@@ -363,7 +365,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-24T15:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "models",
@@ -396,7 +398,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-24T14:08:57.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "models"
@@ -412,7 +414,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "inference",
@@ -430,7 +432,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-23T19:45:19.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "hardware",
@@ -447,7 +449,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-23T18:25:49.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "kernels",
@@ -464,7 +466,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-23T16:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "inference"
@@ -480,7 +482,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-23T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "models",
@@ -497,7 +499,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T17:27:41.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "inference",
@@ -514,7 +516,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T15:45:46.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "inference",
@@ -531,7 +533,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T13:45:18.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "inference"
@@ -547,7 +549,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T01:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "inference",
@@ -565,7 +567,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "kernels",
@@ -582,7 +584,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "hardware",
@@ -599,7 +601,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "inference",
@@ -617,7 +619,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "models"
@@ -633,7 +635,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "inference"
@@ -649,7 +651,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -665,7 +667,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -698,7 +700,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T20:41:14.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "models"
@@ -714,7 +716,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "inference"
@@ -730,7 +732,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "inference"
@@ -746,7 +748,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-18T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "inference",
@@ -779,7 +781,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-16T18:55:21.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -829,7 +831,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-15T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "training"
@@ -845,7 +847,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-15T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "inference",
@@ -880,7 +882,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-14T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "inference",
@@ -899,7 +901,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-13T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "inference",
@@ -918,7 +920,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-11T17:45:57.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -934,7 +936,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-10T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "training"
@@ -967,7 +969,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T13:13:48.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "models"
@@ -983,7 +985,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "training"
@@ -999,7 +1001,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "training"
@@ -1031,7 +1033,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-01T00:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -1047,7 +1049,7 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-08-21T10:54:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 23,
       "topics": [
         "models"
@@ -1063,7 +1065,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-07-29T16:00:00.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 22,
       "topics": [
         "security"
@@ -1079,7 +1081,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-07-17T15:00:11.000Z",
-      "fetchedAt": "2026-09-29T20:58:49.420Z",
+      "fetchedAt": "2026-09-30T05:52:31.765Z",
       "score": 22,
       "topics": [
         "security"
