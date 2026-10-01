@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-09-30T20:56:56.415Z",
-    "releasesCollectedAt": "2026-09-30T20:57:08.868Z",
-    "libraryCollectedAt": "2026-09-30T20:56:56.415Z",
+    "dailyCollectedAt": "2026-10-01T06:25:58.028Z",
+    "releasesCollectedAt": "2026-10-01T06:26:09.089Z",
+    "libraryCollectedAt": "2026-10-01T06:25:58.028Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -32,7 +32,8 @@
       "2026-09-27",
       "2026-09-28",
       "2026-09-29",
-      "2026-09-30"
+      "2026-09-30",
+      "2026-10-01"
     ],
     "missingArchiveDates": [],
     "failedSources": [],
@@ -49,7 +50,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-09-30T20:57:08.868Z",
+          "lastCollectedAt": "2026-10-01T06:26:09.089Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -62,7 +63,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-09-30T20:57:08.868Z",
+          "lastCollectedAt": "2026-10-01T06:26:09.089Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -75,7 +76,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-09-30T20:57:08.868Z",
+          "lastCollectedAt": "2026-10-01T06:26:09.089Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -88,7 +89,20 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-09-30T20:57:08.868Z",
+          "lastCollectedAt": "2026-10-01T06:26:09.089Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "official-releases"
+          ]
+        },
+        {
+          "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21",
+          "title": "v0.5.21",
+          "publisher": "SGLang Releases",
+          "publisherCountry": "International",
+          "publishedAt": "2026-10-01T06:22:41.000Z",
+          "firstCollectedAt": "2026-10-01T06:25:58.028Z",
+          "lastCollectedAt": "2026-10-01T06:25:58.028Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -246,6 +260,19 @@
           "ruleIds": [
             "policy-documents"
           ]
+        },
+        {
+          "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260918.pdf",
+          "title": "Summary of Opinions at the Monetary Policy Meeting on September 17 and 18, 2026",
+          "publisher": "Bank of Japan",
+          "publisherCountry": "Japan",
+          "publishedAt": "2026-09-30T23:50:00.000Z",
+          "firstCollectedAt": "2026-10-01T06:25:58.028Z",
+          "lastCollectedAt": "2026-10-01T06:25:58.028Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "policy-minutes"
+          ]
         }
       ]
     },
@@ -359,5 +386,5 @@
       ]
     }
   ],
-  "fingerprint": "421ff78e8e165ddd528049b96df9be1509e343958337d69714816a4a626fb23d"
+  "fingerprint": "a20fe0cbf33c8a1f110123f09e98fba88d1216642b62c17b4cd22f51365f4f90"
 }
