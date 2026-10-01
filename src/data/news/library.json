@@ -1,7 +1,71 @@
 {
-  "generatedAt": "2026-10-01T06:25:58.028Z",
+  "generatedAt": "2026-10-01T15:36:52.180Z",
   "lookbackDays": 90,
   "items": [
+    {
+      "id": "c95f136a7564f6d6",
+      "category": "technology",
+      "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
+      "summary": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tune decision models using their own data.",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-01T15:34:02.000Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 34,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "93f8a741a00a2ec2",
+      "category": "ai",
+      "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+      "summary": "",
+      "url": "https://huggingface.co/blog/allenai/olmocore3",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-01T15:01:43.000Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 30.9,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "af5094ce3e38203b",
+      "category": "technology",
+      "title": "One year later: Sovereign AI and the fight for choice",
+      "summary": "AI sovereignty is not a zero-sum game, but many governments now believe it is. Cloudflare's answer: more local open-source models, model-agnostic security tools, and a commitment to giving nations genuine choice.",
+      "url": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-01T13:04:19.000Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 33.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "7110f90fa9802e4a",
+      "category": "technology",
+      "title": "Fine-Tuning NVIDIA Nemotron for Saudi Arabic Dialects, with a Path to Other Languages",
+      "summary": "Automatic speech recognition must handle how people actually speak, not only the languages and styles that dominate pretraining data. Regional dialects and...",
+      "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-path-to-other-languages/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-01T05:00:00.000Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 28.3,
+      "topics": [
+        "training"
+      ]
+    },
     {
       "id": "209b57e896dc385e",
       "category": "technology",
@@ -12,8 +76,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T20:54:59.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 28.6,
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 26.3,
       "topics": [
         "kernels"
       ]
@@ -28,8 +92,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-30T16:32:25.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 29.5,
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 27.2,
       "topics": [
         "inference",
         "hardware",
@@ -46,8 +110,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-09-30T15:03:07.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 30.2,
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 27.9,
       "topics": [
         "inference"
       ]
@@ -62,8 +126,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T13:40:56.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 26.8,
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 24.5,
       "topics": [
         "hardware"
       ]
@@ -78,8 +142,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T12:58:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 23.3,
       "topics": [
         "security"
       ]
@@ -94,8 +158,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-30T09:04:53.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 27.7,
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 25.4,
       "topics": [
         "inference"
       ]
@@ -110,8 +174,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-30T07:02:56.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 27.2,
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 24.9,
       "topics": [
         "inference",
         "hardware",
@@ -128,8 +192,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 25.1,
       "topics": [
         "hardware"
       ]
@@ -144,8 +208,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 21.1,
       "topics": [
         "inference",
         "kernels",
@@ -162,8 +226,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 21.1,
       "topics": [
         "hardware"
       ]
@@ -178,8 +242,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T19:10:51.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 26.2,
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 23.9,
       "topics": [
         "hardware"
       ]
@@ -194,8 +258,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T18:35:09.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 26,
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
+      "score": 23.7,
       "topics": [
         "models"
       ]
@@ -329,7 +393,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "hardware",
@@ -346,7 +410,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "inference",
@@ -395,7 +459,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T01:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -411,7 +475,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "hardware",
@@ -444,7 +508,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-25T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "inference",
@@ -462,7 +526,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-25T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "training"
@@ -478,7 +542,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-25T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "inference",
@@ -495,27 +559,11 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-24T15:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "models",
         "training"
-      ]
-    },
-    {
-      "id": "d2f4b6fd2b725120",
-      "category": "technology",
-      "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers",
-      "summary": "External security researchers at Accomplish identified a vulnerability in Cloudflare Containers that could expose residual disk data from previous workloads. We explain how the issue worked, how we investigated it, and the steps we took to remediate it.",
-      "url": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-24T15:00:00.000Z",
-      "fetchedAt": "2026-09-29T06:52:28.532Z",
-      "score": 22,
-      "topics": [
-        "security"
       ]
     },
     {
@@ -528,7 +576,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-24T14:08:57.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "models"
@@ -544,7 +592,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "inference",
@@ -562,7 +610,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-23T19:45:19.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "hardware",
@@ -579,27 +627,11 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-23T18:25:49.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "kernels",
         "security"
-      ]
-    },
-    {
-      "id": "73311d01a02c74f3",
-      "category": "technology",
-      "title": "How SWE-Serve Exposes the Gap Between Local Tests and Live Serving",
-      "summary": "An AI coding agent’s patch can pass tests yet fail when the server loads a real model and handles requests. Evaluating changes to inference-serving software...",
-      "url": "https://developer.nvidia.com/blog/how-swe-serve-exposes-the-gap-between-local-tests-and-live-serving/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-23T16:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 23,
-      "topics": [
-        "inference"
       ]
     },
     {
@@ -612,7 +644,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T15:45:46.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "inference",
@@ -629,7 +661,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T13:45:18.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "inference"
@@ -645,7 +677,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T01:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "inference",
@@ -663,7 +695,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "kernels",
@@ -680,7 +712,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "models"
@@ -696,7 +728,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "inference"
@@ -712,7 +744,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -728,7 +760,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -761,7 +793,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T20:41:14.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "models"
@@ -777,7 +809,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "inference"
@@ -793,7 +825,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "inference"
@@ -809,27 +841,11 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-18T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "inference",
         "hardware"
-      ]
-    },
-    {
-      "id": "bbf8dff6e2a3f51a",
-      "category": "technology",
-      "title": "When scanners miss the attack: how Cloudflare Client-Side Security protects storefronts",
-      "summary": "A modern storefront can look healthy while malicious JavaScript quietly siphons revenue, hijacks clicks, or rewrites analytics. See how Cloudflare's machine learning models surface evasive client-side attacks for analyst investigation.",
-      "url": "https://blog.cloudflare.com/client-side-security-finds-4-malicious-campaigns/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-16T20:06:17.000Z",
-      "fetchedAt": "2026-09-29T06:52:28.532Z",
-      "score": 22,
-      "topics": [
-        "security"
       ]
     },
     {
@@ -842,7 +858,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-16T18:55:21.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -876,7 +892,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "training"
@@ -892,7 +908,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "inference",
@@ -927,7 +943,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-14T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "inference",
@@ -962,7 +978,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-10T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "training"
@@ -995,7 +1011,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T13:13:48.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 19,
       "topics": [
         "models"
@@ -1011,7 +1027,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "training"
@@ -1027,7 +1043,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-03T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "training"
@@ -1050,22 +1066,6 @@
       ]
     },
     {
-      "id": "d347273d894b606d",
-      "category": "ai",
-      "title": "Introducing @huggingface/kernels: 200+ WebGPU Kernels for Local AI",
-      "summary": "",
-      "url": "https://huggingface.co/blog/webgpu-kernels",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-01T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
-      "score": 19,
-      "topics": [
-        "kernels"
-      ]
-    },
-    {
       "id": "81d41bf71b597911",
       "category": "ai",
       "title": "How mobility gives language models a deeper understanding of place",
@@ -1075,7 +1075,7 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-08-21T10:54:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 23,
       "topics": [
         "models"
@@ -1091,7 +1091,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-07-29T16:00:00.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 22,
       "topics": [
         "security"
@@ -1107,7 +1107,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-07-17T15:00:11.000Z",
-      "fetchedAt": "2026-10-01T06:25:58.028Z",
+      "fetchedAt": "2026-10-01T15:36:52.180Z",
       "score": 22,
       "topics": [
         "security"
