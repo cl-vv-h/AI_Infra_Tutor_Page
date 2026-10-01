@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T15:36:52.180Z",
+  "generatedAt": "2026-10-01T21:14:36.360Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 34,
-      "latestPublishedAt": "2026-10-01T15:05:36.000Z",
-      "selectedCount": 1,
+      "entryCount": 30,
+      "latestPublishedAt": "2026-10-01T20:48:12.000Z",
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 42,
-      "latestPublishedAt": "2026-10-01T15:28:18.000Z",
+      "entryCount": 47,
+      "latestPublishedAt": "2026-10-01T21:14:13.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 134,
-      "latestPublishedAt": "2026-10-01T15:33:00.000Z",
+      "latestPublishedAt": "2026-10-01T18:44:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-01T15:04:21.000Z",
+      "latestPublishedAt": "2026-10-01T20:45:04.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-01T15:18:03.000Z",
+      "latestPublishedAt": "2026-10-01T20:39:52.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 19,
-      "latestPublishedAt": "2026-10-01T15:12:00.000Z",
+      "latestPublishedAt": "2026-10-01T21:08:11.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,8 +118,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-01T11:30:41.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-01T20:28:45.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-01T14:00:00.000Z",
+      "latestPublishedAt": "2026-10-01T20:34:27.000Z",
       "selectedCount": 3,
       "libraryCount": 2
     },
@@ -249,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-10-01T12:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-01T14:56:25.000Z",
+      "latestPublishedAt": "2026-10-01T19:40:45.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-01T14:56:24.000Z",
+      "latestPublishedAt": "2026-10-01T20:21:54.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-01T14:54:25.000Z",
+      "latestPublishedAt": "2026-10-01T19:39:34.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -430,7 +430,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-01T05:00:00.000Z",
+      "latestPublishedAt": "2026-10-01T18:13:29.000Z",
       "selectedCount": 3,
       "libraryCount": 8
     },
@@ -444,7 +444,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-09-30T00:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -515,6 +515,22 @@
   ],
   "items": [
     {
+      "id": "6a64042121ee9552",
+      "category": "technology",
+      "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
+      "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now...",
+      "url": "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-01T17:59:27.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 34.2,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
       "id": "c95f136a7564f6d6",
       "category": "technology",
       "title": "Introducing Clef: our open-source decision models, and new RL fine-tuning platform",
@@ -524,8 +540,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T15:34:02.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 34,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 32.6,
       "topics": [
         "training"
       ]
@@ -540,8 +556,40 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T13:04:19.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 33.4,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 32,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "d3ae601d874ba553",
+      "category": "world",
+      "title": "UN Member States weigh latest Security Council veto, this time on Iran",
+      "summary": "The General Assembly met on Thursday to examine the Security Council’s latest veto, cast by China and Russia over a United States-backed sanctions panel of experts on Iran nuclear facilities.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168505",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-01T12:00:00.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 29.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "ef7157f84efd6ca8",
+      "category": "world",
+      "title": "‘Women are not victims’: Türk calls for women to be at the heart of peace and security",
+      "summary": "Women must be at the centre of efforts to prevent conflict and build lasting peace, UN High Commissioner for Human Rights Volker Türk said on Thursday.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168502",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-01T12:00:00.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 29.7,
       "topics": [
         "security"
       ]
@@ -556,11 +604,133 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T15:01:43.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 30.9,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 29.4,
       "topics": [
         "training"
       ]
+    },
+    {
+      "id": "5fc9044388c0ec66",
+      "category": "technology",
+      "title": "NASA Awards Enterprise Logistics Support Services Agreements",
+      "summary": "NASA selected 16 companies to provide Enterprise Logistics Support Services under new agreements that will standardize requirements, improve reporting, and streamline the management of costs and resources. The $1.4 billion blanket purchase agreements will support equipment and property management, transportation, disposal, product support, flight hardware support operations, equipment maintenance and repair, export control, move operations, […]",
+      "url": "https://www.nasa.gov/news-release/nasa-awards-enterprise-logistics-support-services-agreements/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-01T20:34:27.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 28.8,
+      "topics": []
+    },
+    {
+      "id": "630eabe2d08d1dcc",
+      "category": "world",
+      "title": "UK police arrest dual UK-Iranian national over Fairford air base incident",
+      "summary": "British police on Thursday arrested a British-Iranian dual national in connection with the security incident at the Fairford airbase Wednesday. Five other men initially arrested over the incidence were later released without charge on bail.",
+      "url": "https://www.france24.com/en/europe/20261001-uk-police-arrest-dual-uk-iranian-national-over-fairford-air-base-incident",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T19:40:45.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 28.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "47e55649fab9d935",
+      "category": "finance",
+      "title": "California AG Bonta issues subpoena to OpenAI over AI cybersecurity risks",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/california-ag-bonta-issues-subpoena-openai-over-ai-cybersecurity-risks-6425216",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T18:10:39.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 28.2,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "3d501aad37f9fdba",
+      "category": "technology",
+      "title": "NASA’s SpaceX Crew-13 Launches",
+      "summary": "In this Oct. 1, 2026, photo, a SpaceX Falcon 9 rocket and Dragon spacecraft launch from Space Launch Complex 40 at Cape Canaveral Space Force Station in Florida. The spacecraft is carrying NASA astronauts Jessica Watkins and Luke Delaney, CSA (Canadian Space Agency) astronaut Joshua Kutryk, and Roscosmos cosmonaut Sergey Teteryatnikov to the International Space Station for a […]",
+      "url": "https://www.nasa.gov/image-article/nasas-spacex-crew-13-launches/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-01T18:05:38.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 28.2,
+      "topics": []
+    },
+    {
+      "id": "2b0f5cc3b421792b",
+      "category": "world",
+      "title": "On October 3, Latvians will elect a new parliament ― with Russia looming large over the campaign",
+      "summary": "On October 3, Latvians will elect a new parliament with Russia looming large over the campaign. Security fears dominate the agenda, but so does a debate over the economic cost of cutting ties with Moscow.",
+      "url": "https://www.dw.com/en/on-october-3-latvians-will-elect-a-new-parliament-%E2%80%95-with-russia-looming-large-over-the-campaign/a-79477614?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T17:57:00.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 28.2,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "0f4c44f1fbbe9d46",
+      "category": "world",
+      "title": "British police arrest UK-Iranian national over airbase incident",
+      "summary": "Counter Terrorism police also questioned a UK national, days after five others were arrested and released on bail.",
+      "url": "https://www.aljazeera.com/news/2026/10/1/british-police-arrest-uk-iranian-national-over-airbase-incident?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T16:55:47.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 27.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "f7c67be7438b3325",
+      "category": "technology",
+      "title": "Hacks of 2 federal agencies in a month have spilled a bonanza of sensitive data",
+      "summary": "It has been a bad month for federal government cybersecurity.",
+      "url": "https://arstechnica.com/security/2026/10/hacks-of-2-federal-agencies-in-a-month-have-spilled-a-bonanza-of-sensitive-data/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T20:28:45.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 27.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "325ecaaba96eba78",
+      "category": "technology",
+      "title": "NASA’s SpaceX Crew-13 Launches to International Space Station",
+      "summary": "Four crew members of NASA’s SpaceX Crew-13 mission launched at 11:10 a.m. EDT Thursday from Space Launch Complex 40 at Cape Canaveral Space Force Station in Florida for a science expedition aboard the International Space Station. “Crew-13 is another demonstration of America’s unmatched capability in human spaceflight and the strength of our commercial partnerships,” said […]",
+      "url": "https://www.nasa.gov/news-release/nasas-spacex-crew-13-launches-to-international-space-station/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-01T15:59:24.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 27.7,
+      "topics": []
     },
     {
       "id": "ceabf880b18b68c4",
@@ -572,8 +742,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-01T14:20:14.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 28.7,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 27.3,
       "topics": [
         "security"
       ]
@@ -588,8 +758,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-01T13:33:12.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 28.5,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 27.1,
       "topics": [
         "security"
       ]
@@ -604,8 +774,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 28.3,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 26.9,
       "topics": []
     },
     {
@@ -618,8 +788,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T05:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 28.3,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 26.9,
       "topics": [
         "training"
       ]
@@ -634,8 +804,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-30T16:46:27.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 28.3,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 26.9,
       "topics": [
         "inference",
         "kernels",
@@ -655,8 +825,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-09-30T15:03:07.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 27.9,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 26.5,
       "topics": [
         "inference"
       ]
@@ -671,24 +841,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-01T10:49:58.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 27.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "2215faac37227375",
-      "category": "world",
-      "title": "Tennessee death row inmate Christa Pike survives execution attempt",
-      "summary": "Christa Pike, convicted of murdering a schoolmate three decades ago, survived Tennessee's effort to execute her by means of lethal injection late on Wednesday, prison officials said, foiling the state's first attempt to put a woman to death in two centuries. Pike's condition following the ordeal was not immediately known, and it was not clear what legal avenues her lawyers or the state might pursue ​next after she was ‌taken for medical treatment from the Riverbend Maximum Security Institution in Nashville.",
-      "url": "https://www.france24.com/en/video/20261001-tennessee-death-row-inmate-christa-pike-survives-execution-attempt",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-01T09:44:03.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 27.5,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 26.4,
       "topics": [
         "security"
       ]
@@ -703,8 +857,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-30T16:53:28.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 27.3,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 25.9,
       "topics": [
         "inference",
         "kernels",
@@ -723,8 +877,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-30T12:52:24.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 27.3,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 25.9,
       "topics": [
         "inference"
       ]
@@ -739,8 +893,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-30T16:32:25.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 27.2,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 25.8,
       "topics": [
         "inference",
         "hardware",
@@ -757,25 +911,9 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-01T07:54:39.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 25.7,
       "topics": []
-    },
-    {
-      "id": "b5417f76c4a5888e",
-      "category": "finance",
-      "title": "Nokia and Iceye to make low-orbit satellite systems for defence, security",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/nokia-and-iceye-make-low-orbit-satellite-systems-defence-security-6423741",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-01T07:04:19.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 26.9,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "6b20f74f0433f6f9",
@@ -787,8 +925,22 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-01T06:22:41.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 26.7,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 25.3,
+      "topics": []
+    },
+    {
+      "id": "fe2e74034e8d006f",
+      "category": "technology",
+      "title": "Build Applications on NVIDIA BlueField Faster with NVIDIA DOCA Agent Skills",
+      "summary": "AI agents are becoming a standard part of development workflows, but general-purpose agents weren't built with specialized infrastructure software such as...",
+      "url": "https://developer.nvidia.com/blog/build-applications-on-nvidia-bluefield-faster-with-nvidia-doca-agent-skills/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-01T18:13:29.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 25.2,
       "topics": []
     },
     {
@@ -801,8 +953,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-01T09:06:07.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 26.4,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 25,
       "topics": [
         "security"
       ]
@@ -817,25 +969,9 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 26.3,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 24.9,
       "topics": []
-    },
-    {
-      "id": "209b57e896dc385e",
-      "category": "technology",
-      "title": "Deploying an HSTU Generative Recommender with NVIDIA Dynamo-Triton",
-      "summary": "Generative recommender (GR) systems are emerging as a powerful new approach for large-scale personalization. Instead of treating recommendation as a set of...",
-      "url": "https://developer.nvidia.com/blog/deploying-an-hstu-generative-recommender-with-nvidia-dynamo-triton/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-30T20:54:59.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 26.3,
-      "topics": [
-        "kernels"
-      ]
     },
     {
       "id": "3423958e799b8592",
@@ -847,8 +983,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-01T12:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 26.1,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 24.7,
       "topics": []
     },
     {
@@ -861,10 +997,40 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-30T09:04:53.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 25.4,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 24,
       "topics": [
         "inference"
+      ]
+    },
+    {
+      "id": "6f16a60bc1f17301",
+      "category": "world",
+      "title": "ICC ends contract with French insurer amid US sanctions threat",
+      "summary": "ICC and Axa terminate agreement amid mounting US criticism and looming financial restrictions on the court, FT reports.",
+      "url": "https://www.aljazeera.com/economy/2026/10/1/icc-ends-contract-with-french-insurer-amid-us-sanctions-threat?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T20:20:00.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "f0f9b866ffa40ffd",
+      "category": "world",
+      "title": "Jerusalem Daily: Netanyahu calls flight incident another 9/11",
+      "summary": "Israeli officials claimed the Flydubai incident as a \"terror attack\", despite the airline’s ongoing investigation.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/1/jerusalem-daily-netanyahu-calls-flight-incident-another-9?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T16:19:35.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 23.8,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -877,11 +1043,25 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 25.1,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 23.7,
       "topics": [
         "hardware"
       ]
+    },
+    {
+      "id": "876b8209c324cded",
+      "category": "world",
+      "title": "France’s purchasing power crisis: Navigating the pinch",
+      "summary": "With looming elections and a draft budget that aims to address a €305.7bn financing requirement, French households are increasingly in the red. Will wages ever manage to outpace energy inflation?",
+      "url": "https://www.france24.com/en/economy/20261001-france-s-purchasing-power-crisis-navigating-the-pinch",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T19:26:18.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 23.5,
+      "topics": []
     },
     {
       "id": "9bbda83903b114e8",
@@ -893,42 +1073,12 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-09-30T07:02:56.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 24.9,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 23.5,
       "topics": [
         "inference",
         "hardware",
         "models"
-      ]
-    },
-    {
-      "id": "a363898a5d9cc0bd",
-      "category": "technology",
-      "title": "NASA’s Webb Provides Crash Course on Planet-Shattering Collisions",
-      "summary": "In the early history of our solar system, scientists theorize that a Mars-sized object called Theia smashed into the infant Earth, vaporizing massive amounts of rock and blasting it into space. Some of that material coalesced into the Moon, where NASA’s Artemis program is returning humans, preparing for Mars, and shaping the future of space […]",
-      "url": "https://science.nasa.gov/missions/webb/nasas-webb-provides-crash-course-on-planet-shattering-collisions/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-01T14:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 24.6,
-      "topics": []
-    },
-    {
-      "id": "674fae39c8bf8493",
-      "category": "world",
-      "title": "UK PM Burnham says Iran likely behind RAF base incident: Is there evidence?",
-      "summary": "UK, US and Israeli officials point to Iranian involvement but remain tight-lipped on details.",
-      "url": "https://www.aljazeera.com/news/2026/10/1/uk-pm-burnham-says-iran-likely-behind-raf-base-incident-is-there-evidence?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-01T13:51:58.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 24.6,
-      "topics": [
-        "security"
       ]
     },
     {
@@ -941,38 +1091,24 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T13:40:56.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 24.5,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 23.1,
       "topics": [
         "hardware"
       ]
     },
     {
-      "id": "88f4118cd28a226b",
-      "category": "technology",
-      "title": "NASA Adds New Science Investigations for Moon Base",
-      "summary": "Editor’s note: This release was updated on Sept. 30, 2026, to correct the name of the DISCO payload. NASA selected three new scientific investigations and their payload suites to advance our knowledge of the Moon and help pave the way for building humanity’s first lunar outpost, Moon Base. The suite of science instruments and technologies […]",
-      "url": "https://www.nasa.gov/news-release/nasa-adds-new-science-investigations-for-moon-base/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-09-30T21:11:23.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 24.4,
-      "topics": []
-    },
-    {
-      "id": "8c140971c6d85d32",
-      "category": "technology",
-      "title": "NASA Awards Contract to Develop 5G Communications for Moon",
-      "summary": "NASA has awarded Modulate Space Corporation a contract to develop key elements of a 5G communications system for use on the lunar surface with built-in Wi-Fi 6, for NASA’s Glenn Research Center in Cleveland. This accelerated effort is organized into two primary work areas that together will develop a scalable, standards-based communications capability designed to […]",
-      "url": "https://www.nasa.gov/news-release/nasa-awards-contract-to-develop-5g-communications-for-moon/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-09-30T20:41:26.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 24.3,
+      "id": "4b01139e37e6469c",
+      "category": "world",
+      "title": "After 2 years in office, how has Claudia Sheinbaum changed Mexico?",
+      "summary": "Two years after taking office as Mexico's first female president, Claudia Sheinbaum can take credit for a lower homicide rate and improved social benefits. But violence and corruption persist.",
+      "url": "https://www.dw.com/en/after-2-years-in-office-how-has-claudia-sheinbaum-changed-mexico/a-79506055?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T16:48:00.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 22.9,
       "topics": []
     },
     {
@@ -985,8 +1121,22 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T16:45:20.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "c3b2bb37a82df17c",
+      "category": "world",
+      "title": "Ethiopia: Who could bring the warring sides to the negotiation table?",
+      "summary": "Ethiopia might be facing its most complex armed conflict in contempary times. The fragile 2022 peace deal has collapsed. International mediators have failed. How will the country manage to return to normal?",
+      "url": "https://www.dw.com/en/ethiopia-who-could-bring-the-warring-sides-to-the-negotiation-table/a-79475529?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T16:02:00.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -999,8 +1149,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-01T04:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 24.1,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -1013,25 +1163,9 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-01T15:30:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 24,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 22.6,
       "topics": []
-    },
-    {
-      "id": "fe91b64018a4d8c0",
-      "category": "world",
-      "title": "UAE investigates possible ‘terrorist’ link in attack on flight to Israel",
-      "summary": "Investigators will probe whether incident was linked to any 'terrorist activity or intent', UAE state media reports.",
-      "url": "https://www.aljazeera.com/news/2026/10/1/uae-investigates-possible-terrorist-link-in-attack-on-flight-to-israel?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-01T11:46:08.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 24,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "84bf7ff96b9863bc",
@@ -1043,68 +1177,66 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-09-30T23:43:07.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 24,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 22.6,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "b07d2d1894da7b81",
-      "category": "technology",
-      "title": "AI Native by Design: Lessons Learned from Building NVIDIA TensorRT Model Connect",
-      "summary": "Parallel work, model-family isolation, reversible changes, and GPU-backed validation shaped an open source project designed around coding agents NVIDIA TensorRT...",
-      "url": "https://developer.nvidia.com/blog/ai-native-by-design-lessons-learned-from-building-nvidia-tensorrt-model-connect/",
-      "source": "NVIDIA Technical Blog",
+      "id": "cf6e9782eeca3722",
+      "category": "ai",
+      "title": "Google thinks SpaceX’s Starship has to launch 1,800 times before space data centers get off the ground",
+      "summary": "Google launched its first advanced chip into orbit to pave the way for space data centers.",
+      "url": "https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/",
+      "source": "TechCrunch AI",
       "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-29T19:10:51.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 23.9,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
-      "id": "b13c19af877d7423",
-      "category": "world",
-      "title": "Cameroon govt announces payments as teachers strike continues",
-      "summary": "In Cameroon, the start of the academic year for Universities, scheduled for October 5, may not take place. This is as a result of an indefinite strike launched by SYNES, the National Union of Higher Education Teachers. Teachers are demanding the payment of 16 billion CFA francs in academic bonuses, equivalent to nearly 24 million euros.",
-      "url": "https://www.france24.com/en/video/20261001-cameroon-govt-announces-payments-as-teachers-strike-continues",
-      "source": "France 24",
-      "sourceCountry": "France",
       "sourceType": "news",
-      "publishedAt": "2026-10-01T14:56:25.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 23.8,
+      "publishedAt": "2026-10-01T19:18:03.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 22.5,
       "topics": []
     },
     {
-      "id": "016273b29f87d41a",
+      "id": "10dff223ef17e545",
       "category": "world",
-      "title": "North and South Korea trade accusations over landmines that injured three soldiers",
-      "summary": "A mine blast that injured three South Korean soldiers has renewed scrutiny of North Korea's actions along the border and raised questions about its strategic goals.",
-      "url": "https://www.dw.com/en/north-and-south-korea-trade-accusations-over-landmines-that-injured-three-soldiers/a-79503854?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
+      "title": "Globant goes all-in on AI overhaul to rebuild from 80% sell-off",
+      "summary": "Software firm Globant is betting that AI, the technology responsible for wiping out 80% of its market cap since early 2025, can also reinvent the business. Leer más",
+      "url": "https://www.batimes.com.ar/news/economy/globant-goes-all-in-on-ai-overhaul-to-rebuild-from-80-sell-off.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
       "sourceType": "news",
-      "publishedAt": "2026-10-01T13:57:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 23.6,
+      "publishedAt": "2026-10-01T18:23:39.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 22.3,
       "topics": []
     },
     {
-      "id": "0770ce73b8aaca96",
-      "category": "world",
-      "title": "HIV prevention drug hailed as breakthrough, but who gets access?",
-      "summary": "Lenacapavir, a twice-a-year injection could transform HIV prevention, but it will not be available to all.",
-      "url": "https://www.aljazeera.com/news/2026/10/1/hiv-prevention-drug-hailed-as-breakthrough-but-who-gets-access?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "id": "f287699202679442",
+      "category": "ai",
+      "title": "OpenAI cuts ties with 3 safety researchers, WSJ reports",
+      "summary": "OpenAI has parted ways with three safety researchers after an internal investigation found they mishandled sensitive company information, report says.",
+      "url": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-01T13:54:50.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 23.6,
+      "publishedAt": "2026-10-01T18:14:42.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 22.3,
+      "topics": []
+    },
+    {
+      "id": "86753208bc36266a",
+      "category": "technology",
+      "title": "Marvel releases one last VisionQuest trailer",
+      "summary": "\"This is a fight I likely won't win. We have said goodbye before. But remember, family is forever.\"",
+      "url": "https://arstechnica.com/culture/2026/10/marvel-releases-one-last-visionquest-trailer/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T18:04:48.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 22.2,
       "topics": []
     },
     {
@@ -1117,8 +1249,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-01T13:30:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 23.5,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 22.1,
       "topics": []
     },
     {
@@ -1131,8 +1263,22 @@
       "sourceCountry": "Australia",
       "sourceType": "institution",
       "publishedAt": "2026-10-01T01:30:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 23.5,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 22.1,
+      "topics": []
+    },
+    {
+      "id": "0edddb08f7bbe9d5",
+      "category": "technology",
+      "title": "With most information hidden, the game Stratego had stumped AI—until now",
+      "summary": "Adding in a second neural network that guesses the identity of hidden pieces was key.",
+      "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T16:28:04.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 21.8,
       "topics": []
     },
     {
@@ -1145,22 +1291,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-01T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 23.1,
-      "topics": []
-    },
-    {
-      "id": "e18ff0bd82055358",
-      "category": "finance",
-      "title": "Summary of Opinions at the Monetary Policy Meeting on September 17 and 18, 2026",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260918.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-09-30T23:50:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -1173,8 +1305,22 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-01T11:30:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 23,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 21.6,
+      "topics": []
+    },
+    {
+      "id": "e18ff0bd82055358",
+      "category": "finance",
+      "title": "Summary of Opinions at the Monetary Policy Meeting on September 17 and 18, 2026",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi260918.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-09-30T23:50:00.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 21.6,
       "topics": []
     },
     {
@@ -1187,25 +1333,11 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-01T10:09:44.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 22.6,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 21.2,
       "topics": [
         "training"
       ]
-    },
-    {
-      "id": "ad8713891d1c1ef3",
-      "category": "world",
-      "title": "UAE launches Flydubai hijacking and terrorism investigation",
-      "summary": "The UAE's chief prosecutor said it's looking at the possibility of \"terrorist activity or intent\" in the alleged attempted hijacking of a Flydubai commercial flight to Tel Aviv. It says it has jurisdiction in the case.",
-      "url": "https://www.dw.com/en/uae-launches-flydubai-hijacking-and-terrorism-investigation/a-79497746?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-01T10:06:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 22.6,
-      "topics": []
     },
     {
       "id": "26dfb61944b9a697",
@@ -1217,8 +1349,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-01T10:05:25.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 22.6,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 21.2,
       "topics": []
     },
     {
@@ -1231,97 +1363,9 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-01T13:36:43.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 22.5,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 21.1,
       "topics": []
-    },
-    {
-      "id": "54500f417a3660fa",
-      "category": "world",
-      "title": "Pakistan launches deadly airstrikes on Afghanistan",
-      "summary": "The Taliban government in Afghanistan said at least nine civilians were killed in Pakistani airstrikes on two provinces overnight. Pakistan said it had struck militant hideouts, killing 22 fighters.",
-      "url": "https://www.dw.com/en/pakistan-launches-deadly-airstrikes-on-afghanistan/a-79498092?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-01T09:22:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 22.4,
-      "topics": []
-    },
-    {
-      "id": "4f15fbac9211c23b",
-      "category": "ai",
-      "title": "Hearing tech startup Legato launches its AI hearing glasses",
-      "summary": "The glasses stem from the startup’s goal of making hearing care more accessible by addressing the cost, comfort, and stigma associated with traditional hearing aids.",
-      "url": "https://techcrunch.com/2026/10/01/hearing-tech-startup-legato-launches-its-ai-hearing-glasses/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-01T13:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 22.3,
-      "topics": []
-    },
-    {
-      "id": "36fe526678b70824",
-      "category": "world",
-      "title": "Milei pitches Argentina’s ‘abundant energy’ to Europe at investment roadshow",
-      "summary": "La Libertad Avanza leader says his nation is a secure source of energy and critical minerals; Milei touts his economic record ahead of the 2027 election. Leer más",
-      "url": "https://www.batimes.com.ar/news/economy/milei-pitches-argentinas-abundant-energy-to-europe-at-investment-roadshow.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-01T12:21:21.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 22.2,
-      "topics": []
-    },
-    {
-      "id": "75b587ccdb21a1bc",
-      "category": "world",
-      "title": "Ebola response faces setback as transit centre burns down in DR Congo camp",
-      "summary": "The enormous challenge of halting the spread of Ebola in the Democratic Republic of the Congo (DRC) just became even harder after a key transit centre for patients requiring treatment burned down in Ituri province.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168499",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-01T12:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 22.1,
-      "topics": []
-    },
-    {
-      "id": "cc17f8b7007916ce",
-      "category": "ai",
-      "title": "Instinct’s new product recommendations are giving some users the ick",
-      "summary": "Instinct is rolling out human-curated product and travel recommendations, but some users aren’t happy about getting suggestions they never asked for.",
-      "url": "https://techcrunch.com/2026/09/30/instincts-new-product-recommendations-are-giving-some-users-the-ick/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-09-30T15:56:28.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 22.1,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
-      "id": "5632fd627e5e25a0",
-      "category": "technology",
-      "title": "Google figures out how to watermark AI-designed proteins",
-      "summary": "Intended to help with biosecurity, it works with a popular AI protein design tool.",
-      "url": "https://arstechnica.com/science/2026/09/google-figures-out-how-to-watermark-ai-designed-proteins/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-09-30T15:54:52.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 22.1,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "7979e30f553cb693",
@@ -1333,22 +1377,22 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-09-30T15:45:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 22,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 20.6,
       "topics": []
     },
     {
-      "id": "a3fc3688421c1e71",
-      "category": "world",
-      "title": "Africa's richest man launches Kenya oil refinery despite land protests",
-      "summary": "The Kenya refinery is part of Dangote's ambitious bid to expand and help industralise Africa by 2030.",
-      "url": "https://www.bbc.co.uk/news/articles/cmkg8dpwy25po",
-      "source": "BBC World",
+      "id": "6f794956586f1ee2",
+      "category": "finance",
+      "title": "UK in talks with EU partners over fuel reserves after Trump diesel threat",
+      "summary": "President Donald Trump has threatened to ban diesel exports in a bid to ease prices in the US.",
+      "url": "https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo",
+      "source": "BBC Business",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-10-01T07:04:27.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 21.9,
+      "publishedAt": "2026-10-01T21:14:13.000Z",
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 20,
       "topics": []
     },
     {
@@ -1361,28 +1405,12 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 21.1,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 19.7,
       "topics": [
         "inference",
         "kernels",
         "training"
-      ]
-    },
-    {
-      "id": "a4295ad561bc1286",
-      "category": "technology",
-      "title": "AIM: Unified User Experience from Profile Discovery to Deployment",
-      "summary": "This post is a continuation of the Multi-Accelerator Support for AIMs and AMD Solution Blueprints blog, which introduced (i) multi-accelerator coverage across AMD Instinct™ GPUs, Radeon™ PRO GPUs, and EPYC™ CPUs, and (ii) walked through the Document Summarization Solution Blueprint. Here we focus on AIMs specifically and show how they deliver a unified user experience from Radeon to Instinct, i.e., similar profile discovery commands, container workflow, and OpenAI-compatible API regardless of the accelerator.",
-      "url": "https://rocm.blogs.amd.com/artificial-intelligence/aims-deployment-exp/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 21.1,
-      "topics": [
-        "hardware"
       ]
     },
     {
@@ -1395,8 +1423,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-30T00:33:58.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 20.2,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 18.8,
       "topics": [
         "inference"
       ]
@@ -1411,22 +1439,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-09-30T20:01:45.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 20.1,
-      "topics": []
-    },
-    {
-      "id": "b8dab370505acf0e",
-      "category": "finance",
-      "title": "Is it time to ditch premium bonds?",
-      "summary": "Martin Lewis says though they are the UK's most popular form of savings, not everybody benefits from them. Martin explains who premium bonds are best for, and who they aren’t so good for.",
-      "url": "https://www.bbc.co.uk/news/videos/cmy5z5qx19pwo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-01T15:28:18.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 20,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 18.7,
       "topics": []
     },
     {
@@ -1439,8 +1453,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-09-30T09:30:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 19.5,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 18.1,
       "topics": []
     },
     {
@@ -1453,8 +1467,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-01T13:00:54.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 19.4,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -1467,22 +1481,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-01T00:00:00.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 19.1,
-      "topics": []
-    },
-    {
-      "id": "2388892cf2d5cb73",
-      "category": "technology",
-      "title": "Dinosaur-killing impact crater might have been teeming with life",
-      "summary": "Hot, nutrient water might have lasted for over 5 million years after the impact.",
-      "url": "https://arstechnica.com/science/2026/09/dinosaur-killing-impact-crater-might-have-been-teeming-with-life/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-09-30T21:54:12.000Z",
-      "fetchedAt": "2026-10-01T15:36:52.180Z",
-      "score": 18.6,
+      "fetchedAt": "2026-10-01T21:14:36.360Z",
+      "score": 17.7,
       "topics": []
     }
   ]
