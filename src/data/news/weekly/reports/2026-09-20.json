@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-10-01T04:55:18.300Z",
+  "periodStart": "2026-09-14",
+  "periodEnd": "2026-09-20",
+  "archiveDates": [
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-18",
+    "2026-09-19",
+    "2026-09-20"
+  ],
+  "model": "gpt-5.6-luna",
+  "itemCount": 14,
+  "content": "# 本周信号\n\n本期覆盖 2026-09-14 至 2026-09-20 的七个归档日。综合判断：AI Infra 的关键瓶颈继续从模型结构扩展到 serving 的完成时间、KV cache、低精度 attention、推测解码、互联韧性与可验证 benchmark。\n\n## AI\n\n- 报道事实：[NVIDIA Transformer Engine 的 dropless MoE training](https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/) 将 MoE 作为大规模模型训练的重要架构趋势，并以 JAX 为场景。\n- 报道事实：[vLLM 介绍 Kimi-K3 的 DSpark 训练](https://vllm.ai/blog/2026-09-15-kimi-k3-dspark)，摘要将 Speculators、Mooncake、GB300 NVL72 与多节点训练联系起来。\n- 报道事实：[Chord](https://vllm.ai/blog/2026-09-15-novita-chord-w4a16-moe) 是面向 Kimi K2.x serving shapes 的 W4A16 MoE CUDA kernel，摘要称其开源并包含 grouped SM90 operators。\n- 报道事实：[PipeSwift](https://arxiv.org/abs/2609.16491v1) 将长链路 agentic serving 的目标从单纯 TTFT/TPOT 约束扩展到 completion time，并重新讨论 pipeline parallelism 与调度。\n- 报道事实：[Ask the Tool, Don’t Guess](https://arxiv.org/abs/2609.18849v1) 讨论工具调用等待期间 KV cache 占用 GPU 显存，以及 serving 系统依据工具实际进度管理缓存的必要性。\n- 报道事实：[DeepSeek-V4-Flash on AMD gfx90a](https://arxiv.org/abs/2609.15627v1) 摘要记录了 AMD MI250 上的 FP4 routed MoE、FP8 dense projection、sparse attention、HIP graph 与 OpenAI-compatible serving，并指出曾发现 routed-expert W2 layout mismatch 导致的数值错误。\n- 综合判断：本周的研究与工程信号把“推理速度”拆成训练/推理正确性、工具等待、缓存驻留、并行调度和 kernel 形态等多个可测量问题；归档摘要不足以对这些方案做统一性能排名。\n\n## 科技\n\n- 报道事实：[Low Precision Flash Attention 4](https://pytorch.org/blog/low-precision-flash-attention-4-end-to-end-block-scaled-attention-for-blackwell/) 扩展到 MXFP8 forward/backward，归档摘要给出 LLM shapes 上 2.85 PF/s forward 和 2 PF/s backward 的结果。\n- 报道事实：[AMD MI355X 上的 DFlash speculative decoding](https://rocm.blogs.amd.com/artificial-intelligence/dflash-on-MI355x/README.html) 用小 draft model 提议多个 token、再由大模型并行验证，摘要将其定位为缓解权重流式读取造成的 decode 延迟。\n- 报道事实：[NVIDIA NVLink 6](https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/) 面向大型 AI factory 的持续输出与多层互联韧性。\n- 报道事实：[NVIDIA AIPerf](https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/) 关注在部署模型、请求开始返回之后，如何系统回答“到底有多快”的推理 benchmark 问题。\n- 综合判断：低精度、speculative decoding、互联可靠性和 benchmark 方法共同表明，硬件峰值不能替代对真实 workload 的端到端测量。\n\n## 金融\n\n- 报道事实：[日本银行调整货币市场操作指引](https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf)。归档条目未提供摘要，因此不延伸判断政策方向或市场影响。\n- 报道事实：[欧洲央行发布 2026 年 8 月消费者预期调查结果](https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260918~295b3ab978.en.html)。归档条目未提供摘要，因此不对通胀、收入或消费预期作未被元数据支持的解释。\n- 综合判断：本期金融证据主要是央行正式发布的操作与调查条目，信息密度不足以支持利率、汇率或风险资产方向判断。\n\n## 国际形势\n\n- 报道事实：[也门在 Bab el-Mandeb 海峡周边战事升级](https://www.france24.com/en/yemen-fighting-escalates-around-the-bab-el-mandeb-strait)，摘要称相关行动引发对区域安全与全球贸易的担忧。\n- 报道事实：[联合国安理会就也门局势召开紧急会议](https://news.un.org/feed/view/en/story/2026/09/1168343)，摘要将讨论与 Bab el-Mandeb 航运路线及向吉布提逃离的人口联系起来。\n- 综合判断：航运要道、区域冲突与 AI 基础设施的能源/互联议题都需要关注供应链与可用性，但本期归档没有运价、能源价格或数据中心中断证据，不能据此断言直接传导。\n\n## 跨板块观察\n\n- 报道事实与综合判断： [PipeSwift](https://arxiv.org/abs/2609.16491v1) 与 [Ask the Tool, Don’t Guess](https://arxiv.org/abs/2609.18849v1) 都把 agentic workload 的长等待与完成时间放到 serving 设计中心；综合来看，agent 系统的资源管理不能只围绕 token-level latency，但这是主题层面的综合判断，不是统一 benchmark 结论。\n- 报道事实与综合判断： [Low Precision Flash Attention 4](https://pytorch.org/blog/low-precision-flash-attention-4-end-to-end-block-scaled-attention-for-blackwell/) 的 MXFP8、[Chord](https://vllm.ai/blog/2026-09-15-novita-chord-w4a16-moe) 的 W4A16 kernel 与 [DFlash](https://rocm.blogs.amd.com/artificial-intelligence/dflash-on-MI355x/README.html) 的 speculative decoding 分别作用于 attention、权重精度与 decode 流程；综合判断是“算子与调度协同”比单独追求更大模型更值得观察。\n\n## 下周观察清单\n\n- 跟踪 vLLM、FlashInfer、TensorRT-LLM 与 SGLang 后续版本，关注 MoE kernel、speculative decoding、正确性修复与多 GPU 行为。[Kimi-K3 DSpark](https://vllm.ai/blog/2026-09-15-kimi-k3-dspark)\n- 关注 agentic serving 是否公开 completion-time、KV cache 驻留和工具等待下的尾延迟指标，而不只是 TTFT/TPOT。[Ask the Tool, Don’t Guess](https://arxiv.org/abs/2609.18849v1)\n- 核对 MXFP8、W4A16、FP4/FP8 与 draft/target 解码在不同模型、并发度和互联配置下的可重复性。[Flash Attention 4](https://pytorch.org/blog/low-precision-flash-attention-4-end-to-end-block-scaled-attention-for-blackwell/)\n- 跟踪 Bab el-Mandeb 航运与央行操作是否出现连续政策或市场数据；本期元数据不足以判断影响。[联合国安理会会议](https://news.un.org/feed/view/en/story/2026/09/1168343)\n",
+  "sources": [
+    {
+      "title": "Accelerating Dropless MoE Training in JAX with NVIDIA Transformer Engine",
+      "url": "https://developer.nvidia.com/blog/accelerating-dropless-moe-training-in-jax-with-nvidia-transformer-engine/",
+      "source": "NVIDIA Technical Blog"
+    },
+    {
+      "title": "How we trained the fastest DSpark for Kimi-K3 using GB300 NVL72",
+      "url": "https://vllm.ai/blog/2026-09-15-kimi-k3-dspark",
+      "source": "vLLM Blog"
+    },
+    {
+      "title": "vLLM x Novita AI: Chord, Faster INT4 MoE for Kimi K2.x. Up to 1.3x on H200, 2.15x on Untuned B300",
+      "url": "https://vllm.ai/blog/2026-09-15-novita-chord-w4a16-moe",
+      "source": "vLLM Blog"
+    },
+    {
+      "title": "PipeSwift: Revisiting Pipeline Parallelism for Large-Scale Completion-Oriented Agentic Serving",
+      "url": "https://arxiv.org/abs/2609.16491v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "Ask the Tool, Don't Guess: Agent Tool Calls Hold Their Progress, and the Serving System Should Read It",
+      "url": "https://arxiv.org/abs/2609.18849v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "DeepSeek-V4-Flash on AMD gfx90a: Correctness Recovery and Inference Performance Engineering",
+      "url": "https://arxiv.org/abs/2609.15627v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "Low Precision Flash Attention 4: End-to-End Block-Scaled Attention for Blackwell",
+      "url": "https://pytorch.org/blog/low-precision-flash-attention-4-end-to-end-block-scaled-attention-for-blackwell/",
+      "source": "PyTorch Blog"
+    },
+    {
+      "title": "DFlash Speculative Decoding on AMD Instinct MI355X: Up to 5× Faster Qwen3.5 Inference",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/dflash-on-MI355x/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "How NVIDIA NVLink 6 Delivers Multi-Layer Resiliency for AI Factories",
+      "url": "https://developer.nvidia.com/blog/how-nvidia-nvlink-6-delivers-multi-layer-resiliency-for-ai-factories/",
+      "source": "NVIDIA Technical Blog"
+    },
+    {
+      "title": "Benchmarking LLM Inference at Scale with AIPerf",
+      "url": "https://developer.nvidia.com/blog/benchmarking-llm-inference-at-scale-with-aiperf/",
+      "source": "NVIDIA Technical Blog"
+    },
+    {
+      "title": "Change in the Guideline for Money Market Operations",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
+      "source": "Bank of Japan"
+    },
+    {
+      "title": "ECB Consumer Expectations Survey results – August 2026",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260918~295b3ab978.en.html",
+      "source": "European Central Bank"
+    },
+    {
+      "title": "Yemen: Fighting escalates around the Bab el-Mandeb Strait",
+      "url": "https://www.france24.com/en/yemen-fighting-escalates-around-the-bab-el-mandeb-strait",
+      "source": "France 24"
+    },
+    {
+      "title": "Security Council LIVE: Rising violence triggers emergency meeting on Yemen",
+      "url": "https://news.un.org/feed/view/en/story/2026/09/1168343",
+      "source": "UN News"
+    }
+  ]
+}
