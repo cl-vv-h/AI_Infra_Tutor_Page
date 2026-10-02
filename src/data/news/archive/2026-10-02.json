@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-02T14:55:56.482Z",
+  "generatedAt": "2026-10-02T20:53:34.767Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 38,
-  "failedSourceCount": 1,
+  "sourceCount": 39,
+  "failedSourceCount": 0,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 30,
-      "latestPublishedAt": "2026-10-02T14:01:09.000Z",
-      "selectedCount": 1,
+      "entryCount": 33,
+      "latestPublishedAt": "2026-10-02T17:44:08.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 52,
-      "latestPublishedAt": "2026-10-02T14:30:48.000Z",
+      "entryCount": 55,
+      "latestPublishedAt": "2026-10-02T20:25:19.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,8 +40,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 135,
-      "latestPublishedAt": "2026-10-02T14:29:00.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-02T20:38:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-02T14:14:18.000Z",
+      "latestPublishedAt": "2026-10-02T20:32:02.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-02T14:17:50.000Z",
+      "latestPublishedAt": "2026-10-02T18:50:20.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -80,7 +80,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-09-30T20:01:45.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 2
     },
     {
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-10-02T13:00:39.000Z",
-      "selectedCount": 2,
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -104,9 +104,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 19,
-      "latestPublishedAt": "2026-10-02T14:30:00.000Z",
-      "selectedCount": 2,
+      "entryCount": 20,
+      "latestPublishedAt": "2026-10-02T19:15:51.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-02T10:30:11.000Z",
+      "latestPublishedAt": "2026-10-02T20:30:27.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-02T04:05:00.000Z",
+      "latestPublishedAt": "2026-10-02T19:54:54.000Z",
       "selectedCount": 3,
       "libraryCount": 2
     },
@@ -158,7 +158,7 @@
       "channel": "feed",
       "entryCount": 15,
       "latestPublishedAt": "2026-10-02T13:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -170,8 +170,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-09-30T13:00:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-02T20:45:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -223,7 +223,7 @@
       "channel": "feed",
       "entryCount": 1,
       "latestPublishedAt": "2026-10-01T01:30:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -232,11 +232,10 @@
       "country": "International",
       "category": "finance",
       "type": "institution",
-      "state": "unavailable",
+      "state": "ok",
       "channel": "feed",
-      "httpStatus": 503,
-      "entryCount": 0,
-      "latestPublishedAt": null,
+      "entryCount": 10,
+      "latestPublishedAt": "2026-10-01T00:00:00.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -262,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-02T14:39:34.000Z",
+      "latestPublishedAt": "2026-10-02T19:31:27.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -275,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-02T14:37:27.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-02T20:23:49.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -288,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-02T14:03:18.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-02T18:54:19.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -301,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-02T01:36:00.000Z",
+      "latestPublishedAt": "2026-10-02T19:06:17.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -314,7 +313,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 872,
-      "latestPublishedAt": "2026-10-02T04:01:31.000Z",
+      "latestPublishedAt": "2026-10-02T15:19:50.000Z",
       "selectedCount": 2,
       "libraryCount": 8
     },
@@ -340,8 +339,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-09-29T18:38:27.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-02T14:57:41.000Z",
+      "selectedCount": 1,
       "libraryCount": 2
     },
     {
@@ -353,7 +352,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-02T01:09:04.000Z",
+      "latestPublishedAt": "2026-10-02T19:42:55.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -380,7 +379,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-02T01:57:43.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -418,8 +417,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-01T22:26:57.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-02T19:55:07.000Z",
+      "selectedCount": 3,
       "libraryCount": 8
     },
     {
@@ -457,7 +456,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-02T13:28:10.000Z",
+      "latestPublishedAt": "2026-10-02T16:13:45.000Z",
       "selectedCount": 3,
       "libraryCount": 8
     },
@@ -484,7 +483,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-09-30T16:46:27.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -516,6 +515,44 @@
   ],
   "items": [
     {
+      "id": "c1f4855d2c7bf970",
+      "category": "technology",
+      "title": "Building a High-Performance and Portable vLLM Linear Backend with Helion",
+      "summary": "TL;DR We integrated Helion into vLLM’s linear backend to explore how an autotuned, high-level kernel DSL can improve LLM inference performance while reducing kernel implementation complexity. A single Helion general...",
+      "url": "https://pytorch.org/blog/building-a-high-performance-and-portable-vllm-linear-backend-with-helion/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-02T19:55:07.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 34.8,
+      "topics": [
+        "inference",
+        "kernels"
+      ]
+    },
+    {
+      "id": "6b20f74f0433f6f9",
+      "category": "ai",
+      "title": "v0.5.21",
+      "summary": "Highlights 779 PRs from 227 contributors. New models Model Type Cookbook DeepSeek-V4.1 Flash LLM / VLM link GigaChat 3.5 LLM / VLM link IQuest-Q1 LLM / VLM link MiMo-V2.6 / MiMo-V2.6-Pro LLM / VLM link Ling-3.0-flash-VL LLM / VLM link DiffusionGemma Diffusion link Qwen-Image 2.1 Diffusion link Anima Base v1.0 Diffusion link Ming-Image 0.1 Design / Design-Layer Diffusion link FLUX 3 Action Diffusion link Key features PD instances can switch between prefill and decode on the fly, no restart needed ( #28403 ). The pre",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21",
+      "source": "SGLang Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-02T19:42:55.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 33.7,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ]
+    },
+    {
       "id": "348c80fb57e4ba2d",
       "category": "technology",
       "title": "Introducing Web Search API via AI Gateway",
@@ -525,8 +562,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:28:10.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 33.6,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 32.1,
       "topics": [
         "inference"
       ]
@@ -541,8 +578,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 33.5,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 32,
       "topics": [
         "security"
       ]
@@ -557,8 +594,40 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 33.5,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 32,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "a6c3345bae9f8ca6",
+      "category": "world",
+      "title": "World News in Brief: Cycle of violence continues in Haiti, seafarer deaths off Somalia, food insecurity in the Middle East",
+      "summary": "Haitians remain in the grip of lethal gang violence as it continues to “adapt and expand”, the UN’s top rights official, Volker Türk, said on Friday.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168511",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 29.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "14e72ca72286218a",
+      "category": "world",
+      "title": "Escalating fighting in Yemen deepens food security crisis",
+      "summary": "Renewed conflict in Yemen has triggered a surge in hunger that could have consequences in the wider region and beyond, the World Food Programme (WFP) warned on Friday.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168509",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 29.8,
       "topics": [
         "security"
       ]
@@ -573,8 +642,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T22:26:57.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 30.9,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 29.4,
       "topics": [
         "kernels",
         "hardware",
@@ -582,25 +651,46 @@
       ]
     },
     {
-      "id": "6b20f74f0433f6f9",
+      "id": "d20fa7036a0ae1e2",
+      "category": "technology",
+      "title": "Heading Home: NASA’s SpaceX Crew-12 Concludes Station Science Mission",
+      "summary": "NASA’s SpaceX Crew-12 mission is ending, with the crew scheduled to return in early October. NASA astronauts Jessica Meir and Jack Hathaway, ESA (European Space Agency) astronaut Sophie Adenot, and Roscosmos cosmonaut Andrey Fedyaev will head home from the International Space Station after supporting research that benefits life on Earth and prepares humans for missions […]",
+      "url": "https://www.nasa.gov/missions/station/iss-research/heading-home-nasas-spacex-crew-12-concludes-station-science-mission/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-02T19:30:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 28.7,
+      "topics": []
+    },
+    {
+      "id": "49b0ccecb4645d0e",
       "category": "ai",
-      "title": "v0.5.21",
-      "summary": "Highlights 779 PRs from 227 contributors. New models Model Type Cookbook DeepSeek-V4.1 Flash LLM / VLM link GigaChat 3.5 LLM / VLM link IQuest-Q1 LLM / VLM link MiMo-V2.6 / MiMo-V2.6-Pro LLM / VLM link Ling-3.0-flash-VL LLM / VLM link DiffusionGemma Diffusion link Qwen-Image 2.1 Diffusion link Anima Base v1.0 Diffusion link Ming-Image 0.1 Design / Design-Layer Diffusion link FLUX 3 Action Diffusion link Key features PD instances can switch between prefill and decode on the fly, no restart needed ( #28403 ). The pre",
-      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21",
-      "source": "SGLang Releases",
+      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+      "summary": "",
+      "url": "https://huggingface.co/blog/allenai/astabrief",
+      "source": "Hugging Face Blog",
       "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-02T01:09:04.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 30.6,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training",
-        "security"
-      ]
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-02T15:19:50.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 28.6,
+      "topics": []
+    },
+    {
+      "id": "fca470f45f5704a8",
+      "category": "ai",
+      "title": "Toward provably private learning from federated data",
+      "summary": "Mobile Systems",
+      "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-02T14:57:41.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 28.5,
+      "topics": []
     },
     {
       "id": "6a64042121ee9552",
@@ -612,10 +702,68 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T17:59:27.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 29.8,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 28.3,
       "topics": [
         "inference"
+      ]
+    },
+    {
+      "id": "346081a05bd56efc",
+      "category": "technology",
+      "title": "NASA Campaign Explores Clouds Spawned by Wildfires",
+      "summary": "The Wildhorse grass fire in eastern Idaho erupted with a massive pulse of smoke. No one had expected it, but the wildfire had launched what’s known as a pyrocumulonimbus cloud, or pyroCb. It was an elusive weather phenomenon that scientists on NASA’s INSPYRE (INjected Smoke and PYRocumulonimbus Experiment) campaign spent weeks this summer hunting across […]",
+      "url": "https://science.nasa.gov/earth/natural-disasters/wildfires/nasa-campaign-explores-clouds-spawned-by-wildfires/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-02T16:34:57.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 27.9,
+      "topics": []
+    },
+    {
+      "id": "966d10cbc1dc14d1",
+      "category": "finance",
+      "title": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+      "summary": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T20:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 27.8,
+      "topics": []
+    },
+    {
+      "id": "746dc35dc6ad9282",
+      "category": "technology",
+      "title": "NASA Model Wing Lights Up During First Pressure Sensitive Paint Tests",
+      "summary": "Groundbreaking tests at NASA’s Langley Research Center in Hampton, Virginia, are paving the way for new wind tunnel capabilities for designing the aircraft technologies of the future. In a first-of-its-kind test in NASA Langley’s Transonic Dynamics Tunnel, researchers used unsteady Pressure Sensitive Paint to study how air flows around a standard wind tunnel model known […]",
+      "url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-model-wing-lights-up-during-first-pressure-sensitive-paint-tests/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-02T16:10:55.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 27.8,
+      "topics": []
+    },
+    {
+      "id": "9c0a5184c790f15e",
+      "category": "world",
+      "title": "'We have to close defence gaps urgently': EU Parliament Foreign Affairs Committee chief McAllister",
+      "summary": "We sit down with David McAllister, the chair of the European Parliament’s Foreign Affairs Committee. He talks to us about the security threats facing Europe, and what defence gaps the EU urgently needs to close. For McAllister, the EU is \"not at war with the Russian Federation, but we are no longer at peace with Russia\". He also believes that the EU is not, as yet, capable of making sovereign decisions in certain areas of defence \"because we are too dependent on US capabilities.\"",
+      "url": "https://www.france24.com/en/tv-shows/talking-europe/20261002-we-have-to-close-defence-gaps-urgently-eu-parliament-foreign-affairs-committee-chief-mcallister",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T15:57:55.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 27.8,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -628,11 +776,683 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T04:01:31.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 28.3,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 26.8,
       "topics": [
         "training"
       ]
+    },
+    {
+      "id": "a41723ad91a9419f",
+      "category": "world",
+      "title": "UN issues call to action on world's vital dryland forests",
+      "summary": "The United Nations is issuing an urgent call to action on the world’s dryland forests - areas that sustain the food security and cultural identity of more than two billion people.",
+      "url": "https://www.africanews.com/2026/10/02/un-issues-call-to-action-on-worlds-vital-dryland-forests/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T15:20:05.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 26.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "c77c99d812eac3a5",
+      "category": "finance",
+      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261002~54c6b5672b.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T13:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 26,
+      "topics": []
+    },
+    {
+      "id": "562cda311e5f3901",
+      "category": "ai",
+      "title": "MoE-CORE: Coordinated Expert Offloading and Residency for Memory-Constrained MoE Inference",
+      "summary": "Sparse expert activation reduces MoE models' computation, yet expert weights can exceed limited device memory. Offloading makes inference feasible on a compact AI appliance but exposes host-to-device transfers to the inference path. We present MoE-CORE, a system that coordinates expert offloading and residency for memory-constrained MoE inference. It stages complete expert layers in alternating buffers during prefill. During decode, it combines nonuniform layer-wise cache capacity, domain-informed initialization, r",
+      "url": "https://arxiv.org/abs/2610.01950v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-01T16:11:45.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 25.8,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "99b94a39a7a44421",
+      "category": "technology",
+      "title": "New Pathway to PyTorch Certified Associate (PTCA) Certification",
+      "summary": "We’re excited to bring you the new PyTorch Certified Associate (PTCA) Certification Pathway, combining focused learning modules and the PyTorch Certified Associate (PTCA) certification exam together in one structured experience...",
+      "url": "https://pytorch.org/blog/new-pathway-to-pytorch-certified-associate-ptca-certification/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-02T19:33:47.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 25.7,
+      "topics": []
+    },
+    {
+      "id": "7be885d13bdc5309",
+      "category": "world",
+      "title": "Guinea-Bissau junta blocks Embaló’s planned return, citing security concerns",
+      "summary": "Earlier this week, former president Umaro Sissoco Embaló said he would come back to Guinea-Bissau. But on Thursday, the military high command said it refused his return, citing national security, public order and the need to preserve social stability.",
+      "url": "https://www.africanews.com/2026/10/02/guinea-bissau-junta-blocks-embalos-planned-return-citing-security-concerns/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T07:52:03.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 24.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "458a796cc50f6faf",
+      "category": "world",
+      "title": "New York governor condemns handling of Cornell rape case",
+      "summary": "An 2024 alleged gang rape at the prestigious Cornell University has gained national attention after the accuser, identified only as Jane Doe, filed a lawsuit. A special prosecutor has been appointed to handle the case.",
+      "url": "https://www.dw.com/en/new-york-governor-condemns-handling-of-cornell-rape-case/a-79525431?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T19:09:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 24.6,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "30558fd9841164d4",
+      "category": "ai",
+      "title": "GPU-Initiated Communication: Dissecting Down to the Bone",
+      "summary": "GPU-initiated communication lets GPU threads post RDMA operations directly to the NIC. It underpins NVSHMEM, NCCL GIN, and DeepEP, which serve the fine-grained, latency-critical communication of Mixture-of-Experts (MoE) models, yet its performance characteristics and optimizations remain scarcely documented beyond source code, and library comparisons fail to separate the costs of the hardware mechanism from those of the library around it. This paper dissects GPU-initiated communication at the GPU-NIC boundary. We f",
+      "url": "https://arxiv.org/abs/2610.01380v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-01T09:46:08.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 24.2,
+      "topics": [
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "c765707cfe3a42e4",
+      "category": "finance",
+      "title": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+      "summary": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T20:45:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 24,
+      "topics": []
+    },
+    {
+      "id": "13b84d8b6a4e1126",
+      "category": "world",
+      "title": "Iraq grants Iranian airlines 40 daily Najaf flights after US exemption",
+      "summary": "Mahan Air is excluded from the agreement as Baghdad says Washington granted its request for a waiver.",
+      "url": "https://www.aljazeera.com/news/2026/10/2/iraq-grants-iranian-airlines-40-daily-najaf-flights-after-us-exemption?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T20:32:02.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "3ff2bf43397626dd",
+      "category": "world",
+      "title": "California leads lawsuit against Trump fuel efficiency standards rollback",
+      "summary": "Lawsuit alleges NHTSA contravenes its congressional mandate to set fuel-economy standards at 'maximum feasible' .",
+      "url": "https://www.aljazeera.com/economy/2026/10/2/california-leads-lawsuit-against-trump-fuel-efficiency-standards-rollback?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T20:28:07.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "0cd0aebdd04b9ff3",
+      "category": "finance",
+      "title": "G7 to release 100 million barrels of oil and diesel after Trump export ban threat",
+      "summary": "The coordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports.",
+      "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T20:25:19.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "dc853a0f67b47f36",
+      "category": "world",
+      "title": "Could conflict in Ethiopia expand across the region?",
+      "summary": "Addis Ababa accuses Egypt, Eritrea and Sudan of backing armed groups.",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/2/could-conflict-in-ethiopia-expand-across-the-region?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T20:17:50.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "d3ae601d874ba553",
+      "category": "world",
+      "title": "UN Member States weigh latest Security Council veto, this time on Iran",
+      "summary": "The General Assembly met on Thursday to examine the Security Council’s latest veto, cast by China and Russia over a United States-backed sanctions panel of experts on Iran nuclear facilities.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168505",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-01T12:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "c0d6d472dc57fa03",
+      "category": "ai",
+      "title": "RapidMoE: Exploiting Cross-Asymmetry via Adaptive Residual Offloading for Large-Scale MoE Inference",
+      "summary": "The widespread adoption of Mixture-of-Experts (MoE) has created a growing need for deployment on heterogeneous platforms. However, it exposes a fundamental mismatch between the algorithmic demands of large-scale MoE and the disparate characteristics of hardware.Existing CPU-GPU hybrid inference systems fail to resolve this as they either encounter PCIe bandwidth bottlenecks when loading experts to GPUs, or rely heavily on CPU computation. Consequently, this leads to low resource utilization and inevitable violation",
+      "url": "https://arxiv.org/abs/2610.01265v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-01T08:02:24.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.8,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "b8cb3498af23cc67",
+      "category": "ai",
+      "title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
+      "summary": "GPT-6 Astra Ultrafast, running on NVIDIA Blackwell GPUs, is available now in the OpenAI API and to eligible ChatGPT Work and Codex users. Accelerated by inference optimizations through OpenAI’s models that tap into the capabilities of the NVIDIA Blackwell architecture, Ultrafast offers up to 8x faster token generation than the Astra Standard mode. For developers, […]",
+      "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T23:44:13.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.7,
+      "topics": [
+        "inference",
+        "hardware"
+      ]
+    },
+    {
+      "id": "8bb1ff6e0b026201",
+      "category": "finance",
+      "title": "Dutch eyewear chain Hans Anders halts sale of Meta glasses, citing privacy concerns",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/dutch-eyewear-chain-hans-anders-halts-sale-meta-glasses-citing-privacy-concerns-6427331",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T15:14:12.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "4719b5b753efc1d7",
+      "category": "world",
+      "title": "French Unrest: Are we witnessing a new 'Yellow Vests' movement?",
+      "summary": "It's been 18 days since we first reported on isolated cases of schools protests at a high school in Rennes in Brittany, in Caen in Normandy and Villeneueve d'Asque on the suburbs of Lille. The complaints were similar in theme, overloaded timetables, staffing problems, poor facilities. It spread to Saint Denis and Creteil on the outskirts of Paris days later, one interview with the students was sen 1.4 million times on TikTok. It gathered pace, and morphed into what we've seen throughout the week, hundreds of protes",
+      "url": "https://www.france24.com/en/tv-shows/spotlight/20261002-french-unrest-are-we-witnessing-a-new-yellow-vests-movement",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T18:54:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "b3467accfa8c8006",
+      "category": "world",
+      "title": "'Make our streets safer!' Mass women's protests sweep India over sexual violence",
+      "summary": "In India, thousands of women have been taking to the streets calling for better protection of female students, following the suspected gang rape of a 17-year-old girl. The alleged incident in an upscale neighbourhood of New Delhi prompted authorities to beef up protective measures, but the women say limiting their access to public spaces is not the answer.",
+      "url": "https://www.france24.com/en/tv-shows/access-asia/20261002-make-our-streets-safer-mass-women-s-protests-sweep-india-over-sexual-violence",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T14:57:07.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.5,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "cb4825003faaf9c2",
+      "category": "ai",
+      "title": "Release v0.7.1rc2",
+      "summary": "Full Changelog : v0.7.1rc1...v0.7.1rc2",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.1rc2",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-02T01:57:43.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.3,
+      "topics": []
+    },
+    {
+      "id": "16fbdfb2cfd8b8bb",
+      "category": "world",
+      "title": "Woman at centre of Cornell rape inquiry was 'failed' by officials, says New York governor",
+      "summary": "The woman, known as Jane Doe, alleges she was raped by seven students at a fraternity house at the university in 2024.",
+      "url": "https://www.bbc.co.uk/news/articles/cqvg04718lr9o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T17:44:08.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "3b3486b9788b5e34",
+      "category": "world",
+      "title": "The G7 will release 100 million reserve barrels of diesel fuel over the next 4 months",
+      "summary": "After increased pressure from Washington, the G7 held an emergency meeting on energy. The world's wealthiest nations say they will release 100 million barrels of oil and diesel fuel in their reserves.",
+      "url": "https://www.npr.org/2026/10/02/nx-s1-5989397/the-g7-will-release-100-million-reserve-barrels-of-diesel-fuel-over-the-next-4-months",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T20:23:49.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "495e52fc93ccbeb1",
+      "category": "world",
+      "title": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
+      "summary": "The diplomatic fallout comes as Ethiopian forces battle rebel fighters across its northern region.",
+      "url": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T16:08:25.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "312d8ab8fe392421",
+      "category": "world",
+      "title": "Israel's top court allows Arab parties to run in election",
+      "summary": "The ruling overturns a move by the Central Elections Committee to ban four parties. The conservative Muslim Ra'am party could serve as the kingmaker following the next elections.",
+      "url": "https://www.dw.com/en/israel-s-top-court-allows-arab-parties-to-run-in-election/a-79519184?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T15:53:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "598612efb26d75c0",
+      "category": "finance",
+      "title": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "summary": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T15:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "214cce99f89a3be6",
+      "category": "technology",
+      "title": "US arrests tech CEO accused of smuggling $300M in Nvidia chips into China",
+      "summary": "Nvidia’s chip-smuggling problem won’t go away as arrests continue.",
+      "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T18:39:36.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "b3166f30e198255b",
+      "category": "finance",
+      "title": "US jobs market sees sharp slowdown ahead of midterm elections",
+      "summary": "Unemployment rose slightly as American employers paused hiring with midterm elections just a month away.",
+      "url": "https://www.bbc.co.uk/news/articles/cm2d6gg0642yo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T14:30:48.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "5a273f1f917b2e23",
+      "category": "finance",
+      "title": "US job growth slows sharply in September; unemployment rate rises to 4.2%",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/world/us-job-growth-slows-sharply-in-september-unemployment-rate-rises-42-6426996",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T14:17:50.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "f8618fcc80685b7c",
+      "category": "technology",
+      "title": "Research roundup: 6 cool science stories we almost missed",
+      "summary": "Also: Spooky action at the LHC, Ice Age psychoactive use, yeast for building homes on Mars, and more.",
+      "url": "https://arstechnica.com/science/2026/10/research-roundup-6-cool-science-stories-we-almost-missed-6/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T18:17:27.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.3,
+      "topics": []
+    },
+    {
+      "id": "40105216ecd2d0ec",
+      "category": "technology",
+      "title": "US military ends long-running program to spot nuclear missile launches",
+      "summary": "A newer program has been operational since 2011, and the next generation could launch within 12 months.",
+      "url": "https://arstechnica.com/space/2026/10/us-military-ends-long-running-program-to-spot-nuclear-missile-launches/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T17:32:14.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.2,
+      "topics": []
+    },
+    {
+      "id": "baf5c27603a6a050",
+      "category": "finance",
+      "title": "New free repair shop to launch in Oxford",
+      "summary": "Organisers hope the initiative will attract enough interest to continue on a monthly basis.",
+      "url": "https://www.bbc.co.uk/news/articles/c574e41mg770o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T13:17:48.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.1,
+      "topics": []
+    },
+    {
+      "id": "ad6e169dd5e4994d",
+      "category": "ai",
+      "title": "NVIDIA DGX Spark 64GB Gives Developers More Ways to Build and Scale Local AI",
+      "summary": "Local AI is becoming more useful by the token. As AI agents move from experiments into everyday development, increasingly capable open models are shrinking to fit on more devices, giving builders more to run locally. Coming this month, NVIDIA DGX Spark will be available with 64GB of unified memory from top manufacturer partners — Acer, […]",
+      "url": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T13:00:39.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22,
+      "topics": []
+    },
+    {
+      "id": "8817d77c6a366bb5",
+      "category": "finance",
+      "title": "G7 countries say they will release '100 million barrels' of diesel and crude",
+      "summary": "The United States has upped pressure on Europe to release its strategic reserves by threatening a diesel export ban.",
+      "url": "https://www.channelnewsasia.com/world/g7-countries-say-they-will-release-100-million-barrels-diesel-and-crude-6427026",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T12:56:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22,
+      "topics": []
+    },
+    {
+      "id": "589e2ef191a8812c",
+      "category": "ai",
+      "title": "Pope Leo XIV is not a fan of AI-generated art",
+      "summary": "\"There is an ontological difference, even before an aesthetic one, between art and what a machine can generate through statistical calculation based on millions of images created by others,\" the pope wrote. \"Algorithms lack the spark of humanity.\"",
+      "url": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T15:39:41.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 21.7,
+      "topics": []
+    },
+    {
+      "id": "4bfd7d24b6cf5c02",
+      "category": "finance",
+      "title": "Boris Vujčić: Resilience, integration and competitiveness: building the future of European banking",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261002_1~419efe18e0.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T11:30:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 21.7,
+      "topics": []
+    },
+    {
+      "id": "8bb19247fa24f79d",
+      "category": "finance",
+      "title": "Average Contract Interest Rates on Loans and Discounts (Aug.)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/dl/loan/yaku/yaku2608.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-01T23:50:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 21.7,
+      "topics": []
+    },
+    {
+      "id": "d8cca8e0ac7e9d76",
+      "category": "ai",
+      "title": "v0.31.0rc4",
+      "summary": "[Bugfix][HiSparse] Fix MTP acceptance collapse under FULL graphs with…",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0rc4",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-02T06:06:56.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 21.3,
+      "topics": []
+    },
+    {
+      "id": "7110f90fa9802e4a",
+      "category": "technology",
+      "title": "Fine-Tuning NVIDIA Nemotron for Saudi Arabic Dialects, with a Path to Other Languages",
+      "summary": "Automatic speech recognition must handle how people actually speak, not only the languages and styles that dominate pretraining data. Regional dialects and...",
+      "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-path-to-other-languages/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-01T05:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 21,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "1d7b3aa56f4dcb3a",
+      "category": "finance",
+      "title": "Appointment of members of the Enforcement Decision Making Committee (EDMC)",
+      "summary": "Following an external recruitment process, the Bank of England has appointed Carlos Conceicao and Alexander Justham as members of its Enforcement Decision Making Committee, with effect from September 2026.",
+      "url": "https://www.bankofengland.co.uk/news/2026/october/appointment-of-members-of-the-edmc",
+      "source": "Bank of England",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T08:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 19.8,
+      "topics": []
+    },
+    {
+      "id": "093df7d843272869",
+      "category": "finance",
+      "title": "Japanese Government Bonds Held by the Bank of Japan",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei260930.xlsx",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T08:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 19.8,
+      "topics": []
+    },
+    {
+      "id": "8854c89640048018",
+      "category": "finance",
+      "title": "Collateral Accepted by the Bank of Japan (End of Sept.)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/col/col2609.xlsx",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T08:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 19.8,
+      "topics": []
+    },
+    {
+      "id": "8b53acb416a811fc",
+      "category": "ai",
+      "title": "v0.31.0rc3: [Model Runner V2] Support randomized dummy inputs (#58411)",
+      "summary": "Signed-off-by: Robert Shaw robshaw@redhat.com Co-authored-by: Robert Shaw robshaw@redhat.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com Co-authored-by: mergify[bot] Co-authored-by: Nick Hill nickhill123@gmail.com (cherry picked from commit e5e38ba )",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0rc3",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-01T07:54:39.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 19.8,
+      "topics": []
+    },
+    {
+      "id": "fe2e74034e8d006f",
+      "category": "technology",
+      "title": "Build Applications on NVIDIA BlueField Faster with NVIDIA DOCA Agent Skills",
+      "summary": "AI agents are becoming a standard part of development workflows, but general-purpose agents weren't built with specialized infrastructure software such as...",
+      "url": "https://developer.nvidia.com/blog/build-applications-on-nvidia-bluefield-faster-with-nvidia-doca-agent-skills/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-01T18:13:29.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 19.3,
+      "topics": []
+    },
+    {
+      "id": "9c4809c6355ed9f1",
+      "category": "finance",
+      "title": "Minutes of the Meeting of the Court of Directors held on 16 July 2026",
+      "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members.",
+      "url": "https://www.bankofengland.co.uk/minutes/2026/july/court-minutes-16-july-2026",
+      "source": "Bank of England",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-01T13:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 19,
+      "topics": []
+    },
+    {
+      "id": "97e8aa2c23d6ad0a",
+      "category": "ai",
+      "title": "Affected by layoffs? Don’t miss this $75 deal for your TechCrunch Disrupt 2026 Expo+ Pass",
+      "summary": "Your next opportunity could be one conversation away. Get your Expo+ Pass for just $75. Limited to the first 100 qualifying people.",
+      "url": "https://techcrunch.com/2026/10/02/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T19:15:51.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 18.6,
+      "topics": []
+    },
+    {
+      "id": "414a4a4e0a5bdc55",
+      "category": "ai",
+      "title": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
+      "summary": "Apple says it will add new controls around macOS’s Full Disk Access permission, warning that increasingly capable AI agents make broad access to users’ files, messages, mail, and browsing history riskier.",
+      "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T18:11:27.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 18.3,
+      "topics": []
+    },
+    {
+      "id": "b4aadae4a397fd05",
+      "category": "ai",
+      "title": "Fall Into 25 New Games on GeForce NOW This October",
+      "summary": "Spooky season is streaming in. Alongside falling leaves, pumpkin spice and everything nice, 25 new games are joining GeForce NOW throughout October, including six ready to play this week. From a new CONTROL Resonant reward for Performance and Ultimate members to The Witcher 3: Wild Hunt – Remastered joining the cloud, this GFN Thursday is […]",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-october-2026-games-list/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-01T13:00:54.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 12,
+      "topics": []
     },
     {
       "id": "bde27d161cb6bb1b",
@@ -651,38 +1471,6 @@
       ]
     },
     {
-      "id": "c77c99d812eac3a5",
-      "category": "finance",
-      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261002~54c6b5672b.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 27.5,
-      "topics": []
-    },
-    {
-      "id": "562cda311e5f3901",
-      "category": "ai",
-      "title": "MoE-CORE: Coordinated Expert Offloading and Residency for Memory-Constrained MoE Inference",
-      "summary": "Sparse expert activation reduces MoE models' computation, yet expert weights can exceed limited device memory. Offloading makes inference feasible on a compact AI appliance but exposes host-to-device transfers to the inference path. We present MoE-CORE, a system that coordinates expert offloading and residency for memory-constrained MoE inference. It stages complete expert layers in alternating buffers during prefill. During decode, it combines nonuniform layer-wise cache capacity, domain-informed initialization, r",
-      "url": "https://arxiv.org/abs/2610.01950v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-01T16:11:45.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 27.3,
-      "topics": [
-        "inference",
-        "hardware",
-        "models"
-      ]
-    },
-    {
       "id": "42a4b535f9774ee2",
       "category": "world",
       "title": "India news: Delhi protesters turn up heat on election chief, police tightens security",
@@ -694,55 +1482,6 @@
       "publishedAt": "2026-10-02T07:02:00.000Z",
       "fetchedAt": "2026-10-02T14:55:56.482Z",
       "score": 27,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "7be885d13bdc5309",
-      "category": "world",
-      "title": "Guinea-Bissau junta blocks Embaló’s planned return, citing security concerns",
-      "summary": "Earlier this week, former president Umaro Sissoco Embaló said he would come back to Guinea-Bissau. But on Thursday, the military high command said it refused his return, citing national security, public order and the need to preserve social stability.",
-      "url": "https://www.africanews.com/2026/10/02/guinea-bissau-junta-blocks-embalos-planned-return-citing-security-concerns/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T07:52:03.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 26.2,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "30558fd9841164d4",
-      "category": "ai",
-      "title": "GPU-Initiated Communication: Dissecting Down to the Bone",
-      "summary": "GPU-initiated communication lets GPU threads post RDMA operations directly to the NIC. It underpins NVSHMEM, NCCL GIN, and DeepEP, which serve the fine-grained, latency-critical communication of Mixture-of-Experts (MoE) models, yet its performance characteristics and optimizations remain scarcely documented beyond source code, and library comparisons fail to separate the costs of the hardware mechanism from those of the library around it. This paper dissects GPU-initiated communication at the GPU-NIC boundary. We f",
-      "url": "https://arxiv.org/abs/2610.01380v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-01T09:46:08.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 25.7,
-      "topics": [
-        "hardware",
-        "models"
-      ]
-    },
-    {
-      "id": "d3ae601d874ba553",
-      "category": "world",
-      "title": "UN Member States weigh latest Security Council veto, this time on Iran",
-      "summary": "The General Assembly met on Thursday to examine the Security Council’s latest veto, cast by China and Russia over a United States-backed sanctions panel of experts on Iran nuclear facilities.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168505",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-01T12:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 25.3,
       "topics": [
         "security"
       ]
@@ -764,41 +1503,6 @@
       ]
     },
     {
-      "id": "c0d6d472dc57fa03",
-      "category": "ai",
-      "title": "RapidMoE: Exploiting Cross-Asymmetry via Adaptive Residual Offloading for Large-Scale MoE Inference",
-      "summary": "The widespread adoption of Mixture-of-Experts (MoE) has created a growing need for deployment on heterogeneous platforms. However, it exposes a fundamental mismatch between the algorithmic demands of large-scale MoE and the disparate characteristics of hardware.Existing CPU-GPU hybrid inference systems fail to resolve this as they either encounter PCIe bandwidth bottlenecks when loading experts to GPUs, or rely heavily on CPU computation. Consequently, this leads to low resource utilization and inevitable violation",
-      "url": "https://arxiv.org/abs/2610.01265v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-01T08:02:24.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 25.3,
-      "topics": [
-        "inference",
-        "hardware",
-        "models"
-      ]
-    },
-    {
-      "id": "b8cb3498af23cc67",
-      "category": "ai",
-      "title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
-      "summary": "GPT-6 Astra Ultrafast, running on NVIDIA Blackwell GPUs, is available now in the OpenAI API and to eligible ChatGPT Work and Codex users. Accelerated by inference optimizations through OpenAI’s models that tap into the capabilities of the NVIDIA Blackwell architecture, Ultrafast offers up to 8x faster token generation than the Astra Standard mode. For developers, […]",
-      "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-01T23:44:13.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 25.2,
-      "topics": [
-        "inference",
-        "hardware"
-      ]
-    },
-    {
       "id": "93f8a741a00a2ec2",
       "category": "ai",
       "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
@@ -813,20 +1517,6 @@
       "topics": [
         "training"
       ]
-    },
-    {
-      "id": "cb4825003faaf9c2",
-      "category": "ai",
-      "title": "Release v0.7.1rc2",
-      "summary": "Full Changelog : v0.7.1rc1...v0.7.1rc2",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.1rc2",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-02T01:57:43.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 24.8,
-      "topics": []
     },
     {
       "id": "b1d704b7a112e586",
@@ -859,20 +1549,6 @@
       "topics": []
     },
     {
-      "id": "b3166f30e198255b",
-      "category": "finance",
-      "title": "US jobs market sees sharp slowdown ahead of midterm elections",
-      "summary": "Unemployment rose slightly as American employers paused hiring with midterm elections just a month away.",
-      "url": "https://www.bbc.co.uk/news/articles/cm2d6gg0642yo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T14:30:48.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.9,
-      "topics": []
-    },
-    {
       "id": "afd68305707f3f6a",
       "category": "world",
       "title": "Argentina launches cash-for-citizenship scheme",
@@ -884,20 +1560,6 @@
       "publishedAt": "2026-10-02T14:26:00.000Z",
       "fetchedAt": "2026-10-02T14:55:56.482Z",
       "score": 23.9,
-      "topics": []
-    },
-    {
-      "id": "5a273f1f917b2e23",
-      "category": "finance",
-      "title": "US job growth slows sharply in September; unemployment rate rises to 4.2%",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/world/us-job-growth-slows-sharply-in-september-unemployment-rate-rises-42-6426996",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T14:17:50.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.8,
       "topics": []
     },
     {
@@ -987,34 +1649,6 @@
       "topics": []
     },
     {
-      "id": "baf5c27603a6a050",
-      "category": "finance",
-      "title": "New free repair shop to launch in Oxford",
-      "summary": "Organisers hope the initiative will attract enough interest to continue on a monthly basis.",
-      "url": "https://www.bbc.co.uk/news/articles/c574e41mg770o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T13:17:48.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.6,
-      "topics": []
-    },
-    {
-      "id": "ad6e169dd5e4994d",
-      "category": "ai",
-      "title": "NVIDIA DGX Spark 64GB Gives Developers More Ways to Build and Scale Local AI",
-      "summary": "Local AI is becoming more useful by the token. As AI agents move from experiments into everyday development, increasingly capable open models are shrinking to fit on more devices, giving builders more to run locally. Coming this month, NVIDIA DGX Spark will be available with 64GB of unified memory from top manufacturer partners — Acer, […]",
-      "url": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T13:00:39.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.5,
-      "topics": []
-    },
-    {
       "id": "f9e1a8212bf02356",
       "category": "world",
       "title": "'Sad exit': Portugal fans mourn hinted end of Ronaldo era",
@@ -1091,34 +1725,6 @@
       "topics": []
     },
     {
-      "id": "8bb19247fa24f79d",
-      "category": "finance",
-      "title": "Average Contract Interest Rates on Loans and Discounts (Aug.)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/dl/loan/yaku/yaku2608.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-01T23:50:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.2,
-      "topics": []
-    },
-    {
-      "id": "4bfd7d24b6cf5c02",
-      "category": "finance",
-      "title": "Boris Vujčić: Resilience, integration and competitiveness: building the future of European banking",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261002_1~419efe18e0.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-02T11:30:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.1,
-      "topics": []
-    },
-    {
       "id": "9a41a3548bb6499c",
       "category": "finance",
       "title": "UK diesel price hits £2 a litre as US calls for Europe to release more stocks",
@@ -1130,34 +1736,6 @@
       "publishedAt": "2026-10-02T11:17:31.000Z",
       "fetchedAt": "2026-10-02T14:55:56.482Z",
       "score": 23.1,
-      "topics": []
-    },
-    {
-      "id": "495e52fc93ccbeb1",
-      "category": "world",
-      "title": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
-      "summary": "The diplomatic fallout comes as Ethiopian forces battle rebel fighters across its northern region.",
-      "url": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T10:04:56.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 22.8,
-      "topics": []
-    },
-    {
-      "id": "d8cca8e0ac7e9d76",
-      "category": "ai",
-      "title": "v0.31.0rc4",
-      "summary": "[Bugfix][HiSparse] Fix MTP acceptance collapse under FULL graphs with…",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0rc4",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-02T06:06:56.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 22.8,
       "topics": []
     },
     {
@@ -1173,22 +1751,6 @@
       "fetchedAt": "2026-10-02T14:55:56.482Z",
       "score": 22.6,
       "topics": []
-    },
-    {
-      "id": "7110f90fa9802e4a",
-      "category": "technology",
-      "title": "Fine-Tuning NVIDIA Nemotron for Saudi Arabic Dialects, with a Path to Other Languages",
-      "summary": "Automatic speech recognition must handle how people actually speak, not only the languages and styles that dominate pretraining data. Regional dialects and...",
-      "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-for-saudi-arabic-dialects-with-a-path-to-other-languages/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-01T05:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 22.5,
-      "topics": [
-        "training"
-      ]
     },
     {
       "id": "21f135aeaab2ab92",
@@ -1260,90 +1822,6 @@
         "models",
         "training"
       ]
-    },
-    {
-      "id": "1d7b3aa56f4dcb3a",
-      "category": "finance",
-      "title": "Appointment of members of the Enforcement Decision Making Committee (EDMC)",
-      "summary": "Following an external recruitment process, the Bank of England has appointed Carlos Conceicao and Alexander Justham as members of its Enforcement Decision Making Committee, with effect from September 2026.",
-      "url": "https://www.bankofengland.co.uk/news/2026/october/appointment-of-members-of-the-edmc",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 21.3,
-      "topics": []
-    },
-    {
-      "id": "093df7d843272869",
-      "category": "finance",
-      "title": "Japanese Government Bonds Held by the Bank of Japan",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei260930.xlsx",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 21.3,
-      "topics": []
-    },
-    {
-      "id": "8854c89640048018",
-      "category": "finance",
-      "title": "Collateral Accepted by the Bank of Japan (End of Sept.)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/boj/other/col/col2609.xlsx",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 21.3,
-      "topics": []
-    },
-    {
-      "id": "8b53acb416a811fc",
-      "category": "ai",
-      "title": "v0.31.0rc3: [Model Runner V2] Support randomized dummy inputs (#58411)",
-      "summary": "Signed-off-by: Robert Shaw robshaw@redhat.com Co-authored-by: Robert Shaw robshaw@redhat.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com Co-authored-by: mergify[bot] Co-authored-by: Nick Hill nickhill123@gmail.com (cherry picked from commit e5e38ba )",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0rc3",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-01T07:54:39.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 21.2,
-      "topics": []
-    },
-    {
-      "id": "fe2e74034e8d006f",
-      "category": "technology",
-      "title": "Build Applications on NVIDIA BlueField Faster with NVIDIA DOCA Agent Skills",
-      "summary": "AI agents are becoming a standard part of development workflows, but general-purpose agents weren't built with specialized infrastructure software such as...",
-      "url": "https://developer.nvidia.com/blog/build-applications-on-nvidia-bluefield-faster-with-nvidia-doca-agent-skills/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-01T18:13:29.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 20.8,
-      "topics": []
-    },
-    {
-      "id": "9c4809c6355ed9f1",
-      "category": "finance",
-      "title": "Minutes of the Meeting of the Court of Directors held on 16 July 2026",
-      "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members.",
-      "url": "https://www.bankofengland.co.uk/minutes/2026/july/court-minutes-16-july-2026",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-01T13:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 20.5,
-      "topics": []
     },
     {
       "id": "eaa4889220d1ab47",

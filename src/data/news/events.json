@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-10-02T14:55:56.482Z",
-    "releasesCollectedAt": "2026-10-02T14:56:10.215Z",
-    "libraryCollectedAt": "2026-10-02T14:55:56.482Z",
+    "dailyCollectedAt": "2026-10-02T20:53:34.767Z",
+    "releasesCollectedAt": "2026-10-02T20:53:43.287Z",
+    "libraryCollectedAt": "2026-10-02T20:53:34.767Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -38,7 +38,12 @@
     ],
     "missingArchiveDates": [],
     "failedSources": [
-      "Bank for International Settlements"
+      "FlashInfer Releases",
+      "SGLang Releases",
+      "TensorRT-LLM Releases",
+      "Transformers Releases",
+      "Triton Releases",
+      "vLLM Releases"
     ],
     "invalidItems": 27
   },
@@ -100,13 +105,13 @@
         },
         {
           "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21",
-          "title": "sglang · v0.5.21",
+          "title": "v0.5.21",
           "publisher": "SGLang Releases",
           "publisherCountry": "International",
-          "publishedAt": "2026-10-02T01:09:04.000Z",
+          "publishedAt": "2026-10-02T19:42:55.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-10-02T14:56:10.215Z",
-          "revisionCount": 1,
+          "lastCollectedAt": "2026-10-02T20:53:34.767Z",
+          "revisionCount": 2,
           "ruleIds": [
             "official-releases"
           ]
@@ -389,5 +394,5 @@
       ]
     }
   ],
-  "fingerprint": "6b472a5776bc416da1840a9db7e50ad293dfede90854e5d8ddbd89742e0d104b"
+  "fingerprint": "7f9172e8ddae38d03af0198b0c6d54f93e18d7870e817f35a9a8e67000a004ec"
 }

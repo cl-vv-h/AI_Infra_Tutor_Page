@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-02T14:55:56.482Z",
+  "generatedAt": "2026-10-02T20:53:34.767Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 38,
-  "failedSourceCount": 1,
+  "sourceCount": 39,
+  "failedSourceCount": 0,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 30,
-      "latestPublishedAt": "2026-10-02T14:01:09.000Z",
-      "selectedCount": 1,
+      "entryCount": 33,
+      "latestPublishedAt": "2026-10-02T17:44:08.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 52,
-      "latestPublishedAt": "2026-10-02T14:30:48.000Z",
+      "entryCount": 55,
+      "latestPublishedAt": "2026-10-02T20:25:19.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,8 +40,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 135,
-      "latestPublishedAt": "2026-10-02T14:29:00.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-02T20:38:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-02T14:14:18.000Z",
+      "latestPublishedAt": "2026-10-02T20:32:02.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-02T14:17:50.000Z",
+      "latestPublishedAt": "2026-10-02T18:50:20.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -80,7 +80,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-09-30T20:01:45.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 2
     },
     {
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-10-02T13:00:39.000Z",
-      "selectedCount": 2,
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -104,9 +104,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 19,
-      "latestPublishedAt": "2026-10-02T14:30:00.000Z",
-      "selectedCount": 2,
+      "entryCount": 20,
+      "latestPublishedAt": "2026-10-02T19:15:51.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-02T10:30:11.000Z",
+      "latestPublishedAt": "2026-10-02T20:30:27.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-02T04:05:00.000Z",
+      "latestPublishedAt": "2026-10-02T19:54:54.000Z",
       "selectedCount": 3,
       "libraryCount": 2
     },
@@ -158,7 +158,7 @@
       "channel": "feed",
       "entryCount": 15,
       "latestPublishedAt": "2026-10-02T13:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -170,8 +170,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-09-30T13:00:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-02T20:45:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -223,7 +223,7 @@
       "channel": "feed",
       "entryCount": 1,
       "latestPublishedAt": "2026-10-01T01:30:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -232,11 +232,10 @@
       "country": "International",
       "category": "finance",
       "type": "institution",
-      "state": "unavailable",
+      "state": "ok",
       "channel": "feed",
-      "httpStatus": 503,
-      "entryCount": 0,
-      "latestPublishedAt": null,
+      "entryCount": 10,
+      "latestPublishedAt": "2026-10-01T00:00:00.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -262,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-02T14:39:34.000Z",
+      "latestPublishedAt": "2026-10-02T19:31:27.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -275,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-02T14:37:27.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-02T20:23:49.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -288,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-02T14:03:18.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-02T18:54:19.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -301,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-02T01:36:00.000Z",
+      "latestPublishedAt": "2026-10-02T19:06:17.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -314,7 +313,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 872,
-      "latestPublishedAt": "2026-10-02T04:01:31.000Z",
+      "latestPublishedAt": "2026-10-02T15:19:50.000Z",
       "selectedCount": 2,
       "libraryCount": 8
     },
@@ -340,8 +339,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-09-29T18:38:27.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-02T14:57:41.000Z",
+      "selectedCount": 1,
       "libraryCount": 2
     },
     {
@@ -353,7 +352,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-02T01:09:04.000Z",
+      "latestPublishedAt": "2026-10-02T19:42:55.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -380,7 +379,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-02T01:57:43.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -418,8 +417,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-01T22:26:57.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-02T19:55:07.000Z",
+      "selectedCount": 3,
       "libraryCount": 8
     },
     {
@@ -457,7 +456,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-02T13:28:10.000Z",
+      "latestPublishedAt": "2026-10-02T16:13:45.000Z",
       "selectedCount": 3,
       "libraryCount": 8
     },
@@ -484,7 +483,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-09-30T16:46:27.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -516,6 +515,44 @@
   ],
   "items": [
     {
+      "id": "c1f4855d2c7bf970",
+      "category": "technology",
+      "title": "Building a High-Performance and Portable vLLM Linear Backend with Helion",
+      "summary": "TL;DR We integrated Helion into vLLM’s linear backend to explore how an autotuned, high-level kernel DSL can improve LLM inference performance while reducing kernel implementation complexity. A single Helion general...",
+      "url": "https://pytorch.org/blog/building-a-high-performance-and-portable-vllm-linear-backend-with-helion/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-02T19:55:07.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 34.8,
+      "topics": [
+        "inference",
+        "kernels"
+      ]
+    },
+    {
+      "id": "6b20f74f0433f6f9",
+      "category": "ai",
+      "title": "v0.5.21",
+      "summary": "Highlights 779 PRs from 227 contributors. New models Model Type Cookbook DeepSeek-V4.1 Flash LLM / VLM link GigaChat 3.5 LLM / VLM link IQuest-Q1 LLM / VLM link MiMo-V2.6 / MiMo-V2.6-Pro LLM / VLM link Ling-3.0-flash-VL LLM / VLM link DiffusionGemma Diffusion link Qwen-Image 2.1 Diffusion link Anima Base v1.0 Diffusion link Ming-Image 0.1 Design / Design-Layer Diffusion link FLUX 3 Action Diffusion link Key features PD instances can switch between prefill and decode on the fly, no restart needed ( #28403 ). The pre",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21",
+      "source": "SGLang Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-02T19:42:55.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 33.7,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ]
+    },
+    {
       "id": "348c80fb57e4ba2d",
       "category": "technology",
       "title": "Introducing Web Search API via AI Gateway",
@@ -525,8 +562,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:28:10.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 33.6,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 32.1,
       "topics": [
         "inference"
       ]
@@ -541,8 +578,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 33.5,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 32,
       "topics": [
         "security"
       ]
@@ -557,8 +594,40 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 33.5,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 32,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "a6c3345bae9f8ca6",
+      "category": "world",
+      "title": "World News in Brief: Cycle of violence continues in Haiti, seafarer deaths off Somalia, food insecurity in the Middle East",
+      "summary": "Haitians remain in the grip of lethal gang violence as it continues to “adapt and expand”, the UN’s top rights official, Volker Türk, said on Friday.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168511",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 29.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "14e72ca72286218a",
+      "category": "world",
+      "title": "Escalating fighting in Yemen deepens food security crisis",
+      "summary": "Renewed conflict in Yemen has triggered a surge in hunger that could have consequences in the wider region and beyond, the World Food Programme (WFP) warned on Friday.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168509",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T12:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 29.8,
       "topics": [
         "security"
       ]
@@ -573,8 +642,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T22:26:57.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 30.9,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 29.4,
       "topics": [
         "kernels",
         "hardware",
@@ -582,25 +651,46 @@
       ]
     },
     {
-      "id": "6b20f74f0433f6f9",
+      "id": "d20fa7036a0ae1e2",
+      "category": "technology",
+      "title": "Heading Home: NASA’s SpaceX Crew-12 Concludes Station Science Mission",
+      "summary": "NASA’s SpaceX Crew-12 mission is ending, with the crew scheduled to return in early October. NASA astronauts Jessica Meir and Jack Hathaway, ESA (European Space Agency) astronaut Sophie Adenot, and Roscosmos cosmonaut Andrey Fedyaev will head home from the International Space Station after supporting research that benefits life on Earth and prepares humans for missions […]",
+      "url": "https://www.nasa.gov/missions/station/iss-research/heading-home-nasas-spacex-crew-12-concludes-station-science-mission/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-02T19:30:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 28.7,
+      "topics": []
+    },
+    {
+      "id": "49b0ccecb4645d0e",
       "category": "ai",
-      "title": "v0.5.21",
-      "summary": "Highlights 779 PRs from 227 contributors. New models Model Type Cookbook DeepSeek-V4.1 Flash LLM / VLM link GigaChat 3.5 LLM / VLM link IQuest-Q1 LLM / VLM link MiMo-V2.6 / MiMo-V2.6-Pro LLM / VLM link Ling-3.0-flash-VL LLM / VLM link DiffusionGemma Diffusion link Qwen-Image 2.1 Diffusion link Anima Base v1.0 Diffusion link Ming-Image 0.1 Design / Design-Layer Diffusion link FLUX 3 Action Diffusion link Key features PD instances can switch between prefill and decode on the fly, no restart needed ( #28403 ). The pre",
-      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21",
-      "source": "SGLang Releases",
+      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+      "summary": "",
+      "url": "https://huggingface.co/blog/allenai/astabrief",
+      "source": "Hugging Face Blog",
       "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-02T01:09:04.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 30.6,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training",
-        "security"
-      ]
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-02T15:19:50.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 28.6,
+      "topics": []
+    },
+    {
+      "id": "fca470f45f5704a8",
+      "category": "ai",
+      "title": "Toward provably private learning from federated data",
+      "summary": "Mobile Systems",
+      "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-02T14:57:41.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 28.5,
+      "topics": []
     },
     {
       "id": "6a64042121ee9552",
@@ -612,10 +702,68 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T17:59:27.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 29.8,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 28.3,
       "topics": [
         "inference"
+      ]
+    },
+    {
+      "id": "346081a05bd56efc",
+      "category": "technology",
+      "title": "NASA Campaign Explores Clouds Spawned by Wildfires",
+      "summary": "The Wildhorse grass fire in eastern Idaho erupted with a massive pulse of smoke. No one had expected it, but the wildfire had launched what’s known as a pyrocumulonimbus cloud, or pyroCb. It was an elusive weather phenomenon that scientists on NASA’s INSPYRE (INjected Smoke and PYRocumulonimbus Experiment) campaign spent weeks this summer hunting across […]",
+      "url": "https://science.nasa.gov/earth/natural-disasters/wildfires/nasa-campaign-explores-clouds-spawned-by-wildfires/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-02T16:34:57.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 27.9,
+      "topics": []
+    },
+    {
+      "id": "966d10cbc1dc14d1",
+      "category": "finance",
+      "title": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+      "summary": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T20:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 27.8,
+      "topics": []
+    },
+    {
+      "id": "746dc35dc6ad9282",
+      "category": "technology",
+      "title": "NASA Model Wing Lights Up During First Pressure Sensitive Paint Tests",
+      "summary": "Groundbreaking tests at NASA’s Langley Research Center in Hampton, Virginia, are paving the way for new wind tunnel capabilities for designing the aircraft technologies of the future. In a first-of-its-kind test in NASA Langley’s Transonic Dynamics Tunnel, researchers used unsteady Pressure Sensitive Paint to study how air flows around a standard wind tunnel model known […]",
+      "url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-model-wing-lights-up-during-first-pressure-sensitive-paint-tests/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-02T16:10:55.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 27.8,
+      "topics": []
+    },
+    {
+      "id": "9c0a5184c790f15e",
+      "category": "world",
+      "title": "'We have to close defence gaps urgently': EU Parliament Foreign Affairs Committee chief McAllister",
+      "summary": "We sit down with David McAllister, the chair of the European Parliament’s Foreign Affairs Committee. He talks to us about the security threats facing Europe, and what defence gaps the EU urgently needs to close. For McAllister, the EU is \"not at war with the Russian Federation, but we are no longer at peace with Russia\". He also believes that the EU is not, as yet, capable of making sovereign decisions in certain areas of defence \"because we are too dependent on US capabilities.\"",
+      "url": "https://www.france24.com/en/tv-shows/talking-europe/20261002-we-have-to-close-defence-gaps-urgently-eu-parliament-foreign-affairs-committee-chief-mcallister",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T15:57:55.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 27.8,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -628,24 +776,24 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T04:01:31.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 28.3,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 26.8,
       "topics": [
         "training"
       ]
     },
     {
-      "id": "bde27d161cb6bb1b",
+      "id": "a41723ad91a9419f",
       "category": "world",
-      "title": "'America is leaving Iraq, but Iran isn't: Withdrawal a massive strategic and tactical mistake'",
-      "summary": "Erin Ogunkeye is pleased to welcome Bamo Nouri, investigative journalist and also Honorary Research Fellow with the Department of International Politics at City Saint George's University of London. He sees the end of the American military presence in Iraq as a profound shift in the balance of power inside the country. For him, the central question is not whether Iraq has formally regained sovereignty, but whether it possesses the political cohesion, security capacity and economic independence necessary to exercise ",
-      "url": "https://www.france24.com/en/video/20261002-america-is-leaving-iraq-but-iran-isn-t-withdrawal-a-massive-strategic-and-tactical-mistake-1",
-      "source": "France 24",
-      "sourceCountry": "France",
+      "title": "UN issues call to action on world's vital dryland forests",
+      "summary": "The United Nations is issuing an urgent call to action on the world’s dryland forests - areas that sustain the food security and cultural identity of more than two billion people.",
+      "url": "https://www.africanews.com/2026/10/02/un-issues-call-to-action-on-worlds-vital-dryland-forests/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
       "sourceType": "news",
-      "publishedAt": "2026-10-02T10:11:15.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 27.8,
+      "publishedAt": "2026-10-02T15:20:05.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 26.6,
       "topics": [
         "security"
       ]
@@ -660,8 +808,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 27.5,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 26,
       "topics": []
     },
     {
@@ -674,8 +822,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-01T16:11:45.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 27.3,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 25.8,
       "topics": [
         "inference",
         "hardware",
@@ -683,20 +831,18 @@
       ]
     },
     {
-      "id": "42a4b535f9774ee2",
-      "category": "world",
-      "title": "India news: Delhi protesters turn up heat on election chief, police tightens security",
-      "summary": "Hundreds have gathered in central Delhi to demand the resignation of India's Chief Election Commissioner Gyanesh Kumar, over the deletion of voters from electoral rolls. Follow DW.",
-      "url": "https://www.dw.com/en/india-news-delhi-protesters-turn-up-heat-on-election-chief-police-tightens-security/live-79509860?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T07:02:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 27,
-      "topics": [
-        "security"
-      ]
+      "id": "99b94a39a7a44421",
+      "category": "technology",
+      "title": "New Pathway to PyTorch Certified Associate (PTCA) Certification",
+      "summary": "We’re excited to bring you the new PyTorch Certified Associate (PTCA) Certification Pathway, combining focused learning modules and the PyTorch Certified Associate (PTCA) certification exam together in one structured experience...",
+      "url": "https://pytorch.org/blog/new-pathway-to-pytorch-certified-associate-ptca-certification/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-02T19:33:47.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 25.7,
+      "topics": []
     },
     {
       "id": "7be885d13bdc5309",
@@ -708,10 +854,26 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-02T07:52:03.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 26.2,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 24.7,
       "topics": [
         "security"
+      ]
+    },
+    {
+      "id": "458a796cc50f6faf",
+      "category": "world",
+      "title": "New York governor condemns handling of Cornell rape case",
+      "summary": "An 2024 alleged gang rape at the prestigious Cornell University has gained national attention after the accuser, identified only as Jane Doe, filed a lawsuit. A special prosecutor has been appointed to handle the case.",
+      "url": "https://www.dw.com/en/new-york-governor-condemns-handling-of-cornell-rape-case/a-79525431?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T19:09:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 24.6,
+      "topics": [
+        "models"
       ]
     },
     {
@@ -724,12 +886,82 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-01T09:46:08.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 25.7,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 24.2,
       "topics": [
         "hardware",
         "models"
       ]
+    },
+    {
+      "id": "c765707cfe3a42e4",
+      "category": "finance",
+      "title": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+      "summary": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T20:45:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 24,
+      "topics": []
+    },
+    {
+      "id": "13b84d8b6a4e1126",
+      "category": "world",
+      "title": "Iraq grants Iranian airlines 40 daily Najaf flights after US exemption",
+      "summary": "Mahan Air is excluded from the agreement as Baghdad says Washington granted its request for a waiver.",
+      "url": "https://www.aljazeera.com/news/2026/10/2/iraq-grants-iranian-airlines-40-daily-najaf-flights-after-us-exemption?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T20:32:02.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "3ff2bf43397626dd",
+      "category": "world",
+      "title": "California leads lawsuit against Trump fuel efficiency standards rollback",
+      "summary": "Lawsuit alleges NHTSA contravenes its congressional mandate to set fuel-economy standards at 'maximum feasible' .",
+      "url": "https://www.aljazeera.com/economy/2026/10/2/california-leads-lawsuit-against-trump-fuel-efficiency-standards-rollback?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T20:28:07.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "0cd0aebdd04b9ff3",
+      "category": "finance",
+      "title": "G7 to release 100 million barrels of oil and diesel after Trump export ban threat",
+      "summary": "The coordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports.",
+      "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T20:25:19.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "dc853a0f67b47f36",
+      "category": "world",
+      "title": "Could conflict in Ethiopia expand across the region?",
+      "summary": "Addis Ababa accuses Egypt, Eritrea and Sudan of backing armed groups.",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/2/could-conflict-in-ethiopia-expand-across-the-region?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T20:17:50.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.9,
+      "topics": []
     },
     {
       "id": "d3ae601d874ba553",
@@ -741,24 +973,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-01T12:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 25.3,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "ef7157f84efd6ca8",
-      "category": "world",
-      "title": "‘Women are not victims’: Türk calls for women to be at the heart of peace and security",
-      "summary": "Women must be at the centre of efforts to prevent conflict and build lasting peace, UN High Commissioner for Human Rights Volker Türk said on Thursday.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168502",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-01T12:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.8,
       "topics": [
         "security"
       ]
@@ -773,8 +989,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-01T08:02:24.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.8,
       "topics": [
         "inference",
         "hardware",
@@ -791,27 +1007,57 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-01T23:44:13.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 25.2,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.7,
       "topics": [
         "inference",
         "hardware"
       ]
     },
     {
-      "id": "93f8a741a00a2ec2",
-      "category": "ai",
-      "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
+      "id": "8bb1ff6e0b026201",
+      "category": "finance",
+      "title": "Dutch eyewear chain Hans Anders halts sale of Meta glasses, citing privacy concerns",
       "summary": "",
-      "url": "https://huggingface.co/blog/allenai/olmocore3",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-01T15:01:43.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 25,
+      "url": "https://www.channelnewsasia.com/business/dutch-eyewear-chain-hans-anders-halts-sale-meta-glasses-citing-privacy-concerns-6427331",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T15:14:12.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.6,
       "topics": [
-        "training"
+        "security"
+      ]
+    },
+    {
+      "id": "4719b5b753efc1d7",
+      "category": "world",
+      "title": "French Unrest: Are we witnessing a new 'Yellow Vests' movement?",
+      "summary": "It's been 18 days since we first reported on isolated cases of schools protests at a high school in Rennes in Brittany, in Caen in Normandy and Villeneueve d'Asque on the suburbs of Lille. The complaints were similar in theme, overloaded timetables, staffing problems, poor facilities. It spread to Saint Denis and Creteil on the outskirts of Paris days later, one interview with the students was sen 1.4 million times on TikTok. It gathered pace, and morphed into what we've seen throughout the week, hundreds of protes",
+      "url": "https://www.france24.com/en/tv-shows/spotlight/20261002-french-unrest-are-we-witnessing-a-new-yellow-vests-movement",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T18:54:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "b3467accfa8c8006",
+      "category": "world",
+      "title": "'Make our streets safer!' Mass women's protests sweep India over sexual violence",
+      "summary": "In India, thousands of women have been taking to the streets calling for better protection of female students, following the suspected gang rape of a 17-year-old girl. The alleged incident in an upscale neighbourhood of New Delhi prompted authorities to beef up protective measures, but the women say limiting their access to public spaces is not the answer.",
+      "url": "https://www.france24.com/en/tv-shows/access-asia/20261002-make-our-streets-safer-mass-women-s-protests-sweep-india-over-sexual-violence",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T14:57:07.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.5,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -824,38 +1070,92 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T01:57:43.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 24.8,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.3,
       "topics": []
     },
     {
-      "id": "b1d704b7a112e586",
+      "id": "16fbdfb2cfd8b8bb",
       "category": "world",
-      "title": "Netanyahu warns of 'very heavy price' if any country found to be behind FlyDubai incident",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu on Friday warned that any country or organisation found to be responsible for the violent clash on board an Israel-bound FlyDubai flight would \"pay a very heavy price\". While Netanyahu has alleged the co-pilot who stabbed his captain mid-flight had undergone \"Islamist radicalisation\", the motive behind the incident remains unclear.",
-      "url": "https://www.france24.com/en/middle-east/20261002-netanyahu-warns-of-very-heavy-price-if-any-country-found-to-be-behind-flydubai-incident",
-      "source": "France 24",
-      "sourceCountry": "France",
+      "title": "Woman at centre of Cornell rape inquiry was 'failed' by officials, says New York governor",
+      "summary": "The woman, known as Jane Doe, alleges she was raped by seven students at a fraternity house at the university in 2024.",
+      "url": "https://www.bbc.co.uk/news/articles/cqvg04718lr9o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-10-02T13:55:35.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 24.7,
-      "topics": [
-        "security"
-      ]
+      "publishedAt": "2026-10-02T17:44:08.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 23.2,
+      "topics": []
     },
     {
-      "id": "5fc9044388c0ec66",
-      "category": "technology",
-      "title": "NASA Awards Enterprise Logistics Support Services Agreements",
-      "summary": "NASA selected 16 companies to provide Enterprise Logistics Support Services under new agreements that will standardize requirements, improve reporting, and streamline the management of costs and resources. The $1.4 billion blanket purchase agreements will support equipment and property management, transportation, disposal, product support, flight hardware support operations, equipment maintenance and repair, export control, move operations, […]",
-      "url": "https://www.nasa.gov/news-release/nasa-awards-enterprise-logistics-support-services-agreements/",
-      "source": "NASA",
+      "id": "3b3486b9788b5e34",
+      "category": "world",
+      "title": "The G7 will release 100 million reserve barrels of diesel fuel over the next 4 months",
+      "summary": "After increased pressure from Washington, the G7 held an emergency meeting on energy. The world's wealthiest nations say they will release 100 million barrels of oil and diesel fuel in their reserves.",
+      "url": "https://www.npr.org/2026/10/02/nx-s1-5989397/the-g7-will-release-100-million-reserve-barrels-of-diesel-fuel-over-the-next-4-months",
+      "source": "NPR World",
       "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-01T20:34:27.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 24.4,
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T20:23:49.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "495e52fc93ccbeb1",
+      "category": "world",
+      "title": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
+      "summary": "The diplomatic fallout comes as Ethiopian forces battle rebel fighters across its northern region.",
+      "url": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T16:08:25.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "312d8ab8fe392421",
+      "category": "world",
+      "title": "Israel's top court allows Arab parties to run in election",
+      "summary": "The ruling overturns a move by the Central Elections Committee to ban four parties. The conservative Muslim Ra'am party could serve as the kingmaker following the next elections.",
+      "url": "https://www.dw.com/en/israel-s-top-court-allows-arab-parties-to-run-in-election/a-79519184?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T15:53:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "598612efb26d75c0",
+      "category": "finance",
+      "title": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "summary": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T15:00:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "214cce99f89a3be6",
+      "category": "technology",
+      "title": "US arrests tech CEO accused of smuggling $300M in Nvidia chips into China",
+      "summary": "Nvidia’s chip-smuggling problem won’t go away as arrests continue.",
+      "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T18:39:36.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.4,
       "topics": []
     },
     {
@@ -868,22 +1168,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-02T14:30:48.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.9,
-      "topics": []
-    },
-    {
-      "id": "afd68305707f3f6a",
-      "category": "world",
-      "title": "Argentina launches cash-for-citizenship scheme",
-      "summary": "Investors seeking the fastest but most costly route to Argentine citizenship can choose between a non-refundable gift of $350,000, or buying a government bond for $800,000, if they think that will pay off in the end.",
-      "url": "https://www.dw.com/en/argentina-launches-cash-for-citizenship-scheme/a-79520708?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T14:26:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.4,
       "topics": []
     },
     {
@@ -896,94 +1182,36 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-02T14:17:50.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.4,
       "topics": []
     },
     {
-      "id": "4bb44224c649ce0a",
-      "category": "world",
-      "title": "Trump claims Europe agreed to release ‘massive amount’ diesel stockpile",
-      "summary": "This is a breaking news story.",
-      "url": "https://www.aljazeera.com/news/2026/10/2/trump-says-europe-agrees-to-release-massive-amount-diesel-stockpile?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T14:14:18.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.8,
-      "topics": []
-    },
-    {
-      "id": "88199833a2e62c41",
-      "category": "world",
-      "title": "U2 celebrate 50 years in music with surprise gigs",
-      "summary": "They could have filled a stadium or two for this golden anniversary, but U2 decided to go back to their roots and mark 50 years as a band with a few low-key gigs in their hometown of Dublin. We take a closer look.",
-      "url": "https://www.france24.com/en/tv-shows/arts24/20261002-u2-celebrate-50-years-in-music-with-surprise-gigs",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T14:12:34.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.8,
-      "topics": []
-    },
-    {
-      "id": "3d501aad37f9fdba",
+      "id": "f8618fcc80685b7c",
       "category": "technology",
-      "title": "NASA’s SpaceX Crew-13 Launches",
-      "summary": "In this Oct. 1, 2026, photo, a SpaceX Falcon 9 rocket and Dragon spacecraft launch from Space Launch Complex 40 at Cape Canaveral Space Force Station in Florida. The spacecraft is carrying NASA astronauts Jessica Watkins and Luke Delaney, CSA (Canadian Space Agency) astronaut Joshua Kutryk, and Roscosmos cosmonaut Sergey Teteryatnikov to the International Space Station for a […]",
-      "url": "https://www.nasa.gov/image-article/nasas-spacex-crew-13-launches/",
-      "source": "NASA",
+      "title": "Research roundup: 6 cool science stories we almost missed",
+      "summary": "Also: Spooky action at the LHC, Ice Age psychoactive use, yeast for building homes on Mars, and more.",
+      "url": "https://arstechnica.com/science/2026/10/research-roundup-6-cool-science-stories-we-almost-missed-6/",
+      "source": "Ars Technica",
       "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-01T18:05:38.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.8,
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T18:17:27.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.3,
       "topics": []
     },
     {
-      "id": "6a10f9a390aa2579",
-      "category": "world",
-      "title": "Latvians head to the polls with Russia on their minds",
-      "summary": "On October 3, Latvians will elect a new parliament with Russia looming large over the campaign. Security fears dominate the agenda, but so does a debate over the economic cost of cutting ties with Moscow.",
-      "url": "https://www.dw.com/en/latvians-head-to-the-polls-with-russia-on-their-minds/a-79477614?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
+      "id": "40105216ecd2d0ec",
+      "category": "technology",
+      "title": "US military ends long-running program to spot nuclear missile launches",
+      "summary": "A newer program has been operational since 2011, and the next generation could launch within 12 months.",
+      "url": "https://arstechnica.com/space/2026/10/us-military-ends-long-running-program-to-spot-nuclear-missile-launches/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-01T17:57:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "136f1a44230259ec",
-      "category": "world",
-      "title": "Ethiopia, Eritrea break ties: Does the conflict risk becoming regional war?",
-      "summary": "Analysts warn unrest is likely to spill into neighbouring states and could further destabilise war-torn Sudan.",
-      "url": "https://www.aljazeera.com/news/2026/10/2/ethiopia-eritrea-break-ties-does-the-conflict-risk-becoming-regional-war?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T13:53:24.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.7,
-      "topics": []
-    },
-    {
-      "id": "04622c3ad1c2a0dd",
-      "category": "world",
-      "title": "Can India’s ‘cockroach’ movement oust Modi’s election chief?",
-      "summary": "India's youth protests return to streets, eyeing PM Modi's prized bureaucrat who oversees the world's biggest elections.",
-      "url": "https://www.aljazeera.com/features/2026/10/2/can-indias-cockroach-movement-oust-modis-election-chief?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T13:50:06.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.7,
+      "publishedAt": "2026-10-02T17:32:14.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.2,
       "topics": []
     },
     {
@@ -996,8 +1224,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-02T13:17:48.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22.1,
       "topics": []
     },
     {
@@ -1010,98 +1238,36 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-02T13:00:39.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.5,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22,
       "topics": []
     },
     {
-      "id": "f9e1a8212bf02356",
-      "category": "world",
-      "title": "'Sad exit': Portugal fans mourn hinted end of Ronaldo era",
-      "summary": "Portugal fans are in mourning as Cristiano Ronaldo is seemingly living his last moments with the national team. The star forward walked out of the team’s training camp on Wednesday, hours after coach Jorge Jesus said he would not start Thursday’s Nations League game against Denmark.",
-      "url": "https://www.africanews.com/2026/10/02/sad-exit-portugal-fans-mourn-hinted-end-of-ronaldo-era/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T12:55:36.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.5,
-      "topics": [
-        "training"
-      ]
-    },
-    {
-      "id": "065f408212ff6a43",
-      "category": "world",
-      "title": "Egypt expels Ethiopian diplomat in growing rife over Blue Nile dam",
-      "summary": "The tit for tat move on Thursday came after Addis Ababa expelled an Egyptian official, further straining relations between the two countries.",
-      "url": "https://www.africanews.com/2026/10/02/egypt-expels-ethiopian-diplomat-in-growing-rife-over-nile-dam/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T12:40:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.4,
-      "topics": [
-        "training"
-      ]
-    },
-    {
-      "id": "f7c67be7438b3325",
-      "category": "technology",
-      "title": "Hacks of 2 federal agencies in a month have spilled a bonanza of sensitive data",
-      "summary": "It has been a bad month for federal government cybersecurity.",
-      "url": "https://arstechnica.com/security/2026/10/hacks-of-2-federal-agencies-in-a-month-have-spilled-a-bonanza-of-sensitive-data/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-01T20:28:45.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.4,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "401dd35abb17471f",
+      "id": "8817d77c6a366bb5",
       "category": "finance",
-      "title": "Standard Chartered joins major banks in betting on December ECB rate hike",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/standard-chartered-joins-major-banks-in-betting-december-ecb-rate-hike-6426961",
+      "title": "G7 countries say they will release '100 million barrels' of diesel and crude",
+      "summary": "The United States has upped pressure on Europe to release its strategic reserves by threatening a diesel export ban.",
+      "url": "https://www.channelnewsasia.com/world/g7-countries-say-they-will-release-100-million-barrels-diesel-and-crude-6427026",
       "source": "CNA Business",
       "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-10-02T12:15:22.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.3,
+      "publishedAt": "2026-10-02T12:56:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 22,
       "topics": []
     },
     {
-      "id": "325ecaaba96eba78",
-      "category": "technology",
-      "title": "NASA’s SpaceX Crew-13 Launches to International Space Station",
-      "summary": "Four crew members of NASA’s SpaceX Crew-13 mission launched at 11:10 a.m. EDT Thursday from Space Launch Complex 40 at Cape Canaveral Space Force Station in Florida for a science expedition aboard the International Space Station. “Crew-13 is another demonstration of America’s unmatched capability in human spaceflight and the strength of our commercial partnerships,” said […]",
-      "url": "https://www.nasa.gov/news-release/nasas-spacex-crew-13-launches-to-international-space-station/",
-      "source": "NASA",
+      "id": "589e2ef191a8812c",
+      "category": "ai",
+      "title": "Pope Leo XIV is not a fan of AI-generated art",
+      "summary": "\"There is an ontological difference, even before an aesthetic one, between art and what a machine can generate through statistical calculation based on millions of images created by others,\" the pope wrote. \"Algorithms lack the spark of humanity.\"",
+      "url": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
+      "source": "TechCrunch AI",
       "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-01T15:59:24.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.3,
-      "topics": []
-    },
-    {
-      "id": "8bb19247fa24f79d",
-      "category": "finance",
-      "title": "Average Contract Interest Rates on Loans and Discounts (Aug.)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/dl/loan/yaku/yaku2608.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-01T23:50:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.2,
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T15:39:41.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -1114,36 +1280,22 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T11:30:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 21.7,
       "topics": []
     },
     {
-      "id": "9a41a3548bb6499c",
+      "id": "8bb19247fa24f79d",
       "category": "finance",
-      "title": "UK diesel price hits £2 a litre as US calls for Europe to release more stocks",
-      "summary": "The RAC says diesel price rises are showing no signs of slowing, \"heaping more misery\" onto drivers.",
-      "url": "https://www.bbc.co.uk/news/articles/crn8e86y5n0zo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T11:17:31.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 23.1,
-      "topics": []
-    },
-    {
-      "id": "495e52fc93ccbeb1",
-      "category": "world",
-      "title": "Ethiopia and Eritrea cut diplomatic ties as northern conflict escalates",
-      "summary": "The diplomatic fallout comes as Ethiopian forces battle rebel fighters across its northern region.",
-      "url": "https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T10:04:56.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 22.8,
+      "title": "Average Contract Interest Rates on Loans and Discounts (Aug.)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/dl/loan/yaku/yaku2608.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-01T23:50:00.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -1156,22 +1308,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T06:06:56.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 22.8,
-      "topics": []
-    },
-    {
-      "id": "5d16f32e2dd37214",
-      "category": "finance",
-      "title": "Hedge funds struggle for September gains as rate, AI swings bite",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/hedge-funds-struggle-september-gains-rate-ai-swings-bite-6426546",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T09:28:06.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 22.6,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 21.3,
       "topics": []
     },
     {
@@ -1184,80 +1322,9 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T05:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 22.5,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 21,
       "topics": [
-        "training"
-      ]
-    },
-    {
-      "id": "21f135aeaab2ab92",
-      "category": "ai",
-      "title": "Release 5.18.0",
-      "summary": "New Model additions Nemotron 3 Diarization Nemotron 3 Diarization is an open-weight streaming speaker diarization model designed to determine \"who spoke when\" in real-world audio. It supports both streaming and offline inference, handles up to eight speakers, and orders speaker outputs by each speaker's first arrival in the input audio. The model uses the Arrival-Order Speaker Cache (AOSC) 1 and FIFO queue introduced for Streaming Sortformer 1 , 2 . A single checkpoint supports configurable latency profiles, from a",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.18.0",
-      "source": "Transformers Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-09-30T16:46:27.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 22.5,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training",
-        "security"
-      ]
-    },
-    {
-      "id": "0fd0048708afe9ad",
-      "category": "world",
-      "title": "Gaza: WHO appeals for massive aid influx ahead of winter",
-      "summary": "Repeated delays in bringing lifesaving medicines, prosthetics and more from Israel into Gaza risk having devastating consequences on Palestinians who urgently need them in the war-torn enclave, the UN World Health Organization (WHO) said on Friday.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168508",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 22.3,
-      "topics": []
-    },
-    {
-      "id": "9f3dc181c0e320d0",
-      "category": "ai",
-      "title": "Introducing SynthID Bio",
-      "summary": "Proof of concept for watermarking AI-generated proteins while preserving biological function.",
-      "url": "https://deepmind.google/blog/introducing-synthid-bio/",
-      "source": "DeepMind",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "research",
-      "publishedAt": "2026-09-30T15:03:07.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 22,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "978caf7e1678424c",
-      "category": "ai",
-      "title": "Release v0.7.1rc1",
-      "summary": "What's Changed feat(comm): copy-engine based kernel for the PCIe IPC all-reduce by @qsang-nv in #4870 feat(cake_warp_decode): Add SM100 NVFP4 warp decode and standalone SiLU by @yyihuang in #5036 feat(cake_nvfp4_svdquant): add NVFP4 SVDQuant GEMM SM100 and SM103 backend by @yyihuang in #5076 fix(moe): bound routing_replay_out dim0 from below in both validators by @aleozlx in #5072 fix: guard BF16 warp Split-K availability and prune tactics by @jiahanc in #5089 refactor(kda): remove the unreleased recurrent KDA trai",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.1rc1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-09-30T16:53:28.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 21.5,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
         "training"
       ]
     },
@@ -1271,8 +1338,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 21.3,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -1285,8 +1352,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 21.3,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -1299,8 +1366,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 21.3,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -1313,8 +1380,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-01T07:54:39.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -1327,8 +1394,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T18:13:29.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 20.8,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 19.3,
       "topics": []
     },
     {
@@ -1341,106 +1408,50 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-01T13:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 20.5,
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 19,
       "topics": []
     },
     {
-      "id": "eaa4889220d1ab47",
+      "id": "97e8aa2c23d6ad0a",
       "category": "ai",
-      "title": "TechCrunch Disrupt 2026: Clay’s Kareem Amin on the rise of the GTM engineer",
-      "summary": "Clay Co-founder and CEO Kareem Amin joins the AI Stage to discuss the rise of GTM engineer at TechCrunch Disrupt 2026. Register for your ticket and get a second pass at 50% off.",
-      "url": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-clays-kareem-amin-on-the-rise-of-the-gtm-engineer/",
+      "title": "Affected by layoffs? Don’t miss this $75 deal for your TechCrunch Disrupt 2026 Expo+ Pass",
+      "summary": "Your next opportunity could be one conversation away. Get your Expo+ Pass for just $75. Limited to the first 100 qualifying people.",
+      "url": "https://techcrunch.com/2026/10/02/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/",
       "source": "TechCrunch AI",
       "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-02T14:30:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 18.9,
+      "publishedAt": "2026-10-02T19:15:51.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 18.6,
       "topics": []
     },
     {
-      "id": "484e7b7d0d3f0e56",
-      "category": "technology",
-      "title": "Venus' mysterious haze is actually cosmic dust",
-      "summary": "A physical model show that iron dust and sulfuric acid create the right properties.",
-      "url": "https://arstechnica.com/science/2026/10/venus-mysterious-haze-is-actually-cosmic-dust/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-01T22:27:04.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 18.9,
-      "topics": []
-    },
-    {
-      "id": "35bb59187c234fd5",
+      "id": "414a4a4e0a5bdc55",
       "category": "ai",
-      "title": "Last 24 hours: Exhibit at TechCrunch Disrupt 2026 and reach 10,000+ tech leaders",
-      "summary": "Today is the very last day to book your exhibit table at TechCrunch Disrupt 2026. On October 13–15, 10,000+ founders, investors, operators, and tech leaders will arrive at San Francisco’s Moscone West looking for companies, products, ideas, and people worth knowing. The question is: will they find your startup?",
-      "url": "https://techcrunch.com/2026/10/02/last-24-hours-exhibit-at-techcrunch-disrupt-2026-and-reach-10000-tech-leaders/",
+      "title": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
+      "summary": "Apple says it will add new controls around macOS’s Full Disk Access permission, warning that increasingly capable AI agents make broad access to users’ files, messages, mail, and browsing history riskier.",
+      "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
       "source": "TechCrunch AI",
       "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-02T14:00:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 18.8,
+      "publishedAt": "2026-10-02T18:11:27.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 18.3,
       "topics": []
     },
     {
-      "id": "6d595b303324c0b2",
-      "category": "technology",
-      "title": "SpaceX describes surgical intervention before launch of latest crew mission",
-      "summary": "With Crew-13, Jessica Watkins became the first Black woman to lead a mission into space.",
-      "url": "https://arstechnica.com/space/2026/10/spacex-describes-surgical-intervention-before-launch-of-latest-crew-mission/",
-      "source": "Ars Technica",
+      "id": "b4aadae4a397fd05",
+      "category": "ai",
+      "title": "Fall Into 25 New Games on GeForce NOW This October",
+      "summary": "Spooky season is streaming in. Alongside falling leaves, pumpkin spice and everything nice, 25 new games are joining GeForce NOW throughout October, including six ready to play this week. From a new CONTROL Resonant reward for Performance and Ultimate members to The Witcher 3: Wild Hunt – Remastered joining the cloud, this GFN Thursday is […]",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-october-2026-games-list/",
+      "source": "NVIDIA AI",
       "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-01T22:07:33.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 18.8,
-      "topics": []
-    },
-    {
-      "id": "81ba1961946dbe1d",
-      "category": "technology",
-      "title": "A Ray-Focused Guide to PyTorch Conference North America",
-      "summary": "TL;DR In only a few weeks, PyTorch Conference North America 2026 will begin in San Jose, bringing together the open source AI community to share ideas and collaborate. If you’ve...",
-      "url": "https://pytorch.org/blog/a-ray-focused-guide-to-pytorch-conference-north-america/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-30T16:45:20.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 18.5,
-      "topics": []
-    },
-    {
-      "id": "71c2213bf6b2ed1b",
-      "category": "finance",
-      "title": "Isabel Schnabel: Central banks on-chain",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261001_1~a0be67193b.en.pdf",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-01T15:30:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 18.1,
-      "topics": []
-    },
-    {
-      "id": "e074750296199bfa",
-      "category": "finance",
-      "title": "Release of Financial Stability Review – October 2026",
-      "summary": "Media release number 2026-28: The RBA today published its October 2026 Financial Stability Review.",
-      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-28.html",
-      "source": "Reserve Bank of Australia",
-      "sourceCountry": "Australia",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-01T01:30:00.000Z",
-      "fetchedAt": "2026-10-02T14:55:56.482Z",
-      "score": 17.6,
+      "publishedAt": "2026-10-01T13:00:54.000Z",
+      "fetchedAt": "2026-10-02T20:53:34.767Z",
+      "score": 12,
       "topics": []
     }
   ]
