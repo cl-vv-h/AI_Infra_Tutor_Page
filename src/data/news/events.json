@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-10-02T20:53:34.767Z",
-    "releasesCollectedAt": "2026-10-02T20:53:43.287Z",
-    "libraryCollectedAt": "2026-10-02T20:53:34.767Z",
+    "dailyCollectedAt": "2026-10-03T05:38:25.473Z",
+    "releasesCollectedAt": "2026-10-03T05:38:38.319Z",
+    "libraryCollectedAt": "2026-10-03T05:38:25.473Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -34,17 +34,11 @@
       "2026-09-29",
       "2026-09-30",
       "2026-10-01",
-      "2026-10-02"
+      "2026-10-02",
+      "2026-10-03"
     ],
     "missingArchiveDates": [],
-    "failedSources": [
-      "FlashInfer Releases",
-      "SGLang Releases",
-      "TensorRT-LLM Releases",
-      "Transformers Releases",
-      "Triton Releases",
-      "vLLM Releases"
-    ],
+    "failedSources": [],
     "invalidItems": 27
   },
   "tracks": [
@@ -58,7 +52,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-02T14:56:10.215Z",
+          "lastCollectedAt": "2026-10-03T05:38:38.319Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -71,7 +65,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-02T14:56:10.215Z",
+          "lastCollectedAt": "2026-10-03T05:38:38.319Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -84,7 +78,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-02T14:56:10.215Z",
+          "lastCollectedAt": "2026-10-03T05:38:38.319Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -97,7 +91,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-10-02T14:56:10.215Z",
+          "lastCollectedAt": "2026-10-03T05:38:38.319Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -105,13 +99,13 @@
         },
         {
           "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.21",
-          "title": "v0.5.21",
+          "title": "sglang · v0.5.21",
           "publisher": "SGLang Releases",
           "publisherCountry": "International",
-          "publishedAt": "2026-10-02T19:42:55.000Z",
+          "publishedAt": "2026-10-02T01:09:04.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-10-02T20:53:34.767Z",
-          "revisionCount": 2,
+          "lastCollectedAt": "2026-10-03T05:38:38.319Z",
+          "revisionCount": 3,
           "ruleIds": [
             "official-releases"
           ]
@@ -394,5 +388,5 @@
       ]
     }
   ],
-  "fingerprint": "7f9172e8ddae38d03af0198b0c6d54f93e18d7870e817f35a9a8e67000a004ec"
+  "fingerprint": "e3711b5c54a9947b4e5d406f941d39edcfdf0c3b370a7eacc17fbb655f6e30ef"
 }
