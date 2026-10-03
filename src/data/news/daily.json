@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T13:37:58.696Z",
+  "generatedAt": "2026-10-03T19:20:58.903Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -14,7 +14,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 42,
-      "latestPublishedAt": "2026-10-03T13:34:11.000Z",
+      "latestPublishedAt": "2026-10-03T18:06:47.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,8 +40,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 135,
-      "latestPublishedAt": "2026-10-03T12:17:00.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-03T18:49:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -53,8 +53,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-03T13:18:37.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-03T19:00:01.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-03T10:05:31.000Z",
+      "latestPublishedAt": "2026-10-03T19:00:19.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-03T00:45:39.000Z",
+      "latestPublishedAt": "2026-10-03T18:43:57.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -158,7 +158,7 @@
       "channel": "feed",
       "entryCount": 15,
       "latestPublishedAt": "2026-10-02T13:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -248,7 +248,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 30,
-      "latestPublishedAt": "2026-10-02T12:00:00.000Z",
+      "latestPublishedAt": "2026-10-03T12:00:00.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-03T13:20:35.000Z",
+      "latestPublishedAt": "2026-10-03T18:08:42.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-03T12:23:37.000Z",
+      "latestPublishedAt": "2026-10-03T15:13:20.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -378,8 +378,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-02T01:57:43.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-03T18:07:54.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -405,7 +405,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-01T16:11:45.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -431,7 +431,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-01T18:13:29.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -524,8 +524,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T19:55:07.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 30.6,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 29.1,
       "topics": [
         "inference",
         "kernels"
@@ -541,14 +541,30 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T19:42:55.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 29.5,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 28.1,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models",
         "training",
+        "security"
+      ]
+    },
+    {
+      "id": "a15f37da04147350",
+      "category": "world",
+      "title": "Why has Brazil accused the US of election interference?",
+      "summary": "The Latin American country will vote for its next president, as Lula da Silva and Bolsonaro clash over sovereignty, security and ties with Washington.",
+      "url": "https://www.bbc.co.uk/news/videos/c3eweld0nddeo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T13:52:13.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 27.6,
+      "topics": [
         "security"
       ]
     },
@@ -562,8 +578,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:28:10.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 28,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 26.5,
       "topics": [
         "inference"
       ]
@@ -578,8 +594,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 27.8,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 26.4,
       "topics": [
         "security"
       ]
@@ -594,8 +610,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 27.8,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 26.4,
       "topics": [
         "security"
       ]
@@ -610,8 +626,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-03T08:17:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 27.7,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 26.2,
       "topics": [
         "security"
       ]
@@ -626,24 +642,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-03T09:55:29.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 27.1,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "92d9b4186b876401",
-      "category": "world",
-      "title": "Latvia votes in parliamentary election amid rising costs",
-      "summary": "Around 1.5 million Latvians are eligible to vote in an election which has been dominated by national security concerns and rising living costs. Four Eurofighter jets are on NATO deployment over Latvia during the poll.",
-      "url": "https://www.dw.com/en/latvia-votes-in-parliamentary-election-amid-rising-costs/a-79527253?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T06:06:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 25.6,
       "topics": [
         "security"
       ]
@@ -658,8 +658,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T22:18:12.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 26.2,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 24.7,
       "topics": [
         "models"
       ]
@@ -674,8 +674,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T22:18:12.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 26.2,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 24.7,
       "topics": [
         "models"
       ]
@@ -690,8 +690,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 24.2,
       "topics": [
         "security"
       ]
@@ -706,11 +706,25 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 24.2,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "55c39ef7041bb31b",
+      "category": "world",
+      "title": "Is the CJP changing India’s political landscape?",
+      "summary": "Youth-led movement demands resignation of chief election commissioner.",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/3/is-the-cjp-changing-indias-political-landscape?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T19:00:01.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 23.9,
+      "topics": []
     },
     {
       "id": "b92ce439c24214b0",
@@ -722,13 +736,41 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T22:26:57.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 25.2,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 23.8,
       "topics": [
         "kernels",
         "hardware",
         "models"
       ]
+    },
+    {
+      "id": "a10631c1e1b1ba39",
+      "category": "ai",
+      "title": "v0.7.1rc3",
+      "summary": "v0.7.1rc3 tag",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.1rc3",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-03T18:07:54.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "19c22cb4620c156f",
+      "category": "world",
+      "title": "Italy’s Ustica enigma: Can French files solve mystery crash blamed on stray missile?",
+      "summary": "France’s decision to share defence documents with the Italian judiciary has raised hopes of a breakthrough in investigations into the 1980 crash of a passenger jet near the island of Ustica, which a former Italian president claimed was mistakenly shot down by a French fighter jet. Sceptics caution that the files are unlikely to shed light on one of Italy’s most enduring mysteries, let alone reveal a culprit.",
+      "url": "https://www.france24.com/en/europe/20261003-italy-ustica-enigma-can-french-files-solve-mystery-crash-blamed-on-stray-missile-gaddafi",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T15:42:45.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 23.1,
+      "topics": []
     },
     {
       "id": "d20fa7036a0ae1e2",
@@ -740,8 +782,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-02T19:30:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 24.5,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 23,
       "topics": []
     },
     {
@@ -754,8 +796,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T15:19:50.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 24.4,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 23,
       "topics": []
     },
     {
@@ -768,8 +810,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-03T10:58:51.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 22.9,
       "topics": [
         "security"
       ]
@@ -784,38 +826,50 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-02T14:57:41.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 22.9,
       "topics": []
     },
     {
-      "id": "6a64042121ee9552",
-      "category": "technology",
-      "title": "Build Local AI Apps with C++ and NVIDIA TensorRT RTX Samples",
-      "summary": "Adding AI models to local applications requires a portable model format, a reliable runtime, and acceleration that works across target systems. Do Inference Now...",
-      "url": "https://developer.nvidia.com/blog/build-local-ai-apps-with-c-and-nvidia-tensorrt-rtx-samples/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-01T17:59:27.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 24.1,
-      "topics": [
-        "inference"
-      ]
+      "id": "dbf70977fe5843c7",
+      "category": "world",
+      "title": "Loud blasts rock Sanaa as Houthis accuse Saudi forces of pounding Yemeni capital",
+      "summary": "Houthi rebels accused Saudi forces of launching 26 strikes on Sanaa on Saturday after loud explosions rocked the Yemeni capital, which is controlled by the Iran-backed group. In Saudi Arabia, flames and a large plume of smoke were seen rising from a facility belonging to oil giant Aramco south of the kingdom's capital, Riyadh.",
+      "url": "https://www.france24.com/en/middle-east/20261003-houthis-blame-saudi-air-strikes-loud-blasts-rock-yemen-capital-sanaa",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T14:31:30.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 22.8,
+      "topics": []
     },
     {
-      "id": "1f2b9709b30897e4",
+      "id": "9c1e5ebdab559573",
       "category": "world",
-      "title": "Defining consent and the psychology behind the ‘Cornell 7’ rape case",
-      "summary": "How a Cornell student went from blaming herself, to reporting an alleged fraternity rape.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/defining-consent-and-the-psychology-behind-the-cornell-7-rape-case?traffic_source=rss",
+      "title": "What to know about Brazil’s 2026 presidential election",
+      "summary": "Polls show tight race between incumbent Lula and right-wing rival Flavio Bolsonaro amid concerns over crime and economy.",
+      "url": "https://www.aljazeera.com/news/2026/10/3/what-to-know-about-brazils-2026-presidential-election?traffic_source=rss",
       "source": "Al Jazeera",
       "sourceCountry": "Qatar",
       "sourceType": "news",
-      "publishedAt": "2026-10-03T12:39:59.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 23.8,
+      "publishedAt": "2026-10-03T14:23:55.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "57a4c4d5569ca34f",
+      "category": "world",
+      "title": "Israel election double standard: Arab leader forced out, far right cleared",
+      "summary": "Palestinian Israeli leader forced to withdraw candidature while far-right Israeli leaders allowed to run in polls.",
+      "url": "https://www.aljazeera.com/news/2026/10/3/israel-election-double-standard-arab-leader-forced-out-far-right-cleared?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T14:06:47.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -828,8 +882,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-03T12:26:30.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 23.7,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 22.3,
       "topics": []
     },
     {
@@ -842,8 +896,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T20:00:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 22.2,
       "topics": []
     },
     {
@@ -856,8 +910,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-02T16:10:55.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 22.2,
       "topics": []
     },
     {
@@ -870,27 +924,25 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-02T15:57:55.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 22.2,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "8728049971ffc325",
+      "id": "c691f516306cb9d1",
       "category": "world",
-      "title": "Joker persona helps Cong 'feel the fear' in opponents",
-      "summary": "Wang Cong dismisses critics who say she she is not deserving of facing Natalia Silva for the flyweight world title at UFC 332 on Saturday.",
-      "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/ckq5x5de46ppo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
+      "title": "Fuel shortage in Sudan drives up prices, burdening ordinary people",
+      "summary": "The scarcity is driven by global oil disruptions tied to the Middle East conflict and by domestic import restrictions.",
+      "url": "https://www.africanews.com/2026/10/03/fuel-shortage-in-sudan-drives-up-prices-burdening-ordinary-people/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
       "sourceType": "news",
-      "publishedAt": "2026-10-03T07:07:09.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 23.4,
-      "topics": [
-        "inference"
-      ]
+      "publishedAt": "2026-10-03T14:17:17.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 21.7,
+      "topics": []
     },
     {
       "id": "49a992bb4bb75e6a",
@@ -902,64 +954,22 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-03T10:13:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 21.7,
       "topics": []
     },
     {
-      "id": "2fe6b168967d8ebc",
+      "id": "f541f96c75fe6040",
       "category": "world",
-      "title": "Flavio Bolsonaro: In the name of the father, sons, and holy ideology",
-      "summary": "The first round of Brazil’s presidential election on Sunday pits two well-known names in the political ring: Lula vs. Bolsonaro. But it’s not former president Jair Bolsonaro facing off against the incumbent head of state – it’s his eldest son, Flavio Bolsonaro. He’s less charismatic than his father but just as ideologically radical as the family patriarch.",
-      "url": "https://www.france24.com/en/americas/20261003-flavio-bolsonaro-in-the-name-of-the-father-sons-and-holy-ideology",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T09:48:12.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 23,
-      "topics": []
-    },
-    {
-      "id": "7388e03f14381f04",
-      "category": "world",
-      "title": "G7 to release 100 million barrels of oil and diesel, will it curb prices?",
-      "summary": "Global energy prices have soared due to the US and Israel's war on Iran and Russia's war on Ukraine.",
-      "url": "https://www.aljazeera.com/news/2026/10/3/g7-to-release-100-million-barrels-of-oil-and-diesel-will-it-curb-prices?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T09:27:38.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 23,
-      "topics": []
-    },
-    {
-      "id": "b3935178cb3d0378",
-      "category": "world",
-      "title": "Oil prices fall as G7 agrees to release 100 million barrels of reserves",
-      "summary": "International benchmark Brent crude briefly fell below $100 per barrel before stabilising around $102, while US oil prices slumped by up to 5 per cent.",
-      "url": "https://www.africanews.com/2026/10/03/oil-prices-fall-as-g7-agrees-to-release-100-million-barrels-of-reserves/",
+      "title": "UN says at least 150,000 have fled their homes in Yemen amid fighting",
+      "summary": "It is further intensifying the country's humanitarian crisis with more than 5 million people already internally displaced following years of conflict.",
+      "url": "https://www.africanews.com/2026/10/03/un-says-at-least-150000-have-fled-their-homes-in-yemen-amid-fighting/",
       "source": "Africanews",
       "sourceCountry": "Pan-African",
       "sourceType": "news",
-      "publishedAt": "2026-10-03T12:23:37.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 22.7,
-      "topics": []
-    },
-    {
-      "id": "9b6e1cf4a3372371",
-      "category": "world",
-      "title": "Ethiopia's Tigray rebels abandon regional capital Mekelle as pro-government forces advance",
-      "summary": "Rebels from the Tigray People's Liberation Front (TPLF) in Ethiopia were abandoning their regional capital of Mekkele in the north of the country on Saturday, according to local reports. The TPLF has been fighting against federal forces and pro-government militias since September 23 and launching attacks into neighbouring states, raising fears of an all-out civil war similar to that of 2020-2022.",
-      "url": "https://www.france24.com/en/africa/20261003-ethiopia-s-tigray-rebels-abandon-regional-capital-of-mekelle-as-pro-government-forces-advance",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T07:58:45.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 22.6,
+      "publishedAt": "2026-10-03T13:39:11.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 21.6,
       "topics": []
     },
     {
@@ -972,8 +982,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-03T04:05:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 22.6,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 21.2,
       "topics": []
     },
     {
@@ -986,26 +996,10 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T04:01:31.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 22.6,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 21.2,
       "topics": [
         "training"
-      ]
-    },
-    {
-      "id": "a41723ad91a9419f",
-      "category": "world",
-      "title": "UN issues call to action on world's vital dryland forests",
-      "summary": "The United Nations is issuing an urgent call to action on the world’s dryland forests - areas that sustain the food security and cultural identity of more than two billion people.",
-      "url": "https://www.africanews.com/2026/10/02/un-issues-call-to-action-on-worlds-vital-dryland-forests/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T15:20:05.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 22.4,
-      "topics": [
-        "security"
       ]
     },
     {
@@ -1018,27 +1012,9 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 21.8,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 20.4,
       "topics": []
-    },
-    {
-      "id": "562cda311e5f3901",
-      "category": "ai",
-      "title": "MoE-CORE: Coordinated Expert Offloading and Residency for Memory-Constrained MoE Inference",
-      "summary": "Sparse expert activation reduces MoE models' computation, yet expert weights can exceed limited device memory. Offloading makes inference feasible on a compact AI appliance but exposes host-to-device transfers to the inference path. We present MoE-CORE, a system that coordinates expert offloading and residency for memory-constrained MoE inference. It stages complete expert layers in alternating buffers during prefill. During decode, it combines nonuniform layer-wise cache capacity, domain-informed initialization, r",
-      "url": "https://arxiv.org/abs/2610.01950v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-01T16:11:45.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 21.6,
-      "topics": [
-        "inference",
-        "hardware",
-        "models"
-      ]
     },
     {
       "id": "99b94a39a7a44421",
@@ -1050,8 +1026,36 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T19:33:47.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 21.5,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 20.1,
+      "topics": []
+    },
+    {
+      "id": "6b399cdb8093d943",
+      "category": "finance",
+      "title": "OpenAI safety employee quits, says 'time for trial and error is over'",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/openai-safety-employee-quits-says-time-trial-and-error-over-6430136",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T19:00:19.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 19.9,
+      "topics": []
+    },
+    {
+      "id": "a5348b020da5996d",
+      "category": "ai",
+      "title": "Amazon responds to data center backlash, says it no longer uses NDAs",
+      "summary": "The CEO of Amazon Web Services tried to push back against widespread suspicion of data centers.",
+      "url": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T18:43:57.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 18.8,
       "topics": []
     },
     {
@@ -1064,8 +1068,22 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T20:45:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 19.8,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 18.4,
+      "topics": []
+    },
+    {
+      "id": "bae6e6bc5e6bd3b0",
+      "category": "ai",
+      "title": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
+      "summary": "By his own admission, David Robinson is “something of a cliché”: an employee at a leading AI company who issues a dire warning while resigning from their job.",
+      "url": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T16:30:01.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 18.3,
       "topics": []
     },
     {
@@ -1078,8 +1096,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-01T23:44:13.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 19.5,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 18.1,
       "topics": [
         "inference",
         "hardware"
@@ -1095,11 +1113,25 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-02T15:14:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 19.4,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 18,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "7839627caaee9163",
+      "category": "ai",
+      "title": "All the AI agents that can live in your text messages",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "url": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T14:00:00.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 17.7,
+      "topics": []
     },
     {
       "id": "35dab605b9f8fb94",
@@ -1111,8 +1143,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-03T10:05:31.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 19.1,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 17.7,
       "topics": []
     },
     {
@@ -1125,8 +1157,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T01:57:43.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 19.1,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 17.7,
       "topics": []
     },
     {
@@ -1139,8 +1171,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-02T21:19:05.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 18.9,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 17.5,
       "topics": []
     },
     {
@@ -1153,8 +1185,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-03T08:58:44.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 18.8,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 17.4,
       "topics": []
     },
     {
@@ -1167,22 +1199,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-03T11:15:33.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 18.4,
-      "topics": []
-    },
-    {
-      "id": "214cce99f89a3be6",
-      "category": "technology",
-      "title": "US arrests tech CEO accused of smuggling $300M in Nvidia chips into China",
-      "summary": "Nvidia’s chip-smuggling problem won’t go away as arrests continue.",
-      "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T18:39:36.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 18.3,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 17,
       "topics": []
     },
     {
@@ -1195,8 +1213,22 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T15:00:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 18.3,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 16.9,
+      "topics": []
+    },
+    {
+      "id": "214cce99f89a3be6",
+      "category": "technology",
+      "title": "US arrests tech CEO accused of smuggling $300M in Nvidia chips into China",
+      "summary": "Nvidia’s chip-smuggling problem won’t go away as arrests continue.",
+      "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T18:39:36.000Z",
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 16.8,
       "topics": []
     },
     {
@@ -1209,22 +1241,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-02T14:30:48.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 18.2,
-      "topics": []
-    },
-    {
-      "id": "5a273f1f917b2e23",
-      "category": "finance",
-      "title": "US job growth slows sharply in September; unemployment rate rises to 4.2%",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/world/us-job-growth-slows-sharply-in-september-unemployment-rate-rises-42-6426996",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T14:17:50.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 18.2,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 16.8,
       "topics": []
     },
     {
@@ -1237,8 +1255,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-03T06:08:05.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 18.1,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1251,8 +1269,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-02T13:00:39.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 17.8,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 16.4,
       "topics": []
     },
     {
@@ -1265,22 +1283,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-01T23:50:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 17.6,
-      "topics": []
-    },
-    {
-      "id": "589e2ef191a8812c",
-      "category": "ai",
-      "title": "Pope Leo XIV is not a fan of AI-generated art",
-      "summary": "\"There is an ontological difference, even before an aesthetic one, between art and what a machine can generate through statistical calculation based on millions of images created by others,\" the pope wrote. \"Algorithms lack the spark of humanity.\"",
-      "url": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T15:39:41.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 17.5,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 16.1,
       "topics": []
     },
     {
@@ -1293,26 +1297,9 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T11:30:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 17.5,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 16,
       "topics": []
-    },
-    {
-      "id": "af0a883250f35d6e",
-      "category": "ai",
-      "title": "ePACT: Energy-Performance-Aware Commitment Tracking for LLM Serving",
-      "summary": "Reducing LLM serving energy does not by itself guarantee lower deployment cost when electricity procurement exposes operators to unfavorable deviations from preset commitments. We study hourly commitments with positive, potentially asymmetric costs for overuse and underuse, and formulate energy-Performance-Aware Commitment Tracking: minimize deviation costs subject to request-level service requirements. We implement ePACT, a two-level controller that adjusts serving capacity and GPU clocks as requests arrive. A glo",
-      "url": "https://arxiv.org/abs/2610.01784v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-01T14:32:24.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 17.2,
-      "topics": [
-        "inference",
-        "hardware"
-      ]
     },
     {
       "id": "d8cca8e0ac7e9d76",
@@ -1324,22 +1311,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T06:06:56.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 17.1,
-      "topics": []
-    },
-    {
-      "id": "6267aef5d5c51026",
-      "category": "ai",
-      "title": "Meta wants your next gadget to be Muse-infused",
-      "summary": "Meta wants Muse in your TV and your toaster, so it's giving the code away for free.",
-      "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T00:45:39.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 15.8,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 15.7,
       "topics": []
     },
     {
@@ -1352,8 +1325,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 15.6,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 14.2,
       "topics": []
     },
     {
@@ -1366,8 +1339,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 15.6,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 14.2,
       "topics": []
     },
     {
@@ -1380,50 +1353,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 15.6,
-      "topics": []
-    },
-    {
-      "id": "fe2e74034e8d006f",
-      "category": "technology",
-      "title": "Build Applications on NVIDIA BlueField Faster with NVIDIA DOCA Agent Skills",
-      "summary": "AI agents are becoming a standard part of development workflows, but general-purpose agents weren't built with specialized infrastructure software such as...",
-      "url": "https://developer.nvidia.com/blog/build-applications-on-nvidia-bluefield-faster-with-nvidia-doca-agent-skills/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-01T18:13:29.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 15.1,
-      "topics": []
-    },
-    {
-      "id": "f95c56ffe0e4472c",
-      "category": "ai",
-      "title": "Sean Parker is rebuilding Stability AI around music",
-      "summary": "Sean Parker, who once taught the music industry what asking for forgiveness looks like, is now back with the labels' blessing and money.",
-      "url": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T21:09:14.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 14.9,
-      "topics": []
-    },
-    {
-      "id": "71c2213bf6b2ed1b",
-      "category": "finance",
-      "title": "Isabel Schnabel: Central banks on-chain",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261001_1~a0be67193b.en.pdf",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-01T15:30:00.000Z",
-      "fetchedAt": "2026-10-03T13:37:58.696Z",
-      "score": 12.5,
+      "fetchedAt": "2026-10-03T19:20:58.903Z",
+      "score": 14.2,
       "topics": []
     }
   ]
