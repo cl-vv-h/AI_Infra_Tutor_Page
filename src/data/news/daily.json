@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T05:38:25.473Z",
+  "generatedAt": "2026-10-03T13:37:58.696Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 37,
-      "latestPublishedAt": "2026-10-03T04:38:31.000Z",
-      "selectedCount": 1,
+      "entryCount": 42,
+      "latestPublishedAt": "2026-10-03T13:34:11.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 55,
-      "latestPublishedAt": "2026-10-03T05:27:43.000Z",
+      "latestPublishedAt": "2026-10-03T08:58:44.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 134,
-      "latestPublishedAt": "2026-10-03T04:54:00.000Z",
+      "entryCount": 135,
+      "latestPublishedAt": "2026-10-03T12:17:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,8 +53,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-03T05:09:31.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-03T13:18:37.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-03T05:06:10.000Z",
+      "latestPublishedAt": "2026-10-03T10:05:31.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-02T23:03:16.000Z",
+      "latestPublishedAt": "2026-10-03T11:15:33.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -158,7 +158,7 @@
       "channel": "feed",
       "entryCount": 15,
       "latestPublishedAt": "2026-10-02T13:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -184,7 +184,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-02T08:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -195,7 +195,7 @@
       "type": "institution",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 51,
+      "entryCount": 50,
       "latestPublishedAt": "2026-10-02T08:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-03T02:40:43.000Z",
+      "latestPublishedAt": "2026-10-03T13:20:35.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-02T20:10:27.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-03T12:23:37.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -300,8 +300,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-03T03:31:00.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-03T12:26:38.000Z",
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -405,7 +405,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-01T16:11:45.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -524,8 +524,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T19:55:07.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 32.6,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 30.6,
       "topics": [
         "inference",
         "kernels"
@@ -541,8 +541,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T19:42:55.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 31.5,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 29.5,
       "topics": [
         "inference",
         "kernels",
@@ -562,8 +562,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:28:10.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 30,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 28,
       "topics": [
         "inference"
       ]
@@ -578,8 +578,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 29.8,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 27.8,
       "topics": [
         "security"
       ]
@@ -594,26 +594,74 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 29.8,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 27.8,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "c23e44ed853785eb",
+      "id": "a2b9e2ece62fe02f",
       "category": "world",
-      "title": "Co-pilot on Flydubai flight was banned from flying by Oman",
-      "summary": "The man who stabbed his fellow pilot, the captain of the Israel-bound Flydubai flight, was reportedly barred from flying in his native Oman over security concerns.",
-      "url": "https://www.dw.com/en/co-pilot-on-flydubai-flight-was-banned-from-flying-by-oman/a-79526641?maca=en-rss-en-all-1573-rdf",
+      "title": "Flydubai co-pilot attempted 'terrorist attack,' UAE says",
+      "summary": "The man, who stabbed his fellow pilot on an Israel-bound Flydubai flight, was reportedly barred from flying in his native Oman over security concerns.",
+      "url": "https://www.dw.com/en/flydubai-co-pilot-attempted-terrorist-attack-uae-says/a-79526641?maca=en-rss-en-all-1573-rdf",
       "source": "DW",
       "sourceCountry": "Germany",
       "sourceType": "news",
-      "publishedAt": "2026-10-03T03:52:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 28.6,
+      "publishedAt": "2026-10-03T08:17:00.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 27.7,
       "topics": [
         "security"
+      ]
+    },
+    {
+      "id": "c10e69b69753fff1",
+      "category": "world",
+      "title": "Mixed reaction in Guinea-Bissau after ousted president barred from returning",
+      "summary": "Military leaders cited 'security conditions' and the need to preserve public order for barring Umaro Sissoco Embalo's return.",
+      "url": "https://www.africanews.com/2026/10/03/mixed-reaction-in-guinea-bissau-after-ousted-president-barred-from-returning/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T09:55:29.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 27.1,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "92d9b4186b876401",
+      "category": "world",
+      "title": "Latvia votes in parliamentary election amid rising costs",
+      "summary": "Around 1.5 million Latvians are eligible to vote in an election which has been dominated by national security concerns and rising living costs. Four Eurofighter jets are on NATO deployment over Latvia during the poll.",
+      "url": "https://www.dw.com/en/latvia-votes-in-parliamentary-election-amid-rising-costs/a-79527253?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T06:06:00.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 27.1,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "9a25b7f7fe2e7958",
+      "category": "ai",
+      "title": "v0.31.0: [Misc] Add Transformers version upper bound in requirements (#59614)",
+      "summary": "Signed-off-by: Isotr0py Isotr0py@outlook.com Co-authored-by: Harry Mellor 19981378+hmellor@users.noreply.github.com (cherry picked from commit 58b3298 )",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-02T22:18:12.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 26.2,
+      "topics": [
+        "models"
       ]
     },
     {
@@ -626,26 +674,10 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T22:18:12.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 28.2,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 26.2,
       "topics": [
         "models"
-      ]
-    },
-    {
-      "id": "fcc9715a059c1ad4",
-      "category": "world",
-      "title": "US and Australia suspend diplomatic operations in Brazil before election",
-      "summary": "Security threats prompt US and Australia to suspend diplomatic operations in Brazil before pivotal election day.",
-      "url": "https://www.aljazeera.com/news/2026/10/3/us-and-australia-suspend-diplomatic-operations-in-brazil-before-election?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T00:46:10.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 27.8,
-      "topics": [
-        "security"
       ]
     },
     {
@@ -658,8 +690,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 27.6,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 25.6,
       "topics": [
         "security"
       ]
@@ -674,8 +706,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 27.6,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 25.6,
       "topics": [
         "security"
       ]
@@ -690,8 +722,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T22:26:57.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 27.2,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 25.2,
       "topics": [
         "kernels",
         "hardware",
@@ -708,8 +740,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-02T19:30:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 26.5,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 24.5,
       "topics": []
     },
     {
@@ -722,9 +754,25 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T15:19:50.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 26.4,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 24.4,
       "topics": []
+    },
+    {
+      "id": "7607d77f7cc696c2",
+      "category": "world",
+      "title": "UK-Iranian dual national bailed after RAF Fairford incident arrest",
+      "summary": "The 25-year-old man was arrested in the London borough of Westminster on Thursday.",
+      "url": "https://www.bbc.co.uk/news/articles/c6d095ygggv1o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T10:58:51.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 24.3,
+      "topics": [
+        "security"
+      ]
     },
     {
       "id": "fca470f45f5704a8",
@@ -736,8 +784,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-02T14:57:41.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 26.3,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 24.3,
       "topics": []
     },
     {
@@ -750,11 +798,39 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T17:59:27.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 26.1,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 24.1,
       "topics": [
         "inference"
       ]
+    },
+    {
+      "id": "1f2b9709b30897e4",
+      "category": "world",
+      "title": "Defining consent and the psychology behind the ‘Cornell 7’ rape case",
+      "summary": "How a Cornell student went from blaming herself, to reporting an alleged fraternity rape.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/defining-consent-and-the-psychology-behind-the-cornell-7-rape-case?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T12:39:59.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "b28a02e41983f10f",
+      "category": "world",
+      "title": "Will Spain's housing crisis lead to a snap election?",
+      "summary": "The BBC's Guy Hedgecoe is in Madrid, where a series of marches have been scheduled, after Spain's Congress rejected measures aimed at tackling the country's housing crisis.",
+      "url": "https://www.bbc.co.uk/news/videos/cmgj9vz2zxelo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T12:26:30.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 23.7,
+      "topics": []
     },
     {
       "id": "966d10cbc1dc14d1",
@@ -766,8 +842,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T20:00:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 23.6,
       "topics": []
     },
     {
@@ -780,8 +856,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-02T16:10:55.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 23.6,
       "topics": []
     },
     {
@@ -794,11 +870,97 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-02T15:57:55.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 23.6,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "8728049971ffc325",
+      "category": "world",
+      "title": "Joker persona helps Cong 'feel the fear' in opponents",
+      "summary": "Wang Cong dismisses critics who say she she is not deserving of facing Natalia Silva for the flyweight world title at UFC 332 on Saturday.",
+      "url": "https://www.bbc.co.uk/sport/mixed-martial-arts/articles/ckq5x5de46ppo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T07:07:09.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 23.4,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "49a992bb4bb75e6a",
+      "category": "world",
+      "title": "India news: Cockroach Janta Party announces Delhi march for October 10, calls for election chief's resignation",
+      "summary": "The Cockroach Janta Party has called for a protest in Delhi if Chief Election Commissioner Gyanesh Kumar does not resign. After the Indian men's cricket team struck gold, all eyes are on their hockey counterparts.",
+      "url": "https://www.dw.com/en/india-news-cockroach-janta-party-announces-delhi-march-for-october-10-calls-for-election-chief-s-resignation/live-79527537?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T10:13:00.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 23.1,
+      "topics": []
+    },
+    {
+      "id": "2fe6b168967d8ebc",
+      "category": "world",
+      "title": "Flavio Bolsonaro: In the name of the father, sons, and holy ideology",
+      "summary": "The first round of Brazil’s presidential election on Sunday pits two well-known names in the political ring: Lula vs. Bolsonaro. But it’s not former president Jair Bolsonaro facing off against the incumbent head of state – it’s his eldest son, Flavio Bolsonaro. He’s less charismatic than his father but just as ideologically radical as the family patriarch.",
+      "url": "https://www.france24.com/en/americas/20261003-flavio-bolsonaro-in-the-name-of-the-father-sons-and-holy-ideology",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T09:48:12.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 23,
+      "topics": []
+    },
+    {
+      "id": "7388e03f14381f04",
+      "category": "world",
+      "title": "G7 to release 100 million barrels of oil and diesel, will it curb prices?",
+      "summary": "Global energy prices have soared due to the US and Israel's war on Iran and Russia's war on Ukraine.",
+      "url": "https://www.aljazeera.com/news/2026/10/3/g7-to-release-100-million-barrels-of-oil-and-diesel-will-it-curb-prices?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T09:27:38.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 23,
+      "topics": []
+    },
+    {
+      "id": "b3935178cb3d0378",
+      "category": "world",
+      "title": "Oil prices fall as G7 agrees to release 100 million barrels of reserves",
+      "summary": "International benchmark Brent crude briefly fell below $100 per barrel before stabilising around $102, while US oil prices slumped by up to 5 per cent.",
+      "url": "https://www.africanews.com/2026/10/03/oil-prices-fall-as-g7-agrees-to-release-100-million-barrels-of-reserves/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T12:23:37.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "9b6e1cf4a3372371",
+      "category": "world",
+      "title": "Ethiopia's Tigray rebels abandon regional capital Mekelle as pro-government forces advance",
+      "summary": "Rebels from the Tigray People's Liberation Front (TPLF) in Ethiopia were abandoning their regional capital of Mekkele in the north of the country on Saturday, according to local reports. The TPLF has been fighting against federal forces and pro-government militias since September 23 and launching attacks into neighbouring states, raising fears of an all-out civil war similar to that of 2020-2022.",
+      "url": "https://www.france24.com/en/africa/20261003-ethiopia-s-tigray-rebels-abandon-regional-capital-of-mekelle-as-pro-government-forces-advance",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T07:58:45.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 22.6,
+      "topics": []
     },
     {
       "id": "6df760a519c0ff64",
@@ -810,8 +972,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-03T04:05:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 24.6,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 22.6,
       "topics": []
     },
     {
@@ -824,8 +986,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T04:01:31.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 24.6,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 22.6,
       "topics": [
         "training"
       ]
@@ -840,53 +1002,11 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-02T15:20:05.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 24.4,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 22.4,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "1c89349aa4391fe6",
-      "category": "world",
-      "title": "New claims that Netanyahu rejected Hamas offer to release captives",
-      "summary": "Reports are building that Israel rejected a Hamas offer to release all civilian hostages taken on October 7, 2023.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/3/new-claims-that-netanyahu-rejected-hamas-offer-to-release-captives?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T04:58:43.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 23.8,
-      "topics": []
-    },
-    {
-      "id": "24b7d0008ceb54c9",
-      "category": "world",
-      "title": "WHO warns of ‘devastating consequences’ due to delayed aid entry into Gaza",
-      "summary": "The WHO's representative in Palestine calls on Israeli authorities to 'release the pressure on medical supplies'.",
-      "url": "https://www.aljazeera.com/news/2026/10/3/who-warns-of-devastating-consequences-due-to-delayed-aid-entry-into-gaza?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T04:54:20.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 23.8,
-      "topics": []
-    },
-    {
-      "id": "f88f5135d8c2e9b6",
-      "category": "world",
-      "title": "G7 to release millions of barrels of oil and diesel after Trump threat",
-      "summary": "The co-ordinated release is aimed at heading off further price spikes and avoiding a ban on US diesel exports.",
-      "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T04:38:31.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 23.8,
-      "topics": []
     },
     {
       "id": "c77c99d812eac3a5",
@@ -898,8 +1018,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 21.8,
       "topics": []
     },
     {
@@ -912,8 +1032,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-01T16:11:45.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 21.6,
       "topics": [
         "inference",
         "hardware",
@@ -930,128 +1050,9 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T19:33:47.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 23.5,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 21.5,
       "topics": []
-    },
-    {
-      "id": "1747744d54d1848f",
-      "category": "world",
-      "title": "North Korea launches ballistic missile as tensions with Seoul grow over border mine blasts",
-      "summary": "North Korea launched a ballistic missile Saturday morning from the Wonsan area on its east coast into the Sea of Japan, according to Seoul's military. The launch comes amid renewed tensions between North Korea and South Korea, with the latter demanding an apology for a blast that wounded three South Korean soldiers inside the Demilitarized Zone last month.",
-      "url": "https://www.france24.com/en/asia-pacific/20261003-north-korea-fires-ballistic-missile-after-seoul-s-apology-demand",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T02:40:43.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 23.3,
-      "topics": []
-    },
-    {
-      "id": "4e60dbb68b89f839",
-      "category": "world",
-      "title": "US, Australia suspend consular services in Brazil",
-      "summary": "The US and Australia have announced a halt to their consular services in Brazil beginning Friday. The news comes two days before Brazilians head to the polls to vote in the high-stakes presidential election.",
-      "url": "https://www.dw.com/en/us-australia-suspend-consular-services-in-brazil/a-79526311?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T02:24:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 23.2,
-      "topics": []
-    },
-    {
-      "id": "7be885d13bdc5309",
-      "category": "world",
-      "title": "Guinea-Bissau junta blocks Embaló’s planned return, citing security concerns",
-      "summary": "Earlier this week, former president Umaro Sissoco Embaló said he would come back to Guinea-Bissau. But on Thursday, the military high command said it refused his return, citing national security, public order and the need to preserve social stability.",
-      "url": "https://www.africanews.com/2026/10/02/guinea-bissau-junta-blocks-embalos-planned-return-citing-security-concerns/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T07:52:03.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 22.6,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "e0d33ef3364bae44",
-      "category": "world",
-      "title": "The boys from Brazil",
-      "summary": "The importance of tomorrow’s election in Brazil can be overrated or underestimated with equal ease. Yet the apparent deadlock between the two extremes is not immune to several variables, including turnout. Leer más",
-      "url": "https://www.batimes.com.ar/news/op-ed/editorial-the-boys-from-brazil.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T03:17:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 22.4,
-      "topics": []
-    },
-    {
-      "id": "458a796cc50f6faf",
-      "category": "world",
-      "title": "New York governor condemns handling of Cornell rape case",
-      "summary": "An 2024 alleged gang rape at the prestigious Cornell University has gained national attention after the accuser, identified only as Jane Doe, filed a lawsuit. A special prosecutor has been appointed to handle the case.",
-      "url": "https://www.dw.com/en/new-york-governor-condemns-handling-of-cornell-rape-case/a-79525431?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T19:09:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 22.4,
-      "topics": [
-        "models"
-      ]
-    },
-    {
-      "id": "6ba7d836fb37dd35",
-      "category": "world",
-      "title": "The best Argentina needs a better Milei",
-      "summary": "A convincing re-election would need a much better Milei than the one we are getting, one who is less concerned about being right and more about empathising with the people he is meant to represent. Leer más",
-      "url": "https://www.batimes.com.ar/news/opinion-and-analysis/the-best-argentina-needs-a-better-milei.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T03:01:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 22.3,
-      "topics": []
-    },
-    {
-      "id": "f1e08a23ae051309",
-      "category": "world",
-      "title": "French media respond to M. Le Pen’s ‘Kevlar suit’ comments against investigative outlet",
-      "summary": "The editorial committees of 39 French media outlets, including FRANCE 24 and RFI, on Friday released a joint statement condemning National Rally (RN) party leader and presidential candidate Marine Le Pen’s recent comments targeting investigative outlet Médiapart as “violent attempts at intimidation” against press freedom in France, qualifying them as “particularly worrying for the right to information\" that citizens of a democracy \"are entitled to expect”.",
-      "url": "https://www.france24.com/en/france/20261002-french-media-react-to-m-le-pen-s-kevlar-suit-comments-against-investigative-press-outlet",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T21:37:11.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 22,
-      "topics": []
-    },
-    {
-      "id": "30558fd9841164d4",
-      "category": "ai",
-      "title": "GPU-Initiated Communication: Dissecting Down to the Bone",
-      "summary": "GPU-initiated communication lets GPU threads post RDMA operations directly to the NIC. It underpins NVSHMEM, NCCL GIN, and DeepEP, which serve the fine-grained, latency-critical communication of Mixture-of-Experts (MoE) models, yet its performance characteristics and optimizations remain scarcely documented beyond source code, and library comparisons fail to separate the costs of the hardware mechanism from those of the library around it. This paper dissects GPU-initiated communication at the GPU-NIC boundary. We f",
-      "url": "https://arxiv.org/abs/2610.01380v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-01T09:46:08.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 22,
-      "topics": [
-        "hardware",
-        "models"
-      ]
     },
     {
       "id": "c765707cfe3a42e4",
@@ -1063,27 +1064,9 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T20:45:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 21.8,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 19.8,
       "topics": []
-    },
-    {
-      "id": "c0d6d472dc57fa03",
-      "category": "ai",
-      "title": "RapidMoE: Exploiting Cross-Asymmetry via Adaptive Residual Offloading for Large-Scale MoE Inference",
-      "summary": "The widespread adoption of Mixture-of-Experts (MoE) has created a growing need for deployment on heterogeneous platforms. However, it exposes a fundamental mismatch between the algorithmic demands of large-scale MoE and the disparate characteristics of hardware.Existing CPU-GPU hybrid inference systems fail to resolve this as they either encounter PCIe bandwidth bottlenecks when loading experts to GPUs, or rely heavily on CPU computation. Consequently, this leads to low resource utilization and inevitable violation",
-      "url": "https://arxiv.org/abs/2610.01265v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-01T08:02:24.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 21.6,
-      "topics": [
-        "inference",
-        "hardware",
-        "models"
-      ]
     },
     {
       "id": "b8cb3498af23cc67",
@@ -1095,8 +1078,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-01T23:44:13.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 21.5,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 19.5,
       "topics": [
         "inference",
         "hardware"
@@ -1112,11 +1095,25 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-02T15:14:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 21.4,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 19.4,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "35dab605b9f8fb94",
+      "category": "finance",
+      "title": "As public fears of AI grow, Trump digs in on voluntary safeguards",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/public-fears-ai-grow-trump-digs-in-voluntary-safeguards-6429041",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T10:05:31.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 19.1,
+      "topics": []
     },
     {
       "id": "cb4825003faaf9c2",
@@ -1128,8 +1125,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T01:57:43.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 21.1,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 19.1,
       "topics": []
     },
     {
@@ -1142,8 +1139,36 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-02T21:19:05.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 20.9,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "74fdab2a8732b029",
+      "category": "finance",
+      "title": "Suppliers pile pressure on government over energy bills",
+      "summary": "Immediate action is needed to help households struggling with bills this winter, says trade body Energy UK.",
+      "url": "https://www.bbc.co.uk/news/articles/cq0ld88kzxw8o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T08:58:44.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 18.8,
+      "topics": []
+    },
+    {
+      "id": "4f90954628591ddb",
+      "category": "technology",
+      "title": "The dawn of the age of the exoskeleton",
+      "summary": "The devices continue to show noticeable benefits for users in various real-world tasks.",
+      "url": "https://arstechnica.com/science/2026/10/the-dawn-of-the-age-of-the-exoskeleton/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T11:15:33.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 18.4,
       "topics": []
     },
     {
@@ -1156,8 +1181,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-02T18:39:36.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 18.3,
       "topics": []
     },
     {
@@ -1170,22 +1195,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T15:00:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 20.3,
-      "topics": []
-    },
-    {
-      "id": "f8618fcc80685b7c",
-      "category": "technology",
-      "title": "Research roundup: 6 cool science stories we almost missed",
-      "summary": "Also: Spooky action at the LHC, Ice Age psychoactive use, yeast for building homes on Mars, and more.",
-      "url": "https://arstechnica.com/science/2026/10/research-roundup-6-cool-science-stories-we-almost-missed-6/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T18:17:27.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 20.2,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 18.3,
       "topics": []
     },
     {
@@ -1198,8 +1209,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-02T14:30:48.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 20.2,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 18.2,
       "topics": []
     },
     {
@@ -1212,50 +1223,22 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-02T14:17:50.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 20.2,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 18.2,
       "topics": []
     },
     {
-      "id": "aec9a78e78f6e771",
+      "id": "c0692cf72bb7492b",
       "category": "finance",
-      "title": "Rising energy costs add to cost of living for Northern Ireland's consumers",
-      "summary": "Households across Northern Ireland face increasing pressure on the cost of living as energy price hikes have come into effect.",
-      "url": "https://www.bbc.co.uk/news/articles/c5j9x99yep92o",
+      "title": "New baby bank 'open to everybody'",
+      "summary": "The facility offers essential items for free, including clothes for babies and small children.",
+      "url": "https://www.bbc.co.uk/news/articles/ck624p1y8ejyo",
       "source": "BBC Business",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-10-03T05:27:43.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 20,
-      "topics": []
-    },
-    {
-      "id": "17c638b45e5b2aec",
-      "category": "finance",
-      "title": "Analysis:AI's race to transform the world before the money runs out",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/analysisais-race-transform-world-money-runs-out-6428746",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T05:06:10.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 19.9,
-      "topics": []
-    },
-    {
-      "id": "baf5c27603a6a050",
-      "category": "finance",
-      "title": "New free repair shop to launch in Oxford",
-      "summary": "Organisers hope the initiative will attract enough interest to continue on a monthly basis.",
-      "url": "https://www.bbc.co.uk/news/articles/c574e41mg770o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T13:17:48.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 19.9,
+      "publishedAt": "2026-10-03T06:08:05.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 18.1,
       "topics": []
     },
     {
@@ -1268,36 +1251,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-02T13:00:39.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 19.8,
-      "topics": []
-    },
-    {
-      "id": "589e2ef191a8812c",
-      "category": "ai",
-      "title": "Pope Leo XIV is not a fan of AI-generated art",
-      "summary": "\"There is an ontological difference, even before an aesthetic one, between art and what a machine can generate through statistical calculation based on millions of images created by others,\" the pope wrote. \"Algorithms lack the spark of humanity.\"",
-      "url": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T15:39:41.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 19.5,
-      "topics": []
-    },
-    {
-      "id": "4bfd7d24b6cf5c02",
-      "category": "finance",
-      "title": "Boris Vujčić: Resilience, integration and competitiveness: building the future of European banking",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261002_1~419efe18e0.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-02T11:30:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 19.5,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 17.8,
       "topics": []
     },
     {
@@ -1310,9 +1265,54 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-01T23:50:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 19.5,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 17.6,
       "topics": []
+    },
+    {
+      "id": "589e2ef191a8812c",
+      "category": "ai",
+      "title": "Pope Leo XIV is not a fan of AI-generated art",
+      "summary": "\"There is an ontological difference, even before an aesthetic one, between art and what a machine can generate through statistical calculation based on millions of images created by others,\" the pope wrote. \"Algorithms lack the spark of humanity.\"",
+      "url": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-02T15:39:41.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 17.5,
+      "topics": []
+    },
+    {
+      "id": "4bfd7d24b6cf5c02",
+      "category": "finance",
+      "title": "Boris Vujčić: Resilience, integration and competitiveness: building the future of European banking",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261002_1~419efe18e0.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-02T11:30:00.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 17.5,
+      "topics": []
+    },
+    {
+      "id": "af0a883250f35d6e",
+      "category": "ai",
+      "title": "ePACT: Energy-Performance-Aware Commitment Tracking for LLM Serving",
+      "summary": "Reducing LLM serving energy does not by itself guarantee lower deployment cost when electricity procurement exposes operators to unfavorable deviations from preset commitments. We study hourly commitments with positive, potentially asymmetric costs for overuse and underuse, and formulate energy-Performance-Aware Commitment Tracking: minimize deviation costs subject to request-level service requirements. We implement ePACT, a two-level controller that adjusts serving capacity and GPU clocks as requests arrive. A glo",
+      "url": "https://arxiv.org/abs/2610.01784v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-01T14:32:24.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 17.2,
+      "topics": [
+        "inference",
+        "hardware"
+      ]
     },
     {
       "id": "d8cca8e0ac7e9d76",
@@ -1324,8 +1324,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T06:06:56.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 19.1,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 17.1,
       "topics": []
     },
     {
@@ -1338,8 +1338,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-03T00:45:39.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 17.8,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 15.8,
       "topics": []
     },
     {
@@ -1352,8 +1352,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 17.6,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 15.6,
       "topics": []
     },
     {
@@ -1366,8 +1366,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 17.6,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 15.6,
       "topics": []
     },
     {
@@ -1380,22 +1380,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 17.6,
-      "topics": []
-    },
-    {
-      "id": "8b53acb416a811fc",
-      "category": "ai",
-      "title": "v0.31.0rc3: [Model Runner V2] Support randomized dummy inputs (#58411)",
-      "summary": "Signed-off-by: Robert Shaw robshaw@redhat.com Co-authored-by: Robert Shaw robshaw@redhat.com Co-authored-by: Claude Opus 5.5 noreply@anthropic.com Co-authored-by: mergify[bot] Co-authored-by: Nick Hill nickhill123@gmail.com (cherry picked from commit e5e38ba )",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0rc3",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-01T07:54:39.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 17.6,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 15.6,
       "topics": []
     },
     {
@@ -1408,8 +1394,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T18:13:29.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 17.1,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 15.1,
       "topics": []
     },
     {
@@ -1422,22 +1408,22 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-02T21:09:14.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 16.9,
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 14.9,
       "topics": []
     },
     {
-      "id": "9c4809c6355ed9f1",
+      "id": "71c2213bf6b2ed1b",
       "category": "finance",
-      "title": "Minutes of the Meeting of the Court of Directors held on 16 July 2026",
-      "summary": "The Bank's Court of Directors acts as a unitary board, setting the organisation's strategy and budget and taking key decisions on resourcing and appointments. Required to meet a minimum seven times per year, it has five executive members from the Bank and up to nine non-executive members.",
-      "url": "https://www.bankofengland.co.uk/minutes/2026/july/court-minutes-16-july-2026",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
+      "title": "Isabel Schnabel: Central banks on-chain",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261001_1~a0be67193b.en.pdf",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
       "sourceType": "institution",
-      "publishedAt": "2026-10-01T13:00:00.000Z",
-      "fetchedAt": "2026-10-03T05:38:25.473Z",
-      "score": 16.8,
+      "publishedAt": "2026-10-01T15:30:00.000Z",
+      "fetchedAt": "2026-10-03T13:37:58.696Z",
+      "score": 12.5,
       "topics": []
     }
   ]
