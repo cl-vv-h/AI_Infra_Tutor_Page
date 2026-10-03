@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T19:20:58.903Z",
+  "generatedAt": "2026-10-03T23:17:05.563Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 42,
-      "latestPublishedAt": "2026-10-03T18:06:47.000Z",
+      "entryCount": 41,
+      "latestPublishedAt": "2026-10-03T21:16:21.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,8 +40,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 135,
-      "latestPublishedAt": "2026-10-03T18:49:00.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-03T21:55:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-03T19:00:01.000Z",
+      "latestPublishedAt": "2026-10-03T23:03:44.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-03T19:00:19.000Z",
+      "latestPublishedAt": "2026-10-03T22:45:48.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-03T11:15:33.000Z",
+      "latestPublishedAt": "2026-10-03T19:45:17.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-03T18:08:42.000Z",
+      "latestPublishedAt": "2026-10-03T20:58:30.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-03T02:57:07.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-03T21:57:36.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -288,7 +288,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-03T15:13:20.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-03T12:26:38.000Z",
+      "latestPublishedAt": "2026-10-03T19:31:53.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -312,9 +312,9 @@
       "type": "engineering",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 872,
-      "latestPublishedAt": "2026-10-02T15:19:50.000Z",
-      "selectedCount": 2,
+      "entryCount": 873,
+      "latestPublishedAt": "2026-10-03T22:56:48.000Z",
+      "selectedCount": 3,
       "libraryCount": 8
     },
     {
@@ -418,7 +418,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-02T19:55:07.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -524,8 +524,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T19:55:07.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 29.1,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 28.2,
       "topics": [
         "inference",
         "kernels"
@@ -541,8 +541,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T19:42:55.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 28.1,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 27.1,
       "topics": [
         "inference",
         "kernels",
@@ -562,11 +562,25 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-03T13:52:13.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 27.6,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 26.6,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "7d661ce593c2915a",
+      "category": "ai",
+      "title": "The Agent Said It Was Done. The Database Disagreed.",
+      "summary": "",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-03T22:56:48.000Z",
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 25.9,
+      "topics": []
     },
     {
       "id": "348c80fb57e4ba2d",
@@ -578,8 +592,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:28:10.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 26.5,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 25.5,
       "topics": [
         "inference"
       ]
@@ -594,8 +608,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 26.4,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 25.4,
       "topics": [
         "security"
       ]
@@ -610,8 +624,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 26.4,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 25.4,
       "topics": [
         "security"
       ]
@@ -626,8 +640,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-03T08:17:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 26.2,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 25.2,
       "topics": [
         "security"
       ]
@@ -642,8 +656,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-03T09:55:29.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 24.7,
       "topics": [
         "security"
       ]
@@ -658,8 +672,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T22:18:12.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 24.7,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 23.8,
       "topics": [
         "models"
       ]
@@ -674,11 +688,39 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T22:18:12.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 24.7,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 23.8,
       "topics": [
         "models"
       ]
+    },
+    {
+      "id": "3de2df5ae4a54202",
+      "category": "world",
+      "title": "Latvia exit polls put PM's pro-Ukraine party ahead but coalition partners stumble",
+      "summary": "Latvian Prime Minister Andris Kulbergs' pro-Ukraine and pro-Europe party was seen winning a parliamentary election on Saturday by an unexpectedly wide margin, exit polls showed, even as projected results for other coalition parties suggested the centrist PM would have to form a new ruling coalition.",
+      "url": "https://www.france24.com/en/europe/20261003-latvia-elections-pm-kulbergs-pro-ukraine-party-ahead-coalition-partners-stumble",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T20:58:30.000Z",
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "c42d2e3914bca68b",
+      "category": "world",
+      "title": "Lula and Bolsonaro make final push for votes ahead of Brazil's knife-edge election",
+      "summary": "Brazil's President Luiz Inacio Lula da Silva and his main challenger Flavio Bolsonaro wrapped up their campaigns on Saturday in the powerhouse state of Sao Paulo, where a fifth of the nation's vote is based, seeking to rally supporters and convince the undecided on the eve of Sunday's nail-biter election.",
+      "url": "https://www.france24.com/en/americas/20261003-lula-and-bolsonaro-make-final-push-for-votes-ahead-of-brazil-s-knife-edge-election",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T20:16:01.000Z",
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 23.2,
+      "topics": []
     },
     {
       "id": "a6c3345bae9f8ca6",
@@ -690,8 +732,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 24.2,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 23.2,
       "topics": [
         "security"
       ]
@@ -706,8 +748,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T12:00:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 24.2,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 23.2,
       "topics": [
         "security"
       ]
@@ -722,27 +764,37 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-03T19:00:01.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 22.9,
       "topics": []
     },
     {
-      "id": "b92ce439c24214b0",
-      "category": "technology",
-      "title": "Optimizing Jagged Flash Attention with TLX: The Road Toward SOTA FA4 on Blackwell",
-      "summary": "TL;DR In this blog post, we present our work on Jagged Flash Attention (JFA) — the attention kernel behind Meta’s Generative Ads Model (GEM) — on NVIDIA Blackwell (B200), built...",
-      "url": "https://pytorch.org/blog/optimizing-jagged-flash-attention-with-tlx-the-road-toward-sota-fa4-on-blackwell/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-01T22:26:57.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 23.8,
-      "topics": [
-        "kernels",
-        "hardware",
-        "models"
-      ]
+      "id": "828bc143eead3b53",
+      "category": "world",
+      "title": "For some Brazilians, this election is a vote on Trump",
+      "summary": "President Trump says he's been having success winning races in Latin America. As Brazilian voters go to the polls, they're also deciding how much influence Trump should have in their country.",
+      "url": "https://www.npr.org/2026/10/03/nx-s1-5989699/for-some-brazilians-this-election-is-a-vote-on-trump",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T21:57:36.000Z",
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "3a495db39b648de8",
+      "category": "world",
+      "title": "Lula or Bolsonaro? Some Brazilian voters say they don't want either",
+      "summary": "Brazil's election enters its final day of campaigning as Lula and Flávio Bolsonaro make their last pitches to voters. Brazilians explain what worries them, and why some still can't choose.",
+      "url": "https://www.npr.org/2026/10/03/nx-s1-5981108/lula-or-bolsonaro-some-brazilian-voters-say-they-dont-want-either",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T21:57:29.000Z",
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 22.7,
+      "topics": []
     },
     {
       "id": "a10631c1e1b1ba39",
@@ -754,8 +806,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-03T18:07:54.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 23.7,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -768,8 +820,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-03T15:42:45.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 22.1,
       "topics": []
     },
     {
@@ -782,8 +834,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-02T19:30:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 23,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 22.1,
       "topics": []
     },
     {
@@ -796,8 +848,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T15:19:50.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 23,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 22,
       "topics": []
     },
     {
@@ -810,8 +862,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-03T10:58:51.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 22.9,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 21.9,
       "topics": [
         "security"
       ]
@@ -826,22 +878,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-02T14:57:41.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 22.9,
-      "topics": []
-    },
-    {
-      "id": "dbf70977fe5843c7",
-      "category": "world",
-      "title": "Loud blasts rock Sanaa as Houthis accuse Saudi forces of pounding Yemeni capital",
-      "summary": "Houthi rebels accused Saudi forces of launching 26 strikes on Sanaa on Saturday after loud explosions rocked the Yemeni capital, which is controlled by the Iran-backed group. In Saudi Arabia, flames and a large plume of smoke were seen rising from a facility belonging to oil giant Aramco south of the kingdom's capital, Riyadh.",
-      "url": "https://www.france24.com/en/middle-east/20261003-houthis-blame-saudi-air-strikes-loud-blasts-rock-yemen-capital-sanaa",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T14:31:30.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 21.9,
       "topics": []
     },
     {
@@ -854,8 +892,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-03T14:23:55.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 21.8,
       "topics": []
     },
     {
@@ -868,8 +906,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-03T14:06:47.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -882,8 +920,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-03T12:26:30.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 22.3,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 21.3,
       "topics": []
     },
     {
@@ -896,8 +934,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T20:00:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 22.2,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 21.2,
       "topics": []
     },
     {
@@ -910,25 +948,9 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-02T16:10:55.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 22.2,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 21.2,
       "topics": []
-    },
-    {
-      "id": "9c0a5184c790f15e",
-      "category": "world",
-      "title": "'We have to close defence gaps urgently': EU Parliament Foreign Affairs Committee chief McAllister",
-      "summary": "We sit down with David McAllister, the chair of the European Parliament’s Foreign Affairs Committee. He talks to us about the security threats facing Europe, and what defence gaps the EU urgently needs to close. For McAllister, the EU is \"not at war with the Russian Federation, but we are no longer at peace with Russia\". He also believes that the EU is not, as yet, capable of making sovereign decisions in certain areas of defence \"because we are too dependent on US capabilities.\"",
-      "url": "https://www.france24.com/en/tv-shows/talking-europe/20261002-we-have-to-close-defence-gaps-urgently-eu-parliament-foreign-affairs-committee-chief-mcallister",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T15:57:55.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 22.2,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "c691f516306cb9d1",
@@ -940,36 +962,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-03T14:17:17.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 21.7,
-      "topics": []
-    },
-    {
-      "id": "49a992bb4bb75e6a",
-      "category": "world",
-      "title": "India news: Cockroach Janta Party announces Delhi march for October 10, calls for election chief's resignation",
-      "summary": "The Cockroach Janta Party has called for a protest in Delhi if Chief Election Commissioner Gyanesh Kumar does not resign. After the Indian men's cricket team struck gold, all eyes are on their hockey counterparts.",
-      "url": "https://www.dw.com/en/india-news-cockroach-janta-party-announces-delhi-march-for-october-10-calls-for-election-chief-s-resignation/live-79527537?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T10:13:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 21.7,
-      "topics": []
-    },
-    {
-      "id": "f541f96c75fe6040",
-      "category": "world",
-      "title": "UN says at least 150,000 have fled their homes in Yemen amid fighting",
-      "summary": "It is further intensifying the country's humanitarian crisis with more than 5 million people already internally displaced following years of conflict.",
-      "url": "https://www.africanews.com/2026/10/03/un-says-at-least-150000-have-fled-their-homes-in-yemen-amid-fighting/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T13:39:11.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 21.6,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 20.8,
       "topics": []
     },
     {
@@ -982,8 +976,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-03T04:05:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 20.2,
       "topics": []
     },
     {
@@ -996,11 +990,25 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T04:01:31.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 20.2,
       "topics": [
         "training"
       ]
+    },
+    {
+      "id": "8d864ffabdc4e05a",
+      "category": "finance",
+      "title": "Jay Clayton to lead Trump's AI task force, deliver report in 120 days, WSJ reports",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/jay-clayton-lead-trumps-ai-task-force-deliver-report-in-120-days-wsj-reports-6430231",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T22:45:48.000Z",
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 19.9,
+      "topics": []
     },
     {
       "id": "c77c99d812eac3a5",
@@ -1012,8 +1020,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 20.4,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 19.4,
       "topics": []
     },
     {
@@ -1026,8 +1034,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T19:33:47.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 20.1,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 19.1,
       "topics": []
     },
     {
@@ -1040,8 +1048,22 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-03T19:00:19.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 19.9,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "a399958af74a07a7",
+      "category": "technology",
+      "title": "Milt Windler, NASA flight director who helped save Apollo 13, dies at 94",
+      "summary": "\"...we were making history.\"",
+      "url": "https://arstechnica.com/space/2026/10/milt-windler-nasa-flight-director-who-helped-save-apollo-13-dies-at-94/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-03T19:45:17.000Z",
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 18.1,
       "topics": []
     },
     {
@@ -1054,8 +1076,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-03T18:43:57.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 18.8,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -1068,8 +1090,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T20:45:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 18.4,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 17.4,
       "topics": []
     },
     {
@@ -1082,8 +1104,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-03T16:30:01.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 18.3,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 17.3,
       "topics": []
     },
     {
@@ -1096,8 +1118,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-01T23:44:13.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 18.1,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 17.1,
       "topics": [
         "inference",
         "hardware"
@@ -1113,8 +1135,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-02T15:14:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 18,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 17,
       "topics": [
         "security"
       ]
@@ -1129,22 +1151,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-03T14:00:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 17.7,
-      "topics": []
-    },
-    {
-      "id": "35dab605b9f8fb94",
-      "category": "finance",
-      "title": "As public fears of AI grow, Trump digs in on voluntary safeguards",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/public-fears-ai-grow-trump-digs-in-voluntary-safeguards-6429041",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-03T10:05:31.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 17.7,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1157,8 +1165,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T01:57:43.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 17.7,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1171,8 +1179,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-02T21:19:05.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 17.5,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 16.5,
       "topics": []
     },
     {
@@ -1185,8 +1193,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-03T08:58:44.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 17.4,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 16.4,
       "topics": []
     },
     {
@@ -1199,8 +1207,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-03T11:15:33.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 17,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 16,
       "topics": []
     },
     {
@@ -1213,22 +1221,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T15:00:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 16.9,
-      "topics": []
-    },
-    {
-      "id": "214cce99f89a3be6",
-      "category": "technology",
-      "title": "US arrests tech CEO accused of smuggling $300M in Nvidia chips into China",
-      "summary": "Nvidia’s chip-smuggling problem won’t go away as arrests continue.",
-      "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-02T18:39:36.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 16.8,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 15.9,
       "topics": []
     },
     {
@@ -1241,8 +1235,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-02T14:30:48.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 16.8,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 15.8,
       "topics": []
     },
     {
@@ -1255,8 +1249,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-03T06:08:05.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 16.7,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 15.7,
       "topics": []
     },
     {
@@ -1269,22 +1263,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-02T13:00:39.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 16.4,
-      "topics": []
-    },
-    {
-      "id": "8bb19247fa24f79d",
-      "category": "finance",
-      "title": "Average Contract Interest Rates on Loans and Discounts (Aug.)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/dl/loan/yaku/yaku2608.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-01T23:50:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 16.1,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 15.4,
       "topics": []
     },
     {
@@ -1297,8 +1277,22 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T11:30:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 16,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 15.1,
+      "topics": []
+    },
+    {
+      "id": "8bb19247fa24f79d",
+      "category": "finance",
+      "title": "Average Contract Interest Rates on Loans and Discounts (Aug.)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/dl/loan/yaku/yaku2608.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-01T23:50:00.000Z",
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 15.1,
       "topics": []
     },
     {
@@ -1311,8 +1305,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T06:06:56.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 15.7,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 14.7,
       "topics": []
     },
     {
@@ -1325,8 +1319,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 14.2,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 13.2,
       "topics": []
     },
     {
@@ -1339,8 +1333,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 14.2,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 13.2,
       "topics": []
     },
     {
@@ -1353,8 +1347,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-02T08:00:00.000Z",
-      "fetchedAt": "2026-10-03T19:20:58.903Z",
-      "score": 14.2,
+      "fetchedAt": "2026-10-03T23:17:05.563Z",
+      "score": 13.2,
       "topics": []
     }
   ]
