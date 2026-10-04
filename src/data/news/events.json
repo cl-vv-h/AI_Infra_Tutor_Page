@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-10-04T06:13:35.656Z",
-    "releasesCollectedAt": "2026-10-04T06:13:44.521Z",
-    "libraryCollectedAt": "2026-10-04T06:13:35.656Z",
+    "dailyCollectedAt": "2026-10-04T14:18:23.015Z",
+    "releasesCollectedAt": "2026-10-04T14:18:34.669Z",
+    "libraryCollectedAt": "2026-10-04T14:18:23.015Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -53,7 +53,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-04T06:13:44.521Z",
+          "lastCollectedAt": "2026-10-04T14:18:34.669Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -66,7 +66,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-04T06:13:44.521Z",
+          "lastCollectedAt": "2026-10-04T14:18:34.669Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -79,7 +79,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-04T06:13:44.521Z",
+          "lastCollectedAt": "2026-10-04T14:18:34.669Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -92,7 +92,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-10-04T06:13:44.521Z",
+          "lastCollectedAt": "2026-10-04T14:18:34.669Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -105,7 +105,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-02T01:09:04.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-10-04T06:13:44.521Z",
+          "lastCollectedAt": "2026-10-04T14:18:34.669Z",
           "revisionCount": 3,
           "ruleIds": [
             "official-releases"
@@ -176,6 +176,19 @@
           "publishedAt": "2026-09-27T17:00:00.000Z",
           "firstCollectedAt": "2026-09-28T05:43:17.596Z",
           "lastCollectedAt": "2026-09-28T05:43:17.596Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "workers-announcements"
+          ]
+        },
+        {
+          "url": "https://blog.cloudflare.com/streamline/",
+          "title": "Streamline: custom video pipelines with Cloudflare Stream and Workers",
+          "publisher": "Cloudflare Engineering",
+          "publisherCountry": "United States",
+          "publishedAt": "2026-10-02T16:13:45.000Z",
+          "firstCollectedAt": "2026-10-04T14:18:23.015Z",
+          "lastCollectedAt": "2026-10-04T14:18:23.015Z",
           "revisionCount": 0,
           "ruleIds": [
             "workers-announcements"
@@ -389,5 +402,5 @@
       ]
     }
   ],
-  "fingerprint": "95d993a870cc55b762f493af3a65328823bff937ca5c22da60ecb3be17ed6b62"
+  "fingerprint": "f81aa68b5a7ad0989108d0b03fb8d3225f2394ef0eb89e43c660e3a40e92ec3c"
 }
