@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-07T00:00:57.672Z",
+  "generatedAt": "2026-10-07T06:21:19.613Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 38,
-  "failedSourceCount": 1,
+  "sourceCount": 39,
+  "failedSourceCount": 0,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 30,
-      "latestPublishedAt": "2026-10-06T23:52:53.000Z",
-      "selectedCount": 3,
+      "entryCount": 20,
+      "latestPublishedAt": "2026-10-07T05:02:18.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 53,
-      "latestPublishedAt": "2026-10-06T23:01:31.000Z",
+      "latestPublishedAt": "2026-10-07T05:33:43.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 135,
-      "latestPublishedAt": "2026-10-06T23:49:00.000Z",
+      "entryCount": 136,
+      "latestPublishedAt": "2026-10-07T06:17:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-06T23:33:33.000Z",
+      "latestPublishedAt": "2026-10-07T05:54:10.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-06T23:34:18.000Z",
+      "latestPublishedAt": "2026-10-07T05:27:30.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-10-06T13:00:19.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-06T18:31:40.000Z",
+      "latestPublishedAt": "2026-10-07T04:05:00.000Z",
       "selectedCount": 3,
       "libraryCount": 2
     },
@@ -196,7 +196,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 51,
-      "latestPublishedAt": "2026-10-06T23:50:00.000Z",
+      "latestPublishedAt": "2026-10-07T06:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-06T23:30:18.000Z",
+      "latestPublishedAt": "2026-10-07T05:56:19.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-06T20:53:46.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-07T06:02:57.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-06T20:02:16.000Z",
+      "latestPublishedAt": "2026-10-07T05:23:04.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-06T21:27:32.000Z",
+      "latestPublishedAt": "2026-10-07T03:21:44.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -378,8 +378,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-06T21:04:41.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-07T00:35:39.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -401,12 +401,11 @@
       "country": "International",
       "category": "ai",
       "type": "research",
-      "state": "unavailable",
+      "state": "ok",
       "channel": "feed",
-      "httpStatus": 429,
-      "entryCount": 0,
-      "latestPublishedAt": null,
-      "selectedCount": 0,
+      "entryCount": 20,
+      "latestPublishedAt": "2026-10-06T14:30:06.000Z",
+      "selectedCount": 3,
       "libraryCount": 8
     },
     {
@@ -525,8 +524,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T16:13:47.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 33.1,
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 31.5,
       "topics": [
         "kernels",
         "hardware"
@@ -542,8 +541,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-10-06T19:57:04.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 33,
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 31.4,
       "topics": [
         "models"
       ]
@@ -558,8 +557,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-06T16:39:23.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 32.2,
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 30.6,
       "topics": [
         "inference",
         "kernels",
@@ -577,10 +576,95 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T22:57:33.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 30.7,
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 29.2,
       "topics": [
         "kernels"
+      ]
+    },
+    {
+      "id": "cedc3210f2b5598c",
+      "category": "ai",
+      "title": "Lachesis: Lifetime-Aware KV Cache Placement for Agent Serving across HBM and High-Bandwidth Flash",
+      "summary": "Large language model (LLM) serving is increasingly dominated by agentic workloads, in which agents and their sub-agents accumulate context as KV cache across many requests, consuming substantial memory. High-bandwidth flash (HBF) is a promising solution, providing an order of magnitude greater capacity at HBM-class read bandwidth, but its finite write endurance is the key limiting factor. Our key insight is that KV cache should be placed across HBM and HBF by its lifetime. Placing shorter-lived data in HBM lets HBM",
+      "url": "https://arxiv.org/abs/2610.08378v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-06T14:02:19.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 28.9,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "edb2220b37f425e2",
+      "category": "ai",
+      "title": "vTen: Tensor-Centric Verification Framework for Domain-Specific Accelerators",
+      "summary": "The semantic gap between tensor-centric software models and signal-level hardware testbenches creates significant productivity bottlenecks in verifying Domain-Specific Accelerators (DSAs). Existing frameworks like Cocotb suffer from prohibitive synchronization overheads due to fine-grained interactions. To address this, we propose vTen, a data-centric framework that strictly decouples verification intent from execution mechanics. By leveraging a declarative DSL and kernel-granular batching, vTen minimizes host-simu",
+      "url": "https://arxiv.org/abs/2610.08372v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-06T13:55:45.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 28.9,
+      "topics": [
+        "kernels",
+        "hardware"
+      ]
+    },
+    {
+      "id": "ea1a121c59cfd87c",
+      "category": "world",
+      "title": "How Netanyahu survived the political fallout from the October 7 attacks",
+      "summary": "Three years after the deadly Hamas-led October 7 attacks in southern Israel, Prime Minister Benjamin Netanyahu is fighting for political survival ahead of legislative elections later this month. Reports that Arab leaders warned him of the assault in advance have undercut his claims that Israel's security chiefs are to blame, but his political base appears to be holding.",
+      "url": "https://www.france24.com/en/middle-east/20261007-how-netanyahu-survived-the-political-fallout-from-the-october-7-attacks",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T05:24:03.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 28.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "10a676fc77caff49",
+      "category": "world",
+      "title": "India news: Opposition protest clouds Modi's 25-year milestone",
+      "summary": "Delhi police has beefed up security around the Election Commission of India, likely preparing for another day of 'vote theft' protests. Meanwhile, PM Modi marks 25 years in public service. Follow live.",
+      "url": "https://www.dw.com/en/india-news-opposition-protest-clouds-modi-s-25-year-milestone/live-79570653?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T05:03:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 28.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "8c69ecf999504abb",
+      "category": "ai",
+      "title": "DySCo: Dynamic Sharding for Collaborative Edge-Cloud LLM Inference with Depth-Synchronized Batching",
+      "summary": "Pervasive intelligent applications are increasingly deployed on mobile and Internet of Things (IoT) edge devices. Consequently, Large Language Models (LLMs) are increasingly used to support these applications. Yet, due to their high resource demands, LLMs are mostly deployed in the cloud. Layer-wise edge-cloud inference lets resource-constrained edge devices contribute computation to LLMs they cannot host in full. However, heterogeneous split points introduce two coupled inefficiencies. First, edge execution and co",
+      "url": "https://arxiv.org/abs/2610.08268v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-06T12:42:11.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 28.6,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
       ]
     },
     {
@@ -593,8 +677,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T19:07:02.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 29.8,
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 28.2,
       "topics": [
         "hardware"
       ]
@@ -609,14 +693,46 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-06T06:49:35.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 29.7,
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 28.1,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models",
         "training",
+        "security"
+      ]
+    },
+    {
+      "id": "214ab85bea5952c5",
+      "category": "world",
+      "title": "Why do airport and flight rules exist?",
+      "summary": "Everyone follows these rules, but few know why. Each one traces back to an incident that changed aviation security.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/7/why-do-airport-and-flight-rules-exist?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T02:20:17.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 28,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "fcf38483b6c622d9",
+      "category": "world",
+      "title": "Israel marks third anniversary of October 7 attack as election looms",
+      "summary": "Israel will mark the third anniversary of the October 7, 2023 Hamas attack on Wednesday with memorial events across the country, as heightened security surrounds the commemorations and voters prepare for an election in which the deadliest day in Israel’s history is expected to remain a central issue.",
+      "url": "https://www.france24.com/en/middle-east/20261007-israel-marks-third-anniversary-of-october-7-attack-as-election-looms",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T02:14:22.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 28,
+      "topics": [
         "security"
       ]
     },
@@ -630,24 +746,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-06T23:05:38.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 28.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "6ae6a1862064f112",
-      "category": "world",
-      "title": "Trump says he will speak to Putin over reported plague death in Russia",
-      "summary": "US President Donald Trump said Tuesday he would speak “very soon” with Russian President Vladimir Putin over the reported plague death of a laboratory technician, as Washington and the World Health Organization pressed Moscow for greater transparency and clarity over conflicting accounts of the incident in Siberia.",
-      "url": "https://www.france24.com/en/europe/20261006-trump-says-he-will-speak-to-putin-over-reported-plague-death-in-russia",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-06T22:51:48.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 28.7,
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 27.2,
       "topics": [
         "security"
       ]
@@ -662,11 +762,41 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T15:00:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 28.7,
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 27.2,
       "topics": [
         "hardware"
       ]
+    },
+    {
+      "id": "6ae6a1862064f112",
+      "category": "world",
+      "title": "Trump says he will speak to Putin over reported plague death in Russia",
+      "summary": "US President Donald Trump said Tuesday he would speak “very soon” with Russian President Vladimir Putin over the reported plague death of a laboratory technician, as Washington and the World Health Organization pressed Moscow for greater transparency and clarity over conflicting accounts of the incident in Siberia.",
+      "url": "https://www.france24.com/en/europe/20261006-trump-says-he-will-speak-to-putin-over-reported-plague-death-in-russia",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-06T22:51:48.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 27.1,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "7f8f0bd03110e6fe",
+      "category": "finance",
+      "title": "Amounts Outstanding in the Call Money Market (Sept.)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/market/short/call/call.xlsx",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-07T06:00:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 26.9,
+      "topics": []
     },
     {
       "id": "31985dfb869249cc",
@@ -678,11 +808,647 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-05T21:08:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 28.3,
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 26.7,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "75d9c49ca6422398",
+      "category": "finance",
+      "title": "Anthropic opens its most powerful AI models to more security teams",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/anthropic-opens-its-most-powerful-ai-models-more-security-teams-6437486",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-06T19:03:24.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 26.2,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "5582eb86c5e5225e",
+      "category": "ai",
+      "title": "Unlocking Earth AI’s planetary geospatial foundation models for global public health",
+      "summary": "Earth AI",
+      "url": "https://research.google/blog/earth-ais-planetary-geospatial-foundation-models-for-global-public-health/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-06T15:05:11.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 26.2,
+      "topics": []
+    },
+    {
+      "id": "b5788d90345a5aa5",
+      "category": "technology",
+      "title": "Lunar Grounding Challenge",
+      "summary": "As an astronaut traverses the lunar South Pole, tribocharging from walking on the lunar surface and plasma charging from the ambient plasma generate electric charge on the spacesuit. This problem is severely compounded when entering lunar shadows and Permanently Shadowed Regions (PSRs). In these dark zones, the spacesuit can buildup a substantial negative potential due […]",
+      "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/lunar-grounding-challenge/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-06T18:22:24.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 26,
+      "topics": []
+    },
+    {
+      "id": "b4a4e93f50437532",
+      "category": "technology",
+      "title": "NASA Glenn Invites Phase 1 Proposals for Aerospace Power Systems Laboratory",
+      "summary": "NASA’s Glenn Research Center in Cleveland is seeking Phase 1 proposals for the design and construction of the Aerospace Power Systems Laboratory. The principal purpose of this procurement is to deliver a laboratory facility to support the testing and development of power systems, with associated site work, infrastructure, and systems. The laboratory will provide modern […]",
+      "url": "https://www.nasa.gov/news-release/nasa-glenn-invites-phase-1-proposals-for-aerospace-power-systems-laboratory/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-06T17:55:52.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 25.9,
+      "topics": []
+    },
+    {
+      "id": "e0f23a4ccc29342e",
+      "category": "ai",
+      "title": "Release v0.7.1rc4",
+      "summary": "Full Changelog : v0.7.1rc3...v0.7.1rc4",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.1rc4",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-06T21:04:41.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 25.7,
+      "topics": []
+    },
+    {
+      "id": "7f4aadf7154628be",
+      "category": "finance",
+      "title": "Market Operations by the Bank of Japan (Sept.)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/boj/fm/ope/m_release/2026/ope2609.xlsx",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-06T23:50:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 25.4,
+      "topics": []
+    },
+    {
+      "id": "3b83bbd1313985f4",
+      "category": "technology",
+      "title": "Astronomers Solve Cosmic Cold Case with NASA Hubble Data",
+      "summary": "Diligent sleuthing by astronomers uncovered a surprising chemical clue that indicates the white dwarf star HS 0209+0832 may host a second-generation planet. This artist’s concept released on Oct. 5, 2026, depicts that possible explanation. The white dwarf is the “dead” core of a star that burned through all of its nuclear fuel and lost its outer […]",
+      "url": "https://www.nasa.gov/image-article/astronomers-solve-cosmic-cold-case-with-nasa-hubble-data/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-06T16:09:13.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 25.4,
+      "topics": []
+    },
+    {
+      "id": "fdc473a29a64e97a",
+      "category": "ai",
+      "title": "Hark releases an AI personal assistant with a focus on privacy",
+      "summary": "The AI lab's personal assistant is an operating system from the future designed to compete with Muse, Dots, and Instinct.",
+      "url": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-06T18:22:45.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 25,
+      "topics": [
+        "hardware",
+        "security"
+      ]
+    },
+    {
+      "id": "863993c34808aa26",
+      "category": "ai",
+      "title": "Mistral’s new 1T model aims to leapfrog closed and open rivals",
+      "summary": "French AI lab Mistral AI has released Mistral Large 4, a new large multimodal model aiming to leapfrog both American and Chinese rivals.",
+      "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-06T14:33:16.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 24,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "84127823ad1a7892",
+      "category": "world",
+      "title": "Lionel Messi’s last game for Argentina ends in triumph and tears",
+      "summary": "Messi scored a goal and created two others as Argentina bid farewell to its most decorated footballer with a 3-0 win.",
+      "url": "https://www.aljazeera.com/sports/2026/10/7/lionel-messis-last-game-for-argentina-ends-in-triumph-and-tears?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T05:54:10.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "77324dab41d3d338",
+      "category": "world",
+      "title": "AI models keep hacking real systems during tests. What does this mean?",
+      "summary": "AI models have repeatedly broken into real commercial and government systems during safety tests during 2026. Cybersecurity researcher Thorsten Holz explains what that means, and why he isn't expecting a robot uprising.",
+      "url": "https://www.dw.com/en/ai-models-keep-hacking-real-systems-during-tests-what-does-this-mean/a-79471943?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-06T10:05:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 23.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "f5f9c142342964d1",
+      "category": "finance",
+      "title": "Financial institutions remain accountable for third-party AI under new MAS guidelines",
+      "summary": "Among other expectations, financial institutions will be accountable for AI used in delivered services, including AI developed, operated or provided by third parties.",
+      "url": "https://www.channelnewsasia.com/singapore/financial-institutions-ai-guidelines-mas-third-party-tools-6438406",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T05:27:30.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "9cf08b0edd686392",
+      "category": "world",
+      "title": "The Republican candidates walking a Trump tightrope",
+      "summary": "Some running in November's elections are deciding whether to distance themselves from an unpopular president who still dominates his party.",
+      "url": "https://www.bbc.co.uk/news/articles/cm93z74e0n9zo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T05:00:21.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "02c50f6cd2751308",
+      "category": "technology",
+      "title": "Everything we launched during Birthday Week 2026",
+      "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped.",
+      "url": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 23.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "867c81359c56f249",
+      "category": "technology",
+      "title": "One year later: the power of 1.1.1.1 interns",
+      "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI amplifies human potential instead of replacing it.",
+      "url": "https://blog.cloudflare.com/one-year-later-1111-interns/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-05T13:00:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 23.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "81791c248863f8e1",
+      "category": "world",
+      "title": "Where is Spain headed after the snap election announcement?",
+      "summary": "Prime Minister Pedro Sanchez is taking a gamble by calling an early election in Spain. The housing crisis, migration and the rise of the right-wing populist Vox party are all likely to dominate the campaign.",
+      "url": "https://www.dw.com/en/where-is-spain-headed-after-the-snap-election-announcement/a-79567959?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T04:33:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "b345503433ce8f0f",
+      "category": "technology",
+      "title": "Completing the GPU Performance Picture: Understanding TAF Alongside Peak FLOPs and MAF",
+      "summary": "Modern AI accelerators can execute an extraordinary number of floating-point operations every second. But a single FLOPs number rarely tells the full performance story. In the first two blogs in this series, we discussed Peak FLOPs and Max-Achievable FLOPs (MAF) for AMD Instinct™ GPUs., we discussed Peak FLOPs and Max-Achievable FLOPs (MAF) for AMD Instinct™ GPUs. Peak FLOPs describe the theoretical compute capability of the hardware. MAF goes a step further by measuring the highest sustained throughput the GPU can",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/taf-blog/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-06T00:00:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 23.4,
+      "topics": [
+        "kernels",
+        "hardware"
+      ]
+    },
+    {
+      "id": "f77a2a7620aa1bf4",
+      "category": "finance",
+      "title": "Incredible or catastrophic? Jaguar unveils its polarising electric car",
+      "summary": "Two years after JLR relaunched Jaguar into a blizzard of controversy, it has launched its new EV.",
+      "url": "https://www.bbc.co.uk/news/articles/c6je50ydld31o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T02:58:30.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "bf5c4b6cbf769ed9",
+      "category": "world",
+      "title": "Israelis mourn on the anniversary of the Oct. 7 as Palestinians grapple with war it sparked",
+      "summary": "Israelis are gathering Wednesday to commemorate the Oct. 7, 2023, attack that killed 1,200 people, and sparked a devastating war in Gaza that Palestinians still grapple with.",
+      "url": "https://www.npr.org/2026/10/07/nx-s1-5993459/israelis-oct-7-palestinians-war",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T06:02:57.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "ae4b86bc1dc54c5e",
+      "category": "finance",
+      "title": "Consumption Activity Index",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/research/research_data/cai/index.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-07T05:00:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "7f1c9ab50c9fa7cc",
+      "category": "finance",
+      "title": "Dollar recoups losses as markets await Fed minutes, speakers",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/dollar-recoups-losses-markets-await-fed-minutes-speakers-6437936",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T01:16:05.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "47e2d9d2d55b465e",
+      "category": "technology",
+      "title": "Building Git infrastructure for agent-scale development",
+      "summary": "We're rebuilding GitHub's Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development. The post Building Git infrastructure for agent-scale development appeared first on The GitHub Blog .",
+      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
+      "source": "GitHub Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-06T20:57:56.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "5c3738abd1bcee85",
+      "category": "finance",
+      "title": "Minutes of the UK Money Markets Code Sub-Committee – September 2026",
+      "summary": "The Money Markets Committee is a forum for market participants and authorities to discuss the UK unsecured deposits and funding market and securities lending and repo markets.",
+      "url": "https://www.bankofengland.co.uk/minutes/2026/september/uk-money-markets-committee-minutes-september-2026",
+      "source": "Bank of England",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-06T13:07:03.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "44c9bec2778a9a03",
+      "category": "ai",
+      "title": "v0.7.2rc1",
+      "summary": "v0.7.2rc1 tag",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2rc1",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-07T00:35:39.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.6,
+      "topics": []
+    },
+    {
+      "id": "f357d8e8caddfb28",
+      "category": "ai",
+      "title": "v0.7.1rc5",
+      "summary": "v0.7.1rc5 tag",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.1rc5",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-07T00:34:53.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.6,
+      "topics": []
+    },
+    {
+      "id": "84c7ebdacaef7f0e",
+      "category": "technology",
+      "title": "Evolution of the PyTorch Media Processing Landscape",
+      "summary": "TL;DR If you need to decode or encode media, whether it’s images, video, or audio, use TorchCodec. If you need to transform media, use TorchVision for images and video, and...",
+      "url": "https://pytorch.org/blog/evolution-of-the-pytorch-media-processing-landscape/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-05T20:45:50.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.6,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "2d5ae76b09f89453",
+      "category": "world",
+      "title": "Djibouti faces ‘overlapping emergencies’ as Yemen’s refugee exodus continues",
+      "summary": "Djibouti is facing “overlapping emergencies” as refugees fleeing the conflict in Yemen arrive on its shores while migrants continue to travel in the opposite direction, the UN migration agency (IOM) warned on Tuesday.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168535",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-06T12:00:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "1e9a7d30ee7f4ea1",
+      "category": "world",
+      "title": "In Islamabad, Guterres calls for end to US-Iran conflict",
+      "summary": "The UN Secretary-General appealed on Tuesday for an end to the United States-Iran war and the toll it has taken on global trade, as he began an official visit to Pakistan.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168532",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-06T12:00:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "71bd728c37882928",
+      "category": "world",
+      "title": "When streets become pharmacies: Booming illicit markets in Central Africa",
+      "summary": "Antibiotics, malaria treatments, painkillers, opioids. More than 250 tonnes of medical products were seized over six years in Central Africa. Behind those numbers is an illicit market that thrives not simply despite the region’s fragile health systems, but in part because of them.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168527",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-06T12:00:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "0279db189aba8b7c",
+      "category": "world",
+      "title": "A beautiful Himalayan bird is changing its voice due to human activity, research shows",
+      "summary": "A sharp increase in human activity is affecting the way the Himalayan monal lives and communicates, studies show.",
+      "url": "https://www.bbc.co.uk/news/articles/cq9868z88rexo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-06T23:07:44.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.2,
+      "topics": []
+    },
+    {
+      "id": "fde39d08d2948e5c",
+      "category": "ai",
+      "title": "v0.31.1rc0: [Metrics] Expose cached prompt tokens by cache tier (#56318)",
+      "summary": "Signed-off-by: Cam Quilici cjquilici@gmail.com Signed-off-by: Cam Quilici cameron@semianalysis.com Co-authored-by: Cam Quilici cameron@semianalysis.com Co-authored-by: Nick Hill nickhill123@gmail.com Co-authored-by: Yifan Qiao yifanqiao@inferact.ai",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.1rc0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-06T18:52:05.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 22.1,
+      "topics": []
+    },
+    {
+      "id": "242ff7a49bfc95d5",
+      "category": "technology",
+      "title": "The keys to the Internet change on October 11. Are you ready?",
+      "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover.",
+      "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-06T17:50:11.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 21.9,
+      "topics": []
+    },
+    {
+      "id": "52d6fa5713973c8c",
+      "category": "ai",
+      "title": "Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product",
+      "summary": "Instead of helping marketers manage and optimize ad spend, the company is focusing on building the tools that generate the creative assets and campaigns.",
+      "url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-06T22:34:03.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 21.1,
+      "topics": []
+    },
+    {
+      "id": "bf979afdc36f78c0",
+      "category": "technology",
+      "title": "PyTorch Hardware Enablement: Updates from the Accelerator Integration Working Group",
+      "summary": "TL;DR The Accelerator Integration Working Group plays a vital role in standardizing how new hardware architectures connect to the open source AI ecosystem. As compute platforms diversify across cloud, edge,...",
+      "url": "https://pytorch.org/blog/pytorch-hardware-enablement-updates-from-the-acceleration-integration-working-group/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-05T13:12:59.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 20.7,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "d064af1176f77a39",
+      "category": "world",
+      "title": "Tigray drone strikes continue as life resumes in Mekelle",
+      "summary": "Government-allied forces say they are using drones against Tigray fighters, while markets and local transport are slowly returning to the streets of the regional capital.",
+      "url": "https://www.africanews.com/2026/10/06/tigray-drone-strikes-continue-as-life-resumes-in-mekelle/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-06T20:02:16.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 20.4,
+      "topics": []
+    },
+    {
+      "id": "e2953c65c19d1d60",
+      "category": "ai",
+      "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
+      "summary": "",
+      "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-06T06:44:39.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 20.1,
+      "topics": []
+    },
+    {
+      "id": "d3f20266ffc2121d",
+      "category": "finance",
+      "title": "'Wear more clothes if it's cold,' schools told as energy bills rise",
+      "summary": "The EA suggests cost-saving measures as it warns school gas and electricity bills are set to rise.",
+      "url": "https://www.bbc.co.uk/news/articles/cw0k08nnz07go",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T05:33:43.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 19.8,
+      "topics": []
+    },
+    {
+      "id": "d820cd6bd4ed06be",
+      "category": "finance",
+      "title": "Landlord's heartbreak as pub shuts down",
+      "summary": "A pub landlord forced to close down says more venues face similar closures without more tax cuts.",
+      "url": "https://www.bbc.co.uk/news/articles/c6p3gnq1752po",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-07T05:12:40.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 19.7,
+      "topics": []
+    },
+    {
+      "id": "81b988595eac59d2",
+      "category": "finance",
+      "title": "Frank Elderson: Effective supervision through timely remediation",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-06T13:00:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 19.7,
+      "topics": []
+    },
+    {
+      "id": "6dd5afdda14af35d",
+      "category": "finance",
+      "title": "Piero Cipollone: Money in the digital age: digital euro, tokenisation and the role of central banks",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-06T13:00:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 19.7,
+      "topics": []
+    },
+    {
+      "id": "680a0239d6044355",
+      "category": "technology",
+      "title": "Googlebook \"Better Together\" phone features don't work with Samsung at launch",
+      "summary": "Googlebooks require Android 17, but Samsung's Android 17 phones won't work yet.",
+      "url": "https://arstechnica.com/gadgets/2026/10/googlebook-better-together-phone-features-dont-work-with-samsung-at-launch/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-06T16:15:50.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 19.5,
+      "topics": []
+    },
+    {
+      "id": "bd60dd686b7fd6e9",
+      "category": "finance",
+      "title": "Philip R. Lane: Interview with Ansa",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261006~bc94400297.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-06T07:00:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 18.2,
+      "topics": []
+    },
+    {
+      "id": "22faa42fc7b45501",
+      "category": "technology",
+      "title": "Drones sink ships near NATO countries in “unacceptable” attacks, EU says",
+      "summary": "Two cargo ships have sunk, one ship was afire, and sailors are dead or missing.",
+      "url": "https://arstechnica.com/gadgets/2026/10/drone-strikes-likely-russian-sink-ships-in-nato-countries-economic-zones/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-06T21:31:10.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 16.8,
+      "topics": []
+    },
+    {
+      "id": "aa83f7bceb8a515b",
+      "category": "finance",
+      "title": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+      "summary": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-05T20:30:00.000Z",
+      "fetchedAt": "2026-10-07T06:21:19.613Z",
+      "score": 15.5,
+      "topics": []
     },
     {
       "id": "041bd6cc5ff770bf",
@@ -733,232 +1499,6 @@
       ]
     },
     {
-      "id": "75d9c49ca6422398",
-      "category": "finance",
-      "title": "Anthropic opens its most powerful AI models to more security teams",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/anthropic-opens-its-most-powerful-ai-models-more-security-teams-6437486",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-06T19:03:24.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 27.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "5582eb86c5e5225e",
-      "category": "ai",
-      "title": "Unlocking Earth AI’s planetary geospatial foundation models for global public health",
-      "summary": "Earth AI",
-      "url": "https://research.google/blog/earth-ais-planetary-geospatial-foundation-models-for-global-public-health/",
-      "source": "Google Research",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-06T15:05:11.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 27.8,
-      "topics": []
-    },
-    {
-      "id": "b5788d90345a5aa5",
-      "category": "technology",
-      "title": "Lunar Grounding Challenge",
-      "summary": "As an astronaut traverses the lunar South Pole, tribocharging from walking on the lunar surface and plasma charging from the ambient plasma generate electric charge on the spacesuit. This problem is severely compounded when entering lunar shadows and Permanently Shadowed Regions (PSRs). In these dark zones, the spacesuit can buildup a substantial negative potential due […]",
-      "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/lunar-grounding-challenge/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-06T18:22:24.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 27.6,
-      "topics": []
-    },
-    {
-      "id": "b4a4e93f50437532",
-      "category": "technology",
-      "title": "NASA Glenn Invites Phase 1 Proposals for Aerospace Power Systems Laboratory",
-      "summary": "NASA’s Glenn Research Center in Cleveland is seeking Phase 1 proposals for the design and construction of the Aerospace Power Systems Laboratory. The principal purpose of this procurement is to deliver a laboratory facility to support the testing and development of power systems, with associated site work, infrastructure, and systems. The laboratory will provide modern […]",
-      "url": "https://www.nasa.gov/news-release/nasa-glenn-invites-phase-1-proposals-for-aerospace-power-systems-laboratory/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-06T17:55:52.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 27.5,
-      "topics": []
-    },
-    {
-      "id": "e0f23a4ccc29342e",
-      "category": "ai",
-      "title": "Release v0.7.1rc4",
-      "summary": "Full Changelog : v0.7.1rc3...v0.7.1rc4",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.1rc4",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-06T21:04:41.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 27.3,
-      "topics": []
-    },
-    {
-      "id": "7f4aadf7154628be",
-      "category": "finance",
-      "title": "Market Operations by the Bank of Japan (Sept.)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/boj/fm/ope/m_release/2026/ope2609.xlsx",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-06T23:50:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 27,
-      "topics": []
-    },
-    {
-      "id": "3b83bbd1313985f4",
-      "category": "technology",
-      "title": "Astronomers Solve Cosmic Cold Case with NASA Hubble Data",
-      "summary": "Diligent sleuthing by astronomers uncovered a surprising chemical clue that indicates the white dwarf star HS 0209+0832 may host a second-generation planet. This artist’s concept released on Oct. 5, 2026, depicts that possible explanation. The white dwarf is the “dead” core of a star that burned through all of its nuclear fuel and lost its outer […]",
-      "url": "https://www.nasa.gov/image-article/astronomers-solve-cosmic-cold-case-with-nasa-hubble-data/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-06T16:09:13.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 27,
-      "topics": []
-    },
-    {
-      "id": "fdc473a29a64e97a",
-      "category": "ai",
-      "title": "Hark releases an AI personal assistant with a focus on privacy",
-      "summary": "The AI lab's personal assistant is an operating system from the future designed to compete with Muse, Dots, and Instinct.",
-      "url": "https://techcrunch.com/2026/10/06/hark-releases-an-ai-personal-assistant-with-a-focus-on-privacy/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-06T18:22:45.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 26.6,
-      "topics": [
-        "hardware",
-        "security"
-      ]
-    },
-    {
-      "id": "863993c34808aa26",
-      "category": "ai",
-      "title": "Mistral’s new 1T model aims to leapfrog closed and open rivals",
-      "summary": "French AI lab Mistral AI has released Mistral Large 4, a new large multimodal model aiming to leapfrog both American and Chinese rivals.",
-      "url": "https://techcrunch.com/2026/10/06/mistrals-new-1t-model-aims-to-leapfrog-closed-and-open-rivals/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-06T14:33:16.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 25.6,
-      "topics": [
-        "models"
-      ]
-    },
-    {
-      "id": "77324dab41d3d338",
-      "category": "world",
-      "title": "AI models keep hacking real systems during tests. What does this mean?",
-      "summary": "AI models have repeatedly broken into real commercial and government systems during safety tests during 2026. Cybersecurity researcher Thorsten Holz explains what that means, and why he isn't expecting a robot uprising.",
-      "url": "https://www.dw.com/en/ai-models-keep-hacking-real-systems-during-tests-what-does-this-mean/a-79471943?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-06T10:05:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 25.5,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "02c50f6cd2751308",
-      "category": "technology",
-      "title": "Everything we launched during Birthday Week 2026",
-      "summary": "We celebrated our 16th birthday with 46 announcements across open source, post-quantum security, AI agents, and developer platform upgrades. Here’s a day-by-day roundup of everything we shipped.",
-      "url": "https://blog.cloudflare.com/birthday-week-2026-wrap-up/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-05T13:00:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 25.2,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "867c81359c56f249",
-      "category": "technology",
-      "title": "One year later: the power of 1.1.1.1 interns",
-      "summary": "A year after announcing our goal to hire 1,111 interns, more than 750 early-career builders have shipped real products across 48 teams at Cloudflare. From Birthday Week launches to post-quantum security, our interns prove that AI amplifies human potential instead of replacing it.",
-      "url": "https://blog.cloudflare.com/one-year-later-1111-interns/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-05T13:00:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 25.2,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "b345503433ce8f0f",
-      "category": "technology",
-      "title": "Completing the GPU Performance Picture: Understanding TAF Alongside Peak FLOPs and MAF",
-      "summary": "Modern AI accelerators can execute an extraordinary number of floating-point operations every second. But a single FLOPs number rarely tells the full performance story. In the first two blogs in this series, we discussed Peak FLOPs and Max-Achievable FLOPs (MAF) for AMD Instinct™ GPUs., we discussed Peak FLOPs and Max-Achievable FLOPs (MAF) for AMD Instinct™ GPUs. Peak FLOPs describe the theoretical compute capability of the hardware. MAF goes a step further by measuring the highest sustained throughput the GPU can",
-      "url": "https://rocm.blogs.amd.com/artificial-intelligence/taf-blog/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-06T00:00:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 25,
-      "topics": [
-        "kernels",
-        "hardware"
-      ]
-    },
-    {
-      "id": "5c3738abd1bcee85",
-      "category": "finance",
-      "title": "Minutes of the UK Money Markets Code Sub-Committee – September 2026",
-      "summary": "The Money Markets Committee is a forum for market participants and authorities to discuss the UK unsecured deposits and funding market and securities lending and repo markets.",
-      "url": "https://www.bankofengland.co.uk/minutes/2026/september/uk-money-markets-committee-minutes-september-2026",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-06T13:07:03.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 24.3,
-      "topics": []
-    },
-    {
-      "id": "47e2d9d2d55b465e",
-      "category": "technology",
-      "title": "Building Git infrastructure for agent-scale development",
-      "summary": "We're rebuilding GitHub's Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development. The post Building Git infrastructure for agent-scale development appeared first on The GitHub Blog .",
-      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
-      "source": "GitHub Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-06T20:57:56.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 24.2,
-      "topics": []
-    },
-    {
       "id": "852d113ef98b7cd0",
       "category": "world",
       "title": "US CDC says it’s ‘aware of and closely monitoring’ Russian plague case",
@@ -973,78 +1513,6 @@
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "84c7ebdacaef7f0e",
-      "category": "technology",
-      "title": "Evolution of the PyTorch Media Processing Landscape",
-      "summary": "TL;DR If you need to decode or encode media, whether it’s images, video, or audio, use TorchCodec. If you need to transform media, use TorchVision for images and video, and...",
-      "url": "https://pytorch.org/blog/evolution-of-the-pytorch-media-processing-landscape/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-05T20:45:50.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 24.2,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "2d5ae76b09f89453",
-      "category": "world",
-      "title": "Djibouti faces ‘overlapping emergencies’ as Yemen’s refugee exodus continues",
-      "summary": "Djibouti is facing “overlapping emergencies” as refugees fleeing the conflict in Yemen arrive on its shores while migrants continue to travel in the opposite direction, the UN migration agency (IOM) warned on Tuesday.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168535",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-06T12:00:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 24,
-      "topics": []
-    },
-    {
-      "id": "1e9a7d30ee7f4ea1",
-      "category": "world",
-      "title": "In Islamabad, Guterres calls for end to US-Iran conflict",
-      "summary": "The UN Secretary-General appealed on Tuesday for an end to the United States-Iran war and the toll it has taken on global trade, as he began an official visit to Pakistan.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168532",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-06T12:00:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 24,
-      "topics": []
-    },
-    {
-      "id": "71bd728c37882928",
-      "category": "world",
-      "title": "When streets become pharmacies: Booming illicit markets in Central Africa",
-      "summary": "Antibiotics, malaria treatments, painkillers, opioids. More than 250 tonnes of medical products were seized over six years in Central Africa. Behind those numbers is an illicit market that thrives not simply despite the region’s fragile health systems, but in part because of them.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168527",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-06T12:00:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 24,
-      "topics": []
-    },
-    {
-      "id": "0279db189aba8b7c",
-      "category": "world",
-      "title": "A beautiful Himalayan bird is changing its voice due to human activity, research shows",
-      "summary": "A sharp increase in human activity is affecting the way the Himalayan monal lives and communicates, studies show.",
-      "url": "https://www.bbc.co.uk/news/articles/cq9868z88rexo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-06T23:07:44.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 23.8,
-      "topics": []
     },
     {
       "id": "3ef5c16709a25654",
@@ -1072,34 +1540,6 @@
       "publishedAt": "2026-10-06T22:38:26.000Z",
       "fetchedAt": "2026-10-07T00:00:57.672Z",
       "score": 23.7,
-      "topics": []
-    },
-    {
-      "id": "fde39d08d2948e5c",
-      "category": "ai",
-      "title": "v0.31.1rc0: [Metrics] Expose cached prompt tokens by cache tier (#56318)",
-      "summary": "Signed-off-by: Cam Quilici cjquilici@gmail.com Signed-off-by: Cam Quilici cameron@semianalysis.com Co-authored-by: Cam Quilici cameron@semianalysis.com Co-authored-by: Nick Hill nickhill123@gmail.com Co-authored-by: Yifan Qiao yifanqiao@inferact.ai",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.1rc0",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-06T18:52:05.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 23.7,
-      "topics": []
-    },
-    {
-      "id": "242ff7a49bfc95d5",
-      "category": "technology",
-      "title": "The keys to the Internet change on October 11. Are you ready?",
-      "summary": "On October 11, 2026, the DNS root switches to a new key-signing key (KSK-2024). Learn what this means for you, and how RFC 8509 trust anchor sentinels allow you to test whether your DNS resolver is ready for the rollover.",
-      "url": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-06T17:50:11.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 23.5,
       "topics": []
     },
     {
@@ -1145,36 +1585,6 @@
       "topics": []
     },
     {
-      "id": "52d6fa5713973c8c",
-      "category": "ai",
-      "title": "Ex-Ramp engineers raise $20M for platform Melius after scrapping their first product",
-      "summary": "Instead of helping marketers manage and optimize ad spend, the company is focusing on building the tools that generate the creative assets and campaigns.",
-      "url": "https://techcrunch.com/2026/10/06/ex-ramp-engineers-raise-20m-for-platform-melius-after-scrapping-their-first-product/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-06T22:34:03.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 22.6,
-      "topics": []
-    },
-    {
-      "id": "bf979afdc36f78c0",
-      "category": "technology",
-      "title": "PyTorch Hardware Enablement: Updates from the Accelerator Integration Working Group",
-      "summary": "TL;DR The Accelerator Integration Working Group plays a vital role in standardizing how new hardware architectures connect to the open source AI ecosystem. As compute platforms diversify across cloud, edge,...",
-      "url": "https://pytorch.org/blog/pytorch-hardware-enablement-updates-from-the-acceleration-integration-working-group/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-05T13:12:59.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 22.3,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
       "id": "575a9efd06a066c6",
       "category": "world",
       "title": "Separatist party projected to win Quebec election, adding new test to Canada's unity",
@@ -1186,34 +1596,6 @@
       "publishedAt": "2026-10-06T16:51:59.000Z",
       "fetchedAt": "2026-10-07T00:00:57.672Z",
       "score": 22.2,
-      "topics": []
-    },
-    {
-      "id": "d064af1176f77a39",
-      "category": "world",
-      "title": "Tigray drone strikes continue as life resumes in Mekelle",
-      "summary": "Government-allied forces say they are using drones against Tigray fighters, while markets and local transport are slowly returning to the streets of the regional capital.",
-      "url": "https://www.africanews.com/2026/10/06/tigray-drone-strikes-continue-as-life-resumes-in-mekelle/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-06T20:02:16.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 22,
-      "topics": []
-    },
-    {
-      "id": "e2953c65c19d1d60",
-      "category": "ai",
-      "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
-      "summary": "",
-      "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-06T06:44:39.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 21.7,
       "topics": []
     },
     {
@@ -1259,48 +1641,6 @@
       "topics": []
     },
     {
-      "id": "81b988595eac59d2",
-      "category": "finance",
-      "title": "Frank Elderson: Effective supervision through timely remediation",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-06T13:00:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 21.2,
-      "topics": []
-    },
-    {
-      "id": "6dd5afdda14af35d",
-      "category": "finance",
-      "title": "Piero Cipollone: Money in the digital age: digital euro, tokenisation and the role of central banks",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-06T13:00:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 21.2,
-      "topics": []
-    },
-    {
-      "id": "680a0239d6044355",
-      "category": "technology",
-      "title": "Googlebook \"Better Together\" phone features don't work with Samsung at launch",
-      "summary": "Googlebooks require Android 17, but Samsung's Android 17 phones won't work yet.",
-      "url": "https://arstechnica.com/gadgets/2026/10/googlebook-better-together-phone-features-dont-work-with-samsung-at-launch/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-06T16:15:50.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 21.1,
-      "topics": []
-    },
-    {
       "id": "d3d8c1da576dcadc",
       "category": "finance",
       "title": "Froyo's made a comeback. But at £12 a tub will it last?",
@@ -1340,48 +1680,6 @@
       "publishedAt": "2026-10-06T23:01:13.000Z",
       "fetchedAt": "2026-10-07T00:00:57.672Z",
       "score": 19.8,
-      "topics": []
-    },
-    {
-      "id": "bd60dd686b7fd6e9",
-      "category": "finance",
-      "title": "Philip R. Lane: Interview with Ansa",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261006~bc94400297.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-06T07:00:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 19.7,
-      "topics": []
-    },
-    {
-      "id": "22faa42fc7b45501",
-      "category": "technology",
-      "title": "Drones sink ships near NATO countries in “unacceptable” attacks, EU says",
-      "summary": "Two cargo ships have sunk, one ship was afire, and sailors are dead or missing.",
-      "url": "https://arstechnica.com/gadgets/2026/10/drone-strikes-likely-russian-sink-ships-in-nato-countries-economic-zones/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-06T21:31:10.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 18.4,
-      "topics": []
-    },
-    {
-      "id": "aa83f7bceb8a515b",
-      "category": "finance",
-      "title": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
-      "summary": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
-      "source": "U.S. Federal Reserve",
-      "sourceCountry": "United States",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-05T20:30:00.000Z",
-      "fetchedAt": "2026-10-07T00:00:57.672Z",
-      "score": 17.1,
       "topics": []
     },
     {
