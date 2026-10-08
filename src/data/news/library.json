@@ -1,7 +1,40 @@
 {
-  "generatedAt": "2026-10-08T06:32:49.560Z",
+  "generatedAt": "2026-10-08T15:48:57.680Z",
   "lookbackDays": 90,
   "items": [
+    {
+      "id": "1067fe2f8cfffaae",
+      "category": "technology",
+      "title": "Bridging technical depth and usability: The story behind Radar’s redesign",
+      "summary": "We redesigned Cloudflare Radar to make real-time global traffic and outage data accessible to a wider audience — including journalists, less technical researchers, and everyday users. By introducing an interactive map and standardized components, we simplified navigation while preserving technical depth.",
+      "url": "https://blog.cloudflare.com/radar-redesign/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-08T13:00:00.000Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 33.3,
+      "topics": [
+        "inference",
+        "security"
+      ]
+    },
+    {
+      "id": "6bc5aaabd2a78f90",
+      "category": "technology",
+      "title": "Building Spyre as a Native PyTorch Device",
+      "summary": "TL;DR Spyre becomes a native PyTorch device by connecting PyTorch’s existing device, allocator, stream, and compiler abstractions through torch-spyre to the Spyre runtime and firmware. PrivateUse1 gives Spyre a real... The post Building Spyre as a Native PyTorch Device appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/building-spyre-as-a-native-pytorch-device/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-08T12:45:49.000Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 30.2,
+      "topics": [
+        "kernels"
+      ]
+    },
     {
       "id": "c7f653e00fedf121",
       "category": "technology",
@@ -12,8 +45,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-07T20:15:49.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 25.1,
       "topics": [
         "inference"
       ]
@@ -28,8 +61,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-07T16:54:33.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 31.6,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 29.3,
       "topics": [
         "models"
       ]
@@ -44,8 +77,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-07T16:30:36.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 30.5,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 28.2,
       "topics": [
         "inference",
         "security"
@@ -61,8 +94,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-07T15:45:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 27.3,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 25,
       "topics": [
         "hardware"
       ]
@@ -77,8 +110,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-07T12:45:31.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 30.6,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 28.2,
       "topics": [
         "training"
       ]
@@ -93,8 +126,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-07T04:24:45.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 26.5,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 24.1,
       "topics": [
         "inference",
         "hardware",
@@ -112,8 +145,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-07T02:04:28.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 25.9,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 23.6,
       "topics": [
         "inference",
         "models"
@@ -129,8 +162,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-07T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 25,
       "topics": [
         "inference",
         "kernels",
@@ -141,14 +174,14 @@
       "id": "a463e4b2ae308f0c",
       "category": "technology",
       "title": "Modernizing Table Batched Embeddings with FBTriton",
-      "summary": "This post explores the FBTriton kernel design for Table Batched Embedding (TBE) forward and backward passes. These core operators handle embedding lookups across thousands of sharded GPUs within recommendation systems....",
+      "summary": "This post explores the FBTriton kernel design for Table Batched Embedding (TBE) forward and backward passes. These core operators handle embedding lookups across thousands of sharded GPUs within recommendation systems.... The post Modernizing Table Batched Embeddings with FBTriton appeared first on PyTorch .",
       "url": "https://pytorch.org/blog/modernizing-table-batched-embeddings-with-fbtriton/",
       "source": "PyTorch Blog",
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T22:57:33.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 20.8,
       "topics": [
         "kernels"
       ]
@@ -163,8 +196,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-10-06T19:57:04.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 25.4,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 23,
       "topics": [
         "models"
       ]
@@ -179,8 +212,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T19:07:02.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 22.1,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 19.8,
       "topics": [
         "hardware"
       ]
@@ -195,8 +228,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T16:13:47.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 25.4,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 23.1,
       "topics": [
         "kernels",
         "hardware"
@@ -212,8 +245,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T15:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 21.1,
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
+      "score": 19,
       "topics": [
         "hardware"
       ]
@@ -331,7 +364,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -358,13 +391,13 @@
       "id": "84c7ebdacaef7f0e",
       "category": "technology",
       "title": "Evolution of the PyTorch Media Processing Landscape",
-      "summary": "TL;DR If you need to decode or encode media, whether it’s images, video, or audio, use TorchCodec. If you need to transform media, use TorchVision for images and video, and...",
+      "summary": "TL;DR If you need to decode or encode media, whether it’s images, video, or audio, use TorchCodec. If you need to transform media, use TorchVision for images and video, and... The post Evolution of the PyTorch Media Processing Landscape appeared first on PyTorch .",
       "url": "https://pytorch.org/blog/evolution-of-the-pytorch-media-processing-landscape/",
       "source": "PyTorch Blog",
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-05T20:45:50.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "inference"
@@ -374,13 +407,13 @@
       "id": "bf979afdc36f78c0",
       "category": "technology",
       "title": "PyTorch Hardware Enablement: Updates from the Accelerator Integration Working Group",
-      "summary": "TL;DR The Accelerator Integration Working Group plays a vital role in standardizing how new hardware architectures connect to the open source AI ecosystem. As compute platforms diversify across cloud, edge,...",
+      "summary": "TL;DR The Accelerator Integration Working Group plays a vital role in standardizing how new hardware architectures connect to the open source AI ecosystem. As compute platforms diversify across cloud, edge,... The post PyTorch Hardware Enablement: Updates from the Accelerator Integration Working Group appeared first on PyTorch .",
       "url": "https://pytorch.org/blog/pytorch-hardware-enablement-updates-from-the-acceleration-integration-working-group/",
       "source": "PyTorch Blog",
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-05T13:12:59.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -396,7 +429,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-05T13:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 22,
       "topics": [
         "security"
@@ -412,7 +445,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-05T13:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 22,
       "topics": [
         "security"
@@ -428,7 +461,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-05T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -440,13 +473,13 @@
       "id": "c1f4855d2c7bf970",
       "category": "technology",
       "title": "Building a High-Performance and Portable vLLM Linear Backend with Helion",
-      "summary": "TL;DR We integrated Helion into vLLM’s linear backend to explore how an autotuned, high-level kernel DSL can improve LLM inference performance while reducing kernel implementation complexity. A single Helion general...",
+      "summary": "TL;DR We integrated Helion into vLLM’s linear backend to explore how an autotuned, high-level kernel DSL can improve LLM inference performance while reducing kernel implementation complexity. A single Helion general... The post Building a High-Performance and Portable vLLM Linear Backend with Helion appeared first on PyTorch .",
       "url": "https://pytorch.org/blog/building-a-high-performance-and-portable-vllm-linear-backend-with-helion/",
       "source": "PyTorch Blog",
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T19:55:07.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 23,
       "topics": [
         "inference",
@@ -463,7 +496,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:28:10.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 22,
       "topics": [
         "inference"
@@ -479,7 +512,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 22,
       "topics": [
         "security"
@@ -495,7 +528,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 22,
       "topics": [
         "security"
@@ -511,26 +544,10 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 18,
       "topics": [
         "inference",
-        "security"
-      ]
-    },
-    {
-      "id": "7eef450e5c51f15b",
-      "category": "technology",
-      "title": "2026 Birthday week: network performance update",
-      "summary": "Cloudflare now ranks as the fastest provider across 74% of the top 1,000 global networks. By incorporating background telemetry from Cloudflare Challenge Pages, we have expanded our real-user measurement scale while maintaining user privacy.",
-      "url": "https://blog.cloudflare.com/network-performance-birthday-week-2026/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
-      "score": 18,
-      "topics": [
         "security"
       ]
     },
@@ -544,7 +561,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T04:01:31.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "training"
@@ -554,13 +571,13 @@
       "id": "b92ce439c24214b0",
       "category": "technology",
       "title": "Optimizing Jagged Flash Attention with TLX: The Road Toward SOTA FA4 on Blackwell",
-      "summary": "TL;DR In this blog post, we present our work on Jagged Flash Attention (JFA) — the attention kernel behind Meta’s Generative Ads Model (GEM) — on NVIDIA Blackwell (B200), built...",
+      "summary": "TL;DR In this blog post, we present our work on Jagged Flash Attention (JFA) — the attention kernel behind Meta’s Generative Ads Model (GEM) — on NVIDIA Blackwell (B200), built... The post Optimizing Jagged Flash Attention with TLX: The Road Toward SOTA FA4 on Blackwell appeared first on PyTorch .",
       "url": "https://pytorch.org/blog/optimizing-jagged-flash-attention-with-tlx-the-road-toward-sota-fa4-on-blackwell/",
       "source": "PyTorch Blog",
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T22:26:57.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 23,
       "topics": [
         "kernels",
@@ -578,7 +595,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T17:59:27.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 23,
       "topics": [
         "inference"
@@ -610,7 +627,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T05:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "training"
@@ -626,7 +643,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T20:54:59.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -642,7 +659,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-09-30T15:03:07.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 22,
       "topics": [
         "inference"
@@ -652,13 +669,13 @@
       "id": "8d75eb518c636919",
       "category": "technology",
       "title": "From Upstream Changes to Downstream Confidence: Inside Torch Spyre’s Integration with PyTorch CRCR",
-      "summary": "TL;DR PyTorch’s Cross-Repository CI Relay (CRCR) gives out-of-tree accelerators a clean, scalable way to plug into upstream CI – and it leaves each backend free to decide which of PyTorch’s...",
+      "summary": "TL;DR PyTorch’s Cross-Repository CI Relay (CRCR) gives out-of-tree accelerators a clean, scalable way to plug into upstream CI – and it leaves each backend free to decide which of PyTorch’s... The post From Upstream Changes to Downstream Confidence: Inside Torch Spyre’s Integration with PyTorch CRCR appeared first on PyTorch .",
       "url": "https://pytorch.org/blog/from-upstream-changes-to-downstream-confidence-inside-torch-spyres-integration-with-pytorch-crcr/",
       "source": "PyTorch Blog",
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T13:40:56.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -674,7 +691,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 23,
       "topics": [
         "hardware"
@@ -690,7 +707,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "inference",
@@ -708,7 +725,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -724,7 +741,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T19:10:51.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 23,
       "topics": [
         "hardware"
@@ -740,7 +757,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 23,
       "topics": [
         "hardware",
@@ -757,7 +774,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "inference",
@@ -774,7 +791,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-28T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 23,
       "topics": [
         "hardware",
@@ -791,7 +808,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-25T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 23,
       "topics": [
         "inference",
@@ -825,7 +842,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "inference",
@@ -851,22 +868,6 @@
       ]
     },
     {
-      "id": "412724ea4322c86b",
-      "category": "technology",
-      "title": "How Shopify built a continual learning loop with PyTorch and vLLM",
-      "summary": "TL;DR: This case study explores how Shopify compresses production failures into model weights every day, beats frontier-model quality, and cuts serving costs 96% by building a continual learning loop with...",
-      "url": "https://pytorch.org/blog/how-shopify-built-a-continual-learning-loop-with-pytorch-and-vllm/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-22T13:45:18.000Z",
-      "fetchedAt": "2026-10-05T17:20:01.702Z",
-      "score": 23,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
       "id": "cfcdcd75d75f3e74",
       "category": "ai",
       "title": "Accelerate LLM Inference with Open Kernels and Smarter Autotuning with FlashInfer v0.7",
@@ -876,7 +877,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T01:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 23,
       "topics": [
         "inference",
@@ -894,7 +895,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 23,
       "topics": [
         "kernels",
@@ -911,7 +912,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "models"
@@ -927,7 +928,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "inference"
@@ -943,7 +944,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -959,7 +960,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -992,7 +993,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "inference"
@@ -1008,7 +1009,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "inference"
@@ -1024,7 +1025,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-18T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "inference",
@@ -1057,7 +1058,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "training"
@@ -1073,7 +1074,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "inference",
@@ -1108,7 +1109,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-10T00:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 19,
       "topics": [
         "training"
@@ -1124,7 +1125,7 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-08-21T10:54:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 23,
       "topics": [
         "models"
@@ -1140,7 +1141,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-07-29T16:00:00.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 22,
       "topics": [
         "security"
@@ -1156,7 +1157,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-07-17T15:00:11.000Z",
-      "fetchedAt": "2026-10-08T06:32:49.560Z",
+      "fetchedAt": "2026-10-08T15:48:57.680Z",
       "score": 22,
       "topics": [
         "security"
