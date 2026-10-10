@@ -4,6 +4,10 @@
 
 - Remote baseline: `87f825580822674b170dfc2ab57f0618ad484f1e`.
 - Feature commit: `46c774b9623fb9d64ba7dea6972f06c2c111cdd7`.
+- Touch-reading correction: `618b26a4f60ff0a5f8dc0c97071828ab8bc54b12`.
+  On narrow/coarse-pointer screens, selecting a node focuses and reveals its
+  summary. A bottom-of-full-graph touch regression checks the reading link is
+  actually in the viewport, not merely present in the DOM.
 - Catalog, relation and query definition: `attention-atlas/1`. Existing model,
   cache, parallelism and news calculations remain unchanged.
 - New teaching-directory entry and `#/learn/attention`; 32 sourced representative
@@ -41,29 +45,31 @@
 
 ## Isolated rollback rehearsal
 
-From the feature revision, a synthetic intervening news file was committed in a
+From the final runtime revision, a synthetic intervening news file was committed in a
 temporary managed checkout. One fresh browser context remained alive across:
 
 1. Feature enabled, real local topic follow plus localStorage/IndexedDB canaries.
 2. Gate disabled and rebuilt: original teaching directory remains, atlas absent.
-3. Gate restored in source, feature commit reverted and rebuilt: original routes
-   remain; all new feature files are withdrawn.
-4. Revert of that withdrawal and rebuild: atlas and its KDA deep link return.
+3. Gate restored in source, touch correction then base feature reverted and
+   rebuilt: original routes remain; all new feature files are withdrawn.
+4. Revert of those withdrawals in reverse order and rebuild: atlas and its KDA
+   deep link return.
 
 Each phase checked the original teaching directory, MLA article, model directory,
 weekly news and the real followed topic. All localStorage entries and the
 independent IndexedDB record remained unchanged. Intervening news tree was
 `e482e2547d0f01bcb5e4033c6817742303713e9c` throughout. After reapplication, the only
-difference from the feature revision was the synthetic news file. None of these
+difference from the final runtime revision was the synthetic news file. None of these
 synthetic commits or records are part of the published branch.
 
 ## Exact production withdrawal
 
 Fetch current main and use a clean isolated checkout from it, not the user's
-development directory. There is one functional commit and no dependent feature
-commit to undo first. Keep this audit record:
+development directory. Withdraw the dependent touch correction before the base
+feature. Keep this audit record:
 
 ```sh
+git revert 618b26a4f60ff0a5f8dc0c97071828ab8bc54b12
 git revert 46c774b9623fb9d64ba7dea6972f06c2c111cdd7
 npm run check
 npm run lint
@@ -78,7 +84,8 @@ Stop on a revert conflict and retain the conflict state. Do not reset, restore
 the whole tree, delete browser data or force-push. Preserve intervening news and
 user changes. Push the new revert commit normally after verification, then check
 its Pages result and original teaching/news routes. To re-enable after a full
-withdrawal, revert the actual withdrawal commit; do not restore an old snapshot.
+withdrawal, revert the actual base-feature withdrawal first, then the actual
+touch-correction withdrawal; do not restore an old snapshot.
 
 ## Publication boundary and next step
 
