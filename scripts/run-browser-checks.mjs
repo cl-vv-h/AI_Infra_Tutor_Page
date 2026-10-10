@@ -6,7 +6,7 @@ try{
   let ready=false
   for(let i=0;i<60;i++){if(server.exitCode!==null)throw new Error('Preview server exited');try{ready=(await fetch(base)).ok}catch{}if(ready)break;await sleep(500)}
   if(!ready)throw new Error('Preview readiness timed out')
-  for(const file of ['tests/weekly-news-browser.mjs','tests/profiling-guide-browser.mjs','tests/weight-deployment-browser.mjs','tests/multi-rank-browser.mjs','tests/moe-routing-browser.mjs','tests/token-journey-browser.mjs','tests/communication-topology-browser.mjs','tests/news-events-browser.mjs','tests/news-hotspots-browser.mjs','tests/news-sphere-browser.mjs']){
+  for(const file of ['tests/weekly-news-browser.mjs','tests/profiling-guide-browser.mjs','tests/weight-deployment-browser.mjs','tests/multi-rank-browser.mjs','tests/moe-routing-browser.mjs','tests/token-journey-browser.mjs','tests/communication-topology-browser.mjs','tests/news-events-browser.mjs','tests/news-hotspots-browser.mjs','tests/news-sphere-browser.mjs','tests/attention-atlas-browser.mjs']){
     await new Promise((resolve,reject)=>{const p=spawn(process.execPath,[file],{stdio:'inherit',env:{...process.env,MODEL_QA_BASE:base}});p.on('error',reject);p.on('exit',code=>code===0?resolve():reject(new Error(`${file} failed (${code})`)))})
   }
 }finally{server.kill('SIGTERM')}

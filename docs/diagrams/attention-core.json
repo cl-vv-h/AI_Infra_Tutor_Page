@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": { "title": "Attention · 三条代表性路线", "locale": "zh-CN", "quality_profile": "showcase", "legend": { "mode": "hidden" } },
+  "components": [
+    { "id": "mha", "type": "backend", "label": "MHA", "sublabel": "2017 · 多头注意力", "pos": [60, 60], "size": [170, 76] },
+    { "id": "mqa", "type": "backend", "label": "MQA", "sublabel": "2019 · KV 头共享", "pos": [390, 60], "size": [170, 76] },
+    { "id": "gqa", "type": "backend", "label": "GQA", "sublabel": "2023 · 分组 KV 头", "pos": [720, 60], "size": [170, 76] },
+    { "id": "mla", "type": "backend", "label": "MLA", "sublabel": "2024 · KV 潜在压缩", "pos": [60, 170], "size": [170, 76] },
+    { "id": "dsa", "type": "backend", "label": "DSA", "sublabel": "2025 · 索引稀疏注意力", "pos": [390, 170], "size": [170, 76] },
+    { "id": "delta", "type": "backend", "label": "DeltaNet", "sublabel": "2021 · Delta 更新", "pos": [60, 280], "size": [170, 76] },
+    { "id": "gdn", "type": "backend", "label": "GDN", "sublabel": "2024 · 门控 Delta 更新", "pos": [390, 280], "size": [170, 76] },
+    { "id": "kda", "type": "backend", "label": "KDA", "sublabel": "2025 · 通道级门控", "pos": [720, 280], "size": [170, 76] }
+  ],
+  "connections": [
+    { "from": "mha", "to": "mqa", "label": "共享 K/V 头", "variant": "dashed" },
+    { "from": "mqa", "to": "gqa", "label": "推广至分组", "variant": "emphasis" },
+    { "from": "mla", "to": "dsa", "label": "增加稀疏索引器", "variant": "emphasis" },
+    { "from": "delta", "to": "gdn", "label": "引入遗忘门控", "variant": "emphasis" },
+    { "from": "gdn", "to": "kda", "label": "细粒度门控", "variant": "emphasis" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "KV 头组织", "items": ["MQA 共享 KV；GQA 推广到分组", "不是一条模型性能排行榜"] },
+    { "dot": "emerald", "title": "压缩与稀疏", "items": ["MLA 压缩特征维；DSA 选择历史位置", "NSA 与 DSA 是不同设计"] },
+    { "dot": "rose", "title": "递归状态", "items": ["GDN / KDA 不保存可寻址的完整 KV 历史", "更多分支与论文见交互图谱"] }
+  ]
+}

@@ -12,6 +12,7 @@ import { articles, getArticlesByCategory } from '@/data/articles'
 import { categories } from '@/data/categories'
 import CurriculumSearch from '@/components/CurriculumSearch'
 import PageHeader from '@/components/PageHeader'
+import attentionAtlas from '../../config/attention-atlas.json'
 
 const foundations = new Set([
   'cat-10', 'cat-5', 'cat-11', 'cat-3', 'cat-4', 'cat-6', 'cat-15',
@@ -69,6 +70,7 @@ export default function Learn() {
       </div>
 
       <div className="page-container space-y-14 pt-10">
+        {attentionAtlas.enabled && <Link to="/learn/attention" className="surface-card group flex flex-wrap items-center justify-between gap-5 p-6 transition-colors hover:border-accent/40"><div><p className="eyebrow">ATTENTION ATLAS</p><h2 className="mt-2 text-2xl font-semibold text-ink">Attention 演进图谱</h2><p className="mt-2 text-sm leading-6 text-secondary">MHA / GQA / MLA / DSA / GDN / KDA：沿分支与论文，理解机制之间的联系。</p></div><span className="inline-flex items-center gap-2 text-sm text-accent">探索技术路线 <ArrowRight size={16}/></span></Link>}
         <section>
           <div className="mb-7 flex items-end justify-between gap-6">
             <div>

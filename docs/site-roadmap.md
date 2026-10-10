@@ -43,6 +43,14 @@ Any optional local persistence/import must be explicit and safely validated.
 
 ## 4. Learning and retrieval
 
+October 10 user-approved increment: Attention evolution atlas at
+`#/learn/attention`, linked from the teaching directory. A sourced catalog of
+32 representative techniques supports overview/branch/full graph, hover/focus
+previews, direct selection, lesson links and explicit relationship semantics.
+See `attention-atlas.md` and `releases/attention-atlas-2026-10-10.md` for acceptance
+and publication evidence. Next: deepen source-backed coverage where learners need
+it; do not label an extensible representative catalog an exhaustive literature map.
+
 Unify search across lessons, model concepts and tool explanations. Add local
 reading progress and focused exercises on quantization, parallelism and trace
 interpretation. Link each result to a specific lesson or reproducible synthetic

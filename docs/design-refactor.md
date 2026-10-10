@@ -100,6 +100,16 @@ inspection. Evidence is from production builds, not development-only previews.
 
 ## Reproducible QA
 
+Attention atlas (`#/learn/attention`, October 10): compact names/year-only graph,
+six semantic branches, sourced edge types, hover-to-link and focus/Escape preview,
+touch selection, direct-select alternative, search/empty/reset states and
+URL/back/refresh. Acceptance at 360/390/768/1440px includes no document overflow,
+unchanged storage, existing lesson navigation and lazy-chunk failure recovery.
+`tests/attention-atlas-browser.mjs` is part of the publication smoke gate. The
+independent build gate leaves the teaching directory and existing routes intact.
+The optional Archify main-route artifact is separately validated and visually
+reviewed, not used as evidence that every native graph edge is historically causal.
+
 Hotspot discovery (`#/news/events`, `?hotspot=...`) adds explainable activity sorting,
 time/category/source-region filters, category bars and a seven-day count matrix,
 headline clusters, source-linked timelines and local topic follows. Test the initial

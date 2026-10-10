@@ -9,9 +9,12 @@ import communicationTopology from '../config/communication-topology.json'
 import CommunicationTopologyBoundary from '@/components/CommunicationTopologyBoundary'
 import newsEvents from '../config/news-events.json'
 import NewsEventsBoundary from '@/components/NewsEventsBoundary'
+import attentionAtlas from '../config/attention-atlas.json'
+import AttentionAtlasBoundary from '@/components/AttentionAtlasBoundary'
 
 const Home = lazy(() => import('@/pages/Home'))
 const Learn = lazy(() => import('@/pages/Learn'))
+const AttentionAtlas = lazy(() => import('@/pages/AttentionAtlas'))
 const Models = lazy(() => import('@/pages/Models'))
 const ModelCatalog = lazy(() => import('@/pages/ModelCatalog'))
 const ModelKnowledge = lazy(() => import('@/pages/ModelKnowledge'))
@@ -39,6 +42,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/learn" element={<Learn />} />
+            <Route path="/learn/attention" element={attentionAtlas.enabled ? <AttentionAtlasBoundary><AttentionAtlas /></AttentionAtlasBoundary> : <NotFound />} />
             <Route path="/models" element={<ModelCatalog />} />
             <Route path="/models/knowledge" element={<ModelKnowledge />} />
             <Route path="/models/knowledge/:topicId" element={<ModelKnowledge />} />
