@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T20:16:26.701Z",
+  "generatedAt": "2026-10-10T23:46:10.691Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 31,
-      "latestPublishedAt": "2026-10-10T19:28:28.000Z",
+      "entryCount": 30,
+      "latestPublishedAt": "2026-10-10T23:19:55.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 139,
-      "latestPublishedAt": "2026-10-10T19:16:00.000Z",
+      "latestPublishedAt": "2026-10-10T23:09:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,8 +53,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-10T19:59:18.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-10T22:43:08.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-10-08T21:06:35.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-10T19:50:00.000Z",
+      "latestPublishedAt": "2026-10-10T21:47:51.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -171,7 +171,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-09T14:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -274,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-10T11:40:53.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-10T21:40:58.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -431,7 +431,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-08T20:57:55.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -524,8 +524,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-10T18:32:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 28.6,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 27.7,
       "topics": [
         "security"
       ]
@@ -540,8 +540,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-10T01:21:54.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 28.3,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 27.4,
       "topics": [
         "inference",
         "kernels",
@@ -560,8 +560,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-10T01:20:56.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 28.3,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 27.4,
       "topics": [
         "inference",
         "kernels",
@@ -580,8 +580,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-10T16:14:56.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 28,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 27.1,
       "topics": [
         "security"
       ]
@@ -596,8 +596,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-10T16:09:13.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 28,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 27.1,
       "topics": [
         "security"
       ]
@@ -612,8 +612,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-10T15:54:28.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 27.9,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 27,
       "topics": [
         "security"
       ]
@@ -628,11 +628,27 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T18:27:34.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 27.5,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 26.7,
       "topics": [
         "inference",
         "models"
+      ]
+    },
+    {
+      "id": "eb0ca5dff9a006e5",
+      "category": "world",
+      "title": "Storm Isaias leaves 4 dead as it moves across southern US",
+      "summary": "The storm, which is now a post-tropical cyclone, had made landfall near Destin, Florida on Friday evening. The storm brings heavy rainfall and powerful winds and has caused mass power outages in Florida and Alabama.",
+      "url": "https://www.dw.com/en/storm-isaias-leaves-4-dead-as-it-moves-across-southern-us/a-79630125?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T23:09:00.000Z",
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 24.8,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -645,8 +661,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-10T03:50:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 24.9,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 24,
       "topics": [
         "security"
       ]
@@ -661,8 +677,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-10T07:05:59.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 24.7,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 23.8,
       "topics": [
         "security"
       ]
@@ -677,11 +693,25 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-10T02:02:54.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 24.4,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 23.6,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "98a0221c7a512b5c",
+      "category": "world",
+      "title": "Yemen’s Houthis release video of drone attacks on gov’t forces",
+      "summary": "Yemen’s Houthis have released drone video said to show attacks on Saudi-backed Yemeni government forces.",
+      "url": "https://www.aljazeera.com/video/2026/10/10/yemens-houthis-release-video-of-drone-attacks-on-govt-forces?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T21:02:49.000Z",
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 23.3,
+      "topics": []
     },
     {
       "id": "48c4ea866c6efe33",
@@ -693,8 +723,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T12:00:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 23.1,
       "topics": [
         "security"
       ]
@@ -709,8 +739,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T12:00:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 23.1,
       "topics": [
         "security"
       ]
@@ -725,8 +755,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T00:00:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 23.1,
       "topics": [
         "inference",
         "kernels",
@@ -744,8 +774,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-10T19:28:28.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 22.9,
       "topics": []
     },
     {
@@ -758,40 +788,10 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T15:20:29.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 22.9,
       "topics": [
         "hardware"
-      ]
-    },
-    {
-      "id": "bd7f7f875a01a900",
-      "category": "world",
-      "title": "Money, networks and bias: Why women struggle to win seats in US politics",
-      "summary": "The US is holding Congress and state governors elections. At all levels of US politics, women are underrepresented — but they may win some historic victories in the midterms on November 3.",
-      "url": "https://www.dw.com/en/money-networks-and-bias-why-women-struggle-to-win-seats-in-us-politics/a-79625179?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T19:16:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 23.7,
-      "topics": []
-    },
-    {
-      "id": "f218f74203cb4cb1",
-      "category": "world",
-      "title": "Three injured in third school attack in Poland in less than a week",
-      "summary": "The attack comes after police announced the detention of 76 people across Poland in connection with previous incidents.",
-      "url": "https://www.aljazeera.com/news/2026/10/10/three-injured-in-third-school-attack-in-poland-in-less-than-a-week?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T15:13:55.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 23.7,
-      "topics": [
-        "security"
       ]
     },
     {
@@ -804,8 +804,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-09T03:11:40.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 23.7,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 22.9,
       "topics": [
         "inference"
       ]
@@ -820,8 +820,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-10T14:18:59.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 23.5,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 22.6,
+      "topics": []
+    },
+    {
+      "id": "5f017ceb51b72274",
+      "category": "ai",
+      "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+      "summary": "In a Saturday morning post, Microsoft's CEO wrote that it’s time “to step back and assess the trust architecture” of AI.",
+      "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T21:47:51.000Z",
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 22.5,
       "topics": []
     },
     {
@@ -834,8 +848,22 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-10T17:44:26.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "a79695db4bd85972",
+      "category": "world",
+      "title": "Trump weighs joining the fight against Houthis after Riyadh airport attack",
+      "summary": "The surge in attacks, including against other Saudi airports, military facilities and oil infrastructure, has come in the week since a Saudi-led coalition launched a major military offensive against the Houthis.",
+      "url": "https://www.npr.org/2026/10/10/nx-s1-5997512/saudi-arabia-riyadh-airport-bombing-attack",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T21:32:53.000Z",
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 22.4,
       "topics": []
     },
     {
@@ -848,25 +876,11 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T09:00:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 23.2,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 22.3,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "7e370ff9d6a69ba4",
-      "category": "world",
-      "title": "Eritrea urges UN to intervene in standoff with Ethiopia",
-      "summary": "The neighbouring countries blame one another for starting war amid heightened tensions and fears of a wider conflict.",
-      "url": "https://www.aljazeera.com/news/2026/10/10/eritrea-urges-un-to-intervene-in-standoff-with?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T16:41:25.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 23.1,
-      "topics": []
     },
     {
       "id": "0ca46cf2063cc8d7",
@@ -878,22 +892,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-10T19:50:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 22.9,
-      "topics": []
-    },
-    {
-      "id": "7468222a8672c6d3",
-      "category": "technology",
-      "title": "NASA Seeks US Industry Plans for Commercial Space Stations",
-      "summary": "NASA is advancing American leadership in space by taking the next step toward a future where commercial space stations lead the way in low Earth orbit. On Friday, the agency released its final Request for Proposals inviting industry to submit plans for the next generation of commercial space stations. “In alignment with the President’s National […]",
-      "url": "https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-09T18:11:44.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 22.5,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 22,
       "topics": []
     },
     {
@@ -906,11 +906,25 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-09T22:04:07.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 22.4,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 21.6,
       "topics": [
         "training"
       ]
+    },
+    {
+      "id": "7468222a8672c6d3",
+      "category": "technology",
+      "title": "NASA Seeks US Industry Plans for Commercial Space Stations",
+      "summary": "NASA is advancing American leadership in space by taking the next step toward a future where commercial space stations lead the way in low Earth orbit. On Friday, the agency released its final Request for Proposals inviting industry to submit plans for the next generation of commercial space stations. “In alignment with the President’s National […]",
+      "url": "https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-09T18:11:44.000Z",
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 21.6,
+      "topics": []
     },
     {
       "id": "c4db76e7fed027bb",
@@ -922,8 +936,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-09T16:59:24.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 22.2,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 21.3,
       "topics": []
     },
     {
@@ -936,8 +950,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-10T15:12:41.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 21.7,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 20.9,
       "topics": []
     },
     {
@@ -950,8 +964,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-10T10:31:09.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 21.6,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 20.7,
       "topics": [
         "security"
       ]
@@ -966,8 +980,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T13:00:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 20.3,
       "topics": []
     },
     {
@@ -980,8 +994,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T14:00:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 20.4,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 19.6,
       "topics": []
     },
     {
@@ -994,8 +1008,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-10T19:32:37.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 19.8,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 18.9,
       "topics": []
     },
     {
@@ -1008,8 +1022,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-10T02:40:04.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 19.6,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 18.7,
       "topics": []
     },
     {
@@ -1022,8 +1036,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-10T00:01:05.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 18.9,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 18.1,
       "topics": []
     },
     {
@@ -1036,8 +1050,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-09T19:21:18.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 18.8,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 17.9,
       "topics": [
         "security"
       ]
@@ -1052,22 +1066,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-10T14:24:14.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 18.5,
-      "topics": []
-    },
-    {
-      "id": "3ff78a5179293ef7",
-      "category": "technology",
-      "title": "5 Steps to Create SimReady Assets for Robotics with Frontier AI Models",
-      "summary": "Preparing CAD assets for robotics simulation requires more than converting geometry to OpenUSD: developers must configure and validate materials, collision...",
-      "url": "https://developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-08T20:57:55.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 18.2,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 17.7,
       "topics": []
     },
     {
@@ -1080,8 +1080,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-10T11:30:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 17.8,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 16.9,
       "topics": []
     },
     {
@@ -1094,22 +1094,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-10T15:00:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 17.7,
-      "topics": []
-    },
-    {
-      "id": "c46f9f3bc88b883a",
-      "category": "ai",
-      "title": "Here are the top AI agents that can live in your text messages",
-      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
-      "url": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T14:00:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 17.4,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 16.8,
       "topics": []
     },
     {
@@ -1122,8 +1108,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T12:50:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 17.1,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 16.3,
       "topics": []
     },
     {
@@ -1136,8 +1122,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-09T19:43:50.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 16.9,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 16,
       "topics": []
     },
     {
@@ -1150,8 +1136,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-10T11:15:35.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 16.7,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 15.9,
       "topics": []
     },
     {
@@ -1164,8 +1150,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-09T14:36:35.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 16.6,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 15.7,
       "topics": []
     },
     {
@@ -1178,8 +1164,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T09:00:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 14.2,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 13.3,
       "topics": []
     },
     {
@@ -1192,8 +1178,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T07:00:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 13.7,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 12.8,
       "topics": []
     },
     {
@@ -1206,8 +1192,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-09T00:22:39.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 13,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 12.2,
       "topics": []
     },
     {
@@ -1220,36 +1206,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T02:00:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 12.4,
-      "topics": []
-    },
-    {
-      "id": "323f49c26f0a4f8d",
-      "category": "ai",
-      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
-      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for exploring scenarios, investigating failures and improving designs. Developers direct AI agents through […]",
-      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-08T21:06:35.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 12.2,
-      "topics": []
-    },
-    {
-      "id": "e19cb2d7394c5cbf",
-      "category": "finance",
-      "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
-      "summary": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
-      "source": "U.S. Federal Reserve",
-      "sourceCountry": "United States",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-08T20:30:00.000Z",
-      "fetchedAt": "2026-10-10T20:16:26.701Z",
-      "score": 12.1,
+      "fetchedAt": "2026-10-10T23:46:10.691Z",
+      "score": 11.6,
       "topics": []
     }
   ]
