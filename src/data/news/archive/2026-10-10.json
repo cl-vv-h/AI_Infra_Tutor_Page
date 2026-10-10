@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T14:38:32.973Z",
+  "generatedAt": "2026-10-10T20:16:26.701Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 28,
-      "latestPublishedAt": "2026-10-10T14:24:14.000Z",
+      "entryCount": 31,
+      "latestPublishedAt": "2026-10-10T19:28:28.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,8 +40,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 139,
-      "latestPublishedAt": "2026-10-10T13:36:00.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-10T19:16:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -53,8 +53,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-10T14:10:24.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-10T19:59:18.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-10T00:01:05.000Z",
+      "latestPublishedAt": "2026-10-10T19:32:37.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-10T14:00:00.000Z",
+      "latestPublishedAt": "2026-10-10T19:50:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-10T14:10:33.000Z",
+      "latestPublishedAt": "2026-10-10T18:22:23.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -275,7 +275,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-10T11:40:53.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-10T12:46:46.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-10T15:12:41.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -418,7 +418,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-08T18:13:46.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -431,7 +431,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-08T20:57:55.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -515,6 +515,22 @@
   ],
   "items": [
     {
+      "id": "0fbb651be793866a",
+      "category": "world",
+      "title": "Eritrea urges UN deterrence measures against Ethiopia",
+      "summary": "Eritrea has officially requested UN Security Council assistance over the conflict in Tigray. Both Eritrea and Ethiopia accuse each other of fueling regional instability.",
+      "url": "https://www.dw.com/en/eritrea-urges-un-deterrence-measures-against-ethiopia/a-79629670?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T18:32:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 28.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "a53e1298863ed3f0",
       "category": "ai",
       "title": "Release v0.7.0",
@@ -524,8 +540,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-10T01:21:54.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 29.7,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 28.3,
       "topics": [
         "inference",
         "kernels",
@@ -544,14 +560,62 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-10T01:20:56.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 29.7,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 28.3,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models",
         "training"
+      ]
+    },
+    {
+      "id": "f1fefe0b909fe12f",
+      "category": "world",
+      "title": "India protests: New 'cockroach' movement leader named",
+      "summary": "Indian police detained the head of the satirical \"cockroach\" online movement on Saturday, the group said, ahead of a major protest against the Election Commission that prompted strict security measures. \"They seem to have seen that coming,\" notes France 24's Andrew Hilliar. In a prerecorded video, Abhijeet Dipke, founder of the Cockroach Party, names an interim leader to take over.",
+      "url": "https://www.france24.com/en/video/20261010-india-protests-new-cockroach-movement-leader-named",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T16:14:56.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 28,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "9a7f7d09a2222b6d",
+      "category": "world",
+      "title": "Abbas postpones Palestinian elections, sets presidential poll for September 2027",
+      "summary": "Palestinian President Mahmoud Abbas on Saturday postponed legislative elections due next month until September 11, ​2027, and called ‌a presidential poll for the same date, blaming Israel and the security situation in the Palestinian territories for the ⁠delay. Our correspondent in Jerusalem Noga Tarnopolsky tells us more.",
+      "url": "https://www.france24.com/en/video/20261010-abbas-postpones-palestinian-elections-sets-presidential-poll-for-september-2027",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T16:09:13.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 28,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "aa7e2b3ea7625dbf",
+      "category": "world",
+      "title": "India detains thousands, locks down Delhi to foil election chief protest",
+      "summary": "Police detained more than 2,000 protesters and the founder of the \"cockroach\" youth movement in Delhi on Saturday as security forces locked down parts of the capital to thwart a rally demanding the resignation of India's election chief. Our correspondent Navodita Kumari tells us more.",
+      "url": "https://www.france24.com/en/video/20261010-india-detains-thousands-locks-down-delhi-to-foil-election-chief-protest",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T15:54:28.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 27.9,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -564,12 +628,629 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T18:27:34.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 29,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 27.5,
       "topics": [
         "inference",
         "models"
       ]
+    },
+    {
+      "id": "57185342547dc617",
+      "category": "world",
+      "title": "Indian authorities crack down on 'Cockroach' protest in central Delhi. Follow live.",
+      "summary": "Indian authorities have imposed extraordinary security measures to block protesters from joining a demonstration called by the Cockroach Janta Party in New Delhi. The main leaders of the party have been detained too.",
+      "url": "https://www.dw.com/en/indian-authorities-crack-down-on-cockroach-protest-in-central-delhi-follow-live/live-79624339?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T03:50:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 24.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "e584be008cbd6970",
+      "category": "world",
+      "title": "Heightened security at anti-immigrant hotspots in South Africa",
+      "summary": "This follows two-days of violent anti-foreigner riots in the cities of Durban and Johannesburg, that come weeks before local government elections.",
+      "url": "https://www.africanews.com/2026/10/10/heightened-security-at-anti-immigrant-hotspots-in-south-africa/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T07:05:59.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 24.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "2e580cd48c9d8d92",
+      "category": "world",
+      "title": "US country music star Ella Langley cancels show due to 'security threat'",
+      "summary": "Police say they checked the concert venue in Tulsa, Oklahoma but \"could not find any threat\".",
+      "url": "https://www.bbc.co.uk/news/articles/cm79pdlywqd4o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T02:02:54.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 24.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "48c4ea866c6efe33",
+      "category": "world",
+      "title": "Security Council LIVE: Cycle of escalating attacks on civilians in Ukraine ‘must end now’",
+      "summary": "Escalating violence and human rights violations in the four-year-old Russia-Ukraine war are in the spotlight in the Security Council on Friday following a spate of Russian attacks against civilian targets and infrastructure in recent days.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168564",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-09T12:00:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "4df8061cee797d80",
+      "category": "world",
+      "title": "Security Council LIVE: Yemen has fallen back into full-scale war, warns UN envoy",
+      "summary": "The Security Council met to discuss the crisis in Yemen Friday, where a Houthi offensive launched in September has sharply escalated the 12-year-long war for control of the country and spillover from the US-Iran war has provoked a new displacement crisis. Live coverage below and for full meetings updates, go here.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168559",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-09T12:00:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "c4af2d813353226e",
+      "category": "ai",
+      "title": "vLLM Support for NVIDIA Vera Rubin NVL72: 7.8x Throughput over GB200 NVL72",
+      "summary": "vLLM now runs on NVIDIA Vera Rubin NVL72 with day-0 model support, Rubin-tuned FlashInfer kernels, and locality-aware MoE, delivering 7.8x the per-GPU throughput of GB200 NVL72 on AgentX.",
+      "url": "https://vllm.ai/blog/2026-10-09-vera-rubin-preview",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-09T00:00:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.9,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "125952c9d05883be",
+      "category": "world",
+      "title": "'Time for Ukraine to get new president,' says Trump after Zelensky condemns diesel deal",
+      "summary": "Ukraine's leader had said the deal with Russia to release diesel into the US would help Moscow fund the war.",
+      "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T19:28:28.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "710fe2f70a0d8f7c",
+      "category": "ai",
+      "title": "Impactful scheduling for GPU clusters",
+      "summary": "",
+      "url": "https://huggingface.co/blog/allenai/impactful-scheduling",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-09T15:20:29.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.8,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "bd7f7f875a01a900",
+      "category": "world",
+      "title": "Money, networks and bias: Why women struggle to win seats in US politics",
+      "summary": "The US is holding Congress and state governors elections. At all levels of US politics, women are underrepresented — but they may win some historic victories in the midterms on November 3.",
+      "url": "https://www.dw.com/en/money-networks-and-bias-why-women-struggle-to-win-seats-in-us-politics/a-79625179?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T19:16:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "f218f74203cb4cb1",
+      "category": "world",
+      "title": "Three injured in third school attack in Poland in less than a week",
+      "summary": "The attack comes after police announced the detention of 76 people across Poland in connection with previous incidents.",
+      "url": "https://www.aljazeera.com/news/2026/10/10/three-injured-in-third-school-attack-in-poland-in-less-than-a-week?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T15:13:55.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "c9f63ac998727529",
+      "category": "ai",
+      "title": "proto-v0.5.0",
+      "summary": "Release vllm-proto 0.5.0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/proto-v0.5.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-09T03:11:40.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.7,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "cfa7020e1a703d38",
+      "category": "technology",
+      "title": "NASA to Conduct Flyover, Engage NFL Fans at MetLife Stadium",
+      "summary": "As part of the agency’s Inspiration Tour flyover, NASA Administrator Jared Isaacman will pilot one of three F-5 fighter jets to kick off the New York Jets vs. Cleveland Browns game in East Rutherford, New Jersey, on Sunday, Oct. 11. NASA team members will engage with fans at the agency’s Experience Zone, located at the […]",
+      "url": "https://www.nasa.gov/news-release/nasa-to-conduct-flyover-engage-nfl-fans-at-metlife-stadium/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-10T14:18:59.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "e25477832f5dd56c",
+      "category": "world",
+      "title": "US murderer Christa Pike discharged from hospital 10 days after failed execution",
+      "summary": "Pike's lawyers say she is \"grateful\" to the medical team who cared for her after she survived two lethal injections last month.",
+      "url": "https://www.bbc.co.uk/news/articles/cmlyle97pqd7o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T17:44:26.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "77dfe36b7daa0abc",
+      "category": "finance",
+      "title": "CMORG holds sector-wide cloud outage simulation exercise",
+      "summary": "The Cross-Market Operational Resilience Group (CMORG) yesterday (8 October 2026) completed its biennial simulation exercise, known as SIMEX26, focused this year on a global cloud services disruption.",
+      "url": "https://www.bankofengland.co.uk/news/2026/october/cmorg-holds-sector-wide-cloud-outage-simulation-exercise",
+      "source": "Bank of England",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-09T09:00:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.2,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "7e370ff9d6a69ba4",
+      "category": "world",
+      "title": "Eritrea urges UN to intervene in standoff with Ethiopia",
+      "summary": "The neighbouring countries blame one another for starting war amid heightened tensions and fears of a wider conflict.",
+      "url": "https://www.aljazeera.com/news/2026/10/10/eritrea-urges-un-to-intervene-in-standoff-with?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T16:41:25.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.1,
+      "topics": []
+    },
+    {
+      "id": "0ca46cf2063cc8d7",
+      "category": "ai",
+      "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+      "summary": "Is Apple hoping to get into the AI-generated podcast business?",
+      "url": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T19:50:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "7468222a8672c6d3",
+      "category": "technology",
+      "title": "NASA Seeks US Industry Plans for Commercial Space Stations",
+      "summary": "NASA is advancing American leadership in space by taking the next step toward a future where commercial space stations lead the way in low Earth orbit. On Friday, the agency released its final Request for Proposals inviting industry to submit plans for the next generation of commercial space stations. “In alignment with the President’s National […]",
+      "url": "https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-09T18:11:44.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "d5d7b0f022e2cf5e",
+      "category": "technology",
+      "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+      "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
+      "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-09T22:04:07.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 22.4,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "c4db76e7fed027bb",
+      "category": "technology",
+      "title": "NASA Demonstrates Next-Generation Heat Shield Technologies",
+      "summary": "NASA is testing heat shields that can keep astronauts safe as they return from missions to the Moon and Mars in an unusual way: by taking out the trash. When Northrop Grumman 24th cargo resupply mission for NASA undocked from the International Space Station, it carried a fleet of 12 small, experimental capsules designed to […]",
+      "url": "https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-09T16:59:24.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 22.2,
+      "topics": []
+    },
+    {
+      "id": "e07ac6f10cc17eb1",
+      "category": "world",
+      "title": "Unreliable weather creating mental health issues for Kenyan farmers",
+      "summary": "A Kenyan clinical psychologist is urging policymakers to incorporate mental wellbeing into farmer support programmes.",
+      "url": "https://www.africanews.com/2026/10/10/unreliable-weather-creating-mental-health-issues-for-kenyan-farmers/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T15:12:41.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 21.7,
+      "topics": []
+    },
+    {
+      "id": "71c02e9f2b87d4b4",
+      "category": "world",
+      "title": "Mauritanian PM reappointed hours after resignation over power outages",
+      "summary": "President Mohamed Ould Cheikh El Ghazouani has tasked Mohamed Ould Cheikh with forming a new government.",
+      "url": "https://www.africanews.com/2026/10/10/mauritanian-pm-reappointed-hours-after-resignation-over-power-outages/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T10:31:09.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 21.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "1778425911ac53c9",
+      "category": "technology",
+      "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
+      "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bottlenecks.",
+      "url": "https://blog.cloudflare.com/workers-on-demand-profiling/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-09T13:00:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 21.2,
+      "topics": []
+    },
+    {
+      "id": "53e63809d08c1366",
+      "category": "finance",
+      "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+      "summary": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-09T14:00:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 20.4,
+      "topics": []
+    },
+    {
+      "id": "2fce1d5eabd09f0b",
+      "category": "finance",
+      "title": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/nvidia-in-talks-invest-further-in-reflection-ai-or-buy-it-ft-reports-6449691",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T19:32:37.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 19.8,
+      "topics": []
+    },
+    {
+      "id": "7d7530ab45920d30",
+      "category": "technology",
+      "title": "gfx950-tutorial-v3.0",
+      "summary": "gfx950 tutorial pin v3.0: upstream main at 3b0c7f0 (PR #12209 , the …",
+      "url": "https://github.com/triton-lang/triton/releases/tag/gfx950-tutorial-v3.0",
+      "source": "Triton Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-10T02:40:04.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 19.6,
+      "topics": []
+    },
+    {
+      "id": "9d08cc48a5e9f872",
+      "category": "finance",
+      "title": "Venezuela president authorizes SpaceX's Starlink to operate in the country",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/venezuela-president-authorizes-spacexs-starlink-operate-in-country-6448146",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T00:01:05.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "d84c2cec75c1763d",
+      "category": "finance",
+      "title": "Anthropic discloses fake tip to police among new rogue AI incidents",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/anthropic-discloses-fake-tip-police-among-new-rogue-ai-incidents-6447846",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-09T19:21:18.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 18.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "d35af5ac89d53c98",
+      "category": "finance",
+      "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
+      "summary": "Ukraine's president sharply criticised the move, calling it an \"investment in war that must be ended, not prolonged\".",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T14:24:14.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 18.5,
+      "topics": []
+    },
+    {
+      "id": "3ff78a5179293ef7",
+      "category": "technology",
+      "title": "5 Steps to Create SimReady Assets for Robotics with Frontier AI Models",
+      "summary": "Preparing CAD assets for robotics simulation requires more than converting geometry to OpenUSD: developers must configure and validate materials, collision...",
+      "url": "https://developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-08T20:57:55.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 18.2,
+      "topics": []
+    },
+    {
+      "id": "0a2bdcb931054aec",
+      "category": "finance",
+      "title": "Money Box",
+      "summary": "What age will you get your state pension?",
+      "url": "https://www.bbc.co.uk/sounds/play/m0032qlk",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T11:30:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 17.8,
+      "topics": []
+    },
+    {
+      "id": "b5e803032bc8d554",
+      "category": "ai",
+      "title": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
+      "summary": "TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to 10,000 tech leaders. Plus, 250+ speakers are ready to share insights across 200+ sessions. Register before doors open to save up to $100 and get a second pass at 50% off.",
+      "url": "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T15:00:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 17.7,
+      "topics": []
+    },
+    {
+      "id": "c46f9f3bc88b883a",
+      "category": "ai",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "url": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T14:00:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 17.4,
+      "topics": []
+    },
+    {
+      "id": "be5708fcd6f0664e",
+      "category": "technology",
+      "title": "Deno is joining Cloudflare",
+      "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places.",
+      "url": "https://blog.cloudflare.com/deno-joins-cloudflare/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-09T12:50:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 17.1,
+      "topics": []
+    },
+    {
+      "id": "4151899ca5362286",
+      "category": "technology",
+      "title": "AI coding agents generate more code, but not more software",
+      "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
+      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-09T19:43:50.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 16.9,
+      "topics": []
+    },
+    {
+      "id": "08b06808c1dc3ea6",
+      "category": "technology",
+      "title": "One with the world? A new look at brains transformed by psychedelics.",
+      "summary": "Participants meditated inside an MRI tube, with and without psilocybin.",
+      "url": "https://arstechnica.com/science/2026/10/the-psychedelic-brain-looks-like-chaos-underneath-theres-order/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T11:15:35.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 16.7,
+      "topics": []
+    },
+    {
+      "id": "240c30df302d2aae",
+      "category": "finance",
+      "title": "Ex-Deutsche Bank trader jailed for rigging rates has conviction overturned",
+      "summary": "The Court of Appeal quashes the conviction of Christian Bittar, a former Deutsche Bank trader jailed in 2018.",
+      "url": "https://www.bbc.co.uk/news/articles/cqgkvj10k6lno",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-09T14:36:35.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 16.6,
+      "topics": []
+    },
+    {
+      "id": "e89cee187638106c",
+      "category": "finance",
+      "title": "Twenty-fifth Meeting of the \"Council for Cooperation on Financial Stability\"",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/finsys/macpru/mac261009a.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-09T09:00:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 14.2,
+      "topics": []
+    },
+    {
+      "id": "92de756efdfbcd5c",
+      "category": "finance",
+      "title": "Amendment to \"Prices of Eligible Collateral\"",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261009a.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-09T07:00:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 13.7,
+      "topics": []
+    },
+    {
+      "id": "c9ea33575656494e",
+      "category": "ai",
+      "title": "v0.7.2rc2",
+      "summary": "v0.7.2rc2",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2rc2",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-09T00:22:39.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 13,
+      "topics": []
+    },
+    {
+      "id": "530266f6a8754f64",
+      "category": "finance",
+      "title": "IMES Discussion Paper Series (2026)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/research/imes/dps/dps26.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-09T02:00:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 12.4,
+      "topics": []
+    },
+    {
+      "id": "323f49c26f0a4f8d",
+      "category": "ai",
+      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for exploring scenarios, investigating failures and improving designs. Developers direct AI agents through […]",
+      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-08T21:06:35.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 12.2,
+      "topics": []
+    },
+    {
+      "id": "e19cb2d7394c5cbf",
+      "category": "finance",
+      "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+      "summary": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-08T20:30:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 12.1,
+      "topics": []
     },
     {
       "id": "0288acebc43d1dbc",
@@ -636,197 +1317,6 @@
       ]
     },
     {
-      "id": "57185342547dc617",
-      "category": "world",
-      "title": "Indian authorities crack down on 'Cockroach' protest in central Delhi. Follow live.",
-      "summary": "Indian authorities have imposed extraordinary security measures to block protesters from joining a demonstration called by the Cockroach Janta Party in New Delhi. The main leaders of the party have been detained too.",
-      "url": "https://www.dw.com/en/indian-authorities-crack-down-on-cockroach-protest-in-central-delhi-follow-live/live-79624339?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T03:50:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 26.3,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "e584be008cbd6970",
-      "category": "world",
-      "title": "Heightened security at anti-immigrant hotspots in South Africa",
-      "summary": "This follows two-days of violent anti-foreigner riots in the cities of Durban and Johannesburg, that come weeks before local government elections.",
-      "url": "https://www.africanews.com/2026/10/10/heightened-security-at-anti-immigrant-hotspots-in-south-africa/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T07:05:59.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 26.1,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "2e580cd48c9d8d92",
-      "category": "world",
-      "title": "US country music star Ella Langley cancels show due to 'security threat'",
-      "summary": "Police say they checked the concert venue in Tulsa, Oklahoma but \"could not find any threat\".",
-      "url": "https://www.bbc.co.uk/news/articles/cm79pdlywqd4o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T02:02:54.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 25.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "48c4ea866c6efe33",
-      "category": "world",
-      "title": "Security Council LIVE: Cycle of escalating attacks on civilians in Ukraine ‘must end now’",
-      "summary": "Escalating violence and human rights violations in the four-year-old Russia-Ukraine war are in the spotlight in the Security Council on Friday following a spate of Russian attacks against civilian targets and infrastructure in recent days.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168564",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-09T12:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 25.3,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "4df8061cee797d80",
-      "category": "world",
-      "title": "Security Council LIVE: Yemen has fallen back into full-scale war, warns UN envoy",
-      "summary": "The Security Council met to discuss the crisis in Yemen Friday, where a Houthi offensive launched in September has sharply escalated the 12-year-long war for control of the country and spillover from the US-Iran war has provoked a new displacement crisis. Live coverage below and for full meetings updates, go here.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168559",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-09T12:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 25.3,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "c4af2d813353226e",
-      "category": "ai",
-      "title": "vLLM Support for NVIDIA Vera Rubin NVL72: 7.8x Throughput over GB200 NVL72",
-      "summary": "vLLM now runs on NVIDIA Vera Rubin NVL72 with day-0 model support, Rubin-tuned FlashInfer kernels, and locality-aware MoE, delivering 7.8x the per-GPU throughput of GB200 NVL72 on AgentX.",
-      "url": "https://vllm.ai/blog/2026-10-09-vera-rubin-preview",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-09T00:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 25.3,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models"
-      ]
-    },
-    {
-      "id": "710fe2f70a0d8f7c",
-      "category": "ai",
-      "title": "Impactful scheduling for GPU clusters",
-      "summary": "",
-      "url": "https://huggingface.co/blog/allenai/impactful-scheduling",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-09T15:20:29.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 25.2,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
-      "id": "c9f63ac998727529",
-      "category": "ai",
-      "title": "proto-v0.5.0",
-      "summary": "Release vllm-proto 0.5.0",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/proto-v0.5.0",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-09T03:11:40.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 25.1,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "cfa7020e1a703d38",
-      "category": "technology",
-      "title": "NASA to Conduct Flyover, Engage NFL Fans at MetLife Stadium",
-      "summary": "As part of the agency’s Inspiration Tour flyover, NASA Administrator Jared Isaacman will pilot one of three F-5 fighter jets to kick off the New York Jets vs. Cleveland Browns game in East Rutherford, New Jersey, on Sunday, Oct. 11. NASA team members will engage with fans at the agency’s Experience Zone, located at the […]",
-      "url": "https://www.nasa.gov/news-release/nasa-to-conduct-flyover-engage-nfl-fans-at-metlife-stadium/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-10T14:18:59.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 24.9,
-      "topics": []
-    },
-    {
-      "id": "77dfe36b7daa0abc",
-      "category": "finance",
-      "title": "CMORG holds sector-wide cloud outage simulation exercise",
-      "summary": "The Cross-Market Operational Resilience Group (CMORG) yesterday (8 October 2026) completed its biennial simulation exercise, known as SIMEX26, focused this year on a global cloud services disruption.",
-      "url": "https://www.bankofengland.co.uk/news/2026/october/cmorg-holds-sector-wide-cloud-outage-simulation-exercise",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-09T09:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 24.6,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "d5d7b0f022e2cf5e",
-      "category": "technology",
-      "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
-      "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
-      "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-09T22:04:07.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23.9,
-      "topics": [
-        "training"
-      ]
-    },
-    {
-      "id": "7468222a8672c6d3",
-      "category": "technology",
-      "title": "NASA Seeks US Industry Plans for Commercial Space Stations",
-      "summary": "NASA is advancing American leadership in space by taking the next step toward a future where commercial space stations lead the way in low Earth orbit. On Friday, the agency released its final Request for Proposals inviting industry to submit plans for the next generation of commercial space stations. “In alignment with the President’s National […]",
-      "url": "https://www.nasa.gov/news-release/nasa-seeks-us-industry-plans-for-commercial-space-stations/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-09T18:11:44.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23.9,
-      "topics": []
-    },
-    {
       "id": "65e538a272338f67",
       "category": "technology",
       "title": "Session-Aware Agentic Inference with NVIDIA Dynamo",
@@ -852,20 +1342,6 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-10T12:50:34.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23.6,
-      "topics": []
-    },
-    {
-      "id": "c4db76e7fed027bb",
-      "category": "technology",
-      "title": "NASA Demonstrates Next-Generation Heat Shield Technologies",
-      "summary": "NASA is testing heat shields that can keep astronauts safe as they return from missions to the Moon and Mars in an unusual way: by taking out the trash. When Northrop Grumman 24th cargo resupply mission for NASA undocked from the International Space Station, it carried a fleet of 12 small, experimental capsules designed to […]",
-      "url": "https://www.nasa.gov/centers-and-facilities/ames/nasa-demonstrates-next-generation-heat-shield-technologies/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-09T16:59:24.000Z",
       "fetchedAt": "2026-10-10T14:38:32.973Z",
       "score": 23.6,
       "topics": []
@@ -927,22 +1403,6 @@
       "topics": []
     },
     {
-      "id": "71c02e9f2b87d4b4",
-      "category": "world",
-      "title": "Mauritanian PM reappointed hours after resignation over power outages",
-      "summary": "President Mohamed Ould Cheikh El Ghazouani has tasked Mohamed Ould Cheikh with forming a new government.",
-      "url": "https://www.africanews.com/2026/10/10/mauritanian-pm-reappointed-hours-after-resignation-over-power-outages/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T10:31:09.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23,
-      "topics": [
-        "security"
-      ]
-    },
-    {
       "id": "8ab5578c03ba0d1e",
       "category": "world",
       "title": "Journalist Hamurabi Huesca Manzano killed in Mexico’s Oaxaca",
@@ -957,78 +1417,6 @@
       "topics": []
     },
     {
-      "id": "1778425911ac53c9",
-      "category": "technology",
-      "title": "Introducing on-demand CPU and memory profiling with flamegraphs for Workers and Durable Objects",
-      "summary": "On-demand CPU and memory profiling for Cloudflare Workers and Durable Objects is now available. Now you can generate interactive flamegraphs directly in production to quickly track down memory leaks and performance bottlenecks.",
-      "url": "https://blog.cloudflare.com/workers-on-demand-profiling/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-09T13:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 22.6,
-      "topics": []
-    },
-    {
-      "id": "53e63809d08c1366",
-      "category": "finance",
-      "title": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
-      "summary": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
-      "source": "U.S. Federal Reserve",
-      "sourceCountry": "United States",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-09T14:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 21.8,
-      "topics": []
-    },
-    {
-      "id": "7d7530ab45920d30",
-      "category": "technology",
-      "title": "gfx950-tutorial-v3.0",
-      "summary": "gfx950 tutorial pin v3.0: upstream main at 3b0c7f0 (PR #12209 , the …",
-      "url": "https://github.com/triton-lang/triton/releases/tag/gfx950-tutorial-v3.0",
-      "source": "Triton Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-10T02:40:04.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 21,
-      "topics": []
-    },
-    {
-      "id": "9d08cc48a5e9f872",
-      "category": "finance",
-      "title": "Venezuela president authorizes SpaceX's Starlink to operate in the country",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/venezuela-president-authorizes-spacexs-starlink-operate-in-country-6448146",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T00:01:05.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 20.3,
-      "topics": []
-    },
-    {
-      "id": "d84c2cec75c1763d",
-      "category": "finance",
-      "title": "Anthropic discloses fake tip to police among new rogue AI incidents",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/anthropic-discloses-fake-tip-police-among-new-rogue-ai-incidents-6447846",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-09T19:21:18.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 20.2,
-      "topics": [
-        "security"
-      ]
-    },
-    {
       "id": "7eb5705fbd23b909",
       "category": "finance",
       "title": "Exclusive-Sequoia-backed chip startup Nuvacore raising funds at about a $2.5 billion valuation, sources say",
@@ -1040,48 +1428,6 @@
       "publishedAt": "2026-10-09T22:37:56.000Z",
       "fetchedAt": "2026-10-10T14:38:32.973Z",
       "score": 20,
-      "topics": []
-    },
-    {
-      "id": "3ff78a5179293ef7",
-      "category": "technology",
-      "title": "5 Steps to Create SimReady Assets for Robotics with Frontier AI Models",
-      "summary": "Preparing CAD assets for robotics simulation requires more than converting geometry to OpenUSD: developers must configure and validate materials, collision...",
-      "url": "https://developer.nvidia.com/blog/5-steps-to-create-simready-assets-for-robotics-with-frontier-ai-models/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-08T20:57:55.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 19.6,
-      "topics": []
-    },
-    {
-      "id": "0a2bdcb931054aec",
-      "category": "finance",
-      "title": "Money Box",
-      "summary": "What age will you get your state pension?",
-      "url": "https://www.bbc.co.uk/sounds/play/m0032qlk",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T11:30:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 19.2,
-      "topics": []
-    },
-    {
-      "id": "c46f9f3bc88b883a",
-      "category": "ai",
-      "title": "Here are the top AI agents that can live in your text messages",
-      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
-      "url": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T14:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 18.8,
       "topics": []
     },
     {
@@ -1099,48 +1445,6 @@
       "topics": []
     },
     {
-      "id": "be5708fcd6f0664e",
-      "category": "technology",
-      "title": "Deno is joining Cloudflare",
-      "summary": "The Deno team is joining Cloudflare to radically simplify self-hosting Workers and Durable Objects, so developers can use the same primitives in more places.",
-      "url": "https://blog.cloudflare.com/deno-joins-cloudflare/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-09T12:50:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 18.5,
-      "topics": []
-    },
-    {
-      "id": "4151899ca5362286",
-      "category": "technology",
-      "title": "AI coding agents generate more code, but not more software",
-      "summary": "Study finds coding efficiency gains get \"absorbed\" by human review \"bottleneck.\"",
-      "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-09T19:43:50.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 18.3,
-      "topics": []
-    },
-    {
-      "id": "08b06808c1dc3ea6",
-      "category": "technology",
-      "title": "One with the world? A new look at brains transformed by psychedelics.",
-      "summary": "Participants meditated inside an MRI tube, with and without psilocybin.",
-      "url": "https://arstechnica.com/science/2026/10/the-psychedelic-brain-looks-like-chaos-underneath-theres-order/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T11:15:35.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 18.2,
-      "topics": []
-    },
-    {
       "id": "81aaf0e3540f708c",
       "category": "ai",
       "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
@@ -1152,20 +1456,6 @@
       "publishedAt": "2026-10-09T19:36:56.000Z",
       "fetchedAt": "2026-10-10T14:38:32.973Z",
       "score": 18.2,
-      "topics": []
-    },
-    {
-      "id": "240c30df302d2aae",
-      "category": "finance",
-      "title": "Ex-Deutsche Bank trader jailed for rigging rates has conviction overturned",
-      "summary": "The Court of Appeal quashes the conviction of Christian Bittar, a former Deutsche Bank trader jailed in 2018.",
-      "url": "https://www.bbc.co.uk/news/articles/cqgkvj10k6lno",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-09T14:36:35.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 18,
       "topics": []
     },
     {
@@ -1183,34 +1473,6 @@
       "topics": []
     },
     {
-      "id": "e89cee187638106c",
-      "category": "finance",
-      "title": "Twenty-fifth Meeting of the \"Council for Cooperation on Financial Stability\"",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/finsys/macpru/mac261009a.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-09T09:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 15.6,
-      "topics": []
-    },
-    {
-      "id": "92de756efdfbcd5c",
-      "category": "finance",
-      "title": "Amendment to \"Prices of Eligible Collateral\"",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261009a.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-09T07:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 15.1,
-      "topics": []
-    },
-    {
       "id": "654252d0d75a0754",
       "category": "technology",
       "title": "Building Reliable Data Analytics Agents: Lessons from the KDD Cup",
@@ -1222,62 +1484,6 @@
       "publishedAt": "2026-10-08T18:30:02.000Z",
       "fetchedAt": "2026-10-10T14:38:32.973Z",
       "score": 15,
-      "topics": []
-    },
-    {
-      "id": "c9ea33575656494e",
-      "category": "ai",
-      "title": "v0.7.2rc2",
-      "summary": "v0.7.2rc2",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2rc2",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-09T00:22:39.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 14.4,
-      "topics": []
-    },
-    {
-      "id": "530266f6a8754f64",
-      "category": "finance",
-      "title": "IMES Discussion Paper Series (2026)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/research/imes/dps/dps26.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-09T02:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 13.8,
-      "topics": []
-    },
-    {
-      "id": "323f49c26f0a4f8d",
-      "category": "ai",
-      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
-      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for exploring scenarios, investigating failures and improving designs. Developers direct AI agents through […]",
-      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-08T21:06:35.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 13.6,
-      "topics": []
-    },
-    {
-      "id": "e19cb2d7394c5cbf",
-      "category": "finance",
-      "title": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
-      "summary": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
-      "source": "U.S. Federal Reserve",
-      "sourceCountry": "United States",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-08T20:30:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 13.5,
       "topics": []
     },
     {

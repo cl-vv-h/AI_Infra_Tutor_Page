@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T14:38:32.973Z",
+  "generatedAt": "2026-10-10T20:16:26.701Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 28,
-      "latestPublishedAt": "2026-10-10T14:24:14.000Z",
+      "entryCount": 31,
+      "latestPublishedAt": "2026-10-10T19:28:28.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,8 +40,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 139,
-      "latestPublishedAt": "2026-10-10T13:36:00.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-10T19:16:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -53,8 +53,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-10T14:10:24.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-10T19:59:18.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-10T00:01:05.000Z",
+      "latestPublishedAt": "2026-10-10T19:32:37.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-10T14:00:00.000Z",
+      "latestPublishedAt": "2026-10-10T19:50:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-10T14:10:33.000Z",
+      "latestPublishedAt": "2026-10-10T18:22:23.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -275,7 +275,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-10T11:40:53.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-10T12:46:46.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-10T15:12:41.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -418,7 +418,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-08T18:13:46.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -431,7 +431,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-08T20:57:55.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -515,6 +515,22 @@
   ],
   "items": [
     {
+      "id": "0fbb651be793866a",
+      "category": "world",
+      "title": "Eritrea urges UN deterrence measures against Ethiopia",
+      "summary": "Eritrea has officially requested UN Security Council assistance over the conflict in Tigray. Both Eritrea and Ethiopia accuse each other of fueling regional instability.",
+      "url": "https://www.dw.com/en/eritrea-urges-un-deterrence-measures-against-ethiopia/a-79629670?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T18:32:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 28.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "a53e1298863ed3f0",
       "category": "ai",
       "title": "Release v0.7.0",
@@ -524,8 +540,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-10T01:21:54.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 29.7,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 28.3,
       "topics": [
         "inference",
         "kernels",
@@ -544,14 +560,62 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-10T01:20:56.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 29.7,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 28.3,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models",
         "training"
+      ]
+    },
+    {
+      "id": "f1fefe0b909fe12f",
+      "category": "world",
+      "title": "India protests: New 'cockroach' movement leader named",
+      "summary": "Indian police detained the head of the satirical \"cockroach\" online movement on Saturday, the group said, ahead of a major protest against the Election Commission that prompted strict security measures. \"They seem to have seen that coming,\" notes France 24's Andrew Hilliar. In a prerecorded video, Abhijeet Dipke, founder of the Cockroach Party, names an interim leader to take over.",
+      "url": "https://www.france24.com/en/video/20261010-india-protests-new-cockroach-movement-leader-named",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T16:14:56.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 28,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "9a7f7d09a2222b6d",
+      "category": "world",
+      "title": "Abbas postpones Palestinian elections, sets presidential poll for September 2027",
+      "summary": "Palestinian President Mahmoud Abbas on Saturday postponed legislative elections due next month until September 11, ​2027, and called ‌a presidential poll for the same date, blaming Israel and the security situation in the Palestinian territories for the ⁠delay. Our correspondent in Jerusalem Noga Tarnopolsky tells us more.",
+      "url": "https://www.france24.com/en/video/20261010-abbas-postpones-palestinian-elections-sets-presidential-poll-for-september-2027",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T16:09:13.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 28,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "aa7e2b3ea7625dbf",
+      "category": "world",
+      "title": "India detains thousands, locks down Delhi to foil election chief protest",
+      "summary": "Police detained more than 2,000 protesters and the founder of the \"cockroach\" youth movement in Delhi on Saturday as security forces locked down parts of the capital to thwart a rally demanding the resignation of India's election chief. Our correspondent Navodita Kumari tells us more.",
+      "url": "https://www.france24.com/en/video/20261010-india-detains-thousands-locks-down-delhi-to-foil-election-chief-protest",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T15:54:28.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 27.9,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -564,75 +628,11 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T18:27:34.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 29,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 27.5,
       "topics": [
         "inference",
         "models"
-      ]
-    },
-    {
-      "id": "0288acebc43d1dbc",
-      "category": "world",
-      "title": "October 7 scars push Israel's first-time voters to right",
-      "summary": "Like hundreds of thousands of Israelis, Amihai will be of voting age for the first time since Hamas carried out its attack on October 7, 2023. When he casts his ballot this month, he has one priority above all -- security.",
-      "url": "https://www.france24.com/en/video/20261010-october-7-scars-push-israel-s-first-time-voters-to-right",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T11:01:20.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 28.1,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "97a7358180205860",
-      "category": "world",
-      "title": "Severe injuries at French student protests draw scrutiny to police tactics",
-      "summary": "Twenty-four investigations have been opened by French police watchdog IGPN into incidents linked to the ongoing high school protest movement, the interior ministry said. The police response has reignited calls to scrap rubber bullets and launcher-fired riot-control weapons, long denounced by rights groups and UN experts as dangerous and excessive.",
-      "url": "https://www.france24.com/en/france/20261010-injuries-french-student-protests-draw-scrutiny-to-police-tactics",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T10:20:54.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 27.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "9e2bc964c114ccf2",
-      "category": "world",
-      "title": "India detains 'cockroach' leaders ahead of election protest",
-      "summary": "Indian police detained the head of the satirical \"cockroach\" online movement on Saturday, the group said, ahead of a major protest against the Election Commission that triggered strict security measures. Our correspondent Navodita Kumari tells us more.",
-      "url": "https://www.france24.com/en/video/20261010-india-detains-cockroach-leaders-ahead-of-election-protest",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T09:18:11.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 27.7,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "34b3c97e59f00c64",
-      "category": "world",
-      "title": "India cracks down on youth protests as anger grows against Modi and election chief",
-      "summary": "Indian authorities have launched a major security crackdown in New Delhi, detaining thousands of protesters who intended to hold a mass demonstration against Prime Minister Narendra Modi's government.",
-      "url": "https://www.npr.org/2026/10/10/g-s1-147603/india-cracks-down-on-youth-protests-as-anger-grows-against-modi-and-election-chief",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T08:31:28.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 26.5,
-      "topics": [
-        "security"
       ]
     },
     {
@@ -645,8 +645,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-10T03:50:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 26.3,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 24.9,
       "topics": [
         "security"
       ]
@@ -661,8 +661,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-10T07:05:59.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 26.1,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 24.7,
       "topics": [
         "security"
       ]
@@ -677,8 +677,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-10T02:02:54.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 25.9,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 24.4,
       "topics": [
         "security"
       ]
@@ -693,8 +693,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T12:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.9,
       "topics": [
         "security"
       ]
@@ -709,8 +709,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T12:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.9,
       "topics": [
         "security"
       ]
@@ -725,14 +725,28 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T00:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.9,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models"
       ]
+    },
+    {
+      "id": "125952c9d05883be",
+      "category": "world",
+      "title": "'Time for Ukraine to get new president,' says Trump after Zelensky condemns diesel deal",
+      "summary": "Ukraine's leader had said the deal with Russia to release diesel into the US would help Moscow fund the war.",
+      "url": "https://www.bbc.co.uk/news/articles/cqe8r5l7n92jo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T19:28:28.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.8,
+      "topics": []
     },
     {
       "id": "710fe2f70a0d8f7c",
@@ -744,10 +758,40 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T15:20:29.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 25.2,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.8,
       "topics": [
         "hardware"
+      ]
+    },
+    {
+      "id": "bd7f7f875a01a900",
+      "category": "world",
+      "title": "Money, networks and bias: Why women struggle to win seats in US politics",
+      "summary": "The US is holding Congress and state governors elections. At all levels of US politics, women are underrepresented — but they may win some historic victories in the midterms on November 3.",
+      "url": "https://www.dw.com/en/money-networks-and-bias-why-women-struggle-to-win-seats-in-us-politics/a-79625179?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T19:16:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "f218f74203cb4cb1",
+      "category": "world",
+      "title": "Three injured in third school attack in Poland in less than a week",
+      "summary": "The attack comes after police announced the detention of 76 people across Poland in connection with previous incidents.",
+      "url": "https://www.aljazeera.com/news/2026/10/10/three-injured-in-third-school-attack-in-poland-in-less-than-a-week?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T15:13:55.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.7,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -760,8 +804,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-09T03:11:40.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 25.1,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.7,
       "topics": [
         "inference"
       ]
@@ -776,8 +820,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-10T14:18:59.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 24.9,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "e25477832f5dd56c",
+      "category": "world",
+      "title": "US murderer Christa Pike discharged from hospital 10 days after failed execution",
+      "summary": "Pike's lawyers say she is \"grateful\" to the medical team who cared for her after she survived two lethal injections last month.",
+      "url": "https://www.bbc.co.uk/news/articles/cmlyle97pqd7o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T17:44:26.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.4,
       "topics": []
     },
     {
@@ -790,27 +848,39 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T09:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 24.6,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.2,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "d5d7b0f022e2cf5e",
-      "category": "technology",
-      "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
-      "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
-      "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
-      "source": "Ars Technica",
+      "id": "7e370ff9d6a69ba4",
+      "category": "world",
+      "title": "Eritrea urges UN to intervene in standoff with Ethiopia",
+      "summary": "The neighbouring countries blame one another for starting war amid heightened tensions and fears of a wider conflict.",
+      "url": "https://www.aljazeera.com/news/2026/10/10/eritrea-urges-un-to-intervene-in-standoff-with?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T16:41:25.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 23.1,
+      "topics": []
+    },
+    {
+      "id": "0ca46cf2063cc8d7",
+      "category": "ai",
+      "title": "Apple discloses deal to hire team and license tech from personalized podcast startup Huxe",
+      "summary": "Is Apple hoping to get into the AI-generated podcast business?",
+      "url": "https://techcrunch.com/2026/10/10/apple-discloses-deal-to-hire-team-and-license-tech-from-personalized-podcast-startup-huxe/",
+      "source": "TechCrunch AI",
       "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-09T22:04:07.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23.9,
-      "topics": [
-        "training"
-      ]
+      "publishedAt": "2026-10-10T19:50:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 22.9,
+      "topics": []
     },
     {
       "id": "7468222a8672c6d3",
@@ -822,39 +892,25 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-09T18:11:44.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 22.5,
       "topics": []
     },
     {
-      "id": "65e538a272338f67",
+      "id": "d5d7b0f022e2cf5e",
       "category": "technology",
-      "title": "Session-Aware Agentic Inference with NVIDIA Dynamo",
-      "summary": "TL;DR Agentic workloads change the traffic an inference server sees. Unlike single-turn chat, an agent session can involve a large initial prefill, repeated model calls, and subagents running in parallel,... The post Session-Aware Agentic Inference with NVIDIA Dynamo appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/session-aware-agentic-inference-with-nvidia-dynamo/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-08T18:13:46.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23.9,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "1c7123df0aa4c6d1",
-      "category": "world",
-      "title": "India’s ‘Cockroach’ leaders detained; New Delhi in lockdown",
-      "summary": "Indian police crackdown appears to have prevented mass protests against the country's election chief from taking place.",
-      "url": "https://www.aljazeera.com/news/2026/10/10/indias-cockroach-leaders-detained-new-delhi-in-lockdown?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+      "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
+      "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-10T12:50:34.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23.6,
-      "topics": []
+      "publishedAt": "2026-10-09T22:04:07.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 22.4,
+      "topics": [
+        "training"
+      ]
     },
     {
       "id": "c4db76e7fed027bb",
@@ -866,64 +922,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-09T16:59:24.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 22.2,
       "topics": []
     },
     {
-      "id": "60640233c1393803",
+      "id": "e07ac6f10cc17eb1",
       "category": "world",
-      "title": "'Cockroach' group leaders among hundreds detained in Delhi protest",
-      "summary": "The group - who are not registered as a political party in India - want electoral reforms ahead of crucial state elections.",
-      "url": "https://www.bbc.co.uk/news/articles/c65yn7xvde7vo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
+      "title": "Unreliable weather creating mental health issues for Kenyan farmers",
+      "summary": "A Kenyan clinical psychologist is urging policymakers to incorporate mental wellbeing into farmer support programmes.",
+      "url": "https://www.africanews.com/2026/10/10/unreliable-weather-creating-mental-health-issues-for-kenyan-farmers/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
       "sourceType": "news",
-      "publishedAt": "2026-10-10T12:29:31.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23.5,
-      "topics": []
-    },
-    {
-      "id": "1c77b78bc86bf86d",
-      "category": "world",
-      "title": "Headmaster detained after BBC investigation into alleged sexual abuse of students",
-      "summary": "Former students launched their own investigation, spending years collecting evidence and testimonies from others who say they were abused by the headteacher.",
-      "url": "https://www.bbc.co.uk/news/articles/cwy8lx1r2vrro",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T12:28:51.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23.5,
-      "topics": []
-    },
-    {
-      "id": "4a036b778b4ec69f",
-      "category": "world",
-      "title": "Why is US turning to Russia for diesel despite sanctions?",
-      "summary": "President Donald Trump's deal with Putin comes amid surging fuel prices and looming US midterm elections.",
-      "url": "https://www.aljazeera.com/news/2026/10/10/why-is-us-turning-to-russia-for-diesel-despite-sanctions?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T12:16:12.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23.4,
-      "topics": []
-    },
-    {
-      "id": "d023586c42bebb26",
-      "category": "world",
-      "title": "US midterms: Women candidates could make history",
-      "summary": "The US is holding Congress and state governors elections. At all levels of US politics, women are underrepresented — but they may win some historic victories in the midterms on November 3.",
-      "url": "https://www.dw.com/en/us-midterms-women-candidates-could-make-history/a-79625179?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T11:11:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23.1,
+      "publishedAt": "2026-10-10T15:12:41.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -936,25 +950,11 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-10T10:31:09.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 23,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 21.6,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "8ab5578c03ba0d1e",
-      "category": "world",
-      "title": "Journalist Hamurabi Huesca Manzano killed in Mexico’s Oaxaca",
-      "summary": "Conflicting reports emerge on the circumstances of the killing, prompting calls for justice from advocacy groups.",
-      "url": "https://www.aljazeera.com/news/2026/10/10/journalist-killed-in-mexico-ninth-this-year-ngo?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T09:27:08.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 22.7,
-      "topics": []
     },
     {
       "id": "1778425911ac53c9",
@@ -966,8 +966,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T13:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 22.6,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 21.2,
       "topics": []
     },
     {
@@ -980,8 +980,22 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T14:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 21.8,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 20.4,
+      "topics": []
+    },
+    {
+      "id": "2fce1d5eabd09f0b",
+      "category": "finance",
+      "title": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/nvidia-in-talks-invest-further-in-reflection-ai-or-buy-it-ft-reports-6449691",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T19:32:37.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -994,8 +1008,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-10T02:40:04.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 21,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 19.6,
       "topics": []
     },
     {
@@ -1008,8 +1022,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-10T00:01:05.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 18.9,
       "topics": []
     },
     {
@@ -1022,24 +1036,24 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-09T19:21:18.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 20.2,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 18.8,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "7eb5705fbd23b909",
+      "id": "d35af5ac89d53c98",
       "category": "finance",
-      "title": "Exclusive-Sequoia-backed chip startup Nuvacore raising funds at about a $2.5 billion valuation, sources say",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/exclusive-sequoia-backed-chip-startup-nuvacore-raising-funds-about-25-billion-valuation-sources-say-6448066",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
+      "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
+      "summary": "Ukraine's president sharply criticised the move, calling it an \"investment in war that must be ended, not prolonged\".",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-10-09T22:37:56.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 20,
+      "publishedAt": "2026-10-10T14:24:14.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 18.5,
       "topics": []
     },
     {
@@ -1052,8 +1066,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-08T20:57:55.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 19.6,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 18.2,
       "topics": []
     },
     {
@@ -1066,8 +1080,22 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-10T11:30:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 19.2,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 17.8,
+      "topics": []
+    },
+    {
+      "id": "b5e803032bc8d554",
+      "category": "ai",
+      "title": "3 days to TechCrunch Disrupt 2026: Meet the startups before they hit mainstream",
+      "summary": "TechCrunch Disrupt 2026 takes place October 13-15 in San Francisco. Over 300 startups will show what they’ve built to 10,000 tech leaders. Plus, 250+ speakers are ready to share insights across 200+ sessions. Register before doors open to save up to $100 and get a second pass at 50% off.",
+      "url": "https://techcrunch.com/2026/10/10/3-days-to-disrupt-2026-meet-the-startups-before-they-hit-mainstream/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T15:00:00.000Z",
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 17.7,
       "topics": []
     },
     {
@@ -1080,22 +1108,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-10T14:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 18.8,
-      "topics": []
-    },
-    {
-      "id": "7583a64ecea1f5d8",
-      "category": "ai",
-      "title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-      "summary": "What has users and large corporations so excited about Jev is TypeSafe’s claim that it works significantly faster and uses far fewer tokens than LLMs.",
-      "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-09T21:41:29.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 18.8,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 17.4,
       "topics": []
     },
     {
@@ -1108,8 +1122,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T12:50:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 18.5,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 17.1,
       "topics": []
     },
     {
@@ -1122,8 +1136,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-09T19:43:50.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 18.3,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 16.9,
       "topics": []
     },
     {
@@ -1136,22 +1150,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-10T11:15:35.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 18.2,
-      "topics": []
-    },
-    {
-      "id": "81aaf0e3540f708c",
-      "category": "ai",
-      "title": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
-      "summary": "Anthropic did not discover this behavior until over two months after its AI submitted the false tip.",
-      "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-09T19:36:56.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 18.2,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1164,22 +1164,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-09T14:36:35.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 18,
-      "topics": []
-    },
-    {
-      "id": "705f6235040b621b",
-      "category": "finance",
-      "title": "Fired OpenAI researchers say they were let go for 'prioritising safety'",
-      "summary": "The AI firm instead claims the researchers were fired for mishandling sensitive information.",
-      "url": "https://www.bbc.co.uk/news/articles/cvlydn8d3lkjo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-09T09:30:49.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 16.7,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 16.6,
       "topics": []
     },
     {
@@ -1192,8 +1178,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T09:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 15.6,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 14.2,
       "topics": []
     },
     {
@@ -1206,22 +1192,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T07:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 15.1,
-      "topics": []
-    },
-    {
-      "id": "654252d0d75a0754",
-      "category": "technology",
-      "title": "Building Reliable Data Analytics Agents: Lessons from the KDD Cup",
-      "summary": "The NVIDIA KGMON team placed second in the KDD Cup 2026 Data Agents competition with a system built around a simple idea of making an agent's harness smaller,...",
-      "url": "https://developer.nvidia.com/blog/building-reliable-data-analytics-agents-lessons-from-the-kdd-cup/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-08T18:30:02.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 15,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 13.7,
       "topics": []
     },
     {
@@ -1234,8 +1206,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-09T00:22:39.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 14.4,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 13,
       "topics": []
     },
     {
@@ -1248,8 +1220,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-09T02:00:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 13.8,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 12.4,
       "topics": []
     },
     {
@@ -1262,8 +1234,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-08T21:06:35.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 13.6,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 12.2,
       "topics": []
     },
     {
@@ -1276,8 +1248,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-08T20:30:00.000Z",
-      "fetchedAt": "2026-10-10T14:38:32.973Z",
-      "score": 13.5,
+      "fetchedAt": "2026-10-10T20:16:26.701Z",
+      "score": 12.1,
       "topics": []
     }
   ]
