@@ -41,6 +41,11 @@ try{
       await page.goBack();await expect(page.getByLabel('直接定位技术',{exact:true})).toHaveValue('mla')
       await page.getByLabel('浏览分支',{exact:true}).selectOption('all')
       await expect(page.locator('[data-node]')).toHaveCount(32)
+      if(width<500){
+        await page.locator('[data-node="flash3"]').scrollIntoViewIfNeeded();await page.locator('[data-node="flash3"]').tap()
+        await expect(page.getByRole('region',{name:'当前技术简介'})).toBeFocused()
+        await expect(page.getByRole('region',{name:'当前技术简介'}).getByRole('link',{name:'阅读原始论文',exact:true})).toBeInViewport()
+      }
       await page.getByLabel('查找技术',{exact:true}).fill('NOT-A-TECHNOLOGY');await page.getByRole('button',{name:'搜索技术',exact:true}).click()
       await expect(page.getByText('没有匹配的技术。',{exact:true})).toBeVisible()
       await page.getByRole('button',{name:'清除搜索',exact:true}).click();await expect(page.locator('[data-node]')).toHaveCount(32)

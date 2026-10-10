@@ -25,6 +25,7 @@ export default function AttentionAtlas() {
   const timer=useRef<ReturnType<typeof setTimeout>>()
   const lastTrigger=useRef<HTMLButtonElement|null>(null)
   const previewRef=useRef<HTMLDivElement>(null)
+  const selectionRef=useRef<HTMLElement>(null)
   const [search,setSearch]=useState(state.q)
   useEffect(()=>{setSearch(state.q)},[state.q])
   useEffect(()=>{setPreview(null)},[state.q,state.view,state.node])
@@ -42,7 +43,13 @@ export default function AttentionAtlas() {
     if(!next.get('q'))next.delete('q')
     setParams(next)
   }
-  const choose=(id:string)=>change({node:id})
+  const choose=(id:string)=>{
+    change({node:id})
+    if(window.matchMedia('(max-width: 600px), (pointer: coarse)').matches)window.requestAnimationFrame(()=>{
+      selectionRef.current?.focus({preventScroll:true})
+      selectionRef.current?.scrollIntoView({block:'nearest',behavior:'instant'})
+    })
+  }
   const peek=(node:AttentionTechnology,target:HTMLButtonElement)=>{
     clearTimeout(timer.current);lastTrigger.current=target
     setPreview({node,...previewPosition(target)})
@@ -79,7 +86,7 @@ export default function AttentionAtlas() {
       <form role="search" onSubmit={e=>{e.preventDefault();change({q:search,view:'all'})}}><label htmlFor="atlas-search">查找技术</label><div><input id="atlas-search" placeholder="例如 GQA、Delta、稀疏" maxLength={100} value={search} onChange={e=>setSearch(e.target.value)}/><button type="submit" aria-label="搜索技术"><Search size={17}/></button></div></form>
       <label>直接定位<select aria-label="直接定位技术" value={selected.id} onChange={e=>{const node=attentionById.get(e.target.value)!;change({node:node.id,view:node.family,q:''})}}>{attentionFamilies.map(f=><optgroup key={f.id} label={f.name}>{attentionTechnologies.filter(n=>n.family===f.id).map(n=><option key={n.id} value={n.id}>{n.name} · {n.year}</option>)}</optgroup>)}</select></label>
     </div>
-    <section aria-label="当前技术简介" className="atlas-selection" style={{'--atlas-color':colorOf(selected)} as CSSProperties}>
+    <section ref={selectionRef} tabIndex={-1} aria-label="当前技术简介" className="atlas-selection" style={{'--atlas-color':colorOf(selected)} as CSSProperties}>
       <div><p className="eyebrow">{attentionFamilies.find(f=>f.id===selected.family)!.name} · {selected.year}</p><h2>{selected.name}</h2><p className="atlas-fullname">{selected.fullName}</p></div>
       <p className="text-sm leading-6 text-secondary">{selected.summary}</p>
       <div className="flex flex-wrap gap-2"><ReadingLink node={selected}/><a className="button-secondary" href={selected.paper} target="_blank" rel="noreferrer">论文来源</a></div>

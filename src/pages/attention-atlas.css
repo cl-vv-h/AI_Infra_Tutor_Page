@@ -11,6 +11,7 @@
 .atlas-controls form button { border:1px solid rgb(var(--line)); background:rgb(var(--raised)); border-radius:8px; padding:11px; margin-top:7px; color:rgb(var(--accent)); }
 .atlas-selection { display:grid; grid-template-columns:220px 1fr auto; align-items:center; gap:24px; padding:20px; border:1px solid rgb(var(--line)); border-left:3px solid var(--atlas-color); border-radius:12px; background:rgb(var(--surface)); }
 .atlas-selection h2,.atlas-preview h2 { font-size:23px; font-weight:600; color:rgb(var(--ink)); margin:5px 0; }
+.atlas-selection { scroll-margin-top:80px; }
 .atlas-fullname { color:rgb(var(--muted)); font-size:11px; overflow-wrap:anywhere; }
 .atlas-legend { display:flex; flex-wrap:wrap; gap:12px 24px; margin:20px 0 14px; font-size:11px; color:rgb(var(--muted)); }
 .atlas-legend span { display:flex; align-items:center; gap:7px; }
