@@ -3,11 +3,14 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowLeft, ArrowUpRight, Bookmark, Check, Flame } from 'lucide-react'
 import PageHeader from '@/components/PageHeader'
 import corpusJson from '@/data/news/hotspots.json'
-import { buildHotspots, categories, changeFollow, distribution, FOLLOW_KEY, hotspotTopics, matchTopic, parseFollows, publisherFamily, validateHotspotCorpus, windowReports } from '@/lib/news-hotspots.mjs'
+import cacheConfig from '../../config/news-hotspot-cache.json'
+import { categories, changeFollow, distribution, FOLLOW_KEY, hotspotTopics, matchTopic, parseFollows, publisherFamily, validateHotspotCorpus, windowReports } from '@/lib/news-hotspots.mjs'
+import { createHotspotWindowReader } from '@/lib/news-hotspot-cache.mjs'
 import type { FollowState, Hotspot, HotspotCategory, HotspotReport } from '@/lib/news-hotspots.mjs'
 import './news-hotspots.css'
 
 const corpus = validateHotspotCorpus(corpusJson)
+const readWindow = createHotspotWindowReader(corpus, undefined, cacheConfig.enabled)
 const button = 'inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-line px-3 py-2 text-sm hover:bg-raised disabled:opacity-50'
 const input = 'min-h-11 min-w-0 rounded-lg border border-line bg-field px-3 py-2 text-sm text-ink'
 const panel = 'rounded-xl border border-line bg-surface p-4 sm:p-5'
@@ -41,7 +44,7 @@ function ReportList({ reports, seenThrough }: {reports:HotspotReport[];seenThrou
 }
 
 function TopicDetail({ item, follow, busy, change, onBack }: {item:Hotspot;follow?:FollowState['entries'][number];busy:boolean;change:(id:string,title:string,action:'add'|'remove'|'read')=>Promise<void>;onBack:()=>void}) {
-  const allReports = useMemo(()=>buildHotspots(corpus,720).find(row=>row.id===item.id)?.reports||[],[item.id])
+  const allReports = useMemo(()=>readWindow(720).find(row=>row.id===item.id)?.reports||[],[item.id])
   const rule = hotspotTopics.find(rule=>rule.id===item.id)
   const trend = distribution(allReports,corpus.generatedAt)
   const dayCounts = trend.days.map(day=>allReports.filter(row=>row.publishedAt.startsWith(day)).length)
@@ -75,9 +78,10 @@ export default function NewsHotspots() {
   const hours = [24,72,168].includes(Number(params.get('hours'))) ? Number(params.get('hours')) : 72
   const category = Object.prototype.hasOwnProperty.call(categories,params.get('category')||'') ? params.get('category') as HotspotCategory : ''
   const country = params.get('country') || '', q = (params.get('q') || '').slice(0,160), mine = params.get('mine')==='1', sort = params.get('sort') || 'heat'
-  const topics = useMemo(()=>buildHotspots(corpus,hours),[hours])
-  const historicalDetail = params.get('hotspot') ? buildHotspots(corpus,720).find(row=>row.id===params.get('hotspot')) : undefined
-  const detail = topics.find(row=>row.id===params.get('hotspot')) || (historicalDetail ? {...historicalDetail,score:0,publishers:0,reports:[]} : undefined)
+  const topics = useMemo(()=>readWindow(hours),[hours])
+  const currentDetail = topics.find(row=>row.id===hotspotId)
+  const historicalDetail = hotspotId && !currentDetail ? readWindow(720).find(row=>row.id===hotspotId) : undefined
+  const detail = currentDetail || (historicalDetail ? {...historicalDetail,score:0,publishers:0,reports:[]} : undefined)
   const patch = (values:Record<string,string>,replace=false) => {const next=new URLSearchParams(params);for(const [key,value] of Object.entries(values)) {if(value)next.set(key,value);else next.delete(key)} setLimit(15);setParams(next,{replace})}
   const selectedRows = useMemo(()=>windowReports(corpus.items,corpus.generatedAt,hours).filter(row=>(!category||(matchTopic(row)?.category||row.category)===category)&&(!country||row.country===country)),[hours,category,country])
   const stats = useMemo(()=>distribution(selectedRows,corpus.generatedAt),[selectedRows])
