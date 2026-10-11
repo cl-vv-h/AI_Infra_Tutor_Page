@@ -1,0 +1,104 @@
+{
+  "generatedAt": "2026-10-11T01:31:54.000Z",
+  "periodStart": "2026-09-07",
+  "periodEnd": "2026-09-13",
+  "model": "gpt-5.6-luna",
+  "itemCount": 17,
+  "archiveDates": [
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-12",
+    "2026-09-13"
+  ],
+  "content": "# 本周信号\n\n本期覆盖 2026-09-07 至 2026-09-13 的七个归档日。综合判断：AI Infra 的技术信号集中在 KV cache 分层、agentic serving、encode/prefill/decode 解耦，以及 kernel 和编译器可控性；公开摘要支持方向性判断，但不能替代统一硬件、负载和成本条件下的复测。\n\n## AI\n\n- 报道事实：[GLM 5.3 Optimizations, Part 1: Hybrid HiSparse Offloading in vLLM](https://vllm.ai/blog/2026-09-08-glm53-part1-hybrid-sparse-offloading)介绍将 HiSparse 作为压力驱动的内存层，并与 Hybrid Memory Allocator 和 KV offloading 组合，使 KV 不再适合 GPU 时请求仍可继续解码。\n- 报道事实：[vLLM x AgentX](https://vllm.ai/blog/2026-09-08-vllm-agentx)围绕 agentic workload 的 KV cache 管理、并行、调度和 P/D 解耦进行优化；归档摘要给出其在 AgentX 验证中的吞吐与服务成本对比，但未提供独立复现实验。\n- 报道事实：[Following the Bottleneck: Optimizing MiniMax M3 on AMD Instinct MI355X](https://vllm.ai/blog/2026-09-10-minimax-m3-mi355x)将 serving 性能模型概括为检查局部 shape、删除重复工作、验证数据移动与 dispatch，并跟踪队列。\n- 报道事实：[Epoch](https://arxiv.org/abs/2609.09748v1)针对 diffusion language model 的固定 token block、多次 forward 和稀疏 MoE serving 结构提出编译方向；摘要指出传统 dense MoE runtime 会重复路由和 expert-parallel collective 工作。\n- 报道事实：[Building py-kvcache](https://arxiv.org/abs/2609.11744v1)比较 GPU、CPU 和 NVMe 外部 KV cache，摘要指出缓存收益取决于传输粒度、中间内存和传输进入请求调度的时机。\n- 报道事实：[Tiered KV Cache Offloading in vLLM](https://vllm.ai/blog/2026-09-10-tiered-kv-offloading)提出把 host memory、文件系统、对象存储和远端 peer 作为 KV cache 层级，以减少重算并提高 serving capacity。\n- 综合判断：本期的共同主线是把 KV、路由、调度和数据移动纳入同一个 serving 性能模型；证据不足以判断哪一种 offloading 在所有上下文长度和 GPU 条件下都更优。\n\n## 科技\n\n- 报道事实：[Encode-Prefill-Decode Disaggregation](https://developer.nvidia.com/blog/when-to-use-encode-prefill-decode-disaggregation-to-accelerate-multimodal-model-serving/)将多模态 serving 的 vision encoder、prefill 和 decode 阶段拆开，作为一种推理优化技术。\n- 报道事实：[CUDA Toolkit 13.4](https://developer.nvidia.com/blog/cuda-toolkit-13-4-adds-windows-on-arm-support-and-greater-control-over-shared-gpus/)的归档摘要强调 Windows on Arm 支持以及更细的 shared GPU 控制。\n- 报道事实：[Iteratively Tuning hipBLASLt TensileLite Kernels](https://rocm.blogs.amd.com/software-tools-optimization/iteratively-tuning-hipblaslt/README.html)强调搜索空间是调优能够表达的完整配置边界，超出该空间的 kernel 不会因延长搜索时间而自动出现。\n- 报道事实：[Introducing CUDA Rust](https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/)介绍 NVIDIA 在 CUDA C++、CUDA Python 之外推进 native GPU programming in Rust 的两条路径。\n- 报道事实：[Helion x HF Kernels](https://pytorch.org/blog/helion-x-%f0%9f%a4%97-hf-kernels-building-and-shipping-out-of-the-box-performant-kernels/)介绍 Hugging Face Kernels 加入 Helion 支持，用于构建、自动调优和发布可移植 kernel。\n- 综合判断：从 EPD 到 TensileLite、CUDA Rust 和 Helion，本期更像是“软件栈可组合性”与“调优边界可解释性”的进展集合；归档没有提供跨厂商的统一性能基准。\n\n## 金融\n\n- 报道事实：[欧洲央行 Monetary policy decisions](https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp260910~314e508016.en.html)被归档为机构政策公告，但没有提供正文摘要，本期不推断具体利率路径。\n- 报道事实：[日本银行 Corporate Goods Price Index (Aug.)](https://www.boj.or.jp/en/statistics/pi/cgpi_release/cgpi2608.pdf)是 2026 年 8 月企业商品价格指数统计发布。\n- 综合判断：本期金融归档能确认政策与价格数据发布，但证据不足以判断其对数据中心建设、GPU 采购或 AI 企业融资的直接影响。\n\n## 国际形势\n\n- 报道事实：[联合国安理会就也门新袭击召开紧急会议](https://news.un.org/feed/view/en/story/2026/09/1168309)的摘要提到胡塞袭击、红海沿岸港口控制变化及人道援助车辆被扣。\n- 报道事实：[安理会纪念 9/11 并讨论 AI 与无人机反恐风险](https://news.un.org/feed/view/en/story/2026/09/1168318)的摘要提到 AI、无人机和加密平台被用于招募与攻击策划的风险。\n- 报道事实：[欧盟拟增加对格陵兰投资](https://www.france24.com/en/europe/20260907-eu-greenland-investment-trump-annexation)的摘要涉及关键矿产、卫星通信和可再生能源，并置于美国对格陵兰主张的背景下。\n- 报道事实：[美国特使向基辅带来新的乌克兰和平方案](https://www.france24.com/en/europe/20260907-us-envoys-more-effective-ukraine-peace-proposals-kyiv)的摘要称相关会谈被描述为积极，但没有宣布突破，冲突可能延续到冬季。\n- 综合判断：红海航运、关键矿产与卫星通信、以及 AI/无人机安全议题同时出现在归档中，但元数据不足以证明它们已形成直接的 AI 基础设施供应链联动。\n\n## 跨板块观察\n\n- 报道事实与综合判断： [vLLM x AgentX](https://vllm.ai/blog/2026-09-08-vllm-agentx)、[EPD disaggregation](https://developer.nvidia.com/blog/when-to-use-encode-prefill-decode-disaggregation-to-accelerate-multimodal-model-serving/)和 [Tiered KV Cache](https://vllm.ai/blog/2026-09-10-tiered-kv-offloading)都把请求阶段、缓存位置和调度策略作为 serving 设计变量；综合来看，长上下文与 agentic workload 正推动 serving 从单一 GPU 内存模型转向分层资源编排。\n- 报道事实与综合判断：[Epoch](https://arxiv.org/abs/2609.09748v1)、[TensileLite 调优](https://rocm.blogs.amd.com/software-tools-optimization/iteratively-tuning-hipblaslt/README.html)和 [Helion/HF Kernels](https://pytorch.org/blog/helion-x-%f0%9f%a4%97-hf-kernels-building-and-shipping-out-of-the-box-performant-kernels/)分别覆盖编译、搜索空间和 kernel 发布；这支持“可控的编译与验证链路是 serving 效率的基础设施”的综合判断，但不能据此量化收益。\n\n## 下周观察清单\n\n- 关注 KV offloading 在不同 prefix 长度、传输粒度和 NVMe/host memory 条件下的 TTFT 与尾延迟数据。[py-kvcache](https://arxiv.org/abs/2609.11744v1)\n- 跟踪 vLLM agentic serving 与 EPD disaggregation 是否公开统一的并发、成本和 P/D 负载拆分指标。[vLLM x AgentX](https://vllm.ai/blog/2026-09-08-vllm-agentx)\n- 观察 CUDA Rust、Helion 与 TensileLite 是否补充跨硬件的正确性、可移植性和调优复现材料。[CUDA Rust](https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/)\n- 继续关注红海、关键矿产和 AI/无人机安全议题是否出现会影响基础设施部署的正式机制；本期归档尚不足以确认。[欧盟格陵兰投资](https://www.france24.com/en/europe/20260907-eu-greenland-investment-trump-annexation)\n",
+  "sources": [
+    {
+      "title": "GLM 5.3 Optimizations, Part 1: Hybrid HiSparse Offloading in vLLM",
+      "url": "https://vllm.ai/blog/2026-09-08-glm53-part1-hybrid-sparse-offloading",
+      "source": "vLLM Blog"
+    },
+    {
+      "title": "vLLM x AgentX: Optimizing for Real-World Agentic Serving",
+      "url": "https://vllm.ai/blog/2026-09-08-vllm-agentx",
+      "source": "vLLM Blog"
+    },
+    {
+      "title": "Following the Bottleneck: Optimizing MiniMax M3 on AMD Instinct MI355X",
+      "url": "https://vllm.ai/blog/2026-09-10-minimax-m3-mi355x",
+      "source": "vLLM Blog"
+    },
+    {
+      "title": "Epoch: Compiling Diffusion Blocks for Sparse MoE Serving",
+      "url": "https://arxiv.org/abs/2609.09748v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "Building py-kvcache: A Performance Characterization of External KV Caching for vLLM with NVMe SSDs",
+      "url": "https://arxiv.org/abs/2609.11744v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "Tiered KV Cache Offloading in vLLM",
+      "url": "https://vllm.ai/blog/2026-09-10-tiered-kv-offloading",
+      "source": "vLLM Blog"
+    },
+    {
+      "title": "When to Use Encode-Prefill-Decode Disaggregation to Accelerate Multimodal Model Serving",
+      "url": "https://developer.nvidia.com/blog/when-to-use-encode-prefill-decode-disaggregation-to-accelerate-multimodal-model-serving/",
+      "source": "NVIDIA Technical Blog"
+    },
+    {
+      "title": "CUDA Toolkit 13.4 Adds Windows on Arm Support and Greater Control over Shared GPUs",
+      "url": "https://developer.nvidia.com/blog/cuda-toolkit-13-4-adds-windows-on-arm-support-and-greater-control-over-shared-gpus/",
+      "source": "NVIDIA Technical Blog"
+    },
+    {
+      "title": "Iteratively Tuning hipBLASLt TensileLite Kernels: A Smaller Search, a Faster Kernel",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/iteratively-tuning-hipblaslt/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "Introducing CUDA Rust: Two Tracks for Writing GPU Kernels",
+      "url": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/",
+      "source": "NVIDIA Technical Blog"
+    },
+    {
+      "title": "Helion x 🤗 HF Kernels: Building and Shipping Out-of-the-box Performant Kernels",
+      "url": "https://pytorch.org/blog/helion-x-%f0%9f%a4%97-hf-kernels-building-and-shipping-out-of-the-box-performant-kernels/",
+      "source": "PyTorch Blog"
+    },
+    {
+      "title": "Monetary policy decisions",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.mp260910~314e508016.en.html",
+      "source": "European Central Bank"
+    },
+    {
+      "title": "Corporate Goods Price Index (Aug.)",
+      "url": "https://www.boj.or.jp/en/statistics/pi/cgpi_release/cgpi2608.pdf",
+      "source": "Bank of Japan"
+    },
+    {
+      "title": "Security Council LIVE: Fresh attacks prompt emergency meeting on Yemen",
+      "url": "https://news.un.org/feed/view/en/story/2026/09/1168309",
+      "source": "UN News"
+    },
+    {
+      "title": "Security Council LIVE: Ambassadors mark 9/11 with counter-terrorism push on AI and drones",
+      "url": "https://news.un.org/feed/view/en/story/2026/09/1168318",
+      "source": "UN News"
+    },
+    {
+      "title": "EU to boost Greenland investment amid Trump annexation claims",
+      "url": "https://www.france24.com/en/europe/20260907-eu-greenland-investment-trump-annexation",
+      "source": "France 24"
+    },
+    {
+      "title": "US envoys bring ‘more effective’ Ukraine peace proposals to Kyiv, official says",
+      "url": "https://www.france24.com/en/europe/20260907-us-envoys-more-effective-ukraine-peace-proposals-kyiv",
+      "source": "France 24"
+    }
+  ]
+}
