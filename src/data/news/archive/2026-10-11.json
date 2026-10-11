@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T15:02:12.658Z",
+  "generatedAt": "2026-10-11T20:30:39.800Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 38,
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 37,
-      "latestPublishedAt": "2026-10-11T14:46:50.000Z",
-      "selectedCount": 2,
+      "entryCount": 26,
+      "latestPublishedAt": "2026-10-11T19:08:04.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 52,
-      "latestPublishedAt": "2026-10-11T06:23:27.000Z",
+      "latestPublishedAt": "2026-10-11T17:00:05.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 138,
-      "latestPublishedAt": "2026-10-11T14:47:00.000Z",
+      "latestPublishedAt": "2026-10-11T19:41:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-11T14:34:15.000Z",
+      "latestPublishedAt": "2026-10-11T19:59:15.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -65,7 +65,7 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 12,
+      "entryCount": 8,
       "latestPublishedAt": "2026-10-11T07:38:46.000Z",
       "selectedCount": 3,
       "libraryCount": 0
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-11T14:00:00.000Z",
+      "latestPublishedAt": "2026-10-11T19:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-10T11:15:35.000Z",
+      "latestPublishedAt": "2026-10-11T14:50:24.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-11T14:41:39.000Z",
+      "latestPublishedAt": "2026-10-11T19:42:09.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-11T14:20:18.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-11T17:37:10.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -314,7 +314,7 @@
       "channel": "feed",
       "entryCount": 876,
       "latestPublishedAt": "2026-10-09T15:20:29.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -457,7 +457,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-09T18:27:34.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -524,11 +524,497 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-11T14:04:32.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 28.8,
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 27.4,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "7deeda584756872e",
+      "category": "world",
+      "title": "Saudi-led coalition says new attack at Riyadh airport causes fire, day after strike kills 12",
+      "summary": "The Saudi-led coalition in Yemen said an \"unidentified projectile\" had targeted Riyadh's international airport on Sunday, causing a fire. The incident came hours after the Iran-backed Houthis warned airlines and travellers to stay away from Saudi airports. David Smith, The Guardian's Washington bureau chief, tells us more.",
+      "url": "https://www.france24.com/en/video/20261011-saudi-led-coalition-says-new-attack-at-riyadh-airport-causes-fire-day-after-strike-kills-12",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T16:07:13.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 23.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "2193b3cd964a8181",
+      "category": "world",
+      "title": "UK PM Burnham warns French voters of Russian political influence on back of Brexit vote",
+      "summary": "British Prime Minister Andy Burnham on Sunday warned French and German voters of potential for Russian influence in upcoming elections, on the back of \"clear\" interference in Britain's referendum on European Union membership in 2016. Russia has previously denied meddling in the Brexit vote, while former British leader Boris Johnson 2020 also said there was no evidence of interference. Burnham made the comments in an interview with The Rest is Politics podcast, released on Sunday.",
+      "url": "https://www.france24.com/en/europe/20261011-uk-pm-burnham-warns-french-voters-of-russian-political-influence-on-back-of-brexit-vote",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T19:42:09.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "64fc363d4104cc02",
+      "category": "world",
+      "title": "Republican senator says Trump diesel agreement with Russia may be illegal",
+      "summary": "US President Trump's bid to bring down diesel prices by easing sanctions on Russia prompts rare Republican criticism.",
+      "url": "https://www.aljazeera.com/news/2026/10/11/republican-senator-says-trump-diesel-agreement-with-russia-may-be-illegal?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T19:19:50.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "5d972d9f56f7bb24",
+      "category": "world",
+      "title": "Orangutans released back into Borneo forest after devastating fires",
+      "summary": "Rescuers moved the apes after their habitats were threatened by intense wildfires over the summer.",
+      "url": "https://www.bbc.co.uk/news/articles/cwvgde0m2d73o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T19:08:04.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "0a61791995f0cc90",
+      "category": "world",
+      "title": "War and high debt to dominate IMF-World Bank meetings in Bangkok",
+      "summary": "The US-Israel war on Iran and its inflationary impact will dominate the agenda.",
+      "url": "https://www.aljazeera.com/news/2026/10/11/war-and-high-debt-to-dominate-imf-world-bank-meetings-in-bangkok?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T18:47:57.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "4e99bafc1f43e990",
+      "category": "world",
+      "title": "A profile of Raphaël Glucksmann, the man who wants to be French President",
+      "summary": "Raphaël Glucksmann has won the primary to represent the French centre-left in the upcoming presidential election, securing 66% of the vote.",
+      "url": "https://www.france24.com/en/tv-shows/spotlight/20261011-a-profile-of-rapha%C3%ABl-glucksmann-the-man-who-wants-to-be-french-president",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T17:50:02.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 23.3,
+      "topics": []
+    },
+    {
+      "id": "e3bb13b4b9653478",
+      "category": "finance",
+      "title": "Citroen revives the 2CV for an electric age",
+      "summary": "The French firm is reinventing the classic model as carmakers come under pressure from Chinese rivals.",
+      "url": "https://www.bbc.co.uk/news/articles/c620r33plgppo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T17:00:05.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 23.1,
+      "topics": []
+    },
+    {
+      "id": "13cb33f96c42449e",
+      "category": "world",
+      "title": "Riyadh airport attacks another dangerous moment in already tense conflict",
+      "summary": "While the physical damage from Houthi attacks can be quickly repaired, the Saudi reputation for stability is taking a battering.",
+      "url": "https://www.bbc.co.uk/news/articles/cr4g1pwxxlq1o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T15:32:32.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "15ddc4c3308e8e64",
+      "category": "world",
+      "title": "A migrant boat sank off the coast of Djibouti with the UN reporting over 200 people dead or missing",
+      "summary": "The UN migration agency has reported that at least 139 people were killed and 84 remain missing after a migrant boat sank overnight on its way to Yemen. At least 80 Ethiopians survived the incident but 15 children died.",
+      "url": "https://www.dw.com/en/a-migrant-boat-sank-off-the-coast-of-djibouti-with-the-un-reporting-over-200-people-dead-or-missing/a-79633644?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T11:35:00.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 22.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "0fbb651be793866a",
+      "category": "world",
+      "title": "Eritrea urges UN deterrence measures against Ethiopia",
+      "summary": "Eritrea has officially requested UN Security Council assistance over the conflict in Tigray. Both Eritrea and Ethiopia accuse each other of fueling regional instability.",
+      "url": "https://www.dw.com/en/eritrea-urges-un-deterrence-measures-against-ethiopia/a-79629670?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T18:32:00.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 22.5,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "a53e1298863ed3f0",
+      "category": "ai",
+      "title": "Release v0.7.0",
+      "summary": "These highlights are also published at flashinfer.ai/releases . v0.7.0 Highlights FlashInfer 0.7.0 makes the unified mixture-of-experts (MoE) API official, brings TRT-LLM Gen MoE kernels into readable Python source with PrimTS, and introduces Autotuner v2 and a formal experimental-API policy. It also expands sparse and linear attention, expert-parallel serving, and diffusion workloads across Blackwell GPUs. Read the v0.7 overview and the accompanying deep dives on MegaMoE , Autotuner v2 , and the experimental path ",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.0",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-10T01:21:54.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 22.2,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "97d985bd6e416ccc",
+      "category": "ai",
+      "title": "Release v0.7.1",
+      "summary": "These highlights are also published at flashinfer.ai/releases . v0.7.1 Highlights FlashInfer v0.7.1 enables quantized expert-parallel MoE on Rubin and Blackwell SM12x, adds fused Kimi K3 speculative verification, and adds cuDNN linear-attention prefill on Blackwell. Sparse MLA gains DeepSeek-V4.1 dual-cache support and compact GLM53-NoPE caches, alongside MLA API improvements and per-model NVFP4 quantization recipes. Run quantized expert-parallel MoE on Rubin and Blackwell SM12x Rubin SM107 serves NVFP4 and MXFP8 M",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.1",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-10T01:20:56.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 22.2,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "88359d84d86a9fa1",
+      "category": "world",
+      "title": "Pope Leo XIV to undergo surgery to remove lump on lung",
+      "summary": "The pontiff said he would be operated on \"in the coming days\" to remove a lung nodule, which he said was found at \"a very early stage.\"",
+      "url": "https://www.dw.com/en/pope-leo-xiv-to-undergo-surgery-to-remove-lump-on-lung/a-79633735?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T11:49:00.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 21.8,
+      "topics": []
+    },
+    {
+      "id": "99293d10bc0d2da7",
+      "category": "world",
+      "title": "She was a global star: Teen bikes 700 miles carrying injured dad. Where is she now?",
+      "summary": "Her epic ride — carrying her injured dad on her $20 hot pink bicycle — made headlines. Promises were made — financial help, training for a cycling career, even a movie deal. Were any of them kept?",
+      "url": "https://www.npr.org/2026/10/11/g-s1-147267/bicycle-teenager-india-pandemic",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T11:28:15.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 21.7,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "50c299f07c2d1e07",
+      "category": "world",
+      "title": "Why have hundreds of 'cockroach' protesters been detained in Delhi",
+      "summary": "Thousands of security personnel were deployed in Delhi ahead of the Gen-Z led Cockroach Janta Party protest on Saturday calling for electoral reforms.",
+      "url": "https://www.bbc.co.uk/news/videos/cqwy7p2y20gxo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T14:13:13.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 21.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "db27b27cad8aa326",
+      "category": "world",
+      "title": "Denmark tests humanoid robots in supermarkets to help to ease staff workload at night",
+      "summary": "Denmark’s Salling Group is trialling Hive Robots in stores to handle demanding restocking, freeing staff for customer service while robots work mainly at night.",
+      "url": "https://www.africanews.com/2026/10/11/denmark-tests-humanoid-robots-in-supermarkets-to-help-to-ease-staff-workload-at-night/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T12:40:38.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 21,
+      "topics": []
+    },
+    {
+      "id": "8eb3ffbe8eb88e43",
+      "category": "world",
+      "title": "Pope Leo to be operated on for lump on lung, one month before visit",
+      "summary": "Pope Leo XIV announces he will have an operation to remove \"a nodule\" on his lung \"in the coming days\"; No news as to whether the surgery will impact his upcoming tour to South America, which includes three days in Argentina. Leer más",
+      "url": "https://www.batimes.com.ar/news/world/pope-leo-to-be-operated-on-for-lump-on-lung-one-month-before-visit.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T12:13:08.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 20.9,
+      "topics": []
+    },
+    {
+      "id": "042b0504613ef61e",
+      "category": "technology",
+      "title": "APOD: 2026 October 11 – Ice Fishing for Cosmic Neutrinos",
+      "summary": "APOD Science APOD APOD: 2026 October 11 – Ice… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Ice Fishing […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-11-ice-fishing-for-cosmic-neutrinos/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-11T04:05:00.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 20.9,
+      "topics": []
+    },
+    {
+      "id": "bcb558bd60c07d3b",
+      "category": "world",
+      "title": "Egypt and Malaysia discuss political settlement to Middle East conflict",
+      "summary": "Egyptian President Abdel-Fattah al-Sisi was on a two-day state visit to Kuala Lumpur which also focused on bilateral ties.",
+      "url": "https://www.africanews.com/2026/10/11/egypt-and-malaysia-discuss-political-settlement-to-middle-east-conflict/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T06:35:16.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 19.5,
+      "topics": []
+    },
+    {
+      "id": "f4c7b241ccc26d86",
+      "category": "ai",
+      "title": "48 hours to TechCrunch Disrupt 2026 — hear directly from the people building what’s next",
+      "summary": "Less than 48 hours, TechCrunch Disrupt 2026 starts in San Francisco’s Moscone West. Save up to $100 on your pass before prices increase at the door, plus get 50% on a second pass. Or score other deals.",
+      "url": "https://techcrunch.com/2026/10/11/48-hours-to-techcrunch-disrupt-2026-hear-directly-from-the-people-building-whats-next/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T19:00:00.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 18.6,
+      "topics": []
+    },
+    {
+      "id": "69b8b80a26dc2dc1",
+      "category": "ai",
+      "title": "Can the AI industry persuade data center opponents by getting rid of NDAs?",
+      "summary": "On Equity, we debate the impact of data center moratoriums and whether the AI industry has a communication problem.",
+      "url": "https://techcrunch.com/2026/10/11/can-the-ai-industry-persuade-data-center-opponents-by-getting-rid-of-ndas/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T16:52:33.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 18.1,
+      "topics": []
+    },
+    {
+      "id": "780ddd086c34285a",
+      "category": "technology",
+      "title": "Prime Video unveils Blade Runner 2099 full trailer at NYCC",
+      "summary": "Also: new trailer for Godzilla Minus Zero , the sequel to Takashi Yamazaki’s kaiju epic , Godzilla Minus One",
+      "url": "https://arstechnica.com/culture/2026/10/prime-video-unveils-blade-runner-2099-full-trailer-at-nycc/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T14:50:24.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 17.6,
+      "topics": []
+    },
+    {
+      "id": "cfa7020e1a703d38",
+      "category": "technology",
+      "title": "NASA to Conduct Flyover, Engage NFL Fans at MetLife Stadium",
+      "summary": "As part of the agency’s Inspiration Tour flyover, NASA Administrator Jared Isaacman will pilot one of three F-5 fighter jets to kick off the New York Jets vs. Cleveland Browns game in East Rutherford, New Jersey, on Sunday, Oct. 11. NASA team members will engage with fans at the agency’s Experience Zone, located at the […]",
+      "url": "https://www.nasa.gov/news-release/nasa-to-conduct-flyover-engage-nfl-fans-at-metlife-stadium/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-10T14:18:59.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 17.5,
+      "topics": []
+    },
+    {
+      "id": "48b60a0dc28945b9",
+      "category": "ai",
+      "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
+      "summary": "Voice AI's often misses important points for its context layer, and causes the whole pipeline to break",
+      "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T14:00:00.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 17.4,
+      "topics": []
+    },
+    {
+      "id": "355c9a869366f1a3",
+      "category": "finance",
+      "title": "Russia's Yandex says data centre in Vladimir area shut down after drone attack",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/russias-yandex-says-data-centre-in-vladimir-area-shut-down-after-drone-attack-6450041",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T07:38:46.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 16.8,
+      "topics": []
+    },
+    {
+      "id": "9ffdc5c0a4977d79",
+      "category": "finance",
+      "title": "Musk vows affordable Starlink in India days before Ambani's record Jio IPO",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/musk-vows-affordable-starlink-in-india-days-ambanis-record-jio-ipo-6450016",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T07:11:19.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 16.7,
+      "topics": []
+    },
+    {
+      "id": "23ce1c7ca1c16f9b",
+      "category": "finance",
+      "title": "Charities and businesses wrestle with diesel cost",
+      "summary": "Cancer charity Daft as a Brush and Teesside Minibus Hire say they are struggling with pump prices.",
+      "url": "https://www.bbc.co.uk/news/articles/c5x2vn4dzz08o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-11T06:23:27.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 16.5,
+      "topics": []
+    },
+    {
+      "id": "d5d7b0f022e2cf5e",
+      "category": "technology",
+      "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
+      "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
+      "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-09T22:04:07.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 16.4,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "ff5672fc5ca67634",
+      "category": "technology",
+      "title": "APOD: 2026 October 10 – Lunar Farside",
+      "summary": "APOD Science APOD APOD: 2026 October 10… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Lunar Farside Explanation: Tidally […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-10-lunar-farside/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-10T04:05:00.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 14.9,
+      "topics": []
+    },
+    {
+      "id": "2fce1d5eabd09f0b",
+      "category": "finance",
+      "title": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/nvidia-in-talks-invest-further-in-reflection-ai-or-buy-it-ft-reports-6449691",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T19:32:37.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 13.8,
+      "topics": []
+    },
+    {
+      "id": "7d7530ab45920d30",
+      "category": "technology",
+      "title": "gfx950-tutorial-v3.0",
+      "summary": "gfx950 tutorial pin v3.0: upstream main at 3b0c7f0 (PR #12209 , the …",
+      "url": "https://github.com/triton-lang/triton/releases/tag/gfx950-tutorial-v3.0",
+      "source": "Triton Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-10T02:40:04.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 13.5,
+      "topics": []
+    },
+    {
+      "id": "d35af5ac89d53c98",
+      "category": "finance",
+      "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
+      "summary": "Ukraine's president sharply criticised the move, calling it an \"investment in war that must be ended, not prolonged\".",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T14:24:14.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 12.5,
+      "topics": []
+    },
+    {
+      "id": "08b06808c1dc3ea6",
+      "category": "technology",
+      "title": "One with the world? A new look at brains transformed by psychedelics.",
+      "summary": "Participants meditated inside an MRI tube, with and without psilocybin.",
+      "url": "https://arstechnica.com/science/2026/10/the-psychedelic-brain-looks-like-chaos-underneath-theres-order/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-10T11:15:35.000Z",
+      "fetchedAt": "2026-10-11T20:30:39.800Z",
+      "score": 10.7,
+      "topics": []
     },
     {
       "id": "10ff9460805f2443",
@@ -563,22 +1049,6 @@
       ]
     },
     {
-      "id": "15ddc4c3308e8e64",
-      "category": "world",
-      "title": "A migrant boat sank off the coast of Djibouti with the UN reporting over 200 people dead or missing",
-      "summary": "The UN migration agency has reported that at least 139 people were killed and 84 remain missing after a migrant boat sank overnight on its way to Yemen. At least 80 Ethiopians survived the incident but 15 children died.",
-      "url": "https://www.dw.com/en/a-migrant-boat-sank-off-the-coast-of-djibouti-with-the-un-reporting-over-200-people-dead-or-missing/a-79633644?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-11T11:35:00.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 24.1,
-      "topics": [
-        "security"
-      ]
-    },
-    {
       "id": "d3d0279bf533fc33",
       "category": "world",
       "title": "France: Can the left unite behind a single candidate?",
@@ -607,62 +1077,6 @@
       "topics": []
     },
     {
-      "id": "0fbb651be793866a",
-      "category": "world",
-      "title": "Eritrea urges UN deterrence measures against Ethiopia",
-      "summary": "Eritrea has officially requested UN Security Council assistance over the conflict in Tigray. Both Eritrea and Ethiopia accuse each other of fueling regional instability.",
-      "url": "https://www.dw.com/en/eritrea-urges-un-deterrence-measures-against-ethiopia/a-79629670?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T18:32:00.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 23.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "a53e1298863ed3f0",
-      "category": "ai",
-      "title": "Release v0.7.0",
-      "summary": "These highlights are also published at flashinfer.ai/releases . v0.7.0 Highlights FlashInfer 0.7.0 makes the unified mixture-of-experts (MoE) API official, brings TRT-LLM Gen MoE kernels into readable Python source with PrimTS, and introduces Autotuner v2 and a formal experimental-API policy. It also expands sparse and linear attention, expert-parallel serving, and diffusion workloads across Blackwell GPUs. Read the v0.7 overview and the accompanying deep dives on MegaMoE , Autotuner v2 , and the experimental path ",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.0",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-10T01:21:54.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 23.6,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "97d985bd6e416ccc",
-      "category": "ai",
-      "title": "Release v0.7.1",
-      "summary": "These highlights are also published at flashinfer.ai/releases . v0.7.1 Highlights FlashInfer v0.7.1 enables quantized expert-parallel MoE on Rubin and Blackwell SM12x, adds fused Kimi K3 speculative verification, and adds cuDNN linear-attention prefill on Blackwell. Sparse MLA gains DeepSeek-V4.1 dual-cache support and compact GLM53-NoPE caches, alongside MLA API improvements and per-model NVFP4 quantization recipes. Run quantized expert-parallel MoE on Rubin and Blackwell SM12x Rubin SM107 serves NVFP4 and MXFP8 M",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-10T01:20:56.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 23.6,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
-      ]
-    },
-    {
       "id": "c5ca956ffaa450db",
       "category": "world",
       "title": "Sweet protein brazzein shows promise in reducing blood sugar spikes: Study",
@@ -675,50 +1089,6 @@
       "fetchedAt": "2026-10-11T15:02:12.658Z",
       "score": 23.3,
       "topics": []
-    },
-    {
-      "id": "88359d84d86a9fa1",
-      "category": "world",
-      "title": "Pope Leo XIV to undergo surgery to remove lump on lung",
-      "summary": "The pontiff said he would be operated on \"in the coming days\" to remove a lung nodule, which he said was found at \"a very early stage.\"",
-      "url": "https://www.dw.com/en/pope-leo-xiv-to-undergo-surgery-to-remove-lump-on-lung/a-79633735?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-11T11:49:00.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 23.2,
-      "topics": []
-    },
-    {
-      "id": "13cb33f96c42449e",
-      "category": "world",
-      "title": "Riyadh airport attack another dangerous moment in already tense conflict",
-      "summary": "The Houthis have stepped up their attacks on Saudi Arabian soil, and while the physical damage can be quickly repaired, its reputation for stability is taking a battering.",
-      "url": "https://www.bbc.co.uk/news/articles/cr4g1pwxxlq1o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-11T11:32:50.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 23.1,
-      "topics": []
-    },
-    {
-      "id": "99293d10bc0d2da7",
-      "category": "world",
-      "title": "A heroic, 7-day bike ride made this teen a global star. Where is she now?",
-      "summary": "Her epic ride — carrying her injured dad on her $20 hot pink bicycle — made headlines. Promises were made — financial help, training for a cycling career, even a movie deal. Were any of them kept?",
-      "url": "https://www.npr.org/2026/10/11/g-s1-147267/bicycle-teenager-india-pandemic",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-11T11:28:15.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 23.1,
-      "topics": [
-        "training"
-      ]
     },
     {
       "id": "434b51f1775e0341",
@@ -736,78 +1106,6 @@
         "inference",
         "models"
       ]
-    },
-    {
-      "id": "50c299f07c2d1e07",
-      "category": "world",
-      "title": "Why have hundreds of 'cockroach' protesters been detained in Delhi",
-      "summary": "Thousands of security personnel were deployed in Delhi ahead of the Gen-Z led Cockroach Janta Party protest on Saturday calling for electoral reforms.",
-      "url": "https://www.bbc.co.uk/news/videos/cqwy7p2y20gxo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T14:13:13.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 22.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "db27b27cad8aa326",
-      "category": "world",
-      "title": "Denmark tests humanoid robots in supermarkets to help to ease staff workload at night",
-      "summary": "Denmark’s Salling Group is trialling Hive Robots in stores to handle demanding restocking, freeing staff for customer service while robots work mainly at night.",
-      "url": "https://www.africanews.com/2026/10/11/denmark-tests-humanoid-robots-in-supermarkets-to-help-to-ease-staff-workload-at-night/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-11T12:40:38.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 22.4,
-      "topics": []
-    },
-    {
-      "id": "8eb3ffbe8eb88e43",
-      "category": "world",
-      "title": "Pope Leo to be operated on for lump on lung, one month before visit",
-      "summary": "Pope Leo XIV announces he will have an operation to remove \"a nodule\" on his lung \"in the coming days\"; No news as to whether the surgery will impact his upcoming tour to South America, which includes three days in Argentina. Leer más",
-      "url": "https://www.batimes.com.ar/news/world/pope-leo-to-be-operated-on-for-lump-on-lung-one-month-before-visit.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-11T12:13:08.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 22.3,
-      "topics": []
-    },
-    {
-      "id": "042b0504613ef61e",
-      "category": "technology",
-      "title": "APOD: 2026 October 11 – Ice Fishing for Cosmic Neutrinos",
-      "summary": "APOD Science APOD APOD: 2026 October 11 – Ice… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Ice Fishing […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-october-11-ice-fishing-for-cosmic-neutrinos/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-11T04:05:00.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 22.3,
-      "topics": []
-    },
-    {
-      "id": "bcb558bd60c07d3b",
-      "category": "world",
-      "title": "Egypt and Malaysia discuss political settlement to Middle East conflict",
-      "summary": "Egyptian President Abdel-Fattah al-Sisi was on a two-day state visit to Kuala Lumpur which also focused on bilateral ties.",
-      "url": "https://www.africanews.com/2026/10/11/egypt-and-malaysia-discuss-political-settlement-to-middle-east-conflict/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-11T06:35:16.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 20.9,
-      "topics": []
     },
     {
       "id": "e584be008cbd6970",
@@ -842,34 +1140,6 @@
       ]
     },
     {
-      "id": "cfa7020e1a703d38",
-      "category": "technology",
-      "title": "NASA to Conduct Flyover, Engage NFL Fans at MetLife Stadium",
-      "summary": "As part of the agency’s Inspiration Tour flyover, NASA Administrator Jared Isaacman will pilot one of three F-5 fighter jets to kick off the New York Jets vs. Cleveland Browns game in East Rutherford, New Jersey, on Sunday, Oct. 11. NASA team members will engage with fans at the agency’s Experience Zone, located at the […]",
-      "url": "https://www.nasa.gov/news-release/nasa-to-conduct-flyover-engage-nfl-fans-at-metlife-stadium/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-10T14:18:59.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 18.8,
-      "topics": []
-    },
-    {
-      "id": "48b60a0dc28945b9",
-      "category": "ai",
-      "title": "These execs think voice AI hasn’t reached its ChatGPT moment yet",
-      "summary": "Voice AI's often misses important points for its context layer, and causes the whole pipeline to break",
-      "url": "https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-11T14:00:00.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 18.7,
-      "topics": []
-    },
-    {
       "id": "5f017ceb51b72274",
       "category": "ai",
       "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
@@ -881,20 +1151,6 @@
       "publishedAt": "2026-10-10T21:47:51.000Z",
       "fetchedAt": "2026-10-11T15:02:12.658Z",
       "score": 18.7,
-      "topics": []
-    },
-    {
-      "id": "355c9a869366f1a3",
-      "category": "finance",
-      "title": "Russia's Yandex says data centre in Vladimir area shut down after drone attack",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/russias-yandex-says-data-centre-in-vladimir-area-shut-down-after-drone-attack-6450041",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-11T07:38:46.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 18.2,
       "topics": []
     },
     {
@@ -912,50 +1168,6 @@
       "topics": []
     },
     {
-      "id": "9ffdc5c0a4977d79",
-      "category": "finance",
-      "title": "Musk vows affordable Starlink in India days before Ambani's record Jio IPO",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/musk-vows-affordable-starlink-in-india-days-ambanis-record-jio-ipo-6450016",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-11T07:11:19.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 18,
-      "topics": []
-    },
-    {
-      "id": "23ce1c7ca1c16f9b",
-      "category": "finance",
-      "title": "Charities and businesses wrestle with diesel cost",
-      "summary": "Cancer charity Daft as a Brush and Teesside Minibus Hire say they are struggling with pump prices.",
-      "url": "https://www.bbc.co.uk/news/articles/c5x2vn4dzz08o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-11T06:23:27.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 17.8,
-      "topics": []
-    },
-    {
-      "id": "d5d7b0f022e2cf5e",
-      "category": "technology",
-      "title": "Ukraine’s drones knock out AI data center belonging to \"Russia’s Google\"",
-      "summary": "One damaged data center has supercomputers used for training Yandex’s AI model.",
-      "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-09T22:04:07.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 17.8,
-      "topics": [
-        "training"
-      ]
-    },
-    {
       "id": "7468222a8672c6d3",
       "category": "technology",
       "title": "NASA Seeks US Industry Plans for Commercial Space Stations",
@@ -967,48 +1179,6 @@
       "publishedAt": "2026-10-09T18:11:44.000Z",
       "fetchedAt": "2026-10-11T15:02:12.658Z",
       "score": 17.8,
-      "topics": []
-    },
-    {
-      "id": "2fce1d5eabd09f0b",
-      "category": "finance",
-      "title": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/nvidia-in-talks-invest-further-in-reflection-ai-or-buy-it-ft-reports-6449691",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T19:32:37.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 15.1,
-      "topics": []
-    },
-    {
-      "id": "7d7530ab45920d30",
-      "category": "technology",
-      "title": "gfx950-tutorial-v3.0",
-      "summary": "gfx950 tutorial pin v3.0: upstream main at 3b0c7f0 (PR #12209 , the …",
-      "url": "https://github.com/triton-lang/triton/releases/tag/gfx950-tutorial-v3.0",
-      "source": "Triton Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-10T02:40:04.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 14.9,
-      "topics": []
-    },
-    {
-      "id": "d35af5ac89d53c98",
-      "category": "finance",
-      "title": "Trump announces deal for Russian diesel as Zelensky calls it a gift to Putin",
-      "summary": "Ukraine's president sharply criticised the move, calling it an \"investment in war that must be ended, not prolonged\".",
-      "url": "https://www.bbc.co.uk/news/articles/cm1dwgr666wno",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T14:24:14.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 13.8,
       "topics": []
     },
     {
@@ -1037,20 +1207,6 @@
       "publishedAt": "2026-10-09T19:43:50.000Z",
       "fetchedAt": "2026-10-11T15:02:12.658Z",
       "score": 12.2,
-      "topics": []
-    },
-    {
-      "id": "08b06808c1dc3ea6",
-      "category": "technology",
-      "title": "One with the world? A new look at brains transformed by psychedelics.",
-      "summary": "Participants meditated inside an MRI tube, with and without psilocybin.",
-      "url": "https://arstechnica.com/science/2026/10/the-psychedelic-brain-looks-like-chaos-underneath-theres-order/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-10T11:15:35.000Z",
-      "fetchedAt": "2026-10-11T15:02:12.658Z",
-      "score": 12.1,
       "topics": []
     },
     {
