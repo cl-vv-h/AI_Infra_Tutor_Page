@@ -1,7 +1,23 @@
 {
-  "generatedAt": "2026-10-14T20:18:05.168Z",
+  "generatedAt": "2026-10-14T23:23:13.744Z",
   "lookbackDays": 90,
   "items": [
+    {
+      "id": "32705339b563984e",
+      "category": "technology",
+      "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
+      "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks.",
+      "url": "https://blog.cloudflare.com/yandex-outage/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-14T20:24:19.000Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 33.3,
+      "topics": [
+        "security"
+      ]
+    },
     {
       "id": "86e4a4c1dd344bfc",
       "category": "technology",
@@ -12,10 +28,26 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-14T16:10:45.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 34,
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 33.2,
       "topics": [
         "security"
+      ]
+    },
+    {
+      "id": "772b269bbd6bfc7c",
+      "category": "ai",
+      "title": "Adaptive Verification Without a Confidence Head",
+      "summary": "An online-fitted acceptance estimator that lets every draft-model speculator use Adaptive Verification, by predicting the target's acceptance probability from the drafter's own logits and refitting continuously during serving.",
+      "url": "https://vllm.ai/blog/2026-10-14-adaptive-verification-online-estimator",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-14T00:00:00.000Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 29.2,
+      "topics": [
+        "inference"
       ]
     },
     {
@@ -28,8 +60,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-14T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 25.9,
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 25.2,
       "topics": [
         "inference"
       ]
@@ -44,8 +76,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-13T21:33:21.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 24.5,
       "topics": [
         "hardware"
       ]
@@ -60,8 +92,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-13T15:33:31.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 25.8,
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 25,
       "topics": [
         "kernels",
         "hardware"
@@ -77,8 +109,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-13T15:30:05.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 25.8,
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 25,
       "topics": [
         "inference",
         "hardware",
@@ -95,8 +127,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-13T14:22:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 25.5,
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 24.7,
       "topics": [
         "inference",
         "hardware",
@@ -113,8 +145,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-13T12:45:30.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 26.3,
       "topics": [
         "kernels",
         "hardware"
@@ -130,8 +162,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-13T11:48:48.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 24.9,
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 24.1,
       "topics": [
         "hardware"
       ]
@@ -146,8 +178,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-13T09:06:21.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 20.2,
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 19.4,
       "topics": [
         "inference",
         "hardware",
@@ -164,8 +196,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-13T06:22:27.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 23.5,
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 22.7,
       "topics": [
         "inference",
         "models"
@@ -181,8 +213,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-13T01:22:36.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 22.3,
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 21.5,
       "topics": [
         "inference",
         "hardware",
@@ -201,8 +233,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-13T00:49:11.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 22.1,
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
+      "score": 21.4,
       "topics": [
         "hardware",
         "models",
@@ -219,7 +251,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-12T16:00:54.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "models"
@@ -235,7 +267,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-12T14:44:59.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 18,
       "topics": [
         "models"
@@ -251,7 +283,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-12T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "inference"
@@ -267,7 +299,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T18:27:34.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 22,
       "topics": [
         "inference",
@@ -300,7 +332,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "inference",
@@ -319,7 +351,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-08T18:13:46.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "inference"
@@ -335,7 +367,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-08T13:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 22,
       "topics": [
         "inference",
@@ -352,7 +384,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-08T12:45:49.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -368,7 +400,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-08T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "hardware",
@@ -386,7 +418,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-08T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "inference",
@@ -403,7 +435,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-08T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "inference",
@@ -453,7 +485,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-07T16:30:36.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 22,
       "topics": [
         "inference",
@@ -470,7 +502,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-07T15:45:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -486,7 +518,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-07T12:45:31.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "training"
@@ -502,7 +534,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-07T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "inference",
@@ -520,7 +552,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T22:57:33.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -536,7 +568,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T19:58:03.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "training"
@@ -552,7 +584,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-10-06T19:57:04.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 22,
       "topics": [
         "models"
@@ -568,7 +600,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T19:07:02.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -584,7 +616,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T16:13:47.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "kernels",
@@ -601,7 +633,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T15:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -617,7 +649,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -650,7 +682,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-05T20:45:50.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "inference"
@@ -666,7 +698,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-05T13:12:59.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -682,7 +714,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-05T13:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 22,
       "topics": [
         "security"
@@ -698,7 +730,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-05T13:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 22,
       "topics": [
         "security"
@@ -714,7 +746,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-05T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -732,7 +764,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T19:55:07.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "inference",
@@ -749,26 +781,10 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T13:28:10.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 22,
       "topics": [
         "inference"
-      ]
-    },
-    {
-      "id": "7ea4c7b990a96cdf",
-      "category": "technology",
-      "title": "Introducing Cloudflare Traces: follow requests through our entire platform",
-      "summary": "Cloudflare Traces shows how a request moves through security rules, transformations, cache, routing, Workers, and your origin, then follows it across services running anywhere in your stack.",
-      "url": "https://blog.cloudflare.com/cloudflare-tracing/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-02T13:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 22,
-      "topics": [
-        "security"
       ]
     },
     {
@@ -781,7 +797,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T04:01:31.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "training"
@@ -797,7 +813,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-01T22:26:57.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "kernels",
@@ -831,7 +847,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-09-30T15:03:07.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 22,
       "topics": [
         "inference"
@@ -847,7 +863,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "hardware"
@@ -863,7 +879,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "inference",
@@ -881,7 +897,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -897,7 +913,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-29T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "inference",
@@ -930,7 +946,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-24T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "inference",
@@ -948,7 +964,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T01:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "inference",
@@ -966,7 +982,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "kernels",
@@ -983,7 +999,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "models"
@@ -999,7 +1015,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "inference"
@@ -1015,7 +1031,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -1031,7 +1047,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -1064,23 +1080,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
-      "score": 19,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "dcc704e2b1d34e18",
-      "category": "ai",
-      "title": "PD Serving of Qwen3.8-2.4T",
-      "summary": "How vLLM reaches 5K throughput and 180 interactivity on Qwen3.8-2.4T with GB300 NVL72 PD serving and how to reproduce results yourself.",
-      "url": "https://vllm.ai/blog/2026-09-21-qwen38-pd-serving",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 19,
       "topics": [
         "inference"
@@ -1128,7 +1128,7 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-08-21T10:54:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 23,
       "topics": [
         "models"
@@ -1144,7 +1144,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-07-29T16:00:00.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 22,
       "topics": [
         "security"
@@ -1160,7 +1160,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-07-17T15:00:11.000Z",
-      "fetchedAt": "2026-10-14T20:18:05.168Z",
+      "fetchedAt": "2026-10-14T23:23:13.744Z",
       "score": 22,
       "topics": [
         "security"
