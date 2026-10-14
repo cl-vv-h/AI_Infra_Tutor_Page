@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-13T23:49:30.130Z",
+  "generatedAt": "2026-10-14T05:16:28.242Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 39,
-  "failedSourceCount": 0,
+  "sourceCount": 38,
+  "failedSourceCount": 1,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -14,7 +14,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 23,
-      "latestPublishedAt": "2026-10-13T23:42:22.000Z",
+      "latestPublishedAt": "2026-10-14T04:36:06.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 47,
-      "latestPublishedAt": "2026-10-13T23:05:29.000Z",
+      "entryCount": 49,
+      "latestPublishedAt": "2026-10-14T04:59:06.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 139,
-      "latestPublishedAt": "2026-10-13T22:58:00.000Z",
+      "entryCount": 137,
+      "latestPublishedAt": "2026-10-14T05:08:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,8 +53,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-13T22:57:56.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-14T04:27:18.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-13T23:07:25.000Z",
+      "latestPublishedAt": "2026-10-14T05:07:11.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -79,7 +79,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-13T19:43:07.000Z",
+      "latestPublishedAt": "2026-10-14T02:00:14.000Z",
       "selectedCount": 3,
       "libraryCount": 3
     },
@@ -141,11 +141,12 @@
       "country": "United States",
       "category": "technology",
       "type": "research",
-      "state": "ok",
+      "state": "unavailable",
       "channel": "feed",
-      "entryCount": 10,
-      "latestPublishedAt": "2026-10-13T20:41:11.000Z",
-      "selectedCount": 3,
+      "httpStatus": 429,
+      "entryCount": 0,
+      "latestPublishedAt": null,
+      "selectedCount": 0,
       "libraryCount": 3
     },
     {
@@ -195,8 +196,8 @@
       "type": "institution",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 48,
-      "latestPublishedAt": "2026-10-13T07:30:00.000Z",
+      "entryCount": 50,
+      "latestPublishedAt": "2026-10-14T01:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -222,8 +223,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 1,
-      "latestPublishedAt": "2026-10-01T01:30:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-14T03:00:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -261,7 +262,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-13T21:59:44.000Z",
+      "latestPublishedAt": "2026-10-14T03:39:11.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -300,8 +301,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-13T21:54:39.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-14T00:02:34.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -327,7 +328,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-12T00:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -404,8 +405,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-09T16:38:48.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-13T14:22:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 8
     },
     {
@@ -524,11 +525,29 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-13T12:45:30.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 32.2,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 30.9,
       "topics": [
         "kernels",
         "hardware"
+      ]
+    },
+    {
+      "id": "199d102f15b0d61c",
+      "category": "ai",
+      "title": "FastEEP: Fast Intra-Instance Elastic Scaling for Expert-Parallel MoE Serving",
+      "summary": "Large-scale expert parallelism (EP) has become the standard deployment configuration for Mixture-of-Experts (MoE) models in production. Meanwhile, the highly dynamic nature of LLM workloads requires providers to continuously adjust serving capacity to match fluctuating demand. Scaling MoE serving cannot be efficiently achieved by simply adding or removing serving instances; instead, it often requires resizing the EP group within an existing instance, which we refer to as intra-instance scaling.Existing inference en",
+      "url": "https://arxiv.org/abs/2610.18451v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-13T14:22:00.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 29.3,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
       ]
     },
     {
@@ -541,10 +560,89 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-13T21:33:21.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 30.4,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 29.1,
       "topics": [
         "hardware"
+      ]
+    },
+    {
+      "id": "a4e81c6c9b262948",
+      "category": "world",
+      "title": "UN official says ‘window of opportunity’ for peace in DR Congo",
+      "summary": "The envoy lauds the progress in diplomatic efforts despite the worsening security and humanitarian situation.",
+      "url": "https://www.aljazeera.com/news/2026/10/14/un-official-says-window-of-opportunity-for-peace-in-dr-congo?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-14T03:57:24.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 28.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "091d9c23ff4e01f2",
+      "category": "ai",
+      "title": "Fast and Flexible Spiking Network Simulations on Massively Distributed On-Chip Memory Accelerators",
+      "summary": "Studying brain function and dysfunction in spiking networks with realistic synaptic densities pushes simulation technology beyond its current limits. It requires simulations substantially faster than biological real-time to cover long model times and enable efficient iterative exploration, particularly when connectivity is plastic. The modelling community aspires to a $100\\times$ speedup. Yet on conventional many-core systems this remains elusive, bounded by inter-node communication and memory access. So far, signi",
+      "url": "https://arxiv.org/abs/2610.18217v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-13T11:48:48.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 28.6,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "b926a3bce95676c7",
+      "category": "ai",
+      "title": "Google DeepMind and Singapore Government announce new AI tool to protect citizens against scams",
+      "summary": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "source": "DeepMind",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "research",
+      "publishedAt": "2026-10-14T02:00:14.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 28.2,
+      "topics": []
+    },
+    {
+      "id": "09bf4675dbc2dd7f",
+      "category": "finance",
+      "title": "Anthropic seeks rehearing of case over Pentagon's security risk branding",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/anthropic-seeks-rehearing-case-over-pentagons-security-risk-branding-6457401",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-14T00:52:32.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 27.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "445dc674910c1225",
+      "category": "ai",
+      "title": "Quota-Based Aging for Prediction-Guided Scheduling in LLM Serving",
+      "summary": "Large language model (LLM) serving systems use token-level continuous batching to improve resource utilization, but heterogeneous response lengths complicate request scheduling. Prediction-guided short-first scheduling reduces average latency but can severely delay long requests, while unrestricted aging may over-promote delayed long requests under congestion. We propose Quota-Based Aging (QBA), a lightweight policy that combines predicted short-first admission with quota-bounded, debt-enforced promotion of aged pr",
+      "url": "https://arxiv.org/abs/2610.17795v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-13T06:22:27.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 27.3,
+      "topics": [
+        "inference",
+        "models"
       ]
     },
     {
@@ -557,38 +655,24 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-13T21:06:59.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 28.3,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 27,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "d36b72d32452596b",
-      "category": "technology",
-      "title": "Comparing Off-World Rover Driving Distances",
-      "summary": "Description This infographic illustrates the distances driven by various rovers on the surface of Earth’s Moon and Mars. Of the vehicles shown, the NASA Mars rovers Perseverance and Curiosity are still operational and moving across the surface; the figures shown for those two are distances driven as of Oct. 11, 2026. As of that date, […]",
-      "url": "https://science.nasa.gov/photojournal/comparing-off-world-rover-driving-distances/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-13T17:56:08.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 27.5,
-      "topics": []
-    },
-    {
-      "id": "dba43d391e45e939",
-      "category": "technology",
-      "title": "Transporter-18 SmallSats Encapsulation",
-      "summary": "Three NASA-supported small spacecraft, along with many commercial payloads, are shown before being encapsulated in a SpaceX Falcon 9 ahead of launch on Oct. 1, 2026. The ASCENT Propulsion Dual Mode CubeSat, the Supernova Remnants and Proxies for ReIonization Testbed Experiment (SPRITE) CubeSat, and the Small Spacecraft Propulsion and Inspection Capability (SSPICY) mission will demonstrate […]",
-      "url": "https://www.nasa.gov/image-article/transporter-18-smallsats-encapsulation/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-13T17:38:37.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 27.5,
+      "id": "ed5c35a06bf8cbe7",
+      "category": "finance",
+      "title": "Appointment of Chief Risk Officer",
+      "summary": "Media release number 2026-29: Rachael Phelan has been appointed as Chief Risk Officer at the RBA, leading our Risk function and responsible for the delivery of the Bank's risk strategy.",
+      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-29.html",
+      "source": "Reserve Bank of Australia",
+      "sourceCountry": "Australia",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-14T03:00:00.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 26.4,
       "topics": []
     },
     {
@@ -601,40 +685,26 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-13T17:23:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 26,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "04150c4042736936",
+      "id": "c366c9bd9f406820",
       "category": "technology",
-      "title": "Voyager Technologies’ Griffin-1 Completes Environmental Testing at NASA JPL",
-      "summary": "Description A lunar lander from Voyager Technologies completed nearly three months of environmental testing at NASA’s Jet Propulsion Laboratory in Southern California in late September 2026. The tests demonstrate that the spacecraft is prepared to face the harsh conditions of launch, its journey to the Moon, and landing on the surface. Its final trial was […]",
-      "url": "https://science.nasa.gov/photojournal/voyager-technologies-griffin-1-completes-environmental-testing-at-nasa-jpl/",
-      "source": "NASA",
+      "title": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
+      "summary": "Hybrid models interleave state-space model (SSM) layers with a few attention layers. NVIDIA Nemotron 3, Qwen3.5 through Qwen3.8, Kimi-K3, and GLM-5.3-Flash are...",
+      "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/",
+      "source": "NVIDIA Technical Blog",
       "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-13T17:11:11.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 27.3,
-      "topics": []
-    },
-    {
-      "id": "ced183f73022b4a1",
-      "category": "finance",
-      "title": "Copeland, Dixell refrigeration systems also hacked, French cybersecurity agency says",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/copeland-dixell-refrigeration-systems-also-hacked-french-cybersecurity-agency-says-6456741",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-13T16:06:55.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 27.1,
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-12T16:00:54.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 25.7,
       "topics": [
-        "security"
+        "models"
       ]
     },
     {
@@ -647,25 +717,9 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-13T15:51:41.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 27,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 25.6,
       "topics": []
-    },
-    {
-      "id": "c366c9bd9f406820",
-      "category": "technology",
-      "title": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
-      "summary": "Hybrid models interleave state-space model (SSM) layers with a few attention layers. NVIDIA Nemotron 3, Qwen3.5 through Qwen3.8, Kimi-K3, and GLM-5.3-Flash are...",
-      "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-12T16:00:54.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 27,
-      "topics": [
-        "models"
-      ]
     },
     {
       "id": "aef45da4416ea8a4",
@@ -677,8 +731,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-13T15:20:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 26.9,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 25.5,
       "topics": [
         "models"
       ]
@@ -693,8 +747,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-13T18:00:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 26.5,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 25.2,
       "topics": []
     },
     {
@@ -707,40 +761,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-13T17:18:25.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 26.4,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "e7537024af98f51b",
-      "category": "finance",
-      "title": "Ahold has no indication client data was stolen in cybersecurity incident",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/ahold-has-no-indication-client-data-was-stolen-in-cybersecurity-incident-6456181",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-13T13:06:02.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 26.3,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "e3b11ccfb2dd13de",
-      "category": "world",
-      "title": "Houthis and Saudis strike each other in latest escalation",
-      "summary": "Fighting has continued between Iran-backed rebels and Saudi Arabia, adversely impacting the kingdom's economy and security. Still, Saudi officials have stopped warning of Houthi attacks in an effort to calm fears.",
-      "url": "https://www.dw.com/en/houthis-and-saudis-strike-each-other-in-latest-escalation/a-79649973?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-13T11:56:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 26,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 25,
       "topics": [
         "security"
       ]
@@ -755,11 +777,69 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-13T09:34:43.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 25.4,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 24.1,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "4294a58b7ffe9df7",
+      "category": "finance",
+      "title": "ASML forecasts Q4 sales above expectations on AI chip demand",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/asml-forecasts-q4-sales-above-expectations-ai-chip-demand-6458041",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-14T05:07:11.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 24,
+      "topics": []
+    },
+    {
+      "id": "e511b7eef73dc530",
+      "category": "world",
+      "title": "Singapore’s economy grows more than 5 percent amid AI boom",
+      "summary": "City-state's GDP expands 5.4 percent in July-September quarter, according to advance government estimates.",
+      "url": "https://www.aljazeera.com/economy/2026/10/14/singapores-economy-grows-more-than-5-percent-amid-ai-boom?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-14T04:25:02.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "9be8bff99ccd5378",
+      "category": "world",
+      "title": "Watch: Witnesses describe 'traumatic' moment man fell out of Six Flags rollercoaster",
+      "summary": "One person has died and others were injured after an incident at a US amusement park.",
+      "url": "https://www.bbc.co.uk/news/videos/cqy8le2mrd0po",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-13T23:42:15.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 23.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "96a76f7bbb79e69e",
+      "category": "finance",
+      "title": "China's September exports blow past forecasts, imports accelerate",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/chinas-september-exports-blow-past-forecasts-imports-accelerate-6457491",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-14T02:47:00.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 23.4,
+      "topics": []
     },
     {
       "id": "0e9f869ec1dd3fd6",
@@ -771,8 +851,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-13T15:04:27.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 24.8,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 23.4,
       "topics": []
     },
     {
@@ -785,38 +865,22 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-13T17:05:48.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 23,
       "topics": []
     },
     {
-      "id": "cc7640e363875db8",
+      "id": "b9d39e84bb3129e7",
       "category": "world",
-      "title": "BBC's Orla Guerin travels with Yemen's southern national security forces through desert battlefield",
-      "summary": "Orla Guerin travelled through Yemen, with forces loyal to its internationally recognised government, to a remote desert battlefield where Houthi rebels were dislodged just days ago.",
-      "url": "https://www.bbc.co.uk/news/videos/cqx298yx4k48o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
+      "title": "Houthis launch fresh wave of missiles across Saudi Arabia",
+      "summary": "Both the Houthis and the Saudi-led coalition carried out strikes targeting energy infrastructure. Four people were injured as a result of debris of intercepted missiles in Riyadh. DW has the latest.",
+      "url": "https://www.dw.com/en/houthis-launch-fresh-wave-of-missiles-across-saudi-arabia/live-79655805?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
       "sourceType": "news",
-      "publishedAt": "2026-10-13T04:27:22.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 24.2,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "279d191e2148975b",
-      "category": "ai",
-      "title": "Developing Gemini 4 Argon responsibly and safely",
-      "summary": "",
-      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-      "source": "DeepMind",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "research",
-      "publishedAt": "2026-10-13T19:43:07.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 24,
+      "publishedAt": "2026-10-14T00:50:00.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 22.9,
       "topics": []
     },
     {
@@ -829,8 +893,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-13T12:00:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 24,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -843,8 +907,22 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-13T08:01:18.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 24,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "279d191e2148975b",
+      "category": "ai",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "summary": "",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "source": "DeepMind",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "research",
+      "publishedAt": "2026-10-13T19:43:07.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 22.6,
       "topics": []
     },
     {
@@ -857,22 +935,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-13T23:04:39.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23.8,
-      "topics": []
-    },
-    {
-      "id": "3ad5cea31c152617",
-      "category": "finance",
-      "title": "UK finance minister Healey to target online marketplaces in tax crackdown, The Times reports",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/uk-finance-minister-healey-target-online-marketplaces-in-tax-crackdown-times-reports-6457271",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-13T22:03:51.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 22.5,
       "topics": []
     },
     {
@@ -885,8 +949,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-13T14:19:40.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 22.3,
       "topics": []
     },
     {
@@ -899,8 +963,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-13T22:00:20.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23.5,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 22.2,
       "topics": []
     },
     {
@@ -913,11 +977,25 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-13T17:10:50.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23.3,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 22,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "4180bb055489122d",
+      "category": "finance",
+      "title": "Bank of Japan Accounts (October 10)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261010.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-14T01:00:00.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 21.9,
+      "topics": []
     },
     {
       "id": "32d19964d2073bbf",
@@ -929,8 +1007,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-12T20:49:49.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23.3,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 21.9,
       "topics": [
         "inference"
       ]
@@ -945,8 +1023,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-13T20:21:31.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 21.8,
       "topics": []
     },
     {
@@ -959,8 +1037,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-13T16:20:18.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 21.8,
       "topics": []
     },
     {
@@ -973,36 +1051,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-10-13T16:01:58.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23.1,
-      "topics": []
-    },
-    {
-      "id": "3b19b24a477f9e3a",
-      "category": "ai",
-      "title": "Gemini 4 Argon: Built to solve your hardest problems",
-      "summary": "",
-      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
-      "source": "DeepMind",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "research",
-      "publishedAt": "2026-10-13T16:01:52.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23.1,
-      "topics": []
-    },
-    {
-      "id": "b9885ed97dbac277",
-      "category": "world",
-      "title": "Scientists urge tighter AI controls to prevent global cyber risks",
-      "summary": "Call comes amid polls casting doubts on political leaders' ability to manage AI risks as US midterm elections near.",
-      "url": "https://www.aljazeera.com/economy/2026/10/13/scientists-urge-tighter-ai-controls-to-prevent-global-cyber-risks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-13T20:00:32.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -1015,8 +1065,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-12T12:00:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 21.7,
       "topics": [
         "security"
       ]
@@ -1031,11 +1081,25 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-12T12:00:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 23,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 21.7,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "8e1e6f8908a1b456",
+      "category": "finance",
+      "title": "Money Stock (Sept.)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/money/ms/ms2609.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-13T23:50:00.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 21.6,
+      "topics": []
     },
     {
       "id": "8121965c52a0f9ae",
@@ -1047,36 +1111,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-13T23:13:31.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 22.9,
-      "topics": []
-    },
-    {
-      "id": "74b6f415a2aaca09",
-      "category": "world",
-      "title": "Trump says Houthis trying to increase oil prices before US elections",
-      "summary": "US president suggests that Yemen-based group are 'purposefully trying to drive up oil prices' before November vote.",
-      "url": "https://www.aljazeera.com/news/2026/10/13/trump-says-houthis-trying-to-increase-oil-prices-before-us-elections?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-13T19:33:11.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 22.9,
-      "topics": []
-    },
-    {
-      "id": "7546da2c2d7c25bf",
-      "category": "world",
-      "title": "Eight orangutans find new forest home in Indonesia after wildfire rescue",
-      "summary": "Eight endangered orangutans were released into a protected forest in Indonesia after wildfires destroyed their habitat.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/10-13-orangutans-new-home-clip-mp4?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-13T19:24:50.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 22.9,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 21.5,
       "topics": []
     },
     {
@@ -1089,8 +1125,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-13T18:30:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 21.3,
       "topics": []
     },
     {
@@ -1103,8 +1139,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-13T17:53:27.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 22.5,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 21.2,
       "topics": []
     },
     {
@@ -1117,8 +1153,22 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-10-13T20:26:06.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 22.2,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 20.8,
+      "topics": []
+    },
+    {
+      "id": "574efa6254f138e7",
+      "category": "world",
+      "title": "Inflation edged up 1.9% in September, lifting annual rate to 33.4%",
+      "summary": "September’s consumer price index rose by 0.2 percentage points from August, according to INDEC; Food prices a concern; Inflation so far this year now totals 23.6%. Leer más",
+      "url": "https://www.batimes.com.ar/news/economy/argentina-inflation-ticks-up-19-in-september-lifting-annual-rate-to-334.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-13T20:19:39.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 20.8,
       "topics": []
     },
     {
@@ -1131,8 +1181,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-12T14:44:59.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 21.7,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 20.4,
       "topics": [
         "models"
       ]
@@ -1147,8 +1197,22 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-13T18:05:24.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 21.6,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 20.2,
+      "topics": []
+    },
+    {
+      "id": "0835117eb990cc7f",
+      "category": "finance",
+      "title": "Not building third runway would be 'huge missed opportunity', warns Heathrow boss",
+      "summary": "Thomas Woldbye tells the Today progamme it would be \"good to know\" the government's position on the project, after comments made by the prime minister.",
+      "url": "https://www.bbc.co.uk/news/articles/ckdd8egder5ro",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-14T04:59:06.000Z",
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 19.9,
       "topics": []
     },
     {
@@ -1161,8 +1225,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-13T17:00:39.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 21.3,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 19.9,
       "topics": []
     },
     {
@@ -1175,8 +1239,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-13T16:00:02.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 21,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 19.7,
       "topics": []
     },
     {
@@ -1189,22 +1253,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-13T12:00:49.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 21,
-      "topics": []
-    },
-    {
-      "id": "ae9eb7281c2a9611",
-      "category": "finance",
-      "title": "Three things we've learnt about the UK economy from the IMF",
-      "summary": "The influential economics body has upgraded its UK growth forecast for this year, but risks remain.",
-      "url": "https://www.bbc.co.uk/news/articles/cmly05l1g15yo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-13T11:58:43.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 21,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 19.7,
       "topics": []
     },
     {
@@ -1217,8 +1267,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-12T23:50:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 21,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 19.6,
       "topics": []
     },
     {
@@ -1231,8 +1281,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-13T12:59:16.617Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 18.9,
       "topics": []
     },
     {
@@ -1245,8 +1295,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-13T12:58:10.680Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 18.9,
       "topics": []
     },
     {
@@ -1259,8 +1309,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-13T12:57:08.267Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 18.9,
       "topics": []
     },
     {
@@ -1273,38 +1323,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-13T05:00:31.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 19.3,
-      "topics": []
-    },
-    {
-      "id": "8bd4073a7900d6ab",
-      "category": "ai",
-      "title": "Improve TTFT for Multi-Turn Agentic Workloads with Bi-Directional KV Transfer in vLLM",
-      "summary": "Bi-directional KV transfer lets vLLM prefill nodes reuse previously computed KV from decode nodes on later conversation turns, cutting redundant prefill recompute and reducing TTFT by up to 3.3x on long multi-turn prompts.",
-      "url": "https://vllm.ai/blog/2026-10-12-bidirectional-kvxfer-multiturn-agentic-workload",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-12T00:00:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 19,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "53ea19e385250764",
-      "category": "finance",
-      "title": "Basic Figures on Fails (Sept.)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/set/bffail/sjgb2609.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-13T07:30:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 18.9,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -1317,22 +1337,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-13T22:48:12.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 18.7,
-      "topics": []
-    },
-    {
-      "id": "cb366c0167792ef7",
-      "category": "finance",
-      "title": "Results of the 107th Opinion Survey on the General Public's Views and Behavior",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/research/o_survey/ishiki2610.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-13T04:30:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 18.2,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 17.4,
       "topics": []
     },
     {
@@ -1345,8 +1351,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-13T00:00:00.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 17,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 15.7,
       "topics": []
     },
     {
@@ -1359,8 +1365,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-12T15:00:25.000Z",
-      "fetchedAt": "2026-10-13T23:49:30.130Z",
-      "score": 11.8,
+      "fetchedAt": "2026-10-14T05:16:28.242Z",
+      "score": 10.4,
       "topics": []
     }
   ]
