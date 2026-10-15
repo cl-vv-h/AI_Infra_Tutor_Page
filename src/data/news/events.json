@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-10-15T13:38:23.612Z",
-    "releasesCollectedAt": "2026-10-15T13:38:36.675Z",
-    "libraryCollectedAt": "2026-10-15T13:38:23.612Z",
+    "dailyCollectedAt": "2026-10-15T19:59:53.645Z",
+    "releasesCollectedAt": "2026-10-15T20:00:05.840Z",
+    "libraryCollectedAt": "2026-10-15T19:59:53.645Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -50,7 +50,9 @@
       "2026-10-15"
     ],
     "missingArchiveDates": [],
-    "failedSources": [],
+    "failedSources": [
+      "NASA"
+    ],
     "invalidItems": 27
   },
   "tracks": [
@@ -64,7 +66,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-15T13:38:36.675Z",
+          "lastCollectedAt": "2026-10-15T20:00:05.840Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -77,7 +79,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-15T13:38:36.675Z",
+          "lastCollectedAt": "2026-10-15T20:00:05.840Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -90,7 +92,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-15T13:38:36.675Z",
+          "lastCollectedAt": "2026-10-15T20:00:05.840Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -103,7 +105,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-10-15T13:38:36.675Z",
+          "lastCollectedAt": "2026-10-15T20:00:05.840Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -116,7 +118,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-02T01:09:04.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-10-15T13:38:36.675Z",
+          "lastCollectedAt": "2026-10-15T20:00:05.840Z",
           "revisionCount": 3,
           "ruleIds": [
             "official-releases"
@@ -439,5 +441,5 @@
       ]
     }
   ],
-  "fingerprint": "2a57788d7ed30e0bb034be41495b7330bfd0aeef380c4d4386b28e49651346b7"
+  "fingerprint": "bf714e067b052fcb0232ac269465b561e03e48c6909bf0f59474dd012083a213"
 }
