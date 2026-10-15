@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-15T19:59:53.645Z",
+  "generatedAt": "2026-10-15T23:13:08.025Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 38,
-  "failedSourceCount": 1,
+  "sourceCount": 39,
+  "failedSourceCount": 0,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 29,
-      "latestPublishedAt": "2026-10-15T19:13:09.000Z",
+      "entryCount": 31,
+      "latestPublishedAt": "2026-10-15T22:46:49.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 137,
-      "latestPublishedAt": "2026-10-15T18:55:00.000Z",
+      "entryCount": 138,
+      "latestPublishedAt": "2026-10-15T21:59:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-15T19:44:27.000Z",
+      "latestPublishedAt": "2026-10-15T22:51:56.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-15T19:25:00.000Z",
+      "latestPublishedAt": "2026-10-15T22:46:14.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-15T19:55:25.000Z",
+      "latestPublishedAt": "2026-10-15T20:04:53.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -118,8 +118,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-15T19:10:03.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-15T21:22:15.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -132,7 +132,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-15T12:59:28.566Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -141,12 +141,11 @@
       "country": "United States",
       "category": "technology",
       "type": "research",
-      "state": "unavailable",
+      "state": "ok",
       "channel": "feed",
-      "httpStatus": 429,
-      "entryCount": 0,
-      "latestPublishedAt": null,
-      "selectedCount": 0,
+      "entryCount": 10,
+      "latestPublishedAt": "2026-10-15T19:58:08.000Z",
+      "selectedCount": 3,
       "libraryCount": 3
     },
     {
@@ -262,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-15T19:57:48.000Z",
+      "latestPublishedAt": "2026-10-15T23:06:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -288,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-15T18:01:52.000Z",
+      "latestPublishedAt": "2026-10-15T21:35:04.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -301,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-15T17:32:06.000Z",
+      "latestPublishedAt": "2026-10-15T22:16:03.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -314,7 +313,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 879,
-      "latestPublishedAt": "2026-10-15T09:08:45.000Z",
+      "latestPublishedAt": "2026-10-15T20:34:01.000Z",
       "selectedCount": 2,
       "libraryCount": 8
     },
@@ -379,7 +378,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-15T19:32:25.000Z",
+      "latestPublishedAt": "2026-10-15T21:09:16.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -470,7 +469,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-14T19:11:33.000Z",
+      "latestPublishedAt": "2026-10-15T18:00:00.000Z",
       "selectedCount": 1,
       "libraryCount": 1
     },
@@ -525,8 +524,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:00:01.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 34.5,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 33.7,
       "topics": [
         "models"
       ]
@@ -541,8 +540,28 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T18:05:36.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 33.5,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 32.7,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "01d507bf96937ed1",
+      "category": "ai",
+      "title": "Release v0.7.2",
+      "summary": "These highlights are also published at flashinfer.ai/releases . v0.7.2 Highlights FlashInfer v0.7.2 brings MoELayer experts to Rubin through the cuDNN Frost backend, widens Rubin coverage across MLA, GEMM, linear attention and expert-parallel MoE, and adds fused-epilogue Prims-TS GEMMs on B200, B300 and Rubin. On Blackwell datacentre parts, DeepSeek-V4 NVFP4 sparse MLA reaches B200 and B300 and speculative-decode verification picks cuDNN automatically; expert-parallel MoE adds Hopper BF16 and SM120 W4A8 backends. M",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T21:09:16.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 32.5,
       "topics": [
         "inference",
         "kernels",
@@ -561,8 +580,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:01:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 30.5,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 29.7,
       "topics": [
         "models"
       ]
@@ -577,8 +596,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T12:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 30,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 29.2,
       "topics": [
         "security"
       ]
@@ -593,8 +612,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T12:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 30,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 29.2,
       "topics": [
         "security"
       ]
@@ -609,8 +628,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 30,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 29.2,
       "topics": [
         "models"
       ]
@@ -625,9 +644,41 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T17:55:52.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 29.5,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 28.7,
       "topics": []
+    },
+    {
+      "id": "b15c83b296b3bcd0",
+      "category": "world",
+      "title": "EU member states set for budget clash",
+      "summary": "European lawmakers have kicked off what's likely to be a long and fierce negotiation over the bloc's seven-year budget. Member states are divided on spending priorities, and pending elections in countries including France and Italy are adding pressure to the talks in Brussels. Also in the show - AI stocks lose a trillion dollars in this week's tech stock sell-off, and Ledger's CTO Charles Guillemet explains why AI is changing the security landscape.",
+      "url": "https://www.france24.com/en/eu-member-states-set-for-budget-clash",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-15T20:33:18.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 28.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "5309714070bd7c7f",
+      "category": "world",
+      "title": "'It is clear that sooner or later we will have European casualties', Romanian MEP",
+      "summary": "Rescuers searched on Thursday for seven missing sailors after drones struck two chemical tankers near Romania's Black Sea coast, setting them ablaze and raising fresh security concerns along a vital shipping route used by Ukraine. Speaking with FRANCE 24's Europe editor Armen Georgian, Nicolae Stefanuta, Romanian MEP and Co-Chair of the Group of the Greens, says that the Danube delta region is facing a more intense threat from Russia than Baltic States and that \"it is clear that sooner or later we will have Europea",
+      "url": "https://www.france24.com/en/it-is-clear-that-sooner-or-later-we-will-have-european-casualties-romanian-mep",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-15T20:03:10.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 28.2,
+      "topics": [
+        "security"
+      ]
     },
     {
       "id": "3083afdf5bb3f667",
@@ -639,8 +690,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-15T19:47:44.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 28.9,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 28.1,
       "topics": [
         "security"
       ]
@@ -655,8 +706,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-15T18:52:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 28.7,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 27.9,
       "topics": [
         "security"
       ]
@@ -671,8 +722,36 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T14:40:35.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 28.7,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 27.9,
+      "topics": []
+    },
+    {
+      "id": "ca91205690645369",
+      "category": "technology",
+      "title": "Power Up: Roll Out Solar Arrays Boost Space Station Power Supply",
+      "summary": "From the International Space Station’s unique position 250 miles above Earth, the Sun is a vital source of energy. Solar power supports the station’s life support systems, daily activities, and hundreds of research investigations that improve life on Earth and prepare humans for deep space exploration. Over the past five years, NASA augmented the station’s […]",
+      "url": "https://www.nasa.gov/missions/station/iss-research/power-up-roll-out-solar-arrays-boost-space-station-power-supply/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-15T17:30:00.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 27.6,
+      "topics": []
+    },
+    {
+      "id": "0fefbcfcb544c022",
+      "category": "technology",
+      "title": "NASA to Conduct Low-Altitude Flights Over Texas Farmland",
+      "summary": "A NASA Dynamic Aviation A200 aircraft will conduct low-flying research flights over farmland near Transit, Texas, from Thursday, Oct. 22, through Monday, Nov. 9. These flights will measure gaseous and particulate emissions from animal feeding operations. Agricultural emissions represent an important and understudied part of Earth’s land and atmosphere systems. The FarmFlux mission will deploy […]",
+      "url": "https://www.nasa.gov/general/nasa-to-conduct-low-altitude-flights-over-texas-farmland/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-15T16:42:10.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 27.4,
       "topics": []
     },
     {
@@ -685,11 +764,25 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-14T20:24:19.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 28.1,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 27.3,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "06c2ee52be397ef3",
+      "category": "technology",
+      "title": "NASA Awards Enable Research, Technology to Build Future Workforce",
+      "summary": "NASA has selected 12 U.S. institutions to receive $12 million to accelerate academic research and technology development in support of the agency’s priorities for exploring the Moon, Mars, and deep space. Through NASA’s Minority University Research and Education Project (MUREP) Space Technology Artemis Research (M‑STAR) initiative, selected institutions will each receive up to $1 million […]",
+      "url": "https://www.nasa.gov/learning-resources/nasa-awards-enable-research-technology-to-build-future-workforce/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-15T15:57:47.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 27.2,
+      "topics": []
     },
     {
       "id": "86e4a4c1dd344bfc",
@@ -701,8 +794,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-14T16:10:45.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 28,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 27.2,
       "topics": [
         "security"
       ]
@@ -717,40 +810,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-15T19:14:26.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 27.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "536269c28bbf5dd7",
-      "category": "world",
-      "title": "Israel ex-security chief sues Netanyahu over October 7 claims",
-      "summary": "The former head of Israel's Shin Bet domestic security agency on Wednesday sued Prime Minister Benjamin Netanyahu for defamation weeks before elections in a row over responsibility for Hamas's October 7, 2023 attack. Netanyahu, who polls show in a tight race to stay in power in the October 27 election, has been hammered by the opposition for failing to prevent the attack, the deadliest day in Israeli history. FRANCE 24's Noga Tarnopolsky reports.",
-      "url": "https://www.france24.com/en/video/20261015-israel-ex-security-chief-sues-netanyahu-over-october-7-claims",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-15T15:04:02.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 27.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "a9afc724677c8ecb",
-      "category": "world",
-      "title": "Haiti: Capoeira classes aim to promote peace",
-      "summary": "An association in Haiti is organising capoeira classes – an Afro-Brazilian martial art – in an attempt to reduce community violence and promote social reintegration. The Observers team spoke to its founder, Rodney Jean Marc, who said their doors are open to everyone, “even children in armed gangs”. The initiative takes place as the country's security situation has worsened in recent years.",
-      "url": "https://www.france24.com/en/tv-shows/the-observers/20261015-haiti-capoeira-classes-promote-peace",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-15T14:25:49.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 27.6,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 27,
       "topics": [
         "security"
       ]
@@ -765,26 +826,12 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T09:50:46.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 27.5,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 26.7,
       "topics": [
         "models",
         "training"
       ]
-    },
-    {
-      "id": "acd14d3a3ca47c58",
-      "category": "ai",
-      "title": "Apertus 1.5 Release Notes",
-      "summary": "",
-      "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T09:08:45.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 27.3,
-      "topics": []
     },
     {
       "id": "67b59b572ed8798d",
@@ -796,8 +843,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-14T16:35:44.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 26.3,
       "topics": [
         "inference",
         "kernels",
@@ -816,8 +863,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-10-15T14:42:25.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 26.7,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 25.9,
       "topics": [
         "security"
       ]
@@ -832,11 +879,25 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-15T08:45:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 26.2,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 25.4,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "5d1ec8f42965cd0e",
+      "category": "ai",
+      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+      "summary": "",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-15T20:34:01.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 25.3,
+      "topics": []
     },
     {
       "id": "f470a96961ee5634",
@@ -848,8 +909,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 26,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 25.2,
       "topics": [
         "inference",
         "models",
@@ -866,8 +927,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 26,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 25.2,
       "topics": [
         "inference",
         "models"
@@ -883,8 +944,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-15T11:31:25.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 25.9,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 25.1,
       "topics": [
         "security"
       ]
@@ -899,8 +960,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T12:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 25,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 24.2,
       "topics": []
     },
     {
@@ -913,11 +974,81 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-14T23:57:02.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 25,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 24.2,
       "topics": [
         "inference"
       ]
+    },
+    {
+      "id": "6905d0f136e04cdf",
+      "category": "world",
+      "title": "Letters with 'suspicious substances' sent to US senators and election offices",
+      "summary": "A number of states have confirmed they were targeted by the mailings, including Oklahoma, Ohio and Louisiana.",
+      "url": "https://www.bbc.co.uk/news/articles/cmq8n513x523o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-15T22:46:49.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "c2f05a1f610372fa",
+      "category": "technology",
+      "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
+      "summary": "Put native GitHub features to work to review outside collaborator access and archive stale repositories. The post Staying Evergreen: How we automated secure access and repo hygiene in a shared org appeared first on The GitHub Blog .",
+      "url": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
+      "source": "GitHub Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-15T18:00:00.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "f2a49fd5891d12a6",
+      "category": "world",
+      "title": "Trump administration sues California over noncitizens on voter rolls",
+      "summary": "Lawsuit comes weeks before midterm elections and follows debunked claims of noncitizens voting in various states.",
+      "url": "https://www.aljazeera.com/news/2026/10/15/trump-administration-sues-california-over-noncitizens-on-voter-rolls?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-15T21:44:59.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "b5475a21f811b36d",
+      "category": "finance",
+      "title": "Meta releases open-weight Muse Spark model for coding, agentic tasks",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/meta-releases-open-weight-muse-spark-model-coding-agentic-tasks-6464096",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-15T21:19:23.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "d3eee9c14e74724f",
+      "category": "world",
+      "title": "ICE tactics spark debate before pivotal US midterm elections",
+      "summary": "Polls have found that Trump's hardline immigration enforcement effort has divided voters before the 2026 midterm race.",
+      "url": "https://www.aljazeera.com/news/2026/10/15/ice-tactics-spark-debate-before-pivotal-us-midterm-elections?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-15T21:02:31.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.5,
+      "topics": []
     },
     {
       "id": "b3eddc56cc89b903",
@@ -929,8 +1060,22 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T17:11:12.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "911c74dcd3575010",
+      "category": "world",
+      "title": "Bus, train collide, injuring 19 at Channel Tunnel terminal",
+      "summary": "A minibus carrying truck drivers collided with a freight train near the Channel Tunnel entrance in France, injuring 19 people, two of them severely. Authorities launched an inquiry into what caused the accident.",
+      "url": "https://www.dw.com/en/bus-train-collide-injuring-19-at-channel-tunnel-terminal/a-79674671?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-15T20:42:00.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.4,
       "topics": []
     },
     {
@@ -943,8 +1088,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-14T08:59:35.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 24.2,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.4,
       "topics": [
         "inference",
         "hardware"
@@ -960,13 +1105,43 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-14T08:58:57.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 24.2,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.4,
       "topics": [
         "inference",
         "hardware",
         "models"
       ]
+    },
+    {
+      "id": "69e0b24be6a18849",
+      "category": "technology",
+      "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
+      "summary": "The incident is likely 1st confirmation of mercenary spyware delivered by targeted ads.",
+      "url": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-15T20:32:41.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "151356a6eaff02eb",
+      "category": "world",
+      "title": "Somalia says it will hold elections in 2027",
+      "summary": "Critics say unilateral decision to call polls is a recipe for more conflict.",
+      "url": "https://www.aljazeera.com/news/2026/10/15/somalia-says-it-will-hold-elections-in-2027?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-15T20:04:02.000Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.2,
+      "topics": []
     },
     {
       "id": "5691953c2e3bb697",
@@ -978,8 +1153,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-10-15T16:08:03.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 24,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.2,
       "topics": []
     },
     {
@@ -992,8 +1167,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-14T00:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 24,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.2,
       "topics": [
         "inference"
       ]
@@ -1008,28 +1183,14 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-14T00:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 24,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.2,
       "topics": [
         "inference",
         "hardware",
         "models",
         "training"
       ]
-    },
-    {
-      "id": "01d507bf96937ed1",
-      "category": "ai",
-      "title": "v0.7.2",
-      "summary": "v0.7.2",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-15T19:32:25.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 23.9,
-      "topics": []
     },
     {
       "id": "1b46101bc0e2d76d",
@@ -1041,8 +1202,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T19:30:08.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.1,
       "topics": []
     },
     {
@@ -1055,22 +1216,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T19:30:07.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 23.9,
-      "topics": []
-    },
-    {
-      "id": "6905d0f136e04cdf",
-      "category": "world",
-      "title": "Letters with 'suspicious substances' sent to US election offices",
-      "summary": "A number of states have confirmed they were targeted by the mailings, including Oklahoma, Ohio and Louisiana.",
-      "url": "https://www.bbc.co.uk/news/articles/cmq8n513x523o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-15T19:13:09.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23.1,
       "topics": []
     },
     {
@@ -1083,25 +1230,11 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-15T15:05:29.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 23,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "00bfb1c8fc3cdd5f",
-      "category": "world",
-      "title": "Ahead of US midterms, voters are frustrated with Trump, want change: Poll",
-      "summary": "Widespread voter disillusionment and pocketbook anxieties set a volatile stage for the GOP weeks before election night.",
-      "url": "https://www.aljazeera.com/news/2026/10/15/ahead-of-us-midterms-voters-are-frustrated-with-trump-want-change-poll?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-15T18:17:57.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 23.6,
-      "topics": []
     },
     {
       "id": "7aa8608c7dbc90ff",
@@ -1113,8 +1246,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T14:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 23.5,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -1127,8 +1260,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-15T17:43:44.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 22.6,
       "topics": []
     },
     {
@@ -1141,22 +1274,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-15T17:00:23.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 23.3,
-      "topics": []
-    },
-    {
-      "id": "7e5981dbf4bc869d",
-      "category": "world",
-      "title": "Dying in Detention",
-      "summary": "Fault Lines investigates the soaring death rates in immigration detention centres following President Trump’s crackdown.",
-      "url": "https://www.aljazeera.com/video/fault-lines/2026/10/15/dying-in-detention?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-15T17:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 23.3,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 22.4,
       "topics": []
     },
     {
@@ -1169,36 +1288,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-15T19:10:03.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 22.8,
-      "topics": []
-    },
-    {
-      "id": "4561bac07fd6839a",
-      "category": "world",
-      "title": "Russian jet-powered drone hits supermarket in Ukraine’s Odesa",
-      "summary": "Ukrainian authorities say a Russian jet-powered drone struck a supermarket in its Odesa region on Thursday.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/15/russian-jet-powered-drone-hits-supermarket-in-ukraines-odesa?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-15T15:13:18.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 22.8,
-      "topics": []
-    },
-    {
-      "id": "d4a62337110c28d3",
-      "category": "world",
-      "title": "EU summit to focus on China, Ukraine and bloc budget",
-      "summary": "EU leaders meeting in Brussels will examine measures to curb the bloc's huge trade deficit with China. But they will also be looking to further agreement on the next EU budget ahead of some major elections next year.",
-      "url": "https://www.dw.com/en/eu-summit-to-focus-on-china-ukraine-and-bloc-budget/a-79665338?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-15T14:37:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 22,
       "topics": []
     },
     {
@@ -1211,8 +1302,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-15T13:54:56.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 22.5,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -1225,8 +1316,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-15T13:25:17.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 22.4,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 21.6,
       "topics": []
     },
     {
@@ -1239,25 +1330,9 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T01:30:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 22.4,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 21.6,
       "topics": []
-    },
-    {
-      "id": "f5ccc8be7a726cb3",
-      "category": "technology",
-      "title": "Fridge hack costing millions and sparking fires stemmed from poor security",
-      "summary": "Incident hitting 700 supermarkets exploited outdated devices exposed to the Internet.",
-      "url": "https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-14T21:35:09.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 22.4,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "559a33fc5bb89a30",
@@ -1269,36 +1344,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T01:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 22.3,
-      "topics": []
-    },
-    {
-      "id": "a16114816fc5ef29",
-      "category": "technology",
-      "title": "Neutron's first launch slips again amid trouble with carbon composites",
-      "summary": "Rocket Lab announced the Neutron rocket in 2021, aiming for a first flight in 2024.",
-      "url": "https://arstechnica.com/space/2026/10/rocket-lab-announces-another-delay-for-its-medium-lift-neutron-rocket/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-15T16:57:24.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 22.2,
-      "topics": []
-    },
-    {
-      "id": "587dd08b4bdba683",
-      "category": "finance",
-      "title": "CERN and Mistral partner to build Flare, a new AI model for physics",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/cern-and-mistral-partner-build-flare-new-ai-model-physics-6462341",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-15T12:02:02.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 22,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 21.4,
       "topics": []
     },
     {
@@ -1311,22 +1358,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-15T11:34:55.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 21.9,
-      "topics": []
-    },
-    {
-      "id": "75fe1acde2e0b42c",
-      "category": "technology",
-      "title": "Open up to new possibilities with iPhone Duo",
-      "summary": "Beginning Friday, October 16, at 5 a.m. PT, customers can pre-order iPhone Duo on apple.com and in the Apple Store app.",
-      "url": "https://www.apple.com/newsroom/2026/10/open-up-to-new-possibilities-with-iphone-duo/",
-      "source": "Apple Newsroom",
-      "sourceCountry": "United States",
-      "sourceType": "release",
-      "publishedAt": "2026-10-15T12:59:28.566Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 21.1,
       "topics": []
     },
     {
@@ -1339,8 +1372,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T09:52:41.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 20.5,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 19.7,
       "topics": []
     },
     {
@@ -1353,8 +1386,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T08:27:59.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 20.1,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 19.3,
       "topics": []
     },
     {
@@ -1367,21 +1400,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-15T18:30:09.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 19.6,
-      "topics": []
-    },
-    {
-      "id": "84ac6efd08aa9f15",
-      "category": "technology",
-      "title": "From 2,500 requests to 24: Rebuilding star history without the stargazers",
-      "summary": "Our new repo star history API now provides trends without returning individual identities or requiring unbounded database work. These are the engineering tradeoffs we made. The post From 2,500 requests to 24: Rebuilding star history without the stargazers appeared first on The GitHub Blog .",
-      "url": "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/",
-      "source": "GitHub Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-14T19:11:33.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
       "score": 18.8,
       "topics": []
     },
@@ -1395,22 +1414,8 @@
       "sourceCountry": "Australia",
       "sourceType": "institution",
       "publishedAt": "2026-10-14T03:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 16.8,
-      "topics": []
-    },
-    {
-      "id": "dc05278518fdfbf5",
-      "category": "technology",
-      "title": "Bünyamin Aydın’s new collection, “From Earth to Sky,” soars with iPad Pro",
-      "summary": "Bünyamin Aydın brought together Turkish heritage, rock influences, and futurism for a landmark fashion show in Cappadocia shot on iPhone 18 Pro Max.",
-      "url": "https://www.apple.com/newsroom/2026/10/bunyamin-aydins-new-collection-from-earth-to-sky-soars-with-ipad-pro/",
-      "source": "Apple Newsroom",
-      "sourceCountry": "United States",
-      "sourceType": "release",
-      "publishedAt": "2026-10-14T17:39:29.065Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 16.4,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 15.9,
       "topics": []
     },
     {
@@ -1423,8 +1428,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-14T00:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 16,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 15.2,
       "topics": []
     },
     {
@@ -1437,8 +1442,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-14T11:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 14.8,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 13.9,
       "topics": []
     },
     {
@@ -1451,8 +1456,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-14T00:00:00.000Z",
-      "fetchedAt": "2026-10-15T19:59:53.645Z",
-      "score": 13,
+      "fetchedAt": "2026-10-15T23:13:08.025Z",
+      "score": 12.2,
       "topics": []
     }
   ]
