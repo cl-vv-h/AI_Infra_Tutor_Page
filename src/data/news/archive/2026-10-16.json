@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-16T13:28:29.494Z",
+  "generatedAt": "2026-10-16T19:39:43.898Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 39,
-  "failedSourceCount": 0,
+  "sourceCount": 38,
+  "failedSourceCount": 1,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 37,
-      "latestPublishedAt": "2026-10-16T13:25:48.000Z",
-      "selectedCount": 1,
+      "entryCount": 36,
+      "latestPublishedAt": "2026-10-16T19:33:48.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 135,
-      "latestPublishedAt": "2026-10-16T13:17:00.000Z",
+      "latestPublishedAt": "2026-10-16T19:32:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-16T13:04:32.000Z",
+      "latestPublishedAt": "2026-10-16T19:18:13.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-16T13:07:39.000Z",
+      "latestPublishedAt": "2026-10-16T17:50:41.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,8 +105,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-16T12:55:09.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-16T17:52:24.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-16T12:00:05.000Z",
+      "latestPublishedAt": "2026-10-16T17:05:59.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-16T04:05:00.000Z",
+      "latestPublishedAt": "2026-10-16T16:28:01.000Z",
       "selectedCount": 3,
       "libraryCount": 3
     },
@@ -170,8 +170,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-13T18:00:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-16T15:00:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-16T13:05:23.000Z",
+      "latestPublishedAt": "2026-10-16T19:21:33.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-16T11:30:31.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-16T15:57:27.000Z",
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-16T12:46:42.000Z",
+      "latestPublishedAt": "2026-10-16T18:55:57.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-16T03:30:00.000Z",
+      "latestPublishedAt": "2026-10-16T18:57:22.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -339,8 +339,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-14T16:14:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-16T18:11:34.000Z",
+      "selectedCount": 1,
       "libraryCount": 3
     },
     {
@@ -401,11 +401,12 @@
       "country": "International",
       "category": "ai",
       "type": "research",
-      "state": "ok",
+      "state": "unavailable",
       "channel": "feed",
-      "entryCount": 20,
-      "latestPublishedAt": "2026-10-15T17:09:08.000Z",
-      "selectedCount": 3,
+      "httpStatus": 429,
+      "entryCount": 0,
+      "latestPublishedAt": null,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -417,8 +418,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-15T17:55:52.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-16T16:30:46.000Z",
+      "selectedCount": 3,
       "libraryCount": 8
     },
     {
@@ -430,7 +431,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-15T18:01:00.000Z",
+      "latestPublishedAt": "2026-10-16T17:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 8
     },
@@ -496,7 +497,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-14T16:35:44.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -515,6 +516,22 @@
   ],
   "items": [
     {
+      "id": "a05836015abae9cf",
+      "category": "technology",
+      "title": "Bringing Elastically Deterministic Data Loading to TorchTitan with Zephon",
+      "summary": "Why Zephon? The data that a model sees during training is one of the most powerful levers we have for influencing how well it performs. Much of the day-to-day work... The post Bringing Elastically Deterministic Data Loading to TorchTitan with Zephon appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/bringing-elastically-deterministic-data-loading-to-torchtitan-with-zephon/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-16T16:30:46.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 34.2,
+      "topics": [
+        "training"
+      ]
+    },
+    {
       "id": "a59da668b8b94d4d",
       "category": "ai",
       "title": "Release v5.20.1",
@@ -524,11 +541,59 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-16T13:02:29.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 33.9,
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 32.3,
       "topics": [
         "hardware",
         "models"
+      ]
+    },
+    {
+      "id": "79722f23af7e007a",
+      "category": "world",
+      "title": "Security Council LIVE: Sudan’s war spreads as drones and hunger take a deadly toll",
+      "summary": "As drone strikes kill civilians from El Obeid to Blue Nile and famine risk spreads across Darfur and Kordofan, the Security Council meets on Sudan – the world’s largest hunger and displacement crisis. Ambassadors are expected to press yet again for a ceasefire, safe aid access and an end to the weapons flows fuelling the brutal conflict.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168612",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-16T12:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 30.1,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "fe105250c2d81b3d",
+      "category": "world",
+      "title": "'US tilting toward Russia: Europeans are standing more and more solidly with Zelensky'",
+      "summary": "As transatlantic relations confront renewed geopolitical uncertainty, former Estonian President Toomas Hendrik Ilves delivers a pointed assessment of Washington's shifting approach to Russia's war on Ukraine and the profound implications for European security. At the heart of his analysis lies a fundamental question: can Europe develop the political unity, strategic independence and military capabilities necessary to defend its interests in an increasingly unpredictable international order? Ilves response: \"If ther",
+      "url": "https://www.france24.com/en/tv-shows/spotlight/20261016-us-tilting-toward-russia-europeans-are-standing-more-and-more-solidly-with-zelensky",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T18:33:13.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 28.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "9b913ae06cd2b067",
+      "category": "world",
+      "title": "UK PM adviser’s wife expresses ‘support’ for Palestine Action",
+      "summary": "Police reviewing social media post by writer Sarah Helm, wife of Burnham's National Security Adviser Jonathan Powell.",
+      "url": "https://www.aljazeera.com/news/2026/10/16/uk-pm-advisers-wife-expresses-support-for-palestine-action?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T18:26:08.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 28.7,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -541,10 +606,120 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:00:01.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 30.1,
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 28.6,
       "topics": [
         "models"
+      ]
+    },
+    {
+      "id": "7d29199e62d68d98",
+      "category": "world",
+      "title": "India detains top 'cockroach' leader as hundreds protest in capital",
+      "summary": "Indian police detained Cockroach Janta Party (CJP) leader Abhijeet Dipke on Friday ahead of fresh protests demanding the removal of the country's election chief, the youth-led movement said in a social media post. Dipke, 31, was detained shortly before a rally called by the online movement in the heart of New Delhi where hundreds of protesters marched on Friday evening, despite heavy security measures. FRANCE 24's Navodita Kumari reports from New Delhi, India.",
+      "url": "https://www.france24.com/en/video/20261016-india-detains-top-cockroach-leader-as-hundreds-protest-in-capital",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T15:53:58.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 28.1,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "5596e486dce3bde6",
+      "category": "world",
+      "title": "Gaza malnutrition and starvation at ‘catastrophic’ levels: Health Ministry",
+      "summary": "About 67 percent of Gaza's population projected to face crisis-level food insecurity or worse through the end of 2026.",
+      "url": "https://www.aljazeera.com/news/2026/10/16/gaza-malnutrition-and-starvation-at-catastrophic-levels-health-ministry?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T15:37:25.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 28,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "9f9fcb2bc70867f5",
+      "category": "finance",
+      "title": "US federal bankruptcy court operations disrupted by cybersecurity incident",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/us-federal-bankruptcy-court-operations-disrupted-cybersecurity-incident-6466751",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T15:17:25.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 27.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "92adc8ebcc7f2ded",
+      "category": "technology",
+      "title": "I Am Artemis: Allison Mjoen",
+      "summary": "As the supercooled propellant flowed into the core stage, and NASA’s SLS (Space Launch System) rocket roared to life, Allison Mjoen and her family watched with awe and pride. Mjoen, NASA’s operations manager for the agency’s Exploration Ground Systems Program, helped shape the systems and ground operations that will one day send humans back to […]",
+      "url": "https://www.nasa.gov/missions/station/i-am-artemis-allison-mjoen/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-16T14:24:29.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 27.7,
+      "topics": []
+    },
+    {
+      "id": "7517d1518ce14b94",
+      "category": "world",
+      "title": "DR Congo bans activities of 13 political parties linked to Joseph Kabila as opposition cries repression",
+      "summary": "The Democratic Republic of Congo’s government has banned the activities of 13 political parties, including the PPRD of former president Joseph Kabila. Presented as a national security measure, the decision has divided the political class and reignited debate over democratic pluralism in the country.",
+      "url": "https://www.africanews.com/2026/10/16/dr-congo-bans-activities-of-13-political-parties-linked-to-joseph-kabila-as-opposition-cri/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T17:58:44.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 27.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "d46ff73178dd5e37",
+      "category": "world",
+      "title": "How Israeli firm’s ‘zero-click’ malware attack poses global security risk",
+      "summary": "A new ‘zero-click’ hack uses ads to target victims without any action needed on their part.",
+      "url": "https://www.aljazeera.com/news/2026/10/16/how-israeli-firms-zero-click-malware-attack-poses-global-security-risk?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T14:12:13.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 27.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "74e068340e49bc34",
+      "category": "world",
+      "title": "Houthi attacks on strategic Saudi assets threaten Riyadh's regional leadership and economic ambitions",
+      "summary": "As Yemen's Iran-backed Houthis continue to target Saudi Arabia, Riyadh's vulnerability threatens its claim on regional and religious leadership — as well as its standing as an economic powerhouse.",
+      "url": "https://www.dw.com/en/houthi-attacks-on-strategic-saudi-assets-threaten-riyadh-s-regional-leadership-and-economic-ambitions/a-79680200?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T14:03:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 27.6,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -557,8 +732,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T18:05:36.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 29.2,
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 27.6,
       "topics": [
         "inference",
         "kernels",
@@ -577,8 +752,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T21:09:16.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 28.9,
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 27.4,
       "topics": [
         "inference",
         "kernels",
@@ -597,8 +772,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T12:45:44.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 28.8,
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 27.3,
       "topics": [
         "security"
       ]
@@ -613,11 +788,667 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T01:44:47.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 28.1,
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 26.5,
       "topics": [
         "training"
       ]
+    },
+    {
+      "id": "6a040814c0276df8",
+      "category": "ai",
+      "title": "Scaling Kimi K3 on AMD Instinct MI355X: Matching NVIDIA HGX B300 Throughput per GPU on AgentX",
+      "summary": "Inside the Kimi K3 optimization effort: understanding the bottlenecks and the decisions that made inference faster",
+      "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 26.1,
+      "topics": [
+        "inference",
+        "hardware"
+      ]
+    },
+    {
+      "id": "3650a3777c44417c",
+      "category": "ai",
+      "title": "Serving Reflection Beam on vLLM from Day 0",
+      "summary": "vLLM supports Reflection's Beam-1.0 (501B total, 23B active) from day 0, with agent-driven optimization that cut decode latency 2.71× and DFlash2 speculative decoding with adaptive verification.",
+      "url": "https://vllm.ai/blog/2026-10-16-reflection-beam",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 26.1,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "8ad9baebed6ed95c",
+      "category": "ai",
+      "title": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
+      "summary": "General Science",
+      "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-16T18:11:34.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 25.6,
+      "topics": []
+    },
+    {
+      "id": "e850c1e1d3d486f8",
+      "category": "technology",
+      "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+      "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As...",
+      "url": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-16T17:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 25.3,
+      "topics": []
+    },
+    {
+      "id": "5b78fb5dbedc866e",
+      "category": "world",
+      "title": "Ukraine: Civilian casualty rates among ‘deadliest’ in years, as energy attacks intensify",
+      "summary": "Civilian casualties in Ukraine remain at record levels, with intensified Russian attacks in September continuing a pattern of harm in 2026 far exceeding previous years, UN human rights monitors in Ukraine said on Friday.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168614",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-16T12:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 25.1,
+      "topics": []
+    },
+    {
+      "id": "a9c1ba2ce733cbee",
+      "category": "world",
+      "title": "WHO scales up Ebola readiness in 22 countries across three continents",
+      "summary": "The World Health Organization (WHO) is strengthening Ebola preparedness amid conflict and displacement affecting millions of lives in a region that spans parts of Africa, Asia and Europe.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168613",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-16T12:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 25.1,
+      "topics": []
+    },
+    {
+      "id": "5a9a3dd0679268bc",
+      "category": "ai",
+      "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+      "summary": "",
+      "url": "https://huggingface.co/blog/reflection-beam",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 25.1,
+      "topics": []
+    },
+    {
+      "id": "e367a7a0eb67dac9",
+      "category": "world",
+      "title": "White House Press Secretary Zacharia exiting role after short tenure",
+      "summary": "Zacharia, having only served five days in the role, is now the shortest-serving press secretary in White House history. It comes after a rocky debut at the press room podium and controversy surrounding her background.",
+      "url": "https://www.dw.com/en/white-house-press-secretary-zacharia-exiting-role-after-short-tenure/a-79684341?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T19:05:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 24.9,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "3098100586bb59dd",
+      "category": "technology",
+      "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
+      "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,...",
+      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-15T18:01:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 24.6,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "c1eb7a2fd9e36102",
+      "category": "technology",
+      "title": "Artemis II Heat Shield After Splashdown",
+      "summary": "Shortly after NASA’s Artemis II mission splashed down on April 10, 2026, U.S. Navy divers captured underwater imagery of the Orion spacecraft’s heat shield. In the months after, the agency measured whether the thermal protection system effectively safeguarded the crew and Orion systems as the spacecraft reentered Earth’s atmosphere. This rigorous analysis confirmed that the […]",
+      "url": "https://www.nasa.gov/image-article/artemis-ii-heat-shield-after-splashdown/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-16T16:28:01.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 24.2,
+      "topics": []
+    },
+    {
+      "id": "e8d756c88f2ffe95",
+      "category": "ai",
+      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+      "summary": "",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 24.1,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "588e2d29802c9ab8",
+      "category": "ai",
+      "title": "v0.5.22",
+      "summary": "Release v0.5.22",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.22",
+      "source": "SGLang Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T23:39:11.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 24,
+      "topics": []
+    },
+    {
+      "id": "7b9d060c98bcf46e",
+      "category": "world",
+      "title": "Trump Vs Zelensky, From the Screen to the Streets, Gen Z protests from Paris to Dehli",
+      "summary": "In India, the Cockroach movement felt the crushing boot of the state this week. Thousands of Gen Z protesters were rounded up and detained in sports stadiums and community halls turned into makeshift detention centres, while the movement’s founder, Abhijeet Dipke, was arrested on arrival. A mass demonstration over alleged voter fraud was effectively crushed before it could begin.And Abdijeet has been detained again todayNarendra Modi’s government says the measures were necessary to protect civilians in the capital.",
+      "url": "https://www.france24.com/en/tv-shows/the-world-this-week/20261016-trump-vs-zelensky-from-the-screen-to-the-streets-gen-z-protests-from-paris-to-dehli",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T19:21:33.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "9bfd9916a9f1a6d8",
+      "category": "world",
+      "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
+      "summary": "The BBC sees masked settlers attack Palestinians trying to harvest olives, amid a surge in similar incidents.",
+      "url": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T14:31:04.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 23.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "5c1e16a2e2659902",
+      "category": "technology",
+      "title": "Muse Spark Is Now an Open-Weights Model",
+      "summary": "Today, Meta is releasing the weights for Muse Spark Open, the most capable US open-weights model to date. It’s available today on Hugging Face under the Muse Model License. Muse... The post Muse Spark Is Now an Open-Weights Model appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/muse-spark-open/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-15T17:55:52.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "9bf256ceb417919b",
+      "category": "technology",
+      "title": "Continuous accountability for Verified bots",
+      "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain accountable over time.",
+      "url": "https://blog.cloudflare.com/verified-bots-accountability/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-16T13:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 23.3,
+      "topics": []
+    },
+    {
+      "id": "995c433b6e5bffd2",
+      "category": "technology",
+      "title": "NASA’s Hubble Spies Spiral’s Edge",
+      "summary": "This NASA Hubble Space Telescope image features the edge-on, intermediate spiral galaxy NGC 1827, located roughly 37 million light-years away in the constellation Columba, the Dove.",
+      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-spies-spirals-edge/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-16T12:42:08.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 23.3,
+      "topics": []
+    },
+    {
+      "id": "495ce71d8379a828",
+      "category": "world",
+      "title": "Ethiopia's Abiy Ahmed appoints interim Tigray government",
+      "summary": "Abiy Ahmed's office said there would be elections held in Tigray within 6 months. The move comes after an escalation in fighting between federal forces and a rebel alliance.",
+      "url": "https://www.dw.com/en/ethiopia-s-abiy-ahmed-appoints-interim-tigray-government/a-79683519?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T16:19:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "8162e960f997fe58",
+      "category": "finance",
+      "title": "US tells election officials to be on guard against AI-powered tricks ahead of midterms",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/us-tells-election-officials-be-guard-against-ai-powered-tricks-ahead-midterms-6466731",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T15:06:55.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "f6b73ffe35899aad",
+      "category": "finance",
+      "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "summary": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-16T15:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "820b7249edbdfd1e",
+      "category": "technology",
+      "title": "Bringing ExecuTorch to Arm Cortex-M CPUs",
+      "summary": "TL;DR Deploying PyTorch models on microcontrollers has historically required converting to other framework formats, maintaining separate toolchains, and debugging cross-framework numerical mismatches. ExecuTorch eliminates this conversion step entirely. The Cortex-M... The post Bringing ExecuTorch to Arm Cortex-M CPUs appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/bringing-executorch-to-arm-cortex-m-cpus/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-15T14:40:35.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "9cb606bb391f8b4c",
+      "category": "ai",
+      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
+      "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, and safety standards still being rebuilt. This view runs counter to those who believe that robotics, powered by a general foundation model, is about to have […]",
+      "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T16:30:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 22.2,
+      "topics": []
+    },
+    {
+      "id": "e4a132f470d05bcf",
+      "category": "ai",
+      "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
+      "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, and safety standards still being rebuilt. This view runs counter to those who believe that robotics, powered by a general foundation model, is about to have […]",
+      "url": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T16:30:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 22.2,
+      "topics": []
+    },
+    {
+      "id": "78cd799e44f43da1",
+      "category": "world",
+      "title": "Caputo sees strong Argentina recovery, rismisses recession odds",
+      "summary": "Argentina’s economy minister says he expects a strong rebound in the fourth quarter of the year, dismissing the chances of a recession. Leer más",
+      "url": "https://www.batimes.com.ar/news/economy/caputo-sees-strong-argentina-recovery-rismisses-recession-odds.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T16:18:20.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 22.2,
+      "topics": []
+    },
+    {
+      "id": "92b908539698cd67",
+      "category": "world",
+      "title": "Watch: Did Tesla really just unveil a flying car?",
+      "summary": "Tesla CEO Elon Musk showcased the vehicle at a facility owned by his SpaceX company, which helped develop the model.",
+      "url": "https://www.bbc.co.uk/news/videos/ckly4mj1g3n9o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T12:32:31.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 22.2,
+      "topics": []
+    },
+    {
+      "id": "32705339b563984e",
+      "category": "technology",
+      "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
+      "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks.",
+      "url": "https://blog.cloudflare.com/yandex-outage/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-14T20:24:19.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 22.2,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "4cd55ec3504f880a",
+      "category": "ai",
+      "title": "Elorian’s first AI model wants to reason with images, not just about them",
+      "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
+      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T16:01:37.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 22.1,
+      "topics": []
+    },
+    {
+      "id": "21f14bfa262b7e81",
+      "category": "technology",
+      "title": "Polymarket saw $600 million in election trades after the elections were over",
+      "summary": "Millions kept changing hands long after the election outcomes were effectively settled.",
+      "url": "https://arstechnica.com/tech-policy/2026/10/polymarket-saw-600-million-in-election-trades-after-the-elections-were-over/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T14:19:22.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 21.7,
+      "topics": []
+    },
+    {
+      "id": "8f722715c3fc4449",
+      "category": "ai",
+      "title": "v0.32.0rc2",
+      "summary": "[CI] Pin DeepSeek-V4.1-Flash-NVFP4 eval to its FP8-Engram revision (#…",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc2",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T09:50:46.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 21.5,
+      "topics": [
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "30769b215ad7324d",
+      "category": "finance",
+      "title": "Banknote imagery advisory group minutes – 15 July 2026",
+      "summary": "Meeting held 15 July 2026",
+      "url": "https://www.bankofengland.co.uk/minutes/2026/july/banknote-advisory-minutes-15-july",
+      "source": "Bank of England",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-16T11:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 20.8,
+      "topics": []
+    },
+    {
+      "id": "5f27bb9ed7cb03a4",
+      "category": "finance",
+      "title": "'TV and cheap booze' blamed for landlord quitting",
+      "summary": "Lincolnshire has lost 27% of its pubs and bars since 2009 and some are calling on the government to act against cheap supermarket booze.",
+      "url": "https://www.bbc.co.uk/news/articles/c6lyk77jq9d2o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T05:03:15.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 20.3,
+      "topics": []
+    },
+    {
+      "id": "144ff29297283744",
+      "category": "finance",
+      "title": "BOJ Current Account Balances by Sector (Sept.)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/cabs/cabs.xlsx",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-16T08:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 20.1,
+      "topics": []
+    },
+    {
+      "id": "f470a96961ee5634",
+      "category": "ai",
+      "title": "Day 0 support for Muse Spark Open on vLLM",
+      "summary": "Day-0 vLLM support for Muse Spark Open: 816B MoE, 1M context, multimodal inputs, DSpark speculative decoding, NVIDIA and AMD serving, initial TPU support, and LoRA RL.",
+      "url": "https://vllm.ai/blog/2026-10-15-muse-spark-open",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-15T00:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 20.1,
+      "topics": [
+        "inference",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "fc4e660179356f57",
+      "category": "ai",
+      "title": "proto-v0.6.0",
+      "summary": "vllm-proto 0.6.0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/proto-v0.6.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-14T23:57:02.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 19.1,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "c2f05a1f610372fa",
+      "category": "technology",
+      "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
+      "summary": "Put native GitHub features to work to review outside collaborator access and archive stale repositories. The post Staying Evergreen: How we automated secure access and repo hygiene in a shared org appeared first on The GitHub Blog .",
+      "url": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
+      "source": "GitHub Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-15T18:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 18.6,
+      "topics": []
+    },
+    {
+      "id": "178a75c584a55c64",
+      "category": "technology",
+      "title": "RFK Jr. proposes FDA look the other way on unproven peptides, report says",
+      "summary": "FDA scientists said none of the popular drugs have been proven safe or effective.",
+      "url": "https://arstechnica.com/health/2026/10/rfk-jr-proposes-fda-look-the-other-way-on-unproven-peptides-report-says/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T17:05:59.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 18.4,
+      "topics": []
+    },
+    {
+      "id": "b3eddc56cc89b903",
+      "category": "technology",
+      "title": "A fully programmable secure web gateway",
+      "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform.",
+      "url": "https://blog.cloudflare.com/programmable-gateway-dlp/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-15T17:11:12.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 18.4,
+      "topics": []
+    },
+    {
+      "id": "69e0b24be6a18849",
+      "category": "technology",
+      "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
+      "summary": "The incident is likely 1st confirmation of mercenary spyware delivered by targeted ads.",
+      "url": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-15T20:32:41.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 18.2,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "d693d1f0d54b2043",
+      "category": "finance",
+      "title": "Basel Committee finalises measures to address window-dressing in the G-SIB framework and consults on G-SIB methodology review",
+      "summary": "The Basel Committee on Banking Supervision today published final amendments to address window dressing in the G-SIB framework and a consultation on the G-SIB methodology review.",
+      "url": "https://www.bis.org/media-releases/20261016-basel-committee-finalises-measures-address-window-dressing-g-sib-framework-and-consults-g-sib",
+      "source": "Bank for International Settlements",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 18.1,
+      "topics": []
+    },
+    {
+      "id": "0c237c55b74b3bcf",
+      "category": "finance",
+      "title": "Banks expect to be hit with higher taxes in Budget",
+      "summary": "Senior banking executives have told the BBC they expect to be \"on the menu\" in the chancellor's Budget tax later this month.",
+      "url": "https://www.bbc.co.uk/news/articles/c32l4k2xdvrzo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T10:16:27.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 17.7,
+      "topics": []
+    },
+    {
+      "id": "1374b856e25ec808",
+      "category": "finance",
+      "title": "Fuel costs squeezing margins for some businesses",
+      "summary": "Diesel recently topped £2 per litre and there is concern that a duty freeze will not go far enough.",
+      "url": "https://www.bbc.co.uk/news/articles/c9rky27ljrxno",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T05:30:57.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 16.5,
+      "topics": []
+    },
+    {
+      "id": "84f8f3219be22f60",
+      "category": "finance",
+      "title": "Speech by Board Member KOEDA in Kumamoto (Economic Activity, Prices, and Monetary Policy in Japan)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko261015a.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-15T01:30:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 16.5,
+      "topics": []
+    },
+    {
+      "id": "559a33fc5bb89a30",
+      "category": "finance",
+      "title": "Summary of the \"Meeting on Market Operations\" (October 2026)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/paym/market/mkt261015a.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-15T01:00:00.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 16.3,
+      "topics": []
+    },
+    {
+      "id": "827d639cad6c963c",
+      "category": "finance",
+      "title": "David Roberts CV and questionnaire for the Treasury Select Committee",
+      "summary": "Published for the Treasury Select Committee",
+      "url": "https://www.bankofengland.co.uk/news/2026/october/david-roberts-tsc-reappointment",
+      "source": "Bank of England",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-15T09:52:41.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 14.6,
+      "topics": []
+    },
+    {
+      "id": "76bb0f9430c63aeb",
+      "category": "finance",
+      "title": "Minutes of the SONIA Stakeholder Advisory Group - 25 September 2026",
+      "summary": "The SONIA Stakeholder Advisory Group supports the Bank’s administration of SONIA by providing advice and technical input to the Bank and the SONIA Oversight Committee",
+      "url": "https://www.bankofengland.co.uk/minutes/2026/september/sonia-stakeholder-advisory-group-25-september-2026",
+      "source": "Bank of England",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-15T08:27:59.000Z",
+      "fetchedAt": "2026-10-16T19:39:43.898Z",
+      "score": 14.2,
+      "topics": []
     },
     {
       "id": "b781375da529f74b",
@@ -673,39 +1504,6 @@
       ]
     },
     {
-      "id": "6a040814c0276df8",
-      "category": "ai",
-      "title": "Scaling Kimi K3 on AMD Instinct MI355X: Matching NVIDIA HGX B300 Throughput per GPU on AgentX",
-      "summary": "Inside the Kimi K3 optimization effort: understanding the bottlenecks and the decisions that made inference faster",
-      "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 27.6,
-      "topics": [
-        "inference",
-        "hardware"
-      ]
-    },
-    {
-      "id": "3650a3777c44417c",
-      "category": "ai",
-      "title": "Serving Reflection Beam on vLLM from Day 0",
-      "summary": "vLLM supports Reflection's Beam-1.0 (501B total, 23B active) from day 0, with agent-driven optimization that cut decode latency 2.71× and DFlash2 speculative decoding with adaptive verification.",
-      "url": "https://vllm.ai/blog/2026-10-16-reflection-beam",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 27.6,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
       "id": "94f72537f3a5a825",
       "category": "world",
       "title": "Guterres urges faster action and financing to stop biodiversity loss",
@@ -718,36 +1516,6 @@
       "fetchedAt": "2026-10-16T13:28:29.494Z",
       "score": 26.6,
       "topics": []
-    },
-    {
-      "id": "5a9a3dd0679268bc",
-      "category": "ai",
-      "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
-      "summary": "",
-      "url": "https://huggingface.co/blog/reflection-beam",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 26.6,
-      "topics": []
-    },
-    {
-      "id": "3098100586bb59dd",
-      "category": "technology",
-      "title": "NVIDIA Nemotron 3.5 Super VL Powers Specialized Agents with Multimodal Reasoning",
-      "summary": "Always-on agents are taking on longer, more complex enterprise workflows. A single request can involve reading a document, checking information across sources,...",
-      "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T18:01:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 26.1,
-      "topics": [
-        "models"
-      ]
     },
     {
       "id": "23b1f91866262559",
@@ -802,64 +1570,6 @@
       ]
     },
     {
-      "id": "e8d756c88f2ffe95",
-      "category": "ai",
-      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
-      "summary": "",
-      "url": "https://huggingface.co/blog/meta-muse-spark-open",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 25.6,
-      "topics": [
-        "models"
-      ]
-    },
-    {
-      "id": "588e2d29802c9ab8",
-      "category": "ai",
-      "title": "v0.5.22",
-      "summary": "Release v0.5.22",
-      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.22",
-      "source": "SGLang Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-15T23:39:11.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 25.5,
-      "topics": []
-    },
-    {
-      "id": "5c1e16a2e2659902",
-      "category": "technology",
-      "title": "Muse Spark Is Now an Open-Weights Model",
-      "summary": "Today, Meta is releasing the weights for Muse Spark Open, the most capable US open-weights model to date. It’s available today on Hugging Face under the Muse Model License. Muse... The post Muse Spark Is Now an Open-Weights Model appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/muse-spark-open/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T17:55:52.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 25.1,
-      "topics": []
-    },
-    {
-      "id": "9bf256ceb417919b",
-      "category": "technology",
-      "title": "Continuous accountability for Verified bots",
-      "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain accountable over time.",
-      "url": "https://blog.cloudflare.com/verified-bots-accountability/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T13:00:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 24.9,
-      "topics": []
-    },
-    {
       "id": "cb52c1b931d7c704",
       "category": "world",
       "title": "Self-replicating AI: Is your fridge a cybersecurity risk?",
@@ -874,20 +1584,6 @@
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "820b7249edbdfd1e",
-      "category": "technology",
-      "title": "Bringing ExecuTorch to Arm Cortex-M CPUs",
-      "summary": "TL;DR Deploying PyTorch models on microcontrollers has historically required converting to other framework formats, maintaining separate toolchains, and debugging cross-framework numerical mismatches. ExecuTorch eliminates this conversion step entirely. The Cortex-M... The post Bringing ExecuTorch to Arm Cortex-M CPUs appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/bringing-executorch-to-arm-cortex-m-cpus/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T14:40:35.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 24.3,
-      "topics": []
     },
     {
       "id": "ca91205690645369",
@@ -974,20 +1670,6 @@
       "topics": []
     },
     {
-      "id": "92b908539698cd67",
-      "category": "world",
-      "title": "Watch: Did Tesla really just unveil a flying car?",
-      "summary": "Tesla CEO Elon Musk showcased the vehicle at a facility owned by his SpaceX company, which helped develop the model.",
-      "url": "https://www.bbc.co.uk/news/videos/ckly4mj1g3n9o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T12:32:31.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 23.8,
-      "topics": []
-    },
-    {
       "id": "0fefbcfcb544c022",
       "category": "technology",
       "title": "NASA to Conduct Low-Altitude Flights Over Texas Farmland",
@@ -1014,22 +1696,6 @@
       "fetchedAt": "2026-10-16T13:28:29.494Z",
       "score": 23.7,
       "topics": []
-    },
-    {
-      "id": "32705339b563984e",
-      "category": "technology",
-      "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
-      "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks.",
-      "url": "https://blog.cloudflare.com/yandex-outage/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-14T20:24:19.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 23.7,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "86e4a4c1dd344bfc",
@@ -1106,23 +1772,6 @@
       ]
     },
     {
-      "id": "8f722715c3fc4449",
-      "category": "ai",
-      "title": "v0.32.0rc2",
-      "summary": "[CI] Pin DeepSeek-V4.1-Flash-NVFP4 eval to its FP8-Engram revision (#…",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc2",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-15T09:50:46.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 23.1,
-      "topics": [
-        "models",
-        "training"
-      ]
-    },
-    {
       "id": "755abd6d0ff73e30",
       "category": "world",
       "title": "Indian police launch New Delhi clampdown for Cockroach Party rally",
@@ -1157,20 +1806,6 @@
       ]
     },
     {
-      "id": "30769b215ad7324d",
-      "category": "finance",
-      "title": "Banknote imagery advisory group minutes – 15 July 2026",
-      "summary": "Meeting held 15 July 2026",
-      "url": "https://www.bankofengland.co.uk/minutes/2026/july/banknote-advisory-minutes-15-july",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-16T11:00:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 22.4,
-      "topics": []
-    },
-    {
       "id": "465e9f7b8c0c0cea",
       "category": "world",
       "title": "Chile and Bolivia seek diplomatic reset in new right-wing alignment",
@@ -1187,20 +1822,6 @@
       ]
     },
     {
-      "id": "5f27bb9ed7cb03a4",
-      "category": "finance",
-      "title": "'TV and cheap booze' blamed for landlord quitting",
-      "summary": "Lincolnshire has lost 27% of its pubs and bars since 2009 and some are calling on the government to act against cheap supermarket booze.",
-      "url": "https://www.bbc.co.uk/news/articles/c6lyk77jq9d2o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T05:03:15.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 21.9,
-      "topics": []
-    },
-    {
       "id": "64b234a01ece84d3",
       "category": "world",
       "title": "Ukraine unveils flying ambulance drone that could save lives in minutes",
@@ -1213,38 +1834,6 @@
       "fetchedAt": "2026-10-16T13:28:29.494Z",
       "score": 21.8,
       "topics": []
-    },
-    {
-      "id": "144ff29297283744",
-      "category": "finance",
-      "title": "BOJ Current Account Balances by Sector (Sept.)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/boj/other/cabs/cabs.xlsx",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-16T08:00:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 21.6,
-      "topics": []
-    },
-    {
-      "id": "f470a96961ee5634",
-      "category": "ai",
-      "title": "Day 0 support for Muse Spark Open on vLLM",
-      "summary": "Day-0 vLLM support for Muse Spark Open: 816B MoE, 1M context, multimodal inputs, DSpark speculative decoding, NVIDIA and AMD serving, initial TPU support, and LoRA RL.",
-      "url": "https://vllm.ai/blog/2026-10-15-muse-spark-open",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 21.6,
-      "topics": [
-        "inference",
-        "models",
-        "training"
-      ]
     },
     {
       "id": "05055f82e148829a",
@@ -1261,94 +1850,6 @@
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "fc4e660179356f57",
-      "category": "ai",
-      "title": "proto-v0.6.0",
-      "summary": "vllm-proto 0.6.0",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/proto-v0.6.0",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-14T23:57:02.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 20.6,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "c2f05a1f610372fa",
-      "category": "technology",
-      "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
-      "summary": "Put native GitHub features to work to review outside collaborator access and archive stale repositories. The post Staying Evergreen: How we automated secure access and repo hygiene in a shared org appeared first on The GitHub Blog .",
-      "url": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
-      "source": "GitHub Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T18:00:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 20.1,
-      "topics": []
-    },
-    {
-      "id": "b3eddc56cc89b903",
-      "category": "technology",
-      "title": "A fully programmable secure web gateway",
-      "summary": "Cloudflare Gateway and Data Loss Prevention have inherited the flexibility and power of Cloudflare Workers through our full-stack integration with the Cloudflare Developer platform.",
-      "url": "https://blog.cloudflare.com/programmable-gateway-dlp/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T17:11:12.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 19.9,
-      "topics": []
-    },
-    {
-      "id": "69e0b24be6a18849",
-      "category": "technology",
-      "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
-      "summary": "The incident is likely 1st confirmation of mercenary spyware delivered by targeted ads.",
-      "url": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-15T20:32:41.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 19.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "d693d1f0d54b2043",
-      "category": "finance",
-      "title": "Basel Committee finalises measures to address window-dressing in the G-SIB framework and consults on G-SIB methodology review",
-      "summary": "The Basel Committee on Banking Supervision today published final amendments to address window dressing in the G-SIB framework and a consultation on the G-SIB methodology review.",
-      "url": "https://www.bis.org/media-releases/20261016-basel-committee-finalises-measures-address-window-dressing-g-sib-framework-and-consults-g-sib",
-      "source": "Bank for International Settlements",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 19.6,
-      "topics": []
-    },
-    {
-      "id": "0c237c55b74b3bcf",
-      "category": "finance",
-      "title": "Banks expect to be hit with higher taxes in Budget",
-      "summary": "Senior banking executives have told the BBC they expect to be \"on the menu\" in the chancellor's Budget tax later this month.",
-      "url": "https://www.bbc.co.uk/news/articles/c32l4k2xdvrzo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T10:16:27.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 19.2,
-      "topics": []
     },
     {
       "id": "127ac7c16c0153d3",
@@ -1376,76 +1877,6 @@
       "publishedAt": "2026-10-16T12:00:05.000Z",
       "fetchedAt": "2026-10-16T13:28:29.494Z",
       "score": 18.6,
-      "topics": []
-    },
-    {
-      "id": "1374b856e25ec808",
-      "category": "finance",
-      "title": "Fuel costs squeezing margins for some businesses",
-      "summary": "Diesel recently topped £2 per litre and there is concern that a duty freeze will not go far enough.",
-      "url": "https://www.bbc.co.uk/news/articles/c9rky27ljrxno",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T05:30:57.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 18,
-      "topics": []
-    },
-    {
-      "id": "84f8f3219be22f60",
-      "category": "finance",
-      "title": "Speech by Board Member KOEDA in Kumamoto (Economic Activity, Prices, and Monetary Policy in Japan)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko261015a.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-15T01:30:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 18,
-      "topics": []
-    },
-    {
-      "id": "559a33fc5bb89a30",
-      "category": "finance",
-      "title": "Summary of the \"Meeting on Market Operations\" (October 2026)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/paym/market/mkt261015a.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-15T01:00:00.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 17.9,
-      "topics": []
-    },
-    {
-      "id": "827d639cad6c963c",
-      "category": "finance",
-      "title": "David Roberts CV and questionnaire for the Treasury Select Committee",
-      "summary": "Published for the Treasury Select Committee",
-      "url": "https://www.bankofengland.co.uk/news/2026/october/david-roberts-tsc-reappointment",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-15T09:52:41.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 16.1,
-      "topics": []
-    },
-    {
-      "id": "76bb0f9430c63aeb",
-      "category": "finance",
-      "title": "Minutes of the SONIA Stakeholder Advisory Group - 25 September 2026",
-      "summary": "The SONIA Stakeholder Advisory Group supports the Bank’s administration of SONIA by providing advice and technical input to the Bank and the SONIA Oversight Committee",
-      "url": "https://www.bankofengland.co.uk/minutes/2026/september/sonia-stakeholder-advisory-group-25-september-2026",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-15T08:27:59.000Z",
-      "fetchedAt": "2026-10-16T13:28:29.494Z",
-      "score": 15.7,
       "topics": []
     },
     {
