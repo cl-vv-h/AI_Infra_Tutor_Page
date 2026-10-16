@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-10-16T19:39:43.898Z",
-    "releasesCollectedAt": "2026-10-16T19:39:55.756Z",
-    "libraryCollectedAt": "2026-10-16T19:39:43.898Z",
+    "dailyCollectedAt": "2026-10-16T22:58:04.614Z",
+    "releasesCollectedAt": "2026-10-16T22:58:18.179Z",
+    "libraryCollectedAt": "2026-10-16T22:58:04.614Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -51,9 +51,7 @@
       "2026-10-16"
     ],
     "missingArchiveDates": [],
-    "failedSources": [
-      "arXiv Distributed Systems"
-    ],
+    "failedSources": [],
     "invalidItems": 27
   },
   "tracks": [
@@ -67,7 +65,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-16T19:39:55.756Z",
+          "lastCollectedAt": "2026-10-16T22:58:18.179Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -80,7 +78,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-16T19:39:55.756Z",
+          "lastCollectedAt": "2026-10-16T22:58:18.179Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -93,7 +91,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-16T19:39:55.756Z",
+          "lastCollectedAt": "2026-10-16T22:58:18.179Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -106,7 +104,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-10-16T19:39:55.756Z",
+          "lastCollectedAt": "2026-10-16T22:58:18.179Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -119,7 +117,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-02T01:09:04.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-10-16T19:39:55.756Z",
+          "lastCollectedAt": "2026-10-16T22:58:18.179Z",
           "revisionCount": 3,
           "ruleIds": [
             "official-releases"
@@ -132,7 +130,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-15T23:39:11.000Z",
           "firstCollectedAt": "2026-10-16T04:52:38.724Z",
-          "lastCollectedAt": "2026-10-16T19:39:43.898Z",
+          "lastCollectedAt": "2026-10-16T22:58:04.614Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -455,5 +453,5 @@
       ]
     }
   ],
-  "fingerprint": "75505e95d3f899b6b6b870f792c1e0b690a9f20e7f4cf9bbc9c65729576ea5b4"
+  "fingerprint": "14332d46ade6be3cc7cd672f329aa28e7f13ff576268c4ada0cb143d32745a8e"
 }

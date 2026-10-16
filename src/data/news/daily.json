@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-16T19:39:43.898Z",
+  "generatedAt": "2026-10-16T22:58:04.614Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 38,
-  "failedSourceCount": 1,
+  "sourceCount": 39,
+  "failedSourceCount": 0,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -15,7 +15,7 @@
       "channel": "feed",
       "entryCount": 36,
       "latestPublishedAt": "2026-10-16T19:33:48.000Z",
-      "selectedCount": 2,
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 135,
-      "latestPublishedAt": "2026-10-16T19:32:00.000Z",
+      "entryCount": 136,
+      "latestPublishedAt": "2026-10-16T22:30:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-16T19:18:13.000Z",
+      "latestPublishedAt": "2026-10-16T22:38:04.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-16T17:50:41.000Z",
+      "latestPublishedAt": "2026-10-16T22:37:55.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-16T17:52:24.000Z",
+      "latestPublishedAt": "2026-10-16T21:22:28.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-16T17:05:59.000Z",
+      "latestPublishedAt": "2026-10-16T20:20:07.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-16T16:28:01.000Z",
+      "latestPublishedAt": "2026-10-16T20:14:39.000Z",
       "selectedCount": 3,
       "libraryCount": 3
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-16T19:21:33.000Z",
+      "latestPublishedAt": "2026-10-16T20:25:46.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-16T18:55:57.000Z",
+      "latestPublishedAt": "2026-10-16T19:01:28.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -301,7 +301,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-16T18:57:22.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -327,7 +327,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-16T00:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -366,7 +366,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-15T09:50:46.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -401,12 +401,11 @@
       "country": "International",
       "category": "ai",
       "type": "research",
-      "state": "unavailable",
+      "state": "ok",
       "channel": "feed",
-      "httpStatus": 429,
-      "entryCount": 0,
-      "latestPublishedAt": null,
-      "selectedCount": 0,
+      "entryCount": 20,
+      "latestPublishedAt": "2026-10-15T17:09:08.000Z",
+      "selectedCount": 3,
       "libraryCount": 8
     },
     {
@@ -444,8 +443,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-14T00:00:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-16T00:00:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -458,7 +457,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-16T13:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -525,8 +524,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T16:30:46.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 34.2,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 33.4,
       "topics": [
         "training"
       ]
@@ -541,8 +540,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-16T13:02:29.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 32.3,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 31.5,
       "topics": [
         "hardware",
         "models"
@@ -558,8 +557,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 30.1,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 29.3,
       "topics": [
         "security"
       ]
@@ -574,8 +573,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-16T18:33:13.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 28.7,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 27.9,
       "topics": [
         "security"
       ]
@@ -590,8 +589,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-16T18:26:08.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 28.7,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 27.9,
       "topics": [
         "security"
       ]
@@ -606,8 +605,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:00:01.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 28.6,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 27.8,
       "topics": [
         "models"
       ]
@@ -622,24 +621,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-16T15:53:58.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 28.1,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "5596e486dce3bde6",
-      "category": "world",
-      "title": "Gaza malnutrition and starvation at ‘catastrophic’ levels: Health Ministry",
-      "summary": "About 67 percent of Gaza's population projected to face crisis-level food insecurity or worse through the end of 2026.",
-      "url": "https://www.aljazeera.com/news/2026/10/16/gaza-malnutrition-and-starvation-at-catastrophic-levels-health-ministry?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T15:37:25.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 28,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 27.2,
       "topics": [
         "security"
       ]
@@ -654,8 +637,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T15:17:25.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 27.9,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 27.1,
       "topics": [
         "security"
       ]
@@ -670,8 +653,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T14:24:29.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 27.7,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 26.9,
       "topics": []
     },
     {
@@ -684,24 +667,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-16T17:58:44.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 27.6,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "d46ff73178dd5e37",
-      "category": "world",
-      "title": "How Israeli firm’s ‘zero-click’ malware attack poses global security risk",
-      "summary": "A new ‘zero-click’ hack uses ads to target victims without any action needed on their part.",
-      "url": "https://www.aljazeera.com/news/2026/10/16/how-israeli-firms-zero-click-malware-attack-poses-global-security-risk?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T14:12:13.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 27.6,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 26.8,
       "topics": [
         "security"
       ]
@@ -716,8 +683,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-16T14:03:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 27.6,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 26.8,
       "topics": [
         "security"
       ]
@@ -732,8 +699,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T18:05:36.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 27.6,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 26.8,
       "topics": [
         "inference",
         "kernels",
@@ -752,8 +719,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T21:09:16.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 26.5,
       "topics": [
         "inference",
         "kernels",
@@ -772,8 +739,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T12:45:44.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 27.3,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 26.4,
       "topics": [
         "security"
       ]
@@ -788,10 +755,47 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T01:44:47.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 26.5,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 25.7,
       "topics": [
         "training"
+      ]
+    },
+    {
+      "id": "acf252c6ae91c1ed",
+      "category": "ai",
+      "title": "Architecting for Hardware Diversity: Meta's End-to-End Co-Design for High-Performance AI Training on AMD GPUs",
+      "summary": "Meta deploys a heterogeneous fleet comprising NVIDIA GPUs, AMD GPUs, and proprietary MTIA accelerators to reduce costs and mitigate vendor lock-in. However, the extensive history of NVIDIA-specific optimizations hinders performance portability to other hardware. This paper presents our methods for optimizing alternative accelerators, using AMD Instinct MI350X versus NVIDIA B200 for recommendation model training as a case study. We propose three reusable principles. First, hardware-model co-design is essential: rath",
+      "url": "https://arxiv.org/abs/2610.22230v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-15T17:09:08.000Z",
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 25.5,
+      "topics": [
+        "kernels",
+        "hardware",
+        "training"
+      ]
+    },
+    {
+      "id": "d4c29ce15dc8cb73",
+      "category": "ai",
+      "title": "Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing",
+      "summary": "Large Language Models (LLMs) have shown exceptional capabilities but rely heavily on centralized cloud GPU clusters, leading to high bandwidth costs, latency, and privacy issues. Edge computing offers a solution by deploying LLMs closer to users on edge servers, yet single edge servers often cannot meet LLMs' heavy computational demands. Collaborative Edge Computing (CEC) addresses this challenge by integrating resources of multiple geo-distributed heterogeneous edge servers, which jointly host small model shards a",
+      "url": "https://arxiv.org/abs/2610.22172v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-15T16:31:19.000Z",
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 25.4,
+      "topics": [
+        "inference",
+        "hardware",
+        "models",
+        "security"
       ]
     },
     {
@@ -804,8 +808,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 26.1,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 25.3,
       "topics": [
         "inference",
         "hardware"
@@ -821,10 +825,27 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 26.1,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 25.3,
       "topics": [
         "inference"
+      ]
+    },
+    {
+      "id": "903c02d496cd5e9f",
+      "category": "technology",
+      "title": "FP16 GEMM Optimization on AMD RDNA™ 3 and RDNA™ 4 Architectures",
+      "summary": "In this blog you will learn how to write a fast FP16 GEMM kernel for AMD RDNA™ 3 and RDNA™ 4 GPUs, one optimization at a time. You will see which techniques pay off on each architecture, why some help one and hurt the other, and how to measure the effect of every change in time, registers, and LDS, so you can apply the same approach to your own kernels. This is Part 1 of a two-part series. Part 2 will port the final kernel from this post to FP8 on RDNA 4.",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/rdna-fp16-gemm/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 25.3,
+      "topics": [
+        "kernels",
+        "training"
       ]
     },
     {
@@ -837,8 +858,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T18:11:34.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 24.8,
       "topics": []
     },
     {
@@ -851,8 +872,22 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T17:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 24.5,
+      "topics": []
+    },
+    {
+      "id": "f1dce50c87db0e07",
+      "category": "technology",
+      "title": "NASA Names Stephen Cash Marshall Space Flight Center Director",
+      "summary": "NASA Administrator Jared Isaacman has named Stephen Cash director of the agency’s Marshall Space Flight Center in Huntsville, Alabama, effective Monday, Oct. 19. Cash, a veteran NASA engineer and aerospace executive, returns to lead the center where he began his career more than four decades ago. “Marshall contributions to NASA’s missions are historic and it’s […]",
+      "url": "https://www.nasa.gov/news-release/nasa-names-stephen-cash-marshall-space-flight-center-director/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-16T20:14:39.000Z",
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 24.3,
       "topics": []
     },
     {
@@ -865,8 +900,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 25.1,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 24.3,
       "topics": []
     },
     {
@@ -879,8 +914,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 25.1,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 24.3,
       "topics": []
     },
     {
@@ -893,22 +928,22 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 25.1,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 24.3,
       "topics": []
     },
     {
       "id": "e367a7a0eb67dac9",
       "category": "world",
-      "title": "White House Press Secretary Zacharia exiting role after short tenure",
-      "summary": "Zacharia, having only served five days in the role, is now the shortest-serving press secretary in White House history. It comes after a rocky debut at the press room podium and controversy surrounding her background.",
+      "title": "White House press secretary Zacharia exiting role after short tenure",
+      "summary": "Zacharia, having served only five days in the role, is now the shortest-serving press secretary in White House history. Her departure follows a rocky debut at the podium and controversy surrounding her background.",
       "url": "https://www.dw.com/en/white-house-press-secretary-zacharia-exiting-role-after-short-tenure/a-79684341?maca=en-rss-en-all-1573-rdf",
       "source": "DW",
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-16T19:05:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 24.9,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 24,
       "topics": [
         "inference"
       ]
@@ -923,11 +958,39 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:01:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 24.6,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 23.8,
       "topics": [
         "models"
       ]
+    },
+    {
+      "id": "c8b9c6646b012282",
+      "category": "world",
+      "title": "Meta employees say Lula’s accounts restricted in Brazil election: Report",
+      "summary": "The messages, reported by a Brazilian daily, say the platform recommended Bolsonaro's profile and his WhatsApp channel.",
+      "url": "https://www.aljazeera.com/economy/2026/10/16/meta-employees-say-lulas-accounts-restricted-in-brazil-election-report?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T21:08:50.000Z",
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "20d311776de93d2a",
+      "category": "world",
+      "title": "Zelensky turns to Europe for backing as ties with Trump deteriorate",
+      "summary": "Ukrainian President Volodymyr Zelensky turned to his European allies on Friday, asking Brussels for an additional €70 billion to fund the war against Russia next year. Zelensky's relationship with US President Donald Trump deteriorated after the US eased sanctions on Moscow as part of a diesel-supply deal.",
+      "url": "https://www.france24.com/en/europe/20261016-zelensky-turns-to-europe-for-backing-as-ties-with-trump-deteriorate",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T20:25:46.000Z",
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 23.4,
+      "topics": []
     },
     {
       "id": "c1eb7a2fd9e36102",
@@ -939,9 +1002,29 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T16:28:01.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 24.2,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 23.4,
       "topics": []
+    },
+    {
+      "id": "23b1f91866262559",
+      "category": "ai",
+      "title": "When the KV Cache Is Slower Than the GPU: Scaling Remote KV Tiers for Context-Parallel Prefill",
+      "summary": "Reusing the attention KV cache across requests is a standard way to cut prefill cost in long-context LLM serving, and production systems increasingly back the per-engine cache with a remote tier shared by every engine. We study such a tier in a disaggregated deployment of GLM-5.3, an FP8 mixture-of-experts model with multi-head latent attention (MLA), on 8xB300 nodes running prefill context parallelism (PCP8). Enabling the remote tier (LMCache with a Valkey store) left median time-to-first-token unchanged but raise",
+      "url": "https://arxiv.org/abs/2610.21500v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-15T08:37:22.000Z",
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 23.4,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ]
     },
     {
       "id": "e8d756c88f2ffe95",
@@ -953,8 +1036,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 24.1,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 23.3,
       "topics": [
         "models"
       ]
@@ -969,22 +1052,38 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T23:39:11.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 24,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 23.2,
       "topics": []
     },
     {
-      "id": "7b9d060c98bcf46e",
-      "category": "world",
-      "title": "Trump Vs Zelensky, From the Screen to the Streets, Gen Z protests from Paris to Dehli",
-      "summary": "In India, the Cockroach movement felt the crushing boot of the state this week. Thousands of Gen Z protesters were rounded up and detained in sports stadiums and community halls turned into makeshift detention centres, while the movement’s founder, Abhijeet Dipke, was arrested on arrival. A mass demonstration over alleged voter fraud was effectively crushed before it could begin.And Abdijeet has been detained again todayNarendra Modi’s government says the measures were necessary to protect civilians in the capital.",
-      "url": "https://www.france24.com/en/tv-shows/the-world-this-week/20261016-trump-vs-zelensky-from-the-screen-to-the-streets-gen-z-protests-from-paris-to-dehli",
-      "source": "France 24",
-      "sourceCountry": "France",
+      "id": "7584f2b0d14a14a7",
+      "category": "technology",
+      "title": "Bug turns one of the biggest fears about Ray-Ban Meta smart glasses into reality",
+      "summary": "The bug is fixed, but privacy concerns remain.",
+      "url": "https://arstechnica.com/gadgets/2026/10/ray-ban-meta-smart-glasses-found-recording-audio-without-wearers-consent/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-16T19:21:33.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 23.9,
+      "publishedAt": "2026-10-16T19:11:50.000Z",
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 23.1,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "595f83b7dba1db48",
+      "category": "world",
+      "title": "What we learned from heated US midterm Senate debates",
+      "summary": "As the 3 November election approaches and both parties fight for control of Congress, some clear themes have emerged.",
+      "url": "https://www.bbc.co.uk/news/articles/cqly03y3zg7lo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T19:09:37.000Z",
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 23,
       "topics": []
     },
     {
@@ -997,11 +1096,25 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T14:31:04.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 23.7,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 22.9,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "3ae10accf55b8c4d",
+      "category": "world",
+      "title": "How Iran messaging highlights cost of war ahead of US midterm elections",
+      "summary": "Through statements in English, Iranian officials are emphasising gas prices and issues with the US economy.",
+      "url": "https://www.aljazeera.com/news/2026/10/16/how-iran-messaging-highlights-cost-of-war-ahead-of-us-midterm-elections?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T18:21:43.000Z",
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 22.8,
+      "topics": []
     },
     {
       "id": "5c1e16a2e2659902",
@@ -1013,8 +1126,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T17:55:52.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -1027,22 +1140,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T13:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 23.3,
-      "topics": []
-    },
-    {
-      "id": "995c433b6e5bffd2",
-      "category": "technology",
-      "title": "NASA’s Hubble Spies Spiral’s Edge",
-      "summary": "This NASA Hubble Space Telescope image features the edge-on, intermediate spiral galaxy NGC 1827, located roughly 37 million light-years away in the constellation Columba, the Dove.",
-      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-spies-spirals-edge/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-16T12:42:08.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 23.3,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 22.5,
       "topics": []
     },
     {
@@ -1055,8 +1154,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:19:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 23.2,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 22.3,
       "topics": []
     },
     {
@@ -1069,8 +1168,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T15:06:55.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 22.9,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 22,
       "topics": []
     },
     {
@@ -1083,8 +1182,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T15:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 22,
       "topics": []
     },
     {
@@ -1097,8 +1196,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T14:40:35.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 21.9,
       "topics": []
     },
     {
@@ -1111,8 +1210,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:30:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 22.2,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 21.4,
       "topics": []
     },
     {
@@ -1125,22 +1224,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:30:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 22.2,
-      "topics": []
-    },
-    {
-      "id": "78cd799e44f43da1",
-      "category": "world",
-      "title": "Caputo sees strong Argentina recovery, rismisses recession odds",
-      "summary": "Argentina’s economy minister says he expects a strong rebound in the fourth quarter of the year, dismissing the chances of a recession. Leer más",
-      "url": "https://www.batimes.com.ar/news/economy/caputo-sees-strong-argentina-recovery-rismisses-recession-odds.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T16:18:20.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 22.2,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 21.4,
       "topics": []
     },
     {
@@ -1153,25 +1238,9 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T12:32:31.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 22.2,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 21.4,
       "topics": []
-    },
-    {
-      "id": "32705339b563984e",
-      "category": "technology",
-      "title": "Yandex outage: Data shows that instead of going dark, malicious bots went on the move",
-      "summary": "When strikes hit Yandex data centers, many assumed Russian bot operations went dark. Cloudflare data reveals that while search crawling stopped, malicious bots simply migrated to other networks.",
-      "url": "https://blog.cloudflare.com/yandex-outage/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-14T20:24:19.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 22.2,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "4cd55ec3504f880a",
@@ -1183,8 +1252,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:01:37.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 22.1,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 21.3,
       "topics": []
     },
     {
@@ -1197,26 +1266,9 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T14:19:22.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 21.7,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 20.8,
       "topics": []
-    },
-    {
-      "id": "8f722715c3fc4449",
-      "category": "ai",
-      "title": "v0.32.0rc2",
-      "summary": "[CI] Pin DeepSeek-V4.1-Flash-NVFP4 eval to its FP8-Engram revision (#…",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc2",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-15T09:50:46.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 21.5,
-      "topics": [
-        "models",
-        "training"
-      ]
     },
     {
       "id": "30769b215ad7324d",
@@ -1228,8 +1280,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T11:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 20.8,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 20,
       "topics": []
     },
     {
@@ -1242,8 +1294,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T05:03:15.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 19.5,
       "topics": []
     },
     {
@@ -1256,43 +1308,23 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T08:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 20.1,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 19.3,
       "topics": []
     },
     {
-      "id": "f470a96961ee5634",
-      "category": "ai",
-      "title": "Day 0 support for Muse Spark Open on vLLM",
-      "summary": "Day-0 vLLM support for Muse Spark Open: 816B MoE, 1M context, multimodal inputs, DSpark speculative decoding, NVIDIA and AMD serving, initial TPU support, and LoRA RL.",
-      "url": "https://vllm.ai/blog/2026-10-15-muse-spark-open",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 20.1,
-      "topics": [
-        "inference",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "fc4e660179356f57",
-      "category": "ai",
-      "title": "proto-v0.6.0",
-      "summary": "vllm-proto 0.6.0",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/proto-v0.6.0",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-14T23:57:02.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 19.1,
-      "topics": [
-        "inference"
-      ]
+      "id": "5a7604f1b1199ae9",
+      "category": "technology",
+      "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
+      "summary": "Discord user flagged AI CSAM, triggering arrest of New Jersey deputy AG.",
+      "url": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T20:20:07.000Z",
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 18.3,
+      "topics": []
     },
     {
       "id": "c2f05a1f610372fa",
@@ -1304,22 +1336,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 18.6,
-      "topics": []
-    },
-    {
-      "id": "178a75c584a55c64",
-      "category": "technology",
-      "title": "RFK Jr. proposes FDA look the other way on unproven peptides, report says",
-      "summary": "FDA scientists said none of the popular drugs have been proven safe or effective.",
-      "url": "https://arstechnica.com/health/2026/10/rfk-jr-proposes-fda-look-the-other-way-on-unproven-peptides-report-says/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T17:05:59.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 18.4,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 17.8,
       "topics": []
     },
     {
@@ -1332,25 +1350,9 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T17:11:12.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 18.4,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 17.6,
       "topics": []
-    },
-    {
-      "id": "69e0b24be6a18849",
-      "category": "technology",
-      "title": "Targeted ads delivered 0-click exploits to install mercenary malware",
-      "summary": "The incident is likely 1st confirmation of mercenary spyware delivered by targeted ads.",
-      "url": "https://arstechnica.com/security/2026/10/targeted-ads-delivered-0-click-exploits-to-install-mercenary-malware/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-15T20:32:41.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 18.2,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "d693d1f0d54b2043",
@@ -1362,8 +1364,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 18.1,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 17.3,
       "topics": []
     },
     {
@@ -1376,8 +1378,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T10:16:27.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 17.7,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 16.8,
       "topics": []
     },
     {
@@ -1390,8 +1392,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T05:30:57.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 16.5,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 15.6,
       "topics": []
     },
     {
@@ -1404,8 +1406,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T01:30:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 16.5,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 15.6,
       "topics": []
     },
     {
@@ -1418,8 +1420,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T01:00:00.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 16.3,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 15.5,
       "topics": []
     },
     {
@@ -1432,8 +1434,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T09:52:41.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 14.6,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 13.7,
       "topics": []
     },
     {
@@ -1446,8 +1448,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T08:27:59.000Z",
-      "fetchedAt": "2026-10-16T19:39:43.898Z",
-      "score": 14.2,
+      "fetchedAt": "2026-10-16T22:58:04.614Z",
+      "score": 13.4,
       "topics": []
     }
   ]
