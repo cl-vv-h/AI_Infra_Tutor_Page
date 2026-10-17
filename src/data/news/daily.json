@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T12:20:37.499Z",
+  "generatedAt": "2026-10-17T15:51:42.622Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 24,
-      "latestPublishedAt": "2026-10-17T12:11:58.000Z",
+      "entryCount": 23,
+      "latestPublishedAt": "2026-10-17T13:51:36.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 49,
-      "latestPublishedAt": "2026-10-17T06:18:16.000Z",
+      "latestPublishedAt": "2026-10-17T14:12:02.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,8 +40,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 137,
-      "latestPublishedAt": "2026-10-17T11:34:00.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-17T15:23:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-17T12:10:56.000Z",
+      "latestPublishedAt": "2026-10-17T15:25:27.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-16T20:59:01.000Z",
+      "latestPublishedAt": "2026-10-17T11:15:11.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -249,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-10-16T12:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-17T11:47:30.000Z",
+      "latestPublishedAt": "2026-10-17T15:25:51.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,7 +274,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-17T11:00:00.000Z",
+      "latestPublishedAt": "2026-10-17T15:10:14.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-17T09:50:28.000Z",
+      "latestPublishedAt": "2026-10-17T14:18:28.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -418,7 +418,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-16T16:30:46.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -524,8 +524,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T16:30:46.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 30,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 29.2,
       "topics": [
         "training"
       ]
@@ -540,8 +540,24 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-17T11:56:06.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 28.9,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 28,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "7c833507e6b7281e",
+      "category": "world",
+      "title": "Senegal's Macky Sall withdraws from race for UN top job",
+      "summary": "Senegal’s former President Macky Sall is pulling out of the race to lead the United Nations. Saturday's announcement comes one day after an informal straw poll by UN Security Council members saw all seven candidates receive at least one veto.",
+      "url": "https://www.africanews.com/2026/10/17/senegals-macky-sall-withdraws-from-race-for-un-top-job/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T13:28:15.000Z",
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 27.4,
       "topics": [
         "security"
       ]
@@ -556,8 +572,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-16T13:02:29.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 28.2,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 27.3,
       "topics": [
         "hardware",
         "models"
@@ -573,8 +589,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-10-17T11:18:26.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 27.7,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 26.9,
       "topics": [
         "security"
       ]
@@ -589,8 +605,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-17T09:50:28.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 26.5,
       "topics": [
         "security"
       ]
@@ -605,8 +621,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-17T06:00:32.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 26.5,
       "topics": [
         "security"
       ]
@@ -621,8 +637,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-17T00:25:45.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 27,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 26.1,
       "topics": [
         "kernels"
       ]
@@ -637,8 +653,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 25.9,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 25,
       "topics": [
         "security"
       ]
@@ -653,8 +669,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 25.9,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 25,
       "topics": [
         "inference"
       ]
@@ -669,27 +685,97 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T23:07:18.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 25.7,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 24.8,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "fe105250c2d81b3d",
+      "id": "a8e2c00129c61a39",
       "category": "world",
-      "title": "'US tilting toward Russia: Europeans are standing more and more solidly with Zelensky'",
-      "summary": "As transatlantic relations confront renewed geopolitical uncertainty, former Estonian President Toomas Hendrik Ilves delivers a pointed assessment of Washington's shifting approach to Russia's war on Ukraine and the profound implications for European security. At the heart of his analysis lies a fundamental question: can Europe develop the political unity, strategic independence and military capabilities necessary to defend its interests in an increasingly unpredictable international order? Ilves response: \"If ther",
-      "url": "https://www.france24.com/en/tv-shows/spotlight/20261016-us-tilting-toward-russia-europeans-are-standing-more-and-more-solidly-with-zelensky",
+      "title": "Why Trump’s latest White House press secretary lasted just five days",
+      "summary": "Katie Zacharia is the shortest-serving White House press secretary after a rocky tenure, but she's not the first to go.",
+      "url": "https://www.aljazeera.com/news/2026/10/17/why-trumps-latest-white-house-press-secretary-lasted-just-five-days?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T13:41:49.000Z",
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 24.5,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "8910016a43b91b30",
+      "category": "world",
+      "title": "Thousands rally for biggest protest in years against Tunisia’s Saied",
+      "summary": "Unions, opposition groups unite to demonstrate against poor living conditions and restrictions on political freedoms.",
+      "url": "https://www.aljazeera.com/news/2026/10/17/thousands-rally-for-biggest-protest-in-years-against-tunisias-saied?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T14:57:24.000Z",
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "1ef95ea72c326b04",
+      "category": "world",
+      "title": "China's influence in the gaming industry is growing",
+      "summary": "Home to more than 700 million gamers, China is the world's largest gaming market — but it's also one of the most tightly regulated. The effects reach far beyond China, impacting players around the world.",
+      "url": "https://www.dw.com/en/china-s-influence-in-the-gaming-industry-is-growing/a-79484755?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T14:49:00.000Z",
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "5affbed86793c269",
+      "category": "world",
+      "title": "France: Students, unions and Yellow Vests unite against austerity",
+      "summary": "190 000 people could demonstrate this Saturday in France. They called for street demonstrations Saturday against rising living costs, joining high school students' grievances over education conditions after more than three weeks of school blockades.",
+      "url": "https://www.france24.com/en/video/20261017-france-students-unions-and-yellow-vests-unite-against-austerity",
       "source": "France 24",
       "sourceCountry": "France",
       "sourceType": "news",
-      "publishedAt": "2026-10-16T18:33:13.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 24.6,
-      "topics": [
-        "security"
-      ]
+      "publishedAt": "2026-10-17T14:45:55.000Z",
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "e2a64d7587d9e69a",
+      "category": "finance",
+      "title": "Low-cost clinic helps pet owners with vet bills",
+      "summary": "RSPCA Medway West launches its clinic for the pets of people with low incomes.",
+      "url": "https://www.bbc.co.uk/news/articles/c6kgl39rnnvzo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T14:12:02.000Z",
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "cfca5c36548e6251",
+      "category": "world",
+      "title": "California Gov Newsom boosts AI regulation as he eyes 2028 presidential run",
+      "summary": "Newsom signed an executive order to examine kill switches for AI models and other measures he had earlier vetoed.",
+      "url": "https://www.aljazeera.com/economy/2026/10/17/california-gov-newsom-boosts-ai-regulation-as-he-eyes-2028-presidential-run?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T13:56:29.000Z",
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 23.5,
+      "topics": []
     },
     {
       "id": "8ccf7a29f4c0eeb3",
@@ -701,11 +787,25 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:00:01.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 24.4,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 23.5,
       "topics": [
         "models"
       ]
+    },
+    {
+      "id": "c235ba43759e7f44",
+      "category": "world",
+      "title": "India news: CJP founder released a day after detention",
+      "summary": "India's \"Cockroach\" movement founder, Abhijeet Dipke, was released after agreeing to certain conditions, according to the CJP's head of legal affairs. DW has more.",
+      "url": "https://www.dw.com/en/india-news-cjp-founder-released-a-day-after-detention/live-79685143?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T13:00:00.000Z",
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 23.3,
+      "topics": []
     },
     {
       "id": "00405c80ca5e1a11",
@@ -717,8 +817,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-17T11:47:30.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 23,
       "topics": []
     },
     {
@@ -731,8 +831,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T15:17:25.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 23.7,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 22.9,
       "topics": [
         "security"
       ]
@@ -747,38 +847,28 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T14:24:29.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 23.5,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 22.6,
       "topics": []
     },
     {
-      "id": "7afe1d4af4c47be5",
-      "category": "world",
-      "title": "Sudan’s army claims dozens of RSF fighters killed in Nyala attack",
-      "summary": "Rapid Support Forces accuse army of killing 30 civilians in attack on Nyala's busy livestock market.",
-      "url": "https://www.aljazeera.com/news/2026/10/17/2550?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T09:44:47.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 23.4,
-      "topics": []
-    },
-    {
-      "id": "b0892323e435747c",
-      "category": "world",
-      "title": "The chatbot murder guide: AI’s struggle between privacy, reporting violence",
-      "summary": "Experts say balancing the need to govern AI for public safety with user privacy is 'extraordinarily difficult'.",
-      "url": "https://www.aljazeera.com/news/2026/10/17/the-chatbot-murder-guide-ais-struggle-between-privacy-reporting-violence?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T05:50:37.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 23.4,
+      "id": "1ba67904d853153e",
+      "category": "ai",
+      "title": "Release v5.20.0",
+      "summary": "Release v5.20.0 New Model additions Muse Spark Open Muse Spark Open is a multimodal mixture-of-experts model from Meta that takes text, images, audio, and video as input and generates text. It has 816B total parameters (42B active per token) and a context window of up to 1,048,576 tokens shared across modalities. It is trained for agentic coding tasks such as multi-file editing, debugging, and tool use. Checkpoints are available in BF16 and NVFP4 formats. Links: Documentation | Blog Post Add Muse Spark Open ( #4964",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.0",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T18:05:36.000Z",
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 22.6,
       "topics": [
-        "security"
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
       ]
     },
     {
@@ -791,45 +881,11 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-16T17:58:44.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 22.5,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "1ba67904d853153e",
-      "category": "ai",
-      "title": "Release v5.20.0",
-      "summary": "Release v5.20.0 New Model additions Muse Spark Open Muse Spark Open is a multimodal mixture-of-experts model from Meta that takes text, images, audio, and video as input and generates text. It has 816B total parameters (42B active per token) and a context window of up to 1,048,576 tokens shared across modalities. It is trained for agentic coding tasks such as multi-file editing, debugging, and tool use. Checkpoints are available in BF16 and NVFP4 formats. Links: Documentation | Blog Post Add Muse Spark Open ( #4964",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.0",
-      "source": "Transformers Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-15T18:05:36.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 23.4,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "3065ed17b137a271",
-      "category": "world",
-      "title": "IMF urges support for poorer nations facing high inflation, war spillovers",
-      "summary": "Low-income countries spend up to 14 percent of their revenue on debt repayments, IMF chief says.",
-      "url": "https://www.aljazeera.com/economy/2026/10/17/war-spillovers-debt-threaten-low-income-nations-imf-chief-warns?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T09:31:47.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 23.3,
-      "topics": []
     },
     {
       "id": "1cddf84ba299a25a",
@@ -841,8 +897,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-17T09:14:49.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 23.2,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 22.3,
       "topics": []
     },
     {
@@ -855,30 +911,14 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T21:09:16.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 23.2,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 22.3,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models",
         "training"
-      ]
-    },
-    {
-      "id": "86508844bf7e9ab9",
-      "category": "world",
-      "title": "Iran denies being behind Houthi attacks as Aden airport hit",
-      "summary": "Iran has denied any involvement in an escalation of attacks by Houthi rebels on Saudi targets. The international airport in Yemen’s interim capital Aden was struck by two missiles late on Friday, the second such incident in less than two weeks.",
-      "url": "https://www.africanews.com/2026/10/17/iran-denies-being-behind-houthi-attacks-as-aden-airport-hit/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T08:51:59.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 23.1,
-      "topics": [
-        "security"
       ]
     },
     {
@@ -891,8 +931,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T12:45:44.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 22.2,
       "topics": [
         "security"
       ]
@@ -907,22 +947,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-17T04:05:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 22.9,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 22.1,
       "topics": []
     },
     {
-      "id": "a402af6025aa9132",
-      "category": "world",
-      "title": "India news: 'Cockroach' party founder Abhijeet Dipke under preventive arrest",
-      "summary": "CJP's Abhijeet Dipke is due to appear before a Special Executive Magistrate later in the day. Dipke was detained ahead of a demonstration in New Delhi on Friday. DW has more.",
-      "url": "https://www.dw.com/en/india-news-cockroach-party-founder-abhijeet-dipke-under-preventive-arrest/live-79685143?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
+      "id": "3f3ae2b127b05da1",
+      "category": "technology",
+      "title": "Science says your boss should talk less in meetings",
+      "summary": "Research suggests listening more while talking less. Killing aimless meetings can help, too.",
+      "url": "https://arstechnica.com/science/2026/10/science-says-your-boss-should-talk-less-in-meetings/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-17T06:21:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 22.5,
+      "publishedAt": "2026-10-17T11:15:11.000Z",
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 21.8,
       "topics": []
     },
     {
@@ -935,8 +975,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-17T01:55:45.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 22.4,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 21.5,
       "topics": [
         "security"
       ]
@@ -951,8 +991,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T01:44:47.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 22.4,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 21.5,
       "topics": [
         "training"
       ]
@@ -967,8 +1007,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-17T05:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 22.2,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 21.3,
       "topics": []
     },
     {
@@ -981,8 +1021,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-15T17:09:08.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 22.2,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 21.3,
       "topics": [
         "kernels",
         "hardware",
@@ -999,8 +1039,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-15T16:31:19.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 22,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 21.2,
       "topics": [
         "inference",
         "hardware",
@@ -1018,8 +1058,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 21.9,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 21,
       "topics": [
         "inference",
         "hardware"
@@ -1035,8 +1075,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 21.9,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 21,
       "topics": [
         "inference"
       ]
@@ -1051,8 +1091,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 21.9,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 21,
       "topics": [
         "kernels",
         "training"
@@ -1068,8 +1108,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T18:11:34.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 21.5,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 20.6,
       "topics": []
     },
     {
@@ -1082,8 +1122,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T17:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 20.3,
       "topics": []
     },
     {
@@ -1096,22 +1136,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T20:14:39.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 21,
-      "topics": []
-    },
-    {
-      "id": "5b78fb5dbedc866e",
-      "category": "world",
-      "title": "Ukraine: Civilian casualty rates among ‘deadliest’ in years, as energy attacks intensify",
-      "summary": "Civilian casualties in Ukraine remain at record levels, with intensified Russian attacks in September continuing a pattern of harm in 2026 far exceeding previous years, UN human rights monitors in Ukraine said on Friday.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168614",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 20.9,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 20.1,
       "topics": []
     },
     {
@@ -1124,8 +1150,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 20.9,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 20,
       "topics": []
     },
     {
@@ -1138,8 +1164,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:01:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 20.4,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 19.5,
       "topics": [
         "models"
       ]
@@ -1154,8 +1180,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T23:39:11.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 19.8,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 18.9,
       "topics": []
     },
     {
@@ -1168,8 +1194,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T19:11:50.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 19.7,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 18.8,
       "topics": [
         "security"
       ]
@@ -1184,8 +1210,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T17:55:52.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 19.4,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 18.5,
       "topics": []
     },
     {
@@ -1198,8 +1224,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T20:59:01.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 19.2,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 18.3,
       "topics": []
     },
     {
@@ -1212,8 +1238,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T13:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 19.2,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 18.3,
       "topics": []
     },
     {
@@ -1226,22 +1252,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T15:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 18.7,
-      "topics": []
-    },
-    {
-      "id": "820b7249edbdfd1e",
-      "category": "technology",
-      "title": "Bringing ExecuTorch to Arm Cortex-M CPUs",
-      "summary": "TL;DR Deploying PyTorch models on microcontrollers has historically required converting to other framework formats, maintaining separate toolchains, and debugging cross-framework numerical mismatches. ExecuTorch eliminates this conversion step entirely. The Cortex-M... The post Bringing ExecuTorch to Arm Cortex-M CPUs appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/bringing-executorch-to-arm-cortex-m-cpus/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T14:40:35.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 18.6,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 17.8,
       "topics": []
     },
     {
@@ -1254,8 +1266,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-17T06:18:16.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 18.5,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 17.6,
       "topics": []
     },
     {
@@ -1268,22 +1280,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-17T06:11:54.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 18.5,
-      "topics": []
-    },
-    {
-      "id": "fd78ac3b21c3f062",
-      "category": "finance",
-      "title": "Nightclubs are disappearing - and it's affecting young people",
-      "summary": "One young person said with no nightlife in their town they cannot \"let loose and mess around\".",
-      "url": "https://www.bbc.co.uk/news/articles/cm5yngn0pl2ro",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T06:01:55.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 18.4,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 17.6,
       "topics": []
     },
     {
@@ -1296,8 +1294,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:30:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 18,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 17.2,
       "topics": []
     },
     {
@@ -1310,8 +1308,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:30:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 18,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 17.2,
       "topics": []
     },
     {
@@ -1324,22 +1322,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:01:37.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 17.9,
-      "topics": []
-    },
-    {
-      "id": "21f14bfa262b7e81",
-      "category": "technology",
-      "title": "Polymarket saw $600 million in election trades after the elections were over",
-      "summary": "Millions kept changing hands long after the election outcomes were effectively settled.",
-      "url": "https://arstechnica.com/tech-policy/2026/10/polymarket-saw-600-million-in-election-trades-after-the-elections-were-over/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T14:19:22.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 17.5,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 17,
       "topics": []
     },
     {
@@ -1352,8 +1336,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T11:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 16.7,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 15.8,
       "topics": []
     },
     {
@@ -1366,8 +1350,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T08:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 15.9,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 15,
       "topics": []
     },
     {
@@ -1380,8 +1364,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 14.4,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 13.5,
       "topics": []
     },
     {
@@ -1394,8 +1378,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T17:11:12.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 14.2,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 13.3,
       "topics": []
     },
     {
@@ -1408,8 +1392,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T12:20:37.499Z",
-      "score": 13.9,
+      "fetchedAt": "2026-10-17T15:51:42.622Z",
+      "score": 13,
       "topics": []
     }
   ]
