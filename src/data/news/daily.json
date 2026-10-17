@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T18:44:37.488Z",
+  "generatedAt": "2026-10-17T22:34:35.767Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 23,
-      "latestPublishedAt": "2026-10-17T13:51:36.000Z",
+      "entryCount": 27,
+      "latestPublishedAt": "2026-10-17T22:09:50.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 49,
-      "latestPublishedAt": "2026-10-17T14:12:02.000Z",
+      "latestPublishedAt": "2026-10-17T21:33:17.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 137,
-      "latestPublishedAt": "2026-10-17T17:51:00.000Z",
+      "latestPublishedAt": "2026-10-17T19:17:00.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-17T18:26:59.000Z",
+      "latestPublishedAt": "2026-10-17T21:08:10.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-17T09:14:49.000Z",
+      "latestPublishedAt": "2026-10-17T22:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -92,8 +92,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 18,
-      "latestPublishedAt": "2026-10-15T17:00:23.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-17T21:00:13.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-16T21:22:28.000Z",
+      "latestPublishedAt": "2026-10-17T21:31:32.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -249,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-10-17T12:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-17T17:18:35.000Z",
+      "latestPublishedAt": "2026-10-17T20:15:02.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,7 +274,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-17T15:57:40.000Z",
+      "latestPublishedAt": "2026-10-17T21:18:52.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -300,8 +300,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-17T11:18:26.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-17T21:01:19.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -314,7 +314,7 @@
       "channel": "feed",
       "entryCount": 880,
       "latestPublishedAt": "2026-10-16T01:44:47.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -365,8 +365,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-17T00:25:45.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-17T18:57:10.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -379,7 +379,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-15T21:09:16.000Z",
-      "selectedCount": 3,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -515,6 +515,22 @@
   ],
   "items": [
     {
+      "id": "4c01002422d1869c",
+      "category": "world",
+      "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
+      "summary": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
+      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T19:19:19.000Z",
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 28.2,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "a05836015abae9cf",
       "category": "technology",
       "title": "Bringing Elastically Deterministic Data Loading to TorchTitan with Zephon",
@@ -524,24 +540,24 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T16:30:46.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 28.4,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 27.5,
       "topics": [
         "training"
       ]
     },
     {
-      "id": "4c01002422d1869c",
+      "id": "007ce0f6f5014638",
       "category": "world",
-      "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
-      "summary": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
-      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
+      "title": "Israeli settlers attack European delegation convoy in West Bank, beat French mayor",
+      "summary": "Israeli settlers on Saturday attacked a convoy carrying a European delegation in the occupied West Bank, beating up a 78-year-old French mayor. While Israel's Prime Minister Benjamin Netanyahu – who is just days from a crucial election – described the incident as a \"smear\" campaign against Israeli settlers, France's top diplomat urged Israel to \"urgently halt criminal violence\".",
+      "url": "https://www.france24.com/en/middle-east/20261017-israeli-settlers-attack-european-delegation-convoy-in-west-bank-beat-french-mayor",
+      "source": "France 24",
+      "sourceCountry": "France",
       "sourceType": "news",
-      "publishedAt": "2026-10-17T11:56:06.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 27.3,
+      "publishedAt": "2026-10-17T14:58:07.000Z",
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 27.1,
       "topics": [
         "security"
       ]
@@ -556,8 +572,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-17T13:28:15.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 26.7,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 25.7,
       "topics": [
         "security"
       ]
@@ -572,8 +588,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-16T13:02:29.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 26.6,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 25.6,
       "topics": [
         "hardware",
         "models"
@@ -589,8 +605,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-10-17T11:18:26.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 26.1,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 25.2,
       "topics": [
         "security"
       ]
@@ -605,10 +621,26 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-17T09:50:28.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 25.8,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 24.8,
       "topics": [
         "security"
+      ]
+    },
+    {
+      "id": "028afa2b3f223c1d",
+      "category": "ai",
+      "title": "RTX Spark Ignites Global Celebration as New Windows PCs Arrive",
+      "summary": "NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs. Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MSI bring powerful local AI, content creation and gaming capabilities to a portable device, with […]",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T21:00:13.000Z",
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 24.6,
+      "topics": [
+        "hardware"
       ]
     },
     {
@@ -621,11 +653,85 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-17T00:25:45.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 25.4,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 24.5,
       "topics": [
         "kernels"
       ]
+    },
+    {
+      "id": "f6a34482dfee01cb",
+      "category": "world",
+      "title": "At least 17 killed in stampede at religious gathering in India",
+      "summary": "Incident took place at festival in north Kolkata, in India's West Bengal state, amid big crowds and rainfall, police said.",
+      "url": "https://www.aljazeera.com/news/2026/10/17/at-least-17-killed-in-stampede-at-religious-gathering-in-india?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T19:48:54.000Z",
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 24.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "06e6841840e2a811",
+      "category": "ai",
+      "title": "v0.32.0",
+      "summary": "[Bugfix][Rust Frontend] Fix macOS build: read inherited listener fami…",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-17T18:57:10.000Z",
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 24.1,
+      "topics": []
+    },
+    {
+      "id": "3dc4d2eaf63f2eac",
+      "category": "ai",
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T21:31:32.000Z",
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 23.7,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "7466a3e12c7c05d9",
+      "category": "world",
+      "title": "Cost of living protests hit Belgium, Italy, Portugal and France",
+      "summary": "Hundreds of thousands took to the streets for separate demonstrations putting pressure on governments across the EU.",
+      "url": "https://www.aljazeera.com/news/2026/10/17/cost-of-living-protests-hit-belgium-italy-portugal-and-france?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T21:02:26.000Z",
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "912ef1f35e346673",
+      "category": "world",
+      "title": "Looters seize on massive French protests to raid and vandalise shops",
+      "summary": "Looters on Saturday seized the opportunity to raid and vandalise a host of shops and businesses across France – from bakeries and supermarkets to tech stores – as hundreds of thousands of people took to the streets to protest higher living costs and other grievances.",
+      "url": "https://www.france24.com/en/france/20261017-looters-seize-massive-french-protests-raid-vandalise-shops-france",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T20:15:02.000Z",
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 23.4,
+      "topics": []
     },
     {
       "id": "79722f23af7e007a",
@@ -637,8 +743,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 23.4,
       "topics": [
         "security"
       ]
@@ -653,8 +759,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 23.4,
       "topics": [
         "inference"
       ]
@@ -669,27 +775,25 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T23:07:18.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 24.1,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 23.1,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "a8e2c00129c61a39",
+      "id": "aff32284bd0d7ef2",
       "category": "world",
-      "title": "Why Trump’s latest White House press secretary lasted just five days",
-      "summary": "Katie Zacharia is the shortest-serving White House press secretary after a rocky tenure, but she's not the first to go.",
-      "url": "https://www.aljazeera.com/news/2026/10/17/why-trumps-latest-white-house-press-secretary-lasted-just-five-days?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "title": "‘Peronism will return to power in Argentina,’ declares Kicillof at loyalty day rally",
+      "summary": "Buenos Aires Province governor and Máximo Kirchner stage separate Peronist Loyalty Day rallies, exposing the divisions among opposition ahead of next year’s presidential election. Leer más",
+      "url": "https://www.batimes.com.ar/news/argentina/peronism-will-return-to-power-in-argentina-declares-kicillof-at-loyalty-day-rally.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
       "sourceType": "news",
-      "publishedAt": "2026-10-17T13:41:49.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 23.7,
-      "topics": [
-        "inference"
-      ]
+      "publishedAt": "2026-10-17T21:01:19.000Z",
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 22.6,
+      "topics": []
     },
     {
       "id": "185bfbe5734fd81d",
@@ -701,36 +805,22 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-17T16:29:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 22.5,
       "topics": []
     },
     {
-      "id": "d2cf52776d9f5c12",
-      "category": "world",
-      "title": "Brazil: Amazon deforestation at 40-year low",
-      "summary": "In Brazil, deforestation in the Amazon has reached its lowest level in 40 years. President Lula is bolstering his environmental record just over a week before the second round of the presidential election, in which he faces Flávio Bolsonaro.",
-      "url": "https://www.france24.com/en/video/20261017-brazil-amazon-deforestation-at-40-year-low",
-      "source": "France 24",
-      "sourceCountry": "France",
+      "id": "eac568ce0dcd9146",
+      "category": "ai",
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-17T16:07:46.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 23.3,
-      "topics": []
-    },
-    {
-      "id": "88402c743c144f3e",
-      "category": "world",
-      "title": "Protests in France: \"Two fires broke out in Place de la République\"",
-      "summary": "Police and protesters clashed in Paris and other French cities on Saturday, with smoke from fires and tear gas filling the air at demonstrations nationwide against high prices, ahead of elections to replace President Emmanuel Macron. \"Two fires broke out in Place de la République,\" reports France 24's Antonia Kerrigan from the ground.",
-      "url": "https://www.france24.com/en/video/20261017-protests-in-france-two-fires-broke-out-in-place-de-la-r%C3%A9publique",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T15:53:30.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 23.3,
+      "publishedAt": "2026-10-17T18:48:08.000Z",
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 22.1,
       "topics": []
     },
     {
@@ -743,8 +833,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-17T14:57:24.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 22.1,
       "topics": []
     },
     {
@@ -757,8 +847,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-17T14:49:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 23,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 22.1,
       "topics": []
     },
     {
@@ -771,22 +861,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-17T14:12:02.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 22.9,
-      "topics": []
-    },
-    {
-      "id": "cfca5c36548e6251",
-      "category": "world",
-      "title": "California Gov Newsom boosts AI regulation as he eyes 2028 presidential run",
-      "summary": "Newsom signed an executive order to examine kill switches for AI models and other measures he had earlier vetoed.",
-      "url": "https://www.aljazeera.com/economy/2026/10/17/california-gov-newsom-boosts-ai-regulation-as-he-eyes-2028-presidential-run?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T13:56:29.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 21.9,
       "topics": []
     },
     {
@@ -799,8 +875,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-17T13:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 22.6,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 21.6,
       "topics": []
     },
     {
@@ -813,8 +889,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T15:17:25.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 22.1,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 21.2,
       "topics": [
         "security"
       ]
@@ -829,8 +905,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T14:24:29.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 21.9,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 21,
       "topics": []
     },
     {
@@ -843,8 +919,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-16T17:58:44.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 21.8,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 20.9,
       "topics": [
         "security"
       ]
@@ -859,29 +935,9 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-17T09:14:49.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 21.6,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 20.7,
       "topics": []
-    },
-    {
-      "id": "01d507bf96937ed1",
-      "category": "ai",
-      "title": "Release v0.7.2",
-      "summary": "These highlights are also published at flashinfer.ai/releases . v0.7.2 Highlights FlashInfer v0.7.2 brings MoELayer experts to Rubin through the cuDNN Frost backend, widens Rubin coverage across MLA, GEMM, linear attention and expert-parallel MoE, and adds fused-epilogue Prims-TS GEMMs on B200, B300 and Rubin. On Blackwell datacentre parts, DeepSeek-V4 NVFP4 sparse MLA reaches B200 and B300 and speculative-decode verification picks cuDNN automatically; expert-parallel MoE adds Hopper BF16 and SM120 W4A8 backends. M",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-15T21:09:16.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 21.6,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
-      ]
     },
     {
       "id": "f1d053313101f281",
@@ -893,25 +949,11 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T12:45:44.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 21.5,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 20.5,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "69a0df4c738ae43a",
-      "category": "world",
-      "title": "Flour sacks turned flood barriers: Gaza faces another winter without safe shelter",
-      "summary": "Like many people in the war-ravaged Gaza Strip, Ahmed Al-Omari is preparing for another winter of bitter cold and rain that threatens to cause flooding as families struggle to survive in tattered tents and damaged buildings.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168619",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-17T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 21.3,
-      "topics": []
     },
     {
       "id": "006cc52b01a73986",
@@ -923,8 +965,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-17T04:05:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 21.3,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 20.4,
       "topics": []
     },
     {
@@ -937,8 +979,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-17T11:15:11.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 21.1,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 20.2,
       "topics": []
     },
     {
@@ -951,8 +993,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T01:44:47.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 20.8,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 19.8,
       "topics": [
         "training"
       ]
@@ -967,8 +1009,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-17T05:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 20.6,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 19.6,
       "topics": []
     },
     {
@@ -981,8 +1023,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 19.4,
       "topics": [
         "inference",
         "hardware"
@@ -998,8 +1040,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 19.4,
       "topics": [
         "inference"
       ]
@@ -1014,8 +1056,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 19.4,
       "topics": [
         "kernels",
         "training"
@@ -1031,8 +1073,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T18:11:34.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 19.9,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 18.9,
       "topics": []
     },
     {
@@ -1045,8 +1087,22 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T17:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 19.6,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 18.6,
+      "topics": []
+    },
+    {
+      "id": "e3a372bd9f6bd4bf",
+      "category": "ai",
+      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+      "summary": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
+      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T20:21:19.000Z",
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 18.4,
       "topics": []
     },
     {
@@ -1059,8 +1115,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T20:14:39.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 19.4,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 18.4,
       "topics": []
     },
     {
@@ -1073,8 +1129,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 19.3,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 18.4,
       "topics": []
     },
     {
@@ -1087,8 +1143,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T23:39:11.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 18.2,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 17.3,
       "topics": []
     },
     {
@@ -1101,8 +1157,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T19:11:50.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 18.1,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 17.2,
       "topics": [
         "security"
       ]
@@ -1117,8 +1173,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T20:59:01.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 17.6,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 16.6,
       "topics": []
     },
     {
@@ -1131,8 +1187,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T13:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 17.6,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 16.6,
       "topics": []
     },
     {
@@ -1145,8 +1201,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T15:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 17.1,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 16.1,
       "topics": []
     },
     {
@@ -1159,8 +1215,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-17T06:18:16.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 16.9,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 15.9,
       "topics": []
     },
     {
@@ -1173,50 +1229,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-17T06:11:54.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 16.9,
-      "topics": []
-    },
-    {
-      "id": "9cb606bb391f8b4c",
-      "category": "ai",
-      "title": "An Nvidia insider-turned-VC on why robotics hasn’t hit its ChatGPT moment, yet",
-      "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, and safety standards still being rebuilt. This view runs counter to those who believe that robotics, powered by a general foundation model, is about to have […]",
-      "url": "https://techcrunch.com/video/a-nvidia-insider-turned-vc-on-why-robotics-hasnt-hit-its-chatgpt-moment-yet/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T16:30:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 16.4,
-      "topics": []
-    },
-    {
-      "id": "e4a132f470d05bcf",
-      "category": "ai",
-      "title": "Physical AI is more than robots, says the Nvidia veteran now investing in it",
-      "summary": "Amulya Vishwanath, who spent seven years leading product marketing for NVIDIA’s robotics platforms, says robotics is currently in its “Lego era,” with the basic building blocks like actuators, robotic hands, software, and safety standards still being rebuilt. This view runs counter to those who believe that robotics, powered by a general foundation model, is about to have […]",
-      "url": "https://techcrunch.com/podcast/physical-ai-is-more-than-robots-says-the-nvidia-veteran-now-investing-in-it/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T16:30:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 16.4,
-      "topics": []
-    },
-    {
-      "id": "4cd55ec3504f880a",
-      "category": "ai",
-      "title": "Elorian’s first AI model wants to reason with images, not just about them",
-      "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
-      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T16:01:37.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 16.3,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 15.9,
       "topics": []
     },
     {
@@ -1229,22 +1243,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T11:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 15.1,
-      "topics": []
-    },
-    {
-      "id": "5d1ec8f42965cd0e",
-      "category": "ai",
-      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-      "summary": "",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T20:34:01.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 14.5,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 14.1,
       "topics": []
     },
     {
@@ -1257,8 +1257,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T08:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 14.3,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 13.4,
       "topics": []
     },
     {
@@ -1271,36 +1271,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 12.3,
-      "topics": []
-    },
-    {
-      "id": "1b46101bc0e2d76d",
-      "category": "ai",
-      "title": "v0.7.2rc4",
-      "summary": "v0.7.2rc4",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2rc4",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-15T19:30:08.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 12.2,
-      "topics": []
-    },
-    {
-      "id": "c9ea33575656494e",
-      "category": "ai",
-      "title": "v0.7.2rc2",
-      "summary": "v0.7.2rc2",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2rc2",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-15T19:30:07.000Z",
-      "fetchedAt": "2026-10-17T18:44:37.488Z",
-      "score": 12.2,
+      "fetchedAt": "2026-10-17T22:34:35.767Z",
+      "score": 11.4,
       "topics": []
     }
   ]
