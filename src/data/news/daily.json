@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-16T22:58:04.614Z",
+  "generatedAt": "2026-10-17T04:53:57.105Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 39,
-  "failedSourceCount": 0,
+  "sourceCount": 38,
+  "failedSourceCount": 1,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 36,
-      "latestPublishedAt": "2026-10-16T19:33:48.000Z",
+      "entryCount": 32,
+      "latestPublishedAt": "2026-10-17T03:11:10.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,8 +40,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 136,
-      "latestPublishedAt": "2026-10-16T22:30:00.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-17T02:09:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-16T22:38:04.000Z",
+      "latestPublishedAt": "2026-10-17T04:21:18.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-16T22:37:55.000Z",
+      "latestPublishedAt": "2026-10-17T04:14:27.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-16T20:20:07.000Z",
+      "latestPublishedAt": "2026-10-16T20:59:01.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-16T20:14:39.000Z",
+      "latestPublishedAt": "2026-10-17T04:05:00.000Z",
       "selectedCount": 3,
       "libraryCount": 3
     },
@@ -197,7 +197,7 @@
       "channel": "feed",
       "entryCount": 52,
       "latestPublishedAt": "2026-10-16T08:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -300,8 +300,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-16T18:57:22.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-17T03:30:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -327,7 +327,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-16T00:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 3,
       "libraryCount": 8
     },
     {
@@ -365,8 +365,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-15T09:50:46.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-17T00:25:45.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -401,11 +401,12 @@
       "country": "International",
       "category": "ai",
       "type": "research",
-      "state": "ok",
+      "state": "unavailable",
       "channel": "feed",
-      "entryCount": 20,
-      "latestPublishedAt": "2026-10-15T17:09:08.000Z",
-      "selectedCount": 3,
+      "httpStatus": 429,
+      "entryCount": 0,
+      "latestPublishedAt": null,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -524,8 +525,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T16:30:46.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 33.4,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 31.9,
       "topics": [
         "training"
       ]
@@ -540,11 +541,27 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-16T13:02:29.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 31.5,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 30,
       "topics": [
         "hardware",
         "models"
+      ]
+    },
+    {
+      "id": "5f574e0d8111bd47",
+      "category": "ai",
+      "title": "v0.32.0rc3: [Bugfix] Fix NaN output of the Mamba2 chunk scan kernel on sm90 (#61718)",
+      "summary": "Signed-off-by: Vadim Gimpelson vadim.gimpelson@gmail.com Co-authored-by: Claude noreply@anthropic.com",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc3",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-17T00:25:45.000Z",
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 28.9,
+      "topics": [
+        "kernels"
       ]
     },
     {
@@ -557,8 +574,40 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 29.3,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 27.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "cd423ca96a73d4aa",
+      "category": "ai",
+      "title": "Hyper Optimizing Kimi K3 in vLLM: Moving Fast and Responsibly",
+      "summary": "How agent-assisted CuTe DSL optimizations accelerate Kimi K3 decode on NVIDIA GB300, and how scoped changes, correctness tests, and reproducible benchmarks help ship them responsibly.",
+      "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-16T00:00:00.000Z",
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 27.8,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "4b8f65b9cd03a748",
+      "category": "world",
+      "title": "Trial of German steakhouse heiress that sparked a huge spy scandal",
+      "summary": "For 15 months, a high-security courtroom in Hamburg has been hearing the case of Christina Block, accused of ordering the abduction of her children.",
+      "url": "https://www.bbc.co.uk/news/articles/cwvgdn3d656vo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T23:07:18.000Z",
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 27.6,
       "topics": [
         "security"
       ]
@@ -573,8 +622,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-16T18:33:13.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 27.9,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 26.4,
       "topics": [
         "security"
       ]
@@ -589,8 +638,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-16T18:26:08.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 27.9,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 26.4,
       "topics": [
         "security"
       ]
@@ -605,8 +654,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:00:01.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 27.8,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 26.3,
       "topics": [
         "models"
       ]
@@ -621,8 +670,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-16T15:53:58.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 27.2,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 25.8,
       "topics": [
         "security"
       ]
@@ -637,8 +686,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T15:17:25.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 25.6,
       "topics": [
         "security"
       ]
@@ -653,8 +702,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T14:24:29.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 26.9,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 25.4,
       "topics": []
     },
     {
@@ -667,8 +716,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-16T17:58:44.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 26.8,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 25.3,
       "topics": [
         "security"
       ]
@@ -683,8 +732,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-16T14:03:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 26.8,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 25.3,
       "topics": [
         "security"
       ]
@@ -699,8 +748,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T18:05:36.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 26.8,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 25.3,
       "topics": [
         "inference",
         "kernels",
@@ -719,8 +768,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T21:09:16.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 26.5,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 25.1,
       "topics": [
         "inference",
         "kernels",
@@ -739,11 +788,25 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T12:45:44.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 26.4,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 25,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "006cc52b01a73986",
+      "category": "technology",
+      "title": "APOD: 2026 October 17 – 3D 67P",
+      "summary": "APOD Science APOD APOD: 2026 October 17… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. 3D 67P Explanation: Put […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-17-3d-67p/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-17T04:05:00.000Z",
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 24.8,
+      "topics": []
     },
     {
       "id": "6f6c1118a3243a1a",
@@ -755,47 +818,10 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T01:44:47.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 25.7,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 24.2,
       "topics": [
         "training"
-      ]
-    },
-    {
-      "id": "acf252c6ae91c1ed",
-      "category": "ai",
-      "title": "Architecting for Hardware Diversity: Meta's End-to-End Co-Design for High-Performance AI Training on AMD GPUs",
-      "summary": "Meta deploys a heterogeneous fleet comprising NVIDIA GPUs, AMD GPUs, and proprietary MTIA accelerators to reduce costs and mitigate vendor lock-in. However, the extensive history of NVIDIA-specific optimizations hinders performance portability to other hardware. This paper presents our methods for optimizing alternative accelerators, using AMD Instinct MI350X versus NVIDIA B200 for recommendation model training as a case study. We propose three reusable principles. First, hardware-model co-design is essential: rath",
-      "url": "https://arxiv.org/abs/2610.22230v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-15T17:09:08.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 25.5,
-      "topics": [
-        "kernels",
-        "hardware",
-        "training"
-      ]
-    },
-    {
-      "id": "d4c29ce15dc8cb73",
-      "category": "ai",
-      "title": "Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing",
-      "summary": "Large Language Models (LLMs) have shown exceptional capabilities but rely heavily on centralized cloud GPU clusters, leading to high bandwidth costs, latency, and privacy issues. Edge computing offers a solution by deploying LLMs closer to users on edge servers, yet single edge servers often cannot meet LLMs' heavy computational demands. Collaborative Edge Computing (CEC) addresses this challenge by integrating resources of multiple geo-distributed heterogeneous edge servers, which jointly host small model shards a",
-      "url": "https://arxiv.org/abs/2610.22172v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-15T16:31:19.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 25.4,
-      "topics": [
-        "inference",
-        "hardware",
-        "models",
-        "security"
       ]
     },
     {
@@ -808,8 +834,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 23.8,
       "topics": [
         "inference",
         "hardware"
@@ -825,8 +851,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 23.8,
       "topics": [
         "inference"
       ]
@@ -841,12 +867,40 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 23.8,
       "topics": [
         "kernels",
         "training"
       ]
+    },
+    {
+      "id": "4d57f96b8207b2be",
+      "category": "world",
+      "title": "Brazil’s Amazon deforestation hits lowest level on record",
+      "summary": "Data show a 42 percent drop in forest clearance from a year earlier, giving Lula a boost before the election run-off.",
+      "url": "https://www.aljazeera.com/news/2026/10/17/brazils-amazon-deforestation-hits-lowest-level-on-record?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T02:49:21.000Z",
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "0d2f0c2d448f462f",
+      "category": "world",
+      "title": "Brazil sees record fall in Amazon deforestation as key election looms",
+      "summary": "The Amazon rainforest is a crucial buffer against climate change - but deforestation had expanded under former president Jair Bolsonaro.",
+      "url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T02:33:09.000Z",
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 23.4,
+      "topics": []
     },
     {
       "id": "8ad9baebed6ed95c",
@@ -858,8 +912,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T18:11:34.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 24.8,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 23.3,
+      "topics": []
+    },
+    {
+      "id": "cf382261c7376b20",
+      "category": "finance",
+      "title": "Anthropic offers Blackstone double-digit yield in chip-financing deal, FT reports",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/anthropic-offers-blackstone-double-digit-yield-in-chip-financing-deal-ft-reports-6467711",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T01:02:53.000Z",
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 23,
       "topics": []
     },
     {
@@ -872,8 +940,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T17:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 24.5,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 23,
       "topics": []
     },
     {
@@ -886,8 +954,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T20:14:39.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 22.8,
       "topics": []
     },
     {
@@ -900,8 +968,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 22.8,
       "topics": []
     },
     {
@@ -914,8 +982,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 22.8,
       "topics": []
     },
     {
@@ -928,8 +996,22 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "9688c723911f235c",
+      "category": "world",
+      "title": "Lula and Milei in the mirror",
+      "summary": "While in Brazil, President Luiz Inacio Lula da Silva’s chances of re-election are extremely slim despite what appears to be a situation of economic strength, in Argentina, President Javier Milei is still totally in the game as the economy stumbles on its way to a technical recession. Leer más",
+      "url": "https://www.batimes.com.ar/news/opinion-and-analysis/lula-and-milei-in-the-mirror.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T03:10:00.000Z",
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 22.6,
       "topics": []
     },
     {
@@ -942,8 +1024,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-16T19:05:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 24,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 22.5,
       "topics": [
         "inference"
       ]
@@ -958,8 +1040,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:01:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 22.3,
       "topics": [
         "models"
       ]
@@ -974,8 +1056,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-16T21:08:50.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 23.5,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 22.1,
       "topics": []
     },
     {
@@ -988,59 +1070,9 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-16T20:25:46.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 21.9,
       "topics": []
-    },
-    {
-      "id": "c1eb7a2fd9e36102",
-      "category": "technology",
-      "title": "Artemis II Heat Shield After Splashdown",
-      "summary": "Shortly after NASA’s Artemis II mission splashed down on April 10, 2026, U.S. Navy divers captured underwater imagery of the Orion spacecraft’s heat shield. In the months after, the agency measured whether the thermal protection system effectively safeguarded the crew and Orion systems as the spacecraft reentered Earth’s atmosphere. This rigorous analysis confirmed that the […]",
-      "url": "https://www.nasa.gov/image-article/artemis-ii-heat-shield-after-splashdown/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-16T16:28:01.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 23.4,
-      "topics": []
-    },
-    {
-      "id": "23b1f91866262559",
-      "category": "ai",
-      "title": "When the KV Cache Is Slower Than the GPU: Scaling Remote KV Tiers for Context-Parallel Prefill",
-      "summary": "Reusing the attention KV cache across requests is a standard way to cut prefill cost in long-context LLM serving, and production systems increasingly back the per-engine cache with a remote tier shared by every engine. We study such a tier in a disaggregated deployment of GLM-5.3, an FP8 mixture-of-experts model with multi-head latent attention (MLA), on 8xB300 nodes running prefill context parallelism (PCP8). Enabling the remote tier (LMCache with a Valkey store) left median time-to-first-token unchanged but raise",
-      "url": "https://arxiv.org/abs/2610.21500v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-15T08:37:22.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 23.4,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "e8d756c88f2ffe95",
-      "category": "ai",
-      "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
-      "summary": "",
-      "url": "https://huggingface.co/blog/meta-muse-spark-open",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 23.3,
-      "topics": [
-        "models"
-      ]
     },
     {
       "id": "588e2d29802c9ab8",
@@ -1052,8 +1084,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T23:39:11.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 23.2,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -1066,8 +1098,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T19:11:50.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 21.6,
       "topics": [
         "security"
       ]
@@ -1082,38 +1114,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T19:09:37.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 23,
-      "topics": []
-    },
-    {
-      "id": "9bfd9916a9f1a6d8",
-      "category": "world",
-      "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
-      "summary": "The BBC sees masked settlers attack Palestinians trying to harvest olives, amid a surge in similar incidents.",
-      "url": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T14:31:04.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 22.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "3ae10accf55b8c4d",
-      "category": "world",
-      "title": "How Iran messaging highlights cost of war ahead of US midterm elections",
-      "summary": "Through statements in English, Iranian officials are emphasising gas prices and issues with the US economy.",
-      "url": "https://www.aljazeera.com/news/2026/10/16/how-iran-messaging-highlights-cost-of-war-ahead-of-us-midterm-elections?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T18:21:43.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 21.6,
       "topics": []
     },
     {
@@ -1126,8 +1128,22 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T17:55:52.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 21.3,
+      "topics": []
+    },
+    {
+      "id": "dc630282f9cfc6b1",
+      "category": "technology",
+      "title": "OpenAI models hacked a crypto wallet and breached more websites",
+      "summary": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
+      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T20:59:01.000Z",
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 21,
       "topics": []
     },
     {
@@ -1140,36 +1156,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T13:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 22.5,
-      "topics": []
-    },
-    {
-      "id": "495ce71d8379a828",
-      "category": "world",
-      "title": "Ethiopia's Abiy Ahmed appoints interim Tigray government",
-      "summary": "Abiy Ahmed's office said there would be elections held in Tigray within 6 months. The move comes after an escalation in fighting between federal forces and a rebel alliance.",
-      "url": "https://www.dw.com/en/ethiopia-s-abiy-ahmed-appoints-interim-tigray-government/a-79683519?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T16:19:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 22.3,
-      "topics": []
-    },
-    {
-      "id": "8162e960f997fe58",
-      "category": "finance",
-      "title": "US tells election officials to be on guard against AI-powered tricks ahead of midterms",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/us-tells-election-officials-be-guard-against-ai-powered-tricks-ahead-midterms-6466731",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T15:06:55.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 22,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 21,
       "topics": []
     },
     {
@@ -1182,8 +1170,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T15:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 22,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 20.5,
       "topics": []
     },
     {
@@ -1196,8 +1184,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T14:40:35.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 21.9,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 20.4,
       "topics": []
     },
     {
@@ -1210,8 +1198,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:30:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 21.4,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 19.9,
       "topics": []
     },
     {
@@ -1224,22 +1212,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:30:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 21.4,
-      "topics": []
-    },
-    {
-      "id": "92b908539698cd67",
-      "category": "world",
-      "title": "Watch: Did Tesla really just unveil a flying car?",
-      "summary": "Tesla CEO Elon Musk showcased the vehicle at a facility owned by his SpaceX company, which helped develop the model.",
-      "url": "https://www.bbc.co.uk/news/videos/ckly4mj1g3n9o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T12:32:31.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 21.4,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 19.9,
       "topics": []
     },
     {
@@ -1252,8 +1226,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:01:37.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 21.3,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -1266,9 +1240,26 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T14:19:22.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 20.8,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 19.4,
       "topics": []
+    },
+    {
+      "id": "8f722715c3fc4449",
+      "category": "ai",
+      "title": "v0.32.0rc2",
+      "summary": "[CI] Pin DeepSeek-V4.1-Flash-NVFP4 eval to its FP8-Engram revision (#…",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc2",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-15T09:50:46.000Z",
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 19.2,
+      "topics": [
+        "models",
+        "training"
+      ]
     },
     {
       "id": "30769b215ad7324d",
@@ -1280,8 +1271,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T11:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 20,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 18.5,
       "topics": []
     },
     {
@@ -1294,8 +1285,22 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T05:03:15.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 19.5,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 18,
+      "topics": []
+    },
+    {
+      "id": "5d1ec8f42965cd0e",
+      "category": "ai",
+      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+      "summary": "",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-15T20:34:01.000Z",
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -1308,22 +1313,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T08:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 19.3,
-      "topics": []
-    },
-    {
-      "id": "5a7604f1b1199ae9",
-      "category": "technology",
-      "title": "“thegentlemanpervert” producing AI CSAM is a NJ prosecutor, say cops",
-      "summary": "Discord user flagged AI CSAM, triggering arrest of New Jersey deputy AG.",
-      "url": "https://arstechnica.com/tech-policy/2026/10/thegentlemanpervert-producing-ai-csam-is-a-nj-prosecutor-say-cops/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T20:20:07.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 18.3,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 17.8,
       "topics": []
     },
     {
@@ -1336,8 +1327,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 17.8,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 16.3,
       "topics": []
     },
     {
@@ -1350,8 +1341,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T17:11:12.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 17.6,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 16.1,
       "topics": []
     },
     {
@@ -1364,8 +1355,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 17.3,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 15.8,
       "topics": []
     },
     {
@@ -1378,8 +1369,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T10:16:27.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 16.8,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 15.3,
       "topics": []
     },
     {
@@ -1392,36 +1383,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T05:30:57.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 15.6,
-      "topics": []
-    },
-    {
-      "id": "84f8f3219be22f60",
-      "category": "finance",
-      "title": "Speech by Board Member KOEDA in Kumamoto (Economic Activity, Prices, and Monetary Policy in Japan)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko261015a.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-15T01:30:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 15.6,
-      "topics": []
-    },
-    {
-      "id": "559a33fc5bb89a30",
-      "category": "finance",
-      "title": "Summary of the \"Meeting on Market Operations\" (October 2026)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/paym/market/mkt261015a.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-15T01:00:00.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 15.5,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 14.2,
       "topics": []
     },
     {
@@ -1434,8 +1397,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T09:52:41.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 13.7,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 12.2,
       "topics": []
     },
     {
@@ -1448,8 +1411,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-15T08:27:59.000Z",
-      "fetchedAt": "2026-10-16T22:58:04.614Z",
-      "score": 13.4,
+      "fetchedAt": "2026-10-17T04:53:57.105Z",
+      "score": 11.9,
       "topics": []
     }
   ]
