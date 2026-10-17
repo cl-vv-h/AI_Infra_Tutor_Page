@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-17T04:53:57.105Z",
+  "generatedAt": "2026-10-17T12:20:37.499Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 38,
-  "failedSourceCount": 1,
+  "sourceCount": 39,
+  "failedSourceCount": 0,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 32,
-      "latestPublishedAt": "2026-10-17T03:11:10.000Z",
+      "entryCount": 24,
+      "latestPublishedAt": "2026-10-17T12:11:58.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 49,
-      "latestPublishedAt": "2026-10-16T12:32:31.000Z",
+      "latestPublishedAt": "2026-10-17T06:18:16.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,9 +39,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 136,
-      "latestPublishedAt": "2026-10-17T02:09:00.000Z",
-      "selectedCount": 2,
+      "entryCount": 137,
+      "latestPublishedAt": "2026-10-17T11:34:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-17T04:21:18.000Z",
+      "latestPublishedAt": "2026-10-17T12:10:56.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-17T04:14:27.000Z",
+      "latestPublishedAt": "2026-10-17T09:14:49.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -157,8 +157,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 15,
-      "latestPublishedAt": "2026-10-14T00:00:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-17T05:00:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -184,7 +184,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-16T11:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -195,7 +195,7 @@
       "type": "institution",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 52,
+      "entryCount": 51,
       "latestPublishedAt": "2026-10-16T08:00:00.000Z",
       "selectedCount": 1,
       "libraryCount": 0
@@ -249,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-10-16T12:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-16T20:25:46.000Z",
+      "latestPublishedAt": "2026-10-17T11:47:30.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,7 +274,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-16T15:57:27.000Z",
+      "latestPublishedAt": "2026-10-17T11:00:00.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-16T19:01:28.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-17T09:50:28.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-17T03:30:00.000Z",
+      "latestPublishedAt": "2026-10-17T11:18:26.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -314,7 +314,7 @@
       "channel": "feed",
       "entryCount": 880,
       "latestPublishedAt": "2026-10-16T01:44:47.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -366,7 +366,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-17T00:25:45.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -401,12 +401,11 @@
       "country": "International",
       "category": "ai",
       "type": "research",
-      "state": "unavailable",
+      "state": "ok",
       "channel": "feed",
-      "httpStatus": 429,
-      "entryCount": 0,
-      "latestPublishedAt": null,
-      "selectedCount": 0,
+      "entryCount": 20,
+      "latestPublishedAt": "2026-10-15T17:09:08.000Z",
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -525,10 +524,26 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T16:30:46.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 31.9,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 30,
       "topics": [
         "training"
+      ]
+    },
+    {
+      "id": "4c01002422d1869c",
+      "category": "world",
+      "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
+      "summary": "The US president temporarily ends many restrictions on Moscow recently passed by Congress over \"national security\" concerns.",
+      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T11:56:06.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 28.9,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -541,11 +556,59 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-16T13:02:29.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 30,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 28.2,
       "topics": [
         "hardware",
         "models"
+      ]
+    },
+    {
+      "id": "21bfbfe35bf727af",
+      "category": "world",
+      "title": "Rafael Grossi faces hurdle as two major powers oppose his UN bid",
+      "summary": "Race to become next United Nations secretary-general in disarray; Grossi, Argentine head of the UN nuclear watchdog, among seven candidates receiving a veto in the latest Security Council poll, complicating his path to the top job. Leer más",
+      "url": "https://www.batimes.com.ar/news/world/rafael-grossi-faces-hurdle-as-two-major-powers-oppose-his-un-bid.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T11:18:26.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 27.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "9bf9dcc10e9ab1f8",
+      "category": "world",
+      "title": "All seven candidates to lead UN receive Security Council veto in informal poll",
+      "summary": "All seven candidates to lead the United Nations received a vote of \"discourage,\" effectively a veto, from a permanent UN Security Council member in the latest informal poll, a diplomat said Friday.",
+      "url": "https://www.africanews.com/2026/10/17/all-seven-candidates-to-lead-un-receive-security-council-veto-in-informal-poll/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T09:50:28.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 27.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "939b21049c783511",
+      "category": "world",
+      "title": "Yemen's Houthis claim responsibility for fresh missile strike on Aden airport",
+      "summary": "Yemen's Iran-aligned Houthi group claimed responsibility after two missiles struck Aden International Airport on Friday, saying they had targeted a weapons depot as well as a military command headquarters. The Aden Security Department said a Yemenia Airways flight bound for Cairo had been preparing for takeoff when the attack took place.",
+      "url": "https://www.france24.com/en/middle-east/20261017-yemen-s-houthis-claim-responsibility-for-fresh-missile-strike-on-aden-airport",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T06:00:32.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 27.4,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -558,8 +621,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-17T00:25:45.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 28.9,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 27,
       "topics": [
         "kernels"
       ]
@@ -574,8 +637,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 27.8,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 25.9,
       "topics": [
         "security"
       ]
@@ -590,8 +653,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 27.8,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 25.9,
       "topics": [
         "inference"
       ]
@@ -606,8 +669,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T23:07:18.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 27.6,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 25.7,
       "topics": [
         "security"
       ]
@@ -622,24 +685,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-16T18:33:13.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 26.4,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "9b913ae06cd2b067",
-      "category": "world",
-      "title": "UK PM adviser’s wife expresses ‘support’ for Palestine Action",
-      "summary": "Police reviewing social media post by writer Sarah Helm, wife of Burnham's National Security Adviser Jonathan Powell.",
-      "url": "https://www.aljazeera.com/news/2026/10/16/uk-pm-advisers-wife-expresses-support-for-palestine-action?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T18:26:08.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 26.4,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 24.6,
       "topics": [
         "security"
       ]
@@ -654,27 +701,25 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:00:01.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 26.3,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 24.4,
       "topics": [
         "models"
       ]
     },
     {
-      "id": "7d29199e62d68d98",
+      "id": "00405c80ca5e1a11",
       "category": "world",
-      "title": "India detains top 'cockroach' leader as hundreds protest in capital",
-      "summary": "Indian police detained Cockroach Janta Party (CJP) leader Abhijeet Dipke on Friday ahead of fresh protests demanding the removal of the country's election chief, the youth-led movement said in a social media post. Dipke, 31, was detained shortly before a rally called by the online movement in the heart of New Delhi where hundreds of protesters marched on Friday evening, despite heavy security measures. FRANCE 24's Navodita Kumari reports from New Delhi, India.",
-      "url": "https://www.france24.com/en/video/20261016-india-detains-top-cockroach-leader-as-hundreds-protest-in-capital",
+      "title": "France faces day of cost-of-living protests",
+      "summary": "French authorities detained dozens on Saturday at the start of nationwide protests against the cost of living, in what is likely to be a key indicator of the social climate heading toward elections to replace President Emmanuel Macron. France 24's Antonia Kerrigan tells us more.",
+      "url": "https://www.france24.com/en/video/20261017-france-faces-day-of-cost-of-living-protests",
       "source": "France 24",
       "sourceCountry": "France",
       "sourceType": "news",
-      "publishedAt": "2026-10-16T15:53:58.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 25.8,
-      "topics": [
-        "security"
-      ]
+      "publishedAt": "2026-10-17T11:47:30.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 23.9,
+      "topics": []
     },
     {
       "id": "9f9fcb2bc70867f5",
@@ -686,8 +731,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T15:17:25.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 23.7,
       "topics": [
         "security"
       ]
@@ -702,9 +747,39 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T14:24:29.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 25.4,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 23.5,
       "topics": []
+    },
+    {
+      "id": "7afe1d4af4c47be5",
+      "category": "world",
+      "title": "Sudan’s army claims dozens of RSF fighters killed in Nyala attack",
+      "summary": "Rapid Support Forces accuse army of killing 30 civilians in attack on Nyala's busy livestock market.",
+      "url": "https://www.aljazeera.com/news/2026/10/17/2550?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T09:44:47.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "b0892323e435747c",
+      "category": "world",
+      "title": "The chatbot murder guide: AI’s struggle between privacy, reporting violence",
+      "summary": "Experts say balancing the need to govern AI for public safety with user privacy is 'extraordinarily difficult'.",
+      "url": "https://www.aljazeera.com/news/2026/10/17/the-chatbot-murder-guide-ais-struggle-between-privacy-reporting-violence?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T05:50:37.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 23.4,
+      "topics": [
+        "security"
+      ]
     },
     {
       "id": "7517d1518ce14b94",
@@ -716,24 +791,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-16T17:58:44.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 25.3,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "74e068340e49bc34",
-      "category": "world",
-      "title": "Houthi attacks on strategic Saudi assets threaten Riyadh's regional leadership and economic ambitions",
-      "summary": "As Yemen's Iran-backed Houthis continue to target Saudi Arabia, Riyadh's vulnerability threatens its claim on regional and religious leadership — as well as its standing as an economic powerhouse.",
-      "url": "https://www.dw.com/en/houthi-attacks-on-strategic-saudi-assets-threaten-riyadh-s-regional-leadership-and-economic-ambitions/a-79680200?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T14:03:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 23.4,
       "topics": [
         "security"
       ]
@@ -748,8 +807,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T18:05:36.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 23.4,
       "topics": [
         "inference",
         "kernels",
@@ -757,6 +816,34 @@
         "models",
         "training"
       ]
+    },
+    {
+      "id": "3065ed17b137a271",
+      "category": "world",
+      "title": "IMF urges support for poorer nations facing high inflation, war spillovers",
+      "summary": "Low-income countries spend up to 14 percent of their revenue on debt repayments, IMF chief says.",
+      "url": "https://www.aljazeera.com/economy/2026/10/17/war-spillovers-debt-threaten-low-income-nations-imf-chief-warns?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T09:31:47.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 23.3,
+      "topics": []
+    },
+    {
+      "id": "1cddf84ba299a25a",
+      "category": "finance",
+      "title": "AI rapidly improving, could vastly boost US GDP, Anthropic's Clark tells policymakers",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/ai-rapidly-improving-could-vastly-boost-us-gdp-anthropics-clark-tells-policymakers-6468116",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T09:14:49.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 23.2,
+      "topics": []
     },
     {
       "id": "01d507bf96937ed1",
@@ -768,14 +855,30 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T21:09:16.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 25.1,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 23.2,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models",
         "training"
+      ]
+    },
+    {
+      "id": "86508844bf7e9ab9",
+      "category": "world",
+      "title": "Iran denies being behind Houthi attacks as Aden airport hit",
+      "summary": "Iran has denied any involvement in an escalation of attacks by Houthi rebels on Saudi targets. The international airport in Yemen’s interim capital Aden was struck by two missiles late on Friday, the second such incident in less than two weeks.",
+      "url": "https://www.africanews.com/2026/10/17/iran-denies-being-behind-houthi-attacks-as-aden-airport-hit/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T08:51:59.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 23.1,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -788,8 +891,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T12:45:44.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 25,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 23.1,
       "topics": [
         "security"
       ]
@@ -804,9 +907,39 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-17T04:05:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 24.8,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 22.9,
       "topics": []
+    },
+    {
+      "id": "a402af6025aa9132",
+      "category": "world",
+      "title": "India news: 'Cockroach' party founder Abhijeet Dipke under preventive arrest",
+      "summary": "CJP's Abhijeet Dipke is due to appear before a Special Executive Magistrate later in the day. Dipke was detained ahead of a demonstration in New Delhi on Friday. DW has more.",
+      "url": "https://www.dw.com/en/india-news-cockroach-party-founder-abhijeet-dipke-under-preventive-arrest/live-79685143?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T06:21:00.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "565ae74004ae88f9",
+      "category": "world",
+      "title": "Actress Selma Blair says she 'did not intend to harm anyone' in plane altercation",
+      "summary": "A publicist for the actress said the incident stemmed from a \"medical emergency\" and said she has a neurological disorder that can cause out-of-control responses.",
+      "url": "https://www.bbc.co.uk/news/articles/cwly3zd1r45ro",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T01:55:45.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 22.4,
+      "topics": [
+        "security"
+      ]
     },
     {
       "id": "6f6c1118a3243a1a",
@@ -818,10 +951,61 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T01:44:47.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 24.2,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 22.4,
       "topics": [
         "training"
+      ]
+    },
+    {
+      "id": "3b1241da90d34d4b",
+      "category": "finance",
+      "title": "Christine Lagarde: IMFC Statement",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-17T05:00:00.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 22.2,
+      "topics": []
+    },
+    {
+      "id": "acf252c6ae91c1ed",
+      "category": "ai",
+      "title": "Architecting for Hardware Diversity: Meta's End-to-End Co-Design for High-Performance AI Training on AMD GPUs",
+      "summary": "Meta deploys a heterogeneous fleet comprising NVIDIA GPUs, AMD GPUs, and proprietary MTIA accelerators to reduce costs and mitigate vendor lock-in. However, the extensive history of NVIDIA-specific optimizations hinders performance portability to other hardware. This paper presents our methods for optimizing alternative accelerators, using AMD Instinct MI350X versus NVIDIA B200 for recommendation model training as a case study. We propose three reusable principles. First, hardware-model co-design is essential: rath",
+      "url": "https://arxiv.org/abs/2610.22230v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-15T17:09:08.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 22.2,
+      "topics": [
+        "kernels",
+        "hardware",
+        "training"
+      ]
+    },
+    {
+      "id": "d4c29ce15dc8cb73",
+      "category": "ai",
+      "title": "Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing",
+      "summary": "Large Language Models (LLMs) have shown exceptional capabilities but rely heavily on centralized cloud GPU clusters, leading to high bandwidth costs, latency, and privacy issues. Edge computing offers a solution by deploying LLMs closer to users on edge servers, yet single edge servers often cannot meet LLMs' heavy computational demands. Collaborative Edge Computing (CEC) addresses this challenge by integrating resources of multiple geo-distributed heterogeneous edge servers, which jointly host small model shards a",
+      "url": "https://arxiv.org/abs/2610.22172v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-15T16:31:19.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 22,
+      "topics": [
+        "inference",
+        "hardware",
+        "models",
+        "security"
       ]
     },
     {
@@ -834,8 +1018,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 21.9,
       "topics": [
         "inference",
         "hardware"
@@ -851,8 +1035,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 21.9,
       "topics": [
         "inference"
       ]
@@ -867,40 +1051,12 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 21.9,
       "topics": [
         "kernels",
         "training"
       ]
-    },
-    {
-      "id": "4d57f96b8207b2be",
-      "category": "world",
-      "title": "Brazil’s Amazon deforestation hits lowest level on record",
-      "summary": "Data show a 42 percent drop in forest clearance from a year earlier, giving Lula a boost before the election run-off.",
-      "url": "https://www.aljazeera.com/news/2026/10/17/brazils-amazon-deforestation-hits-lowest-level-on-record?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T02:49:21.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 23.5,
-      "topics": []
-    },
-    {
-      "id": "0d2f0c2d448f462f",
-      "category": "world",
-      "title": "Brazil sees record fall in Amazon deforestation as key election looms",
-      "summary": "The Amazon rainforest is a crucial buffer against climate change - but deforestation had expanded under former president Jair Bolsonaro.",
-      "url": "https://www.bbc.co.uk/news/articles/cqe8rzg6zl00o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T02:33:09.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 23.4,
-      "topics": []
     },
     {
       "id": "8ad9baebed6ed95c",
@@ -912,22 +1068,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T18:11:34.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 23.3,
-      "topics": []
-    },
-    {
-      "id": "cf382261c7376b20",
-      "category": "finance",
-      "title": "Anthropic offers Blackstone double-digit yield in chip-financing deal, FT reports",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/anthropic-offers-blackstone-double-digit-yield-in-chip-financing-deal-ft-reports-6467711",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T01:02:53.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 23,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 21.5,
       "topics": []
     },
     {
@@ -940,8 +1082,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T17:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 23,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 21.2,
       "topics": []
     },
     {
@@ -954,8 +1096,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T20:14:39.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 21,
       "topics": []
     },
     {
@@ -968,22 +1110,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 22.8,
-      "topics": []
-    },
-    {
-      "id": "a9c1ba2ce733cbee",
-      "category": "world",
-      "title": "WHO scales up Ebola readiness in 22 countries across three continents",
-      "summary": "The World Health Organization (WHO) is strengthening Ebola preparedness amid conflict and displacement affecting millions of lives in a region that spans parts of Africa, Asia and Europe.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168613",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 20.9,
       "topics": []
     },
     {
@@ -996,39 +1124,9 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 20.9,
       "topics": []
-    },
-    {
-      "id": "9688c723911f235c",
-      "category": "world",
-      "title": "Lula and Milei in the mirror",
-      "summary": "While in Brazil, President Luiz Inacio Lula da Silva’s chances of re-election are extremely slim despite what appears to be a situation of economic strength, in Argentina, President Javier Milei is still totally in the game as the economy stumbles on its way to a technical recession. Leer más",
-      "url": "https://www.batimes.com.ar/news/opinion-and-analysis/lula-and-milei-in-the-mirror.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T03:10:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 22.6,
-      "topics": []
-    },
-    {
-      "id": "e367a7a0eb67dac9",
-      "category": "world",
-      "title": "White House press secretary Zacharia exiting role after short tenure",
-      "summary": "Zacharia, having served only five days in the role, is now the shortest-serving press secretary in White House history. Her departure follows a rocky debut at the podium and controversy surrounding her background.",
-      "url": "https://www.dw.com/en/white-house-press-secretary-zacharia-exiting-role-after-short-tenure/a-79684341?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T19:05:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 22.5,
-      "topics": [
-        "inference"
-      ]
     },
     {
       "id": "3098100586bb59dd",
@@ -1040,39 +1138,11 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:01:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 22.3,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 20.4,
       "topics": [
         "models"
       ]
-    },
-    {
-      "id": "c8b9c6646b012282",
-      "category": "world",
-      "title": "Meta employees say Lula’s accounts restricted in Brazil election: Report",
-      "summary": "The messages, reported by a Brazilian daily, say the platform recommended Bolsonaro's profile and his WhatsApp channel.",
-      "url": "https://www.aljazeera.com/economy/2026/10/16/meta-employees-say-lulas-accounts-restricted-in-brazil-election-report?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T21:08:50.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 22.1,
-      "topics": []
-    },
-    {
-      "id": "20d311776de93d2a",
-      "category": "world",
-      "title": "Zelensky turns to Europe for backing as ties with Trump deteriorate",
-      "summary": "Ukrainian President Volodymyr Zelensky turned to his European allies on Friday, asking Brussels for an additional €70 billion to fund the war against Russia next year. Zelensky's relationship with US President Donald Trump deteriorated after the US eased sanctions on Moscow as part of a diesel-supply deal.",
-      "url": "https://www.france24.com/en/europe/20261016-zelensky-turns-to-europe-for-backing-as-ties-with-trump-deteriorate",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T20:25:46.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 21.9,
-      "topics": []
     },
     {
       "id": "588e2d29802c9ab8",
@@ -1084,8 +1154,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T23:39:11.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 21.7,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -1098,25 +1168,11 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T19:11:50.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 21.6,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 19.7,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "595f83b7dba1db48",
-      "category": "world",
-      "title": "What we learned from heated US midterm Senate debates",
-      "summary": "As the 3 November election approaches and both parties fight for control of Congress, some clear themes have emerged.",
-      "url": "https://www.bbc.co.uk/news/articles/cqly03y3zg7lo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T19:09:37.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 21.6,
-      "topics": []
     },
     {
       "id": "5c1e16a2e2659902",
@@ -1128,8 +1184,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T17:55:52.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 21.3,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 19.4,
       "topics": []
     },
     {
@@ -1142,8 +1198,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T20:59:01.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 21,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 19.2,
       "topics": []
     },
     {
@@ -1156,8 +1212,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T13:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 21,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 19.2,
       "topics": []
     },
     {
@@ -1170,8 +1226,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T15:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 20.5,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 18.7,
       "topics": []
     },
     {
@@ -1184,8 +1240,50 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T14:40:35.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 20.4,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 18.6,
+      "topics": []
+    },
+    {
+      "id": "34c691cef10b8ddf",
+      "category": "finance",
+      "title": "Call for more food funding due to high living cost",
+      "summary": "Deputy Louise Doublet does not think the cost of living was considered in the ending of a trial.",
+      "url": "https://www.bbc.co.uk/news/articles/cqde8zk6d916o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T06:18:16.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 18.5,
+      "topics": []
+    },
+    {
+      "id": "a69c3ace3d385143",
+      "category": "finance",
+      "title": "Charity reflects on changing needs over 25 years",
+      "summary": "Help a Guernsey Child says it has provided in excess of £1.2m worth of essential support.",
+      "url": "https://www.bbc.co.uk/news/articles/c615jnxv7n45o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T06:11:54.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 18.5,
+      "topics": []
+    },
+    {
+      "id": "fd78ac3b21c3f062",
+      "category": "finance",
+      "title": "Nightclubs are disappearing - and it's affecting young people",
+      "summary": "One young person said with no nightlife in their town they cannot \"let loose and mess around\".",
+      "url": "https://www.bbc.co.uk/news/articles/cm5yngn0pl2ro",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T06:01:55.000Z",
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 18.4,
       "topics": []
     },
     {
@@ -1198,8 +1296,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:30:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 19.9,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 18,
       "topics": []
     },
     {
@@ -1212,8 +1310,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:30:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 19.9,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 18,
       "topics": []
     },
     {
@@ -1226,8 +1324,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T16:01:37.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 19.8,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -1240,26 +1338,9 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T14:19:22.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 19.4,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 17.5,
       "topics": []
-    },
-    {
-      "id": "8f722715c3fc4449",
-      "category": "ai",
-      "title": "v0.32.0rc2",
-      "summary": "[CI] Pin DeepSeek-V4.1-Flash-NVFP4 eval to its FP8-Engram revision (#…",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc2",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-15T09:50:46.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 19.2,
-      "topics": [
-        "models",
-        "training"
-      ]
     },
     {
       "id": "30769b215ad7324d",
@@ -1271,36 +1352,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T11:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 18.5,
-      "topics": []
-    },
-    {
-      "id": "5f27bb9ed7cb03a4",
-      "category": "finance",
-      "title": "'TV and cheap booze' blamed for landlord quitting",
-      "summary": "Lincolnshire has lost 27% of its pubs and bars since 2009 and some are calling on the government to act against cheap supermarket booze.",
-      "url": "https://www.bbc.co.uk/news/articles/c6lyk77jq9d2o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T05:03:15.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 18,
-      "topics": []
-    },
-    {
-      "id": "5d1ec8f42965cd0e",
-      "category": "ai",
-      "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-      "summary": "",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-15T20:34:01.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 17.9,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1313,8 +1366,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T08:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 17.8,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 15.9,
       "topics": []
     },
     {
@@ -1327,8 +1380,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 16.3,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 14.4,
       "topics": []
     },
     {
@@ -1341,8 +1394,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T17:11:12.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 16.1,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 14.2,
       "topics": []
     },
     {
@@ -1355,64 +1408,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 15.8,
-      "topics": []
-    },
-    {
-      "id": "0c237c55b74b3bcf",
-      "category": "finance",
-      "title": "Banks expect to be hit with higher taxes in Budget",
-      "summary": "Senior banking executives have told the BBC they expect to be \"on the menu\" in the chancellor's Budget tax later this month.",
-      "url": "https://www.bbc.co.uk/news/articles/c32l4k2xdvrzo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T10:16:27.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 15.3,
-      "topics": []
-    },
-    {
-      "id": "1374b856e25ec808",
-      "category": "finance",
-      "title": "Fuel costs squeezing margins for some businesses",
-      "summary": "Diesel recently topped £2 per litre and there is concern that a duty freeze will not go far enough.",
-      "url": "https://www.bbc.co.uk/news/articles/c9rky27ljrxno",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T05:30:57.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 14.2,
-      "topics": []
-    },
-    {
-      "id": "827d639cad6c963c",
-      "category": "finance",
-      "title": "David Roberts CV and questionnaire for the Treasury Select Committee",
-      "summary": "Published for the Treasury Select Committee",
-      "url": "https://www.bankofengland.co.uk/news/2026/october/david-roberts-tsc-reappointment",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-15T09:52:41.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 12.2,
-      "topics": []
-    },
-    {
-      "id": "76bb0f9430c63aeb",
-      "category": "finance",
-      "title": "Minutes of the SONIA Stakeholder Advisory Group - 25 September 2026",
-      "summary": "The SONIA Stakeholder Advisory Group supports the Bank’s administration of SONIA by providing advice and technical input to the Bank and the SONIA Oversight Committee",
-      "url": "https://www.bankofengland.co.uk/minutes/2026/september/sonia-stakeholder-advisory-group-25-september-2026",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-15T08:27:59.000Z",
-      "fetchedAt": "2026-10-17T04:53:57.105Z",
-      "score": 11.9,
+      "fetchedAt": "2026-10-17T12:20:37.499Z",
+      "score": 13.9,
       "topics": []
     }
   ]
