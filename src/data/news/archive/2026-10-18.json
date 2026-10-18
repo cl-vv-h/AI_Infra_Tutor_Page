@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-18T18:50:06.552Z",
+  "generatedAt": "2026-10-18T22:32:43.660Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 38,
-  "failedSourceCount": 1,
+  "sourceCount": 39,
+  "failedSourceCount": 0,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 29,
-      "latestPublishedAt": "2026-10-18T15:46:10.000Z",
-      "selectedCount": 3,
+      "entryCount": 28,
+      "latestPublishedAt": "2026-10-18T22:10:45.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 136,
-      "latestPublishedAt": "2026-10-18T16:34:00.000Z",
+      "latestPublishedAt": "2026-10-18T22:04:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-18T18:44:30.000Z",
+      "latestPublishedAt": "2026-10-18T21:53:13.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 11,
-      "latestPublishedAt": "2026-10-18T18:18:33.000Z",
+      "latestPublishedAt": "2026-10-18T21:48:12.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-18T16:30:00.000Z",
+      "latestPublishedAt": "2026-10-18T20:37:40.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -145,7 +145,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-18T04:05:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 3
     },
     {
@@ -248,8 +248,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 30,
-      "latestPublishedAt": "2026-10-17T12:00:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-18T12:00:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -258,11 +258,11 @@
       "country": "France",
       "category": "world",
       "type": "news",
-      "state": "invalid",
+      "state": "ok",
       "channel": "feed",
-      "entryCount": 0,
-      "latestPublishedAt": null,
-      "selectedCount": 0,
+      "entryCount": 24,
+      "latestPublishedAt": "2026-10-18T22:16:51.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -274,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-18T18:38:49.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-18T21:00:11.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -288,7 +288,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-18T15:56:57.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -301,7 +301,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-18T12:15:39.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -524,8 +524,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-18T10:23:45.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 31.9,
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 31,
       "topics": [
         "inference",
         "kernels",
@@ -536,20 +536,82 @@
       ]
     },
     {
+      "id": "978e0009dac5bb3a",
+      "category": "world",
+      "title": "‘Anger and shame’: Macron denounces France’s nationwide rioting, looting",
+      "summary": "President Macron promises to increase security, but stops short of announcing a state of emergency or curfew.",
+      "url": "https://www.aljazeera.com/news/2026/10/18/macron-denounces-frances-nationwide-rioting-looting?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T20:19:22.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 28.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "fabf96ba5fba86a5",
+      "category": "world",
+      "title": "REPLAY: French President Emmanuel Macron addresses the nation after unrest",
+      "summary": "French President Emmanuel Macron on Sunday vowed there would be \"full transparency\" over the response by security forces to protests that turned violent this weekend, after criticism that police preparations had been inadequate.",
+      "url": "https://www.france24.com/en/video/20261018-replay-french-president-emmanuel-macron-addresses-the-nation-after-unrest",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T18:33:34.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 28,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "133e8685d3f62655",
       "category": "world",
       "title": "Germany news: Police probe security incident at Leipzig/Halle airport",
-      "summary": "A fence breach at the Leipzig/Halle airport has triggered a major police operation. And, Christian Social Union leader Markus Söder calls for a \"firewall\" against leftists at a conservative youth conference. Follow DW.",
+      "summary": "A fence breach at the Leipzig/Halle airport has triggered a major police operation. And, Christian Social Union leader Markus Söder calls for a \"firewall\" against leftists at a conservative youth conference.",
       "url": "https://www.dw.com/en/germany-news-police-probe-security-incident-at-leipzig-halle-airport/live-79686913?maca=en-rss-en-all-1573-rdf",
       "source": "DW",
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-18T08:12:00.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 26.3,
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 25.4,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "1bd625e20ecf6f51",
+      "category": "world",
+      "title": "Canadian military base fire kills at least four, injures dozens",
+      "summary": "Four Canadian service members were killed and 39 people hospitalised after a fire broke out during military training at a base in Alberta on Saturday, officials said. Premier Danielle Smith said Sunday that at least 19 patients were in critical condition, with some suffering severe burns requiring prolonged intensive treatment.",
+      "url": "https://www.france24.com/en/americas/20261018-canada-military-base-fire-four-dead-39-hospitalised",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T22:16:51.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 24.9,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "ea868ac362edd39f",
+      "category": "world",
+      "title": "Trump defends Russia sanctions relief, accuses Zelensky of rejecting peace",
+      "summary": "US President Donald Trump on Sunday accused Ukrainian President Volodymyr Zelensky of prolonging the war with Russia, claiming Kyiv had little interest in peace. Trump said negotiations to end the four-year conflict were making “great progress” but alleged Zelensky was reluctant to reach a deal because of European financial support.",
+      "url": "https://www.france24.com/en/europe/20261018-ukraine-zelensky-war-trump-peace-russia-sanctions",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T21:59:34.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 23.9,
+      "topics": []
     },
     {
       "id": "4c01002422d1869c",
@@ -561,11 +623,39 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-18T01:10:25.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 24.6,
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 23.7,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "2d381da66831b6e3",
+      "category": "world",
+      "title": "Clarence Seedorf calls out genocide in first Corinthians press conference",
+      "summary": "Clarence Seedorf says football must be kept in perspective while genocides and conflicts continue around the world.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/clarence-seedorf-calls-out-genocide-in-first-corinthians-press-conference?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T19:12:30.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "e76071bdfcf73c17",
+      "category": "world",
+      "title": "Israel: Trump endorses Netanyahu ahead of elections",
+      "summary": "The US president said he supports Israel's current prime minister in the country's elections on October 27. But polls say Netanyahu and his far-right partners currently lack the majority to secure a new term.",
+      "url": "https://www.dw.com/en/israel-trump-endorses-netanyahu-ahead-of-elections/a-79693698?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T19:06:00.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 23.1,
+      "topics": []
     },
     {
       "id": "43e135973a141c5e",
@@ -577,22 +667,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-18T16:36:26.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 23.4,
-      "topics": []
-    },
-    {
-      "id": "725ed9bd58fa2a8d",
-      "category": "world",
-      "title": "Sudan army accused of drone strike on livestock market",
-      "summary": "Sudan’s army says it struck RSF command centres in South Darfur, but the RSF says a crowded livestock market was hit.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/sudan-army-accused-of-drone-strike-on-livestock-market?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T13:37:03.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 22.5,
       "topics": []
     },
     {
@@ -605,8 +681,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-18T09:26:56.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -619,8 +695,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-18T12:08:28.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 22.3,
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 21.4,
       "topics": []
     },
     {
@@ -633,8 +709,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-18T10:28:00.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 21.9,
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 21,
       "topics": []
     },
     {
@@ -647,8 +723,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-18T14:04:50.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 21.8,
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 20.9,
       "topics": []
     },
     {
@@ -661,8 +737,22 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-10-18T12:15:39.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 21.4,
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 20.4,
+      "topics": []
+    },
+    {
+      "id": "214e2b2e32a85c31",
+      "category": "world",
+      "title": "Inside the New York ‘time machine’ racing to save a century of sound and film",
+      "summary": "“I tell my kids I work in a time machine,” said Rhony Dostaly. In a basement beneath Lincoln Center, the media preservation engineer rescues moments from the past. “I go back in time, and I grab elements, and I make them available for people today.”",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168608",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-18T12:00:00.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 20.4,
       "topics": []
     },
     {
@@ -675,24 +765,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-18T07:58:18.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 21.3,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "c57d12476a79d131",
-      "category": "world",
-      "title": "Carney says 4 service members killed and dozens injured in fire at Alberta military base",
-      "summary": "Canadian Prime Minister Mark Carney described the incident as one of the worst peacetime tragedies for Canada's military on domestic soil.",
-      "url": "https://www.npr.org/2026/10/18/nx-s1-6007276/fire-alberta-deadly-canada-military-base",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T07:56:08.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 21.3,
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 20.4,
       "topics": [
         "security"
       ]
@@ -707,8 +781,268 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-18T04:05:00.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 20.4,
+      "topics": []
+    },
+    {
+      "id": "c57d12476a79d131",
+      "category": "world",
+      "title": "Carney says 4 service members killed and dozens injured in fire at Alberta military base",
+      "summary": "Canadian Prime Minister Mark Carney described the incident as one of the worst peacetime tragedies for Canada's military on domestic soil.",
+      "url": "https://www.npr.org/2026/10/18/nx-s1-6007276/fire-alberta-deadly-canada-military-base",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T07:56:08.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 20.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "8635e457169994aa",
+      "category": "world",
+      "title": "Trump says suspension of Russia sanctions is to keep peace negotiations going",
+      "summary": "The US president blocked numerous sanctions on Russia two days before they were due to take effect.",
+      "url": "https://www.bbc.co.uk/news/articles/c9p8gz7zx4peo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T22:10:45.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 19.9,
+      "topics": []
+    },
+    {
+      "id": "39a68f59d4bf7879",
+      "category": "finance",
+      "title": "Australia's Challenger gets takeover bid from unit of Japan's Daiichi Life",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/australias-challenger-gets-takeover-bid-unit-japans-daiichi-life-6470476",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T21:48:12.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 19.8,
+      "topics": []
+    },
+    {
+      "id": "d94c9ff0a9833ee2",
+      "category": "finance",
+      "title": "Anthropic to commit 5% stake to new public benefit fund",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/anthropic-commit-5-stake-new-public-benefit-fund-6470326",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T18:18:33.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "028afa2b3f223c1d",
+      "category": "ai",
+      "title": "RTX Spark Ignites Global Celebration as New Windows PCs Arrive",
+      "summary": "NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs. Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MSI bring powerful local AI, content creation and gaming capabilities to a portable device, with […]",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T21:00:13.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 18.6,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "627331f0d24589ea",
+      "category": "ai",
+      "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+      "summary": "Anthropic said that it will commit 5% of its shares to the fund.",
+      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T20:37:40.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 18.5,
+      "topics": []
+    },
+    {
+      "id": "5f574e0d8111bd47",
+      "category": "ai",
+      "title": "v0.32.0rc3: [Bugfix] Fix NaN output of the Mamba2 chunk scan kernel on sm90 (#61718)",
+      "summary": "Signed-off-by: Vadim Gimpelson vadim.gimpelson@gmail.com Co-authored-by: Claude noreply@anthropic.com",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc3",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-17T00:25:45.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 18.5,
+      "topics": [
+        "kernels"
+      ]
+    },
+    {
+      "id": "816521b1d63b01d1",
+      "category": "finance",
+      "title": "There's a crackdown on sports piracy - but is it already out of control?",
+      "summary": "The sports industry's lucrative business model is being undermined by dodgy TV sticks and illegal streaming links, writes Theo Leggett.",
+      "url": "https://www.bbc.co.uk/news/articles/cmx2375zqwwwo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T00:11:09.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 18.4,
+      "topics": []
+    },
+    {
+      "id": "3dc4d2eaf63f2eac",
+      "category": "ai",
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T21:31:32.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 17.7,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "4c32ce981de2b86b",
+      "category": "ai",
+      "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+      "summary": "The filing also says that the “vast majority” of Character.AI employees who were offered jobs at Disney accepted them. However, this is a stalking horse bid, so another company could come forward with a higher offer.",
+      "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T16:30:00.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 17.5,
+      "topics": []
+    },
+    {
+      "id": "3b9f2e6f1c143974",
+      "category": "technology",
+      "title": "Anthropic gives outside AI watchdog “employee-like” access",
+      "summary": "The outside watchdog can publish its findings without Anthropic's approval.",
+      "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T16:25:19.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 17.5,
+      "topics": []
+    },
+    {
+      "id": "8b11e2b621549ffb",
+      "category": "finance",
+      "title": "Gleaning group gives £1m of produce to food banks",
+      "summary": "Gleaning Cornwall warns that more funding is needed as costs rise sharply.",
+      "url": "https://www.bbc.co.uk/news/articles/c6n49w1r2zxjo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T11:03:04.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 17.1,
+      "topics": []
+    },
+    {
+      "id": "f9e5a938871b2531",
+      "category": "finance",
+      "title": "What is the Budget and what could be in it?",
+      "summary": "Chancellor John Healey will set out his plans for UK taxes on 28 October.",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T10:22:17.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 17,
+      "topics": []
+    },
+    {
+      "id": "006cc52b01a73986",
+      "category": "technology",
+      "title": "APOD: 2026 October 17 – 3D 67P",
+      "summary": "APOD Science APOD APOD: 2026 October 17… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. 3D 67P Explanation: Put […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-17-3d-67p/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-17T04:05:00.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 14.4,
+      "topics": []
+    },
+    {
+      "id": "3f3ae2b127b05da1",
+      "category": "technology",
+      "title": "Science says your boss should talk less in meetings",
+      "summary": "Research suggests listening more while talking less. Killing aimless meetings can help, too.",
+      "url": "https://arstechnica.com/science/2026/10/science-says-your-boss-should-talk-less-in-meetings/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T11:15:11.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 14.2,
+      "topics": []
+    },
+    {
+      "id": "3b1241da90d34d4b",
+      "category": "finance",
+      "title": "Christine Lagarde: IMFC Statement",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-17T05:00:00.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 13.6,
+      "topics": []
+    },
+    {
+      "id": "7c0073788cce3c18",
+      "category": "technology",
+      "title": "Why BioWare's Neverwinter Nights still has thousands of active players",
+      "summary": "The single-player is just OK, but according to the players, that doesn't matter.",
+      "url": "https://arstechnica.com/gaming/2026/10/why-biowares-neverwinter-nights-still-has-thousands-of-active-players/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T11:00:21.000Z",
+      "fetchedAt": "2026-10-18T22:32:43.660Z",
+      "score": 10.1,
+      "topics": []
+    },
+    {
+      "id": "725ed9bd58fa2a8d",
+      "category": "world",
+      "title": "Sudan army accused of drone strike on livestock market",
+      "summary": "Sudan’s army says it struck RSF command centres in South Darfur, but the RSF says a crowded livestock market was hit.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/sudan-army-accused-of-drone-strike-on-livestock-market?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T13:37:03.000Z",
       "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 21.3,
+      "score": 22.7,
       "topics": []
     },
     {
@@ -772,66 +1106,6 @@
       "topics": []
     },
     {
-      "id": "d94c9ff0a9833ee2",
-      "category": "finance",
-      "title": "Anthropic to commit 5% stake to new public benefit fund",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/anthropic-commit-5-stake-new-public-benefit-fund-6470326",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T18:18:33.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 19.9,
-      "topics": []
-    },
-    {
-      "id": "028afa2b3f223c1d",
-      "category": "ai",
-      "title": "RTX Spark Ignites Global Celebration as New Windows PCs Arrive",
-      "summary": "NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs. Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MSI bring powerful local AI, content creation and gaming capabilities to a portable device, with […]",
-      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T21:00:13.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 19.5,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
-      "id": "5f574e0d8111bd47",
-      "category": "ai",
-      "title": "v0.32.0rc3: [Bugfix] Fix NaN output of the Mamba2 chunk scan kernel on sm90 (#61718)",
-      "summary": "Signed-off-by: Vadim Gimpelson vadim.gimpelson@gmail.com Co-authored-by: Claude noreply@anthropic.com",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc3",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-17T00:25:45.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 19.4,
-      "topics": [
-        "kernels"
-      ]
-    },
-    {
-      "id": "816521b1d63b01d1",
-      "category": "finance",
-      "title": "There's a crackdown on sports piracy - but is it already out of control?",
-      "summary": "The sports industry's lucrative business model is being undermined by dodgy TV sticks and illegal streaming links, writes Theo Leggett.",
-      "url": "https://www.bbc.co.uk/news/articles/cmx2375zqwwwo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T00:11:09.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 19.3,
-      "topics": []
-    },
-    {
       "id": "70384797121cf395",
       "category": "world",
       "title": "Oil facilities hit in deadly overnight attack on St Petersburg",
@@ -874,64 +1148,6 @@
       "topics": []
     },
     {
-      "id": "3dc4d2eaf63f2eac",
-      "category": "ai",
-      "title": "Meta removes language that raised scraping and AI training concerns",
-      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
-      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T21:31:32.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 18.7,
-      "topics": [
-        "training"
-      ]
-    },
-    {
-      "id": "4c32ce981de2b86b",
-      "category": "ai",
-      "title": "Disney agrees to hire the majority of Character.AI’s workforce",
-      "summary": "After chatbot startup Character.AI filed for bankruptcy earlier this week, many of its employees will have the opportunity to take jobs at Disney. Character.AI’s former CEO Karandeep Anand recently became the entertainment giant’s first CTO, and the startup previously said that Disney had agreed to acquire some of its assets for $20 million. A legal […]",
-      "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T16:30:00.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 18.4,
-      "topics": []
-    },
-    {
-      "id": "3b9f2e6f1c143974",
-      "category": "technology",
-      "title": "Anthropic gives outside AI watchdog “employee-like” access",
-      "summary": "The outside watchdog can publish its findings without Anthropic's approval.",
-      "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T16:25:19.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 18.4,
-      "topics": []
-    },
-    {
-      "id": "8b11e2b621549ffb",
-      "category": "finance",
-      "title": "Gleaning group gives £1m of produce to food banks",
-      "summary": "Gleaning Cornwall warns that more funding is needed as costs rise sharply.",
-      "url": "https://www.bbc.co.uk/news/articles/c6n49w1r2zxjo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T11:03:04.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 18.1,
-      "topics": []
-    },
-    {
       "id": "3e803c3271c74d2c",
       "category": "finance",
       "title": "Accenture looks to sell Chinese operations for up to $1.5 billion, FT reports",
@@ -941,20 +1157,6 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-18T10:24:24.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 17.9,
-      "topics": []
-    },
-    {
-      "id": "f9e5a938871b2531",
-      "category": "finance",
-      "title": "What is the Budget and what could be in it?",
-      "summary": "Chancellor John Healey will set out his plans for UK taxes on 28 October.",
-      "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T10:22:17.000Z",
       "fetchedAt": "2026-10-18T18:50:06.552Z",
       "score": 17.9,
       "topics": []
@@ -971,48 +1173,6 @@
       "publishedAt": "2026-10-17T18:48:08.000Z",
       "fetchedAt": "2026-10-18T18:50:06.552Z",
       "score": 17,
-      "topics": []
-    },
-    {
-      "id": "006cc52b01a73986",
-      "category": "technology",
-      "title": "APOD: 2026 October 17 – 3D 67P",
-      "summary": "APOD Science APOD APOD: 2026 October 17… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. 3D 67P Explanation: Put […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-october-17-3d-67p/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-17T04:05:00.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 15.3,
-      "topics": []
-    },
-    {
-      "id": "3f3ae2b127b05da1",
-      "category": "technology",
-      "title": "Science says your boss should talk less in meetings",
-      "summary": "Research suggests listening more while talking less. Killing aimless meetings can help, too.",
-      "url": "https://arstechnica.com/science/2026/10/science-says-your-boss-should-talk-less-in-meetings/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T11:15:11.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 15.1,
-      "topics": []
-    },
-    {
-      "id": "3b1241da90d34d4b",
-      "category": "finance",
-      "title": "Christine Lagarde: IMFC Statement",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-17T05:00:00.000Z",
-      "fetchedAt": "2026-10-18T18:50:06.552Z",
-      "score": 14.5,
       "topics": []
     },
     {
