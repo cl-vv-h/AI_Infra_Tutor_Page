@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T22:34:35.767Z",
+  "generatedAt": "2026-10-18T05:01:04.859Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 27,
-      "latestPublishedAt": "2026-10-17T22:09:50.000Z",
+      "entryCount": 28,
+      "latestPublishedAt": "2026-10-18T04:00:50.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 137,
-      "latestPublishedAt": "2026-10-17T19:17:00.000Z",
+      "entryCount": 136,
+      "latestPublishedAt": "2026-10-18T04:45:00.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-17T21:08:10.000Z",
+      "latestPublishedAt": "2026-10-18T04:21:46.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-17T04:05:00.000Z",
+      "latestPublishedAt": "2026-10-18T04:05:00.000Z",
       "selectedCount": 3,
       "libraryCount": 3
     },
@@ -236,7 +236,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-16T00:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-17T20:15:02.000Z",
+      "latestPublishedAt": "2026-10-18T02:39:29.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -288,7 +288,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-17T14:18:28.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -300,8 +300,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-17T21:01:19.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-18T01:06:25.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -314,7 +314,7 @@
       "channel": "feed",
       "entryCount": 880,
       "latestPublishedAt": "2026-10-16T01:44:47.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -327,7 +327,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-16T00:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -353,7 +353,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-15T23:39:11.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -444,7 +444,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-16T00:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -523,9 +523,9 @@
       "source": "BBC World",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-10-17T19:19:19.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 28.2,
+      "publishedAt": "2026-10-18T01:10:25.000Z",
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 28,
       "topics": [
         "security"
       ]
@@ -540,8 +540,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T16:30:46.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 27.5,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 25.9,
       "topics": [
         "training"
       ]
@@ -556,8 +556,38 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-17T14:58:07.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 25.5,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "fb2fbcb5764ca5d1",
+      "category": "technology",
+      "title": "APOD: 2026 October 18 – Sonified: Eagle Nebula Pillars",
+      "summary": "APOD Science APOD APOD: 2026 October 18 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Sonified: Eagle Nebula […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-18-sonified-eagle-nebula-pillars/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-18T04:05:00.000Z",
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 24.8,
+      "topics": []
+    },
+    {
+      "id": "aa08e382b87c2d56",
+      "category": "world",
+      "title": "Canada: Major fire reported at military base in Alberta",
+      "summary": "Canadian Prime Minister Mark Carney has said a \"serious incident\" sparked a major fire at a military base in Alberta. He did not provide details on the cause of the fire.",
+      "url": "https://www.dw.com/en/canada-major-fire-reported-at-military-base-in-alberta/a-79690515?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T02:08:00.000Z",
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 24.3,
       "topics": [
         "security"
       ]
@@ -572,8 +602,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-17T13:28:15.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 25.7,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 24.1,
       "topics": [
         "security"
       ]
@@ -588,8 +618,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-16T13:02:29.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 24,
       "topics": [
         "hardware",
         "models"
@@ -605,11 +635,25 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-10-17T11:18:26.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 25.2,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 23.6,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "5881d544ea576fd3",
+      "category": "world",
+      "title": "‘Standing up for democracy’: Atlanta ‘No Kings’ rally draws Trump critics ahead of midterms",
+      "summary": "“No Kings, Vote Now” was the theme of a rally in Atlanta, one of many organised across the US on Saturday. While many demonstrators denounced President Donald Trump’s policies, organisers said the rally was aimed at getting out the vote in the November 3 midterm elections and protecting democracy in America.",
+      "url": "https://www.france24.com/en/americas/20261018-standing-up-for-democracy-atlanta-no-kings-rally-draws-trump-critics-ahead-of-us-midterms",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T01:50:29.000Z",
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 23.2,
+      "topics": []
     },
     {
       "id": "9bf9dcc10e9ab1f8",
@@ -621,11 +665,25 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-17T09:50:28.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 24.8,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 23.2,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "d5e6774bb79897b1",
+      "category": "world",
+      "title": "'No Kings' rallies push early voting ahead of US midterm elections",
+      "summary": "Organizers of the \"No Kings\" protests, known for their anti-Trump sentiment, are urging Americans to vote early in the November 3 midterm elections, as Republicans face tough races to retain control of Congress.",
+      "url": "https://www.dw.com/en/no-kings-rallies-push-early-voting-ahead-of-us-midterm-elections/a-79690502?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T00:51:00.000Z",
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 23,
+      "topics": []
     },
     {
       "id": "028afa2b3f223c1d",
@@ -637,8 +695,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-17T21:00:13.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 24.6,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 23,
       "topics": [
         "hardware"
       ]
@@ -653,11 +711,25 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-17T00:25:45.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 24.5,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 22.9,
       "topics": [
         "kernels"
       ]
+    },
+    {
+      "id": "bf813d81e13c349a",
+      "category": "world",
+      "title": "US ambassador urges Israel to prosecute attackers of American journalist",
+      "summary": "US Secretary of State Rubio separately urges Israel to ‘crack down’ on settler violence after attack on photographer.",
+      "url": "https://www.aljazeera.com/news/2026/10/17/us-ambassador-calls-on-israel-to-prosecute-settlers-over-journalist-attack?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T23:40:59.000Z",
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 22.7,
+      "topics": []
     },
     {
       "id": "f6a34482dfee01cb",
@@ -669,8 +741,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-17T19:48:54.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 22.7,
       "topics": [
         "security"
       ]
@@ -685,8 +757,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-17T18:57:10.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 24.1,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 22.5,
       "topics": []
     },
     {
@@ -699,24 +771,38 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-17T21:31:32.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 23.7,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 22.1,
       "topics": [
         "training"
       ]
     },
     {
+      "id": "782cebdaef1f551a",
+      "category": "world",
+      "title": "Brazil's right embraces election betting odds amid polls scepticism",
+      "summary": "Rght-wing figures in Brazil are embracing the Polymarket prediction market's odds as an accurate litmus test of voter intent ahead of next weekend's election run-off. Leer más",
+      "url": "https://www.batimes.com.ar/news/latin-america/brazils-right-embraces-election-betting-odds-amid-polls-scepticism.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T01:06:25.000Z",
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 22,
+      "topics": []
+    },
+    {
       "id": "7466a3e12c7c05d9",
       "category": "world",
       "title": "Cost of living protests hit Belgium, Italy, Portugal and France",
-      "summary": "Hundreds of thousands took to the streets for separate demonstrations putting pressure on governments across the EU.",
+      "summary": "Hundreds of thousands take to the streets for separate demonstrations, putting pressure on governments across the EU.",
       "url": "https://www.aljazeera.com/news/2026/10/17/cost-of-living-protests-hit-belgium-italy-portugal-and-france?traffic_source=rss",
       "source": "Al Jazeera",
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-17T21:02:26.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 22,
       "topics": []
     },
     {
@@ -729,8 +815,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-17T20:15:02.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 21.8,
       "topics": []
     },
     {
@@ -743,26 +829,10 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T12:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 21.7,
       "topics": [
         "security"
-      ]
-    },
-    {
-      "id": "cd423ca96a73d4aa",
-      "category": "ai",
-      "title": "Hyper Optimizing Kimi K3 in vLLM: Moving Fast and Responsibly",
-      "summary": "How agent-assisted CuTe DSL optimizations accelerate Kimi K3 decode on NVIDIA GB300, and how scoped changes, correctness tests, and reproducible benchmarks help ship them responsibly.",
-      "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 23.4,
-      "topics": [
-        "inference"
       ]
     },
     {
@@ -775,8 +845,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-16T23:07:18.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 21.5,
       "topics": [
         "security"
       ]
@@ -791,22 +861,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-10-17T21:01:19.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 22.6,
-      "topics": []
-    },
-    {
-      "id": "185bfbe5734fd81d",
-      "category": "world",
-      "title": "India: Police crack down on New Delhi protests",
-      "summary": "Student activist Neha Bora, a prominent face of the protests, ‌who was detained on Friday as she tried to reach central Delhi with dozens of supporters, was released on Saturday.",
-      "url": "https://www.france24.com/en/video/20261017-india-police-crack-down-on-new-delhi-protests",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T16:29:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 22.5,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 21,
       "topics": []
     },
     {
@@ -819,36 +875,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-17T18:48:08.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 22.1,
-      "topics": []
-    },
-    {
-      "id": "8910016a43b91b30",
-      "category": "world",
-      "title": "Thousands rally for biggest protest in years against Tunisia’s Saied",
-      "summary": "Unions, opposition groups unite to demonstrate against poor living conditions and restrictions on political freedoms.",
-      "url": "https://www.aljazeera.com/news/2026/10/17/thousands-rally-for-biggest-protest-in-years-against-tunisias-saied?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T14:57:24.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 22.1,
-      "topics": []
-    },
-    {
-      "id": "1ef95ea72c326b04",
-      "category": "world",
-      "title": "China's influence in the gaming industry is growing",
-      "summary": "Home to more than 700 million gamers, China is the world's largest gaming market — but it's also one of the most tightly regulated. The effects reach far beyond China, impacting players around the world.",
-      "url": "https://www.dw.com/en/china-s-influence-in-the-gaming-industry-is-growing/a-79484755?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T14:49:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 22.1,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 20.4,
       "topics": []
     },
     {
@@ -861,22 +889,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-17T14:12:02.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 21.9,
-      "topics": []
-    },
-    {
-      "id": "c235ba43759e7f44",
-      "category": "world",
-      "title": "India news: CJP founder released a day after detention",
-      "summary": "India's \"Cockroach\" movement founder, Abhijeet Dipke, was released after agreeing to certain conditions, according to the CJP's head of legal affairs. DW has more.",
-      "url": "https://www.dw.com/en/india-news-cjp-founder-released-a-day-after-detention/live-79685143?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T13:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 21.6,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 20.3,
       "topics": []
     },
     {
@@ -889,8 +903,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T15:17:25.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 19.6,
       "topics": [
         "security"
       ]
@@ -905,25 +919,9 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T14:24:29.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 21,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 19.3,
       "topics": []
-    },
-    {
-      "id": "7517d1518ce14b94",
-      "category": "world",
-      "title": "DR Congo bans activities of 13 political parties linked to Joseph Kabila as opposition cries repression",
-      "summary": "The Democratic Republic of Congo’s government has banned the activities of 13 political parties, including the PPRD of former president Joseph Kabila. Presented as a national security measure, the decision has divided the political class and reignited debate over democratic pluralism in the country.",
-      "url": "https://www.africanews.com/2026/10/16/dr-congo-bans-activities-of-13-political-parties-linked-to-joseph-kabila-as-opposition-cri/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T17:58:44.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 20.9,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "1cddf84ba299a25a",
@@ -935,8 +933,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-17T09:14:49.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 20.7,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 19.1,
       "topics": []
     },
     {
@@ -949,8 +947,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-16T12:45:44.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 20.5,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 18.9,
       "topics": [
         "security"
       ]
@@ -965,8 +963,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-17T04:05:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 20.4,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 18.8,
       "topics": []
     },
     {
@@ -979,25 +977,9 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-17T11:15:11.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 20.2,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 18.6,
       "topics": []
-    },
-    {
-      "id": "6f6c1118a3243a1a",
-      "category": "ai",
-      "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-      "summary": "",
-      "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T01:44:47.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 19.8,
-      "topics": [
-        "training"
-      ]
     },
     {
       "id": "3b1241da90d34d4b",
@@ -1009,59 +991,9 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-17T05:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 19.6,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 18,
       "topics": []
-    },
-    {
-      "id": "6a040814c0276df8",
-      "category": "ai",
-      "title": "Scaling Kimi K3 on AMD Instinct MI355X: Matching NVIDIA HGX B300 Throughput per GPU on AgentX",
-      "summary": "Inside the Kimi K3 optimization effort: understanding the bottlenecks and the decisions that made inference faster",
-      "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 19.4,
-      "topics": [
-        "inference",
-        "hardware"
-      ]
-    },
-    {
-      "id": "3650a3777c44417c",
-      "category": "ai",
-      "title": "Serving Reflection Beam on vLLM from Day 0",
-      "summary": "vLLM supports Reflection's Beam-1.0 (501B total, 23B active) from day 0, with agent-driven optimization that cut decode latency 2.71× and DFlash2 speculative decoding with adaptive verification.",
-      "url": "https://vllm.ai/blog/2026-10-16-reflection-beam",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 19.4,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "903c02d496cd5e9f",
-      "category": "technology",
-      "title": "FP16 GEMM Optimization on AMD RDNA™ 3 and RDNA™ 4 Architectures",
-      "summary": "In this blog you will learn how to write a fast FP16 GEMM kernel for AMD RDNA™ 3 and RDNA™ 4 GPUs, one optimization at a time. You will see which techniques pay off on each architecture, why some help one and hurt the other, and how to measure the effect of every change in time, registers, and LDS, so you can apply the same approach to your own kernels. This is Part 1 of a two-part series. Part 2 will port the final kernel from this post to FP8 on RDNA 4.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/rdna-fp16-gemm/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 19.4,
-      "topics": [
-        "kernels",
-        "training"
-      ]
     },
     {
       "id": "8ad9baebed6ed95c",
@@ -1073,8 +1005,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-16T18:11:34.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 18.9,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 17.3,
       "topics": []
     },
     {
@@ -1087,8 +1019,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T17:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 18.6,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 17,
       "topics": []
     },
     {
@@ -1101,50 +1033,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-17T20:21:19.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 18.4,
-      "topics": []
-    },
-    {
-      "id": "f1dce50c87db0e07",
-      "category": "technology",
-      "title": "NASA Names Stephen Cash Marshall Space Flight Center Director",
-      "summary": "NASA Administrator Jared Isaacman has named Stephen Cash director of the agency’s Marshall Space Flight Center in Huntsville, Alabama, effective Monday, Oct. 19. Cash, a veteran NASA engineer and aerospace executive, returns to lead the center where he began his career more than four decades ago. “Marshall contributions to NASA’s missions are historic and it’s […]",
-      "url": "https://www.nasa.gov/news-release/nasa-names-stephen-cash-marshall-space-flight-center-director/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-16T20:14:39.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 18.4,
-      "topics": []
-    },
-    {
-      "id": "5a9a3dd0679268bc",
-      "category": "ai",
-      "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
-      "summary": "",
-      "url": "https://huggingface.co/blog/reflection-beam",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 18.4,
-      "topics": []
-    },
-    {
-      "id": "588e2d29802c9ab8",
-      "category": "ai",
-      "title": "v0.5.22",
-      "summary": "Release v0.5.22",
-      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.22",
-      "source": "SGLang Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-15T23:39:11.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 17.3,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 16.8,
       "topics": []
     },
     {
@@ -1157,8 +1047,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T19:11:50.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 17.2,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 15.5,
       "topics": [
         "security"
       ]
@@ -1173,8 +1063,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T20:59:01.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 16.6,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 15,
       "topics": []
     },
     {
@@ -1187,8 +1077,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T13:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 16.6,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 15,
       "topics": []
     },
     {
@@ -1201,8 +1091,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T15:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 16.1,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 14.5,
       "topics": []
     },
     {
@@ -1215,8 +1105,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-17T06:18:16.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 15.9,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 14.3,
       "topics": []
     },
     {
@@ -1229,8 +1119,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-17T06:11:54.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 15.9,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 14.3,
       "topics": []
     },
     {
@@ -1243,8 +1133,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T11:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 14.1,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 12.5,
       "topics": []
     },
     {
@@ -1257,22 +1147,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-16T08:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 13.4,
-      "topics": []
-    },
-    {
-      "id": "d693d1f0d54b2043",
-      "category": "finance",
-      "title": "Basel Committee finalises measures to address window-dressing in the G-SIB framework and consults on G-SIB methodology review",
-      "summary": "The Basel Committee on Banking Supervision today published final amendments to address window dressing in the G-SIB framework and a consultation on the G-SIB methodology review.",
-      "url": "https://www.bis.org/media-releases/20261016-basel-committee-finalises-measures-address-window-dressing-g-sib-framework-and-consults-g-sib",
-      "source": "Bank for International Settlements",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-17T22:34:35.767Z",
-      "score": 11.4,
+      "fetchedAt": "2026-10-18T05:01:04.859Z",
+      "score": 11.7,
       "topics": []
     }
   ]
