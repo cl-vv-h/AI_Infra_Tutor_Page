@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-18T12:45:37.640Z",
+  "generatedAt": "2026-10-18T18:50:06.552Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 39,
-  "failedSourceCount": 0,
+  "sourceCount": 38,
+  "failedSourceCount": 1,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -14,8 +14,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 29,
-      "latestPublishedAt": "2026-10-18T12:41:59.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-18T15:46:10.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 136,
-      "latestPublishedAt": "2026-10-18T10:28:00.000Z",
+      "latestPublishedAt": "2026-10-18T16:34:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-18T12:07:34.000Z",
+      "latestPublishedAt": "2026-10-18T18:44:30.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -65,8 +65,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 20,
-      "latestPublishedAt": "2026-10-18T12:08:28.000Z",
+      "entryCount": 11,
+      "latestPublishedAt": "2026-10-18T18:18:33.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-17T21:31:32.000Z",
+      "latestPublishedAt": "2026-10-18T16:30:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-17T11:15:11.000Z",
+      "latestPublishedAt": "2026-10-18T16:25:19.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -171,7 +171,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-16T15:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -258,11 +258,11 @@
       "country": "France",
       "category": "world",
       "type": "news",
-      "state": "ok",
+      "state": "invalid",
       "channel": "feed",
-      "entryCount": 24,
-      "latestPublishedAt": "2026-10-18T12:03:23.000Z",
-      "selectedCount": 2,
+      "entryCount": 0,
+      "latestPublishedAt": null,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -274,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-18T07:56:08.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-18T18:38:49.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-18T09:59:22.000Z",
+      "latestPublishedAt": "2026-10-18T15:56:57.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -301,7 +301,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-18T12:15:39.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -340,7 +340,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-16T18:11:34.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 3
     },
     {
@@ -418,7 +418,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-16T16:30:46.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -431,7 +431,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-16T17:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -457,7 +457,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-16T13:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -483,7 +483,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-16T13:02:29.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -524,8 +524,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-18T10:23:45.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 33.4,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 31.9,
       "topics": [
         "inference",
         "kernels",
@@ -536,33 +536,17 @@
       ]
     },
     {
-      "id": "8e1673cd295a3409",
-      "category": "world",
-      "title": "Egypt to provide ‘necessary’ support to Saudi Arabia amid Houthi attacks",
-      "summary": "Presidency says Egypt will provide Saudi Arabia with support to defend its security and protect its resources.",
-      "url": "https://www.aljazeera.com/news/2026/10/18/egypt-to-provide-all-necessary-and-possible-support-to-saudi?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T10:23:38.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 28.4,
-      "topics": [
-        "security"
-      ]
-    },
-    {
       "id": "133e8685d3f62655",
       "category": "world",
       "title": "Germany news: Police probe security incident at Leipzig/Halle airport",
-      "summary": "A fence breach at the Leipzig/Halle airport has triggered a major police operation. Christian Social Union leader Markus Söder is to address a gathering of the conservative youth wing. Follow DW for more.",
+      "summary": "A fence breach at the Leipzig/Halle airport has triggered a major police operation. And, Christian Social Union leader Markus Söder calls for a \"firewall\" against leftists at a conservative youth conference. Follow DW.",
       "url": "https://www.dw.com/en/germany-news-police-probe-security-incident-at-leipzig-halle-airport/live-79686913?maca=en-rss-en-all-1573-rdf",
       "source": "DW",
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-18T08:12:00.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 27.9,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 26.3,
       "topics": [
         "security"
       ]
@@ -577,11 +561,39 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-18T01:10:25.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 26.1,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 24.6,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "43e135973a141c5e",
+      "category": "world",
+      "title": "Trump endorses Netanyahu in Israeli legislative elections",
+      "summary": "In a social media post ahead of the October 27 election, Trump calls Netanyahu a 'Strong, Brave, and Brilliant' leader.",
+      "url": "https://www.aljazeera.com/news/2026/10/18/trump-endorses-netanyahu-in-israeli-legislative-elections?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T16:36:26.000Z",
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "725ed9bd58fa2a8d",
+      "category": "world",
+      "title": "Sudan army accused of drone strike on livestock market",
+      "summary": "Sudan’s army says it struck RSF command centres in South Darfur, but the RSF says a crowded livestock market was hit.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/sudan-army-accused-of-drone-strike-on-livestock-market?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T13:37:03.000Z",
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 22.7,
+      "topics": []
     },
     {
       "id": "2e3a4f979a1eb2fd",
@@ -593,25 +605,9 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-18T09:26:56.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 24.2,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 22.7,
       "topics": []
-    },
-    {
-      "id": "a05836015abae9cf",
-      "category": "technology",
-      "title": "Bringing Elastically Deterministic Data Loading to TorchTitan with Zephon",
-      "summary": "Why Zephon? The data that a model sees during training is one of the most powerful levers we have for influencing how well it performs. Much of the day-to-day work... The post Bringing Elastically Deterministic Data Loading to TorchTitan with Zephon appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/bringing-elastically-deterministic-data-loading-to-torchtitan-with-zephon/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T16:30:46.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 23.9,
-      "topics": [
-        "training"
-      ]
     },
     {
       "id": "c0ea49262d25839a",
@@ -623,36 +619,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-18T12:08:28.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 23.8,
-      "topics": []
-    },
-    {
-      "id": "29cd4078bfe3c173",
-      "category": "world",
-      "title": "What help can Egypt offer Saudi Arabia in the war against the Houthis?",
-      "summary": "Analysts say that any move from Egypt will remain 'strictly defensive', as the conflict in Yemen intensifies.",
-      "url": "https://www.aljazeera.com/news/2026/10/18/what-help-can-egypt-offer-saudi-arabia-in-the-war-against-the-houthis?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T11:11:26.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 23.6,
-      "topics": []
-    },
-    {
-      "id": "d73ed04fe484dc20",
-      "category": "world",
-      "title": "Palestinian karate champion Maryam Bsharat wins second world title",
-      "summary": "Palestinian athlete Maryam Bsharat won gold at the World Karate Championships in Poland.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/palestinian-karate-champion-maryam-bsharat-wins-second-world-title?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T10:47:59.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 23.5,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 22.3,
       "topics": []
     },
     {
@@ -665,8 +633,22 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-18T10:28:00.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 21.9,
+      "topics": []
+    },
+    {
+      "id": "dbd3018a0a446f0f",
+      "category": "world",
+      "title": "Smashed storefronts, burned buildings: France wakes up to aftermath of violent protests",
+      "summary": "France woke up Sunday to devastated streets after clashes between police and protesters, mass looting and fires erupted nationwide as marches against rising costs of living degenerated into \"extreme\" violence.",
+      "url": "https://www.africanews.com/2026/10/18/smashed-storefronts-burned-buildings-france-wakes-up-to-aftermath-of-violent-protests/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T14:04:50.000Z",
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 21.8,
       "topics": []
     },
     {
@@ -679,8 +661,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-10-18T12:15:39.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 22.9,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 21.4,
       "topics": []
     },
     {
@@ -693,8 +675,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-18T07:58:18.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 21.3,
       "topics": [
         "security"
       ]
@@ -702,15 +684,15 @@
     {
       "id": "c57d12476a79d131",
       "category": "world",
-      "title": "Major fire breaks out in Alberta after deadly incident at military base",
-      "summary": "Canada's defense minister said Saturday that people were killed and injured in an incident at a military base in Alberta that caused a major fire.",
+      "title": "Carney says 4 service members killed and dozens injured in fire at Alberta military base",
+      "summary": "Canadian Prime Minister Mark Carney described the incident as one of the worst peacetime tragedies for Canada's military on domestic soil.",
       "url": "https://www.npr.org/2026/10/18/nx-s1-6007276/fire-alberta-deadly-canada-military-base",
       "source": "NPR World",
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-18T07:56:08.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 21.3,
       "topics": [
         "security"
       ]
@@ -725,8 +707,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-18T04:05:00.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 21.3,
       "topics": []
     },
     {
@@ -739,36 +721,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-18T07:03:00.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 22.6,
-      "topics": []
-    },
-    {
-      "id": "dbd3018a0a446f0f",
-      "category": "world",
-      "title": "Smashed storefronts, burned buildings: France wakes up to aftermath of violent protests",
-      "summary": "France woke up Sunday to devastated streets after clashes between police and protesters, mass looting and fires erupted nationwide as marches against rising costs of living degenerated into \"extreme\" violence.",
-      "url": "https://www.africanews.com/2026/10/18/smashed-storefronts-burned-buildings-france-wakes-up-to-aftermath-of-violent-protests/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T09:59:22.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 22.3,
-      "topics": []
-    },
-    {
-      "id": "d0cc748b6ffefe89",
-      "category": "world",
-      "title": "India's 'cockroach' movement founder released from police custody",
-      "summary": "Indian police released Cockroach Janta Party (CJP) founder Abhijeet Dipke from detention on Saturday after the activist was detained ahead of a rally calling for the resignation of India's chief election commissioner. Two other CJP leaders remain in custody after having been arrested while demonstrating at a protest site that police had ruled off-limits.",
-      "url": "https://www.france24.com/en/asia-pacific/20261018-india-s-cockroach-movement-founder-released-from-police-custody",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T05:47:00.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 22.3,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 21.1,
       "topics": []
     },
     {
@@ -781,27 +735,10 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-17T13:28:15.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 22.2,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 20.7,
       "topics": [
         "security"
-      ]
-    },
-    {
-      "id": "a59da668b8b94d4d",
-      "category": "ai",
-      "title": "Release v5.20.1",
-      "summary": "Release v5.20.1 Special surprise including the new model Beam from Reflection AI 🥳 Beam is a token-efficient, frontier-scale model focused on coding and agentic use cases. It is built for teams that want to run a powerful model on their own hardware, infrastructure, or cloud, and customize it to their specific needs. Links: Documentation Fix small bug in auto mappings ( #49664 ) by @yonigozlan in #49664 Some real patch fixes We broke loading models on older torch versions 😢 should be fixed now. But here is the fu",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.1",
-      "source": "Transformers Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-16T13:02:29.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 22.1,
-      "topics": [
-        "hardware",
-        "models"
       ]
     },
     {
@@ -814,24 +751,38 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-10-17T11:18:26.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 21.6,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 20.1,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "5881d544ea576fd3",
+      "id": "aeef2fe5fead799e",
       "category": "world",
-      "title": "‘Standing up for democracy’: Atlanta ‘No Kings’ rally draws Trump critics ahead of midterms",
-      "summary": "“No Kings, Vote Now” was the theme of a rally in Atlanta, one of many organised across the US on Saturday. While many demonstrators denounced US President Donald Trump’s policies, organisers said the rally was aimed at getting out the vote in the November 3 midterm elections and protecting democracy in America.",
-      "url": "https://www.france24.com/en/americas/20261018-standing-up-for-democracy-atlanta-no-kings-rally-draws-trump-critics-ahead-of-us-midterms",
-      "source": "France 24",
-      "sourceCountry": "France",
+      "title": "GCC condemns Houthi attacks on Saudi Arabia as Yemen fighting intensifies",
+      "summary": "Gulf ministers urge action against Houthis as fighting displaces more than 233,000 people across Yemen.",
+      "url": "https://www.aljazeera.com/news/2026/10/18/gcc-condemns-houthi-attacks-on-saudi-arabia-as-yemen-fighting-intensifies?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
       "sourceType": "news",
-      "publishedAt": "2026-10-18T01:50:29.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 21.3,
+      "publishedAt": "2026-10-18T18:44:30.000Z",
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 20,
+      "topics": []
+    },
+    {
+      "id": "d94c9ff0a9833ee2",
+      "category": "finance",
+      "title": "Anthropic to commit 5% stake to new public benefit fund",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/anthropic-commit-5-stake-new-public-benefit-fund-6470326",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T18:18:33.000Z",
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 19.9,
       "topics": []
     },
     {
@@ -844,10 +795,26 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-17T21:00:13.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 21.1,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 19.5,
       "topics": [
         "hardware"
+      ]
+    },
+    {
+      "id": "5f574e0d8111bd47",
+      "category": "ai",
+      "title": "v0.32.0rc3: [Bugfix] Fix NaN output of the Mamba2 chunk scan kernel on sm90 (#61718)",
+      "summary": "Signed-off-by: Vadim Gimpelson vadim.gimpelson@gmail.com Co-authored-by: Claude noreply@anthropic.com",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc3",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-17T00:25:45.000Z",
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 19.4,
+      "topics": [
+        "kernels"
       ]
     },
     {
@@ -860,25 +827,51 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-18T00:11:09.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 20.9,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 19.3,
       "topics": []
     },
     {
-      "id": "5f574e0d8111bd47",
-      "category": "ai",
-      "title": "v0.32.0rc3: [Bugfix] Fix NaN output of the Mamba2 chunk scan kernel on sm90 (#61718)",
-      "summary": "Signed-off-by: Vadim Gimpelson vadim.gimpelson@gmail.com Co-authored-by: Claude noreply@anthropic.com",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc3",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-17T00:25:45.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 20.9,
-      "topics": [
-        "kernels"
-      ]
+      "id": "70384797121cf395",
+      "category": "world",
+      "title": "Oil facilities hit in deadly overnight attack on St Petersburg",
+      "summary": "At least one person was killed in the strikes, which also hit a data centre used by Russia's equivalent of Facebook.",
+      "url": "https://www.bbc.co.uk/news/articles/c3eweygrjzd7o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T15:46:10.000Z",
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 19.2,
+      "topics": []
+    },
+    {
+      "id": "019f0e4e6601aa9f",
+      "category": "world",
+      "title": "Ukraine and the U.S. are at odds over Starshield. Here's what to know",
+      "summary": "Ukrainian President Volodymyr Zelenskyy has said he believes the U.S. government is behind his military's loss of normal access to the key satellite communications service used by the Ukrainian military.",
+      "url": "https://www.npr.org/2026/10/18/nx-s1-6007382/ukraine-us-starshield-starlink-what-to-know-trump",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T18:38:49.000Z",
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 19,
+      "topics": []
+    },
+    {
+      "id": "431fb3358066cf86",
+      "category": "world",
+      "title": "Search for Amelia Earhart's plane resumes after stormy weather",
+      "summary": "An expedition to a remote Pacific island hoping to uncover the American aviator's wreckage was on hold for three days.",
+      "url": "https://www.bbc.co.uk/news/articles/cv70pxe5j90eo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T13:47:07.000Z",
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 18.7,
+      "topics": []
     },
     {
       "id": "3dc4d2eaf63f2eac",
@@ -890,24 +883,38 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-17T21:31:32.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 20.2,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 18.7,
       "topics": [
         "training"
       ]
     },
     {
-      "id": "782cebdaef1f551a",
-      "category": "world",
-      "title": "Brazil's right embraces election betting odds amid polls scepticism",
-      "summary": "Rght-wing figures in Brazil are embracing the Polymarket prediction market's odds as an accurate litmus test of voter intent ahead of next weekend's election run-off. Leer más",
-      "url": "https://www.batimes.com.ar/news/latin-america/brazils-right-embraces-election-betting-odds-amid-polls-scepticism.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
+      "id": "4c32ce981de2b86b",
+      "category": "ai",
+      "title": "Disney agrees to hire the majority of Character.AI’s workforce",
+      "summary": "After chatbot startup Character.AI filed for bankruptcy earlier this week, many of its employees will have the opportunity to take jobs at Disney. Character.AI’s former CEO Karandeep Anand recently became the entertainment giant’s first CTO, and the startup previously said that Disney had agreed to acquire some of its assets for $20 million. A legal […]",
+      "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-18T01:06:25.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 20.1,
+      "publishedAt": "2026-10-18T16:30:00.000Z",
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 18.4,
+      "topics": []
+    },
+    {
+      "id": "3b9f2e6f1c143974",
+      "category": "technology",
+      "title": "Anthropic gives outside AI watchdog “employee-like” access",
+      "summary": "The outside watchdog can publish its findings without Anthropic's approval.",
+      "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T16:25:19.000Z",
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 18.4,
       "topics": []
     },
     {
@@ -920,8 +927,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-18T11:03:04.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 19.6,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 18.1,
       "topics": []
     },
     {
@@ -934,8 +941,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-18T10:24:24.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 19.4,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -948,22 +955,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-18T10:22:17.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 19.4,
-      "topics": []
-    },
-    {
-      "id": "8532aa011f4bc691",
-      "category": "finance",
-      "title": "Microsoft pulls out of UK data center deal with Nscale, Telegraph reports",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/microsoft-pulls-out-uk-data-center-deal-nscale-telegraph-reports-6469486",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T10:01:16.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 19.3,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -976,22 +969,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-17T18:48:08.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 18.5,
-      "topics": []
-    },
-    {
-      "id": "92adc8ebcc7f2ded",
-      "category": "technology",
-      "title": "I Am Artemis: Allison Mjoen",
-      "summary": "As the supercooled propellant flowed into the core stage, and NASA’s SLS (Space Launch System) rocket roared to life, Allison Mjoen and her family watched with awe and pride. Mjoen, NASA’s operations manager for the agency’s Exploration Ground Systems Program, helped shape the systems and ground operations that will one day send humans back to […]",
-      "url": "https://www.nasa.gov/missions/station/i-am-artemis-allison-mjoen/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-16T14:24:29.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 17.4,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 17,
       "topics": []
     },
     {
@@ -1004,8 +983,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-17T04:05:00.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 16.8,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 15.3,
       "topics": []
     },
     {
@@ -1018,8 +997,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-17T11:15:11.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 16.6,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 15.1,
       "topics": []
     },
     {
@@ -1032,50 +1011,22 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-17T05:00:00.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 16.1,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 14.5,
       "topics": []
     },
     {
-      "id": "8ad9baebed6ed95c",
-      "category": "ai",
-      "title": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-      "summary": "General Science",
-      "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
-      "source": "Google Research",
+      "id": "f1dce50c87db0e07",
+      "category": "technology",
+      "title": "NASA Names Stephen Cash Marshall Space Flight Center Director",
+      "summary": "NASA Administrator Jared Isaacman has named Stephen Cash director of the agency’s Marshall Space Flight Center in Huntsville, Alabama, effective Monday, Oct. 19. Cash, a veteran NASA engineer and aerospace executive, returns to lead the center where he began his career more than four decades ago. “Marshall contributions to NASA’s missions are historic and it’s […]",
+      "url": "https://www.nasa.gov/news-release/nasa-names-stephen-cash-marshall-space-flight-center-director/",
+      "source": "NASA",
       "sourceCountry": "United States",
       "sourceType": "research",
-      "publishedAt": "2026-10-16T18:11:34.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 15.4,
-      "topics": []
-    },
-    {
-      "id": "e850c1e1d3d486f8",
-      "category": "technology",
-      "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
-      "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As...",
-      "url": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T17:00:00.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 15.1,
-      "topics": []
-    },
-    {
-      "id": "e3a372bd9f6bd4bf",
-      "category": "ai",
-      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
-      "summary": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
-      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T20:21:19.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 14.9,
+      "publishedAt": "2026-10-16T20:14:39.000Z",
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 13.4,
       "topics": []
     },
     {
@@ -1088,53 +1039,11 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-16T19:11:50.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 13.6,
+      "fetchedAt": "2026-10-18T18:50:06.552Z",
+      "score": 12.1,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "dc630282f9cfc6b1",
-      "category": "technology",
-      "title": "OpenAI models hacked a crypto wallet and breached more websites",
-      "summary": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
-      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T20:59:01.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 13.1,
-      "topics": []
-    },
-    {
-      "id": "9bf256ceb417919b",
-      "category": "technology",
-      "title": "Continuous accountability for Verified bots",
-      "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain accountable over time.",
-      "url": "https://blog.cloudflare.com/verified-bots-accountability/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T13:00:00.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 13.1,
-      "topics": []
-    },
-    {
-      "id": "f6b73ffe35899aad",
-      "category": "finance",
-      "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-      "summary": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
-      "source": "U.S. Federal Reserve",
-      "sourceCountry": "United States",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-16T15:00:00.000Z",
-      "fetchedAt": "2026-10-18T12:45:37.640Z",
-      "score": 12.6,
-      "topics": []
     }
   ]
 }
