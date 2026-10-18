@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T05:01:04.859Z",
+  "generatedAt": "2026-10-18T12:45:37.640Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 28,
-      "latestPublishedAt": "2026-10-18T04:00:50.000Z",
-      "selectedCount": 2,
+      "entryCount": 29,
+      "latestPublishedAt": "2026-10-18T12:41:59.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 49,
-      "latestPublishedAt": "2026-10-17T21:33:17.000Z",
+      "entryCount": 53,
+      "latestPublishedAt": "2026-10-18T11:03:04.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,8 +40,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 136,
-      "latestPublishedAt": "2026-10-18T04:45:00.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-18T10:28:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-18T04:21:46.000Z",
+      "latestPublishedAt": "2026-10-18T12:07:34.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-17T22:00:00.000Z",
+      "latestPublishedAt": "2026-10-18T12:08:28.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -184,7 +184,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-16T11:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -197,7 +197,7 @@
       "channel": "feed",
       "entryCount": 51,
       "latestPublishedAt": "2026-10-16T08:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -249,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-10-17T12:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -261,8 +261,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-18T02:39:29.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-18T12:03:23.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -274,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-17T21:18:52.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-18T07:56:08.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-17T14:18:28.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-18T09:59:22.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-18T01:06:25.000Z",
+      "latestPublishedAt": "2026-10-18T12:15:39.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -365,8 +365,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-17T18:57:10.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-18T10:23:45.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -515,6 +515,59 @@
   ],
   "items": [
     {
+      "id": "06e6841840e2a811",
+      "category": "ai",
+      "title": "v0.32.0",
+      "summary": "v0.32.0 Highlights This release features 814 commits from 363 contributors (121 new)! Structured decisions and generic parsers : the new POST /v1/systemone endpoint answers choice , noul and score questions over a structured state ( #59299 ), is served by default ( #60677 , #60696 ), and also runs on Cloudflare/clef-omni ( #61064 ), LiquidAI/d1-3B ( #60676 ) and DiffusionGemma ( #60466 ). The new hf tool and reasoning parser ( --tool-call-parser hf , --reasoning-parser hf ) reads the checkpoint's response_template ",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-18T10:23:45.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 33.4,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ]
+    },
+    {
+      "id": "8e1673cd295a3409",
+      "category": "world",
+      "title": "Egypt to provide ‘necessary’ support to Saudi Arabia amid Houthi attacks",
+      "summary": "Presidency says Egypt will provide Saudi Arabia with support to defend its security and protect its resources.",
+      "url": "https://www.aljazeera.com/news/2026/10/18/egypt-to-provide-all-necessary-and-possible-support-to-saudi?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T10:23:38.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 28.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "133e8685d3f62655",
+      "category": "world",
+      "title": "Germany news: Police probe security incident at Leipzig/Halle airport",
+      "summary": "A fence breach at the Leipzig/Halle airport has triggered a major police operation. Christian Social Union leader Markus Söder is to address a gathering of the conservative youth wing. Follow DW for more.",
+      "url": "https://www.dw.com/en/germany-news-police-probe-security-incident-at-leipzig-halle-airport/live-79686913?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T08:12:00.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 27.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "4c01002422d1869c",
       "category": "world",
       "title": "Trump waives several Russia sanctions as row with Zelensky intensifies",
@@ -524,11 +577,25 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-18T01:10:25.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 28,
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 26.1,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "2e3a4f979a1eb2fd",
+      "category": "ai",
+      "title": "v0.32.1rc0",
+      "summary": "[Doc][RL] Document the weight-transfer HTTP protocol for trainers wit…",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.1rc0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-18T09:26:56.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 24.2,
+      "topics": []
     },
     {
       "id": "a05836015abae9cf",
@@ -540,11 +607,534 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T16:30:46.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 25.9,
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 23.9,
       "topics": [
         "training"
       ]
+    },
+    {
+      "id": "c0ea49262d25839a",
+      "category": "finance",
+      "title": "Samsung to use TSMC technology for Nvidia's next-generation memory chips, Seoul newspaper reports",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-reports-6469576",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T12:08:28.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "29cd4078bfe3c173",
+      "category": "world",
+      "title": "What help can Egypt offer Saudi Arabia in the war against the Houthis?",
+      "summary": "Analysts say that any move from Egypt will remain 'strictly defensive', as the conflict in Yemen intensifies.",
+      "url": "https://www.aljazeera.com/news/2026/10/18/what-help-can-egypt-offer-saudi-arabia-in-the-war-against-the-houthis?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T11:11:26.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "d73ed04fe484dc20",
+      "category": "world",
+      "title": "Palestinian karate champion Maryam Bsharat wins second world title",
+      "summary": "Palestinian athlete Maryam Bsharat won gold at the World Karate Championships in Poland.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/palestinian-karate-champion-maryam-bsharat-wins-second-world-title?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T10:47:59.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "fb718feaed87ffa3",
+      "category": "world",
+      "title": "Is Germany's eight-hour workday under threat?",
+      "summary": "Would you work 12 hours straight? The CDU/CSU and SPD are locked in a dispute over reforms to the Working Hours Act. Workplace flexibility, collective bargaining agreements and worker protection rules are at stake.",
+      "url": "https://www.dw.com/en/is-germany-s-eight-hour-workday-under-threat/a-79680984?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T10:28:00.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "2256ca3eea403272",
+      "category": "world",
+      "title": "October 17 and the PJ-Peronist labyrinth",
+      "summary": "Peronism marks its Day of Loyalty with separate rallies as rival factions weigh options for 2027. Rumours have circulated in recent days about a ticket that could challenge Axel Kicillof in a primary: Cristina Fernández de Kirchner and Gerardo Zamora. Leer más",
+      "url": "https://www.batimes.com.ar/news/opinion-and-analysis/october-17-and-the-pj-peronist-labyrinth.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T12:15:39.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "d100ab1c9301f4e2",
+      "category": "world",
+      "title": "Sudanese gold miners describe deadly airstrike that killed 72",
+      "summary": "Sudanese miners injured in a deadly airstrike along the border with Egypt last week have been describing how the incident unfolded.",
+      "url": "https://www.africanews.com/2026/10/18/sudanese-gold-miners-describe-deadly-airstrike-that-killed-72/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T07:58:18.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 22.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "c57d12476a79d131",
+      "category": "world",
+      "title": "Major fire breaks out in Alberta after deadly incident at military base",
+      "summary": "Canada's defense minister said Saturday that people were killed and injured in an incident at a military base in Alberta that caused a major fire.",
+      "url": "https://www.npr.org/2026/10/18/nx-s1-6007276/fire-alberta-deadly-canada-military-base",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T07:56:08.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 22.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "fb2fbcb5764ca5d1",
+      "category": "technology",
+      "title": "APOD: 2026 October 18 – Sonified: Eagle Nebula Pillars",
+      "summary": "APOD Science APOD APOD: 2026 October 18 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Sonified: Eagle Nebula […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-18-sonified-eagle-nebula-pillars/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-18T04:05:00.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "7df4ce63dee79915",
+      "category": "world",
+      "title": "Populist Czech PM Babis goes empty-handed in Senate elections",
+      "summary": "Opposition parties still control the Czech Senate, in a major blow to Prime Minister Andrej Babis' and his governing coalition.",
+      "url": "https://www.dw.com/en/populist-czech-pm-babis-goes-empty-handed-in-senate-elections/a-79690934?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T07:03:00.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 22.6,
+      "topics": []
+    },
+    {
+      "id": "dbd3018a0a446f0f",
+      "category": "world",
+      "title": "Smashed storefronts, burned buildings: France wakes up to aftermath of violent protests",
+      "summary": "France woke up Sunday to devastated streets after clashes between police and protesters, mass looting and fires erupted nationwide as marches against rising costs of living degenerated into \"extreme\" violence.",
+      "url": "https://www.africanews.com/2026/10/18/smashed-storefronts-burned-buildings-france-wakes-up-to-aftermath-of-violent-protests/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T09:59:22.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 22.3,
+      "topics": []
+    },
+    {
+      "id": "d0cc748b6ffefe89",
+      "category": "world",
+      "title": "India's 'cockroach' movement founder released from police custody",
+      "summary": "Indian police released Cockroach Janta Party (CJP) founder Abhijeet Dipke from detention on Saturday after the activist was detained ahead of a rally calling for the resignation of India's chief election commissioner. Two other CJP leaders remain in custody after having been arrested while demonstrating at a protest site that police had ruled off-limits.",
+      "url": "https://www.france24.com/en/asia-pacific/20261018-india-s-cockroach-movement-founder-released-from-police-custody",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T05:47:00.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 22.3,
+      "topics": []
+    },
+    {
+      "id": "7c833507e6b7281e",
+      "category": "world",
+      "title": "Senegal's Macky Sall withdraws from race for UN top job",
+      "summary": "Senegal’s former President Macky Sall is pulling out of the race to lead the United Nations. Saturday's announcement comes one day after an informal straw poll by UN Security Council members saw all seven candidates receive at least one veto.",
+      "url": "https://www.africanews.com/2026/10/17/senegals-macky-sall-withdraws-from-race-for-un-top-job/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T13:28:15.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 22.2,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "a59da668b8b94d4d",
+      "category": "ai",
+      "title": "Release v5.20.1",
+      "summary": "Release v5.20.1 Special surprise including the new model Beam from Reflection AI 🥳 Beam is a token-efficient, frontier-scale model focused on coding and agentic use cases. It is built for teams that want to run a powerful model on their own hardware, infrastructure, or cloud, and customize it to their specific needs. Links: Documentation Fix small bug in auto mappings ( #49664 ) by @yonigozlan in #49664 Some real patch fixes We broke loading models on older torch versions 😢 should be fixed now. But here is the fu",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.1",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-16T13:02:29.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 22.1,
+      "topics": [
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "21bfbfe35bf727af",
+      "category": "world",
+      "title": "Rafael Grossi faces hurdle as two major powers oppose his UN bid",
+      "summary": "Race to become next United Nations secretary-general in disarray; Grossi, Argentine head of the UN nuclear watchdog, among seven candidates receiving a veto in the latest Security Council poll, complicating his path to the top job. Leer más",
+      "url": "https://www.batimes.com.ar/news/world/rafael-grossi-faces-hurdle-as-two-major-powers-oppose-his-un-bid.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T11:18:26.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 21.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "5881d544ea576fd3",
+      "category": "world",
+      "title": "‘Standing up for democracy’: Atlanta ‘No Kings’ rally draws Trump critics ahead of midterms",
+      "summary": "“No Kings, Vote Now” was the theme of a rally in Atlanta, one of many organised across the US on Saturday. While many demonstrators denounced US President Donald Trump’s policies, organisers said the rally was aimed at getting out the vote in the November 3 midterm elections and protecting democracy in America.",
+      "url": "https://www.france24.com/en/americas/20261018-standing-up-for-democracy-atlanta-no-kings-rally-draws-trump-critics-ahead-of-us-midterms",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T01:50:29.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 21.3,
+      "topics": []
+    },
+    {
+      "id": "028afa2b3f223c1d",
+      "category": "ai",
+      "title": "RTX Spark Ignites Global Celebration as New Windows PCs Arrive",
+      "summary": "NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs. Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MSI bring powerful local AI, content creation and gaming capabilities to a portable device, with […]",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T21:00:13.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 21.1,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "816521b1d63b01d1",
+      "category": "finance",
+      "title": "There's a crackdown on sports piracy - but is it already out of control?",
+      "summary": "The sports industry's lucrative business model is being undermined by dodgy TV sticks and illegal streaming links, writes Theo Leggett.",
+      "url": "https://www.bbc.co.uk/news/articles/cmx2375zqwwwo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T00:11:09.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 20.9,
+      "topics": []
+    },
+    {
+      "id": "5f574e0d8111bd47",
+      "category": "ai",
+      "title": "v0.32.0rc3: [Bugfix] Fix NaN output of the Mamba2 chunk scan kernel on sm90 (#61718)",
+      "summary": "Signed-off-by: Vadim Gimpelson vadim.gimpelson@gmail.com Co-authored-by: Claude noreply@anthropic.com",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc3",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-17T00:25:45.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 20.9,
+      "topics": [
+        "kernels"
+      ]
+    },
+    {
+      "id": "3dc4d2eaf63f2eac",
+      "category": "ai",
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T21:31:32.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 20.2,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "782cebdaef1f551a",
+      "category": "world",
+      "title": "Brazil's right embraces election betting odds amid polls scepticism",
+      "summary": "Rght-wing figures in Brazil are embracing the Polymarket prediction market's odds as an accurate litmus test of voter intent ahead of next weekend's election run-off. Leer más",
+      "url": "https://www.batimes.com.ar/news/latin-america/brazils-right-embraces-election-betting-odds-amid-polls-scepticism.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T01:06:25.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 20.1,
+      "topics": []
+    },
+    {
+      "id": "8b11e2b621549ffb",
+      "category": "finance",
+      "title": "Gleaning group gives £1m of produce to food banks",
+      "summary": "Gleaning Cornwall warns that more funding is needed as costs rise sharply.",
+      "url": "https://www.bbc.co.uk/news/articles/c6n49w1r2zxjo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T11:03:04.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 19.6,
+      "topics": []
+    },
+    {
+      "id": "3e803c3271c74d2c",
+      "category": "finance",
+      "title": "Accenture looks to sell Chinese operations for up to $1.5 billion, FT reports",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/accenture-looks-sell-chinese-operations-up-15-billion-ft-reports-6469506",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T10:24:24.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 19.4,
+      "topics": []
+    },
+    {
+      "id": "f9e5a938871b2531",
+      "category": "finance",
+      "title": "What is the Budget and what could be in it?",
+      "summary": "Chancellor John Healey will set out his plans for UK taxes on 28 October.",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T10:22:17.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 19.4,
+      "topics": []
+    },
+    {
+      "id": "8532aa011f4bc691",
+      "category": "finance",
+      "title": "Microsoft pulls out of UK data center deal with Nscale, Telegraph reports",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/microsoft-pulls-out-uk-data-center-deal-nscale-telegraph-reports-6469486",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T10:01:16.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 19.3,
+      "topics": []
+    },
+    {
+      "id": "eac568ce0dcd9146",
+      "category": "ai",
+      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
+      "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
+      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T18:48:08.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 18.5,
+      "topics": []
+    },
+    {
+      "id": "92adc8ebcc7f2ded",
+      "category": "technology",
+      "title": "I Am Artemis: Allison Mjoen",
+      "summary": "As the supercooled propellant flowed into the core stage, and NASA’s SLS (Space Launch System) rocket roared to life, Allison Mjoen and her family watched with awe and pride. Mjoen, NASA’s operations manager for the agency’s Exploration Ground Systems Program, helped shape the systems and ground operations that will one day send humans back to […]",
+      "url": "https://www.nasa.gov/missions/station/i-am-artemis-allison-mjoen/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-16T14:24:29.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 17.4,
+      "topics": []
+    },
+    {
+      "id": "006cc52b01a73986",
+      "category": "technology",
+      "title": "APOD: 2026 October 17 – 3D 67P",
+      "summary": "APOD Science APOD APOD: 2026 October 17… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. 3D 67P Explanation: Put […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-17-3d-67p/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-17T04:05:00.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 16.8,
+      "topics": []
+    },
+    {
+      "id": "3f3ae2b127b05da1",
+      "category": "technology",
+      "title": "Science says your boss should talk less in meetings",
+      "summary": "Research suggests listening more while talking less. Killing aimless meetings can help, too.",
+      "url": "https://arstechnica.com/science/2026/10/science-says-your-boss-should-talk-less-in-meetings/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T11:15:11.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 16.6,
+      "topics": []
+    },
+    {
+      "id": "3b1241da90d34d4b",
+      "category": "finance",
+      "title": "Christine Lagarde: IMFC Statement",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-17T05:00:00.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 16.1,
+      "topics": []
+    },
+    {
+      "id": "8ad9baebed6ed95c",
+      "category": "ai",
+      "title": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
+      "summary": "General Science",
+      "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-16T18:11:34.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 15.4,
+      "topics": []
+    },
+    {
+      "id": "e850c1e1d3d486f8",
+      "category": "technology",
+      "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
+      "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As...",
+      "url": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-16T17:00:00.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 15.1,
+      "topics": []
+    },
+    {
+      "id": "e3a372bd9f6bd4bf",
+      "category": "ai",
+      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
+      "summary": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
+      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T20:21:19.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 14.9,
+      "topics": []
+    },
+    {
+      "id": "7584f2b0d14a14a7",
+      "category": "technology",
+      "title": "Bug turns one of the biggest fears about Ray-Ban Meta smart glasses into reality",
+      "summary": "The bug is fixed, but privacy concerns remain.",
+      "url": "https://arstechnica.com/gadgets/2026/10/ray-ban-meta-smart-glasses-found-recording-audio-without-wearers-consent/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T19:11:50.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 13.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "dc630282f9cfc6b1",
+      "category": "technology",
+      "title": "OpenAI models hacked a crypto wallet and breached more websites",
+      "summary": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
+      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-16T20:59:01.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 13.1,
+      "topics": []
+    },
+    {
+      "id": "9bf256ceb417919b",
+      "category": "technology",
+      "title": "Continuous accountability for Verified bots",
+      "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain accountable over time.",
+      "url": "https://blog.cloudflare.com/verified-bots-accountability/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-16T13:00:00.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 13.1,
+      "topics": []
+    },
+    {
+      "id": "f6b73ffe35899aad",
+      "category": "finance",
+      "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "summary": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-16T15:00:00.000Z",
+      "fetchedAt": "2026-10-18T12:45:37.640Z",
+      "score": 12.6,
+      "topics": []
     },
     {
       "id": "007ce0f6f5014638",
@@ -563,20 +1153,6 @@
       ]
     },
     {
-      "id": "fb2fbcb5764ca5d1",
-      "category": "technology",
-      "title": "APOD: 2026 October 18 – Sonified: Eagle Nebula Pillars",
-      "summary": "APOD Science APOD APOD: 2026 October 18 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Sonified: Eagle Nebula […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-october-18-sonified-eagle-nebula-pillars/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-18T04:05:00.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 24.8,
-      "topics": []
-    },
-    {
       "id": "aa08e382b87c2d56",
       "category": "world",
       "title": "Canada: Major fire reported at military base in Alberta",
@@ -591,69 +1167,6 @@
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "7c833507e6b7281e",
-      "category": "world",
-      "title": "Senegal's Macky Sall withdraws from race for UN top job",
-      "summary": "Senegal’s former President Macky Sall is pulling out of the race to lead the United Nations. Saturday's announcement comes one day after an informal straw poll by UN Security Council members saw all seven candidates receive at least one veto.",
-      "url": "https://www.africanews.com/2026/10/17/senegals-macky-sall-withdraws-from-race-for-un-top-job/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T13:28:15.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 24.1,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "a59da668b8b94d4d",
-      "category": "ai",
-      "title": "Release v5.20.1",
-      "summary": "Release v5.20.1 Special surprise including the new model Beam from Reflection AI 🥳 Beam is a token-efficient, frontier-scale model focused on coding and agentic use cases. It is built for teams that want to run a powerful model on their own hardware, infrastructure, or cloud, and customize it to their specific needs. Links: Documentation Fix small bug in auto mappings ( #49664 ) by @yonigozlan in #49664 Some real patch fixes We broke loading models on older torch versions 😢 should be fixed now. But here is the fu",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.1",
-      "source": "Transformers Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-16T13:02:29.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 24,
-      "topics": [
-        "hardware",
-        "models"
-      ]
-    },
-    {
-      "id": "21bfbfe35bf727af",
-      "category": "world",
-      "title": "Rafael Grossi faces hurdle as two major powers oppose his UN bid",
-      "summary": "Race to become next United Nations secretary-general in disarray; Grossi, Argentine head of the UN nuclear watchdog, among seven candidates receiving a veto in the latest Security Council poll, complicating his path to the top job. Leer más",
-      "url": "https://www.batimes.com.ar/news/world/rafael-grossi-faces-hurdle-as-two-major-powers-oppose-his-un-bid.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T11:18:26.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 23.6,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "5881d544ea576fd3",
-      "category": "world",
-      "title": "‘Standing up for democracy’: Atlanta ‘No Kings’ rally draws Trump critics ahead of midterms",
-      "summary": "“No Kings, Vote Now” was the theme of a rally in Atlanta, one of many organised across the US on Saturday. While many demonstrators denounced President Donald Trump’s policies, organisers said the rally was aimed at getting out the vote in the November 3 midterm elections and protecting democracy in America.",
-      "url": "https://www.france24.com/en/americas/20261018-standing-up-for-democracy-atlanta-no-kings-rally-draws-trump-critics-ahead-of-us-midterms",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T01:50:29.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 23.2,
-      "topics": []
     },
     {
       "id": "9bf9dcc10e9ab1f8",
@@ -686,38 +1199,6 @@
       "topics": []
     },
     {
-      "id": "028afa2b3f223c1d",
-      "category": "ai",
-      "title": "RTX Spark Ignites Global Celebration as New Windows PCs Arrive",
-      "summary": "NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs. Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MSI bring powerful local AI, content creation and gaming capabilities to a portable device, with […]",
-      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T21:00:13.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 23,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
-      "id": "5f574e0d8111bd47",
-      "category": "ai",
-      "title": "v0.32.0rc3: [Bugfix] Fix NaN output of the Mamba2 chunk scan kernel on sm90 (#61718)",
-      "summary": "Signed-off-by: Vadim Gimpelson vadim.gimpelson@gmail.com Co-authored-by: Claude noreply@anthropic.com",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc3",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-17T00:25:45.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 22.9,
-      "topics": [
-        "kernels"
-      ]
-    },
-    {
       "id": "bf813d81e13c349a",
       "category": "world",
       "title": "US ambassador urges Israel to prosecute attackers of American journalist",
@@ -746,50 +1227,6 @@
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "06e6841840e2a811",
-      "category": "ai",
-      "title": "v0.32.0",
-      "summary": "[Bugfix][Rust Frontend] Fix macOS build: read inherited listener fami…",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-17T18:57:10.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 22.5,
-      "topics": []
-    },
-    {
-      "id": "3dc4d2eaf63f2eac",
-      "category": "ai",
-      "title": "Meta removes language that raised scraping and AI training concerns",
-      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
-      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T21:31:32.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 22.1,
-      "topics": [
-        "training"
-      ]
-    },
-    {
-      "id": "782cebdaef1f551a",
-      "category": "world",
-      "title": "Brazil's right embraces election betting odds amid polls scepticism",
-      "summary": "Rght-wing figures in Brazil are embracing the Polymarket prediction market's odds as an accurate litmus test of voter intent ahead of next weekend's election run-off. Leer más",
-      "url": "https://www.batimes.com.ar/news/latin-america/brazils-right-embraces-election-betting-odds-amid-polls-scepticism.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T01:06:25.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 22,
-      "topics": []
     },
     {
       "id": "7466a3e12c7c05d9",
@@ -866,20 +1303,6 @@
       "topics": []
     },
     {
-      "id": "eac568ce0dcd9146",
-      "category": "ai",
-      "title": "Replit makes OpenAI its default over Anthropic, CEO says",
-      "summary": "Over the weekend, Masad clarified that OpenAI would replace Anthropic as its default model provider. Claude will still be available to customers on the platform.",
-      "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T18:48:08.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 20.4,
-      "topics": []
-    },
-    {
       "id": "e2a64d7587d9e69a",
       "category": "finance",
       "title": "Low-cost clinic helps pet owners with vet bills",
@@ -910,20 +1333,6 @@
       ]
     },
     {
-      "id": "92adc8ebcc7f2ded",
-      "category": "technology",
-      "title": "I Am Artemis: Allison Mjoen",
-      "summary": "As the supercooled propellant flowed into the core stage, and NASA’s SLS (Space Launch System) rocket roared to life, Allison Mjoen and her family watched with awe and pride. Mjoen, NASA’s operations manager for the agency’s Exploration Ground Systems Program, helped shape the systems and ground operations that will one day send humans back to […]",
-      "url": "https://www.nasa.gov/missions/station/i-am-artemis-allison-mjoen/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-16T14:24:29.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 19.3,
-      "topics": []
-    },
-    {
       "id": "1cddf84ba299a25a",
       "category": "finance",
       "title": "AI rapidly improving, could vastly boost US GDP, Anthropic's Clark tells policymakers",
@@ -952,148 +1361,6 @@
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "006cc52b01a73986",
-      "category": "technology",
-      "title": "APOD: 2026 October 17 – 3D 67P",
-      "summary": "APOD Science APOD APOD: 2026 October 17… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. 3D 67P Explanation: Put […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-october-17-3d-67p/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-17T04:05:00.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 18.8,
-      "topics": []
-    },
-    {
-      "id": "3f3ae2b127b05da1",
-      "category": "technology",
-      "title": "Science says your boss should talk less in meetings",
-      "summary": "Research suggests listening more while talking less. Killing aimless meetings can help, too.",
-      "url": "https://arstechnica.com/science/2026/10/science-says-your-boss-should-talk-less-in-meetings/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T11:15:11.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 18.6,
-      "topics": []
-    },
-    {
-      "id": "3b1241da90d34d4b",
-      "category": "finance",
-      "title": "Christine Lagarde: IMFC Statement",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261017~7015ea3099.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-17T05:00:00.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 18,
-      "topics": []
-    },
-    {
-      "id": "8ad9baebed6ed95c",
-      "category": "ai",
-      "title": "Grounding AI agents in biological reality: Building blocks for autonomous wet labs",
-      "summary": "General Science",
-      "url": "https://research.google/blog/grounding-ai-agents-in-biological-reality-building-blocks-for-autonomous-wet-labs/",
-      "source": "Google Research",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-16T18:11:34.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 17.3,
-      "topics": []
-    },
-    {
-      "id": "e850c1e1d3d486f8",
-      "category": "technology",
-      "title": "Code, Test, and Deploy on One Machine with NVIDIA RTX Spark",
-      "summary": "AI agents are changing how software gets built. Developers have gone from writing every line of code by hand to directing agents that write most of the code. As...",
-      "url": "https://developer.nvidia.com/blog/code-test-and-deploy-on-one-machine-with-nvidia-rtx-spark/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T17:00:00.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 17,
-      "topics": []
-    },
-    {
-      "id": "e3a372bd9f6bd4bf",
-      "category": "ai",
-      "title": "Anthropic says its workforce has become less junior and is spending more time in meetings",
-      "summary": "The composition of Anthropic’s workforce and the type of work getting done have changed significantly in the past year.",
-      "url": "https://techcrunch.com/2026/10/17/anthropic-says-its-workforce-has-become-less-junior-and-is-spending-more-time-in-meetings/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T20:21:19.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 16.8,
-      "topics": []
-    },
-    {
-      "id": "7584f2b0d14a14a7",
-      "category": "technology",
-      "title": "Bug turns one of the biggest fears about Ray-Ban Meta smart glasses into reality",
-      "summary": "The bug is fixed, but privacy concerns remain.",
-      "url": "https://arstechnica.com/gadgets/2026/10/ray-ban-meta-smart-glasses-found-recording-audio-without-wearers-consent/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T19:11:50.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 15.5,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "dc630282f9cfc6b1",
-      "category": "technology",
-      "title": "OpenAI models hacked a crypto wallet and breached more websites",
-      "summary": "The actions could have resulted in criminal charges had humans been behind the keyboard.",
-      "url": "https://arstechnica.com/security/2026/10/openai-models-hacked-a-crypto-wallet-and-breached-more-websites/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-16T20:59:01.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 15,
-      "topics": []
-    },
-    {
-      "id": "9bf256ceb417919b",
-      "category": "technology",
-      "title": "Continuous accountability for Verified bots",
-      "summary": "Identity alone doesn't guarantee a bot will behave responsibly. We are introducing a system to continuously evaluate whether Verified bots honor site preferences, like robots.txt and HTTP 429s, ensuring they remain accountable over time.",
-      "url": "https://blog.cloudflare.com/verified-bots-accountability/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-16T13:00:00.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 15,
-      "topics": []
-    },
-    {
-      "id": "f6b73ffe35899aad",
-      "category": "finance",
-      "title": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-      "summary": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
-      "source": "U.S. Federal Reserve",
-      "sourceCountry": "United States",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-16T15:00:00.000Z",
-      "fetchedAt": "2026-10-18T05:01:04.859Z",
-      "score": 14.5,
-      "topics": []
     },
     {
       "id": "34c691cef10b8ddf",
