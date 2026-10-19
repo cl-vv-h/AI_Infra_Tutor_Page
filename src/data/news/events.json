@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-10-18T22:32:43.660Z",
-    "releasesCollectedAt": "2026-10-18T22:32:54.632Z",
-    "libraryCollectedAt": "2026-10-18T22:32:43.660Z",
+    "dailyCollectedAt": "2026-10-19T05:10:01.397Z",
+    "releasesCollectedAt": "2026-10-19T05:10:12.950Z",
+    "libraryCollectedAt": "2026-10-19T05:10:01.397Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -50,7 +50,8 @@
       "2026-10-15",
       "2026-10-16",
       "2026-10-17",
-      "2026-10-18"
+      "2026-10-18",
+      "2026-10-19"
     ],
     "missingArchiveDates": [],
     "failedSources": [],
@@ -67,7 +68,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-18T22:32:54.632Z",
+          "lastCollectedAt": "2026-10-19T05:10:12.950Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -80,7 +81,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-18T22:32:54.632Z",
+          "lastCollectedAt": "2026-10-19T05:10:12.950Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -93,7 +94,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-18T22:32:54.632Z",
+          "lastCollectedAt": "2026-10-19T05:10:12.950Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -106,7 +107,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-10-18T22:32:54.632Z",
+          "lastCollectedAt": "2026-10-19T05:10:12.950Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -119,7 +120,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-02T01:09:04.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-10-18T22:32:54.632Z",
+          "lastCollectedAt": "2026-10-19T05:10:12.950Z",
           "revisionCount": 3,
           "ruleIds": [
             "official-releases"
@@ -127,13 +128,13 @@
         },
         {
           "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.22",
-          "title": "v0.5.22",
+          "title": "sglang · v0.5.22",
           "publisher": "SGLang Releases",
           "publisherCountry": "International",
-          "publishedAt": "2026-10-15T23:39:11.000Z",
+          "publishedAt": "2026-10-19T02:55:19.000Z",
           "firstCollectedAt": "2026-10-16T04:52:38.724Z",
-          "lastCollectedAt": "2026-10-17T22:34:35.767Z",
-          "revisionCount": 0,
+          "lastCollectedAt": "2026-10-19T05:10:12.950Z",
+          "revisionCount": 1,
           "ruleIds": [
             "official-releases"
           ]
@@ -455,5 +456,5 @@
       ]
     }
   ],
-  "fingerprint": "c39563e67271d8835ef81ebf171e0f3b5cdbf3406c4a8ad1c8271b93e2e106fe"
+  "fingerprint": "33e5f723670c083848d4b9d4eebed5f02b8de6480acee9d575a99faf5f1ce268"
 }
