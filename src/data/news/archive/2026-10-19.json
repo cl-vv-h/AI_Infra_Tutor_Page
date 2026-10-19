@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-19T05:10:01.397Z",
+  "generatedAt": "2026-10-19T15:49:37.359Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 39,
-  "failedSourceCount": 0,
+  "sourceCount": 38,
+  "failedSourceCount": 1,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 29,
-      "latestPublishedAt": "2026-10-19T05:07:21.000Z",
+      "entryCount": 26,
+      "latestPublishedAt": "2026-10-19T15:40:28.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 44,
-      "latestPublishedAt": "2026-10-19T04:30:59.000Z",
+      "entryCount": 46,
+      "latestPublishedAt": "2026-10-19T15:46:29.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 135,
-      "latestPublishedAt": "2026-10-19T03:22:00.000Z",
+      "latestPublishedAt": "2026-10-19T15:09:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-19T04:42:13.000Z",
+      "latestPublishedAt": "2026-10-19T15:34:22.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -65,8 +65,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 12,
-      "latestPublishedAt": "2026-10-19T03:27:00.000Z",
+      "entryCount": 20,
+      "latestPublishedAt": "2026-10-19T15:33:22.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -92,8 +92,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 18,
-      "latestPublishedAt": "2026-10-17T21:00:13.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-19T15:00:31.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-18T20:37:40.000Z",
+      "latestPublishedAt": "2026-10-19T15:37:09.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-18T16:25:19.000Z",
+      "latestPublishedAt": "2026-10-19T14:45:43.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -157,8 +157,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 15,
-      "latestPublishedAt": "2026-10-17T05:00:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-19T06:00:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -195,7 +195,7 @@
       "type": "institution",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 50,
+      "entryCount": 49,
       "latestPublishedAt": "2026-10-16T08:00:00.000Z",
       "selectedCount": 0,
       "libraryCount": 0
@@ -248,8 +248,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 30,
-      "latestPublishedAt": "2026-10-18T12:00:00.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-19T12:00:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -258,11 +258,11 @@
       "country": "France",
       "category": "world",
       "type": "news",
-      "state": "ok",
+      "state": "invalid",
       "channel": "feed",
-      "entryCount": 24,
-      "latestPublishedAt": "2026-10-19T03:42:25.000Z",
-      "selectedCount": 3,
+      "entryCount": 0,
+      "latestPublishedAt": null,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -274,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-18T21:00:11.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-19T11:38:43.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-18T15:56:57.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-19T15:25:24.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-18T12:15:39.000Z",
+      "latestPublishedAt": "2026-10-19T11:51:20.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -312,7 +312,7 @@
       "type": "engineering",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 880,
+      "entryCount": 881,
       "latestPublishedAt": "2026-10-16T01:44:47.000Z",
       "selectedCount": 0,
       "libraryCount": 8
@@ -352,7 +352,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-19T02:55:19.000Z",
+      "latestPublishedAt": "2026-10-19T05:55:53.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -417,8 +417,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-16T16:30:46.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-19T15:45:05.000Z",
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -456,8 +456,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-16T13:00:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-19T13:00:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -515,6 +515,39 @@
   ],
   "items": [
     {
+      "id": "e88d591072c47326",
+      "category": "technology",
+      "title": "One Search, Two Layers: Compiler Controls Inside PyTorch Helion using NVIDIA CompileIQ",
+      "summary": "With Helion’s release last year, it aimed at enabling developers to write GPU kernels in PyTorch-native Python and let its powerful autotuner do the work that used to require hand-written... The post One Search, Two Layers: Compiler Controls Inside PyTorch Helion using NVIDIA CompileIQ appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/one-search-two-layers-compiler-controls-inside-pytorch-helion-using-nvidia-compileiq/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-19T15:45:05.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 35,
+      "topics": [
+        "kernels",
+        "hardware"
+      ]
+    },
+    {
+      "id": "6cd39bb6a91b6c65",
+      "category": "technology",
+      "title": "Introducing TorchNeuron: Native PyTorch backend for AWS Trainium",
+      "summary": "Frontier models span language, video and audio, on architectures from dense and mixture-of-experts transformers to diffusion, state-space, world and structure-prediction models. PyTorch is where AI research happens, where the models... The post Introducing TorchNeuron: Native PyTorch backend for AWS Trainium appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-19T12:45:23.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 34.2,
+      "topics": [
+        "models"
+      ]
+    },
+    {
       "id": "588e2d29802c9ab8",
       "category": "ai",
       "title": "v0.5.22",
@@ -523,15 +556,127 @@
       "source": "SGLang Releases",
       "sourceCountry": "International",
       "sourceType": "release",
-      "publishedAt": "2026-10-19T02:55:19.000Z",
-      "fetchedAt": "2026-10-19T05:10:01.397Z",
-      "score": 33.4,
+      "publishedAt": "2026-10-19T05:55:53.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 31.5,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models",
         "training",
+        "security"
+      ]
+    },
+    {
+      "id": "0b6f55365284fe7e",
+      "category": "finance",
+      "title": "Ahold Delhaize reports cybersecurity incident to Dutch police",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/ahold-delhaize-reports-cybersecurity-incident-dutch-police-6472706",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T15:33:22.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 28.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "4b3ccbfd9b68bd10",
+      "category": "world",
+      "title": "Russia’s Lavrov discusses US war and regional security in Tehran visit",
+      "summary": "Russia’s FM Sergey Lavrov is in Tehran for his first visit since the outbreak of the US-Israeli war on Iran.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/russias-lavrov-discusses-us-war-and-regional-security-in-tehran-visit?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T15:15:02.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 28.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "c40b2613dfa4bcc9",
+      "category": "world",
+      "title": "Famine fears as aid cuts and shipment restrictions coincide in Gaza",
+      "summary": "Displaced families in Gaza fear worsening food insecurity as planned aid cuts coincide with continued restrictions.",
+      "url": "https://www.aljazeera.com/news/2026/10/19/famine-fears-as-aid-cuts-and-shipment-restrictions-coincide-in-gaza?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T15:05:16.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 28.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "74f823b0bacb889c",
+      "category": "ai",
+      "title": "NVIDIA Advances Agentic Security for Media, From European Public Service Broadcasting to Global Content Production",
+      "summary": "At a creative industry event that took place today in Berlin — hosted in collaboration with Adobe, Bertelsmann, NVIDIA and UFA — the latest advancements in intelligent media were on display. Key to the news: the European Broadcasting Union (EBU) is collaborating with NVIDIA to expand its sovereign framework with cloud, open models and integration […]",
+      "url": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T15:00:31.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 28.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "8585131a40bf00c7",
+      "category": "world",
+      "title": "Pakistan suspends Iran border trade, amid violence on both sides",
+      "summary": "Islamabad cites security concerns, while Tehran points to technical issues as Pakistan mediates between Iran and the US.",
+      "url": "https://www.aljazeera.com/news/2026/10/19/pakistan-suspends-iran-border-trade-amid-violence-on-both-sides?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T14:43:03.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 28.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "08019aeca0ecf87f",
+      "category": "finance",
+      "title": "CNA Explains: Why are AI stocks tumbling when demand is still booming?",
+      "summary": "AI demand is booming, chipmakers are posting record profits and tech giants are continuing to invest hundreds of billions. So why are semiconductor stocks tumbling? CNA speaks to experts about what's driving the sell-off.",
+      "url": "https://www.channelnewsasia.com/world/ai-stocks-tumbling-tech-giants-investing-demand-why-cna-explains-6471256",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T12:08:05.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 28.1,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "364881396d68790c",
+      "category": "world",
+      "title": "Greece: At least 12 die in migrant drownings overnight",
+      "summary": "Authorities say 12 people, including an infant, have drowned in Greek waters in two separate incidents overnight. Another 22 people were rescued. A search-and-rescue operation is ongoing.",
+      "url": "https://www.dw.com/en/greece-at-least-12-die-in-migrant-drownings-overnight/a-79697504?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T10:19:00.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 27.6,
+      "topics": [
         "security"
       ]
     },
@@ -545,8 +690,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-18T10:23:45.000Z",
-      "fetchedAt": "2026-10-19T05:10:01.397Z",
-      "score": 29.3,
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 26.6,
       "topics": [
         "inference",
         "kernels",
@@ -554,6 +699,420 @@
         "models",
         "training",
         "security"
+      ]
+    },
+    {
+      "id": "e515fc8eae09ea78",
+      "category": "world",
+      "title": "US airman dies as daredevil descent goes wrong before Texas college football game",
+      "summary": "The game continued after the incident. The American Conference said the decision was made before his death was known.",
+      "url": "https://www.bbc.co.uk/news/articles/crd6dn63j2xwo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T14:13:18.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 24.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "d65eb811aae21249",
+      "category": "finance",
+      "title": "US banning Chinese AI DeepSeek from government agency IT systems",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/us-banning-chinese-ai-deepseek-government-agency-it-systems-6472301",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T13:27:00.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 24.4,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "970d143b3aeb0f36",
+      "category": "technology",
+      "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
+      "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code.",
+      "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-19T13:00:00.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 24.3,
+      "topics": []
+    },
+    {
+      "id": "436104069698a50d",
+      "category": "world",
+      "title": "Can diplomacy prevent an Ethiopia-Eritrea war as Tigray gets a new administration?",
+      "summary": "Ethiopia has installed a new administration in conflict-hit Tigray after federal forces pushed back Tigrayan fighters. But tensions with Eritrea continue to raise fears of a wider regional war.",
+      "url": "https://www.dw.com/en/can-diplomacy-prevent-an-ethiopia-eritrea-war-as-tigray-gets-a-new-administration/a-79705435?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T15:02:00.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "4cd9496796183a28",
+      "category": "world",
+      "title": "Australian MP critically injured after being hit by car in apparent attack",
+      "summary": "The independent politician is in hospital after what the prime minister says may have been a deliberate attack.",
+      "url": "https://www.bbc.co.uk/news/articles/cwp9g43g2p07o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T14:09:54.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "b6020608512e3fb5",
+      "category": "ai",
+      "title": "Nvidia launches new open models to run agents in the enterprise and on PCs",
+      "summary": "Nvidia is leaning hard into the trend of enterprise companies wanting to run their own open models in their own data centers and also trying to make on-device, private AI agents a thing.",
+      "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T15:37:09.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "d9329f7d8672ae96",
+      "category": "world",
+      "title": "From delivery driver to global fame: A Korean writer's journey",
+      "summary": "You Yeong-Gwang's The Rainfall Market tells the story of a mysterious, hidden shop that only opens when it rains. For a debut novel by an unknown author, it was a massive success.",
+      "url": "https://www.dw.com/en/from-delivery-driver-to-global-fame-a-korean-writer-s-journey/a-79672757?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T10:55:00.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "97bc12591d3ba441",
+      "category": "world",
+      "title": "Protesters block access to Paris' Louvre Museum in support of student movement",
+      "summary": "After a weekend of violent protests across France, students in Paris demonstrated again on Monday in front of the Louvre museum.",
+      "url": "https://www.africanews.com/2026/10/19/protesters-block-access-to-paris-louvre-museum-in-support-of-student-movement/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T14:41:29.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "e66a4961644d5db2",
+      "category": "finance",
+      "title": "People playing loud music on buses could face £100 fine",
+      "summary": "Antisocial behaviour on buses in England could lead to fines while a new campaign is also being launched for trains. A national campaign asking rail passengers \"share the carriage, not the noise\" is being launched.",
+      "url": "https://www.bbc.co.uk/news/articles/cm89z008x7xdo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T09:49:58.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "54fe455215de4514",
+      "category": "world",
+      "title": "Musk and Anthropic pledge public share giveaways",
+      "summary": "Musk's announcement comes after Anthropic pledged to create a public benefit fund ahead of its blockbuster stock market listing.",
+      "url": "https://www.bbc.co.uk/news/articles/cm2kez327gdko",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T09:38:25.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "5eabc3734f9cf65a",
+      "category": "technology",
+      "title": "APOD: 2026 October 19 – Treble Clef: Unusual X-ray Hot Radio Source",
+      "summary": "APOD Science APOD APOD: 2026 October 19 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Treble Clef: Unusual […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-19-treble-clef-unusual-x-ray-hot-radio-source/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-19T04:05:00.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 22.1,
+      "topics": []
+    },
+    {
+      "id": "c1f393f2e14b1f8e",
+      "category": "world",
+      "title": "Gaza: Funding cuts leave half a million without food assistance",
+      "summary": "Funding shortages have forced the World Food Programme (WFP) to slash assistance to hungry families in the Gaza Strip by roughly one third – a move that will affect some 500,000 people as winter approaches, the UN agency announced on Monday.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168622",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 22,
+      "topics": []
+    },
+    {
+      "id": "9c3b2ee43b0214eb",
+      "category": "world",
+      "title": "Protecting Earth’s fragile biodiversity takes spotlight at Armenia talks",
+      "summary": "Biodiversity losses continue to upend the lives of billions of people whose future prosperity depends on countries taking urgent action to protect our planet, the top UN official leading talks at the UN Biodiversity Conference in Yerevan, said on Monday.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168620",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 22,
+      "topics": []
+    },
+    {
+      "id": "1aa33497400792e5",
+      "category": "world",
+      "title": "Trump’s Latin America allies deepen ties with Washington lenders",
+      "summary": "Latin America’s rightward, market-friendly shift is reshaping its relationship with Washington and the multilateral lenders historically villainised in the region for pushing fiscal austerity. Leer más",
+      "url": "https://www.batimes.com.ar/news/latin-america/trumps-latin-america-allies-deepen-ties-with-washington-lenders.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T11:45:46.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 22,
+      "topics": []
+    },
+    {
+      "id": "162b605f4dd6eb08",
+      "category": "world",
+      "title": "Australian prime minister says lawmaker critically injured by car is 'no accident'",
+      "summary": "A car hit an Australian federal independent lawmaker on Monday, critically injuring her in an apparent deliberate attack, Prime Minister Anthony Albanese said. The driver was arrested.",
+      "url": "https://www.npr.org/2026/10/19/g-s1-148737/australia-lawmaker-critically-injured",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T11:38:43.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 22,
+      "topics": []
+    },
+    {
+      "id": "d8d27c632c2fe25b",
+      "category": "technology",
+      "title": "Autumn Paints Poland’s Bieszczady Mountains",
+      "summary": "Fall color covers the forested slopes of Bieszczady National Park, while patches of polonina, a type of high-mountain meadow, have turned tan.",
+      "url": "https://science.nasa.gov/earth/earth-observatory/autumn-paints-polands-bieszczady-mountains/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-19T04:01:00.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 22,
+      "topics": []
+    },
+    {
+      "id": "679c58c2d0e9ed25",
+      "category": "world",
+      "title": "2026 midterms could be the most expensive on record. And, Macron condemns protests",
+      "summary": "More than $15 billion has been raised in this year's midterm elections. And, France's president is condemning the violent protests erupting across the country.",
+      "url": "https://www.npr.org/2026/10/19/g-s1-148733/up-first-newsletter-ukraine-russia-campaign-finances-france-protests",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T11:15:43.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 21.9,
+      "topics": []
+    },
+    {
+      "id": "f7435b6749723c44",
+      "category": "world",
+      "title": "Ukraine and Russia exchange strikes, as relations between Trump and Zelenskyy sour",
+      "summary": "Ukraine carried out a massive drone strikes on Russia, which launched deadly attacks on its smaller neighbor over the weekend.",
+      "url": "https://www.npr.org/2026/10/19/nx-s1-6007371/ukraine-and-russia-exchange-strikes-as-relations-between-trump-and-zelenskyy-sour",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T10:38:03.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 21.7,
+      "topics": []
+    },
+    {
+      "id": "0467d0fcd26d55b4",
+      "category": "finance",
+      "title": "China's growth accelerates as AI boom helps boost exports",
+      "summary": "Exports have helped offset weak spending at home, but trade tensions and AI doubts cloud its outlook.",
+      "url": "https://www.bbc.co.uk/news/articles/cm5yn098xz8lo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T06:08:02.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 21.6,
+      "topics": []
+    },
+    {
+      "id": "1ecb9df1ee00180f",
+      "category": "finance",
+      "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-19T06:00:00.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 21.5,
+      "topics": []
+    },
+    {
+      "id": "5200e0a4ea61d1fe",
+      "category": "finance",
+      "title": "Vinted blocks French looters listing stolen goods for sale",
+      "summary": "The platform said since the weekend it had \"taken immediate action to idenitify and remove listings linked to looting\".",
+      "url": "https://www.bbc.co.uk/news/articles/cm8xzrljv72ro",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T15:46:29.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 20,
+      "topics": []
+    },
+    {
+      "id": "28f3c5e015c90e57",
+      "category": "technology",
+      "title": "Disney found a way to buy Character.AI without buying its lawsuits",
+      "summary": "Character.AI faces claims its bots encouraged minors to self-harm and kill their parents.",
+      "url": "https://arstechnica.com/tech-policy/2026/10/disney-found-a-way-to-buy-character-ai-without-buying-its-lawsuits/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T14:45:43.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 18.7,
+      "topics": []
+    },
+    {
+      "id": "07974ba1707b446f",
+      "category": "technology",
+      "title": "A Chinese rocket deorbited over Minnesota and left this in a farmer's cornfield",
+      "summary": "All the evidence points to the debris being part of a Chinese Zhuque-2E rocket.",
+      "url": "https://arstechnica.com/space/2026/10/a-chinese-rocket-deorbited-over-minnesota-and-left-this-in-a-farmers-cornfield/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T14:35:01.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 18.7,
+      "topics": []
+    },
+    {
+      "id": "e033d7f89b36619a",
+      "category": "technology",
+      "title": "Review: Lanterns is a truly unique twist on the superhero genre",
+      "summary": "Gritty HBO series is a beacon for what's possible when one is allowed to get creative with the tropes.",
+      "url": "https://arstechnica.com/culture/2026/10/review-lanterns-is-a-truly-unique-twist-on-the-superhero-genre/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T13:31:08.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 18.4,
+      "topics": []
+    },
+    {
+      "id": "2e3a4f979a1eb2fd",
+      "category": "ai",
+      "title": "v0.32.1rc0",
+      "summary": "[Doc][RL] Document the weight-transfer HTTP protocol for trainers wit…",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.1rc0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-18T09:26:56.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 17.4,
+      "topics": []
+    },
+    {
+      "id": "fb2fbcb5764ca5d1",
+      "category": "technology",
+      "title": "APOD: 2026 October 18 – Sonified: Eagle Nebula Pillars",
+      "summary": "APOD Science APOD APOD: 2026 October 18 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Sonified: Eagle Nebula […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-18-sonified-eagle-nebula-pillars/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-18T04:05:00.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 16.1,
+      "topics": []
+    },
+    {
+      "id": "028afa2b3f223c1d",
+      "category": "ai",
+      "title": "RTX Spark Ignites Global Celebration as New Windows PCs Arrive",
+      "summary": "NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs. Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MSI bring powerful local AI, content creation and gaming capabilities to a portable device, with […]",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T21:00:13.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 14.3,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "627331f0d24589ea",
+      "category": "ai",
+      "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
+      "summary": "Anthropic said that it will commit 5% of its shares to the fund.",
+      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-18T20:37:40.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 14.2,
+      "topics": []
+    },
+    {
+      "id": "3dc4d2eaf63f2eac",
+      "category": "ai",
+      "title": "Meta removes language that raised scraping and AI training concerns",
+      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
+      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-17T21:31:32.000Z",
+      "fetchedAt": "2026-10-19T15:49:37.359Z",
+      "score": 13.4,
+      "topics": [
+        "training"
       ]
     },
     {
@@ -621,48 +1180,6 @@
       ]
     },
     {
-      "id": "5eabc3734f9cf65a",
-      "category": "technology",
-      "title": "APOD: 2026 October 19 – Treble Clef: Unusual X-ray Hot Radio Source",
-      "summary": "APOD Science APOD APOD: 2026 October 19 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Treble Clef: Unusual […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-october-19-treble-clef-unusual-x-ray-hot-radio-source/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-19T04:05:00.000Z",
-      "fetchedAt": "2026-10-19T05:10:01.397Z",
-      "score": 24.7,
-      "topics": []
-    },
-    {
-      "id": "d8d27c632c2fe25b",
-      "category": "technology",
-      "title": "Autumn Paints Poland’s Bieszczady Mountains",
-      "summary": "Fall color covers the forested slopes of Bieszczady National Park, while patches of polonina, a type of high-mountain meadow, have turned tan.",
-      "url": "https://science.nasa.gov/earth/earth-observatory/autumn-paints-polands-bieszczady-mountains/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-19T04:01:00.000Z",
-      "fetchedAt": "2026-10-19T05:10:01.397Z",
-      "score": 24.7,
-      "topics": []
-    },
-    {
-      "id": "54fe455215de4514",
-      "category": "world",
-      "title": "Anthropic says it will commit 5% of its shares to 'public benefit fund'",
-      "summary": "The announcement comes as Anthropic lays the ground for a blockbuster stock market listing.",
-      "url": "https://www.bbc.co.uk/news/articles/cm2kez327gdko",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-19T04:30:59.000Z",
-      "fetchedAt": "2026-10-19T05:10:01.397Z",
-      "score": 23.8,
-      "topics": []
-    },
-    {
       "id": "133e8685d3f62655",
       "category": "world",
       "title": "Germany news: Police probe security incident at Leipzig/Halle airport",
@@ -693,20 +1210,6 @@
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "0467d0fcd26d55b4",
-      "category": "finance",
-      "title": "China's growth accelerates as AI export boom outweighs domestic weakness",
-      "summary": "Exports have helped offset weak spending at home, but trade tensions and AI doubts cloud its outlook.",
-      "url": "https://www.bbc.co.uk/news/articles/cm5yn098xz8lo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-19T03:17:46.000Z",
-      "fetchedAt": "2026-10-19T05:10:01.397Z",
-      "score": 23.5,
-      "topics": []
     },
     {
       "id": "490bcc5b20a5cee4",
@@ -781,20 +1284,6 @@
       "topics": []
     },
     {
-      "id": "e66a4961644d5db2",
-      "category": "finance",
-      "title": "People playing loud music on buses could face £100 fine",
-      "summary": "Antisocial behaviour on buses in England could lead to fines while a new campaign is also being launched for trains. A national campaign asking rail passengers \"share the carriage, not the noise\" is being launched.",
-      "url": "https://www.bbc.co.uk/news/articles/cm89z008x7xdo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-19T00:22:20.000Z",
-      "fetchedAt": "2026-10-19T05:10:01.397Z",
-      "score": 22.8,
-      "topics": []
-    },
-    {
       "id": "366bd3f51cf3cda0",
       "category": "finance",
       "title": "BOJ chief says underlying inflation 'quite close' to price goal",
@@ -806,20 +1295,6 @@
       "publishedAt": "2026-10-19T00:16:56.000Z",
       "fetchedAt": "2026-10-19T05:10:01.397Z",
       "score": 22.8,
-      "topics": []
-    },
-    {
-      "id": "2e3a4f979a1eb2fd",
-      "category": "ai",
-      "title": "v0.32.1rc0",
-      "summary": "[Doc][RL] Document the weight-transfer HTTP protocol for trainers wit…",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.1rc0",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-18T09:26:56.000Z",
-      "fetchedAt": "2026-10-19T05:10:01.397Z",
-      "score": 20.1,
       "topics": []
     },
     {
@@ -909,20 +1384,6 @@
       ]
     },
     {
-      "id": "fb2fbcb5764ca5d1",
-      "category": "technology",
-      "title": "APOD: 2026 October 18 – Sonified: Eagle Nebula Pillars",
-      "summary": "APOD Science APOD APOD: 2026 October 18 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Sonified: Eagle Nebula […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-october-18-sonified-eagle-nebula-pillars/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-18T04:05:00.000Z",
-      "fetchedAt": "2026-10-19T05:10:01.397Z",
-      "score": 18.7,
-      "topics": []
-    },
-    {
       "id": "e878ca1c3ac278a5",
       "category": "finance",
       "title": "Don't fall for this - how to protect yourself from AI scams",
@@ -935,52 +1396,6 @@
       "fetchedAt": "2026-10-19T05:10:01.397Z",
       "score": 18.6,
       "topics": []
-    },
-    {
-      "id": "028afa2b3f223c1d",
-      "category": "ai",
-      "title": "RTX Spark Ignites Global Celebration as New Windows PCs Arrive",
-      "summary": "NVIDIA RTX Spark laptops are now available, bringing NVIDIA Blackwell RTX graphics, up to 128GB of unified memory and the full NVIDIA AI platform to slim, premium Windows PCs. Starting at $2,399, laptops from ASUS, Dell, HP, Lenovo, Microsoft and MSI bring powerful local AI, content creation and gaming capabilities to a portable device, with […]",
-      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T21:00:13.000Z",
-      "fetchedAt": "2026-10-19T05:10:01.397Z",
-      "score": 17,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
-      "id": "627331f0d24589ea",
-      "category": "ai",
-      "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
-      "summary": "Anthropic said that it will commit 5% of its shares to the fund.",
-      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-18T20:37:40.000Z",
-      "fetchedAt": "2026-10-19T05:10:01.397Z",
-      "score": 16.9,
-      "topics": []
-    },
-    {
-      "id": "3dc4d2eaf63f2eac",
-      "category": "ai",
-      "title": "Meta removes language that raised scraping and AI training concerns",
-      "summary": "A Meta spokesperson insisted that the updated terms did not reflect a change in the way Meta crawls the web.",
-      "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-17T21:31:32.000Z",
-      "fetchedAt": "2026-10-19T05:10:01.397Z",
-      "score": 16.1,
-      "topics": [
-        "training"
-      ]
     },
     {
       "id": "4c32ce981de2b86b",
