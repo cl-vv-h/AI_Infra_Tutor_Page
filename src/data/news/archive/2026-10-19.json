@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-19T15:49:37.359Z",
+  "generatedAt": "2026-10-19T21:12:18.128Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 38,
-  "failedSourceCount": 1,
+  "sourceCount": 39,
+  "failedSourceCount": 0,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 26,
-      "latestPublishedAt": "2026-10-19T15:40:28.000Z",
+      "entryCount": 27,
+      "latestPublishedAt": "2026-10-19T20:49:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 46,
-      "latestPublishedAt": "2026-10-19T15:46:29.000Z",
+      "entryCount": 47,
+      "latestPublishedAt": "2026-10-19T16:46:35.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 135,
-      "latestPublishedAt": "2026-10-19T15:09:00.000Z",
+      "latestPublishedAt": "2026-10-19T19:57:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-19T15:34:22.000Z",
+      "latestPublishedAt": "2026-10-19T20:31:21.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-19T15:33:22.000Z",
+      "latestPublishedAt": "2026-10-19T20:39:55.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -92,7 +92,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 18,
-      "latestPublishedAt": "2026-10-19T15:00:31.000Z",
+      "latestPublishedAt": "2026-10-19T19:27:08.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-19T15:37:09.000Z",
+      "latestPublishedAt": "2026-10-19T20:09:24.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-19T14:45:43.000Z",
+      "latestPublishedAt": "2026-10-19T19:27:24.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-19T04:05:00.000Z",
+      "latestPublishedAt": "2026-10-19T19:28:32.000Z",
       "selectedCount": 3,
       "libraryCount": 3
     },
@@ -258,11 +258,11 @@
       "country": "France",
       "category": "world",
       "type": "news",
-      "state": "invalid",
+      "state": "ok",
       "channel": "feed",
-      "entryCount": 0,
-      "latestPublishedAt": null,
-      "selectedCount": 0,
+      "entryCount": 24,
+      "latestPublishedAt": "2026-10-19T20:16:10.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -275,7 +275,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-19T11:38:43.000Z",
-      "selectedCount": 3,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-19T15:25:24.000Z",
+      "latestPublishedAt": "2026-10-19T20:27:02.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-19T11:51:20.000Z",
+      "latestPublishedAt": "2026-10-19T18:45:03.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -312,9 +312,9 @@
       "type": "engineering",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 881,
-      "latestPublishedAt": "2026-10-16T01:44:47.000Z",
-      "selectedCount": 0,
+      "entryCount": 882,
+      "latestPublishedAt": "2026-10-19T00:00:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -326,8 +326,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-16T00:00:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-19T00:00:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -430,8 +430,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-16T17:00:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-19T17:00:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -456,8 +456,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-19T13:00:00.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-19T19:12:53.000Z",
+      "selectedCount": 3,
       "libraryCount": 8
     },
     {
@@ -482,8 +482,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-16T13:02:29.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-19T17:45:37.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -515,6 +515,22 @@
   ],
   "items": [
     {
+      "id": "48b78ef31f3fdb01",
+      "category": "technology",
+      "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
+      "summary": "NVIDIA CUDA Tile (cuTile) is a Python-based DSL and parallel programming model for NVIDIA GPUs that automatically leverages advanced hardware capabilities to...",
+      "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-19T17:00:00.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 33.9,
+      "topics": [
+        "kernels"
+      ]
+    },
+    {
       "id": "e88d591072c47326",
       "category": "technology",
       "title": "One Search, Two Layers: Compiler Controls Inside PyTorch Helion using NVIDIA CompileIQ",
@@ -524,11 +540,43 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-19T15:45:05.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 35,
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 33.6,
       "topics": [
         "kernels",
         "hardware"
+      ]
+    },
+    {
+      "id": "18903d09d6db2efe",
+      "category": "technology",
+      "title": "Cutting our inference bill by 68% by being obsessive about optimization",
+      "summary": "When our AI code reviewer's cost per run doubled, we dug into the token usage to find out why. Learn how we used prompt caching and intelligent model routing to slash our inference bill by 68% while speeding up reviews.",
+      "url": "https://blog.cloudflare.com/obsessive-inference-optimization/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-19T19:12:53.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 33.5,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "b69004bf8643ff74",
+      "category": "ai",
+      "title": "Patch release v5.20.2",
+      "summary": "Patch release: v5.20.2 This patch notably solves an issue where some inputs could loose their original type inside prepare_inputs_for_generation in generate , leading to problems with multimodal models. It also fixes some other issues listed on the below commits. It contains the following commits: Fix inputs dict casting in generate ( #49731 ) by @Cyrilvallez Fix zero expert gradients in bfloat16 with expert parallelism and ep_size < fsdp_size ( #49688 ) by @qgallouedec Declare the input modalities of the VLMs that",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.20.2",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-19T17:45:37.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 33.1,
+      "topics": [
+        "models"
       ]
     },
     {
@@ -541,8 +589,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-19T12:45:23.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 34.2,
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 32.9,
       "topics": [
         "models"
       ]
@@ -557,8 +605,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-19T05:55:53.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 31.5,
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 30.2,
       "topics": [
         "inference",
         "kernels",
@@ -567,6 +615,608 @@
         "training",
         "security"
       ]
+    },
+    {
+      "id": "6adb14f5a1c5bc9f",
+      "category": "world",
+      "title": "Haiti: Elections on hold as gangs adapt to security crackdown, Security Council hears",
+      "summary": "Armed groups in Haiti are adapting to intensified security operations, stepping up reprisals against civilians and extending their reach into rural areas, the UN warned the Security Council on Monday.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168626",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 29.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "1ac320a77937e808",
+      "category": "technology",
+      "title": "NASA Improves Shock, Vibration Analysis",
+      "summary": "Rockets vibrate, shake, and flex intensely as they climb into space, and spacecraft packed with delicate scientific instruments must survive those forces. Before any rocket leaves the ground, NASA engineers work to predict how those stresses will affect every part of a spacecraft. To do that, engineers in the Dynamic Environments Group with NASA’s Launch […]",
+      "url": "https://www.nasa.gov/centers-and-facilities/kennedy/nasa-improves-shock-vibration-analysis/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-19T19:28:32.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 28.6,
+      "topics": []
+    },
+    {
+      "id": "2b0be3dc3cf15300",
+      "category": "world",
+      "title": "Netanyahu’s new security doctrine: Regional strategy or election ploy?",
+      "summary": "Experts say Netanyahu's security doctrine and map of regional alliances serve his political ambitions ahead of elections",
+      "url": "https://www.aljazeera.com/news/2026/10/19/netanyahus-new-security-doctrine-regional-strategy-or-election-ploy?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T18:21:06.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 28.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "98b5d9c8c4762a61",
+      "category": "technology",
+      "title": "Software",
+      "summary": "Research teams at NASA’s Glenn Research Center are involved in developing theory and software to predict the noise from aircraft engines. This software helps engineers to design and analyze new and improved aircraft propulsion systems. Copies of our software can be requested from NASA’s Software Catalog. JeNo Development of jet noise prediction codes is multifaceted. […]",
+      "url": "https://www.nasa.gov/centers-and-facilities/glenn/acoustics-software/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-19T18:11:40.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 28.2,
+      "topics": []
+    },
+    {
+      "id": "f320d9895f75464d",
+      "category": "technology",
+      "title": "Experimental Facilities",
+      "summary": "Research teams at the NASA Glenn Research Center perform experiments in world-class facilities such as the 9- by 15-Foot Low-Speed Wind Tunnel (9 x15 LSWT), the Aero-Acoustic Propulsion Laboratory (AAPL), the Small Hot Jet Acoustic Rig (SHJAR), the Nozzle Acoustic Test Rig (NATR), the DGEN AeroPropulsion Research Turbofan (DART), and the Acoustical Testing Laboratory (ATL). […]",
+      "url": "https://www.nasa.gov/centers-and-facilities/glenn/acoustics-experimental-facilities/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-19T18:08:52.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 28.2,
+      "topics": []
+    },
+    {
+      "id": "2f0e89b5f8dbaa25",
+      "category": "technology",
+      "title": "Introducing Clairic, a new System One class of extraction models",
+      "summary": "Clairic is a new model from Cloudflare that is a System One extraction modeI, capable of extracting, computing, estimating, and forecasting data from unstructured inputs.",
+      "url": "https://blog.cloudflare.com/clairic-extraction-model/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-19T17:48:26.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 28.2,
+      "topics": []
+    },
+    {
+      "id": "67fe00abd42dcf1d",
+      "category": "world",
+      "title": "12 migrants, including an infant, drown in two incidents off Greece",
+      "summary": "Two separate boat incidents off the Greek islands of Lesbos and Samos left 12 migrants dead.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/19/12-migrants-including-an-infant-drown-in-two-incidents-off-greece?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T17:23:56.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 28,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "19981798e180fb0d",
+      "category": "world",
+      "title": "UN voices security concerns in Haiti amid attacks and election preparation",
+      "summary": "UN official warns of escalating violence in Haiti as security personnel face retaliatory attacks by armed gangs.",
+      "url": "https://www.aljazeera.com/news/2026/10/19/search-under-way-for-four-soldiers-missing-after-gang-attack-in-haiti?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T16:40:01.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 27.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "b7fa9c03ab765ce7",
+      "category": "world",
+      "title": "Houthi missile strike on Yemen camp kills 50 security recruits, local authorities say",
+      "summary": "Three missiles hit a camp in government-controlled Shabwa province that officials say was being used as a training centre for new recruits.",
+      "url": "https://www.bbc.co.uk/news/articles/cv0ld6lrr2zeo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T16:20:51.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 27.8,
+      "topics": [
+        "training",
+        "security"
+      ]
+    },
+    {
+      "id": "de16e33f5baeebc9",
+      "category": "world",
+      "title": "Former president Thabo Mbeki denies ordering cover-up of apartheid-era crimes",
+      "summary": "Former South African President Thabo Mbeki said Monday that he had neither ordered prosecutors to stop cases involving apartheid-era crimes nor struck secret deals to shield former security officers from justice.",
+      "url": "https://www.africanews.com/2026/10/19/former-president-thabo-mbeki-denies-ordering-cover-up-of-apartheid-era-crimes/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T19:30:24.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 27.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "d288c6ae6dda7035",
+      "category": "world",
+      "title": "France wants curfews in some areas after weekend of riots",
+      "summary": "France's central government asked some local authorities to impose curfews and faced pressure over security failings on Monday after a weekend of riots and looting borne out of nationwide anti-government protests. Prime Minister Sébastien Lecornu did not rule out declaring state of emergency but said it was more appropriate for now to apply partial and localised curfews, without providing details of which cities would be affected.",
+      "url": "https://www.france24.com/en/video/20261019-france-wants-curfews-in-some-areas-after-weekend-of-riots",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T15:37:30.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 27.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "e73f5a2a00a68799",
+      "category": "finance",
+      "title": "Retailer Ahold Delhaize reports cybersecurity incident to Dutch police",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/retailer-ahold-delhaize-reports-cybersecurity-incident-dutch-police-6472706",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T15:33:22.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 27.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "74f823b0bacb889c",
+      "category": "ai",
+      "title": "NVIDIA Advances Agentic Security for Media, From European Public Service Broadcasting to Global Content Production",
+      "summary": "At a creative industry event that took place today in Berlin — hosted in collaboration with Adobe, Bertelsmann, NVIDIA and UFA — the latest advancements in intelligent media were on display. Key to the news: the European Broadcasting Union (EBU) is collaborating with NVIDIA to expand its sovereign framework with cloud, open models and integration […]",
+      "url": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T15:00:31.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 27.5,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "939bb07b80b82241",
+      "category": "world",
+      "title": "Two top Trump officials set for Buenos Aires visit",
+      "summary": "Christopher Landau and Juan Pablo Segura, from the Bureau of Western Hemisphere Affairs, are visiting Paraguay and Argentina. Drug-trafficking, security and investment top the agenda as Washington steps up engagement with Argentina. Leer más",
+      "url": "https://www.batimes.com.ar/news/world/two-top-trump-officials-set-for-buenos-aires-visit.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T18:45:03.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 27.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "6800a699ab556db8",
+      "category": "world",
+      "title": "'Police weren't overwhelmed by people protesting and marching' about education and cost of living",
+      "summary": "Oliver Farry is pleased to welcome Andrew Smith, Lecturer in Liberal Arts at Queen Mary University of London. France's escalating social unrest has exposed a troubling disconnect between legitimate popular grievances and the government's increasingly security-focused response. Smith argues that the violence accompanying otherwise largely peaceful demonstrations reveals serious failures of policing, while President Emmanuel Macron's response offers \"very little of substance.\" Drawing parallels with France's historic",
+      "url": "https://www.france24.com/en/video/20261019-police-weren-t-overwhelmed-by-people-protesting-and-marching-about-education-and-cost-of-living",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T14:58:36.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 27.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "044ec8006493421e",
+      "category": "world",
+      "title": "France protests draw global attention: Trump, Vance blame immigration for unrest",
+      "summary": "US President Donald Trump on Sunday blamed immigration for unrest during protests in France and urged the country to tighten its migration rules. Trump's post comes after similar comments made by Vice President JD Vance on Saturday. Vance, who is seen as a potential presidential candidate in the 2028 election, also drew a connection to upcoming midterm races for congressional seats on November 3, where Republicans are not expected to perform well. FRANCE 24's Fraser Jackson reports from the United States.",
+      "url": "https://www.france24.com/en/video/20261019-france-protests-draw-global-attention-trump-vance-blame-immigration-for-unrest",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T14:04:26.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 27.2,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "d10b6ed7e66c72ea",
+      "category": "world",
+      "title": "Italy plans tougher security measures after violent protests",
+      "summary": "The government crackdown comes after protests over rising costs broke out into violent clashes.",
+      "url": "https://www.bbc.co.uk/news/articles/c6j9kwxxmxydo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T11:23:36.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 26.5,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "364881396d68790c",
+      "category": "world",
+      "title": "Greece: At least 12 die in migrant drownings overnight",
+      "summary": "Authorities say 12 people, including an infant, have drowned in Greek waters in two separate incidents overnight. Another 22 people were rescued. A search-and-rescue operation is ongoing.",
+      "url": "https://www.dw.com/en/greece-at-least-12-die-in-migrant-drownings-overnight/a-79697504?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T10:19:00.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 26.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "faafa9e0ef247e07",
+      "category": "ai",
+      "title": "Achieving near-zero-downtime scaling in Elastic Expert Parallelism",
+      "summary": "How asynchronous preparation and NIXL EP enabled near-zero-downtime Elastic EP scaling in vLLM.",
+      "url": "https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-19T00:00:00.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 25.7,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "06e6841840e2a811",
+      "category": "ai",
+      "title": "v0.32.0",
+      "summary": "v0.32.0 Highlights This release features 814 commits from 363 contributors (121 new)! Structured decisions and generic parsers : the new POST /v1/systemone endpoint answers choice , noul and score questions over a structured state ( #59299 ), is served by default ( #60677 , #60696 ), and also runs on Cloudflare/clef-omni ( #61064 ), LiquidAI/d1-3B ( #60676 ) and DiffusionGemma ( #60466 ). The new hf tool and reasoning parser ( --tool-call-parser hf , --reasoning-parser hf ) reads the checkpoint's response_template ",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-18T10:23:45.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 25.3,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ]
+    },
+    {
+      "id": "f4260acc3377749b",
+      "category": "world",
+      "title": "‘Season of fear’: Escalating Israeli attacks on West Bank olive farmers, deadly strikes on Gaza",
+      "summary": "Israeli attacks on war-torn Gaza over the weekend killed at least six Palestinians, including children, despite a year-old ceasefire agreement. Meanwhile, in the occupied West Bank, settler violence continued through the ongoing olive harvest, with UN independent experts on Monday urging Israel to protect Palestinian farmers.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168625",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 24.7,
+      "topics": []
+    },
+    {
+      "id": "7b3cf5827d8e769b",
+      "category": "ai",
+      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+      "summary": "",
+      "url": "https://huggingface.co/blog/hf-torchneuron",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-19T00:00:00.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 24.7,
+      "topics": []
+    },
+    {
+      "id": "1497545c22f628e4",
+      "category": "finance",
+      "title": "Japan launches mission to return samples from Mars moon",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/japan-launches-mission-return-samples-mars-moon-6473511",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T20:39:55.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "ac5d0afcc868adf2",
+      "category": "world",
+      "title": "Bulgaria seeks suspects in Germany after Starlink sabotage",
+      "summary": "A Bulgarian court has issued arrest warrants for two young German nationals suspected of setting fire to Starlink antennas. The case is reminiscent of another in Poland, which Warsaw says was orchestrated by Russia.",
+      "url": "https://www.dw.com/en/bulgaria-seeks-suspects-in-germany-after-starlink-sabotage/a-79706745?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T18:45:00.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "e515fc8eae09ea78",
+      "category": "world",
+      "title": "US airman dies as daredevil descent goes wrong before Texas college football game",
+      "summary": "The game continued after the incident. The American Conference said the decision was made before his death was known.",
+      "url": "https://www.bbc.co.uk/news/articles/crd6dn63j2xwo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T14:13:18.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 23.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "d65eb811aae21249",
+      "category": "finance",
+      "title": "US banning Chinese AI DeepSeek from government agency IT systems",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/us-banning-chinese-ai-deepseek-government-agency-it-systems-6472301",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T13:27:00.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 23.1,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "970d143b3aeb0f36",
+      "category": "technology",
+      "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
+      "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code.",
+      "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-19T13:00:00.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "b32909d58c6241ca",
+      "category": "ai",
+      "title": "Amazon is taking its biggest shot at Nvidia yet with new TorchNeuron dev tool",
+      "summary": "Amazon wants to break Nvidia’s hold on PyTorch, the free toolkit used to build most AI apps, so that more developers run their apps on alternative chips like its own.",
+      "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T20:09:24.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "286f42b940d5ba37",
+      "category": "world",
+      "title": "Can diplomacy stop another Ethiopia-Eritrea war?",
+      "summary": "Ethiopia has installed a new administration in conflict-hit Tigray after federal forces pushed back Tigrayan fighters. But tensions with Eritrea continue to raise fears of a wider regional war.",
+      "url": "https://www.dw.com/en/can-diplomacy-stop-another-ethiopia-eritrea-war/a-79705435?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T15:07:00.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "4a919854807240b3",
+      "category": "ai",
+      "title": "Tenstorrent hits $6.2B valuation to scale open-weight AI chips",
+      "summary": "After drawing acquisition interest earlier this year, the Nvidia challenger raised $1.5 billion to remain independent.",
+      "url": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T18:37:27.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "b6020608512e3fb5",
+      "category": "ai",
+      "title": "Nvidia launches new open models to run agents in the enterprise and on PCs",
+      "summary": "Nvidia is leaning hard into the trend of enterprise companies wanting to run their own open models in their own data centers and also trying to make on-device, private AI agents a thing.",
+      "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T15:37:09.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 21.6,
+      "topics": []
+    },
+    {
+      "id": "e66a4961644d5db2",
+      "category": "finance",
+      "title": "People playing loud music on buses could face £100 fine",
+      "summary": "Antisocial behaviour on buses in England could lead to fines while a new campaign is also being launched for trains. A national campaign asking rail passengers \"share the carriage, not the noise\" is being launched.",
+      "url": "https://www.bbc.co.uk/news/articles/cm89z008x7xdo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T09:49:58.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 21.2,
+      "topics": []
+    },
+    {
+      "id": "01bb76a17c4be88f",
+      "category": "finance",
+      "title": "Musk and Anthropic pledge public share giveaways",
+      "summary": "Musk's announcement comes after Anthropic pledged to create a public benefit fund ahead of its blockbuster stock market listing.",
+      "url": "https://www.bbc.co.uk/news/articles/cm2kez327gdko",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T09:38:25.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 21.1,
+      "topics": []
+    },
+    {
+      "id": "0467d0fcd26d55b4",
+      "category": "finance",
+      "title": "China's growth accelerates as AI boom helps boost exports",
+      "summary": "Exports have helped offset weak spending at home, but trade tensions and AI doubts cloud its outlook.",
+      "url": "https://www.bbc.co.uk/news/articles/cm5yn098xz8lo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T06:08:02.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 20.2,
+      "topics": []
+    },
+    {
+      "id": "1ecb9df1ee00180f",
+      "category": "finance",
+      "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-19T06:00:00.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 20.2,
+      "topics": []
+    },
+    {
+      "id": "dcb894a6ad600ebd",
+      "category": "ai",
+      "title": "Germany Wants to Lead the World in Industrial AI: How NVIDIA Will Help",
+      "summary": "In the cavernous hall of Kraftwerk, a former power station in Berlin, German Chancellor Friedrich Merz and NVIDIA founder and CEO Jensen Huang sat down to discuss Germany’s AI roadmap, and in particular, the industrial applications of AI. Huang opened by tracing NVIDIA’s longstanding relationship with German industry, beginning with gaming systems, workstations and automotive […]",
+      "url": "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T19:27:08.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 19.6,
+      "topics": []
+    },
+    {
+      "id": "0dace4e93ef5cfd5",
+      "category": "technology",
+      "title": "Startup taps underwater volcano as energy source in \"proof point\" test",
+      "summary": "Can undersea geothermal power help Pacific Rim nations cut down on oil imports?",
+      "url": "https://arstechnica.com/science/2026/10/startup-taps-underwater-volcano-as-energy-source-in-proof-point-test/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T19:27:24.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 18.6,
+      "topics": []
+    },
+    {
+      "id": "73999b9abef7ea8f",
+      "category": "technology",
+      "title": "ReactOS reaches major milestone with NTFS install support",
+      "summary": "ReactOS gains NTFS install support with new driver.",
+      "url": "https://arstechnica.com/information-technology/2026/10/reactos-reaches-major-milestone-with-ntfs-install-support/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T18:30:56.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 18.3,
+      "topics": []
+    },
+    {
+      "id": "122270c0caf2e9b3",
+      "category": "technology",
+      "title": "AI game clones are making indie developers afraid to show their work",
+      "summary": "Delayed Steam Next Fest demo is a sign of a growing problem for indie devs.",
+      "url": "https://arstechnica.com/gaming/2026/10/ai-game-clones-are-making-indie-developers-afraid-to-show-their-work/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-19T16:59:22.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 17.9,
+      "topics": []
+    },
+    {
+      "id": "2e3a4f979a1eb2fd",
+      "category": "ai",
+      "title": "v0.32.1rc0",
+      "summary": "[Doc][RL] Document the weight-transfer HTTP protocol for trainers wit…",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.1rc0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-18T09:26:56.000Z",
+      "fetchedAt": "2026-10-19T21:12:18.128Z",
+      "score": 16.1,
+      "topics": []
     },
     {
       "id": "0b6f55365284fe7e",
@@ -617,22 +1267,6 @@
       ]
     },
     {
-      "id": "74f823b0bacb889c",
-      "category": "ai",
-      "title": "NVIDIA Advances Agentic Security for Media, From European Public Service Broadcasting to Global Content Production",
-      "summary": "At a creative industry event that took place today in Berlin — hosted in collaboration with Adobe, Bertelsmann, NVIDIA and UFA — the latest advancements in intelligent media were on display. Key to the news: the European Broadcasting Union (EBU) is collaborating with NVIDIA to expand its sovereign framework with cloud, open models and integration […]",
-      "url": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-19T15:00:31.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 28.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
       "id": "8585131a40bf00c7",
       "category": "world",
       "title": "Pakistan suspends Iran border trade, amid violence on both sides",
@@ -665,89 +1299,6 @@
       ]
     },
     {
-      "id": "364881396d68790c",
-      "category": "world",
-      "title": "Greece: At least 12 die in migrant drownings overnight",
-      "summary": "Authorities say 12 people, including an infant, have drowned in Greek waters in two separate incidents overnight. Another 22 people were rescued. A search-and-rescue operation is ongoing.",
-      "url": "https://www.dw.com/en/greece-at-least-12-die-in-migrant-drownings-overnight/a-79697504?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-19T10:19:00.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 27.6,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "06e6841840e2a811",
-      "category": "ai",
-      "title": "v0.32.0",
-      "summary": "v0.32.0 Highlights This release features 814 commits from 363 contributors (121 new)! Structured decisions and generic parsers : the new POST /v1/systemone endpoint answers choice , noul and score questions over a structured state ( #59299 ), is served by default ( #60677 , #60696 ), and also runs on Cloudflare/clef-omni ( #61064 ), LiquidAI/d1-3B ( #60676 ) and DiffusionGemma ( #60466 ). The new hf tool and reasoning parser ( --tool-call-parser hf , --reasoning-parser hf ) reads the checkpoint's response_template ",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-18T10:23:45.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 26.6,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training",
-        "security"
-      ]
-    },
-    {
-      "id": "e515fc8eae09ea78",
-      "category": "world",
-      "title": "US airman dies as daredevil descent goes wrong before Texas college football game",
-      "summary": "The game continued after the incident. The American Conference said the decision was made before his death was known.",
-      "url": "https://www.bbc.co.uk/news/articles/crd6dn63j2xwo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-19T14:13:18.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 24.6,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "d65eb811aae21249",
-      "category": "finance",
-      "title": "US banning Chinese AI DeepSeek from government agency IT systems",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/us-banning-chinese-ai-deepseek-government-agency-it-systems-6472301",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-19T13:27:00.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 24.4,
-      "topics": [
-        "models"
-      ]
-    },
-    {
-      "id": "970d143b3aeb0f36",
-      "category": "technology",
-      "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
-      "summary": "CVE-2026-88771 lets attackers run commands on NetScaler Gateway before anyone signs in. Patching takes time most teams don't have, so the sign-in decision has to move in front of the vulnerable code.",
-      "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-19T13:00:00.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 24.3,
-      "topics": []
-    },
-    {
       "id": "436104069698a50d",
       "category": "world",
       "title": "Can diplomacy prevent an Ethiopia-Eritrea war as Tigray gets a new administration?",
@@ -776,20 +1327,6 @@
       "topics": []
     },
     {
-      "id": "b6020608512e3fb5",
-      "category": "ai",
-      "title": "Nvidia launches new open models to run agents in the enterprise and on PCs",
-      "summary": "Nvidia is leaning hard into the trend of enterprise companies wanting to run their own open models in their own data centers and also trying to make on-device, private AI agents a thing.",
-      "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-19T15:37:09.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 22.9,
-      "topics": []
-    },
-    {
       "id": "d9329f7d8672ae96",
       "category": "world",
       "title": "From delivery driver to global fame: A Korean writer's journey",
@@ -815,34 +1352,6 @@
       "publishedAt": "2026-10-19T14:41:29.000Z",
       "fetchedAt": "2026-10-19T15:49:37.359Z",
       "score": 22.7,
-      "topics": []
-    },
-    {
-      "id": "e66a4961644d5db2",
-      "category": "finance",
-      "title": "People playing loud music on buses could face £100 fine",
-      "summary": "Antisocial behaviour on buses in England could lead to fines while a new campaign is also being launched for trains. A national campaign asking rail passengers \"share the carriage, not the noise\" is being launched.",
-      "url": "https://www.bbc.co.uk/news/articles/cm89z008x7xdo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-19T09:49:58.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 22.5,
-      "topics": []
-    },
-    {
-      "id": "54fe455215de4514",
-      "category": "world",
-      "title": "Musk and Anthropic pledge public share giveaways",
-      "summary": "Musk's announcement comes after Anthropic pledged to create a public benefit fund ahead of its blockbuster stock market listing.",
-      "url": "https://www.bbc.co.uk/news/articles/cm2kez327gdko",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-19T09:38:25.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 22.5,
       "topics": []
     },
     {
@@ -958,34 +1467,6 @@
       "topics": []
     },
     {
-      "id": "0467d0fcd26d55b4",
-      "category": "finance",
-      "title": "China's growth accelerates as AI boom helps boost exports",
-      "summary": "Exports have helped offset weak spending at home, but trade tensions and AI doubts cloud its outlook.",
-      "url": "https://www.bbc.co.uk/news/articles/cm5yn098xz8lo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-19T06:08:02.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 21.6,
-      "topics": []
-    },
-    {
-      "id": "1ecb9df1ee00180f",
-      "category": "finance",
-      "title": "Frank Elderson: From climate and nature risks to economic resilience and competitiveness",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261019~f0a3e053de.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-19T06:00:00.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 21.5,
-      "topics": []
-    },
-    {
       "id": "5200e0a4ea61d1fe",
       "category": "finance",
       "title": "Vinted blocks French looters listing stolen goods for sale",
@@ -1039,20 +1520,6 @@
       "publishedAt": "2026-10-19T13:31:08.000Z",
       "fetchedAt": "2026-10-19T15:49:37.359Z",
       "score": 18.4,
-      "topics": []
-    },
-    {
-      "id": "2e3a4f979a1eb2fd",
-      "category": "ai",
-      "title": "v0.32.1rc0",
-      "summary": "[Doc][RL] Document the weight-transfer HTTP protocol for trainers wit…",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.1rc0",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-18T09:26:56.000Z",
-      "fetchedAt": "2026-10-19T15:49:37.359Z",
-      "score": 17.4,
       "topics": []
     },
     {
