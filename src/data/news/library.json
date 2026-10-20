@@ -1,7 +1,23 @@
 {
-  "generatedAt": "2026-10-20T13:48:20.473Z",
+  "generatedAt": "2026-10-20T20:05:48.334Z",
   "lookbackDays": 90,
   "items": [
+    {
+      "id": "864d1ab2a28c05c5",
+      "category": "technology",
+      "title": "From KTIR to SpyreCode: An MLIR Dataflow Backend for IBM Spyre",
+      "summary": "TL;DR Torch-spyre’s Inductor decides how each kernel’s work is divided across Spyre’s cores and manages tensor residency between on-chip scratchpad and off-chip memory, and the backend compiler turns those decisions... The post From KTIR to SpyreCode: An MLIR Dataflow Backend for IBM Spyre appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/from-ktir-to-spyrecode-an-mlir-dataflow-backend-for-ibm-spyre/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-20T16:00:15.000Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 34,
+      "topics": [
+        "kernels"
+      ]
+    },
     {
       "id": "6415b2c690b14566",
       "category": "technology",
@@ -12,10 +28,77 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-20T04:01:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 27.6,
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 26,
       "topics": [
         "hardware"
+      ]
+    },
+    {
+      "id": "45903f5d5f7d7399",
+      "category": "technology",
+      "title": "hipCIM 26.06: GPU-Accelerated Whole-Slide Image I/O on AMD Instinct™ GPUs",
+      "summary": "Every whole-slide image tells a story in pixels. A whole-slide image is a glass pathology slide scanned into a single very large digital image, stored as a pyramid of small tiles so a viewer can pan and zoom it. A single biopsy digitized at 20× magnification can span tens of thousands of pixels on each side and weigh in at several gigabytes. Before a model can learn anything from that slide, something has to read it off disk, decode its thousands of small JPEG-compressed tiles, and turn them into tensors the accele",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/hipcim-26-08/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 30,
+      "topics": [
+        "inference",
+        "hardware"
+      ]
+    },
+    {
+      "id": "2caf5c3ebda033a1",
+      "category": "technology",
+      "title": "Introducing rocOpt: GPU-Accelerated Decision Optimization on AMD ROCm",
+      "summary": "rocOpt is a new open-source, GPU-accelerated engine for decision optimization on AMD Instinct GPUs. It solves large-scale linear programming (LP), mixed-integer linear programming (MILP), quadratic programming (QP), and vehicle routing problems on the ROCm software stack, and is ready for early users today on MI300X and MI355X with ROCm 7.2.3.",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/rocopt/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 30,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "adc95a4d86983aab",
+      "category": "technology",
+      "title": "Bringing Ultra-Fast, Interactive LLM Inference to AMD Instinct™ MI355X GPUs",
+      "summary": "AI inference is no longer just a throughput problem. As reasoning models, AI agents and interactive applications become mainstream, responsiveness has become a first-class metric. Users notice seconds, not tokens per second. Lowering time per output token (TPOT) is now critical for AI systems that feel conversational, responsive and useful.",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/megakernel-intro/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 30,
+      "topics": [
+        "inference",
+        "hardware"
+      ]
+    },
+    {
+      "id": "0297eb82f48a02b1",
+      "category": "ai",
+      "title": "Introducing vLLM TorchTPU",
+      "summary": "vllm-torchtpu is a new vLLM backend for Google Cloud TPUs built on TorchTPU, with Pallas kernels, multi-host parallelism, KV cache offloading, and disaggregated serving.",
+      "url": "https://vllm.ai/blog/2026-10-20-vllm-torchtpu",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-20T00:00:00.000Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 26,
+      "topics": [
+        "inference",
+        "kernels"
       ]
     },
     {
@@ -28,8 +111,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-19T19:12:53.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 29.4,
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 27.8,
       "topics": [
         "inference"
       ]
@@ -44,8 +127,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-19T17:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 29.8,
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 28.2,
       "topics": [
         "kernels"
       ]
@@ -60,8 +143,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-19T15:45:05.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 29.5,
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 27.9,
       "topics": [
         "kernels",
         "hardware"
@@ -77,8 +160,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-19T12:45:23.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 28.7,
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 27.2,
       "topics": [
         "models"
       ]
@@ -93,8 +176,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-19T11:03:04.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 26.3,
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 24.7,
       "topics": [
         "inference",
         "models"
@@ -110,8 +193,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-19T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 21.5,
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 20,
       "topics": [
         "inference"
       ]
@@ -126,8 +209,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-18T20:23:11.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 22.6,
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
+      "score": 21.1,
       "topics": [
         "inference",
         "hardware",
@@ -144,7 +227,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T16:30:46.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "training"
@@ -282,7 +365,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "inference"
@@ -298,7 +381,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "inference",
@@ -315,7 +398,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "inference"
@@ -331,7 +414,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-16T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -348,7 +431,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:01:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "models"
@@ -364,7 +447,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T18:00:01.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "models"
@@ -380,7 +463,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "models"
@@ -396,7 +479,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "inference",
@@ -414,7 +497,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-15T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "inference",
@@ -431,7 +514,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-14T20:24:19.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 22,
       "topics": [
         "security"
@@ -447,7 +530,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-14T16:10:45.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "security"
@@ -463,7 +546,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-14T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "inference"
@@ -479,29 +562,13 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-14T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "inference",
         "hardware",
         "models",
         "training"
-      ]
-    },
-    {
-      "id": "867ae9cbc6fe4b20",
-      "category": "ai",
-      "title": "Push-Based KV Transfer to Improve TTFT and TPOT for Disaggregated Inference in vLLM",
-      "summary": "A push-based NIXL connector for vLLM disaggregated serving: the prefill instance writes KV directly into decode memory over RDMA, taking the router relay, decode-side allocation, and transfer setup off the TTFT critical path.",
-      "url": "https://vllm.ai/blog/2026-10-14-nixl-push-connector",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-14T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 19,
-      "topics": [
-        "inference"
       ]
     },
     {
@@ -514,7 +581,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-13T21:33:21.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -547,7 +614,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-12T16:00:54.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "models"
@@ -563,7 +630,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-12T14:44:59.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 18,
       "topics": [
         "models"
@@ -579,7 +646,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-09T18:27:34.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 22,
       "topics": [
         "inference",
@@ -628,7 +695,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-08T13:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 22,
       "topics": [
         "inference",
@@ -661,7 +728,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-08T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "hardware",
@@ -679,7 +746,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-08T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "inference",
@@ -696,7 +763,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-08T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "inference",
@@ -746,7 +813,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-07T16:30:36.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 22,
       "topics": [
         "inference",
@@ -763,7 +830,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-07T15:45:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -811,7 +878,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-06T19:58:03.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "training"
@@ -827,27 +894,10 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-10-06T19:57:04.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 22,
       "topics": [
         "models"
-      ]
-    },
-    {
-      "id": "b345503433ce8f0f",
-      "category": "technology",
-      "title": "Completing the GPU Performance Picture: Understanding TAF Alongside Peak FLOPs and MAF",
-      "summary": "Modern AI accelerators can execute an extraordinary number of floating-point operations every second. But a single FLOPs number rarely tells the full performance story. In the first two blogs in this series, we discussed Peak FLOPs and Max-Achievable FLOPs (MAF) for AMD Instinct™ GPUs., we discussed Peak FLOPs and Max-Achievable FLOPs (MAF) for AMD Instinct™ GPUs. Peak FLOPs describe the theoretical compute capability of the hardware. MAF goes a step further by measuring the highest sustained throughput the GPU can",
-      "url": "https://rocm.blogs.amd.com/artificial-intelligence/taf-blog/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-06T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 19,
-      "topics": [
-        "kernels",
-        "hardware"
       ]
     },
     {
@@ -867,22 +917,6 @@
       ]
     },
     {
-      "id": "84c7ebdacaef7f0e",
-      "category": "technology",
-      "title": "Evolution of the PyTorch Media Processing Landscape",
-      "summary": "TL;DR If you need to decode or encode media, whether it’s images, video, or audio, use TorchCodec. If you need to transform media, use TorchVision for images and video, and... The post Evolution of the PyTorch Media Processing Landscape appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/evolution-of-the-pytorch-media-processing-landscape/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-05T20:45:50.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 19,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
       "id": "02c50f6cd2751308",
       "category": "technology",
       "title": "Everything we launched during Birthday Week 2026",
@@ -892,7 +926,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-05T13:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 22,
       "topics": [
         "security"
@@ -915,24 +949,6 @@
       ]
     },
     {
-      "id": "f3b1374c5e9bce23",
-      "category": "technology",
-      "title": "ROCm 10.1: Breaking the Data-Movement Bottleneck",
-      "summary": "What limits your training run today: how fast the GPU computes, or how fast you can get data to it? For a growing number of workloads, the answer is the latter. ROCm 10.1 leads with that path, and carries a full slate of compiler, library, and tooling work behind it.",
-      "url": "https://rocm.blogs.amd.com/ecosystems-and-partners/rocm-10.1-blog/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-05T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 19,
-      "topics": [
-        "kernels",
-        "hardware",
-        "training"
-      ]
-    },
-    {
       "id": "99cf78485f2cfcd1",
       "category": "ai",
       "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
@@ -942,7 +958,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-02T04:01:31.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "training"
@@ -974,26 +990,10 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-09-30T15:03:07.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 22,
       "topics": [
         "inference"
-      ]
-    },
-    {
-      "id": "ab0ae037e205dc37",
-      "category": "technology",
-      "title": "Running MolmoAct2 Robot Policy on an AMD Ryzen AI Max+ 395 Mini PC",
-      "summary": "Teaching a robot to “put the bowl on the plate and place the cream cheese inside the bowl” used to require a rack of data-center GPUs sitting behind the robot. In this blog we show how a modern vision-language-action (VLA) model, MolmoAct2, can look at a scene, read a plain-English instruction, and drive a robot arm to complete the task, all running on a single AMD Ryzen AI Max+ 395 “Strix Halo” mini PC with the ROCm software stack. No cloud, no external accelerator, just a compact tabletop machine.",
-      "url": "https://rocm.blogs.amd.com/artificial-intelligence/molmoact2-ryzers-strix/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-09-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
-      "score": 23,
-      "topics": [
-        "hardware"
       ]
     },
     {
@@ -1022,7 +1022,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T01:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "inference",
@@ -1040,7 +1040,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "kernels",
@@ -1057,7 +1057,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -1073,7 +1073,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 19,
       "topics": [
         "kernels",
@@ -1138,7 +1138,7 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-08-21T10:54:00.000Z",
-      "fetchedAt": "2026-10-20T13:48:20.473Z",
+      "fetchedAt": "2026-10-20T20:05:48.334Z",
       "score": 23,
       "topics": [
         "models"
