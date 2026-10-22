@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-22T05:15:26.540Z",
+  "generatedAt": "2026-10-22T14:01:51.082Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 39,
-  "failedSourceCount": 0,
+  "sourceCount": 38,
+  "failedSourceCount": 1,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -14,7 +14,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 38,
-      "latestPublishedAt": "2026-10-22T04:02:29.000Z",
+      "latestPublishedAt": "2026-10-22T13:53:32.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 55,
-      "latestPublishedAt": "2026-10-22T05:10:36.000Z",
+      "entryCount": 56,
+      "latestPublishedAt": "2026-10-22T13:45:19.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,9 +39,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 133,
-      "latestPublishedAt": "2026-10-22T04:57:00.000Z",
-      "selectedCount": 0,
+      "entryCount": 134,
+      "latestPublishedAt": "2026-10-22T13:47:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-22T04:45:41.000Z",
+      "latestPublishedAt": "2026-10-22T13:42:26.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-22T04:10:59.000Z",
+      "latestPublishedAt": "2026-10-22T13:50:30.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -92,7 +92,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 18,
-      "latestPublishedAt": "2026-10-22T05:00:56.000Z",
+      "latestPublishedAt": "2026-10-22T13:00:20.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-21T22:51:22.000Z",
+      "latestPublishedAt": "2026-10-22T13:53:26.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-21T22:17:50.000Z",
+      "latestPublishedAt": "2026-10-22T13:04:32.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -131,8 +131,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-20T14:59:22.784Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-22T12:59:11.281Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -145,7 +145,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-22T04:05:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 4
     },
     {
@@ -158,7 +158,7 @@
       "channel": "feed",
       "entryCount": 15,
       "latestPublishedAt": "2026-10-21T08:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -195,8 +195,8 @@
       "type": "institution",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 48,
-      "latestPublishedAt": "2026-10-22T01:00:00.000Z",
+      "entryCount": 50,
+      "latestPublishedAt": "2026-10-22T08:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -258,11 +258,12 @@
       "country": "France",
       "category": "world",
       "type": "news",
-      "state": "ok",
+      "state": "unavailable",
       "channel": "feed",
-      "entryCount": 24,
-      "latestPublishedAt": "2026-10-22T02:28:48.000Z",
-      "selectedCount": 3,
+      "httpStatus": 403,
+      "entryCount": 0,
+      "latestPublishedAt": null,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -274,8 +275,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-22T00:22:48.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-22T13:50:55.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -287,8 +288,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-22T04:43:51.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-22T13:42:10.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -301,7 +302,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-22T03:42:37.000Z",
-      "selectedCount": 3,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -313,7 +314,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 888,
-      "latestPublishedAt": "2026-10-21T18:26:30.000Z",
+      "latestPublishedAt": "2026-10-22T07:51:31.000Z",
       "selectedCount": 3,
       "libraryCount": 8
     },
@@ -378,8 +379,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-20T04:41:17.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-22T08:10:51.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -456,7 +457,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-21T14:10:42.000Z",
+      "latestPublishedAt": "2026-10-22T13:00:00.000Z",
       "selectedCount": 2,
       "libraryCount": 8
     },
@@ -470,7 +471,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-21T16:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 1
     },
     {
@@ -515,6 +516,22 @@
   ],
   "items": [
     {
+      "id": "fcccc3e10e2b5fa8",
+      "category": "technology",
+      "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+      "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program.",
+      "url": "https://blog.cloudflare.com/k-isms/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-22T13:00:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 33.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "842b51b8ccecd6db",
       "category": "technology",
       "title": "v1.4.0rc1",
@@ -524,8 +541,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-22T01:38:13.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 33.1,
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 30.9,
       "topics": [
         "inference",
         "kernels",
@@ -545,10 +562,72 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T19:45:44.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 32.6,
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 30.4,
       "topics": [
         "training"
+      ]
+    },
+    {
+      "id": "261678948275bf77",
+      "category": "world",
+      "title": "Germany news: Government expecting increased tax revenue in 2027",
+      "summary": "Finance Minister Lars Klingbeil said state tax revenue will increase by €4 billion in 2027. Meanwhile, public service websites have been coming back online after a PHP security scare. DW has more.",
+      "url": "https://www.dw.com/en/germany-news-government-expecting-increased-tax-revenue-in-2027/live-79728628?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T13:47:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 28.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "123eaedd9cc878d3",
+      "category": "world",
+      "title": "AI discovered a massive cyber-security flaw - here's what happened",
+      "summary": "The BBC's technology correspondent Joe Tidy explains how it happened, and what it means for you.",
+      "url": "https://www.bbc.co.uk/news/videos/cq0ld7e0jg2eo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T12:17:44.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 28.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "ccb55bd3ba03dd15",
+      "category": "ai",
+      "title": "Ensemble forecasting with IBM Granite time-series models",
+      "summary": "",
+      "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-22T07:51:31.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 28.5,
+      "topics": []
+    },
+    {
+      "id": "5104c499182d5e3b",
+      "category": "world",
+      "title": "What is PHP and why did it spark a global cyber-security scramble?",
+      "summary": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
+      "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T11:15:58.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 28.3,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -561,8 +640,57 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T09:52:16.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 30.2,
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 28,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "fa7e64bd201b057b",
+      "category": "ai",
+      "title": "DeepSeek reportedly raises $15B days after US restrictions",
+      "summary": "DeepSeek has reportedly raised $15 billion in one of China's largest funding rounds, just days after the US ordered federal agencies to remove its technology over national security concerns.",
+      "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T13:11:13.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 27.8,
+      "topics": [
+        "models",
+        "security"
+      ]
+    },
+    {
+      "id": "75415fb6f5108f94",
+      "category": "world",
+      "title": "As food assistance wanes, Palestinians face the prospect of hunger",
+      "summary": "Palestinians in Gaza face worsening humanitarian conditions as the United Nations had to slash food assistance due to funding shortages, deepening food insecurity for thousands of families who rely on aid to survive.",
+      "url": "https://www.africanews.com/2026/10/22/as-food-assistance-wanes-palestinians-face-the-prospect-of-hunger/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T12:54:09.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 27.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "869cda8b27f2de52",
+      "category": "world",
+      "title": "Bulgaria: Concerns about security in the Black Sea dominate presidential election campaign",
+      "summary": "Bulgaria's presidential election campaign has been shaped by recent drone attacks on ships in the Black Sea and the government's reduced support for Ukraine, making foreign policy a key factor in the first round.",
+      "url": "https://www.dw.com/en/bulgaria-concerns-about-security-in-the-black-sea-dominate-presidential-election-campaign/a-79729094?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T08:31:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 27.6,
       "topics": [
         "security"
       ]
@@ -577,8 +705,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-21T16:28:36.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 29.8,
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 27.6,
       "topics": [
         "hardware"
       ]
@@ -593,8 +721,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-21T15:25:35.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 29.5,
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 27.3,
       "topics": [
         "inference",
         "hardware",
@@ -611,8 +739,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-21T14:46:11.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 29.4,
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 27.2,
       "topics": [
         "inference",
         "hardware",
@@ -629,8 +757,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T05:00:27.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 28.9,
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 26.7,
       "topics": [
         "training"
       ]
@@ -645,27 +773,25 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T05:00:23.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 28.9,
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 26.7,
       "topics": [
         "inference"
       ]
     },
     {
-      "id": "5104c499182d5e3b",
-      "category": "world",
-      "title": "What is PHP and why did it spark a global cyber-security scramble?",
-      "summary": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
-      "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T03:48:50.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 28.6,
-      "topics": [
-        "security"
-      ]
+      "id": "0ae9b2e1ef621848",
+      "category": "ai",
+      "title": "Release v0.7.2rc6",
+      "summary": "Full Changelog : v0.7.2rc5...v0.7.2rc6",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2rc6",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-22T08:10:51.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 26.5,
+      "topics": []
     },
     {
       "id": "fc37a0d8678ca9e7",
@@ -677,8 +803,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T18:26:30.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 28.3,
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 26.1,
       "topics": [
         "training"
       ]
@@ -693,8 +819,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T17:45:40.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 28.1,
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 25.9,
       "topics": [
         "kernels",
         "models"
@@ -710,11 +836,594 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T17:35:36.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 28.1,
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 25.9,
       "topics": [
         "inference"
       ]
+    },
+    {
+      "id": "5773364d7a6740e3",
+      "category": "technology",
+      "title": "Optimizing World Action Models on AMD GPUs",
+      "summary": "World Action Models (WAMs) offer a promising route to more physically grounded robot policies, but their video-model backbones make inference expensive. In this blog you will learn how to remove much of that cost on AMD GPUs without sacrificing task success, using two representative WAMs, FastWAM [1] and DiT4DiT [2].",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/faster-action-models/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 25.5,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "a483f64049aebd57",
+      "category": "technology",
+      "title": "MoE Training Optimization with Primus",
+      "summary": "Mixture-of-Experts (MoE) has become a dominant architecture for frontier-scale language models, and our users increasingly train large MoE models on AMD Instinct™ MI355X [a] GPUs. Driven by those workload requirements, we have built a broad set of MoE training optimizations in Primus. This blog follows our earlier post MoE Training Best Practices on AMD GPUs. The earlier post established the foundational optimizations; this one describes what we built on top of them.",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/primus-moe-optimization/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 25.5,
+      "topics": [
+        "hardware",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "382d835d42309996",
+      "category": "technology",
+      "title": "Micro-World 2: Streaming Real-time Interactive World Model",
+      "summary": "Diffusion models have advanced rapidly in recent years, enabling high-quality video generation across a wide range of creative scenarios. As visual quality continues to improve, however, the field is increasingly shifting its focus from passive content generation toward controllable and interactive experiences. YUME 1.5 [1] explores controllable video generation through explicit interaction signals, while LingBot-World [2] and Sana-WM [3] investigate world models that generate future observations conditioned on the",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/Micro-World-V2/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 25.5,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "d8983c3dedc00a79",
+      "category": "finance",
+      "title": "US to award $389 million in R&D funds for power semiconductors, critical materials",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/us-award-389-million-in-rd-funds-power-semiconductors-critical-materials-6482801",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T13:02:14.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 24.8,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "a97c3f3f6243d4d0",
+      "category": "technology",
+      "title": "NASA Conducts RS-25 Engine Test in Support of Future Artemis Missions",
+      "summary": "NASA tested RS-25 engine No. 10001 on Oct. 21 on the Fred Haise Test Stand at NASA’s Stennis Space Center near Bay St. Louis, Mississippi. Test teams fired the developmental engine for almost eight-and-a-half minutes (500 seconds), the same amount of time RS-25 engines fire during launch of NASA’s SLS (Space Launch System) rocket. During […]",
+      "url": "https://www.nasa.gov/image-article/rs-25-engine-test-in-support-of-future-artemis-missions/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-21T20:51:50.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 24.7,
+      "topics": []
+    },
+    {
+      "id": "1b182459a78cefb8",
+      "category": "world",
+      "title": "What’s the PHP coding flaw that could pull down 70 percent of the internet?",
+      "summary": "The vulnerability allows a hacker to change a website or extract data, including personal information.",
+      "url": "https://www.aljazeera.com/news/2026/10/22/whats-the-php-coding-flaw-that-could-pull-down-70-percent-of-the-internet?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T12:37:34.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 24.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "55d6abb3fe50946e",
+      "category": "finance",
+      "title": "Indian firm eMudhra exits global digital certificates business after vulnerability disclosure",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/indian-firm-emudhra-exits-global-digital-certificates-business-after-vulnerability-disclosure-6482671",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T12:35:40.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 24.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "9ec4600d3e144cfa",
+      "category": "technology",
+      "title": "Design Proteins with RFD4-Proteina Using Reward-Guided Inference-Time Search",
+      "summary": "Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino...",
+      "url": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-21T12:30:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 24.6,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "a8602ed87279b0e2",
+      "category": "finance",
+      "title": "Websites taken down worldwide as critical cyber-security update issued",
+      "summary": "The vulnerabilities with PHP, a programming language widely used across the internet, have been described as the most significant ever found by AI.",
+      "url": "https://www.bbc.co.uk/news/articles/cmly0lg3w5x2o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-21T19:54:57.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 24.5,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "46d14f81c943df53",
+      "category": "technology",
+      "title": "Cloudflare deploys protections against php2shell vulnerability",
+      "summary": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and prevent exposed data from reaching attackers.",
+      "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-21T13:56:45.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 24,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "5653bbe02e1803e7",
+      "category": "technology",
+      "title": "Achieve Productive AI Capacity Faster and More Predictably with NVIDIA DSX POD",
+      "summary": "AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute,...",
+      "url": "https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-21T09:35:32.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 23.9,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "b0fce89e7059a5f4",
+      "category": "finance",
+      "title": "Analysis:Anthropic IPO stands alone as AI market jitters sideline others",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/analysisanthropic-ipo-stands-alone-ai-market-jitters-sideline-others-6482816",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T13:05:58.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "1d30d4d3bc452852",
+      "category": "world",
+      "title": "‘Facebook’s wrongdoing’: Why has Meta been fined $25bn in New Mexico?",
+      "summary": "The tech giant has been accused of misleading users regarding data privacy linked to the Cambridge Analytica scandal.",
+      "url": "https://www.aljazeera.com/news/2026/10/22/facebooks-wrongdoing-why-has-meta-been-fined-25bn-in-new-mexico?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T09:23:53.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 23.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "991598e17f3840a6",
+      "category": "ai",
+      "title": "Cloud Deployment Incoming: ‘Call of Duty: Modern Warfare 4’ Arrives on GeForce NOW",
+      "summary": "Lock in and load out this GFN Thursday. Call of Duty: Modern Warfare 4 arrives on GeForce NOW at launch, bringing a new campaign, multiplayer action and DMZ, high-stakes extraction mode to supported devices. The campaign also gets an enhanced look: GeForce RTX 5080-class performance arrives for Ultimate members, bringing support for ray-tracing features in […]",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-call-of-duty-modern-warfare-4/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T13:00:20.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "baa050f43410e202",
+      "category": "world",
+      "title": "Iran reveals ‘offensive’ doctrine, US issues alert: Is war imminent?",
+      "summary": "US orders diplomatic staff out of Saudi Arabia amid escalating conflict and reports of potential US strikes on Iran.",
+      "url": "https://www.aljazeera.com/news/2026/10/22/iran-reveals-offensive-doctrine-us-issues-alert-is-war-imminent?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T12:12:32.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "864d1ab2a28c05c5",
+      "category": "technology",
+      "title": "From KTIR to SpyreCode: An MLIR Dataflow Backend for IBM Spyre",
+      "summary": "TL;DR Torch-spyre’s Inductor decides how each kernel’s work is divided across Spyre’s cores and manages tensor residency between on-chip scratchpad and off-chip memory, and the backend compiler turns those decisions... The post From KTIR to SpyreCode: An MLIR Dataflow Backend for IBM Spyre appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/from-ktir-to-spyrecode-an-mlir-dataflow-backend-for-ibm-spyre/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-20T16:00:15.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 23.5,
+      "topics": [
+        "kernels"
+      ]
+    },
+    {
+      "id": "b94d8448ebf7f6a1",
+      "category": "world",
+      "title": "Iran's Balochistan border region sees growing unrest",
+      "summary": "Violence is on the rise in Iran's border region with Afghanistan and Pakistan. The Iran war could shift the strategic balance for militant groups operating in the area.",
+      "url": "https://www.dw.com/en/iran-s-balochistan-border-region-sees-growing-unrest/a-79716399?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T11:48:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "ec83acd11f7b0458",
+      "category": "technology",
+      "title": "Science on the Space Station with NASA Astronaut Jessica Watkins",
+      "summary": "NASA astronaut and Expedition 75 flight engineer Jessica Watkins works inside the Kibo laboratory module’s Life Science Glovebox on Oct. 9, 2026, safely mixing living cell samples with a bioink and then filling a special cartridge with the cell‑ink mixture. The advanced research operations were part of the InSPA‑Auxilium Bioprinter‑Cell Printing investigation, which explores 3D […]",
+      "url": "https://www.nasa.gov/image-article/science-on-the-space-station-with-nasa-astronaut-jessica-watkins/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-21T15:05:08.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 23.3,
+      "topics": []
+    },
+    {
+      "id": "c50ef815e84f5032",
+      "category": "world",
+      "title": "Greetings from the Brazil-Argentina border, where waterfalls are flowing at near-record rates",
+      "summary": "The Iguazú Falls span more than a mile across both countries. A rain-soaked October, which scientists link to the Super El Niño, has sent near-record volumes of water surging over the towering cliffs.",
+      "url": "https://www.npr.org/2026/10/22/g-s1-148553/argentina-brazil-iguazu-falls-waterfalls-super-el-nino",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T13:50:55.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 23,
+      "topics": []
+    },
+    {
+      "id": "9ad9cb3b537f81fe",
+      "category": "ai",
+      "title": "PHP Armageddon: OpenAI, Google’s Wiz find ancient holes, panicking the internet",
+      "summary": "This is the kind of security issue that was found and prevented by AI, but is also a high risk because of AI.",
+      "url": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-21T17:59:12.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 23,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "3853bbf9d7fef59a",
+      "category": "world",
+      "title": "Spanish right champions Ceuta migrant crisis as its key topic in election campaign",
+      "summary": "A sense of abandonment in conservative Ceuta following the migrant crisis of July is giving fresh ammunition to right-wing parties ahead of Spain's general election on 29 November.",
+      "url": "https://www.africanews.com/2026/10/22/spanish-right-champions-ceuta-migrant-crisis-as-its-key-topic-in-election-campaign/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T13:42:10.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "db531fce14f22ae9",
+      "category": "world",
+      "title": "How do Israel's elections work and who are the main contenders?",
+      "summary": "Many view it as one of the most pivotal elections in Israel's history, with global implications.",
+      "url": "https://www.bbc.co.uk/news/articles/cx8dz75633vjo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T09:27:10.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "8a71fe76cd0c8fd8",
+      "category": "technology",
+      "title": "Formula 1® United States Grand Prix™ streams live on Apple TV this weekend",
+      "summary": "Formula 1® returns to the U.S. this weekend with the United States Grand Prix™, streaming in the U.S. exclusively on Apple TV.",
+      "url": "https://www.apple.com/newsroom/2026/10/formula-1-united-states-grand-prix-streams-live-on-apple-tv-this-weekend/",
+      "source": "Apple Newsroom",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-10-22T12:59:11.281Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "dd9c77aefad1e31d",
+      "category": "world",
+      "title": "Chad: Former PM Succès Masra leaves country for medical treatment",
+      "summary": "His departure to France for medical treatment comes two months after his release from prison following a presidential pardon.",
+      "url": "https://www.africanews.com/2026/10/22/chad-former-pm-succes-masra-leaves-country-for-medical-treatment/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T12:43:23.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "8bfbf42c5ec172ea",
+      "category": "technology",
+      "title": "Developers bring incredible new app experiences to iPhone Duo",
+      "summary": "Starting this Friday, iPhone Duo users can discover amazing apps and games optimized for the first foldable iPhone.",
+      "url": "https://www.apple.com/newsroom/2026/10/developers-bring-incredible-new-app-experiences-to-iphone-duo/",
+      "source": "Apple Newsroom",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-10-22T11:59:15.686Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "70243f8589cf278c",
+      "category": "world",
+      "title": "U.S., Israel may attack Iran post-elections. And, SpaceX and Tesla consider merging",
+      "summary": "The U.S. and Israel are planning for a possible post-elections attack on Iran, an anonymous source tells NPR. And, Elon Musk considers merging his companies SpaceX and Tesla.",
+      "url": "https://www.npr.org/2026/10/22/g-s1-149315/up-first-newsletter-midterm-campaign-israel-iran-elon-musk-spacex-tesla",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T11:28:24.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "24c68088d1de2ddf",
+      "category": "world",
+      "title": "U.S. and Israel are planning for a possible attack on Iran, source tells NPR",
+      "summary": "The U.S. and Israel are preparing plans for a possible attack on Iran in early November, after the U.S. midterm elections, a person briefed on war planning told NPR. Iran said it is prepared.",
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6011514/us-israel-iran-war",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T08:56:58.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 21.7,
+      "topics": []
+    },
+    {
+      "id": "28a3c2ddc613a833",
+      "category": "finance",
+      "title": "Japanese Government Bonds Held by the Bank of Japan",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261020.xlsx",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-22T08:00:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 21.5,
+      "topics": []
+    },
+    {
+      "id": "b193e9c9fee5bb28",
+      "category": "ai",
+      "title": "Day-0 Support for Flint on vLLM",
+      "summary": "vLLM supports both Flint checkpoints (40B total, 2.5B active) from day 0, decoding a single request at about 500 tokens/s on one GPU.",
+      "url": "https://vllm.ai/blog/2026-10-21-flint",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 21.5,
+      "topics": [
+        "inference",
+        "hardware"
+      ]
+    },
+    {
+      "id": "b898219fb84d5aac",
+      "category": "ai",
+      "title": "Announcing Humming: Fast, Flexible Kernels for Quantized Inference",
+      "summary": "Introducing Humming, a quantized inference kernel library from Ant Group and the vLLM community, with broad GPU and quantization support, dense and MoE performance results, and vLLM integration.",
+      "url": "https://vllm.ai/blog/2026-10-21-humming",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 21.5,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "ffdec7d4196102d0",
+      "category": "finance",
+      "title": "Developments in Real Exports and Real Imports",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/research/research_data/reri/index.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-22T07:00:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 21.2,
+      "topics": []
+    },
+    {
+      "id": "4f3eab42e545250e",
+      "category": "ai",
+      "title": "Empowering frontline maternal care with AI-assisted ultrasound",
+      "summary": "Health & Bioscience",
+      "url": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-21T16:23:53.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 20.6,
+      "topics": []
+    },
+    {
+      "id": "9b00031df9111b17",
+      "category": "world",
+      "title": "Sudan conflict: Peace efforts resume to end ‘drone war’ fuelling humanitarian crisis",
+      "summary": "Talks to halt the fighting in Sudan and alleviate the humanitarian crisis there continued in Geneva on Wednesday, where nearly two dozen countries convened to discuss a pathway to a ceasefire and transition to peaceful governance that represents all Sudanese people.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168638",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-21T12:00:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 20.5,
+      "topics": []
+    },
+    {
+      "id": "02b60dfdf0da174f",
+      "category": "finance",
+      "title": "Tank barrel production returns to UK after 20 years",
+      "summary": "The defence secretary says the UK is \"back in the business of making weapons\" for its armed forces.",
+      "url": "https://www.bbc.co.uk/news/articles/cm70pj51zdk4o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T13:45:19.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 19.9,
+      "topics": []
+    },
+    {
+      "id": "6102af213c95457d",
+      "category": "finance",
+      "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
+      "summary": "The bank says it is using more AI leading to a 5% reduction in its workforce.",
+      "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T12:54:36.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 19.7,
+      "topics": []
+    },
+    {
+      "id": "85d0b07106884fdd",
+      "category": "finance",
+      "title": "Bank of Japan Accounts (October 20)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261020.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-22T01:00:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 19.7,
+      "topics": []
+    },
+    {
+      "id": "dfd4eeed33ea60f1",
+      "category": "ai",
+      "title": "Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown",
+      "summary": "Blackstone’s AI head on why the PE giant isn't panicked by market jitters.",
+      "url": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-21T22:51:22.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 19.2,
+      "topics": []
+    },
+    {
+      "id": "e707ef0b9eecabc9",
+      "category": "finance",
+      "title": "Piero Cipollone: Pontes and Appia: unlocking opportunities for banks",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021_1~d190f2c349.en.pdf",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-21T08:00:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 16.5,
+      "topics": []
+    },
+    {
+      "id": "a611e06b43938a5d",
+      "category": "finance",
+      "title": "Philip R. Lane: Euro liquidity lines and the international monetary system",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021~401d6c4b70.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-21T04:15:00.000Z",
+      "fetchedAt": "2026-10-22T14:01:51.082Z",
+      "score": 15.6,
+      "topics": []
     },
     {
       "id": "ca4f8690f4513008",
@@ -733,102 +1442,6 @@
       ]
     },
     {
-      "id": "5773364d7a6740e3",
-      "category": "technology",
-      "title": "Optimizing World Action Models on AMD GPUs",
-      "summary": "World Action Models (WAMs) offer a promising route to more physically grounded robot policies, but their video-model backbones make inference expensive. In this blog you will learn how to remove much of that cost on AMD GPUs without sacrificing task success, using two representative WAMs, FastWAM [1] and DiT4DiT [2].",
-      "url": "https://rocm.blogs.amd.com/artificial-intelligence/faster-action-models/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 27.7,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "a483f64049aebd57",
-      "category": "technology",
-      "title": "MoE Training Optimization with Primus",
-      "summary": "Mixture-of-Experts (MoE) has become a dominant architecture for frontier-scale language models, and our users increasingly train large MoE models on AMD Instinct™ MI355X [a] GPUs. Driven by those workload requirements, we have built a broad set of MoE training optimizations in Primus. This blog follows our earlier post MoE Training Best Practices on AMD GPUs. The earlier post established the foundational optimizations; this one describes what we built on top of them.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/primus-moe-optimization/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 27.7,
-      "topics": [
-        "hardware",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "382d835d42309996",
-      "category": "technology",
-      "title": "Micro-World 2: Streaming Real-time Interactive World Model",
-      "summary": "Diffusion models have advanced rapidly in recent years, enabling high-quality video generation across a wide range of creative scenarios. As visual quality continues to improve, however, the field is increasingly shifting its focus from passive content generation toward controllable and interactive experiences. YUME 1.5 [1] explores controllable video generation through explicit interaction signals, while LingBot-World [2] and Sana-WM [3] investigate world models that generate future observations conditioned on the",
-      "url": "https://rocm.blogs.amd.com/artificial-intelligence/Micro-World-V2/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 27.7,
-      "topics": [
-        "models"
-      ]
-    },
-    {
-      "id": "a97c3f3f6243d4d0",
-      "category": "technology",
-      "title": "NASA Conducts RS-25 Engine Test in Support of Future Artemis Missions",
-      "summary": "NASA tested RS-25 engine No. 10001 on Oct. 21 on the Fred Haise Test Stand at NASA’s Stennis Space Center near Bay St. Louis, Mississippi. Test teams fired the developmental engine for almost eight-and-a-half minutes (500 seconds), the same amount of time RS-25 engines fire during launch of NASA’s SLS (Space Launch System) rocket. During […]",
-      "url": "https://www.nasa.gov/image-article/rs-25-engine-test-in-support-of-future-artemis-missions/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-21T20:51:50.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 26.9,
-      "topics": []
-    },
-    {
-      "id": "9ec4600d3e144cfa",
-      "category": "technology",
-      "title": "Design Proteins with RFD4-Proteina Using Reward-Guided Inference-Time Search",
-      "summary": "Protein design is a search problem. Choose amino acids for an eight-residue protein sequence and more than 25 billion combinations are possible. Choose amino...",
-      "url": "https://developer.nvidia.com/blog/design-proteins-with-rfd4-proteina-using-reward-guided-inference-time-search/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T12:30:00.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 26.8,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "71b45fe440896bce",
-      "category": "world",
-      "title": "Websites taken down worldwide as critical cyber-security update issued",
-      "summary": "The vulnerabilities with PHP, a programming language widely used across the internet, have been described as the most significant ever found by AI.",
-      "url": "https://www.bbc.co.uk/news/articles/cmly0lg3w5x2o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-21T19:54:57.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 26.7,
-      "topics": [
-        "security"
-      ]
-    },
-    {
       "id": "27b3271dd23298f9",
       "category": "ai",
       "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
@@ -841,84 +1454,6 @@
       "fetchedAt": "2026-10-22T05:15:26.540Z",
       "score": 26.4,
       "topics": []
-    },
-    {
-      "id": "46d14f81c943df53",
-      "category": "technology",
-      "title": "Cloudflare deploys protections against php2shell vulnerability",
-      "summary": "Cloudflare has deployed default web application firewall (WAF) protections for newly disclosed PHP vulnerabilities before public disclosure. The rules use request and response signals to stop exploit attempts and prevent exposed data from reaching attackers.",
-      "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T13:56:45.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 26.2,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "5653bbe02e1803e7",
-      "category": "technology",
-      "title": "Achieve Productive AI Capacity Faster and More Predictably with NVIDIA DSX POD",
-      "summary": "AI factories turn energy into intelligence. But before an AI workload can produce its first token, operators must bring an interconnected system of compute,...",
-      "url": "https://developer.nvidia.com/blog/achieve-productive-ai-capacity-faster-and-more-predictably-with-nvidia-dsx-pod/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T09:35:32.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 26.1,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
-      "id": "864d1ab2a28c05c5",
-      "category": "technology",
-      "title": "From KTIR to SpyreCode: An MLIR Dataflow Backend for IBM Spyre",
-      "summary": "TL;DR Torch-spyre’s Inductor decides how each kernel’s work is divided across Spyre’s cores and manages tensor residency between on-chip scratchpad and off-chip memory, and the backend compiler turns those decisions... The post From KTIR to SpyreCode: An MLIR Dataflow Backend for IBM Spyre appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/from-ktir-to-spyrecode-an-mlir-dataflow-backend-for-ibm-spyre/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-20T16:00:15.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 25.7,
-      "topics": [
-        "kernels"
-      ]
-    },
-    {
-      "id": "ec83acd11f7b0458",
-      "category": "technology",
-      "title": "Science on the Space Station with NASA Astronaut Jessica Watkins",
-      "summary": "NASA astronaut and Expedition 75 flight engineer Jessica Watkins works inside the Kibo laboratory module’s Life Science Glovebox on Oct. 9, 2026, safely mixing living cell samples with a bioink and then filling a special cartridge with the cell‑ink mixture. The advanced research operations were part of the InSPA‑Auxilium Bioprinter‑Cell Printing investigation, which explores 3D […]",
-      "url": "https://www.nasa.gov/image-article/science-on-the-space-station-with-nasa-astronaut-jessica-watkins/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-21T15:05:08.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 25.5,
-      "topics": []
-    },
-    {
-      "id": "9ad9cb3b537f81fe",
-      "category": "ai",
-      "title": "PHP Armageddon: OpenAI, Google’s Wiz find ancient holes, panicking the internet",
-      "summary": "This is the kind of security issue that was found and prevented by AI, but is also a high risk because of AI.",
-      "url": "https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-21T17:59:12.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 25.2,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "eeb3a64736effc5b",
@@ -1012,43 +1547,6 @@
       "topics": []
     },
     {
-      "id": "b193e9c9fee5bb28",
-      "category": "ai",
-      "title": "Day-0 Support for Flint on vLLM",
-      "summary": "vLLM supports both Flint checkpoints (40B total, 2.5B active) from day 0, decoding a single request at about 500 tokens/s on one GPU.",
-      "url": "https://vllm.ai/blog/2026-10-21-flint",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 23.7,
-      "topics": [
-        "inference",
-        "hardware"
-      ]
-    },
-    {
-      "id": "b898219fb84d5aac",
-      "category": "ai",
-      "title": "Announcing Humming: Fast, Flexible Kernels for Quantized Inference",
-      "summary": "Introducing Humming, a quantized inference kernel library from Ant Group and the vLLM community, with broad GPU and quantization support, dense and MoE performance results, and vLLM integration.",
-      "url": "https://vllm.ai/blog/2026-10-21-humming",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 23.7,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
-      ]
-    },
-    {
       "id": "ea18cafb61628357",
       "category": "world",
       "title": "Live: Paris bans protests after violent unrest as Macron takes swipe at Trump",
@@ -1105,20 +1603,6 @@
       "topics": []
     },
     {
-      "id": "4f3eab42e545250e",
-      "category": "ai",
-      "title": "Empowering frontline maternal care with AI-assisted ultrasound",
-      "summary": "Health & Bioscience",
-      "url": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
-      "source": "Google Research",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-21T16:23:53.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 22.8,
-      "topics": []
-    },
-    {
       "id": "3fc7c2e653ada9dc",
       "category": "world",
       "title": "US accuses Canada of election interference ahead of midterms",
@@ -1128,20 +1612,6 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-21T23:52:21.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 22.7,
-      "topics": []
-    },
-    {
-      "id": "9b00031df9111b17",
-      "category": "world",
-      "title": "Sudan conflict: Peace efforts resume to end ‘drone war’ fuelling humanitarian crisis",
-      "summary": "Talks to halt the fighting in Sudan and alleviate the humanitarian crisis there continued in Geneva on Wednesday, where nearly two dozen countries convened to discuss a pathway to a ceasefire and transition to peaceful governance that represents all Sudanese people.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168638",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-21T12:00:00.000Z",
       "fetchedAt": "2026-10-22T05:15:26.540Z",
       "score": 22.7,
       "topics": []
@@ -1172,20 +1642,6 @@
       "publishedAt": "2026-10-21T21:25:55.000Z",
       "fetchedAt": "2026-10-22T05:15:26.540Z",
       "score": 22,
-      "topics": []
-    },
-    {
-      "id": "85d0b07106884fdd",
-      "category": "finance",
-      "title": "Bank of Japan Accounts (October 20)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261020.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-22T01:00:00.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 21.9,
       "topics": []
     },
     {
@@ -1228,20 +1684,6 @@
       "publishedAt": "2026-10-21T23:50:00.000Z",
       "fetchedAt": "2026-10-22T05:15:26.540Z",
       "score": 21.6,
-      "topics": []
-    },
-    {
-      "id": "dfd4eeed33ea60f1",
-      "category": "ai",
-      "title": "Blackstone’s Jas Khaira says fears over AI-buildout debt are overblown",
-      "summary": "Blackstone’s AI head on why the PE giant isn't panicked by market jitters.",
-      "url": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-21T22:51:22.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 21.4,
       "topics": []
     },
     {
@@ -1368,34 +1810,6 @@
       "publishedAt": "2026-10-21T10:20:15.000Z",
       "fetchedAt": "2026-10-22T05:15:26.540Z",
       "score": 19.3,
-      "topics": []
-    },
-    {
-      "id": "e707ef0b9eecabc9",
-      "category": "finance",
-      "title": "Piero Cipollone: Pontes and Appia: unlocking opportunities for banks",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021_1~d190f2c349.en.pdf",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-21T08:00:00.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 18.7,
-      "topics": []
-    },
-    {
-      "id": "a611e06b43938a5d",
-      "category": "finance",
-      "title": "Philip R. Lane: Euro liquidity lines and the international monetary system",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021~401d6c4b70.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-21T04:15:00.000Z",
-      "fetchedAt": "2026-10-22T05:15:26.540Z",
-      "score": 17.7,
       "topics": []
     },
     {
