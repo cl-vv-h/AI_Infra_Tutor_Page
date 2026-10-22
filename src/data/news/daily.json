@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T20:15:33.911Z",
+  "generatedAt": "2026-10-22T23:31:24.456Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -14,7 +14,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 39,
-      "latestPublishedAt": "2026-10-22T19:27:57.000Z",
+      "latestPublishedAt": "2026-10-22T23:22:45.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 134,
-      "latestPublishedAt": "2026-10-22T19:18:00.000Z",
+      "entryCount": 135,
+      "latestPublishedAt": "2026-10-22T20:52:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-22T20:05:22.000Z",
+      "latestPublishedAt": "2026-10-22T22:52:35.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-22T18:32:57.000Z",
+      "latestPublishedAt": "2026-10-22T23:01:33.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-22T19:07:09.000Z",
+      "latestPublishedAt": "2026-10-22T22:08:24.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-22T19:34:40.000Z",
+      "latestPublishedAt": "2026-10-22T20:17:52.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-22T16:20:37.000Z",
+      "latestPublishedAt": "2026-10-22T21:39:58.000Z",
       "selectedCount": 3,
       "libraryCount": 4
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-22T20:11:54.000Z",
+      "latestPublishedAt": "2026-10-22T21:18:37.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,7 +274,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-22T13:50:55.000Z",
+      "latestPublishedAt": "2026-10-22T22:17:04.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-22T18:21:26.000Z",
+      "latestPublishedAt": "2026-10-22T19:57:50.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-22T19:38:26.000Z",
+      "latestPublishedAt": "2026-10-22T22:36:23.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -312,8 +312,8 @@
       "type": "engineering",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 888,
-      "latestPublishedAt": "2026-10-22T16:11:31.000Z",
+      "entryCount": 889,
+      "latestPublishedAt": "2026-10-22T22:24:34.000Z",
       "selectedCount": 3,
       "libraryCount": 8
     },
@@ -524,8 +524,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T16:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 33.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 33.1,
       "topics": [
         "inference"
       ]
@@ -540,10 +540,26 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T13:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 32.2,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 31.4,
       "topics": [
         "security"
+      ]
+    },
+    {
+      "id": "286d4cfdac740859",
+      "category": "ai",
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "summary": "",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-22T22:24:34.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 30.7,
+      "topics": [
+        "training"
       ]
     },
     {
@@ -556,10 +572,26 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T16:39:09.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 30.1,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 29.3,
       "topics": [
         "hardware"
+      ]
+    },
+    {
+      "id": "68e6c71e51e07c6d",
+      "category": "world",
+      "title": "US judge blocks federal operations seeking to identify non-citizen voters",
+      "summary": "Homeland Security targets nine states in fraud investigations that critics say intimidate voters.",
+      "url": "https://www.aljazeera.com/news/2026/10/22/us-judge-blocks-federal-operations-seeking-to-identify-non-citizen-voters?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T21:52:52.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 28.6,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -572,8 +604,22 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T17:44:52.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 29.4,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 28.6,
+      "topics": []
+    },
+    {
+      "id": "773a9b791f45302c",
+      "category": "technology",
+      "title": "Spiral’s Edge",
+      "summary": "This NASA Hubble Space Telescope image released on Oct. 16, 2026, features the edge-on, intermediate spiral galaxy NGC 1827, located roughly 37 million light-years away in the constellation Columba, the Dove. Hubble captured the image as part of a survey looking at 260 satellite galaxies around 22 Milky Way-like host galaxies within a radius of […]",
+      "url": "https://www.nasa.gov/image-article/spirals-edge/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-22T21:35:38.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 28.5,
       "topics": []
     },
     {
@@ -586,8 +632,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-22T01:38:13.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 29.3,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 28.5,
       "topics": [
         "inference",
         "kernels",
@@ -607,8 +653,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T19:45:44.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 28.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 28.1,
       "topics": [
         "training"
       ]
@@ -623,56 +669,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-22T17:12:51.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 28.2,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "e29e9c3e40bd27f3",
-      "category": "world",
-      "title": "Two Syrian security officers killed in raid on ISIL cell near Damascus",
-      "summary": "The Syrian Interior Ministry says five suspected fighters killed and six arrested outside of Damascus.",
-      "url": "https://www.aljazeera.com/news/2026/10/22/two-syrian-security-officers-killed-in-raid-on-isil-cell-near-damascus?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T16:24:43.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 28,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "0f8bdf9d765ecee2",
-      "category": "world",
-      "title": "Italy and Spain lift border controls after months of tension over Ceuta",
-      "summary": "More than 70,000 people entered Ceuta irregularly from Morocco, triggering border security concerns in the EU bloc.",
-      "url": "https://www.aljazeera.com/news/2026/10/22/italy-and-spain-lift-border-controls-after-months-of-tension-over-ceuta?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T16:04:21.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 28,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "f71f9fd32442ad8c",
-      "category": "world",
-      "title": "Rising costs and tight budgets strain Americans ahead of midterm elections",
-      "summary": "Rising costs leave US workers juggling multiple jobs as financial security becomes increasingly elusive.",
-      "url": "https://www.aljazeera.com/economy/2026/10/22/rising-costs-and-tight-budgets-strain-americans-ahead-of-midterm-elections?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T15:07:38.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 27.7,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 27.4,
       "topics": [
         "security"
       ]
@@ -687,40 +685,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-22T13:47:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 27.4,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "3473600b3d6da99b",
-      "category": "world",
-      "title": "Combatting online scams in the age of AI",
-      "summary": "One in four Europeans has fallen victim to an online scam, from identity fraud to fake romances. The rise of artificial intelligence is ushering in new risks. Minh Nguyen, Chief Product Officer at security solutions provider Entrust, says both online platforms and governments can play a role in protecting consumers and businesses.",
-      "url": "https://www.france24.com/en/tv-shows/people-profit/20261022-combatting-online-scams-in-the-age-of-ai",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T13:33:54.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 27.3,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "7427439578e8fe6a",
-      "category": "world",
-      "title": "REPLAY: French President vows to prevent violence ahead of protests",
-      "summary": "French President ​Emmanuel Macron spoke to the press on Thursday after a meeting with security chiefs. He said that \"illegitimate\" protests would be banned in ​coming ‌days, ⁠while those from ‌organised groups such as unions ⁠would be offered alternative paths ​for the marches ‌to protect businesses.",
-      "url": "https://www.france24.com/en/video/20261022-replay-french-president-vows-to-prevent-violence-ahead-of-protests",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T13:04:45.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 27.2,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 26.6,
       "topics": [
         "security"
       ]
@@ -735,8 +701,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-22T16:32:26.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 26.3,
       "topics": [
         "security"
       ]
@@ -751,8 +717,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-22T12:35:40.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 26.3,
       "topics": [
         "security"
       ]
@@ -767,8 +733,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-22T12:17:44.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 27,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 26.2,
       "topics": [
         "security"
       ]
@@ -783,25 +749,9 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T07:51:31.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 26.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 26.1,
       "topics": []
-    },
-    {
-      "id": "5104c499182d5e3b",
-      "category": "world",
-      "title": "What is PHP and why did it spark a global cyber-security scramble?",
-      "summary": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
-      "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T11:15:58.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 26.8,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "dd07cff341b910ec",
@@ -813,8 +763,24 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-22T15:15:33.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 26.7,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 25.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "5104c499182d5e3b",
+      "category": "world",
+      "title": "What is PHP and why did it spark a global cyber-security scramble?",
+      "summary": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
+      "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T11:15:58.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 25.9,
       "topics": [
         "security"
       ]
@@ -829,8 +795,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T09:52:16.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 26.4,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 25.6,
       "topics": [
         "security"
       ]
@@ -845,8 +811,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T13:11:13.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 26.2,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 25.4,
       "topics": [
         "models",
         "security"
@@ -862,8 +828,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-22T12:54:09.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 26.2,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 25.3,
       "topics": [
         "security"
       ]
@@ -878,8 +844,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-22T08:31:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 26.1,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 25.2,
       "topics": [
         "security"
       ]
@@ -894,8 +860,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-21T16:28:36.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 26.1,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 25.2,
       "topics": [
         "hardware"
       ]
@@ -910,8 +876,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-21T15:25:35.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 25.8,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 25,
       "topics": [
         "inference",
         "hardware",
@@ -928,13 +894,27 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-21T14:46:11.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 24.8,
       "topics": [
         "inference",
         "hardware",
         "models"
       ]
+    },
+    {
+      "id": "d44f94937926b2bd",
+      "category": "technology",
+      "title": "NASA Invites Media to 2026 von Braun Space Exploration Symposium",
+      "summary": "Members of the media are invited to join NASA at the 2026 von Braun Space Exploration Symposium from Monday, Oct. 26, to Wednesday, Oct. 28, at the University of Alabama in Huntsville. This year’s symposium is focused on humanity’s return to the Moon, sustainable lunar infrastructure, advanced space propulsion, and the evolving space workforce. Panels […]",
+      "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-2026-von-braun-space-exploration-symposium/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-22T21:39:58.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 24.5,
+      "topics": []
     },
     {
       "id": "faff916cc4c5b52a",
@@ -946,8 +926,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T05:00:27.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 25.2,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 24.4,
       "topics": [
         "training"
       ]
@@ -962,8 +942,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T05:00:23.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 25.2,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 24.4,
       "topics": [
         "inference"
       ]
@@ -978,8 +958,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T16:11:31.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 25,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 24.2,
       "topics": []
     },
     {
@@ -992,25 +972,65 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-22T08:10:51.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 25,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 24.2,
       "topics": []
     },
     {
-      "id": "fc37a0d8678ca9e7",
-      "category": "ai",
-      "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+      "id": "4a956042b81d7499",
+      "category": "world",
+      "title": "Ecuador opposition leader Luisa Gonzalez arrested in campaign finance probe",
+      "summary": "Gonzalez’s Citizen Revolution Movement has denounced the arrest as politically motivated, calling for her release.",
+      "url": "https://www.aljazeera.com/news/2026/10/22/ecuador-opposition-leader-luisa-gonzalez-arrested-in-campaign-finance-probe?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T22:09:38.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "c8065dbb8d010489",
+      "category": "finance",
+      "title": "Commentary: Which G7 economy is the poster child for debt woes?",
+      "summary": "Among the G7, France and the US are heading into a wall, says Chris Giles for the Financial Times.",
+      "url": "https://www.channelnewsasia.com/commentary/us-france-g7-economies-need-fiscal-repair-imf-6482056",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T21:59:00.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "608e5dd4ad00f25a",
+      "category": "finance",
+      "title": "SK Hynix says Solidigm drops plan for US IPO amid market volatility",
       "summary": "",
-      "url": "https://huggingface.co/blog/nvidia/kumo-relational",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T18:26:30.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 24.5,
-      "topics": [
-        "training"
-      ]
+      "url": "https://www.channelnewsasia.com/business/sk-hynix-says-solidigm-drops-plan-us-ipo-amid-market-volatility-6484446",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T21:57:16.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "7ddc85c1fd35b597",
+      "category": "world",
+      "title": "Michigan voters closely divided between Rogers and El-Sayed",
+      "summary": "Less than two weeks before the midterm elections, some Michigan voters are still deciding.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/22/michigan-voters-closely-divided-between-rogers-and-el-sayed?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T21:51:50.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 23.6,
+      "topics": []
     },
     {
       "id": "4c1b447e3618a7ff",
@@ -1022,12 +1042,26 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T17:45:40.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 24.4,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 23.6,
       "topics": [
         "kernels",
         "models"
       ]
+    },
+    {
+      "id": "c58e528b4a7bc279",
+      "category": "world",
+      "title": "Emirati diplomat could become next UN chief despite human rights concerns",
+      "summary": "Human rights defenders are sounding the alarm over the United Arab Emirates’ nomination of its former envoy Lana Nusseibeh to be the next UN Secretary General. They say electing a diplomat from the UAE, a country with a questionable human rights record that is accused of backing forces behind a massacre in Sudan, could spell “catastrophe” for the UN.",
+      "url": "https://www.france24.com/en/americas/20261022-emirati-diplomat-could-become-next-un-chief-despite-human-rights-concerns-uae-sudan-un-secretary-general-lana-nusseibeh",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T21:18:37.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 23.4,
+      "topics": []
     },
     {
       "id": "8373207ac9818c0f",
@@ -1039,8 +1073,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-22T16:20:37.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 24,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 23.2,
       "topics": []
     },
     {
@@ -1053,8 +1087,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-22T19:59:12.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 23.1,
       "topics": []
     },
     {
@@ -1067,8 +1101,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 23.1,
       "topics": [
         "inference"
       ]
@@ -1083,8 +1117,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 23.1,
       "topics": [
         "hardware",
         "models",
@@ -1101,11 +1135,39 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 23.1,
       "topics": [
         "models"
       ]
+    },
+    {
+      "id": "8711b3eb0d13eeb0",
+      "category": "world",
+      "title": "Israel’s Ben-Gvir shares AI videos mocking Gazans as ‘donkeys’ and sending them to Paris",
+      "summary": "Israel’s far-right minister Itamar Ben-Gvir is using AI-generated videos to mock Palestinians and push political messages ahead of the country’s election, including videos magically transporting Gazans to Paris or calling them \"donkeys\" for choosing to stay. One video has sparked an online spat with France. AI is playing a growing role in the campaign, with parties using deepfakes, bots and AI-generated content, raising concerns about disinformation and the technology’s influence on voters.",
+      "url": "https://www.france24.com/en/tv-shows/truth-or-fake/20261022-israel-s-ben-gvir-shares-ai-videos-mocking-gazans-as-donkeys-and-sending-them-to-paris",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T19:38:27.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 23,
+      "topics": []
+    },
+    {
+      "id": "fe14d46bbe66f6c4",
+      "category": "world",
+      "title": "What we know about war plans that Trump and Netanyahu are drawing up",
+      "summary": "Could the U.S. and Israel be on the verge of launching a new attack on Iran? President Trump and Prime Minister Benjamin Netanyahu have been suggesting that's on the table.",
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6012306/what-we-know-about-war-plans-that-trump-and-netanyahu-are-drawing-up",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T22:17:04.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 22.7,
+      "topics": []
     },
     {
       "id": "5c240e860cf55dc4",
@@ -1117,8 +1179,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-10-22T14:30:24.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -1131,38 +1193,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-22T17:07:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 23.2,
-      "topics": []
-    },
-    {
-      "id": "d8983c3dedc00a79",
-      "category": "finance",
-      "title": "US to award $389 million in R&D funds for power semiconductors, critical materials",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/us-award-389-million-in-rd-funds-power-semiconductors-critical-materials-6482801",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T13:02:14.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 23.2,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
-      "id": "a97c3f3f6243d4d0",
-      "category": "technology",
-      "title": "NASA Conducts RS-25 Engine Test in Support of Future Artemis Missions",
-      "summary": "NASA tested RS-25 engine No. 10001 on Oct. 21 on the Fred Haise Test Stand at NASA’s Stennis Space Center near Bay St. Louis, Mississippi. Test teams fired the developmental engine for almost eight-and-a-half minutes (500 seconds), the same amount of time RS-25 engines fire during launch of NASA’s SLS (Space Launch System) rocket. During […]",
-      "url": "https://www.nasa.gov/image-article/rs-25-engine-test-in-support-of-future-artemis-missions/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-21T20:51:50.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 23.2,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 22.4,
       "topics": []
     },
     {
@@ -1175,8 +1207,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T20:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 22.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 22.1,
       "topics": []
     },
     {
@@ -1189,8 +1221,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-21T19:54:57.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 22.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 22.1,
       "topics": [
         "security"
       ]
@@ -1205,8 +1237,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T15:25:02.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 22,
       "topics": [
         "security"
       ]
@@ -1221,8 +1253,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T19:07:09.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 21.9,
       "topics": []
     },
     {
@@ -1235,8 +1267,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T19:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 21.9,
       "topics": []
     },
     {
@@ -1249,22 +1281,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T15:00:02.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 22.7,
-      "topics": []
-    },
-    {
-      "id": "711ebc6fa2611a62",
-      "category": "finance",
-      "title": "Yen jumps as oil, AI and France worries rattle markets",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/yen-jumps-oil-ai-and-france-worries-rattle-markets-6481071",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T14:01:14.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 22.4,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 21.9,
       "topics": []
     },
     {
@@ -1277,39 +1295,11 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T13:56:45.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 22.4,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 21.6,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "ec83acd11f7b0458",
-      "category": "technology",
-      "title": "Science on the Space Station with NASA Astronaut Jessica Watkins",
-      "summary": "NASA astronaut and Expedition 75 flight engineer Jessica Watkins works inside the Kibo laboratory module’s Life Science Glovebox on Oct. 9, 2026, safely mixing living cell samples with a bioink and then filling a special cartridge with the cell‑ink mixture. The advanced research operations were part of the InSPA‑Auxilium Bioprinter‑Cell Printing investigation, which explores 3D […]",
-      "url": "https://www.nasa.gov/image-article/science-on-the-space-station-with-nasa-astronaut-jessica-watkins/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-21T15:05:08.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 21.7,
-      "topics": []
-    },
-    {
-      "id": "c50ef815e84f5032",
-      "category": "world",
-      "title": "Greetings from the Brazil-Argentina border, where waterfalls are flowing at near-record rates",
-      "summary": "The Iguazú Falls span more than a mile across both countries. A rain-soaked October, which scientists link to the Super El Niño, has sent near-record volumes of water surging over the towering cliffs.",
-      "url": "https://www.npr.org/2026/10/22/g-s1-148553/argentina-brazil-iguazu-falls-waterfalls-super-el-nino",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T13:50:55.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 21.4,
-      "topics": []
     },
     {
       "id": "28a3c2ddc613a833",
@@ -1321,8 +1311,22 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T08:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 19.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 19.1,
+      "topics": []
+    },
+    {
+      "id": "a488e6866b3b3181",
+      "category": "finance",
+      "title": "No order, no seat: Starbucks China rolls out new store policy",
+      "summary": "Starbucks says it is improving customers' in-store experience as it competes with homegrown rivals.",
+      "url": "https://www.bbc.co.uk/news/articles/ckzd6rjmlzvmo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T04:02:29.000Z",
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 19.1,
       "topics": []
     },
     {
@@ -1335,8 +1339,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 19.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 19.1,
       "topics": [
         "inference",
         "hardware"
@@ -1352,8 +1356,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 19.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 19.1,
       "topics": [
         "inference",
         "kernels",
@@ -1372,8 +1376,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T07:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 19.7,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 18.9,
       "topics": []
     },
     {
@@ -1386,22 +1390,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-22T15:05:47.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 18.7,
-      "topics": []
-    },
-    {
-      "id": "6102af213c95457d",
-      "category": "finance",
-      "title": "Barclays cutting 5,000 jobs as it increases reliance on AI",
-      "summary": "The bank says it is using more AI leading to a 5% reduction in its workforce.",
-      "url": "https://www.bbc.co.uk/news/articles/cm4g1p347qgxo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T14:28:59.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 18.6,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -1414,8 +1404,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T01:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 18.2,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 17.4,
       "topics": []
     },
     {
@@ -1428,8 +1418,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-21T08:00:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 14.9,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 14.1,
       "topics": []
     },
     {
@@ -1442,8 +1432,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-21T04:15:00.000Z",
-      "fetchedAt": "2026-10-22T20:15:33.911Z",
-      "score": 14,
+      "fetchedAt": "2026-10-22T23:31:24.456Z",
+      "score": 13.2,
       "topics": []
     }
   ]
