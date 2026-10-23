@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-23T05:14:26.223Z",
+  "generatedAt": "2026-10-23T13:44:42.603Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 38,
-  "failedSourceCount": 1,
+  "sourceCount": 39,
+  "failedSourceCount": 0,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 27,
-      "latestPublishedAt": "2026-10-23T04:54:25.000Z",
+      "entryCount": 26,
+      "latestPublishedAt": "2026-10-23T13:37:20.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 57,
-      "latestPublishedAt": "2026-10-22T23:20:38.000Z",
+      "entryCount": 55,
+      "latestPublishedAt": "2026-10-23T12:24:17.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 133,
-      "latestPublishedAt": "2026-10-23T04:46:00.000Z",
+      "latestPublishedAt": "2026-10-23T13:07:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-23T04:41:24.000Z",
+      "latestPublishedAt": "2026-10-23T13:25:58.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-23T01:06:35.000Z",
+      "latestPublishedAt": "2026-10-23T13:37:48.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-22T22:25:33.000Z",
+      "latestPublishedAt": "2026-10-23T11:30:22.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -132,7 +132,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-22T12:59:11.281Z",
-      "selectedCount": 1,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -157,7 +157,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 15,
-      "latestPublishedAt": "2026-10-21T08:00:00.000Z",
+      "latestPublishedAt": "2026-10-23T08:00:00.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -184,7 +184,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-22T20:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -195,8 +195,8 @@
       "type": "institution",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 50,
-      "latestPublishedAt": "2026-10-22T08:00:00.000Z",
+      "entryCount": 51,
+      "latestPublishedAt": "2026-10-23T06:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-22T21:18:37.000Z",
+      "latestPublishedAt": "2026-10-23T13:20:48.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,7 +274,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-22T22:17:04.000Z",
+      "latestPublishedAt": "2026-10-23T12:41:39.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-23T04:45:59.000Z",
+      "latestPublishedAt": "2026-10-23T12:42:49.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-23T00:57:45.000Z",
+      "latestPublishedAt": "2026-10-23T12:46:19.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -312,8 +312,8 @@
       "type": "engineering",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 889,
-      "latestPublishedAt": "2026-10-22T22:24:34.000Z",
+      "entryCount": 890,
+      "latestPublishedAt": "2026-10-23T00:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 8
     },
@@ -340,7 +340,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-21T16:23:53.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 3
     },
     {
@@ -401,12 +401,11 @@
       "country": "International",
       "category": "ai",
       "type": "research",
-      "state": "unavailable",
+      "state": "ok",
       "channel": "feed",
-      "httpStatus": 429,
-      "entryCount": 0,
-      "latestPublishedAt": null,
-      "selectedCount": 0,
+      "entryCount": 20,
+      "latestPublishedAt": "2026-10-22T16:04:40.000Z",
+      "selectedCount": 3,
       "libraryCount": 8
     },
     {
@@ -432,7 +431,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-22T16:39:09.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -525,10 +524,138 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T16:00:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 31.7,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 29.6,
       "topics": [
         "inference"
+      ]
+    },
+    {
+      "id": "5d8bfb804e89caed",
+      "category": "world",
+      "title": "Japan-Russia ties erode as journalist sits in Moscow jail",
+      "summary": "Japan is demanding access to a journalist who was arrested by Russian security services. Moscow claims Tokyo is using journalists as spies.",
+      "url": "https://www.dw.com/en/japan-russia-ties-erode-as-journalist-sits-in-moscow-jail/a-79742995?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T12:42:00.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 28.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "b2147b6fcb56b244",
+      "category": "finance",
+      "title": "What is PHP and why did it spark a global cyber-security scramble?",
+      "summary": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
+      "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T12:24:17.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 28.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "044a00b3ec721d6e",
+      "category": "world",
+      "title": "Saudi Arabia security puts Asian Cup in doubt: Japan football chief",
+      "summary": "Tsuneyasu Miyamoto says it will be difficult for Saudi Arabia to host next year's tournament as scheduled.",
+      "url": "https://www.aljazeera.com/sports/2026/10/23/saudi-arabia-security-puts-asian-cup-in-doubt-japan-football-chief?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T11:34:59.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 28.5,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "7069c420f23337d4",
+      "category": "world",
+      "title": "REPLAY: Laurent Nunez holds presser on security arrangements ahead of protests",
+      "summary": "French Interior Minister Laurent Nunez held a press conference on security arrangements ahead of upcoming protests. He announced that 70,000 security forces would be mobilised on October 24 to keep order.",
+      "url": "https://www.france24.com/en/replay-french-interior-minister-holds-presser-on-security-arrangements-ahead-of-protests",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T11:29:17.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 28.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "8933ebdf74b5b80a",
+      "category": "world",
+      "title": "France tightens security in anticipation of weekend protests",
+      "summary": "Gatherings banned and curfews extended as cities lock down in an effort to avert further unrest.",
+      "url": "https://www.aljazeera.com/news/2026/10/23/france-tightens-security-in-anticipation-of-weekend-protests?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T11:05:13.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 28.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "3c323591c6d6df15",
+      "category": "world",
+      "title": "🔴 Live: Some 70,000 security forces will be mobilised for French protests on Saturday, says PM",
+      "summary": "",
+      "url": "https://www.france24.com/en/europe/20261023-macron-meets-with-student-representatives-and-law-enforcement-ahead-of-new-protests",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T10:58:20.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 28.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "f9c7e83603a33669",
+      "category": "world",
+      "title": "Sri Lanka: Death of iconic elephant raises habitat concerns",
+      "summary": "The death of what was thought to be Sri Lanka’s largest elephant has drawn attention to human-elephant conflict in rural communities. The island country sees a high number of deadly encounters.",
+      "url": "https://www.dw.com/en/sri-lanka-death-of-iconic-elephant-raises-habitat-concerns/a-79735669?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T09:29:00.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 27.9,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "0207a6b71ea8b98d",
+      "category": "world",
+      "title": "Politics in 'materialist terms': Gen Z in Albania, Italy, France and India protesting for 'fairness'",
+      "summary": "Jean-Emile Jammine is pleased to welcome Gökçe Tuncel, Sociologist and post-doctoral researcher associated with the Université Paris-Est Créteil (UPEC). For Tuncel, the wave of youth-led protests across France, Albania, India and Italy reveals more than a succession of localized grievances. It signals the emergence of a political consciousness shaped by material insecurity, institutional disillusionment and an increasingly explicit demand for solidarity and social justice. \"What is really striking about this Gen Z ",
+      "url": "https://www.france24.com/en/politics-in-materialist-terms-gen-z-in-albania-italy-france-and-india-protesting-for-fairness",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T09:04:40.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 27.8,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -541,8 +668,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T13:00:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 29.9,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 27.8,
       "topics": [
         "security"
       ]
@@ -557,8 +684,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 29.7,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 27.6,
       "topics": [
         "inference",
         "kernels",
@@ -575,11 +702,41 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T22:24:34.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 29.3,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 27.2,
       "topics": [
         "training"
       ]
+    },
+    {
+      "id": "8137775894758dfd",
+      "category": "world",
+      "title": "Two European women kidnapped in Niger freed in Libya",
+      "summary": "The two were kidnapped in separate incidents in Niger, where they were involved in education and development initiatives, more than a year and a half ago.",
+      "url": "https://www.africanews.com/2026/10/22/two-european-women-kidnapped-in-niger-freed-in-libya/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T09:30:21.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 26.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "5574f318f053599e",
+      "category": "ai",
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "summary": "",
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 26.6,
+      "topics": []
     },
     {
       "id": "11c2bd28b15ce6a9",
@@ -591,26 +748,28 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T16:39:09.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 27.9,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 25.7,
       "topics": [
         "hardware"
       ]
     },
     {
-      "id": "68e6c71e51e07c6d",
-      "category": "world",
-      "title": "US judge blocks federal operations seeking to identify non-citizen voters",
-      "summary": "Homeland Security targets nine states in fraud investigations that critics say intimidate voters.",
-      "url": "https://www.aljazeera.com/news/2026/10/22/us-judge-blocks-federal-operations-seeking-to-identify-non-citizen-voters?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T21:52:52.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 27.2,
+      "id": "f5a49812b4252440",
+      "category": "ai",
+      "title": "Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective",
+      "summary": "Space data centers (SpaceDCs) are emerging as platforms for large language models (LLMs), supported by continuous solar-energy harvesting and high-speed interconnections. The mixture-of-experts (MoE) architecture supports distributed LLM inference by deploying experts across satellites. However, skewed expert activation creates uneven computation power demands despite uniform solar-power supply at the dawn-dusk sun-synchronous orbit (SSO). Consequently, active experts remain power-constrained while harvested power ",
+      "url": "https://arxiv.org/abs/2610.30923v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-22T08:42:28.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 25.7,
       "topics": [
-        "security"
+        "inference",
+        "hardware",
+        "models"
       ]
     },
     {
@@ -623,8 +782,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-22T21:35:38.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 25,
       "topics": []
     },
     {
@@ -637,8 +796,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T17:44:52.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 25,
       "topics": []
     },
     {
@@ -651,8 +810,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-22T01:38:13.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 25,
       "topics": [
         "inference",
         "kernels",
@@ -672,8 +831,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T19:45:44.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 26.6,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 24.5,
       "topics": [
         "training"
       ]
@@ -688,11 +847,39 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T22:25:33.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 26.3,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 24.2,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "d66a572d5575757d",
+      "category": "world",
+      "title": "Seven shot dead by gunmen at church funeral in Jordan, state media say",
+      "summary": "Another 10 people are injured in the southern Karak governorate, and a manhunt is now under way.",
+      "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T13:37:20.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 24,
+      "topics": []
+    },
+    {
+      "id": "a0047e6dfe394423",
+      "category": "world",
+      "title": "Trump ordered to testify in $10bn BBC lawsuit discovery: What happens now?",
+      "summary": "Trump could face sanctions, including dismissal of his lawsuit, if he fails to cooperate with questioning.",
+      "url": "https://www.aljazeera.com/news/2026/10/23/trump-ordered-to-testify-in-10bn-bbc-lawsuit-discovery-what-happens-now?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T13:17:46.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 23.9,
+      "topics": []
     },
     {
       "id": "20e6eef843f509c4",
@@ -704,59 +891,159 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-22T17:12:51.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 26,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 23.9,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "261678948275bf77",
+      "id": "904626e4685fa9c5",
       "category": "world",
-      "title": "Germany news: Government expecting increased tax revenue in 2027",
-      "summary": "Finance Minister Lars Klingbeil said state tax revenue will increase by €4 billion in 2027. Meanwhile, public service websites have been coming back online after a PHP security scare.",
-      "url": "https://www.dw.com/en/germany-news-government-expecting-increased-tax-revenue-in-2027/live-79728628?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T13:47:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 25.1,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "e33bd5b2cb83f627",
-      "category": "world",
-      "title": "Swiss and Austrian women in Libya after release from Niger kidnap ordeal",
-      "summary": "The two were kidnapped in separate incidents in Niger, where they were involved in education and development initiatives, more than a year and a half ago.",
-      "url": "https://www.africanews.com/2026/10/22/swiss-and-austrian-women-in-libya-after-release-from-niger-kidnap-ordeal/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T16:32:26.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 24.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "123eaedd9cc878d3",
-      "category": "world",
-      "title": "AI discovered a massive cyber-security flaw - here's what happened",
-      "summary": "The BBC's technology correspondent Joe Tidy explains how it happened, and what it means for you.",
-      "url": "https://www.bbc.co.uk/news/videos/cq0ld7e0jg2eo",
+      "title": "Two Israeli soldiers killed in attack by suspected Palestinian gunmen in West Bank",
+      "summary": "The two attackers were shot dead after a gun battle outside Hebron, four days before Israel's general election.",
+      "url": "https://www.bbc.co.uk/news/articles/cq4g1p974wxko",
       "source": "BBC World",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-10-22T12:17:44.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 24.8,
+      "publishedAt": "2026-10-23T12:48:52.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "be738df6fb87b3dc",
+      "category": "world",
+      "title": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
+      "summary": "Health officials are investigating whether Ebola patients in Kenya and Nigeria crossed paths at Uganda's main airport as conflicting accounts cloud the source of one infection.",
+      "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T12:11:00.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "5b0a79b5e6f6d9c1",
+      "category": "finance",
+      "title": "Island inflation rate rises to 3%, figures show",
+      "summary": "The rising cost of food and alcohol drives an increase in the inflation rate, figures show.",
+      "url": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T11:58:19.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "1ed2280f76ac8356",
+      "category": "ai",
+      "title": "Evaluating the Applicability of LLM Inference Optimizations on Apple Silicon",
+      "summary": "Apple Silicon is among the most widely used platforms for local LLM inference, yet nearly all inference optimizations are designed and validated on server-class NVIDIA GPUs under batched serving workloads. Which optimizations retain their benefits when moved to Apple Silicon, and what determines their applicability? We evaluate four optimization families: KV-cache pruning, speculative decoding, ported GPU kernels, and post-training quantization. Experiments span four Apple machines under a common single-request dec",
+      "url": "https://arxiv.org/abs/2610.31479v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-22T16:04:40.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 23.6,
       "topics": [
-        "security"
+        "inference",
+        "kernels",
+        "hardware",
+        "training"
       ]
+    },
+    {
+      "id": "34c4d89f5926c1fc",
+      "category": "ai",
+      "title": "Repair Changes Which Layers to Remove: Exact Optima for Depth Pruning of Language Models",
+      "summary": "Depth pruning removes entire transformer layers to make large language models faster, and recent methods recover quality by replacing the removed layers with a training-free linear map. Which layers to remove, however, is chosen with heuristic scores whose distance from the best choice is unknown. We evaluate every subset of layer groups exactly (about 53,000 pruned models across four families, with and without repair) and find that the best layers to remove depend on the repair: linear repair absorbs the interacti",
+      "url": "https://arxiv.org/abs/2610.30552v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-22T00:18:10.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 23.6,
+      "topics": [
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "24479e69eef2bbf0",
+      "category": "finance",
+      "title": "Earnings flood, Fed meeting pose pivotal tests for rickety AI market rally",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/earnings-flood-fed-meeting-pose-pivotal-tests-rickety-ai-market-rally-6486066",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T10:05:57.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 23.1,
+      "topics": []
+    },
+    {
+      "id": "8b9077a72a4d87a4",
+      "category": "world",
+      "title": "Top US diplomat hails close alignment with Milei's Argentina",
+      "summary": "Christopher Landau praises Argentina's government during visit to Buenos Aires; Trip comes days after US ambassador's speech linked US support to Milei's re-election in next year's vote. Leer más",
+      "url": "https://www.batimes.com.ar/news/world/top-us-diplomat-hails-close-alignment-with-mileis-argentina.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T12:46:19.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "347a0147bdcfe8e4",
+      "category": "finance",
+      "title": "Bank of Japan warns of risks from AI market shock, cyberattacks",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/bank-japan-warns-risks-ai-market-shock-cyberattacks-6485781",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T08:45:41.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "ee9f8db0ec9876c7",
+      "category": "world",
+      "title": "Russia, Ukraine and the US set for November peace talks",
+      "summary": "Talks between Russia, Ukraine and the United States are planned to resume in November in the United Arab Emirates, Kremlin spokesman Dmitry Peskov said Friday.",
+      "url": "https://www.africanews.com/2026/10/23/russia-ukraine-and-the-us-set-for-november-peace-talks/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T12:42:49.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "d96be28acdc65d1d",
+      "category": "finance",
+      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-23T08:00:00.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 22.6,
+      "topics": []
     },
     {
       "id": "0372b2f7369136dd",
@@ -768,8 +1055,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T04:05:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 24.7,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 22.6,
       "topics": []
     },
     {
@@ -782,8 +1069,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T04:00:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 24.7,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 22.6,
       "topics": []
     },
     {
@@ -796,8 +1083,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T23:52:11.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 24.7,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 22.5,
       "topics": []
     },
     {
@@ -810,8 +1097,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T07:51:31.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 24.7,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 22.5,
       "topics": []
     },
     {
@@ -824,43 +1111,39 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-22T15:15:33.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 24.5,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 22.4,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "5104c499182d5e3b",
-      "category": "world",
-      "title": "What is PHP and why did it spark a global cyber-security scramble?",
-      "summary": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
-      "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T11:15:58.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 24.5,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "5d65ac674a8e5616",
+      "id": "942489a3d5299678",
       "category": "technology",
-      "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
-      "summary": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using...",
-      "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
-      "source": "NVIDIA Technical Blog",
+      "title": "Rocket Report: SpaceX says no thanks to military launches; Spanish rocket nearly ready",
+      "summary": "\"We believe Canada should be able to reach orbit on its own terms.\"",
+      "url": "https://arstechnica.com/space/2026/10/rocket-report-spacex-says-no-thanks-to-military-launches-spanish-rocket-nearly-ready/",
+      "source": "Ars Technica",
       "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T09:52:16.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 24.2,
-      "topics": [
-        "security"
-      ]
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T11:00:57.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 22.3,
+      "topics": []
+    },
+    {
+      "id": "20162e377f5df4ae",
+      "category": "finance",
+      "title": "Why is Indonesia facing a rare MSCI downgrade and what's at stake?",
+      "summary": "Only three other markets have faced a double MSCI downgrade from emerging market to “standalone” status since 1997.",
+      "url": "https://www.channelnewsasia.com/asia/indonesia-msci-stock-market-downgrade-jakarta-composite-6482001",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T07:02:00.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 22.3,
+      "topics": []
     },
     {
       "id": "c6f06e8a4e392385",
@@ -872,8 +1155,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-23T05:13:48.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 24,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 21.9,
       "topics": []
     },
     {
@@ -886,99 +1169,53 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T13:11:13.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 24,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 21.9,
       "topics": [
         "models",
         "security"
       ]
     },
     {
-      "id": "75415fb6f5108f94",
-      "category": "world",
-      "title": "As food assistance wanes, Palestinians face the prospect of hunger",
-      "summary": "Palestinians in Gaza face worsening humanitarian conditions as the United Nations had to slash food assistance due to funding shortages, deepening food insecurity for thousands of families who rely on aid to survive.",
-      "url": "https://www.africanews.com/2026/10/22/as-food-assistance-wanes-palestinians-face-the-prospect-of-hunger/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T12:54:09.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 23.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "869cda8b27f2de52",
-      "category": "world",
-      "title": "Bulgaria: Concerns about security in the Black Sea dominate presidential election campaign",
-      "summary": "Bulgaria's presidential election campaign has been shaped by recent drone attacks on ships in the Black Sea and the government's reduced support for Ukraine, making foreign policy a key factor in the first round.",
-      "url": "https://www.dw.com/en/bulgaria-concerns-about-security-in-the-black-sea-dominate-presidential-election-campaign/a-79729094?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T08:31:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 23.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "7f1c238e992202fb",
-      "category": "world",
-      "title": "Serbia: Tens of thousands rally ahead of elections",
-      "summary": "After two years of student-led protests, Serbia will soon vote in what observers describe as a referendum-like snap election pitting strongman Aleksandar Vucic against the student movement.",
-      "url": "https://www.dw.com/en/serbia-tens-of-thousands-rally-ahead-of-elections/a-79738420?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T03:15:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 23.5,
+      "id": "47ba48af69291b1f",
+      "category": "finance",
+      "title": "Minutes of the Securities Lending Committee meeting – September 2026",
+      "summary": "The Securities Lending Committee is a forum for market participants and authorities to discuss the UK securities lending market.",
+      "url": "https://www.bankofengland.co.uk/minutes/2026/september/securities-lending-committee-meeting-september-2026",
+      "source": "Bank of England",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-22T15:35:53.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 21.5,
       "topics": []
     },
     {
-      "id": "f9991db81cb65672",
-      "category": "world",
-      "title": "Venezuelans demand elections in first national protest in nearly two years",
-      "summary": "No date has been set to decide on a successor for Nicolas Maduro after the former president was captured by US forces.",
-      "url": "https://www.aljazeera.com/news/2026/10/23/venezuelans-demand-elections-in-first-national-protest-in-nearly-two-years?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T03:12:12.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 23.5,
+      "id": "1a4794278e6ab610",
+      "category": "finance",
+      "title": "Financial System Report (October 2026)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/research/brp/fsr/fsr261023.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-23T06:00:00.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 21.1,
       "topics": []
     },
     {
       "id": "0c2aea05700bf9e1",
       "category": "ai",
       "title": "Kazakhstan Expands Compute for Its AI Future",
-      "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. Together, the ecosystem announcements below point to the nation’s increasing supply of accelerated computing — along with its growing demand for what comes next. Read All NVIDIA in Europe […]",
+      "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. The announcements below — coinciding with a visit to Astana by NVIDIA founder and CEO Jensen Huang — point to the nation’s increasing supply of accelerated computing, along with […]",
       "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
       "source": "NVIDIA AI",
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T02:00:13.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 23.2,
-      "topics": []
-    },
-    {
-      "id": "08f232a999904874",
-      "category": "world",
-      "title": "Will ICE agents play a role in the 2026 US midterm elections?",
-      "summary": "Rights groups are worried the agency at the heart of Trump's immigration crackdown could sway the vote on election day.",
-      "url": "https://www.aljazeera.com/news/2026/10/23/will-ice-agents-play-a-role-in-the-2026-us-midterm-elections?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T01:47:39.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 21.1,
       "topics": []
     },
     {
@@ -991,8 +1228,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T05:00:27.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 22.9,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 20.8,
       "topics": [
         "training"
       ]
@@ -1007,39 +1244,11 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T05:00:23.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 22.9,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 20.8,
       "topics": [
         "inference"
       ]
-    },
-    {
-      "id": "cc85720acf1d7d27",
-      "category": "finance",
-      "title": "Japan government, BOJ gap on inflation laid bare ahead of key policy meeting",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/japan-government-boj-gap-inflation-laid-bare-ahead-key-policy-meeting-6484686",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T00:06:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 22.7,
-      "topics": []
-    },
-    {
-      "id": "1fe13de3584b8ba7",
-      "category": "ai",
-      "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
-      "summary": "",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-22T16:11:31.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 22.7,
-      "topics": []
     },
     {
       "id": "0ae9b2e1ef621848",
@@ -1051,64 +1260,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-22T08:10:51.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 22.7,
-      "topics": []
-    },
-    {
-      "id": "c8065dbb8d010489",
-      "category": "finance",
-      "title": "Commentary: Which G7 economy is the poster child for debt woes?",
-      "summary": "Among the G7, France and the US are heading into a wall, says Chris Giles for the Financial Times.",
-      "url": "https://www.channelnewsasia.com/commentary/us-france-g7-economies-need-fiscal-repair-imf-6482056",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T21:59:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 22.2,
-      "topics": []
-    },
-    {
-      "id": "9740711f15565247",
-      "category": "finance",
-      "title": "SK Hynix says Solidigm suspends review of US IPO, citing market volatility",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/sk-hynix-says-solidigm-suspends-review-us-ipo-citing-market-volatility-6484446",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T21:57:16.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 22.2,
-      "topics": []
-    },
-    {
-      "id": "c58e528b4a7bc279",
-      "category": "world",
-      "title": "Emirati diplomat could become next UN chief despite human rights concerns",
-      "summary": "Human rights defenders are sounding the alarm over the United Arab Emirates’ nomination of its former envoy Lana Nusseibeh to be the next UN Secretary General. They say electing a diplomat from the UAE, a country with a questionable human rights record that is accused of backing forces behind a massacre in Sudan, could spell “catastrophe” for the UN.",
-      "url": "https://www.france24.com/en/americas/20261022-emirati-diplomat-could-become-next-un-chief-despite-human-rights-concerns-uae-sudan-un-secretary-general-lana-nusseibeh",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T21:18:37.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 22,
-      "topics": []
-    },
-    {
-      "id": "b35a1ae220ee8f89",
-      "category": "world",
-      "title": "Pollsters point to technical tie in Brazil election run-off",
-      "summary": "What the latest polls in Brazil say about Sunday’s run-off between Lula and Bolsonaro... Leer más",
-      "url": "https://www.batimes.com.ar/news/latin-america/pollsters-point-to-technical-tie-in-brazil-election-run-off.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T00:57:45.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 21.9,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 20.6,
       "topics": []
     },
     {
@@ -1121,36 +1274,22 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T00:45:37.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 21.9,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 19.8,
       "topics": []
     },
     {
-      "id": "fe69e3ab404d1f05",
-      "category": "world",
-      "title": "‘The best on Earth’: Can weak economic growth undermine Europe’s ‘very sophisticated social system’?",
-      "summary": "Can Europe continue to sustain one of the world's most ambitious social models while falling increasingly behind its major economic competitors? For Pascal Lamy, former European Commissioner for Trade and former Director-General of the World Trade Organization, this question lies at the heart of the continent's mounting economic and political tensions. Lamy looks beyond the immediate turmoil in France to identify a deeper European predicament: a widening disconnect between the continent's social commitments and its",
-      "url": "https://www.france24.com/en/tv-shows/spotlight/20261022-the-best-on-earth-can-weak-economic-growth-undermine-europe-s-very-sophisticated-social-system",
-      "source": "France 24",
-      "sourceCountry": "France",
+      "id": "00dcfbf12c338290",
+      "category": "finance",
+      "title": "Earnings limit of up to £140K for first-time buyers loan scheme",
+      "summary": "The Your First Home scheme will offer government-backed loans for those buying new-builds in England.",
+      "url": "https://www.bbc.co.uk/news/articles/c6n8dex0zeg9o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-10-22T19:59:12.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 21.7,
-      "topics": []
-    },
-    {
-      "id": "8711b3eb0d13eeb0",
-      "category": "world",
-      "title": "Israel’s Ben-Gvir shares AI videos mocking Gazans as ‘donkeys’ and sending them to Paris",
-      "summary": "Israel’s far-right minister Itamar Ben-Gvir is using AI-generated videos to mock Palestinians and push political messages ahead of the country’s election, including videos magically transporting Gazans to Paris or calling them \"donkeys\" for choosing to stay. One video has sparked an online spat with France. AI is playing a growing role in the campaign, with parties using deepfakes, bots and AI-generated content, raising concerns about disinformation and the technology’s influence on voters.",
-      "url": "https://www.france24.com/en/tv-shows/truth-or-fake/20261022-israel-s-ben-gvir-shares-ai-videos-mocking-gazans-as-donkeys-and-sending-them-to-paris",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T19:38:27.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 21.6,
+      "publishedAt": "2026-10-23T11:48:04.000Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 19.5,
       "topics": []
     },
     {
@@ -1163,8 +1302,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-10-22T14:30:24.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 21.3,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 19.2,
       "topics": []
     },
     {
@@ -1177,22 +1316,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T22:12:19.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 21.2,
-      "topics": []
-    },
-    {
-      "id": "e4ef8b6ec18cfa08",
-      "category": "technology",
-      "title": "Latest estimate for Starship launches required to support a Moon landing? 22.",
-      "summary": "\"We need to keep our eyes on numerous required fuelings for the lander.\"",
-      "url": "https://arstechnica.com/space/2026/10/latest-estimate-for-starship-launches-required-to-support-a-moon-landing-22/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T21:52:31.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 19.1,
       "topics": []
     },
     {
@@ -1205,25 +1330,9 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T20:00:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 20.7,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 18.6,
       "topics": []
-    },
-    {
-      "id": "a8602ed87279b0e2",
-      "category": "finance",
-      "title": "Websites taken down worldwide as critical cyber-security update issued",
-      "summary": "The vulnerabilities with PHP, a programming language widely used across the internet, have been described as the most significant ever found by AI.",
-      "url": "https://www.bbc.co.uk/news/articles/cmly0lg3w5x2o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-21T19:54:57.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 20.7,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "5f2ac534fee548b9",
@@ -1235,8 +1344,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T19:07:09.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 20.5,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 18.3,
       "topics": []
     },
     {
@@ -1249,8 +1358,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T13:56:45.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 20.2,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 18.1,
       "topics": [
         "security"
       ]
@@ -1265,36 +1374,22 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-22T12:59:11.281Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 18.9,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 16.8,
       "topics": []
     },
     {
-      "id": "9f77e9678c432026",
-      "category": "finance",
-      "title": "'I'm 96 and have 15 million followers': The grannies taking over TikTok",
-      "summary": "Grandma Droniak, Nonna Gracie, Viv Truran and Barbara Costello have all found fame on social media in their later years.",
-      "url": "https://www.bbc.co.uk/news/articles/c63r5xpezz51o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T23:20:38.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 18.5,
-      "topics": []
-    },
-    {
-      "id": "93b5cc8b60ab1eac",
-      "category": "finance",
-      "title": "Grid operator says lights will stay on this winter after concerns",
-      "summary": "The assurance from the National Energy System Operator comes amid concern from its engineers about their ability to ensure adequate supply.",
-      "url": "https://www.bbc.co.uk/news/articles/cmy56q2n1veqo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T23:04:38.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 18.5,
+      "id": "8bfbf42c5ec172ea",
+      "category": "technology",
+      "title": "Developers bring incredible new app experiences to iPhone Duo",
+      "summary": "Starting this Friday, iPhone Duo users can discover amazing apps and games optimized for the first foldable iPhone.",
+      "url": "https://www.apple.com/newsroom/2026/10/developers-bring-incredible-new-app-experiences-to-iphone-duo/",
+      "source": "Apple Newsroom",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-10-22T11:59:15.686Z",
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 16.6,
       "topics": []
     },
     {
@@ -1307,8 +1402,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T08:00:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 17.7,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 15.6,
       "topics": []
     },
     {
@@ -1321,50 +1416,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T07:00:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 17.4,
-      "topics": []
-    },
-    {
-      "id": "4f3eab42e545250e",
-      "category": "ai",
-      "title": "Empowering frontline maternal care with AI-assisted ultrasound",
-      "summary": "Health & Bioscience",
-      "url": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
-      "source": "Google Research",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-21T16:23:53.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 16.8,
-      "topics": []
-    },
-    {
-      "id": "85d0b07106884fdd",
-      "category": "finance",
-      "title": "Bank of Japan Accounts (October 20)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261020.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-22T01:00:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 15.9,
-      "topics": []
-    },
-    {
-      "id": "e707ef0b9eecabc9",
-      "category": "finance",
-      "title": "Piero Cipollone: Pontes and Appia: unlocking opportunities for banks",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021_1~d190f2c349.en.pdf",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-21T08:00:00.000Z",
-      "fetchedAt": "2026-10-23T05:14:26.223Z",
-      "score": 12.7,
+      "fetchedAt": "2026-10-23T13:44:42.603Z",
+      "score": 15.3,
       "topics": []
     }
   ]
