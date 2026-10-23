@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-22T23:31:24.456Z",
+  "generatedAt": "2026-10-23T05:14:26.223Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 39,
-  "failedSourceCount": 0,
+  "sourceCount": 38,
+  "failedSourceCount": 1,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 39,
-      "latestPublishedAt": "2026-10-22T23:22:45.000Z",
+      "entryCount": 27,
+      "latestPublishedAt": "2026-10-23T04:54:25.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 57,
-      "latestPublishedAt": "2026-10-22T18:26:56.000Z",
+      "latestPublishedAt": "2026-10-22T23:20:38.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 135,
-      "latestPublishedAt": "2026-10-22T20:52:00.000Z",
+      "entryCount": 133,
+      "latestPublishedAt": "2026-10-23T04:46:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-22T22:52:35.000Z",
+      "latestPublishedAt": "2026-10-23T04:41:24.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-22T23:01:33.000Z",
+      "latestPublishedAt": "2026-10-23T01:06:35.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -92,7 +92,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 18,
-      "latestPublishedAt": "2026-10-22T15:00:02.000Z",
+      "latestPublishedAt": "2026-10-23T02:00:13.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-22T22:08:24.000Z",
+      "latestPublishedAt": "2026-10-23T04:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,8 +118,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-22T20:17:52.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-22T22:25:33.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -132,7 +132,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-22T12:59:11.281Z",
-      "selectedCount": 0,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-22T21:39:58.000Z",
+      "latestPublishedAt": "2026-10-23T04:05:00.000Z",
       "selectedCount": 3,
       "libraryCount": 4
     },
@@ -158,7 +158,7 @@
       "channel": "feed",
       "entryCount": 15,
       "latestPublishedAt": "2026-10-21T08:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -275,7 +275,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-22T22:17:04.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-22T19:57:50.000Z",
+      "latestPublishedAt": "2026-10-23T04:45:59.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -300,8 +300,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-22T22:36:23.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-23T00:57:45.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -326,8 +326,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-21T00:00:00.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-23T00:00:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -340,7 +340,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-21T16:23:53.000Z",
-      "selectedCount": 0,
+      "selectedCount": 1,
       "libraryCount": 3
     },
     {
@@ -378,8 +378,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-22T08:10:51.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-23T05:13:48.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -401,11 +401,12 @@
       "country": "International",
       "category": "ai",
       "type": "research",
-      "state": "ok",
+      "state": "unavailable",
       "channel": "feed",
-      "entryCount": 20,
-      "latestPublishedAt": "2026-10-21T17:55:19.000Z",
-      "selectedCount": 3,
+      "httpStatus": 429,
+      "entryCount": 0,
+      "latestPublishedAt": null,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -417,7 +418,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-22T17:44:52.000Z",
+      "latestPublishedAt": "2026-10-22T23:52:11.000Z",
       "selectedCount": 3,
       "libraryCount": 8
     },
@@ -444,7 +445,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-21T00:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -524,8 +525,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T16:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 33.1,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 31.7,
       "topics": [
         "inference"
       ]
@@ -540,10 +541,28 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T13:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 31.4,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 29.9,
       "topics": [
         "security"
+      ]
+    },
+    {
+      "id": "4967de51d907fb0e",
+      "category": "ai",
+      "title": "vLLM Delivers Day-0 Support for MiniMax-M3.1-Flash",
+      "summary": "Day-0 vLLM support for MiniMax-M3.1-Flash on NVIDIA Blackwell, NVIDIA Rubin, and AMD MI350-series GPUs, with NVFP4 MSA kernels, NVFP4 MegaMoE, DSpark speculative decoding, AgentX results, and day-0 RL.",
+      "url": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 29.7,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware"
       ]
     },
     {
@@ -556,8 +575,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T22:24:34.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 30.7,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 29.3,
       "topics": [
         "training"
       ]
@@ -572,8 +591,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T16:39:09.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 29.3,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 27.9,
       "topics": [
         "hardware"
       ]
@@ -588,25 +607,11 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-22T21:52:52.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 28.6,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 27.2,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "06e96c8217670c0a",
-      "category": "technology",
-      "title": "Meet the 2026 PyTorch Foundation Ambassadors",
-      "summary": "Open source AI thrives when people come together to learn, build, share knowledge, and contribute. Behind every project is a community of developers, researchers, educators, and contributors helping make these... The post Meet the 2026 PyTorch Foundation Ambassadors appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/meet-the-2026-pytorch-foundation-ambassadors/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-22T17:44:52.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 28.6,
-      "topics": []
     },
     {
       "id": "773a9b791f45302c",
@@ -618,8 +623,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-22T21:35:38.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 28.5,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 27.1,
+      "topics": []
+    },
+    {
+      "id": "06e96c8217670c0a",
+      "category": "technology",
+      "title": "Meet the 2026 PyTorch Foundation Ambassadors",
+      "summary": "Open source AI thrives when people come together to learn, build, share knowledge, and contribute. Behind every project is a community of developers, researchers, educators, and contributors helping make these... The post Meet the 2026 PyTorch Foundation Ambassadors appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/meet-the-2026-pytorch-foundation-ambassadors/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-22T17:44:52.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 27.1,
       "topics": []
     },
     {
@@ -632,8 +651,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-22T01:38:13.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 28.5,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 27.1,
       "topics": [
         "inference",
         "kernels",
@@ -653,10 +672,26 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T19:45:44.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 28.1,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 26.6,
       "topics": [
         "training"
+      ]
+    },
+    {
+      "id": "82d9c3d7e4a311ba",
+      "category": "technology",
+      "title": "Switch 2 security takes a hit as hackers unlock homebrew access",
+      "summary": "\"Userland\" exploit relies on integer overflow found in \"SmileBasic\" interpreter.",
+      "url": "https://arstechnica.com/gaming/2026/10/switch-2-jailbreak-gives-hackers-new-ways-to-run-homebrew-and-mod-games/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T22:25:33.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 26.3,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -669,8 +704,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-22T17:12:51.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 26,
       "topics": [
         "security"
       ]
@@ -685,8 +720,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-22T13:47:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 26.6,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 25.1,
       "topics": [
         "security"
       ]
@@ -701,24 +736,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-22T16:32:26.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 26.3,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "2589edc71f7a2ba1",
-      "category": "finance",
-      "title": "India's eMudhra exits website security business after flaws trigger global alarm",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/indias-emudhra-exits-website-security-business-after-flaws-trigger-global-alarm-6482671",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T12:35:40.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 26.3,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 24.8,
       "topics": [
         "security"
       ]
@@ -733,11 +752,53 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-22T12:17:44.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 26.2,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 24.8,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "0372b2f7369136dd",
+      "category": "technology",
+      "title": "APOD: 2026 October 23 – Andromeda in Southern Spring",
+      "summary": "APOD Science APOD APOD: 2026 October 23 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Andromeda in Southern […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-23-andromeda-in-southern-spring/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-23T04:05:00.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 24.7,
+      "topics": []
+    },
+    {
+      "id": "79ef77ffee00412e",
+      "category": "technology",
+      "title": "El Niño Then and Now",
+      "summary": "A 35-year satellite altimetry record lets scientists hold this year’s El Niño up against its strongest predecessors.",
+      "url": "https://science.nasa.gov/earth/earth-observatory/el-nino-then-and-now/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-23T04:00:00.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 24.7,
+      "topics": []
+    },
+    {
+      "id": "17e7b5d4bec488b0",
+      "category": "technology",
+      "title": "PyTorch Conference North America 2026: Accelerating Open Intelligence Together",
+      "summary": "PyTorch Conference North America 2026 brought 3,500+ attendees to San Jose on October 20–21 for two days focused on accelerating open intelligence and exploring the impact of PyTorch Foundation projects... The post PyTorch Conference North America 2026: Accelerating Open Intelligence Together appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/pytorch-conference-north-america-2026-accelerating-open-intelligence-together/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-22T23:52:11.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 24.7,
+      "topics": []
     },
     {
       "id": "ccb55bd3ba03dd15",
@@ -749,8 +810,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T07:51:31.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 26.1,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 24.7,
       "topics": []
     },
     {
@@ -763,8 +824,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-22T15:15:33.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 25.9,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 24.5,
       "topics": [
         "security"
       ]
@@ -779,8 +840,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-22T11:15:58.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 25.9,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 24.5,
       "topics": [
         "security"
       ]
@@ -795,11 +856,25 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T09:52:16.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 24.2,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "c6f06e8a4e392385",
+      "category": "ai",
+      "title": "v0.7.2rc7",
+      "summary": "v0.7.2rc7",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2rc7",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T05:13:48.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 24,
+      "topics": []
     },
     {
       "id": "fa7e64bd201b057b",
@@ -811,8 +886,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T13:11:13.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 25.4,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 24,
       "topics": [
         "models",
         "security"
@@ -828,8 +903,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-22T12:54:09.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 23.9,
       "topics": [
         "security"
       ]
@@ -844,76 +919,66 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-22T08:31:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 25.2,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 23.8,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "4e9bbfd79b469d84",
-      "category": "ai",
-      "title": "Enumeration-based Triangle Counting on GPUs",
-      "summary": "Subgraph enumeration in partitioned graphs across distributed-memory systems is beset with challenges in balancing data movement with the local computation. Especially, counting the number of triangles induced by the closed wedges (i.e., length-3 cycles) is a measure of connectedness in a graph, but often limited by the significant search space caused by open wedges or length-2 paths (usually greater than the number of edges in a graph), which must be inspected to assess whether a particular wedge is closed. To mit",
-      "url": "https://arxiv.org/abs/2610.29988v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-21T16:28:36.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 25.2,
-      "topics": [
-        "hardware"
-      ]
+      "id": "7f1c238e992202fb",
+      "category": "world",
+      "title": "Serbia: Tens of thousands rally ahead of elections",
+      "summary": "After two years of student-led protests, Serbia will soon vote in what observers describe as a referendum-like snap election pitting strongman Aleksandar Vucic against the student movement.",
+      "url": "https://www.dw.com/en/serbia-tens-of-thousands-rally-ahead-of-elections/a-79738420?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T03:15:00.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 23.5,
+      "topics": []
     },
     {
-      "id": "bd4073d0c5a02f95",
-      "category": "ai",
-      "title": "HAWK: Heterogeneity-Aware KV Cache Transfer for Efficient GPU-NPU Phase-Disaggregated LLM Inference",
-      "summary": "Large language model (LLM) inference exhibits distinct computational characteristics across its two phases: prefill is compute-intensive, whereas decode is more memory-bound. As a result, AI accelerators achieve varying levels of efficiency across the two phases. GPUs are well suited to prefill, but are often underutilized during decode. By contrast, NPUs can utilize their compute resources more effectively during decode. Motivated by this observation, we explore a heterogeneous architecture that integrates GPUs an",
-      "url": "https://arxiv.org/abs/2610.29873v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-21T15:25:35.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 25,
-      "topics": [
-        "inference",
-        "hardware",
-        "models"
-      ]
+      "id": "f9991db81cb65672",
+      "category": "world",
+      "title": "Venezuelans demand elections in first national protest in nearly two years",
+      "summary": "No date has been set to decide on a successor for Nicolas Maduro after the former president was captured by US forces.",
+      "url": "https://www.aljazeera.com/news/2026/10/23/venezuelans-demand-elections-in-first-national-protest-in-nearly-two-years?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T03:12:12.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 23.5,
+      "topics": []
     },
     {
-      "id": "3bdaa746e8898ec9",
+      "id": "0c2aea05700bf9e1",
       "category": "ai",
-      "title": "UlaCache: Unified Logical Addressing for Sparse LLM Serving",
-      "summary": "Long contexts increase the memory cost of the key-value (KV) cache in large language model (LLM) inference. Sparse attention reduces attention computation and memory traffic by selecting historical tokens, but the retained KV cache must remain available for later decoding steps. We present UlaCache, a KV cache management system built around a unified logical address space spanning GPU KV pools and optional CPU memory. Stable logical references let the inference engine allocate and select KV independently of physica",
-      "url": "https://arxiv.org/abs/2610.29820v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-21T14:46:11.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 24.8,
-      "topics": [
-        "inference",
-        "hardware",
-        "models"
-      ]
-    },
-    {
-      "id": "d44f94937926b2bd",
-      "category": "technology",
-      "title": "NASA Invites Media to 2026 von Braun Space Exploration Symposium",
-      "summary": "Members of the media are invited to join NASA at the 2026 von Braun Space Exploration Symposium from Monday, Oct. 26, to Wednesday, Oct. 28, at the University of Alabama in Huntsville. This year’s symposium is focused on humanity’s return to the Moon, sustainable lunar infrastructure, advanced space propulsion, and the evolving space workforce. Panels […]",
-      "url": "https://www.nasa.gov/news-release/nasa-invites-media-to-2026-von-braun-space-exploration-symposium/",
-      "source": "NASA",
+      "title": "Kazakhstan Expands Compute for Its AI Future",
+      "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. Together, the ecosystem announcements below point to the nation’s increasing supply of accelerated computing — along with its growing demand for what comes next. Read All NVIDIA in Europe […]",
+      "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
+      "source": "NVIDIA AI",
       "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-22T21:39:58.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 24.5,
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T02:00:13.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "08f232a999904874",
+      "category": "world",
+      "title": "Will ICE agents play a role in the 2026 US midterm elections?",
+      "summary": "Rights groups are worried the agency at the heart of Trump's immigration crackdown could sway the vote on election day.",
+      "url": "https://www.aljazeera.com/news/2026/10/23/will-ice-agents-play-a-role-in-the-2026-us-midterm-elections?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T01:47:39.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 23.1,
       "topics": []
     },
     {
@@ -926,8 +991,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T05:00:27.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 24.4,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 22.9,
       "topics": [
         "training"
       ]
@@ -942,11 +1007,25 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T05:00:23.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 24.4,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 22.9,
       "topics": [
         "inference"
       ]
+    },
+    {
+      "id": "cc85720acf1d7d27",
+      "category": "finance",
+      "title": "Japan government, BOJ gap on inflation laid bare ahead of key policy meeting",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/japan-government-boj-gap-inflation-laid-bare-ahead-key-policy-meeting-6484686",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T00:06:00.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 22.7,
+      "topics": []
     },
     {
       "id": "1fe13de3584b8ba7",
@@ -958,8 +1037,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T16:11:31.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 24.2,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -972,22 +1051,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-22T08:10:51.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 24.2,
-      "topics": []
-    },
-    {
-      "id": "4a956042b81d7499",
-      "category": "world",
-      "title": "Ecuador opposition leader Luisa Gonzalez arrested in campaign finance probe",
-      "summary": "Gonzalez’s Citizen Revolution Movement has denounced the arrest as politically motivated, calling for her release.",
-      "url": "https://www.aljazeera.com/news/2026/10/22/ecuador-opposition-leader-luisa-gonzalez-arrested-in-campaign-finance-probe?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T22:09:38.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 23.7,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -1000,54 +1065,23 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-22T21:59:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 22.2,
       "topics": []
     },
     {
-      "id": "608e5dd4ad00f25a",
+      "id": "9740711f15565247",
       "category": "finance",
-      "title": "SK Hynix says Solidigm drops plan for US IPO amid market volatility",
+      "title": "SK Hynix says Solidigm suspends review of US IPO, citing market volatility",
       "summary": "",
-      "url": "https://www.channelnewsasia.com/business/sk-hynix-says-solidigm-drops-plan-us-ipo-amid-market-volatility-6484446",
+      "url": "https://www.channelnewsasia.com/business/sk-hynix-says-solidigm-suspends-review-us-ipo-citing-market-volatility-6484446",
       "source": "CNA Business",
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-22T21:57:16.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 22.2,
       "topics": []
-    },
-    {
-      "id": "7ddc85c1fd35b597",
-      "category": "world",
-      "title": "Michigan voters closely divided between Rogers and El-Sayed",
-      "summary": "Less than two weeks before the midterm elections, some Michigan voters are still deciding.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/22/michigan-voters-closely-divided-between-rogers-and-el-sayed?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T21:51:50.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 23.6,
-      "topics": []
-    },
-    {
-      "id": "4c1b447e3618a7ff",
-      "category": "technology",
-      "title": "Accelerating PyTorch on AMD GPUs with FlyDSL",
-      "summary": "PyTorch users on AMD MI350-series GPUs can now use FlyDSL through existing operator APIs for dense and grouped GEMM, fused multi-head attention (FMHA/Attention), MXFP8/MXFP4 scaled GEMM, RMSNorm, and TopK, without... The post Accelerating PyTorch on AMD GPUs with FlyDSL appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/accelerating-pytorch-on-amd-gpus-with-flydsl/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T17:45:40.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 23.6,
-      "topics": [
-        "kernels",
-        "models"
-      ]
     },
     {
       "id": "c58e528b4a7bc279",
@@ -1059,22 +1093,36 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-22T21:18:37.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 22,
       "topics": []
     },
     {
-      "id": "8373207ac9818c0f",
-      "category": "technology",
-      "title": "NASA’s Hubble Charts Path for Roman with Gravitational Lenses",
-      "summary": "This observation is one of many gravitational lensing images taken by Hubble in preparation for science with the new Nancy Grace Roman Space Telescope.",
-      "url": "https://science.nasa.gov/missions/hubble/nasas-hubble-charts-path-for-roman-with-gravitational-lenses/",
-      "source": "NASA",
+      "id": "b35a1ae220ee8f89",
+      "category": "world",
+      "title": "Pollsters point to technical tie in Brazil election run-off",
+      "summary": "What the latest polls in Brazil say about Sunday’s run-off between Lula and Bolsonaro... Leer más",
+      "url": "https://www.batimes.com.ar/news/latin-america/pollsters-point-to-technical-tie-in-brazil-election-run-off.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T00:57:45.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 21.9,
+      "topics": []
+    },
+    {
+      "id": "0be6d7f87942902e",
+      "category": "ai",
+      "title": "Left alone with nothing to do, AI agents started playing",
+      "summary": "MIT researchers marooned 13 AIs on a virtual island, and they responded by inventing games, mourning a lost ring and, eventually, getting better at their jobs.",
+      "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+      "source": "TechCrunch AI",
       "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-22T16:20:37.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 23.2,
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T00:45:37.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 21.9,
       "topics": []
     },
     {
@@ -1087,59 +1135,9 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-22T19:59:12.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 21.7,
       "topics": []
-    },
-    {
-      "id": "5773364d7a6740e3",
-      "category": "technology",
-      "title": "Optimizing World Action Models on AMD GPUs",
-      "summary": "World Action Models (WAMs) offer a promising route to more physically grounded robot policies, but their video-model backbones make inference expensive. In this blog you will learn how to remove much of that cost on AMD GPUs without sacrificing task success, using two representative WAMs, FastWAM [1] and DiT4DiT [2].",
-      "url": "https://rocm.blogs.amd.com/artificial-intelligence/faster-action-models/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 23.1,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "a483f64049aebd57",
-      "category": "technology",
-      "title": "MoE Training Optimization with Primus",
-      "summary": "Mixture-of-Experts (MoE) has become a dominant architecture for frontier-scale language models, and our users increasingly train large MoE models on AMD Instinct™ MI355X [a] GPUs. Driven by those workload requirements, we have built a broad set of MoE training optimizations in Primus. This blog follows our earlier post MoE Training Best Practices on AMD GPUs. The earlier post established the foundational optimizations; this one describes what we built on top of them.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/primus-moe-optimization/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 23.1,
-      "topics": [
-        "hardware",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "382d835d42309996",
-      "category": "technology",
-      "title": "Micro-World 2: Streaming Real-time Interactive World Model",
-      "summary": "Diffusion models have advanced rapidly in recent years, enabling high-quality video generation across a wide range of creative scenarios. As visual quality continues to improve, however, the field is increasingly shifting its focus from passive content generation toward controllable and interactive experiences. YUME 1.5 [1] explores controllable video generation through explicit interaction signals, while LingBot-World [2] and Sana-WM [3] investigate world models that generate future observations conditioned on the",
-      "url": "https://rocm.blogs.amd.com/artificial-intelligence/Micro-World-V2/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 23.1,
-      "topics": [
-        "models"
-      ]
     },
     {
       "id": "8711b3eb0d13eeb0",
@@ -1151,22 +1149,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-22T19:38:27.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 23,
-      "topics": []
-    },
-    {
-      "id": "fe14d46bbe66f6c4",
-      "category": "world",
-      "title": "What we know about war plans that Trump and Netanyahu are drawing up",
-      "summary": "Could the U.S. and Israel be on the verge of launching a new attack on Iran? President Trump and Prime Minister Benjamin Netanyahu have been suggesting that's on the table.",
-      "url": "https://www.npr.org/2026/10/22/nx-s1-6012306/what-we-know-about-war-plans-that-trump-and-netanyahu-are-drawing-up",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T22:17:04.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 21.6,
       "topics": []
     },
     {
@@ -1179,22 +1163,36 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-10-22T14:30:24.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 21.3,
       "topics": []
     },
     {
-      "id": "973afba9f121aa3f",
-      "category": "world",
-      "title": "Canada's Mark Carney visits Turkey to boost trade ties",
-      "summary": "It's the first bilateral visit by a Canadian prime minister to Turkey. Canada and Turkey upgraded their relations to a \"strategic partnership\" as Canada seeks to diversify trade beyond the US.",
-      "url": "https://www.dw.com/en/canada-s-mark-carney-visits-turkey-to-boost-trade-ties/a-79735039?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
+      "id": "4b7ab0dd0db41f23",
+      "category": "technology",
+      "title": "Moderna and Merck say their mRNA cancer vaccine cut death, recurrence by 42%",
+      "summary": "Markers released top-line results today after previously reporting the trial succeeded.",
+      "url": "https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-22T17:07:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 22.4,
+      "publishedAt": "2026-10-22T22:12:19.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 21.2,
+      "topics": []
+    },
+    {
+      "id": "e4ef8b6ec18cfa08",
+      "category": "technology",
+      "title": "Latest estimate for Starship launches required to support a Moon landing? 22.",
+      "summary": "\"We need to keep our eyes on numerous required fuelings for the lander.\"",
+      "url": "https://arstechnica.com/space/2026/10/latest-estimate-for-starship-launches-required-to-support-a-moon-landing-22/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T21:52:31.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 21.2,
       "topics": []
     },
     {
@@ -1207,8 +1205,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T20:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 22.1,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 20.7,
       "topics": []
     },
     {
@@ -1221,24 +1219,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-21T19:54:57.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 22.1,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "424e229a035b92fb",
-      "category": "technology",
-      "title": "Hackers got a four-day head start on epic PHP2Shell vulnerability",
-      "summary": "Hackers were already probing the bug before defenders were told it existed.",
-      "url": "https://arstechnica.com/security/2026/10/hackers-got-a-four-day-head-start-on-epic-php2shell-vulnerability/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T15:25:02.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 22,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 20.7,
       "topics": [
         "security"
       ]
@@ -1253,36 +1235,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T19:07:09.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 21.9,
-      "topics": []
-    },
-    {
-      "id": "7fd63386c6df1ffd",
-      "category": "ai",
-      "title": "Canva releases its first image generation model",
-      "summary": "Canva is making its new image model available to all users, promising better, more customizable performance at lower costs.",
-      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T19:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 21.9,
-      "topics": []
-    },
-    {
-      "id": "3b5f6e9b7dca4b0e",
-      "category": "ai",
-      "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
-      "summary": "Launched today, NVIDIA Minerva is an AIOps platform built to help teams find problems earlier and keep AI factories productive. It brings together telemetry from infrastructure and AI workloads, then applies purpose-built AI models to turn that data into timely, actionable insight. AI factories are among the most complex operations in the world, with vast […]",
-      "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T15:00:02.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 21.9,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 20.5,
       "topics": []
     },
     {
@@ -1295,11 +1249,53 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-21T13:56:45.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 21.6,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 20.2,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "8a71fe76cd0c8fd8",
+      "category": "technology",
+      "title": "Formula 1® United States Grand Prix™ streams live on Apple TV this weekend",
+      "summary": "Formula 1® returns to the U.S. this weekend with the United States Grand Prix™, streaming in the U.S. exclusively on Apple TV.",
+      "url": "https://www.apple.com/newsroom/2026/10/formula-1-united-states-grand-prix-streams-live-on-apple-tv-this-weekend/",
+      "source": "Apple Newsroom",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-10-22T12:59:11.281Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "9f77e9678c432026",
+      "category": "finance",
+      "title": "'I'm 96 and have 15 million followers': The grannies taking over TikTok",
+      "summary": "Grandma Droniak, Nonna Gracie, Viv Truran and Barbara Costello have all found fame on social media in their later years.",
+      "url": "https://www.bbc.co.uk/news/articles/c63r5xpezz51o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T23:20:38.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 18.5,
+      "topics": []
+    },
+    {
+      "id": "93b5cc8b60ab1eac",
+      "category": "finance",
+      "title": "Grid operator says lights will stay on this winter after concerns",
+      "summary": "The assurance from the National Energy System Operator comes amid concern from its engineers about their ability to ensure adequate supply.",
+      "url": "https://www.bbc.co.uk/news/articles/cmy56q2n1veqo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T23:04:38.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 18.5,
+      "topics": []
     },
     {
       "id": "28a3c2ddc613a833",
@@ -1311,60 +1307,9 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T08:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 19.1,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 17.7,
       "topics": []
-    },
-    {
-      "id": "a488e6866b3b3181",
-      "category": "finance",
-      "title": "No order, no seat: Starbucks China rolls out new store policy",
-      "summary": "Starbucks says it is improving customers' in-store experience as it competes with homegrown rivals.",
-      "url": "https://www.bbc.co.uk/news/articles/ckzd6rjmlzvmo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T04:02:29.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 19.1,
-      "topics": []
-    },
-    {
-      "id": "b193e9c9fee5bb28",
-      "category": "ai",
-      "title": "Day-0 Support for Flint on vLLM",
-      "summary": "vLLM supports both Flint checkpoints (40B total, 2.5B active) from day 0, decoding a single request at about 500 tokens/s on one GPU.",
-      "url": "https://vllm.ai/blog/2026-10-21-flint",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 19.1,
-      "topics": [
-        "inference",
-        "hardware"
-      ]
-    },
-    {
-      "id": "b898219fb84d5aac",
-      "category": "ai",
-      "title": "Announcing Humming: Fast, Flexible Kernels for Quantized Inference",
-      "summary": "Introducing Humming, a quantized inference kernel library from Ant Group and the vLLM community, with broad GPU and quantization support, dense and MoE performance results, and vLLM integration.",
-      "url": "https://vllm.ai/blog/2026-10-21-humming",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-21T00:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 19.1,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
-      ]
     },
     {
       "id": "ffdec7d4196102d0",
@@ -1376,22 +1321,22 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T07:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 18.9,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 17.4,
       "topics": []
     },
     {
-      "id": "4372e870fb9622d9",
-      "category": "finance",
-      "title": "'I wasn't thinking straight' says five jobs civil servant",
-      "summary": "Kashim Chowdhury is accused of fraudulently juggling multiple public sector jobs.",
-      "url": "https://www.bbc.co.uk/news/articles/cmx23dwp3qzro",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T15:05:47.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 17.9,
+      "id": "4f3eab42e545250e",
+      "category": "ai",
+      "title": "Empowering frontline maternal care with AI-assisted ultrasound",
+      "summary": "Health & Bioscience",
+      "url": "https://research.google/blog/empowering-frontline-maternal-care-with-ai-assisted-ultrasound/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-21T16:23:53.000Z",
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 16.8,
       "topics": []
     },
     {
@@ -1404,8 +1349,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T01:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 17.4,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 15.9,
       "topics": []
     },
     {
@@ -1418,22 +1363,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-21T08:00:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 14.1,
-      "topics": []
-    },
-    {
-      "id": "a611e06b43938a5d",
-      "category": "finance",
-      "title": "Philip R. Lane: Euro liquidity lines and the international monetary system",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261021~401d6c4b70.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-21T04:15:00.000Z",
-      "fetchedAt": "2026-10-22T23:31:24.456Z",
-      "score": 13.2,
+      "fetchedAt": "2026-10-23T05:14:26.223Z",
+      "score": 12.7,
       "topics": []
     }
   ]
