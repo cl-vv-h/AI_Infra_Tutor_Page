@@ -5,6 +5,7 @@
 - Remote baseline: `7dc4921ddc23c0994cad7ef8e564dae1318899d5`.
 - Visual correction: `88f64ad274d18c27fe18b8987490598736c3559a`.
 - Independent publication-blocker fix: `e94598b8ec0e3e5aeffa3368c739d3529edc3cfb`.
+- Independent distribution fix: `97be5b85f1399609a70bf78e896fe857ccf3d4a3`.
 - Visual definition: `news-sphere-semantics/1`; query remains `news-sphere/1`,
   scoring/clustering remains `news-hotspots/1`. Model calculations are unchanged.
 - No news/report contents, collection jobs, accounts, credentials, original
@@ -36,12 +37,25 @@ schemas. On the same local 7,615-report corpus, a single 72-hour grouping sample
 was 2,652 ms with the old scan and 708 ms with the index; both returned 826 groups.
 These are local observations, not device-independent performance guarantees.
 
+Pages run `39912258149` still failed the unchanged follow-after-refresh assertion.
+A controlled CPU-throttled reproduction retained the saved record byte-for-byte:
+the initial render and subsequent follow-state read were delayed by synchronous
+calculations. Distribution had classified each report again for every category
+in its daily matrix. A separate single-pass implementation reuses one report
+classification for both counts and the matrix, retaining UTC prefix semantics,
+all-report counts, category rules and country sorting. Its independent build gate
+is `config/news-distribution-pass.json`; disabling it restores the previous scan.
+The follow storage, write locking, hooks and tests' deadlines remain unchanged.
+
 ## Verification
 
-- 423 unit tests passed. New tests cover distinct category colors, reading-only
+- 425 unit tests passed. New tests cover distinct category colors, reading-only
   suggestions, exact old/new clustering output parity for all supported windows,
   earliest-seed tie breaking, minimum overlap, category boundaries, non-chaining,
   rule precedence, short/Chinese titles and deterministic varied corpora.
+- Distribution parity tests cover all four corpus windows, empty input, UTC
+  boundaries, out-of-week totals, source-rule overrides, country ties and input
+  preservation. Both optimization switches retain the original algorithms.
 - TypeScript, ESLint, production build, event-index consistency, weekly library
   integrity and news rendering passed. No assertion or timeout was relaxed.
 - All 12 critical browser suites passed locally, including the previously failing
@@ -76,12 +90,22 @@ The intervening news tree stayed `706333d5411409ef0da17acb3b5f0cc5413a241f`.
 After reapplication only the synthetic news file differed from the runtime tip;
 none of the synthetic data or rehearsal commits are published.
 
+The subsequent distribution fix received a second isolated rehearsal with its
+own synthetic intervening news commit. The same browser context traversed the
+enabled build, gate-disabled build, targeted revert and reapplication. Each phase
+retained the corrected zero-edge visualization, daily/weekly/Attention routes,
+the real topic follow and unrelated localStorage/IndexedDB canaries. Its news
+tree remained `8209fdd4377533f1ec8e521307bd8115709c12f6`; after reapplication only
+the synthetic news canary differed from the runtime tip. No test data was pushed.
+
 ## Exact targeted withdrawal
 
-Work in a clean isolated checkout of current remote main. These two runtime
-changes are independent. To withdraw both, reverse their publication order:
+Work in a clean isolated checkout of current remote main. These three runtime
+changes can be withdrawn independently. To withdraw all three, reverse their
+publication order:
 
 ```sh
+git revert 97be5b85f1399609a70bf78e896fe857ccf3d4a3
 git revert e94598b8ec0e3e5aeffa3368c739d3529edc3cfb
 git revert 88f64ad274d18c27fe18b8987490598736c3559a
 npm run check

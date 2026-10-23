@@ -16,6 +16,10 @@ cross-news relationship in PULSE. A persistent category legend replaces implicit
 neighbor highlighting; same-category reading remains text-only. Actual event
 edges remain unavailable until reviewed endpoint/type/source evidence exists.
 See `releases/news-sphere-semantics-2026-10-23.md` for acceptance/publication status.
+Publication checks also exposed slow synchronous hotspot calculations as the
+corpus grew. Independent exact-result optimizations cover headline seed lookup
+and single-pass distribution; original scoring, grouping and follow data remain
+unchanged, with separate build switches and targeted withdrawal commits.
 Next: evaluate an evidence-bearing event relation index; never infer links solely
 from a category, common publisher, generic topic or sphere proximity.
 
