@@ -1,4 +1,5 @@
 import { canonicalEventUrl, includesTerm, validTime } from './news-events.mjs'
+import headlineIndex from '../../config/news-hotspot-index.json' with { type: 'json' }
 
 export const HOTSPOT_VERSION = 'news-hotspots/1'
 export const categories = { ai: 'AI', technology: '科技', finance: '金融', world: '国际' }
@@ -96,17 +97,38 @@ export function heatScore(reports, asOf) {
   return { score: Math.round(activity * 10 * 10) / 10, creditedHeadlines: headlines.size, publishers: new Set(reports.map(row => publisherFamily(row.source))).size }
 }
 
-export function buildHotspots(corpus, hours = 72) {
-  const groups = new Map(), clusters = []
+export function buildHotspots(corpus, hours = 72, indexed = headlineIndex.enabled) {
+  const groups = new Map(), clusters = [], postings = new Map()
+  // An exact candidate index, not a new similarity rule. Only seed words are
+  // indexed: adding matched reports would change seed-based clustering to chains.
+  const candidates = (category, words) => {
+    const counts = new Map(), byWord = postings.get(category)
+    if (!byWord) return []
+    for (const word of words) for (const index of byWord.get(word) || []) counts.set(index, (counts.get(index) || 0) + 1)
+    // similarHeadline requires at least three shared words. Preserve the original
+    // first-seed tie break, regardless of token order or posting-list order.
+    return [...counts].filter(([,count])=>count>=3).map(([index])=>index).sort((a,b)=>a-b).map(index=>clusters[index])
+  }
   // Cluster the whole retained corpus first so a time-window change does not rename a cluster.
   const retained = windowReports(corpus.items, corpus.generatedAt, 720).sort((a,b)=>a.firstSeenAt.localeCompare(b.firstSeenAt)||a.id.localeCompare(b.id))
   for (const row of retained) {
     const rule = matchTopic(row)
     const words = headlineWords(row.title)
     // Match a seed, not a chain of loosely related headlines. Never merge on one entity alone.
-    const near = rule ? undefined : clusters.find(cluster => cluster.category===row.category && similarHeadline(words, cluster.words))
+    const near = rule ? undefined : (indexed ? candidates(row.category,words) : clusters).find(cluster => cluster.category===row.category && similarHeadline(words, cluster.words))
     const id = rule?.id || near?.id || `story-${row.id}`
-    if (!groups.has(id)) { groups.set(id, { id, title: rule?.title || row.title, category: rule?.category || row.category, kind: rule ? 'topic' : 'story', reports: [] }); if(!rule) clusters.push({id,words,category:row.category}) }
+    if (!groups.has(id)) {
+      groups.set(id, { id, title: rule?.title || row.title, category: rule?.category || row.category, kind: rule ? 'topic' : 'story', reports: [] })
+      if(!rule){
+        const index=clusters.length
+        clusters.push({id,words,category:row.category})
+        if(indexed){
+          if(!postings.has(row.category))postings.set(row.category,new Map())
+          const byWord=postings.get(row.category)
+          for(const word of words){if(!byWord.has(word))byWord.set(word,[]);byWord.get(word).push(index)}
+        }
+      }
+    }
     groups.get(id).reports.push(row)
   }
   return [...groups.values()].map(group => ({...group,reports:windowReports(group.reports,corpus.generatedAt,hours)})).filter(group=>group.reports.length).map(group => {
