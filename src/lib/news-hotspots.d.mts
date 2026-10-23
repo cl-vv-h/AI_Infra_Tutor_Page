@@ -16,6 +16,6 @@ export function validateHotspotCorpus(data:unknown):HotspotCorpus
 export function windowReports(items:HotspotReport[],asOf:string,hours:number):HotspotReport[]
 export function heatScore(reports:HotspotReport[],asOf:string):{score:number;creditedHeadlines:number;publishers:number}
 export function buildHotspots(corpus:HotspotCorpus,hours?:number,indexed?:boolean):Hotspot[]
-export function distribution(items:HotspotReport[],asOf:string):{counts:Record<HotspotCategory,number>;countries:[string,number][];days:string[];matrix:Record<HotspotCategory,number[]>}
+export function distribution(items:HotspotReport[],asOf:string,singlePass?:boolean):{counts:Record<HotspotCategory,number>;countries:[string,number][];days:string[];matrix:Record<HotspotCategory,number[]>}
 export function parseFollows(raw:string|null):FollowState
 export function changeFollow(storage:Storage,locks:LockManager|undefined,id:string,title:string,asOf:string,action:'add'|'remove'|'read'):Promise<FollowState>

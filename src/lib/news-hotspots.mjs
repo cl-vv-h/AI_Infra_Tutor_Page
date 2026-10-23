@@ -1,5 +1,6 @@
 import { canonicalEventUrl, includesTerm, validTime } from './news-events.mjs'
 import headlineIndex from '../../config/news-hotspot-index.json' with { type: 'json' }
+import distributionPass from '../../config/news-distribution-pass.json' with { type: 'json' }
 
 export const HOTSPOT_VERSION = 'news-hotspots/1'
 export const categories = { ai: 'AI', technology: '科技', finance: '金融', world: '国际' }
@@ -146,15 +147,22 @@ export function similarHeadline(left,right) {
   return intersection>=3 && intersection / Math.max(left.size,right.size)>=0.6
 }
 
-export function distribution(items, asOf) {
+export function distribution(items, asOf, singlePass = distributionPass.enabled) {
   const counts = Object.fromEntries(Object.keys(categories).map(key => [key, 0])), countries = new Map()
-  for (const item of items) {
-    counts[matchTopic(item)?.category || item.category]++
-    countries.set(item.country, (countries.get(item.country) || 0) + 1)
-  }
   const endDay = Date.parse(`${asOf.slice(0, 10)}T00:00:00Z`)
   const days = Array.from({ length: 7 }, (_, i) => new Date(endDay - (6 - i) * 24 * hour).toISOString().slice(0, 10))
-  const matrix = Object.fromEntries(Object.keys(categories).map(key => [key, days.map(day => items.filter(row => row.publishedAt.startsWith(day) && (matchTopic(row)?.category || row.category) === key).length)]))
+  const matrix = Object.fromEntries(Object.keys(categories).map(key => [key, days.map(() => 0)]))
+  for (const item of items) {
+    const category = matchTopic(item)?.category || item.category
+    counts[category]++
+    countries.set(item.country, (countries.get(item.country) || 0) + 1)
+    if (singlePass) {
+      // Reuse this report's classification; preserve UTC date-prefix semantics.
+      const day = days.indexOf(item.publishedAt.slice(0, 10))
+      if (day >= 0) matrix[category][day]++
+    }
+  }
+  if (!singlePass) for (const key of Object.keys(categories)) matrix[key] = days.map(day => items.filter(row => row.publishedAt.startsWith(day) && (matchTopic(row)?.category || row.category) === key).length)
   return { counts, countries: [...countries].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])), days, matrix }
 }
 
