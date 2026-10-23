@@ -5,11 +5,12 @@ import NewsSphere from '@/components/NewsSphere'
 import NewsFreshness from '@/components/NewsFreshness'
 import eventsGate from '../../config/news-events.json'
 import hotspotsGate from '../../config/news-hotspots.json'
+import semanticsGate from '../../config/news-sphere-semantics.json'
 import corpusJson from '@/data/news/hotspots.json'
 import dailyJson from '@/data/news/daily.json'
 import { categories, changeFollow, FOLLOW_KEY, parseFollows, validateHotspotCorpus, matchTopic } from '@/lib/news-hotspots.mjs'
 import type { FollowState, Hotspot } from '@/lib/news-hotspots.mjs'
-import { filterRadar, radarCatalog, radarWindow, readRadarQuery, relatedSignals } from '@/lib/news-sphere'
+import { filterRadar, radarCatalog, radarWindow, readRadarQuery, sameCategoryReading, sphereColors } from '@/lib/news-sphere'
 import './news-radar.css'
 
 const corpus = validateHotspotCorpus(corpusJson), catalog = radarCatalog(corpus)
@@ -42,6 +43,7 @@ export default function NewsRadar() {
   const [light, setLight] = useState(false), [settings, setSettings] = useState(false), [sphere, setSphere] = useState(true)
   const [highlighted, setHighlighted] = useState(''), [limit, setLimit] = useState(15), [now, setNow] = useState(Date.now)
   const follows = useRadarFollows(), dialog = useRef<HTMLDialogElement>(null), closeButton = useRef<HTMLButtonElement>(null), opener = useRef<HTMLElement|null>(null)
+  const showSphere = semanticsGate.enabled && sphere
   const items = useMemo(() => radarWindow(catalog, corpus.generatedAt, query.hours), [query.hours])
   const filtered = useMemo(() => filterRadar(items, query, follows.value.entries.map(row => row.id)), [items, query, follows.value])
   const selected = items.find(row => row.id === query.selected) || catalog.find(row => row.id === query.selected)
@@ -68,16 +70,20 @@ export default function NewsRadar() {
         <div className="pulse-header-actions"><time dateTime={new Date(now).toISOString()}>{new Date(now).toLocaleDateString('zh-CN',{month:'2-digit',day:'2-digit'})}</time><button onClick={() => setLight(value => !value)} aria-label={light ? '切换深色阅读' : '切换浅色阅读'}>{light ? <Moon size={18}/> : <Sun size={18}/>}</button><button onClick={() => setSettings(value => !value)} aria-expanded={settings} aria-controls="pulse-settings" aria-label="阅读设置"><SlidersHorizontal size={18}/></button></div>
       </header>
       <nav className="pulse-links" aria-label="新闻导航"><span aria-current="page">信息雷达</span>{eventsGate.enabled && <Link to="/news/events" aria-label="事件追踪：热点分布与追踪">{hotspotsGate.enabled ? '热点分布与追踪 ↗' : '已核对事件脉络 ↗'}</Link>}<Link to="/news/weekly">每周报告</Link><Link to="/news?view=daily">每日精选</Link><Link to="/news?view=library">技术长读</Link><Link to="/news?view=releases">框架版本</Link><Link to="/news?view=archive">归档</Link><Link to="/news?view=saved">阅读清单</Link></nav>
-      {settings && <section id="pulse-settings" className="pulse-settings"><label><input type="checkbox" checked={sphere} onChange={event => setSphere(event.target.checked)}/> 显示交互球体</label><p>设置仅在本次访问有效。系统“减少动态效果”会禁用自动旋转；所有新闻都可用键盘或下方列表访问。不请求定位，不记录浏览轨迹。</p></section>}
+      {settings && <section id="pulse-settings" className="pulse-settings"><label><input type="checkbox" checked={showSphere} disabled={!semanticsGate.enabled} onChange={event => setSphere(event.target.checked)}/> 显示交互球体</label><p>设置仅在本次访问有效。系统“减少动态效果”会禁用自动旋转；所有新闻都可用键盘或下方列表访问。不请求定位，不记录浏览轨迹。{!semanticsGate.enabled && '当前发布已关闭球体展示，新闻阅读不受影响。'}</p></section>}
       <div className="pulse-filterbar"><div className="pulse-categories" aria-label="新闻板块">{labels.map(([value,label,zh]) => <button key={value} onClick={() => patch({category:value,topic:'',selected:''})} aria-pressed={query.category===value} title={zh}>{label}</button>)}</div><label className="pulse-window">时间窗口<select value={query.hours} onChange={event => patch({hours:event.target.value,selected:''})}><option value="1">1H</option><option value="6">6H</option><option value="24">24H</option><option value="72">72H</option><option value="168">7D</option></select></label></div>
       {age > 12 && <p className="pulse-notice" role="status">采集快照已 {age} 小时未更新；这是截至采集时间的报道分布，不是实时热搜。</p>}
       {failed.length > 0 && <p className="pulse-notice">{failed.length} 个信源本轮采集失败，覆盖可能不完整。</p>}
       {follows.error && <p className="pulse-notice" role="alert">{follows.error}</p>}
-      <section className={`pulse-observatory ${sphere ? '' : 'pulse-observatory-compact'}`} aria-label="全球新闻雷达">
+      <section className={`pulse-observatory ${showSphere ? '' : 'pulse-observatory-compact'}`} aria-label="全球新闻雷达">
         <div className="pulse-hero-copy"><p className="pulse-eyebrow">GLOBAL SIGNAL / 全球信息雷达</p><h1>世界的脉动<span>在此交汇。</span></h1><p className="pulse-intro">越过信息噪声，发现值得关注的变化。</p><div className="pulse-metrics"><span><strong data-testid="radar-count">{filtered.length}</strong> 新闻信号</span><span><strong>{new Set(filtered.flatMap(row => row.reports.map(r=>r.source))).size}</strong> 发布来源</span></div><p className="pulse-snapshot">采集 {utc(corpus.generatedAt)}<br/>球体为抽象分布，不表示地理位置。</p><button className="pulse-skip" onClick={skip}>直接阅读新闻 <ArrowDown size={15}/></button></div>
-        {sphere && <NewsSphere all={catalog} visible={filtered} selected={query.selected} highlighted={highlighted} onSelect={select}/>}
-        <div className="pulse-legend" aria-label="球体图例"><span>● 点 = 新闻线索或主题</span><span>大小 / 亮度 = 报道活跃度</span><span>非全网热搜 · 非可信度评分</span></div>
+        {showSphere && <NewsSphere all={catalog} visible={filtered} selected={query.selected} highlighted={highlighted} onSelect={select}/>}
       </section>
+      {showSphere && <section className="pulse-signal-key" aria-label="球体图例">
+        <div className="pulse-category-key"><span>颜色 = 板块</span>{Object.entries(sphereColors).map(([key,color]) => <span key={key}><i aria-hidden="true" style={{color:`rgb(${color})`}}>●</i>{categories[key as keyof typeof sphereColors]}</span>)}</div>
+        <p>点 = 新闻线索或主题 · 大小 = 报道活跃度 · 亮度还受前后位置影响；非全网热搜，非可信度评分。</p>
+        <p>当前索引未提供经过核实的跨新闻关系，不绘制关联线。同色或位置相近，不代表内容相关。</p>
+      </section>}
       <section className="pulse-topics" aria-label="热门主题"><span className="pulse-eyebrow">HOT TOPICS</span><div>{topTopics.map(row => <button key={row.id} aria-pressed={query.topic===row.id} onClick={() => patch({topic:query.topic===row.id?'':row.id,category:'',q:'',selected:''})}>#{row.title}<span>{row.reports.length}</span></button>)}</div></section>
       <section id="pulse-feed" className="pulse-feed" tabIndex={-1} aria-labelledby="pulse-feed-title">
         <div className="pulse-feed-heading"><div><p className="pulse-eyebrow">THE READING ROOM</p><h2 id="pulse-feed-title">值得留意的信号</h2></div><div className="pulse-sort" aria-label="阅读排序">{[['heat','热点'],['latest','最新'],['mine','我的关注']].map(([value,label]) => <button key={value} aria-pressed={query.sort===value} onClick={() => patch({sort:value==='heat'?'':value})}>{label}</button>)}</div></div>
@@ -93,7 +99,7 @@ export default function NewsRadar() {
       </section>
       <section className="pulse-desks" aria-label="板块速览">{labels.slice(1).map(([key,label,zh]) => {const rows = items.filter(row=>row.category===key);return <article key={key}><p className="pulse-eyebrow">{label} / {zh}</p><span className="pulse-desk-count">{rows.length} 个信号</span>{rows.slice(0,3).map(row=><button key={row.id} onClick={()=>select(row.id)}>{row.title}<ArrowUpRight size={13}/></button>)}{!rows.length&&<p>当前时间窗口暂无采集。</p>}<button className="pulse-desk-all" onClick={()=>{patch({category:key,topic:'',q:'',sort:''});skip()}}>浏览板块 →</button></article>})}</section>
       <div className="pulse-freshness"><NewsFreshness/></div>
-      <details className="pulse-method"><summary>数据来源、热度口径与隐私</summary><p>沿用 news-hotspots/1：去重标题按 24 小时半衰期衰减，每发布方最多计 3 条，加权总和 × 10。分数不是百分比，无 100 分上限，不包含点击量、社交互动或付费权重。时间窗口均截至采集快照，不是当前时钟；缩短窗口会重新计算分数。</p><p>点表示主题、标题相近的聚合或单篇新闻线索，不承诺每个点都是独立事件。连线仅代表同板块延伸阅读，不代表事实、因果或独立证实。未采集重要性与增长率，不显示虚构涨幅、Breaking 或 Live 标签。摘要缺失时请阅读来源原文。来源所在地不是事件发生地。</p><p>搜索为标题、主题、来源和来源国家的本地字面匹配，不调用语义搜索服务。筛选写入 URL；分享前检查关键词。“我的关注”只使用此浏览器主动保存的主题，不进行行为画像；与旧事件追踪共用原有关注格式，不迁移收藏。最多 50 个关注，安全写入失败会明确提示。</p><p>计划每 4 小时采集，发布可能失败或延迟；重建不更改采集时间。金融报道不构成投资建议。无登录、定位、API Key 或个人数据上传。</p><ul>{corpus.sources.map(source=><li key={source.name}><a href={source.url} target="_blank" rel="noreferrer">{source.name} ↗</a> · {source.country} · {source.state==='ok'?'本轮可用':'本轮失败'}</li>)}</ul></details>
+      <details className="pulse-method"><summary>数据来源、热度口径与隐私</summary><p>沿用 news-hotspots/1：去重标题按 24 小时半衰期衰减，每发布方最多计 3 条，加权总和 × 10。分数不是百分比，无 100 分上限，不包含点击量、社交互动或付费权重。时间窗口均截至采集快照，不是当前时钟；缩短窗口会重新计算分数。</p><p>点表示主题、标题相近的聚合或单篇新闻线索，不承诺每个点都是独立事件。当前索引没有经过核实的跨新闻关系，因此不绘制新闻点之间的关联线。同板块、相近标题或球面距离均不能作为事件关联的证据。同板块延伸阅读只在详情列表中提供。未采集重要性与增长率，不显示虚构涨幅、Breaking 或 Live 标签。摘要缺失时请阅读来源原文。来源所在地不是事件发生地。</p><p>搜索为标题、主题、来源和来源国家的本地字面匹配，不调用语义搜索服务。筛选写入 URL；分享前检查关键词。“我的关注”只使用此浏览器主动保存的主题，不进行行为画像；与旧事件追踪共用原有关注格式，不迁移收藏。最多 50 个关注，安全写入失败会明确提示。</p><p>计划每 4 小时采集，发布可能失败或延迟；重建不更改采集时间。金融报道不构成投资建议。无登录、定位、API Key 或个人数据上传。</p><ul>{corpus.sources.map(source=><li key={source.name}><a href={source.url} target="_blank" rel="noreferrer">{source.name} ↗</a> · {source.country} · {source.state==='ok'?'本轮可用':'本轮失败'}</li>)}</ul></details>
       <footer className="pulse-footer"><span>PULSE / 看见变化，保留判断。</span><span>{corpus.items.length} 条留存报道 · 采集 {utc(corpus.generatedAt)}</span></footer>
     </div>
     <dialog ref={dialog} className="pulse-detail" aria-labelledby="pulse-detail-title" onCancel={event=>{event.preventDefault();close()}} onClick={event=>{if(event.target===event.currentTarget){const rect=event.currentTarget.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)close()}}}>
@@ -102,7 +108,7 @@ export default function NewsRadar() {
       {selected.kind==='topic'&&<div className="pulse-follow-actions"><button disabled={follows.busy} aria-pressed={!!followed} onClick={()=>void follows.change(selected,followed?'remove':'add')}><Bookmark size={15}/>{followed?'取消关注':'关注主题'}</button>{followed&&<><span>{unread} 条新收录</span><button disabled={follows.busy||!unread} onClick={()=>void follows.change(selected,'read')}><Check size={15}/>标记已读</button></>}</div>}
       {follows.error&&<p role="alert" className="pulse-notice">{follows.error}</p>}
       <a className="pulse-original" href={selected.reports[0]?.url} target="_blank" rel="noreferrer">阅读最新报道原文 <ArrowUpRight size={17}/></a>
-      <h3>来源与报道时间线</h3><ol className="pulse-detail-stories">{selected.reports.slice(0,15).map(row=><li key={row.id}><p className="pulse-meta">{row.source} · {utc(row.publishedAt)}</p><a href={row.url} target="_blank" rel="noreferrer">{row.title} ↗</a><small>发布机构所在地：{row.country}</small></li>)}</ol>{eventsGate.enabled && hotspotsGate.enabled && <Link className="pulse-track-link" to={`/news/events?hotspot=${encodeURIComponent(selected.id)}`}>完整追踪与 30 天来源分布 →</Link>}<h3>同板块延伸阅读</h3><p className="pulse-meta">连线依据：同一新闻板块，不代表同一事件。</p><div className="pulse-related">{relatedSignals(selected,items).map(row=><button key={row.id} onClick={()=>select(row.id)}>{row.title}<ArrowUpRight size={14}/></button>)}</div></> : <><h2 id="pulse-detail-title">当前索引中未找到此新闻</h2><p>可能已超出保留窗口。本机记录不会被删除；关闭详情后继续浏览。</p></>}
+      <h3>来源与报道时间线</h3><ol className="pulse-detail-stories">{selected.reports.slice(0,15).map(row=><li key={row.id}><p className="pulse-meta">{row.source} · {utc(row.publishedAt)}</p><a href={row.url} target="_blank" rel="noreferrer">{row.title} ↗</a><small>发布机构所在地：{row.country}</small></li>)}</ol>{eventsGate.enabled && hotspotsGate.enabled && <Link className="pulse-track-link" to={`/news/events?hotspot=${encodeURIComponent(selected.id)}`}>完整追踪与 30 天来源分布 →</Link>}<h3>同板块延伸阅读</h3><p className="pulse-meta">仅按同板块列出，不表示同一事件或内容相关。</p><div className="pulse-related">{sameCategoryReading(selected,items).map(row=><button key={row.id} onClick={()=>select(row.id)}>{row.title}<ArrowUpRight size={14}/></button>)}</div></> : <><h2 id="pulse-detail-title">当前索引中未找到此新闻</h2><p>可能已超出保留窗口。本机记录不会被删除；关闭详情后继续浏览。</p></>}
     </dialog>
   </div>
 }

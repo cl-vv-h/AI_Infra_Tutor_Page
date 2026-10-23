@@ -11,6 +11,14 @@ their current acceptance status and order; reliability fixes remain first.
 
 ## 1. Reliability and news research — current increment
 
+October 23 approved correction: category membership is no longer drawn as a
+cross-news relationship in PULSE. A persistent category legend replaces implicit
+neighbor highlighting; same-category reading remains text-only. Actual event
+edges remain unavailable until reviewed endpoint/type/source evidence exists.
+See `releases/news-sphere-semantics-2026-10-23.md` for acceptance/publication status.
+Next: evaluate an evidence-bearing event relation index; never infer links solely
+from a category, common publisher, generic topic or sphere proximity.
+
 User-approved September 30 redesign: the PULSE entrance adds a real-data,
 controllable 3D news sphere and linked editorial reading stream. Existing daily,
 weekly, archived, saved and event-tracking routes remain available. The independent

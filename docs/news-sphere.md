@@ -12,7 +12,9 @@ API, account, remote font, image tracking, model call or new dependency is added
   It needs no GPU/WebGL dependency; unsupported Canvas falls back to the full feed.
 - Size is bounded square-root activity; light encodes activity/depth. A maximum
   of five percent of current signals have restrained pulses. No importance or
-  velocity data is fabricated. Connection lines mean same-category reading only.
+  velocity data is fabricated. Colors identify categories; no cross-signal lines
+  or same-category neighbor highlighting are drawn. Category reading suggestions
+  remain a text-only list, not an assertion of event or content relationships.
 - Category, time, search and explicit followed filters share a canonical URL and
   the same result set. Targets interpolate rather than replacing a canvas.
 - Rotation takes 120 seconds per revolution. Hover slows it, drag has damped
@@ -53,3 +55,26 @@ Set `config/news-sphere.json` to `{"enabled":false}` and rebuild to restore the
 original entrance. This is a build-time switch, not an instant remote kill switch.
 It neither clears browser data nor alters news. Exact commit-level rollback and
 rehearsal evidence belong to the corresponding release record.
+
+## Evidence-first visual semantics — October 23
+
+Visual definition: `news-sphere-semantics/1`. Query, heat, clustering and storage
+versions are unchanged. A persistent legend labels all four categorical colors
+and explains that sphere proximity is not semantic or geographic proximity.
+Preview labels and the reading list also name categories in text. The old
+category-based connections and the preview leader line have been removed.
+
+The retained corpus does not contain reviewed cross-signal relations. Broad
+topic membership and similar-headline clusters are insufficient evidence for
+them, so this release intentionally draws zero relationship edges. It does not
+claim to provide a semantic relation engine. Any future edge must have stable
+endpoints, a specific relation type (such as the same event or a follow-up),
+inspectable source evidence and review provenance; missing evidence means no
+edge, never a fixed-size neighbor quota. Its label/evidence must be accessible
+without relying on color or hover alone.
+
+Independent `config/news-sphere-semantics.json` disables the visualization after
+a rebuild, leaving the PULSE feed, filters and details available. It deliberately
+does not restore misleading category links. A full targeted Git revert restores
+the previous code; prefer the safe build gate for temporary operational fallback.
+Neither path clears any local data.

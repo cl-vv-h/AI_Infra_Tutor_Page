@@ -2,12 +2,11 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { Pause, Play, RotateCcw, SkipForward } from 'lucide-react'
 import type { Hotspot } from '@/lib/news-hotspots.mjs'
 import { categories } from '@/lib/news-hotspots.mjs'
-import { pointRadius, relatedSignals, rotatePoint, spherePosition } from '@/lib/news-sphere'
+import { pointRadius, rotatePoint, spherePosition, sphereColors as colors } from '@/lib/news-sphere'
 import type { Vec3 } from '@/lib/news-sphere'
 
 type Props = { all: Hotspot[]; visible: Hotspot[]; selected: string; highlighted: string; onSelect: (id: string) => void }
 type Dot = { item: Hotspot; p: Vec3; alpha: number; x: number; y: number; z: number; size: number; forceX: number; forceY: number }
-const colors = { ai: '196,186,229', technology: '166,204,215', finance: '180,212,194', world: '221,205,175' }
 
 export default function NewsSphere(props: Props) {
   const canvas = useRef<HTMLCanvasElement>(null), tooltip = useRef<HTMLDivElement>(null)
@@ -48,8 +47,6 @@ export default function NewsSphere(props: Props) {
       const targetRows = current.visible.slice(0, compact ? 320 : 1200), activeRow = current.visible.find(row => row.id === active)
       if (activeRow && !targetRows.some(row => row.id === active)) targetRows.splice(-1, 1, activeRow)
       const visible = new Set(targetRows.map(row => row.id))
-      const chosen = current.all.find(row => row.id === active)
-      const related = new Set(chosen ? relatedSignals(chosen, current.visible).map(row => row.id) : [])
       const spatialOrder = [...targetRows].sort((a,b) => a.id.localeCompare(b.id))
       const targets = new Map(spatialOrder.map((row, i) => [row.id, spherePosition(i, spatialOrder.length, row.id)])), scores = new Map(targetRows.map(row => [row.id, row.score])), pulsing = new Set([...targetRows].sort((a,b) => b.score-a.score).slice(0,Math.ceil(targetRows.length * .05)).map(row => row.id))
       const focus = targets.get(current.selected)
@@ -85,15 +82,13 @@ export default function NewsSphere(props: Props) {
       }
       const ordered = s.dots.filter(dot => dot.alpha >= .01).sort((a, b) => a.z - b.z)
       const origin = s.dots.find(dot => dot.item.id === active && dot.alpha > .5)
-      if (origin && !compact) {
-        context.strokeStyle = 'rgba(180,186,210,.22)'; context.lineWidth = .6
-        for (const dot of s.dots.filter(dot => related.has(dot.item.id) && dot.alpha > .5)) { context.beginPath(); context.moveTo(origin.x, origin.y); context.lineTo(dot.x, dot.y); context.stroke() }
-      }
+      // The corpus has no reviewed cross-signal edges. Do not infer them from
+      // category, title clusters, shared publishers, proximity or visual order.
       for (const dot of ordered) {
         if (dot.alpha < .01) continue
-        const emphasized = dot.item.id === active || related.has(dot.item.id)
+        const emphasized = dot.item.id === active
         const opacity = dot.alpha * (.30 + (dot.z + 1) / 2 * .65) * (current.selected && !emphasized ? .28 : 1)
-        context.fillStyle = `rgba(${emphasized ? colors[dot.item.category] : '205,211,222'},${Math.min(1, opacity)})`
+        context.fillStyle = `rgba(${colors[dot.item.category]},${Math.min(1, opacity)})`
         if (dot.size > 3) { context.shadowColor = `rgba(${colors[dot.item.category]},.45)`; context.shadowBlur = emphasized ? 16 : 7 }
         context.beginPath(); context.arc(dot.x, dot.y, Math.max(.2, dot.size), 0, Math.PI * 2); context.fill(); context.shadowBlur = 0
         if (dot.item.id === active) { context.strokeStyle = `rgba(${colors[dot.item.category]},.6)`; context.lineWidth = 1; context.beginPath(); context.arc(dot.x, dot.y, dot.size + 6, 0, Math.PI * 2); context.stroke() }
@@ -101,7 +96,6 @@ export default function NewsSphere(props: Props) {
       if (tooltip.current && origin) {
         const left = Math.max(12, Math.min(w - Math.min(280, w - 24) - 12, origin.x + 18)), top = Math.max(12, Math.min(h - 175, origin.y - 70))
         tooltip.current.style.transform = `translate(${left}px,${top}px)`
-        context.strokeStyle = 'rgba(200,205,220,.35)'; context.beginPath(); context.moveTo(origin.x, origin.y); context.lineTo(left, top + 45); context.stroke()
       }
       element.dataset.nodes = String(targetRows.length); element.dataset.yaw = s.yaw.toFixed(4)
       if (animated || settling || dirty) { dirty = false; frame = requestAnimationFrame(draw) } else previous = null
@@ -124,7 +118,7 @@ export default function NewsSphere(props: Props) {
       onPointerUp={event => {const s = state.current; s.down = false; s.lastInput = performance.now(); if (s.moved < 8) {const rect = event.currentTarget.getBoundingClientRect(), id = hit(event.clientX - rect.left, event.clientY - rect.top); if (id) { if (event.pointerType === 'mouse' || hovered === id) props.onSelect(id); else setHovered(id) }} }}
       onPointerCancel={() => {state.current.down = false; state.current.vx = 0; state.current.vy = 0}}
       onPointerLeave={event => {state.current.pointer = {x:-1000,y:-1000}; if (event.pointerType === 'mouse' && !state.current.down) setHovered(''); invalidate.current()}} />}
-    {hover && !props.selected && <div ref={tooltip} className="pulse-preview" role="status"><span>{categories[hover.category]} · 活跃度 {hover.score}</span><strong>{hover.title}</strong><span>{hover.reports[0]?.source} · {hover.publishers} 个发布方</span><small>点击／回车查看 · 同板块连线仅供延伸阅读</small></div>}
+    {hover && !props.selected && <div ref={tooltip} className="pulse-preview" role="status"><span>{categories[hover.category]} · 活跃度 {hover.score}</span><strong>{hover.title}</strong><span>{hover.reports[0]?.source} · {hover.publishers} 个发布方</span><small>点击／回车查看 · 同色仅表示同一板块</small></div>}
     <div className="pulse-sphere-caption"><span>拖动探索 · 悬停预览 · 点击聚焦</span><button onClick={browseNext} disabled={!props.visible.length}>逐条探索 →</button>{hover && <button onClick={() => props.onSelect(hover.id)}>打开预览详情</button>}</div>
     {props.visible.length > (compact ? 320 : 1200) && <p className="pulse-cap">球体展示前 {compact ? 320 : 1200} 个信号；完整结果在下方。</p>}
   </div>

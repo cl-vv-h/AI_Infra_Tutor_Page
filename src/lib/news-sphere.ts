@@ -2,6 +2,9 @@ import { buildHotspots, heatScore } from './news-hotspots.mjs'
 import type { Hotspot, HotspotCorpus } from './news-hotspots.mjs'
 
 export const SPHERE_VERSION = 'news-sphere/1'
+export const SPHERE_VISUAL_VERSION = 'news-sphere-semantics/1'
+// Canvas remains dark in both reading themes. Reuse this palette in its legend.
+export const sphereColors = { ai: '196,186,229', technology: '166,204,215', finance: '180,212,194', world: '221,205,175' } as const
 export const windows = [1, 6, 24, 72, 168] as const
 export type RadarQuery = { category: string; hours: number; q: string; topic: string; sort: string; selected: string }
 export function readRadarQuery(params: URLSearchParams): RadarQuery {
@@ -47,7 +50,7 @@ export function rotatePoint(p: Vec3, yaw: number, pitch: number): Vec3 {
   return { x, y: p.y * Math.cos(pitch) - z * Math.sin(pitch), z: p.y * Math.sin(pitch) + z * Math.cos(pitch) }
 }
 export function pointRadius(score: number) { return 1.3 + Math.min(4.5, Math.sqrt(Math.max(0, score)) * .5) }
-export function relatedSignals(item: Hotspot, all: Hotspot[]) {
-  // A transparent reading relation, not a claim that separate stories are one event.
+export function sameCategoryReading(item: Hotspot, all: Hotspot[]) {
+  // Reading suggestions only. Never use category equality as a graph edge.
   return all.filter(row => row.id !== item.id && row.category === item.category).slice(0, 6)
 }

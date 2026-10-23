@@ -4,6 +4,7 @@ import { chromium, expect } from '@playwright/test'
 import {buildHotspots} from '../src/lib/news-hotspots.mjs'
 const base=process.env.MODEL_QA_BASE||'http://127.0.0.1:4195/AI_Infra_Tutor_Page/', route=`${base}#/news`
 const gate=JSON.parse(await readFile(new URL('../config/news-sphere.json',import.meta.url),'utf8'))
+const semanticsGate=JSON.parse(await readFile(new URL('../config/news-sphere-semantics.json',import.meta.url),'utf8'))
 const corpus=JSON.parse(await readFile(new URL('../src/data/news/hotspots.json',import.meta.url),'utf8'))
 const firstWeekly=buildHotspots(corpus,168)[0]
 const browser=await chromium.launch({headless:true,...(process.env.MODEL_QA_CHANNEL?{channel:process.env.MODEL_QA_CHANNEL}:{})})
@@ -11,6 +12,7 @@ const overflow=async page=>assert.equal(await page.evaluate(()=>document.documen
 const key='ai-infra-hotspot-follows-v1'
 try {
   if(!gate.enabled){const page=await browser.newPage();await page.goto(route);await expect(page.getByRole('heading',{name:'世界的脉动',exact:false})).toHaveCount(0);await expect(page.getByRole('heading',{name:'发现技术，读懂进展。'})).toBeVisible();console.log('Sphere gate off: original reader preserved')}
+  else if(!semanticsGate.enabled){const page=await browser.newPage();await page.goto(route);await expect(page.getByTestId('radar-row').first()).toBeVisible();await expect(page.locator('.pulse-canvas')).toHaveCount(0);console.log('Sphere semantics gate off: reading retained without unsupported lines')}
   else {
     for(const width of [360,390,768,1440]){
       const context=await browser.newContext({viewport:{width,height:1000},reducedMotion:'reduce'}),page=await context.newPage(),errors=[],writes=[]

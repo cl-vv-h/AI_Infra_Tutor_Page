@@ -41,6 +41,14 @@ inspection. Evidence is from production builds, not development-only previews.
 
 ## Evidence log — 2026-09-27
 
+October 23 PULSE semantic correction: the radar uses persistent category colors
+with textual legend, no cross-news edges and no category-neighbor highlighting.
+`tests/news-sphere-semantics-browser.mjs` inspects actual Canvas line/color calls
+at 360/390/768/1440px, keyboard preview/detail, text-only reading suggestions,
+dark/light modes, refresh and disabled safe fallback. Existing PULSE regression
+retains pointer/touch, filters, URL history, storage and load-failure coverage.
+Release evidence: `releases/news-sphere-semantics-2026-10-23.md`.
+
 - Skill schema validation: passed using `quick_validate.py` with isolated PyYAML.
 - TypeScript and ESLint: passed after shared shell and page hierarchy changes.
 - Production build: passed; 276 article bodies remain isolated from route bundles.

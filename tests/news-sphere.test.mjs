@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import { radarCatalog, radarWindow, filterRadar, readRadarQuery, spherePosition, rotatePoint, pointRadius, relatedSignals } from '../src/lib/news-sphere.ts'
+import { radarCatalog, radarWindow, filterRadar, readRadarQuery, spherePosition, rotatePoint, pointRadius, sameCategoryReading, sphereColors } from '../src/lib/news-sphere.ts'
 import { buildHotspots, heatScore } from '../src/lib/news-hotspots.mjs'
 const corpus=JSON.parse(await readFile(new URL('../src/data/news/hotspots.json',import.meta.url),'utf8'))
 const catalog=radarCatalog(corpus)
@@ -32,12 +32,20 @@ test('search covers topic, publisher and country; followed means explicit local 
   assert.equal(filterRadar(catalog,{...base,topic:first.id},[]).length,1)
   const latest=filterRadar(catalog,{...base,sort:'latest'},[]);assert.deepEqual(latest.map(x=>x.latestAt),latest.map(x=>x.latestAt).sort().reverse())
 })
-test('deterministic sphere geometry, bounded nonlinear sizes and explicitly same-category relations',()=>{
+test('deterministic sphere geometry, bounded nonlinear sizes and category reading suggestions',()=>{
   for(let i=0;i<1200;i++){
     const p=spherePosition(i,1200,String(i)),r=Math.hypot(p.x,p.y,p.z)
     assert(r>.9&&r<1.1);assert.deepEqual(p,spherePosition(i,1200,String(i)))
     const rotated=rotatePoint(p,3.3,.8);assert(Math.abs(Math.hypot(rotated.x,rotated.y,rotated.z)-r)<1e-10)
   }
   assert(pointRadius(100)>pointRadius(1));assert(pointRadius(1e20)<=5.8);assert(pointRadius(-1)>0)
-  for(const row of catalog){const related=relatedSignals(row,catalog);assert(related.length<=6);assert(related.every(x=>x.category===row.category&&x.id!==row.id))}
+  for(const row of catalog){const reading=sameCategoryReading(row,catalog);assert(reading.length<=6);assert(reading.every(x=>x.category===row.category&&x.id!==row.id))}
+})
+test('category colors are complete, distinct and independent of activity and reading order',()=>{
+  assert.deepEqual(Object.keys(sphereColors).sort(),['ai','finance','technology','world'])
+  assert.equal(new Set(Object.values(sphereColors)).size,4)
+  for(const color of Object.values(sphereColors)){assert.match(color,/^\d+,\d+,\d+$/);assert(color.split(',').every(c=>+c>=0&&+c<=255))}
+  const item={id:'a',category:'ai'},unrelated={id:'b',category:'ai'},different={id:'c',category:'finance'}
+  assert.deepEqual(sameCategoryReading(item,[item,unrelated,different]),[unrelated])
+  assert.deepEqual(sameCategoryReading(item,[item,different]),[])
 })
