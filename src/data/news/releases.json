@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T12:53:08.926Z",
+  "generatedAt": "2026-10-24T18:56:03.080Z",
   "lookbackDays": 90,
   "limitPerStage": 8,
   "sources": [
@@ -8,7 +8,7 @@
       "repository": "sgl-project/sglang",
       "url": "https://github.com/sgl-project/sglang/releases",
       "state": "ok",
-      "lastSuccessAt": "2026-10-24T12:53:08.926Z",
+      "lastSuccessAt": "2026-10-24T18:56:03.080Z",
       "count": 6
     },
     {
@@ -16,7 +16,7 @@
       "repository": "vllm-project/vllm",
       "url": "https://github.com/vllm-project/vllm/releases",
       "state": "ok",
-      "lastSuccessAt": "2026-10-24T12:53:08.926Z",
+      "lastSuccessAt": "2026-10-24T18:56:03.080Z",
       "count": 8
     },
     {
@@ -24,7 +24,7 @@
       "repository": "flashinfer-ai/flashinfer",
       "url": "https://github.com/flashinfer-ai/flashinfer/releases",
       "state": "ok",
-      "lastSuccessAt": "2026-10-24T12:53:08.926Z",
+      "lastSuccessAt": "2026-10-24T18:56:03.080Z",
       "count": 16
     },
     {
@@ -32,7 +32,7 @@
       "repository": "huggingface/transformers",
       "url": "https://github.com/huggingface/transformers/releases",
       "state": "ok",
-      "lastSuccessAt": "2026-10-24T12:53:08.926Z",
+      "lastSuccessAt": "2026-10-24T18:56:03.080Z",
       "count": 8
     },
     {
@@ -40,7 +40,7 @@
       "repository": "NVIDIA/TensorRT-LLM",
       "url": "https://github.com/NVIDIA/TensorRT-LLM/releases",
       "state": "ok",
-      "lastSuccessAt": "2026-10-24T12:53:08.926Z",
+      "lastSuccessAt": "2026-10-24T18:56:03.080Z",
       "count": 8
     },
     {
@@ -48,7 +48,7 @@
       "repository": "triton-lang/triton",
       "url": "https://github.com/triton-lang/triton/releases",
       "state": "ok",
-      "lastSuccessAt": "2026-10-24T12:53:08.926Z",
+      "lastSuccessAt": "2026-10-24T18:56:03.080Z",
       "count": 1
     }
   ],
@@ -63,8 +63,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-23T18:38:46.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
-      "score": 28.4,
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
+      "score": 26.9,
       "topics": [
         "kernels"
       ],
@@ -81,7 +81,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-22T07:58:40.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -99,7 +99,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-22T01:38:13.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 18,
       "topics": [
         "inference",
@@ -122,7 +122,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-20T04:30:32.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -140,7 +140,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-19T17:45:37.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "models"
@@ -158,7 +158,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-19T02:55:19.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -181,7 +181,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-18T06:50:48.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -204,7 +204,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-16T13:02:29.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "hardware",
@@ -223,7 +223,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T20:36:26.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 21,
       "topics": [
         "inference",
@@ -245,7 +245,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-15T18:05:36.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -267,7 +267,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-14T16:35:44.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 18,
       "topics": [
         "inference",
@@ -289,7 +289,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-13T07:53:27.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -307,7 +307,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-09T20:00:11.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 21,
       "topics": [
         "inference",
@@ -329,7 +329,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-07T18:48:02.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -347,7 +347,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-06T20:46:48.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -365,7 +365,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-06T16:39:23.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -386,7 +386,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-05T06:44:55.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -409,7 +409,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T01:50:27.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -427,7 +427,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-02T01:09:04.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -450,7 +450,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-30T16:46:27.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -472,7 +472,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-30T16:43:06.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 17,
       "topics": [
         "inference",
@@ -494,7 +494,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-29T23:22:24.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 21,
       "topics": [
         "kernels"
@@ -512,7 +512,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-09-29T10:56:19.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 18,
       "topics": [
         "inference",
@@ -534,7 +534,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-09-23T06:34:35.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 18,
       "topics": [
         "inference",
@@ -556,7 +556,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-22T05:20:54.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -579,7 +579,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-22T01:15:03.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 21,
       "topics": [
         "inference",
@@ -601,7 +601,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-21T22:55:24.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 17,
       "topics": [
         "kernels"
@@ -619,7 +619,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-18T22:41:33.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -642,7 +642,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-09-18T03:14:53.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 18,
       "topics": [
         "inference",
@@ -664,7 +664,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-09T15:42:45.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -686,7 +686,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-09-09T09:37:50.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 18,
       "topics": [
         "inference",
@@ -709,7 +709,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-09T08:54:49.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -732,7 +732,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-05T03:19:53.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 21,
       "topics": [
         "kernels"
@@ -750,7 +750,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-09-05T02:27:42.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -773,7 +773,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-08-31T03:24:43.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 18,
       "topics": [
         "inference",
@@ -795,7 +795,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-29T02:01:33.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 21,
       "topics": [
         "inference",
@@ -818,7 +818,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-28T18:25:56.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 21,
       "topics": [
         "inference",
@@ -840,7 +840,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-26T14:50:01.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -862,7 +862,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-26T12:35:15.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -884,7 +884,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-26T09:46:30.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -907,7 +907,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-22T00:09:15.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -930,7 +930,7 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-08-12T07:07:24.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 18,
       "topics": [
         "inference",
@@ -953,7 +953,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-11T10:47:49.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference"
@@ -971,7 +971,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-11T05:09:14.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 21,
       "topics": [
         "inference",
@@ -993,7 +993,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-10T21:18:11.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -1015,7 +1015,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-08-08T00:19:16.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",
@@ -1037,7 +1037,7 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-07-27T01:06:58.000Z",
-      "fetchedAt": "2026-10-24T12:53:08.926Z",
+      "fetchedAt": "2026-10-24T18:56:03.080Z",
       "score": 22,
       "topics": [
         "inference",

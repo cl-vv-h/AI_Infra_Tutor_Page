@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T12:52:59.314Z",
+  "generatedAt": "2026-10-24T18:55:51.526Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 28,
-      "latestPublishedAt": "2026-10-24T12:12:40.000Z",
+      "entryCount": 30,
+      "latestPublishedAt": "2026-10-24T17:25:46.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 131,
-      "latestPublishedAt": "2026-10-24T11:36:00.000Z",
+      "latestPublishedAt": "2026-10-24T15:55:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-24T12:18:06.000Z",
+      "latestPublishedAt": "2026-10-24T18:30:56.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -80,7 +80,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-22T14:30:24.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 2
     },
     {
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-10-23T02:00:13.000Z",
-      "selectedCount": 3,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-23T23:05:49.000Z",
+      "latestPublishedAt": "2026-10-24T16:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -132,7 +132,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-23T06:10:35.677Z",
-      "selectedCount": 0,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -184,7 +184,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-22T20:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-24T11:45:20.000Z",
+      "latestPublishedAt": "2026-10-24T18:42:27.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,7 +274,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-24T11:59:08.000Z",
+      "latestPublishedAt": "2026-10-24T17:54:25.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-24T09:27:29.000Z",
+      "latestPublishedAt": "2026-10-24T14:09:35.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -327,7 +327,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-23T00:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 3,
       "libraryCount": 8
     },
     {
@@ -405,7 +405,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-22T16:04:40.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -418,7 +418,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-22T23:52:11.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -457,7 +457,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-23T18:22:59.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -524,11 +524,801 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T17:50:21.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 29.2,
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 27.7,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "7660110b9216178d",
+      "category": "world",
+      "title": "France: Anti-far-right protest in Orleans",
+      "summary": "Far-right candidate Marine Le Pen is officially launching her presidential campaign this weekend at the National Rally’s two-day party congress in Orléans, where thousands of supporters are expected to attend. Local authorities have put exceptional security measures in place as anti-far-right demonstrations take place in the city.",
+      "url": "https://www.france24.com/en/france-anti-far-right-protest-in-orleans",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T13:19:54.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 27.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "4a8960c5c681b010",
+      "category": "world",
+      "title": "Paris: Protest starts at Porte d'Italie, after last-minute change to the route",
+      "summary": "France is bracing for another day of cost-of-living protests, with extra police deployed nationwide to prevent a repeat of the violence that followed last Saturday’s demonstrations. In Lyon, where protests have been banned, police used tear gas to disperse around 150 people who had gathered to demonstrate. Government figures put last weekend’s turnout at more than half a million, and similarly large crowds could take to the streets again today. The movement grew out of high school students’ protests over poor condi",
+      "url": "https://www.france24.com/en/paris-protest-starts-at-porte-d-italie-after-last-minute-change-to-the-route",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T13:18:52.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 27.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "8dd65ab0bfe2b362",
+      "category": "world",
+      "title": "France protests updates: 135 arrested as marches held under tight security",
+      "summary": "Authorities say they are determined to prevent another weekend of looting, burned cars and attacks on public buildings.",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/24/france-protests-live-135-arrested-as-marches-held-under-tight-security?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T12:55:37.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 27.5,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "1522ce53c4a47d02",
+      "category": "world",
+      "title": "France: Clashes break out as protests go nationwide",
+      "summary": "Police and elite security forces are out in force in French cities as tens of thousands participate in a new round of protests. The situation is slowing turning tense in some cities like Paris and Marseille. Follow DW.",
+      "url": "https://www.dw.com/en/france-clashes-break-out-as-protests-go-nationwide/live-79748223?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T06:34:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 25.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "4f4d546699003a04",
+      "category": "world",
+      "title": "Why Russia's arrest of Japanese journalist is the latest sign of deteriorating ties between the countries.",
+      "summary": "Japan is demanding access to a journalist who was arrested by Russian security services. The Kremlin claims that Japan is using journalists as spies.",
+      "url": "https://www.dw.com/en/why-russia-s-arrest-of-japanese-journalist-is-the-latest-sign-of-deteriorating-ties-between-the-countries/a-79742995?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T05:29:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 25.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "1bb47ec6768bc521",
+      "category": "technology",
+      "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 1",
+      "summary": "Deploying a trained neural network involves more than translating each operator into a GPU kernel. It is a compilation problem with many legitimate answers. For...",
+      "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T17:27:35.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 24.6,
+      "topics": [
+        "kernels",
+        "hardware"
+      ]
+    },
+    {
+      "id": "69aebe8888865898",
+      "category": "finance",
+      "title": "UK to invest £100m in 'world first' AI Biosecurity Lab",
+      "summary": "The chancellor will unveil AI spending aimed at shoring up the UK's defences in Wednesday's Budget.",
+      "url": "https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T00:05:45.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 24.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "9b139e7de0c5891d",
+      "category": "technology",
+      "title": "Scaling 3D Gaussian Splatting with Distributed Compute: Why One GPU Is Never Enough",
+      "summary": "gsplat is a GPU-optimized Python library for training and rendering 3D Gaussian Splatting (3DGS) models. In earlier posts we showed how to train gsplat scenes on AMD GPUs, took a closer look at the mathematics of 3DGS, and applied gsplat to autonomous driving.",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/scaling-gsplat/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 24.3,
+      "topics": [
+        "hardware",
+        "training"
+      ]
+    },
+    {
+      "id": "8611462b4ac3fe51",
+      "category": "finance",
+      "title": "UK government sets out $800 million of AI security funding",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/uk-government-sets-out-800-million-ai-security-funding-6488176",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T23:03:17.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 24,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "7665beed4e6f5933",
+      "category": "ai",
+      "title": "Bringing foundational models to the front lines of TB screening",
+      "summary": "Generative AI",
+      "url": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-23T18:51:33.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 24,
+      "topics": []
+    },
+    {
+      "id": "dd53a2081f537be7",
+      "category": "world",
+      "title": "Thousands take to Tel Aviv's streets for protests against Netanyahu",
+      "summary": "Thousands marched against Prime Minister Benjamin Netanyahu's government in Tel Aviv on Saturday – just three days before Israel's general election – demanding accountability for the failure to prevent a Hamas-led attack on October 7, 2023, that led to the war in Gaza.",
+      "url": "https://www.france24.com/en/middle-east/20261024-thousands-take-to-tel-aviv-streets-for-protests-against-netanyahu",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T18:21:55.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "dc07582537a6ba5f",
+      "category": "technology",
+      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+      "summary": "As NASA returns humans to the lunar surface and establishes a long-term presence on our closest celestial neighbor, the agency and commercial human landing system providers Blue Origin and SpaceX have streamlined the designs and changed both concepts of operations for its future crewed landers. Since NASA established initial contracts with Blue Origin and SpaceX […]",
+      "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-23T22:39:39.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "287d368f59cda51d",
+      "category": "technology",
+      "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
+      "summary": "Before astronauts return to the lunar surface, NASA will first conduct one of the most ambitious and complex test missions in the agency’s history. Launching in 2027, Artemis III will send NASA astronauts Randy Bresnik, Frank Rubio, Andre Douglas, and ESA (European Space Agency) astronaut Luca Parmitano aboard the Orion spacecraft into low Earth orbit […]",
+      "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-23T22:37:53.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "e12b6fdd379f146d",
+      "category": "technology",
+      "title": "Origin Range Requests: Serving large files without range-request tuning",
+      "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half.",
+      "url": "https://blog.cloudflare.com/origin-range-requests/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T18:22:59.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 23.9,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "293f375876208763",
+      "category": "world",
+      "title": "Two rescued after Nairobi building collapse with five still missing",
+      "summary": "Police have launched a manhunt for the building's owner and contractor after the multi-storey building collapsed while still under construction.",
+      "url": "https://www.bbc.co.uk/news/articles/c317kxyknwp2o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T17:25:46.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "3c9908c252504f17",
+      "category": "world",
+      "title": "Palestinian families displaced as Israeli forces demolish Hebron homes, local officials say",
+      "summary": "The crackdown follows the killing of two Israeli soldiers by two Palestinian gunmen on Friday - and comes just days ahead of Israel's election.",
+      "url": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T17:21:42.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "6f29a4c807e44dd5",
+      "category": "technology",
+      "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2",
+      "summary": "The Global Performance Tuner is a feature for automatic performance tuning released in NVIDIA TensorRT 11.1. It provides automatic, accuracy-aware and...",
+      "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T17:27:52.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "189d332f887dabb5",
+      "category": "world",
+      "title": "About 25,000 rally in Madrid in support of Spain’s state pension scheme",
+      "summary": "Demonstrators want pensions to remain indexed to inflation and the gender pension gap to be eliminated.",
+      "url": "https://www.aljazeera.com/news/2026/10/24/about-25000-rally-in-madrid-in-support-of-spains-state-pension-scheme?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T16:48:36.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "e6d517da614d3c75",
+      "category": "world",
+      "title": "Serbian elections: A country where students may actually take power",
+      "summary": "Serbia is voting in an early election, where the most powerful politician in the country, has a serious rival.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/serbian-elections-a-country-where-students-may-actually-take-power?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T16:36:44.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "a0dfef929b12d70b",
+      "category": "finance",
+      "title": "OpenAI resumes frontier AI training after security overhaul, discloses flaw in widely used software",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/openai-resumes-frontier-ai-training-after-security-overhaul-discloses-flaw-in-widely-used-software-6487981",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T20:06:51.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 23.3,
+      "topics": [
+        "training",
+        "security"
+      ]
+    },
+    {
+      "id": "c90063c94acfe905",
+      "category": "ai",
+      "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+      "summary": "",
+      "url": "https://huggingface.co/blog/allenai/litpivot",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T16:15:50.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 23.3,
+      "topics": []
+    },
+    {
+      "id": "7059f403fce54ba2",
+      "category": "technology",
+      "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
+      "summary": "Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions...",
+      "url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T14:58:32.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 23,
+      "topics": []
+    },
+    {
+      "id": "ea0945f55f0ead6e",
+      "category": "world",
+      "title": "Turkey's new deal on Mediterranean maritime boundaries with Libya is exacerbating issues with Greece and the EU",
+      "summary": "Turkey and Libya plan to redraw maritime boundaries in the Mediterranean as part of a new economic corridor. This has sparked strong protests from Greece, and has also drawn the European Union into the conflict.",
+      "url": "https://www.dw.com/en/turkey-s-new-deal-on-mediterranean-maritime-boundaries-with-libya-is-exacerbating-issues-with-greece-and-the-eu/a-79745971?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T14:09:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "82f8d709796f7a64",
+      "category": "ai",
+      "title": "Release v0.7.2.post1",
+      "summary": "What's Changed Full Changelog : v0.7.2...v0.7.2.post1",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T20:20:18.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "b8b35f790163ca6d",
+      "category": "technology",
+      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+      "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
+      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T20:19:55.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 22.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "62ee106bf558605c",
+      "category": "finance",
+      "title": "PwC confirms cybersecurity incident involving employee learning records",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/pwc-confirms-cybersecurity-incident-involving-employee-learning-records-6487381",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T16:22:07.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 22.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "31b17db0f09aa9a3",
+      "category": "ai",
+      "title": "Block’s new voice model sounds eerily human",
+      "summary": "Block said that the voice model can run locally on a MacBook M4 Max",
+      "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T16:00:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 22.3,
+      "topics": []
+    },
+    {
+      "id": "dcbecfca653e9607",
+      "category": "ai",
+      "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+      "summary": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
+      "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T15:00:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 22,
+      "topics": []
+    },
+    {
+      "id": "5f82895b9a226b94",
+      "category": "world",
+      "title": "Haiti's ex-president Martelly registers as candidate for upcoming election",
+      "summary": "Haiti’s former president Michel Martelly is running for office again. He presented his candidacy on Friday for the December 13 elections - the country’s first in 10 years. Earlier this month, Haiti’s electoral council overturned a ban on candidates sanctioned by foreign countries.",
+      "url": "https://www.africanews.com/2026/10/24/haitis-ex-president-martelly-registers-as-candidate-for-upcoming-election/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T14:09:35.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 21.8,
+      "topics": []
+    },
+    {
+      "id": "bd2e7c1611aca291",
+      "category": "world",
+      "title": "Three released without charge after fatal arson attack in Ireland",
+      "summary": "Three people - two women and one man - have been released, and one person remains in custody, gardaí say.",
+      "url": "https://www.bbc.co.uk/news/articles/cv0ld9571511o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T09:38:28.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 21.7,
+      "topics": []
+    },
+    {
+      "id": "b2147b6fcb56b244",
+      "category": "finance",
+      "title": "What is PHP and why did it spark a global cyber-security scramble?",
+      "summary": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
+      "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T12:24:17.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 21.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "b990e774d018407f",
+      "category": "technology",
+      "title": "A 1,000-mile cloud on Mars may reveal physics never seen in nature",
+      "summary": "A new model suggests Mars may host ice-forming physics never directly observed before.",
+      "url": "https://arstechnica.com/science/2026/10/a-1000-mile-cloud-on-mars-may-reveal-physics-never-seen-in-nature/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T11:50:28.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 21.2,
+      "topics": []
+    },
+    {
+      "id": "d172398d705f6404",
+      "category": "world",
+      "title": "European student protests take aim at Serbia's elections",
+      "summary": "Students have been protesting across Europe. In Serbia, they've selected candidates to run for parliament in Sunday's elections. And they're aiming to end 14 years of government by the populist leader Aleksandar Vucic.",
+      "url": "https://www.npr.org/2026/10/24/nx-s1-6012799/european-student-protests-take-aim-at-serbias-elections",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T11:42:11.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 21.2,
+      "topics": []
+    },
+    {
+      "id": "cd9d174600ae4219",
+      "category": "finance",
+      "title": "Piero Cipollone: Interview with Milano Finanza",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-24T06:00:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 20.8,
+      "topics": []
+    },
+    {
+      "id": "95ebe779b68dea04",
+      "category": "world",
+      "title": "New Tumaini Ebola vaccine trial launches in Bunia as DRC struggles",
+      "summary": "A clinical trial for a new Ebola vaccine is getting underway in DR Congo’s Ituri province. The TUMAini trial will evaluate candidate vaccines against the Bundibugyo strain of the virus.",
+      "url": "https://www.africanews.com/2026/10/24/new-tumaini-ebola-vaccine-trial-launches-in-bunia-as-drc-struggles/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T08:38:44.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 20.4,
+      "topics": []
+    },
+    {
+      "id": "90d82aceb62411b4",
+      "category": "ai",
+      "title": "Serving DeepSeek-V4.1-Flash at Scale: vLLM Matches DeepInfer and Scales to GB300 NVL72",
+      "summary": "With P/D disaggregation and Wide-EP on a GB300 NVL72 rack, vLLM serves DeepSeek-V4.1-Flash on SemiAnalysis AgentX at 954K tokens/s per GPU at a P90 of 196 tokens/s per user, 7.9x our aggregated single-node result.",
+      "url": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 20.3,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "a4ee612ff89614a5",
+      "category": "ai",
+      "title": "GLM-5.3 Optimizations, Part 2: PCP, DCP, and Hybrid HiSparse on 16 H200s",
+      "summary": "vLLM serves GLM-5.3 on 16 H200s with PCP and DCP prefill and Hybrid HiSparse decode, reaching 1M-token contexts and 1.7–3.2× the per-user speed of data-parallel P/D on the AgentX agentic benchmark.",
+      "url": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 20.3,
+      "topics": [
+        "inference",
+        "models"
+      ]
+    },
+    {
+      "id": "4967de51d907fb0e",
+      "category": "ai",
+      "title": "vLLM Delivers Day-0 Support for MiniMax-M3.1-Flash",
+      "summary": "Day-0 vLLM support for MiniMax-M3.1-Flash on NVIDIA Blackwell, NVIDIA Rubin, and AMD MI350-series GPUs, with NVFP4 MSA kernels, NVFP4 MegaMoE, DSpark speculative decoding, AgentX results, and day-0 RL.",
+      "url": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 20.3,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware"
+      ]
+    },
+    {
+      "id": "2b17ef5d6618b82e",
+      "category": "technology",
+      "title": "FP8 GEMM Optimization on AMD RDNA™ 4 Architecture",
+      "summary": "In this blog you will learn how to port an FP16 GEMM kernel to FP8 on AMD RDNA™ 4 GPUs. You will see what the FP8 WMMA instruction changes, how the smaller element size lets larger tiles and deeper K slices fit in LDS, and how four tile configurations compare against hipBLASLt on GEMM shapes from transformer workloads.",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/rdna-fp8-gemm/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 20.3,
+      "topics": [
+        "kernels",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "8b3b40eacaa63f3d",
+      "category": "world",
+      "title": "CAR: Former hostages greeted by President Touadéra on return to Bangui",
+      "summary": "In Central African Republic, three hostages released this week after 10 months in captivity arrived in Bangui aboard a special UN flight. A local government official and two members of the National Election Authority, they were kidnapped in Bambouti in December, on the day of the general election.",
+      "url": "https://www.africanews.com/2026/10/24/car-former-hostages-greeted-by-president-touadera-on-return-to-bangui/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T07:25:38.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 20.1,
+      "topics": []
+    },
+    {
+      "id": "286d4cfdac740859",
+      "category": "ai",
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "summary": "",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-22T22:24:34.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 19.9,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "5574f318f053599e",
+      "category": "ai",
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "summary": "",
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 19.3,
+      "topics": []
+    },
+    {
+      "id": "372e87b47c038807",
+      "category": "technology",
+      "title": "Bringing post-quantum cryptography to geographically fenced key management",
+      "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quantum world.",
+      "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T18:06:56.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 18.8,
+      "topics": []
+    },
+    {
+      "id": "c4df678c99d634a7",
+      "category": "finance",
+      "title": "Rising demand from families needing Christmas help",
+      "summary": "Charlotte Riley says more families are reaching out for help for a variety of reasons.",
+      "url": "https://www.bbc.co.uk/news/articles/cqp8gjz4k7g6o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T11:55:35.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 18.2,
+      "topics": []
+    },
+    {
+      "id": "b910914d801d3566",
+      "category": "ai",
+      "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+      "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
+      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T23:05:49.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 18,
+      "topics": []
+    },
+    {
+      "id": "6f12d97c31b33d51",
+      "category": "technology",
+      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops",
+      "summary": "Pentagon memo: Insider trading gives US enemies key intel on military operations.",
+      "url": "https://arstechnica.com/tech-policy/2026/10/pentagon-memo-on-prediction-markets-says-insider-bets-put-troops-lives-at-risk/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T20:28:43.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 17.4,
+      "topics": []
+    },
+    {
+      "id": "d96be28acdc65d1d",
+      "category": "finance",
+      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-23T08:00:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 15.3,
+      "topics": []
+    },
+    {
+      "id": "17e7b5d4bec488b0",
+      "category": "technology",
+      "title": "PyTorch Conference North America 2026: Accelerating Open Intelligence Together",
+      "summary": "PyTorch Conference North America 2026 brought 3,500+ attendees to San Jose on October 20–21 for two days focused on accelerating open intelligence and exploring the impact of PyTorch Foundation projects... The post PyTorch Conference North America 2026: Accelerating Open Intelligence Together appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/pytorch-conference-north-america-2026-accelerating-open-intelligence-together/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-22T23:52:11.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 15.2,
+      "topics": []
+    },
+    {
+      "id": "c6f06e8a4e392385",
+      "category": "ai",
+      "title": "v0.7.2rc7",
+      "summary": "v0.7.2rc7",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2rc7",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T05:13:48.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 14.6,
+      "topics": []
+    },
+    {
+      "id": "c8a16a124644ecd9",
+      "category": "technology",
+      "title": "iPhone Duo arrives at Apple Store locations worldwide",
+      "summary": "On Friday, October 23, the highly anticipated iPhone Duo made its debut at Apple Store locations worldwide.",
+      "url": "https://www.apple.com/newsroom/2026/10/iphone-duo-arrives-at-apple-store-locations-worldwide/",
+      "source": "Apple Newsroom",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T06:10:35.677Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 13.8,
+      "topics": []
+    },
+    {
+      "id": "1a4794278e6ab610",
+      "category": "finance",
+      "title": "Financial System Report (October 2026)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/research/brp/fsr/fsr261023.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-23T06:00:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 13.8,
+      "topics": []
+    },
+    {
+      "id": "0c2aea05700bf9e1",
+      "category": "ai",
+      "title": "Kazakhstan Expands Compute for Its AI Future",
+      "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. The announcements below — coinciding with a visit to Astana by NVIDIA founder and CEO Jensen Huang — point to the nation’s increasing supply of accelerated computing, along with […]",
+      "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T02:00:13.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 13.8,
+      "topics": []
+    },
+    {
+      "id": "216faea48951edf6",
+      "category": "finance",
+      "title": "Regulators unveil plans to simplify Senior Manager and Certification Regime",
+      "summary": "The number of financial services roles required to face enhanced checks from regulators will fall significantly under proposals that will support growth.",
+      "url": "https://www.bankofengland.co.uk/news/2026/october/regulators-unveil-plans-to-simplify-senior-manager-and-certification-regime",
+      "source": "Bank of England",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-22T20:00:00.000Z",
+      "fetchedAt": "2026-10-24T18:55:51.526Z",
+      "score": 11.3,
+      "topics": []
     },
     {
       "id": "eca120c18ca07201",
@@ -579,175 +1369,6 @@
       ]
     },
     {
-      "id": "1bb47ec6768bc521",
-      "category": "technology",
-      "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 1",
-      "summary": "Deploying a trained neural network involves more than translating each operator into a GPU kernel. It is a compilation problem with many legitimate answers. For...",
-      "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T17:27:35.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 26.1,
-      "topics": [
-        "kernels",
-        "hardware"
-      ]
-    },
-    {
-      "id": "69aebe8888865898",
-      "category": "finance",
-      "title": "UK to invest £100m in 'world first' AI Biosecurity Lab",
-      "summary": "The chancellor will unveil AI spending aimed at shoring up the UK's defences in Wednesday's Budget.",
-      "url": "https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T00:05:45.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 25.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "9b139e7de0c5891d",
-      "category": "technology",
-      "title": "Scaling 3D Gaussian Splatting with Distributed Compute: Why One GPU Is Never Enough",
-      "summary": "gsplat is a GPU-optimized Python library for training and rendering 3D Gaussian Splatting (3DGS) models. In earlier posts we showed how to train gsplat scenes on AMD GPUs, took a closer look at the mathematics of 3DGS, and applied gsplat to autonomous driving.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/scaling-gsplat/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 25.8,
-      "topics": [
-        "hardware",
-        "training"
-      ]
-    },
-    {
-      "id": "8611462b4ac3fe51",
-      "category": "finance",
-      "title": "UK government sets out $800 million of AI security funding",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/uk-government-sets-out-800-million-ai-security-funding-6488176",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T23:03:17.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 25.5,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "7665beed4e6f5933",
-      "category": "ai",
-      "title": "Bringing foundational models to the front lines of TB screening",
-      "summary": "Generative AI",
-      "url": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
-      "source": "Google Research",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-23T18:51:33.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 25.5,
-      "topics": []
-    },
-    {
-      "id": "dc07582537a6ba5f",
-      "category": "technology",
-      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
-      "summary": "As NASA returns humans to the lunar surface and establishes a long-term presence on our closest celestial neighbor, the agency and commercial human landing system providers Blue Origin and SpaceX have streamlined the designs and changed both concepts of operations for its future crewed landers. Since NASA established initial contracts with Blue Origin and SpaceX […]",
-      "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-23T22:39:39.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 25.4,
-      "topics": []
-    },
-    {
-      "id": "287d368f59cda51d",
-      "category": "technology",
-      "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
-      "summary": "Before astronauts return to the lunar surface, NASA will first conduct one of the most ambitious and complex test missions in the agency’s history. Launching in 2027, Artemis III will send NASA astronauts Randy Bresnik, Frank Rubio, Andre Douglas, and ESA (European Space Agency) astronaut Luca Parmitano aboard the Orion spacecraft into low Earth orbit […]",
-      "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-23T22:37:53.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 25.4,
-      "topics": []
-    },
-    {
-      "id": "e12b6fdd379f146d",
-      "category": "technology",
-      "title": "Origin Range Requests: Serving large files without range-request tuning",
-      "summary": "Naive byte-range caching can waste gigabytes of origin bandwidth on small requests. We rebuilt our cache architecture in Pingora to coordinate partial fetches automatically, cutting R2 p99 latency in half.",
-      "url": "https://blog.cloudflare.com/origin-range-requests/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T18:22:59.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 25.4,
-      "topics": [
-        "inference"
-      ]
-    },
-    {
-      "id": "6f29a4c807e44dd5",
-      "category": "technology",
-      "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2",
-      "summary": "The Global Performance Tuner is a feature for automatic performance tuning released in NVIDIA TensorRT 11.1. It provides automatic, accuracy-aware and...",
-      "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-2/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T17:27:52.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 25.1,
-      "topics": []
-    },
-    {
-      "id": "a0dfef929b12d70b",
-      "category": "finance",
-      "title": "OpenAI resumes frontier AI training after security overhaul, discloses flaw in widely used software",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/openai-resumes-frontier-ai-training-after-security-overhaul-discloses-flaw-in-widely-used-software-6487981",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:06:51.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 24.8,
-      "topics": [
-        "training",
-        "security"
-      ]
-    },
-    {
-      "id": "c90063c94acfe905",
-      "category": "ai",
-      "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
-      "summary": "",
-      "url": "https://huggingface.co/blog/allenai/litpivot",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T16:15:50.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 24.8,
-      "topics": []
-    },
-    {
       "id": "16413939bed537aa",
       "category": "world",
       "title": "Bayern say coach Kompany ‘stable’ in hospital but will be out for weeks",
@@ -762,20 +1383,6 @@
       "topics": [
         "training"
       ]
-    },
-    {
-      "id": "7059f403fce54ba2",
-      "category": "technology",
-      "title": "Using AI Agents to Teach Robots Like Microduck to Walk in Simulation",
-      "summary": "Teaching a robot to navigate an obstacle course requires more than a walking policy. It must perceive its surroundings, maintain balance, and adjust its actions...",
-      "url": "https://developer.nvidia.com/blog/using-ai-agents-to-teach-robots-like-microduck-to-walk-in-simulation/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T14:58:32.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 24.5,
-      "topics": []
     },
     {
       "id": "9e5a3a97c1dbfc6d",
@@ -808,52 +1415,6 @@
       "topics": []
     },
     {
-      "id": "82f8d709796f7a64",
-      "category": "ai",
-      "title": "Release v0.7.2.post1",
-      "summary": "What's Changed Full Changelog : v0.7.2...v0.7.2.post1",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-23T20:20:18.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 23.9,
-      "topics": []
-    },
-    {
-      "id": "b8b35f790163ca6d",
-      "category": "technology",
-      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
-      "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
-      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:19:55.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 23.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "62ee106bf558605c",
-      "category": "finance",
-      "title": "PwC confirms cybersecurity incident involving employee learning records",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/pwc-confirms-cybersecurity-incident-involving-employee-learning-records-6487381",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T16:22:07.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 23.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
       "id": "aa8d6bd631b2b0ce",
       "category": "world",
       "title": "Will Guinea-Bissau remain trapped in political chaos?",
@@ -882,64 +1443,6 @@
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "b2147b6fcb56b244",
-      "category": "finance",
-      "title": "What is PHP and why did it spark a global cyber-security scramble?",
-      "summary": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
-      "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T12:24:17.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 22.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "b990e774d018407f",
-      "category": "technology",
-      "title": "A 1,000-mile cloud on Mars may reveal physics never seen in nature",
-      "summary": "A new model suggests Mars may host ice-forming physics never directly observed before.",
-      "url": "https://arstechnica.com/science/2026/10/a-1000-mile-cloud-on-mars-may-reveal-physics-never-seen-in-nature/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T11:50:28.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 22.7,
-      "topics": []
-    },
-    {
-      "id": "d172398d705f6404",
-      "category": "world",
-      "title": "European student protests take aim at Serbia's elections",
-      "summary": "Students have been protesting across Europe. In Serbia, they've selected candidates to run for parliament in Sunday's elections. And they're aiming to end 14 years of government by the populist leader Aleksandar Vucic.",
-      "url": "https://www.npr.org/2026/10/24/nx-s1-6012799/european-student-protests-take-aim-at-serbias-elections",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T11:42:11.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 22.7,
-      "topics": []
-    },
-    {
-      "id": "cd9d174600ae4219",
-      "category": "finance",
-      "title": "Piero Cipollone: Interview with Milano Finanza",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-24T06:00:00.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 22.3,
-      "topics": []
     },
     {
       "id": "44d947835d83c443",
@@ -1000,103 +1503,6 @@
       ]
     },
     {
-      "id": "95ebe779b68dea04",
-      "category": "world",
-      "title": "New Tumaini Ebola vaccine trial launches in Bunia as DRC struggles",
-      "summary": "A clinical trial for a new Ebola vaccine is getting underway in DR Congo’s Ituri province. The TUMAini trial will evaluate candidate vaccines against the Bundibugyo strain of the virus.",
-      "url": "https://www.africanews.com/2026/10/24/new-tumaini-ebola-vaccine-trial-launches-in-bunia-as-drc-struggles/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T08:38:44.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 21.9,
-      "topics": []
-    },
-    {
-      "id": "a4ee612ff89614a5",
-      "category": "ai",
-      "title": "GLM-5.3 Optimizations, Part 2: PCP, DCP, and Hybrid HiSparse on 16 H200s",
-      "summary": "vLLM serves GLM-5.3 on 16 H200s with PCP and DCP prefill and Hybrid HiSparse decode, reaching 1M-token contexts and 1.7–3.2× the per-user speed of data-parallel P/D on the AgentX agentic benchmark.",
-      "url": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 21.8,
-      "topics": [
-        "inference",
-        "models"
-      ]
-    },
-    {
-      "id": "4967de51d907fb0e",
-      "category": "ai",
-      "title": "vLLM Delivers Day-0 Support for MiniMax-M3.1-Flash",
-      "summary": "Day-0 vLLM support for MiniMax-M3.1-Flash on NVIDIA Blackwell, NVIDIA Rubin, and AMD MI350-series GPUs, with NVFP4 MSA kernels, NVFP4 MegaMoE, DSpark speculative decoding, AgentX results, and day-0 RL.",
-      "url": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 21.8,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware"
-      ]
-    },
-    {
-      "id": "2b17ef5d6618b82e",
-      "category": "technology",
-      "title": "FP8 GEMM Optimization on AMD RDNA™ 4 Architecture",
-      "summary": "In this blog you will learn how to port an FP16 GEMM kernel to FP8 on AMD RDNA™ 4 GPUs. You will see what the FP8 WMMA instruction changes, how the smaller element size lets larger tiles and deeper K slices fit in LDS, and how four tile configurations compare against hipBLASLt on GEMM shapes from transformer workloads.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/rdna-fp8-gemm/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 21.8,
-      "topics": [
-        "kernels",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "8b3b40eacaa63f3d",
-      "category": "world",
-      "title": "CAR: Former hostages greeted by President Touadéra on return to Bangui",
-      "summary": "In Central African Republic, three hostages released this week after 10 months in captivity arrived in Bangui aboard a special UN flight. A local government official and two members of the National Election Authority, they were kidnapped in Bambouti in December, on the day of the general election.",
-      "url": "https://www.africanews.com/2026/10/24/car-former-hostages-greeted-by-president-touadera-on-return-to-bangui/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T07:25:38.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 21.6,
-      "topics": []
-    },
-    {
-      "id": "286d4cfdac740859",
-      "category": "ai",
-      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-      "summary": "",
-      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-22T22:24:34.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 21.4,
-      "topics": [
-        "training"
-      ]
-    },
-    {
       "id": "8137775894758dfd",
       "category": "world",
       "title": "Two European women kidnapped in Niger freed in Libya",
@@ -1127,62 +1533,6 @@
       "topics": []
     },
     {
-      "id": "5574f318f053599e",
-      "category": "ai",
-      "title": "Does Your Model Run on AWS Trainium? Look It Up",
-      "summary": "",
-      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 20.8,
-      "topics": []
-    },
-    {
-      "id": "372e87b47c038807",
-      "category": "technology",
-      "title": "Bringing post-quantum cryptography to geographically fenced key management",
-      "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quantum world.",
-      "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T18:06:56.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 20.3,
-      "topics": []
-    },
-    {
-      "id": "c4df678c99d634a7",
-      "category": "finance",
-      "title": "Rising demand from families needing Christmas help",
-      "summary": "Charlotte Riley says more families are reaching out for help for a variety of reasons.",
-      "url": "https://www.bbc.co.uk/news/articles/cqp8gjz4k7g6o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T11:55:35.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 19.8,
-      "topics": []
-    },
-    {
-      "id": "b910914d801d3566",
-      "category": "ai",
-      "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-      "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
-      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T23:05:49.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 19.6,
-      "topics": []
-    },
-    {
       "id": "06e96c8217670c0a",
       "category": "technology",
       "title": "Meet the 2026 PyTorch Foundation Ambassadors",
@@ -1194,20 +1544,6 @@
       "publishedAt": "2026-10-22T17:44:52.000Z",
       "fetchedAt": "2026-10-24T12:52:59.314Z",
       "score": 19.2,
-      "topics": []
-    },
-    {
-      "id": "6f12d97c31b33d51",
-      "category": "technology",
-      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops",
-      "summary": "Pentagon memo: Insider trading gives US enemies key intel on military operations.",
-      "url": "https://arstechnica.com/tech-policy/2026/10/pentagon-memo-on-prediction-markets-says-insider-bets-put-troops-lives-at-risk/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:28:43.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 18.9,
       "topics": []
     },
     {
@@ -1228,48 +1564,6 @@
         "hardware",
         "training"
       ]
-    },
-    {
-      "id": "d96be28acdc65d1d",
-      "category": "finance",
-      "title": "ECB Consumer Expectations Survey results – September 2026",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-23T08:00:00.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 16.8,
-      "topics": []
-    },
-    {
-      "id": "17e7b5d4bec488b0",
-      "category": "technology",
-      "title": "PyTorch Conference North America 2026: Accelerating Open Intelligence Together",
-      "summary": "PyTorch Conference North America 2026 brought 3,500+ attendees to San Jose on October 20–21 for two days focused on accelerating open intelligence and exploring the impact of PyTorch Foundation projects... The post PyTorch Conference North America 2026: Accelerating Open Intelligence Together appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/pytorch-conference-north-america-2026-accelerating-open-intelligence-together/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-22T23:52:11.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 16.7,
-      "topics": []
-    },
-    {
-      "id": "c6f06e8a4e392385",
-      "category": "ai",
-      "title": "v0.7.2rc7",
-      "summary": "v0.7.2rc7",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2rc7",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-23T05:13:48.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 16.1,
-      "topics": []
     },
     {
       "id": "fa7e64bd201b057b",
@@ -1317,34 +1611,6 @@
       "topics": []
     },
     {
-      "id": "1a4794278e6ab610",
-      "category": "finance",
-      "title": "Financial System Report (October 2026)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/research/brp/fsr/fsr261023.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-23T06:00:00.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 15.3,
-      "topics": []
-    },
-    {
-      "id": "0c2aea05700bf9e1",
-      "category": "ai",
-      "title": "Kazakhstan Expands Compute for Its AI Future",
-      "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. The announcements below — coinciding with a visit to Astana by NVIDIA founder and CEO Jensen Huang — point to the nation’s increasing supply of accelerated computing, along with […]",
-      "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T02:00:13.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 15.3,
-      "topics": []
-    },
-    {
       "id": "5c240e860cf55dc4",
       "category": "ai",
       "title": "Beyond tree cover: mapping the world’s forest types",
@@ -1356,20 +1622,6 @@
       "publishedAt": "2026-10-22T14:30:24.000Z",
       "fetchedAt": "2026-10-24T12:52:59.314Z",
       "score": 13.4,
-      "topics": []
-    },
-    {
-      "id": "216faea48951edf6",
-      "category": "finance",
-      "title": "Regulators unveil plans to simplify Senior Manager and Certification Regime",
-      "summary": "The number of financial services roles required to face enhanced checks from regulators will fall significantly under proposals that will support growth.",
-      "url": "https://www.bankofengland.co.uk/news/2026/october/regulators-unveil-plans-to-simplify-senior-manager-and-certification-regime",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-22T20:00:00.000Z",
-      "fetchedAt": "2026-10-24T12:52:59.314Z",
-      "score": 12.8,
       "topics": []
     },
     {
