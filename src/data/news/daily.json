@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T18:55:51.526Z",
+  "generatedAt": "2026-10-24T22:41:22.379Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 30,
-      "latestPublishedAt": "2026-10-24T17:25:46.000Z",
+      "entryCount": 31,
+      "latestPublishedAt": "2026-10-24T22:08:47.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 131,
-      "latestPublishedAt": "2026-10-24T15:55:00.000Z",
+      "latestPublishedAt": "2026-10-24T19:33:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-24T18:30:56.000Z",
+      "latestPublishedAt": "2026-10-24T21:39:29.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-24T16:00:00.000Z",
+      "latestPublishedAt": "2026-10-24T19:00:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -184,7 +184,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-22T20:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-24T18:42:27.000Z",
+      "latestPublishedAt": "2026-10-24T21:01:56.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,7 +274,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-24T17:54:25.000Z",
+      "latestPublishedAt": "2026-10-24T21:21:00.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -314,7 +314,7 @@
       "channel": "feed",
       "entryCount": 890,
       "latestPublishedAt": "2026-10-23T16:15:50.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -515,6 +515,22 @@
   ],
   "items": [
     {
+      "id": "f640a18ea635ce47",
+      "category": "world",
+      "title": "'The marches went well' – French government on demonstrations a week after looting and violence",
+      "summary": "Hundreds of thousands marched across France Saturday protesting the rising cost of living. While demonstrations in Paris started peacefully, they ended with a heavy government security response following escalation. Other cities saw clashes that also contributed to the near-1,000 arrested across the country, meanwhile other countries in Europe rallied over issues with some overlap. \"The marches went well\" said Interior Minister Laurent Nuñez.",
+      "url": "https://www.france24.com/en/france/20261024-the-marches-went-well-%E2%80%93-french-government-on-demonstrations-a-week-after-looting-and-violence",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T21:01:56.000Z",
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 28.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "9385b0bef8377f6d",
       "category": "technology",
       "title": "NASA, Virginia Launch Power Partnership for Energy Security",
@@ -524,8 +540,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T17:50:21.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 27.7,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 26.8,
       "topics": [
         "security"
       ]
@@ -540,8 +556,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-24T13:19:54.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 27.6,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 26.7,
       "topics": [
         "security"
       ]
@@ -556,24 +572,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-24T13:18:52.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 27.6,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "8dd65ab0bfe2b362",
-      "category": "world",
-      "title": "France protests updates: 135 arrested as marches held under tight security",
-      "summary": "Authorities say they are determined to prevent another weekend of looting, burned cars and attacks on public buildings.",
-      "url": "https://www.aljazeera.com/news/liveblog/2026/10/24/france-protests-live-135-arrested-as-marches-held-under-tight-security?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T12:55:37.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 27.5,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 26.7,
       "topics": [
         "security"
       ]
@@ -582,14 +582,14 @@
       "id": "1522ce53c4a47d02",
       "category": "world",
       "title": "France: Clashes break out as protests go nationwide",
-      "summary": "Police and elite security forces are out in force in French cities as tens of thousands participate in a new round of protests. The situation is slowing turning tense in some cities like Paris and Marseille. Follow DW.",
+      "summary": "Police and elite security forces were out in force in French cities as tens of thousands participated in protests on Saturday. The situation turned tense toward the end of protests in several cities, including Paris.",
       "url": "https://www.dw.com/en/france-clashes-break-out-as-protests-go-nationwide/live-79748223?maca=en-rss-en-all-1573-rdf",
       "source": "DW",
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-24T06:34:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 25.9,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 25,
       "topics": [
         "security"
       ]
@@ -604,11 +604,39 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-24T05:29:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 25.6,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 24.7,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "cab9fbc528a24640",
+      "category": "world",
+      "title": "Who are the candidates in Brazil's presidential election?",
+      "summary": "Voters in Sunday's election are choosing between two very different candidates, as Americas correspondent Ione Wells reports from Rio de Janeiro.",
+      "url": "https://www.bbc.co.uk/news/videos/cm0e0del4jewo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T22:08:47.000Z",
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "0d0562e72f0b3f8c",
+      "category": "world",
+      "title": "Brazil’s Lula, Bolsonaro draw thousands to election-eve rallies",
+      "summary": "The pivotal run-off will determine whether Brazilians stick with their left-wing leader or shift towards the right.",
+      "url": "https://www.aljazeera.com/news/2026/10/24/brazils-lula-bolsonaro-draw-thousands-to-election-eve-rallies?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T21:39:29.000Z",
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 23.7,
+      "topics": []
     },
     {
       "id": "1bb47ec6768bc521",
@@ -620,12 +648,40 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T17:27:35.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 24.6,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 23.7,
       "topics": [
         "kernels",
         "hardware"
       ]
+    },
+    {
+      "id": "7561892d706eeafb",
+      "category": "world",
+      "title": "Houthis launch attacks on Saudi Arabia and Yemen’s Aden",
+      "summary": "Houthi missiles reportedly struck a number of targets in Yemen, including Aden's airport and a coastguard base.",
+      "url": "https://www.aljazeera.com/news/2026/10/24/houthis-launch-attacks-on-saudi-arabia-and-yemens-aden?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T21:08:51.000Z",
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "800b032b126764d1",
+      "category": "world",
+      "title": "Severe hunger stalks people in Gaza as bakeries close down",
+      "summary": "Bakeries across Gaza are struggling to find flour to make bread for people desperate for food.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/severe-hunger-stalks-people-in-gaza-as-bakeries-close-down?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T20:52:55.000Z",
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 23.5,
+      "topics": []
     },
     {
       "id": "69aebe8888865898",
@@ -637,8 +693,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-24T00:05:45.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 23.4,
       "topics": [
         "security"
       ]
@@ -653,8 +709,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 24.3,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 23.3,
       "topics": [
         "hardware",
         "training"
@@ -670,39 +726,11 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T23:03:17.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 24,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 23.1,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "7665beed4e6f5933",
-      "category": "ai",
-      "title": "Bringing foundational models to the front lines of TB screening",
-      "summary": "Generative AI",
-      "url": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
-      "source": "Google Research",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-23T18:51:33.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 24,
-      "topics": []
-    },
-    {
-      "id": "dd53a2081f537be7",
-      "category": "world",
-      "title": "Thousands take to Tel Aviv's streets for protests against Netanyahu",
-      "summary": "Thousands marched against Prime Minister Benjamin Netanyahu's government in Tel Aviv on Saturday – just three days before Israel's general election – demanding accountability for the failure to prevent a Hamas-led attack on October 7, 2023, that led to the war in Gaza.",
-      "url": "https://www.france24.com/en/middle-east/20261024-thousands-take-to-tel-aviv-streets-for-protests-against-netanyahu",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T18:21:55.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 23.9,
-      "topics": []
     },
     {
       "id": "dc07582537a6ba5f",
@@ -714,8 +742,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T22:39:39.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 23,
       "topics": []
     },
     {
@@ -728,8 +756,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T22:37:53.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 23,
+      "topics": []
+    },
+    {
+      "id": "7665beed4e6f5933",
+      "category": "ai",
+      "title": "Bringing foundational models to the front lines of TB screening",
+      "summary": "Generative AI",
+      "url": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-23T18:51:33.000Z",
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 23,
       "topics": []
     },
     {
@@ -742,8 +784,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T18:22:59.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 22.9,
       "topics": [
         "inference"
       ]
@@ -758,22 +800,22 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-24T17:25:46.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 22.7,
       "topics": []
     },
     {
       "id": "3c9908c252504f17",
       "category": "world",
-      "title": "Palestinian families displaced as Israeli forces demolish Hebron homes, local officials say",
+      "title": "Palestinian families displaced as Israeli forces demolish Hebron homes",
       "summary": "The crackdown follows the killing of two Israeli soldiers by two Palestinian gunmen on Friday - and comes just days ahead of Israel's election.",
       "url": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o",
       "source": "BBC World",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-24T17:21:42.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -786,36 +828,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T17:27:52.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 23.6,
-      "topics": []
-    },
-    {
-      "id": "189d332f887dabb5",
-      "category": "world",
-      "title": "About 25,000 rally in Madrid in support of Spain’s state pension scheme",
-      "summary": "Demonstrators want pensions to remain indexed to inflation and the gender pension gap to be eliminated.",
-      "url": "https://www.aljazeera.com/news/2026/10/24/about-25000-rally-in-madrid-in-support-of-spains-state-pension-scheme?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T16:48:36.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 23.5,
-      "topics": []
-    },
-    {
-      "id": "e6d517da614d3c75",
-      "category": "world",
-      "title": "Serbian elections: A country where students may actually take power",
-      "summary": "Serbia is voting in an early election, where the most powerful politician in the country, has a serious rival.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/serbian-elections-a-country-where-students-may-actually-take-power?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T16:36:44.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -828,8 +842,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T20:06:51.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 23.3,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 22.4,
       "topics": [
         "training",
         "security"
@@ -845,8 +859,22 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T16:15:50.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 23.3,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "952fc8d98f36de25",
+      "category": "ai",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T19:00:00.000Z",
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 22.1,
       "topics": []
     },
     {
@@ -859,8 +887,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T14:58:32.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 23,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 22.1,
       "topics": []
     },
     {
@@ -873,8 +901,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-24T14:09:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 21.9,
       "topics": []
     },
     {
@@ -887,8 +915,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-23T20:20:18.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 22.4,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 21.4,
       "topics": []
     },
     {
@@ -901,8 +929,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T20:19:55.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 22.4,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 21.4,
       "topics": [
         "security"
       ]
@@ -917,8 +945,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T16:22:07.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 22.4,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 21.4,
       "topics": [
         "security"
       ]
@@ -933,8 +961,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-24T16:00:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 22.3,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 21.3,
       "topics": []
     },
     {
@@ -947,8 +975,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-24T15:00:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 22,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 21.1,
       "topics": []
     },
     {
@@ -961,22 +989,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-24T14:09:35.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 21.8,
-      "topics": []
-    },
-    {
-      "id": "bd2e7c1611aca291",
-      "category": "world",
-      "title": "Three released without charge after fatal arson attack in Ireland",
-      "summary": "Three people - two women and one man - have been released, and one person remains in custody, gardaí say.",
-      "url": "https://www.bbc.co.uk/news/articles/cv0ld9571511o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T09:38:28.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 21.7,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 20.9,
       "topics": []
     },
     {
@@ -989,8 +1003,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-23T12:24:17.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 21.4,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 20.4,
       "topics": [
         "security"
       ]
@@ -1005,8 +1019,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-24T11:50:28.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 20.3,
       "topics": []
     },
     {
@@ -1019,8 +1033,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-24T11:42:11.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 20.3,
       "topics": []
     },
     {
@@ -1033,8 +1047,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-24T06:00:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 20.8,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -1047,8 +1061,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-24T08:38:44.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 20.4,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 19.5,
       "topics": []
     },
     {
@@ -1061,8 +1075,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 19.3,
       "topics": [
         "inference",
         "hardware",
@@ -1079,8 +1093,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 19.3,
       "topics": [
         "inference",
         "models"
@@ -1096,8 +1110,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 19.3,
       "topics": [
         "inference",
         "kernels",
@@ -1114,8 +1128,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 19.3,
       "topics": [
         "kernels",
         "models",
@@ -1132,25 +1146,9 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-24T07:25:38.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 20.1,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 19.2,
       "topics": []
-    },
-    {
-      "id": "286d4cfdac740859",
-      "category": "ai",
-      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-      "summary": "",
-      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-22T22:24:34.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 19.9,
-      "topics": [
-        "training"
-      ]
     },
     {
       "id": "5574f318f053599e",
@@ -1162,8 +1160,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 19.3,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 18.3,
       "topics": []
     },
     {
@@ -1176,8 +1174,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T18:06:56.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 18.8,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -1190,22 +1188,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-24T11:55:35.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 18.2,
-      "topics": []
-    },
-    {
-      "id": "b910914d801d3566",
-      "category": "ai",
-      "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-      "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
-      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T23:05:49.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 18,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 17.3,
       "topics": []
     },
     {
@@ -1218,8 +1202,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T20:28:43.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 17.4,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 16.4,
       "topics": []
     },
     {
@@ -1232,8 +1216,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-23T08:00:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 15.3,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 14.3,
       "topics": []
     },
     {
@@ -1246,8 +1230,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T23:52:11.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 15.2,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 14.3,
       "topics": []
     },
     {
@@ -1260,8 +1244,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-23T05:13:48.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 14.6,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 13.6,
       "topics": []
     },
     {
@@ -1274,8 +1258,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-23T06:10:35.677Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 13.8,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 12.9,
       "topics": []
     },
     {
@@ -1288,8 +1272,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-23T06:00:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 13.8,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 12.8,
       "topics": []
     },
     {
@@ -1302,22 +1286,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T02:00:13.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 13.8,
-      "topics": []
-    },
-    {
-      "id": "216faea48951edf6",
-      "category": "finance",
-      "title": "Regulators unveil plans to simplify Senior Manager and Certification Regime",
-      "summary": "The number of financial services roles required to face enhanced checks from regulators will fall significantly under proposals that will support growth.",
-      "url": "https://www.bankofengland.co.uk/news/2026/october/regulators-unveil-plans-to-simplify-senior-manager-and-certification-regime",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-22T20:00:00.000Z",
-      "fetchedAt": "2026-10-24T18:55:51.526Z",
-      "score": 11.3,
+      "fetchedAt": "2026-10-24T22:41:22.379Z",
+      "score": 12.8,
       "topics": []
     }
   ]
