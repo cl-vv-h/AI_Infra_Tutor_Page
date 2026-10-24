@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T04:56:26.165Z",
+  "generatedAt": "2026-10-24T12:52:59.314Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 38,
-  "failedSourceCount": 1,
+  "sourceCount": 39,
+  "failedSourceCount": 0,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 23,
-      "latestPublishedAt": "2026-10-24T04:03:46.000Z",
-      "selectedCount": 2,
+      "entryCount": 28,
+      "latestPublishedAt": "2026-10-24T12:12:40.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 55,
-      "latestPublishedAt": "2026-10-24T00:36:47.000Z",
+      "latestPublishedAt": "2026-10-24T11:55:35.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 132,
-      "latestPublishedAt": "2026-10-24T02:40:00.000Z",
+      "entryCount": 131,
+      "latestPublishedAt": "2026-10-24T11:36:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-24T03:51:58.000Z",
+      "latestPublishedAt": "2026-10-24T12:18:06.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -80,7 +80,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-22T14:30:24.000Z",
-      "selectedCount": 0,
+      "selectedCount": 1,
       "libraryCount": 2
     },
     {
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-10-23T02:00:13.000Z",
-      "selectedCount": 2,
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-23T22:48:25.000Z",
+      "latestPublishedAt": "2026-10-24T11:50:28.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-23T22:39:39.000Z",
+      "latestPublishedAt": "2026-10-24T04:05:00.000Z",
       "selectedCount": 3,
       "libraryCount": 5
     },
@@ -157,8 +157,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 15,
-      "latestPublishedAt": "2026-10-23T08:00:00.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-24T06:00:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -167,11 +167,10 @@
       "country": "United States",
       "category": "finance",
       "type": "institution",
-      "state": "unavailable",
+      "state": "ok",
       "channel": "feed",
-      "httpStatus": 404,
-      "entryCount": 0,
-      "latestPublishedAt": null,
+      "entryCount": 20,
+      "latestPublishedAt": "2026-10-16T15:00:00.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -198,7 +197,7 @@
       "channel": "feed",
       "entryCount": 51,
       "latestPublishedAt": "2026-10-23T06:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -250,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-10-23T12:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -262,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-23T20:50:51.000Z",
+      "latestPublishedAt": "2026-10-24T11:45:20.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -275,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-23T12:41:39.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-24T11:59:08.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -288,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-23T22:07:09.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-24T09:27:29.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -301,8 +300,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-24T03:58:00.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-24T12:14:55.000Z",
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -406,7 +405,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-22T16:04:40.000Z",
-      "selectedCount": 3,
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -525,24 +524,56 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T17:50:21.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 31.2,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 29.2,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "94b1fdc9ffe34a93",
+      "id": "eca120c18ca07201",
       "category": "world",
-      "title": "Pentagon designates Confucius Institutes a national security threat",
-      "summary": "Pete Hegseth says the Pentagon dismantled 80 ‘propaganda cells’ operating under new names at 30 universities.",
-      "url": "https://www.aljazeera.com/news/2026/10/24/pentagon-designates-confucius-institutes-a-national-security-threat?traffic_source=rss",
+      "title": "Netanyahu orders West Bank operation",
+      "summary": "Israel has imposed widespread closures across the occupied West Bank and displaced residents following attacks by Palestinian gunmen that killed two Israeli soldiers. Prime Minister Benjamin Netanyahu visited the site of the attack near Hebron and instructed security forces to immediately cordon off the city. Morgan Ayre reports.",
+      "url": "https://www.france24.com/en/netanyahu-orders-west-bank-operation",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T10:33:52.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 28.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "d232b3c49f59a2a8",
+      "category": "world",
+      "title": "France braces for another day of mass protests as security on high alert",
+      "summary": "Several planned marches in major cities in France have been banned by authorities, provoking an uproar by rights groups.",
+      "url": "https://www.aljazeera.com/news/2026/10/24/france-braces-for-another-day-of-mass-protests-as-security-on-high-alert?traffic_source=rss",
       "source": "Al Jazeera",
       "sourceCountry": "Qatar",
       "sourceType": "news",
-      "publishedAt": "2026-10-24T03:38:20.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 28.7,
+      "publishedAt": "2026-10-24T10:04:25.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 28.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "a508195d745f360c",
+      "category": "world",
+      "title": "Protests against cost of living expected in Italy under heavy security",
+      "summary": "Italy is preparing for another day of protests on Saturday against budget cuts and the high cost of living in eight cities, including Rome and Milan. Following last weekend’s unrest, authorities announced heavy security measures, including the use of drones and helicopters to monitor the marches.",
+      "url": "https://www.france24.com/en/europe/20261024-protests-against-cost-of-living-expected-in-italy-under-heavy-security",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T07:08:54.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 27.6,
       "topics": [
         "security"
       ]
@@ -557,8 +588,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T17:27:35.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 28.1,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 26.1,
       "topics": [
         "kernels",
         "hardware"
@@ -574,8 +605,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-24T00:05:45.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.8,
       "topics": [
         "security"
       ]
@@ -590,8 +621,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.8,
       "topics": [
         "hardware",
         "training"
@@ -607,8 +638,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T23:03:17.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.5,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.5,
       "topics": [
         "security"
       ]
@@ -623,8 +654,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T18:51:33.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.5,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.5,
       "topics": []
     },
     {
@@ -637,8 +668,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T22:39:39.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.4,
       "topics": []
     },
     {
@@ -651,8 +682,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T22:37:53.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.4,
       "topics": []
     },
     {
@@ -665,8 +696,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T18:22:59.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.4,
       "topics": [
         "inference"
       ]
@@ -681,8 +712,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T17:27:52.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.1,
       "topics": []
     },
     {
@@ -695,8 +726,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T20:06:51.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 26.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 24.8,
       "topics": [
         "training",
         "security"
@@ -712,9 +743,25 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T16:15:50.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 26.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 24.8,
       "topics": []
+    },
+    {
+      "id": "16413939bed537aa",
+      "category": "world",
+      "title": "Bayern say coach Kompany ‘stable’ in hospital but will be out for weeks",
+      "summary": "Bayern Munich coach Vincent Kompany collapsed during training on Friday but is said to be 'stable' in hospital.",
+      "url": "https://www.aljazeera.com/sports/2026/10/24/bayern-say-coach-kompany-stable-in-hospital-but-will-be-out-for-weeks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T10:59:34.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 24.5,
+      "topics": [
+        "training"
+      ]
     },
     {
       "id": "7059f403fce54ba2",
@@ -726,8 +773,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T14:58:32.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 26.5,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 24.5,
       "topics": []
     },
     {
@@ -740,8 +787,52 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-23T18:26:35.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 26.4,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 24.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "53292f347c007c6e",
+      "category": "world",
+      "title": "Serbia elections test student movement demanding justice for 16 victims",
+      "summary": "Serbia elections test student movement demanding justice for 16 victims",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/serbia-elections-test-student-movement-demanding-justice-for-16-victims?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T12:18:06.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "82f8d709796f7a64",
+      "category": "ai",
+      "title": "Release v0.7.2.post1",
+      "summary": "What's Changed Full Changelog : v0.7.2...v0.7.2.post1",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T20:20:18.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "b8b35f790163ca6d",
+      "category": "technology",
+      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+      "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
+      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T20:19:55.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 23.9,
       "topics": [
         "security"
       ]
@@ -756,38 +847,571 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T16:22:07.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 25.9,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 23.9,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "82f8d709796f7a64",
-      "category": "ai",
-      "title": "Release v0.7.2.post1",
-      "summary": "What's Changed Full Changelog : v0.7.2...v0.7.2.post1",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-23T20:20:18.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 25.8,
+      "id": "aa8d6bd631b2b0ce",
+      "category": "world",
+      "title": "Will Guinea-Bissau remain trapped in political chaos?",
+      "summary": "Elections scheduled for December 6 in Guinea-Bissau have been postponed indefinitely. No new date has been set, leaving the country's return to civilian rule uncertain.",
+      "url": "https://www.dw.com/en/will-guinea-bissau-remain-trapped-in-political-chaos/a-79734069?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T11:36:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 23.7,
       "topics": []
     },
     {
-      "id": "b8b35f790163ca6d",
+      "id": "5d8bfb804e89caed",
+      "category": "world",
+      "title": "Japan-Russia ties erode as journalist sits in Moscow jail",
+      "summary": "Japan is demanding access to a journalist who was arrested by Russian security services. The Kremlin claims that Japan is using journalists as spies.",
+      "url": "https://www.dw.com/en/japan-russia-ties-erode-as-journalist-sits-in-moscow-jail/a-79742995?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T12:42:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 23,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "b2147b6fcb56b244",
+      "category": "finance",
+      "title": "What is PHP and why did it spark a global cyber-security scramble?",
+      "summary": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
+      "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T12:24:17.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "b990e774d018407f",
       "category": "technology",
-      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
-      "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
-      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+      "title": "A 1,000-mile cloud on Mars may reveal physics never seen in nature",
+      "summary": "A new model suggests Mars may host ice-forming physics never directly observed before.",
+      "url": "https://arstechnica.com/science/2026/10/a-1000-mile-cloud-on-mars-may-reveal-physics-never-seen-in-nature/",
       "source": "Ars Technica",
       "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-23T20:19:55.000Z",
+      "publishedAt": "2026-10-24T11:50:28.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "d172398d705f6404",
+      "category": "world",
+      "title": "European student protests take aim at Serbia's elections",
+      "summary": "Students have been protesting across Europe. In Serbia, they've selected candidates to run for parliament in Sunday's elections. And they're aiming to end 14 years of government by the populist leader Aleksandar Vucic.",
+      "url": "https://www.npr.org/2026/10/24/nx-s1-6012799/european-student-protests-take-aim-at-serbias-elections",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T11:42:11.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "cd9d174600ae4219",
+      "category": "finance",
+      "title": "Piero Cipollone: Interview with Milano Finanza",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-24T06:00:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22.3,
+      "topics": []
+    },
+    {
+      "id": "44d947835d83c443",
+      "category": "world",
+      "title": "How Brazil's changing working class is reshaping the presidential race",
+      "summary": "Calls for change present a challenge to President Lula in the second round of the election on Sunday.",
+      "url": "https://www.bbc.co.uk/news/articles/cw80zx79nkvno",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T05:05:44.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22.1,
+      "topics": []
+    },
+    {
+      "id": "7d4eb22a06feda63",
+      "category": "world",
+      "title": "The rise of AI election ads in US midterms campaign",
+      "summary": "BBC Verify has tracked dozens of AI ads to assess how they are being used by campaigns in the midterms.",
+      "url": "https://www.bbc.co.uk/news/videos/cm62y59zw8zko",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T05:03:44.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22,
+      "topics": []
+    },
+    {
+      "id": "744edab1cb0b3810",
+      "category": "world",
+      "title": "India news: Neha Bora refuses to sign peace bond, cites right to democratic dissent",
+      "summary": "Neha Bora says the peace bond violates the right to democratic dissent. The statement comes amid a wider protest calling for the removal of India's election chief. DW has more.",
+      "url": "https://www.dw.com/en/india-news-neha-bora-refuses-to-sign-peace-bond-cites-right-to-democratic-dissent/live-79748098?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T04:56:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22,
+      "topics": []
+    },
+    {
+      "id": "fcccc3e10e2b5fa8",
+      "category": "technology",
+      "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
+      "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program.",
+      "url": "https://blog.cloudflare.com/k-isms/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-22T13:00:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "95ebe779b68dea04",
+      "category": "world",
+      "title": "New Tumaini Ebola vaccine trial launches in Bunia as DRC struggles",
+      "summary": "A clinical trial for a new Ebola vaccine is getting underway in DR Congo’s Ituri province. The TUMAini trial will evaluate candidate vaccines against the Bundibugyo strain of the virus.",
+      "url": "https://www.africanews.com/2026/10/24/new-tumaini-ebola-vaccine-trial-launches-in-bunia-as-drc-struggles/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T08:38:44.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.9,
+      "topics": []
+    },
+    {
+      "id": "a4ee612ff89614a5",
+      "category": "ai",
+      "title": "GLM-5.3 Optimizations, Part 2: PCP, DCP, and Hybrid HiSparse on 16 H200s",
+      "summary": "vLLM serves GLM-5.3 on 16 H200s with PCP and DCP prefill and Hybrid HiSparse decode, reaching 1M-token contexts and 1.7–3.2× the per-user speed of data-parallel P/D on the AgentX agentic benchmark.",
+      "url": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.8,
+      "topics": [
+        "inference",
+        "models"
+      ]
+    },
+    {
+      "id": "4967de51d907fb0e",
+      "category": "ai",
+      "title": "vLLM Delivers Day-0 Support for MiniMax-M3.1-Flash",
+      "summary": "Day-0 vLLM support for MiniMax-M3.1-Flash on NVIDIA Blackwell, NVIDIA Rubin, and AMD MI350-series GPUs, with NVFP4 MSA kernels, NVFP4 MegaMoE, DSpark speculative decoding, AgentX results, and day-0 RL.",
+      "url": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.8,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware"
+      ]
+    },
+    {
+      "id": "2b17ef5d6618b82e",
+      "category": "technology",
+      "title": "FP8 GEMM Optimization on AMD RDNA™ 4 Architecture",
+      "summary": "In this blog you will learn how to port an FP16 GEMM kernel to FP8 on AMD RDNA™ 4 GPUs. You will see what the FP8 WMMA instruction changes, how the smaller element size lets larger tiles and deeper K slices fit in LDS, and how four tile configurations compare against hipBLASLt on GEMM shapes from transformer workloads.",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/rdna-fp8-gemm/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.8,
+      "topics": [
+        "kernels",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "8b3b40eacaa63f3d",
+      "category": "world",
+      "title": "CAR: Former hostages greeted by President Touadéra on return to Bangui",
+      "summary": "In Central African Republic, three hostages released this week after 10 months in captivity arrived in Bangui aboard a special UN flight. A local government official and two members of the National Election Authority, they were kidnapped in Bambouti in December, on the day of the general election.",
+      "url": "https://www.africanews.com/2026/10/24/car-former-hostages-greeted-by-president-touadera-on-return-to-bangui/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T07:25:38.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.6,
+      "topics": []
+    },
+    {
+      "id": "286d4cfdac740859",
+      "category": "ai",
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "summary": "",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-22T22:24:34.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.4,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "8137775894758dfd",
+      "category": "world",
+      "title": "Two European women kidnapped in Niger freed in Libya",
+      "summary": "The two were kidnapped in separate incidents in Niger, where they were involved in education and development initiatives, more than a year and a half ago.",
+      "url": "https://www.africanews.com/2026/10/22/two-european-women-kidnapped-in-niger-freed-in-libya/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T09:30:21.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.2,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "b787423b750ffce4",
+      "category": "world",
+      "title": "White House lifts tariffs on some Canadian goods as midterm elections loom",
+      "summary": "From 30 October, tariffs will be eased on some products, including certain machinery, and placed on others, such as carpets.",
+      "url": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T00:36:47.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 20.9,
+      "topics": []
+    },
+    {
+      "id": "5574f318f053599e",
+      "category": "ai",
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "summary": "",
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 20.8,
+      "topics": []
+    },
+    {
+      "id": "372e87b47c038807",
+      "category": "technology",
+      "title": "Bringing post-quantum cryptography to geographically fenced key management",
+      "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quantum world.",
+      "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T18:06:56.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 20.3,
+      "topics": []
+    },
+    {
+      "id": "c4df678c99d634a7",
+      "category": "finance",
+      "title": "Rising demand from families needing Christmas help",
+      "summary": "Charlotte Riley says more families are reaching out for help for a variety of reasons.",
+      "url": "https://www.bbc.co.uk/news/articles/cqp8gjz4k7g6o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T11:55:35.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 19.8,
+      "topics": []
+    },
+    {
+      "id": "b910914d801d3566",
+      "category": "ai",
+      "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
+      "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
+      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T23:05:49.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 19.6,
+      "topics": []
+    },
+    {
+      "id": "06e96c8217670c0a",
+      "category": "technology",
+      "title": "Meet the 2026 PyTorch Foundation Ambassadors",
+      "summary": "Open source AI thrives when people come together to learn, build, share knowledge, and contribute. Behind every project is a community of developers, researchers, educators, and contributors helping make these... The post Meet the 2026 PyTorch Foundation Ambassadors appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/meet-the-2026-pytorch-foundation-ambassadors/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-22T17:44:52.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 19.2,
+      "topics": []
+    },
+    {
+      "id": "6f12d97c31b33d51",
+      "category": "technology",
+      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops",
+      "summary": "Pentagon memo: Insider trading gives US enemies key intel on military operations.",
+      "url": "https://arstechnica.com/tech-policy/2026/10/pentagon-memo-on-prediction-markets-says-insider-bets-put-troops-lives-at-risk/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T20:28:43.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "1ed2280f76ac8356",
+      "category": "ai",
+      "title": "Evaluating the Applicability of LLM Inference Optimizations on Apple Silicon",
+      "summary": "Apple Silicon is among the most widely used platforms for local LLM inference, yet nearly all inference optimizations are designed and validated on server-class NVIDIA GPUs under batched serving workloads. Which optimizations retain their benefits when moved to Apple Silicon, and what determines their applicability? We evaluate four optimization families: KV-cache pruning, speculative decoding, ported GPU kernels, and post-training quantization. Experiments span four Apple machines under a common single-request dec",
+      "url": "https://arxiv.org/abs/2610.31479v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-22T16:04:40.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 17.8,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "training"
+      ]
+    },
+    {
+      "id": "d96be28acdc65d1d",
+      "category": "finance",
+      "title": "ECB Consumer Expectations Survey results – September 2026",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-23T08:00:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 16.8,
+      "topics": []
+    },
+    {
+      "id": "17e7b5d4bec488b0",
+      "category": "technology",
+      "title": "PyTorch Conference North America 2026: Accelerating Open Intelligence Together",
+      "summary": "PyTorch Conference North America 2026 brought 3,500+ attendees to San Jose on October 20–21 for two days focused on accelerating open intelligence and exploring the impact of PyTorch Foundation projects... The post PyTorch Conference North America 2026: Accelerating Open Intelligence Together appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/pytorch-conference-north-america-2026-accelerating-open-intelligence-together/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-22T23:52:11.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 16.7,
+      "topics": []
+    },
+    {
+      "id": "c6f06e8a4e392385",
+      "category": "ai",
+      "title": "v0.7.2rc7",
+      "summary": "v0.7.2rc7",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2rc7",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T05:13:48.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 16.1,
+      "topics": []
+    },
+    {
+      "id": "fa7e64bd201b057b",
+      "category": "ai",
+      "title": "DeepSeek reportedly raises $15B days after US restrictions",
+      "summary": "DeepSeek has reportedly raised $15 billion in one of China's largest funding rounds, just days after the U.S. ordered federal agencies to remove its technology over national security concerns.",
+      "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T13:11:13.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 16.1,
+      "topics": [
+        "models",
+        "security"
+      ]
+    },
+    {
+      "id": "47ba48af69291b1f",
+      "category": "finance",
+      "title": "Minutes of the Securities Lending Committee meeting – September 2026",
+      "summary": "The Securities Lending Committee is a forum for market participants and authorities to discuss the UK securities lending market.",
+      "url": "https://www.bankofengland.co.uk/minutes/2026/september/securities-lending-committee-meeting-september-2026",
+      "source": "Bank of England",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-22T15:35:53.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 15.7,
+      "topics": []
+    },
+    {
+      "id": "70224d2d5b4b6779",
+      "category": "ai",
+      "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
+      "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
+      "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T21:59:19.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 15.3,
+      "topics": []
+    },
+    {
+      "id": "1a4794278e6ab610",
+      "category": "finance",
+      "title": "Financial System Report (October 2026)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/research/brp/fsr/fsr261023.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-23T06:00:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 15.3,
+      "topics": []
+    },
+    {
+      "id": "0c2aea05700bf9e1",
+      "category": "ai",
+      "title": "Kazakhstan Expands Compute for Its AI Future",
+      "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. The announcements below — coinciding with a visit to Astana by NVIDIA founder and CEO Jensen Huang — point to the nation’s increasing supply of accelerated computing, along with […]",
+      "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T02:00:13.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 15.3,
+      "topics": []
+    },
+    {
+      "id": "5c240e860cf55dc4",
+      "category": "ai",
+      "title": "Beyond tree cover: mapping the world’s forest types",
+      "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "source": "DeepMind",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "research",
+      "publishedAt": "2026-10-22T14:30:24.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 13.4,
+      "topics": []
+    },
+    {
+      "id": "216faea48951edf6",
+      "category": "finance",
+      "title": "Regulators unveil plans to simplify Senior Manager and Certification Regime",
+      "summary": "The number of financial services roles required to face enhanced checks from regulators will fall significantly under proposals that will support growth.",
+      "url": "https://www.bankofengland.co.uk/news/2026/october/regulators-unveil-plans-to-simplify-senior-manager-and-certification-regime",
+      "source": "Bank of England",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-22T20:00:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 12.8,
+      "topics": []
+    },
+    {
+      "id": "3b5f6e9b7dca4b0e",
+      "category": "ai",
+      "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+      "summary": "Launched today, NVIDIA Minerva is an AIOps platform built to help teams find problems earlier and keep AI factories productive. It brings together telemetry from infrastructure and AI workloads, then applies purpose-built AI models to turn that data into timely, actionable insight. AI factories are among the most complex operations in the world, with vast […]",
+      "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T15:00:02.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 12.5,
+      "topics": []
+    },
+    {
+      "id": "991598e17f3840a6",
+      "category": "ai",
+      "title": "Cloud Deployment Incoming: ‘Call of Duty: Modern Warfare 4’ Arrives on GeForce NOW",
+      "summary": "Lock in and load out this GFN Thursday. Call of Duty: Modern Warfare 4 arrives on GeForce NOW at launch, bringing a new campaign, multiplayer action and DMZ, high-stakes extraction mode to supported devices. The campaign also gets an enhanced look: GeForce RTX 5080-class performance arrives for Ultimate members, bringing support for ray-tracing features in […]",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-call-of-duty-modern-warfare-4/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T13:00:20.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 12,
+      "topics": []
+    },
+    {
+      "id": "94b1fdc9ffe34a93",
+      "category": "world",
+      "title": "Pentagon designates Confucius Institutes a national security threat",
+      "summary": "Pete Hegseth says the Pentagon dismantled 80 ‘propaganda cells’ operating under new names at 30 universities.",
+      "url": "https://www.aljazeera.com/news/2026/10/24/pentagon-designates-confucius-institutes-a-national-security-threat?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T03:38:20.000Z",
       "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 25.8,
+      "score": 28.7,
       "topics": [
         "security"
       ]
@@ -825,38 +1449,6 @@
       ]
     },
     {
-      "id": "5d8bfb804e89caed",
-      "category": "world",
-      "title": "Japan-Russia ties erode as journalist sits in Moscow jail",
-      "summary": "Japan is demanding access to a journalist who was arrested by Russian security services. The Kremlin claims that Japan is using journalists as spies.",
-      "url": "https://www.dw.com/en/japan-russia-ties-erode-as-journalist-sits-in-moscow-jail/a-79742995?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T12:42:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 24.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "b2147b6fcb56b244",
-      "category": "finance",
-      "title": "What is PHP and why did it spark a global cyber-security scramble?",
-      "summary": "AI uncovered long-hidden programming flaws, triggering a rare global cyber-security response.",
-      "url": "https://www.bbc.co.uk/news/articles/c3qjnwye0ep5o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T12:24:17.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 24.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
       "id": "f9c7e83603a33669",
       "category": "world",
       "title": "Sri Lanka: Death of iconic elephant raises habitat concerns",
@@ -870,75 +1462,6 @@
       "score": 24.1,
       "topics": [
         "models"
-      ]
-    },
-    {
-      "id": "fcccc3e10e2b5fa8",
-      "category": "technology",
-      "title": "Localizing compliance at scale: achieving South Korea’s ISMS certification",
-      "summary": "Cloudflare has achieved South Korea's ISMS certification following an audit across 80 controls. Learn how we localized user consent flows, adapted social sign-up paths at the edge, and validated our global security program.",
-      "url": "https://blog.cloudflare.com/k-isms/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-22T13:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 24,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "a4ee612ff89614a5",
-      "category": "ai",
-      "title": "GLM-5.3 Optimizations, Part 2: PCP, DCP, and Hybrid HiSparse on 16 H200s",
-      "summary": "vLLM serves GLM-5.3 on 16 H200s with PCP and DCP prefill and Hybrid HiSparse decode, reaching 1M-token contexts and 1.7–3.2× the per-user speed of data-parallel P/D on the AgentX agentic benchmark.",
-      "url": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 23.8,
-      "topics": [
-        "inference",
-        "models"
-      ]
-    },
-    {
-      "id": "4967de51d907fb0e",
-      "category": "ai",
-      "title": "vLLM Delivers Day-0 Support for MiniMax-M3.1-Flash",
-      "summary": "Day-0 vLLM support for MiniMax-M3.1-Flash on NVIDIA Blackwell, NVIDIA Rubin, and AMD MI350-series GPUs, with NVFP4 MSA kernels, NVFP4 MegaMoE, DSpark speculative decoding, AgentX results, and day-0 RL.",
-      "url": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 23.8,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware"
-      ]
-    },
-    {
-      "id": "2b17ef5d6618b82e",
-      "category": "technology",
-      "title": "FP8 GEMM Optimization on AMD RDNA™ 4 Architecture",
-      "summary": "In this blog you will learn how to port an FP16 GEMM kernel to FP8 on AMD RDNA™ 4 GPUs. You will see what the FP8 WMMA instruction changes, how the smaller element size lets larger tiles and deeper K slices fit in LDS, and how four tile configurations compare against hipBLASLt on GEMM shapes from transformer workloads.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/rdna-fp8-gemm/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 23.8,
-      "topics": [
-        "kernels",
-        "models",
-        "training"
       ]
     },
     {
@@ -956,22 +1479,6 @@
       "topics": []
     },
     {
-      "id": "286d4cfdac740859",
-      "category": "ai",
-      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-      "summary": "",
-      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-22T22:24:34.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 23.4,
-      "topics": [
-        "training"
-      ]
-    },
-    {
       "id": "380ce30aff01a1fe",
       "category": "world",
       "title": "Argentinian judge drops fraud investigation into Milei over crypto scandal",
@@ -986,36 +1493,6 @@
       "topics": []
     },
     {
-      "id": "8137775894758dfd",
-      "category": "world",
-      "title": "Two European women kidnapped in Niger freed in Libya",
-      "summary": "The two were kidnapped in separate incidents in Niger, where they were involved in education and development initiatives, more than a year and a half ago.",
-      "url": "https://www.africanews.com/2026/10/22/two-european-women-kidnapped-in-niger-freed-in-libya/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T09:30:21.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 23.1,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "860bd81d4ac3fd27",
-      "category": "finance",
-      "title": "White House lifts tariffs on some Canadian goods as midterm elections loom",
-      "summary": "From 30 October, tariffs will be eased on some products, including certain machinery, and placed on others, such as carpets.",
-      "url": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T00:36:47.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 22.9,
-      "topics": []
-    },
-    {
       "id": "e437c2042205ad66",
       "category": "world",
       "title": "Blood brothers: WHO chief joins ENHYPEN to celebrate drive success",
@@ -1025,20 +1502,6 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-23T12:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 22.8,
-      "topics": []
-    },
-    {
-      "id": "5574f318f053599e",
-      "category": "ai",
-      "title": "Does Your Model Run on AWS Trainium? Look It Up",
-      "summary": "",
-      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
       "fetchedAt": "2026-10-24T04:56:26.165Z",
       "score": 22.8,
       "topics": []
@@ -1072,20 +1535,6 @@
       "topics": []
     },
     {
-      "id": "372e87b47c038807",
-      "category": "technology",
-      "title": "Bringing post-quantum cryptography to geographically fenced key management",
-      "summary": "Cloudflare's new post-quantum GeoKey Manager protects geographically fenced decryption keys from harvest now, decrypt later attacks. Learn how we redesigned our cryptography stack to support strict data sovereignty in a post-quantum world.",
-      "url": "https://blog.cloudflare.com/post-quantum-geo-key-manager/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T18:06:56.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 22.3,
-      "topics": []
-    },
-    {
       "id": "f5a49812b4252440",
       "category": "ai",
       "title": "Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective",
@@ -1115,48 +1564,6 @@
       "publishedAt": "2026-10-23T19:46:30.000Z",
       "fetchedAt": "2026-10-24T04:56:26.165Z",
       "score": 21.7,
-      "topics": []
-    },
-    {
-      "id": "b910914d801d3566",
-      "category": "ai",
-      "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-      "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
-      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T23:05:49.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 21.5,
-      "topics": []
-    },
-    {
-      "id": "06e96c8217670c0a",
-      "category": "technology",
-      "title": "Meet the 2026 PyTorch Foundation Ambassadors",
-      "summary": "Open source AI thrives when people come together to learn, build, share knowledge, and contribute. Behind every project is a community of developers, researchers, educators, and contributors helping make these... The post Meet the 2026 PyTorch Foundation Ambassadors appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/meet-the-2026-pytorch-foundation-ambassadors/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-22T17:44:52.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 21.2,
-      "topics": []
-    },
-    {
-      "id": "6f12d97c31b33d51",
-      "category": "technology",
-      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops",
-      "summary": "Pentagon memo: Insider trading gives US enemies key intel on military operations.",
-      "url": "https://arstechnica.com/tech-policy/2026/10/pentagon-memo-on-prediction-markets-says-insider-bets-put-troops-lives-at-risk/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:28:43.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 20.9,
       "topics": []
     },
     {
@@ -1216,98 +1623,6 @@
       "topics": []
     },
     {
-      "id": "1ed2280f76ac8356",
-      "category": "ai",
-      "title": "Evaluating the Applicability of LLM Inference Optimizations on Apple Silicon",
-      "summary": "Apple Silicon is among the most widely used platforms for local LLM inference, yet nearly all inference optimizations are designed and validated on server-class NVIDIA GPUs under batched serving workloads. Which optimizations retain their benefits when moved to Apple Silicon, and what determines their applicability? We evaluate four optimization families: KV-cache pruning, speculative decoding, ported GPU kernels, and post-training quantization. Experiments span four Apple machines under a common single-request dec",
-      "url": "https://arxiv.org/abs/2610.31479v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-22T16:04:40.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 19.8,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "training"
-      ]
-    },
-    {
-      "id": "d96be28acdc65d1d",
-      "category": "finance",
-      "title": "ECB Consumer Expectations Survey results – September 2026",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-23T08:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 18.8,
-      "topics": []
-    },
-    {
-      "id": "17e7b5d4bec488b0",
-      "category": "technology",
-      "title": "PyTorch Conference North America 2026: Accelerating Open Intelligence Together",
-      "summary": "PyTorch Conference North America 2026 brought 3,500+ attendees to San Jose on October 20–21 for two days focused on accelerating open intelligence and exploring the impact of PyTorch Foundation projects... The post PyTorch Conference North America 2026: Accelerating Open Intelligence Together appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/pytorch-conference-north-america-2026-accelerating-open-intelligence-together/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-22T23:52:11.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 18.7,
-      "topics": []
-    },
-    {
-      "id": "c6f06e8a4e392385",
-      "category": "ai",
-      "title": "v0.7.2rc7",
-      "summary": "v0.7.2rc7",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2rc7",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-23T05:13:48.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 18.1,
-      "topics": []
-    },
-    {
-      "id": "fa7e64bd201b057b",
-      "category": "ai",
-      "title": "DeepSeek reportedly raises $15B days after US restrictions",
-      "summary": "DeepSeek has reportedly raised $15 billion in one of China's largest funding rounds, just days after the U.S. ordered federal agencies to remove its technology over national security concerns.",
-      "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T13:11:13.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 18.1,
-      "topics": [
-        "models",
-        "security"
-      ]
-    },
-    {
-      "id": "47ba48af69291b1f",
-      "category": "finance",
-      "title": "Minutes of the Securities Lending Committee meeting – September 2026",
-      "summary": "The Securities Lending Committee is a forum for market participants and authorities to discuss the UK securities lending market.",
-      "url": "https://www.bankofengland.co.uk/minutes/2026/september/securities-lending-committee-meeting-september-2026",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-22T15:35:53.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 17.7,
-      "topics": []
-    },
-    {
       "id": "b78870a125172ca1",
       "category": "ai",
       "title": "uGDS: A User-Space Development Kit for High-Performance GPU Direct Storage",
@@ -1326,48 +1641,6 @@
       ]
     },
     {
-      "id": "70224d2d5b4b6779",
-      "category": "ai",
-      "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-      "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
-      "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T21:59:19.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 17.3,
-      "topics": []
-    },
-    {
-      "id": "1a4794278e6ab610",
-      "category": "finance",
-      "title": "Financial System Report (October 2026)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/research/brp/fsr/fsr261023.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-23T06:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 17.3,
-      "topics": []
-    },
-    {
-      "id": "0c2aea05700bf9e1",
-      "category": "ai",
-      "title": "Kazakhstan Expands Compute for Its AI Future",
-      "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. The announcements below — coinciding with a visit to Astana by NVIDIA founder and CEO Jensen Huang — point to the nation’s increasing supply of accelerated computing, along with […]",
-      "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T02:00:13.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 17.3,
-      "topics": []
-    },
-    {
       "id": "faff916cc4c5b52a",
       "category": "ai",
       "title": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
@@ -1382,20 +1655,6 @@
       "topics": [
         "training"
       ]
-    },
-    {
-      "id": "216faea48951edf6",
-      "category": "finance",
-      "title": "Regulators unveil plans to simplify Senior Manager and Certification Regime",
-      "summary": "The number of financial services roles required to face enhanced checks from regulators will fall significantly under proposals that will support growth.",
-      "url": "https://www.bankofengland.co.uk/news/2026/october/regulators-unveil-plans-to-simplify-senior-manager-and-certification-regime",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-22T20:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 14.8,
-      "topics": []
     },
     {
       "id": "28a3c2ddc613a833",

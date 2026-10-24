@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T04:56:26.165Z",
+  "generatedAt": "2026-10-24T12:52:59.314Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 38,
-  "failedSourceCount": 1,
+  "sourceCount": 39,
+  "failedSourceCount": 0,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 23,
-      "latestPublishedAt": "2026-10-24T04:03:46.000Z",
-      "selectedCount": 2,
+      "entryCount": 28,
+      "latestPublishedAt": "2026-10-24T12:12:40.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 55,
-      "latestPublishedAt": "2026-10-24T00:36:47.000Z",
+      "latestPublishedAt": "2026-10-24T11:55:35.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 132,
-      "latestPublishedAt": "2026-10-24T02:40:00.000Z",
+      "entryCount": 131,
+      "latestPublishedAt": "2026-10-24T11:36:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-24T03:51:58.000Z",
+      "latestPublishedAt": "2026-10-24T12:18:06.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -80,7 +80,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-22T14:30:24.000Z",
-      "selectedCount": 0,
+      "selectedCount": 1,
       "libraryCount": 2
     },
     {
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-10-23T02:00:13.000Z",
-      "selectedCount": 2,
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-23T22:48:25.000Z",
+      "latestPublishedAt": "2026-10-24T11:50:28.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-23T22:39:39.000Z",
+      "latestPublishedAt": "2026-10-24T04:05:00.000Z",
       "selectedCount": 3,
       "libraryCount": 5
     },
@@ -157,8 +157,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 15,
-      "latestPublishedAt": "2026-10-23T08:00:00.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-24T06:00:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -167,11 +167,10 @@
       "country": "United States",
       "category": "finance",
       "type": "institution",
-      "state": "unavailable",
+      "state": "ok",
       "channel": "feed",
-      "httpStatus": 404,
-      "entryCount": 0,
-      "latestPublishedAt": null,
+      "entryCount": 20,
+      "latestPublishedAt": "2026-10-16T15:00:00.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -198,7 +197,7 @@
       "channel": "feed",
       "entryCount": 51,
       "latestPublishedAt": "2026-10-23T06:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -250,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-10-23T12:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -262,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-23T20:50:51.000Z",
+      "latestPublishedAt": "2026-10-24T11:45:20.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -275,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-23T12:41:39.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-24T11:59:08.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -288,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-23T22:07:09.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-10-24T09:27:29.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -301,8 +300,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-24T03:58:00.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-24T12:14:55.000Z",
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -406,7 +405,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-22T16:04:40.000Z",
-      "selectedCount": 3,
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -525,24 +524,56 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T17:50:21.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 31.2,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 29.2,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "94b1fdc9ffe34a93",
+      "id": "eca120c18ca07201",
       "category": "world",
-      "title": "Pentagon designates Confucius Institutes a national security threat",
-      "summary": "Pete Hegseth says the Pentagon dismantled 80 ‘propaganda cells’ operating under new names at 30 universities.",
-      "url": "https://www.aljazeera.com/news/2026/10/24/pentagon-designates-confucius-institutes-a-national-security-threat?traffic_source=rss",
+      "title": "Netanyahu orders West Bank operation",
+      "summary": "Israel has imposed widespread closures across the occupied West Bank and displaced residents following attacks by Palestinian gunmen that killed two Israeli soldiers. Prime Minister Benjamin Netanyahu visited the site of the attack near Hebron and instructed security forces to immediately cordon off the city. Morgan Ayre reports.",
+      "url": "https://www.france24.com/en/netanyahu-orders-west-bank-operation",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T10:33:52.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 28.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "d232b3c49f59a2a8",
+      "category": "world",
+      "title": "France braces for another day of mass protests as security on high alert",
+      "summary": "Several planned marches in major cities in France have been banned by authorities, provoking an uproar by rights groups.",
+      "url": "https://www.aljazeera.com/news/2026/10/24/france-braces-for-another-day-of-mass-protests-as-security-on-high-alert?traffic_source=rss",
       "source": "Al Jazeera",
       "sourceCountry": "Qatar",
       "sourceType": "news",
-      "publishedAt": "2026-10-24T03:38:20.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 28.7,
+      "publishedAt": "2026-10-24T10:04:25.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 28.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "a508195d745f360c",
+      "category": "world",
+      "title": "Protests against cost of living expected in Italy under heavy security",
+      "summary": "Italy is preparing for another day of protests on Saturday against budget cuts and the high cost of living in eight cities, including Rome and Milan. Following last weekend’s unrest, authorities announced heavy security measures, including the use of drones and helicopters to monitor the marches.",
+      "url": "https://www.france24.com/en/europe/20261024-protests-against-cost-of-living-expected-in-italy-under-heavy-security",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T07:08:54.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 27.6,
       "topics": [
         "security"
       ]
@@ -557,8 +588,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T17:27:35.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 28.1,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 26.1,
       "topics": [
         "kernels",
         "hardware"
@@ -574,8 +605,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-24T00:05:45.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.8,
       "topics": [
         "security"
       ]
@@ -590,8 +621,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.8,
       "topics": [
         "hardware",
         "training"
@@ -607,8 +638,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T23:03:17.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.5,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.5,
       "topics": [
         "security"
       ]
@@ -623,8 +654,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T18:51:33.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.5,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.5,
       "topics": []
     },
     {
@@ -637,8 +668,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T22:39:39.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.4,
       "topics": []
     },
     {
@@ -651,8 +682,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T22:37:53.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.4,
       "topics": []
     },
     {
@@ -665,8 +696,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T18:22:59.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.4,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.4,
       "topics": [
         "inference"
       ]
@@ -681,8 +712,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T17:27:52.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 25.1,
       "topics": []
     },
     {
@@ -695,8 +726,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T20:06:51.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 26.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 24.8,
       "topics": [
         "training",
         "security"
@@ -712,9 +743,25 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T16:15:50.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 26.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 24.8,
       "topics": []
+    },
+    {
+      "id": "16413939bed537aa",
+      "category": "world",
+      "title": "Bayern say coach Kompany ‘stable’ in hospital but will be out for weeks",
+      "summary": "Bayern Munich coach Vincent Kompany collapsed during training on Friday but is said to be 'stable' in hospital.",
+      "url": "https://www.aljazeera.com/sports/2026/10/24/bayern-say-coach-kompany-stable-in-hospital-but-will-be-out-for-weeks?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T10:59:34.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 24.5,
+      "topics": [
+        "training"
+      ]
     },
     {
       "id": "7059f403fce54ba2",
@@ -726,8 +773,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T14:58:32.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 26.5,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 24.5,
       "topics": []
     },
     {
@@ -740,8 +787,52 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-23T18:26:35.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 26.4,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 24.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "53292f347c007c6e",
+      "category": "world",
+      "title": "Serbia elections test student movement demanding justice for 16 victims",
+      "summary": "Serbia elections test student movement demanding justice for 16 victims",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/serbia-elections-test-student-movement-demanding-justice-for-16-victims?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T12:18:06.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "82f8d709796f7a64",
+      "category": "ai",
+      "title": "Release v0.7.2.post1",
+      "summary": "What's Changed Full Changelog : v0.7.2...v0.7.2.post1",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T20:20:18.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "b8b35f790163ca6d",
+      "category": "technology",
+      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+      "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
+      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T20:19:55.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 23.9,
       "topics": [
         "security"
       ]
@@ -756,73 +847,25 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T16:22:07.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 25.9,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 23.9,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "82f8d709796f7a64",
-      "category": "ai",
-      "title": "Release v0.7.2.post1",
-      "summary": "What's Changed Full Changelog : v0.7.2...v0.7.2.post1",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-23T20:20:18.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 25.8,
+      "id": "aa8d6bd631b2b0ce",
+      "category": "world",
+      "title": "Will Guinea-Bissau remain trapped in political chaos?",
+      "summary": "Elections scheduled for December 6 in Guinea-Bissau have been postponed indefinitely. No new date has been set, leaving the country's return to civilian rule uncertain.",
+      "url": "https://www.dw.com/en/will-guinea-bissau-remain-trapped-in-political-chaos/a-79734069?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T11:36:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 23.7,
       "topics": []
-    },
-    {
-      "id": "b8b35f790163ca6d",
-      "category": "technology",
-      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
-      "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
-      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:19:55.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 25.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "902f8e081ab34f7d",
-      "category": "world",
-      "title": "Europe faces threat of organised sabotage, terrorist attacks: Estonian FM Tsahkna",
-      "summary": "Estonia's counterintelligence service has recently warned that sabotage operations orchestrated by Russian special services have reached a new and dangerous phase in Europe, with targets no longer being purely symbolic. Talking Europe sits down with the country's foreign minister, Margus Tsahkna, to discuss the security situation in Estonia and the European Union in general.",
-      "url": "https://www.france24.com/en/tv-shows/talking-europe/20261023-europe-faces-threat-of-organised-sabotage-terrorist-attacks-estonian-fm-tsahkna",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T14:55:15.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 25.5,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "5a8be6b5febfb776",
-      "category": "world",
-      "title": "French authorities tighten restrictions and ban specific protests",
-      "summary": "France is bracing for another weekend of protests, after violence erupted on the sidelines of last week's mobilisations. Paris is extending a partial curfew in parts of the city until Monday, while protests are banned altogether in the cities of Marseille and Lyon. 70,000 security personnel will be deployed on Saturday and only union demonstrations will be authorised.",
-      "url": "https://www.france24.com/en/video/20261023-french-authorities-tighten-restrictions-and-ban-specific-protests-1",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T13:55:40.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 25.2,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "5d8bfb804e89caed",
@@ -834,8 +877,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-23T12:42:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 24.9,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 23,
       "topics": [
         "security"
       ]
@@ -850,27 +893,95 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-23T12:24:17.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 24.9,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22.9,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "f9c7e83603a33669",
+      "id": "b990e774d018407f",
+      "category": "technology",
+      "title": "A 1,000-mile cloud on Mars may reveal physics never seen in nature",
+      "summary": "A new model suggests Mars may host ice-forming physics never directly observed before.",
+      "url": "https://arstechnica.com/science/2026/10/a-1000-mile-cloud-on-mars-may-reveal-physics-never-seen-in-nature/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T11:50:28.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "d172398d705f6404",
       "category": "world",
-      "title": "Sri Lanka: Death of iconic elephant raises habitat concerns",
-      "summary": "The death of what was thought to be Sri Lanka’s largest elephant has drawn attention to human-elephant conflict in rural communities. The island country sees a high number of deadly encounters.",
-      "url": "https://www.dw.com/en/sri-lanka-death-of-iconic-elephant-raises-habitat-concerns/a-79735669?maca=en-rss-en-all-1573-rdf",
+      "title": "European student protests take aim at Serbia's elections",
+      "summary": "Students have been protesting across Europe. In Serbia, they've selected candidates to run for parliament in Sunday's elections. And they're aiming to end 14 years of government by the populist leader Aleksandar Vucic.",
+      "url": "https://www.npr.org/2026/10/24/nx-s1-6012799/european-student-protests-take-aim-at-serbias-elections",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T11:42:11.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "cd9d174600ae4219",
+      "category": "finance",
+      "title": "Piero Cipollone: Interview with Milano Finanza",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-24T06:00:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22.3,
+      "topics": []
+    },
+    {
+      "id": "44d947835d83c443",
+      "category": "world",
+      "title": "How Brazil's changing working class is reshaping the presidential race",
+      "summary": "Calls for change present a challenge to President Lula in the second round of the election on Sunday.",
+      "url": "https://www.bbc.co.uk/news/articles/cw80zx79nkvno",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T05:05:44.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22.1,
+      "topics": []
+    },
+    {
+      "id": "7d4eb22a06feda63",
+      "category": "world",
+      "title": "The rise of AI election ads in US midterms campaign",
+      "summary": "BBC Verify has tracked dozens of AI ads to assess how they are being used by campaigns in the midterms.",
+      "url": "https://www.bbc.co.uk/news/videos/cm62y59zw8zko",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T05:03:44.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22,
+      "topics": []
+    },
+    {
+      "id": "744edab1cb0b3810",
+      "category": "world",
+      "title": "India news: Neha Bora refuses to sign peace bond, cites right to democratic dissent",
+      "summary": "Neha Bora says the peace bond violates the right to democratic dissent. The statement comes amid a wider protest calling for the removal of India's election chief. DW has more.",
+      "url": "https://www.dw.com/en/india-news-neha-bora-refuses-to-sign-peace-bond-cites-right-to-democratic-dissent/live-79748098?maca=en-rss-en-all-1573-rdf",
       "source": "DW",
       "sourceCountry": "Germany",
       "sourceType": "news",
-      "publishedAt": "2026-10-23T09:29:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 24.1,
-      "topics": [
-        "models"
-      ]
+      "publishedAt": "2026-10-24T04:56:00.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22,
+      "topics": []
     },
     {
       "id": "fcccc3e10e2b5fa8",
@@ -882,11 +993,25 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T13:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 24,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 22,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "95ebe779b68dea04",
+      "category": "world",
+      "title": "New Tumaini Ebola vaccine trial launches in Bunia as DRC struggles",
+      "summary": "A clinical trial for a new Ebola vaccine is getting underway in DR Congo’s Ituri province. The TUMAini trial will evaluate candidate vaccines against the Bundibugyo strain of the virus.",
+      "url": "https://www.africanews.com/2026/10/24/new-tumaini-ebola-vaccine-trial-launches-in-bunia-as-drc-struggles/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T08:38:44.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.9,
+      "topics": []
     },
     {
       "id": "a4ee612ff89614a5",
@@ -898,8 +1023,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.8,
       "topics": [
         "inference",
         "models"
@@ -915,8 +1040,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.8,
       "topics": [
         "inference",
         "kernels",
@@ -933,8 +1058,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 23.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.8,
       "topics": [
         "kernels",
         "models",
@@ -942,17 +1067,17 @@
       ]
     },
     {
-      "id": "019fa5a384db1cb4",
+      "id": "8b3b40eacaa63f3d",
       "category": "world",
-      "title": "Marco Rubio urges Cubans to collaborate with CIA to topple gov’t",
-      "summary": "Secretary of State Marco Rubio has urged Cubans to secretly work with the CIA to topple their government.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/10-24-rubi0-cuba-cia?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "title": "CAR: Former hostages greeted by President Touadéra on return to Bangui",
+      "summary": "In Central African Republic, three hostages released this week after 10 months in captivity arrived in Bangui aboard a special UN flight. A local government official and two members of the National Election Authority, they were kidnapped in Bambouti in December, on the day of the general election.",
+      "url": "https://www.africanews.com/2026/10/24/car-former-hostages-greeted-by-president-touadera-on-return-to-bangui/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
       "sourceType": "news",
-      "publishedAt": "2026-10-24T03:50:32.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 23.7,
+      "publishedAt": "2026-10-24T07:25:38.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.6,
       "topics": []
     },
     {
@@ -965,25 +1090,11 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T22:24:34.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.4,
       "topics": [
         "training"
       ]
-    },
-    {
-      "id": "380ce30aff01a1fe",
-      "category": "world",
-      "title": "Argentinian judge drops fraud investigation into Milei over crypto scandal",
-      "summary": "President Javier Milei’s role in cryptocurrency launch does not translate into a fraudulent scheme, judge says.",
-      "url": "https://www.aljazeera.com/news/2026/10/24/argentinian-judge-drops-fraud-investigation-into-milei-over-crypto-scandal?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T01:21:18.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 23.1,
-      "topics": []
     },
     {
       "id": "8137775894758dfd",
@@ -995,38 +1106,24 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-23T09:30:21.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 21.2,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "860bd81d4ac3fd27",
-      "category": "finance",
+      "id": "b787423b750ffce4",
+      "category": "world",
       "title": "White House lifts tariffs on some Canadian goods as midterm elections loom",
       "summary": "From 30 October, tariffs will be eased on some products, including certain machinery, and placed on others, such as carpets.",
       "url": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o",
-      "source": "BBC Business",
+      "source": "BBC World",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-24T00:36:47.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 22.9,
-      "topics": []
-    },
-    {
-      "id": "e437c2042205ad66",
-      "category": "world",
-      "title": "Blood brothers: WHO chief joins ENHYPEN to celebrate drive success",
-      "summary": "The head of the World Health Organization (WHO) is a self-confessed fan of K-pop sensation ENHYPEN and this week, he got the chance to tell them so in person.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168662",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-23T12:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 20.9,
       "topics": []
     },
     {
@@ -1039,36 +1136,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 22.8,
-      "topics": []
-    },
-    {
-      "id": "8e45d56899cef3f2",
-      "category": "world",
-      "title": "Milei in dead heat with Peronism, one year out from election, polls show",
-      "summary": "One year out from polling day, surveys point to a tight race, polarised electorate, significant group of undecided voters and appetite for a ‘third way’ candidate. Leer más",
-      "url": "https://www.batimes.com.ar/news/argentina/milei-in-dead-heat-with-peronism-one-year-out-from-election-polls-show.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T03:53:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 22.7,
-      "topics": []
-    },
-    {
-      "id": "3ec744e95a4977ba",
-      "category": "world",
-      "title": "When expansion is not growth",
-      "summary": "The Milei government seeks to transform a model of consumer-led growth supplied by a protected industry with low productivity into one of export-led growth more open to the world. Leer más",
-      "url": "https://www.batimes.com.ar/news/op-ed/when-expansion-is-not-growth.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T03:01:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 22.5,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 20.8,
       "topics": []
     },
     {
@@ -1081,40 +1150,22 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T18:06:56.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 22.3,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 20.3,
       "topics": []
     },
     {
-      "id": "f5a49812b4252440",
-      "category": "ai",
-      "title": "Low-Latency MoE Inference in Space Data Centers: A Wireless-Power-Transfer Perspective",
-      "summary": "Space data centers (SpaceDCs) are emerging as platforms for large language models (LLMs), supported by continuous solar-energy harvesting and high-speed interconnections. The mixture-of-experts (MoE) architecture supports distributed LLM inference by deploying experts across satellites. However, skewed expert activation creates uneven computation power demands despite uniform solar-power supply at the dawn-dusk sun-synchronous orbit (SSO). Consequently, active experts remain power-constrained while harvested power ",
-      "url": "https://arxiv.org/abs/2610.30923v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-22T08:42:28.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 21.9,
-      "topics": [
-        "inference",
-        "hardware",
-        "models"
-      ]
-    },
-    {
-      "id": "d66a572d5575757d",
-      "category": "world",
-      "title": "Seven shot dead by gunmen at church funeral in Jordan, officials say",
-      "summary": "Thirty-four people are also injured in the attack in southern Karak governorate, and a manhunt is now under way.",
-      "url": "https://www.bbc.co.uk/news/articles/ck87zlpzny15o",
-      "source": "BBC World",
+      "id": "c4df678c99d634a7",
+      "category": "finance",
+      "title": "Rising demand from families needing Christmas help",
+      "summary": "Charlotte Riley says more families are reaching out for help for a variety of reasons.",
+      "url": "https://www.bbc.co.uk/news/articles/cqp8gjz4k7g6o",
+      "source": "BBC Business",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-10-23T19:46:30.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 21.7,
+      "publishedAt": "2026-10-24T11:55:35.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -1127,8 +1178,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T23:05:49.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 21.5,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 19.6,
       "topics": []
     },
     {
@@ -1141,8 +1192,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T17:44:52.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 19.2,
       "topics": []
     },
     {
@@ -1155,64 +1206,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T20:28:43.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 20.9,
-      "topics": []
-    },
-    {
-      "id": "b75240ba683c442b",
-      "category": "technology",
-      "title": "Spotify ramps up policy enforcement on family plans",
-      "summary": "If you share Spotify sub with family, you may need to scan QR code to prove it.",
-      "url": "https://arstechnica.com/gadgets/2026/10/spotify-ramps-up-policy-enforcement-on-family-plans/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T19:20:27.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 20.6,
-      "topics": []
-    },
-    {
-      "id": "76c959519db81fa7",
-      "category": "world",
-      "title": "Latin America's right-wing swing looms large over nature summit",
-      "summary": "Brazil's election looms large over the UN's COP17 nature summit in Armenia; Right-wing victories in Latin America has raised concerns over the fate of environment in region. Leer más",
-      "url": "https://www.batimes.com.ar/news/world/latin-americas-right-wing-swing-looms-large-over-nature-summit.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T17:04:19.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 20,
-      "topics": []
-    },
-    {
-      "id": "f9b8abc67a83dae1",
-      "category": "world",
-      "title": "France prepares for day of protest a week after nationwide riots",
-      "summary": "More than 70,000 police officers are to be deployed over fears protesters will defy restrictions on demonstrations.",
-      "url": "https://www.bbc.co.uk/news/articles/cj62yv5k0w4yo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T04:03:46.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 19.8,
-      "topics": []
-    },
-    {
-      "id": "be738df6fb87b3dc",
-      "category": "world",
-      "title": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
-      "summary": "Health officials are investigating whether Ebola patients in Kenya and Nigeria crossed paths at Uganda's main airport as conflicting accounts cloud the source of one infection.",
-      "url": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T12:11:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 19.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 18.9,
       "topics": []
     },
     {
@@ -1225,8 +1220,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-22T16:04:40.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 19.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 17.8,
       "topics": [
         "inference",
         "kernels",
@@ -1244,8 +1239,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-23T08:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 18.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 16.8,
       "topics": []
     },
     {
@@ -1258,8 +1253,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T23:52:11.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 18.7,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1272,8 +1267,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-23T05:13:48.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 18.1,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 16.1,
       "topics": []
     },
     {
@@ -1286,8 +1281,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T13:11:13.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 18.1,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 16.1,
       "topics": [
         "models",
         "security"
@@ -1303,27 +1298,9 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T15:35:53.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 17.7,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 15.7,
       "topics": []
-    },
-    {
-      "id": "b78870a125172ca1",
-      "category": "ai",
-      "title": "uGDS: A User-Space Development Kit for High-Performance GPU Direct Storage",
-      "summary": "Data-intensive GPU applications increasingly rely on NVMe SSDs to extend GPU memory. NVIDIA GPU Direct Storage (GDS) enables direct SSD-GPU transfers via PCIe peer-to-peer DMA, eliminating host staging. However, GDS retains three key limitations: (1) its control path traverses the kernel for every I/O request, introducing software overhead; (2) its stream-ordered path imposes strict total ordering even when workloads only require batch-level ordering; and (3) its closed-source user-space engine hinders diagnosis an",
-      "url": "https://arxiv.org/abs/2610.30868v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-22T07:45:58.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 17.7,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware"
-      ]
     },
     {
       "id": "70224d2d5b4b6779",
@@ -1335,8 +1312,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T21:59:19.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 17.3,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 15.3,
       "topics": []
     },
     {
@@ -1349,8 +1326,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-23T06:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 17.3,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 15.3,
       "topics": []
     },
     {
@@ -1363,25 +1340,23 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T02:00:13.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 17.3,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 15.3,
       "topics": []
     },
     {
-      "id": "faff916cc4c5b52a",
+      "id": "5c240e860cf55dc4",
       "category": "ai",
-      "title": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
-      "summary": "To help developers rapidly build world models, which help physical AI systems understand and simulate the real world, NVIDIA has expanded the Cosmos platform with new training tools, simulation checkpoints and Cosmos Data Factory blueprints. Ranking top five on six different open models leaderboards, the NVIDIA Cosmos platform gives world model builders the frontier open […]",
-      "url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-22T05:00:27.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 17,
-      "topics": [
-        "training"
-      ]
+      "title": "Beyond tree cover: mapping the world’s forest types",
+      "summary": "A global map categorizing every 10-meter patch of land on Earth into distinct forest types.",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "source": "DeepMind",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "research",
+      "publishedAt": "2026-10-22T14:30:24.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 13.4,
+      "topics": []
     },
     {
       "id": "216faea48951edf6",
@@ -1393,36 +1368,36 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T20:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 14.8,
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 12.8,
       "topics": []
     },
     {
-      "id": "28a3c2ddc613a833",
-      "category": "finance",
-      "title": "Japanese Government Bonds Held by the Bank of Japan",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261020.xlsx",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-22T08:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 11.8,
+      "id": "3b5f6e9b7dca4b0e",
+      "category": "ai",
+      "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+      "summary": "Launched today, NVIDIA Minerva is an AIOps platform built to help teams find problems earlier and keep AI factories productive. It brings together telemetry from infrastructure and AI workloads, then applies purpose-built AI models to turn that data into timely, actionable insight. AI factories are among the most complex operations in the world, with vast […]",
+      "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T15:00:02.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 12.5,
       "topics": []
     },
     {
-      "id": "ffdec7d4196102d0",
-      "category": "finance",
-      "title": "Developments in Real Exports and Real Imports",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/research/research_data/reri/index.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-22T07:00:00.000Z",
-      "fetchedAt": "2026-10-24T04:56:26.165Z",
-      "score": 11.5,
+      "id": "991598e17f3840a6",
+      "category": "ai",
+      "title": "Cloud Deployment Incoming: ‘Call of Duty: Modern Warfare 4’ Arrives on GeForce NOW",
+      "summary": "Lock in and load out this GFN Thursday. Call of Duty: Modern Warfare 4 arrives on GeForce NOW at launch, bringing a new campaign, multiplayer action and DMZ, high-stakes extraction mode to supported devices. The campaign also gets an enhanced look: GeForce RTX 5080-class performance arrives for Ultimate members, bringing support for ray-tracing features in […]",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-call-of-duty-modern-warfare-4/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-22T13:00:20.000Z",
+      "fetchedAt": "2026-10-24T12:52:59.314Z",
+      "score": 12,
       "topics": []
     }
   ]
