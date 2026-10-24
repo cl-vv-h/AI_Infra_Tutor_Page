@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-23T23:23:14.667Z",
+  "generatedAt": "2026-10-24T04:56:26.165Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 39,
-  "failedSourceCount": 0,
+  "sourceCount": 38,
+  "failedSourceCount": 1,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 21,
-      "latestPublishedAt": "2026-10-23T20:59:39.000Z",
-      "selectedCount": 1,
+      "entryCount": 23,
+      "latestPublishedAt": "2026-10-24T04:03:46.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 55,
-      "latestPublishedAt": "2026-10-23T22:54:57.000Z",
+      "latestPublishedAt": "2026-10-24T00:36:47.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 134,
-      "latestPublishedAt": "2026-10-23T22:01:00.000Z",
+      "entryCount": 132,
+      "latestPublishedAt": "2026-10-24T02:40:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-23T22:33:48.000Z",
+      "latestPublishedAt": "2026-10-24T03:51:58.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -167,10 +167,11 @@
       "country": "United States",
       "category": "finance",
       "type": "institution",
-      "state": "ok",
+      "state": "unavailable",
       "channel": "feed",
-      "entryCount": 20,
-      "latestPublishedAt": "2026-10-16T15:00:00.000Z",
+      "httpStatus": 404,
+      "entryCount": 0,
+      "latestPublishedAt": null,
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -288,7 +289,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-23T22:07:09.000Z",
-      "selectedCount": 3,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -300,8 +301,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-23T23:15:37.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-24T03:58:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -418,7 +419,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-22T23:52:11.000Z",
-      "selectedCount": 1,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -496,7 +497,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-22T01:38:13.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -524,8 +525,24 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T17:50:21.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 32.6,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 31.2,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "94b1fdc9ffe34a93",
+      "category": "world",
+      "title": "Pentagon designates Confucius Institutes a national security threat",
+      "summary": "Pete Hegseth says the Pentagon dismantled 80 ‘propaganda cells’ operating under new names at 30 universities.",
+      "url": "https://www.aljazeera.com/news/2026/10/24/pentagon-designates-confucius-institutes-a-national-security-threat?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T03:38:20.000Z",
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 28.7,
       "topics": [
         "security"
       ]
@@ -540,11 +557,27 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T17:27:35.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 29.5,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 28.1,
       "topics": [
         "kernels",
         "hardware"
+      ]
+    },
+    {
+      "id": "69aebe8888865898",
+      "category": "finance",
+      "title": "UK to invest £100m in 'world first' AI Biosecurity Lab",
+      "summary": "The chancellor will unveil AI spending aimed at shoring up the UK's defences in Wednesday's Budget.",
+      "url": "https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T00:05:45.000Z",
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 27.8,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -557,8 +590,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 29.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 27.8,
       "topics": [
         "hardware",
         "training"
@@ -574,8 +607,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T23:03:17.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 28.9,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 27.5,
       "topics": [
         "security"
       ]
@@ -590,8 +623,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T18:51:33.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 28.9,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 27.5,
       "topics": []
     },
     {
@@ -604,8 +637,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T22:39:39.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 28.8,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 27.4,
       "topics": []
     },
     {
@@ -618,8 +651,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T22:37:53.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 28.8,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 27.4,
       "topics": []
     },
     {
@@ -632,8 +665,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T18:22:59.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 28.7,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 27.4,
       "topics": [
         "inference"
       ]
@@ -648,22 +681,22 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T17:27:52.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 28.5,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 27.1,
       "topics": []
     },
     {
-      "id": "7982d77196d706af",
+      "id": "a0dfef929b12d70b",
       "category": "finance",
-      "title": "OpenAI resumes frontier AI training with enhanced security, no internet access",
+      "title": "OpenAI resumes frontier AI training after security overhaul, discloses flaw in widely used software",
       "summary": "",
-      "url": "https://www.channelnewsasia.com/business/openai-resumes-frontier-ai-training-enhanced-security-no-internet-access-6487981",
+      "url": "https://www.channelnewsasia.com/business/openai-resumes-frontier-ai-training-after-security-overhaul-discloses-flaw-in-widely-used-software-6487981",
       "source": "CNA Business",
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T20:06:51.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 28.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 26.8,
       "topics": [
         "training",
         "security"
@@ -679,8 +712,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T16:15:50.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 28.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 26.8,
       "topics": []
     },
     {
@@ -693,8 +726,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T14:58:32.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 27.9,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 26.5,
       "topics": []
     },
     {
@@ -707,38 +740,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-23T18:26:35.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 27.8,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "82f8d709796f7a64",
-      "category": "ai",
-      "title": "Release v0.7.2.post1",
-      "summary": "What's Changed Full Changelog : v0.7.2...v0.7.2.post1",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-23T20:20:18.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 27.2,
-      "topics": []
-    },
-    {
-      "id": "b8b35f790163ca6d",
-      "category": "technology",
-      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
-      "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
-      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:19:55.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 27.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 26.4,
       "topics": [
         "security"
       ]
@@ -753,8 +756,38 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T16:22:07.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 27.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 25.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "82f8d709796f7a64",
+      "category": "ai",
+      "title": "Release v0.7.2.post1",
+      "summary": "What's Changed Full Changelog : v0.7.2...v0.7.2.post1",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T20:20:18.000Z",
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 25.8,
+      "topics": []
+    },
+    {
+      "id": "b8b35f790163ca6d",
+      "category": "technology",
+      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+      "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
+      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T20:19:55.000Z",
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 25.8,
       "topics": [
         "security"
       ]
@@ -769,8 +802,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-23T14:55:15.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 26.9,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 25.5,
       "topics": [
         "security"
       ]
@@ -785,8 +818,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-23T13:55:40.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 26.6,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 25.2,
       "topics": [
         "security"
       ]
@@ -801,8 +834,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-23T12:42:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 26.3,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 24.9,
       "topics": [
         "security"
       ]
@@ -817,8 +850,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-23T12:24:17.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 26.3,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 24.9,
       "topics": [
         "security"
       ]
@@ -833,8 +866,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-23T09:29:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 25.5,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 24.1,
       "topics": [
         "models"
       ]
@@ -849,8 +882,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T13:00:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 25.4,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 24,
       "topics": [
         "security"
       ]
@@ -865,8 +898,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 25.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 23.8,
       "topics": [
         "inference",
         "models"
@@ -882,8 +915,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 25.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 23.8,
       "topics": [
         "inference",
         "kernels",
@@ -900,13 +933,27 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 25.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 23.8,
       "topics": [
         "kernels",
         "models",
         "training"
       ]
+    },
+    {
+      "id": "019fa5a384db1cb4",
+      "category": "world",
+      "title": "Marco Rubio urges Cubans to collaborate with CIA to topple gov’t",
+      "summary": "Secretary of State Marco Rubio has urged Cubans to secretly work with the CIA to topple their government.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/10-24-rubi0-cuba-cia?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T03:50:32.000Z",
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 23.7,
+      "topics": []
     },
     {
       "id": "286d4cfdac740859",
@@ -918,11 +965,25 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T22:24:34.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 24.8,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 23.4,
       "topics": [
         "training"
       ]
+    },
+    {
+      "id": "380ce30aff01a1fe",
+      "category": "world",
+      "title": "Argentinian judge drops fraud investigation into Milei over crypto scandal",
+      "summary": "President Javier Milei’s role in cryptocurrency launch does not translate into a fraudulent scheme, judge says.",
+      "url": "https://www.aljazeera.com/news/2026/10/24/argentinian-judge-drops-fraud-investigation-into-milei-over-crypto-scandal?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T01:21:18.000Z",
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 23.1,
+      "topics": []
     },
     {
       "id": "8137775894758dfd",
@@ -934,11 +995,25 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-23T09:30:21.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 24.5,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 23.1,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "860bd81d4ac3fd27",
+      "category": "finance",
+      "title": "White House lifts tariffs on some Canadian goods as midterm elections loom",
+      "summary": "From 30 October, tariffs will be eased on some products, including certain machinery, and placed on others, such as carpets.",
+      "url": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T00:36:47.000Z",
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 22.9,
+      "topics": []
     },
     {
       "id": "e437c2042205ad66",
@@ -950,8 +1025,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-23T12:00:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 24.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 22.8,
       "topics": []
     },
     {
@@ -964,22 +1039,36 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 24.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 22.8,
       "topics": []
     },
     {
-      "id": "860bd81d4ac3fd27",
-      "category": "finance",
-      "title": "pWhite House lifts tariffs on some Canadian goods as midterm elections loom",
-      "summary": "From 30 October, tariffs will be eased on some products, including certain machinery, and placed on others, such as carpets.",
-      "url": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
+      "id": "8e45d56899cef3f2",
+      "category": "world",
+      "title": "Milei in dead heat with Peronism, one year out from election, polls show",
+      "summary": "One year out from polling day, surveys point to a tight race, polarised electorate, significant group of undecided voters and appetite for a ‘third way’ candidate. Leer más",
+      "url": "https://www.batimes.com.ar/news/argentina/milei-in-dead-heat-with-peronism-one-year-out-from-election-polls-show.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
       "sourceType": "news",
-      "publishedAt": "2026-10-23T22:54:57.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 23.9,
+      "publishedAt": "2026-10-24T03:53:00.000Z",
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "3ec744e95a4977ba",
+      "category": "world",
+      "title": "When expansion is not growth",
+      "summary": "The Milei government seeks to transform a model of consumer-led growth supplied by a protected industry with low productivity into one of export-led growth more open to the world. Leer más",
+      "url": "https://www.batimes.com.ar/news/op-ed/when-expansion-is-not-growth.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T03:01:00.000Z",
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 22.5,
       "topics": []
     },
     {
@@ -992,38 +1081,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T18:06:56.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 23.7,
-      "topics": []
-    },
-    {
-      "id": "fae2dcf4f9c0b54a",
-      "category": "world",
-      "title": "Bayern coach Kompany taken to hospital after collapsing during training",
-      "summary": "The Belgian had been ​nursing a virus in recent days and had ⁠missed some of his team's training sessions.",
-      "url": "https://www.aljazeera.com/sports/2026/10/23/bayern-coach-kompany-taken-to-hospital-after-collapsing-during-training?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T17:44:05.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 23.6,
-      "topics": [
-        "training"
-      ]
-    },
-    {
-      "id": "fe334e4bc74ea2a7",
-      "category": "world",
-      "title": "Why is the UK at the forefront of AI-driven job cuts?",
-      "summary": "AI-linked job losses in the UK are running at twice the rate of US and Germany.",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/10/23/why-is-the-uk-at-the-forefront-of-ai-driven-job-cuts?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:43:47.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 23.3,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 22.3,
       "topics": []
     },
     {
@@ -1036,27 +1095,13 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-22T08:42:28.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 23.3,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 21.9,
       "topics": [
         "inference",
         "hardware",
         "models"
       ]
-    },
-    {
-      "id": "7e92da9988e8eabc",
-      "category": "world",
-      "title": "Trump’s broken promises: economy, war and ICE",
-      "summary": "Mehdi Hasan debates ex-Trump adviser Steve Cortes on the economy, Trump’s immigration policies and Islamophobia.",
-      "url": "https://www.aljazeera.com/video/head-to-head/2026/10/23/trumps-broken-promises-economy-war-and-ice?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:01:21.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 23.2,
-      "topics": []
     },
     {
       "id": "d66a572d5575757d",
@@ -1068,8 +1113,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-23T19:46:30.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -1082,8 +1127,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T23:05:49.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 22.9,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 21.5,
       "topics": []
     },
     {
@@ -1096,30 +1141,9 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-22T17:44:52.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 22.6,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 21.2,
       "topics": []
-    },
-    {
-      "id": "842b51b8ccecd6db",
-      "category": "technology",
-      "title": "v1.4.0rc1",
-      "summary": "Highlights Known Issues Disaggregated serving with the default Python KV cache transceiver may fail generation requests with a KV cache transfer error after streaming requests are cancelled (observed on A100). The OpenAI JSON-schema serving example (examples/serve/openai_completion_client_json_schema.py) may return an unbounded response with Qwen3 models. Model Support Add DeepSeek-V4.1-Flash support #19727 Support NVFP4 GLM-5.3-Flash checkpoints #20127 Add Qwen3.8-Flash-Next NVFP4 as an experimental Modeling V2 ta",
-      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc1",
-      "source": "TensorRT-LLM Releases",
-      "sourceCountry": "United States",
-      "sourceType": "release",
-      "publishedAt": "2026-10-22T01:38:13.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 22.6,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training",
-        "security"
-      ]
     },
     {
       "id": "6f12d97c31b33d51",
@@ -1131,8 +1155,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T20:28:43.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 22.3,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 20.9,
       "topics": []
     },
     {
@@ -1145,8 +1169,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T19:20:27.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 22,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 20.6,
       "topics": []
     },
     {
@@ -1159,8 +1183,22 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-10-23T17:04:19.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 21.4,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 20,
+      "topics": []
+    },
+    {
+      "id": "f9b8abc67a83dae1",
+      "category": "world",
+      "title": "France prepares for day of protest a week after nationwide riots",
+      "summary": "More than 70,000 police officers are to be deployed over fears protesters will defy restrictions on demonstrations.",
+      "url": "https://www.bbc.co.uk/news/articles/cj62yv5k0w4yo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T04:03:46.000Z",
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -1173,8 +1211,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-23T12:11:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -1187,87 +1225,14 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-10-22T16:04:40.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 19.8,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "training"
       ]
-    },
-    {
-      "id": "34c4d89f5926c1fc",
-      "category": "ai",
-      "title": "Repair Changes Which Layers to Remove: Exact Optima for Depth Pruning of Language Models",
-      "summary": "Depth pruning removes entire transformer layers to make large language models faster, and recent methods recover quality by replacing the removed layers with a training-free linear map. Which layers to remove, however, is chosen with heuristic scores whose distance from the best choice is unknown. We evaluate every subset of layer groups exactly (about 53,000 pruned models across four families, with and without repair) and find that the best layers to remove depend on the repair: linear repair absorbs the interacti",
-      "url": "https://arxiv.org/abs/2610.30552v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-22T00:18:10.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 21.2,
-      "topics": [
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "5b0a79b5e6f6d9c1",
-      "category": "finance",
-      "title": "Island inflation rate rises to 3%, figures show",
-      "summary": "The rising cost of food and alcohol drives an increase in the inflation rate, figures show.",
-      "url": "https://www.bbc.co.uk/news/articles/cmz6581p1ee8o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T11:58:19.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 21.1,
-      "topics": []
-    },
-    {
-      "id": "5d5c464a4d3cb3e7",
-      "category": "world",
-      "title": "Egypt urges political solution to conflict between Saudi Arabia and Houthis",
-      "summary": "Egypt's Foreign Minister Badr Abdelatty on Thursday said all options must be explored to find a political solution between Saudi Arabia and the Houthis.",
-      "url": "https://www.africanews.com/2026/10/22/egypt-urges-political-solution-to-conflict-between-saudi-arabia-and-houthis/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T14:35:13.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 20.8,
-      "topics": []
-    },
-    {
-      "id": "ee9f8db0ec9876c7",
-      "category": "world",
-      "title": "Russia, Ukraine and the US set for November peace talks",
-      "summary": "Talks between Russia, Ukraine and the United States are planned to resume in November in the United Arab Emirates, Kremlin spokesman Dmitry Peskov said Friday.",
-      "url": "https://www.africanews.com/2026/10/23/russia-ukraine-and-the-us-set-for-november-peace-talks/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T13:30:44.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 20.5,
-      "topics": []
-    },
-    {
-      "id": "8b9077a72a4d87a4",
-      "category": "world",
-      "title": "Top US diplomat hails close alignment with Milei's Argentina",
-      "summary": "Christopher Landau praises Argentina's government during visit to Buenos Aires; Trip comes days after US ambassador's speech linked US support to Milei's re-election in next year's vote. Leer más",
-      "url": "https://www.batimes.com.ar/news/world/top-us-diplomat-hails-close-alignment-with-mileis-argentina.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T12:46:19.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 20.3,
-      "topics": []
     },
     {
       "id": "d96be28acdc65d1d",
@@ -1279,8 +1244,22 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-23T08:00:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 20.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 18.8,
+      "topics": []
+    },
+    {
+      "id": "17e7b5d4bec488b0",
+      "category": "technology",
+      "title": "PyTorch Conference North America 2026: Accelerating Open Intelligence Together",
+      "summary": "PyTorch Conference North America 2026 brought 3,500+ attendees to San Jose on October 20–21 for two days focused on accelerating open intelligence and exploring the impact of PyTorch Foundation projects... The post PyTorch Conference North America 2026: Accelerating Open Intelligence Together appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/pytorch-conference-north-america-2026-accelerating-open-intelligence-together/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-22T23:52:11.000Z",
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 18.7,
       "topics": []
     },
     {
@@ -1293,8 +1272,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-23T05:13:48.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 19.5,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 18.1,
       "topics": []
     },
     {
@@ -1307,8 +1286,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T13:11:13.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 19.4,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 18.1,
       "topics": [
         "models",
         "security"
@@ -1324,9 +1303,27 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T15:35:53.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 19.1,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 17.7,
       "topics": []
+    },
+    {
+      "id": "b78870a125172ca1",
+      "category": "ai",
+      "title": "uGDS: A User-Space Development Kit for High-Performance GPU Direct Storage",
+      "summary": "Data-intensive GPU applications increasingly rely on NVMe SSDs to extend GPU memory. NVIDIA GPU Direct Storage (GDS) enables direct SSD-GPU transfers via PCIe peer-to-peer DMA, eliminating host staging. However, GDS retains three key limitations: (1) its control path traverses the kernel for every I/O request, introducing software overhead; (2) its stream-ordered path imposes strict total ordering even when workloads only require batch-level ordering; and (3) its closed-source user-space engine hinders diagnosis an",
+      "url": "https://arxiv.org/abs/2610.30868v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-10-22T07:45:58.000Z",
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 17.7,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware"
+      ]
     },
     {
       "id": "70224d2d5b4b6779",
@@ -1338,8 +1335,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T21:59:19.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 18.7,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 17.3,
       "topics": []
     },
     {
@@ -1352,8 +1349,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-23T06:00:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 18.7,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 17.3,
       "topics": []
     },
     {
@@ -1366,8 +1363,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T02:00:13.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 18.7,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 17.3,
       "topics": []
     },
     {
@@ -1380,8 +1377,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-22T05:00:27.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 18.4,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 17,
       "topics": [
         "training"
       ]
@@ -1396,8 +1393,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T20:00:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 16.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 14.8,
       "topics": []
     },
     {
@@ -1410,8 +1407,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T08:00:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 13.2,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 11.8,
       "topics": []
     },
     {
@@ -1424,8 +1421,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-22T07:00:00.000Z",
-      "fetchedAt": "2026-10-23T23:23:14.667Z",
-      "score": 12.9,
+      "fetchedAt": "2026-10-24T04:56:26.165Z",
+      "score": 11.5,
       "topics": []
     }
   ]
