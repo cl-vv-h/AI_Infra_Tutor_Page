@@ -1,78 +1,103 @@
 {
-  "generatedAt": "2026-10-08T03:02:46.000Z",
-  "periodStart": "2026-09-28",
-  "periodEnd": "2026-10-04",
+  "generatedAt": "2026-10-24T01:32:52.000Z",
+  "periodStart": "2026-10-12",
+  "periodEnd": "2026-10-18",
   "model": "gpt-5.6-luna",
-  "itemCount": 12,
+  "itemCount": 17,
   "archiveDates": [
-    "2026-09-28",
-    "2026-09-29",
-    "2026-09-30",
-    "2026-10-01",
-    "2026-10-02",
-    "2026-10-03",
-    "2026-10-04"
+    "2026-10-12",
+    "2026-10-13",
+    "2026-10-14",
+    "2026-10-15",
+    "2026-10-16",
+    "2026-10-17",
+    "2026-10-18"
   ],
-  "content": "# 本周信号\n\n本期覆盖 2026-09-28 至 2026-10-04 的七个归档日。综合判断：AI Infra 的技术信号集中在 serving 解耦、低精度与 GPU kernel/编译器协同，以及面向真实工作负载的评测；但部分归档条目只有标题或截断摘要，不能据此外推端到端收益。\n\n## AI\n\n- 报道事实：[Taking vLLM Apart: A Practical Guide to Disaggregated Serving](https://vllm.ai/blog/2026-09-29-disaggregated-serving-guide)介绍了 prefill/decode 解耦、GPU-less frontend，以及当前 vLLM 的实现边界。\n- 报道事实：[TensorRT-LLM v1.3.0rc29](https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc29)的归档摘要列出 Qwen3.5 global FP8 scales、Kimi K3 NVFP4 的 CuTeDSL MoE backend、Gemma4 vision rotary embeddings 和 MiniMax-M3 piecewise CUDA graphs 等变更。\n- 报道事实：[vLLM v0.31.0rc1](https://github.com/vllm-project/vllm/releases/tag/v0.31.0rc1)的条目强调 CUDA 12.x 镜像跳过 snapshot runtime 的 CI/build 变化；摘要同时包含协作者信息，本期不对其作技术外推。\n- 报道事实：[GPUPhysBench](https://arxiv.org/abs/2609.35639v1)提出 50 个 GPU physics simulation 任务，要求 coding agent 在 NVIDIA GPU 上编译、测试和优化代码，并覆盖流体、可变形固体和颗粒材料。\n- 综合判断：serving 的优化边界正在从单一模型吞吐扩展到 prefill/decode 拆分、构建链路和可验证的 agent-generated GPU code；归档证据不足以比较这些方案的生产成本。\n\n## 科技\n\n- 报道事实：[NVIDIA DSX MaxLPS](https://developer.nvidia.com/blog/how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-efficiency/)讨论以 AI factory 的功率利用率和吞吐效率为目标进行 GPU 资源管理。\n- 报道事实：[AI Native by Design: Lessons Learned from Building NVIDIA TensorRT Model Connect](https://developer.nvidia.com/blog/ai-native-by-design-lessons-learned-from-building-nvidia-tensorrt-model-connect/)归档摘要提到并行工作、模型族隔离、可逆变更和 GPU-backed validation，并将其用于开源项目开发。\n- 报道事实：[gfx950-tutorial-v2.3](https://github.com/triton-lang/triton/releases/tag/gfx950-tutorial-v2.3)的摘要记录了 Triton upstream、LLVM codegen 和目标机器设置等版本依赖，反映出 AMD GPU 代码生成链路对编译器版本的敏感性。\n- 报道事实：[Open TTS Leaderboard](https://huggingface.co/blog/open-tts-leaderboard)面向多语言文本转语音和 voice cloning 的可扩展评测。归档未给出具体排名或硬件配置，因此不比较模型。\n- 综合判断：功率管理、模型连接层、GPU codegen 和评测基准共同构成系统工程的验证闭环，但本期没有足够数据量化 DSX 或 Triton 变化对特定模型的收益。\n\n## 金融\n\n- 报道事实：[澳大利亚央行货币政策决定](https://www.rba.gov.au/media-releases/2026/mr-26-27.html)称现金利率目标上调 25 个基点至 4.60%。\n- 报道事实：[欧洲央行修订货币政策实施指南](https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260929~050089e922.en.html)属于定期审查相关公告；归档没有提供细节，因此不延伸判断其对 AI 基础设施融资的影响。\n- 综合判断：本期金融材料能确认政策动作，但不足以判断数据中心资本成本、GPU 采购或 AI 初创企业估值的方向。\n\n## 国际形势\n\n- 报道事实：[美国撤出伊拉克引发对权力真空的担忧](https://www.france24.com/en/middle-east/20260930-us-forces-leave-iraq-raising-fears-of-iran-backed-militias-amid-power-vacuum)的归档摘要称，美军撤出剩余基地，伊拉克官员和分析人士担忧安全真空。\n- 报道事实：[联合国安理会讨论刚果民主共和国局势](https://news.un.org/feed/view/en/story/2026/09/1168482)的摘要提到东部冲突、M23、刚果与卢旺达紧张关系，以及埃博拉危机。\n- 综合判断：本周国际归档显示安全与治理风险仍可能影响跨境基础设施和供应链，但现有元数据不足以把具体地缘事件直接映射到 AI 芯片供给。\n\n## 跨板块观察\n\n- 报道事实与综合判断：功率效率与 serving 解耦分别出现在 [DSX MaxLPS](https://developer.nvidia.com/blog/how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-efficiency/) 和 [vLLM disaggregated serving](https://vllm.ai/blog/2026-09-29-disaggregated-serving-guide) 中；综合来看，AI factory 的瓶颈正在同时表现为电力、GPU 拓扑和请求阶段调度问题，但归档没有提供可直接对照的统一指标。\n- 报道事实与综合判断： [TensorRT-LLM v1.3.0rc29](https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc29)、[Triton gfx950 tutorial](https://github.com/triton-lang/triton/releases/tag/gfx950-tutorial-v2.3) 和 [GPUPhysBench](https://arxiv.org/abs/2609.35639v1)分别落在 serving runtime、编译器版本和 GPU 代码正确性评测；这支持“软件栈可验证性是硬件利用率前提”的综合判断，但不证明任何单一工具的普遍优越性。\n\n## 下周观察清单\n\n- 跟踪 vLLM disaggregated serving 是否出现 prefill/decode 的尾延迟、显存和成本数据。[vLLM disaggregated serving](https://vllm.ai/blog/2026-09-29-disaggregated-serving-guide)\n- 关注 TensorRT-LLM 后续版本对 FP8、NVFP4、MoE backend 和 CUDA graph 路径的稳定性说明。[TensorRT-LLM v1.3.0rc29](https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc29)\n- 核对 Triton gfx950 相关 LLVM 依赖以及 GPUPhysBench 的正确性指标是否有可复现实验。[Triton gfx950 tutorial](https://github.com/triton-lang/triton/releases/tag/gfx950-tutorial-v2.3)\n- 观察利率政策与区域安全事件是否出现能直接影响数据中心建设、芯片供应或跨境部署的公开证据；本期归档尚不足以确认。[澳大利亚央行货币政策决定](https://www.rba.gov.au/media-releases/2026/mr-26-27.html)\n",
+  "content": "# 本周信号\n\n本期覆盖 2026-10-12 至 2026-10-18 的七个归档日。综合判断：AI Infra 的主要信号从单点 kernel 优化继续向 KV 状态搬运、MoE 弹性伸缩、多模型 agent serving 和异构编译链路扩展；归档提供了若干具体方向，但不能据此外推统一的生产收益。\n\n## AI\n\n- 报道事实：[Bi-Directional KV Transfer](https://vllm.ai/blog/2026-10-12-bidirectional-kvxfer-multiturn-agentic-workload)的归档摘要称，vLLM 可让 prefill 节点复用 decode 节点上的 KV，并在长多轮提示上将 TTFT 降低最多 3.3 倍。\n- 报道事实：[Push-Based KV Transfer](https://vllm.ai/blog/2026-10-14-nixl-push-connector)描述了基于 NIXL 的 push connector：prefill 实例通过 RDMA 直接写入 decode 内存，减少路由中继、decode 侧分配和传输准备。\n- 报道事实：[FastEEP](https://arxiv.org/abs/2610.18451v1)把 MoE serving 的实例内 expert-parallel 组调整作为动态容量匹配问题；摘要指出，仅增删 serving 实例并不足以高效完成这种伸缩。\n- 报道事实：[JointServe](https://arxiv.org/abs/2610.19822v1)面向显存受限 GPU 上的多模型 agent serving，指出整模型换入换出会串行化权重传输与计算，并可能丢弃会话状态。\n- 报道事实：[Remote KV Tiers](https://arxiv.org/abs/2610.21500v1)讨论 context-parallel prefill 中远端 KV 层级扩展，标题直接将远程 KV 访问延迟作为研究问题。\n- 报道事实：[Scaling Kimi K3 on MI355X](https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x)记录了在 AMD Instinct MI355X 上优化 Kimi K3 的工作；归档未提供足够统一基准，不能据此断言平台间普遍等价。\n- 报道事实：[vLLM v0.32.0rc3](https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc3)的条目包含修复 sm90 上 Mamba2 chunk scan kernel NaN 输出的变更。\n- 综合判断：本周 serving 的共同瓶颈是状态的放置、转移与恢复，而不只是算子吞吐；这是对上述条目的归纳，不等于任何单一实现已在所有负载上占优。\n\n## 科技\n\n- 报道事实：[ReplaySSM](https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/)围绕交错 SSM 与 attention 层的混合模型，提出重新思考解码阶段的状态存储；归档列举了 Nemotron 3、Qwen3.5–Qwen3.8、Kimi-K3 和 GLM-5.3-Flash 等例子。\n- 报道事实：[NVIDIA Run:ai 开源](https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/)的归档摘要称，完整 Run:ai 平台作为 NVIDIA DSX AI Factory Platform 的一部分开放源代码。\n- 报道事实：[Extending Inductor for IBM Spyre](https://pytorch.org/blog/extending-inductor-for-the-ibm-spyre-accelerator/)称，IBM Spyre 的 PyTorch 软件栈将 torch.compile 后端从独立的 sendnn 编译栈迁移到开源的 Inductor 后端。\n- 报道事实：[FP16 GEMM Optimization](https://rocm.blogs.amd.com/software-tools-optimization/rdna-fp16-gemm/README.html)按 RDNA 3 与 RDNA 4 的差异讨论 FP16 GEMM kernel，摘要提到时间、寄存器和 LDS 等测量维度。\n- 报道事实：[gfx950-tutorial-v3.1](https://github.com/triton-lang/triton/releases/tag/gfx950-tutorial-v3.1)的归档摘要给出 Triton gfx950 tutorial pin 及上游提交信息。\n- 报道事实：[TensorRT-LLM v1.4.0rc0](https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc0)的摘要列出多 GPU 初始化、SM120/SM121 CUDA graph、GPT-OSS attention data parallelism 等已知问题。\n- 综合判断：异构硬件适配正在同时发生在 compiler backend、GEMM/kernel 和 serving runtime 层；本期元数据不足以比较 IBM Spyre、AMD RDNA、gfx950 与 NVIDIA 路径的端到端成本。\n\n## 金融\n\n- 报道事实：[欧洲央行关于 AI 机遇的演讲](https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261013~9db9bf4fd6.en.html)列入本周金融机构归档；摘要字段为空，因此不对其具体政策主张作延伸。\n- 报道事实：[Basel Committee G-SIB framework](https://www.bis.org/media-releases/20261016-basel-committee-finalises-measures-address-window-dressing-g-sib-framework-and-consults-g-sib)的归档摘要称，委员会发布了应对 G-SIB 框架 window-dressing 的最终修订，并就方法论复审征求意见。\n- 综合判断：本周金融元数据能确认监管与 AI 讨论同时出现，但没有足够证据把这些机构材料直接映射为数据中心资本成本或 GPU 投资方向。\n\n## 国际形势\n\n- 报道事实：[苏丹安全理事会直播](https://news.un.org/feed/view/en/story/2026/10/1168612)的摘要提到无人机袭击、饥饿风险扩散，以及武器流动和人道援助通道问题。\n- 报道事实：[阿富汗粮食危机](https://news.un.org/feed/view/en/story/2026/10/1168605)的归档摘要称，约 1590 万人面临急性粮食不安全，未来数月形势可能恶化。\n- 综合判断：本周国际材料显示冲突、人道援助与治理风险仍在多个区域叠加；归档没有提供足以将其量化为 AI 基础设施供应链冲击的证据。\n\n## 跨板块观察\n\n- 报道事实与综合判断： [Bi-Directional KV Transfer](https://vllm.ai/blog/2026-10-12-bidirectional-kvxfer-multiturn-agentic-workload)、[Push-Based KV Transfer](https://vllm.ai/blog/2026-10-14-nixl-push-connector)和[Remote KV Tiers](https://arxiv.org/abs/2610.21500v1)分别从复用、直写和远端层级处理 KV 状态；综合来看，KV 已成为 agentic serving 中需要独立规划的系统资源，但归档没有提供可横向比较的总成本指标。\n- 报道事实与综合判断： [FastEEP](https://arxiv.org/abs/2610.18451v1)、[JointServe](https://arxiv.org/abs/2610.19822v1)与[Scaling Kimi K3 on MI355X](https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x)把弹性伸缩、多模型工作集和异构 GPU 优化放在同一条 serving 现实约束下；这支持“容量编排与硬件适配需要协同”的判断，但不证明某个方案的普适优越性。\n\n## 下周观察清单\n\n- 关注 KV 传输方案是否补充尾延迟、显存占用、RDMA 拓扑和失败恢复数据：[Bi-Directional KV Transfer](https://vllm.ai/blog/2026-10-12-bidirectional-kvxfer-multiturn-agentic-workload)。\n- 跟踪 vLLM 后续版本对 Mamba2 kernel 修复以及多模型、MoE 和 context-parallel serving 的回归结果：[vLLM v0.32.0rc3](https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc3)。\n- 观察 Inductor、Triton 与 ROCm 路径是否给出跨硬件可复现实验，而非仅有单平台优化叙述：[Extending Inductor for IBM Spyre](https://pytorch.org/blog/extending-inductor-for-the-ibm-spyre-accelerator/)。\n- 继续核对监管材料和区域冲突是否出现能直接影响数据中心建设、芯片供应或跨境部署的公开证据：[Basel Committee G-SIB framework](https://www.bis.org/media-releases/20261016-basel-committee-finalises-measures-address-window-dressing-g-sib-framework-and-consults-g-sib)。\n",
   "sources": [
     {
-      "title": "Taking vLLM Apart: A Practical Guide to Disaggregated Serving",
-      "url": "https://vllm.ai/blog/2026-09-29-disaggregated-serving-guide",
+      "title": "Improve TTFT for Multi-Turn Agentic Workloads with Bi-Directional KV Transfer in vLLM",
+      "url": "https://vllm.ai/blog/2026-10-12-bidirectional-kvxfer-multiturn-agentic-workload",
       "source": "vLLM Blog"
     },
     {
-      "title": "v1.3.0rc29",
-      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc29",
-      "source": "TensorRT-LLM Releases"
+      "title": "Push-Based KV Transfer to Improve TTFT and TPOT for Disaggregated Inference in vLLM",
+      "url": "https://vllm.ai/blog/2026-10-14-nixl-push-connector",
+      "source": "vLLM Blog"
     },
     {
-      "title": "v0.31.0rc1: [CI/Build] Skip the snapshot runtime on CUDA 12.x images (#59118)",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0rc1",
-      "source": "vLLM Releases"
-    },
-    {
-      "title": "GPUPhysBench: Benchmarking Coding Agents for Correct and Efficient GPU Physics Simulation",
-      "url": "https://arxiv.org/abs/2609.35639v1",
+      "title": "FastEEP: Fast Intra-Instance Elastic Scaling for Expert-Parallel MoE Serving",
+      "url": "https://arxiv.org/abs/2610.18451v1",
       "source": "arXiv Distributed Systems"
     },
     {
-      "title": "How NVIDIA DSX MaxLPS Maximizes AI Factory Throughput and Efficiency",
-      "url": "https://developer.nvidia.com/blog/how-nvidia-dsx-maxlps-maximizes-ai-factory-throughput-and-efficiency/",
+      "title": "JointServe: Serving Multi-Model Agents on Memory-Constrained GPUs",
+      "url": "https://arxiv.org/abs/2610.19822v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "When the KV Cache Is Slower Than the GPU: Scaling Remote KV Tiers for Context-Parallel Prefill",
+      "url": "https://arxiv.org/abs/2610.21500v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "Scaling Kimi K3 on AMD Instinct MI355X: Matching NVIDIA HGX B300 Throughput per GPU on AgentX",
+      "url": "https://vllm.ai/blog/2026-10-16-kimi-k3-mi355x",
+      "source": "vLLM Blog"
+    },
+    {
+      "title": "v0.32.0rc3: [Bugfix] Fix NaN output of the Mamba2 chunk scan kernel on sm90 (#61718)",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0rc3",
+      "source": "vLLM Releases"
+    },
+    {
+      "title": "ReplaySSM: Rethinking State Storage for Faster Hybrid-Model Decoding",
+      "url": "https://developer.nvidia.com/blog/replayssm-rethinking-state-storage-for-faster-hybrid-model-decoding/",
       "source": "NVIDIA Technical Blog"
     },
     {
-      "title": "AI Native by Design: Lessons Learned from Building NVIDIA TensorRT Model Connect",
-      "url": "https://developer.nvidia.com/blog/ai-native-by-design-lessons-learned-from-building-nvidia-tensorrt-model-connect/",
+      "title": "NVIDIA Run:ai Is Now Open Source as Part of NVIDIA DSX AI Factory Platform",
+      "url": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/",
       "source": "NVIDIA Technical Blog"
     },
     {
-      "title": "gfx950-tutorial-v2.3",
-      "url": "https://github.com/triton-lang/triton/releases/tag/gfx950-tutorial-v2.3",
+      "title": "Extending Inductor for the IBM Spyre Accelerator",
+      "url": "https://pytorch.org/blog/extending-inductor-for-the-ibm-spyre-accelerator/",
+      "source": "PyTorch Blog"
+    },
+    {
+      "title": "FP16 GEMM Optimization on AMD RDNA™ 3 and RDNA™ 4 Architectures",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/rdna-fp16-gemm/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "gfx950-tutorial-v3.1",
+      "url": "https://github.com/triton-lang/triton/releases/tag/gfx950-tutorial-v3.1",
       "source": "Triton Releases"
     },
     {
-      "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-      "url": "https://huggingface.co/blog/open-tts-leaderboard",
-      "source": "Hugging Face Blog"
+      "title": "v1.4.0rc0",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc0",
+      "source": "TensorRT-LLM Releases"
     },
     {
-      "title": "Statement by the Monetary Policy Board: Monetary Policy Decision",
-      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-27.html",
-      "source": "Reserve Bank of Australia"
-    },
-    {
-      "title": "ECB amends monetary policy implementation guidelines as part of regular review",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr260929~050089e922.en.html",
+      "title": "Philip R. Lane: The AI opportunity for Europe",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261013~9db9bf4fd6.en.html",
       "source": "European Central Bank"
     },
     {
-      "title": "US forces leave Iraq, raising fears of Iran-backed militias amid power vacuum",
-      "url": "https://www.france24.com/en/middle-east/20260930-us-forces-leave-iraq-raising-fears-of-iran-backed-militias-amid-power-vacuum",
-      "source": "France 24"
+      "title": "Basel Committee finalises measures to address window-dressing in the G-SIB framework and consults on G-SIB methodology review",
+      "url": "https://www.bis.org/media-releases/20261016-basel-committee-finalises-measures-address-window-dressing-g-sib-framework-and-consults-g-sib",
+      "source": "Bank for International Settlements"
     },
     {
-      "title": "Security Council LIVE: DRC peace deals fail to halt fighting as Ebola deepens crisis",
-      "url": "https://news.un.org/feed/view/en/story/2026/09/1168482",
+      "title": "Security Council LIVE: Sudan’s war spreads as drones and hunger take a deadly toll",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168612",
+      "source": "UN News"
+    },
+    {
+      "title": "Afghanistan faces record hunger levels amid rampant rights violations",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168605",
       "source": "UN News"
     }
   ]
