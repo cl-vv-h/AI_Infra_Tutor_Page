@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T13:19:24.695Z",
+  "generatedAt": "2026-10-25T19:12:27.981Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 32,
-      "latestPublishedAt": "2026-10-25T11:54:16.000Z",
-      "selectedCount": 3,
+      "entryCount": 31,
+      "latestPublishedAt": "2026-10-25T18:29:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 130,
-      "latestPublishedAt": "2026-10-25T13:09:00.000Z",
+      "latestPublishedAt": "2026-10-25T16:12:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-25T12:40:20.000Z",
+      "latestPublishedAt": "2026-10-25T18:55:39.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -65,7 +65,7 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 19,
+      "entryCount": 5,
       "latestPublishedAt": "2026-10-23T23:06:25.000Z",
       "selectedCount": 3,
       "libraryCount": 0
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-24T19:00:00.000Z",
+      "latestPublishedAt": "2026-10-25T16:57:32.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-25T12:48:31.000Z",
+      "latestPublishedAt": "2026-10-25T17:12:50.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,7 +274,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-25T11:24:58.000Z",
+      "latestPublishedAt": "2026-10-25T16:18:41.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-25T10:47:38.000Z",
+      "latestPublishedAt": "2026-10-25T17:49:14.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -300,8 +300,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-24T12:14:55.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-25T13:18:07.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -314,7 +314,7 @@
       "channel": "feed",
       "entryCount": 890,
       "latestPublishedAt": "2026-10-23T16:15:50.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -340,7 +340,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-23T18:51:33.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 3
     },
     {
@@ -431,7 +431,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-23T17:27:52.000Z",
-      "selectedCount": 3,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -457,7 +457,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-23T18:22:59.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -515,6 +515,70 @@
   ],
   "items": [
     {
+      "id": "b6f0f949fb419d37",
+      "category": "world",
+      "title": "Israeli air strike on Gaza City university kills three people",
+      "summary": "Two Israeli strikes hit students and security guards at the Islamic University in Gaza City.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/25/israeli-air-strike-on-gaza-city-university-kills-three-people?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T18:12:13.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 28.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "1c9c5a6997bb2c1c",
+      "category": "world",
+      "title": "Eight killed in Gaza as Israel targets university campus and other sites",
+      "summary": "Israeli air strike kills three security guards in one of two attacks on the Islamic University in Gaza City.",
+      "url": "https://www.aljazeera.com/news/2026/10/25/seven-killed-in-gaza-as-israel-targets-university-campus-and-other-sites?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T15:40:25.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 28.1,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "c8579fb5c65c4f7e",
+      "category": "world",
+      "title": "France: 110.000 protesters in Paris",
+      "summary": "Hundreds of demonstrations took place across France on Saturday over the rising cost of living, with security forces deployed in large numbers to prevent a repeat of the violence seen last weekend. While the marches themselves “passed off well” in several cities, Interior Minister Laurent Nuñez said members of “ultra-left” groups threw projectiles and fireworks at police in an attempt to provoke clashes. French Communist Party spokesperson Fatima Khallouk shares more details.",
+      "url": "https://www.france24.com/en/france-110-000-protesters-in-paris",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T15:00:01.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 27.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "af0991e81d4ca934",
+      "category": "world",
+      "title": "Le Pen leads polls with up to 38% six months before election",
+      "summary": "The day after the first day of the National Rally congress in Orléans, in central France, passed without any major incidents, Marine Le Pen is due to deliver her first major campaign speech on Sunday afternoon, 25 October, under heavy police surveillance. The speech, centred on the theme of renewal, aims to inject a dose of optimism six months ahead of the presidential election, the candidate has reportedly said in private. Gilles Ivaldi, a political science researcher at the French National Centre for Scientific R",
+      "url": "https://www.france24.com/en/le-pen-leads-polls-with-up-to-38-six-months-before-election",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T13:51:14.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 27.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "0aabb6fceb5c4c47",
       "category": "world",
       "title": "France: Hundreds arrested after nationwide protests",
@@ -524,8 +588,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-25T12:05:00.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 28.7,
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 27.2,
       "topics": [
         "security"
       ]
@@ -540,11 +604,400 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-25T11:40:38.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 28.6,
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 27.1,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "0c11d6fdca0f3a53",
+      "category": "world",
+      "title": "Venezuela’s opposition leader Maria Corina Machado returns from exile",
+      "summary": "The Nobel laureate's homecoming follows national protests demanding free elections.",
+      "url": "https://www.aljazeera.com/news/2026/10/25/venezuelas-opposition-leader-maria-corina-machado-returns-from-exile?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T18:55:39.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "40fcc6eb0c729004",
+      "category": "world",
+      "title": "Protein shakes for teenagers: Good or bad idea?",
+      "summary": "Protein products are marketed as a way of building muscle and losing weight — and they're very popular with young people. They also claim to promote healthy growth in children. Is this true? How much protein is healthy?",
+      "url": "https://www.dw.com/en/protein-shakes-for-teenagers-good-or-bad-idea/a-79751929?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T16:12:00.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "2b48221bfc8e7f14",
+      "category": "world",
+      "title": "Early reports suggest record high turnout in Serbia elections",
+      "summary": "Serbia is heading to the polls as a student movement attempts to oust longtime populist leader Aleksandar Vučić.",
+      "url": "https://www.bbc.co.uk/news/articles/c6jdmj1ej715o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T16:05:15.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "0679827f069b7ea1",
+      "category": "world",
+      "title": "Gabon says access to social media restored after eight-month ban",
+      "summary": "The authorities had justified the ban by saying online content was fuelling conflict, while the opposition had condemned it as an abuse of power.",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2w0ngejneo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T14:39:47.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "cba23baad5a636ef",
+      "category": "world",
+      "title": "Brazil election: Lula, Bolsonaro cast votes in final bout",
+      "summary": "Almost 160 million are eligible to vote in the final round of Brazil's election that pits the left-wing incumbent against the son of the former far-right president. DW has more.",
+      "url": "https://www.dw.com/en/brazil-election-lula-bolsonaro-cast-votes-in-final-bout/live-79755630?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T14:13:00.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 22.8,
+      "topics": []
+    },
+    {
+      "id": "f84d3c65ec7073ac",
+      "category": "ai",
+      "title": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
+      "summary": "\"Despite massive investments and widespread hype around artificial intelligence, the technology has delivered zero financial payoff to corporate America outside of tech.\"",
+      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T16:57:32.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "23ea68a62e9ca6c9",
+      "category": "technology",
+      "title": "APOD: 2026 October 25 – Dark Matter in a Simulated Universe",
+      "summary": "APOD Science APOD APOD: 2026 October 25 – Dark… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Dark Matter […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-25-dark-matter-in-a-simulated-universe/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-25T08:19:48.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 22.3,
+      "topics": []
+    },
+    {
+      "id": "4f5bfec40da98276",
+      "category": "world",
+      "title": "Israelis have changed. Will they change their leadership?",
+      "summary": "Israel is holding a general election this week after years of war. For many Israelis, shaken by the Oct. 7, 2023, attacks and years of war, it is the most consequential in decades.",
+      "url": "https://www.npr.org/2026/10/25/g-s1-149563/israel-election-war-netanyahu",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T16:00:00.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 22.2,
+      "topics": []
+    },
+    {
+      "id": "61305af2214192c5",
+      "category": "world",
+      "title": "Gabon restores social media access after an eight-month ban",
+      "summary": "The media regulator pulled the plug on social networks in February blaming content posted online for stoking conflict and division in society.",
+      "url": "https://www.africanews.com/2026/10/25/gabon-restores-social-media-access-after-an-eight-month-ban/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T15:37:00.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 22.1,
+      "topics": []
+    },
+    {
+      "id": "161f93ffce1186e7",
+      "category": "world",
+      "title": "Iranian president blames United States for failure of interim peace deal",
+      "summary": "Masoud Pezeshkian emphasised, however, that a new attempt should be made to reach an agreement to end the war with the US and Israel.",
+      "url": "https://www.africanews.com/2026/10/25/iranian-president-blames-united-states-for-failure-of-interim-peace-deal/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T13:55:33.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 21.7,
+      "topics": []
+    },
+    {
+      "id": "50df3de588629b92",
+      "category": "world",
+      "title": "More Lula, or back to the Bolsonaros? Brazil votes in cliffhanger election",
+      "summary": "Sunday's run-off will determine whether Brazil remains one of Latin America's few leftist nations or joins a regional swing to the right. Leer más",
+      "url": "https://www.batimes.com.ar/news/latin-america/more-lula-or-back-to-the-bolsonaros-brazil-votes-in-cliffhanger-election.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T13:18:07.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 21.5,
+      "topics": []
+    },
+    {
+      "id": "a677747efea9ce38",
+      "category": "world",
+      "title": "Soldiers guard center of Milan as thousands of protesters march in cities across Europe",
+      "summary": "While protests in France have claimed most international attention, large demonstrations also rocked many European cities Saturday from Milan to Rome to Madrid, Lisbon and Tirana.",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6016126/thousands-of-protesters-across-europe",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T07:15:00.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 21,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "69aebe8888865898",
+      "category": "finance",
+      "title": "UK to invest £100m in 'world first' AI Biosecurity Lab",
+      "summary": "The chancellor will unveil AI spending aimed at shoring up the UK's defences in Wednesday's Budget.",
+      "url": "https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T00:05:45.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 18.2,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "8611462b4ac3fe51",
+      "category": "finance",
+      "title": "UK government sets out $800 million of AI security funding",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/uk-government-sets-out-800-million-ai-security-funding-6488176",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T23:03:17.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 18,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "dc07582537a6ba5f",
+      "category": "technology",
+      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
+      "summary": "As NASA returns humans to the lunar surface and establishes a long-term presence on our closest celestial neighbor, the agency and commercial human landing system providers Blue Origin and SpaceX have streamlined the designs and changed both concepts of operations for its future crewed landers. Since NASA established initial contracts with Blue Origin and SpaceX […]",
+      "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-23T22:39:39.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 17.9,
+      "topics": []
+    },
+    {
+      "id": "287d368f59cda51d",
+      "category": "technology",
+      "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
+      "summary": "Before astronauts return to the lunar surface, NASA will first conduct one of the most ambitious and complex test missions in the agency’s history. Launching in 2027, Artemis III will send NASA astronauts Randy Bresnik, Frank Rubio, Andre Douglas, and ESA (European Space Agency) astronaut Luca Parmitano aboard the Orion spacecraft into low Earth orbit […]",
+      "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-23T22:37:53.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 17.9,
+      "topics": []
+    },
+    {
+      "id": "c8303ec9b05316b2",
+      "category": "ai",
+      "title": "The hottest AI wearables and gadgets you should know about",
+      "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
+      "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T14:10:00.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 17.7,
+      "topics": []
+    },
+    {
+      "id": "cc94c1359c122b98",
+      "category": "finance",
+      "title": "Budget to include £1bn for social and affordable housing",
+      "summary": "The move will take funding for the 10-year programme to more than £40bn.",
+      "url": "https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T10:03:17.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 17.7,
+      "topics": []
+    },
+    {
+      "id": "a0dfef929b12d70b",
+      "category": "finance",
+      "title": "OpenAI resumes frontier AI training after security overhaul, discloses flaw in widely used software",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/openai-resumes-frontier-ai-training-after-security-overhaul-discloses-flaw-in-widely-used-software-6487981",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T20:06:51.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 17.2,
+      "topics": [
+        "training",
+        "security"
+      ]
+    },
+    {
+      "id": "72d97d37efa447c7",
+      "category": "finance",
+      "title": "Rosebank: Life on the oil field at the centre of a political storm",
+      "summary": "Scotland editor James Cook finds out what life is like on board a ship in an untapped oil field awaiting its fate.",
+      "url": "https://www.bbc.co.uk/news/articles/cqy8ljkle97ro",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T07:15:38.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 17,
+      "topics": []
+    },
+    {
+      "id": "952fc8d98f36de25",
+      "category": "ai",
+      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T19:00:00.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 16.9,
+      "topics": []
+    },
+    {
+      "id": "82f8d709796f7a64",
+      "category": "ai",
+      "title": "Release v0.7.2.post1",
+      "summary": "What's Changed Full Changelog : v0.7.2...v0.7.2.post1",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-10-23T20:20:18.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 16.3,
+      "topics": []
+    },
+    {
+      "id": "b8b35f790163ca6d",
+      "category": "technology",
+      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
+      "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
+      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T20:19:55.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 16.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "b990e774d018407f",
+      "category": "technology",
+      "title": "A 1,000-mile cloud on Mars may reveal physics never seen in nature",
+      "summary": "A new model suggests Mars may host ice-forming physics never directly observed before.",
+      "url": "https://arstechnica.com/science/2026/10/a-1000-mile-cloud-on-mars-may-reveal-physics-never-seen-in-nature/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T11:50:28.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 15.2,
+      "topics": []
+    },
+    {
+      "id": "cd9d174600ae4219",
+      "category": "finance",
+      "title": "Piero Cipollone: Interview with Milano Finanza",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-24T06:00:00.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 14.7,
+      "topics": []
+    },
+    {
+      "id": "6f12d97c31b33d51",
+      "category": "technology",
+      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops",
+      "summary": "Pentagon memo: Insider trading gives US enemies key intel on military operations.",
+      "url": "https://arstechnica.com/tech-policy/2026/10/pentagon-memo-on-prediction-markets-says-insider-bets-put-troops-lives-at-risk/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T20:28:43.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 11.3,
+      "topics": []
+    },
+    {
+      "id": "137f9cfe1a18d349",
+      "category": "finance",
+      "title": "Amazon cloud capacity sold out through 2027, CEO Jassy says",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/amazon-cloud-capacity-sold-out-through-2027-ceo-jassy-says-6488181",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-23T23:06:25.000Z",
+      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "score": 9,
+      "topics": []
     },
     {
       "id": "7cf1d182b4593122",
@@ -625,20 +1078,6 @@
       "topics": []
     },
     {
-      "id": "23ea68a62e9ca6c9",
-      "category": "technology",
-      "title": "APOD: 2026 October 25 – Dark Matter in a Simulated Universe",
-      "summary": "APOD Science APOD APOD: 2026 October 25 – Dark… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Dark Matter […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-october-25-dark-matter-in-a-simulated-universe/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-25T08:19:48.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 23.8,
-      "topics": []
-    },
-    {
       "id": "9b3add2180d2fd64",
       "category": "world",
       "title": "Why Israel’s latest assault on Hebron is so significant for the West Bank",
@@ -680,22 +1119,6 @@
       "score": 23.1,
       "topics": [
         "security"
-      ]
-    },
-    {
-      "id": "a677747efea9ce38",
-      "category": "world",
-      "title": "Soldiers guard center of Milan as thousands of protesters march in cities across Europe",
-      "summary": "While protests in France have claimed most international attention, large demonstrations also rocked many European cities Saturday from Milan to Rome to Madrid, Lisbon and Tirana.",
-      "url": "https://www.npr.org/2026/10/25/nx-s1-6016126/thousands-of-protesters-across-europe",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-25T07:15:00.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 22.5,
-      "topics": [
-        "models"
       ]
     },
     {
@@ -772,38 +1195,6 @@
       ]
     },
     {
-      "id": "69aebe8888865898",
-      "category": "finance",
-      "title": "UK to invest £100m in 'world first' AI Biosecurity Lab",
-      "summary": "The chancellor will unveil AI spending aimed at shoring up the UK's defences in Wednesday's Budget.",
-      "url": "https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T00:05:45.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 19.7,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "8611462b4ac3fe51",
-      "category": "finance",
-      "title": "UK government sets out $800 million of AI security funding",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/uk-government-sets-out-800-million-ai-security-funding-6488176",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T23:03:17.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 19.4,
-      "topics": [
-        "security"
-      ]
-    },
-    {
       "id": "7665beed4e6f5933",
       "category": "ai",
       "title": "Bringing foundational models to the front lines of TB screening",
@@ -815,20 +1206,6 @@
       "publishedAt": "2026-10-23T18:51:33.000Z",
       "fetchedAt": "2026-10-25T13:19:24.695Z",
       "score": 19.4,
-      "topics": []
-    },
-    {
-      "id": "dc07582537a6ba5f",
-      "category": "technology",
-      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
-      "summary": "As NASA returns humans to the lunar surface and establishes a long-term presence on our closest celestial neighbor, the agency and commercial human landing system providers Blue Origin and SpaceX have streamlined the designs and changed both concepts of operations for its future crewed landers. Since NASA established initial contracts with Blue Origin and SpaceX […]",
-      "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-23T22:39:39.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 19.3,
       "topics": []
     },
     {
@@ -848,20 +1225,6 @@
       ]
     },
     {
-      "id": "cc94c1359c122b98",
-      "category": "finance",
-      "title": "Budget to include £1bn for social and affordable housing",
-      "summary": "The move will take funding for the 10-year programme to more than £40bn.",
-      "url": "https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-25T10:03:17.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 19.2,
-      "topics": []
-    },
-    {
       "id": "6f29a4c807e44dd5",
       "category": "technology",
       "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 2",
@@ -874,23 +1237,6 @@
       "fetchedAt": "2026-10-25T13:19:24.695Z",
       "score": 19,
       "topics": []
-    },
-    {
-      "id": "a0dfef929b12d70b",
-      "category": "finance",
-      "title": "OpenAI resumes frontier AI training after security overhaul, discloses flaw in widely used software",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/openai-resumes-frontier-ai-training-after-security-overhaul-discloses-flaw-in-widely-used-software-6487981",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:06:51.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 18.7,
-      "topics": [
-        "training",
-        "security"
-      ]
     },
     {
       "id": "c90063c94acfe905",
@@ -921,20 +1267,6 @@
       "topics": []
     },
     {
-      "id": "72d97d37efa447c7",
-      "category": "finance",
-      "title": "Rosebank: Life on the oil field at the centre of a political storm",
-      "summary": "Scotland editor James Cook finds out what life is like on board a ship in an untapped oil field awaiting its fate.",
-      "url": "https://www.bbc.co.uk/news/articles/cqy8ljkle97ro",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-25T07:15:38.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 18.5,
-      "topics": []
-    },
-    {
       "id": "f83d38c277df453c",
       "category": "world",
       "title": "Niger imposes curfew on petrol sales amid national fuel shortage",
@@ -944,20 +1276,6 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-25T10:47:38.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 18.4,
-      "topics": []
-    },
-    {
-      "id": "952fc8d98f36de25",
-      "category": "ai",
-      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T19:00:00.000Z",
       "fetchedAt": "2026-10-25T13:19:24.695Z",
       "score": 18.4,
       "topics": []
@@ -975,36 +1293,6 @@
       "fetchedAt": "2026-10-25T13:19:24.695Z",
       "score": 18.4,
       "topics": []
-    },
-    {
-      "id": "82f8d709796f7a64",
-      "category": "ai",
-      "title": "Release v0.7.2.post1",
-      "summary": "What's Changed Full Changelog : v0.7.2...v0.7.2.post1",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-23T20:20:18.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 17.8,
-      "topics": []
-    },
-    {
-      "id": "b8b35f790163ca6d",
-      "category": "technology",
-      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
-      "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
-      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:19:55.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 17.8,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "62ee106bf558605c",
@@ -1051,34 +1339,6 @@
       "topics": []
     },
     {
-      "id": "b990e774d018407f",
-      "category": "technology",
-      "title": "A 1,000-mile cloud on Mars may reveal physics never seen in nature",
-      "summary": "A new model suggests Mars may host ice-forming physics never directly observed before.",
-      "url": "https://arstechnica.com/science/2026/10/a-1000-mile-cloud-on-mars-may-reveal-physics-never-seen-in-nature/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T11:50:28.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 16.6,
-      "topics": []
-    },
-    {
-      "id": "cd9d174600ae4219",
-      "category": "finance",
-      "title": "Piero Cipollone: Interview with Milano Finanza",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261024~ee2ba73cf3.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-24T06:00:00.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 16.2,
-      "topics": []
-    },
-    {
       "id": "372e87b47c038807",
       "category": "technology",
       "title": "Bringing post-quantum cryptography to geographically fenced key management",
@@ -1090,20 +1350,6 @@
       "publishedAt": "2026-10-23T18:06:56.000Z",
       "fetchedAt": "2026-10-25T13:19:24.695Z",
       "score": 14.2,
-      "topics": []
-    },
-    {
-      "id": "6f12d97c31b33d51",
-      "category": "technology",
-      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops",
-      "summary": "Pentagon memo: Insider trading gives US enemies key intel on military operations.",
-      "url": "https://arstechnica.com/tech-policy/2026/10/pentagon-memo-on-prediction-markets-says-insider-bets-put-troops-lives-at-risk/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:28:43.000Z",
-      "fetchedAt": "2026-10-25T13:19:24.695Z",
-      "score": 12.8,
       "topics": []
     },
     {
@@ -1238,20 +1484,6 @@
       "publishedAt": "2026-10-24T22:28:37.000Z",
       "fetchedAt": "2026-10-25T05:09:13.148Z",
       "score": 22.3,
-      "topics": []
-    },
-    {
-      "id": "287d368f59cda51d",
-      "category": "technology",
-      "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
-      "summary": "Before astronauts return to the lunar surface, NASA will first conduct one of the most ambitious and complex test missions in the agency’s history. Launching in 2027, Artemis III will send NASA astronauts Randy Bresnik, Frank Rubio, Andre Douglas, and ESA (European Space Agency) astronaut Luca Parmitano aboard the Orion spacecraft into low Earth orbit […]",
-      "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-23T22:37:53.000Z",
-      "fetchedAt": "2026-10-25T05:09:13.148Z",
-      "score": 21.4,
       "topics": []
     },
     {
