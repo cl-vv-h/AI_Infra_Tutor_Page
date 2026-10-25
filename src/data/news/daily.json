@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T22:41:22.379Z",
+  "generatedAt": "2026-10-25T05:09:13.148Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -14,7 +14,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 31,
-      "latestPublishedAt": "2026-10-24T22:08:47.000Z",
+      "latestPublishedAt": "2026-10-25T04:16:52.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 55,
-      "latestPublishedAt": "2026-10-24T11:55:35.000Z",
+      "latestPublishedAt": "2026-10-25T02:57:30.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 131,
-      "latestPublishedAt": "2026-10-24T19:33:00.000Z",
+      "entryCount": 130,
+      "latestPublishedAt": "2026-10-25T04:44:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-24T21:39:29.000Z",
+      "latestPublishedAt": "2026-10-25T04:43:06.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-10-23T02:00:13.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -248,8 +248,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 30,
-      "latestPublishedAt": "2026-10-23T12:00:00.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-24T12:00:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -288,7 +288,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-24T14:09:35.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -314,7 +314,7 @@
       "channel": "feed",
       "entryCount": 890,
       "latestPublishedAt": "2026-10-23T16:15:50.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -327,7 +327,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-10-23T00:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -418,7 +418,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-22T23:52:11.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -444,7 +444,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-23T00:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -524,8 +524,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-24T21:01:56.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 28.6,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 27,
       "topics": [
         "security"
       ]
@@ -540,8 +540,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T17:50:21.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 26.8,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 25.2,
       "topics": [
         "security"
       ]
@@ -556,8 +556,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-24T13:19:54.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 26.7,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 25,
       "topics": [
         "security"
       ]
@@ -572,11 +572,39 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-24T13:18:52.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 26.7,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 25,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "7528655493509157",
+      "category": "world",
+      "title": "Trump announces Audi will build $4 billion factory in US",
+      "summary": "After Donald Trump made the announcement at an election rally in Georgia, the German carmaker confirmed plans for a factory in the US state, but noted car production would only start early next decade.",
+      "url": "https://www.dw.com/en/trump-announces-audi-will-build-4-billion-factory-in-us/a-79753479?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T04:44:00.000Z",
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "5fccb68ae8ca20fe",
+      "category": "world",
+      "title": "Serbia votes in election pitting longtime leader against student movement",
+      "summary": "Polls show populist leader Aleksandar Vucic in a tight race against the anticorruption and anti-authoritarian movement.",
+      "url": "https://www.aljazeera.com/news/2026/10/25/serbia-votes-in-election-pitting-longtime-leader-against-student-movement?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T04:43:06.000Z",
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 23.9,
+      "topics": []
     },
     {
       "id": "1522ce53c4a47d02",
@@ -588,11 +616,25 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-24T06:34:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 25,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 23.4,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "f81709615887a9c5",
+      "category": "world",
+      "title": "Mass rally against Netanyahu ahead of pivotal Israeli election",
+      "summary": "Thousands of Israelis rallied against PM Benjamin Netanyahu ahead of elections on Tuesday.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/25/mass-rally-against-netanyahu-ahead-of-pivotal-israeli-election?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T02:07:29.000Z",
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 23.2,
+      "topics": []
     },
     {
       "id": "4f4d546699003a04",
@@ -604,11 +646,39 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-24T05:29:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 24.7,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 23.1,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "3c9908c252504f17",
+      "category": "world",
+      "title": "Palestinian families displaced as Israeli forces demolish Hebron homes",
+      "summary": "The crackdown follows the killing of two Israeli soldiers by two Palestinian gunmen on Friday - and comes just days ahead of Israel's election.",
+      "url": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T23:02:06.000Z",
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "2db08c1bfb9cb427",
+      "category": "world",
+      "title": "How have Democrats’ policies shifted since the last major US election?",
+      "summary": "From trans rights to Israel's war on Gaza, the party's candidates have responded to voter shifts on a slew of issues.",
+      "url": "https://www.aljazeera.com/economy/2026/10/24/how-have-democrats-policies-shifted-since-the-last-major-us-election?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-24T22:28:37.000Z",
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 22.3,
+      "topics": []
     },
     {
       "id": "cab9fbc528a24640",
@@ -620,22 +690,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-24T22:08:47.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 23.9,
-      "topics": []
-    },
-    {
-      "id": "0d0562e72f0b3f8c",
-      "category": "world",
-      "title": "Brazil’s Lula, Bolsonaro draw thousands to election-eve rallies",
-      "summary": "The pivotal run-off will determine whether Brazilians stick with their left-wing leader or shift towards the right.",
-      "url": "https://www.aljazeera.com/news/2026/10/24/brazils-lula-bolsonaro-draw-thousands-to-election-eve-rallies?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T21:39:29.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 23.7,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 22.2,
       "topics": []
     },
     {
@@ -648,40 +704,12 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T17:27:35.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 23.7,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 22.1,
       "topics": [
         "kernels",
         "hardware"
       ]
-    },
-    {
-      "id": "7561892d706eeafb",
-      "category": "world",
-      "title": "Houthis launch attacks on Saudi Arabia and Yemen’s Aden",
-      "summary": "Houthi missiles reportedly struck a number of targets in Yemen, including Aden's airport and a coastguard base.",
-      "url": "https://www.aljazeera.com/news/2026/10/24/houthis-launch-attacks-on-saudi-arabia-and-yemens-aden?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T21:08:51.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 23.6,
-      "topics": []
-    },
-    {
-      "id": "800b032b126764d1",
-      "category": "world",
-      "title": "Severe hunger stalks people in Gaza as bakeries close down",
-      "summary": "Bakeries across Gaza are struggling to find flour to make bread for people desperate for food.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/24/severe-hunger-stalks-people-in-gaza-as-bakeries-close-down?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T20:52:55.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 23.5,
-      "topics": []
     },
     {
       "id": "69aebe8888865898",
@@ -693,27 +721,10 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-24T00:05:45.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 21.7,
       "topics": [
         "security"
-      ]
-    },
-    {
-      "id": "9b139e7de0c5891d",
-      "category": "technology",
-      "title": "Scaling 3D Gaussian Splatting with Distributed Compute: Why One GPU Is Never Enough",
-      "summary": "gsplat is a GPU-optimized Python library for training and rendering 3D Gaussian Splatting (3DGS) models. In earlier posts we showed how to train gsplat scenes on AMD GPUs, took a closer look at the mathematics of 3DGS, and applied gsplat to autonomous driving.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/scaling-gsplat/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 23.3,
-      "topics": [
-        "hardware",
-        "training"
       ]
     },
     {
@@ -726,8 +737,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T23:03:17.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 21.5,
       "topics": [
         "security"
       ]
@@ -742,8 +753,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T22:39:39.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 23,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 21.4,
       "topics": []
     },
     {
@@ -756,8 +767,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T22:37:53.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 23,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 21.4,
       "topics": []
     },
     {
@@ -770,8 +781,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-23T18:51:33.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 23,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 21.4,
       "topics": []
     },
     {
@@ -784,8 +795,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T18:22:59.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 22.9,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 21.3,
       "topics": [
         "inference"
       ]
@@ -800,22 +811,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-24T17:25:46.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 22.7,
-      "topics": []
-    },
-    {
-      "id": "3c9908c252504f17",
-      "category": "world",
-      "title": "Palestinian families displaced as Israeli forces demolish Hebron homes",
-      "summary": "The crackdown follows the killing of two Israeli soldiers by two Palestinian gunmen on Friday - and comes just days ahead of Israel's election.",
-      "url": "https://www.bbc.co.uk/news/articles/cqd09k1k7532o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T17:21:42.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 21.1,
       "topics": []
     },
     {
@@ -828,8 +825,22 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T17:27:52.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 21.1,
+      "topics": []
+    },
+    {
+      "id": "c90063c94acfe905",
+      "category": "ai",
+      "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+      "summary": "",
+      "url": "https://huggingface.co/blog/allenai/litpivot",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-23T16:15:50.000Z",
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 20.8,
       "topics": []
     },
     {
@@ -842,26 +853,12 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T20:06:51.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 22.4,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 20.7,
       "topics": [
         "training",
         "security"
       ]
-    },
-    {
-      "id": "c90063c94acfe905",
-      "category": "ai",
-      "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
-      "summary": "",
-      "url": "https://huggingface.co/blog/allenai/litpivot",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T16:15:50.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 22.4,
-      "topics": []
     },
     {
       "id": "952fc8d98f36de25",
@@ -873,8 +870,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-24T19:00:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 22.1,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 20.5,
       "topics": []
     },
     {
@@ -887,22 +884,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T14:58:32.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 22.1,
-      "topics": []
-    },
-    {
-      "id": "ea0945f55f0ead6e",
-      "category": "world",
-      "title": "Turkey's new deal on Mediterranean maritime boundaries with Libya is exacerbating issues with Greece and the EU",
-      "summary": "Turkey and Libya plan to redraw maritime boundaries in the Mediterranean as part of a new economic corridor. This has sparked strong protests from Greece, and has also drawn the European Union into the conflict.",
-      "url": "https://www.dw.com/en/turkey-s-new-deal-on-mediterranean-maritime-boundaries-with-libya-is-exacerbating-issues-with-greece-and-the-eu/a-79745971?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T14:09:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 21.9,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 20.5,
       "topics": []
     },
     {
@@ -915,8 +898,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-23T20:20:18.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 21.4,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -929,8 +912,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T20:19:55.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 21.4,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 19.8,
       "topics": [
         "security"
       ]
@@ -945,8 +928,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T16:22:07.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 21.4,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 19.8,
       "topics": [
         "security"
       ]
@@ -961,8 +944,22 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-24T16:00:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 21.3,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 19.7,
+      "topics": []
+    },
+    {
+      "id": "cc94c1359c122b98",
+      "category": "finance",
+      "title": "Budget to include £1bn for social and affordable housing",
+      "summary": "The move will take funding for the 10-year programme to more than £40bn.",
+      "url": "https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T02:57:30.000Z",
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 19.5,
       "topics": []
     },
     {
@@ -975,8 +972,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-24T15:00:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 21.1,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 19.5,
       "topics": []
     },
     {
@@ -989,8 +986,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-24T14:09:35.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 20.9,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 19.3,
       "topics": []
     },
     {
@@ -1003,11 +1000,25 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-23T12:24:17.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 20.4,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 18.8,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "e026941674c55fad",
+      "category": "world",
+      "title": "Women ‘first to suffer’ under siege, first to step up as frontline responders in Sudan",
+      "summary": "When Tahani Al-Numeiri heard the first explosions in Khartoum, her hometown, war seemed so remote that she assumed they were celebrations from a nearby wedding. It was the morning of 15 April 2023, and the paramilitary Rapid Support Forces had just turned their guns on the army.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168663",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-24T12:00:00.000Z",
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 18.7,
+      "topics": []
     },
     {
       "id": "b990e774d018407f",
@@ -1019,8 +1030,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-24T11:50:28.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 18.7,
       "topics": []
     },
     {
@@ -1033,8 +1044,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-24T11:42:11.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 18.6,
       "topics": []
     },
     {
@@ -1047,8 +1058,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-24T06:00:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 19.8,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 18.2,
       "topics": []
     },
     {
@@ -1061,107 +1072,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-24T08:38:44.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 19.5,
-      "topics": []
-    },
-    {
-      "id": "90d82aceb62411b4",
-      "category": "ai",
-      "title": "Serving DeepSeek-V4.1-Flash at Scale: vLLM Matches DeepInfer and Scales to GB300 NVL72",
-      "summary": "With P/D disaggregation and Wide-EP on a GB300 NVL72 rack, vLLM serves DeepSeek-V4.1-Flash on SemiAnalysis AgentX at 954K tokens/s per GPU at a P90 of 196 tokens/s per user, 7.9x our aggregated single-node result.",
-      "url": "https://vllm.ai/blog/2026-10-23-deepseek-v41-flash-pd-wide-ep",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 19.3,
-      "topics": [
-        "inference",
-        "hardware",
-        "models"
-      ]
-    },
-    {
-      "id": "a4ee612ff89614a5",
-      "category": "ai",
-      "title": "GLM-5.3 Optimizations, Part 2: PCP, DCP, and Hybrid HiSparse on 16 H200s",
-      "summary": "vLLM serves GLM-5.3 on 16 H200s with PCP and DCP prefill and Hybrid HiSparse decode, reaching 1M-token contexts and 1.7–3.2× the per-user speed of data-parallel P/D on the AgentX agentic benchmark.",
-      "url": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 19.3,
-      "topics": [
-        "inference",
-        "models"
-      ]
-    },
-    {
-      "id": "4967de51d907fb0e",
-      "category": "ai",
-      "title": "vLLM Delivers Day-0 Support for MiniMax-M3.1-Flash",
-      "summary": "Day-0 vLLM support for MiniMax-M3.1-Flash on NVIDIA Blackwell, NVIDIA Rubin, and AMD MI350-series GPUs, with NVFP4 MSA kernels, NVFP4 MegaMoE, DSpark speculative decoding, AgentX results, and day-0 RL.",
-      "url": "https://vllm.ai/blog/2026-10-23-minimax-m31-flash",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 19.3,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware"
-      ]
-    },
-    {
-      "id": "2b17ef5d6618b82e",
-      "category": "technology",
-      "title": "FP8 GEMM Optimization on AMD RDNA™ 4 Architecture",
-      "summary": "In this blog you will learn how to port an FP16 GEMM kernel to FP8 on AMD RDNA™ 4 GPUs. You will see what the FP8 WMMA instruction changes, how the smaller element size lets larger tiles and deeper K slices fit in LDS, and how four tile configurations compare against hipBLASLt on GEMM shapes from transformer workloads.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/rdna-fp8-gemm/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 19.3,
-      "topics": [
-        "kernels",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "8b3b40eacaa63f3d",
-      "category": "world",
-      "title": "CAR: Former hostages greeted by President Touadéra on return to Bangui",
-      "summary": "In Central African Republic, three hostages released this week after 10 months in captivity arrived in Bangui aboard a special UN flight. A local government official and two members of the National Election Authority, they were kidnapped in Bambouti in December, on the day of the general election.",
-      "url": "https://www.africanews.com/2026/10/24/car-former-hostages-greeted-by-president-touadera-on-return-to-bangui/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T07:25:38.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 19.2,
-      "topics": []
-    },
-    {
-      "id": "5574f318f053599e",
-      "category": "ai",
-      "title": "Does Your Model Run on AWS Trainium? Look It Up",
-      "summary": "",
-      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-23T00:00:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 18.3,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -1174,22 +1086,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-23T18:06:56.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 17.9,
-      "topics": []
-    },
-    {
-      "id": "c4df678c99d634a7",
-      "category": "finance",
-      "title": "Rising demand from families needing Christmas help",
-      "summary": "Charlotte Riley says more families are reaching out for help for a variety of reasons.",
-      "url": "https://www.bbc.co.uk/news/articles/cqp8gjz4k7g6o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T11:55:35.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 17.3,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 16.2,
       "topics": []
     },
     {
@@ -1202,8 +1100,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-23T20:28:43.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 16.4,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 14.8,
       "topics": []
     },
     {
@@ -1216,22 +1114,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-23T08:00:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 14.3,
-      "topics": []
-    },
-    {
-      "id": "17e7b5d4bec488b0",
-      "category": "technology",
-      "title": "PyTorch Conference North America 2026: Accelerating Open Intelligence Together",
-      "summary": "PyTorch Conference North America 2026 brought 3,500+ attendees to San Jose on October 20–21 for two days focused on accelerating open intelligence and exploring the impact of PyTorch Foundation projects... The post PyTorch Conference North America 2026: Accelerating Open Intelligence Together appeared first on PyTorch .",
-      "url": "https://pytorch.org/blog/pytorch-conference-north-america-2026-accelerating-open-intelligence-together/",
-      "source": "PyTorch Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-22T23:52:11.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 14.3,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 12.7,
       "topics": []
     },
     {
@@ -1244,8 +1128,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-23T05:13:48.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 13.6,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 12,
       "topics": []
     },
     {
@@ -1258,8 +1142,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-10-23T06:10:35.677Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 12.9,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 11.3,
       "topics": []
     },
     {
@@ -1272,22 +1156,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-23T06:00:00.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 12.8,
-      "topics": []
-    },
-    {
-      "id": "0c2aea05700bf9e1",
-      "category": "ai",
-      "title": "Kazakhstan Expands Compute for Its AI Future",
-      "summary": "Kazakhstan’s AI ecosystem is moving from infrastructure plans to deployment. The shift is visible across the full AI stack — from infrastructure to models to applications. The announcements below — coinciding with a visit to Astana by NVIDIA founder and CEO Jensen Huang — point to the nation’s increasing supply of accelerated computing, along with […]",
-      "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T02:00:13.000Z",
-      "fetchedAt": "2026-10-24T22:41:22.379Z",
-      "score": 12.8,
+      "fetchedAt": "2026-10-25T05:09:13.148Z",
+      "score": 11.2,
       "topics": []
     }
   ]
