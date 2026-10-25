@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T19:12:27.981Z",
+  "generatedAt": "2026-10-25T22:45:55.940Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 31,
-      "latestPublishedAt": "2026-10-25T18:29:00.000Z",
-      "selectedCount": 2,
+      "entryCount": 32,
+      "latestPublishedAt": "2026-10-25T22:11:13.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 130,
-      "latestPublishedAt": "2026-10-25T16:12:00.000Z",
+      "latestPublishedAt": "2026-10-25T22:15:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-25T18:55:39.000Z",
+      "latestPublishedAt": "2026-10-25T22:22:53.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -65,8 +65,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 5,
-      "latestPublishedAt": "2026-10-23T23:06:25.000Z",
+      "entryCount": 4,
+      "latestPublishedAt": "2026-10-25T22:25:14.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-25T16:57:32.000Z",
+      "latestPublishedAt": "2026-10-25T21:31:16.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -145,7 +145,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-25T08:19:48.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 5
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-25T17:12:50.000Z",
+      "latestPublishedAt": "2026-10-25T21:24:42.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-25T16:18:41.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-25T21:22:43.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-25T17:49:14.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-10-25T22:12:47.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -301,7 +301,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-25T13:18:07.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -379,7 +379,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-23T20:20:18.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -515,6 +515,22 @@
   ],
   "items": [
     {
+      "id": "80b183f34bcac87d",
+      "category": "world",
+      "title": "Why Israel's election is one of the most important in its history",
+      "summary": "Security and democracy emerge as central issues in Israel's highly anticipated general election, as Middle East correspondent Lucy Williamson reports.",
+      "url": "https://www.bbc.co.uk/news/videos/c64g1wje3jjwo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T22:05:30.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 28.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "b6f0f949fb419d37",
       "category": "world",
       "title": "Israeli air strike on Gaza City university kills three people",
@@ -524,24 +540,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-25T18:12:13.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 28.7,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "1c9c5a6997bb2c1c",
-      "category": "world",
-      "title": "Eight killed in Gaza as Israel targets university campus and other sites",
-      "summary": "Israeli air strike kills three security guards in one of two attacks on the Islamic University in Gaza City.",
-      "url": "https://www.aljazeera.com/news/2026/10/25/seven-killed-in-gaza-as-israel-targets-university-campus-and-other-sites?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-25T15:40:25.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 28.1,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 27.9,
       "topics": [
         "security"
       ]
@@ -556,8 +556,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-25T15:00:01.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 27.9,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 27.1,
       "topics": [
         "security"
       ]
@@ -572,8 +572,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-25T13:51:14.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 27.7,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 26.8,
       "topics": [
         "security"
       ]
@@ -588,8 +588,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-25T12:05:00.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 27.2,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 26.3,
       "topics": [
         "security"
       ]
@@ -604,80 +604,150 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-25T11:40:38.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 27.1,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 26.2,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "0c11d6fdca0f3a53",
+      "id": "69941fa4af348f02",
       "category": "world",
-      "title": "Venezuela’s opposition leader Maria Corina Machado returns from exile",
-      "summary": "The Nobel laureate's homecoming follows national protests demanding free elections.",
-      "url": "https://www.aljazeera.com/news/2026/10/25/venezuelas-opposition-leader-maria-corina-machado-returns-from-exile?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "title": "Brazil elections: Vote counting resumes after extension",
+      "summary": "Votes are being tallied after polling was extended two more hours. The result between leftist Lula and right-wing Bolsonaro is expected to be very close. DW has the latest.",
+      "url": "https://www.dw.com/en/brazil-elections-vote-counting-resumes-after-extension/live-79755630?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
       "sourceType": "news",
-      "publishedAt": "2026-10-25T18:55:39.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "publishedAt": "2026-10-25T22:15:00.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
       "score": 23.9,
       "topics": []
     },
     {
-      "id": "40fcc6eb0c729004",
+      "id": "530137a80a66bcae",
       "category": "world",
-      "title": "Protein shakes for teenagers: Good or bad idea?",
-      "summary": "Protein products are marketed as a way of building muscle and losing weight — and they're very popular with young people. They also claim to promote healthy growth in children. Is this true? How much protein is healthy?",
-      "url": "https://www.dw.com/en/protein-shakes-for-teenagers-good-or-bad-idea/a-79751929?maca=en-rss-en-all-1573-rdf",
+      "title": "Deeply divided Israel braces for pivotal election",
+      "summary": "After three years of regional war, this is a battle Israel always knew was coming, writes Lucy Williamson.",
+      "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T22:11:13.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "e5df966240f75ab3",
+      "category": "world",
+      "title": "Serbia's veteran ruler Vučić concedes election to student-led protest movement",
+      "summary": "The populist right-wing leader of 12 years says it is \"clear\" his party has lost the vote billed as a referendum on the country's future.",
+      "url": "https://www.bbc.co.uk/news/articles/cw5yn3xlprpmo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T22:06:26.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "bcc0b55b32011111",
+      "category": "world",
+      "title": "Marine Le Pen vows French ‘renaissance’ as far right eyes seat of power",
+      "summary": "National Rally's Le Pen launches presidential campaign against backdrop of protests and social, economic discontent.",
+      "url": "https://www.aljazeera.com/news/2026/10/25/marine-le-pen-vows-a-french-renaissance-as-far-right-eyes-seat-of-power?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T21:50:36.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "5018ec4648228f3d",
+      "category": "world",
+      "title": "US Attorney General Todd Blanche defends Alaska Senate election lawsuit",
+      "summary": "The Department of Justice has faced criticism that its lawsuit is aimed at blocking a Democratic victory in a key race.",
+      "url": "https://www.aljazeera.com/news/2026/10/25/us-attorney-general-todd-blanche-defends-alaska-senate-election-lawsuit?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T21:41:10.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "9669f5d0dd645aaa",
+      "category": "world",
+      "title": "Serbia election: Vucic concedes defeat to student-led movement",
+      "summary": "In a seismic political shift, Serbia's longtime strongman leader Aleksandar Vucic has conceded defeat to a student-led movement in the country's parliamentary elections.",
+      "url": "https://www.dw.com/en/serbia-election-vucic-concedes-defeat-to-student-led-movement/a-79753482?maca=en-rss-en-all-1573-rdf",
       "source": "DW",
       "sourceCountry": "Germany",
       "sourceType": "news",
-      "publishedAt": "2026-10-25T16:12:00.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 23.2,
+      "publishedAt": "2026-10-25T21:07:00.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 23.6,
       "topics": []
     },
     {
-      "id": "2b48221bfc8e7f14",
+      "id": "dcbae4777669893c",
       "category": "world",
-      "title": "Early reports suggest record high turnout in Serbia elections",
-      "summary": "Serbia is heading to the polls as a student movement attempts to oust longtime populist leader Aleksandar Vučić.",
-      "url": "https://www.bbc.co.uk/news/articles/c6jdmj1ej715o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
+      "title": "Serbia: crowds celebrate in Belgrade after Vučić admits defeat",
+      "summary": "Crowds celebrated in Belgrade after President Aleksandar Vučić conceded defeat for his ruling party in Serbia's snap parliamentary election, following nearly two years of student-led demonstrations.",
+      "url": "https://www.africanews.com/2026/10/25/serbia-crowds-celebrate-in-belgrade-after-vucic-admits-defeat/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
       "sourceType": "news",
-      "publishedAt": "2026-10-25T16:05:15.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 23.2,
-      "topics": []
-    },
-    {
-      "id": "0679827f069b7ea1",
-      "category": "world",
-      "title": "Gabon says access to social media restored after eight-month ban",
-      "summary": "The authorities had justified the ban by saying online content was fuelling conflict, while the opposition had condemned it as an abuse of power.",
-      "url": "https://www.bbc.co.uk/news/articles/c6x2w0ngejneo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-25T14:39:47.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
+      "publishedAt": "2026-10-25T22:12:47.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
       "score": 22.9,
       "topics": []
     },
     {
-      "id": "cba23baad5a636ef",
-      "category": "world",
-      "title": "Brazil election: Lula, Bolsonaro cast votes in final bout",
-      "summary": "Almost 160 million are eligible to vote in the final round of Brazil's election that pits the left-wing incumbent against the son of the former far-right president. DW has more.",
-      "url": "https://www.dw.com/en/brazil-election-lula-bolsonaro-cast-votes-in-final-bout/live-79755630?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
+      "id": "3523160d26331d18",
+      "category": "ai",
+      "title": "Grok releases the first seven minutes of its AI-generated ‘Odyssey’",
+      "summary": "The footage looks okay, as long as you're not seeking artistry, inspiration, or human interest.",
+      "url": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-25T14:13:00.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 22.8,
+      "publishedAt": "2026-10-25T21:31:16.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "648565e907560553",
+      "category": "world",
+      "title": "U.S. influence in Latin America at stake in runoff election in Brazil",
+      "summary": "A polarizing presidential election runoff in Latin America's largest economy and biggest democracy pits leftist Lula da Silva's legacy against Trump ally Flavio Bolsonaro, son of the former Brazilian president.",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6011223/u-s-influence-in-latin-america-at-stake-in-runoff-election-in-brazil",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T21:22:43.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "941838689951c925",
+      "category": "world",
+      "title": "This center-right former general could unseat Netanyahu as Prime Minister in Israel",
+      "summary": "A former Israeli general is the main center-right challenger hoping to unseat Prime Minister Benjamin Netanyahu in Israeli elections this week.",
+      "url": "https://www.npr.org/2026/10/25/nx-s1-6011185/this-center-right-former-general-could-unseat-netanyahu-as-prime-minister-in-israel",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-25T21:22:40.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 22.7,
       "topics": []
     },
     {
@@ -690,8 +760,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-25T16:57:32.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 22.4,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 21.5,
       "topics": []
     },
     {
@@ -704,8 +774,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-25T08:19:48.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 22.3,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 21.4,
       "topics": []
     },
     {
@@ -718,67 +788,37 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-25T16:00:00.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 22.2,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 21.3,
       "topics": []
     },
     {
-      "id": "61305af2214192c5",
-      "category": "world",
-      "title": "Gabon restores social media access after an eight-month ban",
-      "summary": "The media regulator pulled the plug on social networks in February blaming content posted online for stoking conflict and division in society.",
-      "url": "https://www.africanews.com/2026/10/25/gabon-restores-social-media-access-after-an-eight-month-ban/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
+      "id": "624e0d9bbb6a8e99",
+      "category": "finance",
+      "title": "Australia's NEXTDC CEO to forgo fiscal 2027 bonuses after forecast cut, project delay",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/australias-nextdc-ceo-forgo-fiscal-2027-bonuses-after-forecast-cut-project-delay-6491626",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-10-25T15:37:00.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 22.1,
+      "publishedAt": "2026-10-25T22:25:14.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 19.9,
       "topics": []
     },
     {
-      "id": "161f93ffce1186e7",
-      "category": "world",
-      "title": "Iranian president blames United States for failure of interim peace deal",
-      "summary": "Masoud Pezeshkian emphasised, however, that a new attempt should be made to reach an agreement to end the war with the US and Israel.",
-      "url": "https://www.africanews.com/2026/10/25/iranian-president-blames-united-states-for-failure-of-interim-peace-deal/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
+      "id": "ec322dd4f224da7f",
+      "category": "finance",
+      "title": "Musk says SpaceX raised $40 billion in debt for GPUs",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/musk-says-spacex-raised-40-billion-in-debt-gpus-6491471",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-10-25T13:55:33.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 21.7,
+      "publishedAt": "2026-10-25T20:05:24.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 19.3,
       "topics": []
-    },
-    {
-      "id": "50df3de588629b92",
-      "category": "world",
-      "title": "More Lula, or back to the Bolsonaros? Brazil votes in cliffhanger election",
-      "summary": "Sunday's run-off will determine whether Brazil remains one of Latin America's few leftist nations or joins a regional swing to the right. Leer más",
-      "url": "https://www.batimes.com.ar/news/latin-america/more-lula-or-back-to-the-bolsonaros-brazil-votes-in-cliffhanger-election.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-10-25T13:18:07.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 21.5,
-      "topics": []
-    },
-    {
-      "id": "a677747efea9ce38",
-      "category": "world",
-      "title": "Soldiers guard center of Milan as thousands of protesters march in cities across Europe",
-      "summary": "While protests in France have claimed most international attention, large demonstrations also rocked many European cities Saturday from Milan to Rome to Madrid, Lisbon and Tirana.",
-      "url": "https://www.npr.org/2026/10/25/nx-s1-6016126/thousands-of-protesters-across-europe",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-25T07:15:00.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 21,
-      "topics": [
-        "models"
-      ]
     },
     {
       "id": "69aebe8888865898",
@@ -790,8 +830,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-24T00:05:45.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 18.2,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 17.3,
       "topics": [
         "security"
       ]
@@ -806,39 +846,11 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-23T23:03:17.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 18,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 17.1,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "dc07582537a6ba5f",
-      "category": "technology",
-      "title": "NASA, Partners Accelerate Lander Development for 2028 Moon Missions",
-      "summary": "As NASA returns humans to the lunar surface and establishes a long-term presence on our closest celestial neighbor, the agency and commercial human landing system providers Blue Origin and SpaceX have streamlined the designs and changed both concepts of operations for its future crewed landers. Since NASA established initial contracts with Blue Origin and SpaceX […]",
-      "url": "https://www.nasa.gov/missions/artemis/nasa-partners-accelerate-lander-development-for-2028-moon-missions/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-23T22:39:39.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 17.9,
-      "topics": []
-    },
-    {
-      "id": "287d368f59cda51d",
-      "category": "technology",
-      "title": "NASA’s Artemis III Mission to Test Future Moon Lander Operations",
-      "summary": "Before astronauts return to the lunar surface, NASA will first conduct one of the most ambitious and complex test missions in the agency’s history. Launching in 2027, Artemis III will send NASA astronauts Randy Bresnik, Frank Rubio, Andre Douglas, and ESA (European Space Agency) astronaut Luca Parmitano aboard the Orion spacecraft into low Earth orbit […]",
-      "url": "https://www.nasa.gov/missions/artemis/nasas-artemis-iii-mission-to-test-future-moon-lander-operations/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-23T22:37:53.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 17.9,
-      "topics": []
     },
     {
       "id": "c8303ec9b05316b2",
@@ -850,8 +862,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-25T14:10:00.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 17.7,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 16.9,
       "topics": []
     },
     {
@@ -864,26 +876,9 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-25T10:03:17.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 17.7,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 16.8,
       "topics": []
-    },
-    {
-      "id": "a0dfef929b12d70b",
-      "category": "finance",
-      "title": "OpenAI resumes frontier AI training after security overhaul, discloses flaw in widely used software",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/openai-resumes-frontier-ai-training-after-security-overhaul-discloses-flaw-in-widely-used-software-6487981",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:06:51.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 17.2,
-      "topics": [
-        "training",
-        "security"
-      ]
     },
     {
       "id": "72d97d37efa447c7",
@@ -895,53 +890,9 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-25T07:15:38.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 17,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 16.1,
       "topics": []
-    },
-    {
-      "id": "952fc8d98f36de25",
-      "category": "ai",
-      "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
-      "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-      "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-24T19:00:00.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 16.9,
-      "topics": []
-    },
-    {
-      "id": "82f8d709796f7a64",
-      "category": "ai",
-      "title": "Release v0.7.2.post1",
-      "summary": "What's Changed Full Changelog : v0.7.2...v0.7.2.post1",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-23T20:20:18.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 16.3,
-      "topics": []
-    },
-    {
-      "id": "b8b35f790163ca6d",
-      "category": "technology",
-      "title": "Updated Google privacy policy says your Gmail might be used for advertising",
-      "summary": "Turning on Personal Intelligence gives the company more data for ad targeting.",
-      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-23T20:19:55.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 16.3,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "b990e774d018407f",
@@ -953,8 +904,22 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-24T11:50:28.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 15.2,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 14.3,
+      "topics": []
+    },
+    {
+      "id": "7b2c7e90a75c8c83",
+      "category": "technology",
+      "title": "APOD: 2026 October 24 – Rosetta’s Selfie",
+      "summary": "APOD Science APOD APOD: 2026 October 24 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Rosetta’s Selfie Explanation: […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-24-rosettas-selfie/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-10-24T04:05:00.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 14.3,
       "topics": []
     },
     {
@@ -967,36 +932,36 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-24T06:00:00.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 14.7,
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 13.8,
       "topics": []
     },
     {
-      "id": "6f12d97c31b33d51",
+      "id": "2157e268d3367f08",
       "category": "technology",
-      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops",
-      "summary": "Pentagon memo: Insider trading gives US enemies key intel on military operations.",
-      "url": "https://arstechnica.com/tech-policy/2026/10/pentagon-memo-on-prediction-markets-says-insider-bets-put-troops-lives-at-risk/",
+      "title": "Ice sheet expansion may have started 2,000 years ago, but we canceled that",
+      "summary": "The tiny remains of the Laurentide Ice Sheet began getting somewhat less tiny.",
+      "url": "https://arstechnica.com/science/2026/10/ice-sheet-expansion-may-have-started-2000-years-go-but-we-canceled-that/",
       "source": "Ars Technica",
       "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-23T20:28:43.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 11.3,
+      "publishedAt": "2026-10-24T11:00:09.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 10.1,
       "topics": []
     },
     {
-      "id": "137f9cfe1a18d349",
-      "category": "finance",
-      "title": "Amazon cloud capacity sold out through 2027, CEO Jassy says",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/amazon-cloud-capacity-sold-out-through-2027-ceo-jassy-says-6488181",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
+      "id": "8f1d3be41f0692a2",
+      "category": "technology",
+      "title": "NASA updates lander plans for Moon landings, finally solves long-festering Orion issue",
+      "summary": "\"We have the mandate, we have the resources, and the support from our stakeholders.\"",
+      "url": "https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-23T23:06:25.000Z",
-      "fetchedAt": "2026-10-25T19:12:27.981Z",
-      "score": 9,
+      "publishedAt": "2026-10-23T22:48:25.000Z",
+      "fetchedAt": "2026-10-25T22:45:55.940Z",
+      "score": 7,
       "topics": []
     }
   ]
