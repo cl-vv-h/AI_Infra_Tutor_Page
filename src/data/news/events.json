@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-10-26T21:08:59.081Z",
-    "releasesCollectedAt": "2026-10-26T21:09:10.586Z",
-    "libraryCollectedAt": "2026-10-26T21:08:59.081Z",
+    "dailyCollectedAt": "2026-10-27T05:28:07.370Z",
+    "releasesCollectedAt": "2026-10-27T05:28:19.882Z",
+    "libraryCollectedAt": "2026-10-27T05:28:07.370Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -58,7 +58,8 @@
       "2026-10-23",
       "2026-10-24",
       "2026-10-25",
-      "2026-10-26"
+      "2026-10-26",
+      "2026-10-27"
     ],
     "missingArchiveDates": [],
     "failedSources": [],
@@ -75,7 +76,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-26T21:09:10.586Z",
+          "lastCollectedAt": "2026-10-27T05:28:19.882Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -88,7 +89,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-26T21:09:10.586Z",
+          "lastCollectedAt": "2026-10-27T05:28:19.882Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -101,7 +102,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-26T21:09:10.586Z",
+          "lastCollectedAt": "2026-10-27T05:28:19.882Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -114,7 +115,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-10-26T21:09:10.586Z",
+          "lastCollectedAt": "2026-10-27T05:28:19.882Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -127,7 +128,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-02T01:09:04.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-10-26T21:09:10.586Z",
+          "lastCollectedAt": "2026-10-27T05:28:19.882Z",
           "revisionCount": 3,
           "ruleIds": [
             "official-releases"
@@ -140,7 +141,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-19T02:55:19.000Z",
           "firstCollectedAt": "2026-10-16T04:52:38.724Z",
-          "lastCollectedAt": "2026-10-26T21:09:10.586Z",
+          "lastCollectedAt": "2026-10-27T05:28:19.882Z",
           "revisionCount": 1,
           "ruleIds": [
             "official-releases"
@@ -237,6 +238,19 @@
           "publishedAt": "2026-10-09T13:00:00.000Z",
           "firstCollectedAt": "2026-10-09T15:31:13.518Z",
           "lastCollectedAt": "2026-10-11T06:17:40.381Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "workers-announcements"
+          ]
+        },
+        {
+          "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+          "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+          "publisher": "Cloudflare Engineering",
+          "publisherCountry": "United States",
+          "publishedAt": "2026-10-26T22:01:23.000Z",
+          "firstCollectedAt": "2026-10-27T05:28:07.370Z",
+          "lastCollectedAt": "2026-10-27T05:28:07.370Z",
           "revisionCount": 0,
           "ruleIds": [
             "workers-announcements"
@@ -463,5 +477,5 @@
       ]
     }
   ],
-  "fingerprint": "2ec660d965e6ba8ae1fa6bb07e17365a0a20ad9a50af54eb9aaac1f6f099f37c"
+  "fingerprint": "7607e7d5d9cf156899aa5aa6857a831e9780063c9eb8461516962ae0c571a8ba"
 }
