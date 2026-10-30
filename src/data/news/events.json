@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-10-29T21:21:03.121Z",
-    "releasesCollectedAt": "2026-10-29T21:21:15.296Z",
-    "libraryCollectedAt": "2026-10-29T21:21:03.121Z",
+    "dailyCollectedAt": "2026-10-30T06:19:01.932Z",
+    "releasesCollectedAt": "2026-10-30T06:19:14.969Z",
+    "libraryCollectedAt": "2026-10-30T06:19:01.932Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -61,7 +61,8 @@
       "2026-10-26",
       "2026-10-27",
       "2026-10-28",
-      "2026-10-29"
+      "2026-10-29",
+      "2026-10-30"
     ],
     "missingArchiveDates": [],
     "failedSources": [],
@@ -78,7 +79,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-29T21:21:15.296Z",
+          "lastCollectedAt": "2026-10-30T06:19:14.969Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -91,7 +92,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-29T21:21:15.296Z",
+          "lastCollectedAt": "2026-10-30T06:19:14.969Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -104,7 +105,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-29T21:21:15.296Z",
+          "lastCollectedAt": "2026-10-30T06:19:14.969Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -117,7 +118,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-10-29T21:21:15.296Z",
+          "lastCollectedAt": "2026-10-30T06:19:14.969Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -130,7 +131,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-02T01:09:04.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-10-29T21:21:15.296Z",
+          "lastCollectedAt": "2026-10-30T06:19:14.969Z",
           "revisionCount": 3,
           "ruleIds": [
             "official-releases"
@@ -143,8 +144,21 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-19T02:55:19.000Z",
           "firstCollectedAt": "2026-10-16T04:52:38.724Z",
-          "lastCollectedAt": "2026-10-29T21:21:15.296Z",
+          "lastCollectedAt": "2026-10-30T06:19:14.969Z",
           "revisionCount": 1,
+          "ruleIds": [
+            "official-releases"
+          ]
+        },
+        {
+          "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.23",
+          "title": "v0.5.23",
+          "publisher": "SGLang Releases",
+          "publisherCountry": "International",
+          "publishedAt": "2026-10-30T00:13:59.000Z",
+          "firstCollectedAt": "2026-10-30T06:19:01.932Z",
+          "lastCollectedAt": "2026-10-30T06:19:01.932Z",
+          "revisionCount": 0,
           "ruleIds": [
             "official-releases"
           ]
@@ -252,7 +266,7 @@
           "publisherCountry": "United States",
           "publishedAt": "2026-10-26T22:01:23.000Z",
           "firstCollectedAt": "2026-10-27T05:28:07.370Z",
-          "lastCollectedAt": "2026-10-29T21:21:03.121Z",
+          "lastCollectedAt": "2026-10-30T06:19:01.932Z",
           "revisionCount": 0,
           "ruleIds": [
             "workers-announcements"
@@ -362,6 +376,45 @@
           "publishedAt": "2026-10-09T07:00:00.000Z",
           "firstCollectedAt": "2026-10-09T15:31:13.518Z",
           "lastCollectedAt": "2026-10-11T06:17:40.381Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "policy-documents"
+          ]
+        },
+        {
+          "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030b.pdf",
+          "title": "(Reference) Outlook Report and Indicators Related to Underlying Inflation",
+          "publisher": "Bank of Japan",
+          "publisherCountry": "Japan",
+          "publishedAt": "2026-10-30T03:02:00.000Z",
+          "firstCollectedAt": "2026-10-30T06:19:01.932Z",
+          "lastCollectedAt": "2026-10-30T06:19:01.932Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "policy-documents"
+          ]
+        },
+        {
+          "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+          "title": "Statement on Monetary Policy",
+          "publisher": "Bank of Japan",
+          "publisherCountry": "Japan",
+          "publishedAt": "2026-10-30T04:00:00.000Z",
+          "firstCollectedAt": "2026-10-30T06:19:01.932Z",
+          "lastCollectedAt": "2026-10-30T06:19:01.932Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "policy-documents"
+          ]
+        },
+        {
+          "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030a.pdf",
+          "title": "Amendment to \"Basic Principles for Disposal of ETFs and J-REITs\"",
+          "publisher": "Bank of Japan",
+          "publisherCountry": "Japan",
+          "publishedAt": "2026-10-30T05:00:00.000Z",
+          "firstCollectedAt": "2026-10-30T06:19:01.932Z",
+          "lastCollectedAt": "2026-10-30T06:19:01.932Z",
           "revisionCount": 0,
           "ruleIds": [
             "policy-documents"
@@ -479,5 +532,5 @@
       ]
     }
   ],
-  "fingerprint": "be50808aaab4ff9059e97b75301b46d749d6f8e44adf53864be1153bcb3c5bc2"
+  "fingerprint": "2cf193760806794b2cf683fab8f2c705fdcb97347eff23e63364c2bb0b696d7e"
 }
