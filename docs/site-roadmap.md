@@ -55,6 +55,17 @@ Any optional local persistence/import must be explicit and safely validated.
 
 ## 4. Learning and retrieval
 
+October 30 curriculum preparation: `curriculum/README.md` and the generated
+`curriculum/catalog.md` map the pinned SGLang Tutor snapshot into eight domains,
+47 topics and four learning paths. The 182 materials distinguish lessons,
+navigation, experiments, annotated source, diagrams and maintenance resources;
+16 planned files remain explicitly unavailable. All 139 existing article routes
+are recorded. This is a local editorial/catalog increment, not a deployed UI
+change or a curriculum synchronization. Next: review source/site differences,
+then implement topic entrances with KV Cache and DP Attention as the first
+representative topics. Preserve old routes, content adaptations and saved data;
+use a separate build gate and release verification for that future UI increment.
+
 October 10 user-approved increment: Attention evolution atlas at
 `#/learn/attention`, linked from the teaching directory. A sourced catalog of
 32 representative techniques supports overview/branch/full graph, hover/focus
