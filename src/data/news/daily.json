@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T14:41:10.964Z",
+  "generatedAt": "2026-10-31T20:13:57.420Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 30,
-      "latestPublishedAt": "2026-10-31T14:38:39.000Z",
+      "entryCount": 28,
+      "latestPublishedAt": "2026-10-31T19:37:43.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 125,
-      "latestPublishedAt": "2026-10-31T11:18:00.000Z",
+      "entryCount": 126,
+      "latestPublishedAt": "2026-10-31T19:49:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-31T14:31:37.000Z",
+      "latestPublishedAt": "2026-10-31T19:19:29.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-31T10:08:54.000Z",
+      "latestPublishedAt": "2026-10-31T16:13:30.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-10-30T15:00:10.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-31T01:20:05.000Z",
+      "latestPublishedAt": "2026-10-31T16:12:55.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-31T14:28:10.000Z",
+      "latestPublishedAt": "2026-10-31T19:15:21.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,7 +274,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-31T11:56:10.000Z",
+      "latestPublishedAt": "2026-10-31T19:30:19.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-31T12:03:37.000Z",
+      "latestPublishedAt": "2026-10-31T16:36:47.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-31T03:55:00.000Z",
+      "latestPublishedAt": "2026-10-31T15:52:00.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -405,7 +405,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-29T17:41:23.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -524,8 +524,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T21:35:31.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 30.7,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 29.3,
       "topics": [
         "inference",
         "hardware"
@@ -541,8 +541,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T20:33:18.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 30.5,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 29.1,
       "topics": [
         "models"
       ]
@@ -557,8 +557,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T15:01:36.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 29.1,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 27.7,
       "topics": [
         "hardware"
       ]
@@ -573,24 +573,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-31T14:28:10.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 28.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "ee25f570ffe0fedc",
-      "category": "world",
-      "title": "Paris steps up security as police patrol streets",
-      "summary": "Paris steps up security as police patrol streets",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/paris-steps-up-security-as-police-patrol-streets?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T12:22:49.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 28.4,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 27.6,
       "topics": [
         "security"
       ]
@@ -605,8 +589,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:15:19.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 28.1,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 26.8,
       "topics": [
         "security"
       ]
@@ -621,8 +605,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:13:44.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 28.1,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 26.7,
       "topics": [
         "security"
       ]
@@ -637,8 +621,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-31T12:03:37.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 27.3,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 26,
       "topics": [
         "security"
       ]
@@ -653,8 +637,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-31T05:20:16.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 26.7,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 25.3,
       "topics": [
         "security"
       ]
@@ -669,8 +653,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-31T04:24:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 26.4,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 25,
       "topics": [
         "security"
       ]
@@ -685,8 +669,22 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-31T12:00:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 26.3,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 24.9,
+      "topics": []
+    },
+    {
+      "id": "b68a34831bc17946",
+      "category": "world",
+      "title": "Serbia after Vucic: The winners are losing patience",
+      "summary": "After the Student List's election victory, Aleksandar Vucic's power apparatus is disintegrating. People want justice as soon as possible. But the losers still hold sway in the judiciary and administration.",
+      "url": "https://www.dw.com/en/serbia-after-vucic-the-winners-are-losing-patience/a-79817586?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-10-31T19:49:00.000Z",
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 23.9,
       "topics": []
     },
     {
@@ -699,8 +697,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T12:00:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 23.9,
       "topics": [
         "security"
       ]
@@ -715,8 +713,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 23.9,
       "topics": [
         "inference",
         "hardware"
@@ -732,8 +730,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-31T14:28:15.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 24.9,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 23.6,
       "topics": [
         "training"
       ]
@@ -748,8 +746,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-30T05:52:29.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 24.8,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 23.4,
       "topics": [
         "inference",
         "kernels",
@@ -757,6 +755,20 @@
         "models",
         "training"
       ]
+    },
+    {
+      "id": "be5a63735d08a84e",
+      "category": "world",
+      "title": "Thousands rally in Berlin as Gen Z plans protests in 30 German cities",
+      "summary": "Demonstrations sweeping Europe are inspiring young Germans frustrated by rising costs of living amid military spending.",
+      "url": "https://www.aljazeera.com/news/2026/10/31/thousands-rally-in-berlin-as-gen-z-plans-protests-in-30-german-cities?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-31T16:28:04.000Z",
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 23.1,
+      "topics": []
     },
     {
       "id": "89f349d9c1b3d801",
@@ -768,8 +780,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-30T19:31:02.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 24.2,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 22.8,
       "topics": []
     },
     {
@@ -782,8 +794,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-30T22:56:13.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 24.1,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 22.7,
       "topics": [
         "security"
       ]
@@ -798,8 +810,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-10-31T13:35:51.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 23.7,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 22.3,
       "topics": []
     },
     {
@@ -812,22 +824,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-30T15:56:26.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 23.3,
-      "topics": []
-    },
-    {
-      "id": "e97f1049eb9e6e58",
-      "category": "world",
-      "title": "UFC champion Islam Makhachev says his next fight will be ‘one of last’",
-      "summary": "Makhachev, one of the best fighters in UFC history, wants to face the winner of next year's Prates vs Morales fight.",
-      "url": "https://www.aljazeera.com/sports/2026/10/31/islam-makhachev-ufc-welterweight-title-one-of-last-fight-prates-morales?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T11:02:05.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 21.9,
       "topics": []
     },
     {
@@ -840,8 +838,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-31T07:15:45.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 23.1,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 21.8,
       "topics": []
     },
     {
@@ -854,8 +852,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-30T17:38:19.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 21.4,
       "topics": [
         "security"
       ]
@@ -870,8 +868,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-31T09:16:14.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 22.6,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 21.3,
       "topics": []
     },
     {
@@ -884,26 +882,12 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-30T09:10:43.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 22.6,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 21.2,
       "topics": [
         "kernels",
         "hardware"
       ]
-    },
-    {
-      "id": "a417da8d39e4a757",
-      "category": "world",
-      "title": "Somalia looks to the future as the UN's political mission closes",
-      "summary": "“The story of the UN's political engagement in Somalia has been one of persistence, partnership and adaptation,” Raisedon Zenenga, the UN Secretary-General's Deputy Special Representative for Somalia has said, as three decades of UN political missions in the Horn of Africa country comes to an end on 31 October.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168714",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-31T12:00:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 22.3,
-      "topics": []
     },
     {
       "id": "50f6f1e8df6df16f",
@@ -915,8 +899,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-31T04:05:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 22.3,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 21,
+      "topics": []
+    },
+    {
+      "id": "8b040ba5c5f2b3a2",
+      "category": "world",
+      "title": "Samarkand: A ‘living museum’ on the Silk Road grapples with a tourism boom",
+      "summary": "As the sun sets over Samarkand’s majestic Registan, its last rays glint across the turquoise mosaics. Dusk settles on the ancient square where great trade routes have crossed for centuries.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168711",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-31T12:00:00.000Z",
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 20.9,
       "topics": []
     },
     {
@@ -929,8 +927,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-31T05:44:21.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 21.8,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 20.4,
       "topics": []
     },
     {
@@ -943,8 +941,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T14:00:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 21.8,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 20.4,
       "topics": []
     },
     {
@@ -957,8 +955,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-31T05:27:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 21.7,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 20.3,
       "topics": []
     },
     {
@@ -971,40 +969,23 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-30T09:36:03.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 21.7,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 20.3,
       "topics": []
     },
     {
-      "id": "5ea0c3a3c333b5a0",
+      "id": "15b2f167a7f4becf",
       "category": "world",
-      "title": "India news: Amit Shah challenges Rahul Gandhi to debate vote theft in parliament",
-      "summary": "Home Minister Amit Shah has challenged Rahul Gandhi to debate electoral irregularity allegations in parliament, ahead of a major opposition rally against the election chief in Delhi.",
-      "url": "https://www.dw.com/en/india-news-amit-shah-challenges-rahul-gandhi-to-debate-vote-theft-in-parliament/live-79814329?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
+      "title": "How vulnerable are cryptocurrency platforms?",
+      "summary": "Hackers have targeted Binance, the world’s largest exchange.",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/31/how-vulnerable-are-cryptocurrency-platforms?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T05:06:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 21.6,
+      "publishedAt": "2026-10-31T19:19:29.000Z",
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 19.8,
       "topics": []
-    },
-    {
-      "id": "e7c0a4a287c15f70",
-      "category": "ai",
-      "title": "Can We Rely on Language Models to Orchestrate Services across the Edge-Cloud Continuum?",
-      "summary": "Service orchestration across the edge--cloud continuum increasingly uses language models (LMs) to translate intents and operational evidence into scheduling, configuration, diagnosis, and remediation decisions. Yet, useful model outputs do not by themselves establish dependable orchestration: reliability also depends on where the LM enters the decision process, what authority it is granted, how actions are constrained, and what system-level evidence supports the claimed effect. Existing surveys provide limited synt",
-      "url": "https://arxiv.org/abs/2610.40477v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-10-29T17:10:52.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 21.6,
-      "topics": [
-        "models",
-        "security"
-      ]
     },
     {
       "id": "f975274894b4a8f5",
@@ -1016,8 +997,50 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T17:57:24.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 20.8,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 19.4,
+      "topics": []
+    },
+    {
+      "id": "dbcc91b2ef94041d",
+      "category": "finance",
+      "title": "Meta builds humanoid robot with Chinese startup Fourier, The Information says",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/meta-builds-humanoid-robot-chinese-startup-fourier-information-says-6509811",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-31T16:13:30.000Z",
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 19,
+      "topics": []
+    },
+    {
+      "id": "327a9f2075f53f2e",
+      "category": "finance",
+      "title": "Binance says it has covered 90% of losses from $6.3 billion hack so far",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/binance-says-it-has-covered-90-losses-63-billion-hack-so-far-6509761",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-10-31T14:59:09.000Z",
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 18.7,
+      "topics": []
+    },
+    {
+      "id": "ca185ce1e2dba2f6",
+      "category": "technology",
+      "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
+      "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much of the rest of the Internet remains exposed.",
+      "url": "https://blog.cloudflare.com/emudhra-patching/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-30T17:38:50.000Z",
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 18.4,
       "topics": []
     },
     {
@@ -1030,8 +1053,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T01:20:05.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 19.7,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 18.3,
       "topics": []
     },
     {
@@ -1044,39 +1067,11 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-30T21:26:59.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 19.7,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 18.3,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "ca185ce1e2dba2f6",
-      "category": "technology",
-      "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
-      "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much of the rest of the Internet remains exposed.",
-      "url": "https://blog.cloudflare.com/emudhra-patching/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-30T17:38:50.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 19.7,
-      "topics": []
-    },
-    {
-      "id": "2cb8de1cb17efe14",
-      "category": "finance",
-      "title": "Power bills and data centers cast rare spotlight on utilities in US midterms",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/power-bills-and-data-centers-cast-rare-spotlight-utilities-in-us-midterms-6509406",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T10:08:54.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 18.9,
-      "topics": []
     },
     {
       "id": "baede3207f0edd8b",
@@ -1088,22 +1083,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T14:23:43.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 18.9,
-      "topics": []
-    },
-    {
-      "id": "2509068c2b32995e",
-      "category": "finance",
-      "title": "US SEC's top cop says agency is monitoring AI corporate disclosures",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/us-secs-top-cop-says-agency-monitoring-ai-corporate-disclosures-6507991",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-30T17:55:27.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 18.8,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 17.5,
       "topics": []
     },
     {
@@ -1116,8 +1097,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T16:10:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 18.4,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 17,
       "topics": []
     },
     {
@@ -1130,8 +1111,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T04:00:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 18.3,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 16.9,
       "topics": []
     },
     {
@@ -1144,8 +1125,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:15:26.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 18.1,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 16.8,
       "topics": []
     },
     {
@@ -1158,8 +1139,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:02:34.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 18.1,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1172,8 +1153,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-30T15:00:10.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 18.1,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1186,8 +1167,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T03:02:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 18.1,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1200,8 +1181,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-30T09:33:51.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 17.7,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 16.3,
       "topics": [
         "security"
       ]
@@ -1216,8 +1197,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T09:00:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 16.6,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 15.2,
       "topics": []
     },
     {
@@ -1230,8 +1211,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-30T06:08:22.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 15.9,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 14.5,
       "topics": []
     },
     {
@@ -1244,8 +1225,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-30T21:34:32.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 15.7,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 14.3,
       "topics": []
     },
     {
@@ -1258,8 +1239,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-30T00:13:59.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 15.4,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 14,
       "topics": []
     },
     {
@@ -1272,8 +1253,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T08:00:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 15.3,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 13.9,
       "topics": []
     },
     {
@@ -1286,22 +1267,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-10-29T20:30:00.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 13.5,
-      "topics": []
-    },
-    {
-      "id": "323f49c26f0a4f8d",
-      "category": "ai",
-      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
-      "summary": "Turning a simulation idea into a working application means assembling assets, connecting physics and rendering, and checking that the scene behaves as intended. Developers are combining frontier AI models with NVIDIA Omniverse libraries to help carry out that work — building applications for exploring scenarios, investigating failures and improving designs. Developers direct AI agents through […]",
-      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-29T16:00:35.000Z",
-      "fetchedAt": "2026-10-31T14:41:10.964Z",
-      "score": 12.3,
+      "fetchedAt": "2026-10-31T20:13:57.420Z",
+      "score": 12.1,
       "topics": []
     }
   ]
