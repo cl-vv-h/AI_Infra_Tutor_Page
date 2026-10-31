@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T20:13:57.420Z",
+  "generatedAt": "2026-10-31T23:36:31.666Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -14,7 +14,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 28,
-      "latestPublishedAt": "2026-10-31T19:37:43.000Z",
+      "latestPublishedAt": "2026-10-31T23:06:13.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -41,7 +41,7 @@
       "channel": "feed",
       "entryCount": 126,
       "latestPublishedAt": "2026-10-31T19:49:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -53,8 +53,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-31T19:19:29.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-10-31T22:38:03.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-31T16:13:30.000Z",
+      "latestPublishedAt": "2026-10-31T22:30:13.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-31T16:12:55.000Z",
+      "latestPublishedAt": "2026-10-31T21:41:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -171,7 +171,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-29T20:30:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-31T19:15:21.000Z",
+      "latestPublishedAt": "2026-10-31T21:34:15.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-31T19:30:19.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-10-31T21:14:34.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -524,8 +524,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T21:35:31.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 29.3,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 28.5,
       "topics": [
         "inference",
         "hardware"
@@ -541,10 +541,26 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T20:33:18.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 29.1,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 28.2,
       "topics": [
         "models"
+      ]
+    },
+    {
+      "id": "2b0c236268bc342d",
+      "category": "world",
+      "title": "Secretary Rubio has a tough time getting officials at G20 on the same page",
+      "summary": "U.S. Secretary of State Marco Rubio is hosting the G20 foreign ministers' meeting in Atlanta, with a focus on economic and security challenges.",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6022223/secretary-rubio-has-a-tough-time-getting-officials-at-g20-on-the-same-page",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-31T21:14:34.000Z",
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 27.4,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -557,8 +573,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T15:01:36.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 27.7,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 26.9,
       "topics": [
         "hardware"
       ]
@@ -573,8 +589,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-31T14:28:10.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 27.6,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 26.7,
       "topics": [
         "security"
       ]
@@ -589,8 +605,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:15:19.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 26.8,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 25.9,
       "topics": [
         "security"
       ]
@@ -605,8 +621,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:13:44.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 26.7,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 25.9,
       "topics": [
         "security"
       ]
@@ -621,8 +637,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-31T12:03:37.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 26,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 25.1,
       "topics": [
         "security"
       ]
@@ -637,8 +653,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-31T05:20:16.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 25.3,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 24.4,
       "topics": [
         "security"
       ]
@@ -653,8 +669,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-31T04:24:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 25,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 24.2,
       "topics": [
         "security"
       ]
@@ -669,8 +685,50 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-31T12:00:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 24.9,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 24.1,
+      "topics": []
+    },
+    {
+      "id": "cbf42f7e769db8f4",
+      "category": "world",
+      "title": "Thousands demonstrate in Paris as protests spread across Europe",
+      "summary": "More than 320,000 people demonstrated across France against the rising cost of living and poor public services, with clashes between some protesters and police.",
+      "url": "https://www.bbc.co.uk/news/videos/ck0j0y87j303o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-31T21:29:01.000Z",
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "52c82e0a5eff5fee",
+      "category": "world",
+      "title": "Israel’s allegations of Qatari election interference rejected",
+      "summary": "Israel’s allegations of Qatari election interference rejected",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/israels-allegations-of-qatari-election-interference-rejected?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-31T20:24:58.000Z",
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "dc79226fed79d227",
+      "category": "world",
+      "title": "What is ranked-choice voting and how does it work in US elections?",
+      "summary": "Ranked-choice voting in Alaska could shape a key 2026 race, amid a US lawsuit involving two candidates named Dan Sullivan.",
+      "url": "https://www.aljazeera.com/news/2026/10/31/what-is-ranked-choice-voting-and-how-does-it-work-in-us-elections?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-10-31T20:11:37.000Z",
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 23.1,
       "topics": []
     },
     {
@@ -683,8 +741,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-31T19:49:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 23.1,
       "topics": []
     },
     {
@@ -697,8 +755,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T12:00:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 23.1,
       "topics": [
         "security"
       ]
@@ -713,8 +771,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 23.9,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 23.1,
       "topics": [
         "inference",
         "hardware"
@@ -730,8 +788,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-31T14:28:15.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 23.6,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 22.7,
       "topics": [
         "training"
       ]
@@ -746,8 +804,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-30T05:52:29.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 23.4,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 22.6,
       "topics": [
         "inference",
         "kernels",
@@ -757,17 +815,17 @@
       ]
     },
     {
-      "id": "be5a63735d08a84e",
+      "id": "9b6db067845c994f",
       "category": "world",
-      "title": "Thousands rally in Berlin as Gen Z plans protests in 30 German cities",
-      "summary": "Demonstrations sweeping Europe are inspiring young Germans frustrated by rising costs of living amid military spending.",
-      "url": "https://www.aljazeera.com/news/2026/10/31/thousands-rally-in-berlin-as-gen-z-plans-protests-in-30-german-cities?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "title": "A new political era in the Southern Philippines",
+      "summary": "A new local government has taken its seat in the southern Philippines, in a step that marks a milestone in the peace process for a conflict that has lasted some 80 years.",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6020639/a-new-political-era-in-the-southern-philippines",
+      "source": "NPR World",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T16:28:04.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 23.1,
+      "publishedAt": "2026-10-31T21:14:32.000Z",
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 22.4,
       "topics": []
     },
     {
@@ -780,8 +838,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-30T19:31:02.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 22.8,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 22,
       "topics": []
     },
     {
@@ -794,25 +852,11 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-30T22:56:13.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 22.7,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 21.8,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "7b0ccbfbc7d7d96c",
-      "category": "world",
-      "title": "Israel voted for Israel: Why Gaza wasn’t on the ballot",
-      "summary": "Despite genocide, regional war and isolation, Israel's election revealed little appetite for political alternatives.",
-      "url": "https://www.aljazeera.com/news/2026/10/31/israel-voted-for-israel-why-gaza-wasnt-on-the-ballot?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T13:35:51.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 22.3,
-      "topics": []
     },
     {
       "id": "39b5b4ff4b942a7c",
@@ -824,8 +868,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-30T15:56:26.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 21.9,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 21.1,
       "topics": []
     },
     {
@@ -838,8 +882,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-31T07:15:45.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 21.8,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 20.9,
       "topics": []
     },
     {
@@ -852,8 +896,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-30T17:38:19.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 21.4,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 20.5,
       "topics": [
         "security"
       ]
@@ -868,8 +912,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-31T09:16:14.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 21.3,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 20.4,
       "topics": []
     },
     {
@@ -882,12 +926,26 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-30T09:10:43.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 21.2,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 20.4,
       "topics": [
         "kernels",
         "hardware"
       ]
+    },
+    {
+      "id": "18dd09983e78d50a",
+      "category": "world",
+      "title": "‘They deserve to know the truth’: UN rights chief demands probe into staffer’s death in Houthi custody",
+      "summary": "The UN human rights chief on Saturday demanded an independent investigation into the death of a Yemeni colleague held by the Houthis for more than two years, whose family learned of his death only weeks after it happened.",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168716",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-31T12:00:00.000Z",
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 20.1,
+      "topics": []
     },
     {
       "id": "50f6f1e8df6df16f",
@@ -899,36 +957,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-31T04:05:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 21,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 20.1,
       "topics": []
     },
     {
-      "id": "8b040ba5c5f2b3a2",
-      "category": "world",
-      "title": "Samarkand: A ‘living museum’ on the Silk Road grapples with a tourism boom",
-      "summary": "As the sun sets over Samarkand’s majestic Registan, its last rays glint across the turquoise mosaics. Dusk settles on the ancient square where great trade routes have crossed for centuries.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168711",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-31T12:00:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 20.9,
-      "topics": []
-    },
-    {
-      "id": "775458eb3526f838",
-      "category": "world",
-      "title": "Spain train disaster clouds Sánchez chances of re-election",
-      "summary": "The Spanish PM is hit by a succession of crises just weeks before a snap general election.",
-      "url": "https://www.bbc.co.uk/news/articles/cmeweppr990qo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
+      "id": "5258a3fe5103a6fe",
+      "category": "finance",
+      "title": "Vietnam cuts retail electricity price, removes gasoline tax from November 1",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/vietnam-cuts-retail-electricity-price-removes-gasoline-tax-november-1-6510361",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T05:44:21.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 20.4,
+      "publishedAt": "2026-10-31T22:30:13.000Z",
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 19.7,
       "topics": []
     },
     {
@@ -941,22 +985,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T14:00:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 20.4,
-      "topics": []
-    },
-    {
-      "id": "ef7ffec36e28c51f",
-      "category": "world",
-      "title": "Embarrassing name? How we live with names we don't like",
-      "summary": "What happens when your name evokes laughter or ridicule? Research points to negative life outcomes, but some people learn to embrace unfortunate names.",
-      "url": "https://www.dw.com/en/embarrassing-name-how-we-live-with-names-we-don-t-like/a-79724068?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T05:27:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 19.6,
       "topics": []
     },
     {
@@ -969,22 +999,22 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-30T09:36:03.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 20.3,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 19.5,
       "topics": []
     },
     {
-      "id": "15b2f167a7f4becf",
-      "category": "world",
-      "title": "How vulnerable are cryptocurrency platforms?",
-      "summary": "Hackers have targeted Binance, the world’s largest exchange.",
-      "url": "https://www.aljazeera.com/video/inside-story/2026/10/31/how-vulnerable-are-cryptocurrency-platforms?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "id": "3a7ec71016e21936",
+      "category": "finance",
+      "title": "Binance says it has covered 90% of losses from $6.3 billion hack",
+      "summary": "The FBI on Saturday said the North Korean state-sponsored unit known as TraderTraitor was responsible for the attack.",
+      "url": "https://www.channelnewsasia.com/business/binance-covers-90-cent-losses-6510271",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T19:19:29.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 19.8,
+      "publishedAt": "2026-10-31T21:01:00.000Z",
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 19.4,
       "topics": []
     },
     {
@@ -997,36 +1027,36 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T17:57:24.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 19.4,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 18.6,
       "topics": []
     },
     {
-      "id": "dbcc91b2ef94041d",
-      "category": "finance",
-      "title": "Meta builds humanoid robot with Chinese startup Fourier, The Information says",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/meta-builds-humanoid-robot-chinese-startup-fourier-information-says-6509811",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
+      "id": "1f04cd44a67f242e",
+      "category": "ai",
+      "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
+      "summary": "Apple's new CEO defended the company's current position in the AI landscape.",
+      "url": "https://techcrunch.com/2026/10/31/apple-ceo-says-the-company-doesnt-want-to-ship-ai-for-ais-sake/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T16:13:30.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 19,
+      "publishedAt": "2026-10-31T21:41:00.000Z",
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 18.5,
       "topics": []
     },
     {
-      "id": "327a9f2075f53f2e",
-      "category": "finance",
-      "title": "Binance says it has covered 90% of losses from $6.3 billion hack so far",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/binance-says-it-has-covered-90-losses-63-billion-hack-so-far-6509761",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
+      "id": "3f88554f37860e50",
+      "category": "ai",
+      "title": "4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale",
+      "summary": "On November 4 at Boston’s SoWa Power Station, get ready for a full day packed with meaningful networking opportunities, actionable insights, and connections that could change the trajectory of your idea and startup. Register before all prices go up at the door.",
+      "url": "https://techcrunch.com/2026/10/31/4-days-left-how-techcrunch-founder-summit-helps-you-make-more-useful-connections-to-scale/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T14:59:09.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 18.7,
+      "publishedAt": "2026-10-31T21:36:07.000Z",
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 18.5,
       "topics": []
     },
     {
@@ -1039,39 +1069,9 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T17:38:50.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 18.4,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 17.5,
       "topics": []
-    },
-    {
-      "id": "3eff457454bb3671",
-      "category": "ai",
-      "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
-      "summary": "When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.",
-      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T01:20:05.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 18.3,
-      "topics": []
-    },
-    {
-      "id": "667318adb15e4505",
-      "category": "ai",
-      "title": "Last-minute Halloween costumes for tech nerds",
-      "summary": "No Halloween costume? Just be a deceptively cute AI agent icon, a PHP vulnerability, or sleepy time Bryan Johnson.",
-      "url": "https://techcrunch.com/2026/10/30/last-minute-halloween-costumes-for-tech-nerds/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-30T21:26:59.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 18.3,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "baede3207f0edd8b",
@@ -1083,8 +1083,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T14:23:43.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 17.5,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1097,8 +1097,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T16:10:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 17,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 16.1,
       "topics": []
     },
     {
@@ -1111,8 +1111,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T04:00:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 16.9,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 16.1,
       "topics": []
     },
     {
@@ -1125,8 +1125,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:15:26.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 16.8,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 15.9,
       "topics": []
     },
     {
@@ -1139,22 +1139,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:02:34.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 16.7,
-      "topics": []
-    },
-    {
-      "id": "8e6b7c0510af83ce",
-      "category": "ai",
-      "title": "Things That Go Beep in the Night: Agentic AI Joins the Search for Extraterrestrial Signals",
-      "summary": "While science fiction lore tells us that humans will meet extraterrestrial life in the form of little green men, the detail that should raise hairs this Halloween is this: the search for extraterrestrial intelligence took a major leap forward with AI, and it increasingly focuses on AI agents built by humans listening for AI agents […]",
-      "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-30T15:00:10.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 16.7,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 15.9,
       "topics": []
     },
     {
@@ -1167,8 +1153,22 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T03:02:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 16.7,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 15.9,
+      "topics": []
+    },
+    {
+      "id": "8e6b7c0510af83ce",
+      "category": "ai",
+      "title": "Things That Go Beep in the Night: Agentic AI Joins the Search for Extraterrestrial Signals",
+      "summary": "While science fiction lore tells us that humans will meet extraterrestrial life in the form of little green men, the detail that should raise hairs this Halloween is this: the search for extraterrestrial intelligence took a major leap forward with AI, and it increasingly focuses on AI agents built by humans listening for AI agents […]",
+      "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-30T15:00:10.000Z",
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 15.8,
       "topics": []
     },
     {
@@ -1181,8 +1181,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-30T09:33:51.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 16.3,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 15.5,
       "topics": [
         "security"
       ]
@@ -1197,8 +1197,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T09:00:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 15.2,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 14.3,
       "topics": []
     },
     {
@@ -1211,8 +1211,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-30T06:08:22.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 14.5,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 13.6,
       "topics": []
     },
     {
@@ -1225,8 +1225,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-30T21:34:32.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 14.3,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 13.5,
       "topics": []
     },
     {
@@ -1239,8 +1239,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-30T00:13:59.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 14,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 13.2,
       "topics": []
     },
     {
@@ -1253,22 +1253,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T08:00:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 13.9,
-      "topics": []
-    },
-    {
-      "id": "1c4ee0b3e7edebe4",
-      "category": "finance",
-      "title": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
-      "summary": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
-      "source": "U.S. Federal Reserve",
-      "sourceCountry": "United States",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-29T20:30:00.000Z",
-      "fetchedAt": "2026-10-31T20:13:57.420Z",
-      "score": 12.1,
+      "fetchedAt": "2026-10-31T23:36:31.666Z",
+      "score": 13.1,
       "topics": []
     }
   ]
