@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-11-01T15:25:07.434Z",
-    "releasesCollectedAt": "2026-11-01T15:25:19.841Z",
-    "libraryCollectedAt": "2026-11-01T15:25:07.434Z",
+    "dailyCollectedAt": "2026-11-01T20:44:44.666Z",
+    "releasesCollectedAt": "2026-11-01T20:44:53.713Z",
+    "libraryCollectedAt": "2026-11-01T20:44:44.666Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -67,7 +67,14 @@
       "2026-11-01"
     ],
     "missingArchiveDates": [],
-    "failedSources": [],
+    "failedSources": [
+      "FlashInfer Releases",
+      "SGLang Releases",
+      "TensorRT-LLM Releases",
+      "Transformers Releases",
+      "Triton Releases",
+      "vLLM Releases"
+    ],
     "invalidItems": 30
   },
   "tracks": [
@@ -268,7 +275,7 @@
           "publisherCountry": "United States",
           "publishedAt": "2026-10-26T22:01:23.000Z",
           "firstCollectedAt": "2026-10-27T05:28:07.370Z",
-          "lastCollectedAt": "2026-11-01T15:25:07.434Z",
+          "lastCollectedAt": "2026-11-01T20:44:44.666Z",
           "revisionCount": 0,
           "ruleIds": [
             "workers-announcements"
@@ -560,5 +567,5 @@
       ]
     }
   ],
-  "fingerprint": "5727f6d953228349179e19ddecef65fa9ff8f8f036b369ad763b65ac360167b0"
+  "fingerprint": "13ecc29d933f05f2f0cf42bc29bec50f2f9745b85791c8ba8df54d88576ed92c"
 }

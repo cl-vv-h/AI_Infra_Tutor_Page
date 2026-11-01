@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T15:25:07.434Z",
+  "generatedAt": "2026-11-01T20:44:44.666Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 25,
-      "latestPublishedAt": "2026-11-01T13:11:37.000Z",
-      "selectedCount": 3,
+      "entryCount": 30,
+      "latestPublishedAt": "2026-11-01T20:11:26.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 52,
-      "latestPublishedAt": "2026-11-01T13:11:37.000Z",
+      "entryCount": 53,
+      "latestPublishedAt": "2026-11-01T16:57:14.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,8 +40,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 122,
-      "latestPublishedAt": "2026-11-01T14:50:00.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-11-01T20:34:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-01T14:46:03.000Z",
+      "latestPublishedAt": "2026-11-01T20:21:05.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -65,8 +65,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 20,
-      "latestPublishedAt": "2026-11-01T09:41:30.000Z",
+      "entryCount": 14,
+      "latestPublishedAt": "2026-11-01T16:37:24.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -145,7 +145,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-11-01T04:05:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 5
     },
     {
@@ -158,7 +158,7 @@
       "channel": "feed",
       "entryCount": 15,
       "latestPublishedAt": "2026-10-30T16:10:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-11-01T14:31:49.000Z",
+      "latestPublishedAt": "2026-11-01T20:37:45.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -287,7 +287,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-11-01T14:58:18.000Z",
+      "latestPublishedAt": "2026-11-01T16:34:18.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-11-01T03:31:00.000Z",
+      "latestPublishedAt": "2026-11-01T20:29:43.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -314,7 +314,7 @@
       "channel": "feed",
       "entryCount": 894,
       "latestPublishedAt": "2026-10-30T17:57:24.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -431,7 +431,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-10-30T21:35:31.000Z",
-      "selectedCount": 3,
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -457,7 +457,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-30T17:38:50.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -515,6 +515,54 @@
   ],
   "items": [
     {
+      "id": "73d4414ff2a69791",
+      "category": "world",
+      "title": "UN’s peacekeeping mission in disputed Western Sahara ends after 35 years",
+      "summary": "The 35-year-old UN peacekeeping mission ⁠in the disputed Western ​Sahara region came to an end Sunday after the Security Council failed to ​renew its mandate. Morocco, which claims the region as its own, welcomed the decision, while its opponents from the Algeria-backed Polisario Front called it \"unacceptable\".",
+      "url": "https://www.france24.com/en/africa/20261101-un-s-peacekeeping-mission-in-disputed-western-sahara-ends-after-35-years",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T20:37:45.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 29,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "1ea3e36983fbb794",
+      "category": "world",
+      "title": "France opens ‘attempted murder’ probe into petrol bomb attacks on police",
+      "summary": "No arrests made after several security officers were reportedly injured during incidents at Saturday's protests.",
+      "url": "https://www.aljazeera.com/news/2026/11/1/france-opens-attempted-murder-probe-into-molotov-attacks-on-police?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T18:58:23.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 28.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "a9609f311f71788e",
+      "category": "world",
+      "title": "Armed police start patrols in Sydney after Bondi Beach attack",
+      "summary": "The new police unit is a security measure in response to last year's deadly shooting attack at a Hanukkah festival.",
+      "url": "https://www.bbc.co.uk/news/articles/c9kgj7k7ry0ro",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T17:56:47.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 28.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "cd6fe75915b49991",
       "category": "ai",
       "title": "v0.33.0",
@@ -524,8 +572,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-01T09:21:10.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 28.5,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 27.2,
       "topics": [
         "inference"
       ]
@@ -540,24 +588,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-11-01T14:02:27.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 27.7,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "6707f7693736a4b3",
-      "category": "world",
-      "title": "Qatar LNG carrier struck by ‘unidentified objects’ in Gulf",
-      "summary": "Doha denounces 'dangerous act' that threatens safety of maritime navigation and security of global energy supplies.",
-      "url": "https://www.aljazeera.com/news/2026/11/1/qatar-lng-carrier-struck-by-unidentified-objects-in-gulf?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-11-01T10:21:48.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 27.7,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 26.3,
       "topics": [
         "security"
       ]
@@ -572,40 +604,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-01T09:35:02.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 27.5,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "28e2fa4b50d324c5",
-      "category": "world",
-      "title": "Indian opposition parties stage mega rally seeking election chief’s resignation",
-      "summary": "Tens of thousands of demonstrators on Sunday joined a protest in New Delhi called by Indian opposition leader Rahul Gandhi and backed by the youth “Cockroach” movement amid tight security. Protesters are demanding the resignation of the country's election chief over voter list revisions that critics say favour Prime Minister Narendra Modi's party.",
-      "url": "https://www.france24.com/en/asia-pacific/20261101-india-tightens-security-as-opposition-holds-mega-rally-demanding-election-chief-s-resignation",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-11-01T06:24:17.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 26.7,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "6141d3855219fced",
-      "category": "world",
-      "title": "Bulgarians vote in presidential runoff amid security tensions in the Black Sea",
-      "summary": "Bulgarians voted Sunday in a presidential runoff between two candidates with opposing views on the Ukraine war and relations with Russia as tensions mount in the Black Sea. Incumbent President Iliana Iotova, who favours dialogue with Moscow, faces off against Andrey Gyurov, a former caretaker prime minister backed by the pro-Western opposition.",
-      "url": "https://www.france24.com/en/europe/20261101-bulgarians-vote-in-presidential-runoff-amid-security-tensions-in-the-black-sea",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-11-01T05:47:51.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 26.6,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 26.2,
       "topics": [
         "security"
       ]
@@ -620,8 +620,50 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-11-01T12:00:00.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 26.1,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 24.8,
+      "topics": []
+    },
+    {
+      "id": "1251e7881df96cad",
+      "category": "world",
+      "title": "Al Jazeera celebrates 30th anniversary",
+      "summary": "Since its first broadcast in 1996, Al Jazeera has spent three decades bringing stories to audiences worldwide.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/1/al-jazeera-celebrates-30th-anniversary?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T20:21:05.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "02ad8f81777353a3",
+      "category": "world",
+      "title": "Michigan ‘Betrayal’ & Mid Term Manouvres",
+      "summary": "France 24’s Spotlight Presenter Gavin Lee assesses the last minute campaign dramas and takes an US election overview on the ‘must watch states’ alongside Professor Donald Green, Professor of Political Science at Columbia University and co-author of the definitive book ‘Get Out the Vote’, and foreign affairs analyst Laurie Dundon, who previously served in the U.S. State Department during the Clinton administration.",
+      "url": "https://www.france24.com/en/tv-shows/spotlight/20261101-michigan-betrayal-mid-term-manouvres",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T19:37:52.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "ac8bd417e368e5e8",
+      "category": "world",
+      "title": "How will the Iran war shape the outcome of the US midterm vote?",
+      "summary": "The conflict has become a central issue ahead of Tuesday's polls.",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/11/1/how-will-the-iran-war-shape-the-outcome-of-the-u-s-midterm-vote?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T19:00:32.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 23.6,
       "topics": []
     },
     {
@@ -634,55 +676,25 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T21:35:31.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 24.5,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 23.2,
       "topics": [
         "inference",
         "hardware"
       ]
     },
     {
-      "id": "baceda6cfc45a76d",
-      "category": "technology",
-      "title": "Run AI Models for Edge Application Development with Just a Few Commands",
-      "summary": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,...",
-      "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-30T20:33:18.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 24.3,
-      "topics": [
-        "models"
-      ]
-    },
-    {
-      "id": "963c6e498b11ddbe",
+      "id": "4697b3658e472155",
       "category": "world",
-      "title": "Photos: Thousands join India’s opposition rally against election chief",
-      "summary": "Protesters march in New Delhi demanding the election chief quit over voter roll changes seen as favouring Modi’s party.",
-      "url": "https://www.aljazeera.com/gallery/2026/11/1/photos-indian-opposition-rallies-against-elections-chief?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "title": "Serbia: Police chief arrested after election for abuse of office",
+      "summary": "Marko Kricak, an Aleksandar Vucic loyalist, is accused of suppressing and manipulating an investigation into a gangland murder. Prosecutors say the arrest is not linked to Vucic's recent election defeat.",
+      "url": "https://www.dw.com/en/serbia-police-chief-arrested-after-election-for-abuse-of-office/a-79823382?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
       "sourceType": "news",
-      "publishedAt": "2026-11-01T14:46:03.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 23.8,
-      "topics": []
-    },
-    {
-      "id": "00c847835ce59b9d",
-      "category": "world",
-      "title": "Israel election: When will government be formed, who will lead it?",
-      "summary": "President Herzog must tap candidate to form new government by November 11, with fraught negotiations likely to follow.",
-      "url": "https://www.aljazeera.com/news/2026/11/1/israel-election-when-will-government-be-formed-who-will-lead-it?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-11-01T14:16:14.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 23.7,
+      "publishedAt": "2026-11-01T17:16:00.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 23.1,
       "topics": []
     },
     {
@@ -695,11 +707,25 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T21:14:34.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 23.5,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 22.1,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "856cb2f29234be57",
+      "category": "world",
+      "title": "In Lome, a soviet-era sport celebrates Togo-Russia ties",
+      "summary": "Sambo began in the USSR and takes its name from a Russian expression meaning \"unarmed self-defense\"",
+      "url": "https://www.africanews.com/2026/11/01/in-lome-a-soviet-era-sport-celebrates-togo-russia-ties/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T16:34:18.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 22,
+      "topics": []
     },
     {
       "id": "5534aab0a629a894",
@@ -710,9 +736,9 @@
       "source": "Africanews",
       "sourceCountry": "Pan-African",
       "sourceType": "news",
-      "publishedAt": "2026-11-01T14:58:18.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 22.9,
+      "publishedAt": "2026-11-01T15:01:28.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 21.6,
       "topics": []
     },
     {
@@ -725,22 +751,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-11-01T08:11:00.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 22.2,
-      "topics": []
-    },
-    {
-      "id": "2e908df63d1e2906",
-      "category": "technology",
-      "title": "APOD: 2026 November 1 – Colors of the Moon",
-      "summary": "APOD Science APOD APOD: 2026 November 1 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Colors of the […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-november-1-colors-of-the-moon/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-01T04:05:00.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 22.2,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 20.9,
       "topics": []
     },
     {
@@ -753,8 +765,22 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-11-01T12:00:00.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 22.1,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 20.8,
+      "topics": []
+    },
+    {
+      "id": "2e908df63d1e2906",
+      "category": "technology",
+      "title": "APOD: 2026 November 1 – Colors of the Moon",
+      "summary": "APOD Science APOD APOD: 2026 November 1 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Colors of the […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-november-1-colors-of-the-moon/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-01T04:05:00.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 20.8,
       "topics": []
     },
     {
@@ -767,36 +793,22 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-01T07:00:55.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 21.9,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 20.6,
       "topics": []
     },
     {
-      "id": "8090799d4e5a41fd",
-      "category": "world",
-      "title": "Watch: Heidi Klum as giant severed hand for Halloween bash",
-      "summary": "The supermodel and TV host provided a gory new shock at her New York event.",
-      "url": "https://www.bbc.co.uk/news/videos/cj040yd1xdrlo",
-      "source": "BBC World",
+      "id": "2c1ef9e170122090",
+      "category": "finance",
+      "title": "Thousands of jobs at Virgin Media O2 to be cut",
+      "summary": "The broadband provider has not finalised the number of roles to be axed but it will likely be a sizeable chunk of its workforce, the BBC understands.",
+      "url": "https://www.bbc.co.uk/news/articles/c6rry8x9d9qko",
+      "source": "BBC Business",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-11-01T05:26:02.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 21.5,
-      "topics": []
-    },
-    {
-      "id": "06709347d022c0fe",
-      "category": "world",
-      "title": "Cape Verde president rallies supporters as campaigns kick off",
-      "summary": "Hundreds of Supporters of Cape Verde President Jose Maria Neves cheered him on at a rally in Sao Vicente, as campaigning in the country's presidential election kicked off on Saturday",
-      "url": "https://www.africanews.com/2026/11/01/cape-verde-president-rallies-supporters-as-campaigns-kick-off/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-11-01T08:12:14.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 21.2,
+      "publishedAt": "2026-11-01T16:57:14.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 19.1,
       "topics": []
     },
     {
@@ -809,24 +821,24 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-31T05:20:16.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 20.5,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 19.1,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "794b3accb5ec4387",
-      "category": "world",
-      "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
-      "summary": "The incumbent Republican running for re-election and allies have accused the Democrats of trying to confuse voters by recruiting a second Dan Sullivan to also stand in the race.",
-      "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
+      "id": "3b6a1f6283fae391",
+      "category": "finance",
+      "title": "Crew from NASA's simulated Mars mission emerges after 378 days in isolation",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/crew-nasas-simulated-mars-mission-emerges-after-378-days-in-isolation-6511101",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-11-01T00:46:12.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 20.3,
+      "publishedAt": "2026-11-01T16:37:24.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 19,
       "topics": []
     },
     {
@@ -839,36 +851,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-11-01T09:41:30.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 18.6,
-      "topics": []
-    },
-    {
-      "id": "9ea8edc5eacc1a85",
-      "category": "finance",
-      "title": "Xiaomi's October EV deliveries top 50,000, hit 2026 monthly high",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/xiaomis-october-ev-deliveries-top-50000-hit-2026-monthly-high-6510711",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-01T07:41:36.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 18.1,
-      "topics": []
-    },
-    {
-      "id": "eb3e747fa5a28574",
-      "category": "technology",
-      "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
-      "summary": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces...",
-      "url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-30T16:00:00.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 18.1,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 17.2,
       "topics": []
     },
     {
@@ -881,22 +865,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-01T07:15:06.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 18,
-      "topics": []
-    },
-    {
-      "id": "89f349d9c1b3d801",
-      "category": "technology",
-      "title": "NASA Releases MAX POWER Key Events for Media, Participants",
-      "summary": "America’s newest aerospace expo and air show – MAX POWER – is fast approaching, and NASA has announced key events beginning Friday, Nov. 6, and running through Sunday, Nov. 8, hosted on and near the agency’s Kennedy Space Center in Florida. Through multiple park experiences at MAX POWER, NASA and a variety of external collaborators […]",
-      "url": "https://www.nasa.gov/news-release/nasa-releases-max-power-key-events-for-media-participants/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-30T19:31:02.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 18,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 16.6,
       "topics": []
     },
     {
@@ -909,8 +879,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-01T07:11:33.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 17.9,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 16.6,
       "topics": []
     },
     {
@@ -923,25 +893,11 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-30T22:56:13.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 17.9,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 16.5,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "39b5b4ff4b942a7c",
-      "category": "technology",
-      "title": "NASA’s James Webb Space Telescope Captures Eerie Cat’s Head",
-      "summary": "Intricate structures within the Cat’s Head Nebula are illuminated in this mid-infrared view from NASA’s James Webb Space Telescope released on Oct. 29, 2026. The distinctive “cat’s head” shape of the nebula was likely sculpted over time by the intense ultraviolet radiation and winds from massive stars in the Carina Nebula. As this stellar feedback […]",
-      "url": "https://www.nasa.gov/image-article/nasas-james-webb-space-telescope-captures-eerie-cats-head/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-30T15:56:26.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 17.1,
-      "topics": []
     },
     {
       "id": "c16f5b3ec0d19cac",
@@ -953,38 +909,22 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-31T07:15:45.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 17,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 15.6,
       "topics": []
     },
     {
-      "id": "1bb5ee2d7f2d3086",
+      "id": "50f6f1e8df6df16f",
       "category": "technology",
-      "title": "Fujifilm to boost tape production 5x as AI fuels archiving demand",
-      "summary": "Low costs and offline security mean magnetic tape still has a job.",
-      "url": "https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/",
-      "source": "Ars Technica",
+      "title": "APOD: 2026 October 31 – Night on a Spooky Planet",
+      "summary": "APOD Science APOD APOD: 2026 October 31 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Night on a […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-october-31-night-on-a-spooky-planet/",
+      "source": "NASA",
       "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-30T17:38:19.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 16.6,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "a273b0889aa255b6",
-      "category": "finance",
-      "title": "No more washing up: How Airbnb's new house rules have divided hosts and guests",
-      "summary": "Airbnb hosts must stop asking guests to wash-up or take out bins under rules coming into force in November.",
-      "url": "https://www.bbc.co.uk/news/articles/ckjwez8g5dyeo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-01T00:17:05.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 16.2,
+      "sourceType": "research",
+      "publishedAt": "2026-10-31T04:05:00.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 14.8,
       "topics": []
     },
     {
@@ -997,22 +937,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T21:41:00.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 14.6,
-      "topics": []
-    },
-    {
-      "id": "f975274894b4a8f5",
-      "category": "ai",
-      "title": "nemotron-halloween",
-      "summary": "",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-30T17:57:24.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 14.6,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 13.2,
       "topics": []
     },
     {
@@ -1025,36 +951,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T21:36:07.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 14.5,
-      "topics": []
-    },
-    {
-      "id": "ca185ce1e2dba2f6",
-      "category": "technology",
-      "title": "4 real? Tracking exploitation and patching of eMudhra’s weak keys",
-      "summary": "Four, just four: that’s the key to break into any unpatched connection on the Internet that is using eMudhra certificates. Here’s how we quickly patched Cloudflare, what evidence we can see of attempted exploitation, and how much of the rest of the Internet remains exposed.",
-      "url": "https://blog.cloudflare.com/emudhra-patching/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-30T17:38:50.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 13.6,
-      "topics": []
-    },
-    {
-      "id": "d59547bcca7f71cd",
-      "category": "finance",
-      "title": "Philip R. Lane: AI adoption in Europe",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-30T16:10:00.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 12.2,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 13.2,
       "topics": []
     },
     {
@@ -1067,8 +965,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:15:26.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 12,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 10.6,
       "topics": []
     },
     {
@@ -1081,8 +979,22 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:02:34.000Z",
-      "fetchedAt": "2026-11-01T15:25:07.434Z",
-      "score": 11.9,
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 10.6,
+      "topics": []
+    },
+    {
+      "id": "6289e2801eae4ed1",
+      "category": "technology",
+      "title": "Once again, NASA is asking for ideas to rescue Hubble from certain death",
+      "summary": "The space agency solicited ideas for reboosting Hubble four years ago, but they didn't go anywhere.",
+      "url": "https://arstechnica.com/space/2026/10/think-you-can-save-the-hubble-space-telescope-nasa-wants-to-know/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-10-31T00:07:22.000Z",
+      "fetchedAt": "2026-11-01T20:44:44.666Z",
+      "score": 7.8,
       "topics": []
     }
   ]
