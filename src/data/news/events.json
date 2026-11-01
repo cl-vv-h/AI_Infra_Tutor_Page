@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-10-31T23:36:31.666Z",
-    "releasesCollectedAt": "2026-10-31T23:36:42.430Z",
-    "libraryCollectedAt": "2026-10-31T23:36:31.666Z",
+    "dailyCollectedAt": "2026-11-01T06:42:28.147Z",
+    "releasesCollectedAt": "2026-11-01T06:42:40.005Z",
+    "libraryCollectedAt": "2026-11-01T06:42:28.147Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -63,11 +63,12 @@
       "2026-10-28",
       "2026-10-29",
       "2026-10-30",
-      "2026-10-31"
+      "2026-10-31",
+      "2026-11-01"
     ],
     "missingArchiveDates": [],
     "failedSources": [],
-    "invalidItems": 30
+    "invalidItems": 31
   },
   "tracks": [
     {
@@ -80,7 +81,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-31T23:36:42.430Z",
+          "lastCollectedAt": "2026-11-01T06:42:40.005Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -93,7 +94,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-31T23:36:42.430Z",
+          "lastCollectedAt": "2026-11-01T06:42:40.005Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -106,7 +107,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-10-31T23:36:42.430Z",
+          "lastCollectedAt": "2026-11-01T06:42:40.005Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -119,7 +120,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-10-31T23:36:42.430Z",
+          "lastCollectedAt": "2026-11-01T06:42:40.005Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -132,7 +133,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-02T01:09:04.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-10-31T23:36:42.430Z",
+          "lastCollectedAt": "2026-11-01T06:42:40.005Z",
           "revisionCount": 3,
           "ruleIds": [
             "official-releases"
@@ -145,7 +146,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-19T02:55:19.000Z",
           "firstCollectedAt": "2026-10-16T04:52:38.724Z",
-          "lastCollectedAt": "2026-10-31T23:36:42.430Z",
+          "lastCollectedAt": "2026-11-01T06:42:40.005Z",
           "revisionCount": 1,
           "ruleIds": [
             "official-releases"
@@ -267,7 +268,7 @@
           "publisherCountry": "United States",
           "publishedAt": "2026-10-26T22:01:23.000Z",
           "firstCollectedAt": "2026-10-27T05:28:07.370Z",
-          "lastCollectedAt": "2026-10-31T23:36:31.666Z",
+          "lastCollectedAt": "2026-11-01T06:42:28.147Z",
           "revisionCount": 0,
           "ruleIds": [
             "workers-announcements"
@@ -422,13 +423,26 @@
           ]
         },
         {
+          "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030b.pdf",
+          "title": "Timetable and Schedule of U.S. Dollar Funds-Supplying Operations (November 2026-March 2027)",
+          "publisher": "Bank of Japan",
+          "publisherCountry": "Japan",
+          "publishedAt": "2026-10-30T08:00:00.000Z",
+          "firstCollectedAt": "2026-11-01T06:42:28.147Z",
+          "lastCollectedAt": "2026-11-01T06:42:28.147Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "policy-documents"
+          ]
+        },
+        {
           "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030c.pdf",
           "title": "Quarterly Schedule of Outright Purchases of Japanese Government Bonds (Competitive Auction Method) (October-December 2026) (Schedule Updates)",
           "publisher": "Bank of Japan",
           "publisherCountry": "Japan",
           "publishedAt": "2026-10-30T08:00:00.000Z",
           "firstCollectedAt": "2026-10-30T15:15:33.072Z",
-          "lastCollectedAt": "2026-10-31T23:36:31.666Z",
+          "lastCollectedAt": "2026-11-01T06:42:28.147Z",
           "revisionCount": 0,
           "ruleIds": [
             "policy-documents"
@@ -546,5 +560,5 @@
       ]
     }
   ],
-  "fingerprint": "ee25758d61e7772b706455d735e4b9bb124070fdbb8c42807ede2b1c656eb4c1"
+  "fingerprint": "5fb34d6a6fef7dc6e88601e532788946d80ae1ac6143c539efb4ba8297974d1e"
 }

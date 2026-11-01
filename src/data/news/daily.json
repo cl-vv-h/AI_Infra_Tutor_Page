@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T23:36:31.666Z",
+  "generatedAt": "2026-11-01T06:42:28.147Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -14,7 +14,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 28,
-      "latestPublishedAt": "2026-10-31T23:06:13.000Z",
+      "latestPublishedAt": "2026-11-01T06:30:59.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-30T21:34:32.000Z",
+      "latestPublishedAt": "2026-11-01T06:30:59.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,9 +39,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 126,
-      "latestPublishedAt": "2026-10-31T19:49:00.000Z",
-      "selectedCount": 2,
+      "entryCount": 122,
+      "latestPublishedAt": "2026-11-01T06:19:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-10-31T22:38:03.000Z",
+      "latestPublishedAt": "2026-11-01T06:19:52.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-10-31T22:30:13.000Z",
+      "latestPublishedAt": "2026-11-01T00:38:57.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-31T04:05:00.000Z",
+      "latestPublishedAt": "2026-11-01T04:05:00.000Z",
       "selectedCount": 3,
       "libraryCount": 5
     },
@@ -195,9 +195,9 @@
       "type": "institution",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 51,
+      "entryCount": 50,
       "latestPublishedAt": "2026-10-30T08:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -249,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-10-31T12:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-10-31T21:34:15.000Z",
+      "latestPublishedAt": "2026-11-01T06:24:17.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-10-31T15:52:00.000Z",
+      "latestPublishedAt": "2026-11-01T03:31:00.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -353,7 +353,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-30T00:13:59.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -379,7 +379,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-30T05:52:29.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -444,7 +444,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-30T00:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -515,6 +515,22 @@
   ],
   "items": [
     {
+      "id": "28e2fa4b50d324c5",
+      "category": "world",
+      "title": "India tightens security as opposition holds mega rally demanding election chief’s resignation",
+      "summary": "Indian law enforcement officials armed with batons and shields on Sunday surrounded the site of a planned opposition rally in New Delhi. India's main opposition parties and the youth-led Cockroach Janta Party ‌are demanding the resignation of the country's election chief over voter list revisions that critics say favour Prime Minister Narendra Modi's party.",
+      "url": "https://www.france24.com/en/asia-pacific/20261101-india-tightens-security-as-opposition-holds-mega-rally-demanding-election-chief-s-resignation",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T06:24:17.000Z",
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 28.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "dc01ebb2e98ddfe5",
       "category": "technology",
       "title": "Build a Validated Kubernetes Runtime for NVIDIA Dynamo",
@@ -524,8 +540,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T21:35:31.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 28.5,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 26.7,
       "topics": [
         "inference",
         "hardware"
@@ -541,8 +557,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T20:33:18.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 28.2,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 26.5,
       "topics": [
         "models"
       ]
@@ -557,8 +573,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T21:14:34.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 27.4,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 25.6,
       "topics": [
         "security"
       ]
@@ -573,8 +589,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T15:01:36.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 26.9,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 25.1,
       "topics": [
         "hardware"
       ]
@@ -589,11 +605,25 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-31T14:28:10.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 26.7,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 24.9,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "2e908df63d1e2906",
+      "category": "technology",
+      "title": "APOD: 2026 November 1 – Colors of the Moon",
+      "summary": "APOD Science APOD APOD: 2026 November 1 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Colors of the […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-november-1-colors-of-the-moon/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-01T04:05:00.000Z",
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 24.3,
+      "topics": []
     },
     {
       "id": "07bc6a34e22e2641",
@@ -605,27 +635,25 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:15:19.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 25.9,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 24.1,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "315aff43b3b0752c",
+      "id": "8090799d4e5a41fd",
       "category": "world",
-      "title": "Third weekend of protests in France",
-      "summary": "France is preparing for a third weekend of protests, with 70,000 security personnel deployed to prevent a repeat of the violence seen on October 17. Shops have boarded up their premises as authorities warn of further clashes, with Halloween adding to concerns over masked demonstrators. The protests, initially driven by anger over the cost of living and poor school conditions, have broadened to include demands for greater civil liberties and the right to protest. With presidential elections six months away, authorit",
-      "url": "https://www.france24.com/en/third-weekend-of-protests-in-france",
-      "source": "France 24",
-      "sourceCountry": "France",
+      "title": "Watch: Heidi Klum as giant severed hand for Halloween bash",
+      "summary": "The supermodel and TV host provided a gory new shock at her New York event.",
+      "url": "https://www.bbc.co.uk/news/videos/cj040yd1xdrlo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T11:13:44.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 25.9,
-      "topics": [
-        "security"
-      ]
+      "publishedAt": "2026-11-01T05:26:02.000Z",
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 23.7,
+      "topics": []
     },
     {
       "id": "b82c651d8f30c96d",
@@ -637,8 +665,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-10-31T12:03:37.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 25.1,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 23.3,
       "topics": [
         "security"
       ]
@@ -653,11 +681,25 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-31T05:20:16.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 24.4,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 22.7,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "3604a423c3eee6c1",
+      "category": "world",
+      "title": "India's opposition set to hold mega rally seeking election chief's resignation",
+      "summary": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls.",
+      "url": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T00:12:07.000Z",
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 22.4,
+      "topics": []
     },
     {
       "id": "4c9833d88a13fd1d",
@@ -669,8 +711,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-31T04:24:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 24.2,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 22.4,
       "topics": [
         "security"
       ]
@@ -685,8 +727,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-31T12:00:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 24.1,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 22.3,
       "topics": []
     },
     {
@@ -699,36 +741,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-31T21:29:01.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 23.5,
-      "topics": []
-    },
-    {
-      "id": "52c82e0a5eff5fee",
-      "category": "world",
-      "title": "Israel’s allegations of Qatari election interference rejected",
-      "summary": "Israel’s allegations of Qatari election interference rejected",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/31/israels-allegations-of-qatari-election-interference-rejected?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T20:24:58.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 23.2,
-      "topics": []
-    },
-    {
-      "id": "dc79226fed79d227",
-      "category": "world",
-      "title": "What is ranked-choice voting and how does it work in US elections?",
-      "summary": "Ranked-choice voting in Alaska could shape a key 2026 race, amid a US lawsuit involving two candidates named Dan Sullivan.",
-      "url": "https://www.aljazeera.com/news/2026/10/31/what-is-ranked-choice-voting-and-how-does-it-work-in-us-elections?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T20:11:37.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 23.1,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -741,8 +755,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-10-31T19:49:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 23.1,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 21.3,
       "topics": []
     },
     {
@@ -755,63 +769,10 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T12:00:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 23.1,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 21.3,
       "topics": [
         "security"
-      ]
-    },
-    {
-      "id": "5638db8333d3e494",
-      "category": "technology",
-      "title": "Bringing the MONAI Model Zoo to AMD Instinct™ GPUs: Validated Inference on ROCm",
-      "summary": "The Medical Open Network for AI (MONAI) Model Zoo is often the first stop when a researcher is building a medical imaging application: a shared shelf of ready-to-use, peer-reviewed models, where you can find a whole-body computed tomography (CT) segmenter or an interactive annotation network already trained, packaged, and ready to run.",
-      "url": "https://rocm.blogs.amd.com/artificial-intelligence/monai-zoo-2608/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-30T00:00:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 23.1,
-      "topics": [
-        "inference",
-        "hardware"
-      ]
-    },
-    {
-      "id": "57010f271881307e",
-      "category": "world",
-      "title": "Ethiopian PM puts ministers through military training",
-      "summary": "The prime minister has previously emphasised military preparedness as central to his government's ambitions.",
-      "url": "https://www.bbc.co.uk/news/articles/cmwyv2y7g9l8o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T14:28:15.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 22.7,
-      "topics": [
-        "training"
-      ]
-    },
-    {
-      "id": "8192e5e8cf08e3e8",
-      "category": "ai",
-      "title": "Release v0.7.3rc1",
-      "summary": "What's Changed perf(cake_kimi_k3_latent_moe): plan from the device SM count; qualify 148- and 152-SM parts (SM100a, SM103a) by @yyihuang in #6109 perf(cake_kimi_k3_attn_res): qualify the native ports on 148- and 152-SM parts (SM100a, SM103a) by @yyihuang in #6108 perf(cudnn): reduce attention execution and planning overhead by @YangXu1990uiuc in #5526 feat(cake_ssd_combined): 2048 and an SM107 persistent two-row form for top_k = 8192) to the Cake-exported backends (cake, cake_cute) by @yyihuang in #6154 perf(cake_m",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.3rc1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-30T05:52:29.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 22.6,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
       ]
     },
     {
@@ -824,8 +785,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T21:14:32.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 22.4,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 20.6,
       "topics": []
     },
     {
@@ -838,8 +799,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-30T19:31:02.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 22,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 20.2,
       "topics": []
     },
     {
@@ -852,11 +813,53 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-30T22:56:13.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 21.8,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 20.1,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "32345013fd612186",
+      "category": "world",
+      "title": "Canelo Alvarez defeats Christian Mbilli to reclaim WBC title in Riyadh",
+      "summary": "Mexican boxing star wins 12-round decision to defeat the French fighter and regain the super middleweight belt.",
+      "url": "https://www.aljazeera.com/sports/2026/11/1/canelo-alvarez-defeats-christian-mbilli-to-reclaim-wbc-title-in-riyadh?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T06:19:52.000Z",
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 19.9,
+      "topics": []
+    },
+    {
+      "id": "c408d9dc6bf3709e",
+      "category": "world",
+      "title": "Bolivia declares emergency as El Nino intensifies, threatens severe weather",
+      "summary": "President Rodrigo Paz warned of severe droughts and flooding as El Nino intensifies, with at least 78,000 families already affected by drought.",
+      "url": "https://www.dw.com/en/bolivia-declares-emergency-as-el-nino-intensifies-threatens-severe-weather/a-79820253?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T06:19:00.000Z",
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 19.9,
+      "topics": []
+    },
+    {
+      "id": "71bec1ba0f960767",
+      "category": "world",
+      "title": "Golden State Valkyries defeat Atlanta Dream to capture first WNBA crown",
+      "summary": "Gabby Williams, named Most Valuable Player, set records for most points (137) and most steals (18) in the WNBA Finals.",
+      "url": "https://www.aljazeera.com/sports/2026/11/1/golden-state-valkyries-defeat-atlanta-dream-to-capture-first-wnba-crown?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T06:17:45.000Z",
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 19.9,
+      "topics": []
     },
     {
       "id": "39b5b4ff4b942a7c",
@@ -868,8 +871,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-30T15:56:26.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 21.1,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 19.3,
       "topics": []
     },
     {
@@ -882,8 +885,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-31T07:15:45.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 20.9,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 19.1,
       "topics": []
     },
     {
@@ -896,25 +899,11 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-30T17:38:19.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 20.5,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 18.7,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "1ed2afa2078bf59a",
-      "category": "world",
-      "title": "CCTV and zip ties: How US mail-in votes are secured and counted",
-      "summary": "BBC Verify goes to an election centre to get a behind-the-scenes look at how mail-in ballots for the US midterm elections are processed.",
-      "url": "https://www.bbc.co.uk/news/videos/cw4g1vlj4v2jo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T09:16:14.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 20.4,
-      "topics": []
     },
     {
       "id": "b60e7fffcad32339",
@@ -926,39 +915,25 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-30T09:10:43.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 20.4,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 18.6,
       "topics": [
         "kernels",
         "hardware"
       ]
     },
     {
-      "id": "18dd09983e78d50a",
-      "category": "world",
-      "title": "‘They deserve to know the truth’: UN rights chief demands probe into staffer’s death in Houthi custody",
-      "summary": "The UN human rights chief on Saturday demanded an independent investigation into the death of a Yemeni colleague held by the Houthis for more than two years, whose family learned of his death only weeks after it happened.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168716",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-31T12:00:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 20.1,
-      "topics": []
-    },
-    {
-      "id": "50f6f1e8df6df16f",
-      "category": "technology",
-      "title": "APOD: 2026 October 31 – Night on a Spooky Planet",
-      "summary": "APOD Science APOD APOD: 2026 October 31 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Night on a […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-october-31-night-on-a-spooky-planet/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-10-31T04:05:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 20.1,
+      "id": "f75500a132251463",
+      "category": "finance",
+      "title": "South Korea exports nearly double in October, strongest growth since 1974",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/south-korea-exports-nearly-double-in-october-strongest-growth-1974-6510436",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T00:38:57.000Z",
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 18.5,
       "topics": []
     },
     {
@@ -971,8 +946,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-31T22:30:13.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 19.7,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -985,8 +960,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T14:00:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 19.6,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 17.8,
       "topics": []
     },
     {
@@ -999,22 +974,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-30T09:36:03.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 19.5,
-      "topics": []
-    },
-    {
-      "id": "3a7ec71016e21936",
-      "category": "finance",
-      "title": "Binance says it has covered 90% of losses from $6.3 billion hack",
-      "summary": "The FBI on Saturday said the North Korean state-sponsored unit known as TraderTraitor was responsible for the attack.",
-      "url": "https://www.channelnewsasia.com/business/binance-covers-90-cent-losses-6510271",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T21:01:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 19.4,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 17.7,
       "topics": []
     },
     {
@@ -1027,8 +988,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T17:57:24.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 18.6,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 16.8,
       "topics": []
     },
     {
@@ -1041,8 +1002,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T21:41:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 18.5,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1055,8 +1016,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T21:36:07.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 18.5,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1069,8 +1030,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T17:38:50.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 17.5,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 15.7,
       "topics": []
     },
     {
@@ -1083,8 +1044,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T14:23:43.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 16.7,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 14.9,
       "topics": []
     },
     {
@@ -1097,22 +1058,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T16:10:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 16.1,
-      "topics": []
-    },
-    {
-      "id": "f6d31087174f8c3c",
-      "category": "finance",
-      "title": "Statement on Monetary Policy",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-30T04:00:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 16.1,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 14.4,
       "topics": []
     },
     {
@@ -1125,8 +1072,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:15:26.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 15.9,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 14.1,
       "topics": []
     },
     {
@@ -1139,22 +1086,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:02:34.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 15.9,
-      "topics": []
-    },
-    {
-      "id": "f941a986a19dcf6e",
-      "category": "finance",
-      "title": "(Reference) Outlook Report and Indicators Related to Underlying Inflation",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030b.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-30T03:02:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 15.9,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 14.1,
       "topics": []
     },
     {
@@ -1167,8 +1100,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-30T15:00:10.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 15.8,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 14.1,
       "topics": []
     },
     {
@@ -1181,8 +1114,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-30T09:33:51.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 15.5,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 13.7,
       "topics": [
         "security"
       ]
@@ -1197,22 +1130,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T09:00:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 14.3,
-      "topics": []
-    },
-    {
-      "id": "d480682aab19e561",
-      "category": "finance",
-      "title": "How Poundland grew from a market stall to a high street giant",
-      "summary": "The retail giant - which started life at a Wolverhampton market - is now at threat of collapse.",
-      "url": "https://www.bbc.co.uk/news/articles/cw07304l5je7o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-30T06:08:22.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 13.6,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 12.6,
       "topics": []
     },
     {
@@ -1225,22 +1144,22 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-10-30T21:34:32.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 13.5,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 11.7,
       "topics": []
     },
     {
-      "id": "418138aeb43c8bb9",
-      "category": "ai",
-      "title": "v0.5.23",
-      "summary": "Bump v0.5.23",
-      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.23",
-      "source": "SGLang Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-30T00:13:59.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 13.2,
+      "id": "c02f80005a07ccc8",
+      "category": "finance",
+      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
+      "summary": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
+      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-10-30T20:34:46.000Z",
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 11.5,
       "topics": []
     },
     {
@@ -1253,8 +1172,22 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T08:00:00.000Z",
-      "fetchedAt": "2026-10-31T23:36:31.666Z",
-      "score": 13.1,
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 11.3,
+      "topics": []
+    },
+    {
+      "id": "2fd003bb9f333b7c",
+      "category": "finance",
+      "title": "Timetable and Schedule of U.S. Dollar Funds-Supplying Operations (November 2026-March 2027)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030b.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-10-30T08:00:00.000Z",
+      "fetchedAt": "2026-11-01T06:42:28.147Z",
+      "score": 11.3,
       "topics": []
     }
   ]
