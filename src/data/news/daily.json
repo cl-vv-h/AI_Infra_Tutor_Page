@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T06:42:28.147Z",
+  "generatedAt": "2026-11-01T15:25:07.434Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 28,
-      "latestPublishedAt": "2026-11-01T06:30:59.000Z",
+      "entryCount": 25,
+      "latestPublishedAt": "2026-11-01T13:11:37.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 50,
-      "latestPublishedAt": "2026-11-01T06:30:59.000Z",
+      "entryCount": 52,
+      "latestPublishedAt": "2026-11-01T13:11:37.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,8 +40,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 122,
-      "latestPublishedAt": "2026-11-01T06:19:00.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-11-01T14:50:00.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -53,8 +53,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-01T06:19:52.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-11-01T14:46:03.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-01T00:38:57.000Z",
+      "latestPublishedAt": "2026-11-01T09:41:30.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-10-30T15:00:10.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -158,7 +158,7 @@
       "channel": "feed",
       "entryCount": 15,
       "latestPublishedAt": "2026-10-30T16:10:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -195,9 +195,9 @@
       "type": "institution",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 50,
+      "entryCount": 48,
       "latestPublishedAt": "2026-10-30T08:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -248,7 +248,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 30,
-      "latestPublishedAt": "2026-10-31T12:00:00.000Z",
+      "latestPublishedAt": "2026-11-01T12:00:00.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-11-01T06:24:17.000Z",
+      "latestPublishedAt": "2026-11-01T14:31:49.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-31T21:14:34.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-11-01T13:15:28.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-10-31T16:36:47.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-11-01T14:58:18.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -365,7 +365,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-10-31T07:15:45.000Z",
+      "latestPublishedAt": "2026-11-01T09:21:10.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -457,7 +457,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-10-30T17:38:50.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -483,7 +483,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-10-30T09:36:03.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -515,20 +515,114 @@
   ],
   "items": [
     {
+      "id": "cd6fe75915b49991",
+      "category": "ai",
+      "title": "v0.33.0",
+      "summary": "vLLM v0.33.0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0",
+      "source": "vLLM Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-11-01T09:21:10.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 28.5,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "0ca749b5f9d47a9a",
+      "category": "world",
+      "title": "Africa suffering in 'strongmen' era: governance watchdog Mo Ibrahim",
+      "summary": "The Mo Ibrahim Foundation's latest report, finds broad progress on economic opportunity and human development over the past decade, but also steep declines in security, human rights and public participation",
+      "url": "https://www.africanews.com/2026/11/01/africa-suffering-in-strongmen-era-governance-watchdog-mo-ibrahim/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T14:02:27.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 27.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "6707f7693736a4b3",
+      "category": "world",
+      "title": "Qatar LNG carrier struck by ‘unidentified objects’ in Gulf",
+      "summary": "Doha denounces 'dangerous act' that threatens safety of maritime navigation and security of global energy supplies.",
+      "url": "https://www.aljazeera.com/news/2026/11/1/qatar-lng-carrier-struck-by-unidentified-objects-in-gulf?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T10:21:48.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 27.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "2f073480c33e0327",
+      "category": "world",
+      "title": "Hundreds of thousands protest in France for \"Act III\"",
+      "summary": "A heavy police presence was hard to miss on the streets of Paris on Saturday, as the capital saw demonstrations for a third consecutive weekend over the rising cost of living and deteriorating conditions in schools. But the increased security failed to prevent clashes in several parts of the city. Riot police fired tear gas to push back protesters, while small fires broke out in several areas. Similar scenes unfolded across the country, including in Bordeaux, Toulouse and Marseille. Still, the demonstrations were l",
+      "url": "https://www.france24.com/en/hundreds-of-thousands-protest-in-france-for-act-iii",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T09:35:02.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 27.5,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "28e2fa4b50d324c5",
       "category": "world",
-      "title": "India tightens security as opposition holds mega rally demanding election chief’s resignation",
-      "summary": "Indian law enforcement officials armed with batons and shields on Sunday surrounded the site of a planned opposition rally in New Delhi. India's main opposition parties and the youth-led Cockroach Janta Party ‌are demanding the resignation of the country's election chief over voter list revisions that critics say favour Prime Minister Narendra Modi's party.",
+      "title": "Indian opposition parties stage mega rally seeking election chief’s resignation",
+      "summary": "Tens of thousands of demonstrators on Sunday joined a protest in New Delhi called by Indian opposition leader Rahul Gandhi and backed by the youth “Cockroach” movement amid tight security. Protesters are demanding the resignation of the country's election chief over voter list revisions that critics say favour Prime Minister Narendra Modi's party.",
       "url": "https://www.france24.com/en/asia-pacific/20261101-india-tightens-security-as-opposition-holds-mega-rally-demanding-election-chief-s-resignation",
       "source": "France 24",
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-01T06:24:17.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 28.9,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 26.7,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "6141d3855219fced",
+      "category": "world",
+      "title": "Bulgarians vote in presidential runoff amid security tensions in the Black Sea",
+      "summary": "Bulgarians voted Sunday in a presidential runoff between two candidates with opposing views on the Ukraine war and relations with Russia as tensions mount in the Black Sea. Incumbent President Iliana Iotova, who favours dialogue with Moscow, faces off against Andrey Gyurov, a former caretaker prime minister backed by the pro-Western opposition.",
+      "url": "https://www.france24.com/en/europe/20261101-bulgarians-vote-in-presidential-runoff-amid-security-tensions-in-the-black-sea",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T05:47:51.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 26.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "34256945adb8b7b8",
+      "category": "world",
+      "title": "COP17: Nations chart ‘Yerevan Pathway’ to speed up action for nature",
+      "summary": "At the halfway mark to 2030, countries meeting in Armenia have agreed a roadmap to accelerate action for nature, after a global review found the world off track to meet its biodiversity targets.",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168718",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-01T12:00:00.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 26.1,
+      "topics": []
     },
     {
       "id": "dc01ebb2e98ddfe5",
@@ -540,8 +634,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T21:35:31.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 26.7,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 24.5,
       "topics": [
         "inference",
         "hardware"
@@ -557,11 +651,39 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T20:33:18.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 26.5,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 24.3,
       "topics": [
         "models"
       ]
+    },
+    {
+      "id": "963c6e498b11ddbe",
+      "category": "world",
+      "title": "Photos: Thousands join India’s opposition rally against election chief",
+      "summary": "Protesters march in New Delhi demanding the election chief quit over voter roll changes seen as favouring Modi’s party.",
+      "url": "https://www.aljazeera.com/gallery/2026/11/1/photos-indian-opposition-rallies-against-elections-chief?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T14:46:03.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "00c847835ce59b9d",
+      "category": "world",
+      "title": "Israel election: When will government be formed, who will lead it?",
+      "summary": "President Herzog must tap candidate to form new government by November 11, with fraught negotiations likely to follow.",
+      "url": "https://www.aljazeera.com/news/2026/11/1/israel-election-when-will-government-be-formed-who-will-lead-it?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T14:16:14.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 23.7,
+      "topics": []
     },
     {
       "id": "2b0c236268bc342d",
@@ -573,43 +695,39 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T21:14:34.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 25.6,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 23.5,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "880bd9983f5062ed",
-      "category": "technology",
-      "title": "How to Check and Configure NVIDIA GPUDirect Storage for Your Platform",
-      "summary": "NVIDIA GPUDirect Storage (GDS) accelerates GPU storage access in on-premises and cloud environments. It provides a robust, portable, and efficient data path...",
-      "url": "https://developer.nvidia.com/blog/how-to-check-and-configure-nvidia-gpudirect-storage-for-your-platform/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-30T15:01:36.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 25.1,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
-      "id": "2b65f3817d275fcc",
+      "id": "5534aab0a629a894",
       "category": "world",
-      "title": "Turkey nominates former foreign minister Sinirlioglu as UN chief",
-      "summary": "Turkey has nominated its former foreign minister and UN ambassador Feridun Hadi Sinirlioglu for the position of UN secretary-general, state-media reported on Saturday. The submission was officially backed by Turkish President Recep Tayyip Erdogan who has been particularly vocal in calling for reform of the UN Security Council.",
-      "url": "https://www.france24.com/en/asia-pacific/20261031-turkey-nominates-former-foreign-minister-sinirlioglu-as-un-chief",
-      "source": "France 24",
-      "sourceCountry": "France",
+      "title": "Hundreds march in Johannesburg to celebrate LGBTQ+ pride in South Africa",
+      "summary": "Hundreds of people took to the streets of Sandton on Saturday to celebrate South Africa’s Pride parade, one of Africa’s largest annual celebrations of inclusivity",
+      "url": "https://www.africanews.com/2026/11/01/hundreds-march-in-johannesburg-to-celebrate-lgbtq-pride-in-south-africa/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T14:28:10.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 24.9,
-      "topics": [
-        "security"
-      ]
+      "publishedAt": "2026-11-01T14:58:18.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "06dd13c6402f1617",
+      "category": "world",
+      "title": "Donald Trump loses allies after elections in Serbia and Brazil",
+      "summary": "Flavio Bolsonaro failed to gain power, Aleksandar Vucic was voted out of office, and even Benjamin Netanyahu's position has weakened. An unhappy US President Trump is crying electoral fraud.",
+      "url": "https://www.dw.com/en/donald-trump-loses-allies-after-elections-in-serbia-and-brazil/a-79812075?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T08:11:00.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 22.2,
+      "topics": []
     },
     {
       "id": "2e908df63d1e2906",
@@ -621,25 +739,37 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-01T04:05:00.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 24.3,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 22.2,
       "topics": []
     },
     {
-      "id": "07bc6a34e22e2641",
+      "id": "151a751663d98a6e",
       "category": "world",
-      "title": "France's Nunez warns of high risk during protests",
-      "summary": "France is bracing for a third consecutive weekend of protests, with around 70,000 security personnel deployed to prevent a repeat of the violence seen on October 17. Shops have boarded up their premises as authorities warn of further clashes, with Halloween celebrations adding to security concerns over masked demonstrators. The protests, involving Yellow Vest activists, trade unions and students, initially focused on the rising cost of living, inequality and poor school conditions, but have since expanded to includ",
-      "url": "https://www.france24.com/en/france-s-nunez-warns-of-high-risk-during-protests",
-      "source": "France 24",
-      "sourceCountry": "France",
+      "title": "Western Sahara: UN ‘stands ready’ to keep supporting peace efforts as MINURSO mission ends",
+      "summary": "The UN remains committed to supporting a just, lasting and mutually acceptable political solution in Western Sahara that provides for the self-determination of its people, Secretary-General António Guterres said on Sunday, as the UN peacekeeping mission there began to wind down.",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168717",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-01T12:00:00.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 22.1,
+      "topics": []
+    },
+    {
+      "id": "3604a423c3eee6c1",
+      "category": "world",
+      "title": "India's opposition holds mega rally seeking election chief's resignation",
+      "summary": "Thousands gathered in the heart of delhi, calling for the chief election commissioner to step down.",
+      "url": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T11:15:19.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 24.1,
-      "topics": [
-        "security"
-      ]
+      "publishedAt": "2026-11-01T07:00:55.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 21.9,
+      "topics": []
     },
     {
       "id": "8090799d4e5a41fd",
@@ -651,25 +781,23 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-01T05:26:02.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 23.7,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 21.5,
       "topics": []
     },
     {
-      "id": "b82c651d8f30c96d",
+      "id": "06709347d022c0fe",
       "category": "world",
-      "title": "Tshisekedi seeks Putin's help against Rwanda-backed rebels",
-      "summary": "President Felix Tshisekedi said he \"absolutely\" wanted the help of Russia, a permanent UN Security Council member \"in the search for peace\" with Rwanda, during talks with Putin at the end of a Russia-Africa summit",
-      "url": "https://www.africanews.com/2026/10/31/tshisekedi-seeks-putins-help-against-rwanda-backed-rebels/",
+      "title": "Cape Verde president rallies supporters as campaigns kick off",
+      "summary": "Hundreds of Supporters of Cape Verde President Jose Maria Neves cheered him on at a rally in Sao Vicente, as campaigning in the country's presidential election kicked off on Saturday",
+      "url": "https://www.africanews.com/2026/11/01/cape-verde-president-rallies-supporters-as-campaigns-kick-off/",
       "source": "Africanews",
       "sourceCountry": "Pan-African",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T12:03:37.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 23.3,
-      "topics": [
-        "security"
-      ]
+      "publishedAt": "2026-11-01T08:12:14.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 21.2,
+      "topics": []
     },
     {
       "id": "03302d1a8e98f1f1",
@@ -681,112 +809,80 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-10-31T05:20:16.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 22.7,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 20.5,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "3604a423c3eee6c1",
+      "id": "794b3accb5ec4387",
       "category": "world",
-      "title": "India's opposition set to hold mega rally seeking election chief's resignation",
-      "summary": "It comes amid growing protests over a voter roll revision exercise feared to leave 130 million voters off rolls.",
-      "url": "https://www.bbc.co.uk/news/articles/c60qk92dvlwgo",
+      "title": "Alaska Senate candidate denies knowing about alleged plot to put two Dan Sullivans on ballot",
+      "summary": "The incumbent Republican running for re-election and allies have accused the Democrats of trying to confuse voters by recruiting a second Dan Sullivan to also stand in the race.",
+      "url": "https://www.bbc.co.uk/news/articles/cmwyq2gg1yzzo",
       "source": "BBC World",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-11-01T00:12:07.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 22.4,
+      "publishedAt": "2026-11-01T00:46:12.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 20.3,
       "topics": []
     },
     {
-      "id": "4c9833d88a13fd1d",
-      "category": "world",
-      "title": "UN peacekeeping mission in Western Sahara to expire amid US, Russia vetoes",
-      "summary": "The mandate of the UN peacekeeping force in Western Sahara will expire on October 31. The UN Security Council could not agree on a resolution to extend the mission.",
-      "url": "https://www.dw.com/en/un-peacekeeping-mission-in-western-sahara-to-expire-amid-us-russia-vetoes/a-79814338?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
+      "id": "0fecd572b8088fa2",
+      "category": "finance",
+      "title": "OPEC+ keeps December oil output targets steady ahead of tougher call for 2027",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/opec-keeps-december-oil-output-targets-steady-ahead-tougher-call-2027-6510756",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T04:24:00.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 22.4,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "96f9d35704885596",
-      "category": "world",
-      "title": "DPR Korea: Isolation deepens even as the country changes, says UN rights official",
-      "summary": "The Democratic People’s Republic of Korea (DPRK) is building factories and hospitals, rolling out smartphones and mobile banking, and passing new laws at an unprecedented rate. But its people are more cut off from the outside world than at any point in the country’s history.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168690",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-31T12:00:00.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 22.3,
+      "publishedAt": "2026-11-01T09:41:30.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 18.6,
       "topics": []
     },
     {
-      "id": "cbf42f7e769db8f4",
-      "category": "world",
-      "title": "Thousands demonstrate in Paris as protests spread across Europe",
-      "summary": "More than 320,000 people demonstrated across France against the rising cost of living and poor public services, with clashes between some protesters and police.",
-      "url": "https://www.bbc.co.uk/news/videos/ck0j0y87j303o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
+      "id": "9ea8edc5eacc1a85",
+      "category": "finance",
+      "title": "Xiaomi's October EV deliveries top 50,000, hit 2026 monthly high",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/xiaomis-october-ev-deliveries-top-50000-hit-2026-monthly-high-6510711",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T21:29:01.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 21.7,
+      "publishedAt": "2026-11-01T07:41:36.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 18.1,
       "topics": []
     },
     {
-      "id": "b68a34831bc17946",
-      "category": "world",
-      "title": "Serbia after Vucic: The winners are losing patience",
-      "summary": "After the Student List's election victory, Aleksandar Vucic's power apparatus is disintegrating. People want justice as soon as possible. But the losers still hold sway in the judiciary and administration.",
-      "url": "https://www.dw.com/en/serbia-after-vucic-the-winners-are-losing-patience/a-79817586?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T19:49:00.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 21.3,
-      "topics": []
-    },
-    {
-      "id": "b79405a0ae621118",
-      "category": "world",
-      "title": "DR Congo: Hunger deepens for millions amid conflict, Ebola and climate shocks",
-      "summary": "More than 28 million people in the Democratic Republic of the Congo (DRC) are not getting enough to eat and the number is expected to tick up in the coming months, according to the latest alert from the IPC global food security monitor.",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168708",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-30T12:00:00.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 21.3,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "9b6db067845c994f",
-      "category": "world",
-      "title": "A new political era in the Southern Philippines",
-      "summary": "A new local government has taken its seat in the southern Philippines, in a step that marks a milestone in the peace process for a conflict that has lasted some 80 years.",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6020639/a-new-political-era-in-the-southern-philippines",
-      "source": "NPR World",
+      "id": "eb3e747fa5a28574",
+      "category": "technology",
+      "title": "Build Specialized Agents on a Stack You Control with NVIDIA NemoClaw",
+      "summary": "Building an autonomous agent requires a model, a harness, and domain-specific tools. To deploy an agent more securely, developers need a runtime that enforces...",
+      "url": "https://developer.nvidia.com/blog/build-specialized-agents-on-a-stack-you-control-with-nvidia-nemoclaw/",
+      "source": "NVIDIA Technical Blog",
       "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-30T16:00:00.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 18.1,
+      "topics": []
+    },
+    {
+      "id": "99793b3aafbe4b24",
+      "category": "finance",
+      "title": "Energy bills help 'doesn't go far enough'",
+      "summary": "Families in the West Midlands say they are worried about paying winter energy bills.",
+      "url": "https://www.bbc.co.uk/news/articles/cqgkvpnj7l7yo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-10-31T21:14:32.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 20.6,
+      "publishedAt": "2026-11-01T07:15:06.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 18,
       "topics": []
     },
     {
@@ -799,8 +895,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-30T19:31:02.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 20.2,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 18,
+      "topics": []
+    },
+    {
+      "id": "ac11d2c0bb309d29",
+      "category": "finance",
+      "title": "Diwali hampers to bring hope to families in need",
+      "summary": "The Diwali Basket Brigade volunteers want to help vulnerable households with rising food prices.",
+      "url": "https://www.bbc.co.uk/news/articles/cm20wyg8j121o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-01T07:11:33.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -813,53 +923,11 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-30T22:56:13.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 20.1,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 17.9,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "32345013fd612186",
-      "category": "world",
-      "title": "Canelo Alvarez defeats Christian Mbilli to reclaim WBC title in Riyadh",
-      "summary": "Mexican boxing star wins 12-round decision to defeat the French fighter and regain the super middleweight belt.",
-      "url": "https://www.aljazeera.com/sports/2026/11/1/canelo-alvarez-defeats-christian-mbilli-to-reclaim-wbc-title-in-riyadh?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-11-01T06:19:52.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 19.9,
-      "topics": []
-    },
-    {
-      "id": "c408d9dc6bf3709e",
-      "category": "world",
-      "title": "Bolivia declares emergency as El Nino intensifies, threatens severe weather",
-      "summary": "President Rodrigo Paz warned of severe droughts and flooding as El Nino intensifies, with at least 78,000 families already affected by drought.",
-      "url": "https://www.dw.com/en/bolivia-declares-emergency-as-el-nino-intensifies-threatens-severe-weather/a-79820253?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-01T06:19:00.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 19.9,
-      "topics": []
-    },
-    {
-      "id": "71bec1ba0f960767",
-      "category": "world",
-      "title": "Golden State Valkyries defeat Atlanta Dream to capture first WNBA crown",
-      "summary": "Gabby Williams, named Most Valuable Player, set records for most points (137) and most steals (18) in the WNBA Finals.",
-      "url": "https://www.aljazeera.com/sports/2026/11/1/golden-state-valkyries-defeat-atlanta-dream-to-capture-first-wnba-crown?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-11-01T06:17:45.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 19.9,
-      "topics": []
     },
     {
       "id": "39b5b4ff4b942a7c",
@@ -871,8 +939,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-10-30T15:56:26.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 19.3,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 17.1,
       "topics": []
     },
     {
@@ -885,8 +953,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-10-31T07:15:45.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 19.1,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 17,
       "topics": []
     },
     {
@@ -899,97 +967,24 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-30T17:38:19.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 18.7,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 16.6,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "b60e7fffcad32339",
-      "category": "ai",
-      "title": "v0.33.0rc2: [ROCm][Bugfix] Skip AITER tuned GEMM when M*N >= 2^31 on gfx950 (#64567)",
-      "summary": "Signed-off-by: Micah Williamson micah.williamson@amd.com (cherry picked from commit 6d01893 )",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc2",
-      "source": "vLLM Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-30T09:10:43.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 18.6,
-      "topics": [
-        "kernels",
-        "hardware"
-      ]
-    },
-    {
-      "id": "f75500a132251463",
+      "id": "a273b0889aa255b6",
       "category": "finance",
-      "title": "South Korea exports nearly double in October, strongest growth since 1974",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/south-korea-exports-nearly-double-in-october-strongest-growth-1974-6510436",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
+      "title": "No more washing up: How Airbnb's new house rules have divided hosts and guests",
+      "summary": "Airbnb hosts must stop asking guests to wash-up or take out bins under rules coming into force in November.",
+      "url": "https://www.bbc.co.uk/news/articles/ckjwez8g5dyeo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-11-01T00:38:57.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 18.5,
-      "topics": []
-    },
-    {
-      "id": "5258a3fe5103a6fe",
-      "category": "finance",
-      "title": "Vietnam cuts retail electricity price, removes gasoline tax from November 1",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/vietnam-cuts-retail-electricity-price-removes-gasoline-tax-november-1-6510361",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-10-31T22:30:13.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 17.9,
-      "topics": []
-    },
-    {
-      "id": "968c9b7e97590158",
-      "category": "finance",
-      "title": "Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261030~e40f864093.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-30T14:00:00.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 17.8,
-      "topics": []
-    },
-    {
-      "id": "080cdb4a3bf59725",
-      "category": "ai",
-      "title": "Patch release v5.22.1",
-      "summary": "Patch release v5.22.1 We just had to fix the documentation! ** [Fix] Remove WIP doc for Ml4 ( #50124 ) from @remi-or",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.1",
-      "source": "Transformers Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-10-30T09:36:03.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 17.7,
-      "topics": []
-    },
-    {
-      "id": "f975274894b4a8f5",
-      "category": "ai",
-      "title": "nemotron-halloween",
-      "summary": "",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-30T17:57:24.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 16.8,
+      "publishedAt": "2026-11-01T00:17:05.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 16.2,
       "topics": []
     },
     {
@@ -1002,8 +997,22 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T21:41:00.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 16.7,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 14.6,
+      "topics": []
+    },
+    {
+      "id": "f975274894b4a8f5",
+      "category": "ai",
+      "title": "nemotron-halloween",
+      "summary": "",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-10-30T17:57:24.000Z",
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 14.6,
       "topics": []
     },
     {
@@ -1016,8 +1025,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T21:36:07.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 16.7,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 14.5,
       "topics": []
     },
     {
@@ -1030,22 +1039,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-10-30T17:38:50.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 15.7,
-      "topics": []
-    },
-    {
-      "id": "baede3207f0edd8b",
-      "category": "technology",
-      "title": "Cloudflare services for private origins is now generally available",
-      "summary": "Public traffic to private origins, with WAF, bot management, caching, and Workers, is now available to every customer with Cloudflare One connectivity.",
-      "url": "https://blog.cloudflare.com/private-origins-public-to-private/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-10-30T14:23:43.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 14.9,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 13.6,
       "topics": []
     },
     {
@@ -1058,8 +1053,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-10-30T16:10:00.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 14.4,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 12.2,
       "topics": []
     },
     {
@@ -1072,8 +1067,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:15:26.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 14.1,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 12,
       "topics": []
     },
     {
@@ -1086,108 +1081,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-10-31T11:02:34.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 14.1,
-      "topics": []
-    },
-    {
-      "id": "8e6b7c0510af83ce",
-      "category": "ai",
-      "title": "Things That Go Beep in the Night: Agentic AI Joins the Search for Extraterrestrial Signals",
-      "summary": "While science fiction lore tells us that humans will meet extraterrestrial life in the form of little green men, the detail that should raise hairs this Halloween is this: the search for extraterrestrial intelligence took a major leap forward with AI, and it increasingly focuses on AI agents built by humans listening for AI agents […]",
-      "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-10-30T15:00:10.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 14.1,
-      "topics": []
-    },
-    {
-      "id": "fa996b481d723b6b",
-      "category": "finance",
-      "title": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
-      "summary": "Two analytics firms have attributed the incident to a North Korean hacking unit called TraderTraitor.",
-      "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-30T09:33:51.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 13.7,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "b283e453f7fd3ddf",
-      "category": "finance",
-      "title": "Results of the ECB Survey of Professional Forecasters for the fourth quarter of 2026",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261030~e92c3c838c.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-30T09:00:00.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 12.6,
-      "topics": []
-    },
-    {
-      "id": "d979d0089b9f1dbb",
-      "category": "finance",
-      "title": "Soaring cost of Halloween treats spooks shoppers",
-      "summary": "The price of candy, especially chocolate, is up, and Halloween bargain hunters are searching for deals and ways to cut costs.",
-      "url": "https://www.bbc.co.uk/news/articles/cr0qk25p1yeno",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-30T21:34:32.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 11.7,
-      "topics": []
-    },
-    {
-      "id": "c02f80005a07ccc8",
-      "category": "finance",
-      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
-      "summary": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
-      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-10-30T20:34:46.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 11.5,
-      "topics": []
-    },
-    {
-      "id": "d5431d8ccc853c77",
-      "category": "finance",
-      "title": "Quarterly Schedule of Outright Purchases of Japanese Government Bonds (Competitive Auction Method) (October-December 2026) (Schedule Updates)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030c.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-30T08:00:00.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 11.3,
-      "topics": []
-    },
-    {
-      "id": "2fd003bb9f333b7c",
-      "category": "finance",
-      "title": "Timetable and Schedule of U.S. Dollar Funds-Supplying Operations (November 2026-March 2027)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/mpr261030b.pdf",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-10-30T08:00:00.000Z",
-      "fetchedAt": "2026-11-01T06:42:28.147Z",
-      "score": 11.3,
+      "fetchedAt": "2026-11-01T15:25:07.434Z",
+      "score": 11.9,
       "topics": []
     }
   ]

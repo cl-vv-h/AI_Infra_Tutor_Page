@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-11-01T06:42:28.147Z",
-    "releasesCollectedAt": "2026-11-01T06:42:40.005Z",
-    "libraryCollectedAt": "2026-11-01T06:42:28.147Z",
+    "dailyCollectedAt": "2026-11-01T15:25:07.434Z",
+    "releasesCollectedAt": "2026-11-01T15:25:19.841Z",
+    "libraryCollectedAt": "2026-11-01T15:25:07.434Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -68,7 +68,7 @@
     ],
     "missingArchiveDates": [],
     "failedSources": [],
-    "invalidItems": 31
+    "invalidItems": 30
   },
   "tracks": [
     {
@@ -81,7 +81,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-11-01T06:42:40.005Z",
+          "lastCollectedAt": "2026-11-01T15:25:19.841Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -94,7 +94,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-11-01T06:42:40.005Z",
+          "lastCollectedAt": "2026-11-01T15:25:19.841Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -107,7 +107,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-11-01T06:42:40.005Z",
+          "lastCollectedAt": "2026-11-01T15:25:19.841Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -120,7 +120,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-11-01T06:42:40.005Z",
+          "lastCollectedAt": "2026-11-01T15:25:19.841Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -133,7 +133,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-02T01:09:04.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-11-01T06:42:40.005Z",
+          "lastCollectedAt": "2026-11-01T15:25:19.841Z",
           "revisionCount": 3,
           "ruleIds": [
             "official-releases"
@@ -146,7 +146,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-19T02:55:19.000Z",
           "firstCollectedAt": "2026-10-16T04:52:38.724Z",
-          "lastCollectedAt": "2026-11-01T06:42:40.005Z",
+          "lastCollectedAt": "2026-11-01T15:25:19.841Z",
           "revisionCount": 1,
           "ruleIds": [
             "official-releases"
@@ -268,7 +268,7 @@
           "publisherCountry": "United States",
           "publishedAt": "2026-10-26T22:01:23.000Z",
           "firstCollectedAt": "2026-10-27T05:28:07.370Z",
-          "lastCollectedAt": "2026-11-01T06:42:28.147Z",
+          "lastCollectedAt": "2026-11-01T15:25:07.434Z",
           "revisionCount": 0,
           "ruleIds": [
             "workers-announcements"
@@ -560,5 +560,5 @@
       ]
     }
   ],
-  "fingerprint": "5fb34d6a6fef7dc6e88601e532788946d80ae1ac6143c539efb4ba8297974d1e"
+  "fingerprint": "5727f6d953228349179e19ddecef65fa9ff8f8f036b369ad763b65ac360167b0"
 }
