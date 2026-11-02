@@ -1,8 +1,12 @@
 import assert from 'node:assert/strict'
 import { chromium, expect } from '@playwright/test'
+import { readFile } from 'node:fs/promises'
+const enabled=JSON.parse(await readFile(new URL('../config/curriculum-guide.json',import.meta.url))).enabled
 const base=process.env.MODEL_QA_BASE||'http://127.0.0.1:4193/AI_Infra_Tutor_Page/'
-const browser=await chromium.launch({channel:process.env.MODEL_QA_CHANNEL||'chrome'})
+const browser=await chromium.launch({...(process.env.MODEL_QA_CHANNEL?{channel:process.env.MODEL_QA_CHANNEL}:process.env.CI?{}:{channel:'chrome'})})
 try{
+  if(!enabled){const page=await browser.newPage();await page.goto(base+'#/learn');await expect(page.locator('h1')).toHaveText('AI Infra，从概念到源码。');console.log('Learning guide disabled: legacy entrance passed.')}
+  else {
   const context=await browser.newContext({reducedMotion:'reduce'})
   await context.addInitScript(()=>localStorage.setItem('curriculum-qa-sentinel','preserve'))
   const page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message))
@@ -33,4 +37,5 @@ try{
   await expect(failed.getByRole('heading',{name:'按目标学习',exact:true})).toBeVisible()
   assert.deepEqual(errors,[])
   console.log('Guide browser passed: 4 widths, routes, reader, keyboard, back/reload, missing route, lazy failure recovery and storage preservation.')
+  }
 }finally{await browser.close()}

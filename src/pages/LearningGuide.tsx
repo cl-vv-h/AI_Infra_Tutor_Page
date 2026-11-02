@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import data from '@/data/learning-guide.json'
 import CurriculumSearch from '@/components/CurriculumSearch'
 import PageHeader from '@/components/PageHeader'
+import { categories } from '@/data/categories'
 import attention from '../../config/attention-atlas.json'
 
 const layers: Record<string,string> = { overview:'总览',principles:'原理',runtime:'运行时',platform:'平台实现',experiment:'实验',reference:'参考','case-study':'综合案例' }
@@ -41,6 +42,7 @@ export default function LearningGuide() {
     {!domain&&<div className="flex flex-wrap gap-3"><Link to="/learn/topics/cache" className="button-secondary">KV Cache 学习专题 →</Link><Link to="/learn/topics/attention-dp" className="button-secondary">DP Attention 学习专题 →</Link></div>}
     {domain&&<div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{data.topics.filter(t=>t.domainId===domain.id).map(t=><Link key={t.id} to={`/learn/topics/${t.id}`} className="surface-card p-5 hover:border-accent/50"><h3 className="font-medium text-ink">{t.title}</h3><p className="mt-3 text-xs text-secondary">{data.materials.filter(m=>m.topicId===t.id&&m.role!=='navigation').length} 项正文、实验与参考 →</p></Link>)}</div>}</section>
     <section className="flex flex-wrap gap-5 border-t border-line pt-6 text-sm text-accent">{attention.enabled&&<Link to="/learn/attention">Attention 演进图谱 →</Link>}<Link to="/category/sglang">SGLang 源码阅读室 →</Link><Link to="/knowledge-graph">系统知识图谱 →</Link></section>
+    <details className="text-sm text-secondary"><summary className="cursor-pointer py-3">按原分类查阅</summary><div className="mt-3 grid gap-4 sm:grid-cols-3">{categories.map(c=><Link key={c.id} className="text-accent" to={`/category/${c.slug}`}>{c.name}</Link>)}</div></details>
     <details className="text-xs leading-6 text-secondary"><summary className="cursor-pointer py-3">课程范围与来源</summary><p>8 个领域、47 个主题；目录、注释源码、图表与计划章节不计为已完成课程。内容来自 SGLang Tutor，具体实现与验证范围按各篇原文说明。旧分类与文章地址继续可用。</p></details>
   </div>
 }

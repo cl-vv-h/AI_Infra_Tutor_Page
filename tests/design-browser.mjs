@@ -74,7 +74,7 @@ try {
       await expect(page.locator('#mobile-navigation')).toHaveCount(0)
     } else await page.getByRole('navigation', { name: '主导航' }).getByRole('link', { name: 'AI Infra', exact: true }).click()
     await expect(page).toHaveURL(/#\/learn$/)
-    await expect(page.getByRole('heading', { level: 1, name: 'AI Infra，从概念到源码。', exact: true })).toBeVisible()
+    await expect(page.getByRole('heading', { level: 1, name: /AI Infra，从概念到源码。|理解推理系统，从一条清晰的路线开始。/ })).toBeVisible()
     await expect.poll(() => page.evaluate(() => scrollY)).toBe(0)
 
     const categoryHrefs = await page.locator('main a[href*="#/category/"]').evaluateAll(links => [...new Set(links.map(link => link.getAttribute('href').slice(1)))])
