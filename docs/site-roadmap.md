@@ -55,6 +55,17 @@ Any optional local persistence/import must be explicit and safely validated.
 
 ## 4. Learning and retrieval
 
+November 2 approved curriculum implementation: eight knowledge domains, four
+learning paths and 47 topic entrances are now implemented behind the independent
+`config/curriculum-guide.json` build gate. KV Cache and DP Attention connect
+principles, runtime, platform and experiments; 33 missing article/code entries and
+their images were added without overwriting existing adapted bodies. All 139 old
+article URLs survive (172 indexed entries, 342 language bodies). Planned files
+remain separate; no data migrations or new storage. See the release record for
+checks, withdrawal rehearsal and publication conditions. Next: refine long
+articles into goal-based chapters, preserving originals and anchors; normalize
+per-lesson implementation-version evidence and audit remaining link targets.
+
 October 30 curriculum preparation: `curriculum/README.md` and the generated
 `curriculum/catalog.md` map the pinned SGLang Tutor snapshot into eight domains,
 47 topics and four learning paths. The 182 materials distinguish lessons,

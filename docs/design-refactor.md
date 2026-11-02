@@ -1,5 +1,17 @@
 # Whole-site design refactor acceptance
 
+## November 2 curriculum guide
+
+`/learn`, `/learn/domains/:domainId`, `/learn/topics/:topicId` and
+`/learn/paths/:pathId` add eight domains, four paths and 47 topic entrances.
+The reader keeps lazy bilingual bodies, original slugs and adjacent links and
+adds a topic return/continuation panel. Acceptance is covered by
+`tests/learning-guide-browser.mjs` at 360/390/768/1440px: cache/DPA reader flow,
+keyboard, back/refresh, invalid route, loading failure and recovery, local data.
+The existing reader-recovery suite also passes; the original category directory
+remains available. Build-time withdrawal uses `config/curriculum-guide.json`.
+See `releases/curriculum-guide-2026-11-02.md` for commit and rollback evidence.
+
 ## Scope and provenance
 
 Project-only skill: `.agents/skills/awesome-design-md/`; project contract: `DESIGN.md`.
