@@ -74,6 +74,14 @@ sentinel. Synthetic data and rehearsal commits are never pushed.
 
 ## Publication condition
 
+Publication inspection found that the pre-existing daily-news deployment had
+already failed in `tests/news-events-browser.mjs`: the stale-data test froze
+time at November 1 while the collected snapshot had advanced beyond it. An
+independent test-only correction derives the mocked date from the latest
+collection timestamp plus eight days. It preserves the freshness assertions and
+does not modify news data, scoring, reports or production logic. Retain this
+correction when withdrawing the teaching UI; it has no dependency on the guide.
+
 Only declare online delivery after the Pages workflow for the pushed commit
 succeeds and the public teaching entrance, cache/DPA topic and reader are
 operated successfully. Local tests alone are not publication evidence. The

@@ -11,6 +11,9 @@ if(screenshots)await mkdir(screenshots,{recursive:true})
 const route=`${base}#/news/events?mode=reviewed`
 const enabled=JSON.parse(await readFile(new URL('../config/news-events.json',import.meta.url),'utf8')).enabled
 const hotspotsEnabled=JSON.parse(await readFile(new URL('../config/news-hotspots.json',import.meta.url),'utf8')).enabled
+const snapshot=JSON.parse(await readFile(new URL('../src/data/news/events.json',import.meta.url),'utf8'))
+const latestCollection=Math.max(...['dailyCollectedAt','releasesCollectedAt','libraryCollectedAt'].map(key=>Date.parse(snapshot.coverage[key])))
+assert.ok(Number.isFinite(latestCollection),'freshness fixture requires valid collection timestamps')
 const overflow=async page=>assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,'horizontal viewport overflow')
 try {
   if(!enabled){
@@ -121,7 +124,8 @@ try {
     await page.goto(`${route}&event=sglang-runtime&step=unknown`);await expect(page.getByRole('alert')).toContainText('节点不存在')
     await page.getByRole('button',{name:'返回主题最新核对节点'}).click()
     await page.goto(`${route}&event=sglang-runtime&source=missing-publisher`);await expect(page.getByText(/没有匹配报道。/)).toBeVisible()
-    await page.clock.setFixedTime(new Date('2026-11-01T08:00:00Z'));await page.reload()
+    // Stay stale relative to the checked-in snapshot as daily collection advances.
+    await page.clock.setFixedTime(new Date(latestCollection+8*24*60*60*1000));await page.reload()
     await expect(page.getByTestId('event-freshness')).toContainText('超过 3 天')
     await page.locator('summary').filter({hasText:'采集覆盖与核对边界'}).click();await expect(page.getByText(/已超过 7 天/)).toBeVisible()
     await page.getByRole('link',{name:'新闻阅读',exact:true}).click();await expect(page.getByRole('link',{name:/事件追踪：/})).toBeVisible()
