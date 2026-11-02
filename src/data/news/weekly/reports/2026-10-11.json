@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-11-02T01:32:29.000Z",
+  "periodStart": "2026-10-05",
+  "periodEnd": "2026-10-11",
+  "model": "gpt-5.6-luna",
+  "itemCount": 19,
+  "archiveDates": [
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-10",
+    "2026-10-11"
+  ],
+  "content": "# 本周信号\n\n本期覆盖 2026-10-05 至 2026-10-11 的七个归档日。综合判断：AI Infra 技术信号集中在新 GPU/互联适配、MoE 与 KV cache 的分层 serving、量化 kernel，以及面向 agent 会话和 omni-modality 的运行时设计。\n\n## AI\n\n- 报道事实：[DeepSeek-V4.1-Flash on vLLM](https://vllm.ai/blog/2026-10-07-deepseek-v41-flash)的摘要称，vLLM 通过 SWA bounded replay、CUDA graphs、新 kernel 和 kernel fusion，在三周内将该模型的 AgentX 吞吐提升至发布初期的 5 倍。\n- 报道事实：[Vera Rubin NVL72 support](https://vllm.ai/blog/2026-10-09-vera-rubin-preview)介绍 vLLM 对 NVIDIA Vera Rubin NVL72 的 day-0 支持，并列出 Rubin-tuned FlashInfer kernels 与 locality-aware MoE；归档摘要给出相对 GB200 的 AgentX 每 GPU 吞吐对比，但不外推到其他负载。\n- 报道事实：[FlashInfer v0.7.0](https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.0)将统一 MoE API 正式化，并扩展 PrimTS、Autotuner v2、稀疏/线性 attention、expert-parallel serving 和 Blackwell workloads。\n- 报道事实：[CoMoE](https://arxiv.org/abs/2610.09424v1)讨论在 commodity GPUs 上降低 MoE inference 对高带宽 P2P 互联的依赖，以支持成本更低和更具隐私性的本地部署。\n- 报道事实：[Lachesis](https://arxiv.org/abs/2610.08378v1)按 agent-serving KV cache 的生命周期在 HBM 与 high-bandwidth flash 之间放置数据，摘要将 flash 写入耐久性列为限制因素。\n- 报道事实：[Zepp](https://arxiv.org/abs/2610.11158v1)把分布式 MoE serving 的负载均衡视为带成本的约束，而不是无代价的目标。\n- 报道事实：[PageWeaver](https://arxiv.org/abs/2610.11201v1)通过 query unions 共享 sparse attention 的 page loads，并用 ID-aware kernel 消费分组后的 query。\n- 报道事实：[vLLM-Omni](https://arxiv.org/abs/2610.09307v1)面向文本、音频、图像、视频和 action 输出的统一 serving runtime，摘要强调多阶段自回归、diffusion/flow matching 与长期状态循环的执行差异。\n- 报道事实：[vLLM v0.31.0](https://github.com/vllm-project/vllm/releases/tag/v0.31.0)的摘要列出 DeepSeek-V4.1-Flash 的 FlashMLA mega attention、NVFP4 compressed KV cache、DeepGEMM sparse MQA logits、Mega-Gate 与多条融合路径。\n- 综合判断：本期优化从单个 kernel 延伸到硬件代际迁移、KV 生命周期、MoE 通信约束与多模态执行图；归档没有提供统一基准，不能直接比较各方案的端到端优势。\n\n## 科技\n\n- 报道事实：[MI455X vs MI355X](https://rocm.blogs.amd.com/software-tools-optimization/mi455x-vs-mi355x/README.html)解释 AMD 在 Advancing AI 2026 公布的两代 Instinct 加速器结果、 workload、kernel、测试配置与指标定义，并强调相应 caveats。\n- 报道事实：[ROCm 10.1](https://rocm.blogs.amd.com/ecosystems-and-partners/rocm-10.1-blog/README.html)以 data-movement bottleneck 为主题，摘要称其同时包含 compiler、library 和 tooling 工作。\n- 报道事实：[AICR v1.0](https://developer.nvidia.com/blog/aicr-v1-0-open-stable-and-verifiable-gpu-cluster-configuration/)将 GPU cluster configuration 定位为需要跨 host kernel、driver 等组件版本进行验证的问题。\n- 报道事实：[Building Spyre as a Native PyTorch Device](https://pytorch.org/blog/building-spyre-as-a-native-pytorch-device/)描述通过 torch-spyre 将 PyTorch 的 device、allocator、stream 与 compiler 抽象连接到 Spyre runtime 与 firmware。\n- 报道事实：[Session-Aware Agentic Inference](https://pytorch.org/blog/session-aware-agentic-inference-with-nvidia-dynamo/)讨论 agent session 带来的大 prefill、重复 model calls 与并行 subagents 交通模式。\n- 综合判断：异构硬件的竞争面同时落在硬件数字、数据搬运、编译接口、集群版本与 session-aware runtime；本期不足以证明任何特定平台的生产成本更低。\n\n## 金融\n\n- 报道事实：[Basel III implementation](https://www.bis.org/media-releases/20261005-basel-iii-applicable-almost-all-member-jurisdictions-2027)的归档摘要称，Basel Committee 27 个成员辖区中四分之三已公布完整 Basel III 实施法规，几乎所有辖区宣布 2027 年 4 月或更早适用。\n- 报道事实：[CMORG cloud outage simulation](https://www.bankofengland.co.uk/news/2026/october/cmorg-holds-sector-wide-cloud-outage-simulation-exercise)记录英国跨市场运营韧性小组围绕全球云服务中断完成年度模拟演练。\n- 报道事实：[FOMC September minutes](https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm)列入本期美国联邦储备机构归档；归档仅给出标题和链接，不据此补充利率结论。\n- 综合判断：金融材料对 AI Infra 的直接信号主要是金融系统韧性与云依赖的风险意识；归档不足以判断数据中心融资或 GPU 投资方向。\n\n## 国际形势\n\n- 报道事实：[Global trade reaches record $35 trillion](https://news.un.org/feed/view/en/story/2026/10/1168566)的摘要称，2025 年全球贸易达到 35 万亿美元，但发展中经济体受到新的技术与政策壁垒限制。\n- 报道事实：[Yemen funding gap](https://news.un.org/feed/view/en/story/2026/10/1168541)的摘要称，WHO 警告也门冲突与需求上升背景下，扩大卫生响应需要更多资源。\n- 综合判断：跨境贸易、云服务韧性和区域危机共同构成基础设施部署的外部约束，但当前归档没有足够证据将具体事件映射为 AI 芯片供应冲击。\n\n## 跨板块观察\n\n- 报道事实与综合判断： [Lachesis](https://arxiv.org/abs/2610.08378v1)、[PageWeaver](https://arxiv.org/abs/2610.11201v1)与[vLLM v0.31.0](https://github.com/vllm-project/vllm/releases/tag/v0.31.0)分别从 KV 生命周期、稀疏 attention 页面访问和压缩 KV/融合路径切入，说明长上下文 serving 的核心问题已同时包含存储、访问模式与 kernel。\n- 报道事实与综合判断： [AICR v1.0](https://developer.nvidia.com/blog/aicr-v1-0-open-stable-and-verifiable-gpu-cluster-configuration/)、[CMORG cloud outage simulation](https://www.bankofengland.co.uk/news/2026/october/cmorg-holds-sector-wide-cloud-outage-simulation-exercise)与[ROCm 10.1](https://rocm.blogs.amd.com/ecosystems-and-partners/rocm-10.1-blog/README.html)共同支持“基础设施可靠性不只由峰值算力决定”的判断，但不构成跨行业因果证明。\n\n## 下周观察清单\n\n- 关注 vLLM/FlashInfer 是否补充 Rubin、NVFP4、FlashMLA 和 MoE 结果的统一负载、P90 与能耗口径：[Vera Rubin NVL72 support](https://vllm.ai/blog/2026-10-09-vera-rubin-preview)。\n- 跟踪 KV cache 从 HBM 到 flash、CPU 或其他 tier 的写入耐久、恢复时间与尾延迟指标：[Lachesis](https://arxiv.org/abs/2610.08378v1)。\n- 观察 PyTorch/ROCm/Spyre 后端是否给出跨设备可复现实验和版本矩阵：[Building Spyre as a Native PyTorch Device](https://pytorch.org/blog/building-spyre-as-a-native-pytorch-device/)。\n- 继续关注云中断演练、贸易壁垒和区域卫生危机是否产生可核验的 AI 芯片、数据中心或跨境部署影响；当前证据不足：[CMORG cloud outage simulation](https://www.bankofengland.co.uk/news/2026/october/cmorg-holds-sector-wide-cloud-outage-simulation-exercise)。\n",
+  "sources": [
+    {
+      "title": "DeepSeek-V4.1-Flash on vLLM: 5x Agentic Throughput Since Day 0",
+      "url": "https://vllm.ai/blog/2026-10-07-deepseek-v41-flash",
+      "source": "vLLM Blog"
+    },
+    {
+      "title": "vLLM Support for NVIDIA Vera Rubin NVL72: 7.8x Throughput over GB200 NVL72",
+      "url": "https://vllm.ai/blog/2026-10-09-vera-rubin-preview",
+      "source": "vLLM Blog"
+    },
+    {
+      "title": "Release v0.7.0",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.0",
+      "source": "FlashInfer Releases"
+    },
+    {
+      "title": "Democratizing MoE inference on commodity GPUs with CoMoE",
+      "url": "https://arxiv.org/abs/2610.09424v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "Lachesis: Lifetime-Aware KV Cache Placement for Agent Serving across HBM and High-Bandwidth Flash",
+      "url": "https://arxiv.org/abs/2610.08378v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "Zepp: Accelerating Distributed MoE Serving under Relaxed Balance Constraints",
+      "url": "https://arxiv.org/abs/2610.11158v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "PageWeaver: KV-Guided Query Unions for Sparse Attention",
+      "url": "https://arxiv.org/abs/2610.11201v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "vLLM-Omni Technical Report: A Unified Serving Runtime for Omni-Modality Generation",
+      "url": "https://arxiv.org/abs/2610.09307v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "v0.31.0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0",
+      "source": "vLLM Releases"
+    },
+    {
+      "title": "AMD Instinct MI455X vs MI355X: A Technical Look at the Advancing AI 2026 Inference Numbers",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/mi455x-vs-mi355x/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "ROCm 10.1: Breaking the Data-Movement Bottleneck",
+      "url": "https://rocm.blogs.amd.com/ecosystems-and-partners/rocm-10.1-blog/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "AICR v1.0: Open, stable, and verifiable GPU cluster configuration",
+      "url": "https://developer.nvidia.com/blog/aicr-v1-0-open-stable-and-verifiable-gpu-cluster-configuration/",
+      "source": "NVIDIA Technical Blog"
+    },
+    {
+      "title": "Building Spyre as a Native PyTorch Device",
+      "url": "https://pytorch.org/blog/building-spyre-as-a-native-pytorch-device/",
+      "source": "PyTorch Blog"
+    },
+    {
+      "title": "Session-Aware Agentic Inference with NVIDIA Dynamo",
+      "url": "https://pytorch.org/blog/session-aware-agentic-inference-with-nvidia-dynamo/",
+      "source": "PyTorch Blog"
+    },
+    {
+      "title": "Basel III applicable in almost all member jurisdictions by 2027",
+      "url": "https://www.bis.org/media-releases/20261005-basel-iii-applicable-almost-all-member-jurisdictions-2027",
+      "source": "Bank for International Settlements"
+    },
+    {
+      "title": "CMORG holds sector-wide cloud outage simulation exercise",
+      "url": "https://www.bankofengland.co.uk/news/2026/october/cmorg-holds-sector-wide-cloud-outage-simulation-exercise",
+      "source": "Bank of England"
+    },
+    {
+      "title": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+      "source": "U.S. Federal Reserve"
+    },
+    {
+      "title": "Global trade reaches record $35 trillion despite conflicts",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168566",
+      "source": "UN News"
+    },
+    {
+      "title": "Critical funding gap threatens health response in Yemen",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168541",
+      "source": "UN News"
+    }
+  ]
+}
