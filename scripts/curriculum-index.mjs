@@ -1,4 +1,5 @@
 const aiInfraRoutes = {
+    Communication: { categoryId: 'cat-1', subCategoryId: 'sub-1-7', tags: ['Communication', 'Distributed'] },
     Attention_Kernel: { categoryId: 'cat-4', subCategoryId: 'sub-4-6', tags: ['Attention', 'Kernel'] },
     Benchmark_Profiling: { categoryId: 'cat-14', subCategoryId: 'sub-14-1', tags: ['Benchmark', 'Profiling'] },
     Execution_Graph: { categoryId: 'cat-9', subCategoryId: 'sub-9-1', tags: ['Graph', 'Runtime'] },

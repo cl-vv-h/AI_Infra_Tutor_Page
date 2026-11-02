@@ -42,6 +42,9 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/learn" element={<Learn />} />
+            <Route path="/learn/domains/:domainId" element={<Learn />} />
+            <Route path="/learn/topics/:topicId" element={<Learn />} />
+            <Route path="/learn/paths/:pathId" element={<Learn />} />
             <Route path="/learn/attention" element={attentionAtlas.enabled ? <AttentionAtlasBoundary><AttentionAtlas /></AttentionAtlasBoundary> : <NotFound />} />
             <Route path="/models" element={<ModelCatalog />} />
             <Route path="/models/knowledge" element={<ModelKnowledge />} />

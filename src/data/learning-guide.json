@@ -1,0 +1,4536 @@
+{
+  "sourceRevision": "19be702f0842301583b6d84a98c9e42a9f9b35e5",
+  "domains": [
+    {
+      "id": "basics",
+      "title": "推理基础"
+    },
+    {
+      "id": "models",
+      "title": "模型架构与状态机制"
+    },
+    {
+      "id": "runtime",
+      "title": "Serving 运行时与缓存管理"
+    },
+    {
+      "id": "distributed",
+      "title": "分布式并行与通信"
+    },
+    {
+      "id": "optimization",
+      "title": "推理加速与高效服务"
+    },
+    {
+      "id": "validation",
+      "title": "性能评测、Profiling 与正确性"
+    },
+    {
+      "id": "ascend",
+      "title": "Ascend 平台实践"
+    },
+    {
+      "id": "kernels",
+      "title": "算子编程与编译"
+    }
+  ],
+  "topics": [
+    {
+      "id": "orientation",
+      "domainId": "basics",
+      "title": "课程总览",
+      "prerequisites": []
+    },
+    {
+      "id": "inference",
+      "domainId": "basics",
+      "title": "Prefill、Decode 与生成流程",
+      "prerequisites": []
+    },
+    {
+      "id": "transformer",
+      "domainId": "models",
+      "title": "Decoder-only Transformer",
+      "prerequisites": [
+        "inference"
+      ]
+    },
+    {
+      "id": "attention",
+      "domainId": "models",
+      "title": "MHA / MQA / GQA / MLA",
+      "prerequisites": [
+        "transformer"
+      ]
+    },
+    {
+      "id": "sparse-attention",
+      "domainId": "models",
+      "title": "DSA、CSA/HCA 与稀疏检索",
+      "prerequisites": [
+        "attention"
+      ]
+    },
+    {
+      "id": "gdn",
+      "domainId": "models",
+      "title": "Gated DeltaNet",
+      "prerequisites": [
+        "transformer"
+      ]
+    },
+    {
+      "id": "kda",
+      "domainId": "models",
+      "title": "Kimi Delta Attention",
+      "prerequisites": [
+        "gdn"
+      ]
+    },
+    {
+      "id": "mamba",
+      "domainId": "models",
+      "title": "Mamba 与状态空间模型",
+      "prerequisites": [
+        "inference"
+      ]
+    },
+    {
+      "id": "moe",
+      "domainId": "models",
+      "title": "MoE 专家选择与计算",
+      "prerequisites": [
+        "transformer"
+      ]
+    },
+    {
+      "id": "residual",
+      "domainId": "models",
+      "title": "mHC 与残差结构",
+      "prerequisites": [
+        "transformer"
+      ]
+    },
+    {
+      "id": "families",
+      "domainId": "models",
+      "title": "模型架构谱系与多模态",
+      "prerequisites": [
+        "transformer"
+      ]
+    },
+    {
+      "id": "source-map",
+      "domainId": "runtime",
+      "title": "源码阅读方法与组件地图",
+      "prerequisites": [
+        "inference"
+      ]
+    },
+    {
+      "id": "request",
+      "domainId": "runtime",
+      "title": "请求生命周期与进程入口",
+      "prerequisites": [
+        "inference"
+      ]
+    },
+    {
+      "id": "scheduler",
+      "domainId": "runtime",
+      "title": "调度、Batching 与 Overlap",
+      "prerequisites": [
+        "request"
+      ]
+    },
+    {
+      "id": "execution",
+      "domainId": "runtime",
+      "title": "Worker、ModelRunner 与 ForwardBatch",
+      "prerequisites": [
+        "scheduler",
+        "transformer"
+      ]
+    },
+    {
+      "id": "loading",
+      "domainId": "runtime",
+      "title": "模型注册、权重加载与布局",
+      "prerequisites": [
+        "transformer",
+        "source-map"
+      ]
+    },
+    {
+      "id": "cache",
+      "domainId": "runtime",
+      "title": "KV Pool、分页、Prefix Cache 与 HiCache",
+      "prerequisites": [
+        "attention"
+      ]
+    },
+    {
+      "id": "hybrid-cache",
+      "domainId": "runtime",
+      "title": "Recurrent / Hybrid State 生命周期",
+      "prerequisites": [
+        "cache",
+        "mamba"
+      ]
+    },
+    {
+      "id": "service-router",
+      "domainId": "runtime",
+      "title": "服务路由与 Worker 管理",
+      "prerequisites": [
+        "request"
+      ]
+    },
+    {
+      "id": "communication",
+      "domainId": "distributed",
+      "title": "通信原语、链路与通信库",
+      "prerequisites": [
+        "inference"
+      ]
+    },
+    {
+      "id": "parallel",
+      "domainId": "distributed",
+      "title": "TP / PP / DP / EP 与 Rank 拓扑",
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ]
+    },
+    {
+      "id": "attention-dp",
+      "domainId": "distributed",
+      "title": "Attention DP 与层边界通信",
+      "prerequisites": [
+        "parallel",
+        "execution"
+      ]
+    },
+    {
+      "id": "context-parallel",
+      "domainId": "distributed",
+      "title": "SP、Prefill CP 与 Decode CP",
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ]
+    },
+    {
+      "id": "expert-parallel",
+      "domainId": "distributed",
+      "title": "MoE Dispatch / Combine、DeepEP 与 DWDP",
+      "prerequisites": [
+        "parallel",
+        "moe"
+      ]
+    },
+    {
+      "id": "pd-transfer",
+      "domainId": "distributed",
+      "title": "PD 分离与 KV Transfer",
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ]
+    },
+    {
+      "id": "diffusion-parallel",
+      "domainId": "distributed",
+      "title": "Diffusion 并行扩展",
+      "prerequisites": [
+        "parallel"
+      ]
+    },
+    {
+      "id": "attention-kernel",
+      "domainId": "optimization",
+      "title": "FlashAttention、FlashDecoding 与 Online Softmax",
+      "prerequisites": [
+        "attention"
+      ]
+    },
+    {
+      "id": "graph",
+      "domainId": "optimization",
+      "title": "执行图、Capture / Replay 与编译",
+      "prerequisites": [
+        "execution"
+      ]
+    },
+    {
+      "id": "quantization",
+      "domainId": "optimization",
+      "title": "量化数学、格式、算法与 Serving",
+      "prerequisites": [
+        "transformer"
+      ]
+    },
+    {
+      "id": "speculation",
+      "domainId": "optimization",
+      "title": "投机采样、验证与状态提交",
+      "prerequisites": [
+        "inference",
+        "cache"
+      ]
+    },
+    {
+      "id": "dspark",
+      "domainId": "optimization",
+      "title": "DSpark 与半自回归执行",
+      "prerequisites": [
+        "speculation",
+        "execution"
+      ]
+    },
+    {
+      "id": "lora",
+      "domainId": "optimization",
+      "title": "LoRA 原理与多 Adapter Serving",
+      "prerequisites": [
+        "transformer"
+      ]
+    },
+    {
+      "id": "benchmark",
+      "domainId": "validation",
+      "title": "指标、Baseline 与 Workload",
+      "prerequisites": [
+        "inference"
+      ]
+    },
+    {
+      "id": "profiling",
+      "domainId": "validation",
+      "title": "Trace、瓶颈归因与实验验证",
+      "prerequisites": [
+        "benchmark",
+        "execution"
+      ]
+    },
+    {
+      "id": "accuracy",
+      "domainId": "validation",
+      "title": "Reference、精度评测与二分定位",
+      "prerequisites": [
+        "benchmark",
+        "loading"
+      ]
+    },
+    {
+      "id": "ascend-stack",
+      "domainId": "ascend",
+      "title": "Ascend 软件栈与版本边界",
+      "prerequisites": [
+        "inference"
+      ]
+    },
+    {
+      "id": "ascend-serving",
+      "domainId": "ascend",
+      "title": "环境、最小服务与部署场景",
+      "prerequisites": [
+        "ascend-stack",
+        "benchmark"
+      ]
+    },
+    {
+      "id": "ascend-integration",
+      "domainId": "ascend",
+      "title": "NPU 接入、Backend 与参数",
+      "prerequisites": [
+        "ascend-stack",
+        "execution"
+      ]
+    },
+    {
+      "id": "kernel-foundations",
+      "domainId": "kernels",
+      "title": "Host / Device、类型、硬件、存储与流水",
+      "prerequisites": [
+        "ascend-stack"
+      ]
+    },
+    {
+      "id": "triton",
+      "domainId": "kernels",
+      "title": "Triton-Ascend 编程与编译",
+      "prerequisites": [
+        "kernel-foundations"
+      ]
+    },
+    {
+      "id": "ascend-c",
+      "domainId": "kernels",
+      "title": "Ascend C、Tiling 与 Workspace",
+      "prerequisites": [
+        "kernel-foundations"
+      ]
+    },
+    {
+      "id": "custom-op",
+      "domainId": "kernels",
+      "title": "torch_npu、ACLNN 与 Custom Op",
+      "prerequisites": [
+        "kernel-foundations"
+      ]
+    },
+    {
+      "id": "kernel-cases",
+      "domainId": "kernels",
+      "title": "真实算子与通信 Kernel 源码",
+      "prerequisites": [
+        "custom-op"
+      ]
+    },
+    {
+      "id": "case-glm47",
+      "domainId": "models",
+      "title": "GLM-4.7-Flash 综合案例",
+      "prerequisites": [
+        "attention",
+        "moe",
+        "execution",
+        "cache"
+      ]
+    },
+    {
+      "id": "case-qwen35",
+      "domainId": "models",
+      "title": "Qwen3.5 Hybrid 综合案例",
+      "prerequisites": [
+        "gdn",
+        "execution",
+        "cache"
+      ]
+    },
+    {
+      "id": "case-glm52",
+      "domainId": "models",
+      "title": "GLM-5.2 综合案例",
+      "prerequisites": [
+        "sparse-attention",
+        "moe",
+        "execution"
+      ]
+    },
+    {
+      "id": "case-glm53",
+      "domainId": "models",
+      "title": "GLM-5.3-Flash 综合案例",
+      "prerequisites": [
+        "kda",
+        "sparse-attention",
+        "residual",
+        "moe",
+        "execution"
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "id": "inference-foundations",
+      "title": "理解大模型推理",
+      "entryRequirements": "能阅读基础 Python 和矩阵维度；不要求设备环境。",
+      "outcome": "解释一次请求的计算、状态与主要开销。",
+      "steps": [
+        {
+          "sourcePath": "ai-infra-basic/Inference_Basics/README.md",
+          "goal": "区分 Prefill、Decode 与自回归循环",
+          "section": null
+        },
+        {
+          "sourcePath": "ai-infra-basic/Model_Architecture/01-decoder-only-transformer.md",
+          "goal": "识别 Decoder 的计算模块",
+          "section": null
+        },
+        {
+          "sourcePath": "ai-infra-basic/Model_Architecture/02-gqa-attention-shapes.md",
+          "goal": "追踪 Q/K/V 与缓存形状",
+          "section": null
+        },
+        {
+          "sourcePath": "ai-infra-basic/KV_Cache_Memory/README.md",
+          "goal": "解释缓存容量、分页与复用",
+          "section": null
+        },
+        {
+          "sourcePath": "ai-infra-basic/Benchmark_Profiling/README.md",
+          "goal": "先建立 TTFT / ITL / TPS 指标语言",
+          "section": null
+        },
+        {
+          "sourcePath": "ai-infra-basic/Schedule_Optimization/README.md",
+          "goal": "理解 Batching 与调度权衡",
+          "section": null
+        },
+        {
+          "sourcePath": "sglang-source-reading/01-entry-routing/01-request-lifecycle.md",
+          "goal": "把模型计算放回一次请求",
+          "section": null
+        }
+      ],
+      "optional": [
+        {
+          "sourcePath": "ai-infra-basic/Schedule_Optimization/prefill_decode_demo.py",
+          "goal": "观察简化调度过程",
+          "section": null
+        }
+      ]
+    },
+    {
+      "id": "sglang-development",
+      "title": "阅读和修改 SGLang",
+      "entryRequirements": "完成推理基础路线；能阅读 Python 类和函数调用。",
+      "outcome": "从问题定位组件、状态和代码入口。",
+      "steps": [
+        {
+          "sourcePath": "sglang-source-reading/00-overview/01-public-components-code-walkthrough.md",
+          "goal": "先识别公共组件",
+          "section": null
+        },
+        {
+          "sourcePath": "sglang-source-reading/01-entry-routing/01-request-lifecycle.md",
+          "goal": "跟随请求主链路",
+          "section": null
+        },
+        {
+          "sourcePath": "scheduler-architecture/01-architecture.md",
+          "goal": "理解调度器职责与状态",
+          "section": null
+        },
+        {
+          "sourcePath": "scheduler-architecture/02-flowcharts.md",
+          "goal": "区分启动、调度和执行流程",
+          "section": null
+        },
+        {
+          "sourcePath": "tp-worker-model-runner/01-architecture.md",
+          "goal": "区分 Worker 与 ModelRunner",
+          "section": null
+        },
+        {
+          "sourcePath": "tp-worker-model-runner/06-model-loading-and-architecture-resolution.md",
+          "goal": "追踪模型类解析与权重加载",
+          "section": null
+        },
+        {
+          "sourcePath": "sglang-source-reading/04-model-execution/04-model-runner-attention.md",
+          "goal": "追踪 Backend 与 ForwardBatch",
+          "section": null
+        },
+        {
+          "sourcePath": "sglang-source-reading/03-cache-memory/03-kv-cache-radix-cache.md",
+          "goal": "定位缓存分配与复用",
+          "section": null
+        }
+      ],
+      "optional": [
+        {
+          "sourcePath": "scheduler-architecture/04-function-map.md",
+          "goal": "按问题查函数",
+          "section": null
+        },
+        {
+          "sourcePath": "sglang-source-reading/06-advanced-features/05-speculative-decoding.md",
+          "goal": "按需进入高级特性",
+          "section": null
+        }
+      ]
+    },
+    {
+      "id": "deployment-performance",
+      "title": "部署与性能优化（Ascend 实践分支）",
+      "entryRequirements": "掌握推理基础；设备实验需另行准备匹配版本的 Ascend 环境。",
+      "outcome": "用可比较实验解释收益、精度变化和平台限制。",
+      "steps": [
+        {
+          "sourcePath": "sglang-ascend-npu/00-background.md",
+          "goal": "理解平台栈与边界",
+          "section": null
+        },
+        {
+          "sourcePath": "sglang-ascend-npu/03-launch-and-minimal-serving.md",
+          "goal": "按环境完成最小服务验收",
+          "section": null
+        },
+        {
+          "sourcePath": "ai-infra-basic/Benchmark_Profiling/README.md",
+          "goal": "定义指标与工作负载",
+          "section": null
+        },
+        {
+          "sourcePath": "sglang-ascend-npu/14-performance-testing.md",
+          "goal": "记录 Baseline 与实验条件",
+          "section": null
+        },
+        {
+          "sourcePath": "sglang-ascend-npu/12-npu-profiling-guide.md",
+          "goal": "定位调度、计算、访存和通信瓶颈",
+          "section": null
+        },
+        {
+          "sourcePath": "sglang-ascend-npu/11-performance-optimization-work-map.md",
+          "goal": "由证据选择一个优化方向",
+          "section": null
+        },
+        {
+          "sourcePath": "sglang-ascend-npu/15-accuracy-testing-and-debugging.md",
+          "goal": "复验精度并二分定位异常",
+          "section": null
+        }
+      ],
+      "optional": [
+        {
+          "sourcePath": "ai-infra-basic/Parallel_Strategy/README.md",
+          "goal": "多卡方向",
+          "section": null
+        },
+        {
+          "sourcePath": "ai-infra-basic/Quantization/README.md",
+          "goal": "量化方向",
+          "section": null
+        },
+        {
+          "sourcePath": "ai-infra-basic/Execution_Graph/README.md",
+          "goal": "Graph 方向",
+          "section": null
+        },
+        {
+          "sourcePath": "ai-infra-basic/KV_Transfer/README.md",
+          "goal": "PD 方向",
+          "section": null
+        }
+      ]
+    },
+    {
+      "id": "ascend-kernels",
+      "title": "Ascend 算子开发",
+      "entryRequirements": "能读 Python/C++ 与基本张量运算；理论阅读不要求设备，运行需 CANN/NPU。",
+      "outcome": "追踪 Host / Device 契约，并设计正确性与性能验证。",
+      "steps": [
+        {
+          "sourcePath": "ascend-kernel-infra/01-stack-and-relationships.md",
+          "goal": "分清软件栈职责",
+          "section": null
+        },
+        {
+          "sourcePath": "ascend-kernel-infra/02-cann-stack-and-boundaries.md",
+          "goal": "定位 CANN 与运行时边界",
+          "section": null
+        },
+        {
+          "sourcePath": "ascend-kernel-infra/foundations/01-kernel-first-principles.md",
+          "goal": "掌握 Grid、Tile、Host / Device",
+          "section": null
+        },
+        {
+          "sourcePath": "ascend-kernel-infra/foundations/02-ascend-hardware.md",
+          "goal": "理解硬件与存储层级",
+          "section": null
+        },
+        {
+          "sourcePath": "ascend-kernel-infra/foundations/03-memory-pipeline-and-sync.md",
+          "goal": "理解搬运、计算与同步",
+          "section": null
+        },
+        {
+          "sourcePath": "ascend-kernel-infra/reference/code-reading-and-types.md",
+          "goal": "查阅类型与地址单位",
+          "section": "作为工具书，按例子查阅"
+        },
+        {
+          "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/01-repository-and-op-lifecycle.md",
+          "goal": "定位算子工程的入口与生命周期",
+          "section": null
+        }
+      ],
+      "branches": [
+        {
+          "title": "Triton-Ascend 分支",
+          "steps": [
+            {
+              "sourcePath": "ascend-kernel-infra/triton-ascend/01-program-grid-tile.md",
+              "goal": "编写 Grid / Tile",
+              "section": null
+            },
+            {
+              "sourcePath": "ascend-kernel-infra/triton-ascend/02-tensor-addressing-reduction-matmul.md",
+              "goal": "理解地址、归约和矩阵乘",
+              "section": null
+            },
+            {
+              "sourcePath": "ascend-kernel-infra/triton-ascend/03-compile-debug-optimize.md",
+              "goal": "学习编译、调试与验证",
+              "section": null
+            },
+            {
+              "sourcePath": "ascend-kernel-infra/torch_npu/01-dispatch-aclnn-and-custom-op-boundaries.md",
+              "goal": "定位注册与调用边界",
+              "section": null
+            },
+            {
+              "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/02-triton-fused-split-qk-norm.md",
+              "goal": "阅读真实融合算子",
+              "section": null
+            }
+          ]
+        },
+        {
+          "title": "Ascend C 分支",
+          "steps": [
+            {
+              "sourcePath": "ascend-kernel-infra/ascend-c/01-global-local-tensor-pipe-queue.md",
+              "goal": "学习 Tensor、Pipe 与 Queue",
+              "section": null
+            },
+            {
+              "sourcePath": "ascend-kernel-infra/ascend-c/02-add-operator-end-to-end.md",
+              "goal": "串起最小算子端到端链路",
+              "section": null
+            },
+            {
+              "sourcePath": "ascend-kernel-infra/ascend-c/03-tiling-pipeline-sync-optimization.md",
+              "goal": "分析 Tiling 与流水",
+              "section": null
+            },
+            {
+              "sourcePath": "ascend-kernel-infra/torch_npu/01-dispatch-aclnn-and-custom-op-boundaries.md",
+              "goal": "定位注册与调用边界",
+              "section": null
+            },
+            {
+              "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/03-ascend-c-apply-token-bitmask.md",
+              "goal": "阅读真实约束采样算子",
+              "section": null
+            }
+          ]
+        }
+      ],
+      "optional": []
+    }
+  ],
+  "materials": [
+    {
+      "id": "material-99ede90e92539e83",
+      "sourcePath": "ai-infra-basic/Attention_Kernel/flash_attention_tutorial.py",
+      "title": "FlashAttention 教学实现",
+      "topicId": "attention-kernel",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "intermediate",
+      "platforms": [
+        "pytorch"
+      ],
+      "prerequisites": [
+        "attention"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Attention_Kernel/flash_attention_tutorial.py",
+      "slug": "ai-infra-basic--attention-kernel--flash-attention-tutorial"
+    },
+    {
+      "id": "material-0b52448af6d33b35",
+      "sourcePath": "ai-infra-basic/Attention_Kernel/flash_decoding_tutorial.py",
+      "title": "FlashDecoding 教学实现",
+      "topicId": "attention-kernel",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "intermediate",
+      "platforms": [
+        "pytorch"
+      ],
+      "prerequisites": [
+        "attention"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Attention_Kernel/flash_decoding_tutorial.py",
+      "slug": "ai-infra-basic--attention-kernel--flash-decoding-tutorial"
+    },
+    {
+      "id": "material-d8d8aa55b69c0543",
+      "sourcePath": "ai-infra-basic/Attention_Kernel/README.md",
+      "title": "Attention Kernel 教学入口",
+      "topicId": "attention-kernel",
+      "role": "navigation",
+      "layer": "overview",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "attention"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Attention_Kernel/README.md",
+      "slug": "ai-infra-basic--attention-kernel--readme"
+    },
+    {
+      "id": "material-304972ca14395e31",
+      "sourcePath": "ai-infra-basic/Benchmark_Profiling/README.md",
+      "title": "Benchmark Profiling",
+      "topicId": "benchmark",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "introductory",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Benchmark_Profiling/README.md",
+      "slug": "ai-infra-basic--benchmark-profiling--readme"
+    },
+    {
+      "id": "material-4ddc14643bc1a2e4",
+      "sourcePath": "ai-infra-basic/Communication/01-communication-primitives-and-costs.md",
+      "title": "01. 通信原语、张量布局与成本模型",
+      "topicId": "communication",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Communication/01-communication-primitives-and-costs.md",
+      "slug": "ai-infra-basic--communication--01-communication-primitives-and-costs"
+    },
+    {
+      "id": "material-be33fc1541e4904e",
+      "sourcePath": "ai-infra-basic/Communication/02-links-rdma-and-memory.md",
+      "title": "02. 链路、RDMA、注册内存与完成语义",
+      "topicId": "communication",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Communication/02-links-rdma-and-memory.md",
+      "slug": "ai-infra-basic--communication--02-links-rdma-and-memory"
+    },
+    {
+      "id": "material-ee9668fe64e38f1a",
+      "sourcePath": "ai-infra-basic/Communication/03-collective-libraries-gloo-nccl-hccl.md",
+      "title": "03. Gloo、NCCL、RCCL、HCCL 与 ProcessGroup",
+      "topicId": "communication",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Communication/03-collective-libraries-gloo-nccl-hccl.md",
+      "slug": "ai-infra-basic--communication--03-collective-libraries-gloo-nccl-hccl"
+    },
+    {
+      "id": "material-e67ca27de711d5f0",
+      "sourcePath": "ai-infra-basic/Communication/04-moe-deepep-and-zbal.md",
+      "title": "04. MoE token 通信：DeepEP 与 SGLang NPU 的 ZBAL",
+      "topicId": "expert-parallel",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "parallel",
+        "moe"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Communication/04-moe-deepep-and-zbal.md",
+      "slug": "ai-infra-basic--communication--04-moe-deepep-and-zbal"
+    },
+    {
+      "id": "material-5415abd9c6938207",
+      "sourcePath": "ai-infra-basic/Communication/05-kv-transfer-mooncake-and-nixl.md",
+      "title": "05. PD/KV 传输：Mooncake、NIXL 与 Ascend TransferEngine",
+      "topicId": "pd-transfer",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Communication/05-kv-transfer-mooncake-and-nixl.md",
+      "slug": "ai-infra-basic--communication--05-kv-transfer-mooncake-and-nixl"
+    },
+    {
+      "id": "material-870448638b31eff2",
+      "sourcePath": "ai-infra-basic/Communication/06-sglang-paths-and-performance.md",
+      "title": "06. 从 SGLang 调用路径到通信性能排查",
+      "topicId": "communication",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Communication/06-sglang-paths-and-performance.md",
+      "slug": "ai-infra-basic--communication--06-sglang-paths-and-performance"
+    },
+    {
+      "id": "material-635f72433d71baa2",
+      "sourcePath": "ai-infra-basic/Communication/07-zbal-zero-buffer-source-dataflow.md",
+      "title": "07. ZBAL 的 zero buffer：从分配器、远端地址到 MoE 数据流",
+      "topicId": "expert-parallel",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "parallel",
+        "moe"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Communication/07-zbal-zero-buffer-source-dataflow.md",
+      "slug": "ai-infra-basic--communication--07-zbal-zero-buffer-source-dataflow"
+    },
+    {
+      "id": "material-10a19fd765ca4dfc",
+      "sourcePath": "ai-infra-basic/Communication/communication_semantics_demo.py",
+      "title": "通信原语语义实验",
+      "topicId": "communication",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "intermediate",
+      "platforms": [
+        "cpu"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Communication/communication_semantics_demo.py",
+      "slug": "ai-infra-basic--communication--communication-semantics-demo"
+    },
+    {
+      "id": "material-b687b314190d1687",
+      "sourcePath": "ai-infra-basic/Communication/README.md",
+      "title": "AI Infra 通信：从张量语义到 GPU/NPU 数据路径",
+      "topicId": "communication",
+      "role": "navigation",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Communication/README.md",
+      "slug": "ai-infra-basic--communication--readme"
+    },
+    {
+      "id": "material-6389659c78ea0f55",
+      "sourcePath": "ai-infra-basic/Execution_Graph/01-what-is-graph.md",
+      "title": "什么是 Graph：从计算图到 SGLang CUDA Graph",
+      "topicId": "graph",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general",
+        "cuda",
+        "ascend"
+      ],
+      "prerequisites": [
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Execution_Graph/01-what-is-graph.md",
+      "slug": "ai-infra-basic--execution-graph--01-what-is-graph"
+    },
+    {
+      "id": "material-fc6d6ed03467ed78",
+      "sourcePath": "ai-infra-basic/Execution_Graph/02-graph-execution-dataflow.md",
+      "title": "Graph 执行原理：调度、数据与流转",
+      "topicId": "graph",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general",
+        "cuda",
+        "ascend"
+      ],
+      "prerequisites": [
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Execution_Graph/02-graph-execution-dataflow.md",
+      "slug": "ai-infra-basic--execution-graph--02-graph-execution-dataflow"
+    },
+    {
+      "id": "material-dd7442065b26c89f",
+      "sourcePath": "ai-infra-basic/Execution_Graph/README.md",
+      "title": "Execution Graph",
+      "topicId": "graph",
+      "role": "navigation",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general",
+        "cuda",
+        "ascend"
+      ],
+      "prerequisites": [
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Execution_Graph/README.md",
+      "slug": "ai-infra-basic--execution-graph--readme"
+    },
+    {
+      "id": "material-217ea5dcae0f9a05",
+      "sourcePath": "ai-infra-basic/Gated_Delta_Network/01-gdn-math-and-state.md",
+      "title": "01. GDN 数学原理：Gated Delta Rule 与状态矩阵",
+      "topicId": "gdn",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Gated_Delta_Network/01-gdn-math-and-state.md",
+      "slug": "ai-infra-basic--gated-delta-network--01-gdn-math-and-state"
+    },
+    {
+      "id": "material-cea27c56d6c86bc2",
+      "sourcePath": "ai-infra-basic/Gated_Delta_Network/02-gdn-layer-dataflow-and-shapes.md",
+      "title": "02. GDN 层内数据流与 shape",
+      "topicId": "gdn",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Gated_Delta_Network/02-gdn-layer-dataflow-and-shapes.md",
+      "slug": "ai-infra-basic--gated-delta-network--02-gdn-layer-dataflow-and-shapes"
+    },
+    {
+      "id": "material-957aeb8233b7cc55",
+      "sourcePath": "ai-infra-basic/Gated_Delta_Network/03-gdn-training-and-serving.md",
+      "title": "03. GDN 的训练、Prefill、Decode 与 Serving 状态管理",
+      "topicId": "gdn",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Gated_Delta_Network/03-gdn-training-and-serving.md",
+      "slug": "ai-infra-basic--gated-delta-network--03-gdn-training-and-serving"
+    },
+    {
+      "id": "material-2866fa83f22e03c5",
+      "sourcePath": "ai-infra-basic/Gated_Delta_Network/README.md",
+      "title": "Gated Delta Network",
+      "topicId": "gdn",
+      "role": "navigation",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Gated_Delta_Network/README.md",
+      "slug": "ai-infra-basic--gated-delta-network--readme"
+    },
+    {
+      "id": "material-51855aaf5864120a",
+      "sourcePath": "ai-infra-basic/Inference_Basics/README.md",
+      "title": "Inference Basics",
+      "topicId": "inference",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "introductory",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Inference_Basics/README.md",
+      "slug": "ai-infra-basic--inference-basics--readme"
+    },
+    {
+      "id": "material-6d816911b0a26729",
+      "sourcePath": "ai-infra-basic/KV_Cache_Memory/README.md",
+      "title": "KV Cache Memory",
+      "topicId": "cache",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "introductory",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "attention"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/KV_Cache_Memory/README.md",
+      "slug": "ai-infra-basic--kv-cache-memory--readme"
+    },
+    {
+      "id": "material-0cf44ae28eddcbd9",
+      "sourcePath": "ai-infra-basic/KV_Transfer/README.md",
+      "title": "KV Transfer",
+      "topicId": "pd-transfer",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/KV_Transfer/README.md",
+      "slug": "ai-infra-basic--kv-transfer--readme"
+    },
+    {
+      "id": "material-dc583e6f6b866ab7",
+      "sourcePath": "ai-infra-basic/LoRA/adalora_tutorial.py",
+      "title": "AdaLoRA 教学代码",
+      "topicId": "lora",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "intermediate",
+      "platforms": [
+        "pytorch"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/LoRA/adalora_tutorial.py",
+      "slug": "ai-infra-basic--lora--adalora-tutorial"
+    },
+    {
+      "id": "material-4b9b6c940d353395",
+      "sourcePath": "ai-infra-basic/LoRA/dora_tutorial.py",
+      "title": "DoRA 教学代码",
+      "topicId": "lora",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "intermediate",
+      "platforms": [
+        "pytorch"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/LoRA/dora_tutorial.py",
+      "slug": "ai-infra-basic--lora--dora-tutorial"
+    },
+    {
+      "id": "material-e7b4f070b11b538a",
+      "sourcePath": "ai-infra-basic/LoRA/lora_tutorial.py",
+      "title": "LoRA 教学代码",
+      "topicId": "lora",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "intermediate",
+      "platforms": [
+        "pytorch"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/LoRA/lora_tutorial.py",
+      "slug": "ai-infra-basic--lora--lora-tutorial"
+    },
+    {
+      "id": "material-50c3b68503819393",
+      "sourcePath": "ai-infra-basic/LoRA/qlora_tutorial.py",
+      "title": "QLoRA 教学代码",
+      "topicId": "lora",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "intermediate",
+      "platforms": [
+        "pytorch"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/LoRA/qlora_tutorial.py",
+      "slug": "ai-infra-basic--lora--qlora-tutorial"
+    },
+    {
+      "id": "material-79e076b11b510aa6",
+      "sourcePath": "ai-infra-basic/LoRA/README.md",
+      "title": "LoRA 系列教学入口",
+      "topicId": "lora",
+      "role": "navigation",
+      "layer": "overview",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/LoRA/README.md",
+      "slug": "ai-infra-basic--lora--readme"
+    },
+    {
+      "id": "material-823770f21529bfa7",
+      "sourcePath": "ai-infra-basic/Mamba_State_Space/01-mamba-and-sglang-state.md",
+      "title": "Mamba 是什么：从 State Space Model 到 SGLang Mamba State",
+      "topicId": "hybrid-cache",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "cache",
+        "mamba"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Mamba_State_Space/01-mamba-and-sglang-state.md",
+      "slug": "ai-infra-basic--mamba-state-space--01-mamba-and-sglang-state"
+    },
+    {
+      "id": "material-810a5d5673bc4412",
+      "sourcePath": "ai-infra-basic/Mamba_State_Space/02-mamba-principles.md",
+      "title": "Mamba 原理详解：从 SSM 到 Mamba2 Forward",
+      "topicId": "mamba",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Mamba_State_Space/02-mamba-principles.md",
+      "slug": "ai-infra-basic--mamba-state-space--02-mamba-principles"
+    },
+    {
+      "id": "material-c9999108bf8534a5",
+      "sourcePath": "ai-infra-basic/Mamba_State_Space/03-mamba-radix-cache.md",
+      "title": "Mamba 和 Radix Cache：状态复用、代码依赖与执行流程",
+      "topicId": "hybrid-cache",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "cache",
+        "mamba"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Mamba_State_Space/03-mamba-radix-cache.md",
+      "slug": "ai-infra-basic--mamba-state-space--03-mamba-radix-cache"
+    },
+    {
+      "id": "material-1c88e825750dedcb",
+      "sourcePath": "ai-infra-basic/Mamba_State_Space/README.md",
+      "title": "Mamba / State Space Model 教学入口",
+      "topicId": "mamba",
+      "role": "navigation",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Mamba_State_Space/README.md",
+      "slug": "ai-infra-basic--mamba-state-space--readme"
+    },
+    {
+      "id": "material-697b58e4cab8ae24",
+      "sourcePath": "ai-infra-basic/Model_Architecture/01-decoder-only-transformer.md",
+      "title": "Decoder-only Transformer：从 Token 到下一个 Token",
+      "topicId": "transformer",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "introductory",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Model_Architecture/01-decoder-only-transformer.md",
+      "slug": "ai-infra-basic--model-architecture--01-decoder-only-transformer"
+    },
+    {
+      "id": "material-ebd729fd3beebc56",
+      "sourcePath": "ai-infra-basic/Model_Architecture/02-gqa-attention-shapes.md",
+      "title": "Grouped-Query Attention：QKV、RoPE 与 KV Cache 的形状流",
+      "topicId": "attention",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Model_Architecture/02-gqa-attention-shapes.md",
+      "slug": "ai-infra-basic--model-architecture--02-gqa-attention-shapes"
+    },
+    {
+      "id": "material-68d113c209f2ebdb",
+      "sourcePath": "ai-infra-basic/Model_Architecture/03-sparse-moe-routing.md",
+      "title": "Sparse MoE：Router、Top-K、Expert 与数据重排",
+      "topicId": "moe",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Model_Architecture/03-sparse-moe-routing.md",
+      "slug": "ai-infra-basic--model-architecture--03-sparse-moe-routing"
+    },
+    {
+      "id": "material-2f27f6999becadea",
+      "sourcePath": "ai-infra-basic/Model_Architecture/04-multi-head-latent-attention.md",
+      "title": "Multi-head Latent Attention：低秩压缩与解耦位置编码",
+      "topicId": "attention",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Model_Architecture/04-multi-head-latent-attention.md",
+      "slug": "ai-infra-basic--model-architecture--04-multi-head-latent-attention"
+    },
+    {
+      "id": "material-05b076710f779acc",
+      "sourcePath": "ai-infra-basic/Model_Architecture/05-architecture-families.md",
+      "title": "主流大模型架构谱系：哪些模块发生了变化",
+      "topicId": "families",
+      "role": "lesson",
+      "layer": "overview",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Model_Architecture/05-architecture-families.md",
+      "slug": "ai-infra-basic--model-architecture--05-architecture-families"
+    },
+    {
+      "id": "material-39fbd021c33d384f",
+      "sourcePath": "ai-infra-basic/Model_Architecture/06-efficient-attention-landscape.md",
+      "title": "高效 Attention 全景：压缩、稀疏、递归与 Kernel",
+      "topicId": "attention",
+      "role": "lesson",
+      "layer": "overview",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Model_Architecture/06-efficient-attention-landscape.md",
+      "slug": "ai-infra-basic--model-architecture--06-efficient-attention-landscape"
+    },
+    {
+      "id": "material-19aa26bfe100234a",
+      "sourcePath": "ai-infra-basic/Model_Architecture/07-deepseek-sparse-attention.md",
+      "title": "DeepSeek Sparse Attention：在 MLA Cache 上学习检索",
+      "topicId": "sparse-attention",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "attention"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Model_Architecture/07-deepseek-sparse-attention.md",
+      "slug": "ai-infra-basic--model-architecture--07-deepseek-sparse-attention"
+    },
+    {
+      "id": "material-09a90c23d8bedbd5",
+      "sourcePath": "ai-infra-basic/Model_Architecture/08-compressed-sparse-attention.md",
+      "title": "压缩稀疏注意力（CSA）与重度压缩注意力（HCA）",
+      "topicId": "sparse-attention",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "attention"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Model_Architecture/08-compressed-sparse-attention.md",
+      "slug": "ai-infra-basic--model-architecture--08-compressed-sparse-attention"
+    },
+    {
+      "id": "material-faa2de674a5d5b1c",
+      "sourcePath": "ai-infra-basic/Model_Architecture/09-kimi-delta-attention.md",
+      "title": "Kimi Delta Attention（KDA）：线性注意力的细粒度门控",
+      "topicId": "kda",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "gdn"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Model_Architecture/09-kimi-delta-attention.md",
+      "slug": "ai-infra-basic--model-architecture--09-kimi-delta-attention"
+    },
+    {
+      "id": "material-a49172c0b2680620",
+      "sourcePath": "ai-infra-basic/Model_Architecture/10-manifold-constrained-hyper-connections.md",
+      "title": "mHC 原理：从普通残差连接到受约束的多路信息流",
+      "topicId": "residual",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Model_Architecture/10-manifold-constrained-hyper-connections.md",
+      "slug": "ai-infra-basic--model-architecture--10-manifold-constrained-hyper-connections"
+    },
+    {
+      "id": "material-ed9c94e50c2d04de",
+      "sourcePath": "ai-infra-basic/Model_Architecture/mhc_principles_demo.py",
+      "title": "mHC 数学原理实验",
+      "topicId": "residual",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "advanced",
+      "platforms": [
+        "cpu"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Model_Architecture/mhc_principles_demo.py",
+      "slug": "ai-infra-basic--model-architecture--mhc-principles-demo"
+    },
+    {
+      "id": "material-58c07500e59bd02c",
+      "sourcePath": "ai-infra-basic/Model_Architecture/README.md",
+      "title": "主流大模型架构与实现原理",
+      "topicId": "families",
+      "role": "navigation",
+      "layer": "overview",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Model_Architecture/README.md",
+      "slug": "ai-infra-basic--model-architecture--readme"
+    },
+    {
+      "id": "material-1de55307d2a73a28",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/00-parallelism-map-and-version-boundaries.md",
+      "title": "00. 并行策略地图：先看切分对象，再看执行阶段",
+      "topicId": "parallel",
+      "role": "lesson",
+      "layer": "overview",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/00-parallelism-map-and-version-boundaries.md",
+      "slug": "ai-infra-basic--parallel-strategy--00-parallelism-map-and-version-boundaries"
+    },
+    {
+      "id": "material-91c63b62fd567cc2",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/01-dp-attention-principles.md",
+      "title": "DP Attention：请求并行、Attention 子组与 FFN/MoE 的布局切换",
+      "topicId": "attention-dp",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "parallel",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/01-dp-attention-principles.md",
+      "slug": "ai-infra-basic--parallel-strategy--01-dp-attention-principles"
+    },
+    {
+      "id": "material-3b7a70ba77909c0f",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/02-sp-versus-context-parallelism.md",
+      "title": "02. 从零理解 SP：切哪些数据、怎样计算，以及它与 CP 的区别",
+      "topicId": "context-parallel",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/02-sp-versus-context-parallelism.md",
+      "slug": "ai-infra-basic--parallel-strategy--02-sp-versus-context-parallelism"
+    },
+    {
+      "id": "material-e9f01965124ef141",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/03-prefill-context-parallelism.md",
+      "title": "03. PCP：把长 prompt 的 query 工作分给多张卡",
+      "topicId": "context-parallel",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/03-prefill-context-parallelism.md",
+      "slug": "ai-infra-basic--parallel-strategy--03-prefill-context-parallelism"
+    },
+    {
+      "id": "material-823a6612a94d7ca9",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/04-decode-context-parallelism.md",
+      "title": "04. DCP：分历史 KV，用正确的 softmax 合并局部答案",
+      "topicId": "context-parallel",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/04-decode-context-parallelism.md",
+      "slug": "ai-infra-basic--parallel-strategy--04-decode-context-parallelism"
+    },
+    {
+      "id": "material-8cea8235e6888d97",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/05-dwdp-weight-parallelism.md",
+      "title": "05. DWDP：让权重来找 token，而不是每层都搬 token",
+      "topicId": "expert-parallel",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "parallel",
+        "moe"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/05-dwdp-weight-parallelism.md",
+      "slug": "ai-infra-basic--parallel-strategy--05-dwdp-weight-parallelism"
+    },
+    {
+      "id": "material-34aae147f007f883",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/06-parallel-topology-and-pd-composition.md",
+      "title": "06. 组合并行：rank 网格、阶段交接与不同布局",
+      "topicId": "parallel",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/06-parallel-topology-and-pd-composition.md",
+      "slug": "ai-infra-basic--parallel-strategy--06-parallel-topology-and-pd-composition"
+    },
+    {
+      "id": "material-70db6ed14f5d2356",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/07-encoder-dp-and-elastic-ep.md",
+      "title": "07. Encoder DP 与弹性 EP：模块并行和运行时重配置",
+      "topicId": "parallel",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/07-encoder-dp-and-elastic-ep.md",
+      "slug": "ai-infra-basic--parallel-strategy--07-encoder-dp-and-elastic-ep"
+    },
+    {
+      "id": "material-404d493e9c0a96c4",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/08-diffusion-parallelism.md",
+      "title": "08. Diffusion 并行：CFG、Ulysses、Ring 和 KV-gather",
+      "topicId": "diffusion-parallel",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "parallel"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/08-diffusion-parallelism.md",
+      "slug": "ai-infra-basic--parallel-strategy--08-diffusion-parallelism"
+    },
+    {
+      "id": "material-3e8778d8757ac9cf",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/dcp_cache_address_demo.py",
+      "title": "DCP 缓存地址映射实验",
+      "topicId": "context-parallel",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "advanced",
+      "platforms": [
+        "cpu"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/dcp_cache_address_demo.py",
+      "slug": "ai-infra-basic--parallel-strategy--dcp-cache-address-demo"
+    },
+    {
+      "id": "material-65fedc248e61da99",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/dp_attention_layout_demo.py",
+      "title": "DP Attention 布局与去重实验",
+      "topicId": "attention-dp",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "advanced",
+      "platforms": [
+        "cpu"
+      ],
+      "prerequisites": [
+        "parallel",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/dp_attention_layout_demo.py",
+      "slug": "ai-infra-basic--parallel-strategy--dp-attention-layout-demo"
+    },
+    {
+      "id": "material-e4533a04e38cfca5",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/dp_inference_demo.py",
+      "title": "DP 推理教学代码",
+      "topicId": "parallel",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "intermediate",
+      "platforms": [
+        "pytorch",
+        "distributed"
+      ],
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/dp_inference_demo.py",
+      "slug": "ai-infra-basic--parallel-strategy--dp-inference-demo"
+    },
+    {
+      "id": "material-89a5c85d8fe5c625",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/ep_moe_demo.py",
+      "title": "EP 专家分发与合并教学代码",
+      "topicId": "expert-parallel",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "intermediate",
+      "platforms": [
+        "pytorch",
+        "distributed"
+      ],
+      "prerequisites": [
+        "parallel",
+        "moe"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/ep_moe_demo.py",
+      "slug": "ai-infra-basic--parallel-strategy--ep-moe-demo"
+    },
+    {
+      "id": "material-d8f1827f46a3d746",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/parallelism_math_demo.py",
+      "title": "组合并行数学等价性实验",
+      "topicId": "parallel",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "advanced",
+      "platforms": [
+        "cpu"
+      ],
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/parallelism_math_demo.py",
+      "slug": "ai-infra-basic--parallel-strategy--parallelism-math-demo"
+    },
+    {
+      "id": "material-5f461930362b1d3d",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/pcp_query_rows_demo.py",
+      "title": "PCP Query 行分配与因果关系实验",
+      "topicId": "context-parallel",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "advanced",
+      "platforms": [
+        "cpu"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/pcp_query_rows_demo.py",
+      "slug": "ai-infra-basic--parallel-strategy--pcp-query-rows-demo"
+    },
+    {
+      "id": "material-f51dd19e7f4ab76b",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/pp_inference_demo.py",
+      "title": "PP 推理教学代码",
+      "topicId": "parallel",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "intermediate",
+      "platforms": [
+        "pytorch",
+        "distributed"
+      ],
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/pp_inference_demo.py",
+      "slug": "ai-infra-basic--parallel-strategy--pp-inference-demo"
+    },
+    {
+      "id": "material-86807d01787a5b58",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/README.md",
+      "title": "Parallel Strategy 教学入口",
+      "topicId": "parallel",
+      "role": "navigation",
+      "layer": "overview",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/README.md",
+      "slug": "ai-infra-basic--parallel-strategy--readme"
+    },
+    {
+      "id": "material-1611656899e7aa03",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/sp_inference_demo.py",
+      "title": "CP 分布式 Softmax 实验（历史文件名含 SP）",
+      "topicId": "context-parallel",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "advanced",
+      "platforms": [
+        "pytorch",
+        "distributed"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/sp_inference_demo.py",
+      "slug": "ai-infra-basic--parallel-strategy--sp-inference-demo"
+    },
+    {
+      "id": "material-24ae651650d4e647",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/sp_step_by_step_demo.py",
+      "title": "TP + SP 的逐步数值实验",
+      "topicId": "context-parallel",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "advanced",
+      "platforms": [
+        "cpu"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/sp_step_by_step_demo.py",
+      "slug": "ai-infra-basic--parallel-strategy--sp-step-by-step-demo"
+    },
+    {
+      "id": "material-5f41eb93f1447d1b",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/tp_inference_demo.py",
+      "title": "TP 推理教学代码",
+      "topicId": "parallel",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "intermediate",
+      "platforms": [
+        "pytorch",
+        "distributed"
+      ],
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/tp_inference_demo.py",
+      "slug": "ai-infra-basic--parallel-strategy--tp-inference-demo"
+    },
+    {
+      "id": "material-bfc4f56533b0be1a",
+      "sourcePath": "ai-infra-basic/Parallel_Strategy/tutorial.md",
+      "title": "大模型推理并行策略基础：DP / TP / PP / EP 与 CP 数学示例",
+      "topicId": "parallel",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Parallel_Strategy/tutorial.md",
+      "slug": "ai-infra-basic--parallel-strategy--tutorial"
+    },
+    {
+      "id": "material-062bed93d10265ea",
+      "sourcePath": "ai-infra-basic/Quantization/01-quantization-foundations.md",
+      "title": "01. 量化基础：从浮点数到低 bit 表示",
+      "topicId": "quantization",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Quantization/01-quantization-foundations.md",
+      "slug": "ai-infra-basic--quantization--01-quantization-foundations"
+    },
+    {
+      "id": "material-0351fda6e024ed1d",
+      "sourcePath": "ai-infra-basic/Quantization/02-bitwidth-formats-and-packing.md",
+      "title": "02. 位宽记号、FP8/MXFP8 与 packed W4",
+      "topicId": "quantization",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Quantization/02-bitwidth-formats-and-packing.md",
+      "slug": "ai-infra-basic--quantization--02-bitwidth-formats-and-packing"
+    },
+    {
+      "id": "material-2796401380a3de20",
+      "sourcePath": "ai-infra-basic/Quantization/03-weight-quantization-algorithms.md",
+      "title": "03. 权重量化算法：从 RTN 到 GPTQ、AWQ、AutoRound、HQQ、NF4",
+      "topicId": "quantization",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Quantization/03-weight-quantization-algorithms.md",
+      "slug": "ai-infra-basic--quantization--03-weight-quantization-algorithms"
+    },
+    {
+      "id": "material-697d11fa64661ff7",
+      "sourcePath": "ai-infra-basic/Quantization/04-activation-kv-fp8-quantization.md",
+      "title": "04. Activation、KV Cache、FP8 与 MXFP8 量化",
+      "topicId": "quantization",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Quantization/04-activation-kv-fp8-quantization.md",
+      "slug": "ai-infra-basic--quantization--04-activation-kv-fp8-quantization"
+    },
+    {
+      "id": "material-2178ff73caf1ec84",
+      "sourcePath": "ai-infra-basic/Quantization/05-serving-kernel-and-debugging.md",
+      "title": "05. Serving 中的量化数据流、kernel 与排障",
+      "topicId": "quantization",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Quantization/05-serving-kernel-and-debugging.md",
+      "slug": "ai-infra-basic--quantization--05-serving-kernel-and-debugging"
+    },
+    {
+      "id": "material-6a6c14fbdb3bf8bf",
+      "sourcePath": "ai-infra-basic/Quantization/README.md",
+      "title": "Quantization",
+      "topicId": "quantization",
+      "role": "navigation",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Quantization/README.md",
+      "slug": "ai-infra-basic--quantization--readme"
+    },
+    {
+      "id": "material-7fafd40d4c3ef132",
+      "sourcePath": "ai-infra-basic/README.md",
+      "title": "AI Infra 基础专题",
+      "topicId": "orientation",
+      "role": "navigation",
+      "layer": "overview",
+      "difficulty": "introductory",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/README.md",
+      "slug": null
+    },
+    {
+      "id": "material-134d4dd24e781fb7",
+      "sourcePath": "ai-infra-basic/Schedule_Optimization/chunked_prefill_with_fakeLLM_tutorial.py",
+      "title": "Chunked Prefill 模拟实验",
+      "topicId": "scheduler",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "introductory",
+      "platforms": [
+        "python"
+      ],
+      "prerequisites": [
+        "request"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Schedule_Optimization/chunked_prefill_with_fakeLLM_tutorial.py",
+      "slug": "ai-infra-basic--schedule-optimization--chunked-prefill-with-fakellm-tutorial"
+    },
+    {
+      "id": "material-dfb7f63b897f44c3",
+      "sourcePath": "ai-infra-basic/Schedule_Optimization/prefill_decode_demo.py",
+      "title": "Prefill / Decode 调度实验",
+      "topicId": "scheduler",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "introductory",
+      "platforms": [
+        "python"
+      ],
+      "prerequisites": [
+        "request"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Schedule_Optimization/prefill_decode_demo.py",
+      "slug": "ai-infra-basic--schedule-optimization--prefill-decode-demo"
+    },
+    {
+      "id": "material-e41b39f6fd5ae653",
+      "sourcePath": "ai-infra-basic/Schedule_Optimization/README.md",
+      "title": "Schedule Optimization 教学入口",
+      "topicId": "scheduler",
+      "role": "navigation",
+      "layer": "principles",
+      "difficulty": "introductory",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "request"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Schedule_Optimization/README.md",
+      "slug": "ai-infra-basic--schedule-optimization--readme"
+    },
+    {
+      "id": "material-863f91ab8c67ea2b",
+      "sourcePath": "ai-infra-basic/Speculative_Decoding/01-speculative-decoding-principles.md",
+      "title": "01. 投机解码的基本原理",
+      "topicId": "speculation",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Speculative_Decoding/01-speculative-decoding-principles.md",
+      "slug": "ai-infra-basic--speculative-decoding--01-speculative-decoding-principles"
+    },
+    {
+      "id": "material-6a8898a83a063a5c",
+      "sourcePath": "ai-infra-basic/Speculative_Decoding/02-rejection-sampling-math.md",
+      "title": "02. 投机采样的数学原理",
+      "topicId": "speculation",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Speculative_Decoding/02-rejection-sampling-math.md",
+      "slug": "ai-infra-basic--speculative-decoding--02-rejection-sampling-math"
+    },
+    {
+      "id": "material-aed29eab4cebcb17",
+      "sourcePath": "ai-infra-basic/Speculative_Decoding/03-serving-implementation-dataflow.md",
+      "title": "03. Serving 系统中的实现与数据流",
+      "topicId": "speculation",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Speculative_Decoding/03-serving-implementation-dataflow.md",
+      "slug": "ai-infra-basic--speculative-decoding--03-serving-implementation-dataflow"
+    },
+    {
+      "id": "material-f209642fa601c82f",
+      "sourcePath": "ai-infra-basic/Speculative_Decoding/04-algorithm-landscape.md",
+      "title": "04. 投机推理算法谱系",
+      "topicId": "speculation",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Speculative_Decoding/04-algorithm-landscape.md",
+      "slug": "ai-infra-basic--speculative-decoding--04-algorithm-landscape"
+    },
+    {
+      "id": "material-06d23c400f78790c",
+      "sourcePath": "ai-infra-basic/Speculative_Decoding/05-dspark-principles.md",
+      "title": "05. DSpark 原理：半自回归草稿、置信度调度与硬件感知验证",
+      "topicId": "dspark",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "speculation",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Speculative_Decoding/05-dspark-principles.md",
+      "slug": "ai-infra-basic--speculative-decoding--05-dspark-principles"
+    },
+    {
+      "id": "material-a47ed17675a27fd1",
+      "sourcePath": "ai-infra-basic/Speculative_Decoding/README.md",
+      "title": "Speculative Decoding / Speculative Inference 教学入口",
+      "topicId": "speculation",
+      "role": "navigation",
+      "layer": "principles",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ai-infra-basic/Speculative_Decoding/README.md",
+      "slug": "ai-infra-basic--speculative-decoding--readme"
+    },
+    {
+      "id": "material-3c838f7d77bb429a",
+      "sourcePath": "ascend-kernel-infra/01-stack-and-relationships.md",
+      "title": "第一讲：五个关键对象如何组成 Ascend NPU 推理与算子栈",
+      "topicId": "ascend-stack",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/01-stack-and-relationships.md",
+      "slug": "ascend-kernel-infra--01-stack-and-relationships"
+    },
+    {
+      "id": "material-f942fef6078a457f",
+      "sourcePath": "ascend-kernel-infra/02-cann-stack-and-boundaries.md",
+      "title": "第二讲：CANN 全栈与边界",
+      "topicId": "ascend-stack",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/02-cann-stack-and-boundaries.md",
+      "slug": "ascend-kernel-infra--02-cann-stack-and-boundaries"
+    },
+    {
+      "id": "material-3d771ea636ab8777",
+      "sourcePath": "ascend-kernel-infra/ascend-c/01-global-local-tensor-pipe-queue.md",
+      "title": "Ascend C 01：Global/Local Tensor、TPipe 与 TQue",
+      "topicId": "ascend-c",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "kernel-foundations"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/ascend-c/01-global-local-tensor-pipe-queue.md",
+      "slug": "ascend-kernel-infra--ascend-c--01-global-local-tensor-pipe-queue"
+    },
+    {
+      "id": "material-572406aca07f9cb0",
+      "sourcePath": "ascend-kernel-infra/ascend-c/02-add-operator-end-to-end.md",
+      "title": "Ascend C 02：一个 Add 算子的端到端工程",
+      "topicId": "ascend-c",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "kernel-foundations"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/ascend-c/02-add-operator-end-to-end.md",
+      "slug": "ascend-kernel-infra--ascend-c--02-add-operator-end-to-end"
+    },
+    {
+      "id": "material-7e49fc262a3f33ad",
+      "sourcePath": "ascend-kernel-infra/ascend-c/03-tiling-pipeline-sync-optimization.md",
+      "title": "Ascend C 03：Tiling、流水、同步与性能优化",
+      "topicId": "ascend-c",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "kernel-foundations"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/ascend-c/03-tiling-pipeline-sync-optimization.md",
+      "slug": "ascend-kernel-infra--ascend-c--03-tiling-pipeline-sync-optimization"
+    },
+    {
+      "id": "material-fb722d5564eb3b03",
+      "sourcePath": "ascend-kernel-infra/ascend-c/04-platform-tiling-and-workspace-contracts.md",
+      "title": "Ascend C 04：Platform、Tiling、Workspace 与 Host/Device 契约",
+      "topicId": "ascend-c",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "kernel-foundations"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/ascend-c/04-platform-tiling-and-workspace-contracts.md",
+      "slug": "ascend-kernel-infra--ascend-c--04-platform-tiling-and-workspace-contracts"
+    },
+    {
+      "id": "material-968d011d2d28fb49",
+      "sourcePath": "ascend-kernel-infra/foundations/01-kernel-first-principles.md",
+      "title": "基础 01：从一个公式到并行 Kernel",
+      "topicId": "kernel-foundations",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/foundations/01-kernel-first-principles.md",
+      "slug": "ascend-kernel-infra--foundations--01-kernel-first-principles"
+    },
+    {
+      "id": "material-ac466bc18736633f",
+      "sourcePath": "ascend-kernel-infra/foundations/02-ascend-hardware.md",
+      "title": "基础 02：Ascend NPU、AI Core 与存储层级",
+      "topicId": "kernel-foundations",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/foundations/02-ascend-hardware.md",
+      "slug": "ascend-kernel-infra--foundations--02-ascend-hardware"
+    },
+    {
+      "id": "material-3060c89baa1c5cb1",
+      "sourcePath": "ascend-kernel-infra/foundations/03-memory-pipeline-and-sync.md",
+      "title": "基础 03：搬运、计算、同步与流水",
+      "topicId": "kernel-foundations",
+      "role": "lesson",
+      "layer": "principles",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/foundations/03-memory-pipeline-and-sync.md",
+      "slug": "ascend-kernel-infra--foundations--03-memory-pipeline-and-sync"
+    },
+    {
+      "id": "material-ae7715103f84ee28",
+      "sourcePath": "ascend-kernel-infra/README.md",
+      "title": "Ascend Kernel Infra：从推理框架走向 NPU 算子",
+      "topicId": "kernel-foundations",
+      "role": "navigation",
+      "layer": "overview",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/README.md",
+      "slug": "ascend-kernel-infra--readme"
+    },
+    {
+      "id": "material-155f1997c42d60d3",
+      "sourcePath": "ascend-kernel-infra/reference/code-reading-and-types.md",
+      "title": "代码阅读手册：变量类型、形状、地址与源码实现",
+      "topicId": "kernel-foundations",
+      "role": "reference",
+      "layer": "reference",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/reference/code-reading-and-types.md",
+      "slug": "ascend-kernel-infra--reference--code-reading-and-types"
+    },
+    {
+      "id": "material-4099319006f24ac5",
+      "sourcePath": "ascend-kernel-infra/reference/glossary.md",
+      "title": "参考：Ascend Kernel Infra 术语表",
+      "topicId": "kernel-foundations",
+      "role": "reference",
+      "layer": "reference",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/reference/glossary.md",
+      "slug": "ascend-kernel-infra--reference--glossary"
+    },
+    {
+      "id": "material-b22623100790e90d",
+      "sourcePath": "ascend-kernel-infra/reference/technology-comparison.md",
+      "title": "参考：sgl-kernel-npu、Triton-Ascend 与 Ascend C 技术选型",
+      "topicId": "kernel-foundations",
+      "role": "reference",
+      "layer": "reference",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/reference/technology-comparison.md",
+      "slug": "ascend-kernel-infra--reference--technology-comparison"
+    },
+    {
+      "id": "material-4efc55a7c9c94beb",
+      "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/01-repository-and-op-lifecycle.md",
+      "title": "sgl-kernel-npu 01：仓库结构与算子生命周期",
+      "topicId": "custom-op",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "kernel-foundations"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/sgl-kernel-npu/01-repository-and-op-lifecycle.md",
+      "slug": "ascend-kernel-infra--sgl-kernel-npu--01-repository-and-op-lifecycle"
+    },
+    {
+      "id": "material-19265258aa33a43d",
+      "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/02-triton-fused-split-qk-norm.md",
+      "title": "sgl-kernel-npu 02：Triton 源码精读——Fused Split Q/K Norm",
+      "topicId": "kernel-cases",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "custom-op",
+        "triton"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/sgl-kernel-npu/02-triton-fused-split-qk-norm.md",
+      "slug": "ascend-kernel-infra--sgl-kernel-npu--02-triton-fused-split-qk-norm"
+    },
+    {
+      "id": "material-778e06e41e359c27",
+      "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/03-ascend-c-apply-token-bitmask.md",
+      "title": "sgl-kernel-npu 03：Ascend C 源码精读——Apply Token Bitmask",
+      "topicId": "kernel-cases",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "custom-op",
+        "ascend-c"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/sgl-kernel-npu/03-ascend-c-apply-token-bitmask.md",
+      "slug": "ascend-kernel-infra--sgl-kernel-npu--03-ascend-c-apply-token-bitmask"
+    },
+    {
+      "id": "material-a1a42c35b2b7a4f0",
+      "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/04-fla-chunk-gated-delta-rule-mixed-path.md",
+      "title": "sgl-kernel-npu 04：FLA Chunk Gated Delta Rule 的双路径入口",
+      "topicId": "kernel-cases",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "custom-op",
+        "triton",
+        "ascend-c",
+        "gdn"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/sgl-kernel-npu/04-fla-chunk-gated-delta-rule-mixed-path.md",
+      "slug": "ascend-kernel-infra--sgl-kernel-npu--04-fla-chunk-gated-delta-rule-mixed-path"
+    },
+    {
+      "id": "material-d5eeda08128a0f0e",
+      "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/05-deepep-hccl-and-moe-kernel-path.md",
+      "title": "sgl-kernel-npu 05：DeepEP、HCCL 与 MoE token 路径",
+      "topicId": "kernel-cases",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "custom-op",
+        "expert-parallel",
+        "ascend-c"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/sgl-kernel-npu/05-deepep-hccl-and-moe-kernel-path.md",
+      "slug": "ascend-kernel-infra--sgl-kernel-npu--05-deepep-hccl-and-moe-kernel-path"
+    },
+    {
+      "id": "material-f6259a684687b425",
+      "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/06-deepep-low-latency-and-layered-a2-path.md",
+      "title": "sgl-kernel-npu 06：DeepEP Low-Latency、A2 Layered 与小 Batch 推理路径",
+      "topicId": "kernel-cases",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "custom-op",
+        "expert-parallel",
+        "ascend-c"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/sgl-kernel-npu/06-deepep-low-latency-and-layered-a2-path.md",
+      "slug": "ascend-kernel-infra--sgl-kernel-npu--06-deepep-low-latency-and-layered-a2-path"
+    },
+    {
+      "id": "material-cdf5f4a808e0c98f",
+      "sourcePath": "ascend-kernel-infra/sgl-kernel-npu/08-fla-mega-kernel-device-stages.md",
+      "title": "sgl-kernel-npu 08：FLA Mega Kernel、Device Stage 与 Ascend 数据流",
+      "topicId": "kernel-cases",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "custom-op",
+        "triton",
+        "ascend-c",
+        "gdn"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/sgl-kernel-npu/08-fla-mega-kernel-device-stages.md",
+      "slug": "ascend-kernel-infra--sgl-kernel-npu--08-fla-mega-kernel-device-stages"
+    },
+    {
+      "id": "material-bfcb34e957ecb165",
+      "sourcePath": "ascend-kernel-infra/torch_npu/01-dispatch-aclnn-and-custom-op-boundaries.md",
+      "title": "torch_npu 01：Dispatcher、ACLNN 与 Custom Op 的边界",
+      "topicId": "custom-op",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "kernel-foundations"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/torch_npu/01-dispatch-aclnn-and-custom-op-boundaries.md",
+      "slug": "ascend-kernel-infra--torch-npu--01-dispatch-aclnn-and-custom-op-boundaries"
+    },
+    {
+      "id": "material-0e2f73d1880b6e6b",
+      "sourcePath": "ascend-kernel-infra/torch_npu/02-stream-events-and-graph-capture.md",
+      "title": "torch_npu 02：Stream、Event、异步生命周期与计算图",
+      "topicId": "graph",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "custom-op",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/torch_npu/02-stream-events-and-graph-capture.md",
+      "slug": "ascend-kernel-infra--torch-npu--02-stream-events-and-graph-capture"
+    },
+    {
+      "id": "material-4258123570c633fd",
+      "sourcePath": "ascend-kernel-infra/triton-ascend/01-program-grid-tile.md",
+      "title": "Triton-Ascend 01：Program、Grid、Tile 与第一个 Kernel",
+      "topicId": "triton",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "kernel-foundations"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/triton-ascend/01-program-grid-tile.md",
+      "slug": "ascend-kernel-infra--triton-ascend--01-program-grid-tile"
+    },
+    {
+      "id": "material-b546d9e1f6a76781",
+      "sourcePath": "ascend-kernel-infra/triton-ascend/02-tensor-addressing-reduction-matmul.md",
+      "title": "Triton-Ascend 02：地址、广播、归约与矩阵分块",
+      "topicId": "triton",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "kernel-foundations"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/triton-ascend/02-tensor-addressing-reduction-matmul.md",
+      "slug": "ascend-kernel-infra--triton-ascend--02-tensor-addressing-reduction-matmul"
+    },
+    {
+      "id": "material-d2b688696784e44b",
+      "sourcePath": "ascend-kernel-infra/triton-ascend/03-compile-debug-optimize.md",
+      "title": "Triton-Ascend 03：编译、调试与性能优化",
+      "topicId": "triton",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "kernel-foundations"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/triton-ascend/03-compile-debug-optimize.md",
+      "slug": "ascend-kernel-infra--triton-ascend--03-compile-debug-optimize"
+    },
+    {
+      "id": "material-a740223b9b945b45",
+      "sourcePath": "ascend-kernel-infra/triton-ascend/04-ttir-mlir-driver-and-cache.md",
+      "title": "Triton-Ascend 04：TTIR、MLIR、Driver 与 Cache",
+      "topicId": "triton",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "kernel-foundations"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/triton-ascend/04-ttir-mlir-driver-and-cache.md",
+      "slug": "ascend-kernel-infra--triton-ascend--04-ttir-mlir-driver-and-cache"
+    },
+    {
+      "id": "material-4e6648860750fa70",
+      "sourcePath": "ascend-kernel-infra/triton-ascend/05-persistent-kernel-and-large-grid.md",
+      "title": "Triton-Ascend 05：Persistent Kernel、大 Grid 与 Task Queue 边界",
+      "topicId": "triton",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "kernel-foundations"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/triton-ascend/05-persistent-kernel-and-large-grid.md",
+      "slug": "ascend-kernel-infra--triton-ascend--05-persistent-kernel-and-large-grid"
+    },
+    {
+      "id": "material-b335630551682c19",
+      "sourcePath": "README.md",
+      "title": "SGLang 教学目录",
+      "topicId": "orientation",
+      "role": "navigation",
+      "layer": "overview",
+      "difficulty": "introductory",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/README.md",
+      "slug": null
+    },
+    {
+      "id": "material-0d4086c35b3b7fcb",
+      "sourcePath": "scheduler-architecture/01-architecture.md",
+      "title": "Scheduler 架构总览",
+      "topicId": "scheduler",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "request"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/scheduler-architecture/01-architecture.md",
+      "slug": "scheduler-architecture--01-architecture"
+    },
+    {
+      "id": "material-4075f20df92f0632",
+      "sourcePath": "scheduler-architecture/02-flowcharts.md",
+      "title": "Scheduler 流程图",
+      "topicId": "scheduler",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "request"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/scheduler-architecture/02-flowcharts.md",
+      "slug": "scheduler-architecture--02-flowcharts"
+    },
+    {
+      "id": "material-da995acfd38264e1",
+      "sourcePath": "scheduler-architecture/03-annotated-code-walkthrough.md",
+      "title": "Scheduler 教学版代码导读",
+      "topicId": "scheduler",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "request"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/scheduler-architecture/03-annotated-code-walkthrough.md",
+      "slug": "scheduler-architecture--03-annotated-code-walkthrough"
+    },
+    {
+      "id": "material-4cd238a7917eaf6a",
+      "sourcePath": "scheduler-architecture/04-function-map.md",
+      "title": "Scheduler 函数地图",
+      "topicId": "scheduler",
+      "role": "reference",
+      "layer": "reference",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "request"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/scheduler-architecture/04-function-map.md",
+      "slug": "scheduler-architecture--04-function-map"
+    },
+    {
+      "id": "material-70138ce729a3b6fd",
+      "sourcePath": "scheduler-architecture/05-scheduler-annotated-cn.py",
+      "title": "Scheduler 中文注释源码",
+      "topicId": "scheduler",
+      "role": "annotated-source",
+      "layer": "reference",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "request"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/scheduler-architecture/05-scheduler-annotated-cn.py",
+      "slug": "scheduler-architecture--05-scheduler-annotated-cn"
+    },
+    {
+      "id": "material-db04981c6a519b80",
+      "sourcePath": "scheduler-architecture/README.md",
+      "title": "Scheduler 架构专题",
+      "topicId": "scheduler",
+      "role": "navigation",
+      "layer": "runtime",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "request"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/scheduler-architecture/README.md",
+      "slug": "scheduler-architecture--readme"
+    },
+    {
+      "id": "material-e97c6e689694ea9c",
+      "sourcePath": "sglang-ascend-npu/00-background.md",
+      "title": "00. Ascend NPU 背景知识",
+      "topicId": "ascend-stack",
+      "role": "lesson",
+      "layer": "overview",
+      "difficulty": "introductory",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/00-background.md",
+      "slug": "sglang-ascend-npu--00-background"
+    },
+    {
+      "id": "material-7356e60006b3ae18",
+      "sourcePath": "sglang-ascend-npu/01-environment-and-install.md",
+      "title": "01. 安装与环境：GNU/Linux + Ascend NPU 服务器上跑通 SGLang",
+      "topicId": "ascend-serving",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack",
+        "benchmark"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/01-environment-and-install.md",
+      "slug": "sglang-ascend-npu--01-environment-and-install"
+    },
+    {
+      "id": "material-c71bb4c0d9a4d6c0",
+      "sourcePath": "sglang-ascend-npu/02-ascend-npu-integration-map.md",
+      "title": "SGLang Ascend NPU 接入点与调用图谱",
+      "topicId": "ascend-integration",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/02-ascend-npu-integration-map.md",
+      "slug": "sglang-ascend-npu--02-ascend-npu-integration-map"
+    },
+    {
+      "id": "material-53e31c8a645b3135",
+      "sourcePath": "sglang-ascend-npu/03-launch-and-minimal-serving.md",
+      "title": "03. 隔离环境启动与最小 Serving 跑通",
+      "topicId": "ascend-serving",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack",
+        "benchmark"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/03-launch-and-minimal-serving.md",
+      "slug": "sglang-ascend-npu--03-launch-and-minimal-serving"
+    },
+    {
+      "id": "material-5bb7975ae953c628",
+      "sourcePath": "sglang-ascend-npu/04-npu-backend-args.md",
+      "title": "04. NPU 后端参数与默认值",
+      "topicId": "ascend-integration",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/04-npu-backend-args.md",
+      "slug": "sglang-ascend-npu--04-npu-backend-args"
+    },
+    {
+      "id": "material-f0a5b263010bf3f5",
+      "sourcePath": "sglang-ascend-npu/05-attention-kv-cache.md",
+      "title": "05. Ascend Attention、KV Cache 与 HiCache",
+      "topicId": "cache",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "attention"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/05-attention-kv-cache.md",
+      "slug": "sglang-ascend-npu--05-attention-kv-cache"
+    },
+    {
+      "id": "material-11f588034f0d46bc",
+      "sourcePath": "sglang-ascend-npu/06-npu-graph-compilation.md",
+      "title": "06. NPU Graph 与 Piecewise Compilation",
+      "topicId": "graph",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/06-npu-graph-compilation.md",
+      "slug": "sglang-ascend-npu--06-npu-graph-compilation"
+    },
+    {
+      "id": "material-fa8d1ccd18c05e58",
+      "sourcePath": "sglang-ascend-npu/07-distributed-hccl-tp.md",
+      "title": "07. 分布式、HCCL 与 Tensor Parallel",
+      "topicId": "parallel",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/07-distributed-hccl-tp.md",
+      "slug": "sglang-ascend-npu--07-distributed-hccl-tp"
+    },
+    {
+      "id": "material-2996b7c362b9ea72",
+      "sourcePath": "sglang-ascend-npu/08-ascend-pd-disaggregation.md",
+      "title": "08. Ascend PD Disaggregation 与 KV Transfer",
+      "topicId": "pd-transfer",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/08-ascend-pd-disaggregation.md",
+      "slug": "sglang-ascend-npu--08-ascend-pd-disaggregation"
+    },
+    {
+      "id": "material-c253ca581bee1c05",
+      "sourcePath": "sglang-ascend-npu/09-lora-moe-feature-branches.md",
+      "title": "09. Ascend LoRA、MoE、量化与特性分支",
+      "topicId": "ascend-integration",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/09-lora-moe-feature-branches.md",
+      "slug": "sglang-ascend-npu--09-lora-moe-feature-branches"
+    },
+    {
+      "id": "material-d40231a89f8cc894",
+      "sourcePath": "sglang-ascend-npu/10-benchmark-debugging.md",
+      "title": "10. Benchmark、Profiling 与排错",
+      "topicId": "benchmark",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/10-benchmark-debugging.md",
+      "slug": "sglang-ascend-npu--10-benchmark-debugging"
+    },
+    {
+      "id": "material-feb82f798104f51c",
+      "sourcePath": "sglang-ascend-npu/11-performance-optimization-work-map.md",
+      "title": "11. SGLang NPU 推理优化工作地图",
+      "topicId": "profiling",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "benchmark",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/11-performance-optimization-work-map.md",
+      "slug": "sglang-ascend-npu--11-performance-optimization-work-map"
+    },
+    {
+      "id": "material-456c22040719aa07",
+      "sourcePath": "sglang-ascend-npu/12-npu-profiling-guide.md",
+      "title": "12. SGLang-NPU Profiling 详细教学",
+      "topicId": "profiling",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "benchmark",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/12-npu-profiling-guide.md",
+      "slug": "sglang-ascend-npu--12-npu-profiling-guide"
+    },
+    {
+      "id": "material-b97d014d419d526a",
+      "sourcePath": "sglang-ascend-npu/13-run-models-by-scenario.md",
+      "title": "13. SGLang NPU 多场景模型运行手册",
+      "topicId": "ascend-serving",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack",
+        "benchmark"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/13-run-models-by-scenario.md",
+      "slug": "sglang-ascend-npu--13-run-models-by-scenario"
+    },
+    {
+      "id": "material-ec716fc9c4d417b2",
+      "sourcePath": "sglang-ascend-npu/14-performance-testing.md",
+      "title": "14. SGLang Ascend NPU 性能测试",
+      "topicId": "benchmark",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/14-performance-testing.md",
+      "slug": "sglang-ascend-npu--14-performance-testing"
+    },
+    {
+      "id": "material-ca4acdf1faa51dea",
+      "sourcePath": "sglang-ascend-npu/15-accuracy-testing-and-debugging.md",
+      "title": "15. SGLang Ascend NPU 精度测试与问题定位",
+      "topicId": "accuracy",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "benchmark",
+        "loading"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/15-accuracy-testing-and-debugging.md",
+      "slug": "sglang-ascend-npu--15-accuracy-testing-and-debugging"
+    },
+    {
+      "id": "material-bda44cbb143c0d95",
+      "sourcePath": "sglang-ascend-npu/README.md",
+      "title": "SGLang Ascend NPU 实践总览",
+      "topicId": "ascend-stack",
+      "role": "navigation",
+      "layer": "overview",
+      "difficulty": "introductory",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/README.md",
+      "slug": "sglang-ascend-npu--readme"
+    },
+    {
+      "id": "material-9f7cce1b8dbb4458",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/01-sglang-npu-component-map.md",
+      "title": "第一讲：SGLang NPU 全组件与双仓目录总览",
+      "topicId": "ascend-integration",
+      "role": "lesson",
+      "layer": "overview",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/01-sglang-npu-component-map.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--01-sglang-npu-component-map"
+    },
+    {
+      "id": "material-a03156ce180ea94c",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/05-npu-graph-and-compilation.md",
+      "title": "05：计算图、torch.compile 与 SGLang NPU Graph 源码全链路",
+      "topicId": "graph",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/05-npu-graph-and-compilation.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--05-npu-graph-and-compilation"
+    },
+    {
+      "id": "material-0b410159b82618d4",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/15-distributed-hccl-and-communication.md",
+      "title": "第十五讲：LayerCommunicator、HCCL 与层边界通信",
+      "topicId": "attention-dp",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "parallel",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/15-distributed-hccl-and-communication.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--15-distributed-hccl-and-communication"
+    },
+    {
+      "id": "material-7ff6dd4a66b999a6",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/examples/00-glm-4.7-flash-end-to-end.md",
+      "title": "端到端样例：GLM-4.7-Flash 在 SGLang Ascend NPU 中的完整执行路径",
+      "topicId": "case-glm47",
+      "role": "case-study",
+      "layer": "case-study",
+      "difficulty": "advanced",
+      "platforms": [
+        "general",
+        "ascend"
+      ],
+      "prerequisites": [
+        "attention",
+        "moe",
+        "execution",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/examples/00-glm-4.7-flash-end-to-end.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--examples--00-glm-4-7-flash-end-to-end"
+    },
+    {
+      "id": "material-1743e199a9e6fc50",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/examples/01-qwen3.5-hybrid-end-to-end.md",
+      "title": "端到端样例：Qwen3.5 Hybrid 在 SGLang Ascend NPU 中的完整执行路径",
+      "topicId": "case-qwen35",
+      "role": "case-study",
+      "layer": "case-study",
+      "difficulty": "advanced",
+      "platforms": [
+        "general",
+        "ascend"
+      ],
+      "prerequisites": [
+        "gdn",
+        "execution",
+        "cache"
+      ],
+      "languages": [
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/examples/01-qwen3.5-hybrid-end-to-end.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--examples--01-qwen3-5-hybrid-end-to-end"
+    },
+    {
+      "id": "material-21d710169b9eb535",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/examples/02-glm-5.2-end-to-end.md",
+      "title": "端到端样例：GLM-5.2 在 SGLang Ascend NPU 中的完整执行路径",
+      "topicId": "case-glm52",
+      "role": "case-study",
+      "layer": "case-study",
+      "difficulty": "advanced",
+      "platforms": [
+        "general",
+        "ascend"
+      ],
+      "prerequisites": [
+        "sparse-attention",
+        "moe",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/examples/02-glm-5.2-end-to-end.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--examples--02-glm-5-2-end-to-end"
+    },
+    {
+      "id": "material-94b522b0f6ff88db",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/examples/03-glm-5.3-flash-end-to-end.md",
+      "title": "端到端样例：GLM-5.3-Flash 的 Hybrid KDA、NoPE 稀疏 MLA、mHC 与多模态执行链",
+      "topicId": "case-glm53",
+      "role": "case-study",
+      "layer": "case-study",
+      "difficulty": "advanced",
+      "platforms": [
+        "general",
+        "ascend"
+      ],
+      "prerequisites": [
+        "kda",
+        "sparse-attention",
+        "residual",
+        "moe",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/examples/03-glm-5.3-flash-end-to-end.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--examples--03-glm-5-3-flash-end-to-end"
+    },
+    {
+      "id": "material-4fe92c8681ec2af9",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/examples/glm53_flash_shape_demo.py",
+      "title": "GLM-5.3-Flash CPU Shape 自检",
+      "topicId": "case-glm53",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "advanced",
+      "platforms": [
+        "cpu"
+      ],
+      "prerequisites": [
+        "kda",
+        "sparse-attention",
+        "residual",
+        "moe",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/examples/glm53_flash_shape_demo.py",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--examples--glm53-flash-shape-demo"
+    },
+    {
+      "id": "material-be4968b51722a2c5",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/00-reading-method-and-branch-search.md",
+      "title": "00. 源码阅读方法与 Ascend 分支搜索法",
+      "topicId": "source-map",
+      "role": "reference",
+      "layer": "reference",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/foundation/00-reading-method-and-branch-search.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--foundation--00-reading-method-and-branch-search"
+    },
+    {
+      "id": "material-6d21ab8ac46cec8c",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/01-platform-detection-and-process-startup.md",
+      "title": "01. NPU 平台识别与进程启动",
+      "topicId": "ascend-integration",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/foundation/01-platform-detection-and-process-startup.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--foundation--01-platform-detection-and-process-startup"
+    },
+    {
+      "id": "material-6ebde78796b3eb8d",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/02-server-args-and-npu-defaults.md",
+      "title": "02. ServerArgs 校验与 NPU 默认参数",
+      "topicId": "ascend-integration",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/foundation/02-server-args-and-npu-defaults.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--foundation--02-server-args-and-npu-defaults"
+    },
+    {
+      "id": "material-3393279902f0af5d",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/03-request-lifecycle-npu-branch-points.md",
+      "title": "03. 请求主链路中的 NPU 接入点",
+      "topicId": "request",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "intermediate",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/foundation/03-request-lifecycle-npu-branch-points.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--foundation--03-request-lifecycle-npu-branch-points"
+    },
+    {
+      "id": "material-be190d242f7586a8",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/04-model-loading-dtype-and-layout.md",
+      "title": "04. 模型加载、权重放置与 dtype/layout",
+      "topicId": "loading",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "transformer",
+        "source-map"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/foundation/04-model-loading-dtype-and-layout.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--foundation--04-model-loading-dtype-and-layout"
+    },
+    {
+      "id": "material-bf774215e0be0518",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/05-model-runner-forward-batch-and-input-buffers.md",
+      "title": "05. ModelRunner、ForwardBatch 与设备输入缓冲区",
+      "topicId": "execution",
+      "role": "lesson",
+      "layer": "platform",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "scheduler",
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/foundation/05-model-runner-forward-batch-and-input-buffers.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--foundation--05-model-runner-forward-batch-and-input-buffers"
+    },
+    {
+      "id": "material-219748759f50a987",
+      "sourcePath": "sglang-ascend-npu/source-code-walkthrough/README.md",
+      "title": "SGLang Ascend NPU 源码串讲",
+      "topicId": "ascend-integration",
+      "role": "navigation",
+      "layer": "overview",
+      "difficulty": "advanced",
+      "platforms": [
+        "ascend"
+      ],
+      "prerequisites": [
+        "ascend-stack",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md",
+      "slug": "sglang-ascend-npu--source-code-walkthrough--readme"
+    },
+    {
+      "id": "material-2c7c4dc252cc2c81",
+      "sourcePath": "sglang-source-reading/00-overview/00-feature-map.md",
+      "title": "SGLang 特性地图：读源码前先认识这些分支",
+      "topicId": "source-map",
+      "role": "lesson",
+      "layer": "overview",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/00-overview/00-feature-map.md",
+      "slug": "sglang-source-reading--00-overview--00-feature-map"
+    },
+    {
+      "id": "material-a6feec46fd73e228",
+      "sourcePath": "sglang-source-reading/00-overview/01-public-components-code-walkthrough.md",
+      "title": "SGLang 公共组件全景与 Code Walkthrough",
+      "topicId": "source-map",
+      "role": "lesson",
+      "layer": "overview",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/00-overview/01-public-components-code-walkthrough.md",
+      "slug": "sglang-source-reading--00-overview--01-public-components-code-walkthrough"
+    },
+    {
+      "id": "material-e9e7c65d36883f50",
+      "sourcePath": "sglang-source-reading/01-entry-routing/01-request-lifecycle.md",
+      "title": "第 1 讲：一次 ChatCompletion 请求的完整生命周期",
+      "topicId": "request",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/01-entry-routing/01-request-lifecycle.md",
+      "slug": "sglang-source-reading--01-entry-routing--01-request-lifecycle"
+    },
+    {
+      "id": "material-2358a5b32bde1c1b",
+      "sourcePath": "sglang-source-reading/01-entry-routing/09-router.md",
+      "title": "第 9 讲：SGLang Router 架构与源码解析",
+      "topicId": "service-router",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "request"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/01-entry-routing/09-router.md",
+      "slug": "sglang-source-reading--01-entry-routing--09-router"
+    },
+    {
+      "id": "material-e447c4047351300f",
+      "sourcePath": "sglang-source-reading/01-entry-routing/10-sgl-router-source-deep-dive.md",
+      "title": "第 10 讲：sgl-router 源码深潜",
+      "topicId": "service-router",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "request"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/01-entry-routing/10-sgl-router-source-deep-dive.md",
+      "slug": "sglang-source-reading--01-entry-routing--10-sgl-router-source-deep-dive"
+    },
+    {
+      "id": "material-1264326359fab64f",
+      "sourcePath": "sglang-source-reading/02-scheduler-runtime/02-scheduler-core.md",
+      "title": "第 2 讲：Scheduler 调度核心",
+      "topicId": "scheduler",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "request"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/02-scheduler-runtime/02-scheduler-core.md",
+      "slug": "sglang-source-reading--02-scheduler-runtime--02-scheduler-core"
+    },
+    {
+      "id": "material-686746ea22c6eae0",
+      "sourcePath": "sglang-source-reading/02-scheduler-runtime/06-multiprocess-distributed.md",
+      "title": "第 6 讲：多进程 / 多卡 / 分布式执行",
+      "topicId": "parallel",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/02-scheduler-runtime/06-multiprocess-distributed.md",
+      "slug": "sglang-source-reading--02-scheduler-runtime--06-multiprocess-distributed"
+    },
+    {
+      "id": "material-d31576b38af69950",
+      "sourcePath": "sglang-source-reading/03-cache-memory/03-kv-cache-radix-cache.md",
+      "title": "第 3 讲：KV Cache、Radix Cache 与 HiCache",
+      "topicId": "cache",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "attention"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/03-cache-memory/03-kv-cache-radix-cache.md",
+      "slug": "sglang-source-reading--03-cache-memory--03-kv-cache-radix-cache"
+    },
+    {
+      "id": "material-b7166a5a64e2d49a",
+      "sourcePath": "sglang-source-reading/04-model-execution/04-model-runner-attention.md",
+      "title": "第 4 讲：ModelRunner 与 Attention Backend",
+      "topicId": "execution",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "scheduler",
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/04-model-execution/04-model-runner-attention.md",
+      "slug": "sglang-source-reading--04-model-execution--04-model-runner-attention"
+    },
+    {
+      "id": "material-d4d25b7a639a05ac",
+      "sourcePath": "sglang-source-reading/05-layer-communication/01-layer-communicator-and-common-layers.md",
+      "title": "Layer 层、LayerCommunicator 与通用算子源码导读",
+      "topicId": "attention-dp",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "parallel",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/05-layer-communication/01-layer-communicator-and-common-layers.md",
+      "slug": "sglang-source-reading--05-layer-communication--01-layer-communicator-and-common-layers"
+    },
+    {
+      "id": "material-53e6143aad6cf0ba",
+      "sourcePath": "sglang-source-reading/05-layer-communication/02-tp-dp-ep-sharding-and-ascend-npu.md",
+      "title": "TP、DP、EP 如何真正完成切分：从 rank 拓扑到 Ascend NPU 执行",
+      "topicId": "parallel",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general",
+        "ascend"
+      ],
+      "prerequisites": [
+        "transformer",
+        "communication"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/05-layer-communication/02-tp-dp-ep-sharding-and-ascend-npu.md",
+      "slug": "sglang-source-reading--05-layer-communication--02-tp-dp-ep-sharding-and-ascend-npu"
+    },
+    {
+      "id": "material-5e9a520fa7c90172",
+      "sourcePath": "sglang-source-reading/05-layer-communication/03-dp-attention-code-walkthrough.md",
+      "title": "SGLang DP Attention 源码走读：从请求分发到下一层与 logits",
+      "topicId": "attention-dp",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "parallel",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/05-layer-communication/03-dp-attention-code-walkthrough.md",
+      "slug": "sglang-source-reading--05-layer-communication--03-dp-attention-code-walkthrough"
+    },
+    {
+      "id": "material-21056ca3e448fd2f",
+      "sourcePath": "sglang-source-reading/05-layer-communication/04-prefill-context-parallel-code-walkthrough.md",
+      "title": "SGLang PCP 源码走读：从参数到 query 分片、KV 交换与输出恢复",
+      "topicId": "context-parallel",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general",
+        "ascend"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/05-layer-communication/04-prefill-context-parallel-code-walkthrough.md",
+      "slug": "sglang-source-reading--05-layer-communication--04-prefill-context-parallel-code-walkthrough"
+    },
+    {
+      "id": "material-24a1dcc6f0dde04a",
+      "sourcePath": "sglang-source-reading/05-layer-communication/pcp_layout_trace_demo.py",
+      "title": "PCP CPU 布局追踪实验",
+      "topicId": "context-parallel",
+      "role": "experiment",
+      "layer": "experiment",
+      "difficulty": "advanced",
+      "platforms": [
+        "cpu"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/05-layer-communication/pcp_layout_trace_demo.py",
+      "slug": "sglang-source-reading--05-layer-communication--pcp-layout-trace-demo"
+    },
+    {
+      "id": "material-6748fb4df2c4f9a4",
+      "sourcePath": "sglang-source-reading/06-advanced-features/05-speculative-decoding.md",
+      "title": "第 5 讲：Speculative Decoding",
+      "topicId": "speculation",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/06-advanced-features/05-speculative-decoding.md",
+      "slug": "sglang-source-reading--06-advanced-features--05-speculative-decoding"
+    },
+    {
+      "id": "material-ac55f09512a5823d",
+      "sourcePath": "sglang-source-reading/06-advanced-features/07-disaggregation-pd.md",
+      "title": "第 7 讲：Disaggregation / PD 分离",
+      "topicId": "pd-transfer",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "parallel",
+        "cache"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/06-advanced-features/07-disaggregation-pd.md",
+      "slug": "sglang-source-reading--06-advanced-features--07-disaggregation-pd"
+    },
+    {
+      "id": "material-c90fcaa492d46a2d",
+      "sourcePath": "sglang-source-reading/06-advanced-features/08-lora-serving.md",
+      "title": "第 8 讲：LoRA Serving / Adapter 热加载",
+      "topicId": "lora",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/06-advanced-features/08-lora-serving.md",
+      "slug": "sglang-source-reading--06-advanced-features--08-lora-serving"
+    },
+    {
+      "id": "material-5d6758520be26691",
+      "sourcePath": "sglang-source-reading/06-advanced-features/09-dspark-code-walkthrough.md",
+      "title": "SGLang DSpark 端到端源码走读",
+      "topicId": "dspark",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "speculation",
+        "execution"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/06-advanced-features/09-dspark-code-walkthrough.md",
+      "slug": "sglang-source-reading--06-advanced-features--09-dspark-code-walkthrough"
+    },
+    {
+      "id": "material-7276764cbe31b796",
+      "sourcePath": "sglang-source-reading/README.md",
+      "title": "SGLang 源码阅读笔记",
+      "topicId": "source-map",
+      "role": "navigation",
+      "layer": "overview",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "inference"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-source-reading/README.md",
+      "slug": "sglang-source-reading--readme"
+    },
+    {
+      "id": "material-1445a1cf3353eee3",
+      "sourcePath": "tp-worker-model-runner/01-architecture.md",
+      "title": "架构总览",
+      "topicId": "execution",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "scheduler",
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/tp-worker-model-runner/01-architecture.md",
+      "slug": "tp-worker-model-runner--01-architecture"
+    },
+    {
+      "id": "material-e7df180231a12de2",
+      "sourcePath": "tp-worker-model-runner/02-flowcharts.md",
+      "title": "详细流程图",
+      "topicId": "execution",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "scheduler",
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/tp-worker-model-runner/02-flowcharts.md",
+      "slug": "tp-worker-model-runner--02-flowcharts"
+    },
+    {
+      "id": "material-c5202579e56104b4",
+      "sourcePath": "tp-worker-model-runner/03-function-map.md",
+      "title": "函数与代码段定位",
+      "topicId": "execution",
+      "role": "reference",
+      "layer": "reference",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "scheduler",
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/tp-worker-model-runner/03-function-map.md",
+      "slug": "tp-worker-model-runner--03-function-map"
+    },
+    {
+      "id": "material-2afc32f5916c5dca",
+      "sourcePath": "tp-worker-model-runner/04-tp-worker-annotated-cn.py",
+      "title": "TpModelWorker 中文注释源码",
+      "topicId": "execution",
+      "role": "annotated-source",
+      "layer": "reference",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "scheduler",
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/tp-worker-model-runner/04-tp-worker-annotated-cn.py",
+      "slug": "tp-worker-model-runner--04-tp-worker-annotated-cn"
+    },
+    {
+      "id": "material-9a9d4c4f611f5a66",
+      "sourcePath": "tp-worker-model-runner/05-model-runner-annotated-cn.py",
+      "title": "ModelRunner 中文注释源码",
+      "topicId": "execution",
+      "role": "annotated-source",
+      "layer": "reference",
+      "difficulty": "advanced",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "scheduler",
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/tp-worker-model-runner/05-model-runner-annotated-cn.py",
+      "slug": "tp-worker-model-runner--05-model-runner-annotated-cn"
+    },
+    {
+      "id": "material-172d91258cbad6b9",
+      "sourcePath": "tp-worker-model-runner/06-model-loading-and-architecture-resolution.md",
+      "title": "第 6 讲：ModelRunner 如何识别并加载不同模型",
+      "topicId": "loading",
+      "role": "lesson",
+      "layer": "runtime",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "transformer",
+        "source-map"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/tp-worker-model-runner/06-model-loading-and-architecture-resolution.md",
+      "slug": "tp-worker-model-runner--06-model-loading-and-architecture-resolution"
+    },
+    {
+      "id": "material-588f76f24a57e7bf",
+      "sourcePath": "tp-worker-model-runner/README.md",
+      "title": "TP Worker 与 ModelRunner 教学目录",
+      "topicId": "execution",
+      "role": "navigation",
+      "layer": "runtime",
+      "difficulty": "intermediate",
+      "platforms": [
+        "general"
+      ],
+      "prerequisites": [
+        "scheduler",
+        "transformer"
+      ],
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/tp-worker-model-runner/README.md",
+      "slug": "tp-worker-model-runner--readme"
+    }
+  ],
+  "planned": [
+    {
+      "title": "平台与运行时接入",
+      "topicId": "ascend-integration",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "Ascend Attention / MLA",
+      "topicId": "attention",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "KV Cache 与 Allocator",
+      "topicId": "cache",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "Norm / RoPE / Activation",
+      "topicId": "kernel-cases",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "量化与 Linear",
+      "topicId": "quantization",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "MoE 计算与融合专家",
+      "topicId": "moe",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "DeepEP-Ascend 与 EP",
+      "topicId": "expert-parallel",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "Ascend LoRA",
+      "topicId": "lora",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "FLA / Mamba / Hybrid",
+      "topicId": "hybrid-cache",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "Ascend 投机解码",
+      "topicId": "speculation",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "采样与约束解码",
+      "topicId": "request",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "模型与多模态适配",
+      "topicId": "families",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "Ascend PD 与 KV 传输",
+      "topicId": "pd-transfer",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "工具算子与内存优化",
+      "topicId": "kernel-cases",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "构建、注册与双仓验证",
+      "topicId": "custom-op",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/sglang-ascend-npu/source-code-walkthrough/README.md"
+    },
+    {
+      "title": "DeepEP Fused MoE",
+      "topicId": "kernel-cases",
+      "sourceUrl": "https://github.com/cl-vv-h/SGLang_Tutor/blob/19be702f0842301583b6d84a98c9e42a9f9b35e5/learning/zh/ascend-kernel-infra/ROADMAP.md"
+    }
+  ]
+}

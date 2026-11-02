@@ -92,6 +92,213 @@
     "sourcePath": "ai-infra-basic/Benchmark_Profiling/README.md"
   },
   {
+    "id": "curriculum-ai-infra-basic--communication--01-communication-primitives-and-costs",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Communication",
+      "Distributed"
+    ],
+    "title": "01. 通信原语、张量布局与成本模型",
+    "titleEn": "01. Communication Primitives, Tensor Layouts, and Cost Models",
+    "slug": "ai-infra-basic--communication--01-communication-primitives-and-costs",
+    "summary": "rank 是通信组里的进程编号；一进程一卡很常见，但 rank 不是物理 device id。一个进程可以同时属于 TP、EP、PP 等不同组，同一个 collective 必须在约定的组内解释。",
+    "summaryEn": "01. Communication Primitives, Tensor Layouts, and Cost Models",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "8 min",
+    "date": "持续更新",
+    "prevArticleId": null,
+    "nextArticleId": "curriculum-ai-infra-basic--communication--02-links-rdma-and-memory",
+    "sourcePath": "ai-infra-basic/Communication/01-communication-primitives-and-costs.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--communication--02-links-rdma-and-memory",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Communication",
+      "Distributed"
+    ],
+    "title": "02. 链路、RDMA、注册内存与完成语义",
+    "titleEn": "02. Links, RDMA, Registered Memory, and Completion Semantics",
+    "slug": "ai-infra-basic--communication--02-links-rdma-and-memory",
+    "summary": "名字 是什么 不能据此推断什么 --------- PCIe CPU、加速器、NIC 等设备间的互连 插在同一机器就一定有最优 P2P 路径 NVLink / NVSwitch NVIDIA GPU 高速互连及交换能力 所有 GPU 对都有相同带宽，或所有集群边界都相同 HCCS Ascend…",
+    "summaryEn": "02. Links, RDMA, Registered Memory, and Completion Semantics",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "6 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--communication--01-communication-primitives-and-costs",
+    "nextArticleId": "curriculum-ai-infra-basic--communication--03-collective-libraries-gloo-nccl-hccl",
+    "sourcePath": "ai-infra-basic/Communication/02-links-rdma-and-memory.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--communication--03-collective-libraries-gloo-nccl-hccl",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Communication",
+      "Distributed"
+    ],
+    "title": "03. Gloo、NCCL、RCCL、HCCL 与 ProcessGroup",
+    "titleEn": "03. Gloo, NCCL, RCCL, HCCL, and ProcessGroup",
+    "slug": "ai-infra-basic--communication--03-collective-libraries-gloo-nccl-hccl",
+    "summary": "03. Gloo、NCCL、RCCL、HCCL 与 ProcessGroup",
+    "summaryEn": "03. Gloo, NCCL, RCCL, HCCL, and ProcessGroup",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "7 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--communication--02-links-rdma-and-memory",
+    "nextArticleId": "curriculum-ai-infra-basic--communication--04-moe-deepep-and-zbal",
+    "sourcePath": "ai-infra-basic/Communication/03-collective-libraries-gloo-nccl-hccl.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--communication--04-moe-deepep-and-zbal",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Communication",
+      "Distributed"
+    ],
+    "title": "04. MoE token 通信：DeepEP 与 SGLang NPU 的 ZBAL",
+    "titleEn": "04. MoE Token Communication: DeepEP and ZBAL in SGLang NPU",
+    "slug": "ai-infra-basic--communication--04-moe-deepep-and-zbal",
+    "summary": "04. MoE token 通信：DeepEP 与 SGLang NPU 的 ZBAL",
+    "summaryEn": "04. MoE Token Communication: DeepEP and ZBAL in SGLang NPU",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "10 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--communication--03-collective-libraries-gloo-nccl-hccl",
+    "nextArticleId": "curriculum-ai-infra-basic--communication--05-kv-transfer-mooncake-and-nixl",
+    "sourcePath": "ai-infra-basic/Communication/04-moe-deepep-and-zbal.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--communication--05-kv-transfer-mooncake-and-nixl",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Communication",
+      "Distributed"
+    ],
+    "title": "05. PD/KV 传输：Mooncake、NIXL 与 Ascend TransferEngine",
+    "titleEn": "05. PD/KV Transfer: Mooncake, NIXL, and Ascend TransferEngine",
+    "slug": "ai-infra-basic--communication--05-kv-transfer-mooncake-and-nixl",
+    "summary": "05. PD/KV 传输：Mooncake、NIXL 与 Ascend TransferEngine",
+    "summaryEn": "05. PD/KV Transfer: Mooncake, NIXL, and Ascend TransferEngine",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "9 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--communication--04-moe-deepep-and-zbal",
+    "nextArticleId": "curriculum-ai-infra-basic--communication--06-sglang-paths-and-performance",
+    "sourcePath": "ai-infra-basic/Communication/05-kv-transfer-mooncake-and-nixl.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--communication--06-sglang-paths-and-performance",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Communication",
+      "Distributed"
+    ],
+    "title": "06. 从 SGLang 调用路径到通信性能排查",
+    "titleEn": "06. From SGLang Call Paths to Communication Performance Diagnosis",
+    "slug": "ai-infra-basic--communication--06-sglang-paths-and-performance",
+    "summary": "入口：communicator.py、communicationop.py、parallelstate.py。NPU wrapper 见 npucommunicator.py。",
+    "summaryEn": "06. From SGLang Call Paths to Communication Performance Diagnosis",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "9 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--communication--05-kv-transfer-mooncake-and-nixl",
+    "nextArticleId": "curriculum-ai-infra-basic--communication--07-zbal-zero-buffer-source-dataflow",
+    "sourcePath": "ai-infra-basic/Communication/06-sglang-paths-and-performance.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--communication--07-zbal-zero-buffer-source-dataflow",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Communication",
+      "Distributed"
+    ],
+    "title": "07. ZBAL 的 zero buffer：从分配器、远端地址到 MoE 数据流",
+    "titleEn": "07. ZBAL Zero Buffer: Allocators, Remote Addresses, and MoE Dataflow",
+    "slug": "ai-infra-basic--communication--07-zbal-zero-buffer-source-dataflow",
+    "summary": "07. ZBAL 的 zero buffer：从分配器、远端地址到 MoE 数据流",
+    "summaryEn": "07. ZBAL Zero Buffer: Allocators, Remote Addresses, and MoE Dataflow",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "25 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--communication--06-sglang-paths-and-performance",
+    "nextArticleId": "curriculum-ai-infra-basic--communication--communication-semantics-demo",
+    "sourcePath": "ai-infra-basic/Communication/07-zbal-zero-buffer-source-dataflow.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--communication--communication-semantics-demo",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Communication",
+      "Distributed"
+    ],
+    "title": "Single-process communication semantics; no network or hardware benchmark.",
+    "titleEn": "Single-process communication semantics; no network or hardware benchmark.",
+    "slug": "ai-infra-basic--communication--communication-semantics-demo",
+    "summary": "\"\"\"Single-process communication semantics; no network or hardware benchmark.",
+    "summaryEn": "\"\"\"Single-process communication semantics; no network or hardware benchmark.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "10 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--communication--07-zbal-zero-buffer-source-dataflow",
+    "nextArticleId": "curriculum-ai-infra-basic--communication--readme",
+    "sourcePath": "ai-infra-basic/Communication/communication_semantics_demo.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--communication--readme",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Communication",
+      "Distributed"
+    ],
+    "title": "AI Infra 通信：从张量语义到 GPU/NPU 数据路径",
+    "titleEn": "AI Infra Communication: Tensor Semantics and GPU/NPU Data Paths",
+    "slug": "ai-infra-basic--communication--readme",
+    "summary": "多卡推理的通信至少包含三件不同的事：TP 合并局部计算结果，MoE 把 token 送到专家再送回来，PD 分离把 KV 交给另一个实例。先分清传什么、传给谁、何时可用，再选通信库。",
+    "summaryEn": "AI Infra Communication: Tensor Semantics and GPU/NPU Data Paths",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "7 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--communication--communication-semantics-demo",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--00-parallelism-map-and-version-boundaries",
+    "sourcePath": "ai-infra-basic/Communication/README.md"
+  },
+  {
     "id": "curriculum-ai-infra-basic--execution-graph--01-what-is-graph",
     "categoryId": "cat-9",
     "subCategoryId": "sub-9-1",
@@ -732,8 +939,54 @@
     "readTime": "12 min",
     "date": "持续更新",
     "prevArticleId": "curriculum-ai-infra-basic--model-architecture--08-compressed-sparse-attention",
-    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--readme",
+    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--10-manifold-constrained-hyper-connections",
     "sourcePath": "ai-infra-basic/Model_Architecture/09-kimi-delta-attention.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--model-architecture--10-manifold-constrained-hyper-connections",
+    "categoryId": "cat-5",
+    "subCategoryId": "sub-5-1",
+    "tags": [
+      "Architecture",
+      "LLM"
+    ],
+    "title": "mHC 原理：从普通残差连接到受约束的多路信息流",
+    "titleEn": "mHC Principles: From Ordinary Residual Connections to Constrained Multi-Stream Dataflow",
+    "slug": "ai-infra-basic--model-architecture--10-manifold-constrained-hyper-connections",
+    "summary": "mHC 的全称是 Manifold-Constrained Hyper-Connections，可译为“流形约束超连接”。它改造的是 Attention / FFN 周围的残差连接，不是另一种 Attention、MoE 路由或跨卡通信算法。",
+    "summaryEn": "mHC Principles: From Ordinary Residual Connections to Constrained Multi-Stream Dataflow",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "27 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--09-kimi-delta-attention",
+    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--mhc-principles-demo",
+    "sourcePath": "ai-infra-basic/Model_Architecture/10-manifold-constrained-hyper-connections.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--model-architecture--mhc-principles-demo",
+    "categoryId": "cat-5",
+    "subCategoryId": "sub-5-1",
+    "tags": [
+      "Architecture",
+      "LLM"
+    ],
+    "title": "!/usr/bin/env python3",
+    "titleEn": "!/usr/bin/env python3",
+    "slug": "ai-infra-basic--model-architecture--mhc-principles-demo",
+    "summary": "!/usr/bin/env python3 \"\"\"mHC principles: standard-library mathematics, not a production kernel.",
+    "summaryEn": "!/usr/bin/env python3 \"\"\"mHC principles: standard-library mathematics, not a production kernel.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "26 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--10-manifold-constrained-hyper-connections",
+    "nextArticleId": "curriculum-ai-infra-basic--model-architecture--readme",
+    "sourcePath": "ai-infra-basic/Model_Architecture/mhc_principles_demo.py"
   },
   {
     "id": "curriculum-ai-infra-basic--model-architecture--readme",
@@ -754,9 +1007,262 @@
     ],
     "readTime": "5 min",
     "date": "持续更新",
-    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--09-kimi-delta-attention",
+    "prevArticleId": "curriculum-ai-infra-basic--model-architecture--mhc-principles-demo",
     "nextArticleId": null,
     "sourcePath": "ai-infra-basic/Model_Architecture/README.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--00-parallelism-map-and-version-boundaries",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "00. 并行策略地图：先看切分对象，再看执行阶段",
+    "titleEn": "00. A Parallelism Map: Partitioned Objects and Execution Phases",
+    "slug": "ai-infra-basic--parallel-strategy--00-parallelism-map-and-version-boundaries",
+    "summary": "把一台餐厅想成一次模型服务：DP 多开完整分店，TP 让多人协作完成一道菜，PP 把工序分给不同工作台，EP 把菜送到不同专科厨师。SP、PCP、DCP 都可能切 token 维，但切的是哪个阶段、哪类中间量、历史由谁保存，决定了它们完全不同的执行协议。",
+    "summaryEn": "00. A Parallelism Map: Partitioned Objects and Execution Phases",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "7 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--communication--readme",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--01-dp-attention-principles",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/00-parallelism-map-and-version-boundaries.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--01-dp-attention-principles",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "DP Attention：请求并行、Attention 子组与 FFN/MoE 的布局切换",
+    "titleEn": "DP Attention: Request Parallelism, Attention Subgroups, and FFN/MoE Layout Changes",
+    "slug": "ai-infra-basic--parallel-strategy--01-dp-attention-principles",
+    "summary": "DP Attention：请求并行、Attention 子组与 FFN/MoE 的布局切换",
+    "summaryEn": "DP Attention: Request Parallelism, Attention Subgroups, and FFN/MoE Layout Changes",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "43 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--00-parallelism-map-and-version-boundaries",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--02-sp-versus-context-parallelism",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/01-dp-attention-principles.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--02-sp-versus-context-parallelism",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "02. 从零理解 SP：切哪些数据、怎样计算，以及它与 CP 的区别",
+    "titleEn": "02. SP from first principles: data layout, computation, and comparison with CP",
+    "slug": "ai-infra-basic--parallel-strategy--02-sp-versus-context-parallelism",
+    "summary": "02. 从零理解 SP：切哪些数据、怎样计算，以及它与 CP 的区别",
+    "summaryEn": "02. SP from first principles: data layout, computation, and comparison with CP",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "31 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--01-dp-attention-principles",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--03-prefill-context-parallelism",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/02-sp-versus-context-parallelism.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--03-prefill-context-parallelism",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "03. PCP：把长 prompt 的 query 工作分给多张卡",
+    "titleEn": "03. PCP: Share Long-Prompt Query Work Across Devices",
+    "slug": "ai-infra-basic--parallel-strategy--03-prefill-context-parallelism",
+    "summary": "Prefill 要计算许多新 token 的 query，还可能执行 DSA indexer 等工作。PCP（Prefill Context Parallelism）把这些 query 行分给 attention CP 组；每个 rank 只负责一部分行，但每行仍须看见正确的因果历史。",
+    "summaryEn": "03. PCP: Share Long-Prompt Query Work Across Devices",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "25 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--02-sp-versus-context-parallelism",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--04-decode-context-parallelism",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/03-prefill-context-parallelism.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--04-decode-context-parallelism",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "04. DCP：分历史 KV，用正确的 softmax 合并局部答案",
+    "titleEn": "04. DCP: Partition Historical KV and Merge Attention Correctly",
+    "slug": "ai-infra-basic--parallel-strategy--04-decode-context-parallelism",
+    "summary": "04. DCP：分历史 KV，用正确的 softmax 合并局部答案",
+    "summaryEn": "04. DCP: Partition Historical KV and Merge Attention Correctly",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "26 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--03-prefill-context-parallelism",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--05-dwdp-weight-parallelism",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/04-decode-context-parallelism.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--05-dwdp-weight-parallelism",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "05. DWDP：让权重来找 token，而不是每层都搬 token",
+    "titleEn": "05. DWDP: Bring Weights to Tokens Instead of Moving Tokens Every Layer",
+    "slug": "ai-infra-basic--parallel-strategy--05-dwdp-weight-parallelism",
+    "summary": "05. DWDP：让权重来找 token，而不是每层都搬 token",
+    "summaryEn": "05. DWDP: Bring Weights to Tokens Instead of Moving Tokens Every Layer",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "9 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--04-decode-context-parallelism",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--06-parallel-topology-and-pd-composition",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/05-dwdp-weight-parallelism.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--06-parallel-topology-and-pd-composition",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "06. 组合并行：rank 网格、阶段交接与不同布局",
+    "titleEn": "06. Composition: Rank Grids, Phase Handoff, and Layout Changes",
+    "slug": "ai-infra-basic--parallel-strategy--06-parallel-topology-and-pd-composition",
+    "summary": "同一个 rank 可以同时属于 Attention TP、CP、DPA、MoE TP、EP、MoE DP 和 PP group。它们不必是彼此独立的硬件维度，因此不能把所有参数直接相乘。",
+    "summaryEn": "06. Composition: Rank Grids, Phase Handoff, and Layout Changes",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "8 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--05-dwdp-weight-parallelism",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--07-encoder-dp-and-elastic-ep",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/06-parallel-topology-and-pd-composition.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--07-encoder-dp-and-elastic-ep",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "07. Encoder DP 与弹性 EP：模块并行和运行时重配置",
+    "titleEn": "07. Encoder DP and elastic EP: modules and runtime reconfiguration",
+    "slug": "ai-infra-basic--parallel-strategy--07-encoder-dp-and-elastic-ep",
+    "summary": "图片/视频先进入 vision encoder，得到 embeddings，再插入语言模型输入。如果每个语言模型 TP rank 都重复编码全部图片，会浪费计算；改成 encoder TP，又可能让小矩阵频繁通信。",
+    "summaryEn": "07. Encoder DP and elastic EP: modules and runtime reconfiguration",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "7 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--06-parallel-topology-and-pd-composition",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--08-diffusion-parallelism",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/07-encoder-dp-and-elastic-ep.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--08-diffusion-parallelism",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "08. Diffusion 并行：CFG、Ulysses、Ring 和 KV-gather",
+    "titleEn": "08. Diffusion parallelism: CFG, Ulysses, Ring, and KV-gather",
+    "slug": "ai-infra-basic--parallel-strategy--08-diffusion-parallelism",
+    "summary": "08. Diffusion 并行：CFG、Ulysses、Ring 和 KV-gather",
+    "summaryEn": "08. Diffusion parallelism: CFG, Ulysses, Ring, and KV-gather",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "9 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--07-encoder-dp-and-elastic-ep",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--dcp-cache-address-demo",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/08-diffusion-parallelism.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--dcp-cache-address-demo",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "!/usr/bin/env python3",
+    "titleEn": "!/usr/bin/env python3",
+    "slug": "ai-infra-basic--parallel-strategy--dcp-cache-address-demo",
+    "summary": "!/usr/bin/env python3 \"\"\"DCP cache-address teaching example: standard library only.",
+    "summaryEn": "!/usr/bin/env python3 \"\"\"DCP cache-address teaching example: standard library only.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "17 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--08-diffusion-parallelism",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--dp-attention-layout-demo",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/dcp_cache_address_demo.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--dp-attention-layout-demo",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "CPU-only DP Attention layout simulator; no PyTorch or distributed runtime.",
+    "titleEn": "CPU-only DP Attention layout simulator; no PyTorch or distributed runtime.",
+    "slug": "ai-infra-basic--parallel-strategy--dp-attention-layout-demo",
+    "summary": "\"\"\"CPU-only DP Attention layout simulator; no PyTorch or distributed runtime.",
+    "summaryEn": "\"\"\"CPU-only DP Attention layout simulator; no PyTorch or distributed runtime.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "16 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--dcp-cache-address-demo",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--dp-inference-demo",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/dp_attention_layout_demo.py"
   },
   {
     "id": "curriculum-ai-infra-basic--parallel-strategy--dp-inference-demo",
@@ -777,7 +1283,7 @@
     ],
     "readTime": "28 min",
     "date": "持续更新",
-    "prevArticleId": null,
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--dp-attention-layout-demo",
     "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--ep-moe-demo",
     "sourcePath": "ai-infra-basic/Parallel_Strategy/dp_inference_demo.py"
   },
@@ -801,8 +1307,54 @@
     "readTime": "63 min",
     "date": "持续更新",
     "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--dp-inference-demo",
-    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--pp-inference-demo",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--parallelism-math-demo",
     "sourcePath": "ai-infra-basic/Parallel_Strategy/ep_moe_demo.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--parallelism-math-demo",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "!/usr/bin/env python3",
+    "titleEn": "!/usr/bin/env python3",
+    "slug": "ai-infra-basic--parallel-strategy--parallelism-math-demo",
+    "summary": "!/usr/bin/env python3 \"\"\"CPU math lab / CPU 数学实验: no PyTorch, devices, or real collectives.",
+    "summaryEn": "!/usr/bin/env python3 \"\"\"CPU math lab / CPU 数学实验: no PyTorch, devices, or real collectives.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "25 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--ep-moe-demo",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--pcp-query-rows-demo",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/parallelism_math_demo.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--pcp-query-rows-demo",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "!/usr/bin/env python3",
+    "titleEn": "!/usr/bin/env python3",
+    "slug": "ai-infra-basic--parallel-strategy--pcp-query-rows-demo",
+    "summary": "!/usr/bin/env python3 \"\"\"PCP query rows / PCP query 行: hand-worked examples using only Python.",
+    "summaryEn": "!/usr/bin/env python3 \"\"\"PCP query rows / PCP query 行: hand-worked examples using only Python.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "14 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--parallelism-math-demo",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--pp-inference-demo",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/pcp_query_rows_demo.py"
   },
   {
     "id": "curriculum-ai-infra-basic--parallel-strategy--pp-inference-demo",
@@ -823,7 +1375,7 @@
     ],
     "readTime": "48 min",
     "date": "持续更新",
-    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--ep-moe-demo",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--pcp-query-rows-demo",
     "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--readme",
     "sourcePath": "ai-infra-basic/Parallel_Strategy/pp_inference_demo.py"
   },
@@ -870,8 +1422,31 @@
     "readTime": "62 min",
     "date": "持续更新",
     "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--readme",
-    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--tp-inference-demo",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--sp-step-by-step-demo",
     "sourcePath": "ai-infra-basic/Parallel_Strategy/sp_inference_demo.py"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--parallel-strategy--sp-step-by-step-demo",
+    "categoryId": "cat-1",
+    "subCategoryId": "sub-1-7",
+    "tags": [
+      "Parallelism",
+      "Distributed"
+    ],
+    "title": "!/usr/bin/env python3",
+    "titleEn": "!/usr/bin/env python3",
+    "slug": "ai-infra-basic--parallel-strategy--sp-step-by-step-demo",
+    "summary": "!/usr/bin/env python3 \"\"\"SP step by step / 逐步理解 SP: a Python-standard-library CPU simulator.",
+    "summaryEn": "!/usr/bin/env python3 \"\"\"SP step by step / 逐步理解 SP: a Python-standard-library CPU simulator.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "19 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--sp-inference-demo",
+    "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--tp-inference-demo",
+    "sourcePath": "ai-infra-basic/Parallel_Strategy/sp_step_by_step_demo.py"
   },
   {
     "id": "curriculum-ai-infra-basic--parallel-strategy--tp-inference-demo",
@@ -892,7 +1467,7 @@
     ],
     "readTime": "63 min",
     "date": "持续更新",
-    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--sp-inference-demo",
+    "prevArticleId": "curriculum-ai-infra-basic--parallel-strategy--sp-step-by-step-demo",
     "nextArticleId": "curriculum-ai-infra-basic--parallel-strategy--tutorial",
     "sourcePath": "ai-infra-basic/Parallel_Strategy/tp_inference_demo.py"
   },
@@ -1210,8 +1785,31 @@
     "readTime": "16 min",
     "date": "持续更新",
     "prevArticleId": "curriculum-ai-infra-basic--speculative-decoding--03-serving-implementation-dataflow",
-    "nextArticleId": "curriculum-ai-infra-basic--speculative-decoding--readme",
+    "nextArticleId": "curriculum-ai-infra-basic--speculative-decoding--05-dspark-principles",
     "sourcePath": "ai-infra-basic/Speculative_Decoding/04-algorithm-landscape.md"
+  },
+  {
+    "id": "curriculum-ai-infra-basic--speculative-decoding--05-dspark-principles",
+    "categoryId": "cat-6",
+    "subCategoryId": "sub-6-1",
+    "tags": [
+      "Speculative Decoding",
+      "Serving"
+    ],
+    "title": "05. DSpark 原理：半自回归草稿、置信度调度与硬件感知验证",
+    "titleEn": "05. DSpark: Semi-Autoregressive Drafting and Confidence-Scheduled Verification",
+    "slug": "ai-infra-basic--speculative-decoding--05-dspark-principles",
+    "summary": "本讲讨论算法与系统原理，不绑定某一份 SGLang 代码。若要沿真实函数逐行追踪，请继续阅读 SGLang DSpark 端到端源码走读。",
+    "summaryEn": "05. DSpark: Semi-Autoregressive Drafting and Confidence-Scheduled Verification",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "27 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-ai-infra-basic--speculative-decoding--04-algorithm-landscape",
+    "nextArticleId": "curriculum-ai-infra-basic--speculative-decoding--readme",
+    "sourcePath": "ai-infra-basic/Speculative_Decoding/05-dspark-principles.md"
   },
   {
     "id": "curriculum-ai-infra-basic--speculative-decoding--readme",
@@ -1232,7 +1830,7 @@
     ],
     "readTime": "8 min",
     "date": "持续更新",
-    "prevArticleId": "curriculum-ai-infra-basic--speculative-decoding--04-algorithm-landscape",
+    "prevArticleId": "curriculum-ai-infra-basic--speculative-decoding--05-dspark-principles",
     "nextArticleId": null,
     "sourcePath": "ai-infra-basic/Speculative_Decoding/README.md"
   },
@@ -2520,8 +3118,77 @@
     "readTime": "56 min",
     "date": "持续更新",
     "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--00-glm-4-7-flash-end-to-end",
-    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--00-reading-method-and-branch-search",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--02-glm-5-2-end-to-end",
     "sourcePath": "sglang-ascend-npu/source-code-walkthrough/examples/01-qwen3.5-hybrid-end-to-end.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--02-glm-5-2-end-to-end",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "端到端样例：GLM-5.2 在 SGLang Ascend NPU 中的完整执行路径",
+    "titleEn": "End-to-End Example: GLM-5.2 on SGLang Ascend NPU",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--examples--02-glm-5-2-end-to-end",
+    "summary": "端到端样例：GLM-5.2 在 SGLang Ascend NPU 中的完整执行路径",
+    "summaryEn": "End-to-End Example: GLM-5.2 on SGLang Ascend NPU",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "58 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--01-qwen3-5-hybrid-end-to-end",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--03-glm-5-3-flash-end-to-end",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/examples/02-glm-5.2-end-to-end.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--03-glm-5-3-flash-end-to-end",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "端到端样例：GLM-5.3-Flash 的 Hybrid KDA、NoPE 稀疏 MLA、mHC 与多模态执行链",
+    "titleEn": "End-to-End Example: GLM-5.3-Flash Hybrid KDA, NoPE Sparse MLA, mHC, and Multimodal Execution",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--examples--03-glm-5-3-flash-end-to-end",
+    "summary": "端到端样例：GLM-5.3-Flash 的 Hybrid KDA、NoPE 稀疏 MLA、mHC 与多模态执行链",
+    "summaryEn": "End-to-End Example: GLM-5.3-Flash Hybrid KDA, NoPE Sparse MLA, mHC, and Multimodal Execution",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "81 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--02-glm-5-2-end-to-end",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--glm53-flash-shape-demo",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/examples/03-glm-5.3-flash-end-to-end.md"
+  },
+  {
+    "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--glm53-flash-shape-demo",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-4",
+    "tags": [
+      "SGLang",
+      "Ascend NPU"
+    ],
+    "title": "!/usr/bin/env python3",
+    "titleEn": "!/usr/bin/env python3",
+    "slug": "sglang-ascend-npu--source-code-walkthrough--examples--glm53-flash-shape-demo",
+    "summary": "!/usr/bin/env python3 \"\"\"CPU math/shape checks accompanying the GLM-5.3-Flash walkthrough.",
+    "summaryEn": "!/usr/bin/env python3 \"\"\"CPU math/shape checks accompanying the GLM-5.3-Flash walkthrough.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "27 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--03-glm-5-3-flash-end-to-end",
+    "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--00-reading-method-and-branch-search",
+    "sourcePath": "sglang-ascend-npu/source-code-walkthrough/examples/glm53_flash_shape_demo.py"
   },
   {
     "id": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--00-reading-method-and-branch-search",
@@ -2542,7 +3209,7 @@
     ],
     "readTime": "9 min",
     "date": "持续更新",
-    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--01-qwen3-5-hybrid-end-to-end",
+    "prevArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--examples--glm53-flash-shape-demo",
     "nextArticleId": "curriculum-sglang-ascend-npu--source-code-walkthrough--foundation--01-platform-detection-and-process-startup",
     "sourcePath": "sglang-ascend-npu/source-code-walkthrough/foundation/00-reading-method-and-branch-search.md"
   },
@@ -2934,8 +3601,77 @@
     "readTime": "45 min",
     "date": "持续更新",
     "prevArticleId": "curriculum-sglang-source-reading--05-layer-communication--01-layer-communicator-and-common-layers",
-    "nextArticleId": "curriculum-sglang-source-reading--06-advanced-features--05-speculative-decoding",
+    "nextArticleId": "curriculum-sglang-source-reading--05-layer-communication--03-dp-attention-code-walkthrough",
     "sourcePath": "sglang-source-reading/05-layer-communication/02-tp-dp-ep-sharding-and-ascend-npu.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--05-layer-communication--03-dp-attention-code-walkthrough",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "SGLang DP Attention 源码走读：从请求分发到下一层与 logits",
+    "titleEn": "SGLang DP Attention Walkthrough: From Request Dispatch to the Next Layer and Logits",
+    "slug": "sglang-source-reading--05-layer-communication--03-dp-attention-code-walkthrough",
+    "summary": "SGLang DP Attention 源码走读：从请求分发到下一层与 logits",
+    "summaryEn": "SGLang DP Attention Walkthrough: From Request Dispatch to the Next Layer and Logits",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "45 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--05-layer-communication--02-tp-dp-ep-sharding-and-ascend-npu",
+    "nextArticleId": "curriculum-sglang-source-reading--05-layer-communication--04-prefill-context-parallel-code-walkthrough",
+    "sourcePath": "sglang-source-reading/05-layer-communication/03-dp-attention-code-walkthrough.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--05-layer-communication--04-prefill-context-parallel-code-walkthrough",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "SGLang PCP 源码走读：从参数到 query 分片、KV 交换与输出恢复",
+    "titleEn": "SGLang PCP source walkthrough: arguments, query sharding, KV exchange, and output restoration",
+    "slug": "sglang-source-reading--05-layer-communication--04-prefill-context-parallel-code-walkthrough",
+    "summary": "SGLang PCP 源码走读：从参数到 query 分片、KV 交换与输出恢复",
+    "summaryEn": "SGLang PCP source walkthrough: arguments, query sharding, KV exchange, and output restoration",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "32 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--05-layer-communication--03-dp-attention-code-walkthrough",
+    "nextArticleId": "curriculum-sglang-source-reading--05-layer-communication--pcp-layout-trace-demo",
+    "sourcePath": "sglang-source-reading/05-layer-communication/04-prefill-context-parallel-code-walkthrough.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--05-layer-communication--pcp-layout-trace-demo",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "!/usr/bin/env python3",
+    "titleEn": "!/usr/bin/env python3",
+    "slug": "sglang-source-reading--05-layer-communication--pcp-layout-trace-demo",
+    "summary": "!/usr/bin/env python3 \"\"\"Trace PCP metadata and row layouts / 跟踪 PCP metadata 与行布局.",
+    "summaryEn": "!/usr/bin/env python3 \"\"\"Trace PCP metadata and row layouts / 跟踪 PCP metadata 与行布局.",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "16 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--05-layer-communication--04-prefill-context-parallel-code-walkthrough",
+    "nextArticleId": "curriculum-sglang-source-reading--06-advanced-features--05-speculative-decoding",
+    "sourcePath": "sglang-source-reading/05-layer-communication/pcp_layout_trace_demo.py"
   },
   {
     "id": "curriculum-sglang-source-reading--06-advanced-features--05-speculative-decoding",
@@ -2956,7 +3692,7 @@
     ],
     "readTime": "43 min",
     "date": "持续更新",
-    "prevArticleId": "curriculum-sglang-source-reading--05-layer-communication--02-tp-dp-ep-sharding-and-ascend-npu",
+    "prevArticleId": "curriculum-sglang-source-reading--05-layer-communication--pcp-layout-trace-demo",
     "nextArticleId": "curriculum-sglang-source-reading--06-advanced-features--07-disaggregation-pd",
     "sourcePath": "sglang-source-reading/06-advanced-features/05-speculative-decoding.md"
   },
@@ -3003,8 +3739,31 @@
     "readTime": "46 min",
     "date": "持续更新",
     "prevArticleId": "curriculum-sglang-source-reading--06-advanced-features--07-disaggregation-pd",
-    "nextArticleId": "curriculum-sglang-source-reading--readme",
+    "nextArticleId": "curriculum-sglang-source-reading--06-advanced-features--09-dspark-code-walkthrough",
     "sourcePath": "sglang-source-reading/06-advanced-features/08-lora-serving.md"
+  },
+  {
+    "id": "curriculum-sglang-source-reading--06-advanced-features--09-dspark-code-walkthrough",
+    "categoryId": "cat-8",
+    "subCategoryId": "sub-8-1",
+    "tags": [
+      "SGLang",
+      "Source Reading"
+    ],
+    "title": "SGLang DSpark 端到端源码走读",
+    "titleEn": "SGLang DSpark End-to-End Code Walkthrough",
+    "slug": "sglang-source-reading--06-advanced-features--09-dspark-code-walkthrough",
+    "summary": "本讲从启动参数开始，沿 SGLang 的真实 DSpark 执行链追踪一次 prefill 和多轮 decode，直到 accepted token、target/draft KV 与下一轮 anchor 全部就位。重点不是罗列类名，而是回答四个问题：",
+    "summaryEn": "SGLang DSpark End-to-End Code Walkthrough",
+    "availableLanguages": [
+      "zh",
+      "en"
+    ],
+    "readTime": "46 min",
+    "date": "持续更新",
+    "prevArticleId": "curriculum-sglang-source-reading--06-advanced-features--08-lora-serving",
+    "nextArticleId": "curriculum-sglang-source-reading--readme",
+    "sourcePath": "sglang-source-reading/06-advanced-features/09-dspark-code-walkthrough.md"
   },
   {
     "id": "curriculum-sglang-source-reading--readme",
@@ -3025,7 +3784,7 @@
     ],
     "readTime": "10 min",
     "date": "持续更新",
-    "prevArticleId": "curriculum-sglang-source-reading--06-advanced-features--08-lora-serving",
+    "prevArticleId": "curriculum-sglang-source-reading--06-advanced-features--09-dspark-code-walkthrough",
     "nextArticleId": null,
     "sourcePath": "sglang-source-reading/README.md"
   },

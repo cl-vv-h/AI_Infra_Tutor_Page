@@ -11,6 +11,7 @@ import type { ArticleMetadata, Language } from '@/types'
 import TableOfContents from '@/components/TableOfContents'
 import MarkdownRenderer from '@/components/MarkdownRenderer'
 import { useLanguage } from '@/hooks/useLanguage'
+import ArticleLearningContext from '@/components/ArticleLearningContext'
 
 function getCategorySlug(categoryId: string): string {
   const cat = categories.find((c) => c.id === categoryId)
@@ -82,6 +83,7 @@ function ArticleReader({ article, language }: { article: ArticleMetadata; langua
 
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_15rem] lg:gap-10">
         <article className="min-w-0 max-w-[760px] lg:col-start-1 lg:row-start-1">
+          <ArticleLearningContext sourcePath={article.sourcePath} />
           <header className="mb-8 border-b border-line pb-8">
             <div className="mb-4 flex items-start gap-2 break-all font-mono text-xs leading-5 text-muted">
               <FileCode2 className="mt-0.5 h-4 w-4 shrink-0" /> {article.sourcePath}
