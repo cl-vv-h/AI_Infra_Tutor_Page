@@ -1,114 +1,114 @@
 {
-  "generatedAt": "2026-10-26T01:31:41.000Z",
-  "periodStart": "2026-10-19",
-  "periodEnd": "2026-10-25",
+  "generatedAt": "2026-11-04T01:32:21.000Z",
+  "periodStart": "2026-10-26",
+  "periodEnd": "2026-11-01",
   "model": "gpt-5.6-luna",
   "itemCount": 19,
   "archiveDates": [
-    "2026-10-19",
-    "2026-10-20",
-    "2026-10-21",
-    "2026-10-22",
-    "2026-10-23",
-    "2026-10-24",
-    "2026-10-25"
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30",
+    "2026-10-31",
+    "2026-11-01"
   ],
-  "content": "# 本周信号\n\n本期覆盖 2026-10-19 至 2026-10-25 的七个归档日。综合判断：本期技术信号集中在弹性 EP、量化 kernel、异构 GPU/NPU 阶段解耦、超长上下文以及面向 TPU/Trainium/AMD 的编译后端。\n\n## AI\n\n- 报道事实：[Elastic Expert Parallelism](https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime)介绍了 vLLM 中通过异步准备和 NIXL EP 实现近零停机的弹性专家并行扩缩。\n- 报道事实：[Humming](https://vllm.ai/blog/2026-10-21-humming)是 Ant Group 与 vLLM 社区推出的量化推理 kernel 库，归档摘要称其覆盖多种 GPU 与量化路径，并包含 dense 与 MoE 性能结果及 vLLM 集成。\n- 报道事实：[vLLM TorchTPU](https://vllm.ai/blog/2026-10-20-vllm-torchtpu)提供基于 TorchTPU 的 Google Cloud TPU 后端，摘要列出 Pallas kernels、多主机并行、KV cache offloading 与 disaggregated serving。\n- 报道事实：[GLM-5.3 Optimizations Part 2](https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse)描述在 16 张 H200 上使用 PCP/DCP prefill 与 Hybrid HiSparse decode；摘要称其支持 1M-token context，并在 AgentX agentic benchmark 上达到 data-parallel P/D 的每用户速度 1.7–3.2 倍。\n- 报道事实：[ATEST](https://arxiv.org/abs/2610.25519v1)把 test-time scaling 的采样预算与当前 GPU contention 下的推理能耗联合考虑；摘要报告相同四采样查询的能耗最高可相差 4.1 倍。\n- 报道事实：[BitMTP](https://arxiv.org/abs/2610.28500v1)研究低比特权重与 multi-token prediction 的组合，摘要指出 masked drafting 与训练时缺少中间 token 输入等因素会限制直接加速。\n- 报道事实：[HAWK](https://arxiv.org/abs/2610.29873v1)探索 GPU-NPU phase-disaggregated inference：GPU 更适合 prefill，NPU 可更有效利用 decode 计算资源，方案围绕异构 KV cache transfer 展开。\n- 报道事实：[UlaCache](https://arxiv.org/abs/2610.29820v1)提出跨 GPU KV pool 与可选 CPU memory 的统一逻辑地址空间，用稳定引用将 KV 的分配与物理位置选择解耦。\n- 报道事实：[vLLM v0.32.0](https://github.com/vllm-project/vllm/releases/tag/v0.32.0)的摘要列出结构化决策与通用 parser、工具/推理 parser，以及多个模型和平台支持变化。\n- 报道事实：[Apple Silicon inference optimizations](https://arxiv.org/abs/2610.31479v1)比较 KV-cache pruning、speculative decoding、移植 GPU kernels 和后训练量化在四台 Apple 机器上的适用性。\n- 报道事实：[uGDS](https://arxiv.org/abs/2610.30868v1)针对 GPU Direct Storage 的 kernel 控制路径、stream ordering 与闭源用户态引擎限制，提出用户态高性能 GPU Direct Storage 开发工具包。\n- 综合判断：本期 serving 的优化对象已经从单次 decode kernel 扩展为“扩缩容、状态位置、阶段拓扑与采样预算”的联合控制；归档证据不足以把不同论文和版本的结果视为可直接横向比较。\n\n## 科技\n\n- 报道事实：[FlyDSL](https://pytorch.org/blog/accelerating-pytorch-on-amd-gpus-with-flydsl/)让 AMD MI350 系列用户通过既有 operator API 使用 dense/grouped GEMM、融合多头 attention、MXFP8/MXFP4 scaled GEMM、RMSNorm 与 TopK 等路径。\n- 报道事实：[TorchNeuron](https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/)介绍面向 AWS Trainium 的原生 PyTorch backend，归档摘要覆盖 dense/MoE transformer、diffusion、SSM、world 与结构预测等模型架构范围。\n- 报道事实：[TensorRT-LLM v1.4.0rc1](https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc1)的摘要记录 disaggregated serving 的 Python KV transceiver 在取消 streaming request 后可能出现 KV transfer error，并列出 DeepSeek-V4.1-Flash 与 NVFP4 GLM-5.3-Flash 等支持项。\n- 综合判断：PyTorch/Inductor 风格的后端扩展与 serving runtime 的版本迭代都在降低异构硬件接入门槛，但本期元数据没有提供统一的性能、稳定性或运维成本对照。\n\n## 金融\n\n- 报道事实：[日本银行《金融系统报告》](https://www.boj.or.jp/en/research/brp/fsr/fsr261023.htm)列入 2026 年 10 月金融机构归档；归档仅提供标题与链接，未给出可用于判断 AI 基础设施融资的摘要。\n- 报道事实：[欧洲央行消费者预期调查](https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html)是本期机构归档中的消费者预期结果公告；元数据未提供具体数值。\n- 报道事实：[AI data center projects boost US warehouse demand](https://www.channelnewsasia.com/business/ai-data-center-projects-boost-us-warehouse-demand-and-rents-real-estate-company-jll-says-6476956)的标题指向 AI 数据中心项目对美国仓储需求与租金的影响，但归档摘要为空。\n- 综合判断：金融条目能确认 AI 基础设施与宏观/地产讨论同时出现，但证据不足以推断资本成本、租金或估值的方向。\n\n## 国际形势\n\n- 报道事实：[AI on track to crowd out human decision-making in warfare](https://news.un.org/feed/view/en/story/2026/10/1168636)的归档摘要称，联合国裁军事务研究机构负责人警告 AI 已广泛用于战场，人类判断在军事行动中的作用正迅速收缩。\n- 报道事实：[Sudan conflict: Peace efforts resume](https://news.un.org/feed/view/en/story/2026/10/1168638)的摘要称，日内瓦举行近二十多个国家参与的会谈，讨论停火、治理转型与人道危机。\n- 综合判断：国际材料表明 AI 的安全治理与冲突环境仍相互交织；现有元数据不足以把这些事件量化为具体芯片供应、数据中心建设或跨境部署冲击。\n\n## 跨板块观察\n\n- 报道事实与综合判断： [Elastic Expert Parallelism](https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime)、[Humming](https://vllm.ai/blog/2026-10-21-humming)与[UlaCache](https://arxiv.org/abs/2610.29820v1)分别处理容量变化、量化计算和 KV 逻辑寻址；综合来看，生产 serving 正同时面对“算得更快”和“状态更可迁移”的双重约束。\n- 报道事实与综合判断： [HAWK](https://arxiv.org/abs/2610.29873v1)、[vLLM TorchTPU](https://vllm.ai/blog/2026-10-20-vllm-torchtpu)、[FlyDSL](https://pytorch.org/blog/accelerating-pytorch-on-amd-gpus-with-flydsl/)与[TorchNeuron](https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/)显示 GPU、NPU、TPU、Trainium 的软件栈都在把阶段拆分、kernel 和后端接口作为竞争面；这支持“硬件多样性使编译与状态管理成为一等 infra 问题”的判断，但不等于跨平台性能相当。\n\n## 下周观察清单\n\n- 补齐 2026-10-24 与 2026-10-25 归档后，核对本期缺日是否出现新的技术与地缘证据；当前报告不对两日外推。\n- 关注 Elastic EP 的扩缩容停顿、NIXL 传输和失败恢复指标：[Elastic Expert Parallelism](https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime)。\n- 跟踪 Humming、FlashInfer、TensorRT-LLM 与 vLLM 版本在 NVFP4/低比特和多模型 workload 上的真实回归数据：[Humming](https://vllm.ai/blog/2026-10-21-humming)。\n- 观察 GPU-NPU/TPU/Trainium 后端是否补充跨阶段的 TTFT、TPOT、显存与能耗测量：[HAWK](https://arxiv.org/abs/2610.29873v1)。\n- 关注 AI 安全治理、冲突升级与数据中心/芯片供应之间是否出现可核验的直接联系；当前归档不足以确认：[AI on track to crowd out human decision-making in warfare](https://news.un.org/feed/view/en/story/2026/10/1168636)。\n",
+  "content": "# 本周信号\n\n本期覆盖 2026-10-26 至 2026-11-01 的七个归档日。综合判断：AI Infra 的技术信号集中在模型睡眠与自动扩缩、混合 Attention/SSM 执行、GPU kernel 组件化、量化与新一代 GPU/NPU 软件栈，同时暴露出 KV cache 隔离和多厂商流量治理的运维边界。\n\n## AI\n\n- 报道事实：[Mistral Large 4 on vLLM](https://vllm.ai/blog/2026-10-29-mistral-large-4)给出 day-0 支持，摘要列出 sparse MLA、cross-layer KV sharing、DSpark speculative decoding、DCP/PCP long context 与 NIXL P/D。\n- 报道事实：[FlashInfer v0.7.2.post1](https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1)的摘要列出 Rubin 上的 FP8/PrimTS MoE、双 die 独立显存路径、Muse-Spark-Open 归一化与 MoE 通信 kernel，以及 Kimi K3 MLA prefill 的 FP8 K/V pack。\n- 报道事实：[vLLM v0.33.0](https://github.com/vllm-project/vllm/releases/tag/v0.33.0)作为本期 release 归档条目发布。归档元数据未提供足够变更细节，因此不对具体能力作外推。\n- 报道事实：[Cosmos LLM Gateway](https://arxiv.org/abs/2610.35509v1)讨论基于 Envoy 的多厂商 LLM gateway，将不同 API、凭证模型、流协议与价格纳入统一治理入口。\n- 报道事实：[PhOSv1](https://arxiv.org/abs/2610.39999v1)研究单服务器上的 model sleeping 与 GPU-context deduplication；摘要指出，睡眠引擎仍需驻留 GPU context，近零成本扩容并非无条件成立。\n- 报道事实：[PipeLink](https://arxiv.org/abs/2610.37200v1)把 loader、矩阵乘主循环、epilogue 和通信阶段视为共享片上资源的 kernel components，并研究契约引导的组件链接。\n- 报道事实：[Request-Adaptive Execution](https://arxiv.org/abs/2610.37432v1)针对混合 Attention/SSM 模型的静态层布局，提出按请求上下文特征调整执行的研究方向。\n- 报道事实：[TAO](https://arxiv.org/abs/2610.37230v1)面向 agentic serving，将外部工具返回就绪度纳入 GPU admission 与 placement 判断。\n- 报道事实：[WorldPager](https://arxiv.org/abs/2610.35529v1)在单张消费级 GPU 上为长时 world model 维护分层记忆；摘要报告 bf16/int4 下 host memory 耗尽时间的差异。\n- 综合判断：本期的 serving 重点由“每 token 更快”转向“状态如何睡眠、迁移、隔离并与工具调用协调”；这些条目来自不同验证条件，不能直接比较实际吞吐或成本。\n\n## 科技\n\n- 报道事实：[DeepSeek-V4 Flash RL on MI308X](https://rocm.blogs.amd.com/ecosystems-and-partners/deepseek-v4-mi308-aiter-backed-rl/README.html)展示 24 张 MI308X 上的端到端 RL 流程，覆盖长上下文 FP8 rollout、BF16 MoE actor、在线 RDMA 权重更新、评估与 checkpoint recovery。\n- 报道事实：[Group-GEMM in XLA](https://rocm.blogs.amd.com/software-tools-optimization/openxla-group-gemm/README.html)针对 MoE 中大量不同形状的小矩阵乘，讨论在 AMD 软件栈中让 group GEMM 更快、更节省内存。\n- 报道事实：[ROCm 10.0.0 Support for Ray](https://rocm.blogs.amd.com/artificial-intelligence/rocm10-ray/README.html)把异构加速器接入分布式 AI workflow 作为主题，摘要指出既有工具往往隐含单一 vendor stack 假设。\n- 报道事实：[Triton 3.9.0](https://github.com/triton-lang/triton/releases/tag/v3.9.0)的归档摘要覆盖 dialect/frontend、AMD/HIP、NVIDIA backend、Gluon/layout、kernel benchmark、profiling 与 CI/build 等部分。\n- 报道事实：[Cross-request KV cache exposure](https://blog.cloudflare.com/kv-cache-exposure-remediation/)称，GLM-5.3 Workers AI 的配置不匹配触发 SGLang bug，导致请求间 KV cache page 暴露，文章描述了修复。\n- 综合判断：kernel 组件化、MoE group GEMM、分布式 RL 和安全隔离共同说明软件栈的可组合性必须伴随可验证的边界条件；归档不支持把单一 benchmark 结果推广为通用结论。\n\n## 金融\n\n- 报道事实：[ECB AI adoption in Europe](https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html)列入欧洲央行金融机构归档，摘要字段为空，不能据此补写政策内容。\n- 报道事实：[Tokenised collateral in central clearing](https://www.bankofengland.co.uk/news/2026/october/bank-of-england-sets-out-approach-to-tokenised-collateral-in-central-clearing)称英格兰银行就中央对手方接受代币化合格抵押品启动咨询。\n- 报道事实：[CPMI payment-system analysis](https://www.bis.org/media-releases/20261029-cpmi-publishes-analysis-how-central-banks-support-payment-system-safety-and-efficiency-and)讨论技术创新、用户需求和新型支付服务商如何改变支付系统，并聚焦安全、效率与货币信任。\n- 综合判断：金融材料显示支付、抵押品与 AI adoption 讨论都在向可编程基础设施延伸，但没有足够证据判断其对 AI 数据中心资本成本或硬件采购的直接影响。\n\n## 国际形势\n\n- 报道事实：[Sea lanes and new technology](https://news.un.org/feed/view/en/story/2026/10/1168698)的摘要称，廉价无人机、自动船舶和网络攻击正在改变海运通道风险，也改变保护海员、贸易、粮食和能源供应的工具。\n- 报道事实：[Iran-US escalation](https://news.un.org/feed/view/en/story/2026/10/1168669)的摘要称，联合国秘书长呼吁通过对话与外交结束伊朗与美国之间的战争。\n- 综合判断：国际归档显示运输安全与地缘升级仍可能影响跨境部署和供应链，但现有元数据不足以把具体事件量化为 AI 芯片供给冲击。\n\n## 跨板块观察\n\n- 报道事实与综合判断： [PhOSv1](https://arxiv.org/abs/2610.39999v1)、[WorldPager](https://arxiv.org/abs/2610.35529v1)和[Request-Adaptive Execution](https://arxiv.org/abs/2610.37432v1)分别处理睡眠 context、长时 tiered memory 和按请求执行路径；综合来看，模型状态的生命周期正在成为 autoscaling 与 hybrid serving 的共同控制面。\n- 报道事实与综合判断： [Cosmos LLM Gateway](https://arxiv.org/abs/2610.35509v1)、[Cross-request KV cache exposure](https://blog.cloudflare.com/kv-cache-exposure-remediation/)与[CPMI payment-system analysis](https://www.bis.org/media-releases/20261029-cpmi-publishes-analysis-how-central-banks-support-payment-system-safety-and-efficiency-and)共同强调接口、状态隔离与基础设施信任边界；这是跨板块归纳，不证明金融系统与某一 serving 实现存在直接因果。\n\n## 下周观察清单\n\n- 关注 vLLM 0.33、FlashInfer Rubin/NVFP4 以及 Mistral Large 4 的真实负载回归、尾延迟和失败恢复数据：[Mistral Large 4 on vLLM](https://vllm.ai/blog/2026-10-29-mistral-large-4)。\n- 跟踪 model sleeping、tiered memory 与 hybrid execution 是否补充迁移时间、显存占用和能耗指标：[PhOSv1](https://arxiv.org/abs/2610.39999v1)。\n- 关注 KV cache 隔离修复能否形成可复现的跨请求测试与默认安全配置：[Cross-request KV cache exposure](https://blog.cloudflare.com/kv-cache-exposure-remediation/)。\n- 观察海运技术风险、地缘升级和支付系统数字化是否产生可核验的 AI 芯片、数据中心或跨境部署影响；当前证据不足：[Sea lanes and new technology](https://news.un.org/feed/view/en/story/2026/10/1168698)。\n",
   "sources": [
     {
-      "title": "Achieving near-zero-downtime scaling in Elastic Expert Parallelism",
-      "url": "https://vllm.ai/blog/2026-10-19-elastic-ep-near-zero-downtime",
+      "title": "Day 0 support for Mistral Large 4 on vLLM",
+      "url": "https://vllm.ai/blog/2026-10-29-mistral-large-4",
       "source": "vLLM Blog"
     },
     {
-      "title": "Announcing Humming: Fast, Flexible Kernels for Quantized Inference",
-      "url": "https://vllm.ai/blog/2026-10-21-humming",
-      "source": "vLLM Blog"
+      "title": "Release v0.7.2.post1",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.2.post1",
+      "source": "FlashInfer Releases"
     },
     {
-      "title": "Introducing vLLM TorchTPU",
-      "url": "https://vllm.ai/blog/2026-10-20-vllm-torchtpu",
-      "source": "vLLM Blog"
-    },
-    {
-      "title": "GLM-5.3 Optimizations, Part 2: PCP, DCP, and Hybrid HiSparse on 16 H200s",
-      "url": "https://vllm.ai/blog/2026-10-23-glm53-part2-pcp-dcp-hisparse",
-      "source": "vLLM Blog"
-    },
-    {
-      "title": "ATEST: Adaptive Resource-Aware Test-Time Scaling for LLM Inference",
-      "url": "https://arxiv.org/abs/2610.25519v1",
-      "source": "arXiv Distributed Systems"
-    },
-    {
-      "title": "BitMTP: When Multi-Token Prediction Meets Low-Bit Large Language Models",
-      "url": "https://arxiv.org/abs/2610.28500v1",
-      "source": "arXiv Distributed Systems"
-    },
-    {
-      "title": "HAWK: Heterogeneity-Aware KV Cache Transfer for Efficient GPU-NPU Phase-Disaggregated LLM Inference",
-      "url": "https://arxiv.org/abs/2610.29873v1",
-      "source": "arXiv Distributed Systems"
-    },
-    {
-      "title": "UlaCache: Unified Logical Addressing for Sparse LLM Serving",
-      "url": "https://arxiv.org/abs/2610.29820v1",
-      "source": "arXiv Distributed Systems"
-    },
-    {
-      "title": "v0.32.0",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.32.0",
+      "title": "v0.33.0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0",
       "source": "vLLM Releases"
     },
     {
-      "title": "Accelerating PyTorch on AMD GPUs with FlyDSL",
-      "url": "https://pytorch.org/blog/accelerating-pytorch-on-amd-gpus-with-flydsl/",
-      "source": "PyTorch Blog"
+      "title": "Governing Enterprise AI Traffic at Scale: Design and Operation of a Policy-Driven, Multi-Vendor LLM Gateway on Envoy",
+      "url": "https://arxiv.org/abs/2610.35509v1",
+      "source": "arXiv Distributed Systems"
     },
     {
-      "title": "Introducing TorchNeuron: Native PyTorch backend for AWS Trainium",
-      "url": "https://pytorch.org/blog/introducing-torchneuron-native-pytorch-backend-for-aws-trainium/",
-      "source": "PyTorch Blog"
+      "title": "PhOSv1: Efficient Scaling of Model Sleeping on a Single Server for Autoscaling with GPU-Context Deduplication",
+      "url": "https://arxiv.org/abs/2610.39999v1",
+      "source": "arXiv Distributed Systems"
     },
     {
-      "title": "v1.4.0rc1",
-      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc1",
-      "source": "TensorRT-LLM Releases"
+      "title": "PipeLink: Contract-Guided Linking of GPU Kernel Components",
+      "url": "https://arxiv.org/abs/2610.37200v1",
+      "source": "arXiv Distributed Systems"
     },
     {
-      "title": "Financial System Report (October 2026)",
-      "url": "https://www.boj.or.jp/en/research/brp/fsr/fsr261023.htm",
-      "source": "Bank of Japan"
+      "title": "Request-Adaptive Execution for Efficient Hybrid LLM Inference",
+      "url": "https://arxiv.org/abs/2610.37432v1",
+      "source": "arXiv Distributed Systems"
     },
     {
-      "title": "ECB Consumer Expectations Survey results – September 2026",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261023~a3d201c97c.en.html",
+      "title": "TAO: Tool-Aware Joint Scheduling for LLM-Based Agentic Serving",
+      "url": "https://arxiv.org/abs/2610.37230v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "WorldPager: Zero-Stall Tiered Memory for Long-Horizon World Models on a Single Consumer GPU",
+      "url": "https://arxiv.org/abs/2610.35529v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "DeepSeek-V4 Flash RL on AMD Instinct MI308X GPUs with an AITER-Backed RL Stack",
+      "url": "https://rocm.blogs.amd.com/ecosystems-and-partners/deepseek-v4-mi308-aiter-backed-rl/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "Group-GEMM in XLA: Making Mixture-of-Experts Fast and Memory-Efficient",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/openxla-group-gemm/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "ROCm 10.0.0 Support for Ray 2.58.0: Enabling Scalable AI Workflows",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/rocm10-ray/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "Triton 3.9.0 Release Notes",
+      "url": "https://github.com/triton-lang/triton/releases/tag/v3.9.0",
+      "source": "Triton Releases"
+    },
+    {
+      "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model, and our remediation with SGLang",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+      "source": "Cloudflare Engineering"
+    },
+    {
+      "title": "Philip R. Lane: AI adoption in Europe",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261030~08d9d540f0.en.html",
       "source": "European Central Bank"
     },
     {
-      "title": "AI data center projects boost US warehouse demand and rents, real estate company JLL says",
-      "url": "https://www.channelnewsasia.com/business/ai-data-center-projects-boost-us-warehouse-demand-and-rents-real-estate-company-jll-says-6476956",
-      "source": "CNA Business"
+      "title": "Bank of England sets out approach to tokenised collateral in central clearing",
+      "url": "https://www.bankofengland.co.uk/news/2026/october/bank-of-england-sets-out-approach-to-tokenised-collateral-in-central-clearing",
+      "source": "Bank of England"
     },
     {
-      "title": "AI on track to ‘crowd out’ human decision-making in warfare",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168636",
+      "title": "CPMI publishes analysis on how central banks support payment system safety and efficiency and trust in money in the rapidly changing payments ecosystem",
+      "url": "https://www.bis.org/media-releases/20261029-cpmi-publishes-analysis-how-central-banks-support-payment-system-safety-and-efficiency-and",
+      "source": "Bank for International Settlements"
+    },
+    {
+      "title": "Security Council LIVE: Can new technology keep the world’s sea lanes safe?",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168698",
       "source": "UN News"
     },
     {
-      "title": "Sudan conflict: Peace efforts resume to end ‘drone war’ fuelling humanitarian crisis",
-      "url": "https://news.un.org/feed/view/en/story/2026/10/1168638",
+      "title": "In Egypt, Guterres warns against Iran-US escalation",
+      "url": "https://news.un.org/feed/view/en/story/2026/10/1168669",
       "source": "UN News"
-    },
-    {
-      "title": "Evaluating the Applicability of LLM Inference Optimizations on Apple Silicon",
-      "url": "https://arxiv.org/abs/2610.31479v1",
-      "source": "arXiv Distributed Systems"
-    },
-    {
-      "title": "uGDS: A User-Space Development Kit for High-Performance GPU Direct Storage",
-      "url": "https://arxiv.org/abs/2610.30868v1",
-      "source": "arXiv Distributed Systems"
     }
   ]
 }
