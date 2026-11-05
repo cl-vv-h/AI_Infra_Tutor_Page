@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-11-04T19:58:53.674Z",
-    "releasesCollectedAt": "2026-11-04T19:59:06.376Z",
-    "libraryCollectedAt": "2026-11-04T19:58:53.674Z",
+    "dailyCollectedAt": "2026-11-05T01:00:01.484Z",
+    "releasesCollectedAt": "2026-11-05T01:00:47.138Z",
+    "libraryCollectedAt": "2026-11-05T01:00:01.484Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -67,10 +67,13 @@
       "2026-11-01",
       "2026-11-02",
       "2026-11-03",
-      "2026-11-04"
+      "2026-11-04",
+      "2026-11-05"
     ],
     "missingArchiveDates": [],
-    "failedSources": [],
+    "failedSources": [
+      "arXiv Distributed Systems"
+    ],
     "invalidItems": 30
   },
   "tracks": [
@@ -84,7 +87,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-08T00:19:16.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-11-04T19:59:06.376Z",
+          "lastCollectedAt": "2026-11-05T01:00:47.138Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -97,7 +100,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-11-04T19:59:06.376Z",
+          "lastCollectedAt": "2026-11-05T01:00:47.138Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -110,7 +113,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-11-04T19:59:06.376Z",
+          "lastCollectedAt": "2026-11-05T01:00:47.138Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -123,7 +126,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-11-04T19:59:06.376Z",
+          "lastCollectedAt": "2026-11-05T01:00:47.138Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -136,7 +139,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-02T01:09:04.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-11-04T19:59:06.376Z",
+          "lastCollectedAt": "2026-11-05T01:00:47.138Z",
           "revisionCount": 3,
           "ruleIds": [
             "official-releases"
@@ -149,7 +152,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-19T02:55:19.000Z",
           "firstCollectedAt": "2026-10-16T04:52:38.724Z",
-          "lastCollectedAt": "2026-11-04T19:59:06.376Z",
+          "lastCollectedAt": "2026-11-05T01:00:47.138Z",
           "revisionCount": 1,
           "ruleIds": [
             "official-releases"
@@ -162,7 +165,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-11-02T22:14:10.000Z",
           "firstCollectedAt": "2026-10-30T06:19:01.932Z",
-          "lastCollectedAt": "2026-11-04T19:59:06.376Z",
+          "lastCollectedAt": "2026-11-05T01:00:47.138Z",
           "revisionCount": 1,
           "ruleIds": [
             "official-releases"
@@ -271,7 +274,7 @@
           "publisherCountry": "United States",
           "publishedAt": "2026-10-26T22:01:23.000Z",
           "firstCollectedAt": "2026-10-27T05:28:07.370Z",
-          "lastCollectedAt": "2026-11-04T19:58:53.674Z",
+          "lastCollectedAt": "2026-11-05T01:00:01.484Z",
           "revisionCount": 0,
           "ruleIds": [
             "workers-announcements"
@@ -450,6 +453,19 @@
           "ruleIds": [
             "policy-documents"
           ]
+        },
+        {
+          "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260918.pdf",
+          "title": "Minutes of the Monetary Policy Meeting on September 17 and 18, 2026",
+          "publisher": "Bank of Japan",
+          "publisherCountry": "Japan",
+          "publishedAt": "2026-11-04T23:50:00.000Z",
+          "firstCollectedAt": "2026-11-05T01:00:01.484Z",
+          "lastCollectedAt": "2026-11-05T01:00:01.484Z",
+          "revisionCount": 0,
+          "ruleIds": [
+            "policy-minutes"
+          ]
         }
       ]
     },
@@ -563,5 +579,5 @@
       ]
     }
   ],
-  "fingerprint": "e2c25d4969f2453892c9d6ede7a0128a3a273cd597a6765d4b0ffa16cfa5ec4a"
+  "fingerprint": "9161acd12d7cfb06b31d7c03d58ce9f9ff5de84b96b63126fdbb5b7dc2fbcfba"
 }

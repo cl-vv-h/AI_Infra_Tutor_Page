@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-04T19:58:53.674Z",
+  "generatedAt": "2026-11-05T01:00:01.484Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 39,
-  "failedSourceCount": 0,
+  "sourceCount": 38,
+  "failedSourceCount": 1,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -14,7 +14,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 23,
-      "latestPublishedAt": "2026-11-04T18:01:31.000Z",
+      "latestPublishedAt": "2026-11-04T22:48:43.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 45,
-      "latestPublishedAt": "2026-11-04T19:44:46.000Z",
+      "entryCount": 43,
+      "latestPublishedAt": "2026-11-05T00:59:22.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 125,
-      "latestPublishedAt": "2026-11-04T19:30:00.000Z",
+      "entryCount": 122,
+      "latestPublishedAt": "2026-11-04T23:04:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-04T19:50:37.000Z",
+      "latestPublishedAt": "2026-11-05T00:39:18.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-04T17:23:40.000Z",
+      "latestPublishedAt": "2026-11-05T00:33:07.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-04T19:30:04.000Z",
+      "latestPublishedAt": "2026-11-04T22:45:09.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-04T18:00:40.000Z",
+      "latestPublishedAt": "2026-11-04T22:47:51.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -132,7 +132,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-11-03T18:24:58.012Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-11-04T18:00:02.000Z",
+      "latestPublishedAt": "2026-11-04T21:04:10.000Z",
       "selectedCount": 3,
       "libraryCount": 5
     },
@@ -195,8 +195,8 @@
       "type": "institution",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 46,
-      "latestPublishedAt": "2026-11-04T08:00:00.000Z",
+      "entryCount": 48,
+      "latestPublishedAt": "2026-11-04T23:50:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -249,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-11-04T12:00:00.000Z",
-      "selectedCount": 0,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-11-04T18:01:05.000Z",
+      "latestPublishedAt": "2026-11-04T22:17:58.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-11-04T17:45:54.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-11-04T22:08:17.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -301,7 +301,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-11-04T19:23:38.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -327,7 +327,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-11-04T00:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -353,7 +353,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-11-02T22:14:10.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -378,7 +378,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-11-04T06:06:08.000Z",
+      "latestPublishedAt": "2026-11-04T20:10:47.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -401,11 +401,11 @@
       "country": "International",
       "category": "ai",
       "type": "research",
-      "state": "ok",
+      "state": "unavailable",
       "channel": "feed",
-      "entryCount": 20,
-      "latestPublishedAt": "2026-11-03T17:01:26.000Z",
-      "selectedCount": 3,
+      "entryCount": 0,
+      "latestPublishedAt": null,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -417,8 +417,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-11-03T09:22:03.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-11-04T20:29:55.000Z",
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -430,7 +430,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-11-04T18:46:07.000Z",
+      "latestPublishedAt": "2026-11-04T22:00:17.000Z",
       "selectedCount": 3,
       "libraryCount": 8
     },
@@ -524,10 +524,79 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-04T18:46:07.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 34.7,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 33.4,
       "topics": [
         "kernels"
+      ]
+    },
+    {
+      "id": "62e1e904ba6c155d",
+      "category": "ai",
+      "title": "Release v0.7.3",
+      "summary": "These highlights are also published at flashinfer.ai/releases . v0.7.3 Highlights FlashInfer v0.7.3 brings MTP and NVFP4 MLA decode to Rubin, and speeds up expert-parallel MoE decode steps on Blackwell while Hopper gains MXFP4 and NVFP4 experts. Hybrid Gated DeltaNet models gain paged recurrent state for prefix caching, DeepSeek Sparse Attention models get token-sparse decode, MoELayer adds a low-latency small-batch path from Ampere to Blackwell, and a first set of training kernels covers GLM-5.3-Flash and Qwen hyb",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.3",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-11-04T20:10:47.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 31.8,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "be60ad1287da0343",
+      "category": "technology",
+      "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+      "summary": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards...",
+      "url": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-04T22:00:17.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 30.3,
+      "topics": [
+        "hardware",
+        "security"
+      ]
+    },
+    {
+      "id": "df7a32a45e203586",
+      "category": "world",
+      "title": "UN peacekeeping chief warns of ‘security vacuum’ as Blue Helmets leave Lebanon and Western Sahara",
+      "summary": "The UN’s peacekeeping chief warned on Wednesday that the withdrawal of “Blue Helmets” from Lebanon and Western Sahara risks leaving a dangerous security vacuum, while the Security Council remains divided over what, if anything, should replace them.",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168741",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-04T12:00:00.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 28.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "d23af96d2e5c6254",
+      "category": "ai",
+      "title": "Introducing Kinference: An Open Source Inference Control Plane for vLLM and Kubernetes",
+      "summary": "Kinference is a new open source inference control plane for building scalable inference platforms with vLLM and Kubernetes, providing token rate limiting, tenant usage and cost tracking, intelligent load balancing, and inference policies.",
+      "url": "https://vllm.ai/blog/2026-11-04-introducing-kinference",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 28.7,
+      "topics": [
+        "inference"
       ]
     },
     {
@@ -540,8 +609,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-04T00:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 30,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 28.7,
       "topics": [
         "inference",
         "hardware",
@@ -559,8 +628,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-04T00:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 30,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 28.7,
       "topics": [
         "kernels",
         "hardware",
@@ -577,8 +646,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-04T00:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 30,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 28.7,
       "topics": [
         "inference",
         "kernels",
@@ -596,29 +665,23 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-04T18:07:05.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 29.5,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 28.3,
       "topics": []
     },
     {
-      "id": "62e1e904ba6c155d",
-      "category": "ai",
-      "title": "Release v0.7.3",
-      "summary": "What's Changed perf(cake_kimi_k3_latent_moe): plan from the device SM count; qualify 148- and 152-SM parts (SM100a, SM103a) by @yyihuang in #6109 perf(cake_kimi_k3_attn_res): qualify the native ports on 148- and 152-SM parts (SM100a, SM103a) by @yyihuang in #6108 perf(cudnn): reduce attention execution and planning overhead by @YangXu1990uiuc in #5526 feat(cake_ssd_combined): 2048 and an SM107 persistent two-row form for top_k = 8192) to the Cake-exported backends (cake, cake_cute) by @yyihuang in #6154 perf(cake_m",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.3",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-11-04T06:06:08.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 29.5,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
-      ]
+      "id": "c1e9efeda8375df2",
+      "category": "technology",
+      "title": "NASA Shares Plans to Accelerate Artemis, Return to Moon",
+      "summary": "In an update on Oct. 23, NASA Administrator Jared Isaacman and other agency leaders shared the agency’s path to returning Americans to the lunar surface in 2028. Agency leadership provided updates on the previously announced acceleration plans for the Artemis program, advancing toward the agency’s Artemis III test flight in 2027 and Artemis IV Moon […]",
+      "url": "https://www.nasa.gov/missions/artemis/nasa-shares-plans-to-accelerate-artemis-return-to-moon/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-04T21:04:10.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 28,
+      "topics": []
     },
     {
       "id": "71dbd916f14a736e",
@@ -630,8 +693,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-04T16:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 29,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 27.7,
       "topics": []
     },
     {
@@ -644,8 +707,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-04T18:00:02.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 28.5,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 27.3,
       "topics": []
     },
     {
@@ -658,8 +721,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-03T17:15:21.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 28.3,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 27.1,
       "topics": [
         "models"
       ]
@@ -674,22 +737,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-04T16:52:43.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 28.2,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 27,
       "topics": []
     },
     {
-      "id": "9118c84a82ee96bf",
-      "category": "technology",
-      "title": "Hubble Reveals Cosmic Mystery",
-      "summary": "This photo released on Nov. 2, 2026, showcases NGC 4449, a dwarf irregular. Researchers using NASA’s Hubble Space Telescope studied 37 nearby dwarf galaxies — small galaxies containing a few thousand to hundreds of millions of stars — including NGC 4449 and found that much of the oxygen they expected to see is missing. Read […]",
-      "url": "https://www.nasa.gov/image-article/hubble-reveals-cosmic-mystery/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-04T15:59:36.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 28,
+      "id": "82d26191ea639264",
+      "category": "finance",
+      "title": "Minutes of the Monetary Policy Meeting on September 17 and 18, 2026",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/minu_2026/g260918.pdf",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-04T23:50:00.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 26.7,
       "topics": []
     },
     {
@@ -702,8 +765,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-04T15:10:17.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 27.8,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 26.5,
       "topics": [
         "security"
       ]
@@ -718,11 +781,25 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-11-04T12:36:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 27.2,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 25.9,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "9ade43bafdb3b83b",
+      "category": "technology",
+      "title": "Call for Proposals: PyTorch Day China 2026",
+      "summary": "The Call for Proposals for PyTorch Day China 2026 closes November 10 at 23:59 China Standard Time. The event takes place in Beijing on December 12, bringing together PyTorch developers,... The post Call for Proposals: PyTorch Day China 2026 appeared first on PyTorch .",
+      "url": "https://pytorch.org/blog/call-for-proposals-pytorch-day-china-2026/",
+      "source": "PyTorch Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-04T20:29:55.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 24.9,
+      "topics": []
     },
     {
       "id": "365db401df70c7c9",
@@ -734,29 +811,10 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-11-04T12:12:39.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 26.1,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 24.8,
       "topics": [
         "security"
-      ]
-    },
-    {
-      "id": "395ba78d291e167d",
-      "category": "ai",
-      "title": "What Sets the Serving Speed of Looped Language Models? Measurements and Optimizations Graded by Exactness",
-      "summary": "Looped language models apply one block of layers many times per token, so a serving engine pays every per-layer overhead once per loop; we measure serving for Ouro and Huginn-0125 in an open-source looped-model engine and grade our optimizations from bitwise-identical changes to those that require an accuracy check. At batch 1, fusing all loop submissions leaves Ouro throughput at 0.99x; the 5689 small kernels per token are the real cost, and fusing them behind rounding fences raises throughput 1.11-1.59x while 101",
-      "url": "https://arxiv.org/abs/2611.05150v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-11-03T16:25:43.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 26.1,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models"
       ]
     },
     {
@@ -769,45 +827,10 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-04T00:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 26,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 24.7,
       "topics": [
         "inference",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "6f67d78222e3663a",
-      "category": "ai",
-      "title": "An Investigation on Numerical Bugs in GPU Programs Towards Automated Bug Detection",
-      "summary": "General-purpose graphics processing unit (GPU) computing has emerged as a leading parallel computing paradigm, offering significant performance gains in various domains such as scientific computing and deep learning. However, GPU programs are susceptible to numerical bugs, which can lead to incorrect results or crashes. These bugs are difficult to detect, debug, and fix due to their dependence on specific input values or types and the absence of reliable error-checking mechanisms and oracles. Additionally, the uniq",
-      "url": "https://arxiv.org/abs/2611.05121v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-11-03T16:09:26.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 26,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
-      "id": "6dcb9b7492f8de08",
-      "category": "ai",
-      "title": "Workload-Static Optical Circuit Switching For Scalable LLM Inference Decode",
-      "summary": "LLM inference decode executes fine-grained collectives whose latency directly limits per-user interactivity, yet scale-up fabrics are still built from electronic packet switches designed for training. We observe that, for a given model deployment and parallelization, the communication structure of decode is fixed, and propose workload-static optical circuit switching (OCS): circuits are configured once per deployment, co-designed with model parallelism and with topology-aware collective schedules that turn spare ac",
-      "url": "https://arxiv.org/abs/2611.05104v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-11-03T16:00:07.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 26,
-      "topics": [
-        "inference",
-        "hardware",
         "models",
         "training"
       ]
@@ -822,22 +845,176 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-04T17:50:10.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 25.5,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 24.2,
       "topics": []
     },
     {
-      "id": "d0ad2a547e724c5a",
-      "category": "technology",
-      "title": "How NVIDIA Factory Operations Blueprint Coordinates AI Agents to Investigate Production Issues",
-      "summary": "A Siemens report estimates that unplanned downtime costs an average large plant in the surveyed sectors $253 million per year. Whether investigating a failed...",
-      "url": "https://developer.nvidia.com/blog/how-nvidia-factory-operations-blueprint-coordinates-ai-agents-to-investigate-production-issues/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-04T17:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 25.3,
+      "id": "50669e15112fdd87",
+      "category": "finance",
+      "title": "Australia's oldest department store David Jones collapses after 188 years",
+      "summary": "The brand's 38 physical stores and online site will continue to operate while receivers review its operations.",
+      "url": "https://www.bbc.co.uk/news/articles/cky93z5y0171o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-05T00:59:22.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 24,
+      "topics": []
+    },
+    {
+      "id": "44925134d1724989",
+      "category": "world",
+      "title": "Africa’s richest man launches mega oil tank farm in Namibia",
+      "summary": "Nigerian billionaire Aliko Dangote launched a fuel storage facility in Namibia to future-proof Southern Africa's supply.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/africas-richest-man-launches-mega-oil-tank-farm-in-namibia?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-05T00:39:18.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "129ee510449311e8",
+      "category": "world",
+      "title": "Democrats won Congress. But can they deliver on their promises?",
+      "summary": "Despite their midterm election victories, Democrats face major obstacles to reining in Trump on Iran, tariffs and more.",
+      "url": "https://www.aljazeera.com/news/2026/11/5/democrats-won-congress-but-can-they-deliver-on-their-promises?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-05T00:25:43.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "148390a8d50e99d2",
+      "category": "world",
+      "title": "Historic firsts redraw US political map in 2026 midterm elections",
+      "summary": "The 2026 US midterms delivered a wave of historic firsts for women, Black, Muslim, gay and Native American politicians.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/historic-firsts-redraw-us-political-map-in-2026-midterm-elections?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-05T00:24:20.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 23.9,
+      "topics": []
+    },
+    {
+      "id": "9a8c1fa2ba43b299",
+      "category": "finance",
+      "title": "Interest rates expected to rise for first time in over three years",
+      "summary": "Most analysts are predicting an increase from 3.75% to 4%, the first increase in more than three years.",
+      "url": "https://www.bbc.co.uk/news/articles/ck5ynw45jrgqo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-05T00:00:09.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "e2366d2f6cbf4b51",
+      "category": "world",
+      "title": "15 years of ‘almost no progress’ in getting young people moving: WHO",
+      "summary": "One in four adolescents worldwide reported not getting at least 60 minutes of physical activity on any day in the previous week, according to new global estimates released by the World Health Organization (WHO) on Wednesday.",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168736",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-04T12:00:00.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "161e9cc1a0cdc96a",
+      "category": "world",
+      "title": "Democrats take House and Senate from Republicans in US midterm rout",
+      "summary": "Democrats will control both chambers of Congress after flipping seats in Republican strongholds across the US in an election seen as a repudiation of President Donald Trump.",
+      "url": "https://www.dw.com/en/democrats-take-house-and-senate-from-republicans-in-us-midterm-rout/a-79859416?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-04T23:04:00.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "b9497f518a62f15b",
+      "category": "finance",
+      "title": "Goldman, Apollo seek buyers for $40 billion SpaceX AI chip deal, Bloomberg News reports",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/goldman-apollo-seek-buyers-40-billion-spacex-ai-chip-deal-bloomberg-news-reports-6525526",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-04T21:54:23.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "f061120ebf0d1135",
+      "category": "finance",
+      "title": "Elon Musk's millions failed to deliver Republican wins in fierce midterms",
+      "summary": "Musk spent nearly $500m in the 2026 US midterm elections, an individual election spending record.",
+      "url": "https://www.bbc.co.uk/news/articles/cv8ez3p3ge5ko",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-04T21:41:15.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "e1385d8d6641edbe",
+      "category": "world",
+      "title": "Netanyahu claims 'serious concerns' of foreign spending to sway Israeli election",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu on Wednesday cited \"serious suspicions\" around foreign interference in Israel's recent parliamentary elections. He claims foreign countries spent large amounts of money to influence the results, while the largest Arab-Israeli bloc called such accusations \"political persecution\".",
+      "url": "https://www.france24.com/en/middle-east/20261104-netanyahu-claims-serious-concerns-of-foreign-spending-to-sway-israeli-election",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-04T21:26:53.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 23.1,
+      "topics": []
+    },
+    {
+      "id": "8acdd4d58212e4dc",
+      "category": "world",
+      "title": "South Africans vote in key municipal elections",
+      "summary": "In tonight's edition, a crucial test for South Africa's ruling ANC as millions vote to elect municipal governments. Also, Ethiopia has expelled six Sudanese diplomats amid accusations it's allowing the paramilitary RSF to launch drone strikes from its territory. And a deepening humanitarian crisis in Ethiopia, where renewed fighting has displaced thousands.",
+      "url": "https://www.france24.com/en/south-africans-vote-in-key-municipal-elections",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-04T21:26:13.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 23.1,
+      "topics": []
+    },
+    {
+      "id": "b1ed3af46f9cb671",
+      "category": "world",
+      "title": "Bavarian politician Hubert Aiwanger found dead in Berlin hotel",
+      "summary": "Aiwanger was Bavaria's Economy Minister and the chairman of the right-wing populist Free Voters party. The circumstances surrounding his death are still unclear.",
+      "url": "https://www.dw.com/en/bavarian-politician-hubert-aiwanger-found-dead-in-berlin-hotel/a-79859115?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-04T21:00:00.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 23,
       "topics": []
     },
     {
@@ -850,82 +1027,80 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-11-04T17:07:02.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 24.3,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 23,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "d502ea170dc7c790",
-      "category": "ai",
-      "title": "Transformers Model Integration Contracts",
+      "id": "8ddc4494f8ce286b",
+      "category": "finance",
+      "title": "Sources of Changes in Current Account Balances (Projections for Nov.)",
       "summary": "",
-      "url": "https://huggingface.co/blog/transformers-mic",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 24,
-      "topics": [
-        "models"
-      ]
-    },
-    {
-      "id": "66fd16849605beff",
-      "category": "world",
-      "title": "How US midterm results could reshape Trump’s foreign policy",
-      "summary": "US midterm results could reshape Trump’s political landscape and increase congressional scrutiny of his foreign policy.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/aje-onl-nf_how-us-midterm-could-reshape-trumps-foreign-policy-041126?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T19:15:50.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 23.8,
+      "url": "https://www.boj.or.jp/en/statistics/boj/fm/juqp/juqp2611.xlsx",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-04T23:50:00.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 22.7,
       "topics": []
     },
     {
-      "id": "04d5949d73089541",
-      "category": "world",
-      "title": "Fact check: Examining viral narratives after the US midterm elections",
-      "summary": "As Democrats celebrate major gains, false claims about election fraud have spread. Viral posts alleging illegal voting and election rigging are intended to fuel doubt about the integrity of the vote. DW checks the facts.",
-      "url": "https://www.dw.com/en/fact-check-examining-viral-narratives-after-the-us-midterm-elections/a-79851311?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
+      "id": "a1e271638df698db",
+      "category": "technology",
+      "title": "Nintendo's biggest ROM chip supplier is bowing out of the business",
+      "summary": "And what that could mean for physical Switch game costs.",
+      "url": "https://arstechnica.com/gaming/2026/11/the-tech-memory-shortage-comes-for-nintendos-cartridge-supply-chain/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-11-04T18:45:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 23.7,
+      "publishedAt": "2026-11-04T22:47:51.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 22.4,
       "topics": []
     },
     {
-      "id": "c94f2868185122e1",
-      "category": "world",
-      "title": "Democrats warn Trump camp to ‘lawyer up’ as anger over corruption drives midterms wipeout",
-      "summary": "Corruption in government was high on the minds of US voters as they dealt US President Donald Trump’s party a chastening defeat in midterm elections, toppling Republican strongholds like dominoes and flipping both chambers of Congress. Triumphant Democrats have warned the Trump administration to “lawyer up”; how they go about tackling alleged graft and abuse of power could shape both their own fortunes and the country’s politics.",
-      "url": "https://www.france24.com/en/americas/20261104-democrats-warn-trump-camp-lawyer-up-anger-over-corruption-drives-midterms-wipeout-gop",
-      "source": "France 24",
-      "sourceCountry": "France",
+      "id": "dd7aba37dca32baa",
+      "category": "ai",
+      "title": "AI PACs spent millions trying to shape Congress — here’s how they fared",
+      "summary": "AI industry PACs spent millions influencing the 2026 midterms, with mixed results. Political groups are already looking toward the next election cycle.",
+      "url": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-11-04T18:01:05.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 23.5,
+      "publishedAt": "2026-11-04T22:45:09.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 22.4,
       "topics": []
     },
     {
-      "id": "ca8b4b3b169208c7",
-      "category": "world",
-      "title": "'Once-in-a-generation event: Historic election a shocking repudiation of Trump & the MAGA movement'",
-      "summary": "Erin Ogunkeye is pleased to welcome Adam Jentleson, President of the Searchlight Institute and author of Supermajority: How Democrats Can Build Lasting Power, For Jentleson, the Democrats' sweeping midterm victory represents far more than the familiar backlash against an incumbent president. \"This is a once-in-a-generation event.\" But electoral breadth presents a governing dilemma. Can a coalition stretching from progressive reformers to culturally conservative Democrats translate its diversity into legislative act",
-      "url": "https://www.france24.com/en/once-in-a-generation-event-historic-election-a-shocking-repudiation-of-trump-the-maga-movement",
-      "source": "France 24",
-      "sourceCountry": "France",
+      "id": "072804ca99ed2894",
+      "category": "technology",
+      "title": "Hackers exploited iOS and Android flaws to infect phones",
+      "summary": "Researchers say group may have been Kremlin-sponsored in search of diplomatic targets.",
+      "url": "https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-11-04T17:49:34.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 23.5,
+      "publishedAt": "2026-11-04T22:26:49.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "f677bbce33ba3aa9",
+      "category": "technology",
+      "title": "VMware releases vSphere Express for virtualization on up to 128 cores",
+      "summary": "“We started listening to a lot of our lower-end customers,\" VMware exec says.",
+      "url": "https://arstechnica.com/information-technology/2026/11/vmware-releases-vsphere-express-for-virtualization-on-up-to-128-cores/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-04T21:38:49.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 22.2,
       "topics": []
     },
     {
@@ -938,22 +1113,22 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-04T14:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 23.5,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 22.2,
       "topics": []
     },
     {
-      "id": "758a2f8944282132",
-      "category": "world",
-      "title": "Palestinian citizens of Israel face intimidation after election success",
-      "summary": "After winning a record number of parliament seats, Palestinian-led parties face campaign against them.",
-      "url": "https://www.aljazeera.com/news/2026/11/4/palestinians-face-intimidation-after-election-success?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "id": "5566f26bdfae8727",
+      "category": "ai",
+      "title": "OpenAI is already trying to shape the 2028 election",
+      "summary": "OpenAI’s Chris Lehane wants AI to define the 2028 election, proposing a new social contract that could benefit Americans while also advancing the AI giant’s own business interests.",
+      "url": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-11-04T17:14:21.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 23.3,
+      "publishedAt": "2026-11-04T21:25:44.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 22.1,
       "topics": []
     },
     {
@@ -966,8 +1141,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-04T16:59:15.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 23.3,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 22,
       "topics": []
     },
     {
@@ -980,24 +1155,38 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-04T16:51:35.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 23.2,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 22,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "6f7523419c483ee5",
-      "category": "finance",
-      "title": "Dollar falls after Democrats take US Congress in midterm elections",
+      "id": "f3f53e486e03a0b3",
+      "category": "ai",
+      "title": "Palette: teaching a small model to build decks in your design language",
       "summary": "",
-      "url": "https://www.channelnewsasia.com/business/dollar-falls-after-democrats-take-us-congress-in-midterm-elections-6519116",
+      "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-03T16:35:36.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 21.9,
+      "topics": []
+    },
+    {
+      "id": "e17d8e8627fc2353",
+      "category": "finance",
+      "title": "Stocks surge, oil tumbles after Trump's election rout",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/world/stocks-wall-street-midterms-election-trump-oil-6524931",
       "source": "CNA Business",
       "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-11-04T16:21:42.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 23.1,
+      "publishedAt": "2026-11-04T16:22:00.000Z",
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 21.8,
       "topics": []
     },
     {
@@ -1010,78 +1199,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-04T16:18:21.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 23.1,
-      "topics": []
-    },
-    {
-      "id": "ec8097e5c79e0d2f",
-      "category": "finance",
-      "title": "AI boom draws chip supply from other end-markets, Siltronic CEO says",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/ai-boom-draws-chip-supply-other-end-markets-siltronic-ceo-says-6524926",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T16:12:03.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 23.1,
-      "topics": []
-    },
-    {
-      "id": "8aa4d32a80fe28f8",
-      "category": "world",
-      "title": "Democratic voters celebrate El-Sayed’s Michigan win in election ‘blue wave’",
-      "summary": "Democratic voters danced as they celebrated Abdul El-Sayed’s victory in Michigan.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/democratic-voters-celebrate-el-sayeds-michigan-win-in-election-blue?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T15:51:32.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 23,
-      "topics": []
-    },
-    {
-      "id": "eb18691ece06ffa8",
-      "category": "ai",
-      "title": "Open source AI is booming. Hugging Face explains who profits.",
-      "summary": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture value? And with Chinese open models gaining ground, can American players keep up? On this episode of […]",
-      "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T19:30:04.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 22.9,
-      "topics": []
-    },
-    {
-      "id": "b2acc74861d70f6c",
-      "category": "ai",
-      "title": "DuckDuckGo pitches itself to schools amid backlash over Google’s AI policy",
-      "summary": "DuckDuckGo is courting schools frustrated by Google's AI restrictions, pointing educators to its search engine and options to disable AI features.",
-      "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T19:29:52.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 22.9,
-      "topics": []
-    },
-    {
-      "id": "087db2c605d49f86",
-      "category": "world",
-      "title": "Gold for Palestine: Meet junior karate champ Mariam Bsharat",
-      "summary": "The occupied West Bank is not an obvious breeding ground for sporting success. But Mariam Bsharat, 17, has beaten the odds to become a karate world champion and is making a new life in Germany.",
-      "url": "https://www.dw.com/en/gold-for-palestine-meet-junior-karate-champ-mariam-bsharat/a-79851806?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T15:40:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 22.9,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 21.8,
       "topics": []
     },
     {
@@ -1094,8 +1213,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-04T15:28:18.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 22.9,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 21.6,
       "topics": []
     },
     {
@@ -1108,57 +1227,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-11-04T18:16:55.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 22.6,
-      "topics": []
-    },
-    {
-      "id": "418138aeb43c8bb9",
-      "category": "ai",
-      "title": "v0.5.23",
-      "summary": "Highlights 1007 PRs from 257 contributors. New models Model Type Cookbook Muse Spark Open LLM / VLM link Beam-1.0 LLM / VLM link MiniMax-M3.1-Flash LLM / VLM link MiniCPM-V 4.7 LLM / VLM link Kev LLM / VLM link Cosmos3-Nano-Sim (Bimanual, Transfer, Auto) Diffusion link FastH3 Omni Diffusion link FLUX.3 Image Klein Diffusion link HY-Nomas Diffusion link MOSS-Image Diffusion link What's new DeepSeek-V4.1 on GB300 gets up to 1.5x more prefill throughput under load and about 28% lower first-token latency on 32K to 64K ",
-      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.23",
-      "source": "SGLang Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-11-02T22:14:10.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 22.6,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training",
-        "security"
-      ]
-    },
-    {
-      "id": "a09b5d2455711712",
-      "category": "world",
-      "title": "Outrage after transgender women attacked in Buenos Aires",
-      "summary": "Politicians, celebrities and LGBT+ campaigners denounce violence filmed and shared by alleged attackers as authorities launch an investigation. Leer más",
-      "url": "https://www.batimes.com.ar/news/argentina/outrage-after-transgender-women-attacked-in-buenos-aires.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T17:42:05.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 22.4,
-      "topics": []
-    },
-    {
-      "id": "58639f4350bebd26",
-      "category": "world",
-      "title": "Brazil: Santa Claus School celebrates graduation at Christ the Redeemer",
-      "summary": "Dozens of Santas gathered at Rio de Janeiro's iconic Christ the Redeemer statue to celebrate their graduation. The 55 new recruits are preparing to spread Christmas cheer across Brazil.",
-      "url": "https://www.africanews.com/2026/11/04/brazil-santa-claus-school-celebrates-graduation-at-christ-the-redeemer/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T17:30:20.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 22.4,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 21.3,
       "topics": []
     },
     {
@@ -1171,8 +1241,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-11-03T17:01:49.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 22.3,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 21,
       "topics": []
     },
     {
@@ -1185,25 +1255,11 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-03T16:00:45.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 22,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 20.8,
       "topics": [
         "hardware"
       ]
-    },
-    {
-      "id": "d2aa002544ac852a",
-      "category": "technology",
-      "title": "The DEA banned a drug some opioid users called a miracle",
-      "summary": "Researchers say the Schedule I ban could kill studies of a promising opioid treatment.",
-      "url": "https://arstechnica.com/health/2026/11/the-dea-banned-a-drug-some-opioid-users-called-a-miracle/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T15:08:48.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 21.8,
-      "topics": []
     },
     {
       "id": "99e08cfe527b787f",
@@ -1215,36 +1271,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-11-04T14:51:45.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 21.7,
-      "topics": []
-    },
-    {
-      "id": "e578cb0cca5121ee",
-      "category": "finance",
-      "title": "What's happening to UK interest rates and what does it mean for mortgages?",
-      "summary": "The interest rate set by the Bank of England affects mortgage, loan and savings rates for millions.",
-      "url": "https://www.bbc.co.uk/news/articles/c3dky111m40o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T10:47:31.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 21.7,
-      "topics": []
-    },
-    {
-      "id": "4867550ae3973f5b",
-      "category": "finance",
-      "title": "Swim and gym prices set to rise above inflation",
-      "summary": "The rises would impact Perdiswell, St John's Sports Centre and Nunnery Wood Sports Complex.",
-      "url": "https://www.bbc.co.uk/news/articles/c6pvgw8gz1k4o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T06:13:19.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 20.6,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 20.5,
       "topics": []
     },
     {
@@ -1257,36 +1285,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-11-04T08:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 20,
-      "topics": []
-    },
-    {
-      "id": "2a2403c33483f2c9",
-      "category": "finance",
-      "title": "Collateral Accepted by the Bank of Japan (End of Oct.)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/boj/other/col/col2610.xlsx",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-04T08:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 20,
-      "topics": []
-    },
-    {
-      "id": "a43ec85bef4e235c",
-      "category": "finance",
-      "title": "Poundland owner in crunch talks as retailer's collapse looms",
-      "summary": "Gordon Brothers will meet Jonathan Reynolds on Wednesday as the investment firm faces scrutiny over Poundland.",
-      "url": "https://www.bbc.co.uk/news/articles/ck240mm3e42do",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T19:44:46.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 19.9,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 18.7,
       "topics": []
     },
     {
@@ -1299,22 +1299,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-11-04T00:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 19,
-      "topics": []
-    },
-    {
-      "id": "e726bbe3364dc780",
-      "category": "technology",
-      "title": "People say they want small smartphones—the Enough Phone will put that to the test",
-      "summary": "It won't win the specs race, but it will actually fit in your hand.",
-      "url": "https://arstechnica.com/gadgets/2026/11/people-say-they-want-small-smartphones-the-enough-phone-will-put-that-to-the-test/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T18:00:40.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 18.5,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 17.7,
       "topics": []
     },
     {
@@ -1327,36 +1313,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-11-03T10:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 18.5,
-      "topics": []
-    },
-    {
-      "id": "c941d601512c0dbf",
-      "category": "finance",
-      "title": "Bank of Japan Accounts (October 31)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261031.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-04T01:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 18.3,
-      "topics": []
-    },
-    {
-      "id": "eec8d5033de15fdc",
-      "category": "technology",
-      "title": "Binance says hackers who stole billions in crypto spent months planning heist",
-      "summary": "Techniques included laptop infections, compromised internal tooling, and fake job interviews.",
-      "url": "https://arstechnica.com/information-technology/2026/11/binance-says-hackers-who-stole-billions-in-crypto-spent-months-planning-heist/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-04T16:06:03.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 18,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 17.2,
       "topics": []
     },
     {
@@ -1369,8 +1327,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-03T14:00:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 17.5,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 16.2,
       "topics": []
     },
     {
@@ -1383,8 +1341,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-03T09:22:03.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 17.3,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 16.1,
       "topics": []
     },
     {
@@ -1397,22 +1355,8 @@
       "sourceCountry": "Australia",
       "sourceType": "institution",
       "publishedAt": "2026-11-03T03:30:00.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 16.9,
-      "topics": []
-    },
-    {
-      "id": "cb74ed0deab0c53a",
-      "category": "technology",
-      "title": "Redesigned Health app expands language support",
-      "summary": "Apple announced expanded language support for the redesigned Health app, bringing personalized health insights to millions of people worldwide.",
-      "url": "https://www.apple.com/newsroom/2026/11/redesigned-health-app-expands-language-support/",
-      "source": "Apple Newsroom",
-      "sourceCountry": "United States",
-      "sourceType": "release",
-      "publishedAt": "2026-11-03T18:24:58.012Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 16.6,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 15.6,
       "topics": []
     },
     {
@@ -1425,8 +1369,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-03T07:00:12.000Z",
-      "fetchedAt": "2026-11-04T19:58:53.674Z",
-      "score": 14.8,
+      "fetchedAt": "2026-11-05T01:00:01.484Z",
+      "score": 13.5,
       "topics": []
     }
   ]
