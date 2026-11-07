@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T06:28:11.775Z",
+  "generatedAt": "2026-11-07T15:02:12.606Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 27,
-      "latestPublishedAt": "2026-11-07T03:25:00.000Z",
-      "selectedCount": 2,
+      "entryCount": 23,
+      "latestPublishedAt": "2026-11-07T12:49:36.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -39,9 +39,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 118,
-      "latestPublishedAt": "2026-11-07T04:44:00.000Z",
-      "selectedCount": 2,
+      "entryCount": 120,
+      "latestPublishedAt": "2026-11-07T14:38:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-07T05:57:25.000Z",
+      "latestPublishedAt": "2026-11-07T14:30:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-07T06:05:28.000Z",
+      "latestPublishedAt": "2026-11-07T13:28:43.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-06T23:09:45.000Z",
+      "latestPublishedAt": "2026-11-07T12:15:55.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -157,8 +157,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 15,
-      "latestPublishedAt": "2026-11-06T09:00:00.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-11-07T14:00:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -184,7 +184,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-11-05T12:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -249,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-11-06T12:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-11-07T06:18:38.000Z",
+      "latestPublishedAt": "2026-11-07T14:44:24.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-11-06T21:45:03.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-11-07T13:43:14.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-11-07T03:46:00.000Z",
+      "latestPublishedAt": "2026-11-07T11:56:29.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -340,7 +340,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-11-05T16:01:08.000Z",
-      "selectedCount": 0,
+      "selectedCount": 1,
       "libraryCount": 3
     },
     {
@@ -405,7 +405,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-11-05T17:42:06.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -524,8 +524,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T22:20:20.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 33,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 30.8,
       "topics": [
         "inference",
         "hardware"
@@ -541,8 +541,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T18:03:26.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 31.9,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 29.8,
       "topics": [
         "inference",
         "training"
@@ -558,14 +558,46 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-11-06T21:38:32.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 31.8,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 29.7,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models",
         "training"
+      ]
+    },
+    {
+      "id": "9283532c75cdd646",
+      "category": "world",
+      "title": "Russia launches massive strike on Kyiv",
+      "summary": "As Ukraine prepares for another round of talks with Russia and the United States next week, Moscow has launched a massive overnight strike. At least five people were injured in Kyiv, where Russian missiles damaged residential and commercial buildings, forced the closure of a bridge over the Dnipro River and caused fresh power and water outages. Ophélie Jacobson reports.",
+      "url": "https://www.france24.com/en/video/20261107-russia-launches-massive-strike-on-kyiv-1",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T12:15:21.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 28.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "6f7704afa9304de1",
+      "category": "world",
+      "title": "Israel coalition talks gain momentum",
+      "summary": "Following inconclusive elections in Israel, opposition candidate Gadi Eisenkot says he is confident of securing the mandate to form a government, as President Isaac Herzog prepares to nominate the first candidate. Eisenkot claims he is making progress in efforts to oust long-serving Prime Minister Benjamin Netanyahu. Noga Tarnopolsky reports from Jerusalem.",
+      "url": "https://www.france24.com/en/israel-coalition-talks-gain-momentum",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T12:12:06.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 28.3,
+      "topics": [
+        "inference"
       ]
     },
     {
@@ -578,8 +610,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-06T15:43:27.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 30.3,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 28.2,
       "topics": [
         "hardware",
         "security"
@@ -595,8 +627,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-11-06T12:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 27.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 25.2,
       "topics": [
         "security"
       ]
@@ -611,11 +643,27 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 27.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 25.2,
       "topics": [
         "inference",
         "kernels"
+      ]
+    },
+    {
+      "id": "6618ebfb6bbef030",
+      "category": "world",
+      "title": "Italy's Meloni blames pro-Russian hackers for cyberattack on minister",
+      "summary": "Antonio Tajani has said hackers published personal data stolen from him as Giorgia Meloni blamed pro-Russia criminals for the incident. The news follows a string of bomb threats that have grounded flights across the EU.",
+      "url": "https://www.dw.com/en/italy-s-meloni-blames-pro-russian-hackers-for-cyberattack-on-minister/a-79885200?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T14:07:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 24.8,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -628,27 +676,39 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-06T21:22:24.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 26.7,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 24.6,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "95c97d51141c14fc",
-      "category": "technology",
-      "title": "The post-quantum future of web privacy",
-      "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close the gap.",
-      "url": "https://blog.cloudflare.com/vole-mole/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T14:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.9,
-      "topics": [
-        "security"
-      ]
+      "id": "af5d13d72e8cece8",
+      "category": "world",
+      "title": "Iraq’s FM says external parties using Iraqi soil to attack neighbours",
+      "summary": "Iraqi foreign minister tells Al Jazeera that Baghdad is investigating attacks on the Gulf launched from its territory.",
+      "url": "https://www.aljazeera.com/news/2026/11/7/iraqs-fm-says-external-parties-using-iraqi-soil-to-attack-neighbours?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T14:24:48.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "9856814b9289b032",
+      "category": "world",
+      "title": "New Zealand’s prime minister says election is ‘too close to call’",
+      "summary": "New Zealand prime minister Christopher Luxon says he has a pathway to form the next government.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/new-zealands-prime-minister-says-election-is-too-close-to?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T14:03:06.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.8,
+      "topics": []
     },
     {
       "id": "5bccf635eb14ebd7",
@@ -660,8 +720,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-06T02:07:35.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.9,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.8,
       "topics": [
         "inference",
         "kernels",
@@ -669,6 +729,701 @@
         "models",
         "training"
       ]
+    },
+    {
+      "id": "9688ca93c36ea392",
+      "category": "finance",
+      "title": "Christine Lagarde: Interview with Yomiuri Shimbun",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-07T14:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "95c97d51141c14fc",
+      "category": "technology",
+      "title": "The post-quantum future of web privacy",
+      "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close the gap.",
+      "url": "https://blog.cloudflare.com/vole-mole/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-06T14:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "2cca38888968dd35",
+      "category": "world",
+      "title": "‘Radical’ or ‘hero’?: France debates leftist candidate Jean-Luc Melenchon",
+      "summary": "The hard-left leader has transformed into a real contender in next year presidential elections.",
+      "url": "https://www.aljazeera.com/news/2026/11/7/radical-or-hero-france-debates-leftist-candidate-jean-luc-melenchon?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T13:35:46.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "db1eeaed4475f1d3",
+      "category": "technology",
+      "title": "Configure, Certify, and Operate Kubernetes GPU Clusters with NVIDIA DSX OS",
+      "summary": "One underperforming GPU can slow an entire distributed training job. The node may pass basic health checks and show normal utilization, leaving operators to...",
+      "url": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-05T17:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.5,
+      "topics": [
+        "hardware",
+        "training"
+      ]
+    },
+    {
+      "id": "1a09e62e159d1871",
+      "category": "world",
+      "title": "Four things we learned this week about 2028 White House race",
+      "summary": "The seismic Democratic gains in Congress could shape the presidential election, so who had a good night and who's making moves?",
+      "url": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T12:23:28.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.3,
+      "topics": []
+    },
+    {
+      "id": "e08806caad372146",
+      "category": "technology",
+      "title": "M30’s Sparkling Stars",
+      "summary": "This NASA/ESA Hubble Space Telescope image released Nov. 5, 2026, provides a lesson in galactic history. The sparkling collection of stars is named Messier 30 (M30) after the French astronomer, Charles Messier, who cataloged M30 and other diffuse objects that might be mistaken for comets in the early telescopes of Messier’s time. M30 lies about […]",
+      "url": "https://www.nasa.gov/image-article/m30s-sparkling-stars/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-06T16:23:41.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.3,
+      "topics": []
+    },
+    {
+      "id": "e3b210df488117bf",
+      "category": "world",
+      "title": "New Zealand election too close to call with over 95% of votes counted",
+      "summary": "Initial results in New Zealand show the two main parties neck-and-neck with fewer than 4,000 votes separating them. Official results aren't expected until later this month once special votes have been counted.",
+      "url": "https://www.dw.com/en/new-zealand-election-too-close-to-call-with-over-95-of-votes-counted/a-79883056?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T11:54:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "1fe709d7846e5713",
+      "category": "ai",
+      "title": "How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks",
+      "summary": "A year ago, NVIDIA open sourced its Aerial wireless software, joining Sionna and a broader suite of open source tools for accelerating next-generation 6G network development. Together, they give researchers a foundation for testing ideas, comparing results and building on each other’s work — connecting simulation and AI training with experiments on real over-the-air wireless […]",
+      "url": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T16:00:35.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.2,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "433b0f6e5c80240c",
+      "category": "world",
+      "title": "France braces for new round of Yellow Vest, student protests",
+      "summary": "Two major protests have been announced for Saturday. One will see students and unions marching against high living costs, while the Yellow Vests plan to march separately, despite a police ban.",
+      "url": "https://www.dw.com/en/france-braces-for-new-round-of-yellow-vest-student-protests/a-79884064?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T10:39:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "d222128b70c36cd7",
+      "category": "ai",
+      "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+      "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
+      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T18:44:38.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 22.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "932ef0c4c7c4100a",
+      "category": "technology",
+      "title": "APOD: 2026 November 7 – De Gerlache-Kocher Massif",
+      "summary": "APOD Science APOD APOD: 2026 November 7 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. De Gerlache-Kocher Massif […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-07T05:05:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "4bcc32905b0e2554",
+      "category": "world",
+      "title": "Coalition battles ahead in key South African cities as vote counting wraps up",
+      "summary": "Partial results for South Africa's local elections point to coalition battles in several major metros, including Johannesburg, Tshwane and eThekwini.",
+      "url": "https://www.africanews.com/2026/11/07/coalition-battles-ahead-in-key-south-african-cities-as-vote-counting-wraps-up/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T11:45:30.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 22.2,
+      "topics": []
+    },
+    {
+      "id": "dbf837a687cc1f86",
+      "category": "world",
+      "title": "Ex-lawmaker gets 12.5 years in Macao's first national security case",
+      "summary": "Au's arrest last year was the first publicly known prosecution under Macao's national security law since it was enacted in 2009.",
+      "url": "https://www.npr.org/2026/11/06/g-s1-152217/ex-lawmaker-gets-12-5-years-in-macaos-first-national-security-case",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T13:56:43.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "cbae5c095112965d",
+      "category": "ai",
+      "title": "StrataFlux: Memory-Hierarchy-Native Low-Bit LLM Inference",
+      "summary": "Quantization reduces the memory and bandwidth demands of large language model (LLM) inference but can degrade accuracy; offloading higher-precision data can instead stall generation. We introduce StrataFlux, a framework that challenges this tradeoff by recovering accuracy lost to low-bit weight and key-value (KV) cache quantization while retaining quantization's memory and speed advantages. StrataFlux co-designs refinement representation, selection, and delivery to make host RAM and solid-state drives useful source",
+      "url": "https://arxiv.org/abs/2611.08363v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-11-05T17:42:06.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.7,
+      "topics": [
+        "inference",
+        "hardware",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "06acad801aa64995",
+      "category": "world",
+      "title": "Tanzanian opposition celebrates 'victorious' day after leader avoids death penalty",
+      "summary": "Tanzania's main opposition Chadema party celebrated a \"victorious day\" on Friday, after a court found their leader Tundu Lissu not guilty of treason.",
+      "url": "https://www.africanews.com/2026/11/07/tanzanian-opposition-celebrates-victorious-day-after-leader-avoids-death-penalty/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T09:10:18.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.5,
+      "topics": []
+    },
+    {
+      "id": "41501efbc1b67195",
+      "category": "ai",
+      "title": "Measured Coupling for Parallel Decoding in Diffusion Language Models",
+      "summary": "Diffusion language models can write many tokens per step, but must choose which tokens are safe to commit together. Mean-field decoding penalizes pairs of positions whose predictions look alike. We replace this proxy with the coupling itself: how much committing one token changes the model's confidence at another. Cheap probes inside the main forward pass measure it, with no training or extra model, and it plugs into the same mean-field rule. On three models and four benchmarks, our method needs far fewer steps tha",
+      "url": "https://arxiv.org/abs/2611.08307v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-11-05T17:10:03.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.5,
+      "topics": [
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "0c94d6f9e5ecbd07",
+      "category": "ai",
+      "title": "Zero Mismatch, Simple Async RL: REINFORCE Zero, DeepSeek-V4.1 and Kimi K3.1",
+      "summary": "Asynchronous RL trains on stale weights. Align rollout and training kernels bit for bit, and unclipped importance sampling corrects that lag. Plus zero-mismatch RL for DeepSeek-V4.1-Flash, Kimi K3.1 and AMD MI355X.",
+      "url": "https://vllm.ai/blog/2026-11-06-zero-mismatch-async-rl",
+      "source": "vLLM Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.2,
+      "topics": [
+        "kernels",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "9c8e01a3481c93ff",
+      "category": "technology",
+      "title": "ROCm InferaSim: Cut LLM Serving Trial Costs and Deploy the Best Configuration",
+      "summary": "Serving an LLM well means making a lot of choices before you know the answer. You pick an engine, a parallel layout, precisions and scheduler settings, and for disaggregated serving a split between prefill and decode. That leaves thousands of candidates, and each trial ties up one or more multi-GPU nodes for minutes. Measuring every candidate in our searches would take about 25,000 GPU-hours, so most teams try a few guesses and keep the best. A guess that misses costs you extra GPUs or a missed latency target.",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/inferasim/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.2,
+      "topics": [
+        "inference",
+        "hardware"
+      ]
+    },
+    {
+      "id": "cb0d0ca31b56f0bc",
+      "category": "technology",
+      "title": "PrimusClaw: An Open-Source Managed Agent Runtime for AMD Instinct GPU Clusters",
+      "summary": "PrimusClaw is an open-source managed agent runtime: a session store, an agent harness, and per-session sandboxes that you run in your own Kubernetes cluster, next to your AMD Instinct™ GPUs. In production use at AMD since April 2026, two PrimusClaw deployments have hosted more than 40,000 agent sessions for more than 70 users: over 100,000 agent-hours, more than 4 million tool calls, and more than 500 billion prompt tokens. On the main deployment, the median run lasted 3.4 hours (Endnote 2).",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/primusclaw/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.2,
+      "topics": [
+        "hardware",
+        "security"
+      ]
+    },
+    {
+      "id": "62011c0ce4c25bd1",
+      "category": "finance",
+      "title": "'My mortgage is going up £200': How rising interest rates are hitting people's pockets",
+      "summary": "With UK interest rates set to rise, mortgages, credit cards and loans could get more expensive for millions.",
+      "url": "https://www.bbc.co.uk/news/articles/c617kjqjvk12o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T01:41:36.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 20.7,
+      "topics": []
+    },
+    {
+      "id": "156ab73ed958ce4c",
+      "category": "world",
+      "title": "A Trump bump in the road",
+      "summary": "“All good things come in threes” does not work for President Javier Milei after the recent hat-trick of adverse (at least for him) election results abroad. Leer más",
+      "url": "https://www.batimes.com.ar/news/op-ed/a-trump-bump-in-the-road.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T03:46:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 20.2,
+      "topics": []
+    },
+    {
+      "id": "e4515d8c304d43d1",
+      "category": "world",
+      "title": "Sudan’s suffering is plain for all to see say aid teams, as brutal war continues",
+      "summary": "Aid teams working to help millions of people uprooted by the ongoing war in Sudan appealed on Friday for more international assistance amid desperate funding shortages, empty warehouses and overwhelming needs.",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168753",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-06T12:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 20.2,
+      "topics": []
+    },
+    {
+      "id": "c90ddb9ae75eddde",
+      "category": "ai",
+      "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
+      "summary": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.",
+      "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T06:28:32.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 19.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "9984a73ab964294d",
+      "category": "finance",
+      "title": "Commentary: Is the AI stock bubble finally bursting?",
+      "summary": "Any reasonable person can see the hallmarks of an unsustainable party in markets, says the Financial Times’ Katie Martin.",
+      "url": "https://www.channelnewsasia.com/commentary/ai-stock-bubble-finally-bursting-wall-street-selloff-6530581",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T22:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 19.7,
+      "topics": []
+    },
+    {
+      "id": "464412b926a6c343",
+      "category": "ai",
+      "title": "ToyBlocks: A controlled world for robot learning and evaluation",
+      "summary": "",
+      "url": "https://huggingface.co/blog/allenai/toyblocks",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-06T14:00:48.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 19.7,
+      "topics": []
+    },
+    {
+      "id": "ced35d55fcb71708",
+      "category": "finance",
+      "title": "Putin expands temporary administration of Japan Tobacco assets in Russia",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/putin-expands-temporary-administration-japan-tobacco-assets-in-russia-6533126",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T13:28:43.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 19.6,
+      "topics": []
+    },
+    {
+      "id": "595815d05d0e6661",
+      "category": "technology",
+      "title": "Supercomputing Tech Demo Schedule",
+      "summary": "Supercomputing 2026 Join NASA in the Exhibit Hall (Booth #4038) for presentations by NASA experts. Full Tech Demo schedule below. TUESDAY, NOVEMBER 17 10:00 AMType-safe Templates in Fortran 2028Tom Clune10:30 AMType-safe Templates in Fortran 2028Tom Clune11:00 AM Type-safe Templates in Fortran 2028Tom Clune1:00PM Mixing and Matching and Multiple Versions, Oh My!Brad Richardson1:30 PMMixing and Matching and Multiple […]",
+      "url": "https://science.nasa.gov/earth/supercomputing-tech-demo-schedule/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-06T16:03:52.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 19.3,
+      "topics": []
+    },
+    {
+      "id": "3fe55d8cc299ab5a",
+      "category": "ai",
+      "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
+      "summary": "",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-05T19:35:16.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 19.1,
+      "topics": []
+    },
+    {
+      "id": "e8a7f2fe1612033d",
+      "category": "finance",
+      "title": "Why the US midterms sparked an AI stock selloff",
+      "summary": "Fears of more AI regulation appear to have sparked fear among investors, but concerns about the industry have been growing for some time.",
+      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T18:32:16.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "c1b33cf10afc7ae1",
+      "category": "technology",
+      "title": "Re-releases of Wing Commander, Ultima titles hit Steam and GOG",
+      "summary": "It's mostly bad news from EA lately, but preservation efforts are nice to see.",
+      "url": "https://arstechnica.com/gaming/2026/11/ea-producer-tells-the-inside-story-behind-new-wing-commander-remasters/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T22:08:47.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 18.8,
+      "topics": []
+    },
+    {
+      "id": "ba573973083db416",
+      "category": "finance",
+      "title": "USDA to launch AI tool to check crop production data after errors",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/usda-launch-ai-tool-check-crop-production-data-after-errors-6532096",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T18:22:59.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 18.8,
+      "topics": []
+    },
+    {
+      "id": "69999ed7b9960939",
+      "category": "technology",
+      "title": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
+      "summary": "Meta won't force Facebook page owners to allow AI training on linked content.",
+      "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T17:43:02.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 18.7,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "388bf8d1d8dc6847",
+      "category": "technology",
+      "title": "The Bantu expansion changed Africa. Scientists are still tracing how.",
+      "summary": "Genes and archaeology are revealing how Bantu speakers spread across much of Africa.",
+      "url": "https://arstechnica.com/science/2026/11/the-migration-that-transformed-africas-languages-genes-and-cultures/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T12:15:55.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 18.3,
+      "topics": []
+    },
+    {
+      "id": "4b95e6b824fb69b5",
+      "category": "ai",
+      "title": "Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents",
+      "summary": "AI agents do more than generate answers. They search for information, query databases, write and test code and take action. Each of those steps relies on a CPU, with agents moving between GPU reasoning and CPU execution throughout a task. As businesses put more agents to work, AI factories need CPUs that can execute those […]",
+      "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-05T20:00:41.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 18.2,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "9b7473991f2f34a1",
+      "category": "ai",
+      "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+      "summary": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
+      "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T18:44:20.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 17.9,
+      "topics": []
+    },
+    {
+      "id": "76fcca867b688d52",
+      "category": "finance",
+      "title": "Speech by Governor UEDA at the 2026 Michel Camdessus Central Banking Lecture, International Monetary Fund",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko261107a.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-06T16:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 17.2,
+      "topics": []
+    },
+    {
+      "id": "19028b17ae22daa6",
+      "category": "finance",
+      "title": "Designation of Prosegur Australia Pty Ltd under the Cash Distribution Framework Act 2026",
+      "summary": "Media release number 2026-31: The RBA has today designated Prosegur Australia Pty Ltd (Prosegur Australia) (ACN 004 247 358) under the Cash Distribution Framework Act 2026 (the Act).",
+      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-31.html",
+      "source": "Reserve Bank of Australia",
+      "sourceCountry": "Australia",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-05T23:45:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 17.2,
+      "topics": []
+    },
+    {
+      "id": "dd19e9ded9eb8264",
+      "category": "ai",
+      "title": "The Wizard of Open Weights: Chris Alexiuk Makes AI Easy With Open Models",
+      "summary": "Chris Alexiuk has a simple rule about open source AI: If you believe in it, be loud about it. “We should be shouting about this technology from the rooftops,” said Alexiuk, a Toronto-based senior product research engineer in deep learning at NVIDIA who specializes in making open large language models (LLMs) practical for working developers. […]",
+      "url": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-05T16:00:05.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 17.2,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "da40b4ed6d2bec76",
+      "category": "finance",
+      "title": "ECB publishes consolidated banking data for end-June 2026",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-06T09:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 16.5,
+      "topics": []
+    },
+    {
+      "id": "1a7503b6325973d9",
+      "category": "ai",
+      "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+      "summary": "",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 16.2,
+      "topics": []
+    },
+    {
+      "id": "b3f7f3f3fec7f34b",
+      "category": "finance",
+      "title": "(IMES Newsletter) 2026 BoC - Philadelphia Fed - BOJ Joint Workshop",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/about/release_2026/rel261106b.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-06T07:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 15,
+      "topics": []
+    },
+    {
+      "id": "8b19c57fc5d21abf",
+      "category": "finance",
+      "title": "Why smoky bacon crisps threaten to reignite rows over EU rules",
+      "summary": "A post-Brexit deal on food standards has raised questions over the future naming of the classic British snack.",
+      "url": "https://www.bbc.co.uk/news/articles/cm1dwwqrr1kvo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T17:19:38.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 14.6,
+      "topics": []
+    },
+    {
+      "id": "21a79dc1dce79b22",
+      "category": "technology",
+      "title": "Inside GitHub’s new Git storage architecture",
+      "summary": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works. The post Inside GitHub’s new Git storage architecture appeared first on The GitHub Blog .",
+      "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+      "source": "GitHub Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-05T20:23:21.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 14.3,
+      "topics": []
+    },
+    {
+      "id": "50d093fd2631d260",
+      "category": "ai",
+      "title": "Detecting signs of hypertension using wearable sensors",
+      "summary": "Health & Bioscience",
+      "url": "https://research.google/blog/detecting-signs-of-hypertension-using-wearable-sensors/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-05T16:01:08.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 14.2,
+      "topics": []
+    },
+    {
+      "id": "530266f6a8754f64",
+      "category": "finance",
+      "title": "IMES Discussion Paper Series (2026)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/research/imes/dps/dps26.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-06T02:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 13.7,
+      "topics": []
+    },
+    {
+      "id": "f391f39c46ce2afa",
+      "category": "technology",
+      "title": "Agents aren’t humans (but they kinda are)",
+      "summary": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this automated traffic.",
+      "url": "https://blog.cloudflare.com/trusted-agent-delegation/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-05T17:03:04.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 13.5,
+      "topics": []
+    },
+    {
+      "id": "b17afc01319b19f8",
+      "category": "finance",
+      "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "summary": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-05T16:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 12.2,
+      "topics": []
     },
     {
       "id": "d18a872c6af8359a",
@@ -684,23 +1439,6 @@
       "score": 25.7,
       "topics": [
         "security"
-      ]
-    },
-    {
-      "id": "db1eeaed4475f1d3",
-      "category": "technology",
-      "title": "Configure, Certify, and Operate Kubernetes GPU Clusters with NVIDIA DSX OS",
-      "summary": "One underperforming GPU can slow an entire distributed training job. The node may pass basic health checks and show normal utilization, leaving operators to...",
-      "url": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-05T17:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.6,
-      "topics": [
-        "hardware",
-        "training"
       ]
     },
     {
@@ -720,66 +1458,6 @@
       ]
     },
     {
-      "id": "e08806caad372146",
-      "category": "technology",
-      "title": "M30’s Sparkling Stars",
-      "summary": "This NASA/ESA Hubble Space Telescope image released Nov. 5, 2026, provides a lesson in galactic history. The sparkling collection of stars is named Messier 30 (M30) after the French astronomer, Charles Messier, who cataloged M30 and other diffuse objects that might be mistaken for comets in the early telescopes of Messier’s time. M30 lies about […]",
-      "url": "https://www.nasa.gov/image-article/m30s-sparkling-stars/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-06T16:23:41.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.5,
-      "topics": []
-    },
-    {
-      "id": "1fe709d7846e5713",
-      "category": "ai",
-      "title": "How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks",
-      "summary": "A year ago, NVIDIA open sourced its Aerial wireless software, joining Sionna and a broader suite of open source tools for accelerating next-generation 6G network development. Together, they give researchers a foundation for testing ideas, comparing results and building on each other’s work — connecting simulation and AI training with experiments on real over-the-air wireless […]",
-      "url": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T16:00:35.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.4,
-      "topics": [
-        "training"
-      ]
-    },
-    {
-      "id": "d222128b70c36cd7",
-      "category": "ai",
-      "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
-      "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
-      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T18:44:38.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.1,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "932ef0c4c7c4100a",
-      "category": "technology",
-      "title": "APOD: 2026 November 7 – De Gerlache-Kocher Massif",
-      "summary": "APOD Science APOD APOD: 2026 November 7 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. De Gerlache-Kocher Massif […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-november-7-de-gerlache-kocher-massif/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-07T05:05:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 24.7,
-      "topics": []
-    },
-    {
       "id": "897c671e47a9b004",
       "category": "world",
       "title": "‘Alien-cortical’ mice: Can human brain cells grow inside animals?",
@@ -792,41 +1470,6 @@
       "fetchedAt": "2026-11-07T06:28:11.775Z",
       "score": 23.9,
       "topics": []
-    },
-    {
-      "id": "dbf837a687cc1f86",
-      "category": "world",
-      "title": "Ex-lawmaker gets 12.5 years in Macao's first national security case",
-      "summary": "Au's arrest last year was the first publicly known prosecution under Macao's national security law since it was enacted in 2009.",
-      "url": "https://www.npr.org/2026/11/06/g-s1-152217/ex-lawmaker-gets-12-5-years-in-macaos-first-national-security-case",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T13:56:43.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "cbae5c095112965d",
-      "category": "ai",
-      "title": "StrataFlux: Memory-Hierarchy-Native Low-Bit LLM Inference",
-      "summary": "Quantization reduces the memory and bandwidth demands of large language model (LLM) inference but can degrade accuracy; offloading higher-precision data can instead stall generation. We introduce StrataFlux, a framework that challenges this tradeoff by recovering accuracy lost to low-bit weight and key-value (KV) cache quantization while retaining quantization's memory and speed advantages. StrataFlux co-designs refinement representation, selection, and delivery to make host RAM and solid-state drives useful source",
-      "url": "https://arxiv.org/abs/2611.08363v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-11-05T17:42:06.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.8,
-      "topics": [
-        "inference",
-        "hardware",
-        "models",
-        "training"
-      ]
     },
     {
       "id": "13b205e71b22f95d",
@@ -843,23 +1486,6 @@
       "topics": []
     },
     {
-      "id": "41501efbc1b67195",
-      "category": "ai",
-      "title": "Measured Coupling for Parallel Decoding in Diffusion Language Models",
-      "summary": "Diffusion language models can write many tokens per step, but must choose which tokens are safe to commit together. Mean-field decoding penalizes pairs of positions whose predictions look alike. We replace this proxy with the coupling itself: how much committing one token changes the model's confidence at another. Cheap probes inside the main forward pass measure it, with no training or extra model, and it plugs into the same mean-field rule. On three models and four benchmarks, our method needs far fewer steps tha",
-      "url": "https://arxiv.org/abs/2611.08307v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-11-05T17:10:03.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.7,
-      "topics": [
-        "models",
-        "training"
-      ]
-    },
-    {
       "id": "754430a9d981b990",
       "category": "world",
       "title": "‘One less gang leader’: Haiti’s prime minister celebrates police operation",
@@ -872,58 +1498,6 @@
       "fetchedAt": "2026-11-07T06:28:11.775Z",
       "score": 23.6,
       "topics": []
-    },
-    {
-      "id": "0c94d6f9e5ecbd07",
-      "category": "ai",
-      "title": "Zero Mismatch, Simple Async RL: REINFORCE Zero, DeepSeek-V4.1 and Kimi K3.1",
-      "summary": "Asynchronous RL trains on stale weights. Align rollout and training kernels bit for bit, and unclipped importance sampling corrects that lag. Plus zero-mismatch RL for DeepSeek-V4.1-Flash, Kimi K3.1 and AMD MI355X.",
-      "url": "https://vllm.ai/blog/2026-11-06-zero-mismatch-async-rl",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.4,
-      "topics": [
-        "kernels",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "9c8e01a3481c93ff",
-      "category": "technology",
-      "title": "ROCm InferaSim: Cut LLM Serving Trial Costs and Deploy the Best Configuration",
-      "summary": "Serving an LLM well means making a lot of choices before you know the answer. You pick an engine, a parallel layout, precisions and scheduler settings, and for disaggregated serving a split between prefill and decode. That leaves thousands of candidates, and each trial ties up one or more multi-GPU nodes for minutes. Measuring every candidate in our searches would take about 25,000 GPU-hours, so most teams try a few guesses and keep the best. A guess that misses costs you extra GPUs or a missed latency target.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/inferasim/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.4,
-      "topics": [
-        "inference",
-        "hardware"
-      ]
-    },
-    {
-      "id": "cb0d0ca31b56f0bc",
-      "category": "technology",
-      "title": "PrimusClaw: An Open-Source Managed Agent Runtime for AMD Instinct GPU Clusters",
-      "summary": "PrimusClaw is an open-source managed agent runtime: a session store, an agent harness, and per-session sandboxes that you run in your own Kubernetes cluster, next to your AMD Instinct™ GPUs. In production use at AMD since April 2026, two PrimusClaw deployments have hosted more than 40,000 agent sessions for more than 70 users: over 100,000 agent-hours, more than 4 million tool calls, and more than 500 billion prompt tokens. On the main deployment, the median run lasted 3.4 hours (Endnote 2).",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/primusclaw/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.4,
-      "topics": [
-        "hardware",
-        "security"
-      ]
     },
     {
       "id": "7852a523d6e6ee96",
@@ -956,20 +1530,6 @@
       ]
     },
     {
-      "id": "62011c0ce4c25bd1",
-      "category": "finance",
-      "title": "'My mortgage is going up £200': How rising interest rates are hitting people's pockets",
-      "summary": "With UK interest rates set to rise, mortgages, credit cards and loans could get more expensive for millions.",
-      "url": "https://www.bbc.co.uk/news/articles/c617kjqjvk12o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T01:41:36.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 22.8,
-      "topics": []
-    },
-    {
       "id": "e0437f38f435cfd5",
       "category": "ai",
       "title": "Precision - Preserving Subtensor Inference for a 22B Joint Audio - Video Generator under a Fixed GPU Working Set",
@@ -988,78 +1548,6 @@
       ]
     },
     {
-      "id": "e4515d8c304d43d1",
-      "category": "world",
-      "title": "Sudan’s suffering is plain for all to see say aid teams, as brutal war continues",
-      "summary": "Aid teams working to help millions of people uprooted by the ongoing war in Sudan appealed on Friday for more international assistance amid desperate funding shortages, empty warehouses and overwhelming needs.",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168753",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-06T12:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 22.4,
-      "topics": []
-    },
-    {
-      "id": "156ab73ed958ce4c",
-      "category": "world",
-      "title": "A Trump bump in the road",
-      "summary": "“All good things come in threes” does not work for President Javier Milei after the recent hat-trick of adverse (at least for him) election results abroad. Leer más",
-      "url": "https://www.batimes.com.ar/news/op-ed/a-trump-bump-in-the-road.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T03:46:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 22.3,
-      "topics": []
-    },
-    {
-      "id": "c90ddb9ae75eddde",
-      "category": "ai",
-      "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
-      "summary": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.",
-      "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T06:28:32.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 22,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "9984a73ab964294d",
-      "category": "finance",
-      "title": "Commentary: Is the AI stock bubble finally bursting?",
-      "summary": "Any reasonable person can see the hallmarks of an unsustainable party in markets, says the Financial Times’ Katie Martin.",
-      "url": "https://www.channelnewsasia.com/commentary/ai-stock-bubble-finally-bursting-wall-street-selloff-6530581",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T22:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21.9,
-      "topics": []
-    },
-    {
-      "id": "464412b926a6c343",
-      "category": "ai",
-      "title": "ToyBlocks: A controlled world for robot learning and evaluation",
-      "summary": "",
-      "url": "https://huggingface.co/blog/allenai/toyblocks",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T14:00:48.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21.9,
-      "topics": []
-    },
-    {
       "id": "f52d161e11e78552",
       "category": "world",
       "title": "AI stocks climb after trillions wiped from market values",
@@ -1071,20 +1559,6 @@
       "publishedAt": "2026-11-06T21:06:25.000Z",
       "fetchedAt": "2026-11-07T06:28:11.775Z",
       "score": 21.7,
-      "topics": []
-    },
-    {
-      "id": "595815d05d0e6661",
-      "category": "technology",
-      "title": "Supercomputing Tech Demo Schedule",
-      "summary": "Supercomputing 2026 Join NASA in the Exhibit Hall (Booth #4038) for presentations by NASA experts. Full Tech Demo schedule below. TUESDAY, NOVEMBER 17 10:00 AMType-safe Templates in Fortran 2028Tom Clune10:30 AMType-safe Templates in Fortran 2028Tom Clune11:00 AM Type-safe Templates in Fortran 2028Tom Clune1:00PM Mixing and Matching and Multiple Versions, Oh My!Brad Richardson1:30 PMMixing and Matching and Multiple […]",
-      "url": "https://science.nasa.gov/earth/supercomputing-tech-demo-schedule/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-06T16:03:52.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21.4,
       "topics": []
     },
     {
@@ -1104,20 +1578,6 @@
       ]
     },
     {
-      "id": "3fe55d8cc299ab5a",
-      "category": "ai",
-      "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-      "summary": "",
-      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-05T19:35:16.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21.3,
-      "topics": []
-    },
-    {
       "id": "3ba0f03adeb323d2",
       "category": "world",
       "title": "Critics say Democrats should look into Trump's Middle East deals in future corruption investigations",
@@ -1129,48 +1589,6 @@
       "publishedAt": "2026-11-06T19:16:00.000Z",
       "fetchedAt": "2026-11-07T06:28:11.775Z",
       "score": 21.2,
-      "topics": []
-    },
-    {
-      "id": "e8a7f2fe1612033d",
-      "category": "finance",
-      "title": "Why the US midterms sparked an AI stock selloff",
-      "summary": "Fears of more AI regulation appear to have sparked fear among investors, but concerns about the industry have been growing for some time.",
-      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T18:32:16.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21,
-      "topics": []
-    },
-    {
-      "id": "ba573973083db416",
-      "category": "finance",
-      "title": "USDA to launch AI tool to check crop production data after errors",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/usda-launch-ai-tool-check-crop-production-data-after-errors-6532096",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T18:22:59.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21,
-      "topics": []
-    },
-    {
-      "id": "c1b33cf10afc7ae1",
-      "category": "technology",
-      "title": "Re-releases of Wing Commander, Ultima titles hit Steam and GOG",
-      "summary": "It's mostly bad news from EA lately, but preservation efforts are nice to see.",
-      "url": "https://arstechnica.com/gaming/2026/11/ea-producer-tells-the-inside-story-behind-new-wing-commander-remasters/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T22:08:47.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 20.9,
       "topics": []
     },
     {
@@ -1188,22 +1606,6 @@
       "topics": []
     },
     {
-      "id": "69999ed7b9960939",
-      "category": "technology",
-      "title": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
-      "summary": "Meta won't force Facebook page owners to allow AI training on linked content.",
-      "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T17:43:02.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 20.8,
-      "topics": [
-        "training"
-      ]
-    },
-    {
       "id": "c8ccf5764fa4205c",
       "category": "finance",
       "title": "BOJ chief Ueda sees 'some upside risks' to inflation",
@@ -1218,36 +1620,6 @@
       "topics": []
     },
     {
-      "id": "4b95e6b824fb69b5",
-      "category": "ai",
-      "title": "Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents",
-      "summary": "AI agents do more than generate answers. They search for information, query databases, write and test code and take action. Each of those steps relies on a CPU, with agents moving between GPU reasoning and CPU execution throughout a task. As businesses put more agents to work, AI factories need CPUs that can execute those […]",
-      "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-05T20:00:41.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 20.4,
-      "topics": [
-        "hardware"
-      ]
-    },
-    {
-      "id": "9b7473991f2f34a1",
-      "category": "ai",
-      "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
-      "summary": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
-      "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T18:44:20.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 20.1,
-      "topics": []
-    },
-    {
       "id": "e289ae144d7e9e91",
       "category": "technology",
       "title": "You know the launch market is tough when satellite companies start building rockets",
@@ -1259,120 +1631,6 @@
       "publishedAt": "2026-11-06T18:20:47.000Z",
       "fetchedAt": "2026-11-07T06:28:11.775Z",
       "score": 20,
-      "topics": []
-    },
-    {
-      "id": "76fcca867b688d52",
-      "category": "finance",
-      "title": "Speech by Governor UEDA at the 2026 Michel Camdessus Central Banking Lecture, International Monetary Fund",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko261107a.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-06T16:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 19.4,
-      "topics": []
-    },
-    {
-      "id": "dd19e9ded9eb8264",
-      "category": "ai",
-      "title": "The Wizard of Open Weights: Chris Alexiuk Makes AI Easy With Open Models",
-      "summary": "Chris Alexiuk has a simple rule about open source AI: If you believe in it, be loud about it. “We should be shouting about this technology from the rooftops,” said Alexiuk, a Toronto-based senior product research engineer in deep learning at NVIDIA who specializes in making open large language models (LLMs) practical for working developers. […]",
-      "url": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-05T16:00:05.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 19.4,
-      "topics": [
-        "models"
-      ]
-    },
-    {
-      "id": "19028b17ae22daa6",
-      "category": "finance",
-      "title": "Designation of Prosegur Australia Pty Ltd under the Cash Distribution Framework Act 2026",
-      "summary": "Media release number 2026-31: The RBA has today designated Prosegur Australia Pty Ltd (Prosegur Australia) (ACN 004 247 358) under the Cash Distribution Framework Act 2026 (the Act).",
-      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-31.html",
-      "source": "Reserve Bank of Australia",
-      "sourceCountry": "Australia",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-05T23:45:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 19.3,
-      "topics": []
-    },
-    {
-      "id": "da40b4ed6d2bec76",
-      "category": "finance",
-      "title": "ECB publishes consolidated banking data for end-June 2026",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-06T09:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 18.6,
-      "topics": []
-    },
-    {
-      "id": "1a7503b6325973d9",
-      "category": "ai",
-      "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
-      "summary": "",
-      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 18.4,
-      "topics": []
-    },
-    {
-      "id": "b3f7f3f3fec7f34b",
-      "category": "finance",
-      "title": "(IMES Newsletter) 2026 BoC - Philadelphia Fed - BOJ Joint Workshop",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/about/release_2026/rel261106b.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-06T07:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 17.1,
-      "topics": []
-    },
-    {
-      "id": "8b19c57fc5d21abf",
-      "category": "finance",
-      "title": "Why smoky bacon crisps threaten to reignite rows over EU rules",
-      "summary": "A post-Brexit deal on food standards has raised questions over the future naming of the classic British snack.",
-      "url": "https://www.bbc.co.uk/news/articles/cm1dwwqrr1kvo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T17:19:38.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 16.7,
-      "topics": []
-    },
-    {
-      "id": "21a79dc1dce79b22",
-      "category": "technology",
-      "title": "Inside GitHub’s new Git storage architecture",
-      "summary": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works. The post Inside GitHub’s new Git storage architecture appeared first on The GitHub Blog .",
-      "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
-      "source": "GitHub Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-05T20:23:21.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 16.5,
       "topics": []
     },
     {
@@ -1401,48 +1659,6 @@
       "publishedAt": "2026-11-05T08:00:00.000Z",
       "fetchedAt": "2026-11-07T06:28:11.775Z",
       "score": 16.4,
-      "topics": []
-    },
-    {
-      "id": "530266f6a8754f64",
-      "category": "finance",
-      "title": "IMES Discussion Paper Series (2026)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/research/imes/dps/dps26.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-06T02:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 15.9,
-      "topics": []
-    },
-    {
-      "id": "f391f39c46ce2afa",
-      "category": "technology",
-      "title": "Agents aren’t humans (but they kinda are)",
-      "summary": "AI agents act for millions, but servers see intermediaries that strip user visibility. This post defines the problem space and introduces a collaborative approach to safely identifying, allowing, and managing this automated traffic.",
-      "url": "https://blog.cloudflare.com/trusted-agent-delegation/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-05T17:03:04.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 15.6,
-      "topics": []
-    },
-    {
-      "id": "b17afc01319b19f8",
-      "category": "finance",
-      "title": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
-      "summary": "Federal Reserve Board announces termination of enforcement action with Allegiant United Holdings, LLC, Nano Financial Holdings, Inc., and Nano Banc",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261105a.htm",
-      "source": "U.S. Federal Reserve",
-      "sourceCountry": "United States",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-05T16:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 14.4,
       "topics": []
     },
     {

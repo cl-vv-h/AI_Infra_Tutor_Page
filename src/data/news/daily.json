@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T06:28:11.775Z",
+  "generatedAt": "2026-11-07T15:02:12.606Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 27,
-      "latestPublishedAt": "2026-11-07T03:25:00.000Z",
-      "selectedCount": 2,
+      "entryCount": 23,
+      "latestPublishedAt": "2026-11-07T12:49:36.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -39,9 +39,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 118,
-      "latestPublishedAt": "2026-11-07T04:44:00.000Z",
-      "selectedCount": 2,
+      "entryCount": 120,
+      "latestPublishedAt": "2026-11-07T14:38:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-07T05:57:25.000Z",
+      "latestPublishedAt": "2026-11-07T14:30:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-07T06:05:28.000Z",
+      "latestPublishedAt": "2026-11-07T13:28:43.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-06T23:09:45.000Z",
+      "latestPublishedAt": "2026-11-07T12:15:55.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -157,8 +157,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 15,
-      "latestPublishedAt": "2026-11-06T09:00:00.000Z",
-      "selectedCount": 3,
+      "latestPublishedAt": "2026-11-07T14:00:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -184,7 +184,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-11-05T12:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -249,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-11-06T12:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-11-07T06:18:38.000Z",
+      "latestPublishedAt": "2026-11-07T14:44:24.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-11-06T21:45:03.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-11-07T13:43:14.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -300,7 +300,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-11-07T03:46:00.000Z",
+      "latestPublishedAt": "2026-11-07T11:56:29.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -340,7 +340,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-11-05T16:01:08.000Z",
-      "selectedCount": 0,
+      "selectedCount": 1,
       "libraryCount": 3
     },
     {
@@ -405,7 +405,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-11-05T17:42:06.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 8
     },
     {
@@ -524,8 +524,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T22:20:20.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 33,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 30.8,
       "topics": [
         "inference",
         "hardware"
@@ -541,8 +541,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T18:03:26.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 31.9,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 29.8,
       "topics": [
         "inference",
         "training"
@@ -558,14 +558,46 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-11-06T21:38:32.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 31.8,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 29.7,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models",
         "training"
+      ]
+    },
+    {
+      "id": "9283532c75cdd646",
+      "category": "world",
+      "title": "Russia launches massive strike on Kyiv",
+      "summary": "As Ukraine prepares for another round of talks with Russia and the United States next week, Moscow has launched a massive overnight strike. At least five people were injured in Kyiv, where Russian missiles damaged residential and commercial buildings, forced the closure of a bridge over the Dnipro River and caused fresh power and water outages. Ophélie Jacobson reports.",
+      "url": "https://www.france24.com/en/video/20261107-russia-launches-massive-strike-on-kyiv-1",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T12:15:21.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 28.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "6f7704afa9304de1",
+      "category": "world",
+      "title": "Israel coalition talks gain momentum",
+      "summary": "Following inconclusive elections in Israel, opposition candidate Gadi Eisenkot says he is confident of securing the mandate to form a government, as President Isaac Herzog prepares to nominate the first candidate. Eisenkot claims he is making progress in efforts to oust long-serving Prime Minister Benjamin Netanyahu. Noga Tarnopolsky reports from Jerusalem.",
+      "url": "https://www.france24.com/en/israel-coalition-talks-gain-momentum",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T12:12:06.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 28.3,
+      "topics": [
+        "inference"
       ]
     },
     {
@@ -578,8 +610,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-06T15:43:27.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 30.3,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 28.2,
       "topics": [
         "hardware",
         "security"
@@ -595,8 +627,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-11-06T12:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 27.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 25.2,
       "topics": [
         "security"
       ]
@@ -611,11 +643,27 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 27.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 25.2,
       "topics": [
         "inference",
         "kernels"
+      ]
+    },
+    {
+      "id": "6618ebfb6bbef030",
+      "category": "world",
+      "title": "Italy's Meloni blames pro-Russian hackers for cyberattack on minister",
+      "summary": "Antonio Tajani has said hackers published personal data stolen from him as Giorgia Meloni blamed pro-Russia criminals for the incident. The news follows a string of bomb threats that have grounded flights across the EU.",
+      "url": "https://www.dw.com/en/italy-s-meloni-blames-pro-russian-hackers-for-cyberattack-on-minister/a-79885200?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T14:07:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 24.8,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -628,27 +676,39 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-06T21:22:24.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 26.7,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 24.6,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "95c97d51141c14fc",
-      "category": "technology",
-      "title": "The post-quantum future of web privacy",
-      "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close the gap.",
-      "url": "https://blog.cloudflare.com/vole-mole/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T14:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.9,
-      "topics": [
-        "security"
-      ]
+      "id": "af5d13d72e8cece8",
+      "category": "world",
+      "title": "Iraq’s FM says external parties using Iraqi soil to attack neighbours",
+      "summary": "Iraqi foreign minister tells Al Jazeera that Baghdad is investigating attacks on the Gulf launched from its territory.",
+      "url": "https://www.aljazeera.com/news/2026/11/7/iraqs-fm-says-external-parties-using-iraqi-soil-to-attack-neighbours?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T14:24:48.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "9856814b9289b032",
+      "category": "world",
+      "title": "New Zealand’s prime minister says election is ‘too close to call’",
+      "summary": "New Zealand prime minister Christopher Luxon says he has a pathway to form the next government.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/7/new-zealands-prime-minister-says-election-is-too-close-to?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T14:03:06.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.8,
+      "topics": []
     },
     {
       "id": "5bccf635eb14ebd7",
@@ -660,8 +720,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-06T02:07:35.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.9,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.8,
       "topics": [
         "inference",
         "kernels",
@@ -671,20 +731,48 @@
       ]
     },
     {
-      "id": "d18a872c6af8359a",
-      "category": "world",
-      "title": "US midterms mark 'the beginning of the end' for Trump, John Bolton says",
-      "summary": "In an interview with FRANCE 24, John Bolton, who served as national security adviser to Donald Trump during his first term, called the US midterm results \"the beginning of the end\" for Trump's stranglehold on the Republican Party. Democrats regained control of both the House of Representatives and the Senate earlier this week, marking the Republicans' worst performance since the 1974 elections in the wake of the Watergate scandal.",
-      "url": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20261106-us-midterms-mark-the-beginning-of-the-end-for-trump-john-bolton-says",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T17:26:53.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.7,
+      "id": "9688ca93c36ea392",
+      "category": "finance",
+      "title": "Christine Lagarde: Interview with Yomiuri Shimbun",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-07T14:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "95c97d51141c14fc",
+      "category": "technology",
+      "title": "The post-quantum future of web privacy",
+      "summary": "Cryptographic protocols like Privacy Pass help keep web sites safe from abuse while keeping their users private. This post looks at the quantum threat to these protocols, and some new post-quantum cryptography that may help close the gap.",
+      "url": "https://blog.cloudflare.com/vole-mole/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-06T14:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.7,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "2cca38888968dd35",
+      "category": "world",
+      "title": "‘Radical’ or ‘hero’?: France debates leftist candidate Jean-Luc Melenchon",
+      "summary": "The hard-left leader has transformed into a real contender in next year presidential elections.",
+      "url": "https://www.aljazeera.com/news/2026/11/7/radical-or-hero-france-debates-leftist-candidate-jean-luc-melenchon?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T13:35:46.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.6,
+      "topics": []
     },
     {
       "id": "db1eeaed4475f1d3",
@@ -696,28 +784,26 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-05T17:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.6,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.5,
       "topics": [
         "hardware",
         "training"
       ]
     },
     {
-      "id": "ca73784b58e073bb",
+      "id": "1a09e62e159d1871",
       "category": "world",
-      "title": "'Chaos within aviation industry' as European air traffic hit by bomb threats",
-      "summary": "Officials across Europe reported a fresh slew of bomb threats against multiple flights on Friday, November 6, following a string of hoaxes that have caused flight diversions this week. Two broadcasters also received security threats, in a possible sign the menace was spreading beyond the skies. FRANCE 24's International Affairs Editor Rochelle Ferguson Bouyahi has more.",
-      "url": "https://www.france24.com/en/video/20261106-chaos-within-aviation-industry-as-european-air-traffic-hit-by-bomb-threats",
-      "source": "France 24",
-      "sourceCountry": "France",
+      "title": "Four things we learned this week about 2028 White House race",
+      "summary": "The seismic Democratic gains in Congress could shape the presidential election, so who had a good night and who's making moves?",
+      "url": "https://www.bbc.co.uk/news/articles/cq1m41n3v7mmo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-11-06T16:33:20.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.5,
-      "topics": [
-        "security"
-      ]
+      "publishedAt": "2026-11-07T12:23:28.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.3,
+      "topics": []
     },
     {
       "id": "e08806caad372146",
@@ -729,8 +815,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-06T16:23:41.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.5,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.3,
+      "topics": []
+    },
+    {
+      "id": "e3b210df488117bf",
+      "category": "world",
+      "title": "New Zealand election too close to call with over 95% of votes counted",
+      "summary": "Initial results in New Zealand show the two main parties neck-and-neck with fewer than 4,000 votes separating them. Official results aren't expected until later this month once special votes have been counted.",
+      "url": "https://www.dw.com/en/new-zealand-election-too-close-to-call-with-over-95-of-votes-counted/a-79883056?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T11:54:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.2,
       "topics": []
     },
     {
@@ -743,11 +843,25 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-06T16:00:35.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 23.2,
       "topics": [
         "training"
       ]
+    },
+    {
+      "id": "433b0f6e5c80240c",
+      "category": "world",
+      "title": "France braces for new round of Yellow Vest, student protests",
+      "summary": "Two major protests have been announced for Saturday. One will see students and unions marching against high living costs, while the Yellow Vests plan to march separately, despite a police ban.",
+      "url": "https://www.dw.com/en/france-braces-for-new-round-of-yellow-vest-student-protests/a-79884064?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T10:39:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 22.9,
+      "topics": []
     },
     {
       "id": "d222128b70c36cd7",
@@ -759,8 +873,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-06T18:44:38.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 25.1,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 22.9,
       "topics": [
         "security"
       ]
@@ -775,22 +889,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-07T05:05:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 24.7,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 22.5,
       "topics": []
     },
     {
-      "id": "897c671e47a9b004",
+      "id": "4bcc32905b0e2554",
       "category": "world",
-      "title": "‘Alien-cortical’ mice: Can human brain cells grow inside animals?",
-      "summary": "Modified mice with human brain cells ignite debates over neurohybrids and the future of cross-species medical research.",
-      "url": "https://www.aljazeera.com/news/2026/11/7/alien-cortical-mice-can-human-brain-cells-grow-inside-animals?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "title": "Coalition battles ahead in key South African cities as vote counting wraps up",
+      "summary": "Partial results for South Africa's local elections point to coalition battles in several major metros, including Johannesburg, Tshwane and eThekwini.",
+      "url": "https://www.africanews.com/2026/11/07/coalition-battles-ahead-in-key-south-african-cities-as-vote-counting-wraps-up/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
       "sourceType": "news",
-      "publishedAt": "2026-11-07T05:57:25.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.9,
+      "publishedAt": "2026-11-07T11:45:30.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 22.2,
       "topics": []
     },
     {
@@ -803,8 +917,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-06T13:56:43.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.9,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.7,
       "topics": [
         "security"
       ]
@@ -819,8 +933,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-11-05T17:42:06.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.8,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.7,
       "topics": [
         "inference",
         "hardware",
@@ -829,17 +943,17 @@
       ]
     },
     {
-      "id": "13b205e71b22f95d",
+      "id": "06acad801aa64995",
       "category": "world",
-      "title": "Russia launches missile attack on Kyiv, injuring residents",
-      "summary": "Air strikes damage buildings and injure two civilians after Zelenskyy warns of potential for new attacks.",
-      "url": "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "title": "Tanzanian opposition celebrates 'victorious' day after leader avoids death penalty",
+      "summary": "Tanzania's main opposition Chadema party celebrated a \"victorious day\" on Friday, after a court found their leader Tundu Lissu not guilty of treason.",
+      "url": "https://www.africanews.com/2026/11/07/tanzanian-opposition-celebrates-victorious-day-after-leader-avoids-death-penalty/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
       "sourceType": "news",
-      "publishedAt": "2026-11-07T05:11:03.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.7,
+      "publishedAt": "2026-11-07T09:10:18.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.5,
       "topics": []
     },
     {
@@ -852,26 +966,12 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-11-05T17:10:03.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.7,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.5,
       "topics": [
         "models",
         "training"
       ]
-    },
-    {
-      "id": "754430a9d981b990",
-      "category": "world",
-      "title": "‘One less gang leader’: Haiti’s prime minister celebrates police operation",
-      "summary": "Haiti's National Police announced that alleged gang leader Mathias Saintil was killed in an exchange of gunfire.",
-      "url": "https://www.aljazeera.com/news/2026/11/7/one-less-gang-leader-haitis-prime-minister-celebrates-police-operation?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T05:02:49.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.6,
-      "topics": []
     },
     {
       "id": "0c94d6f9e5ecbd07",
@@ -883,8 +983,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.2,
       "topics": [
         "kernels",
         "models",
@@ -901,8 +1001,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.2,
       "topics": [
         "inference",
         "hardware"
@@ -918,40 +1018,10 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 21.2,
       "topics": [
         "hardware",
-        "security"
-      ]
-    },
-    {
-      "id": "7852a523d6e6ee96",
-      "category": "world",
-      "title": "Cornell faculty declares 'no confidence' in university leadership",
-      "summary": "The university leadership has faced intense criticism for its handling of sexual crimes on campus since a former student filed a lawsuit saying she was drugged and raped at a fraternity house in October 2024.",
-      "url": "https://www.dw.com/en/cornell-faculty-declares-no-confidence-in-university-leadership/a-79882895?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T03:14:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.2,
-      "topics": []
-    },
-    {
-      "id": "142af4aae9627282",
-      "category": "world",
-      "title": "Macau jails pro-democracy campaigner in city's first national security case",
-      "summary": "Au Kam San was sentenced to 12 years and six months' jail for \"subversion against the political power of the state\".",
-      "url": "https://www.bbc.co.uk/news/articles/cmdx33v9vvr2o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T06:46:21.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 23.1,
-      "topics": [
         "security"
       ]
     },
@@ -965,40 +1035,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-07T01:41:36.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 22.8,
-      "topics": []
-    },
-    {
-      "id": "e0437f38f435cfd5",
-      "category": "ai",
-      "title": "Precision - Preserving Subtensor Inference for a 22B Joint Audio - Video Generator under a Fixed GPU Working Set",
-      "summary": "Complete-block offloading reduces model residency but requires each transferred block to fit the GPU budget. We present Precision-Preserving Subtensor Inference (PSI), a fixed-arena runtime that combines sub-block weight streaming with separately managed intermediate state for the BF16 LTX-2.5 22B joint audio-video transformer. The contribution is a construction whose managed GPU footprint is determined by reusable pages, live state, and bounded workspace, together with controls that separate resource use, transpor",
-      "url": "https://arxiv.org/abs/2611.08023v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-11-05T13:44:36.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 22.8,
-      "topics": [
-        "inference",
-        "hardware",
-        "models"
-      ]
-    },
-    {
-      "id": "e4515d8c304d43d1",
-      "category": "world",
-      "title": "Sudan’s suffering is plain for all to see say aid teams, as brutal war continues",
-      "summary": "Aid teams working to help millions of people uprooted by the ongoing war in Sudan appealed on Friday for more international assistance amid desperate funding shortages, empty warehouses and overwhelming needs.",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168753",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-06T12:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 22.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 20.7,
       "topics": []
     },
     {
@@ -1011,8 +1049,22 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-11-07T03:46:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 22.3,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 20.2,
+      "topics": []
+    },
+    {
+      "id": "e4515d8c304d43d1",
+      "category": "world",
+      "title": "Sudan’s suffering is plain for all to see say aid teams, as brutal war continues",
+      "summary": "Aid teams working to help millions of people uprooted by the ongoing war in Sudan appealed on Friday for more international assistance amid desperate funding shortages, empty warehouses and overwhelming needs.",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168753",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-06T12:00:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 20.2,
       "topics": []
     },
     {
@@ -1025,8 +1077,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-06T06:28:32.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 22,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 19.9,
       "topics": [
         "security"
       ]
@@ -1041,8 +1093,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-11-06T22:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21.9,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 19.7,
       "topics": []
     },
     {
@@ -1055,22 +1107,22 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T14:00:48.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21.9,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 19.7,
       "topics": []
     },
     {
-      "id": "f52d161e11e78552",
-      "category": "world",
-      "title": "AI stocks climb after trillions wiped from market values",
-      "summary": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development.",
-      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
+      "id": "ced35d55fcb71708",
+      "category": "finance",
+      "title": "Putin expands temporary administration of Japan Tobacco assets in Russia",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/putin-expands-temporary-administration-japan-tobacco-assets-in-russia-6533126",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-11-06T21:06:25.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21.7,
+      "publishedAt": "2026-11-07T13:28:43.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 19.6,
       "topics": []
     },
     {
@@ -1083,25 +1135,9 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-06T16:03:52.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 19.3,
       "topics": []
-    },
-    {
-      "id": "97d8fbbc989a174c",
-      "category": "world",
-      "title": "Abyei: Deadly drone strikes mark ‘new and concerning’ threat, UN peacekeeping chief warns",
-      "summary": "Drone strikes that killed at least 30 people in Abyei last month have added “a new and concerning dimension” to security in the disputed area, the UN’s peacekeeping chief told the Security Council on Thursday.",
-      "url": "https://news.un.org/feed/view/en/story/2026/11/1168749",
-      "source": "UN News",
-      "sourceCountry": "International",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-05T12:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21.4,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "3fe55d8cc299ab5a",
@@ -1113,22 +1149,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-05T19:35:16.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21.3,
-      "topics": []
-    },
-    {
-      "id": "3ba0f03adeb323d2",
-      "category": "world",
-      "title": "Critics say Democrats should look into Trump's Middle East deals in future corruption investigations",
-      "summary": "After their victory in the US midterm elections, the Democrats have promised to investigate corruption in the Trump administration. Critics say the president's Middle East deals is an area they should focus on.",
-      "url": "https://www.dw.com/en/critics-say-democrats-should-look-into-trump-s-middle-east-deals-in-future-corruption-investigations/a-79877104?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T19:16:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21.2,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 19.1,
       "topics": []
     },
     {
@@ -1141,22 +1163,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-06T18:32:16.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21,
-      "topics": []
-    },
-    {
-      "id": "ba573973083db416",
-      "category": "finance",
-      "title": "USDA to launch AI tool to check crop production data after errors",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/usda-launch-ai-tool-check-crop-production-data-after-errors-6532096",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T18:22:59.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 21,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 18.9,
       "topics": []
     },
     {
@@ -1169,22 +1177,22 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-06T22:08:47.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 20.9,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 18.8,
       "topics": []
     },
     {
-      "id": "1a22461302b97278",
-      "category": "world",
-      "title": "Morocco marks anniversary of Western Sahara occupation as UN mission ends",
-      "summary": "The anniversary comes as the decades-old territorial conflict enters a new diplomatic phase, with a U.N. peacekeeping mission winding down after 35 years. Western Sahara is Africa’s longest-running territorial conflict",
-      "url": "https://www.africanews.com/2026/11/06/morocco-marks-anniversary-of-western-sahara-occupation-as-un-mission-ends/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
+      "id": "ba573973083db416",
+      "category": "finance",
+      "title": "USDA to launch AI tool to check crop production data after errors",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/usda-launch-ai-tool-check-crop-production-data-after-errors-6532096",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-11-06T21:45:03.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 20.8,
+      "publishedAt": "2026-11-06T18:22:59.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 18.8,
       "topics": []
     },
     {
@@ -1197,24 +1205,24 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-06T17:43:02.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 20.8,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 18.7,
       "topics": [
         "training"
       ]
     },
     {
-      "id": "c8ccf5764fa4205c",
-      "category": "finance",
-      "title": "BOJ chief Ueda sees 'some upside risks' to inflation",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/boj-chief-ueda-sees-some-upside-risks-inflation-6532056",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
+      "id": "388bf8d1d8dc6847",
+      "category": "technology",
+      "title": "The Bantu expansion changed Africa. Scientists are still tracing how.",
+      "summary": "Genes and archaeology are revealing how Bantu speakers spread across much of Africa.",
+      "url": "https://arstechnica.com/science/2026/11/the-migration-that-transformed-africas-languages-genes-and-cultures/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-11-06T17:25:32.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 20.7,
+      "publishedAt": "2026-11-07T12:15:55.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 18.3,
       "topics": []
     },
     {
@@ -1227,8 +1235,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-05T20:00:41.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 20.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 18.2,
       "topics": [
         "hardware"
       ]
@@ -1243,22 +1251,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-06T18:44:20.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 20.1,
-      "topics": []
-    },
-    {
-      "id": "e289ae144d7e9e91",
-      "category": "technology",
-      "title": "You know the launch market is tough when satellite companies start building rockets",
-      "summary": "\"The Blacklift rocket is the springboard to significantly expand our total addressable market.\"",
-      "url": "https://arstechnica.com/space/2026/11/ast-spacemobile-is-so-desperate-for-launch-theyre-building-their-own-rocket/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T18:20:47.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 20,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 17.9,
       "topics": []
     },
     {
@@ -1271,8 +1265,22 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-11-06T16:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 19.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 17.2,
+      "topics": []
+    },
+    {
+      "id": "19028b17ae22daa6",
+      "category": "finance",
+      "title": "Designation of Prosegur Australia Pty Ltd under the Cash Distribution Framework Act 2026",
+      "summary": "Media release number 2026-31: The RBA has today designated Prosegur Australia Pty Ltd (Prosegur Australia) (ACN 004 247 358) under the Cash Distribution Framework Act 2026 (the Act).",
+      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-31.html",
+      "source": "Reserve Bank of Australia",
+      "sourceCountry": "Australia",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-05T23:45:00.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 17.2,
       "topics": []
     },
     {
@@ -1285,25 +1293,11 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-05T16:00:05.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 19.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 17.2,
       "topics": [
         "models"
       ]
-    },
-    {
-      "id": "19028b17ae22daa6",
-      "category": "finance",
-      "title": "Designation of Prosegur Australia Pty Ltd under the Cash Distribution Framework Act 2026",
-      "summary": "Media release number 2026-31: The RBA has today designated Prosegur Australia Pty Ltd (Prosegur Australia) (ACN 004 247 358) under the Cash Distribution Framework Act 2026 (the Act).",
-      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-31.html",
-      "source": "Reserve Bank of Australia",
-      "sourceCountry": "Australia",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-05T23:45:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 19.3,
-      "topics": []
     },
     {
       "id": "da40b4ed6d2bec76",
@@ -1315,8 +1309,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-11-06T09:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 18.6,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 16.5,
       "topics": []
     },
     {
@@ -1329,8 +1323,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 18.4,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 16.2,
       "topics": []
     },
     {
@@ -1343,8 +1337,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-11-06T07:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 17.1,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 15,
       "topics": []
     },
     {
@@ -1357,8 +1351,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-06T17:19:38.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 16.7,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 14.6,
       "topics": []
     },
     {
@@ -1371,36 +1365,22 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-05T20:23:21.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 16.5,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 14.3,
       "topics": []
     },
     {
-      "id": "7a07bb8d98a3d8ec",
-      "category": "finance",
-      "title": "Bank rate increased to 4% - November 2026 Monetary Policy Summary and Minutes",
-      "summary": "The Bank of England’s Monetary Policy Committee is responsible for making decisions about Bank Rate.",
-      "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-05T12:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 16.4,
-      "topics": []
-    },
-    {
-      "id": "47a8e1625f776590",
-      "category": "finance",
-      "title": "Isabel Schnabel: Navigating stormy waters: reflections on monetary policy",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105_1~5e97d9d5a0.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-05T08:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 16.4,
+      "id": "50d093fd2631d260",
+      "category": "ai",
+      "title": "Detecting signs of hypertension using wearable sensors",
+      "summary": "Health & Bioscience",
+      "url": "https://research.google/blog/detecting-signs-of-hypertension-using-wearable-sensors/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-05T16:01:08.000Z",
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 14.2,
       "topics": []
     },
     {
@@ -1413,8 +1393,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-11-06T02:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 15.9,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 13.7,
       "topics": []
     },
     {
@@ -1427,8 +1407,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-05T17:03:04.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 15.6,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 13.5,
       "topics": []
     },
     {
@@ -1441,22 +1421,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-11-05T16:00:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 14.4,
-      "topics": []
-    },
-    {
-      "id": "e9ca15574907e0bf",
-      "category": "finance",
-      "title": "Piero Cipollone: Shaping the future of money",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-05T07:30:00.000Z",
-      "fetchedAt": "2026-11-07T06:28:11.775Z",
-      "score": 12.3,
+      "fetchedAt": "2026-11-07T15:02:12.606Z",
+      "score": 12.2,
       "topics": []
     }
   ]
