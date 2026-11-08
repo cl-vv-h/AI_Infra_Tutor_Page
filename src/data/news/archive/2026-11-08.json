@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-08T06:34:37.370Z",
+  "generatedAt": "2026-11-08T15:30:57.973Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 38,
-  "failedSourceCount": 1,
+  "sourceCount": 39,
+  "failedSourceCount": 0,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -14,7 +14,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-08T04:03:12.000Z",
+      "latestPublishedAt": "2026-11-08T14:32:52.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 43,
-      "latestPublishedAt": "2026-11-07T23:02:35.000Z",
+      "entryCount": 45,
+      "latestPublishedAt": "2026-11-08T11:25:32.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 117,
-      "latestPublishedAt": "2026-11-08T05:55:00.000Z",
+      "latestPublishedAt": "2026-11-08T15:18:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-08T05:09:39.000Z",
+      "latestPublishedAt": "2026-11-08T14:53:29.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-07T18:38:20.000Z",
+      "latestPublishedAt": "2026-11-08T12:53:57.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-07T12:15:55.000Z",
+      "latestPublishedAt": "2026-11-08T12:15:31.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -158,7 +158,7 @@
       "channel": "feed",
       "entryCount": 15,
       "latestPublishedAt": "2026-11-07T14:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -167,11 +167,10 @@
       "country": "United States",
       "category": "finance",
       "type": "institution",
-      "state": "unavailable",
+      "state": "ok",
       "channel": "feed",
-      "httpStatus": 404,
-      "entryCount": 0,
-      "latestPublishedAt": null,
+      "entryCount": 20,
+      "latestPublishedAt": "2026-11-05T16:00:00.000Z",
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -198,7 +197,7 @@
       "channel": "feed",
       "entryCount": 42,
       "latestPublishedAt": "2026-11-06T16:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -250,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-11-07T12:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -262,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-11-07T22:47:06.000Z",
+      "latestPublishedAt": "2026-11-08T14:36:25.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -275,7 +274,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-11-07T22:12:09.000Z",
+      "latestPublishedAt": "2026-11-08T15:07:15.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -288,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-11-07T22:10:54.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-11-08T15:27:10.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -315,7 +314,7 @@
       "channel": "feed",
       "entryCount": 899,
       "latestPublishedAt": "2026-11-06T14:00:48.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -458,7 +457,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-11-06T14:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -525,8 +524,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-07T22:47:03.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 27.1,
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 24.8,
       "topics": []
     },
     {
@@ -539,12 +538,540 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T22:20:20.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 26.9,
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 24.7,
       "topics": [
         "inference",
         "hardware"
       ]
+    },
+    {
+      "id": "00613a281b2e22de",
+      "category": "world",
+      "title": "At least 21 killed after migrant boat sinks off Senegal",
+      "summary": "The incident occurred near Kebemer off the coast of northwestern Senegal. Authorities on El Hierro in the Canary Islands have declared an emergency after a marked increase in migrant boat arrivals.",
+      "url": "https://www.dw.com/en/at-least-21-killed-after-migrant-boat-sinks-off-senegal/a-79890883?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T13:48:00.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 24.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "b82811968e5931a4",
+      "category": "world",
+      "title": "Palestinian journalist Abed Abou Shhadeh released after 5 days in detention",
+      "summary": "Palestinian journalist Abed Abou Shhadeh released after 5 days detention",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/palestinian-journalist-abed-abou-shhadeh-released-after-5-days-in-detention?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T14:53:29.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "bcc3e4588a818c92",
+      "category": "world",
+      "title": "US voters reject AI data centres: could the backlash spread to France?",
+      "summary": "In Tuesday’s US midterm elections, voters weighed in on more than 40 local measures on data centres, and sided against them in all but one. With Democrats taking control of Congress in January and new governors in Texas and Georgia calling for moratoriums, the AI building boom faces its toughest political test yet.",
+      "url": "https://www.france24.com/en/tv-shows/tech-24/20261108-us-voters-reject-ai-data-centres-could-the-backlash-spread-to-france",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T14:36:25.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 23.8,
+      "topics": []
+    },
+    {
+      "id": "d636a02cdc01a1ce",
+      "category": "world",
+      "title": "Poland in shock after 6 killed in Krakow far-right shooting",
+      "summary": "Poland on Sunday launched a terror probe into the mass shooting in Krakow the day before, in which six people were killed and many more were injured. Authorities have said that the 24-year-old suspect, who used a semi-automatic rifle in his killing spree, was “fascinated by far-right ideologies”. He is currently in critical condition in hospital. FRANCE 24 journalist Adrien Sariat reports from Poland.",
+      "url": "https://www.france24.com/en/poland-in-shock-after-6-killed-in-krakow-far-right-shooting",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T14:21:18.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "a71c2d6412e05378",
+      "category": "world",
+      "title": "Mourning in Poland after mass shooting",
+      "summary": "Poland has launched a terrorism investigation after a deadly shooting left six people dead and 16 injured. The 24-year-old Polish suspect was reportedly fascinated by far-right ideologies. Authorities are investigating the possible extremist motive as Krakow's main square remains sealed. Two days of national mourning have been declared for the victims.",
+      "url": "https://www.france24.com/en/mourning-in-poland-after-mass-shooting",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T14:18:48.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
+      "id": "377fc490f1800b3a",
+      "category": "technology",
+      "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
+      "summary": "During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For...",
+      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-06T18:03:26.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 23.6,
+      "topics": [
+        "inference",
+        "training"
+      ]
+    },
+    {
+      "id": "dba092548c00b068",
+      "category": "world",
+      "title": "Egypt’s reopening of its embassy in Tripoli signals regional shift on Libya",
+      "summary": "Former rivals in Libya are pushing for a unity government to end years of conflict.",
+      "url": "https://www.aljazeera.com/news/2026/11/8/egypts-reopening-of-its-embassy-in-tripoli-signals-regional-shift-on-libya?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T13:27:57.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 23.5,
+      "topics": []
+    },
+    {
+      "id": "0f0caf138d0b82b9",
+      "category": "technology",
+      "title": "v1.4.0rc3",
+      "summary": "Highlights Known Issues DSA models, including GLM-5.2, may produce incorrect output when using an NVFP4 KV cache. Kimi K3 DSpark with MegaMoE CuTe DSL TEP and CUDA graphs may hang during GB300 warmup. DeepSeek-V4-Pro initialization may run out of GPU memory when MPI workers are reused after large MoE workloads. Tensor-parallel serving with RPC orchestration may hang during model initialization when reusing an MPI worker pool across threads. Model Support Add Muse Spark Open model and configuration support #21042 , ",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc3",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-11-06T21:38:32.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 23.5,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "b26c5758321b18c8",
+      "category": "world",
+      "title": "Could Iraq’s Kurdish region return to two separate administrations?",
+      "summary": "A political impasse between the KRG and PUK threatens to break up the semiautonomous northern region.",
+      "url": "https://www.aljazeera.com/news/2026/11/8/could-iraqs-kurdish-region-return-to-two-separate-administrations?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T13:06:28.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "08c83bf650bba873",
+      "category": "ai",
+      "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+      "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
+      "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T21:17:08.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 23.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "c6f274953e158040",
+      "category": "world",
+      "title": "Spanish police launch new ID procedure for migrants at temporary camps",
+      "summary": "Police in the northern Spanish enclave of Ceuta are introducing a new identification process for migrants as authorities move to dismantle a temporary camp.",
+      "url": "https://www.africanews.com/2026/11/08/spanish-police-launch-new-id-procedure-for-migrants-at-temporary-camps/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T15:27:10.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 23,
+      "topics": []
+    },
+    {
+      "id": "b9b7662c83b72626",
+      "category": "world",
+      "title": "ANC leads South Africa's local polls but records all-time election low: final results",
+      "summary": "The African National Congress came in first place in South Africa's local elections but suffered its worst-ever electoral setback, according to final results on Saturday.",
+      "url": "https://www.africanews.com/2026/11/08/anc-leads-south-africas-local-polls-but-records-all-time-election-low-final-results/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T14:07:48.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "02ecebac65a47219",
+      "category": "world",
+      "title": "How the deadly shooting in Krakow unfolded",
+      "summary": "Video authenticated by BBC Verify shows the moment gunshots rang out in Krakow's main market square.",
+      "url": "https://www.bbc.co.uk/news/videos/cq74p2zpwyjmo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T09:29:24.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "d715e7d2c00402c6",
+      "category": "technology",
+      "title": "APOD: 2026 November 8 – Major Fireball Meteor",
+      "summary": "APOD Science APOD APOD: 2026 November 8 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Major Fireball Meteor […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-08T05:05:00.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "f0c229a7799217f9",
+      "category": "ai",
+      "title": "Patch release v5.22.2",
+      "summary": "Patch release v5.22.2 Some in between patch for security and distributed fixes. See the included commits 🤗 [Distributed] Set device_id only for NCCL ( #50281 ) by @michaelbenayoun and @3outeille Harden our Jinja sandboxing ( #50431 ) by @Rocketknight1 Full Changelog : v5.22.1...v5.22.2",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.2",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-11-06T15:43:27.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 22.1,
+      "topics": [
+        "hardware",
+        "security"
+      ]
+    },
+    {
+      "id": "78003a01f5400751",
+      "category": "finance",
+      "title": "Traders 'priced out' of £12,000 Christmas market pitches",
+      "summary": "Stall holders said they'd met the council leader to express their concerns at high costs since a new operator took over.",
+      "url": "https://www.bbc.co.uk/news/articles/ckn8wew92xw1o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T07:11:02.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 21.9,
+      "topics": []
+    },
+    {
+      "id": "7cee6f4465719bb7",
+      "category": "world",
+      "title": "Gambia's opposition leader Bensouda files for presidential election despite abuse allegations",
+      "summary": "Supporters of Gambia’s UNITE-led coalition celebrated on Friday as their party leader Talib Ahmed Bensouda filed his candidacy papers for next month’s presidential election. The move comes despite a government report last week accusing the popular former mayor of financial improprieties.",
+      "url": "https://www.africanews.com/2026/11/08/gambias-opposition-leader-bensouda-files-for-presidential-election-despite-abuse-allegatio/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T07:38:53.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 21,
+      "topics": []
+    },
+    {
+      "id": "1aafc7695c7b4c51",
+      "category": "world",
+      "title": "Israel: Eisenkot officially tasked with forming a government",
+      "summary": "Israeli President Isaac Herzog tasked Gadi Eisenkot with the right of trying to form a government. The opposition leader's way to replacing Benjamin Netanyahu as prime minister is full of political challenges.",
+      "url": "https://www.dw.com/en/israel-eisenkot-officially-tasked-with-forming-a-government/a-79891422?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T15:18:00.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 19.9,
+      "topics": []
+    },
+    {
+      "id": "d2f9e3029edbe1b1",
+      "category": "world",
+      "title": "What we know so far after Krakow gun attack",
+      "summary": "Six people were killed in a random shooting in Krakow's main square, and three bodies were later found at the home of the attacker.",
+      "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T14:32:52.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 19.8,
+      "topics": []
+    },
+    {
+      "id": "c7f62495ccee7719",
+      "category": "world",
+      "title": "Israel's president tasks opposition leader Eisenkot with forming government",
+      "summary": "Neither PM Benjamin Netanyahu's bloc nor that of his rival secured a majority in last week's election.",
+      "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T22:19:59.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 19.7,
+      "topics": []
+    },
+    {
+      "id": "589228a8a8fb0d8b",
+      "category": "world",
+      "title": "A correspondent finds Cuba's people struggling",
+      "summary": "Reporting from Cuba comes with distinct challenges especially amid widespread power outages and fuel shortages.",
+      "url": "https://www.npr.org/2026/11/07/nx-s1-6029398/a-correspondent-finds-cubas-people-struggling",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T22:12:06.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 19.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "4f168a947c3c9fc7",
+      "category": "technology",
+      "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
+      "summary": "NASA is looking for the explorers who will help write the next chapter of human spaceflight. Applications are now open for the agency’s next class of astronauts, who will join NASA as America returns to the Moon, builds the Moon Base, and lays the groundwork for the first crewed missions to Mars. The next generation […]",
+      "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-07T18:11:57.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 19.7,
+      "topics": []
+    },
+    {
+      "id": "74584a794d773acc",
+      "category": "world",
+      "title": "Poland: Gunman kills 6 in Krakow main square, police say",
+      "summary": "A suspect who fired from a car killed at least six people, including a British tourist, in Krakow's main market square. Officials said the man was fascinated with \"radical\" and \"far-right\" ideologies.",
+      "url": "https://www.dw.com/en/poland-gunman-kills-6-in-krakow-main-square-police-say/a-79886489?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T21:34:00.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 19.5,
+      "topics": []
+    },
+    {
+      "id": "6a0408dabb907d82",
+      "category": "finance",
+      "title": "Anthropic secures $3.4 billion generator deal for AI data centers, FT reports",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/anthropic-secures-34-billion-generator-deal-ai-data-centers-ft-reports-6534256",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T12:53:57.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 19.3,
+      "topics": []
+    },
+    {
+      "id": "128ca061aed7b340",
+      "category": "finance",
+      "title": "Government 'looking seriously' at banning under-16s from Vinted and eBay",
+      "summary": "The culture secretary confirms reports they could be in the list of platforms set to be banned next March.",
+      "url": "https://www.bbc.co.uk/news/articles/cmzxjvpqrjxro",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T11:25:32.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 19,
+      "topics": []
+    },
+    {
+      "id": "3bd8316c21485d98",
+      "category": "technology",
+      "title": "Physicists listened to electrical noise to crack a superconductor mystery",
+      "summary": "Tuning in to electronic noise can tell us whether electrons have paired up or not.",
+      "url": "https://arstechnica.com/science/2026/11/physicists-listened-to-electrical-noise-to-crack-a-superconductor-mystery/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T12:15:31.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 18.2,
+      "topics": []
+    },
+    {
+      "id": "9688ca93c36ea392",
+      "category": "finance",
+      "title": "Christine Lagarde: Interview with Yomiuri Shimbun",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-07T14:00:00.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 17.6,
+      "topics": []
+    },
+    {
+      "id": "1fe709d7846e5713",
+      "category": "ai",
+      "title": "How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks",
+      "summary": "A year ago, NVIDIA open sourced its Aerial wireless software, joining Sionna and a broader suite of open source tools for accelerating next-generation 6G network development. Together, they give researchers a foundation for testing ideas, comparing results and building on each other’s work — connecting simulation and AI training with experiments on real over-the-air wireless […]",
+      "url": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
+      "source": "NVIDIA AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T16:00:35.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 17.1,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "d222128b70c36cd7",
+      "category": "ai",
+      "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+      "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
+      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T18:44:38.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 16.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "3cfaa5dc885747a3",
+      "category": "finance",
+      "title": "He spent $50,000 on Labubus but now the craze is dying",
+      "summary": "Parent company Pop Mart's revenue has fallen as appetite for the quirky collectible monsters wanes.",
+      "url": "https://www.bbc.co.uk/news/articles/cmvg652l927lo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T23:02:35.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 15.9,
+      "topics": []
+    },
+    {
+      "id": "74e879012f023536",
+      "category": "finance",
+      "title": "Tesla to add Cybertruck shift to clear orders before dismantling line next year",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/tesla-add-cybertruck-shift-clear-orders-dismantling-line-next-year-6533391",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T18:38:20.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 14.8,
+      "topics": []
+    },
+    {
+      "id": "7119b898dac789db",
+      "category": "ai",
+      "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
+      "summary": "On Equity, we unpacked what the midterms mean for the tech industry.",
+      "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T22:07:22.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 14.7,
+      "topics": []
+    },
+    {
+      "id": "ec363af53572953a",
+      "category": "finance",
+      "title": "Binance CFO Kaiser Ng steps down, Justin Yek named new finance chief",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/binance-cfo-kaiser-ng-steps-down-justin-yek-named-new-finance-chief-6533351",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T17:32:26.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 14.5,
+      "topics": []
+    },
+    {
+      "id": "c1b33cf10afc7ae1",
+      "category": "technology",
+      "title": "Re-releases of Wing Commander, Ultima titles hit Steam and GOG",
+      "summary": "It's mostly bad news from EA lately, but preservation efforts are nice to see.",
+      "url": "https://arstechnica.com/gaming/2026/11/ea-producer-tells-the-inside-story-behind-new-wing-commander-remasters/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T22:08:47.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 12.7,
+      "topics": []
+    },
+    {
+      "id": "69999ed7b9960939",
+      "category": "technology",
+      "title": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
+      "summary": "Meta won't force Facebook page owners to allow AI training on linked content.",
+      "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-06T17:43:02.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 12.6,
+      "topics": [
+        "training"
+      ]
+    },
+    {
+      "id": "76fcca867b688d52",
+      "category": "finance",
+      "title": "Speech by Governor UEDA at the 2026 Michel Camdessus Central Banking Lecture, International Monetary Fund",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko261107a.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-06T16:00:00.000Z",
+      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "score": 11.1,
+      "topics": []
     },
     {
       "id": "20d7dfa08377505b",
@@ -561,73 +1088,6 @@
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "377fc490f1800b3a",
-      "category": "technology",
-      "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
-      "summary": "During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For...",
-      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T18:03:26.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 25.9,
-      "topics": [
-        "inference",
-        "training"
-      ]
-    },
-    {
-      "id": "0f0caf138d0b82b9",
-      "category": "technology",
-      "title": "v1.4.0rc3",
-      "summary": "Highlights Known Issues DSA models, including GLM-5.2, may produce incorrect output when using an NVFP4 KV cache. Kimi K3 DSpark with MegaMoE CuTe DSL TEP and CUDA graphs may hang during GB300 warmup. DeepSeek-V4-Pro initialization may run out of GPU memory when MPI workers are reused after large MoE workloads. Tensor-parallel serving with RPC orchestration may hang during model initialization when reusing an MPI worker pool across threads. Model Support Add Muse Spark Open model and configuration support #21042 , ",
-      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc3",
-      "source": "TensorRT-LLM Releases",
-      "sourceCountry": "United States",
-      "sourceType": "release",
-      "publishedAt": "2026-11-06T21:38:32.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 25.8,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "08c83bf650bba873",
-      "category": "ai",
-      "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
-      "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
-      "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T21:17:08.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 25.7,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "d715e7d2c00402c6",
-      "category": "technology",
-      "title": "APOD: 2026 November 8 – Major Fireball Meteor",
-      "summary": "APOD Science APOD APOD: 2026 November 8 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Major Fireball Meteor […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-08T05:05:00.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 24.6,
-      "topics": []
     },
     {
       "id": "9283532c75cdd646",
@@ -662,23 +1122,6 @@
       ]
     },
     {
-      "id": "f0c229a7799217f9",
-      "category": "ai",
-      "title": "Patch release v5.22.2",
-      "summary": "Patch release v5.22.2 Some in between patch for security and distributed fixes. See the included commits 🤗 [Distributed] Set device_id only for NCCL ( #50281 ) by @michaelbenayoun and @3outeille Harden our Jinja sandboxing ( #50431 ) by @Rocketknight1 Full Changelog : v5.22.1...v5.22.2",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.2",
-      "source": "Transformers Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-11-06T15:43:27.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 24.3,
-      "topics": [
-        "hardware",
-        "security"
-      ]
-    },
-    {
       "id": "838fea9f6cd5dd1e",
       "category": "world",
       "title": "US launches task force to disrupt Iran’s land-based supply routes",
@@ -690,50 +1133,6 @@
       "publishedAt": "2026-11-08T02:34:04.000Z",
       "fetchedAt": "2026-11-08T06:34:37.370Z",
       "score": 23,
-      "topics": []
-    },
-    {
-      "id": "c7f62495ccee7719",
-      "category": "world",
-      "title": "Israel's president tasks opposition leader Eisenkot with forming government",
-      "summary": "Neither PM Benjamin Netanyahu's bloc nor that of his rival secured a majority in last week's election.",
-      "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T22:19:59.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 21.9,
-      "topics": []
-    },
-    {
-      "id": "589228a8a8fb0d8b",
-      "category": "world",
-      "title": "A correspondent finds Cuba's people struggling",
-      "summary": "Reporting from Cuba comes with distinct challenges especially amid widespread power outages and fuel shortages.",
-      "url": "https://www.npr.org/2026/11/07/nx-s1-6029398/a-correspondent-finds-cubas-people-struggling",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T22:12:06.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 21.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "4f168a947c3c9fc7",
-      "category": "technology",
-      "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
-      "summary": "NASA is looking for the explorers who will help write the next chapter of human spaceflight. Applications are now open for the agency’s next class of astronauts, who will join NASA as America returns to the Moon, builds the Moon Base, and lays the groundwork for the first crewed missions to Mars. The next generation […]",
-      "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-07T18:11:57.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 21.9,
       "topics": []
     },
     {
@@ -879,20 +1278,6 @@
       "topics": []
     },
     {
-      "id": "9688ca93c36ea392",
-      "category": "finance",
-      "title": "Christine Lagarde: Interview with Yomiuri Shimbun",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/inter/date/2026/html/ecb.in261107~e7b86fc4ce.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-07T14:00:00.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 19.9,
-      "topics": []
-    },
-    {
       "id": "95c97d51141c14fc",
       "category": "technology",
       "title": "The post-quantum future of web privacy",
@@ -904,38 +1289,6 @@
       "publishedAt": "2026-11-06T14:00:00.000Z",
       "fetchedAt": "2026-11-08T06:34:37.370Z",
       "score": 19.9,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "1fe709d7846e5713",
-      "category": "ai",
-      "title": "How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks",
-      "summary": "A year ago, NVIDIA open sourced its Aerial wireless software, joining Sionna and a broader suite of open source tools for accelerating next-generation 6G network development. Together, they give researchers a foundation for testing ideas, comparing results and building on each other’s work — connecting simulation and AI training with experiments on real over-the-air wireless […]",
-      "url": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T16:00:35.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 19.4,
-      "topics": [
-        "training"
-      ]
-    },
-    {
-      "id": "d222128b70c36cd7",
-      "category": "ai",
-      "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
-      "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
-      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T18:44:38.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 19,
       "topics": [
         "security"
       ]
@@ -955,20 +1308,6 @@
       "topics": []
     },
     {
-      "id": "3cfaa5dc885747a3",
-      "category": "finance",
-      "title": "Labubu hype seemed unstoppable, now the fluffy monster mania is dying",
-      "summary": "Parent company Pop Mart's revenue has fallen as appetite for the quirky collectible monsters wanes.",
-      "url": "https://www.bbc.co.uk/news/articles/cmvg652l927lo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T23:02:35.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 18.1,
-      "topics": []
-    },
-    {
       "id": "267afbdb83b891d6",
       "category": "finance",
       "title": "Ipswich Town's new club shop 'here to stay'",
@@ -980,48 +1319,6 @@
       "publishedAt": "2026-11-07T21:40:32.000Z",
       "fetchedAt": "2026-11-08T06:34:37.370Z",
       "score": 17.8,
-      "topics": []
-    },
-    {
-      "id": "74e879012f023536",
-      "category": "finance",
-      "title": "Tesla to add Cybertruck shift to clear orders before dismantling line next year",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/tesla-add-cybertruck-shift-clear-orders-dismantling-line-next-year-6533391",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T18:38:20.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 17,
-      "topics": []
-    },
-    {
-      "id": "7119b898dac789db",
-      "category": "ai",
-      "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
-      "summary": "On Equity, we unpacked what the midterms mean for the tech industry.",
-      "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T22:07:22.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 16.9,
-      "topics": []
-    },
-    {
-      "id": "ec363af53572953a",
-      "category": "finance",
-      "title": "Binance CFO Kaiser Ng steps down, Justin Yek named new finance chief",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/binance-cfo-kaiser-ng-steps-down-justin-yek-named-new-finance-chief-6533351",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T17:32:26.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 16.7,
       "topics": []
     },
     {
@@ -1053,36 +1350,6 @@
       "topics": []
     },
     {
-      "id": "c1b33cf10afc7ae1",
-      "category": "technology",
-      "title": "Re-releases of Wing Commander, Ultima titles hit Steam and GOG",
-      "summary": "It's mostly bad news from EA lately, but preservation efforts are nice to see.",
-      "url": "https://arstechnica.com/gaming/2026/11/ea-producer-tells-the-inside-story-behind-new-wing-commander-remasters/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T22:08:47.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 14.9,
-      "topics": []
-    },
-    {
-      "id": "69999ed7b9960939",
-      "category": "technology",
-      "title": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
-      "summary": "Meta won't force Facebook page owners to allow AI training on linked content.",
-      "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T17:43:02.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 14.8,
-      "topics": [
-        "training"
-      ]
-    },
-    {
       "id": "388bf8d1d8dc6847",
       "category": "technology",
       "title": "The Bantu expansion changed Africa. Scientists are still tracing how.",
@@ -1094,20 +1361,6 @@
       "publishedAt": "2026-11-07T12:15:55.000Z",
       "fetchedAt": "2026-11-08T06:34:37.370Z",
       "score": 14.4,
-      "topics": []
-    },
-    {
-      "id": "76fcca867b688d52",
-      "category": "finance",
-      "title": "Speech by Governor UEDA at the 2026 Michel Camdessus Central Banking Lecture, International Monetary Fund",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko261107a.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-06T16:00:00.000Z",
-      "fetchedAt": "2026-11-08T06:34:37.370Z",
-      "score": 13.4,
       "topics": []
     },
     {
