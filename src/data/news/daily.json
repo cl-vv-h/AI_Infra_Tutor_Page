@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-08T15:30:57.973Z",
+  "generatedAt": "2026-11-08T20:43:19.561Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 39,
-  "failedSourceCount": 0,
+  "sourceCount": 38,
+  "failedSourceCount": 1,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 25,
-      "latestPublishedAt": "2026-11-08T14:32:52.000Z",
+      "entryCount": 27,
+      "latestPublishedAt": "2026-11-08T19:58:02.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 45,
-      "latestPublishedAt": "2026-11-08T11:25:32.000Z",
+      "latestPublishedAt": "2026-11-08T15:37:25.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,7 +40,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 117,
-      "latestPublishedAt": "2026-11-08T15:18:00.000Z",
+      "latestPublishedAt": "2026-11-08T19:43:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-08T14:53:29.000Z",
+      "latestPublishedAt": "2026-11-08T19:26:38.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -65,8 +65,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 20,
-      "latestPublishedAt": "2026-11-08T12:53:57.000Z",
+      "entryCount": 13,
+      "latestPublishedAt": "2026-11-08T20:16:06.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-11-06T16:00:35.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-11-08T05:05:00.000Z",
+      "latestPublishedAt": "2026-11-08T15:26:38.000Z",
       "selectedCount": 3,
       "libraryCount": 5
     },
@@ -197,7 +197,7 @@
       "channel": "feed",
       "entryCount": 42,
       "latestPublishedAt": "2026-11-06T16:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -249,7 +249,7 @@
       "channel": "feed",
       "entryCount": 30,
       "latestPublishedAt": "2026-11-07T12:00:00.000Z",
-      "selectedCount": 0,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -258,11 +258,12 @@
       "country": "France",
       "category": "world",
       "type": "news",
-      "state": "ok",
+      "state": "unavailable",
       "channel": "feed",
-      "entryCount": 24,
-      "latestPublishedAt": "2026-11-08T14:36:25.000Z",
-      "selectedCount": 3,
+      "httpStatus": 403,
+      "entryCount": 0,
+      "latestPublishedAt": null,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -274,8 +275,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-11-08T15:07:15.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-11-08T19:25:30.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -287,7 +288,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-11-08T15:27:10.000Z",
+      "latestPublishedAt": "2026-11-08T19:07:33.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -431,7 +432,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-11-06T22:20:20.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -483,7 +484,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-11-06T15:43:27.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -515,6 +516,36 @@
   ],
   "items": [
     {
+      "id": "f5e13a7addfef06b",
+      "category": "world",
+      "title": "Dozens killed after migrant boat sinks off Senegal",
+      "summary": "The incident occurred near Kebemer off the coast of northwestern Senegal. Authorities on El Hierro in the Canary Islands have declared an emergency after a marked increase in migrant boat arrivals.",
+      "url": "https://www.dw.com/en/dozens-killed-after-migrant-boat-sinks-off-senegal/a-79890883?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T19:12:00.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 24.6,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "0a5d2e84fb7286e7",
+      "category": "technology",
+      "title": "NASA Announces $1 Million to Students for Moon Base Challenge",
+      "summary": "On Sunday, NASA announced the opening of its $1 million Moon Base Student Challenge during a MAX POWER event at Kennedy Space Center Visitor Complex in Florida. As part of a Golden Age of Science, the competition invites student teams at U.S. high schools and post-secondary schools to contribute designs for the Moon Base. “We’re […]",
+      "url": "https://www.nasa.gov/news-release/nasa-announces-1-million-to-students-for-moon-base-challenge/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-08T15:26:38.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 23.7,
+      "topics": []
+    },
+    {
       "id": "b9501e400323b288",
       "category": "technology",
       "title": "NASA Awards Moon Base Transportation, Technology, Science Projects",
@@ -524,8 +555,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-07T22:47:03.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 24.8,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 23.5,
       "topics": []
     },
     {
@@ -538,114 +569,81 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T22:20:20.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 24.7,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 23.4,
       "topics": [
         "inference",
         "hardware"
       ]
     },
     {
-      "id": "00613a281b2e22de",
+      "id": "5a1e08f8747cf31f",
       "category": "world",
-      "title": "At least 21 killed after migrant boat sinks off Senegal",
-      "summary": "The incident occurred near Kebemer off the coast of northwestern Senegal. Authorities on El Hierro in the Canary Islands have declared an emergency after a marked increase in migrant boat arrivals.",
-      "url": "https://www.dw.com/en/at-least-21-killed-after-migrant-boat-sinks-off-senegal/a-79890883?maca=en-rss-en-all-1573-rdf",
+      "title": "Infantino’s Japanese challenger claims he could unseat FIFA president",
+      "summary": "Kozo Tashima believes he has a '20 to 30 percent' chance of winning the FIFA presidency election against Infantino.",
+      "url": "https://www.aljazeera.com/sports/2026/11/8/infantinos-japanese-challenger-claims-he-could-unseat-fifa-president?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T18:01:05.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 23.3,
+      "topics": []
+    },
+    {
+      "id": "2e34b5ffdc9e4452",
+      "category": "world",
+      "title": "South Africa elections: ANC marks its worst-ever performance",
+      "summary": "The African National Congress, the party of late Nobel Prize winner Nelson Mandela, slumped to its worst-ever result in South Africa's municipal election. The voters blame the ANC for water and electricity shortages.",
+      "url": "https://www.dw.com/en/south-africa-elections-anc-marks-its-worst-ever-performance/a-79887482?maca=en-rss-en-all-1573-rdf",
       "source": "DW",
       "sourceCountry": "Germany",
       "sourceType": "news",
-      "publishedAt": "2026-11-08T13:48:00.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 24.6,
-      "topics": [
-        "security"
-      ]
+      "publishedAt": "2026-11-08T17:35:00.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 23.2,
+      "topics": []
     },
     {
-      "id": "b82811968e5931a4",
+      "id": "89cffcb1c18edf26",
       "category": "world",
-      "title": "Palestinian journalist Abed Abou Shhadeh released after 5 days in detention",
-      "summary": "Palestinian journalist Abed Abou Shhadeh released after 5 days detention",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/8/palestinian-journalist-abed-abou-shhadeh-released-after-5-days-in-detention?traffic_source=rss",
+      "title": "India’s ‘cockroach’ movement seeks to restore culture of accountability",
+      "summary": "India's Cockroach Janta Party is a youth movement demanding political accountability, employment and fair elections.",
+      "url": "https://www.aljazeera.com/video/talk-to-al-jazeera/2026/11/8/indias-cockroach-movement-seeks-to-restore-culture-of-accountability?traffic_source=rss",
       "source": "Al Jazeera",
       "sourceCountry": "Qatar",
       "sourceType": "news",
-      "publishedAt": "2026-11-08T14:53:29.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 23.8,
+      "publishedAt": "2026-11-08T16:59:31.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 23.1,
       "topics": []
     },
     {
-      "id": "bcc3e4588a818c92",
+      "id": "c88e749ed305e0a7",
       "category": "world",
-      "title": "US voters reject AI data centres: could the backlash spread to France?",
-      "summary": "In Tuesday’s US midterm elections, voters weighed in on more than 40 local measures on data centres, and sided against them in all but one. With Democrats taking control of Congress in January and new governors in Texas and Georgia calling for moratoriums, the AI building boom faces its toughest political test yet.",
-      "url": "https://www.france24.com/en/tv-shows/tech-24/20261108-us-voters-reject-ai-data-centres-could-the-backlash-spread-to-france",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-11-08T14:36:25.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 23.8,
-      "topics": []
-    },
-    {
-      "id": "d636a02cdc01a1ce",
-      "category": "world",
-      "title": "Poland in shock after 6 killed in Krakow far-right shooting",
-      "summary": "Poland on Sunday launched a terror probe into the mass shooting in Krakow the day before, in which six people were killed and many more were injured. Authorities have said that the 24-year-old suspect, who used a semi-automatic rifle in his killing spree, was “fascinated by far-right ideologies”. He is currently in critical condition in hospital. FRANCE 24 journalist Adrien Sariat reports from Poland.",
-      "url": "https://www.france24.com/en/poland-in-shock-after-6-killed-in-krakow-far-right-shooting",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-11-08T14:21:18.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 23.7,
-      "topics": []
-    },
-    {
-      "id": "a71c2d6412e05378",
-      "category": "world",
-      "title": "Mourning in Poland after mass shooting",
-      "summary": "Poland has launched a terrorism investigation after a deadly shooting left six people dead and 16 injured. The 24-year-old Polish suspect was reportedly fascinated by far-right ideologies. Authorities are investigating the possible extremist motive as Krakow's main square remains sealed. Two days of national mourning have been declared for the victims.",
-      "url": "https://www.france24.com/en/mourning-in-poland-after-mass-shooting",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-11-08T14:18:48.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 23.7,
-      "topics": []
-    },
-    {
-      "id": "377fc490f1800b3a",
-      "category": "technology",
-      "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
-      "summary": "During reinforcement learning (RL) post-training, training trajectories are generated on the fly by running inference with the current policy model. For...",
-      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T18:03:26.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 23.6,
-      "topics": [
-        "inference",
-        "training"
-      ]
-    },
-    {
-      "id": "dba092548c00b068",
-      "category": "world",
-      "title": "Egypt’s reopening of its embassy in Tripoli signals regional shift on Libya",
-      "summary": "Former rivals in Libya are pushing for a unity government to end years of conflict.",
-      "url": "https://www.aljazeera.com/news/2026/11/8/egypts-reopening-of-its-embassy-in-tripoli-signals-regional-shift-on-libya?traffic_source=rss",
+      "title": "Israeli forces release Palestinian journalist Abou Shhadeh",
+      "summary": "Abed Abou Shhadeh says his detention was part of Israel's political measures 'to intimidate Arab society as a whole'.",
+      "url": "https://www.aljazeera.com/news/2026/11/8/israeli-forces-release-palestinian-journalist-abou-shhadeh?traffic_source=rss",
       "source": "Al Jazeera",
       "sourceCountry": "Qatar",
       "sourceType": "news",
-      "publishedAt": "2026-11-08T13:27:57.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 23.5,
+      "publishedAt": "2026-11-08T16:18:09.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 22.9,
+      "topics": []
+    },
+    {
+      "id": "0ffbc2153e44b4d8",
+      "category": "world",
+      "title": "Coalition building begins as ANC suffers major blow in South Africa local elections",
+      "summary": "The African National Congress came in first place in South Africa's local elections but suffered its worst-ever electoral setback, according to final results on Sunday.",
+      "url": "https://www.africanews.com/2026/11/08/coalition-building-begins-as-anc-suffers-major-blow-in-south-africa-local-elections/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T18:27:54.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 22.4,
       "topics": []
     },
     {
@@ -658,8 +656,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-11-06T21:38:32.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 23.5,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 22.2,
       "topics": [
         "inference",
         "kernels",
@@ -667,20 +665,6 @@
         "models",
         "training"
       ]
-    },
-    {
-      "id": "b26c5758321b18c8",
-      "category": "world",
-      "title": "Could Iraq’s Kurdish region return to two separate administrations?",
-      "summary": "A political impasse between the KRG and PUK threatens to break up the semiautonomous northern region.",
-      "url": "https://www.aljazeera.com/news/2026/11/8/could-iraqs-kurdish-region-return-to-two-separate-administrations?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-11-08T13:06:28.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 23.4,
-      "topics": []
     },
     {
       "id": "08c83bf650bba873",
@@ -692,11 +676,25 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-07T21:17:08.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 23.4,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 22.1,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "ffc6a846de6945ce",
+      "category": "world",
+      "title": "No clear winner in New Zealand election, as leaders prepare for weeks of talks",
+      "summary": "Prime Minister Christopher Luxon, who will lead a caretaker government while negotiations take place, said: \"I think everyone's over politics so let's all have a bit of a break for the next three weeks\".",
+      "url": "https://www.npr.org/2026/11/08/nx-s1-6033999/no-clear-winner-in-new-zealand-election-as-leaders-prepare-for-weeks-of-talks",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T16:46:15.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 22,
+      "topics": []
     },
     {
       "id": "c6f274953e158040",
@@ -708,8 +706,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-11-08T15:27:10.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 23,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -722,8 +720,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-11-08T14:07:48.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 22.7,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 21.4,
       "topics": []
     },
     {
@@ -736,8 +734,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-08T09:29:24.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 22.5,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 21.2,
       "topics": []
     },
     {
@@ -750,26 +748,9 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-08T05:05:00.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 22.4,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 21.1,
       "topics": []
-    },
-    {
-      "id": "f0c229a7799217f9",
-      "category": "ai",
-      "title": "Patch release v5.22.2",
-      "summary": "Patch release v5.22.2 Some in between patch for security and distributed fixes. See the included commits 🤗 [Distributed] Set device_id only for NCCL ( #50281 ) by @michaelbenayoun and @3outeille Harden our Jinja sandboxing ( #50431 ) by @Rocketknight1 Full Changelog : v5.22.1...v5.22.2",
-      "url": "https://github.com/huggingface/transformers/releases/tag/v5.22.2",
-      "source": "Transformers Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-11-06T15:43:27.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 22.1,
-      "topics": [
-        "hardware",
-        "security"
-      ]
     },
     {
       "id": "78003a01f5400751",
@@ -781,64 +762,92 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-08T07:11:02.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 21.9,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 20.6,
       "topics": []
     },
     {
-      "id": "7cee6f4465719bb7",
-      "category": "world",
-      "title": "Gambia's opposition leader Bensouda files for presidential election despite abuse allegations",
-      "summary": "Supporters of Gambia’s UNITE-led coalition celebrated on Friday as their party leader Talib Ahmed Bensouda filed his candidacy papers for next month’s presidential election. The move comes despite a government report last week accusing the popular former mayor of financial improprieties.",
-      "url": "https://www.africanews.com/2026/11/08/gambias-opposition-leader-bensouda-files-for-presidential-election-despite-abuse-allegatio/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
+      "id": "686ed5a503c6c461",
+      "category": "finance",
+      "title": "Nvidia opens probe after report that CEO Huang was target of foreign intelligence",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/nvidia-opens-probe-after-report-ceo-huang-was-target-foreign-intelligence-6534611",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-11-08T07:38:53.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 21,
-      "topics": []
-    },
-    {
-      "id": "1aafc7695c7b4c51",
-      "category": "world",
-      "title": "Israel: Eisenkot officially tasked with forming a government",
-      "summary": "Israeli President Isaac Herzog tasked Gadi Eisenkot with the right of trying to form a government. The opposition leader's way to replacing Benjamin Netanyahu as prime minister is full of political challenges.",
-      "url": "https://www.dw.com/en/israel-eisenkot-officially-tasked-with-forming-a-government/a-79891422?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-08T15:18:00.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "publishedAt": "2026-11-08T20:16:06.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
       "score": 19.9,
       "topics": []
     },
     {
-      "id": "d2f9e3029edbe1b1",
+      "id": "cf2baa6436256693",
       "category": "world",
-      "title": "What we know so far after Krakow gun attack",
-      "summary": "Six people were killed in a random shooting in Krakow's main square, and three bodies were later found at the home of the attacker.",
-      "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo",
+      "title": "Seven dead and more than 100 injured after trains collide in Egypt",
+      "summary": "Several carriages derailed after two trains travelling in the same direction crashed outside the city of Giza.",
+      "url": "https://www.bbc.co.uk/news/articles/cwvgr20mmmevo",
       "source": "BBC World",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-11-08T14:32:52.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
+      "publishedAt": "2026-11-08T19:58:02.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
       "score": 19.8,
       "topics": []
     },
     {
-      "id": "c7f62495ccee7719",
+      "id": "1a3d54c37f1932de",
       "category": "world",
-      "title": "Israel's president tasks opposition leader Eisenkot with forming government",
-      "summary": "Neither PM Benjamin Netanyahu's bloc nor that of his rival secured a majority in last week's election.",
-      "url": "https://www.bbc.co.uk/news/articles/cmy8367lj5xlo",
+      "title": "Germany news: Merz to nominate Aigner for president",
+      "summary": "German Chancellor Friedrich Merz announced that he will nominate Ilse Aigner for federal president, paving the way for her to be the first woman to hold the office. DW has more.",
+      "url": "https://www.dw.com/en/germany-news-merz-to-nominate-aigner-for-president/live-79883533?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T19:43:00.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 19.7,
+      "topics": []
+    },
+    {
+      "id": "0b2827a69d7ada2a",
+      "category": "world",
+      "title": "Surgeon having lunch near Krakow shooting undoubtedly saved officer's life, colleague says",
+      "summary": "Further details have emerged about two police officers hailed for preventing a Polish gunman from killing more.",
+      "url": "https://www.bbc.co.uk/news/articles/c5x2vw4e1gx1o",
       "source": "BBC World",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-11-07T22:19:59.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 19.7,
+      "publishedAt": "2026-11-08T18:22:53.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 19.4,
+      "topics": []
+    },
+    {
+      "id": "bf5a53d04e05b3e9",
+      "category": "world",
+      "title": "Europe to join U.S.-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections",
+      "summary": "France says European officials will attend this week's U.S.-mediated Russia-Ukraine talks in Abu Dhabi, the first three-way round of negotiations since February.",
+      "url": "https://www.npr.org/2026/11/08/nx-s1-6034014/europe-join-us-brokered-ukraine-talks-abu-dhabi-russia",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T19:25:30.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 18.7,
+      "topics": []
+    },
+    {
+      "id": "128ca061aed7b340",
+      "category": "finance",
+      "title": "Government 'looking seriously' at banning under-16s from Vinted and eBay",
+      "summary": "The culture secretary confirms reports they could be in the list of platforms set to be banned next March.",
+      "url": "https://www.bbc.co.uk/news/articles/cmzxjvpqrjxro",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T15:37:25.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 18.7,
       "topics": []
     },
     {
@@ -851,39 +860,11 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-07T22:12:06.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 19.7,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 18.4,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "4f168a947c3c9fc7",
-      "category": "technology",
-      "title": "NASA Seeks Next Generation of Explorers to Join Astronaut Corps",
-      "summary": "NASA is looking for the explorers who will help write the next chapter of human spaceflight. Applications are now open for the agency’s next class of astronauts, who will join NASA as America returns to the Moon, builds the Moon Base, and lays the groundwork for the first crewed missions to Mars. The next generation […]",
-      "url": "https://www.nasa.gov/news-release/nasa-seeks-next-generation-of-explorers-to-join-astronaut-corps/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-07T18:11:57.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 19.7,
-      "topics": []
-    },
-    {
-      "id": "74584a794d773acc",
-      "category": "world",
-      "title": "Poland: Gunman kills 6 in Krakow main square, police say",
-      "summary": "A suspect who fired from a car killed at least six people, including a British tourist, in Krakow's main market square. Officials said the man was fascinated with \"radical\" and \"far-right\" ideologies.",
-      "url": "https://www.dw.com/en/poland-gunman-kills-6-in-krakow-main-square-police-say/a-79886489?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T21:34:00.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 19.5,
-      "topics": []
     },
     {
       "id": "6a0408dabb907d82",
@@ -895,22 +876,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-11-08T12:53:57.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 19.3,
-      "topics": []
-    },
-    {
-      "id": "128ca061aed7b340",
-      "category": "finance",
-      "title": "Government 'looking seriously' at banning under-16s from Vinted and eBay",
-      "summary": "The culture secretary confirms reports they could be in the list of platforms set to be banned next March.",
-      "url": "https://www.bbc.co.uk/news/articles/cmzxjvpqrjxro",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-08T11:25:32.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 19,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 18,
       "topics": []
     },
     {
@@ -923,8 +890,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-08T12:15:31.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 18.2,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 16.9,
       "topics": []
     },
     {
@@ -937,41 +904,23 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-11-07T14:00:00.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 17.6,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 16.3,
       "topics": []
     },
     {
-      "id": "1fe709d7846e5713",
-      "category": "ai",
-      "title": "How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks",
-      "summary": "A year ago, NVIDIA open sourced its Aerial wireless software, joining Sionna and a broader suite of open source tools for accelerating next-generation 6G network development. Together, they give researchers a foundation for testing ideas, comparing results and building on each other’s work — connecting simulation and AI training with experiments on real over-the-air wireless […]",
-      "url": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T16:00:35.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 17.1,
-      "topics": [
-        "training"
-      ]
-    },
-    {
-      "id": "d222128b70c36cd7",
-      "category": "ai",
-      "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
-      "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
-      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-06T18:44:38.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 16.8,
-      "topics": [
-        "security"
-      ]
+      "id": "30e618ca7a8821e1",
+      "category": "world",
+      "title": "‘For the first time I have my own chair’: Gaza siblings find new freedom",
+      "summary": "In Gaza, 10-year-old Anas is one of three siblings born without legs and with only two fingers on each of their hands. They struggle to move around and perform daily activities like eating and writing independently.",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168759",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-07T12:00:00.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 14.8,
+      "topics": []
     },
     {
       "id": "3cfaa5dc885747a3",
@@ -983,8 +932,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-07T23:02:35.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 15.9,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 14.6,
       "topics": []
     },
     {
@@ -997,8 +946,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-11-07T18:38:20.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 14.8,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 13.5,
       "topics": []
     },
     {
@@ -1011,22 +960,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-07T22:07:22.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 14.7,
-      "topics": []
-    },
-    {
-      "id": "ec363af53572953a",
-      "category": "finance",
-      "title": "Binance CFO Kaiser Ng steps down, Justin Yek named new finance chief",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/binance-cfo-kaiser-ng-steps-down-justin-yek-named-new-finance-chief-6533351",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T17:32:26.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 14.5,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 13.4,
       "topics": []
     },
     {
@@ -1039,38 +974,36 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-06T22:08:47.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 12.7,
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 11.4,
       "topics": []
     },
     {
-      "id": "69999ed7b9960939",
+      "id": "388bf8d1d8dc6847",
       "category": "technology",
-      "title": "“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.",
-      "summary": "Meta won't force Facebook page owners to allow AI training on linked content.",
-      "url": "https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/",
+      "title": "The Bantu expansion changed Africa. Scientists are still tracing how.",
+      "summary": "Genes and archaeology are revealing how Bantu speakers spread across much of Africa.",
+      "url": "https://arstechnica.com/science/2026/11/the-migration-that-transformed-africas-languages-genes-and-cultures/",
       "source": "Ars Technica",
       "sourceCountry": "United States",
       "sourceType": "news",
-      "publishedAt": "2026-11-06T17:43:02.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 12.6,
-      "topics": [
-        "training"
-      ]
+      "publishedAt": "2026-11-07T12:15:55.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 10.9,
+      "topics": []
     },
     {
-      "id": "76fcca867b688d52",
-      "category": "finance",
-      "title": "Speech by Governor UEDA at the 2026 Michel Camdessus Central Banking Lecture, International Monetary Fund",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko261107a.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-06T16:00:00.000Z",
-      "fetchedAt": "2026-11-08T15:30:57.973Z",
-      "score": 11.1,
+      "id": "ec946d330ee1fa73",
+      "category": "ai",
+      "title": "Crusoe sells troubled Wyoming data center project to Google",
+      "summary": "The deal highlights the challenges of developing massive AI data centers.",
+      "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-07T01:40:28.000Z",
+      "fetchedAt": "2026-11-08T20:43:19.561Z",
+      "score": 8.2,
       "topics": []
     }
   ]
