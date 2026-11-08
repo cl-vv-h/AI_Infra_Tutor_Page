@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-11-07T23:52:03.711Z",
-    "releasesCollectedAt": "2026-11-07T23:52:15.596Z",
-    "libraryCollectedAt": "2026-11-07T23:52:03.711Z",
+    "dailyCollectedAt": "2026-11-08T06:34:37.370Z",
+    "releasesCollectedAt": "2026-11-08T06:34:48.593Z",
+    "libraryCollectedAt": "2026-11-08T06:34:37.370Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -70,10 +70,13 @@
       "2026-11-04",
       "2026-11-05",
       "2026-11-06",
-      "2026-11-07"
+      "2026-11-07",
+      "2026-11-08"
     ],
     "missingArchiveDates": [],
-    "failedSources": [],
+    "failedSources": [
+      "U.S. Federal Reserve"
+    ],
     "invalidItems": 30
   },
   "tracks": [
@@ -100,7 +103,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-11-07T23:52:15.596Z",
+          "lastCollectedAt": "2026-11-08T06:34:48.593Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -113,7 +116,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-11-07T23:52:15.596Z",
+          "lastCollectedAt": "2026-11-08T06:34:48.593Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -126,7 +129,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-11-07T23:52:15.596Z",
+          "lastCollectedAt": "2026-11-08T06:34:48.593Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -139,7 +142,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-02T01:09:04.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-11-07T23:52:15.596Z",
+          "lastCollectedAt": "2026-11-08T06:34:48.593Z",
           "revisionCount": 3,
           "ruleIds": [
             "official-releases"
@@ -152,7 +155,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-19T02:55:19.000Z",
           "firstCollectedAt": "2026-10-16T04:52:38.724Z",
-          "lastCollectedAt": "2026-11-07T23:52:15.596Z",
+          "lastCollectedAt": "2026-11-08T06:34:48.593Z",
           "revisionCount": 1,
           "ruleIds": [
             "official-releases"
@@ -165,7 +168,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-11-02T22:14:10.000Z",
           "firstCollectedAt": "2026-10-30T06:19:01.932Z",
-          "lastCollectedAt": "2026-11-07T23:52:15.596Z",
+          "lastCollectedAt": "2026-11-08T06:34:48.593Z",
           "revisionCount": 1,
           "ruleIds": [
             "official-releases"
@@ -274,7 +277,7 @@
           "publisherCountry": "United States",
           "publishedAt": "2026-10-26T22:01:23.000Z",
           "firstCollectedAt": "2026-10-27T05:28:07.370Z",
-          "lastCollectedAt": "2026-11-07T23:52:03.711Z",
+          "lastCollectedAt": "2026-11-08T06:34:37.370Z",
           "revisionCount": 0,
           "ruleIds": [
             "workers-announcements"
@@ -579,5 +582,5 @@
       ]
     }
   ],
-  "fingerprint": "c379218b611ca06951548b926e4cc364af77ff38f51c2b4513a5667721c17708"
+  "fingerprint": "b996d7272ab584e8162c3cc1edbe383803e83039111cda4b6029befdc24fba87"
 }

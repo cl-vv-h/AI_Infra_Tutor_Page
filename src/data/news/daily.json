@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-07T23:52:03.711Z",
+  "generatedAt": "2026-11-08T06:34:37.370Z",
   "status": "ready",
   "lookbackHours": 48,
-  "sourceCount": 39,
-  "failedSourceCount": 0,
+  "sourceCount": 38,
+  "failedSourceCount": 1,
   "sourceStates": [
     {
       "name": "BBC World",
@@ -14,7 +14,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-07T22:58:49.000Z",
+      "latestPublishedAt": "2026-11-08T04:03:12.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 54,
-      "latestPublishedAt": "2026-11-07T21:40:32.000Z",
+      "entryCount": 43,
+      "latestPublishedAt": "2026-11-07T23:02:35.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 120,
-      "latestPublishedAt": "2026-11-07T21:34:00.000Z",
+      "entryCount": 117,
+      "latestPublishedAt": "2026-11-08T05:55:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-07T22:21:58.000Z",
+      "latestPublishedAt": "2026-11-08T05:09:39.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-11-07T22:47:03.000Z",
+      "latestPublishedAt": "2026-11-08T05:05:00.000Z",
       "selectedCount": 3,
       "libraryCount": 5
     },
@@ -167,10 +167,11 @@
       "country": "United States",
       "category": "finance",
       "type": "institution",
-      "state": "ok",
+      "state": "unavailable",
       "channel": "feed",
-      "entryCount": 20,
-      "latestPublishedAt": "2026-11-05T16:00:00.000Z",
+      "httpStatus": 404,
+      "entryCount": 0,
+      "latestPublishedAt": null,
       "selectedCount": 0,
       "libraryCount": 0
     },
@@ -195,9 +196,9 @@
       "type": "institution",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 45,
+      "entryCount": 42,
       "latestPublishedAt": "2026-11-06T16:00:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -248,8 +249,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 30,
-      "latestPublishedAt": "2026-11-06T12:00:00.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-11-07T12:00:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -261,7 +262,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-11-07T20:45:45.000Z",
+      "latestPublishedAt": "2026-11-07T22:47:06.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -288,7 +289,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-11-07T22:10:54.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -314,7 +315,7 @@
       "channel": "feed",
       "entryCount": 899,
       "latestPublishedAt": "2026-11-06T14:00:48.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 8
     },
     {
@@ -327,7 +328,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-11-06T00:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -379,7 +380,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-11-06T02:07:35.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -444,7 +445,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-11-06T00:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -524,8 +525,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-07T22:47:03.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 28.7,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 27.1,
       "topics": []
     },
     {
@@ -538,8 +539,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T22:20:20.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 28.6,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 26.9,
       "topics": [
         "inference",
         "hardware"
@@ -555,8 +556,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-11-07T20:48:58.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 28.2,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 26.6,
       "topics": [
         "security"
       ]
@@ -571,10 +572,30 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T18:03:26.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 27.5,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 25.9,
       "topics": [
         "inference",
+        "training"
+      ]
+    },
+    {
+      "id": "0f0caf138d0b82b9",
+      "category": "technology",
+      "title": "v1.4.0rc3",
+      "summary": "Highlights Known Issues DSA models, including GLM-5.2, may produce incorrect output when using an NVFP4 KV cache. Kimi K3 DSpark with MegaMoE CuTe DSL TEP and CUDA graphs may hang during GB300 warmup. DeepSeek-V4-Pro initialization may run out of GPU memory when MPI workers are reused after large MoE workloads. Tensor-parallel serving with RPC orchestration may hang during model initialization when reusing an MPI worker pool across threads. Model Support Add Muse Spark Open model and configuration support #21042 , ",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc3",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-11-06T21:38:32.000Z",
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 25.8,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
         "training"
       ]
     },
@@ -588,31 +609,25 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-07T21:17:08.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 27.4,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 25.7,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "0f0caf138d0b82b9",
+      "id": "d715e7d2c00402c6",
       "category": "technology",
-      "title": "v1.4.0rc3",
-      "summary": "Highlights Known Issues DSA models, including GLM-5.2, may produce incorrect output when using an NVFP4 KV cache. Kimi K3 DSpark with MegaMoE CuTe DSL TEP and CUDA graphs may hang during GB300 warmup. DeepSeek-V4-Pro initialization may run out of GPU memory when MPI workers are reused after large MoE workloads. Tensor-parallel serving with RPC orchestration may hang during model initialization when reusing an MPI worker pool across threads. Model Support Add Muse Spark Open model and configuration support #21042 , ",
-      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc3",
-      "source": "TensorRT-LLM Releases",
+      "title": "APOD: 2026 November 8 – Major Fireball Meteor",
+      "summary": "APOD Science APOD APOD: 2026 November 8 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Major Fireball Meteor […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-november-8-major-fireball-meteor/",
+      "source": "NASA",
       "sourceCountry": "United States",
-      "sourceType": "release",
-      "publishedAt": "2026-11-06T21:38:32.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 27.4,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
-      ]
+      "sourceType": "research",
+      "publishedAt": "2026-11-08T05:05:00.000Z",
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 24.6,
+      "topics": []
     },
     {
       "id": "9283532c75cdd646",
@@ -624,8 +639,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-07T12:15:21.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 26.1,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 24.4,
       "topics": [
         "security"
       ]
@@ -640,8 +655,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-07T12:12:06.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 26.1,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 24.4,
       "topics": [
         "inference"
       ]
@@ -656,12 +671,26 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-06T15:43:27.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 26,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 24.3,
       "topics": [
         "hardware",
         "security"
       ]
+    },
+    {
+      "id": "838fea9f6cd5dd1e",
+      "category": "world",
+      "title": "US launches task force to disrupt Iran’s land-based supply routes",
+      "summary": "The operation is to prevent Iran from using ground routes to transport weapons and other materials, US says.",
+      "url": "https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-08T02:34:04.000Z",
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 23,
+      "topics": []
     },
     {
       "id": "c7f62495ccee7719",
@@ -673,8 +702,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-07T22:19:59.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 23.6,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 21.9,
       "topics": []
     },
     {
@@ -687,8 +716,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-07T22:12:06.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 23.6,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 21.9,
       "topics": [
         "security"
       ]
@@ -703,8 +732,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-07T18:11:57.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 23.6,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 21.9,
       "topics": []
     },
     {
@@ -717,22 +746,22 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-07T21:36:16.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 23.4,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 21.8,
       "topics": []
     },
     {
       "id": "8273a4d5e8aa8c4e",
       "category": "world",
       "title": "Poland: Gunman kills 6 in Krakow main square",
-      "summary": "A gunman who fired from a car killed at least six people, including a British tourist, in Krakow's main market square. Officials said the shooter was fascinated with \"radical\" and \"far right' ideologies.",
+      "summary": "A gunman who fired from a car killed at least six people, including a British tourist, in Krakow's main market square. Officials said the shooter was fascinated with \"radical\" and \"far-right\" ideologies.",
       "url": "https://www.dw.com/en/poland-gunman-kills-6-in-krakow-main-square/a-79886489?maca=en-rss-en-all-1573-rdf",
       "source": "DW",
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-11-07T21:34:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 23.4,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 21.7,
       "topics": []
     },
     {
@@ -745,8 +774,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-11-07T21:03:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 23.3,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 21.6,
       "topics": []
     },
     {
@@ -759,27 +788,10 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-11-06T12:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 23,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 21.4,
       "topics": [
         "security"
-      ]
-    },
-    {
-      "id": "612f17b309d4b094",
-      "category": "ai",
-      "title": "Migrating vLLM to the LibTorch Stable ABI",
-      "summary": "How vLLM migrated its CUDA build and compiled dependencies to the LibTorch Stable ABI, enabling compatible PyTorch upgrades without rebuilding vLLM.",
-      "url": "https://vllm.ai/blog/2026-11-06-stable-abi-cuda",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 23,
-      "topics": [
-        "inference",
-        "kernels"
       ]
     },
     {
@@ -792,8 +804,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-07T19:37:14.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 22.9,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 21.3,
       "topics": []
     },
     {
@@ -806,8 +818,8 @@
       "sourceCountry": "Qatar",
       "sourceType": "news",
       "publishedAt": "2026-11-07T19:29:06.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 22.9,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 21.2,
       "topics": []
     },
     {
@@ -820,8 +832,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-11-07T22:10:54.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 22.6,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 20.9,
       "topics": []
     },
     {
@@ -834,8 +846,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-11-07T18:07:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 22.6,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 20.9,
       "topics": []
     },
     {
@@ -848,8 +860,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-07T15:56:28.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 22,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 20.3,
       "topics": []
     },
     {
@@ -862,29 +874,9 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-07T15:19:35.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 21.9,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 20.2,
       "topics": []
-    },
-    {
-      "id": "5bccf635eb14ebd7",
-      "category": "ai",
-      "title": "Release v0.7.4rc1",
-      "summary": "What's Changed feat(prims-ts): broaden attention support and runtime split-KV by @PerkzZheng in #6925 perf(cake_dsa_indexer): longest-segment-first unit tickets for multi-segment calls (sm_100a / sm_103a) by @yyihuang in #7953 perf(cake_fmha): one-stage FP8 paged context programs for small per-request query counts by @yyihuang in #7954 perf(cake_kda): one KCP workspace shared by prepared packs, with grad by @yyihuang in #7955 ci: classify compatible public API input widening by @kangbintNV in #7787 perf(cake_gqa): ",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.4rc1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-11-06T02:07:35.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 21.6,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
-      ]
     },
     {
       "id": "9688ca93c36ea392",
@@ -896,8 +888,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-11-07T14:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 21.5,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 19.9,
       "topics": []
     },
     {
@@ -910,25 +902,11 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T14:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 21.5,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 19.9,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "e08806caad372146",
-      "category": "technology",
-      "title": "M30’s Sparkling Stars",
-      "summary": "This NASA/ESA Hubble Space Telescope image released Nov. 5, 2026, provides a lesson in galactic history. The sparkling collection of stars is named Messier 30 (M30) after the French astronomer, Charles Messier, who cataloged M30 and other diffuse objects that might be mistaken for comets in the early telescopes of Messier’s time. M30 lies about […]",
-      "url": "https://www.nasa.gov/image-article/m30s-sparkling-stars/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-06T16:23:41.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 21.1,
-      "topics": []
     },
     {
       "id": "1fe709d7846e5713",
@@ -940,8 +918,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-06T16:00:35.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 21,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 19.4,
       "topics": [
         "training"
       ]
@@ -956,38 +934,38 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-06T18:44:38.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 20.7,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 19,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "4bcc32905b0e2554",
+      "id": "30e618ca7a8821e1",
       "category": "world",
-      "title": "Coalition battles ahead in key South African cities as vote counting wraps up",
-      "summary": "Partial results for South Africa's local elections point to coalition battles in several major metros, including Johannesburg, Tshwane and eThekwini.",
-      "url": "https://www.africanews.com/2026/11/07/coalition-battles-ahead-in-key-south-african-cities-as-vote-counting-wraps-up/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T11:45:30.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 20,
+      "title": "‘For the first time I have my own chair’: Gaza siblings find new freedom",
+      "summary": "In Gaza, 10-year-old Anas is one of three siblings born without legs and with only two fingers on each of their hands. They struggle to move around and perform daily activities like eating and writing independently.",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168759",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-07T12:00:00.000Z",
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 18.4,
       "topics": []
     },
     {
-      "id": "079107d7fe7c4eba",
-      "category": "world",
-      "title": "Real Madrid beat Valencia 3-0 to draw level with La Liga leaders Barcelona",
-      "summary": "Valverde and Guler's first-half goals put Madrid in the driving seat, and Mbappe added a third in the second half.",
-      "url": "https://www.aljazeera.com/sports/2026/11/7/real-madrid-beat-valencia-3-0-to-draw-level-with-la-liga-leaders-barcelona?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "id": "3cfaa5dc885747a3",
+      "category": "finance",
+      "title": "Labubu hype seemed unstoppable, now the fluffy monster mania is dying",
+      "summary": "Parent company Pop Mart's revenue has fallen as appetite for the quirky collectible monsters wanes.",
+      "url": "https://www.bbc.co.uk/news/articles/cmvg652l927lo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-11-07T22:21:58.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 19.6,
+      "publishedAt": "2026-11-07T23:02:35.000Z",
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 18.1,
       "topics": []
     },
     {
@@ -1000,61 +978,9 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-07T21:40:32.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 19.5,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 17.8,
       "topics": []
-    },
-    {
-      "id": "0c94d6f9e5ecbd07",
-      "category": "ai",
-      "title": "Zero Mismatch, Simple Async RL: REINFORCE Zero, DeepSeek-V4.1 and Kimi K3.1",
-      "summary": "Asynchronous RL trains on stale weights. Align rollout and training kernels bit for bit, and unclipped importance sampling corrects that lag. Plus zero-mismatch RL for DeepSeek-V4.1-Flash, Kimi K3.1 and AMD MI355X.",
-      "url": "https://vllm.ai/blog/2026-11-06-zero-mismatch-async-rl",
-      "source": "vLLM Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 19,
-      "topics": [
-        "kernels",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "9c8e01a3481c93ff",
-      "category": "technology",
-      "title": "ROCm InferaSim: Cut LLM Serving Trial Costs and Deploy the Best Configuration",
-      "summary": "Serving an LLM well means making a lot of choices before you know the answer. You pick an engine, a parallel layout, precisions and scheduler settings, and for disaggregated serving a split between prefill and decode. That leaves thousands of candidates, and each trial ties up one or more multi-GPU nodes for minutes. Measuring every candidate in our searches would take about 25,000 GPU-hours, so most teams try a few guesses and keep the best. A guess that misses costs you extra GPUs or a missed latency target.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/inferasim/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 19,
-      "topics": [
-        "inference",
-        "hardware"
-      ]
-    },
-    {
-      "id": "cb0d0ca31b56f0bc",
-      "category": "technology",
-      "title": "PrimusClaw: An Open-Source Managed Agent Runtime for AMD Instinct GPU Clusters",
-      "summary": "PrimusClaw is an open-source managed agent runtime: a session store, an agent harness, and per-session sandboxes that you run in your own Kubernetes cluster, next to your AMD Instinct™ GPUs. In production use at AMD since April 2026, two PrimusClaw deployments have hosted more than 40,000 agent sessions for more than 70 users: over 100,000 agent-hours, more than 4 million tool calls, and more than 500 billion prompt tokens. On the main deployment, the median run lasted 3.4 hours (Endnote 2).",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/primusclaw/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 19,
-      "topics": [
-        "hardware",
-        "security"
-      ]
     },
     {
       "id": "74e879012f023536",
@@ -1066,8 +992,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-11-07T18:38:20.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 18.7,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 17,
       "topics": []
     },
     {
@@ -1080,22 +1006,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-07T22:07:22.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 18.6,
-      "topics": []
-    },
-    {
-      "id": "62011c0ce4c25bd1",
-      "category": "finance",
-      "title": "'My mortgage is going up £200 a month': How rising interest rates are hitting people's pockets",
-      "summary": "With UK interest rates set to rise, mortgages, credit cards and loans could get more expensive for millions.",
-      "url": "https://www.bbc.co.uk/news/articles/c617kjqjvk12o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-07T01:41:36.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 18.5,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 16.9,
       "topics": []
     },
     {
@@ -1108,8 +1020,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-11-07T17:32:26.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 18.4,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1122,8 +1034,8 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-11-06T22:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 17.5,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 15.9,
       "topics": []
     },
     {
@@ -1136,8 +1048,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T14:00:48.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 17.5,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 15.9,
       "topics": []
     },
     {
@@ -1150,8 +1062,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-06T22:08:47.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 16.6,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 14.9,
       "topics": []
     },
     {
@@ -1164,8 +1076,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-06T17:43:02.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 16.5,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 14.8,
       "topics": [
         "training"
       ]
@@ -1180,8 +1092,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-07T12:15:55.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 16.1,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 14.4,
       "topics": []
     },
     {
@@ -1194,8 +1106,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-11-06T16:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 15,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 13.4,
       "topics": []
     },
     {
@@ -1208,22 +1120,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-11-06T09:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 14.3,
-      "topics": []
-    },
-    {
-      "id": "1a7503b6325973d9",
-      "category": "ai",
-      "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
-      "summary": "",
-      "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 14,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 12.6,
       "topics": []
     },
     {
@@ -1236,22 +1134,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-11-06T07:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 12.8,
-      "topics": []
-    },
-    {
-      "id": "530266f6a8754f64",
-      "category": "finance",
-      "title": "IMES Discussion Paper Series (2026)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/research/imes/dps/dps26.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-06T02:00:00.000Z",
-      "fetchedAt": "2026-11-07T23:52:03.711Z",
-      "score": 11.5,
+      "fetchedAt": "2026-11-08T06:34:37.370Z",
+      "score": 11.1,
       "topics": []
     }
   ]
