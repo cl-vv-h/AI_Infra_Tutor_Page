@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-11-10T01:32:18.643Z",
+  "periodStart": "2026-11-02",
+  "periodEnd": "2026-11-08",
+  "model": "gpt-5.6-luna",
+  "archiveDates": [
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-06",
+    "2026-11-07",
+    "2026-11-08"
+  ],
+  "itemCount": 27,
+  "content": "# 本周信号\n\n本期覆盖 2026-11-02 至 2026-11-08 的七个公开归档日。最强技术信号集中在 serving 版本、KV cache/低比特推理、GPU kernel 与互联、分布式故障恢复，以及从 GPU 集群到 agent runtime 的运维控制面。金融和国际材料能说明资本与基础设施约束，但不足以单独证明产业因果。\n\n## AI\n\n- 报道事实：[v0.33.0](https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3)归档列出 927 个提交、389 位贡献者和多种新模型接入；摘要还列出 MoE 模型与视觉/解析模型等支持项。该条目是 release 元数据，未提供统一基准。\n- 报道事实：[v0.5.23](https://github.com/sgl-project/sglang/releases/tag/v0.5.23)的摘要称 SGLang 收录 1007 个 PR、257 位贡献者，并报告 DeepSeek-V4.1 在 GB300 上负载下最高 1.5 倍 prefill 吞吐和约 28% 更低的 32K–64K 首 token 延迟；这些数字属于归档摘要中的特定配置，不应外推为普遍性能。\n- 报道事实：[vLLM Delivers Day-0 Support for Kimi K3.1 Pro](https://vllm.ai/blog/2026-11-04-kimi-k31-pro)列出 KDA hybrid sparse attention、packed KV cache、FP8/NVFP4 latents、MXFP4 index keys、token-sharded prefill、decode context parallelism 与 fused decode。综合判断：模型结构、缓存精度和并行执行正在被 serving engine 共同暴露为部署配置面。\n- 报道事实：[StateBench: Testing how language models track state changes over long documents](https://huggingface.co/blog/allenai/statebench)被 Hugging Face 归档，但摘要为空，因此不能补写其分数或数据集规模。\n- 报道事实：[PrimusClaw: An Open-Source Managed Agent Runtime for AMD Instinct GPU Clusters](https://rocm.blogs.amd.com/software-tools-optimization/primusclaw/README.html)称其包含 session store、agent harness 与 per-session sandbox；归档摘要还给出两套部署、超过 40,000 个 agent sessions、超过 100,000 agent-hours、超过 4 million tool calls 和超过 500 billion prompt tokens，以及 3.4 小时的主部署中位运行时长。综合判断：agent workload 的状态、工具调用和隔离边界已经成为 GPU 集群运维的一部分；异步权重同步和 rollout/training 对齐也值得继续验证：[Zero Mismatch, Simple Async RL: REINFORCE Zero, DeepSeek-V4.1 and Kimi K3.1](https://vllm.ai/blog/2026-11-06-zero-mismatch-async-rl)。\n\n## 科技\n\n- 报道事实：[NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support](https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/)记录 CUDA 13.5 面向 Vera Rubin GA 支持；归档摘要未给出兼容矩阵或 benchmark，不能据此判断迁移成本。\n- 报道事实：[GLM-5.2 AgentX on AMD Instinct MI355X: Boosting Throughput and Interactivity](https://rocm.blogs.amd.com/software-tools-optimization/glm52-agentx-mi355x/README.html)称该路线使用 MXFP4 权重、SGLang、缓存效率与 decode kernel 优化，并报告 AgentX 峰值吞吐提升 1.72 倍。该数字依赖其 benchmark 和硬件配置。\n- 报道事实：[What Sets the Serving Speed of Looped Language Models? Measurements and Optimizations Graded by Exactness](https://arxiv.org/abs/2611.05150v1)指出 looped model 的每层开销会重复出现；摘要称 batch 1 下 5689 个小 kernel 是主要成本，rounding fence 后融合可达 1.11–1.59 倍吞吐。综合判断：小 kernel 调度和数值等价约束仍是 serving 优化的具体瓶颈。\n- 报道事实：[Workload-Static Optical Circuit Switching For Scalable LLM Inference Decode](https://arxiv.org/abs/2611.05104v1)提出按固定部署和并行化配置协同设计 optical circuit switching 与 topology-aware collective schedules，以降低 decode collective 的交互延迟；摘要未提供硬件部署验证。\n- 报道事实：[Online Quantization: Smooth Path from One Checkpoint to Any Desired Serving Scenario](https://rocm.blogs.amd.com/artificial-intelligence/online_quantization/README.html)讨论把权重/激活从 bf16 转为 FP8 或 MXFP4，以降低显存占用并加速推理，同时强调精度恢复与校准流程。综合判断：量化不再只是离线模型文件转换，而是需要和目标 serving 场景一起评估的运行时选择。\n- 报道事实：[More Performance From Every Byte: How Full-Stack Codesign Solves AI’s Memory Challenge](https://blogs.nvidia.com/blog/memory-full-stack-codesign/)把更大模型、更长上下文和 agent workload 与 GPU memory pressure 联系起来，并提到 HBM3e/HBM4 采用。归档没有给出价格、供给量或独立测量。\n- 报道事实：[v1.4.0rc3](https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc3)的归档摘要列出 NVFP4 KV cache 可能产生错误输出、GB300 warmup hang、DeepSeek-V4-Pro 初始化 OOM 及 tensor-parallel RPC orchestration hang 等已知问题，同时新增 Muse Spark Open 支持。综合判断：硬件/精度/并行组合的失败模式仍需进入发布门禁和回归矩阵。\n- 报道事实：[Diagnose Distributed AI Workload Failures with NVIDIA Attribution](https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/)关注 GPU 或 fabric 事件如何在其他 rank 表现为 NCCL 错误和调度状态异常；[Keep Distributed Training Running with Automated Workload Recovery](https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/)则聚焦跨硬件与软件依赖的自动恢复。综合判断：故障归因和可恢复性正在成为分布式训练/serving 的同等重要指标。\n- 报道事实：[Introducing Kinference: An Open Source Inference Control Plane for vLLM and Kubernetes](https://vllm.ai/blog/2026-11-04-introducing-kinference)列出 token rate limiting、tenant usage/cost tracking、load balancing 与 inference policies；[Announcing the Special Interest Group (SIG) for Ray on Accelerators](https://pytorch.org/blog/announcing-the-special-interest-group-sig-for-ray-on-accelerators/)则把 Ray 与硬件加速器生态协作单独组织起来。综合判断：多租户治理、加速器调度和 serving policy 正逐渐形成上层控制面。\n\n- 报道事实：[Device Memory Load Issue Stalls and Scheduling Opportunities in Lock-Stepped Kernels on AMD Instinct™ MI300X](https://rocm.blogs.amd.com/software-tools-optimization/scheduling_VMEM_loads_gfx942/README.html)讨论 MI300X device-memory load、cache hierarchy 与 lock-step scheduling；[Support New AI Frameworks Faster Using NVIDIA Workload Map](https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map/)把 AI factory 的 workload mapping 作为框架适配入口。\n\n## 金融\n\n- 报道事实：[Anthropic secures $3.4 billion generator deal for AI data centers, FT reports](https://www.channelnewsasia.com/business/anthropic-secures-34-billion-generator-deal-ai-data-centers-ft-reports-6534256)报道一项 34 亿美元发电机交易，但摘要为空，不能补写合同结构、交付时间或融资来源。\n- 报道事实：[Why the US midterms sparked an AI stock selloff](https://www.bbc.co.uk/news/articles/crlykkzwwpydo)称对 AI 监管的担忧与行业累积担忧可能推动投资者抛售相关股票；这是分析报道，不是价格数据或因果识别。\n- 报道事实：[Bank rate increased to 4% - November 2026 Monetary Policy Summary and Minutes](https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026)记录英格兰银行货币政策委员会的 Bank Rate 决定。归档不足以把该利率变化映射为 AI 数据中心资本成本。\n- 综合判断：本期金融材料同时呈现数据中心能源资本投入和 AI 资产估值压力，但没有足够证据估算其对 GPU 采购、机房建设或 serving 价格的直接影响。\n\n## 国际形势\n\n- 报道事实：[Fresh wave of fridge cyberattacks hits European supermarkets](https://www.france24.com/en/europe/20261102-fresh-wave-of-fridge-cyberattacks-hits-european-supermarkets)称比利时、卢森堡、芬兰、爱沙尼亚和瑞典的超市冰柜出现异常升温，并与此前法国事件相联系。综合判断：供应链与运营技术安全已不只是 IT 边界问题，关键基础设施的设备控制面值得纳入 AI/数据中心安全方法论；归档不证明两者存在直接关联。\n- 报道事实：[US voters reject AI data centres: could the backlash spread to France?](https://www.france24.com/en/tv-shows/tech-24/20261108-us-voters-reject-ai-data-centres-could-the-backlash-spread-to-france)称美国中期选举中，40 多项数据中心地方措施几乎全部遭到反对，并提到新州长提出暂停建设。综合判断：电力、用水和地方许可可能成为算力扩张的非技术约束，但该条目不提供可比的容量或审批统计。\n- 报道事实：[Europe to join U.S.-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections](https://www.npr.org/2026/11/08/nx-s1-6034014/europe-join-us-brokered-ukraine-talks-abu-dhabi-russia)称欧洲官员将参加美国斡旋的俄乌会谈；本期归档未提供对芯片供应、海运或跨境部署的直接影响。\n\n## 跨板块观察\n\n- 综合判断：vLLM/SGLang 的 release、Kimi K3.1 Pro 的 sparse attention 与 KV cache 配置、AMD/NVIDIA 的量化和显存路线，以及 InferaSim/ Kinference 等控制面材料共同指向一个趋势：serving 的核心竞争从单一 kernel 速度扩展到模型结构、精度、并行、租户策略和故障恢复的组合优化。该判断是对多条归档材料的综合，不是单一来源结论。\n- 综合判断：GPU/fabric 故障归因、自动恢复、PrimusClaw session sandbox 和 [Agents aren’t humans (but they kinda are)](https://blog.cloudflare.com/trusted-agent-delegation/) 所讨论的 agent delegation 说明 agent 化基础设施需要同时管理身份、状态、工具调用和硬件故障；现有归档没有给出统一安全标准或跨平台基准。\n- 综合判断：数据中心能源交易、AI 股票波动和地方反对建设同时出现，但仍缺少项目级电力、用水、融资和算力价格数据，不能据此宣称 AI 基础设施投资周期已经反转。\n\n## 下周观察清单\n\n- 跟踪 vLLM 0.33.0 与 SGLang 0.5.23 的真实模型覆盖、prefill/decode、KV cache 精度和尾延迟回归：[v0.33.0](https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3)、[v0.5.23](https://github.com/sgl-project/sglang/releases/tag/v0.5.23)。\n- 验证 CUDA 13.5/Vera Rubin、TensorRT-LLM NVFP4 KV cache 已知问题和 Kubernetes GPU 集群运维是否形成稳定兼容矩阵：[NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support](https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/)、[v1.4.0rc3](https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc3)。\n- 关注 MI355X AgentX、online quantization、InferaSim 和 PrimusClaw 是否补充端到端吞吐、成本、隔离与恢复数据：[GLM-5.2 AgentX on AMD Instinct MI355X: Boosting Throughput and Interactivity](https://rocm.blogs.amd.com/software-tools-optimization/glm52-agentx-mi355x/README.html)、[ROCm InferaSim: Cut LLM Serving Trial Costs and Deploy the Best Configuration](https://rocm.blogs.amd.com/software-tools-optimization/inferasim/README.html)。\n- 观察数据中心地方许可、能源采购与 AI 资产估值是否出现可核验的项目级变化；当前证据不足：[US voters reject AI data centres: could the backlash spread to France?](https://www.france24.com/en/tv-shows/tech-24/20261108-us-voters-reject-ai-data-centres-could-the-backlash-spread-to-france)。\n",
+  "sources": [
+    {
+      "title": "v0.33.0",
+      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
+      "source": "vLLM Releases"
+    },
+    {
+      "title": "Announcing the Special Interest Group (SIG) for Ray on Accelerators",
+      "url": "https://pytorch.org/blog/announcing-the-special-interest-group-sig-for-ray-on-accelerators/",
+      "source": "PyTorch Blog"
+    },
+    {
+      "title": "Device Memory Load Issue Stalls and Scheduling Opportunities in Lock-Stepped Kernels on AMD Instinct™ MI300X",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/scheduling_VMEM_loads_gfx942/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "v0.5.23",
+      "url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.23",
+      "source": "SGLang Releases"
+    },
+    {
+      "title": "vLLM Delivers Day-0 Support for Kimi K3.1 Pro",
+      "url": "https://vllm.ai/blog/2026-11-04-kimi-k31-pro",
+      "source": "vLLM Blog"
+    },
+    {
+      "title": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
+      "url": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+      "source": "NVIDIA Technical Blog"
+    },
+    {
+      "title": "GLM-5.2 AgentX on AMD Instinct MI355X: Boosting Throughput and Interactivity",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/glm52-agentx-mi355x/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "What Sets the Serving Speed of Looped Language Models? Measurements and Optimizations Graded by Exactness",
+      "url": "https://arxiv.org/abs/2611.05150v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "Workload-Static Optical Circuit Switching For Scalable LLM Inference Decode",
+      "url": "https://arxiv.org/abs/2611.05104v1",
+      "source": "arXiv Distributed Systems"
+    },
+    {
+      "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+      "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+      "source": "NVIDIA Technical Blog"
+    },
+    {
+      "title": "Keep Distributed Training Running with Automated Workload Recovery",
+      "url": "https://developer.nvidia.com/blog/keep-distributed-training-running-with-automated-workload-recovery/",
+      "source": "NVIDIA Technical Blog"
+    },
+    {
+      "title": "Introducing Kinference: An Open Source Inference Control Plane for vLLM and Kubernetes",
+      "url": "https://vllm.ai/blog/2026-11-04-introducing-kinference",
+      "source": "vLLM Blog"
+    },
+    {
+      "title": "Online Quantization: Smooth Path from One Checkpoint to Any Desired Serving Scenario",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/online_quantization/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "More Performance From Every Byte: How Full-Stack Codesign Solves AI’s Memory Challenge",
+      "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+      "source": "NVIDIA AI"
+    },
+    {
+      "title": "v1.4.0rc3",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.4.0rc3",
+      "source": "TensorRT-LLM Releases"
+    },
+    {
+      "title": "Zero Mismatch, Simple Async RL: REINFORCE Zero, DeepSeek-V4.1 and Kimi K3.1",
+      "url": "https://vllm.ai/blog/2026-11-06-zero-mismatch-async-rl",
+      "source": "vLLM Blog"
+    },
+    {
+      "title": "ROCm InferaSim: Cut LLM Serving Trial Costs and Deploy the Best Configuration",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/inferasim/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "PrimusClaw: An Open-Source Managed Agent Runtime for AMD Instinct GPU Clusters",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/primusclaw/README.html",
+      "source": "AMD ROCm Blog"
+    },
+    {
+      "title": "Agents aren’t humans (but they kinda are)",
+      "url": "https://blog.cloudflare.com/trusted-agent-delegation/",
+      "source": "Cloudflare Engineering"
+    },
+    {
+      "title": "Support New AI Frameworks Faster Using NVIDIA Workload Map",
+      "url": "https://developer.nvidia.com/blog/support-new-ai-frameworks-faster-using-nvidia-workload-map/",
+      "source": "NVIDIA Technical Blog"
+    },
+    {
+      "title": "StateBench: Testing how language models track state changes over long documents",
+      "url": "https://huggingface.co/blog/allenai/statebench",
+      "source": "Hugging Face Blog"
+    },
+    {
+      "title": "Why the US midterms sparked an AI stock selloff",
+      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo",
+      "source": "BBC Business"
+    },
+    {
+      "title": "Anthropic secures $3.4 billion generator deal for AI data centers, FT reports",
+      "url": "https://www.channelnewsasia.com/business/anthropic-secures-34-billion-generator-deal-ai-data-centers-ft-reports-6534256",
+      "source": "CNA Business"
+    },
+    {
+      "title": "Bank rate increased to 4% - November 2026 Monetary Policy Summary and Minutes",
+      "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+      "source": "Bank of England"
+    },
+    {
+      "title": "Fresh wave of fridge cyberattacks hits European supermarkets",
+      "url": "https://www.france24.com/en/europe/20261102-fresh-wave-of-fridge-cyberattacks-hits-european-supermarkets",
+      "source": "France 24"
+    },
+    {
+      "title": "US voters reject AI data centres: could the backlash spread to France?",
+      "url": "https://www.france24.com/en/tv-shows/tech-24/20261108-us-voters-reject-ai-data-centres-could-the-backlash-spread-to-france",
+      "source": "France 24"
+    },
+    {
+      "title": "Europe to join U.S.-brokered Ukraine talks in Abu Dhabi, defying Kremlin objections",
+      "url": "https://www.npr.org/2026/11/08/nx-s1-6034014/europe-join-us-brokered-ukraine-talks-abu-dhabi-russia",
+      "source": "NPR World"
+    }
+  ]
+}
