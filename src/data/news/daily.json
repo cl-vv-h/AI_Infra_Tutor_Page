@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T20:53:03.008Z",
+  "generatedAt": "2026-11-15T07:02:34.663Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -14,7 +14,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 23,
-      "latestPublishedAt": "2026-11-14T20:41:45.000Z",
+      "latestPublishedAt": "2026-11-15T03:21:04.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -26,8 +26,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 56,
-      "latestPublishedAt": "2026-11-14T08:13:40.000Z",
+      "entryCount": 57,
+      "latestPublishedAt": "2026-11-15T00:01:07.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 128,
-      "latestPublishedAt": "2026-11-14T20:33:00.000Z",
+      "entryCount": 127,
+      "latestPublishedAt": "2026-11-15T06:31:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-14T20:14:10.000Z",
+      "latestPublishedAt": "2026-11-15T06:49:14.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-14T14:53:22.000Z",
+      "latestPublishedAt": "2026-11-14T21:42:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-14T17:30:00.000Z",
+      "latestPublishedAt": "2026-11-15T00:08:07.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-14T12:15:48.000Z",
+      "latestPublishedAt": "2026-11-15T00:40:59.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -145,7 +145,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-11-13T16:39:33.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 5
     },
     {
@@ -195,7 +195,7 @@
       "type": "institution",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 47,
+      "entryCount": 45,
       "latestPublishedAt": "2026-11-12T08:00:00.000Z",
       "selectedCount": 0,
       "libraryCount": 0
@@ -288,7 +288,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-11-14T14:35:11.000Z",
-      "selectedCount": 1,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -300,8 +300,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-11-14T11:39:28.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-11-14T11:17:36.000Z",
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -379,7 +379,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-11-14T05:58:03.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -444,7 +444,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-11-13T00:00:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -493,8 +493,12 @@
       "category": "technology",
       "type": "release",
       "state": "ok",
-      "channel": "feed",
-      "entryCount": 10,
+      "channel": "github-api",
+      "feedFailure": {
+        "state": "unavailable",
+        "httpStatus": 502
+      },
+      "entryCount": 30,
       "latestPublishedAt": "2026-11-06T21:38:32.000Z",
       "selectedCount": 0,
       "libraryCount": 0
@@ -515,6 +519,70 @@
   ],
   "items": [
     {
+      "id": "0dfed32e84611faf",
+      "category": "world",
+      "title": "Secret votes and vetoes: How will the next UN chief be picked?",
+      "summary": "With no frontrunner for the job, eight candidates are vying for the UN Security Council's recommendation.",
+      "url": "https://www.aljazeera.com/news/2026/11/15/secret-votes-and-vetoes-how-will-the-next-un-chief-be-picked?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-15T06:11:00.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 28.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "230c939bc907d044",
+      "category": "world",
+      "title": "Iraq PM targets powerful militia stronghold in $30m oil smuggling probe",
+      "summary": "Iraq’s PM has dismissed nine senior security officials over an alleged oil smuggling network worth up to $30m monthly.",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/aje-onl-nf_iraq-pm-targets-militia-stronghold-in-oil-smuggling-141126?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-14T23:34:37.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 27.1,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "706c7bd9b9bc4809",
+      "category": "world",
+      "title": "Netanyahu says only a unity government can guarantee Israel’s security",
+      "summary": "Eisenkot, in charge of forming a government, dismisses the appeal as ‘tricks’ as talks and a Knesset speaker vote loom.",
+      "url": "https://www.aljazeera.com/news/2026/11/14/netanyahu-says-only-a-unity-government-can-guarantee-israels-security?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-14T23:01:30.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 27,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "39a9dc1ab70fb19c",
+      "category": "ai",
+      "title": "Where was Nvidia’s security team?",
+      "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to catch.",
+      "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-15T00:08:07.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 26.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "b686bb8cffff3285",
       "category": "technology",
       "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
@@ -524,8 +592,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-13T17:00:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 28,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 25.5,
       "topics": [
         "inference",
         "hardware",
@@ -542,8 +610,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-14T16:32:52.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 27.9,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 25.4,
       "topics": [
         "security"
       ]
@@ -558,24 +626,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-13T19:26:07.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 27.6,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "74892c87269b9dc5",
-      "category": "world",
-      "title": "Empower conference: officials and youth discuss peace and security",
-      "summary": "At the Empower Conference in Doha, officials gathered with youth to discuss initiatives for global peace and security.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/14/empower-conference-officials-and-youth-discuss-peace-and-security?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-11-14T14:49:37.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 27.5,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 25.1,
       "topics": [
         "security"
       ]
@@ -590,8 +642,8 @@
       "sourceCountry": "Germany",
       "sourceType": "news",
       "publishedAt": "2026-11-14T11:40:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 26.7,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 24.2,
       "topics": [
         "security"
       ]
@@ -606,8 +658,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-14T10:30:04.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 26.4,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 23.9,
       "topics": [
         "security"
       ]
@@ -622,8 +674,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-14T10:15:55.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 26.3,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 23.8,
       "topics": []
     },
     {
@@ -636,8 +688,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-13T14:10:57.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 26.3,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 23.8,
       "topics": [
         "inference",
         "kernels",
@@ -648,20 +700,18 @@
       ]
     },
     {
-      "id": "eb8dbee4c9689567",
+      "id": "b767457094ca58b0",
       "category": "world",
-      "title": "The CLX Multi-Brand Phenomenon: How Nasar Dagga’s Retail Strategy Is Capturing the Attention of the U.S. Market",
-      "summary": "The consumer technology retail and distribution sector in emerging markets is undergoing a structural transformation driven by new models of convenience and scale. Leer más",
-      "url": "https://www.batimes.com.ar/news/economy/the-clx-multi-brand-phenomenon-how-nasar-daggas-retail-strategy-is-capturing-the-attention-of-the-us-market.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
+      "title": "Could universal basic income be part of the solution in an AI economy?",
+      "summary": "The scale of the economic disruption caused by AI has led even conservative politicians to talk about universal basic income. But economists are not convinced, and campaigners think we need to ask deeper questions.",
+      "url": "https://www.dw.com/en/could-universal-basic-income-be-part-of-the-solution-in-an-ai-economy/a-79941597?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
       "sourceType": "news",
-      "publishedAt": "2026-11-14T11:39:28.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 25.7,
-      "topics": [
-        "models"
-      ]
+      "publishedAt": "2026-11-15T05:36:00.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 23.6,
+      "topics": []
     },
     {
       "id": "a06683eb6b1e58f9",
@@ -673,8 +723,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-13T21:17:17.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 25.1,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 22.6,
       "topics": [
         "hardware"
       ]
@@ -689,8 +739,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-13T22:52:29.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 24.5,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 22,
       "topics": [
         "inference"
       ]
@@ -705,56 +755,42 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-13T18:57:10.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 24.5,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 22,
       "topics": [
         "inference",
         "hardware"
       ]
     },
     {
-      "id": "185e216ed52b0d3b",
+      "id": "f12c3947bd1c9e14",
       "category": "world",
-      "title": "SpaceX's Starship set for return to Earth after failed booster catch",
-      "summary": "SpaceX's Starship spacecraft was on track to return to its Texas launch site for a planned mid-air catch, after an aborted recovery attempt.",
-      "url": "https://www.france24.com/en/spacex-starship-set-for-return-to-earth-after-failed-booster-catch",
+      "title": "'No justice, no peace': Fifth round of protests sweep across France",
+      "summary": "Between 106,000 and 200,000 people took to the streets across France on Saturday for the fifth round of protests, according to figures from the interior ministry and student unions respectively, as turnout fell and some incidents were reported.",
+      "url": "https://www.france24.com/en/france/20261114-no-justice-no-peace-fifth-round-of-protests-sweep-across-france",
       "source": "France 24",
       "sourceCountry": "France",
       "sourceType": "news",
-      "publishedAt": "2026-11-14T20:51:24.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 24,
-      "topics": []
-    },
-    {
-      "id": "32a31d84c2c9886e",
-      "category": "world",
-      "title": "Fact check: 'Iranian' content farms reach millions",
-      "summary": "Several social media accounts claiming to represent the Iranian military show signs of being part of so-called content farms. DW Fact Check looks at how they operate and how users can spot them.",
-      "url": "https://www.dw.com/en/fact-check-iranian-content-farms-reach-millions/a-79934190?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-14T20:26:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 23.9,
-      "topics": []
-    },
-    {
-      "id": "e3f575e7076a14e6",
-      "category": "world",
-      "title": "Italy fines Meta $880m over photo privacy",
-      "summary": "Regulator said Meta's 'lack of cooperation' and the large number of people affected contributed to size of the fine.",
-      "url": "https://www.aljazeera.com/news/2026/11/14/italy-fines-meta-880m-over-photo-privacy?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-11-14T16:16:15.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 23.8,
+      "publishedAt": "2026-11-14T18:23:25.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 21.8,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "cbd9edd669defa55",
+      "category": "world",
+      "title": "SpaceX carries out first-ever spaceship capture",
+      "summary": "The successful recovery of SpaceX's Starship marks a breakthrough in founder Elon Musk’s goal of developing a fully reusable rocket system.",
+      "url": "https://www.dw.com/en/spacex-carries-out-first-ever-spaceship-capture/a-79950275?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-14T21:35:00.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 21.6,
+      "topics": []
     },
     {
       "id": "491d61e6dda9a576",
@@ -766,28 +802,10 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-11-13T12:00:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 23.8,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 21.2,
       "topics": [
         "security"
-      ]
-    },
-    {
-      "id": "ce5de7c95344ca34",
-      "category": "technology",
-      "title": "GPU-Initiated DMA Copy Engines in RCCL and rocSHMEM",
-      "summary": "As GPU-accelerated workloads scale across multiple devices and nodes, the efficiency of inter-GPU communication becomes a decisive factor in overall application performance. This is especially true for inference workloads, where communication sits on the critical path and traditional approaches to overlapping compute and communication fall short without fine-grained, kernel-level orchestration.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/gpu-initiated-sdma/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-13T00:00:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 23.8,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware"
       ]
     },
     {
@@ -800,25 +818,11 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-13T14:05:22.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 23.3,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 20.8,
       "topics": [
         "models"
       ]
-    },
-    {
-      "id": "f686484a4c13530b",
-      "category": "world",
-      "title": "NASA’s Voyager 1 to hit new space distance record of one light-day",
-      "summary": "The probe was launched in 1977, and it continues to relay space-related data back to a team of NASA scientists.",
-      "url": "https://www.aljazeera.com/news/2026/11/14/nasas-voyager-1-to-hit-new-space-distance-record-of-one-light-day?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-11-14T15:14:54.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 22.6,
-      "topics": []
     },
     {
       "id": "3fdf6480e2538c37",
@@ -830,8 +834,8 @@
       "sourceCountry": "Pan-African",
       "sourceType": "news",
       "publishedAt": "2026-11-14T14:34:21.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 22.4,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 19.9,
       "topics": [
         "security"
       ]
@@ -846,25 +850,9 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-14T17:30:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 22.2,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 19.6,
       "topics": []
-    },
-    {
-      "id": "e24e25537ff216fd",
-      "category": "world",
-      "title": "The dangers of revising Europe's security architecture",
-      "summary": "Experts warn against revising Europe's security framework because they say it would mean granting Moscow its longstanding wish of renegotiating postwar security on the continent.",
-      "url": "https://www.dw.com/en/the-dangers-of-revising-europe-s-security-architecture/a-79943049?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-13T17:30:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 22.2,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "da56eea771c23905",
@@ -876,25 +864,9 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-14T16:34:15.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 21.9,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 19.4,
       "topics": []
-    },
-    {
-      "id": "b9b1561a1275cb54",
-      "category": "world",
-      "title": "Rosenberg: Uncompromising Putin ups demands for peace with Ukraine",
-      "summary": "The fact the question of European security now features in discussions is viewed in Moscow as a victory, BBC Russia Editor Steve Rosenberg says.",
-      "url": "https://www.bbc.co.uk/news/articles/cq39glwprknjo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-13T16:40:31.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 21.9,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "b1b59cfb922c5106",
@@ -906,44 +878,52 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-13T16:39:33.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 21.9,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 19.4,
       "topics": []
     },
     {
-      "id": "cef33a0f59be2cd2",
+      "id": "d9ab4b1801432749",
       "category": "world",
-      "title": "Microsoft says services fully restored after day-long global outage",
-      "summary": "Efforts to address the underlying problem with Outlook, Teams and Copilot are complete, the tech firm says.",
-      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o",
+      "title": "Judge temporarily blocks Trump from closing Washington DC golf course for renovation",
+      "summary": "It is the latest development in a months-long challenge to the president's plans for East Potomac Golf Links.",
+      "url": "https://www.bbc.co.uk/news/articles/c6j9mn7l14y0o",
       "source": "BBC World",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-11-14T06:42:27.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 21.5,
-      "topics": [
-        "security"
-      ]
+      "publishedAt": "2026-11-15T03:21:04.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 19.1,
+      "topics": []
     },
     {
-      "id": "ef6e6a75dd9bebd9",
-      "category": "ai",
-      "title": "Release v0.7.5rc1",
-      "summary": "What's Changed perf(cake_rmsnorm): blocked FP32 dw sums for the large-T B200 backward windows by @yyihuang in #8848 fix: Windows build of ln_silu_headers.cuh and Windows import of the b12x package by @ranx2026 in #8300 docs(msa_ops sm90): list the measured shapes where the Cake route is not faster by @yyihuang in #8852 perf(cake_kda): round-robin bin arithmetic and a start delay for shorter-bin CTAs in two 128-token turnover builds of BF16 KDA prefill (sm_103a) by @yyihuang in #8874 fix(quantization): keep the pre-",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.5rc1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-11-12T22:43:26.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 21.5,
+      "id": "08b14e6411123174",
+      "category": "world",
+      "title": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
+      "summary": "Santa Cruz de Succhabamba is part of the Diocese of Chiclayo, where the pope served as bishop from 2015 to 2023.",
+      "url": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-15T02:49:45.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "87ce99574a5f3a42",
+      "category": "finance",
+      "title": "Microsoft says services fully restored after day-long global outage",
+      "summary": "Efforts to address the underlying problem with Outlook, Teams and Copilot are complete, the tech firm says.",
+      "url": "https://www.bbc.co.uk/news/articles/c6rrg51rkz09o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-14T06:42:27.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 18.9,
       "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
+        "security"
       ]
     },
     {
@@ -956,8 +936,36 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-11-14T09:04:50.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 21,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 18.5,
+      "topics": []
+    },
+    {
+      "id": "c3b301cc2c670471",
+      "category": "world",
+      "title": "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive",
+      "summary": "Fear and misinformation surrounds the Ebola outbreak in DR Congo - Dr Kamwanga's mother was not immune.",
+      "url": "https://www.bbc.co.uk/news/articles/cmvg2e2q28w1o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-15T00:06:55.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 18.3,
+      "topics": []
+    },
+    {
+      "id": "07460b322e33ac41",
+      "category": "finance",
+      "title": "Beauty advent calendars can cost hundreds - but are they value for money?",
+      "summary": "Beauty calendars have become a Christmas staple and have become particularly popular with female shoppers.",
+      "url": "https://www.bbc.co.uk/news/articles/cqn83l442724o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-15T00:01:07.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 18.2,
       "topics": []
     },
     {
@@ -970,25 +978,9 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-11-14T12:00:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 20.8,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 18.2,
       "topics": []
-    },
-    {
-      "id": "1f8715bc515b0075",
-      "category": "ai",
-      "title": "The unfolding Jensen Huang scandal: a timeline",
-      "summary": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-13T15:58:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 20.8,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "34864ce5bcf4e3f4",
@@ -1000,8 +992,22 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-14T07:11:26.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 20.6,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 18,
+      "topics": []
+    },
+    {
+      "id": "6f09db432859c537",
+      "category": "finance",
+      "title": "SpaceX Starship returns to landing pad from orbit, acing test for reusable rockets",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/world/spacex-starship-returns-landing-pad-orbit-acing-test-reusable-rockets-6552211",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-14T21:42:00.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 17.7,
       "topics": []
     },
     {
@@ -1014,22 +1020,36 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-14T05:58:03.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 20.3,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 17.7,
       "topics": []
     },
     {
-      "id": "5bfb2e47eb604703",
-      "category": "world",
-      "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
-      "summary": "The US has not confirmed the Ukrainian president's comments which follow meetings US envoys had with him and Russia's Vladimir Putin.",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
+      "id": "4559da3d90f94f3e",
+      "category": "finance",
+      "title": "Cartier and Van Cleef & Arpels help Richemont buck the luxury downturn",
+      "summary": "The Swiss luxury group reported stronger-than-expected profits as its jewellery maisons continued to grow and its specialist watchmakers showed signs of recovery.",
+      "url": "https://www.channelnewsasia.com/obsessions/richemont-cartier-van-cleef-arpels-luxury-downturn-6552176",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
       "sourceType": "news",
-      "publishedAt": "2026-11-14T20:41:45.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 20,
+      "publishedAt": "2026-11-14T21:24:57.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 17.6,
+      "topics": []
+    },
+    {
+      "id": "0e85f378cb1ed284",
+      "category": "technology",
+      "title": "SpaceX returned its Starship rocket on Saturday—but there's a catch",
+      "summary": "It felt like stepping into the future.",
+      "url": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-15T00:40:59.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 17.4,
       "topics": []
     },
     {
@@ -1042,8 +1062,22 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-13T20:47:18.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 20,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 17.4,
+      "topics": []
+    },
+    {
+      "id": "1863f2f59f2e7ef3",
+      "category": "world",
+      "title": "South Sudanese start registering to vote ahead of first national elections",
+      "summary": "The voter registration operation runs until 28 November ahead of the polls which have been postponed several times since independence in 2011.",
+      "url": "https://www.africanews.com/2026/11/14/south-sudanese-start-registering-to-vote-ahead-of-first-national-elections/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-14T08:03:55.000Z",
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 17.3,
       "topics": []
     },
     {
@@ -1056,8 +1090,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-13T18:00:39.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 19.3,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 16.7,
       "topics": []
     },
     {
@@ -1070,8 +1104,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-13T17:02:35.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 19,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 16.5,
       "topics": []
     },
     {
@@ -1084,8 +1118,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-13T20:20:21.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 18.9,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 16.3,
       "topics": []
     },
     {
@@ -1098,38 +1132,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-13T23:17:38.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 18.6,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "b37547923a2fd8c2",
-      "category": "finance",
-      "title": "Musk says Nvidia will lose 'critical' deals without Jensen Huang",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/musk-says-nvidia-will-lose-critical-deals-without-jensen-huang-6551936",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-14T14:53:22.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 18.5,
-      "topics": []
-    },
-    {
-      "id": "216257f9ac808c70",
-      "category": "finance",
-      "title": "Why is Microsoft's outage lasting so long and will emails be lost?",
-      "summary": "Microsoft says it is continuing to restore services including Outlook and Teams following a global outage.",
-      "url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-13T18:36:57.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 18.4,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 16.1,
       "topics": [
         "security"
       ]
@@ -1144,8 +1148,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-11-13T21:15:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 18.1,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 15.6,
       "topics": []
     },
     {
@@ -1158,22 +1162,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "institution",
       "publishedAt": "2026-11-13T09:00:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 18,
-      "topics": []
-    },
-    {
-      "id": "54babddce314939e",
-      "category": "finance",
-      "title": "Meta employees test prediction-market app, WSJ reports",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/meta-employees-test-prediction-market-app-wsj-reports-6550526",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-13T20:28:56.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 17.9,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 15.5,
       "topics": []
     },
     {
@@ -1186,8 +1176,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-13T16:05:54.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 17.8,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 15.3,
       "topics": []
     },
     {
@@ -1200,8 +1190,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-13T14:00:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 17.3,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 14.7,
       "topics": []
     },
     {
@@ -1214,36 +1204,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-14T12:15:48.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 16.8,
-      "topics": []
-    },
-    {
-      "id": "850d613ddcf56a4f",
-      "category": "technology",
-      "title": "Winemakers are learning that conservation can be good for business",
-      "summary": "Healthy soils, native plants, and fewer chemicals are helping vineyards adapt.",
-      "url": "https://arstechnica.com/science/2026/11/winemakers-are-learning-that-conservation-can-be-good-for-business/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-14T12:05:51.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 16.8,
-      "topics": []
-    },
-    {
-      "id": "0b51be945861f563",
-      "category": "finance",
-      "title": "Football kit giveaway aims to boost participation",
-      "summary": "Millie Bright helps hand out free kit to young girls to help them keep playing in spite of costs.",
-      "url": "https://www.bbc.co.uk/news/articles/ck20v651473qo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-14T08:13:40.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 16.8,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 14.3,
       "topics": []
     },
     {
@@ -1256,8 +1218,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-13T13:00:42.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 16,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 13.5,
       "topics": []
     },
     {
@@ -1270,22 +1232,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-11-13T13:59:07.218Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 15.3,
-      "topics": []
-    },
-    {
-      "id": "41a6cbba8621409f",
-      "category": "technology",
-      "title": "APOD: 2026 November 13 – NGC 206 and the Star Clouds of Andromeda",
-      "summary": "APOD Science APOD APOD: 2026 November 13 – NGC… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. NGC 206 […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-november-13-ngc-206-and-the-star-clouds-of-andromeda/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-13T05:05:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 15,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 12.7,
       "topics": []
     },
     {
@@ -1298,8 +1246,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-11-13T07:20:00.000Z",
-      "fetchedAt": "2026-11-14T20:53:03.008Z",
-      "score": 14.6,
+      "fetchedAt": "2026-11-15T07:02:34.663Z",
+      "score": 12.1,
       "topics": []
     }
   ]
