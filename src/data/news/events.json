@@ -1,9 +1,9 @@
 {
   "version": "news-events/1",
   "coverage": {
-    "dailyCollectedAt": "2026-11-17T23:37:12.692Z",
-    "releasesCollectedAt": "2026-11-17T23:37:25.142Z",
-    "libraryCollectedAt": "2026-11-17T23:37:12.692Z",
+    "dailyCollectedAt": "2026-11-18T07:51:58.434Z",
+    "releasesCollectedAt": "2026-11-18T07:52:10.711Z",
+    "libraryCollectedAt": "2026-11-18T07:51:58.434Z",
     "archiveDates": [
       "2026-09-03",
       "2026-09-04",
@@ -80,7 +80,8 @@
       "2026-11-14",
       "2026-11-15",
       "2026-11-16",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-18"
     ],
     "missingArchiveDates": [],
     "failedSources": [],
@@ -110,7 +111,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-08-22T00:09:15.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-11-17T23:37:25.142Z",
+          "lastCollectedAt": "2026-11-18T07:52:10.711Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -123,7 +124,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-05T02:27:42.000Z",
           "firstCollectedAt": "2026-09-28T05:43:26.836Z",
-          "lastCollectedAt": "2026-11-17T23:37:25.142Z",
+          "lastCollectedAt": "2026-11-18T07:52:10.711Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -136,7 +137,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-09-18T22:41:33.000Z",
           "firstCollectedAt": "2026-09-19T04:53:01.330Z",
-          "lastCollectedAt": "2026-11-17T23:37:25.142Z",
+          "lastCollectedAt": "2026-11-18T07:52:10.711Z",
           "revisionCount": 0,
           "ruleIds": [
             "official-releases"
@@ -149,7 +150,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-02T01:09:04.000Z",
           "firstCollectedAt": "2026-10-01T06:25:58.028Z",
-          "lastCollectedAt": "2026-11-17T23:37:25.142Z",
+          "lastCollectedAt": "2026-11-18T07:52:10.711Z",
           "revisionCount": 3,
           "ruleIds": [
             "official-releases"
@@ -162,7 +163,7 @@
           "publisherCountry": "International",
           "publishedAt": "2026-10-19T02:55:19.000Z",
           "firstCollectedAt": "2026-10-16T04:52:38.724Z",
-          "lastCollectedAt": "2026-11-17T23:37:25.142Z",
+          "lastCollectedAt": "2026-11-18T07:52:10.711Z",
           "revisionCount": 1,
           "ruleIds": [
             "official-releases"
@@ -175,8 +176,21 @@
           "publisherCountry": "International",
           "publishedAt": "2026-11-02T22:14:10.000Z",
           "firstCollectedAt": "2026-10-30T06:19:01.932Z",
-          "lastCollectedAt": "2026-11-17T23:37:25.142Z",
+          "lastCollectedAt": "2026-11-18T07:52:10.711Z",
           "revisionCount": 1,
+          "ruleIds": [
+            "official-releases"
+          ]
+        },
+        {
+          "url": "https://github.com/sgl-project/sglang/releases/tag/router-v0.1.0",
+          "title": "router-v0.1.0",
+          "publisher": "SGLang Releases",
+          "publisherCountry": "International",
+          "publishedAt": "2026-11-18T00:34:15.000Z",
+          "firstCollectedAt": "2026-11-18T07:51:58.434Z",
+          "lastCollectedAt": "2026-11-18T07:51:58.434Z",
+          "revisionCount": 0,
           "ruleIds": [
             "official-releases"
           ]
@@ -284,7 +298,7 @@
           "publisherCountry": "United States",
           "publishedAt": "2026-10-26T22:01:23.000Z",
           "firstCollectedAt": "2026-10-27T05:28:07.370Z",
-          "lastCollectedAt": "2026-11-17T23:37:12.692Z",
+          "lastCollectedAt": "2026-11-18T07:51:58.434Z",
           "revisionCount": 0,
           "ruleIds": [
             "workers-announcements"
@@ -602,5 +616,5 @@
       ]
     }
   ],
-  "fingerprint": "66071fe99b6c99357a3cc19812dcb16fff11cd2125de25eaebfbd5f05e01c811"
+  "fingerprint": "1687b2237dcb849d5c1c8fa6bb3f06f83016cd8faa2c8dff734aba763e47aae5"
 }
