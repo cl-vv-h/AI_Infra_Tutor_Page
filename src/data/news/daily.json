@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T01:41:29.314Z",
+  "generatedAt": "2026-11-21T12:55:55.681Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 25,
-      "latestPublishedAt": "2026-11-21T01:02:39.000Z",
+      "entryCount": 24,
+      "latestPublishedAt": "2026-11-21T12:52:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 58,
-      "latestPublishedAt": "2026-11-20T22:53:24.000Z",
+      "latestPublishedAt": "2026-11-21T12:09:49.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,9 +39,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 135,
-      "latestPublishedAt": "2026-11-21T00:03:00.000Z",
-      "selectedCount": 3,
+      "entryCount": 136,
+      "latestPublishedAt": "2026-11-21T12:31:00.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-21T00:55:01.000Z",
+      "latestPublishedAt": "2026-11-21T12:45:24.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-20T23:40:57.000Z",
+      "latestPublishedAt": "2026-11-21T06:05:00.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-11-19T20:00:15.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-20T22:28:24.000Z",
+      "latestPublishedAt": "2026-11-21T12:01:13.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -144,7 +144,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-11-20T22:27:05.000Z",
+      "latestPublishedAt": "2026-11-21T05:05:00.000Z",
       "selectedCount": 3,
       "libraryCount": 6
     },
@@ -184,7 +184,7 @@
       "channel": "feed",
       "entryCount": 50,
       "latestPublishedAt": "2026-11-19T08:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -197,7 +197,7 @@
       "channel": "feed",
       "entryCount": 47,
       "latestPublishedAt": "2026-11-20T02:00:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-11-20T22:13:21.000Z",
+      "latestPublishedAt": "2026-11-21T12:52:27.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,8 +274,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-11-20T21:32:31.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-11-21T12:40:18.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-11-20T22:54:31.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-11-21T10:40:08.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -300,8 +300,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 100,
-      "latestPublishedAt": "2026-11-20T21:27:55.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-11-21T11:01:08.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -482,8 +482,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-11-13T14:10:57.000Z",
-      "selectedCount": 0,
+      "latestPublishedAt": "2026-11-21T12:43:39.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -515,6 +515,43 @@
   ],
   "items": [
     {
+      "id": "49f9872c443227c1",
+      "category": "ai",
+      "title": "Release v5.24.0",
+      "summary": "Release v5.24.0 New Model additions Inkling 2 Mini Inkling 2 Mini is a multimodal model from Thinking Machines Lab that accepts text and image inputs and generates text outputs. It is a smaller sibling of Inkling 2 Small, added in v5.23.0. It has 24 decoder layers instead of 48, and compensates with a looping mechanism in which layers 6 to 17 run three times. A learned message-passing mechanism mixes the residuals of the previous pass into the attention and mixture-of-experts inputs of each loop layer. The decoder ",
+      "url": "https://github.com/huggingface/transformers/releases/tag/v5.24.0",
+      "source": "Transformers Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-11-21T12:43:39.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 33.9,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training",
+        "security"
+      ]
+    },
+    {
+      "id": "419fd057009a63e8",
+      "category": "world",
+      "title": "Russia tests NATO’s eastern defences",
+      "summary": "Two Russian missiles and a suspected drone came down in Poland on Friday in what Prime Minister Donald Tusk said was likely an \"intentional provocation\" timed to coincide with European military exercises in the country for a possible postwar mission in Ukraine. Senior Lecturer in Conflict and Security at King's College in London, Domitilla Sagramoso, shares further insights.",
+      "url": "https://www.france24.com/en/russia-tests-nato-s-eastern-defences",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T12:50:35.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 29,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "ac7aa1b0961fc9d4",
       "category": "ai",
       "title": "Release v0.7.6rc1",
@@ -524,8 +561,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-20T20:46:33.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 31.8,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 29,
       "topics": [
         "inference",
         "kernels",
@@ -544,8 +581,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 28.6,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 25.8,
       "topics": [
         "inference",
         "kernels",
@@ -562,8 +599,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 28.6,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 25.8,
       "topics": [
         "inference",
         "hardware"
@@ -579,8 +616,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 28.6,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 25.8,
       "topics": [
         "inference",
         "kernels",
@@ -599,8 +636,8 @@
       "sourceCountry": "United States",
       "sourceType": "release",
       "publishedAt": "2026-11-20T02:45:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 28.3,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 25.5,
       "topics": [
         "inference",
         "kernels",
@@ -619,8 +656,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-20T22:27:05.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 28.2,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 25.4,
       "topics": []
     },
     {
@@ -633,8 +670,8 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-20T20:46:14.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 27.8,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 25,
       "topics": []
     },
     {
@@ -647,8 +684,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-19T20:28:13.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 27.7,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 24.9,
       "topics": [
         "inference",
         "training"
@@ -664,38 +701,50 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T20:00:45.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 27.6,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 24.8,
       "topics": []
     },
     {
-      "id": "884daee1ae80e46b",
+      "id": "e23bbe409cfec3f8",
       "category": "world",
-      "title": "Palestinian anti-Hamas groups accused of role in Israel Gaza operation",
-      "summary": "Israeli-backed Palestinian militias accused of expanding operations, raising concerns over their role in Gaza’s security",
-      "url": "https://www.aljazeera.com/news/2026/11/20/palestinian-anti-hamas-groups-accused-of-role-in-israel-gaza-operation?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
+      "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+      "summary": "Ukraine's president says Kyiv acted after 109 separate Russian aerial attacks on bridges in Ukraine.",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-11-20T19:57:05.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 27.6,
-      "topics": [
-        "security"
-      ]
+      "publishedAt": "2026-11-21T12:52:00.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 24,
+      "topics": []
     },
     {
-      "id": "f7027071e0d8c8b5",
+      "id": "fc0fadef4ec821b6",
       "category": "world",
-      "title": "Former US national security adviser confronted by students on Gaza",
-      "summary": "Former US National Security Adviser Jake Sullivan was confronted by student protesters during a speaking event at MIT.",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/11/20/former-us-national-security-adviser-confronted-by-students-on-gaza?traffic_source=rss",
+      "title": "Thousands protest overs prices, education, military spending in France and Europe",
+      "summary": "France is bracing for a sixth consecutive Saturday of protests, with demonstrators expected to rally over the rising cost of living and the government's handling of weeks of social unrest ahead of next year's presidential election. France 24 journalist Antonia Kerrigan tells us the latest from Paris.",
+      "url": "https://www.france24.com/en/thousands-protest-overs-prices-education-military-spending-in-france-and-europe",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T12:48:46.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 24,
+      "topics": []
+    },
+    {
+      "id": "d06ca8ba6962285b",
+      "category": "world",
+      "title": "Illicit alcohol kills 11, poisons 180 in northeast India’s Manipur state",
+      "summary": "Manipur's chief minister orders a probe into the incident, saying those responsible will be arrested and punished.",
+      "url": "https://www.aljazeera.com/news/2026/11/21/suspected-toxic-alcohol-kills-at-least-11-people-in-northeast-india?traffic_source=rss",
       "source": "Al Jazeera",
       "sourceCountry": "Qatar",
       "sourceType": "news",
-      "publishedAt": "2026-11-20T18:51:26.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 27.3,
+      "publishedAt": "2026-11-21T08:48:54.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 24,
       "topics": [
         "security"
       ]
@@ -710,8 +759,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-20T20:59:08.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 26.8,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 24,
       "topics": [
         "security"
       ]
@@ -726,8 +775,8 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-20T19:48:29.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 26.5,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 23.7,
       "topics": []
     },
     {
@@ -740,27 +789,109 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-20T15:08:16.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 26.4,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 23.6,
       "topics": [
         "security"
       ]
     },
     {
-      "id": "ef6c04720f2e85e3",
+      "id": "4dc65a5abbbc8b15",
       "category": "world",
-      "title": "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge",
-      "summary": "Russia launched one of its biggest air attacks yet as it rejected the prospect of security guarantees for Ukraine.",
-      "url": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o",
+      "title": "Anthropic researcher uses AI to solve math's greatest riddle",
+      "summary": "The proposed breakthrough could reshape mathematical research, but still needs independent verification. It's the latest in a string of cases where AI has outpaced humans in solving famous maths problems.",
+      "url": "https://www.dw.com/en/anthropic-researcher-uses-ai-to-solve-math-s-greatest-riddle/a-80008428?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T10:29:00.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "9b442f8002c8bec2",
+      "category": "world",
+      "title": "Nations agree to ‘elaborate’ on rules for AI-run ‘killer robots’ by 2028",
+      "summary": "Members of the UN's Convention on Certain Conventional Weapons fail to agree on swift adoption of legally binding rules.",
+      "url": "https://www.aljazeera.com/news/2026/11/21/nations-agree-to-draft-rules-for-killer-robots-at-arms-control-summit?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T10:25:29.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "981bd76ddf3a3bbd",
+      "category": "world",
+      "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+      "summary": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement.",
+      "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o",
       "source": "BBC World",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-11-20T13:01:16.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 25.8,
-      "topics": [
-        "security"
-      ]
+      "publishedAt": "2026-11-21T09:52:11.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "2e1b335f5dabcbfc",
+      "category": "world",
+      "title": "Houthis launch strikes on Saudi Arabia",
+      "summary": "Iran-backed Houthi rebels in Yemen continue to exchange strikes with the Saudi-led coalition. The coalition said it intercepted and destroyed three ballistic missiles fired towards Riyadh early on Saturday. It marks the second Houthi attack on the Saudi capital in recent days, following Saudi-led strikes on Houthi targets in Yemen. Yuka Royer has the latest.",
+      "url": "https://www.france24.com/en/houthis-launch-strikes-on-saudi-arabia",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T09:49:44.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "e70935eeb5beb7e7",
+      "category": "world",
+      "title": "Deal with EU not dependent on tuition fees agreement, Miliband says",
+      "summary": "Brussels sources had previously suggested the bloc might not apply the wider deal until fees were lowered for EU students in Britain.",
+      "url": "https://www.bbc.co.uk/news/articles/cm9w9p4geke8o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T09:40:55.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 23.2,
+      "topics": []
+    },
+    {
+      "id": "e49103896b472ffb",
+      "category": "world",
+      "title": "Iran says it downed US drones over Hormuz as bid to end war remains stalled",
+      "summary": "Iran reiterates conditions for Hormuz reopening as US slaps sanctions on four Iranians it says acted as 'oil trustees'.",
+      "url": "https://www.aljazeera.com/news/2026/11/21/irans-irgc-downs-us-drone-over-hormuz-as-efforts-to-end-war-remain-stalled?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T09:30:24.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 23.1,
+      "topics": []
+    },
+    {
+      "id": "93c843f67fff06c3",
+      "category": "technology",
+      "title": "APOD: 2026 November 21 – Voyager’s Neptune",
+      "summary": "APOD Science APOD APOD: 2026 November 21 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Voyager’s Neptune Explanation: […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-21T05:05:00.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 23,
+      "topics": []
     },
     {
       "id": "0628463d5d11ddaa",
@@ -772,9 +903,25 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-20T23:30:30.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 25.5,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 22.6,
       "topics": []
+    },
+    {
+      "id": "bdcc56e37f33b432",
+      "category": "world",
+      "title": "UK anti-migrant activist jailed for slashing Channel dinghy",
+      "summary": "Daniel Thomas, known as \"Danny Tommo,\" slashed a dinghy with a knife while a French rescue worker was on board. The incident was livestreamed to a large social media audience amid growing tensions over migrant crossings.",
+      "url": "https://www.dw.com/en/uk-anti-migrant-activist-jailed-for-slashing-channel-dinghy/a-80007576?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T02:47:00.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 22.5,
+      "topics": [
+        "security"
+      ]
     },
     {
       "id": "a86eeab529a72fcd",
@@ -786,8 +933,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-11-20T15:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 25.3,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 22.5,
       "topics": []
     },
     {
@@ -800,13 +947,41 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-11-19T18:58:31.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 25.3,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 22.5,
       "topics": [
         "inference",
         "hardware",
         "models"
       ]
+    },
+    {
+      "id": "b3a11fcf0878c2a1",
+      "category": "world",
+      "title": "Morocco commits €366 million to build a national defence industry by 2035",
+      "summary": "The roadmap will be backed by a new strategic agency responsible for implementing national defence industry policy and supporting investors",
+      "url": "https://www.africanews.com/2026/11/21/morocco-commits-366-million-to-build-a-national-defence-industry-by-2035/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T10:24:58.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 22.4,
+      "topics": []
+    },
+    {
+      "id": "cd43f759ac45f372",
+      "category": "finance",
+      "title": "South Korea's Lee says speed is vital in AI race on data centre visit",
+      "summary": "Data centres are a major source of chip demand, and South Korean President Lee Jae-myung said he hoped the success of the project would draw further investment from global AI companies.",
+      "url": "https://www.channelnewsasia.com/east-asia/south-korea-ai-race-lee-jae-myung-6571286",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T05:34:00.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 22.2,
+      "topics": []
     },
     {
       "id": "4ebecf7f27b8e257",
@@ -818,8 +993,8 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-11-19T17:40:09.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 25,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 22.2,
       "topics": [
         "inference"
       ]
@@ -834,11 +1009,25 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-11-19T17:09:37.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 24.9,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 22.1,
       "topics": [
         "inference"
       ]
+    },
+    {
+      "id": "f82200b92ce38c16",
+      "category": "world",
+      "title": "Nations at UN talks on AI killer robots agree to more talks but no firm commitment to rein them in",
+      "summary": "Efforts to establish rules for AI-powered killer robots and drones have run aground. U.N.-backed talks in Geneva ended Saturday with an agreement to extend discussions for two more years.",
+      "url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T08:08:01.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 21.8,
+      "topics": []
     },
     {
       "id": "f543209a03022c2b",
@@ -850,11 +1039,25 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-11-19T16:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 24.6,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 21.8,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "f2cd3dab39213779",
+      "category": "world",
+      "title": "Around 700,000 displaced by volatile conflict in southern Ethiopia",
+      "summary": "NGO Islamic Relief says fighting between ethnic groups competing for land and wealth has seen widespread destruction of homes and disruption of services.",
+      "url": "https://www.africanews.com/2026/11/21/around-700000-displaced-by-volatile-conflict-in-southern-ethiopia/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T07:13:49.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 21.6,
+      "topics": []
     },
     {
       "id": "1efc0f3c9b0751fa",
@@ -866,39 +1069,11 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-11-20T20:57:23.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 23.8,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 21,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "b0bc5e4d1a54ff8c",
-      "category": "technology",
-      "title": "The Stormy Southwest Pacific",
-      "summary": "Tropical Cyclone Xavier launched the basin’s storm season with a bang.",
-      "url": "https://science.nasa.gov/earth/earth-observatory/the-stormy-southwest-pacific/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-20T05:01:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 23.8,
-      "topics": []
-    },
-    {
-      "id": "b7352460b8d95992",
-      "category": "world",
-      "title": "ANC fights to keep control of South Africa's key cities after election setback",
-      "summary": "The ANC appears reluctant to replicate its national power-sharing deal with the pro-business DA at the local level.",
-      "url": "https://www.bbc.co.uk/news/articles/cqpv94d10rwpo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T00:34:51.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 23.7,
-      "topics": []
     },
     {
       "id": "0207cc9e502fb215",
@@ -910,8 +1085,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T20:24:38.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 23.7,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 20.9,
       "topics": []
     },
     {
@@ -924,8 +1099,8 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-11-20T12:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 23.6,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 20.8,
       "topics": []
     },
     {
@@ -938,8 +1113,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 23.6,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 20.8,
       "topics": []
     },
     {
@@ -952,22 +1127,22 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 23.6,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 20.8,
       "topics": []
     },
     {
-      "id": "73825fa67d08d8ec",
+      "id": "ae98ef6b7756e1b7",
       "category": "world",
-      "title": "US declassifies more UFO footage filmed in the Middle East",
-      "summary": "The Pentagon has released an eighth tranche of UFO records, which includes three video clips recorded in 2020, 2023 and 2026.",
-      "url": "https://www.bbc.co.uk/news/videos/cqdr1x8mypnko",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
+      "title": "Passaglia brothers ask Argentina’s voters to bet on 'San Nicolás model'",
+      "summary": "San Nicolás-based brothers Santiago and Manuel Passaglia recently surprised political onlookers by tossing their hats into next year’s presidential ring. In an interview, they criticise President Milei and Kirchnerism alike but deny being a third way option. “The middle road is a failure,” they say. Leer más",
+      "url": "https://www.batimes.com.ar/news/argentina/passaglia-brothers-ask-argentinas-voters-to-bet-on-san-nicolas-model.phtml",
+      "source": "Buenos Aires Times",
+      "sourceCountry": "Argentina",
       "sourceType": "news",
-      "publishedAt": "2026-11-20T23:15:20.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 23.4,
+      "publishedAt": "2026-11-21T03:30:00.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 20.6,
       "topics": []
     },
     {
@@ -980,8 +1155,8 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
       "publishedAt": "2026-11-20T22:53:24.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 23.3,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 20.5,
       "topics": []
     },
     {
@@ -994,39 +1169,11 @@
       "sourceCountry": "Singapore",
       "sourceType": "news",
       "publishedAt": "2026-11-20T18:35:24.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 23.2,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 20.4,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "6374c43a11d7e69a",
-      "category": "world",
-      "title": "US lawmakers push for tougher AI chip rules amid China export crackdown",
-      "summary": "Washington has new rules restricting remote access to advanced US AI chips, but lawmakers want more.",
-      "url": "https://www.aljazeera.com/economy/2026/11/20/us-lawmakers-push-for-tougher-ai-chip-rules-amid-china-export-crackdown?traffic_source=rss",
-      "source": "Al Jazeera",
-      "sourceCountry": "Qatar",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T22:15:07.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 23.1,
-      "topics": []
-    },
-    {
-      "id": "d4f436ca0c2353da",
-      "category": "finance",
-      "title": "Commentary: Was Anthropic’s record US$81 billion listing a vote of confidence in AI?",
-      "summary": "The blockbuster stock market listing comes at a nervous moment in the AI sector, says this RMIT University finance professor.",
-      "url": "https://www.channelnewsasia.com/commentary/anthropic-ipo-claude-confidence-in-ai-nvidia-openai-6569031",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T22:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 23.1,
-      "topics": []
     },
     {
       "id": "34bdbf9afb307e15",
@@ -1038,22 +1185,8 @@
       "sourceCountry": "United States",
       "sourceType": "institution",
       "publishedAt": "2026-11-20T21:15:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 22.9,
-      "topics": []
-    },
-    {
-      "id": "601ecd80a313b759",
-      "category": "world",
-      "title": "Russian ornithologist jailed over small donations to Navalny's foundation",
-      "summary": "Sofia Rosenfeld has devoted her life to studying Arctic birds. A Russian court sentenced her to 3.5 years in a penal colony over donations to Navalny's foundation. Friends and family are fighting for her release.",
-      "url": "https://www.dw.com/en/russian-ornithologist-jailed-over-small-donations-to-navalny-s-foundation/a-80005505?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T20:45:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 22.8,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 20.1,
       "topics": []
     },
     {
@@ -1066,66 +1199,24 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-19T17:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 22.8,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 20,
       "topics": [
         "hardware"
       ]
     },
     {
-      "id": "3fd34e127d87504e",
-      "category": "world",
-      "title": "At COP31, conflict over climate science slows action on global warming",
-      "summary": "Attacks on climate science and disinformation risk delaying key measures at COP31 in Antalya. As the UN climate talks draw to a close, how will that affect efforts to come to an agreement?",
-      "url": "https://www.dw.com/en/at-cop31-conflict-over-climate-science-slows-action-on-global-warming/a-80004894?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T20:34:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 22.7,
-      "topics": []
-    },
-    {
-      "id": "c3d3e4dd103afb5b",
-      "category": "world",
-      "title": "Has the 'Parthenon puzzle' been solved? The long quest to reassemble lost eastern pediment",
-      "summary": "The depiction of the birth of the goddess Athena above the Parthenon's entrance is considered a masterpiece of ancient art. Now, a German research team has pieced together all the surviving fragments.",
-      "url": "https://www.dw.com/en/has-the-parthenon-puzzle-been-solved-the-long-quest-to-reassemble-lost-eastern-pediment/a-79982098?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T20:03:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 22.6,
-      "topics": []
-    },
-    {
-      "id": "5f84aa2a5cfa9dfc",
-      "category": "world",
-      "title": "UK and EU strike ‘landmark’ deal to rebuild ties after Brexit",
-      "summary": "🇬🇧🇪🇺 A fresh start after #Brexit? The #UK and #EU have agreed on a landmark #deal to rebuild ties, following a summit in Brussels this Friday. The agreement covers easier food export checks, youth mobility and carbon emission quotas.",
-      "url": "https://www.france24.com/en/video/20261120-uk-and-eu-strike-landmark-deal-to-rebuild-ties-after-brexit",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T17:06:59.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 21.9,
-      "topics": []
-    },
-    {
-      "id": "fd8179ce6fadfe04",
+      "id": "2369a2d47ce096b4",
       "category": "finance",
-      "title": "Faisal Islam: This cost-cutting UK-EU deal doesn't mean lower prices will follow",
-      "summary": "The trade deal is unlikely lower food prices for shoppers, but should boost the economy more than other post-Brexit agreements.",
-      "url": "https://www.bbc.co.uk/news/articles/cm1wr029evnqo",
+      "title": "Sessions offer advice on rising energy costs",
+      "summary": "A council is urging people to seek support with rising energy costs on heating this winter.",
+      "url": "https://www.bbc.co.uk/news/articles/cmy49l3x893jo",
       "source": "BBC Business",
       "sourceCountry": "United Kingdom",
       "sourceType": "news",
-      "publishedAt": "2026-11-20T16:41:52.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 21.8,
+      "publishedAt": "2026-11-21T12:09:49.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 19.8,
       "topics": []
     },
     {
@@ -1138,8 +1229,22 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-19T16:30:46.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 21.7,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "209ec9279fbd1ee0",
+      "category": "technology",
+      "title": "“Race realism” isn’t realistic—and it isn’t good science",
+      "summary": "Modern genetics does not support claims of innate racial differences in intelligence.",
+      "url": "https://arstechnica.com/science/2026/11/race-realism-isnt-realistic-and-it-isnt-good-science/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T12:01:13.000Z",
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 18.8,
       "topics": []
     },
     {
@@ -1152,22 +1257,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-20T19:53:41.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 21.6,
-      "topics": []
-    },
-    {
-      "id": "c3d6b797cf1e3a3f",
-      "category": "world",
-      "title": "'Blade Runner 2099' & 'Rivals': The big TV shows to watch this month",
-      "summary": "\"Blade Runner\" returns with a futuristic twist, while British bonkbuster \"Rivals\" is back with part two of season two. TV critic Dheepthika Laurent joins Eve Jackson to review the month’s big releases, including Netflix’s acclaimed Arctic comedy \"North of North\" and the lavish K-drama \"Remarried Empress\".",
-      "url": "https://www.france24.com/en/tv-shows/arts24/20261120-blade-runner-2099-rivals-the-big-tv-shows-to-watch-this-month",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T16:17:10.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 21.6,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 18.7,
       "topics": []
     },
     {
@@ -1180,36 +1271,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-20T19:21:50.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 21.4,
-      "topics": []
-    },
-    {
-      "id": "e8979b8edf67dcb8",
-      "category": "world",
-      "title": "Stories that caught our eye: November 13 to 20",
-      "summary": "A selection of the stories that caught our eye over the last seven days in Argentina. Leer más",
-      "url": "https://www.batimes.com.ar/news/argentina/stories-that-caught-our-eye-november-13-to-20.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T19:20:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 21.4,
-      "topics": []
-    },
-    {
-      "id": "606d0026d0e9d83b",
-      "category": "world",
-      "title": "Spain’s political crossroads, Europe’s wider stakes: Spaniards to vote in key election",
-      "summary": "The stakes are high – not only for people in Spain, but also for Europe. On November 29, the country holds a parliamentary election that could see the end of the Socialist-led government and potentially a coalition between the right and the far right, in one of the EU’s biggest and most influential member states. It could also signal the end of Pedro Sanchez’s third term in office. Among other things, the prime minister may pay the political price for two shocking train crashes and the migrant crisis in Spain’s Nor",
-      "url": "https://www.france24.com/en/tv-shows/talking-europe/20261120-spains-political-crossroads-europes-wider-stakes-spaniards-to-vote-in-key-election",
-      "source": "France 24",
-      "sourceCountry": "France",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T15:17:17.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 21.4,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 18.6,
       "topics": []
     },
     {
@@ -1222,8 +1285,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-20T17:40:01.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 21,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 18.2,
       "topics": []
     },
     {
@@ -1236,53 +1299,11 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-19T21:42:31.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 21,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 18.2,
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "2be9c5525059ec9e",
-      "category": "world",
-      "title": "'Riesgo pais': Argentina's country risk tops 1,000 points as bonds slump",
-      "summary": "Threshold breached amid a sell-off in government debt, concerns over the 2027 election and wider global uncertainty. Leer más",
-      "url": "https://www.batimes.com.ar/news/economy/riesgo-pais-argentinas-country-risk-tops-1000-points-as-bonds-slump.phtml",
-      "source": "Buenos Aires Times",
-      "sourceCountry": "Argentina",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T16:55:07.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 20.8,
-      "topics": []
-    },
-    {
-      "id": "c77ab6be40463f89",
-      "category": "world",
-      "title": "South Africa's murder rate falls but killings average 60 a day",
-      "summary": "South Africa recorded fewer murders between July and September with 5,590 people killed, continuing a downward trend in violent crime, the police ministry said on Friday. The country's murder rate still averages 60 a day.",
-      "url": "https://www.africanews.com/2026/11/20/south-africas-murder-rate-falls-but-killings-average-60-a-day/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T14:26:35.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 20.2,
-      "topics": []
-    },
-    {
-      "id": "e8abbd88eff44ed2",
-      "category": "technology",
-      "title": "SpaceX lenders don’t want Elon Musk launching their collateral into space",
-      "summary": "Bondholders want SpaceX’s valuable chip collateral kept on Earth and within reach.",
-      "url": "https://arstechnica.com/space/2026/11/spacex-lenders-dont-want-elon-musk-launching-their-collateral-into-space/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T14:15:21.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 20.1,
-      "topics": []
     },
     {
       "id": "108f43920045d893",
@@ -1294,8 +1315,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-19T14:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 20.1,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 17.3,
       "topics": []
     },
     {
@@ -1308,8 +1329,8 @@
       "sourceCountry": "European Union",
       "sourceType": "institution",
       "publishedAt": "2026-11-20T08:30:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 19.7,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 16.9,
       "topics": []
     },
     {
@@ -1322,8 +1343,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 19.6,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 16.8,
       "topics": []
     },
     {
@@ -1336,25 +1357,9 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-19T20:03:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 18.6,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 15.8,
       "topics": []
-    },
-    {
-      "id": "fef229874f57a423",
-      "category": "finance",
-      "title": "Cyber resilience guidance consultation and AI and quantum effective practices",
-      "summary": "UK’s financial regulators are proposing a new guidance to help financial services firms prepare for and recover from cyber incidents as threats grow.",
-      "url": "https://www.bankofengland.co.uk/news/2026/november/cyber-resilience-guidance-consultation-and-ai-and-quantum-effective-practices",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-19T08:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 17.6,
-      "topics": [
-        "security"
-      ]
     },
     {
       "id": "e05184f8a84982c5",
@@ -1366,8 +1371,8 @@
       "sourceCountry": "Japan",
       "sourceType": "institution",
       "publishedAt": "2026-11-20T02:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 17.1,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 14.3,
       "topics": []
     },
     {
@@ -1380,22 +1385,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-19T20:00:15.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 16.6,
-      "topics": []
-    },
-    {
-      "id": "7dc057d0af66d1e0",
-      "category": "finance",
-      "title": "Minutes of the Market Participants Group meeting – 18 November 2026",
-      "summary": "The Market Participants Group (MPG) is a senior-level forum for financial market participants to share their views on relevant themes and narratives in financial markets with members of the Bank of England’s Monetary Policy Committee.",
-      "url": "https://www.bankofengland.co.uk/minutes/2026/november/market-participants-group-meeting-18-november-2026",
-      "source": "Bank of England",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-19T07:30:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 16.5,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 13.8,
       "topics": []
     },
     {
@@ -1408,36 +1399,8 @@
       "sourceCountry": "United States",
       "sourceType": "news",
       "publishedAt": "2026-11-19T17:00:35.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 15.8,
-      "topics": []
-    },
-    {
-      "id": "ffdec7d4196102d0",
-      "category": "finance",
-      "title": "Developments in Real Exports and Real Imports",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/research/research_data/reri/index.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-19T07:00:00.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 12.3,
-      "topics": []
-    },
-    {
-      "id": "24e53a82b578c1be",
-      "category": "ai",
-      "title": "Season’s Streamings and Savings: Black Friday Deals Come to GeForce NOW",
-      "summary": "GeForce NOW is kicking off Black Friday with more reasons to make time for gaming. Six-month memberships are back for a limited time. Save 30% on the first six-month term of a Performance or Ultimate membership. Big gaming plans, smaller price tag. Keep the holiday savings going: Check out more NVIDIA holiday deals for gamers, […]",
-      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-black-friday-2026/",
-      "source": "NVIDIA AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-19T14:00:12.000Z",
-      "fetchedAt": "2026-11-21T01:41:29.314Z",
-      "score": 11.1,
+      "fetchedAt": "2026-11-21T12:55:55.681Z",
+      "score": 13,
       "topics": []
     }
   ]
