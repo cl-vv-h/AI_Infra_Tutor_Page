@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T12:55:55.681Z",
+  "generatedAt": "2026-11-21T21:49:16.743Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,8 +13,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 24,
-      "latestPublishedAt": "2026-11-21T12:52:00.000Z",
+      "entryCount": 26,
+      "latestPublishedAt": "2026-11-21T21:05:29.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -39,8 +39,8 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 136,
-      "latestPublishedAt": "2026-11-21T12:31:00.000Z",
+      "entryCount": 139,
+      "latestPublishedAt": "2026-11-21T18:39:00.000Z",
       "selectedCount": 2,
       "libraryCount": 0
     },
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-21T12:45:24.000Z",
+      "latestPublishedAt": "2026-11-21T21:31:03.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-21T06:05:00.000Z",
+      "latestPublishedAt": "2026-11-21T15:24:55.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -93,7 +93,7 @@
       "channel": "feed",
       "entryCount": 18,
       "latestPublishedAt": "2026-11-19T20:00:15.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -105,7 +105,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-20T19:53:41.000Z",
+      "latestPublishedAt": "2026-11-21T21:37:10.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -171,7 +171,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-11-20T21:15:00.000Z",
-      "selectedCount": 3,
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -248,7 +248,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 30,
-      "latestPublishedAt": "2026-11-20T12:00:00.000Z",
+      "latestPublishedAt": "2026-11-21T12:00:00.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-11-21T12:52:27.000Z",
+      "latestPublishedAt": "2026-11-21T20:49:04.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -274,7 +274,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 10,
-      "latestPublishedAt": "2026-11-21T12:40:18.000Z",
+      "latestPublishedAt": "2026-11-21T18:08:55.000Z",
       "selectedCount": 1,
       "libraryCount": 0
     },
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-11-21T10:40:08.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-11-21T19:15:43.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -301,7 +301,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-11-21T11:01:08.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -340,7 +340,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-11-20T23:30:30.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 2
     },
     {
@@ -405,7 +405,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-11-19T18:58:31.000Z",
-      "selectedCount": 3,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -431,7 +431,7 @@
       "channel": "feed",
       "entryCount": 100,
       "latestPublishedAt": "2026-11-19T20:28:13.000Z",
-      "selectedCount": 3,
+      "selectedCount": 0,
       "libraryCount": 8
     },
     {
@@ -524,14 +524,46 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-21T12:43:39.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 33.9,
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 31.7,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models",
         "training",
+        "security"
+      ]
+    },
+    {
+      "id": "725ee2cc0d3509eb",
+      "category": "world",
+      "title": "Homes abandoned, harvests failing: Haiti’s farmers rebuild amid violence, hunger and El Niño",
+      "summary": "Years of insecurity, violence perpetrated by murderous armed gangs and economic instability, combined with displacement, poor agricultural performance and climate shocks, have left millions of Haitians struggling to meet their food needs.",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168834",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-21T12:00:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 29.5,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "7dacbcdc8c4d4cc6",
+      "category": "world",
+      "title": "Russia attacks Zelensky's hometown, Ukraine reaffirms wish to join NATO",
+      "summary": "A Russian ballistic missile attack on President Volodymyr Zelensky’s hometown in central Ukraine on Saturday killed two people and wounded dozens. Hours later, Zelensky reiterated his country's determination to join NATO, following proposals to provide Kyiv with security guarantees similar to those of the military alliance.",
+      "url": "https://www.france24.com/en/europe/20261121-russia-attacks-zelensky-s-hometown-ukraine-reaffirms-wish-to-join-nato",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T19:56:39.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 28.5,
+      "topics": [
         "security"
       ]
     },
@@ -545,8 +577,8 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-21T12:50:35.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 29,
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 26.8,
       "topics": [
         "security"
       ]
@@ -561,14 +593,62 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-20T20:46:33.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 29,
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 26.7,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models",
         "training"
+      ]
+    },
+    {
+      "id": "852e311fa3848ede",
+      "category": "world",
+      "title": "Brazil’s Jair Bolsonaro in intensive care with bowel obstruction",
+      "summary": "The former president, serving a sentence for plotting a coup, is stable and breathing on his own, the hospital says.",
+      "url": "https://www.aljazeera.com/news/2026/11/21/brazils-jair-bolsonaro-in-intensive-care-with-bowel-obstruction?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T21:02:18.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 24.8,
+      "topics": [
+        "inference"
+      ]
+    },
+    {
+      "id": "99b0169cee66b8e8",
+      "category": "world",
+      "title": "FBI national crime database suffers suspected breach: Reports",
+      "summary": "The reported hacking is the latest in ​a string of breaches and outages affecting the US government.",
+      "url": "https://www.aljazeera.com/news/2026/11/21/fbi-national-crime-database-suffers-suspected-breach-reports?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T18:19:10.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 24.1,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "c5adf8b71d596e7a",
+      "category": "world",
+      "title": "FBI criminal database hacked",
+      "summary": "The FBI is investigating a reported major cyberattack targeting its national law enforcement database, the National Crime Information Center (NCIC), which holds sensitive criminal justice records, including information on fugitives, missing persons, criminal histories and stolen property. President Donald Trump said he had just been briefed on the incident, describing it as “not good”. FRANCE 24’s Fraser Jackson reports from Washington DC.",
+      "url": "https://www.france24.com/en/fbi-criminal-database-hacked",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T17:23:18.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 23.9,
+      "topics": [
+        "security"
       ]
     },
     {
@@ -581,8 +661,8 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 25.8,
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 23.5,
       "topics": [
         "inference",
         "kernels",
@@ -599,8 +679,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 25.8,
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 23.5,
       "topics": [
         "inference",
         "hardware"
@@ -616,8 +696,8 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 25.8,
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 23.5,
       "topics": [
         "inference",
         "kernels",
@@ -627,23 +707,33 @@
       ]
     },
     {
-      "id": "6695809db23a0824",
-      "category": "technology",
-      "title": "v1.3.0",
-      "summary": "Key Features and Enhancements Rubin Support (Preview) Added preview support for NVIDIA Rubin (SM107), validated on Vera Rubin. Added DeepSeek-V4 and Kimi K3 support on Vera Rubin. Model Support Added DeepSeek-V4 support on Blackwell and Rubin (preview). Added Kimi K3 support on Blackwell and Rubin (preview), including multimodal and multi-node serving. Attention data parallelism (DEP16) requires GB300-class GPU memory. Added Qwen3.5 support on Hopper, Blackwell and Rubin (preview), including MTP and NVFP4 on Blackw",
-      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0",
-      "source": "TensorRT-LLM Releases",
-      "sourceCountry": "United States",
-      "sourceType": "release",
-      "publishedAt": "2026-11-20T02:45:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 25.5,
+      "id": "981bd76ddf3a3bbd",
+      "category": "world",
+      "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+      "summary": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement.",
+      "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T19:33:49.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "921a06aff7ae64bc",
+      "category": "world",
+      "title": "Tankers hit in Strait of Hormuz as Iran tightens grip on shipping",
+      "summary": "British maritime agency reports two incidents near Oman, while Iran says a tanker caught fire due to naval mine.",
+      "url": "https://www.aljazeera.com/news/2026/11/21/tankers-hit-in-strait-of-hormuz-as-iran-tightens-grip-on-shipping?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T15:01:18.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 23.3,
       "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
+        "security"
       ]
     },
     {
@@ -656,9 +746,29 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-20T22:27:05.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 25.4,
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 23.2,
       "topics": []
+    },
+    {
+      "id": "6695809db23a0824",
+      "category": "technology",
+      "title": "v1.3.0",
+      "summary": "Key Features and Enhancements Rubin Support (Preview) Added preview support for NVIDIA Rubin (SM107), validated on Vera Rubin. Added DeepSeek-V4 and Kimi K3 support on Vera Rubin. Model Support Added DeepSeek-V4 support on Blackwell and Rubin (preview). Added Kimi K3 support on Blackwell and Rubin (preview), including multimodal and multi-node serving. Attention data parallelism (DEP16) requires GB300-class GPU memory. Added Qwen3.5 support on Hopper, Blackwell and Rubin (preview), including MTP and NVFP4 on Blackw",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0",
+      "source": "TensorRT-LLM Releases",
+      "sourceCountry": "United States",
+      "sourceType": "release",
+      "publishedAt": "2026-11-20T02:45:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 23.2,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ]
     },
     {
       "id": "0bc80fc9642d237b",
@@ -670,8 +780,478 @@
       "sourceCountry": "United States",
       "sourceType": "research",
       "publishedAt": "2026-11-20T20:46:14.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 25,
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 22.7,
+      "topics": []
+    },
+    {
+      "id": "a4a57fa4d06d0666",
+      "category": "technology",
+      "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
+      "summary": "phpAfterShell is a critical flaw in PHP's default session handler that can lead to code execution. Cloudflare WAF blocks it for all customers, including Free plans, and adds new rules for other PHP flaws fixed in the same release.",
+      "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-20T20:00:45.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 22.5,
+      "topics": []
+    },
+    {
+      "id": "e23bbe409cfec3f8",
+      "category": "world",
+      "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
+      "summary": "Ukraine's president says Kyiv acted after 109 separate Russian aerial attacks on bridges in Ukraine.",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T13:17:38.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 21.9,
+      "topics": []
+    },
+    {
+      "id": "dbe77b8b42b37465",
+      "category": "technology",
+      "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
+      "summary": "Test using prompts with unique, trackable secrets proves that data doesn't stay private.",
+      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-20T20:59:08.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 21.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "d651bb82b2c293cc",
+      "category": "world",
+      "title": "Senegal's Dak'Art Biennale explores themes of resilience and rebound",
+      "summary": "The contemporary African art exhibition's official selection brings together 54 artists from 17 African countries, and runs until 19 December.",
+      "url": "https://www.africanews.com/2026/11/21/senegals-dakart-biennale-explores-themes-of-resilience-and-rebound/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T16:20:27.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 21.6,
+      "topics": []
+    },
+    {
+      "id": "4fa2517bc90f3c29",
+      "category": "ai",
+      "title": "Release v0.7.5.post1",
+      "summary": "Full Changelog : v0.7.5...v0.7.5.post1",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.5.post1",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-11-20T19:48:29.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 21.5,
+      "topics": []
+    },
+    {
+      "id": "a6f67a316610f5c9",
+      "category": "finance",
+      "title": "The secret cyber scramble to protect UK fridge freezers",
+      "summary": "A behind the scenes cyber-security operation has taken place to secure tens of thousands of refrigeration units from hackers, the BBC has learned.",
+      "url": "https://www.bbc.co.uk/news/videos/cqpv94x1zj89o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-20T15:08:16.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 21.3,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "4dc65a5abbbc8b15",
+      "category": "world",
+      "title": "Anthropic researcher uses AI to solve math's greatest riddle",
+      "summary": "The proposed breakthrough could reshape mathematical research, but still needs independent verification. It's the latest in a string of cases where AI has outpaced humans in solving famous maths problems.",
+      "url": "https://www.dw.com/en/anthropic-researcher-uses-ai-to-solve-math-s-greatest-riddle/a-80008428?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T10:29:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 21.2,
+      "topics": []
+    },
+    {
+      "id": "e70935eeb5beb7e7",
+      "category": "world",
+      "title": "Deal with EU not dependent on tuition fees agreement, Miliband says",
+      "summary": "Brussels sources had previously suggested the bloc might not apply the wider deal until fees were lowered for EU students in Britain.",
+      "url": "https://www.bbc.co.uk/news/articles/cm9w9p4geke8o",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T09:40:55.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 21,
+      "topics": []
+    },
+    {
+      "id": "93c843f67fff06c3",
+      "category": "technology",
+      "title": "APOD: 2026 November 21 – Voyager’s Neptune",
+      "summary": "APOD Science APOD APOD: 2026 November 21 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Voyager’s Neptune Explanation: […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-21T05:05:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 20.8,
+      "topics": []
+    },
+    {
+      "id": "b3a11fcf0878c2a1",
+      "category": "world",
+      "title": "Morocco commits €366 million to build a national defence industry by 2035",
+      "summary": "The roadmap will be backed by a new strategic agency responsible for implementing national defence industry policy and supporting investors",
+      "url": "https://www.africanews.com/2026/11/21/morocco-commits-366-million-to-build-a-national-defence-industry-by-2035/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T12:44:06.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 20.7,
+      "topics": []
+    },
+    {
+      "id": "0628463d5d11ddaa",
+      "category": "ai",
+      "title": "How Google Duplex evolved to also call businesses for you in Gemini",
+      "summary": "Generative AI",
+      "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-20T23:30:30.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 20.4,
+      "topics": []
+    },
+    {
+      "id": "a86eeab529a72fcd",
+      "category": "finance",
+      "title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "summary": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-20T15:00:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 20.3,
+      "topics": []
+    },
+    {
+      "id": "bdcc56e37f33b432",
+      "category": "world",
+      "title": "UK anti-migrant activist jailed for slashing Channel dinghy",
+      "summary": "Daniel Thomas, known as \"Danny Tommo,\" slashed a dinghy with a knife while a French rescue worker was on board. The incident was livestreamed to a large social media audience amid growing tensions over migrant crossings.",
+      "url": "https://www.dw.com/en/uk-anti-migrant-activist-jailed-for-slashing-channel-dinghy/a-80007576?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T02:47:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 20.2,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "cd43f759ac45f372",
+      "category": "finance",
+      "title": "South Korea's Lee says speed is vital in AI race on data centre visit",
+      "summary": "Data centres are a major source of chip demand, and South Korean President Lee Jae-myung said he hoped the success of the project would draw further investment from global AI companies.",
+      "url": "https://www.channelnewsasia.com/east-asia/south-korea-ai-race-lee-jae-myung-6571286",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T05:34:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 19.9,
+      "topics": []
+    },
+    {
+      "id": "f82200b92ce38c16",
+      "category": "world",
+      "title": "Nations at UN talks on AI killer robots agree to more talks but no firm commitment to rein them in",
+      "summary": "Efforts to establish rules for AI-powered killer robots and drones have run aground. U.N.-backed talks in Geneva ended Saturday with an agreement to extend discussions for two more years.",
+      "url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
+      "source": "NPR World",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T08:08:01.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 19.6,
+      "topics": []
+    },
+    {
+      "id": "f2cd3dab39213779",
+      "category": "world",
+      "title": "Around 700,000 displaced by volatile conflict in southern Ethiopia",
+      "summary": "NGO Islamic Relief says fighting between ethnic groups competing for land and wealth has seen widespread destruction of homes and disruption of services.",
+      "url": "https://www.africanews.com/2026/11/21/around-700000-displaced-by-volatile-conflict-in-southern-ethiopia/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T07:13:49.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 19.4,
+      "topics": []
+    },
+    {
+      "id": "eada27bd99efaffe",
+      "category": "ai",
+      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+      "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T21:37:10.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 18.9,
+      "topics": []
+    },
+    {
+      "id": "b80e4799016cd4ce",
+      "category": "ai",
+      "title": "A tale of two Nvidias",
+      "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T21:07:42.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 18.8,
+      "topics": []
+    },
+    {
+      "id": "1efc0f3c9b0751fa",
+      "category": "finance",
+      "title": "Mexican cell carriers facing widespread outages, users report",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/mexican-cell-carriers-facing-widespread-outages-users-report-6570581",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-20T20:57:23.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 18.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "0207cc9e502fb215",
+      "category": "technology",
+      "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
+      "summary": "ruby2shell lets attackers corrupt memory in default Rails and Sinatra apps without logging in. Cloudflare WAF blocks it for every customer, including Free plans. Upgrade Ruby now, and use the WAF to cover the gap.",
+      "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-20T20:24:38.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 18.6,
+      "topics": []
+    },
+    {
+      "id": "99d769ef5477adc6",
+      "category": "ai",
+      "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+      "summary": "",
+      "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 18.5,
+      "topics": []
+    },
+    {
+      "id": "fead03492e2eb5bf",
+      "category": "technology",
+      "title": "From a Text Prompt to a Playable 3D World: World Models, LLM NPCs, and RL on AMD Radeon™ Graphics",
+      "summary": "World models can now generate camera-controlled video of places that never existed. Turning that video into something you can play takes a few more steps: the scene needs real 3D geometry to walk on, characters that understand what the player says, and agents that behave sensibly in a space nobody designed by hand.",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/world-model-npc/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 18.5,
+      "topics": []
+    },
+    {
+      "id": "a137f2ca98054cbc",
+      "category": "finance",
+      "title": "Bitcoin rises over 2% to more than $60,000",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/bitcoin-rises-over-2-more-60000-6571851",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T15:24:55.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 18.4,
+      "topics": []
+    },
+    {
+      "id": "f216d6190564d92d",
+      "category": "finance",
+      "title": "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
+      "summary": "The mammoth figure surpasses every video game launch and single-day film box office record.",
+      "url": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-20T22:53:24.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 18.3,
+      "topics": []
+    },
+    {
+      "id": "34bdbf9afb307e15",
+      "category": "finance",
+      "title": "Federal Reserve announces College Fed Challenge winners",
+      "summary": "Federal Reserve announces College Fed Challenge winners",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120b.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-20T21:15:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 17.9,
+      "topics": []
+    },
+    {
+      "id": "ce6e111623477634",
+      "category": "ai",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T17:00:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 17.8,
+      "topics": []
+    },
+    {
+      "id": "2369a2d47ce096b4",
+      "category": "finance",
+      "title": "Sessions offer advice on rising energy costs",
+      "summary": "A council is urging people to seek support with rising energy costs on heating this winter.",
+      "url": "https://www.bbc.co.uk/news/articles/cmy49l3x893jo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T12:09:49.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 17.6,
+      "topics": []
+    },
+    {
+      "id": "209ec9279fbd1ee0",
+      "category": "technology",
+      "title": "“Race realism” isn’t realistic—and it isn’t good science",
+      "summary": "Modern genetics does not support claims of innate racial differences in intelligence.",
+      "url": "https://arstechnica.com/science/2026/11/race-realism-isnt-realistic-and-it-isnt-good-science/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T12:01:13.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 16.5,
+      "topics": []
+    },
+    {
+      "id": "611c930748502d00",
+      "category": "technology",
+      "title": "Army delays detonating \"catastrophically hazardous\" lead azide amid fear, anger",
+      "summary": "Modeling predicts plume of neurotoxic lead could reach up to 100 miles away.",
+      "url": "https://arstechnica.com/science/2026/11/outrage-questions-swirl-as-army-delays-blowing-up-stockpile-of-toxic-lead-azide/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-20T19:21:50.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 16.4,
+      "topics": []
+    },
+    {
+      "id": "3e1e10cf47afb1c9",
+      "category": "finance",
+      "title": "Christine Lagarde: Acting in time",
+      "summary": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html",
+      "source": "European Central Bank",
+      "sourceCountry": "European Union",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-20T08:30:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 14.7,
+      "topics": []
+    },
+    {
+      "id": "e0ce443ba344fd4e",
+      "category": "ai",
+      "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
+      "summary": "",
+      "url": "https://huggingface.co/blog/inkling2mini",
+      "source": "Hugging Face Blog",
+      "sourceCountry": "International",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-20T00:00:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 14.5,
+      "topics": []
+    },
+    {
+      "id": "c21e2f8b54a40633",
+      "category": "technology",
+      "title": "nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them",
+      "summary": "Five memory corruption bugs in nginx, called nginx2root, can let an unauthenticated attacker run code on a server. Here’s how they work, and why origins behind Cloudflare's proxy are shielded from the most serious of these bugs.",
+      "url": "https://blog.cloudflare.com/nginx2root/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-20T01:58:29.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 14,
+      "topics": []
+    },
+    {
+      "id": "e05184f8a84982c5",
+      "category": "finance",
+      "title": "Monetary and Economic Studies (2026)",
+      "summary": "",
+      "url": "https://www.boj.or.jp/en/research/imes/mes/mes26.htm",
+      "source": "Bank of Japan",
+      "sourceCountry": "Japan",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-20T02:00:00.000Z",
+      "fetchedAt": "2026-11-21T21:49:16.743Z",
+      "score": 12,
       "topics": []
     },
     {
@@ -690,34 +1270,6 @@
         "inference",
         "training"
       ]
-    },
-    {
-      "id": "a4a57fa4d06d0666",
-      "category": "technology",
-      "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
-      "summary": "phpAfterShell is a critical flaw in PHP's default session handler that can lead to code execution. Cloudflare WAF blocks it for all customers, including Free plans, and adds new rules for other PHP flaws fixed in the same release.",
-      "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-20T20:00:45.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 24.8,
-      "topics": []
-    },
-    {
-      "id": "e23bbe409cfec3f8",
-      "category": "world",
-      "title": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
-      "summary": "Ukraine's president says Kyiv acted after 109 separate Russian aerial attacks on bridges in Ukraine.",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T12:52:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 24,
-      "topics": []
     },
     {
       "id": "fc0fadef4ec821b6",
@@ -750,66 +1302,6 @@
       ]
     },
     {
-      "id": "dbe77b8b42b37465",
-      "category": "technology",
-      "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
-      "summary": "Test using prompts with unique, trackable secrets proves that data doesn't stay private.",
-      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T20:59:08.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 24,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "4fa2517bc90f3c29",
-      "category": "ai",
-      "title": "Release v0.7.5.post1",
-      "summary": "Full Changelog : v0.7.5...v0.7.5.post1",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.5.post1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-11-20T19:48:29.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 23.7,
-      "topics": []
-    },
-    {
-      "id": "a6f67a316610f5c9",
-      "category": "finance",
-      "title": "The secret cyber scramble to protect UK fridge freezers",
-      "summary": "A behind the scenes cyber-security operation has taken place to secure tens of thousands of refrigeration units from hackers, the BBC has learned.",
-      "url": "https://www.bbc.co.uk/news/videos/cqpv94x1zj89o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T15:08:16.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 23.6,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "4dc65a5abbbc8b15",
-      "category": "world",
-      "title": "Anthropic researcher uses AI to solve math's greatest riddle",
-      "summary": "The proposed breakthrough could reshape mathematical research, but still needs independent verification. It's the latest in a string of cases where AI has outpaced humans in solving famous maths problems.",
-      "url": "https://www.dw.com/en/anthropic-researcher-uses-ai-to-solve-math-s-greatest-riddle/a-80008428?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T10:29:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 23.4,
-      "topics": []
-    },
-    {
       "id": "9b442f8002c8bec2",
       "category": "world",
       "title": "Nations agree to ‘elaborate’ on rules for AI-run ‘killer robots’ by 2028",
@@ -824,20 +1316,6 @@
       "topics": []
     },
     {
-      "id": "981bd76ddf3a3bbd",
-      "category": "world",
-      "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
-      "summary": "Countries from nearly 200 countries are in a deadlock to try and get a new global climate agreement.",
-      "url": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T09:52:11.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 23.2,
-      "topics": []
-    },
-    {
       "id": "2e1b335f5dabcbfc",
       "category": "world",
       "title": "Houthis launch strikes on Saudi Arabia",
@@ -847,20 +1325,6 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-21T09:49:44.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 23.2,
-      "topics": []
-    },
-    {
-      "id": "e70935eeb5beb7e7",
-      "category": "world",
-      "title": "Deal with EU not dependent on tuition fees agreement, Miliband says",
-      "summary": "Brussels sources had previously suggested the bloc might not apply the wider deal until fees were lowered for EU students in Britain.",
-      "url": "https://www.bbc.co.uk/news/articles/cm9w9p4geke8o",
-      "source": "BBC World",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T09:40:55.000Z",
       "fetchedAt": "2026-11-21T12:55:55.681Z",
       "score": 23.2,
       "topics": []
@@ -880,64 +1344,6 @@
       "topics": []
     },
     {
-      "id": "93c843f67fff06c3",
-      "category": "technology",
-      "title": "APOD: 2026 November 21 – Voyager’s Neptune",
-      "summary": "APOD Science APOD APOD: 2026 November 21 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Voyager’s Neptune Explanation: […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-november-21-voyagers-neptune/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-21T05:05:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 23,
-      "topics": []
-    },
-    {
-      "id": "0628463d5d11ddaa",
-      "category": "ai",
-      "title": "How Google Duplex evolved to also call businesses for you in Gemini",
-      "summary": "Generative AI",
-      "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/",
-      "source": "Google Research",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-20T23:30:30.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 22.6,
-      "topics": []
-    },
-    {
-      "id": "bdcc56e37f33b432",
-      "category": "world",
-      "title": "UK anti-migrant activist jailed for slashing Channel dinghy",
-      "summary": "Daniel Thomas, known as \"Danny Tommo,\" slashed a dinghy with a knife while a French rescue worker was on board. The incident was livestreamed to a large social media audience amid growing tensions over migrant crossings.",
-      "url": "https://www.dw.com/en/uk-anti-migrant-activist-jailed-for-slashing-channel-dinghy/a-80007576?maca=en-rss-en-all-1573-rdf",
-      "source": "DW",
-      "sourceCountry": "Germany",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T02:47:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 22.5,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "a86eeab529a72fcd",
-      "category": "finance",
-      "title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
-      "summary": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
-      "source": "U.S. Federal Reserve",
-      "sourceCountry": "United States",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-20T15:00:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 22.5,
-      "topics": []
-    },
-    {
       "id": "49b63878ccd99d6b",
       "category": "ai",
       "title": "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming",
@@ -954,34 +1360,6 @@
         "hardware",
         "models"
       ]
-    },
-    {
-      "id": "b3a11fcf0878c2a1",
-      "category": "world",
-      "title": "Morocco commits €366 million to build a national defence industry by 2035",
-      "summary": "The roadmap will be backed by a new strategic agency responsible for implementing national defence industry policy and supporting investors",
-      "url": "https://www.africanews.com/2026/11/21/morocco-commits-366-million-to-build-a-national-defence-industry-by-2035/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T10:24:58.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 22.4,
-      "topics": []
-    },
-    {
-      "id": "cd43f759ac45f372",
-      "category": "finance",
-      "title": "South Korea's Lee says speed is vital in AI race on data centre visit",
-      "summary": "Data centres are a major source of chip demand, and South Korean President Lee Jae-myung said he hoped the success of the project would draw further investment from global AI companies.",
-      "url": "https://www.channelnewsasia.com/east-asia/south-korea-ai-race-lee-jae-myung-6571286",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T05:34:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 22.2,
-      "topics": []
     },
     {
       "id": "4ebecf7f27b8e257",
@@ -1016,20 +1394,6 @@
       ]
     },
     {
-      "id": "f82200b92ce38c16",
-      "category": "world",
-      "title": "Nations at UN talks on AI killer robots agree to more talks but no firm commitment to rein them in",
-      "summary": "Efforts to establish rules for AI-powered killer robots and drones have run aground. U.N.-backed talks in Geneva ended Saturday with an agreement to extend discussions for two more years.",
-      "url": "https://www.npr.org/2026/11/21/g-s1-154914/nations-at-un-talks-on-ai-killer-robots-agree-to-more-talks-but-no-firm-commitment-to-rein-them-in",
-      "source": "NPR World",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T08:08:01.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 21.8,
-      "topics": []
-    },
-    {
       "id": "f543209a03022c2b",
       "category": "finance",
       "title": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
@@ -1046,50 +1410,6 @@
       ]
     },
     {
-      "id": "f2cd3dab39213779",
-      "category": "world",
-      "title": "Around 700,000 displaced by volatile conflict in southern Ethiopia",
-      "summary": "NGO Islamic Relief says fighting between ethnic groups competing for land and wealth has seen widespread destruction of homes and disruption of services.",
-      "url": "https://www.africanews.com/2026/11/21/around-700000-displaced-by-volatile-conflict-in-southern-ethiopia/",
-      "source": "Africanews",
-      "sourceCountry": "Pan-African",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T07:13:49.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 21.6,
-      "topics": []
-    },
-    {
-      "id": "1efc0f3c9b0751fa",
-      "category": "finance",
-      "title": "Mexican cell carriers facing widespread outages, users report",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/mexican-cell-carriers-facing-widespread-outages-users-report-6570581",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T20:57:23.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 21,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "0207cc9e502fb215",
-      "category": "technology",
-      "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
-      "summary": "ruby2shell lets attackers corrupt memory in default Rails and Sinatra apps without logging in. Cloudflare WAF blocks it for every customer, including Free plans. Upgrade Ruby now, and use the WAF to cover the gap.",
-      "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-20T20:24:38.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 20.9,
-      "topics": []
-    },
-    {
       "id": "44012c9177a63ae0",
       "category": "world",
       "title": "COP31: Countries demand stronger climate deal as talks in Antalya reach final day",
@@ -1099,34 +1419,6 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-11-20T12:00:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 20.8,
-      "topics": []
-    },
-    {
-      "id": "99d769ef5477adc6",
-      "category": "ai",
-      "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
-      "summary": "",
-      "url": "https://huggingface.co/blog/harness-adapters-at-scale",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 20.8,
-      "topics": []
-    },
-    {
-      "id": "fead03492e2eb5bf",
-      "category": "technology",
-      "title": "From a Text Prompt to a Playable 3D World: World Models, LLM NPCs, and RL on AMD Radeon™ Graphics",
-      "summary": "World models can now generate camera-controlled video of places that never existed. Turning that video into something you can play takes a few more steps: the scene needs real 3D geometry to walk on, characters that understand what the player says, and agents that behave sensibly in a space nobody designed by hand.",
-      "url": "https://rocm.blogs.amd.com/artificial-intelligence/world-model-npc/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-20T00:00:00.000Z",
       "fetchedAt": "2026-11-21T12:55:55.681Z",
       "score": 20.8,
       "topics": []
@@ -1146,20 +1438,6 @@
       "topics": []
     },
     {
-      "id": "f216d6190564d92d",
-      "category": "finance",
-      "title": "GTA 6 sales hit $3.8bn in a single day - the biggest entertainment launch in history",
-      "summary": "The mammoth figure surpasses every video game launch and single-day film box office record.",
-      "url": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T22:53:24.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 20.5,
-      "topics": []
-    },
-    {
       "id": "abe167c76c6664ce",
       "category": "finance",
       "title": "UK finds fix for fridge and freezer vulnerability after European hacks",
@@ -1174,20 +1452,6 @@
       "topics": [
         "security"
       ]
-    },
-    {
-      "id": "34bdbf9afb307e15",
-      "category": "finance",
-      "title": "Federal Reserve announces College Fed Challenge winners",
-      "summary": "Federal Reserve announces College Fed Challenge winners",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120b.htm",
-      "source": "U.S. Federal Reserve",
-      "sourceCountry": "United States",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-20T21:15:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 20.1,
-      "topics": []
     },
     {
       "id": "1c119890a43c8225",
@@ -1206,20 +1470,6 @@
       ]
     },
     {
-      "id": "2369a2d47ce096b4",
-      "category": "finance",
-      "title": "Sessions offer advice on rising energy costs",
-      "summary": "A council is urging people to seek support with rising energy costs on heating this winter.",
-      "url": "https://www.bbc.co.uk/news/articles/cmy49l3x893jo",
-      "source": "BBC Business",
-      "sourceCountry": "United Kingdom",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T12:09:49.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 19.8,
-      "topics": []
-    },
-    {
       "id": "ce0a14d02b88b2b9",
       "category": "technology",
       "title": "Build Tool-Calling Parsers in Rust with AI Agents",
@@ -1234,20 +1484,6 @@
       "topics": []
     },
     {
-      "id": "209ec9279fbd1ee0",
-      "category": "technology",
-      "title": "“Race realism” isn’t realistic—and it isn’t good science",
-      "summary": "Modern genetics does not support claims of innate racial differences in intelligence.",
-      "url": "https://arstechnica.com/science/2026/11/race-realism-isnt-realistic-and-it-isnt-good-science/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T12:01:13.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 18.8,
-      "topics": []
-    },
-    {
       "id": "a45cc08bb7705806",
       "category": "ai",
       "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
@@ -1259,20 +1495,6 @@
       "publishedAt": "2026-11-20T19:53:41.000Z",
       "fetchedAt": "2026-11-21T12:55:55.681Z",
       "score": 18.7,
-      "topics": []
-    },
-    {
-      "id": "611c930748502d00",
-      "category": "technology",
-      "title": "Army delays detonating \"catastrophically hazardous\" lead azide amid fear, anger",
-      "summary": "Modeling predicts plume of neurotoxic lead could reach up to 100 miles away.",
-      "url": "https://arstechnica.com/science/2026/11/outrage-questions-swirl-as-army-delays-blowing-up-stockpile-of-toxic-lead-azide/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T19:21:50.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 18.6,
       "topics": []
     },
     {
@@ -1320,34 +1542,6 @@
       "topics": []
     },
     {
-      "id": "3e1e10cf47afb1c9",
-      "category": "finance",
-      "title": "Christine Lagarde: Acting in time",
-      "summary": "",
-      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261120~e52bcc4db2.en.html",
-      "source": "European Central Bank",
-      "sourceCountry": "European Union",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-20T08:30:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 16.9,
-      "topics": []
-    },
-    {
-      "id": "e0ce443ba344fd4e",
-      "category": "ai",
-      "title": "Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup",
-      "summary": "",
-      "url": "https://huggingface.co/blog/inkling2mini",
-      "source": "Hugging Face Blog",
-      "sourceCountry": "International",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 16.8,
-      "topics": []
-    },
-    {
       "id": "649ec023bca85833",
       "category": "ai",
       "title": "A game you cannot win unless you have a quantum computer",
@@ -1359,20 +1553,6 @@
       "publishedAt": "2026-11-19T20:03:00.000Z",
       "fetchedAt": "2026-11-21T12:55:55.681Z",
       "score": 15.8,
-      "topics": []
-    },
-    {
-      "id": "e05184f8a84982c5",
-      "category": "finance",
-      "title": "Monetary and Economic Studies (2026)",
-      "summary": "",
-      "url": "https://www.boj.or.jp/en/research/imes/mes/mes26.htm",
-      "source": "Bank of Japan",
-      "sourceCountry": "Japan",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-20T02:00:00.000Z",
-      "fetchedAt": "2026-11-21T12:55:55.681Z",
-      "score": 14.3,
       "topics": []
     },
     {
