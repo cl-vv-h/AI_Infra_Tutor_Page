@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T07:19:59.273Z",
+  "generatedAt": "2026-11-22T16:34:24.262Z",
   "status": "ready",
   "lookbackHours": 48,
   "sourceCount": 39,
@@ -13,9 +13,9 @@
       "type": "news",
       "state": "ok",
       "channel": "feed",
-      "entryCount": 27,
-      "latestPublishedAt": "2026-11-22T06:54:06.000Z",
-      "selectedCount": 3,
+      "entryCount": 29,
+      "latestPublishedAt": "2026-11-22T16:05:25.000Z",
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -27,7 +27,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 58,
-      "latestPublishedAt": "2026-11-21T12:09:49.000Z",
+      "latestPublishedAt": "2026-11-22T13:50:21.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -40,8 +40,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 140,
-      "latestPublishedAt": "2026-11-22T06:14:00.000Z",
-      "selectedCount": 2,
+      "latestPublishedAt": "2026-11-22T15:09:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -53,7 +53,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 25,
-      "latestPublishedAt": "2026-11-22T06:59:59.000Z",
+      "latestPublishedAt": "2026-11-22T15:30:09.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -66,7 +66,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-21T15:24:55.000Z",
+      "latestPublishedAt": "2026-11-22T11:02:52.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -118,7 +118,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 20,
-      "latestPublishedAt": "2026-11-21T22:12:41.000Z",
+      "latestPublishedAt": "2026-11-22T12:07:41.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -158,7 +158,7 @@
       "channel": "feed",
       "entryCount": 15,
       "latestPublishedAt": "2026-11-20T08:30:00.000Z",
-      "selectedCount": 1,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -171,7 +171,7 @@
       "channel": "feed",
       "entryCount": 20,
       "latestPublishedAt": "2026-11-20T21:15:00.000Z",
-      "selectedCount": 2,
+      "selectedCount": 1,
       "libraryCount": 0
     },
     {
@@ -248,8 +248,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 30,
-      "latestPublishedAt": "2026-11-21T12:00:00.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-11-22T12:00:00.000Z",
+      "selectedCount": 3,
       "libraryCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 24,
-      "latestPublishedAt": "2026-11-22T06:15:38.000Z",
+      "latestPublishedAt": "2026-11-22T14:22:56.000Z",
       "selectedCount": 3,
       "libraryCount": 0
     },
@@ -275,7 +275,7 @@
       "channel": "feed",
       "entryCount": 10,
       "latestPublishedAt": "2026-11-21T22:01:42.000Z",
-      "selectedCount": 2,
+      "selectedCount": 0,
       "libraryCount": 0
     },
     {
@@ -287,8 +287,8 @@
       "state": "ok",
       "channel": "feed",
       "entryCount": 50,
-      "latestPublishedAt": "2026-11-21T23:05:55.000Z",
-      "selectedCount": 1,
+      "latestPublishedAt": "2026-11-22T16:03:01.000Z",
+      "selectedCount": 2,
       "libraryCount": 0
     },
     {
@@ -515,6 +515,38 @@
   ],
   "items": [
     {
+      "id": "77b54e5bce963817",
+      "category": "world",
+      "title": "How El Chapo Isidro, alleged Mexican cartel leader, was captured",
+      "summary": "Operation in Sinaloa state resulted in deadly heavy battles between members of security forces and gunmen.",
+      "url": "https://www.aljazeera.com/news/2026/11/22/how-el-chapo-isidro-alleged-mexican-cartel-leader-was-captured?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T14:33:26.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 28.5,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "a86984d996912b32",
+      "category": "world",
+      "title": "South Korea: AI cheating sparks exam security chaos",
+      "summary": "South Korea’s education minister resigned on Sunday following a major cheating scandal that erupted just ahead of the country’s university entrance exams. The controversy centred on the top scorer in a national tax accountant exam, who admitted to using a miniature camera and smartphone to secure a near-perfect result. Jack Pownall reports.",
+      "url": "https://www.france24.com/en/south-korea-ai-cheating-sparks-exam-security-chaos",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T10:05:28.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 27.4,
+      "topics": [
+        "security"
+      ]
+    },
+    {
       "id": "49f9872c443227c1",
       "category": "ai",
       "title": "Release v5.24.0",
@@ -524,14 +556,30 @@
       "sourceCountry": "International",
       "sourceType": "release",
       "publishedAt": "2026-11-21T12:43:39.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 29.3,
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 27,
       "topics": [
         "inference",
         "kernels",
         "hardware",
         "models",
         "training",
+        "security"
+      ]
+    },
+    {
+      "id": "85947ae285dd87de",
+      "category": "world",
+      "title": "Explosion on Russian ship at Libya port caused by suspected drone attack, officials say",
+      "summary": "Libya's eastern government says it is working with Russia to investigate the incident.",
+      "url": "https://www.bbc.co.uk/news/articles/cr894gjz0j0yo",
+      "source": "BBC World",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T16:05:25.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 24.9,
+      "topics": [
         "security"
       ]
     },
@@ -545,8 +593,24 @@
       "sourceCountry": "International",
       "sourceType": "institution",
       "publishedAt": "2026-11-21T12:00:00.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 27.2,
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 24.9,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "f6c46cac535ef9d7",
+      "category": "world",
+      "title": "Israel's Eisenkot condemns 'Jewish terrorism' in West Bank",
+      "summary": "Israeli opposition leader Gadi Eisenkot has condemned a recent series of arson attacks in the occupied West Bank as \"Jewish terrorism.\" Israeli authorities have opened an investigation into the incidents.",
+      "url": "https://www.dw.com/en/israel-s-eisenkot-condemns-jewish-terrorism-in-west-bank/a-80013861?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T15:09:00.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 24.6,
       "topics": [
         "security"
       ]
@@ -561,8 +625,8 @@
       "sourceCountry": "Argentina",
       "sourceType": "news",
       "publishedAt": "2026-11-22T03:01:00.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 26.9,
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 24.6,
       "topics": [
         "security"
       ]
@@ -577,11 +641,445 @@
       "sourceCountry": "France",
       "sourceType": "news",
       "publishedAt": "2026-11-21T19:56:39.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 26.2,
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 23.8,
       "topics": [
         "security"
       ]
+    },
+    {
+      "id": "c19c65080a60d43f",
+      "category": "world",
+      "title": "Zelenskyy urges US to release Patriot missiles as Russia kills 3 in Ukraine",
+      "summary": "A Russian drone attack kills at least two people near Kyiv as Russian shelling kills one in Zaporizhzhia.",
+      "url": "https://www.aljazeera.com/news/2026/11/22/zelenskyy-urges-us-to-release-patriot-missiles?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T14:48:50.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 23.6,
+      "topics": []
+    },
+    {
+      "id": "f1c4121ccf6328ec",
+      "category": "world",
+      "title": "Iran unveils dual-missile launcher, new ‘missile city’: What to know",
+      "summary": "Military officials tour underground facility in show of military capabilities despite US attacks.",
+      "url": "https://www.aljazeera.com/news/2026/11/22/iran-unveils-dual-missile-launcher-new-missile-city-what-to-know?traffic_source=rss",
+      "source": "Al Jazeera",
+      "sourceCountry": "Qatar",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T14:20:41.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 23.4,
+      "topics": []
+    },
+    {
+      "id": "3045cdc9ac00e35d",
+      "category": "world",
+      "title": "US: ICE arrests 2 at Seattle airport in 'chilling' scenes — governor",
+      "summary": "Washington's governor has denounced the arrests made by ICE officers at Seattle's airport, calling the incident \"horrific.\"",
+      "url": "https://www.dw.com/en/us-ice-arrests-2-at-seattle-airport-in-chilling-scenes-governor/a-80012480?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T07:27:00.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 22.7,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "785db56b5a317282",
+      "category": "technology",
+      "title": "APOD: 2026 November 22 – Swirls and Colors on Jupiter from Juno",
+      "summary": "APOD Science APOD APOD: 2026 November 22 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Swirls and Colors […]",
+      "url": "https://science.nasa.gov/image-article/apod-2026-november-22-swirls-and-colors-on-jupiter-from-juno/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-22T05:05:00.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 22.1,
+      "topics": []
+    },
+    {
+      "id": "ac7aa1b0961fc9d4",
+      "category": "ai",
+      "title": "Release v0.7.6rc1",
+      "summary": "What's Changed feat(mega_gate): experimental SM120 CuTe DSL backend for prepare_mega_gate by @ruoqianguo in #8479 fix(attn_scores): order the MQA logits kernels' TMEM dealloc after every math warp's tcgen05.ld by @bastianhagedorn in #8855 fix: rename the alphamoe router local small, a Windows SDK macro by @ranx2026 in #9303 fix(jit): embed cubins as COFF objects on Windows by @yyihuang in #9415 fix(attention): reject ignored sinks in standard FA paged adapters by @YangXu1990uiuc in #9410 test(gdn): bound state_dtyp",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.6rc1",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-11-20T20:46:33.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 22.1,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models",
+        "training"
+      ]
+    },
+    {
+      "id": "56fb8b1a0d4d3e95",
+      "category": "world",
+      "title": "China, ASEAN countries struggle over South China Sea code of conduct",
+      "summary": "The Philippines wanted a South China Sea code of conduct in place by 2026. But persistent disagreements between China and ASEAN countries are slowing progress toward a deal.",
+      "url": "https://www.dw.com/en/china-asean-countries-struggle-over-south-china-sea-code-of-conduct/a-80009799?maca=en-rss-en-all-1573-rdf",
+      "source": "DW",
+      "sourceCountry": "Germany",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T08:45:00.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 22,
+      "topics": []
+    },
+    {
+      "id": "30297fc05de5ecf5",
+      "category": "world",
+      "title": "Generations of Palestinians displaced by earlier conflicts live in limbo in Egypt",
+      "summary": "They face hurdles accessing education, healthcare, and other public services as they are considered foreigners.",
+      "url": "https://www.africanews.com/2026/11/22/generations-of-palestinians-displaced-by-earlier-conflicts-live-in-limbo-in-egypt/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T12:04:01.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 21.9,
+      "topics": []
+    },
+    {
+      "id": "b4c519b0ffcc39bd",
+      "category": "world",
+      "title": "‘I had a better life in Iran’: Afghan women forced home struggle to rebuild",
+      "summary": "For five years, Zahra cared for an elderly woman in Iran and earned enough to get by. Now back in Herat, western Afghanistan, the 28-year-old trained midwife is unemployed. She lives with her parents and siblings, apart from her six-year-old son, who lives with her ex-husband.",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168852",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-22T12:00:00.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 21.9,
+      "topics": []
+    },
+    {
+      "id": "f0f7d4147861582a",
+      "category": "world",
+      "title": "COP31 ends without climate pact as UN chief warns there is ‘no ambiguity in the science’",
+      "summary": "COP31 ended on Sunday without a climate pact after negotiators failed to overcome divisions over fossil fuels, bringing two weeks of talks and two days of overtime to a close that UN Secretary-General António Guterres described as a “deeply disappointing” setback.",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168855",
+      "source": "UN News",
+      "sourceCountry": "International",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-22T12:00:00.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 21.9,
+      "topics": []
+    },
+    {
+      "id": "2db5eb7df8472803",
+      "category": "world",
+      "title": "South Korean education minister resigns over AI-driven exam cheating scandal",
+      "summary": "South Korea Education Minister Choi Kyo-jin resigned Sunday over an AI-assisted cheating scandal that erupted days before the high-stakes Suneung university entrance exam. The Suneung concluded \"without any major incidents\" last week, Choi said, but he admitted to a failure to \"prepare adequately in advance\".",
+      "url": "https://www.france24.com/en/asia-pacific/20261122-south-korea-education-chief-resigns-amid-ai-cheating-scandal",
+      "source": "France 24",
+      "sourceCountry": "France",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T03:46:14.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 21.8,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "2f30cbdee9e01b28",
+      "category": "world",
+      "title": "African football reaffirms support for re-election of FIFA's Gianni Infantino",
+      "summary": "CAF has been consistently behind Gianni Infantino who is seeking a controversial fourth term to 2031, despite criticism of his leadership.",
+      "url": "https://www.africanews.com/2026/11/22/african-football-reaffirms-support-for-re-election-of-fifas-gianni-infantino/",
+      "source": "Africanews",
+      "sourceCountry": "Pan-African",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T10:41:59.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 21.5,
+      "topics": []
+    },
+    {
+      "id": "9ad195307f872bea",
+      "category": "finance",
+      "title": "Centrica boss says he is 'hugely concerned' over impact of soaring energy bills",
+      "summary": "Chris O'Shea says the number of people unable or unwilling to pay their energy bills will increase when prices jump in the new year.",
+      "url": "https://www.bbc.co.uk/news/articles/c6jre7gpdw13o",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T13:50:21.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 19.3,
+      "topics": []
+    },
+    {
+      "id": "509e58c77a6c3af8",
+      "category": "finance",
+      "title": "Exclusive-Like SpaceX, Anthropic ran an unusual IPO process, chafing some bankers",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/exclusive-spacex-anthropic-ran-unusual-ipo-process-chafing-some-bankers-6572821",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T11:02:52.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 18.6,
+      "topics": []
+    },
+    {
+      "id": "2ce36c923d5fa01e",
+      "category": "technology",
+      "title": "Curiosity Spots Drifting Twilight Clouds",
+      "summary": "Description NASA’s Curiosity Mars rover captured these drifting clouds on Oct. 31, 2026, the 5,061st Martian day, or sol, of the mission. The rover uses its navigation cameras to capture post-sunset clouds, called twilight clouds, which appear for only a short time each fall over Gale Crater, which it has been exploring for more than […]",
+      "url": "https://science.nasa.gov/photojournal/curiosity-spots-drifting-twilight-clouds/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-20T22:27:05.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 18.5,
+      "topics": []
+    },
+    {
+      "id": "0bc80fc9642d237b",
+      "category": "technology",
+      "title": "New NASA Seed Funding Primes Small Businesses for Innovation",
+      "summary": "Awards to small businesses around the country are addressing some of NASA’s most crucial technology needs for exploration of the Moon and Mars while fueling the U.S. space economy. NASA’s Small Business Innovation Research/Small Business Technology Transfer (SBIR/STTR) program recently selected 302 innovative projects, for a total investment of up to $171 million in seed […]",
+      "url": "https://www.nasa.gov/directorates/rtmd/new-nasa-seed-funding-primes-small-businesses-for-innovation/",
+      "source": "NASA",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-20T20:46:14.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 18,
+      "topics": []
+    },
+    {
+      "id": "ec5f7ac92cc13051",
+      "category": "technology",
+      "title": "GLP-1 drugs could have a surprisingly large environmental payoff",
+      "summary": "GLP-1 drugs could cut food demand enough to free farmland larger than Italy.",
+      "url": "https://arstechnica.com/health/2026/11/glp-1-drugs-could-have-a-surprisingly-large-environmental-payoff/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T12:07:41.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 17.9,
+      "topics": []
+    },
+    {
+      "id": "a4a57fa4d06d0666",
+      "category": "technology",
+      "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
+      "summary": "phpAfterShell is a critical flaw in PHP's default session handler that can lead to code execution. Cloudflare WAF blocks it for all customers, including Free plans, and adds new rules for other PHP flaws fixed in the same release.",
+      "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-20T20:00:45.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 17.9,
+      "topics": []
+    },
+    {
+      "id": "5f40b71db0b070e1",
+      "category": "finance",
+      "title": "MP criticises Guernsey and Jersey company ownership register plans",
+      "summary": "Sir Andrew Mitchell says access should be easier for people tackling financial crime.",
+      "url": "https://www.bbc.co.uk/news/articles/cqkgmy2nxy4lo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T07:22:05.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 17.7,
+      "topics": []
+    },
+    {
+      "id": "dbe77b8b42b37465",
+      "category": "technology",
+      "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
+      "summary": "Test using prompts with unique, trackable secrets proves that data doesn't stay private.",
+      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-20T20:59:08.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 17.1,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "4fa2517bc90f3c29",
+      "category": "ai",
+      "title": "Release v0.7.5.post1",
+      "summary": "Full Changelog : v0.7.5...v0.7.5.post1",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.5.post1",
+      "source": "FlashInfer Releases",
+      "sourceCountry": "International",
+      "sourceType": "release",
+      "publishedAt": "2026-11-20T19:48:29.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 16.8,
+      "topics": []
+    },
+    {
+      "id": "d6a9a1e653e73344",
+      "category": "finance",
+      "title": "Employers are being asked to give interview feedback - here's what applicants want",
+      "summary": "People say they often hear nothing back after applying for jobs. But could employers be forced to respond to every applicant?",
+      "url": "https://www.bbc.co.uk/news/articles/cm2d94le23xyo",
+      "source": "BBC Business",
+      "sourceCountry": "United Kingdom",
+      "sourceType": "news",
+      "publishedAt": "2026-11-22T00:04:07.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 15.9,
+      "topics": []
+    },
+    {
+      "id": "0628463d5d11ddaa",
+      "category": "ai",
+      "title": "How Google Duplex evolved to also call businesses for you in Gemini",
+      "summary": "Generative AI",
+      "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-20T23:30:30.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 15.7,
+      "topics": []
+    },
+    {
+      "id": "cd43f759ac45f372",
+      "category": "finance",
+      "title": "South Korea's Lee says speed is vital in AI race on data centre visit",
+      "summary": "Data centres are a major source of chip demand, and South Korean President Lee Jae-myung said he hoped the success of the project would draw further investment from global AI companies.",
+      "url": "https://www.channelnewsasia.com/east-asia/south-korea-ai-race-lee-jae-myung-6571286",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T05:34:00.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 15.2,
+      "topics": []
+    },
+    {
+      "id": "ea2ceea63fb33ea5",
+      "category": "technology",
+      "title": "Review: Godzilla Minus Zero joins the list of truly stellar sequels",
+      "summary": "Director Takashi Yamazaki ups the ante by pitting Godzilla against one of the monster's greatest foes",
+      "url": "https://arstechnica.com/culture/2026/11/review-godzilla-minus-zero-is-everything-we-could-want-in-a-sequel/",
+      "source": "Ars Technica",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T22:12:41.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 14.4,
+      "topics": []
+    },
+    {
+      "id": "eada27bd99efaffe",
+      "category": "ai",
+      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+      "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T21:37:10.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 14.3,
+      "topics": []
+    },
+    {
+      "id": "b80e4799016cd4ce",
+      "category": "ai",
+      "title": "A tale of two Nvidias",
+      "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T21:07:42.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 14.1,
+      "topics": []
+    },
+    {
+      "id": "1efc0f3c9b0751fa",
+      "category": "finance",
+      "title": "Mexican cell carriers facing widespread outages, users report",
+      "summary": "",
+      "url": "https://www.channelnewsasia.com/business/mexican-cell-carriers-facing-widespread-outages-users-report-6570581",
+      "source": "CNA Business",
+      "sourceCountry": "Singapore",
+      "sourceType": "news",
+      "publishedAt": "2026-11-20T20:57:23.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 14.1,
+      "topics": [
+        "security"
+      ]
+    },
+    {
+      "id": "0207cc9e502fb215",
+      "category": "technology",
+      "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
+      "summary": "ruby2shell lets attackers corrupt memory in default Rails and Sinatra apps without logging in. Cloudflare WAF blocks it for every customer, including Free plans. Upgrade Ruby now, and use the WAF to cover the gap.",
+      "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
+      "source": "Cloudflare Engineering",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-20T20:24:38.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 14,
+      "topics": []
+    },
+    {
+      "id": "34bdbf9afb307e15",
+      "category": "finance",
+      "title": "Federal Reserve announces College Fed Challenge winners",
+      "summary": "Federal Reserve announces College Fed Challenge winners",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120b.htm",
+      "source": "U.S. Federal Reserve",
+      "sourceCountry": "United States",
+      "sourceType": "institution",
+      "publishedAt": "2026-11-20T21:15:00.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 13.2,
+      "topics": []
+    },
+    {
+      "id": "ce6e111623477634",
+      "category": "ai",
+      "title": "Here are the top AI agents that can live in your text messages",
+      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+      "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+      "source": "TechCrunch AI",
+      "sourceCountry": "United States",
+      "sourceType": "news",
+      "publishedAt": "2026-11-21T17:00:00.000Z",
+      "fetchedAt": "2026-11-22T16:34:24.262Z",
+      "score": 13.1,
+      "topics": []
     },
     {
       "id": "8de35396803593e0",
@@ -600,20 +1098,6 @@
       ]
     },
     {
-      "id": "785db56b5a317282",
-      "category": "technology",
-      "title": "APOD: 2026 November 22 – Swirls and Colors on Jupiter from Juno",
-      "summary": "APOD Science APOD APOD: 2026 November 22 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer. Swirls and Colors […]",
-      "url": "https://science.nasa.gov/image-article/apod-2026-november-22-swirls-and-colors-on-jupiter-from-juno/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-22T05:05:00.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 24.4,
-      "topics": []
-    },
-    {
       "id": "419fd057009a63e8",
       "category": "world",
       "title": "Russia tests NATO’s eastern defences",
@@ -627,26 +1111,6 @@
       "score": 24.4,
       "topics": [
         "security"
-      ]
-    },
-    {
-      "id": "ac7aa1b0961fc9d4",
-      "category": "ai",
-      "title": "Release v0.7.6rc1",
-      "summary": "What's Changed feat(mega_gate): experimental SM120 CuTe DSL backend for prepare_mega_gate by @ruoqianguo in #8479 fix(attn_scores): order the MQA logits kernels' TMEM dealloc after every math warp's tcgen05.ld by @bastianhagedorn in #8855 fix: rename the alphamoe router local small, a Windows SDK macro by @ranx2026 in #9303 fix(jit): embed cubins as COFF objects on Windows by @yyihuang in #9415 fix(attention): reject ignored sinks in standard FA paged adapters by @YangXu1990uiuc in #9410 test(gdn): bound state_dtyp",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.6rc1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-11-20T20:46:33.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 24.4,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware",
-        "models",
-        "training"
       ]
     },
     {
@@ -720,20 +1184,6 @@
       "topics": []
     },
     {
-      "id": "2ce36c923d5fa01e",
-      "category": "technology",
-      "title": "Curiosity Spots Drifting Twilight Clouds",
-      "summary": "Description NASA’s Curiosity Mars rover captured these drifting clouds on Oct. 31, 2026, the 5,061st Martian day, or sol, of the mission. The rover uses its navigation cameras to capture post-sunset clouds, called twilight clouds, which appear for only a short time each fall over Gale Crater, which it has been exploring for more than […]",
-      "url": "https://science.nasa.gov/photojournal/curiosity-spots-drifting-twilight-clouds/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-20T22:27:05.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 20.8,
-      "topics": []
-    },
-    {
       "id": "470b43893395c721",
       "category": "world",
       "title": "What did Xi Jinping get from the bear hug with Trump at the Shenzhen summit?",
@@ -759,34 +1209,6 @@
       "publishedAt": "2026-11-21T22:01:35.000Z",
       "fetchedAt": "2026-11-22T07:19:59.273Z",
       "score": 20.7,
-      "topics": []
-    },
-    {
-      "id": "0bc80fc9642d237b",
-      "category": "technology",
-      "title": "New NASA Seed Funding Primes Small Businesses for Innovation",
-      "summary": "Awards to small businesses around the country are addressing some of NASA’s most crucial technology needs for exploration of the Moon and Mars while fueling the U.S. space economy. NASA’s Small Business Innovation Research/Small Business Technology Transfer (SBIR/STTR) program recently selected 302 innovative projects, for a total investment of up to $171 million in seed […]",
-      "url": "https://www.nasa.gov/directorates/rtmd/new-nasa-seed-funding-primes-small-businesses-for-innovation/",
-      "source": "NASA",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-20T20:46:14.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 20.4,
-      "topics": []
-    },
-    {
-      "id": "a4a57fa4d06d0666",
-      "category": "technology",
-      "title": "How Cloudflare WAF helps protect against phpAfterShell and other critical PHP flaws",
-      "summary": "phpAfterShell is a critical flaw in PHP's default session handler that can lead to code execution. Cloudflare WAF blocks it for all customers, including Free plans, and adds new rules for other PHP flaws fixed in the same release.",
-      "url": "https://blog.cloudflare.com/phpaftershell-waf-protection/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-20T20:00:45.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 20.2,
       "topics": []
     },
     {
@@ -832,22 +1254,6 @@
       "topics": []
     },
     {
-      "id": "dbe77b8b42b37465",
-      "category": "technology",
-      "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.",
-      "summary": "Test using prompts with unique, trackable secrets proves that data doesn't stay private.",
-      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T20:59:08.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 19.4,
-      "topics": [
-        "security"
-      ]
-    },
-    {
       "id": "d651bb82b2c293cc",
       "category": "world",
       "title": "Senegal's Dak'Art Biennale explores themes of resilience and rebound",
@@ -859,20 +1265,6 @@
       "publishedAt": "2026-11-21T16:20:27.000Z",
       "fetchedAt": "2026-11-22T07:19:59.273Z",
       "score": 19.3,
-      "topics": []
-    },
-    {
-      "id": "4fa2517bc90f3c29",
-      "category": "ai",
-      "title": "Release v0.7.5.post1",
-      "summary": "Full Changelog : v0.7.5...v0.7.5.post1",
-      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.5.post1",
-      "source": "FlashInfer Releases",
-      "sourceCountry": "International",
-      "sourceType": "release",
-      "publishedAt": "2026-11-20T19:48:29.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 19.1,
       "topics": []
     },
     {
@@ -892,20 +1284,6 @@
       ]
     },
     {
-      "id": "0628463d5d11ddaa",
-      "category": "ai",
-      "title": "How Google Duplex evolved to also call businesses for you in Gemini",
-      "summary": "Generative AI",
-      "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini/",
-      "source": "Google Research",
-      "sourceCountry": "United States",
-      "sourceType": "research",
-      "publishedAt": "2026-11-20T23:30:30.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 18,
-      "topics": []
-    },
-    {
       "id": "a86eeab529a72fcd",
       "category": "finance",
       "title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
@@ -917,92 +1295,6 @@
       "publishedAt": "2026-11-20T15:00:00.000Z",
       "fetchedAt": "2026-11-22T07:19:59.273Z",
       "score": 17.9,
-      "topics": []
-    },
-    {
-      "id": "cd43f759ac45f372",
-      "category": "finance",
-      "title": "South Korea's Lee says speed is vital in AI race on data centre visit",
-      "summary": "Data centres are a major source of chip demand, and South Korean President Lee Jae-myung said he hoped the success of the project would draw further investment from global AI companies.",
-      "url": "https://www.channelnewsasia.com/east-asia/south-korea-ai-race-lee-jae-myung-6571286",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T05:34:00.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 17.6,
-      "topics": []
-    },
-    {
-      "id": "ea2ceea63fb33ea5",
-      "category": "technology",
-      "title": "Review: Godzilla Minus Zero joins the list of truly stellar sequels",
-      "summary": "Director Takashi Yamazaki ups the ante by pitting Godzilla against one of the monster's greatest foes",
-      "url": "https://arstechnica.com/culture/2026/11/review-godzilla-minus-zero-is-everything-we-could-want-in-a-sequel/",
-      "source": "Ars Technica",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T22:12:41.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 16.7,
-      "topics": []
-    },
-    {
-      "id": "eada27bd99efaffe",
-      "category": "ai",
-      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
-      "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
-      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T21:37:10.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 16.6,
-      "topics": []
-    },
-    {
-      "id": "b80e4799016cd4ce",
-      "category": "ai",
-      "title": "A tale of two Nvidias",
-      "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
-      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T21:07:42.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 16.4,
-      "topics": []
-    },
-    {
-      "id": "1efc0f3c9b0751fa",
-      "category": "finance",
-      "title": "Mexican cell carriers facing widespread outages, users report",
-      "summary": "",
-      "url": "https://www.channelnewsasia.com/business/mexican-cell-carriers-facing-widespread-outages-users-report-6570581",
-      "source": "CNA Business",
-      "sourceCountry": "Singapore",
-      "sourceType": "news",
-      "publishedAt": "2026-11-20T20:57:23.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 16.4,
-      "topics": [
-        "security"
-      ]
-    },
-    {
-      "id": "0207cc9e502fb215",
-      "category": "technology",
-      "title": "How Cloudflare WAF protects against ruby2shell (CVE-2026-132825)",
-      "summary": "ruby2shell lets attackers corrupt memory in default Rails and Sinatra apps without logging in. Cloudflare WAF blocks it for every customer, including Free plans. Upgrade Ruby now, and use the WAF to cover the gap.",
-      "url": "https://blog.cloudflare.com/ruby2shell-waf-protection/",
-      "source": "Cloudflare Engineering",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-20T20:24:38.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 16.3,
       "topics": []
     },
     {
@@ -1031,34 +1323,6 @@
       "publishedAt": "2026-11-20T22:53:24.000Z",
       "fetchedAt": "2026-11-22T07:19:59.273Z",
       "score": 15.9,
-      "topics": []
-    },
-    {
-      "id": "34bdbf9afb307e15",
-      "category": "finance",
-      "title": "Federal Reserve announces College Fed Challenge winners",
-      "summary": "Federal Reserve announces College Fed Challenge winners",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120b.htm",
-      "source": "U.S. Federal Reserve",
-      "sourceCountry": "United States",
-      "sourceType": "institution",
-      "publishedAt": "2026-11-20T21:15:00.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 15.5,
-      "topics": []
-    },
-    {
-      "id": "ce6e111623477634",
-      "category": "ai",
-      "title": "Here are the top AI agents that can live in your text messages",
-      "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
-      "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "source": "TechCrunch AI",
-      "sourceCountry": "United States",
-      "sourceType": "news",
-      "publishedAt": "2026-11-21T17:00:00.000Z",
-      "fetchedAt": "2026-11-22T07:19:59.273Z",
-      "score": 15.4,
       "topics": []
     },
     {
