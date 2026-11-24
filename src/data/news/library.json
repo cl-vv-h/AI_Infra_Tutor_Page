@@ -1,7 +1,57 @@
 {
-  "generatedAt": "2026-11-23T15:12:47.338Z",
+  "generatedAt": "2026-11-24T02:59:45.273Z",
   "lookbackDays": 90,
   "items": [
+    {
+      "id": "c3f000dc3cc8cbd0",
+      "category": "ai",
+      "title": "Supercharging transformer residual connections",
+      "summary": "Algorithms & Theory",
+      "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+      "source": "Google Research",
+      "sourceCountry": "United States",
+      "sourceType": "research",
+      "publishedAt": "2026-11-23T17:21:12.000Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
+      "score": 28.6,
+      "topics": [
+        "models"
+      ]
+    },
+    {
+      "id": "829368b5db4aaf04",
+      "category": "technology",
+      "title": "Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension",
+      "summary": "As datasets grow, analytical queries can take longer to run, slowing down data exploration, pipelines, and applications. For developers using DuckDB, reducing...",
+      "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+      "source": "NVIDIA Technical Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-23T17:09:28.000Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
+      "score": 32.5,
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "542f0998a05b2b19",
+      "category": "technology",
+      "title": "Train a Walking Robot with Genesis on AMD GPUs",
+      "summary": "This blog shows how to run robot simulation and training on an AMD Instinct™ (CDNA) GPU with ROCm™ software release 10.1. The work is done by Genesis, a physics simulator, with Quadrants, a Python-based kernel language and compiler, running underneath.",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/rocm-genesis-quadrants/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-23T00:00:00.000Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
+      "score": 28.3,
+      "topics": [
+        "kernels",
+        "hardware",
+        "training"
+      ]
+    },
     {
       "id": "beba6e3232687525",
       "category": "ai",
@@ -12,11 +62,103 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-23T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
-      "score": 27.2,
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
+      "score": 24.3,
       "topics": [
         "inference",
         "hardware"
+      ]
+    },
+    {
+      "id": "c7a26bac086146aa",
+      "category": "technology",
+      "title": "Feeding the Matrix Cores: Assembly FP4 GEMM Kernel Design on AMD Instinct™ MI455X GPUs",
+      "summary": "The AMD Instinct™ MI455X GPU raises peak 4-bit matrix throughput four times over the MI355X, while HBM bandwidth rises about three times (specifications, MI355X). A GEMM kernel that was balanced on the previous generation is therefore supply-limited on this one: each byte loaded has to feed more math than before. This post walks through how the FP4 GEMM kernels in AITER close that gap on MI455X: how large the tiles have to be, how the Tensor Data Mover (TDM) replaces register-staged loads, how operands are laid out",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/mi450-asm-fp4-gemm-opt/README.html",
+      "source": "AMD ROCm Blog",
+      "sourceCountry": "United States",
+      "sourceType": "engineering",
+      "publishedAt": "2026-11-23T00:00:00.000Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
+      "score": 24.3,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "fbfa7c4706411955",
+      "category": "ai",
+      "title": "IndexerStage: Staging Indexer-K across Memory Tiers for Sparse-Attention LLM Serving",
+      "summary": "Long-context sparse-attention serving can remain limited by graphics processing unit (GPU) memory after attention data is offloaded. DeepSeek Sparse Attention retains Indexer-K state to select the tokens that attention will read. Its indexer scans this growing state in full at every layer and decode step. A full scan requires the current layer's state, however, not simultaneous residency of every layer. We present IndexerStage, a serving runtime that externalizes Indexer-K state while preserving native GPU score, t",
+      "url": "https://arxiv.org/abs/2611.28625v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-11-21T07:23:05.000Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
+      "score": 21,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "bc3325faa8c3c3d3",
+      "category": "ai",
+      "title": "Making Repeated Variational Circuit Optimization Efficient on GPUs",
+      "summary": "Repeated numerical optimization is a defining workload for classical simulation of parameterized quantum circuits. Although successive training steps change gate parameters, they usually preserve circuit connectivity and reuse a small set of gate-layer patterns. We use this regularity to accelerate gradient evaluation on GPUs. Our framework combines execution primitives for common circuit layers with adjoint differentiation, coordinating state evolution and derivative computation to reduce launch overhead, intermed",
+      "url": "https://arxiv.org/abs/2611.28571v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-11-21T05:04:27.000Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
+      "score": 21,
+      "topics": [
+        "hardware",
+        "training"
+      ]
+    },
+    {
+      "id": "0b077b67306d8ce3",
+      "category": "ai",
+      "title": "CCAMoE: Cache-Conditioned Adaptive Inference for Offloaded MoE",
+      "summary": "Expert offloading enables Mixture-of-Experts (MoE) inference on memory-constrained GPUs, but expert transfers and CPU execution limit decoding performance. Speculative decoding can mitigate these costs, yet separate draft weights consume scarce GPU memory and longer drafts increase verification demand. In this paper, we present CCAMoE, a unified runtime that coordinates adaptive speculative decoding with concurrent expert-cache updates. Its design has three key features: 1) Cache-only drafting, which reuses residen",
+      "url": "https://arxiv.org/abs/2611.28550v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-11-21T04:15:13.000Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
+      "score": 21,
+      "topics": [
+        "inference",
+        "hardware",
+        "models"
+      ]
+    },
+    {
+      "id": "69d9f3a1cb635302",
+      "category": "ai",
+      "title": "DisSparse: Pipelined Top-$p$ Sparse Attention for Long-Context LLM Serving",
+      "summary": "Long-context LLM inference is bottlenecked by the memory demands of the key-value (KV) cache, whose size scales linearly with context length. Dynamic sparse attention reduces this bottleneck by fetching and attending only to a critical subset of tokens. The dominant primitive in dynamic sparse attention research and deployment is fixed-budget top-$k$ selection, which is favored because its deterministic block count aligns with the static memory allocation that systems like vLLM rely on. Top-$k$ uses a fixed budget ",
+      "url": "https://arxiv.org/abs/2611.28522v1",
+      "source": "arXiv Distributed Systems",
+      "sourceCountry": "International",
+      "sourceType": "research",
+      "publishedAt": "2026-11-21T03:18:37.000Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
+      "score": 21,
+      "topics": [
+        "inference",
+        "kernels",
+        "hardware",
+        "models"
       ]
     },
     {
@@ -29,7 +171,7 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-11-20T13:33:57.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 21,
       "topics": [
         "inference",
@@ -48,7 +190,7 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-11-20T13:26:04.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 21,
       "topics": [
         "inference"
@@ -64,7 +206,7 @@
       "sourceCountry": "International",
       "sourceType": "research",
       "publishedAt": "2026-11-20T04:42:26.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 21,
       "topics": [
         "kernels",
@@ -74,56 +216,19 @@
       ]
     },
     {
-      "id": "20077f9e9be81ab9",
+      "id": "fca8a00b938bfdc4",
       "category": "ai",
-      "title": "PLoQ: A Prompt-Specific Low-Rank Basis for 4-bit Quantization of LLM Activations",
-      "summary": "Low-bit activation quantization of large language models remains challenging, as a small number of dominant directions dictate the quantization range. State-of-the-art methods isolate these directions in a high-precision subspace through transformations calibrated offline and folded into the weights, which fixes the subspace for all prompts, leaving each prompt's few unique directions unprotected, and rules it out wherever no weight can absorb the transformation. We present PLoQ, a prompt-adaptive low-rank decompos",
-      "url": "https://arxiv.org/abs/2611.27092v1",
+      "title": "Selective Verification in Multi-Agent Orchestration with Large Language Models",
+      "summary": "Agents can agree because they relied on the same flawed evidence. We use an exact model of nine binary votes to examine when a verifier should intervene. In the main comparison, workers err 20 percent of the time under ordinary conditions, shared failures occur in 10 percent of cases, and the verifier errs 2 percent of the time in either state. When worker error during a shared failure is 80 percent, checking close votes yields 7.93 percent verdict error, compared with 9.06 percent for random checks at the same exp",
+      "url": "https://arxiv.org/abs/2611.28173v1",
       "source": "arXiv Distributed Systems",
       "sourceCountry": "International",
       "sourceType": "research",
-      "publishedAt": "2026-11-20T04:07:37.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "publishedAt": "2026-11-20T04:42:14.000Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 21,
       "topics": [
-        "inference",
-        "kernels",
-        "models",
-        "training"
-      ]
-    },
-    {
-      "id": "099bd4cf885e024c",
-      "category": "ai",
-      "title": "Contexture: Runtime Context Eviction for High-Throughput Agent Serving",
-      "summary": "LLM agents such as Hermes, OpenClaw, and Codex repeatedly resend growing execution histories, increasing shared GPU key-value (KV) cache demand in high-bandwidth memory (HBM). We show that shared KV capacity limits agent-serving throughput. Existing context-reduction methods lack global cache-state visibility, while runtime KV managers lack tool-execution information. Tracing tokens to their originating tool operations reveals that later operations supersede earlier outputs and associated turns, identifying 64% of ",
-      "url": "https://arxiv.org/abs/2611.26980v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-11-20T01:55:52.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
-      "score": 21,
-      "topics": [
-        "inference",
-        "hardware",
-        "training"
-      ]
-    },
-    {
-      "id": "1f2751c1f923cac7",
-      "category": "ai",
-      "title": "Analysis of Multi-Client Inference Techniques for Vision-Language-Action Models",
-      "summary": "Vision-Language-Action models (VLAs) are a new class of machine learning model for generalizable robot control. While they enable robots to perform complex tasks in unseen environments, serving VLAs leaves hardware idle between inference passes and under-utilized during inference. Serving multiple clients at once can improve utilization, but fundamental multi-client techniques such as batching and co-execution have not been characterized for VLAs. We therefore characterize the trade-offs these known techniques impo",
-      "url": "https://arxiv.org/abs/2611.26944v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-11-20T00:57:34.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
-      "score": 21,
-      "topics": [
-        "inference"
+        "models"
       ]
     },
     {
@@ -136,7 +241,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "inference",
@@ -154,7 +259,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-20T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "inference",
@@ -174,45 +279,11 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-19T20:28:13.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "inference",
         "training"
-      ]
-    },
-    {
-      "id": "49b63878ccd99d6b",
-      "category": "ai",
-      "title": "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming",
-      "summary": "Hybrid architectures have become mainstream among open-weight language models. Their global-attention and bounded-state layers maintain heterogeneous caches whose demands vary with context length and concurrency. We present TideCache, a serving system on CPU--GPU superchips with three components for allocating GPU memory among caches and managing their residency across GPU and host memory. The Transparent Cache Pool redistributes physical pages among cache components behind fixed virtual addresses, preserving cache",
-      "url": "https://arxiv.org/abs/2611.26619v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-11-19T18:58:31.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
-      "score": 21,
-      "topics": [
-        "inference",
-        "hardware",
-        "models"
-      ]
-    },
-    {
-      "id": "ed764bf69971c934",
-      "category": "ai",
-      "title": "Aggron: Aggressive Compression of Agentic KV Caches during Head-of-Line Stalls in the Request Queue",
-      "summary": "LLM agents run long, multi-turn programs whose contexts grow at every step, and serving them is limited by KV cache capacity. To alleviate this limitation, systems use context compression techniques, which typically wait until the KV cache crosses a large threshold and then summarize large spans of history at once, either in the background while the agent progresses or on the critical path. These summarizations can be done using the same model running on the same engine, or using the same or a different model runni",
-      "url": "https://arxiv.org/abs/2611.26435v1",
-      "source": "arXiv Distributed Systems",
-      "sourceCountry": "International",
-      "sourceType": "research",
-      "publishedAt": "2026-11-19T17:09:37.000Z",
-      "fetchedAt": "2026-11-23T01:04:28.083Z",
-      "score": 21,
-      "topics": [
-        "inference"
       ]
     },
     {
@@ -225,7 +296,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-19T17:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -257,7 +328,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-18T19:54:56.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "training"
@@ -273,7 +344,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-18T18:53:43.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "training"
@@ -289,7 +360,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-18T17:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "training",
@@ -306,7 +377,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-18T15:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "hardware",
@@ -323,7 +394,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-18T14:52:10.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 22,
       "topics": [
         "inference"
@@ -339,7 +410,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-18T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "inference",
@@ -357,7 +428,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-18T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "hardware"
@@ -373,7 +444,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-18T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "inference",
@@ -390,7 +461,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-17T17:30:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "inference",
@@ -407,7 +478,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-17T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "inference",
@@ -424,7 +495,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-17T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "inference",
@@ -442,7 +513,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-17T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -458,7 +529,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-16T16:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "inference"
@@ -474,26 +545,10 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-16T16:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "hardware",
-        "training"
-      ]
-    },
-    {
-      "id": "ef88c66cb0ce120b",
-      "category": "technology",
-      "title": "Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain",
-      "summary": "Agentic AI is reshaping scientific research and innovation. Researchers communicate complex scientific hypotheses in natural language and let autonomous agents...",
-      "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/",
-      "source": "NVIDIA Technical Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-16T16:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
-      "score": 23,
-      "topics": [
         "training"
       ]
     },
@@ -507,7 +562,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-16T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "hardware",
@@ -525,7 +580,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-16T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "training"
@@ -541,7 +596,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-13T19:26:07.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 22,
       "topics": [
         "security"
@@ -557,28 +612,10 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-13T14:05:22.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "models"
-      ]
-    },
-    {
-      "id": "ce5de7c95344ca34",
-      "category": "technology",
-      "title": "GPU-Initiated DMA Copy Engines in RCCL and rocSHMEM",
-      "summary": "As GPU-accelerated workloads scale across multiple devices and nodes, the efficiency of inter-GPU communication becomes a decisive factor in overall application performance. This is especially true for inference workloads, where communication sits on the critical path and traditional approaches to overlapping compute and communication fall short without fine-grained, kernel-level orchestration.",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/gpu-initiated-sdma/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-13T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
-      "score": 23,
-      "topics": [
-        "inference",
-        "kernels",
-        "hardware"
       ]
     },
     {
@@ -591,7 +628,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-12T16:45:26.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -607,7 +644,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-12T14:45:25.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "inference"
@@ -623,7 +660,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-12T12:00:19.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "hardware",
@@ -641,7 +678,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-12T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "training"
@@ -657,24 +694,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-12T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
-      "score": 23,
-      "topics": [
-        "inference",
-        "training"
-      ]
-    },
-    {
-      "id": "93fd4fdf5b7fc27c",
-      "category": "technology",
-      "title": "Beyond Embedding Quantization: Quark UINT4 Qwen3.8-Flash-Next on Ryzen AI Halo",
-      "summary": "If you want to run Qwen3.8-Flash-Next [2] on a Ryzen AI Halo device with 128 GB of unified memory, you need room for runtime buffers and the key-value (KV) cache. For this evaluation, AMD Quark [5] quantizes expert weights to 4-bit unsigned integers (UINT4) using activation-aware weight quantization (AWQ). Pairing those weights with an 8-bit floating-point (FP8) n-gram table brings total checkpoint tensor storage to ~130 GB (~121 GiB), including ~51 GB for the table. This footprint leaves limited headroom on a 128 ",
-      "url": "https://rocm.blogs.amd.com/artificial-intelligence/quark-qwen-ple/README.html",
-      "source": "AMD ROCm Blog",
-      "sourceCountry": "United States",
-      "sourceType": "engineering",
-      "publishedAt": "2026-11-12T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "inference",
@@ -691,7 +711,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-12T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "inference",
@@ -709,7 +729,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-12T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "inference",
@@ -727,7 +747,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-11T05:01:16.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "models"
@@ -743,7 +763,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-11T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "training"
@@ -759,7 +779,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-11T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "inference",
@@ -776,7 +796,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-10T22:15:07.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "hardware"
@@ -792,7 +812,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-10T16:45:24.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "inference"
@@ -808,7 +828,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-11-09T19:51:47.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 22,
       "topics": [
         "security"
@@ -824,7 +844,7 @@
       "sourceCountry": "United States",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T14:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 18,
       "topics": [
         "security"
@@ -840,7 +860,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-06T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "inference",
@@ -873,7 +893,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-11-02T17:45:32.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "hardware"
@@ -1051,7 +1071,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-10-06T19:57:04.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 22,
       "topics": [
         "models"
@@ -1083,7 +1103,7 @@
       "sourceCountry": "United Kingdom",
       "sourceType": "research",
       "publishedAt": "2026-09-30T15:03:07.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 22,
       "topics": [
         "inference"
@@ -1099,7 +1119,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T01:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "inference",
@@ -1117,7 +1137,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 23,
       "topics": [
         "kernels",
@@ -1134,7 +1154,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "kernels"
@@ -1150,7 +1170,7 @@
       "sourceCountry": "International",
       "sourceType": "engineering",
       "publishedAt": "2026-09-22T00:00:00.000Z",
-      "fetchedAt": "2026-11-23T15:12:47.338Z",
+      "fetchedAt": "2026-11-24T02:59:45.273Z",
       "score": 19,
       "topics": [
         "kernels",
