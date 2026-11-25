@@ -1,128 +1,113 @@
 {
-  "generatedAt": "2026-11-18T01:27:41.591Z",
-  "periodStart": "2026-11-09",
-  "periodEnd": "2026-11-15",
+  "generatedAt": "2026-11-25T01:37:22.896Z",
+  "periodStart": "2026-11-16",
+  "periodEnd": "2026-11-22",
   "model": "gpt-5.6-luna",
   "archiveDates": [
-    "2026-11-09",
-    "2026-11-10",
-    "2026-11-11",
-    "2026-11-12",
-    "2026-11-13",
-    "2026-11-14",
-    "2026-11-15"
+    "2026-11-16",
+    "2026-11-17",
+    "2026-11-18",
+    "2026-11-19",
+    "2026-11-20",
+    "2026-11-21",
+    "2026-11-22"
   ],
-  "itemCount": 22,
-  "content": "# 本周信号\n\n本期覆盖 2026-11-09 至 2026-11-15 的七个公开归档日。技术信号集中在 vLLM 新版、GPU workload snapshot 与 Kubernetes 控制面、浏览器/边缘推理、kernel 编译启发式、GPU 间通信和超大规模 MoE；同时，NVIDIA 管理层与出口管制报道使供应链和治理风险重新进入基础设施观察范围。\n\n## AI\n\n- 报道事实：[v0.34.0rc1](https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc1)、[v0.34.0rc3](https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc3)和[v0.34.0rc4](https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc4)是 vLLM 0.34.0 候选版本条目，摘要分别列出 spec decode/XPU、利用率等待测试和 warmup-gate 测试等变更。归档没有提供完整兼容矩阵或性能回归，因此不能把候选版本视为稳定发布。\n- 报道事实：[ExecuTorch WebGPU: PyTorch Models on the GPU, in the Browser](https://pytorch.org/blog/executorch-webgpu-pytorch-models-on-the-gpu-in-the-browser/)称 PyTorch 模型可通过 ExecuTorch 在浏览器 GPU 上运行，不需要转换为另一框架格式，并使用 torch.export 与 .pte 文件。综合判断：浏览器 GPU 推理正在成为与服务器 serving 并行的部署面，但归档未提供浏览器端延迟、显存或兼容性数据。\n- 报道事实：[llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem](https://huggingface.co/blog/ggml-org/llama-cpp-v1)被 Hugging Face 归档，但摘要为空，不能补写版本能力或硬件覆盖。\n- 报道事实：[Running AV Reasoning Models Within Onboard Compute and Latency Limits](https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/)讨论在车载算力与延迟约束内运行 reasoning model；归档摘要指出更大模型提供更强能力，但没有给出模型、硬件和安全阈值的具体对照。\n\n## 科技\n\n- 报道事实：[Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot](https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/)把已初始化的 GPU workload 做成可复用状态；[Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine](https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/)则宣布用于 GPU 基础设施托管 Kubernetes 的开源项目。综合判断：启动快照与集群控制面共同把“模型已加载状态”变成可运营的基础设施对象。\n- 报道事实：[When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM](https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/)指出大模型权重不再总能放进单机 GPU，并展示跨两台 DGX Station 的 serving 场景；归档没有提供独立复现的吞吐或尾延迟。\n- 报道事实：[GPU-Initiated DMA Copy Engines in RCCL and rocSHMEM](https://rocm.blogs.amd.com/software-tools-optimization/gpu-initiated-sdma/README.html)把多设备、多节点 workload 的 inter-GPU 通信放在推理关键路径上，并讨论 GPU-initiated copy 与更细粒度的 kernel-level orchestration。综合判断：通信与计算重叠仍是大规模 inference 的系统级优化空间。\n- 报道事实：[Fast by Default: Compile-Time Heuristics for Helion Kernels](https://pytorch.org/blog/fast-by-default-compile-time-heuristics-for-helion-kernels/)称 Helion 使用 kernel IR 与 dataflow 在编译期选择设置，区分 matmul、reduction 与 pointwise，减少慢速 autotuning 依赖。综合判断：编译器启发式正在把部分 kernel 调优从运行时搜索前移到编译阶段。\n- 报道事实：[Integrating SGLang into Spyre in Under a Week with AI](https://pytorch.org/blog/integrating-sglang-into-spyre-in-under-a-week-with-ai/)称借助 AI coding agents，两人团队在不到一周内完成 SGLang 与 IBM Spyre 的集成，插件约 1,500 行；这是项目案例，不是普遍开发效率基准。\n- 报道事实：[Training a 1T-Parameter MoE on EU public infrastructure with PyTorch and TorchTitan](https://pytorch.org/blog/training-a-1t-parameter-moe-on-eu-public-infrastructure-with-pytorch-and-torchtitan/)称在公共基础设施上训练约 1T 参数 MoE 面临架构与互联瓶颈，并采用细粒度灵活性路径。归档没有给出完整的卡数、网络拓扑和训练时间。\n- 报道事实：[PACER: GPU Excursion Management for ML Workloads](https://arxiv.org/abs/2611.17206v1)把动态环境、电源管理和短 kernel 交互造成的 GPU 内部波动作为问题；[Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon](https://arxiv.org/abs/2611.17294v1)则提出受限文件访问、原生命令执行和命令级调度的组合基础设施。综合判断：GPU 利用率不仅由模型算子决定，也受电源状态、命令编排和 agent session 隔离影响。\n- 报道事实：[Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory](https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/)关注在 NVIDIA Dynamo、Kubeflow 或 Slurm 上追踪真实运行内容，而不是只看平台配置；[Kitesurf is now open source](https://blog.cloudflare.com/kitesurf-open-source/)则开放了面向 AI agent 的实验性浏览器引擎。综合判断：可观测的 runtime inventory 与 agent 执行环境正在成为部署治理的一部分。\n- 报道事实：[Run Native DLA Inference in Python on NVIDIA Jetson AGX Orin Using cuDLA](https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla/)聚焦在有限算力和功耗下运行多个神经网络的边缘 DLA 推理；归档未提供端到端功耗或实时性数据。\n\n## 金融\n\n- 报道事实：[Applied Materials forecasts quarterly revenue above estimates on strong AI chip demand](https://www.channelnewsasia.com/business/applied-materials-forecasts-quarterly-revenue-above-estimates-strong-ai-chip-demand-6547501)的标题将季度收入预期与 AI 芯片需求联系起来，但摘要为空，不能补写收入数值或订单结构。\n- 报道事实：[China warns against new export controls on US chips after Nvidia scandal](https://www.channelnewsasia.com/east-asia/china-warns-against-new-export-controls-us-chips-after-nvidia-scandal-6549111)记录中国对新的美国芯片出口管制发出警告；归档没有给出政策文本或实际供给影响。\n- 报道事实：[Where was Nvidia’s security team?](https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/)的摘要围绕 Nvidia 安全负责人离职、CEO 关系与公司安全管理展开，属于媒体报道；不能据此判断公司内部责任或安全事件真实性。\n- 综合判断：本期金融材料反映 AI 芯片需求、出口政策和单一核心供应商治理风险同时被市场关注，但没有足够证据把这些条目转换成 GPU 价格、交付周期或数据中心资本成本预测。\n\n## 国际形势\n\n- 报道事实：[Nvidia scandal: How close was ex-CEO to Trump?](https://www.france24.com/en/video/20261113-nvidia-scandal-how-close-was-ex-ceo-to-trump)称美国议员计划就前 CEO 与政治、对华芯片限制和国家安全问题提出质询；这些是报道和分析内容，不构成已证实的政策因果。\n- 报道事实：[China warns against new export controls on US chips after Nvidia scandal](https://www.channelnewsasia.com/east-asia/china-warns-against-new-export-controls-us-chips-after-nvidia-scandal-6549111)也显示芯片出口管制继续处在中美科技关系的政策背景中。综合判断：企业治理事件可能叠加出口管制与供应链不确定性，但归档不支持量化具体 AI Infra 断供风险。\n- 综合判断：公共基础设施训练、边缘设备推理和浏览器 agent 的技术扩散，和出口控制、企业安全、政治监督形成同一条约束链；当前证据更适合用于风险观察，不足以推导全球算力格局已经改变。\n\n## 跨板块观察\n\n- 综合判断：vLLM 0.34 候选版本、GPU snapshot、NVKE、runtime inventory 与跨两台 DGX serving 共同指向“状态可复用、配置可验证、集群可恢复”的 serving 控制面；这是一组跨来源归纳，不是单一 release 的承诺。\n- 综合判断：Helion 编译期启发式、RCCL/rocSHMEM GPU-initiated DMA、1T MoE 公共训练和 PACER 的 GPU 波动研究共同说明，性能瓶颈正在从算子本身延伸到编译策略、互联、功耗状态与集群调度。\n- 综合判断：NVIDIA 的安全与出口管制报道和 AI 芯片需求报道相互关联，但归档缺乏审计结论、订单数据和政策细节，不能把新闻关注度写成确定的供应链冲击。\n\n## 下周观察清单\n\n- 跟踪 vLLM 0.34 候选版本的 KV cache、spec decode、XPU 和 warmup 回归，并确认是否进入稳定版本：[v0.34.0rc1](https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc1)、[v0.34.0rc3](https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc3)、[v0.34.0rc4](https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc4)。\n- 观察 snapshot/NVKE/runtime inventory 是否形成可复用 workload、集群编排和真实运行审计的闭环：[Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot](https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/)。\n- 继续验证两机 serving、GPU-initiated communication 和 1T MoE 的网络、显存和尾延迟数据：[When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM](https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/)。\n- 关注出口管制、企业安全审查和芯片需求是否出现官方文件、交付数据或可复现影响；当前证据不足：[Nvidia scandal: How close was ex-CEO to Trump?](https://www.france24.com/en/video/20261113-nvidia-scandal-how-close-was-ex-ceo-to-trump)。\n",
+  "itemCount": 19,
+  "content": "# 本周信号\n\n本期覆盖 2026-11-16 至 2026-11-22 的七个公开归档日。技术信号集中在长上下文注意力、agent serving、kernel/编译路径、FlashInfer 与 TensorRT-LLM 的 serving 演进；同时覆盖联储公开材料、GPU 安全运营和国际风险。以下区分报道事实与综合判断。\n\n## AI\n\n- 报道事实：[Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain](https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/)讨论面向科学领域的 Nemotron 后训练；[NVIDIA Vera Rubin NVL72 Leads Agentic Inference Performance on MLPerf Endpoints v1.0](https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/)记录 Vera Rubin 在 agentic inference 基准中的表现。归档未提供完整复现实验矩阵，因此不能外推到所有模型和集群。\n- 报道事实：[Co-Designing Sparse Attention for Efficient Long-Context Inference](https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/)把稀疏注意力与长上下文推理协同设计；[Keep the Agent Warm: How ATOM Serves AgentX Workloads on AMD Instinct MI355X GPUs](https://rocm.blogs.amd.com/software-tools-optimization/agentx-atom-serving/README.html)聚焦长历史、多次调用和中断式 agent serving。综合判断：上下文复用与 decode 交互性正在成为 serving 的核心约束，而不只是峰值 FLOPS。\n- 报道事实：[Keeping Agents Fast: High-Interactivity Decode with FlyDSL MonoKernels in vLLM](https://vllm.ai/blog/2026-11-18-flydsl-monokernels)讨论面向高交互 decode 的模型特定融合；归档中的版本条目摘要不足，不能补写未给出的能力边界。\n\n## 科技\n\n- 报道事实：[An AITER Pin Keyed by Kernel Text: Faster Glue Than the Inductor Default](https://rocm.blogs.amd.com/software-tools-optimization/inductor-aiter-conversion/README.html)关注编译图中小型 glue kernels 的缓存与替换；[FlashInfer on ROCm 10.1: The FlashInfer API with Automatic Kernel Routing](https://rocm.blogs.amd.com/artificial-intelligence/flashinfer-release3/README.html)记录 ROCm 上的 attention、MLA、RoPE、FP8 与路由能力推进。综合判断：kernel 选择与 serving API 的硬件适配正在从单算子优化扩展为运行时路由问题。\n- 报道事实：[v1.3.0](https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0)条目列出 Rubin 预览、DeepSeek-V4、Kimi K3、Qwen3.5 与多节点 serving 支持；[Release v0.7.6rc1](https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.6rc1)条目包含 SM120 CuTe DSL backend、attention 与 Windows 构建相关变更。综合判断：框架版本对新 GPU、模型和多节点形态的跟进速度，已成为部署路线的一部分。\n- 报道事实：[Reducing Rollout Bottlenecks in Reinforcement Learning with NVIDIA Dynamo](https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo/)把 RL rollout 的推理吞吐作为系统瓶颈；[Build Tool-Calling Parsers in Rust with AI Agents](https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents/)讨论流式工具调用解析。综合判断：推理基础设施需要同时处理 token 生成、工具边界和 rollout 调度，单一 decode 指标不足以描述体验。\n- 报道事实：[How Cloudflare WAF helps protect against Java4Shell (CVE-2026-114938)](https://blog.cloudflare.com/java4shell-waf-protection/)记录针对 Java4Shell 的 WAF 规则与修复提醒。它不是 AI 专项新闻，但说明 serving 平台的运行时依赖与安全响应仍是基础设施可用性的组成部分。\n\n## 金融\n\n- 报道事实：[Minutes of the Federal Open Market Committee, October 27-28, 2026](https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm)、[Federal Reserve Board issues enforcement action with former employee of First Security Bancorp](https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm)和[Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances](https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm)均为联储机构原文，分别涉及会议纪要、执法行动和银行储备管理调查。综合判断：这些材料可作为宏观金融与流动性观察，但归档没有提供 AI 基础设施资本开支或 GPU 采购的直接数据。\n- 报道事实：[v1.3.0](https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0)的摘要涉及新硬件与模型支持；这只能说明软件栈适配节奏，不能据此推导芯片收入、交付周期或估值。\n\n## 国际形势\n\n- 报道事实：[Homes abandoned, harvests failing: Haiti’s farmers rebuild amid violence, hunger and El Niño](https://news.un.org/feed/view/en/story/2026/11/1168834)记录海地安全、粮食与气候冲击；[Russia attacks Zelensky's hometown, Ukraine reaffirms wish to join NATO](https://www.france24.com/en/europe/20261121-russia-attacks-zelensky-s-hometown-ukraine-reaffirms-wish-to-join-nato)报道乌克兰遭袭及其 NATO 立场；[FBI national crime database suffers suspected breach: Reports](https://www.aljazeera.com/news/2026/11/21/fbi-national-crime-database-suffers-suspected-breach-reports?traffic_source=rss)记录美国执法数据库疑似遭入侵的报道。\n- 综合判断：国际安全、网络安全与人道危机都可能影响供应链、公共云和数据中心运营环境，但本期归档没有提供具体 AI Infra 中断、成本或迁移数据，证据不足以量化影响。\n- 报道事实：[Major anti-gang offensive in Haiti kills 34 suspected gang members](https://www.france24.com/en/americas/20261119-major-anti-gang-offensive-in-haiti-kills-34-suspected-gang-members)报道海地安全行动；这是区域局势信息，不应被改写成基础设施预测。\n\n## 跨板块观察\n\n- 综合判断：稀疏注意力、agent warm serving、MonoKernels、FlashInfer 路由和 TensorRT-LLM 的硬件适配共同指向“按工作负载选择执行路径”；需要继续观察这些优化是否在公开基准中带来稳定的尾延迟收益。\n- 综合判断：RL rollout、工具调用解析与安全规则表明 serving 的边界已从模型内核延伸到调度、协议和依赖治理；当前归档缺乏统一端到端指标，证据不足以比较不同栈的总拥有成本。\n- 综合判断：联储原文与国际新闻只能提供外部约束背景，尚不足以证明金融条件或地缘风险已经改变 AI 算力供给。\n\n## 下周观察清单\n\n- 关注稀疏注意力和 agent serving 是否给出可复现的长上下文、交互式 decode 与尾延迟数据：[Co-Designing Sparse Attention for Efficient Long-Context Inference](https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/)。\n- 跟踪 FlashInfer、TensorRT-LLM 与 vLLM 的新 GPU、FP8、MLA、路由和多节点支持是否进入稳定版本：[FlashInfer on ROCm 10.1: The FlashInfer API with Automatic Kernel Routing](https://rocm.blogs.amd.com/artificial-intelligence/flashinfer-release3/README.html)。\n- 继续观察 RL rollout 与 tool-calling parser 是否形成可测的系统级吞吐和错误率指标：[Reducing Rollout Bottlenecks in Reinforcement Learning with NVIDIA Dynamo](https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo/)。\n- 关注联储后续原文、网络安全事件和区域冲突是否出现直接影响数据；当前证据不足：[Minutes of the Federal Open Market Committee, October 27-28, 2026](https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm)。\n",
   "sources": [
     {
-      "title": "ExecuTorch WebGPU: PyTorch Models on the GPU, in the Browser",
-      "url": "https://pytorch.org/blog/executorch-webgpu-pytorch-models-on-the-gpu-in-the-browser/",
-      "source": "PyTorch Blog"
-    },
-    {
-      "title": "Start and Restore GPU Workloads in Seconds with NVIDIA Snapshot",
-      "url": "https://developer.nvidia.com/blog/start-and-restore-gpu-workloads-in-seconds-with-nvidia-snapshot/",
+      "title": "Post-Training NVIDIA Nemotron to Increase Accuracy in Your Scientific Domain",
+      "url": "https://developer.nvidia.com/blog/post-training-nvidia-nemotron-to-increase-accuracy-in-your-scientific-domain/",
       "source": "NVIDIA Technical Blog"
     },
     {
-      "title": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine",
-      "url": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+      "title": "NVIDIA Vera Rubin NVL72 Leads Agentic Inference Performance on MLPerf Endpoints v1.0",
+      "url": "https://developer.nvidia.com/blog/nvidia-vera-rubin-nvl72-leads-agentic-inference-performance-on-mlperf-endpoints-v1-0/",
       "source": "NVIDIA Technical Blog"
     },
     {
-      "title": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
-      "url": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+      "title": "Co-Designing Sparse Attention for Efficient Long-Context Inference",
+      "url": "https://developer.nvidia.com/blog/co-designing-sparse-attention-for-efficient-long-context-inference/",
       "source": "NVIDIA Technical Blog"
     },
     {
-      "title": "v0.34.0rc1",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc1",
-      "source": "vLLM Releases"
-    },
-    {
-      "title": "v0.34.0rc3",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc3",
-      "source": "vLLM Releases"
-    },
-    {
-      "title": "v0.34.0rc4",
-      "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0rc4",
-      "source": "vLLM Releases"
-    },
-    {
-      "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
-      "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
-      "source": "NVIDIA Technical Blog"
-    },
-    {
-      "title": "GPU-Initiated DMA Copy Engines in RCCL and rocSHMEM",
-      "url": "https://rocm.blogs.amd.com/software-tools-optimization/gpu-initiated-sdma/README.html",
+      "title": "Keep the Agent Warm: How ATOM Serves AgentX Workloads on AMD Instinct MI355X GPUs",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/agentx-atom-serving/README.html",
       "source": "AMD ROCm Blog"
     },
     {
-      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
-      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
-      "source": "Hugging Face Blog"
+      "title": "An AITER Pin Keyed by Kernel Text: Faster Glue Than the Inductor Default",
+      "url": "https://rocm.blogs.amd.com/software-tools-optimization/inductor-aiter-conversion/README.html",
+      "source": "AMD ROCm Blog"
     },
     {
-      "title": "Fast by Default: Compile-Time Heuristics for Helion Kernels",
-      "url": "https://pytorch.org/blog/fast-by-default-compile-time-heuristics-for-helion-kernels/",
-      "source": "PyTorch Blog"
+      "title": "Keeping Agents Fast: High-Interactivity Decode with FlyDSL MonoKernels in vLLM",
+      "url": "https://vllm.ai/blog/2026-11-18-flydsl-monokernels",
+      "source": "vLLM Blog"
     },
     {
-      "title": "Integrating SGLang into Spyre in Under a Week with AI",
-      "url": "https://pytorch.org/blog/integrating-sglang-into-spyre-in-under-a-week-with-ai/",
-      "source": "PyTorch Blog"
+      "title": "FlashInfer on ROCm 10.1: The FlashInfer API with Automatic Kernel Routing",
+      "url": "https://rocm.blogs.amd.com/artificial-intelligence/flashinfer-release3/README.html",
+      "source": "AMD ROCm Blog"
     },
     {
-      "title": "Training a 1T-Parameter MoE on EU public infrastructure with PyTorch and TorchTitan",
-      "url": "https://pytorch.org/blog/training-a-1t-parameter-moe-on-eu-public-infrastructure-with-pytorch-and-torchtitan/",
-      "source": "PyTorch Blog"
+      "title": "v1.3.0",
+      "url": "https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0",
+      "source": "TensorRT-LLM Releases"
     },
     {
-      "title": "PACER: GPU Excursion Management for ML Workloads",
-      "url": "https://arxiv.org/abs/2611.17206v1",
-      "source": "arXiv Distributed Systems"
+      "title": "Release v0.7.6rc1",
+      "url": "https://github.com/flashinfer-ai/flashinfer/releases/tag/v0.7.6rc1",
+      "source": "FlashInfer Releases"
     },
     {
-      "title": "Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon",
-      "url": "https://arxiv.org/abs/2611.17294v1",
-      "source": "arXiv Distributed Systems"
-    },
-    {
-      "title": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
-      "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+      "title": "Reducing Rollout Bottlenecks in Reinforcement Learning with NVIDIA Dynamo",
+      "url": "https://developer.nvidia.com/blog/reducing-rollout-bottlenecks-in-reinforcement-learning-with-nvidia-dynamo/",
       "source": "NVIDIA Technical Blog"
     },
     {
-      "title": "Kitesurf is now open source",
-      "url": "https://blog.cloudflare.com/kitesurf-open-source/",
+      "title": "Build Tool-Calling Parsers in Rust with AI Agents",
+      "url": "https://developer.nvidia.com/blog/build-tool-calling-parsers-in-rust-with-ai-agents/",
+      "source": "NVIDIA Technical Blog"
+    },
+    {
+      "title": "How Cloudflare WAF helps protect against Java4Shell (CVE-2026-114938)",
+      "url": "https://blog.cloudflare.com/java4shell-waf-protection/",
       "source": "Cloudflare Engineering"
     },
     {
-      "title": "Run Native DLA Inference in Python on NVIDIA Jetson AGX Orin Using cuDLA",
-      "url": "https://developer.nvidia.com/blog/run-native-dla-inference-in-python-on-nvidia-jetson-agx-orin-using-cudla/",
-      "source": "NVIDIA Technical Blog"
+      "title": "Minutes of the Federal Open Market Committee, October 27-28, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm",
+      "source": "U.S. Federal Reserve"
     },
     {
-      "title": "Where was Nvidia’s security team?",
-      "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
-      "source": "TechCrunch AI"
+      "title": "Federal Reserve Board issues enforcement action with former employee of First Security Bancorp",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261119a.htm",
+      "source": "U.S. Federal Reserve"
     },
     {
-      "title": "Applied Materials forecasts quarterly revenue above estimates on strong AI chip demand",
-      "url": "https://www.channelnewsasia.com/business/applied-materials-forecasts-quarterly-revenue-above-estimates-strong-ai-chip-demand-6547501",
-      "source": "CNA Business"
+      "title": "Federal Reserve Board releases results from survey of senior financial officers at banks about their strategies and practices for managing reserve balances",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261120a.htm",
+      "source": "U.S. Federal Reserve"
     },
     {
-      "title": "China warns against new export controls on US chips after Nvidia scandal",
-      "url": "https://www.channelnewsasia.com/east-asia/china-warns-against-new-export-controls-us-chips-after-nvidia-scandal-6549111",
-      "source": "CNA Business"
+      "title": "Homes abandoned, harvests failing: Haiti’s farmers rebuild amid violence, hunger and El Niño",
+      "url": "https://news.un.org/feed/view/en/story/2026/11/1168834",
+      "source": "UN News"
     },
     {
-      "title": "Nvidia scandal: How close was ex-CEO to Trump?",
-      "url": "https://www.france24.com/en/video/20261113-nvidia-scandal-how-close-was-ex-ceo-to-trump",
+      "title": "Russia attacks Zelensky's hometown, Ukraine reaffirms wish to join NATO",
+      "url": "https://www.france24.com/en/europe/20261121-russia-attacks-zelensky-s-hometown-ukraine-reaffirms-wish-to-join-nato",
+      "source": "France 24"
+    },
+    {
+      "title": "FBI national crime database suffers suspected breach: Reports",
+      "url": "https://www.aljazeera.com/news/2026/11/21/fbi-national-crime-database-suffers-suspected-breach-reports?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "title": "Major anti-gang offensive in Haiti kills 34 suspected gang members",
+      "url": "https://www.france24.com/en/americas/20261119-major-anti-gang-offensive-in-haiti-kills-34-suspected-gang-members",
       "source": "France 24"
     }
   ]
